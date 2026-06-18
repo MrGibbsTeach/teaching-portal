@@ -8,7 +8,9 @@ This consolidates three previously separate projects, archived for reference at 
 - `11-ait-atar-course` — Year 11 Applied IT, ATAR (Vite + React + Supabase)
 - `ait-foundations-course` — AIT Foundations, Year 11 & 12 (single-file static app)
 
-All three contain real authored lesson content (see each project's own files: `db/seed-lessons.ts` / `db/seed-topics-3-5.ts` for General, `src/data/modules.js` / `src/data/unit1PracticeExam.js` for ATAR, the embedded lesson sections in `index.html` for Foundations) that still needs to be ported into this site's content format. That migration is a separate follow-up phase — this repo currently has the site shell and placeholder pages for all 9 courses scaffolded.
+The real lesson content from all three has been migrated into this site's unified content format (`lib/content/types.ts`, `lib/content/data/*.json`). The `scripts/transform-*.mjs` scripts perform that migration programmatically by reading the archived source files directly — re-run them if the archived content ever changes upstream. The six remaining courses (Years 7–10, and Year 12 General/ATAR) have no prior content and are placeholder-only.
+
+Not yet ported from the archived projects: ATAR's glossary (`src/data/glossary.js`) and Unit 1 practice exam page (`src/data/unit1PracticeExam.js`), and the General course's "coming soon" Unit 1 content (`db/seed-unit1.ts`). Also not carried over: auth, teacher portal, and progress-tracking — this site is currently read-only published content.
 
 ## Course list
 

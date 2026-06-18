@@ -1,9 +1,11 @@
 import { notFound } from "next/navigation";
-import { CoursePlaceholder } from "@/components/course/CoursePlaceholder";
+import { CourseOverview } from "@/components/course/CourseOverview";
 import { getCourseBySlug } from "@/lib/courses";
+import { getCourseContent } from "@/lib/content";
 
 export default function Page() {
   const course = getCourseBySlug("year-11-applied-it-general");
-  if (!course) notFound();
-  return <CoursePlaceholder course={course} />;
+  const content = getCourseContent("year-11-applied-it-general");
+  if (!course || !content) notFound();
+  return <CourseOverview course={course} content={content} />;
 }

@@ -1,0 +1,1585 @@
+{
+  "slug": "ait-foundations",
+  "title": "AIT Foundations",
+  "units": [
+    {
+      "id": "unit1",
+      "title": "Digital Systems & Networks",
+      "status": "coming_soon",
+      "topics": []
+    },
+    {
+      "id": "unit2",
+      "title": "Applications in Practice",
+      "status": "available",
+      "topics": [
+        {
+          "id": "c11_6",
+          "title": "Spreadsheets",
+          "description": "C11.6",
+          "lessons": [
+            {
+              "id": "c11_6_l1",
+              "title": "What is a Spreadsheet?",
+              "estimatedMinutes": 15,
+              "blocks": [
+                {
+                  "type": "richText",
+                  "heading": "A spreadsheet stores information in a grid. 📊",
+                  "html": "You can use it to organise numbers and data.<svg viewBox=\"0 0 280 152\" style=\"display:block;width:100%;margin-top:14px;border-radius:8px\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"280\" height=\"152\" fill=\"#f8fafc\" rx=\"6\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><rect width=\"280\" height=\"26\" fill=\"#e2e8f0\"/><rect x=\"0\" y=\"26\" width=\"36\" height=\"126\" fill=\"#f0f4f8\"/><line x1=\"36\" y1=\"0\" x2=\"36\" y2=\"152\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"114\" y1=\"0\" x2=\"114\" y2=\"152\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"192\" y1=\"0\" x2=\"192\" y2=\"152\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"26\" x2=\"280\" y2=\"26\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"57\" x2=\"280\" y2=\"57\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"88\" x2=\"280\" y2=\"88\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"119\" x2=\"280\" y2=\"119\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"75\" y=\"18\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">A</text><text x=\"153\" y=\"18\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">B</text><text x=\"236\" y=\"18\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">C</text><text x=\"18\" y=\"47\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">1</text><text x=\"18\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">2</text><text x=\"18\" y=\"109\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">3</text><text x=\"18\" y=\"140\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">4</text><text x=\"75\" y=\"47\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#028090\" text-anchor=\"middle\">Name</text><text x=\"153\" y=\"47\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#028090\" text-anchor=\"middle\">Score</text><text x=\"75\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">Ali</text><text x=\"153\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">85</text><text x=\"75\" y=\"109\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">Mia</text><text x=\"153\" y=\"109\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">92</text><text x=\"75\" y=\"140\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">Sam</text><text x=\"153\" y=\"140\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">78</text></svg>"
+                },
+                {
+                  "type": "richText",
+                  "heading": "Rows go across the page. ➡️",
+                  "html": "They are numbered: 1, 2, 3...<svg viewBox=\"0 0 280 152\" style=\"display:block;width:100%;margin-top:14px;border-radius:8px\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"280\" height=\"152\" fill=\"#f8fafc\" rx=\"6\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><rect width=\"280\" height=\"26\" fill=\"#e2e8f0\"/><rect x=\"0\" y=\"26\" width=\"36\" height=\"126\" fill=\"#f0f4f8\"/><rect x=\"36\" y=\"57\" width=\"244\" height=\"31\" fill=\"#bfdbfe\"/><rect x=\"0\" y=\"57\" width=\"36\" height=\"31\" fill=\"#93c5fd\"/><line x1=\"36\" y1=\"0\" x2=\"36\" y2=\"152\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"114\" y1=\"0\" x2=\"114\" y2=\"152\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"192\" y1=\"0\" x2=\"192\" y2=\"152\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"26\" x2=\"280\" y2=\"26\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"57\" x2=\"280\" y2=\"57\" stroke=\"#3b82f6\" stroke-width=\"2\"/><line x1=\"0\" y1=\"88\" x2=\"280\" y2=\"88\" stroke=\"#3b82f6\" stroke-width=\"2\"/><line x1=\"0\" y1=\"119\" x2=\"280\" y2=\"119\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"75\" y=\"18\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">A</text><text x=\"153\" y=\"18\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">B</text><text x=\"236\" y=\"18\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">C</text><text x=\"18\" y=\"47\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">1</text><text x=\"18\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\" text-anchor=\"middle\">2</text><text x=\"18\" y=\"109\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">3</text><text x=\"18\" y=\"140\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">4</text><text x=\"75\" y=\"47\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">Ali</text><text x=\"153\" y=\"47\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">85</text><text x=\"75\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\" text-anchor=\"middle\">Mia</text><text x=\"153\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\" text-anchor=\"middle\">92</text><text x=\"236\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\" text-anchor=\"middle\">Yr 9</text><text x=\"75\" y=\"109\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">Sam</text><text x=\"153\" y=\"109\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">78</text><text x=\"258\" y=\"79\" font-family=\"Arial,sans-serif\" font-size=\"20\" fill=\"#1d4ed8\" text-anchor=\"middle\">→</text></svg>"
+                },
+                {
+                  "type": "richText",
+                  "heading": "Columns go up and down. ⬇️",
+                  "html": "They are labelled: A, B, C...<svg viewBox=\"0 0 280 152\" style=\"display:block;width:100%;margin-top:14px;border-radius:8px\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"280\" height=\"152\" fill=\"#f8fafc\" rx=\"6\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><rect width=\"280\" height=\"26\" fill=\"#e2e8f0\"/><rect x=\"0\" y=\"26\" width=\"36\" height=\"126\" fill=\"#f0f4f8\"/><rect x=\"114\" y=\"26\" width=\"78\" height=\"126\" fill=\"#fed7aa\"/><rect x=\"114\" y=\"0\" width=\"78\" height=\"26\" fill=\"#fb923c\"/><line x1=\"36\" y1=\"0\" x2=\"36\" y2=\"152\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"114\" y1=\"0\" x2=\"114\" y2=\"152\" stroke=\"#ea580c\" stroke-width=\"2\"/><line x1=\"192\" y1=\"0\" x2=\"192\" y2=\"152\" stroke=\"#ea580c\" stroke-width=\"2\"/><line x1=\"0\" y1=\"26\" x2=\"280\" y2=\"26\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"57\" x2=\"280\" y2=\"57\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"88\" x2=\"280\" y2=\"88\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"119\" x2=\"280\" y2=\"119\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"75\" y=\"18\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">A</text><text x=\"153\" y=\"18\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"white\" text-anchor=\"middle\">B</text><text x=\"236\" y=\"18\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">C</text><text x=\"18\" y=\"47\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">1</text><text x=\"18\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">2</text><text x=\"18\" y=\"109\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">3</text><text x=\"18\" y=\"140\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">4</text><text x=\"75\" y=\"47\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">Ali</text><text x=\"153\" y=\"47\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#c2410c\" text-anchor=\"middle\">85</text><text x=\"75\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">Mia</text><text x=\"153\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#c2410c\" text-anchor=\"middle\">92</text><text x=\"75\" y=\"109\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">Sam</text><text x=\"153\" y=\"109\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#c2410c\" text-anchor=\"middle\">78</text><text x=\"153\" y=\"148\" font-family=\"Arial,sans-serif\" font-size=\"20\" fill=\"#c2410c\" text-anchor=\"middle\">↓</text></svg>"
+                },
+                {
+                  "type": "richText",
+                  "heading": "A cell is one single box. 📦",
+                  "html": "Cell A1 is in column A, row 1.<svg viewBox=\"0 0 280 152\" style=\"display:block;width:100%;margin-top:14px;border-radius:8px\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"280\" height=\"152\" fill=\"#f8fafc\" rx=\"6\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><rect width=\"280\" height=\"26\" fill=\"#e2e8f0\"/><rect x=\"0\" y=\"26\" width=\"36\" height=\"126\" fill=\"#f0f4f8\"/><rect x=\"36\" y=\"26\" width=\"78\" height=\"31\" fill=\"#bbf7d0\" stroke=\"#16a34a\" stroke-width=\"2.5\"/><line x1=\"36\" y1=\"0\" x2=\"36\" y2=\"152\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"114\" y1=\"0\" x2=\"114\" y2=\"152\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"192\" y1=\"0\" x2=\"192\" y2=\"152\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"26\" x2=\"280\" y2=\"26\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"57\" x2=\"280\" y2=\"57\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"88\" x2=\"280\" y2=\"88\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"119\" x2=\"280\" y2=\"119\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"75\" y=\"18\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">A</text><text x=\"153\" y=\"18\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">B</text><text x=\"236\" y=\"18\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">C</text><text x=\"18\" y=\"47\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">1</text><text x=\"18\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">2</text><text x=\"18\" y=\"109\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">3</text><text x=\"75\" y=\"44\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#16a34a\" text-anchor=\"middle\">A1</text><text x=\"153\" y=\"47\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#94a3b8\" text-anchor=\"middle\">B1</text><text x=\"236\" y=\"47\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#94a3b8\" text-anchor=\"middle\">C1</text><text x=\"75\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#94a3b8\" text-anchor=\"middle\">A2</text><text x=\"75\" y=\"109\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#94a3b8\" text-anchor=\"middle\">A3</text></svg>"
+                },
+                {
+                  "type": "richText",
+                  "heading": "A worksheet is one page in a spreadsheet file. 📄",
+                  "html": "You can have more than one worksheet.<svg viewBox=\"0 0 280 170\" style=\"display:block;width:100%;margin-top:14px;border-radius:8px\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"280\" height=\"170\" fill=\"#f8fafc\" rx=\"6\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><rect width=\"280\" height=\"26\" fill=\"#e2e8f0\"/><rect x=\"0\" y=\"26\" width=\"36\" height=\"118\" fill=\"#f0f4f8\"/><line x1=\"36\" y1=\"0\" x2=\"36\" y2=\"144\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"114\" y1=\"0\" x2=\"114\" y2=\"144\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"192\" y1=\"0\" x2=\"192\" y2=\"144\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"26\" x2=\"280\" y2=\"26\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"57\" x2=\"280\" y2=\"57\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"88\" x2=\"280\" y2=\"88\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"119\" x2=\"280\" y2=\"119\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"144\" x2=\"280\" y2=\"144\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"75\" y=\"18\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">A</text><text x=\"153\" y=\"18\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">B</text><text x=\"236\" y=\"18\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">C</text><text x=\"18\" y=\"47\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">1</text><text x=\"18\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">2</text><text x=\"18\" y=\"109\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">3</text><rect x=\"4\" y=\"148\" width=\"72\" height=\"20\" rx=\"4\" fill=\"white\" stroke=\"#028090\" stroke-width=\"1.5\"/><text x=\"40\" y=\"162\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#028090\" text-anchor=\"middle\">Sheet 1</text><rect x=\"80\" y=\"151\" width=\"66\" height=\"17\" rx=\"4\" fill=\"#e2e8f0\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"113\" y=\"163\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"middle\">Sheet 2</text><rect x=\"150\" y=\"151\" width=\"66\" height=\"17\" rx=\"4\" fill=\"#e2e8f0\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"183\" y=\"163\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"middle\">Sheet 3</text></svg>"
+                },
+                {
+                  "type": "activity",
+                  "title": "Match each word to its meaning. 🧩",
+                  "pairs": [
+                    {
+                      "term": "Row",
+                      "definition": "Goes across the page ➡️"
+                    },
+                    {
+                      "term": "Column",
+                      "definition": "Goes up and down the page ⬇️"
+                    },
+                    {
+                      "term": "Cell",
+                      "definition": "One single box in the grid 📦"
+                    },
+                    {
+                      "term": "Worksheet",
+                      "definition": "One page in a spreadsheet file 📄"
+                    }
+                  ]
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "What does a row do? ➡️",
+                    "options": [
+                      "Goes across the page",
+                      "Goes up and down",
+                      "Holds one value only"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Rows go across the page from left to right. They are numbered 1, 2, 3..."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "What is cell B3? 📦",
+                    "options": [
+                      "Column 3, Row B",
+                      "Column B, Row 3",
+                      "The third worksheet"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "Cell addresses are always column first, then row. So B3 = column B, row 3."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "What is a worksheet? 📄",
+                    "options": [
+                      "A formula",
+                      "One cell",
+                      "One page in a spreadsheet file"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "A worksheet is one page in your spreadsheet file. You can have many worksheets in one file."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "c11_6_l2",
+              "title": "Typing Formulas",
+              "estimatedMinutes": 20,
+              "blocks": [
+                {
+                  "type": "richText",
+                  "heading": "A formula tells the spreadsheet to calculate. 🧮",
+                  "html": "Always start a formula with the = sign.<svg viewBox=\"0 0 280 110\" style=\"display:block;width:100%;margin-top:14px;border-radius:8px\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"280\" height=\"110\" fill=\"#f8fafc\" rx=\"6\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><rect width=\"280\" height=\"28\" fill=\"#f0f4f8\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><rect x=\"4\" y=\"4\" width=\"46\" height=\"20\" rx=\"3\" fill=\"white\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"27\" y=\"18\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"middle\">C1</text><rect x=\"54\" y=\"4\" width=\"222\" height=\"20\" rx=\"3\" fill=\"white\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"66\" y=\"18\" font-family=\"monospace,Arial\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">=A1+B1</text><rect width=\"280\" height=\"28\" y=\"28\" fill=\"#e2e8f0\"/><line x1=\"36\" y1=\"28\" x2=\"36\" y2=\"110\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"114\" y1=\"28\" x2=\"114\" y2=\"110\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"192\" y1=\"28\" x2=\"192\" y2=\"110\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"56\" x2=\"280\" y2=\"56\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"84\" x2=\"280\" y2=\"84\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"75\" y=\"46\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">A</text><text x=\"153\" y=\"46\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">B</text><text x=\"236\" y=\"46\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">C</text><text x=\"18\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">1</text><text x=\"18\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">2</text><text x=\"75\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">30</text><text x=\"153\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">20</text><rect x=\"192\" y=\"56\" width=\"88\" height=\"28\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"1.5\"/><text x=\"236\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0284c7\" text-anchor=\"middle\">50</text></svg>"
+                },
+                {
+                  "type": "richText",
+                  "heading": "The + sign adds numbers together. ➕",
+                  "html": "Example: <strong>=A1+B1</strong><br><br>If A1 = 30 and B1 = 20, the answer is 50."
+                },
+                {
+                  "type": "richText",
+                  "heading": "The − sign subtracts numbers. ➖",
+                  "html": "Example: <strong>=A1-B1</strong><br><br>If A1 = 30 and B1 = 20, the answer is 10."
+                },
+                {
+                  "type": "richText",
+                  "heading": "The * sign multiplies numbers. ✖️",
+                  "html": "Example: <strong>=A1*B1</strong><br><br>If A1 = 30 and B1 = 20, the answer is 600."
+                },
+                {
+                  "type": "richText",
+                  "heading": "The / sign divides numbers. ➗",
+                  "html": "Example: <strong>=A1/B1</strong><br><br>If A1 = 30 and B1 = 5, the answer is 6."
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "One of these formulas is broken. Which one is correct for adding A1 and B1? 🧮",
+                    "options": [
+                      "A1+B1",
+                      "=A1+B1",
+                      "+A1+B1",
+                      "A1=+B1"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "Every formula must start with =. So the correct answer is =A1+B1."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "What must every formula start with? 🧮",
+                    "options": [
+                      "A letter",
+                      "A number",
+                      "="
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "All formulas must start with the = sign. This tells the spreadsheet to calculate."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "Which formula adds A1 and B1? ➕",
+                    "options": [
+                      "=A1+B1",
+                      "=A1*B1",
+                      "=A1-B1"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "The + sign adds numbers. So =A1+B1 adds the values in A1 and B1 together."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "Which symbol divides in a formula? ➗",
+                    "options": [
+                      "÷",
+                      "/",
+                      ":"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "In spreadsheet formulas, / is used to divide. For example: =A1/B1."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "c11_6_l3",
+              "title": "SUM and AVERAGE",
+              "estimatedMinutes": 25,
+              "blocks": [
+                {
+                  "type": "richText",
+                  "heading": "SUM adds up a group of cells. ➕",
+                  "html": "Example: <strong>=SUM(B2:B6)</strong><br><br>This adds all values from B2 to B6."
+                },
+                {
+                  "type": "richText",
+                  "heading": "The colon : means from...to. 📏",
+                  "html": "B2:B6 means from cell B2 to cell B6.<br><br>It includes every cell in between."
+                },
+                {
+                  "type": "richText",
+                  "heading": "AVERAGE finds the middle value. 📊",
+                  "html": "Example: <strong>=AVERAGE(B2:B6)</strong><br><br>This finds the average of B2 to B6."
+                },
+                {
+                  "type": "richText",
+                  "heading": "SUM and AVERAGE are called functions. ⚙️",
+                  "html": "Functions are shortcuts that do the maths for you.<br><br>You do not need to type each cell one by one."
+                },
+                {
+                  "type": "activity",
+                  "title": "Complete this formula to add up cells B2 to B6: =SUM(___)",
+                  "answer": "B2:B6",
+                  "explanation": "B2:B6 means from cell B2 to cell B6. The colon : means 'to'."
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "What does =SUM(B2:B6) do? ➕",
+                    "options": [
+                      "Averages B2 to B6",
+                      "Adds up B2 to B6",
+                      "Subtracts B6 from B2"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "SUM adds all the values in the range together. =SUM(B2:B6) adds B2 + B3 + B4 + B5 + B6."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "What does the colon : mean in a formula? 📏",
+                    "options": [
+                      "Divide",
+                      "From...to",
+                      "Equals"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "The colon means 'from...to'. B2:B6 means from B2 to B6, including all cells in between."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "Which function finds the middle value? 📊",
+                    "options": [
+                      "SUM",
+                      "COUNT",
+                      "AVERAGE"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "AVERAGE adds all the values together. Then it divides by how many there are. That gives the average."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "c11_6_l4",
+              "title": "Making it Look Good",
+              "estimatedMinutes": 20,
+              "blocks": [
+                {
+                  "type": "richText",
+                  "heading": "You can change how a cell looks. 🎨",
+                  "html": "This is called <strong>formatting</strong>.<br><br>Formatting makes your data easy to read."
+                },
+                {
+                  "type": "richText",
+                  "heading": "There are different number formats. 🔢",
+                  "html": "<strong>Text</strong> — shows words and letters.<br><strong>Number</strong> — shows plain numbers.<br><strong>Currency</strong> — adds a $ sign. 💲<br><strong>Date</strong> — shows a date. 📅"
+                },
+                {
+                  "type": "richText",
+                  "heading": "Borders go around the edges of cells. ▦",
+                  "html": "They make your table easy to read.<br><br>Choose Format → Cells → Border to add them."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Use colour on your header row. 🌈",
+                  "html": "It helps people find the headings fast.<br><br>Choose a colour that is easy to read."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Centre numbers in their cells. ↔️",
+                  "html": "Left-align text in their cells.<br><br>This follows the standard style used everywhere."
+                },
+                {
+                  "type": "activity",
+                  "title": "This spreadsheet has 5 formatting problems. Click each numbered spot to find them! 🔍",
+                  "instruction": "Interactive hotspot activity (see archived Foundations app for the original visual version)."
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "Which format adds a $ sign? 💲",
+                    "options": [
+                      "Text",
+                      "Date",
+                      "Currency"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "The Currency format adds a dollar sign and shows two decimal places. For example: $12.50."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "Where should you add a background colour? 🌈",
+                    "options": [
+                      "Every cell",
+                      "The header row",
+                      "Only column A"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "Colouring the header row helps people find the headings quickly. Too much colour makes data hard to read."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "How should you align numbers in a cell? ↔️",
+                    "options": [
+                      "Left",
+                      "Centre",
+                      "Right"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "Numbers should be centred in their cells. Text is usually left-aligned. This is the standard style."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "c11_6_l5",
+              "title": "Creating Charts",
+              "estimatedMinutes": 30,
+              "blocks": [
+                {
+                  "type": "richText",
+                  "heading": "A chart turns numbers into a picture. 📊",
+                  "html": "Charts make data easy to understand.<br><br>You can see patterns much faster with a chart."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Step 1: Select the data you want to chart. 🖱️",
+                  "html": "Click and drag to highlight the cells.<br><br>Include the headings so the chart has labels."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Step 2: Click Insert, then click Chart. 📥",
+                  "html": "The Insert menu is at the top of the screen.<br><br>This opens the chart builder."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Step 3: Choose your chart type. 📈",
+                  "html": "Column, Bar, Line, or Pie charts all work.<br><br>Pick the one that suits your data best."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Step 4: Give your chart a title. 🏷️",
+                  "html": "A good title tells the reader what the chart shows.<br><br>Example: \"Test Scores for Class 11A\""
+                },
+                {
+                  "type": "richText",
+                  "heading": "Step 5: Move the chart below your data. ⬇️",
+                  "html": "Click and drag the chart to move it.<br><br>Placing it below keeps your data easy to find."
+                },
+                {
+                  "type": "activity",
+                  "title": "Put these chart-making steps in the correct order. 📊",
+                  "orderedItems": [
+                    "Select your data",
+                    "Click Insert then Chart",
+                    "Choose a chart type",
+                    "Add a title",
+                    "Move it below your data"
+                  ]
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "What is the first step to make a chart? 📊",
+                    "options": [
+                      "Add a title",
+                      "Select your data",
+                      "Choose a colour"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "Always select your data first. This tells the spreadsheet what information to use in the chart."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "Where do you click to start a chart? 📥",
+                    "options": [
+                      "Format",
+                      "View",
+                      "Insert"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "Click Insert at the top of the screen, then click Chart. This opens the chart builder."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "Where should you place the finished chart? ⬇️",
+                    "options": [
+                      "On a new page",
+                      "Below your data",
+                      "Above the title"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "Placing the chart below the data keeps everything together and easy to read."
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c11_7",
+          "title": "Social Collaboration",
+          "description": "C11.7",
+          "lessons": [
+            {
+              "id": "c11_7_l1",
+              "title": "Online Communication Tools",
+              "estimatedMinutes": 15,
+              "blocks": [
+                {
+                  "type": "richText",
+                  "heading": "A blog is a personal website. 📝",
+                  "html": "Someone writes regular posts on a blog.<br><br>People read it to follow their ideas and stories."
+                },
+                {
+                  "type": "richText",
+                  "heading": "A forum is an online notice board. 💬",
+                  "html": "People visit forums to discuss topics together.<br><br>Anyone can ask a question or give an answer."
+                },
+                {
+                  "type": "richText",
+                  "heading": "News sites share current news articles. 📰",
+                  "html": "You can read the latest news online anytime.<br><br>Examples: ABC News, BBC, The Guardian."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Photo-sharing sites let you post photos online. 📸",
+                  "html": "You can share photos with friends and followers.<br><br>Instagram and Flickr are popular examples."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Online games let you play with others. 🎮",
+                  "html": "You connect to other players over the internet.<br><br>You can play with friends or strangers worldwide."
+                },
+                {
+                  "type": "richText",
+                  "heading": "YouTube lets you watch and share videos. ▶️",
+                  "html": "Anyone can upload a video to YouTube.<br><br>Billions of people watch YouTube every day."
+                },
+                {
+                  "type": "activity",
+                  "title": "Match each online tool to what it does. 🧩",
+                  "pairs": [
+                    {
+                      "term": "Blog 📝",
+                      "definition": "A personal website with regular written posts"
+                    },
+                    {
+                      "term": "Forum 💬",
+                      "definition": "An online notice board for discussing topics"
+                    },
+                    {
+                      "term": "Photo-sharing 📸",
+                      "definition": "A site where you upload and share photos"
+                    },
+                    {
+                      "term": "YouTube ▶️",
+                      "definition": "A site where you watch and upload videos"
+                    }
+                  ]
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "What is a blog? 📝",
+                    "options": [
+                      "A game you play online",
+                      "A personal website with regular posts",
+                      "A site for watching videos"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "A blog is a personal website. The writer posts regularly about topics they care about."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "What is a forum used for? 💬",
+                    "options": [
+                      "Sharing photos with followers",
+                      "Reading the latest news",
+                      "Discussing topics with other people online"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "A forum is like an online notice board. People post questions and replies to discuss topics."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "Which tool is best for watching and sharing videos? ▶️",
+                    "options": [
+                      "Instagram",
+                      "YouTube",
+                      "A news site"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "YouTube is designed for watching and sharing videos. Anyone can upload a video."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "c11_7_l2",
+              "title": "E-Learning",
+              "estimatedMinutes": 20,
+              "blocks": [
+                {
+                  "type": "richText",
+                  "heading": "E-learning is learning that happens online. 💻",
+                  "html": "You use a device and the internet to learn.<br><br>You do not need to be in a classroom."
+                },
+                {
+                  "type": "richText",
+                  "heading": "There are many e-learning tools. 📱",
+                  "html": "<strong>Khan Academy</strong> — free lessons on many subjects.<br><strong>YouTube</strong> — millions of tutorial videos.<br><strong>Duolingo</strong> — learn a new language for free."
+                },
+                {
+                  "type": "richText",
+                  "heading": "E-learning has great advantages. ✅",
+                  "html": "You can learn from anywhere in the world.<br>You go at your own pace — fast or slow.<br>Many resources are completely free."
+                },
+                {
+                  "type": "richText",
+                  "heading": "E-learning also has some challenges. ⚠️",
+                  "html": "You need internet access to learn online.<br>It is easy to get distracted at home.<br>You do not have a teacher nearby to help."
+                },
+                {
+                  "type": "activity",
+                  "title": "Sort each statement into the correct column. 📊",
+                  "categories": [
+                    {
+                      "label": "Advantage ✅",
+                      "items": [
+                        "Learn from anywhere",
+                        "Go at your own pace",
+                        "Lots of free resources"
+                      ]
+                    },
+                    {
+                      "label": "Disadvantage ⚠️",
+                      "items": [
+                        "Need internet access",
+                        "Easy to get distracted",
+                        "No teacher nearby"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "What does e-learning mean? 💻",
+                    "options": [
+                      "Learning in a classroom",
+                      "Learning that happens online",
+                      "Learning from a textbook"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "E-learning means learning online. You use a device and the internet instead of a classroom."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "Which is an advantage of e-learning? ✅",
+                    "options": [
+                      "You always have a teacher nearby",
+                      "You learn at your own pace",
+                      "You do not need the internet"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "A big advantage of e-learning is going at your own pace. You can pause, rewind, or repeat."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "Which is a disadvantage of e-learning? ⚠️",
+                    "options": [
+                      "It costs too much money",
+                      "It is only for adults",
+                      "You need internet access"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "E-learning requires internet. If you have no internet, you cannot access the lessons."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "c11_7_l3",
+              "title": "E-Commerce and Online Shopping",
+              "estimatedMinutes": 20,
+              "blocks": [
+                {
+                  "type": "richText",
+                  "heading": "E-commerce is buying and selling things online. 🛒",
+                  "html": "You shop using a website or an app.<br><br>You pay online and the item arrives at your door."
+                },
+                {
+                  "type": "richText",
+                  "heading": "E-commerce sites are everywhere. 📦",
+                  "html": "<strong>eBay</strong> — buy and sell second-hand items.<br><strong>Amazon</strong> — millions of products delivered fast.<br><strong>Kmart online</strong> — shop from a major retailer.<br><strong>Uber Eats</strong> — order food to your home."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Online shopping has great advantages. 🕐",
+                  "html": "You can shop from home in your pyjamas.<br>You can compare prices across many stores.<br>Shops are open 24 hours a day, 7 days a week."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Online shopping also has some risks. ⚠️",
+                  "html": "You cannot touch or try items before buying.<br>There is a risk of scams and fake websites.<br>You may wait days or weeks for delivery."
+                },
+                {
+                  "type": "activity",
+                  "title": "Sort each statement into True or False. ✅❌",
+                  "categories": [
+                    {
+                      "label": "True ✅",
+                      "items": [
+                        "You can shop online at midnight",
+                        "eBay is an example of e-commerce",
+                        "You can compare prices easily online"
+                      ]
+                    },
+                    {
+                      "label": "False ❌",
+                      "items": [
+                        "You can touch items before buying online",
+                        "Online shopping has no risks",
+                        "E-commerce only works during business hours"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "What is e-commerce? 🛒",
+                    "options": [
+                      "Shopping in a physical store",
+                      "Buying and selling things online",
+                      "Sending emails to companies"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "E-commerce means buying and selling things online. You shop using a website or app."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "Which is an advantage of online shopping? 🕐",
+                    "options": [
+                      "You can try items before buying",
+                      "Delivery is always instant",
+                      "Shops are open 24 hours a day"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "Online stores never close. You can shop at midnight, on weekends, or on public holidays."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "Which is a risk of online shopping? ⚠️",
+                    "options": [
+                      "Too many products to choose from",
+                      "Scams and fake websites",
+                      "Prices are always too high"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "Scam websites look real but steal your money or details. Always check the site is trusted."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "c11_7_l4",
+              "title": "Online Banking",
+              "estimatedMinutes": 15,
+              "blocks": [
+                {
+                  "type": "richText",
+                  "heading": "Online banking lets you manage money digitally. 🏦",
+                  "html": "You use an app or website to manage your account.<br><br>You do not need to visit a bank branch."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Online banking has many advantages. ✅",
+                  "html": "Check your balance anytime, day or night.<br>Transfer money to someone in seconds.<br>Pay bills from home without queuing."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Online banking has some serious risks. 👾",
+                  "html": "Hackers may try to steal your login details.<br>Phishing emails trick you into giving your password.<br>You could get locked out of your account."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Stay safe when banking online. 🔒",
+                  "html": "Always use a strong, unique password.<br>Only bank on websites that start with <strong>https://</strong>.<br>Log out when you are finished."
+                },
+                {
+                  "type": "activity",
+                  "title": "Sort each action into Safe or Risky. 🔒⚠️",
+                  "categories": [
+                    {
+                      "label": "Safe 🔒",
+                      "items": [
+                        "Use a strong password",
+                        "Check for https://",
+                        "Log out when done"
+                      ]
+                    },
+                    {
+                      "label": "Risky ⚠️",
+                      "items": [
+                        "Use the same password everywhere",
+                        "Click unknown email links",
+                        "Use public WiFi for banking"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "What is online banking? 🏦",
+                    "options": [
+                      "Visiting a bank branch in person",
+                      "Managing your money through an app or website",
+                      "Using cash at a shop"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "Online banking lets you manage your money digitally. You use an app or website instead of visiting a branch."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "Which action keeps you safe in online banking? 🔒",
+                    "options": [
+                      "Using the same password for all websites",
+                      "Clicking links in unknown emails",
+                      "Using a strong, unique password"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "A strong, unique password is harder for hackers to guess. Never reuse passwords across sites."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "What does https:// at the start of a website mean? 🔒",
+                    "options": [
+                      "The website is very popular",
+                      "The connection is secure",
+                      "The website is free to use"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "https:// means the website uses encryption. Your data is protected as it travels online."
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e11_2",
+          "title": "Desktop Publishing",
+          "description": "E11.2",
+          "lessons": [
+            {
+              "id": "e11_2_l1",
+              "title": "What is Desktop Publishing?",
+              "estimatedMinutes": 15,
+              "blocks": [
+                {
+                  "type": "richText",
+                  "heading": "Desktop Publishing (DTP) makes layouts with text and images. 🖨️",
+                  "html": "You arrange words and pictures on a page.<br><br>The result can be printed or shared online."
+                },
+                {
+                  "type": "richText",
+                  "heading": "DTP software helps you create many things. 📄",
+                  "html": "<strong>Brochures</strong> — folded leaflets about a topic or event.<br><strong>Calendars</strong> — yearly planners with dates and images.<br><strong>Cards</strong> — greetings or invitations for special occasions.<br><strong>Portfolios</strong> — a collection of your best work."
+                },
+                {
+                  "type": "richText",
+                  "heading": "There are popular DTP programs you can use. 💻",
+                  "html": "<strong>Microsoft Publisher</strong> — comes with Microsoft Office.<br><strong>Canva</strong> — a free online tool for everyone."
+                },
+                {
+                  "type": "richText",
+                  "heading": "A layout is where you put things on the page. 📐",
+                  "html": "You decide where text and images go.<br><br>A good layout is easy to read and looks great."
+                },
+                {
+                  "type": "activity",
+                  "title": "Match each DTP product to its description. 🧩",
+                  "pairs": [
+                    {
+                      "term": "Brochure",
+                      "definition": "A folded leaflet about a topic or event"
+                    },
+                    {
+                      "term": "Calendar",
+                      "definition": "A yearly planner with dates and images"
+                    },
+                    {
+                      "term": "Card",
+                      "definition": "A greeting or invitation for a special occasion"
+                    },
+                    {
+                      "term": "Portfolio",
+                      "definition": "A collection of your best work"
+                    }
+                  ]
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "What does DTP stand for? 🖨️",
+                    "options": [
+                      "Digital Text Processing",
+                      "Desktop Publishing",
+                      "Design and Type Program"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "DTP stands for Desktop Publishing. It is software used to create layouts with text and images."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "Which of these is a DTP program? 💻",
+                    "options": [
+                      "Microsoft Excel",
+                      "Canva",
+                      "Google Chrome"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "Canva is a popular DTP tool. Microsoft Publisher is another example."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "What is a layout? 📐",
+                    "options": [
+                      "A font style",
+                      "Where you place text and images on a page",
+                      "A type of printer"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "A layout is the arrangement of text and images on your page. A good layout is clear and easy to read."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "e11_2_l2",
+              "title": "Using Templates",
+              "estimatedMinutes": 20,
+              "blocks": [
+                {
+                  "type": "richText",
+                  "heading": "A template is a ready-made design. 🎨",
+                  "html": "You fill it in with your own words and photos.<br><br>Templates save you a lot of time."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Step 1: Open your DTP software. 💻",
+                  "html": "Open Microsoft Publisher or Canva.<br><br>Make sure you are logged in if needed."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Step 2: Choose a template. 🎨",
+                  "html": "Browse the templates and pick one you like.<br><br>Choose a template that suits your project."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Step 3: Click a text frame and type your words. 📝",
+                  "html": "Click on any text area to select it.<br><br>Delete the placeholder text and type your own."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Step 4: Click an image frame and add your photo. 🖼️",
+                  "html": "Click on the image area to select it.<br><br>Upload your own photo to replace the placeholder."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Step 5: Save your finished document. 💾",
+                  "html": "Save your work so you do not lose it.<br><br>You can save as a PDF to share or print."
+                },
+                {
+                  "type": "activity",
+                  "title": "Put these steps in the correct order for using a template. 🎨",
+                  "orderedItems": [
+                    "Open your DTP software",
+                    "Choose a template",
+                    "Click a text frame and type your words",
+                    "Add your photo to the image frame",
+                    "Save your finished document"
+                  ]
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "What is a template? 🎨",
+                    "options": [
+                      "A blank white page",
+                      "A ready-made design you fill in",
+                      "A type of printer setting"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "A template is a ready-made design. You replace the placeholder text and images with your own."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "What should you do after choosing a template? 📝",
+                    "options": [
+                      "Save the document immediately",
+                      "Click a text frame and type your words",
+                      "Print the document straight away"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "After choosing a template, click a text frame and replace the placeholder text with your words."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "What is the last step when using a template? 💾",
+                    "options": [
+                      "Open the software",
+                      "Choose a template",
+                      "Save your document"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "Always save your work last. You can save as a PDF to share or print your document."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "e11_2_l3",
+              "title": "Image Frames and Text Frames",
+              "estimatedMinutes": 25,
+              "blocks": [
+                {
+                  "type": "richText",
+                  "heading": "An image frame holds a photo or picture. 🖼️",
+                  "html": "Image frames have a picture icon inside.<br><br>Click the frame to add or change the image."
+                },
+                {
+                  "type": "richText",
+                  "heading": "A text frame holds words. 📝",
+                  "html": "Text frames usually have placeholder text inside.<br><br>Click the frame and type to add your words."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Click a frame to select it. 🖱️",
+                  "html": "A selected frame shows handles around its edges.<br><br>Then you can add or edit the content inside."
+                },
+                {
+                  "type": "richText",
+                  "heading": "You can move and resize any frame. ↔️",
+                  "html": "Drag the frame to move it anywhere on the page.<br><br>Drag a corner handle to make it bigger or smaller."
+                },
+                {
+                  "type": "activity",
+                  "title": "Click each frame on the layout. Find all 4 frames! 🖼️📝",
+                  "instruction": "Interactive hotspot activity (see archived Foundations app for the original visual version)."
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "What does an image frame hold? 🖼️",
+                    "options": [
+                      "Words and sentences",
+                      "A photo or picture",
+                      "A table of numbers"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "An image frame holds a photo or picture. Click it to add or replace the image."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "How do you select a frame? 🖱️",
+                    "options": [
+                      "Press the Delete key",
+                      "Click on it",
+                      "Right-click and choose Print"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "Click a frame to select it. You will see handles appear around the edges."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "How do you resize a frame? ↔️",
+                    "options": [
+                      "Double-click the frame",
+                      "Drag a corner handle",
+                      "Press the Spacebar"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "Drag a corner handle to resize a frame. Drag from the middle to move it instead."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "e11_2_l4",
+              "title": "Editing Tools",
+              "estimatedMinutes": 30,
+              "blocks": [
+                {
+                  "type": "richText",
+                  "heading": "Insert adds new content to your page. ➕",
+                  "html": "Use Insert to add a new photo, text box, or shape.<br><br>Find it in the menu at the top of the screen."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Rotate turns an object to a different angle. 🔄",
+                  "html": "Drag the rotate handle above the object.<br><br>You can turn images and text frames sideways."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Resize makes an object bigger or smaller. ↔️",
+                  "html": "Drag a corner handle to change the size.<br><br>Hold Shift to keep the shape the same."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Order moves an object in front of or behind others. 📚",
+                  "html": "Right-click and choose Bring to Front or Send to Back.<br><br>This fixes objects that hide behind each other."
+                },
+                {
+                  "type": "richText",
+                  "heading": "A colour scheme picks matching colours for the page. 🎨",
+                  "html": "Choose a colour scheme so all colours match.<br><br>This makes your document look professional."
+                },
+                {
+                  "type": "activity",
+                  "title": "Match each problem to the correct editing tool. 🛠️",
+                  "pairs": [
+                    {
+                      "term": "I want to make my photo bigger",
+                      "definition": "Resize"
+                    },
+                    {
+                      "term": "I want to turn my image sideways",
+                      "definition": "Rotate"
+                    },
+                    {
+                      "term": "My text is hiding behind the photo",
+                      "definition": "Order"
+                    },
+                    {
+                      "term": "I want all my colours to match",
+                      "definition": "Colour scheme"
+                    }
+                  ]
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "Which tool adds a new photo to your page? ➕",
+                    "options": [
+                      "Rotate",
+                      "Order",
+                      "Insert"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "Use Insert to add new content. Find it in the menu at the top of the screen."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "Your text is hidden behind a photo. Which tool fixes this? 📚",
+                    "options": [
+                      "Resize",
+                      "Order",
+                      "Rotate"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "Order moves objects in front of or behind each other. Use Bring to Front or Send to Back."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "Which tool makes sure all your colours match? 🎨",
+                    "options": [
+                      "Colour scheme",
+                      "Rotate",
+                      "Insert"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "A colour scheme picks matching colours for your whole page. This makes your work look professional."
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e11_4",
+          "title": "Digital Photography",
+          "description": "E11.4",
+          "lessons": [
+            {
+              "id": "e11_4_l1",
+              "title": "Using Your Camera",
+              "estimatedMinutes": 15,
+              "blocks": [
+                {
+                  "type": "richText",
+                  "heading": "Resolution is how sharp your photo is. 📷",
+                  "html": "High resolution means more detail in the photo.<br><br>Always use the highest resolution setting you can."
+                },
+                {
+                  "type": "richText",
+                  "heading": "File format is how your photo is saved. 💾",
+                  "html": "<strong>JPEG</strong> — small file size, great for sharing online.<br><strong>PNG</strong> — larger file, keeps more detail.<br><br>JPEG is the most common format for photos."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Focus makes your subject sharp and clear. 🎯",
+                  "html": "Tap the screen to focus on your subject.<br><br>If the subject is blurry, the photo will not look good."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Exposure controls how bright the photo is. ☀️",
+                  "html": "Too much light makes a washed-out photo.<br><br>Too little light makes a dark, hard-to-see photo."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Use flash wisely. ⚡",
+                  "html": "Turn flash on in dark rooms to light your subject.<br><br>Turn flash off in bright light — it can wash things out."
+                },
+                {
+                  "type": "activity",
+                  "title": "Sort each photo scenario into Good Photo or Bad Photo. 📷",
+                  "categories": [
+                    {
+                      "label": "Good Photo ✅",
+                      "items": [
+                        "The subject is in focus and well lit",
+                        "The photo is sharp with natural light"
+                      ]
+                    },
+                    {
+                      "label": "Bad Photo ❌",
+                      "items": [
+                        "The photo is very dark and blurry",
+                        "The photo is washed out from too much flash",
+                        "The subject is tiny and hard to see"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "What does resolution mean? 📷",
+                    "options": [
+                      "How colourful a photo is",
+                      "How sharp a photo is",
+                      "How big the photo file is"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "Resolution means how sharp and detailed a photo is. Higher resolution means more detail."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "When should you use flash? ⚡",
+                    "options": [
+                      "In bright sunlight outside",
+                      "In a dark room",
+                      "Every time you take a photo"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "Use flash in dark rooms to light your subject. Turn it off in bright conditions — it can ruin the photo."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "What is the most common file format for photos? 💾",
+                    "options": [
+                      "MP3",
+                      "PDF",
+                      "JPEG"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "JPEG is the most common photo format. It has a small file size and is great for sharing online."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "e11_4_l2",
+              "title": "Composition Rules",
+              "estimatedMinutes": 20,
+              "blocks": [
+                {
+                  "type": "richText",
+                  "heading": "The Rule of Thirds divides the frame into 9 boxes. 📐",
+                  "html": "Imagine a 3×3 grid over your photo.<br><br>Place your subject on one of the four cross points."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Leading lines guide the viewer's eye. 🛤️",
+                  "html": "Use natural lines like roads, fences, or rivers.<br><br>The lines lead the eye toward your subject."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Framing uses objects to surround your subject. 🏠",
+                  "html": "Use a doorway, window, or trees as a frame.<br><br>This draws attention to the person or object inside."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Colour contrast makes your subject pop. 🌈",
+                  "html": "Place a bright subject against a darker background.<br><br>The contrast helps your subject stand out clearly."
+                },
+                {
+                  "type": "activity",
+                  "title": "Match each composition rule to its description. 📐",
+                  "pairs": [
+                    {
+                      "term": "Rule of Thirds",
+                      "definition": "Place subject on a grid cross point"
+                    },
+                    {
+                      "term": "Leading lines",
+                      "definition": "Use natural lines to guide the viewer's eye"
+                    },
+                    {
+                      "term": "Framing",
+                      "definition": "Surround your subject with objects"
+                    },
+                    {
+                      "term": "Colour contrast",
+                      "definition": "Put a bright subject on a darker background"
+                    }
+                  ]
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "What does the Rule of Thirds suggest? 📐",
+                    "options": [
+                      "Always centre your subject",
+                      "Place your subject on a grid cross point",
+                      "Take three photos of everything"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "The Rule of Thirds divides the frame into a 3×3 grid. Place your subject on one of the cross points."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "What are leading lines? 🛤️",
+                    "options": [
+                      "Lines of text in the photo",
+                      "Natural lines that guide the eye to the subject",
+                      "The border around your photo"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "Leading lines are natural lines like roads or rivers. They guide the viewer's eye toward your subject."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "Which technique uses a doorway or window around your subject? 🏠",
+                    "options": [
+                      "Rule of Thirds",
+                      "Leading lines",
+                      "Framing"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "Framing uses objects like doorways or trees to surround your subject. It draws the eye inward."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "e11_4_l3",
+              "title": "Editing Your Photos",
+              "estimatedMinutes": 20,
+              "blocks": [
+                {
+                  "type": "richText",
+                  "heading": "Crop cuts the edges to focus on your subject. ✂️",
+                  "html": "Drag the crop handles to remove unwanted areas.<br><br>This makes your subject fill more of the frame."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Brightness makes the photo lighter or darker. ☀️",
+                  "html": "Increase brightness if the photo is too dark.<br><br>Decrease brightness if the photo is too washed out."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Contrast makes light and dark areas stand out more. 🌓",
+                  "html": "High contrast makes colours look bold and punchy.<br><br>Low contrast makes everything look flat and dull."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Rotate straightens a crooked photo. 🔄",
+                  "html": "Use rotate to fix a photo taken at an angle.<br><br>Turn it until the horizon looks straight."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Red eye removal fixes red eyes from flash. 👁️",
+                  "html": "Flash can make eyes appear red in photos.<br><br>The red eye tool removes this effect automatically."
+                },
+                {
+                  "type": "activity",
+                  "title": "Match each photo problem to the correct editing tool. 🛠️",
+                  "pairs": [
+                    {
+                      "term": "Too much background in the shot",
+                      "definition": "Crop"
+                    },
+                    {
+                      "term": "Photo is too dark",
+                      "definition": "Brightness"
+                    },
+                    {
+                      "term": "Photo is sideways",
+                      "definition": "Rotate"
+                    },
+                    {
+                      "term": "Subject has red eyes from flash",
+                      "definition": "Red eye removal"
+                    }
+                  ]
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "Which tool removes unwanted edges from a photo? ✂️",
+                    "options": [
+                      "Brightness",
+                      "Crop",
+                      "Contrast"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "Crop cuts the edges of a photo. Use it to remove distracting backgrounds and focus on your subject."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "Your photo looks flat — light and dark look the same. Which tool helps? 🌓",
+                    "options": [
+                      "Rotate",
+                      "Crop",
+                      "Contrast"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "Contrast makes the light areas lighter and the dark areas darker. This makes the photo look more vivid."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "What causes red eye in a photo? 👁️",
+                    "options": [
+                      "The brightness setting is too high",
+                      "The flash reflecting in the eyes",
+                      "The photo was taken sideways"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "Flash can reflect inside the eye and cause red eye. Use the red eye removal tool to fix it."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "e11_4_l4",
+              "title": "Being Responsible with Photos",
+              "estimatedMinutes": 25,
+              "blocks": [
+                {
+                  "type": "richText",
+                  "heading": "Defamation means sharing a false photo that hurts someone. ⚠️",
+                  "html": "This can seriously damage a person's reputation.<br><br>Defamation is against the law in Australia."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Bias means only showing one side of the story. 📊",
+                  "html": "Choosing only flattering or unfair photos is bias.<br><br>Try to show photos that are fair and honest."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Always ask permission before sharing someone's photo. 🤝",
+                  "html": "Everyone has the right to control their own image.<br><br>Ask first — even if it is a friend."
+                },
+                {
+                  "type": "richText",
+                  "heading": "Think before you post. 🤔",
+                  "html": "Once a photo is online, it can spread quickly.<br><br>You may not be able to take it back."
+                },
+                {
+                  "type": "activity",
+                  "title": "Sort each action into the Right Thing or Wrong Thing. ✅❌",
+                  "categories": [
+                    {
+                      "label": "Right Thing ✅",
+                      "items": [
+                        "You ask a friend before posting their photo",
+                        "You choose photos that fairly show both sides",
+                        "You delete a photo when someone asks you to"
+                      ]
+                    },
+                    {
+                      "label": "Wrong Thing ❌",
+                      "items": [
+                        "You edit a photo to make someone look bad",
+                        "You share a photo that says something false about someone"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "What is defamation? ⚠️",
+                    "options": [
+                      "Editing a photo with filters",
+                      "Sharing a false photo that hurts someone",
+                      "Taking a photo without a flash"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "Defamation means sharing false content that damages someone's reputation. It is against the law."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "What should you do before posting a photo of someone? 🤝",
+                    "options": [
+                      "Edit it to look better",
+                      "Ask their permission first",
+                      "Add a funny caption"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "Always ask before sharing someone else's photo. Everyone has the right to control their own image."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "What does photo bias mean? 📊",
+                    "options": [
+                      "Taking blurry photos",
+                      "Only showing photos that favour one side",
+                      "Using too many filters"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "Bias means only choosing photos that show one side unfairly. Always try to be fair and honest."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit3",
+      "title": "Creative Digital Solutions",
+      "status": "coming_soon",
+      "topics": []
+    },
+    {
+      "id": "unit4",
+      "title": "Data and Society",
+      "status": "coming_soon",
+      "topics": []
+    }
+  ]
+}
