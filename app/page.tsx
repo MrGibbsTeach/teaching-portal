@@ -22,19 +22,39 @@ export default function Home() {
             {group.heading}
           </h2>
           <div className="mt-4 grid gap-4 sm:grid-cols-2">
-            {group.courses.map((course) => (
-              <Link key={course.slug} href={`/courses/${course.slug}`}>
-                <Card className="h-full transition-colors hover:bg-accent">
+            {group.courses.map((course) => {
+              const isPlaceholder = course.status === "placeholder";
+              const card = (
+                <Card
+                  className={
+                    isPlaceholder
+                      ? "h-full opacity-60 grayscale"
+                      : "h-full transition-colors hover:bg-accent"
+                  }
+                >
                   <CardHeader>
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-center justify-between gap-2">
                       <CardTitle>{course.title}</CardTitle>
-                      <Badge variant="secondary">{course.yearLevel}</Badge>
+                      {isPlaceholder ? (
+                        <Badge variant="outline">Coming soon</Badge>
+                      ) : (
+                        <Badge variant="secondary">{course.yearLevel}</Badge>
+                      )}
                     </div>
                     <CardDescription>{course.description}</CardDescription>
                   </CardHeader>
                 </Card>
-              </Link>
-            ))}
+              );
+              return isPlaceholder ? (
+                <div key={course.slug} className="cursor-default">
+                  {card}
+                </div>
+              ) : (
+                <Link key={course.slug} href={`/courses/${course.slug}`}>
+                  {card}
+                </Link>
+              );
+            })}
           </div>
         </section>
       ))}
