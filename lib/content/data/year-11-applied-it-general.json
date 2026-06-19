@@ -5,9 +5,3276 @@
     {
       "id": "personal-communication",
       "title": "Personal Communication",
-      "subtitle": "Using technology to meet personal needs",
-      "status": "coming_soon",
-      "topics": []
+      "subtitle": "Design, hardware, digital citizenship, and application skills",
+      "status": "available",
+      "topics": [
+        {
+          "id": "design-concepts",
+          "title": "Design Concepts",
+          "description": "Principles and elements of visual design used to create effective digital products.",
+          "lessons": [
+            {
+              "id": "elements-of-design",
+              "title": "Elements of Design",
+              "estimatedMinutes": 15,
+              "blocks": [
+                {
+                  "type": "heading",
+                  "text": "Elements of Design",
+                  "level": 2
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Design elements are the fundamental building blocks used in every visual product — from websites and posters to apps and infographics. Understanding these elements is essential before you can create or critique any digital work."
+                },
+                {
+                  "type": "heading",
+                  "text": "Line",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "A line connects two points and is one of the most basic design elements. Lines guide the eye, create structure, divide space, and communicate mood. Horizontal lines suggest calm; diagonal lines create energy and movement."
+                },
+                {
+                  "type": "heading",
+                  "text": "Shape",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Shapes are closed areas defined by boundaries. Geometric shapes (circles, squares, triangles) feel ordered and structured. Organic shapes (freeform, irregular) feel natural and dynamic. Shapes help group related information and draw attention."
+                },
+                {
+                  "type": "heading",
+                  "text": "Colour",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Colour creates mood, draws attention, and communicates meaning. The colour wheel shows relationships between colours. Warm colours (red, orange, yellow) feel energetic; cool colours (blue, green, purple) feel calm. Always ensure sufficient contrast for readability."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Hue",
+                  "definition": "The pure colour itself (e.g., red, blue, yellow)."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Saturation",
+                  "definition": "The intensity or vibrancy of a colour — from vivid to grey."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Value",
+                  "definition": "The lightness or darkness of a colour (tint = lighter, shade = darker)."
+                },
+                {
+                  "type": "heading",
+                  "text": "Texture",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Texture refers to the surface quality of an element — rough, smooth, soft, hard. In digital design, texture is implied (visual texture) rather than physical. Backgrounds and overlays often use texture to add depth and interest."
+                },
+                {
+                  "type": "heading",
+                  "text": "Space",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Space includes both positive space (the subject or content) and negative space (the empty area around it). Effective use of white space reduces clutter, improves readability, and gives designs a professional feel."
+                },
+                {
+                  "type": "heading",
+                  "text": "Form",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Form refers to 3D shapes or the illusion of depth in a 2D space. Drop shadows, gradients, and perspective techniques create the impression of form in flat designs."
+                },
+                {
+                  "type": "heading",
+                  "text": "Typography",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Typography — the style and arrangement of text — is a major design element covered in detail in Lesson 3. Font choice, size, weight, and spacing all affect readability and tone."
+                },
+                {
+                  "type": "callout",
+                  "variant": "tip",
+                  "text": "When analysing any design, identify which elements are present and consider WHY the designer made each choice. Good design is always intentional."
+                },
+                {
+                  "type": "table",
+                  "headers": [
+                    "Element",
+                    "What it does",
+                    "Design use"
+                  ],
+                  "rows": [
+                    [
+                      "Line",
+                      "Guides the eye and creates structure",
+                      "Dividers, borders, arrows, charts"
+                    ],
+                    [
+                      "Shape",
+                      "Groups content and draws attention",
+                      "Buttons, icons, diagrams, frames"
+                    ],
+                    [
+                      "Colour",
+                      "Creates mood and communicates meaning",
+                      "Branding, highlighting, contrast"
+                    ],
+                    [
+                      "Texture",
+                      "Adds depth and visual interest",
+                      "Backgrounds, overlays, card surfaces"
+                    ],
+                    [
+                      "Space",
+                      "Controls breathing room and focus",
+                      "White space, padding, margins"
+                    ],
+                    [
+                      "Form",
+                      "Creates illusion of depth",
+                      "Shadows, gradients, 3D effects"
+                    ],
+                    [
+                      "Typography",
+                      "Communicates tone and hierarchy",
+                      "Headings, body, captions, labels"
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "principles-of-design",
+              "title": "Principles of Design",
+              "estimatedMinutes": 15,
+              "blocks": [
+                {
+                  "type": "heading",
+                  "text": "Principles of Design",
+                  "level": 2
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Design principles are rules that guide how elements are arranged and used together to create effective, visually appealing work. While elements are what you design WITH, principles are how you design."
+                },
+                {
+                  "type": "heading",
+                  "text": "Contrast",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Contrast is the difference between elements — dark vs. light, large vs. small, bold vs. thin. Strong contrast draws the eye to key content and improves readability. Poor contrast makes text hard to read and designs feel flat."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Contrast",
+                  "definition": "The degree of visual difference between elements; used to create emphasis and improve readability."
+                },
+                {
+                  "type": "heading",
+                  "text": "Alignment",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Alignment means positioning elements so they line up with each other. Even when elements look randomly placed, good alignment creates hidden structure that makes designs feel orderly and professional. Left-alignment is most common for body text in Western cultures."
+                },
+                {
+                  "type": "heading",
+                  "text": "Repetition",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Repeating visual elements (colours, fonts, shapes) throughout a design creates consistency and strengthens brand identity. Repetition ties different parts of a design together into a cohesive whole."
+                },
+                {
+                  "type": "heading",
+                  "text": "Proximity",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Related items should be grouped close together. Proximity creates visual relationships — items near each other are perceived as belonging together. Unrelated items should have more space between them."
+                },
+                {
+                  "type": "heading",
+                  "text": "Balance",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Balance refers to the visual weight distribution in a design. Symmetrical balance (same on both sides) feels formal and stable. Asymmetrical balance uses different elements of equal visual weight on each side, creating a more dynamic feel."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Visual weight",
+                  "definition": "How heavy an element appears — larger, darker, and more complex elements feel heavier."
+                },
+                {
+                  "type": "heading",
+                  "text": "Emphasis / Hierarchy",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Not all content is equally important. Emphasis directs the viewer's attention to the most important element first, then guides them through secondary and tertiary information. Size, colour, position, and contrast all create hierarchy."
+                },
+                {
+                  "type": "heading",
+                  "text": "Unity",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Unity means all parts of a design feel like they belong together. A unified design has consistent colour schemes, fonts, and spacing. Lack of unity makes designs feel chaotic and unprofessional."
+                },
+                {
+                  "type": "callout",
+                  "variant": "important",
+                  "text": "SCSA exams ask you to both IDENTIFY and JUSTIFY design principles. Don't just name a principle — explain what it does and why the designer used it."
+                },
+                {
+                  "type": "table",
+                  "headers": [
+                    "Principle",
+                    "Definition",
+                    "Example"
+                  ],
+                  "rows": [
+                    [
+                      "Contrast",
+                      "Visual difference between elements",
+                      "White text on dark background"
+                    ],
+                    [
+                      "Alignment",
+                      "Elements lined up to create structure",
+                      "All headings left-aligned"
+                    ],
+                    [
+                      "Repetition",
+                      "Consistent visual elements throughout",
+                      "Same brand colours on every page"
+                    ],
+                    [
+                      "Proximity",
+                      "Related items grouped together",
+                      "Caption placed directly under image"
+                    ],
+                    [
+                      "Balance",
+                      "Even distribution of visual weight",
+                      "Two columns of equal visual weight"
+                    ],
+                    [
+                      "Emphasis",
+                      "Directing attention to key content",
+                      "Large bold headline above body text"
+                    ],
+                    [
+                      "Unity",
+                      "Cohesive, consistent overall feel",
+                      "Consistent fonts and spacing throughout"
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "typography",
+              "title": "Typography",
+              "estimatedMinutes": 12,
+              "blocks": [
+                {
+                  "type": "heading",
+                  "text": "Typography",
+                  "level": 2
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Typography is the art and technique of arranging type to make written language readable, legible, and appealing. In digital design, good typography is essential for communicating information clearly and setting the tone of a product."
+                },
+                {
+                  "type": "heading",
+                  "text": "Font Classifications",
+                  "level": 3
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Serif",
+                  "definition": "Fonts with small decorative strokes (serifs) at the ends of letters. Examples: Times New Roman, Georgia. Often used in print and formal documents."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Sans-serif",
+                  "definition": "Fonts without serifs — clean and modern. Examples: Arial, Helvetica, Roboto. Preferred for screens and digital interfaces."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Script",
+                  "definition": "Fonts that mimic handwriting. Decorative — use sparingly and never for body text."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Monospace",
+                  "definition": "Each character takes the same width. Examples: Courier, Consolas. Used for code and technical documents."
+                },
+                {
+                  "type": "heading",
+                  "text": "Key Typography Terms",
+                  "level": 3
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Typeface / Font family",
+                  "definition": "A set of related fonts sharing a common design (e.g., \"Arial\" includes Arial Regular, Bold, Italic)."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Font weight",
+                  "definition": "The thickness of strokes — from thin/light through regular to bold and black."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Leading (line spacing)",
+                  "definition": "The vertical space between lines of text. Too tight = hard to read; too loose = disconnected."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Kerning",
+                  "definition": "The space between individual character pairs, adjusted for visual balance."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Tracking",
+                  "definition": "The uniform spacing applied across a whole word or block of text."
+                },
+                {
+                  "type": "heading",
+                  "text": "Type Hierarchy",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Type hierarchy organises text into levels of importance. A typical hierarchy has: H1 (main heading) → H2 (subheading) → H3 (section heading) → Body text → Captions. Each level should be visually distinct through size, weight, or colour."
+                },
+                {
+                  "type": "heading",
+                  "text": "Readability Guidelines",
+                  "level": 3
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Use a maximum of 2–3 fonts per design (usually one for headings, one for body)",
+                    "Body text should be at least 14–16px for screen readability",
+                    "Maintain strong contrast between text and background (WCAG recommends at least 4.5:1 ratio)",
+                    "Avoid long lines of text — aim for 50–75 characters per line",
+                    "Use sentence case for body text; use title case or ALL CAPS sparingly"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "variant": "warning",
+                  "text": "Using too many fonts is one of the most common amateur design mistakes. Stick to one or two complementary typefaces and use weight and size to create variety."
+                }
+              ]
+            },
+            {
+              "id": "compositional-rules",
+              "title": "Compositional Rules",
+              "estimatedMinutes": 12,
+              "blocks": [
+                {
+                  "type": "heading",
+                  "text": "Compositional Rules",
+                  "level": 2
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Compositional rules are guidelines for placing elements within a design canvas to create visually appealing and effective layouts. These rules come from photography and art but are directly applicable to digital design."
+                },
+                {
+                  "type": "heading",
+                  "text": "Rule of Thirds",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Divide your canvas into a 3×3 grid. Place key subjects or content at the intersections of those grid lines (called \"power points\"). This creates a more dynamic and interesting composition than simply centring everything."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Rule of Thirds",
+                  "definition": "A compositional guideline that divides the frame into a 3×3 grid and places subjects at the intersection points for a balanced, dynamic result."
+                },
+                {
+                  "type": "heading",
+                  "text": "Visual Flow",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Visual flow is the path the viewer's eye naturally travels through a design. In Western cultures, the eye typically starts top-left and moves right, then down (the \"Z-pattern\"). Place the most important content where the eye starts."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Z-pattern",
+                  "definition": "A common eye-movement pattern in Western readers: left-to-right across the top, diagonally down-left, then left-to-right again across the bottom."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "F-pattern",
+                  "definition": "An eye-movement pattern common on text-heavy pages: readers scan across the top, then down the left side with shorter horizontal scans — forming an F shape."
+                },
+                {
+                  "type": "heading",
+                  "text": "White Space",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "White space (also called negative space) is the empty area between and around design elements. It is not wasted space — it gives designs room to breathe, improves readability, and creates a sense of professionalism and elegance."
+                },
+                {
+                  "type": "heading",
+                  "text": "Grid Systems",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Grids are invisible frameworks of rows and columns that help align content consistently. Most websites and digital documents use a 12-column grid, allowing flexible layouts (1 column, 2, 3, 4, or 6 columns) while maintaining alignment."
+                },
+                {
+                  "type": "heading",
+                  "text": "Focal Point",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Every good design has a clear focal point — the element that immediately catches the viewer's attention. This is usually achieved through size (make it bigger), colour (use a contrasting colour), or position (place it prominently)."
+                },
+                {
+                  "type": "callout",
+                  "variant": "info",
+                  "text": "When asked to analyse a design in an exam, start by identifying the focal point and then describe how compositional rules have been used to guide the viewer's eye to it."
+                },
+                {
+                  "type": "table",
+                  "headers": [
+                    "Rule",
+                    "What it involves",
+                    "Why it works"
+                  ],
+                  "rows": [
+                    [
+                      "Rule of Thirds",
+                      "Place subjects at grid intersection points",
+                      "Creates dynamic, balanced compositions"
+                    ],
+                    [
+                      "Visual flow",
+                      "Guide the eye through content in logical order",
+                      "Ensures important content is seen first"
+                    ],
+                    [
+                      "White space",
+                      "Leave empty area around and between elements",
+                      "Reduces clutter, improves readability"
+                    ],
+                    [
+                      "Grid system",
+                      "Align content to invisible column structure",
+                      "Creates consistent, professional layouts"
+                    ],
+                    [
+                      "Focal point",
+                      "One element dominates and attracts attention first",
+                      "Communicates priority and hierarchy"
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "analysing-and-applying-design",
+              "title": "Analysing and Applying Design",
+              "estimatedMinutes": 20,
+              "blocks": [
+                {
+                  "type": "heading",
+                  "text": "Analysing and Applying Design",
+                  "level": 2
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Being able to analyse existing designs and then apply those principles to your own work is a core skill in AIT. This lesson brings together all the design concepts from this topic."
+                },
+                {
+                  "type": "heading",
+                  "text": "How to Analyse a Design",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Use a structured approach when analysing any digital product. Work through elements, then principles, then overall effectiveness."
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "items": [
+                    "Identify the purpose and audience of the design",
+                    "List the design elements present (line, shape, colour, space, typography...)",
+                    "Identify which design principles have been applied (contrast, alignment, proximity...)",
+                    "Evaluate how effectively the design communicates its message",
+                    "Suggest at least one improvement and explain why it would help"
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Design for Purpose and Audience",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Every design decision should serve the purpose of the product and the needs of the target audience. A design for primary school children needs large fonts, bright colours, and simple layouts. A design for legal professionals needs formal typography, neutral colours, and dense information."
+                },
+                {
+                  "type": "callout",
+                  "variant": "important",
+                  "text": "SCSA exams frequently ask you to \"justify\" design decisions. Always connect your choice to purpose and audience — not just personal preference."
+                },
+                {
+                  "type": "heading",
+                  "text": "Designing for Accessibility",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Accessible design ensures digital products can be used by people with disabilities. Key accessibility considerations include: sufficient colour contrast, not relying on colour alone to convey meaning, readable font sizes, alt text for images, and logical heading structure."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "WCAG",
+                  "definition": "Web Content Accessibility Guidelines — international standards for making web content accessible to people with disabilities."
+                },
+                {
+                  "type": "heading",
+                  "text": "The Design Cycle",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Professional designers follow an iterative design cycle: Define the problem → Research and analyse → Sketch and prototype → Test with users → Refine → Deliver. You'll use this cycle in your project work."
+                },
+                {
+                  "type": "task",
+                  "title": "Design Analysis Task",
+                  "software": "Any website or document",
+                  "intro": "Choose any real website, poster, or digital document and complete a structured design analysis.",
+                  "steps": [
+                    "Select a website, app, or printed digital product to analyse (e.g., your school website, a news site, a product poster)",
+                    "Screenshot or print a section of the design",
+                    "Identify and label at least 4 design elements visible in the design",
+                    "Identify and explain at least 3 design principles that have been applied",
+                    "Write 2–3 sentences evaluating how effectively the design serves its purpose and audience",
+                    "Write one specific improvement suggestion and justify it using design language",
+                    "Save or print your annotated analysis ready to share"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "design-concepts-quiz",
+              "title": "Design Concepts Quiz",
+              "estimatedMinutes": 15,
+              "blocks": [
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "dc-q1",
+                    "questionType": "mcq",
+                    "text": "Which design element refers to the empty area around and between design elements?",
+                    "options": [
+                      "Texture",
+                      "Form",
+                      "Space",
+                      "Line"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "Space (including white or negative space) is the empty area in a design. It improves readability and gives designs a professional, uncluttered feel."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "dc-q2",
+                    "questionType": "mcq",
+                    "text": "A designer uses the same brand colour on every page of a website. Which design principle does this demonstrate?",
+                    "options": [
+                      "Contrast",
+                      "Repetition",
+                      "Proximity",
+                      "Balance"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "Repetition means consistently using the same visual elements (colours, fonts, shapes) throughout a design to create unity and strengthen brand identity."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "dc-q3",
+                    "questionType": "true_false",
+                    "text": "Sans-serif fonts have small decorative strokes at the ends of letters.",
+                    "correctAnswer": false,
+                    "explanation": "False. SERIF fonts have small decorative strokes (serifs). SANS-serif means \"without serifs\" — they have clean, undecorated letterforms. Sans-serif fonts like Arial and Helvetica are preferred for on-screen text."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "dc-q4",
+                    "questionType": "mcq",
+                    "text": "Which compositional rule divides the canvas into a 3×3 grid and places subjects at the intersection points?",
+                    "options": [
+                      "Z-pattern",
+                      "F-pattern",
+                      "Rule of Thirds",
+                      "Golden Ratio"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "The Rule of Thirds divides the canvas into a 3×3 grid. Placing subjects at the four intersection points (power points) creates more dynamic and visually interesting compositions than centring everything."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "dc-q5",
+                    "questionType": "mcq",
+                    "text": "A heading is large and bold, a subheading is medium weight, and body text is small and regular. Which design principle is being applied?",
+                    "options": [
+                      "Unity",
+                      "Proximity",
+                      "Balance",
+                      "Emphasis / Hierarchy"
+                    ],
+                    "correctIndex": 3,
+                    "explanation": "Emphasis (or visual hierarchy) directs the viewer's attention to the most important content first and guides them through information in order of importance. Size and weight differences create this hierarchy."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "dc-q6",
+                    "questionType": "true_false",
+                    "text": "The Z-pattern describes how readers typically move their eyes through a text-heavy page, forming a Z shape.",
+                    "correctAnswer": false,
+                    "explanation": "False. Text-heavy pages typically follow an F-pattern (scanning across the top, then down the left). The Z-pattern is for pages with less text, where the eye scans across the top, diagonally to bottom-left, then across the bottom."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "dc-q7",
+                    "questionType": "mcq",
+                    "text": "Which term describes the vertical space between lines of text?",
+                    "options": [
+                      "Kerning",
+                      "Tracking",
+                      "Leading",
+                      "Weight"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "Leading (line-height) is the vertical space between lines of text. Too tight and lines feel cramped; too loose and text feels disconnected. Kerning is space between character pairs; tracking is uniform letter-spacing across a block."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "dc-q8",
+                    "questionType": "mcq",
+                    "text": "A website for young children uses large fonts, bright primary colours, and simple icons. What design concept best explains these choices?",
+                    "options": [
+                      "Using repetition for brand consistency",
+                      "Designing for purpose and audience",
+                      "Applying the rule of thirds",
+                      "Creating visual texture"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "Design decisions should always serve the purpose and target audience. Children need large, readable fonts, engaging bright colours, and simple visuals to navigate effectively — these are intentional audience-driven choices."
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hardware",
+          "title": "Hardware",
+          "description": "Types of computer systems, internal components, input/output devices, and troubleshooting.",
+          "lessons": [
+            {
+              "id": "types-of-computer-systems",
+              "title": "Types of Computer Systems",
+              "estimatedMinutes": 15,
+              "blocks": [
+                {
+                  "type": "heading",
+                  "text": "Types of Computer Systems",
+                  "level": 2
+                },
+                {
+                  "type": "paragraph",
+                  "text": "A computer system is any device that can accept input, process data, store information, and produce output. Different types of computer systems are designed for different purposes, environments, and user needs."
+                },
+                {
+                  "type": "heading",
+                  "text": "Personal Computers",
+                  "level": 3
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Desktop computer",
+                  "definition": "A full-size computer system kept in one place; separate monitor, tower, keyboard, and mouse. High performance for the price; easy to upgrade."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Laptop / Notebook",
+                  "definition": "A portable, battery-powered computer with built-in display, keyboard, and trackpad. Sacrifices some performance for portability."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Tablet",
+                  "definition": "A touchscreen portable device, typically no physical keyboard. Designed for media consumption and light productivity."
+                },
+                {
+                  "type": "heading",
+                  "text": "Mobile Devices",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Smartphones and tablets are essentially small computers running mobile operating systems (iOS, Android). They use ARM processors designed for low power consumption and have integrated components (camera, GPS, microphone, sensors)."
+                },
+                {
+                  "type": "heading",
+                  "text": "Servers",
+                  "level": 3
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Server",
+                  "definition": "A powerful computer (or software service) that provides resources, data, or services to other computers (clients) over a network. Designed to run continuously and handle many simultaneous requests."
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Web servers host websites; file servers store shared files; database servers manage data; email servers handle messages. Cloud services are servers you access over the internet rather than owning locally."
+                },
+                {
+                  "type": "heading",
+                  "text": "Embedded Systems",
+                  "level": 3
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Embedded system",
+                  "definition": "A computer system built into a device to perform a specific, dedicated function. Examples: microwave controller, car engine management system, ATM, smart TV."
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Embedded systems are everywhere — washing machines, traffic lights, medical devices, and industrial robots all contain embedded processors. They are optimised for their specific task and usually cannot run general software."
+                },
+                {
+                  "type": "heading",
+                  "text": "Comparing Computer Types",
+                  "level": 3
+                },
+                {
+                  "type": "table",
+                  "headers": [
+                    "Type",
+                    "Portability",
+                    "Performance",
+                    "Primary use"
+                  ],
+                  "rows": [
+                    [
+                      "Desktop",
+                      "Not portable",
+                      "High",
+                      "Home/office productivity, gaming, design"
+                    ],
+                    [
+                      "Laptop",
+                      "Highly portable",
+                      "Medium–high",
+                      "Work, study, travel"
+                    ],
+                    [
+                      "Tablet",
+                      "Very portable",
+                      "Medium",
+                      "Media, light apps, education"
+                    ],
+                    [
+                      "Smartphone",
+                      "Pocket-sized",
+                      "Medium",
+                      "Communication, apps, media"
+                    ],
+                    [
+                      "Server",
+                      "Not portable",
+                      "Very high",
+                      "Hosting, data storage, network services"
+                    ],
+                    [
+                      "Embedded",
+                      "Built-in",
+                      "Task-specific",
+                      "Dedicated device control"
+                    ]
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "variant": "info",
+                  "text": "When choosing a computer system for a given purpose, always consider: portability requirements, processing demands, budget, and whether the device needs to be upgraded over time."
+                }
+              ]
+            },
+            {
+              "id": "cpu-and-memory",
+              "title": "CPU and Memory",
+              "estimatedMinutes": 18,
+              "blocks": [
+                {
+                  "type": "heading",
+                  "text": "CPU and Memory",
+                  "level": 2
+                },
+                {
+                  "type": "paragraph",
+                  "text": "The CPU (Central Processing Unit) and memory are the core processing components of any computer. Together they determine how quickly and effectively a computer can handle tasks."
+                },
+                {
+                  "type": "heading",
+                  "text": "The CPU",
+                  "level": 3
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "CPU (Central Processing Unit)",
+                  "definition": "The primary processor of a computer — executes program instructions, performs calculations, and controls all other hardware components. Often called the \"brain\" of the computer."
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Modern CPUs contain multiple processing cores, allowing them to handle several tasks simultaneously (parallel processing). A quad-core CPU can work on four instruction streams at once."
+                },
+                {
+                  "type": "table",
+                  "headers": [
+                    "CPU specification",
+                    "What it means",
+                    "Effect on performance"
+                  ],
+                  "rows": [
+                    [
+                      "Clock speed (GHz)",
+                      "How many processing cycles per second",
+                      "Higher = faster at single tasks"
+                    ],
+                    [
+                      "Number of cores",
+                      "How many independent processors on the chip",
+                      "More cores = better multitasking"
+                    ],
+                    [
+                      "Cache size (L1/L2/L3)",
+                      "Ultra-fast memory built into the CPU",
+                      "Larger cache = fewer slow RAM lookups"
+                    ],
+                    [
+                      "Thermal Design Power",
+                      "How much heat the CPU generates",
+                      "Higher TDP needs better cooling"
+                    ]
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Primary Storage — RAM",
+                  "level": 3
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "RAM (Random Access Memory)",
+                  "definition": "Volatile, fast, temporary memory that stores currently running programs and data. Contents are lost when power is turned off."
+                },
+                {
+                  "type": "paragraph",
+                  "text": "RAM is the computer's working memory. When you open a program, it is loaded from storage into RAM so the CPU can access it quickly. More RAM allows more programs to run simultaneously without slowing down."
+                },
+                {
+                  "type": "heading",
+                  "text": "ROM and Cache",
+                  "level": 3
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "ROM (Read-Only Memory)",
+                  "definition": "Non-volatile memory that stores permanent firmware (e.g., BIOS/UEFI). Contents are retained without power and cannot normally be modified."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Cache memory",
+                  "definition": "Very fast memory built into or near the CPU, storing frequently accessed data for rapid retrieval. Much faster than RAM but very small."
+                },
+                {
+                  "type": "heading",
+                  "text": "Secondary Storage",
+                  "level": 3
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "HDD (Hard Disk Drive)",
+                  "definition": "Magnetic storage device using spinning platters. Large capacity, lower cost, but slower and more vulnerable to physical damage."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "SSD (Solid State Drive)",
+                  "definition": "Flash-based storage with no moving parts. Faster, more durable, and quieter than HDD, but historically more expensive per GB (gap is closing)."
+                },
+                {
+                  "type": "heading",
+                  "text": "The Fetch-Decode-Execute Cycle",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "The CPU works by repeatedly: FETCHING an instruction from memory → DECODING what the instruction means → EXECUTING the instruction. This cycle runs billions of times per second on a modern CPU."
+                },
+                {
+                  "type": "callout",
+                  "variant": "tip",
+                  "text": "Memory hierarchy from fastest/smallest to slowest/largest: Cache → RAM → SSD → HDD → Optical/USB. Data moves up the hierarchy when needed and back down for long-term storage."
+                }
+              ]
+            },
+            {
+              "id": "input-output-and-peripheral-devices",
+              "title": "Input, Output, and Peripheral Devices",
+              "estimatedMinutes": 15,
+              "blocks": [
+                {
+                  "type": "heading",
+                  "text": "Input, Output, and Peripheral Devices",
+                  "level": 2
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Peripheral devices connect to a computer to expand its capabilities. They are classified as input devices (sending data IN to the computer), output devices (receiving processed data OUT from the computer), or storage devices (both)."
+                },
+                {
+                  "type": "heading",
+                  "text": "Input Devices",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Input devices allow humans to enter data and instructions into a computer."
+                },
+                {
+                  "type": "table",
+                  "headers": [
+                    "Device",
+                    "Type of input",
+                    "Common use"
+                  ],
+                  "rows": [
+                    [
+                      "Keyboard",
+                      "Text and commands",
+                      "Typing documents, entering code"
+                    ],
+                    [
+                      "Mouse / Trackpad",
+                      "Pointing and clicking",
+                      "Navigating GUI interfaces"
+                    ],
+                    [
+                      "Microphone",
+                      "Audio",
+                      "Voice recording, video calls, speech-to-text"
+                    ],
+                    [
+                      "Webcam",
+                      "Video and images",
+                      "Video conferencing, streaming"
+                    ],
+                    [
+                      "Scanner",
+                      "Images from physical documents",
+                      "Digitising paper documents"
+                    ],
+                    [
+                      "Touchscreen",
+                      "Touch gestures",
+                      "Tablets, smartphones, kiosks"
+                    ],
+                    [
+                      "Barcode / QR scanner",
+                      "Encoded data from labels",
+                      "Retail, logistics"
+                    ]
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Output Devices",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Output devices present processed information to the user."
+                },
+                {
+                  "type": "table",
+                  "headers": [
+                    "Device",
+                    "Output type",
+                    "Common use"
+                  ],
+                  "rows": [
+                    [
+                      "Monitor",
+                      "Visual",
+                      "Displaying the GUI and content"
+                    ],
+                    [
+                      "Printer",
+                      "Physical document",
+                      "Documents, photos, labels"
+                    ],
+                    [
+                      "Speakers / Headphones",
+                      "Audio",
+                      "Music, alerts, video calls"
+                    ],
+                    [
+                      "Projector",
+                      "Large visual display",
+                      "Presentations, classrooms"
+                    ]
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Ports and Connections",
+                  "level": 3
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "USB (Universal Serial Bus)",
+                  "definition": "The most common wired connection standard for peripheral devices. USB-A, USB-C, and Micro-USB are common connector types."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "HDMI",
+                  "definition": "High Definition Multimedia Interface — transmits both high-definition video and audio over a single cable. Used for monitors, TVs, and projectors."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Bluetooth",
+                  "definition": "Short-range wireless communication standard for connecting peripherals like keyboards, mice, headphones, and speakers without cables."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Wi-Fi",
+                  "definition": "Wireless network standard for connecting devices to a local area network and the internet."
+                },
+                {
+                  "type": "heading",
+                  "text": "Choosing the Right Device",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "When selecting a peripheral for a task, consider: what type of input or output is needed, compatibility with the computer's ports, whether wireless or wired is preferable, and the environment of use."
+                },
+                {
+                  "type": "callout",
+                  "variant": "info",
+                  "text": "Some devices are both input and output — a touchscreen is an output device (displays content) and an input device (accepts touch). USB storage drives can read AND write data."
+                }
+              ]
+            },
+            {
+              "id": "troubleshooting-hardware-and-software",
+              "title": "Troubleshooting Hardware and Software",
+              "estimatedMinutes": 20,
+              "blocks": [
+                {
+                  "type": "heading",
+                  "text": "Troubleshooting Hardware and Software",
+                  "level": 2
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Troubleshooting is a systematic process of identifying and resolving problems with computer hardware and software. Good troubleshooters work methodically rather than randomly trying fixes."
+                },
+                {
+                  "type": "heading",
+                  "text": "The Troubleshooting Process",
+                  "level": 3
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "items": [
+                    "Identify the problem — what exactly is happening? What error messages appear?",
+                    "Establish a theory of probable cause — what could cause this symptom?",
+                    "Test the theory — try the most likely fix first",
+                    "Establish a plan of action — if the theory was correct, implement the full fix",
+                    "Verify the solution — confirm the problem is resolved",
+                    "Document the solution — record what was wrong and how it was fixed"
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Common Hardware Problems",
+                  "level": 3
+                },
+                {
+                  "type": "table",
+                  "headers": [
+                    "Symptom",
+                    "Possible cause",
+                    "Common fix"
+                  ],
+                  "rows": [
+                    [
+                      "Computer won't turn on",
+                      "Power cable disconnected, faulty PSU, dead battery",
+                      "Check power connections, try different outlet, charge battery"
+                    ],
+                    [
+                      "Overheating / shutting down",
+                      "Blocked vents, dust buildup, faulty fan",
+                      "Clean vents with compressed air, check fans, improve airflow"
+                    ],
+                    [
+                      "Slow performance",
+                      "Too many programs running, insufficient RAM, malware",
+                      "Close unused programs, check Task Manager, run antivirus scan"
+                    ],
+                    [
+                      "Display flickering or blank",
+                      "Loose cable, driver issue, failing display",
+                      "Check video cable, update display driver, test with external monitor"
+                    ],
+                    [
+                      "No audio",
+                      "Muted, wrong output device selected, driver issue",
+                      "Check volume, select correct audio output, update audio drivers"
+                    ],
+                    [
+                      "Printer not printing",
+                      "Offline, driver issue, paper jam, empty ink",
+                      "Set as default printer, check for jams, check ink levels"
+                    ]
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Common Software Problems",
+                  "level": 3
+                },
+                {
+                  "type": "table",
+                  "headers": [
+                    "Symptom",
+                    "Possible cause",
+                    "Common fix"
+                  ],
+                  "rows": [
+                    [
+                      "Program crashes on open",
+                      "Corrupt install, missing file, incompatibility",
+                      "Reinstall the program, check compatibility requirements"
+                    ],
+                    [
+                      "Computer freezes",
+                      "Insufficient RAM, software bug, overheating",
+                      "Force-quit unresponsive programs, restart, check for updates"
+                    ],
+                    [
+                      "Slow internet browser",
+                      "Too many tabs/extensions, browser cache full",
+                      "Close tabs, disable extensions, clear cache and cookies"
+                    ],
+                    [
+                      "Files not saving",
+                      "No disk space, permission error, drive failure",
+                      "Check storage space, check file permissions, save to different location"
+                    ],
+                    [
+                      "Blue Screen of Death (BSOD)",
+                      "Driver failure, hardware fault, Windows error",
+                      "Note the error code, update drivers, run Windows memory test"
+                    ]
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Safe Troubleshooting Practices",
+                  "level": 3
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Always back up important data before making major changes",
+                    "Change one thing at a time so you can identify what fixed the problem",
+                    "Restart the computer before assuming a serious problem — many issues resolve with a restart",
+                    "Search the exact error message online for known fixes",
+                    "If in doubt, seek help from a qualified technician rather than making things worse"
+                  ]
+                },
+                {
+                  "type": "task",
+                  "title": "Troubleshooting Practice Task",
+                  "software": "Your own computer",
+                  "intro": "Work through four real troubleshooting scenarios to practise the systematic approach.",
+                  "steps": [
+                    "Scenario 1 — Find and fix a performance issue: Open Task Manager (Ctrl+Shift+Esc). Identify the top CPU and RAM consumers. Close any programs not currently needed. Record before/after CPU usage.",
+                    "Scenario 2 — Storage check: Check how much free storage space your computer has. If less than 10% is free, identify the largest files or folders and document what could be removed.",
+                    "Scenario 3 — Software update check: Open Settings and check for operating system updates. Record whether updates are available and their size/description.",
+                    "Scenario 4 — Startup programs: Open Task Manager > Startup tab. Identify programs that launch at startup. Research what each one does and record whether it is necessary.",
+                    "Write a brief troubleshooting report: for each scenario, note what you found and what action (if any) you took or recommend."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "hardware-quiz",
+              "title": "Hardware Quiz",
+              "estimatedMinutes": 15,
+              "blocks": [
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "hw-q1",
+                    "questionType": "mcq",
+                    "text": "Which type of computer system is specifically designed to provide services to other computers over a network?",
+                    "options": [
+                      "Desktop PC",
+                      "Laptop",
+                      "Server",
+                      "Embedded system"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "Servers provide resources, data, and services to other computers (clients) over a network. Web servers host websites, file servers store shared files, and database servers manage data."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "hw-q2",
+                    "questionType": "mcq",
+                    "text": "What is RAM?",
+                    "options": [
+                      "Read-only memory that stores the BIOS firmware",
+                      "Fast temporary memory that stores currently running programs",
+                      "Long-term storage for files and the operating system",
+                      "Memory built into the CPU for rapid data access"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "RAM (Random Access Memory) is volatile, fast, temporary memory. Programs are loaded from storage into RAM so the CPU can access them quickly. Content is lost when power is turned off."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "hw-q3",
+                    "questionType": "true_false",
+                    "text": "An SSD is faster than an HDD because it uses spinning magnetic platters to read data.",
+                    "correctAnswer": false,
+                    "explanation": "False. HDDs use spinning platters. SSDs are faster because they use flash memory chips with no moving parts — they can access data almost instantly, while HDDs must wait for the platter to spin to the right position."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "hw-q4",
+                    "questionType": "mcq",
+                    "text": "A barcode scanner is best described as which type of device?",
+                    "options": [
+                      "Output device",
+                      "Input device",
+                      "Storage device",
+                      "Processing device"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "A barcode scanner is an input device — it reads data (the encoded barcode) and sends it into the computer. Output devices produce information from the computer (e.g., monitors, printers)."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "hw-q5",
+                    "questionType": "mcq",
+                    "text": "During troubleshooting, why should you change only one thing at a time?",
+                    "options": [
+                      "It takes less time than trying multiple fixes at once",
+                      "So you can identify exactly which change fixed the problem",
+                      "Changing multiple things can corrupt the operating system",
+                      "It is required by IT safety regulations"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "Changing one thing at a time is methodical — if you change three things and the problem disappears, you cannot know which change fixed it, making future troubleshooting harder."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "hw-q6",
+                    "questionType": "mcq",
+                    "text": "What is the primary function of the CPU?",
+                    "options": [
+                      "Store programs and files permanently",
+                      "Display graphics on the screen",
+                      "Execute program instructions and perform calculations",
+                      "Manage network communications"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "The CPU (Central Processing Unit) is the primary processor — it fetches instructions, decodes them, and executes them. It controls all other hardware and performs arithmetic and logic operations."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "hw-q7",
+                    "questionType": "true_false",
+                    "text": "A touchscreen is both an input and an output device.",
+                    "correctAnswer": true,
+                    "explanation": "True. A touchscreen outputs visual information (display) and also accepts touch input from the user — it functions as both simultaneously."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "hw-q8",
+                    "questionType": "mcq",
+                    "text": "Which troubleshooting step should you take FIRST before assuming a serious problem with a slow or frozen computer?",
+                    "options": [
+                      "Reinstall the operating system",
+                      "Replace the RAM",
+                      "Restart the computer",
+                      "Run a full disk format"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "Restarting the computer is the first and simplest troubleshooting step — it clears RAM, closes misbehaving processes, and resolves many temporary issues without any risk of data loss or complex intervention."
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "impacts-of-technology",
+          "title": "Impacts of Technology",
+          "description": "Workplace safety, privacy, digital citizenship, environmental responsibility, and changing communication.",
+          "lessons": [
+            {
+              "id": "work-health-and-safety-in-the-digital-workplace",
+              "title": "Work Health and Safety in the Digital Workplace",
+              "estimatedMinutes": 15,
+              "blocks": [
+                {
+                  "type": "heading",
+                  "text": "Work Health and Safety in the Digital Workplace",
+                  "level": 2
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Using digital technology for extended periods can cause physical health issues. Work Health and Safety (WHS) laws in Australia require employers and workers to identify and minimise these risks in the workplace."
+                },
+                {
+                  "type": "heading",
+                  "text": "Ergonomics",
+                  "level": 3
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Ergonomics",
+                  "definition": "The science of designing workspaces, equipment, and tasks to fit the human body and reduce the risk of injury."
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Poor ergonomic setup is a leading cause of workplace injury for computer users. A well-designed workstation minimises strain on the body during long periods of computer use."
+                },
+                {
+                  "type": "heading",
+                  "text": "Ergonomic Workstation Setup",
+                  "level": 3
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Monitor: top of screen at eye level, arm's length away",
+                    "Chair: adjustable height so feet are flat on the floor, lower back supported",
+                    "Keyboard and mouse: positioned so forearms are horizontal and wrists are straight",
+                    "Lighting: avoid glare on the screen; use indirect lighting",
+                    "Documents: use a document holder at the same height as the monitor to reduce neck rotation"
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Common WHS Issues",
+                  "level": 3
+                },
+                {
+                  "type": "table",
+                  "headers": [
+                    "Issue",
+                    "Cause",
+                    "Prevention"
+                  ],
+                  "rows": [
+                    [
+                      "Repetitive strain injury (RSI)",
+                      "Repetitive movements of hands and wrists",
+                      "Ergonomic keyboard/mouse, regular breaks, correct technique"
+                    ],
+                    [
+                      "Eye strain (digital eye strain)",
+                      "Prolonged screen exposure, glare, blue light",
+                      "20-20-20 rule, reduce glare, correct monitor brightness"
+                    ],
+                    [
+                      "Back and neck pain",
+                      "Poor posture, non-adjustable chair, screen too high/low",
+                      "Ergonomic chair, monitor at eye level, lumbar support"
+                    ],
+                    [
+                      "Headaches",
+                      "Eye strain, poor lighting, dehydration",
+                      "Regular breaks, correct lighting, stay hydrated"
+                    ],
+                    [
+                      "Sedentary behaviour",
+                      "Sitting for long periods",
+                      "Stand/walk breaks, sit-stand desk, scheduled movement"
+                    ]
+                  ]
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "20-20-20 rule",
+                  "definition": "Every 20 minutes, look at something 20 feet (6 metres) away for at least 20 seconds. Reduces eye strain from screen use."
+                },
+                {
+                  "type": "heading",
+                  "text": "WHS Legal Obligations",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Under the Work Health and Safety Act 2011 (WA), employers must provide a safe working environment. This includes safe workstations, appropriate equipment, and training on safe computer use. Workers also have a duty to follow safe work practices."
+                },
+                {
+                  "type": "callout",
+                  "variant": "warning",
+                  "text": "Repetitive strain injuries can become chronic (long-term) if ignored. Take regular breaks, report discomfort early, and use proper technique to avoid permanent damage."
+                }
+              ]
+            },
+            {
+              "id": "privacy-and-personal-information",
+              "title": "Privacy and Personal Information",
+              "estimatedMinutes": 15,
+              "blocks": [
+                {
+                  "type": "heading",
+                  "text": "Privacy and Personal Information",
+                  "level": 2
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Personal information is any data that can identify an individual — names, addresses, phone numbers, financial details, medical records, photos, and online identifiers. Protecting privacy in the digital age is increasingly challenging."
+                },
+                {
+                  "type": "heading",
+                  "text": "Why Digital Privacy Matters",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Every online interaction generates data. Websites track browsing behaviour, social media platforms collect personal information, and apps request access to cameras, locations, and contacts. This data is used for targeted advertising, sold to third parties, and can be breached in cyberattacks."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Personal information",
+                  "definition": "Any information or opinion that identifies or could reasonably identify an individual, whether true or not."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Data breach",
+                  "definition": "An incident where personal information is accessed, disclosed, or stolen without authorisation."
+                },
+                {
+                  "type": "heading",
+                  "text": "Australian Privacy Law",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "The Privacy Act 1988 (Cth) regulates how Australian government agencies and businesses handle personal information. The Australian Privacy Principles (APPs) require organisations to: collect only necessary data, keep it secure, allow individuals to access their own data, and not use it for unintended purposes."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Privacy Act 1988",
+                  "definition": "Australian federal legislation that sets rules for how organisations collect, use, and disclose personal information through the Australian Privacy Principles (APPs)."
+                },
+                {
+                  "type": "heading",
+                  "text": "Protecting Your Privacy Online",
+                  "level": 3
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Use strong, unique passwords for each account and enable multi-factor authentication",
+                    "Review app permissions — does a flashlight app really need access to your contacts?",
+                    "Read privacy policies before agreeing (at least check what data is collected and how it is shared)",
+                    "Use HTTPS websites for any sensitive transactions",
+                    "Limit what personal information you share on social media",
+                    "Use a VPN on public Wi-Fi networks"
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Data Collection by Organisations",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Organisations that collect your data must tell you: what information they are collecting, why they need it, and who they might share it with. You generally have the right to access, correct, or request deletion of your personal data."
+                },
+                {
+                  "type": "callout",
+                  "variant": "important",
+                  "text": "If an organisation has a data breach that is likely to cause serious harm, under Australian law they must notify both the Australian Information Commissioner and the affected individuals."
+                }
+              ]
+            },
+            {
+              "id": "digital-citizenship-and-online-conduct",
+              "title": "Digital Citizenship and Online Conduct",
+              "estimatedMinutes": 15,
+              "blocks": [
+                {
+                  "type": "heading",
+                  "text": "Digital Citizenship and Online Conduct",
+                  "level": 2
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Digital citizenship is the responsible, ethical, and safe use of technology. Good digital citizens respect others online, protect their own and others' privacy, and understand the legal and ethical implications of their online behaviour."
+                },
+                {
+                  "type": "heading",
+                  "text": "Responsible Online Behaviour",
+                  "level": 3
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Think before you post — content shared online can be permanent and spread quickly",
+                    "Treat others online as you would in person — the same respect applies",
+                    "Verify information before sharing — false information spreads easily on social media",
+                    "Respect intellectual property — credit the source of content you use or share",
+                    "Protect your own and others' personal information"
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Cyberbullying",
+                  "level": 3
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Cyberbullying",
+                  "definition": "The use of digital technology to repeatedly harm, harass, humiliate, or threaten another person. Includes social media attacks, spreading rumours, threatening messages, and sharing humiliating content."
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Cyberbullying can have serious psychological effects on victims. In Australia, the Online Safety Act 2021 requires major online platforms to have mechanisms to report and remove seriously harmful content. The eSafety Commissioner can direct platforms to remove harmful material."
+                },
+                {
+                  "type": "heading",
+                  "text": "Legal Regulations for Online Conduct",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Several laws govern what you can and cannot do online in Australia."
+                },
+                {
+                  "type": "table",
+                  "headers": [
+                    "Regulation",
+                    "What it covers",
+                    "Consequence of breach"
+                  ],
+                  "rows": [
+                    [
+                      "Defamation / Slander law",
+                      "Making false statements that damage someone's reputation (online posts, reviews, comments)",
+                      "Civil action — defendant may be ordered to pay damages"
+                    ],
+                    [
+                      "Copyright Act 1968",
+                      "Protects original creative works — you cannot copy, share, or publish others' content without permission",
+                      "Legal action, fines, takedown notices"
+                    ],
+                    [
+                      "Piracy laws",
+                      "Illegal copying or distribution of software, films, music, and games",
+                      "Fines up to $117,500 or imprisonment for commercial piracy"
+                    ],
+                    [
+                      "Cyberbullying / Online Safety Act 2021",
+                      "Serious online abuse targeting Australians",
+                      "Removal orders; criminal penalties for severe cases"
+                    ],
+                    [
+                      "Spam Act 2003",
+                      "Prohibits sending unsolicited commercial electronic messages without consent",
+                      "Fines up to $1.1 million per day for organisations"
+                    ]
+                  ]
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Defamation",
+                  "definition": "The publication of false factual statements that damage a person's reputation. Online posts, social media comments, and reviews can all constitute defamation under Australian law."
+                },
+                {
+                  "type": "heading",
+                  "text": "Managing Your Digital Footprint",
+                  "level": 3
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Digital footprint",
+                  "definition": "The trail of data you leave behind from all online activity — posts, searches, purchases, likes, and account registrations."
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Your digital footprint can be permanent. Employers, universities, and others may search your name online. Audit your online presence regularly — Google yourself, review privacy settings on social media, and remove content that no longer represents you positively."
+                },
+                {
+                  "type": "callout",
+                  "variant": "warning",
+                  "text": "Screen-shotting and sharing someone else's private messages, photos, or location without permission can violate privacy laws and constitute cyberbullying — even if the original content was shared in a private group."
+                }
+              ]
+            },
+            {
+              "id": "e-waste-and-environmental-responsibility",
+              "title": "E-Waste and Environmental Responsibility",
+              "estimatedMinutes": 12,
+              "blocks": [
+                {
+                  "type": "heading",
+                  "text": "E-Waste and Environmental Responsibility",
+                  "level": 2
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Electronic waste (e-waste) is the fastest-growing waste stream in the world. As technology evolves rapidly, old devices are discarded at increasing rates. Managing e-waste responsibly is a critical environmental challenge."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "E-waste",
+                  "definition": "Discarded electronic devices and components — computers, phones, tablets, printers, batteries, cables, and other technology."
+                },
+                {
+                  "type": "heading",
+                  "text": "Why E-Waste is Harmful",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Electronic devices contain toxic materials including lead, mercury, cadmium, and brominated flame retardants. When dumped in landfill, these chemicals leach into soil and groundwater, causing serious environmental and health damage. Much e-waste is illegally shipped to developing countries where it is processed under hazardous conditions."
+                },
+                {
+                  "type": "heading",
+                  "text": "Responsible Disposal Options",
+                  "level": 3
+                },
+                {
+                  "type": "table",
+                  "headers": [
+                    "Method",
+                    "Description",
+                    "Best for"
+                  ],
+                  "rows": [
+                    [
+                      "Manufacturer take-back",
+                      "Return device to the manufacturer for responsible recycling",
+                      "Most electronics — check brand website"
+                    ],
+                    [
+                      "National TV and Computer Recycling Scheme (NTCRS)",
+                      "Free government-supported recycling for televisions and computers in Australia",
+                      "TVs, desktop PCs, laptops, peripherals"
+                    ],
+                    [
+                      "Council e-waste collection",
+                      "Local government drop-off events or facilities",
+                      "Mixed small electronics"
+                    ],
+                    [
+                      "Certified e-waste recyclers",
+                      "Commercial services that handle data destruction and recycling",
+                      "Business equipment with sensitive data"
+                    ],
+                    [
+                      "Donation / resale",
+                      "Donate working devices to charity, schools, or community groups",
+                      "Devices still in working condition"
+                    ]
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Data Security Before Disposal",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Before disposing of any device, remove all personal data. Simply deleting files is not enough — data can be recovered. Use the device's factory reset function and, for sensitive data, use disk-wiping software that overwrites all sectors. Remove and destroy SIM cards and memory cards separately."
+                },
+                {
+                  "type": "heading",
+                  "text": "Extending Device Lifespan",
+                  "level": 3
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Repair rather than replace where possible — battery replacements, screen repairs extend life significantly",
+                    "Keep software updated to maintain performance and security on older hardware",
+                    "Buy quality and buy for longevity rather than cheapest available",
+                    "Consider refurbished devices — same performance at lower cost and environmental impact"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "variant": "info",
+                  "text": "Australia's NTCRS provides free recycling for computers and televisions at hundreds of drop-off points nationally. Check recyclingnearyou.com.au to find your nearest location."
+                }
+              ]
+            },
+            {
+              "id": "digital-vs-traditional-communication",
+              "title": "Digital vs Traditional Communication",
+              "estimatedMinutes": 12,
+              "blocks": [
+                {
+                  "type": "heading",
+                  "text": "Digital vs Traditional Communication",
+                  "level": 2
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Technology has transformed the way people communicate — in personal life, education, and the workplace. Understanding the differences between digital and traditional communication methods helps you choose the right tool for each situation."
+                },
+                {
+                  "type": "heading",
+                  "text": "Traditional Communication Methods",
+                  "level": 3
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Face-to-face conversation",
+                    "Written letters and physical mail",
+                    "Landline telephone calls",
+                    "Printed notices and memos",
+                    "In-person meetings"
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Digital Communication Methods",
+                  "level": 3
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Email and electronic messaging (SMS, Messenger, WhatsApp)",
+                    "Video calls (Zoom, Teams, FaceTime)",
+                    "Social media (Instagram, TikTok, Facebook, X)",
+                    "Online collaboration tools (Google Workspace, Microsoft Teams)",
+                    "Discussion forums and community platforms"
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Comparing Communication Methods",
+                  "level": 3
+                },
+                {
+                  "type": "table",
+                  "headers": [
+                    "Aspect",
+                    "Traditional",
+                    "Digital"
+                  ],
+                  "rows": [
+                    [
+                      "Speed",
+                      "Slow (letters take days)",
+                      "Instant (messages delivered in seconds)"
+                    ],
+                    [
+                      "Cost",
+                      "Higher (postage, printing, travel)",
+                      "Low (internet connection required)"
+                    ],
+                    [
+                      "Reach",
+                      "Local/national",
+                      "Global — anyone with internet access"
+                    ],
+                    [
+                      "Non-verbal cues",
+                      "Full (face-to-face), partial (phone)",
+                      "Limited — text loses tone and body language"
+                    ],
+                    [
+                      "Record keeping",
+                      "Physical records can be lost or damaged",
+                      "Digital records easily stored and searchable"
+                    ],
+                    [
+                      "Accessibility",
+                      "Requires physical presence or infrastructure",
+                      "Accessible from any device, anywhere"
+                    ],
+                    [
+                      "Security",
+                      "Physical interception possible",
+                      "Cybersecurity risks — hacking, phishing, data breaches"
+                    ]
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Impact on Work and Society",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Digital communication has enabled remote work, global collaboration, and instant access to information. However, it has also created new challenges: information overload, digital isolation, the blurring of work and personal life, and reduced face-to-face interaction skills."
+                },
+                {
+                  "type": "heading",
+                  "text": "Choosing the Right Method",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Not all communication is best done digitally. Complex emotional conversations are often better face-to-face; legal documents may require physical signatures; some communities prefer in-person interaction. Good digital citizens understand when technology helps and when it hinders communication."
+                },
+                {
+                  "type": "callout",
+                  "variant": "tip",
+                  "text": "In exams, compare communication methods using specific criteria: speed, cost, reach, security, non-verbal cues, and permanence. Always link your answer to the specific context given in the question."
+                }
+              ]
+            },
+            {
+              "id": "impacts-of-technology-quiz",
+              "title": "Impacts of Technology Quiz",
+              "estimatedMinutes": 12,
+              "blocks": [
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "iot-q1",
+                    "questionType": "mcq",
+                    "text": "What does the 20-20-20 rule help prevent?",
+                    "options": [
+                      "Repetitive strain injury in the wrists",
+                      "Eye strain from prolonged screen use",
+                      "Back pain from poor posture",
+                      "Data loss from unsaved documents"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "The 20-20-20 rule — every 20 minutes, look at something 20 feet away for 20 seconds — is specifically designed to reduce digital eye strain caused by prolonged screen use."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "iot-q2",
+                    "questionType": "mcq",
+                    "text": "The Privacy Act 1988 requires Australian organisations to do which of the following?",
+                    "options": [
+                      "Encrypt all data using military-grade encryption",
+                      "Collect only necessary personal information and keep it secure",
+                      "Share personal data only with government agencies",
+                      "Delete all customer data after 12 months"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "The Australian Privacy Principles (APPs) under the Privacy Act 1988 require organisations to collect only data that is necessary, handle it securely, allow individuals to access their data, and not use it for unintended purposes."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "iot-q3",
+                    "questionType": "true_false",
+                    "text": "Cyberbullying is only harmful if it involves direct threats of violence.",
+                    "correctAnswer": false,
+                    "explanation": "False. Cyberbullying includes spreading rumours, humiliating content, exclusion, and persistent harassment — not just direct threats. Even non-violent online behaviour can cause serious psychological harm and may be illegal under the Online Safety Act 2021."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "iot-q4",
+                    "questionType": "mcq",
+                    "text": "Why should you not simply \"delete\" files before disposing of a computer?",
+                    "options": [
+                      "Deleting files slows down the recycling process",
+                      "Deleted files can be recovered using data recovery tools",
+                      "Deletion causes permanent hardware damage",
+                      "Australian law prohibits deleting data before disposal"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "Simply deleting files removes the reference to them but the data remains on the drive and can be recovered with forensic tools. Factory reset and disk-wiping software that overwrites all sectors are needed for true data destruction."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "iot-q5",
+                    "questionType": "mcq",
+                    "text": "Which of the following is a disadvantage of digital communication compared to face-to-face interaction?",
+                    "options": [
+                      "Higher cost per message",
+                      "Slower delivery speed",
+                      "Limited non-verbal cues and tone",
+                      "Shorter reach to recipients"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "Digital text communication (email, SMS, social media) loses tone of voice, facial expressions, and body language — the non-verbal cues that make up a significant portion of human communication. This can lead to misunderstandings."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "iot-q6",
+                    "questionType": "true_false",
+                    "text": "Making a false online post that damages someone's reputation can constitute defamation under Australian law.",
+                    "correctAnswer": true,
+                    "explanation": "True. Defamation is the publication of a false factual statement that damages someone's reputation. Australian defamation law applies to online posts, social media comments, reviews, and any other publicly accessible statement — not just traditional media."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "iot-q7",
+                    "questionType": "mcq",
+                    "text": "What is e-waste?",
+                    "options": [
+                      "Spam emails and junk digital files taking up storage",
+                      "Discarded electronic devices and components",
+                      "Illegal electronic surveillance equipment",
+                      "Energy wasted by inefficient computer systems"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "E-waste (electronic waste) refers to discarded electronic devices and components — computers, phones, tablets, printers, batteries, and cables. It is the world's fastest-growing waste stream and contains toxic materials that must be disposed of responsibly."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "iot-q8",
+                    "questionType": "mcq",
+                    "text": "Which Australian law applies to sending unsolicited commercial emails?",
+                    "options": [
+                      "Privacy Act 1988",
+                      "Online Safety Act 2021",
+                      "Spam Act 2003",
+                      "Copyright Act 1968"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "The Spam Act 2003 prohibits sending unsolicited commercial electronic messages without consent. Organisations that violate it can be fined up to $1.1 million per day."
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "application-skills",
+          "title": "Application Skills",
+          "description": "Word processing, spreadsheets, email, document design, and collaborative tools with practical tasks.",
+          "lessons": [
+            {
+              "id": "word-processing-features",
+              "title": "Word Processing Features",
+              "estimatedMinutes": 15,
+              "blocks": [
+                {
+                  "type": "heading",
+                  "text": "Word Processing Features",
+                  "level": 2
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Word processing software (Microsoft Word, Google Docs, LibreOffice Writer) is used to create, edit, format, and publish text-based documents. Knowing how to use these tools effectively is a core workplace skill."
+                },
+                {
+                  "type": "heading",
+                  "text": "Core Word Processing Features",
+                  "level": 3
+                },
+                {
+                  "type": "table",
+                  "headers": [
+                    "Feature",
+                    "What it does",
+                    "Example use"
+                  ],
+                  "rows": [
+                    [
+                      "Styles and themes",
+                      "Apply consistent formatting across a document with one click",
+                      "Applying \"Heading 1\" to all main headings"
+                    ],
+                    [
+                      "Find and Replace",
+                      "Locate and change text throughout the document",
+                      "Replacing a company name across a 50-page report"
+                    ],
+                    [
+                      "Track Changes",
+                      "Record edits and who made them for review",
+                      "Collaborating on a document with a teacher"
+                    ],
+                    [
+                      "Comments",
+                      "Add notes without changing the document text",
+                      "Reviewer questions for the author"
+                    ],
+                    [
+                      "Tables",
+                      "Organise data in rows and columns within the document",
+                      "Comparison tables, schedules"
+                    ],
+                    [
+                      "Headers and Footers",
+                      "Repeating content at top/bottom of every page",
+                      "Page numbers, document title, date"
+                    ],
+                    [
+                      "Table of Contents",
+                      "Automatic list of headings and page numbers",
+                      "Long reports and formal documents"
+                    ],
+                    [
+                      "Mail Merge",
+                      "Create personalised copies of a document for many recipients",
+                      "Letters to multiple students with individual names"
+                    ]
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Formatting Text",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Consistent formatting makes documents professional and easy to read. Use styles rather than manually formatting each heading to ensure consistency. Key formatting options include font, size, weight (bold), italics, underline, colour, alignment, indentation, and spacing."
+                },
+                {
+                  "type": "heading",
+                  "text": "Collaboration Features",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Modern word processors support real-time collaboration. Multiple users can edit simultaneously in Google Docs; Word and LibreOffice support this through cloud storage. Track Changes and Comments allow structured review and feedback cycles."
+                },
+                {
+                  "type": "callout",
+                  "variant": "tip",
+                  "text": "In a SCSA exam, you may need to describe the function of a specific word processing feature and explain a context where it would be useful. Know the name, function, and a realistic use case for each feature."
+                }
+              ]
+            },
+            {
+              "id": "word-processing-practical-task",
+              "title": "Word Processing Practical Task",
+              "estimatedMinutes": 30,
+              "blocks": [
+                {
+                  "type": "heading",
+                  "text": "Word Processing Practical Task",
+                  "level": 2
+                },
+                {
+                  "type": "paragraph",
+                  "text": "In this task you will create a professionally formatted multi-page document that demonstrates your word processing skills."
+                },
+                {
+                  "type": "callout",
+                  "variant": "info",
+                  "text": "This task is designed to take approximately 25–30 minutes. Work through each step in order. Your final document will demonstrate all the key word processing skills covered in this topic."
+                },
+                {
+                  "type": "task",
+                  "title": "Formatted Newsletter Document",
+                  "software": "Microsoft Word or Google Docs",
+                  "intro": "Create a 2-page school newsletter about technology that uses a range of word processing features.",
+                  "steps": [
+                    "Open a new blank document. Set the page to A4 with 2.5cm margins on all sides.",
+                    "Add a document title: \"AIT Tech Newsletter\" — apply the Heading 1 style and centre-align it.",
+                    "Add today's date below the title in a smaller font (12pt), italicised and centred.",
+                    "Create a Header that shows \"AIT Tech Newsletter\" on the left and your name on the right on every page.",
+                    "Add a Footer with an auto page number centred on every page.",
+                    "Write at least three sections with Heading 2 style headings. Suggested topics: \"Latest Tech Trends\", \"Digital Safety Tips\", \"Useful Apps for Students\".",
+                    "Under each heading, write at least one paragraph (minimum 4 sentences). Apply the Normal or Body Text paragraph style.",
+                    "Insert a 3-column table under one section with at least 4 data rows. Add a bold header row.",
+                    "Create a bullet-point list of at least 5 items under one section.",
+                    "Use Find and Replace to change one repeated word in your document (e.g., replace \"students\" with \"learners\").",
+                    "Insert an automatic Table of Contents on a new first page (go to References > Table of Contents).",
+                    "Save the document as \"AIT_Newsletter_[YourName]\" in both .docx and PDF format."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "spreadsheet-features",
+              "title": "Spreadsheet Features",
+              "estimatedMinutes": 15,
+              "blocks": [
+                {
+                  "type": "heading",
+                  "text": "Spreadsheet Features",
+                  "level": 2
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Spreadsheet applications (Microsoft Excel, Google Sheets, LibreOffice Calc) are used to organise, calculate, and visualise data. They are essential tools in business, finance, science, and many other fields."
+                },
+                {
+                  "type": "heading",
+                  "text": "Core Spreadsheet Concepts",
+                  "level": 3
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Cell",
+                  "definition": "The individual box in a spreadsheet, identified by column letter and row number (e.g., B3)."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Formula",
+                  "definition": "A calculation entered in a cell, starting with \"=\". Formulas can reference other cells and perform arithmetic, logic, and text operations."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Function",
+                  "definition": "A pre-built formula that performs a specific calculation. Examples: SUM(), AVERAGE(), COUNT(), IF(), MAX(), MIN()."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Absolute reference",
+                  "definition": "A cell reference that does not change when copied — written with dollar signs (e.g., $B$3)."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Relative reference",
+                  "definition": "A cell reference that adjusts automatically when copied to a new position (e.g., B3 becomes C3 when copied one column right)."
+                },
+                {
+                  "type": "heading",
+                  "text": "Essential Functions",
+                  "level": 3
+                },
+                {
+                  "type": "table",
+                  "headers": [
+                    "Function",
+                    "What it does",
+                    "Example"
+                  ],
+                  "rows": [
+                    [
+                      "SUM",
+                      "Adds all values in a range",
+                      "=SUM(B2:B10)"
+                    ],
+                    [
+                      "AVERAGE",
+                      "Calculates the mean of a range",
+                      "=AVERAGE(C2:C15)"
+                    ],
+                    [
+                      "COUNT",
+                      "Counts cells containing numbers",
+                      "=COUNT(A1:A50)"
+                    ],
+                    [
+                      "COUNTA",
+                      "Counts non-empty cells",
+                      "=COUNTA(A1:A50)"
+                    ],
+                    [
+                      "MAX / MIN",
+                      "Returns the highest / lowest value",
+                      "=MAX(D2:D20)"
+                    ],
+                    [
+                      "IF",
+                      "Returns different values based on a condition",
+                      "=IF(B3>50,\"Pass\",\"Fail\")"
+                    ],
+                    [
+                      "VLOOKUP",
+                      "Searches for a value in a column and returns a related value",
+                      "=VLOOKUP(A2,Table,2,FALSE)"
+                    ]
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Data Visualisation with Charts",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Charts help communicate patterns and comparisons in data visually. Common chart types: Column/bar (comparing categories), Line (trends over time), Pie (proportions of a whole), Scatter (relationships between two variables)."
+                },
+                {
+                  "type": "heading",
+                  "text": "Formatting and Data Management",
+                  "level": 3
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Freeze rows/columns to keep headers visible while scrolling",
+                    "Sort and filter data to find specific values or patterns",
+                    "Conditional formatting automatically colours cells based on their values",
+                    "Data validation restricts what can be entered in cells (e.g., only numbers, only from a list)",
+                    "PivotTables summarise large datasets dynamically"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "variant": "tip",
+                  "text": "In SCSA exams you may be asked to write a formula to solve a specific problem. Practise translating word problems into formulas — \"calculate the total sales for March\" → =SUM(B3:B31) or similar."
+                }
+              ]
+            },
+            {
+              "id": "spreadsheet-practical-task",
+              "title": "Spreadsheet Practical Task",
+              "estimatedMinutes": 30,
+              "blocks": [
+                {
+                  "type": "heading",
+                  "text": "Spreadsheet Practical Task",
+                  "level": 2
+                },
+                {
+                  "type": "paragraph",
+                  "text": "In this task you will build a spreadsheet that analyses student results data using formulas, functions, and charts."
+                },
+                {
+                  "type": "callout",
+                  "variant": "info",
+                  "text": "Work through each step in order. When finished, your spreadsheet should be functional — all formulas should calculate automatically when you change input data."
+                },
+                {
+                  "type": "task",
+                  "title": "Student Results Analyser",
+                  "software": "Microsoft Excel or Google Sheets",
+                  "intro": "Build a results spreadsheet for a class of 10 fictional students that calculates grades and visualises performance.",
+                  "steps": [
+                    "Open a new blank spreadsheet. In Row 1 create the following column headers: Student Name, Test 1, Test 2, Test 3, Average, Grade, Pass/Fail.",
+                    "Enter data for 10 fictional students. Each test score should be a number between 0 and 100.",
+                    "In column E (Average), write a formula using AVERAGE() to calculate the average of the three test scores for the first student. Copy this formula down for all 10 students.",
+                    "In column F (Grade), use a nested IF formula to assign a letter grade: 85+ = A, 70–84 = B, 55–69 = C, 40–54 = D, below 40 = E.",
+                    "In column G (Pass/Fail), write an IF formula that shows \"Pass\" if the average is 55 or above, and \"Fail\" below 55.",
+                    "Below the data, create a summary section with the following calculated values: Class Average (AVERAGE of column E), Highest Score (MAX), Lowest Score (MIN), Number Passing (COUNTIF with \">= 55\").",
+                    "Apply conditional formatting to column E: colour cells green if the average is 70 or above, and red if below 55.",
+                    "Create a column chart showing each student's average score. Add a chart title (\"Class Average by Student\") and label the axes.",
+                    "Format the sheet professionally: bold the header row, add borders around the data table, and freeze row 1.",
+                    "Save as \"Results_Analyser_[YourName]\" in .xlsx and .pdf formats."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "email-and-webmail",
+              "title": "Email and Webmail",
+              "estimatedMinutes": 12,
+              "blocks": [
+                {
+                  "type": "heading",
+                  "text": "Email and Webmail",
+                  "level": 2
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Email (electronic mail) is one of the most widely used communication tools in professional environments. Understanding how to use email effectively and professionally is an essential workplace skill."
+                },
+                {
+                  "type": "heading",
+                  "text": "How Email Works",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "When you send an email, it travels from your email client to your outgoing mail server (using SMTP), which routes it to the recipient's incoming mail server (using IMAP or POP3), where it waits to be downloaded to their device."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "SMTP",
+                  "definition": "Simple Mail Transfer Protocol — the standard for sending email between servers."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "IMAP",
+                  "definition": "Internet Message Access Protocol — allows email to be accessed from multiple devices; messages stay on the server."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "POP3",
+                  "definition": "Post Office Protocol — downloads email to one device and removes it from the server."
+                },
+                {
+                  "type": "heading",
+                  "text": "Professional Email Etiquette",
+                  "level": 3
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Use a clear, specific subject line — \"AIT Assignment Question\" not \"Help\"",
+                    "Use an appropriate greeting — \"Dear Mr Gibbs,\" or \"Hi [Name],\"",
+                    "Keep the body concise and on-topic; use paragraphs for readability",
+                    "Proofread before sending — check spelling, grammar, and that attachments are attached",
+                    "Use a professional sign-off — \"Kind regards,\" or \"Thank you,\"",
+                    "Reply promptly — within 24 hours for professional correspondence",
+                    "Use CC for people who need to be informed; BCC for privacy when emailing many recipients"
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Email Security",
+                  "level": 3
+                },
+                {
+                  "type": "table",
+                  "headers": [
+                    "Threat",
+                    "What it is",
+                    "How to protect yourself"
+                  ],
+                  "rows": [
+                    [
+                      "Phishing",
+                      "Fraudulent emails pretending to be trusted organisations",
+                      "Check sender address, don't click unknown links, verify requests"
+                    ],
+                    [
+                      "Malware attachments",
+                      "Files that install malicious software when opened",
+                      "Don't open attachments from unknown senders; scan before opening"
+                    ],
+                    [
+                      "Spam",
+                      "Unsolicited bulk email, often advertising or scam content",
+                      "Use spam filters; don't unsubscribe from scam lists (confirms address)"
+                    ],
+                    [
+                      "Email spoofing",
+                      "Fake emails with a forged \"From\" address",
+                      "Check full sender address; use email authentication (DMARC, SPF)"
+                    ]
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Organising Your Inbox",
+                  "level": 3
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Use folders or labels to organise emails by project, sender, or status",
+                    "Archive emails you've dealt with rather than leaving them in the inbox",
+                    "Set up rules/filters to automatically sort incoming mail",
+                    "Flag or star important emails for follow-up",
+                    "Regularly unsubscribe from newsletters and marketing emails you don't read"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "variant": "warning",
+                  "text": "Never send sensitive information (passwords, financial details, personal identity documents) via email. Email is not inherently secure — always use encrypted channels for sensitive data."
+                }
+              ]
+            },
+            {
+              "id": "document-design-and-layout",
+              "title": "Document Design and Layout",
+              "estimatedMinutes": 15,
+              "blocks": [
+                {
+                  "type": "heading",
+                  "text": "Document Design and Layout",
+                  "level": 2
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Applying design principles to documents makes information easier to read, more professional, and more persuasive. The design concepts you learned in Topic 1 apply directly to the documents you create in word processors."
+                },
+                {
+                  "type": "heading",
+                  "text": "Applying Design Principles to Documents",
+                  "level": 3
+                },
+                {
+                  "type": "table",
+                  "headers": [
+                    "Design principle",
+                    "In a document..."
+                  ],
+                  "rows": [
+                    [
+                      "Hierarchy",
+                      "Use Heading 1 → Heading 2 → Heading 3 → Body to show information levels"
+                    ],
+                    [
+                      "Contrast",
+                      "Bold headings against regular body text; coloured accents against neutral backgrounds"
+                    ],
+                    [
+                      "Alignment",
+                      "Align all text and images to a consistent grid; don't mix left- and centre-aligned body text"
+                    ],
+                    [
+                      "Repetition",
+                      "Use the same font, colour, and header style throughout the document"
+                    ],
+                    [
+                      "Proximity",
+                      "Keep a heading close to its section; add more space between sections than within them"
+                    ],
+                    [
+                      "White space",
+                      "Use margins, paragraph spacing, and padding — a dense document is hard to read"
+                    ]
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Page Layout Decisions",
+                  "level": 3
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Margins: standard is 2.5cm on all sides; wider margins increase white space and readability",
+                    "Columns: multi-column layouts work well for newsletters and magazines but poorly for formal reports",
+                    "Page size: A4 for most documents; A5 for booklets; Letter (US) if your audience is primarily American",
+                    "Orientation: portrait for most documents; landscape for wide tables, charts, or presentations",
+                    "Line spacing: 1.15–1.5 for body text; 1.0 is too tight for most reading; double-spaced for academic drafts"
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Tables, Images, and Visual Elements",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Tables should have a clear header row in bold or a contrasting colour. Alternate row colours (zebra striping) improve scan-readability. Images should be relevant, well-positioned, and captioned. Avoid wrapping text tightly around small images."
+                },
+                {
+                  "type": "heading",
+                  "text": "Common Document Types and Their Conventions",
+                  "level": 3
+                },
+                {
+                  "type": "table",
+                  "headers": [
+                    "Document type",
+                    "Key layout conventions"
+                  ],
+                  "rows": [
+                    [
+                      "Business letter",
+                      "Company letterhead, formal salutation, date, reference line, professional sign-off"
+                    ],
+                    [
+                      "Formal report",
+                      "Title page, table of contents, executive summary, numbered sections, bibliography"
+                    ],
+                    [
+                      "Newsletter",
+                      "Masthead/banner, columns, pull quotes, images with captions, consistent branding"
+                    ],
+                    [
+                      "Resume/CV",
+                      "Clear hierarchy, consistent formatting, minimal colour, plenty of white space"
+                    ],
+                    [
+                      "Brochure",
+                      "Tri-fold panels, compelling visuals, clear call-to-action, short punchy text"
+                    ]
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "variant": "important",
+                  "text": "In AIT assessments, your documents are graded on BOTH content and presentation. A well-designed document that applies design principles correctly will score higher than the same content poorly presented."
+                }
+              ]
+            },
+            {
+              "id": "collaborative-software-tools",
+              "title": "Collaborative Software Tools",
+              "estimatedMinutes": 15,
+              "blocks": [
+                {
+                  "type": "heading",
+                  "text": "Collaborative Software Tools",
+                  "level": 2
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Collaborative software allows multiple people to work on the same project simultaneously from different locations. These tools have transformed how teams work in education, business, and creative industries."
+                },
+                {
+                  "type": "heading",
+                  "text": "Categories of Collaborative Tools",
+                  "level": 3
+                },
+                {
+                  "type": "table",
+                  "headers": [
+                    "Category",
+                    "Examples",
+                    "Primary use"
+                  ],
+                  "rows": [
+                    [
+                      "Cloud document editing",
+                      "Google Docs, Microsoft 365, Notion",
+                      "Co-editing documents, spreadsheets, presentations in real time"
+                    ],
+                    [
+                      "Project management",
+                      "Trello, Asana, Jira, Microsoft Planner",
+                      "Task tracking, deadlines, team assignments"
+                    ],
+                    [
+                      "Communication",
+                      "Microsoft Teams, Slack, Discord",
+                      "Text, voice, and video communication + file sharing"
+                    ],
+                    [
+                      "Video conferencing",
+                      "Zoom, Google Meet, Teams",
+                      "Remote meetings, screen sharing, recording"
+                    ],
+                    [
+                      "File sharing and storage",
+                      "Google Drive, OneDrive, Dropbox",
+                      "Centralised cloud storage accessible by the team"
+                    ],
+                    [
+                      "Version control",
+                      "GitHub, GitLab",
+                      "Tracking code changes in software projects"
+                    ]
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Real-Time Collaboration Features",
+                  "level": 3
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Multiple users edit the same document simultaneously",
+                    "Changes appear in real time with colour-coded cursors identifying each user",
+                    "Commenting and suggestion modes allow feedback without altering content",
+                    "Version history lets you see and restore previous versions of a document",
+                    "Permission levels (viewer, commenter, editor) control what each collaborator can do"
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Best Practices for Online Collaboration",
+                  "level": 3
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Agree on a naming convention for files and folders before starting",
+                    "Use version control — save copies before major changes",
+                    "Communicate changes in the team chat so others know what was updated",
+                    "Don't overwrite others' work without discussing it first",
+                    "Use comments/suggestions rather than directly editing others' sections"
+                  ]
+                },
+                {
+                  "type": "task",
+                  "title": "Collaborative Document Task",
+                  "software": "Google Docs or Microsoft 365",
+                  "intro": "Work with a classmate to collaboratively produce a shared document on a technology topic.",
+                  "steps": [
+                    "Create a new Google Doc (or Word document shared via OneDrive). Give it the title \"Technology Impact Report\" and share it with at least one classmate with editor access.",
+                    "Each person in the group should write at least one section (2+ paragraphs) on a different aspect of technology's impact on society — e.g., education, work, communication, environment.",
+                    "Each author should use Heading 2 style for their section heading and Normal style for body text.",
+                    "Once sections are written, each person should leave at least two comments on a classmate's section — ask a question, suggest an improvement, or highlight something well done.",
+                    "The group should then resolve all comments by either making changes (using suggestions mode) or replying to explain why no change was needed.",
+                    "Add a shared introduction (Heading 1: \"Introduction\") and a conclusion section that summarises the group's key findings.",
+                    "Check the version history to see all changes made and by whom. Take a screenshot of the version history.",
+                    "Share the final document link with your teacher."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "application-skills-quiz",
+              "title": "Application Skills Quiz",
+              "estimatedMinutes": 12,
+              "blocks": [
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "as1-q1",
+                    "questionType": "mcq",
+                    "text": "A student wants to ensure that whenever they copy their formula for \"Total Sales\" to other rows, the reference to the tax rate cell ($B$1) does not change. What type of cell reference should they use for the tax rate?",
+                    "options": [
+                      "Relative reference (B1)",
+                      "Absolute reference ($B$1)",
+                      "Named range reference",
+                      "Mixed reference (B$1)"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "An absolute reference ($B$1) locks both the column and row, so it does not change when the formula is copied. A relative reference (B1) would shift to C1, D1, etc. as the formula moves."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "as1-q2",
+                    "questionType": "mcq",
+                    "text": "Which email protocol allows you to access your email from multiple devices while keeping messages on the server?",
+                    "options": [
+                      "SMTP",
+                      "POP3",
+                      "IMAP",
+                      "HTTP"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "IMAP (Internet Message Access Protocol) keeps messages on the mail server and synchronises across multiple devices. POP3 downloads messages to one device and removes them from the server. SMTP is for sending email."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "as1-q3",
+                    "questionType": "true_false",
+                    "text": "The Track Changes feature in a word processor deletes the original text and replaces it without any record of what changed.",
+                    "correctAnswer": false,
+                    "explanation": "False. Track Changes records all edits made to a document — insertions, deletions, and formatting changes. Each change is attributed to the person who made it and can be accepted or rejected individually by the document owner."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "as1-q4",
+                    "questionType": "mcq",
+                    "text": "A student writes =IF(B5>=55,\"Pass\",\"Fail\") in a spreadsheet. What will appear in the cell if B5 contains the value 54?",
+                    "options": [
+                      "Pass",
+                      "Fail",
+                      "Error",
+                      "TRUE"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "54 is less than 55, so the condition B5>=55 is FALSE. The IF function returns the third argument when false: \"Fail\"."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "as1-q5",
+                    "questionType": "mcq",
+                    "text": "Which collaborative software feature lets you see a record of all changes made to a document and restore a previous version?",
+                    "options": [
+                      "Track Changes",
+                      "Comments",
+                      "Version history",
+                      "Suggestion mode"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "Version history (available in Google Docs, Microsoft 365, and others) shows every saved version of a document with who made changes and when. You can restore any previous version at any time."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "as1-q6",
+                    "questionType": "mcq",
+                    "text": "When designing a business report, which design principle explains why the main heading should be in a larger, bolder font than the body text?",
+                    "options": [
+                      "Repetition",
+                      "Proximity",
+                      "Emphasis / Hierarchy",
+                      "Unity"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "Emphasis (or hierarchy) directs the reader's attention to the most important element first. Making the heading larger and bolder communicates its priority over body text and guides the reader through the information structure."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "as1-q7",
+                    "questionType": "true_false",
+                    "text": "Sending sensitive information such as passwords or bank account numbers via email is acceptable if the email is sent using IMAP.",
+                    "correctAnswer": false,
+                    "explanation": "False. Email is not inherently secure regardless of protocol. Sensitive information should never be sent via email. Use encrypted channels (secure messaging apps, encrypted file transfer, phone calls) for sensitive data."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "as1-q8",
+                    "questionType": "mcq",
+                    "text": "A newsletter uses two columns of text throughout. Which design principle does this consistent use of the same two-column layout demonstrate?",
+                    "options": [
+                      "Contrast",
+                      "Repetition",
+                      "Balance",
+                      "Emphasis"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "Repetition means consistently using the same visual elements (layout, columns, colours, fonts) throughout a design. Consistent two-column layout across a newsletter creates visual unity and reinforces the publication's style."
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "project-management",
+          "title": "Project Management",
+          "description": "Planning, documenting, and evaluating a digital solution project.",
+          "lessons": [
+            {
+              "id": "planning-a-digital-solution",
+              "title": "Planning a Digital Solution",
+              "estimatedMinutes": 18,
+              "blocks": [
+                {
+                  "type": "heading",
+                  "text": "Planning a Digital Solution",
+                  "level": 2
+                },
+                {
+                  "type": "paragraph",
+                  "text": "The planning phase is the most important part of any digital project. Good planning prevents wasted effort, missed deadlines, and poor quality outcomes. SCSA AIT projects require structured planning documentation."
+                },
+                {
+                  "type": "heading",
+                  "text": "Understanding the Brief",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Before planning, you must fully understand the project brief. A brief defines: the problem to be solved, the target audience, the required deliverables, the constraints (time, tools, budget), and the criteria by which the solution will be evaluated."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Project brief",
+                  "definition": "A document that defines the purpose, scope, audience, constraints, and success criteria for a project."
+                },
+                {
+                  "type": "heading",
+                  "text": "Identifying Requirements",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Requirements are what the solution must do (functional requirements) and the standards it must meet (non-functional requirements). For example: \"The website must allow users to submit a contact form\" is functional; \"The website must load in under 3 seconds\" is non-functional."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Functional requirement",
+                  "definition": "What the solution must DO — features and capabilities."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Non-functional requirement",
+                  "definition": "Standards the solution must MEET — performance, usability, reliability, security."
+                },
+                {
+                  "type": "heading",
+                  "text": "Project Planning Tools",
+                  "level": 3
+                },
+                {
+                  "type": "table",
+                  "headers": [
+                    "Tool",
+                    "What it shows",
+                    "When to use it"
+                  ],
+                  "rows": [
+                    [
+                      "Gantt chart",
+                      "Tasks plotted on a timeline with start/end dates and dependencies",
+                      "Multi-task projects with deadlines"
+                    ],
+                    [
+                      "Work Breakdown Structure (WBS)",
+                      "Hierarchical breakdown of all tasks needed to complete the project",
+                      "Initial planning; identifying all required work"
+                    ],
+                    [
+                      "To-do list / Task board (Kanban)",
+                      "Tasks in columns: To Do → In Progress → Done",
+                      "Day-to-day tracking during execution"
+                    ],
+                    [
+                      "Storyboard",
+                      "Visual sequence of screens or scenes",
+                      "Multimedia, web, and video projects"
+                    ],
+                    [
+                      "Flowchart",
+                      "Step-by-step process or decision logic",
+                      "Planning software logic or user journeys"
+                    ]
+                  ]
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Gantt chart",
+                  "definition": "A horizontal bar chart that shows project tasks along a timeline, including start/end dates, duration, and dependencies between tasks."
+                },
+                {
+                  "type": "heading",
+                  "text": "Documentation",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Good documentation captures your planning decisions and justifies your choices. Required planning documents in SCSA AIT projects typically include: the interpreted brief, design sketches or wireframes, a Gantt chart or schedule, and a list of required resources."
+                },
+                {
+                  "type": "heading",
+                  "text": "Risk Management",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Identify risks early: What could go wrong? How likely is it? What would the impact be? And what will you do if it happens? Common project risks include: scope creep (project growing beyond original plan), technical problems, time underestimation, and loss of work due to not saving/backing up."
+                },
+                {
+                  "type": "callout",
+                  "variant": "tip",
+                  "text": "Always back up your work to a second location (e.g., USB drive AND cloud storage). A common reason for incomplete AIT projects is \"my computer crashed and I lost everything\" — preventable with proper backup habits."
+                }
+              ]
+            },
+            {
+              "id": "evaluating-a-digital-solution",
+              "title": "Evaluating a Digital Solution",
+              "estimatedMinutes": 15,
+              "blocks": [
+                {
+                  "type": "heading",
+                  "text": "Evaluating a Digital Solution",
+                  "level": 2
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Evaluation is the process of assessing how well a completed solution meets the original brief and success criteria. Good evaluation is honest, structured, and evidence-based — not just \"I think it looks good.\""
+                },
+                {
+                  "type": "heading",
+                  "text": "What to Evaluate",
+                  "level": 3
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Does the solution meet all functional requirements from the brief?",
+                    "Does it meet non-functional requirements (performance, usability, accessibility)?",
+                    "How well does it serve the target audience?",
+                    "Were design principles applied effectively?",
+                    "What would be improved if you had more time?"
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Evaluation Criteria",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Evaluation criteria should be defined in the planning phase — they are the measurable standards your solution will be judged against. Examples: \"The interface can be navigated without instructions by a Year 10 student\", \"All text meets WCAG contrast requirements\", \"The spreadsheet produces correct totals when data is entered\"."
+                },
+                {
+                  "type": "keyTerm",
+                  "term": "Evaluation criteria",
+                  "definition": "Specific, measurable statements that describe what a successful solution looks like. Defined at the planning stage."
+                },
+                {
+                  "type": "heading",
+                  "text": "Methods of Evaluation",
+                  "level": 3
+                },
+                {
+                  "type": "table",
+                  "headers": [
+                    "Method",
+                    "Description",
+                    "Strength"
+                  ],
+                  "rows": [
+                    [
+                      "Against criteria checklist",
+                      "Compare the solution to each planned criterion — met, partially met, or not met",
+                      "Structured and objective"
+                    ],
+                    [
+                      "User testing",
+                      "Have someone from the target audience use the solution and observe them",
+                      "Reveals usability issues you can't see yourself"
+                    ],
+                    [
+                      "Peer review",
+                      "Have a classmate evaluate the solution against the criteria",
+                      "Gets an outside perspective; good for finding blind spots"
+                    ],
+                    [
+                      "Self-reflection",
+                      "Honest personal assessment of strengths and weaknesses",
+                      "Demonstrates critical thinking; required in SCSA tasks"
+                    ]
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Writing an Evaluation",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "A strong evaluation: (1) references specific criteria, (2) provides evidence (screenshots, data, user feedback), (3) makes a clear judgement (met / partially met / not met), and (4) suggests realistic improvements."
+                },
+                {
+                  "type": "callout",
+                  "variant": "important",
+                  "text": "SCSA examiners reward honest evaluation. Saying \"the colour contrast does not meet accessibility standards and I would fix this by...\" is better than claiming everything is perfect. Critical thinking scores marks; defensiveness does not."
+                },
+                {
+                  "type": "heading",
+                  "text": "Reflection",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Beyond evaluation of the product, SCSA assessments also ask you to reflect on your process: What went well? What would you do differently? How did you manage your time? What new skills did you develop? These reflections demonstrate growth and self-awareness."
+                }
+              ]
+            },
+            {
+              "id": "personal-digital-project-task",
+              "title": "Personal Digital Project Task",
+              "estimatedMinutes": 180,
+              "blocks": [
+                {
+                  "type": "heading",
+                  "text": "Personal Digital Project Task",
+                  "level": 2
+                },
+                {
+                  "type": "paragraph",
+                  "text": "This is your Unit 1 project. You will plan, create, and evaluate a digital solution that demonstrates the skills you have built throughout the unit. This task mirrors the type of project work assessed in SCSA AIT General."
+                },
+                {
+                  "type": "callout",
+                  "variant": "important",
+                  "text": "This is your major assessment task. Allow 3–4 hours across multiple sessions. Submit all documents and files as directed by your teacher."
+                },
+                {
+                  "type": "heading",
+                  "text": "The Brief",
+                  "level": 3
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Your school has asked you to create an information resource for Year 9 students who are considering taking AIT General in Year 11. The resource should help them understand what the subject involves, what skills they will develop, and how digital technology is used in everyday life."
+                },
+                {
+                  "type": "heading",
+                  "text": "Requirements",
+                  "level": 3
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "The resource must be a digital document (Word/Google Docs) of at least 3 pages OR a multipage presentation (PowerPoint/Google Slides) of at least 8 slides",
+                    "Target audience: Year 9 students — design and language choices must suit this audience",
+                    "Must include information on: what AIT General covers, digital skills students will learn, career pathways that use IT skills, and at least one example of how technology impacts everyday life",
+                    "Must demonstrate at least 4 design principles with evidence",
+                    "Must include at least one table, one list, and one visual element (image, chart, or icon)",
+                    "All images/resources used must be cited or be royalty-free"
+                  ]
+                },
+                {
+                  "type": "task",
+                  "title": "Unit 1 Digital Project",
+                  "software": "Microsoft Word / Google Docs / PowerPoint / Google Slides",
+                  "intro": "Complete all four phases: Plan, Create, Review, Evaluate. Document your work at each stage.",
+                  "steps": [
+                    "PHASE 1 — PLAN: Write a Planning Document (1 page) that includes: your interpreted brief (what you will create and why), your target audience analysis, a list of at least 5 design decisions you will make and why, a schedule showing what you will do in each work session.",
+                    "PHASE 1 — PLAN: Create a rough sketch or wireframe showing the layout of your first 3 pages/slides before you start building.",
+                    "PHASE 2 — CREATE: Build your information resource according to your plan. Apply design principles consistently. Format all headings using styles (not manual formatting). Include a table, a list, and at least one visual element.",
+                    "PHASE 2 — CREATE: Save your work at the end of every session to both your school drive and a second location (USB or personal cloud). Name files clearly: \"AIT_Project_YourName_Draft1\".",
+                    "PHASE 3 — REVIEW: Ask at least one classmate to review your resource using the evaluation criteria below. Record their feedback in writing.",
+                    "PHASE 3 — REVIEW: Make revisions based on the feedback received. Document what you changed and why.",
+                    "PHASE 4 — EVALUATE: Write an Evaluation (1–1.5 pages) addressing each success criterion below. Be specific and honest. Include evidence (screenshots where relevant) and suggest at least two improvements."
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Evaluation Criteria",
+                  "level": 3
+                },
+                {
+                  "type": "table",
+                  "headers": [
+                    "Criterion",
+                    "What success looks like"
+                  ],
+                  "rows": [
+                    [
+                      "Purpose",
+                      "A Year 9 student can understand the document without needing extra explanation"
+                    ],
+                    [
+                      "Content accuracy",
+                      "All information about AIT is factually correct and current"
+                    ],
+                    [
+                      "Design principles",
+                      "At least 4 principles can be identified and justified with specific examples from the resource"
+                    ],
+                    [
+                      "Typography",
+                      "Font choices are appropriate and consistent; hierarchy is clear"
+                    ],
+                    [
+                      "Accessibility",
+                      "Text contrast is sufficient; font is large enough; layout is logical"
+                    ],
+                    [
+                      "Completeness",
+                      "All required content areas are covered"
+                    ],
+                    [
+                      "Professionalism",
+                      "The resource would be suitable to display in a school setting"
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "project-management-quiz",
+              "title": "Project Management Quiz",
+              "estimatedMinutes": 12,
+              "blocks": [
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "pm1-q1",
+                    "questionType": "mcq",
+                    "text": "What does a Gantt chart primarily show?",
+                    "options": [
+                      "The budget breakdown across project phases",
+                      "The hierarchy of tasks needed to complete a project",
+                      "Project tasks plotted on a timeline with start and end dates",
+                      "The roles and responsibilities of team members"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "A Gantt chart shows project tasks as horizontal bars on a timeline, displaying start dates, end dates, duration, and dependencies between tasks. It is one of the most common project planning and tracking tools."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "pm1-q2",
+                    "questionType": "mcq",
+                    "text": "A requirement that states \"The website must allow users to submit a contact form\" is best described as a...",
+                    "options": [
+                      "Non-functional requirement",
+                      "Functional requirement",
+                      "Design constraint",
+                      "Evaluation criterion"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "Functional requirements describe what a system must DO — its features and capabilities. \"Submit a contact form\" is a specific function the system must perform. Non-functional requirements describe performance standards (speed, security, accessibility)."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "pm1-q3",
+                    "questionType": "true_false",
+                    "text": "A good evaluation of a digital solution should always conclude that the solution fully met all requirements.",
+                    "correctAnswer": false,
+                    "explanation": "False. Good evaluation is honest and evidence-based. Identifying where a solution partially met or did not meet criteria, and explaining what would be done differently, demonstrates critical thinking and earns marks in SCSA assessments. Always-perfect evaluations are not credible."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "pm1-q4",
+                    "questionType": "mcq",
+                    "text": "Which planning document shows the logical breakdown of ALL tasks needed to complete a project in a hierarchical structure?",
+                    "options": [
+                      "Gantt chart",
+                      "Work Breakdown Structure",
+                      "Storyboard",
+                      "Flowchart"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "A Work Breakdown Structure (WBS) hierarchically decomposes the entire project into all necessary tasks. A Gantt chart adds timeline; a storyboard visualises screens/scenes; a flowchart shows decision logic and process steps."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "pm1-q5",
+                    "questionType": "mcq",
+                    "text": "A student is evaluating their completed website by asking three Year 9 students to use it while the student watches and notes any confusion. What evaluation method is this?",
+                    "options": [
+                      "Against criteria checklist",
+                      "User testing",
+                      "Peer review",
+                      "Self-reflection"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "User testing involves having someone from the target audience use the solution while the creator observes. It reveals real usability issues that the creator cannot spot because they are too familiar with the product."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "pm1-q6",
+                    "questionType": "true_false",
+                    "text": "Evaluation criteria should be written AFTER the project is completed so they accurately reflect what was achieved.",
+                    "correctAnswer": false,
+                    "explanation": "False. Evaluation criteria must be defined during the PLANNING phase — they set out what success looks like before work begins. Writing criteria after completion is dishonest and defeats the purpose; it allows criteria to be fitted to the outcome rather than the outcome being judged objectively against criteria."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "pm1-q7",
+                    "questionType": "mcq",
+                    "text": "Why is backing up project files to two separate locations important?",
+                    "options": [
+                      "It is a legal requirement for all school assignments",
+                      "It prevents scope creep in the project",
+                      "It protects against complete loss of work if one storage device fails",
+                      "It allows multiple people to edit the file at the same time"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "Saving to two locations (e.g., school drive + USB, or USB + cloud) protects against data loss from hardware failure, accidental deletion, or device loss. It is a fundamental risk management strategy for any digital project."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "pm1-q8",
+                    "questionType": "mcq",
+                    "text": "What is \"scope creep\" in a project context?",
+                    "options": [
+                      "A type of malware that targets project management software",
+                      "When the project grows beyond the original plan without proper review",
+                      "When team members leave a project before completion",
+                      "Running out of storage space during a project"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "Scope creep occurs when a project gradually expands beyond its original plan — adding features, sections, or requirements that were not in the original brief. It is a major cause of late projects and overruns. Good planning and sticking to the brief prevents it."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "working-with-others",

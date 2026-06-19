@@ -38,6 +38,15 @@ function extractObject(filePath, marker) {
 }
 
 const modules = extractObject(BASE + "modules.js", "export const modules = ");
+const examMeta = extractObject(BASE + "unit1PracticeExam.js", "export const examMeta = ");
+const mcqQuestions = extractObject(BASE + "unit1PracticeExam.js", "export const mcqQuestions = ");
+const shortAnswerQuestions = extractObject(
+  BASE + "unit1PracticeExam.js",
+  "export const shortAnswerQuestions = "
+);
+const extendedAnswer = extractObject(BASE + "unit1PracticeExam.js", "export const extendedAnswer = ");
+const examScenario = extractObject(BASE + "unit1PracticeExam.js", "export const scenario = ");
+const glossaryTerms = extractObject(BASE + "glossary.js", "export const glossaryTerms = ");
 
 function slugify(s) {
   return s
@@ -167,6 +176,171 @@ function extendedLesson(idSuffix, titlePrefix, mod, items) {
   };
 }
 
+function markdownToHtml(md) {
+  if (!md) return "";
+  const withInline = md.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/\*(.+?)\*/g, "<em>$1</em>");
+  const lines = withInline.split("\n");
+  const htmlParts = [];
+  let listBuffer = [];
+  const flushList = () => {
+    if (listBuffer.length) {
+      htmlParts.push(`<ul>${listBuffer.map((li) => `<li>${li}</li>`).join("")}</ul>`);
+      listBuffer = [];
+    }
+  };
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (trimmed.startsWith("- ") || /^\d+\.\s/.test(trimmed)) {
+      listBuffer.push(trimmed.replace(/^-\s/, "").replace(/^\d+\.\s/, ""));
+    } else if (trimmed === "") {
+      flushList();
+    } else {
+      flushList();
+      htmlParts.push(`<p>${trimmed}</p>`);
+    }
+  }
+  flushList();
+  return htmlParts.join("");
+}
+
+function examMcqLesson() {
+  return {
+    id: "unit1-exam-mcq",
+    title: "Section 1 — Multiple Choice",
+    blocks: mcqQuestions.map((q) => ({
+      type: "quizQuestion",
+      question: {
+        id: q.id,
+        questionType: "mcq",
+        text: q.question,
+        options: q.options,
+        correctIndex: q.answer,
+        explanation: q.explanation,
+      },
+    })),
+  };
+}
+
+function examShortAnswerLesson() {
+  const blocks = [];
+  for (const q of shortAnswerQuestions) {
+    if (q.context) blocks.push({ type: "richText", html: markdownToHtml(q.context) });
+    if (q.parts) {
+      for (const part of q.parts) {
+        blocks.push({
+          type: "quizQuestion",
+          question: {
+            id: `${q.id}${part.label}`,
+            questionType: "extended",
+            text: `(${part.label}) ${part.question}`,
+            marks: part.marks,
+            explanation: part.modelAnswer,
+          },
+        });
+      }
+    } else {
+      blocks.push({
+        type: "quizQuestion",
+        question: {
+          id: q.id,
+          questionType: "extended",
+          text: q.question,
+          marks: q.marks,
+          explanation: q.modelAnswer,
+        },
+      });
+    }
+  }
+  return { id: "unit1-exam-short-answer", title: "Section 2 — Short Answer", blocks };
+}
+
+function examExtendedLesson() {
+  const blocks = [{ type: "richText", html: markdownToHtml(extendedAnswer.scenario) }];
+  for (const quote of extendedAnswer.quotations) {
+    blocks.push({
+      type: "richText",
+      heading: `${quote.label} — ${quote.supplier} (${quote.price})`,
+      html: "",
+    });
+    blocks.push({
+      type: "table",
+      headers: ["Component", "Detail"],
+      rows: quote.specs.map((s) => [s.component, s.detail]),
+    });
+  }
+  for (const q of extendedAnswer.questions) {
+    blocks.push({
+      type: "quizQuestion",
+      question: {
+        id: q.id,
+        questionType: "extended",
+        text: q.question,
+        marks: q.marks,
+        explanation: q.modelAnswer,
+      },
+    });
+  }
+  return { id: "unit1-exam-extended", title: "Section 3 — Extended Answer", blocks };
+}
+
+function examScenarioLesson() {
+  const blocks = [
+    { type: "richText", html: markdownToHtml(examScenario.context) },
+    { type: "list", style: "bullet", items: examScenario.websiteRequirements },
+    { type: "list", style: "bullet", items: examScenario.appRequirements },
+  ];
+  for (const q of examScenario.questions) {
+    blocks.push({
+      type: "quizQuestion",
+      question: {
+        id: q.id,
+        questionType: "extended",
+        text: q.question,
+        marks: q.marks,
+        explanation: q.modelAnswer,
+      },
+    });
+  }
+  return { id: "unit1-exam-scenario", title: "Section 4 — Scenario", blocks };
+}
+
+function examPracticeTopic() {
+  return {
+    id: "unit1-practice-exam",
+    title: "Unit 1 Practice Exam",
+    description: `${examMeta.title} — ${examMeta.totalMarks} marks, ${examMeta.workingTime}`,
+    lessons: [examMcqLesson(), examShortAnswerLesson(), examExtendedLesson(), examScenarioLesson()],
+  };
+}
+
+function glossaryUnit() {
+  const byTopic = new Map();
+  for (const t of glossaryTerms) {
+    const key = t.topic ?? "General";
+    if (!byTopic.has(key)) byTopic.set(key, []);
+    byTopic.get(key).push({ term: t.term, definition: t.definition });
+  }
+  const blocks = [];
+  for (const [topicName, items] of [...byTopic.entries()].sort((a, b) => a[0].localeCompare(b[0]))) {
+    items.sort((a, b) => a.term.localeCompare(b.term));
+    blocks.push({ type: "heading", text: topicName, level: 3 });
+    blocks.push({ type: "keyTerms", items });
+  }
+  return {
+    id: "glossary",
+    title: "Glossary",
+    status: "available",
+    topics: [
+      {
+        id: "glossary",
+        title: "Glossary",
+        description: `${glossaryTerms.length} key terms`,
+        lessons: [{ id: "glossary-a-z", title: "Glossary (A–Z by topic)", blocks }],
+      },
+    ],
+  };
+}
+
 function mapModule(mod) {
   const lessons = [
     ...mapModuleLessons(mod),
@@ -182,9 +356,12 @@ function mapModule(mod) {
   };
 }
 
-const unit1Topics = Object.values(modules)
-  .filter((m) => m.unit === 1)
-  .map(mapModule);
+const unit1Topics = [
+  ...Object.values(modules)
+    .filter((m) => m.unit === 1)
+    .map(mapModule),
+  examPracticeTopic(),
+];
 const unit2Topics = Object.values(modules)
   .filter((m) => m.unit === 2)
   .map(mapModule);
@@ -205,6 +382,7 @@ const content = {
       status: "available",
       topics: unit2Topics,
     },
+    glossaryUnit(),
   ],
 };
 

@@ -3146,6 +3146,531 @@
               ]
             }
           ]
+        },
+        {
+          "id": "unit1-practice-exam",
+          "title": "Unit 1 Practice Exam",
+          "description": "Media Information and Communication Technologies — 100 marks, 2 hours 30 minutes",
+          "lessons": [
+            {
+              "id": "unit1-exam-mcq",
+              "title": "Section 1 — Multiple Choice",
+              "blocks": [
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": 1,
+                    "questionType": "mcq",
+                    "text": "Which of the following is an element of design?",
+                    "options": [
+                      "Proximity",
+                      "Balance",
+                      "Texture",
+                      "Hierarchy"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "Texture is an element of design (along with line, shape, colour, space, tone, and form). Proximity, balance, and hierarchy are principles of design."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": 2,
+                    "questionType": "mcq",
+                    "text": "A student uses the built-in microphone on their laptop to record a voiceover. The microphone is best classified as which type of device?",
+                    "options": [
+                      "Output device",
+                      "Storage device",
+                      "Input device",
+                      "Processing device"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "A microphone captures sound and sends data into the computer — this makes it an input device. Output devices (speakers, monitors) send data out of the computer."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": 3,
+                    "questionType": "mcq",
+                    "text": "Which type of memory is volatile and loses its data when the computer is switched off?",
+                    "options": [
+                      "SSD (Solid State Drive)",
+                      "ROM (Read-Only Memory)",
+                      "RAM (Random Access Memory)",
+                      "HDD (Hard Disk Drive)"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "RAM is volatile — it requires power to retain data, so all contents are lost when the computer powers off. SSDs, HDDs, and ROM are non-volatile (they retain data without power)."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": 4,
+                    "questionType": "mcq",
+                    "text": "A poster uses a large bold heading and much smaller body text beneath it. Which design principle does this best demonstrate?",
+                    "options": [
+                      "Proximity",
+                      "Balance",
+                      "Rule of thirds",
+                      "Hierarchy"
+                    ],
+                    "correctIndex": 3,
+                    "explanation": "Hierarchy is achieved through size, weight, and contrast — the large heading grabs attention first and the smaller text follows. This guides the viewer through content in order of importance."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": 5,
+                    "questionType": "mcq",
+                    "text": "Reading gravity refers to the natural tendency for Western audiences to read a page:",
+                    "options": [
+                      "Right to left, bottom to top",
+                      "Left to right, top to bottom",
+                      "Centre outward in all directions",
+                      "Bottom to top, left to right"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "Western audiences naturally read left-to-right and top-to-bottom. Designers use this pattern (often called the Z-pattern or F-pattern) to place the most important content where the eye naturally lands first."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": 6,
+                    "questionType": "mcq",
+                    "text": "A software company releases a product that users can try free for 30 days. After the trial, they must pay to continue using it. This is an example of:",
+                    "options": [
+                      "Open source software",
+                      "Freeware",
+                      "Shareware",
+                      "Proprietary software with a perpetual licence"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "Shareware is software distributed free for a limited trial period, after which users must pay for continued use. Freeware is permanently free; open source allows the code to be viewed and modified."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": 7,
+                    "questionType": "mcq",
+                    "text": "A graphic designer needs to save a logo that must scale to any size without losing quality and must support a transparent background. Which file format is most appropriate?",
+                    "options": [
+                      ".jpg",
+                      ".bmp",
+                      ".gif",
+                      ".svg"
+                    ],
+                    "correctIndex": 3,
+                    "explanation": "SVG (Scalable Vector Graphic) is a vector format — it scales infinitely without quality loss and supports transparency. JPG does not support transparency; GIF supports limited transparency but only 256 colours; BMP does not support transparency."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": 8,
+                    "questionType": "mcq",
+                    "text": "Under Australian copyright law, which of the following is permitted under the \"fair dealing\" provision?",
+                    "options": [
+                      "Copying an entire textbook to share with classmates",
+                      "Using a short quote from a book in a published review",
+                      "Uploading a copyrighted song to a public playlist without permission",
+                      "Reproducing a photograph on merchandise for sale without a licence"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "Fair dealing allows limited use of copyrighted material for specific purposes including research, criticism, review, and news reporting. A short quote in a review falls within this. Copying an entire textbook, uploading songs publicly, or reproducing images for commercial purposes without permission do not."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": 9,
+                    "questionType": "mcq",
+                    "text": "In the VLOOKUP function =VLOOKUP(A2, B1:D10, 3, FALSE), which column will be returned?",
+                    "options": [
+                      "Column A",
+                      "Column B",
+                      "Column D",
+                      "Column C"
+                    ],
+                    "correctIndex": 3,
+                    "explanation": "The col_index_num argument (3) refers to the 3rd column of the table_array B1:D10, which is column D. Column B is column 1, column C is column 2, column D is column 3."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": 10,
+                    "questionType": "mcq",
+                    "text": "A student witnesses cyberbullying happening to a classmate on social media. Rather than ignoring it, they report the content and send the classmate a supportive message. This person is best described as:",
+                    "options": [
+                      "A bystander",
+                      "An upstander",
+                      "A perpetrator",
+                      "An instigator"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "An upstander is someone who witnesses bullying and takes positive action — such as reporting content, supporting the target, or telling a trusted adult. A bystander sees bullying but does nothing."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "unit1-exam-short-answer",
+              "title": "Section 2 — Short Answer",
+              "blocks": [
+                {
+                  "type": "richText",
+                  "html": "<p>The logo below is for a fictional brand called <strong>\"Apex Surf Co.\"</strong> — a premium Australian surfwear company targeting adults aged 18–35.</p><p>The logo features:</p><ul><li>A bold, angular wave shape in deep navy blue</li><li>The word \"APEX\" in a large, heavy-weight sans-serif typeface</li><li>\"SURF CO.\" in much smaller, spaced-out capital letters beneath</li><li>A thin horizontal line separating the two text elements</li><li>Negative space (white) within the wave shape forming a subtle triangle</li></ul>"
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "16a",
+                    "questionType": "extended",
+                    "text": "(a) Identify and describe six elements of design visible in the Apex Surf Co. logo. For each element, explain how it contributes to the effectiveness of the logo.",
+                    "marks": 6,
+                    "explanation": "**Line** — The thin horizontal rule separating \"APEX\" from \"SURF CO.\" creates visual order and separation, guiding the eye from the brand name to the descriptor.\n\n**Shape** — The angular wave shape is geometric and bold, immediately communicating the surfing/ocean theme. The angularity also suggests power and premium quality rather than a casual/playful feel.\n\n**Colour** — Deep navy blue is used throughout. This colour is associated with the ocean, trust, and premium quality — appropriate for a surf brand targeting adults.\n\n**Space (Negative Space)** — The white triangle within the wave is deliberate negative space. It creates visual complexity and a hidden detail that rewards closer inspection, adding depth to a simple mark.\n\n**Tone** — The use of a single, flat navy tone (no gradients) gives the logo a clean, modern feel. The contrast between the navy mark and a white background creates a strong, readable silhouette.\n\n**Texture** — The flat, smooth rendering of the shape gives a clean, polished texture consistent with premium branding (as opposed to a rough/hand-drawn texture which would suggest a casual brand).\n\n*(Award 1 mark per correctly identified and described element — maximum 6)*"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "16b",
+                    "questionType": "extended",
+                    "text": "(b) Identify one principle of design used in the logo and explain how it has been applied.",
+                    "marks": 2,
+                    "explanation": "**Hierarchy** — The word \"APEX\" is displayed in a large, heavy-weight typeface while \"SURF CO.\" appears in a much smaller, spaced-out style beneath it. This size and weight contrast creates a clear visual hierarchy, directing the viewer's attention to the brand name first, then to the descriptor. This ensures the most important element (the brand identity) is read first.\n\n*(Award 1 mark for correctly naming a principle, 1 mark for a clear and specific explanation of how it is applied — 2 marks total)*"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "17a",
+                    "questionType": "extended",
+                    "text": "(a) A student used the following image for their school project:\n\n**Image details:**\n- Creator: Jamie Nguyen\n- Year: 2024\n- Title: Golden Hour at Cottesloe\n- Platform: Flickr\n- URL: https://www.flickr.com/photos/jnguyen/cottesloe2024\n\nWrite a correctly formatted APA 7th edition reference for this image as it would appear in a reference list. (5 marks)",
+                    "marks": 5,
+                    "explanation": "Nguyen, J. 2024, *Golden Hour at Cottesloe* [Photograph], Flickr, viewed 21 May 2026, https://www.flickr.com/photos/jnguyen/cottesloe2024\n\n**Marking guide:**\n- Author surname, initial and full stop: **Nguyen, J.** (1 mark)\n- Year: **2024,** (1 mark)\n- Title in italics with medium descriptor in brackets: ***Golden Hour at Cottesloe* [Photograph],** (1 mark)\n- Platform: **Flickr,** (1 mark)\n- Viewed date and URL: **viewed [date], [URL]** (1 mark)"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "17b",
+                    "questionType": "extended",
+                    "text": "(b) Name the three moral rights that Australian copyright law gives to creators and provide a specific example of each being violated.",
+                    "marks": 4,
+                    "explanation": "**1. Right of Attribution** — The creator has the right to be identified as the author of their work.\n*Example of violation:* A company uses a designer's logo on their website without crediting the designer anywhere.\n\n**2. Right of Integrity** — The creator has the right to object to derogatory treatment of their work that damages their honour or reputation.\n*Example of violation:* An artist's painting is cropped, recoloured, and used in a political campaign the artist strongly opposes.\n\n**3. Right Against False Attribution** — The creator has the right not to have a work falsely attributed to them.\n*Example of violation:* A publisher prints a book under a well-known author's name without their knowledge or consent.\n\n*(Award 1 mark for each correctly named right with a valid example — max 3 marks; 1 bonus mark for three fully correct with clear examples — total 4 marks)*"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": 18,
+                    "questionType": "extended",
+                    "text": "A web developer is building a portfolio website. Match each file format to the most appropriate use case, and provide one reason for each choice.\n\n| File Format | Use Case Options |\n|------------|-----------------|\n| .svg | A) A high-resolution photograph of the designer's workspace |\n| .jpg | B) A scalable company logo used across the website at varying sizes |\n| .png | C) A decorative banner image where some background must be transparent |\n| .gif | D) A small animated loading spinner |",
+                    "marks": 4,
+                    "explanation": "**.svg → B) Scalable company logo**\nSVG is a vector format — it scales to any size without pixelation, making it ideal for logos displayed at different sizes across a website.\n\n**.jpg → A) High-resolution photograph**\nJPEG uses lossy compression to significantly reduce photograph file sizes while retaining acceptable quality. It does not support transparency, making it unsuitable for logos.\n\n**.png → C) Decorative banner with transparency**\nPNG supports full alpha transparency, allowing complex transparent areas. It is lossless, so quality is preserved — ideal for a banner element that must sit over different backgrounds.\n\n**.gif → D) Animated loading spinner**\nGIF supports simple frame-by-frame animation and is widely supported in all browsers — appropriate for small, simple looping animations like loading indicators.\n\n*(Award 1 mark per correct match with a valid reason — 4 marks total)*"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": 19,
+                    "questionType": "extended",
+                    "text": "A school launches an Instagram account to promote upcoming events.\n\n(a) Name three features of Instagram (or social networking platforms generally) that would help the school grow and engage its audience. (3 marks)\n\n(b) For ONE of the features you named, explain in detail how the school could use it to increase student engagement with the account. (3 marks)",
+                    "marks": 6,
+                    "explanation": "**(a) Three features:**\n1. **Hashtags** — Categorise posts so they appear in searches beyond the school's followers\n2. **Stories / Reels** — Short-form video content that appears at the top of followers' feeds\n3. **Tagging / Mentions** — Tagging students or staff in posts notifies them directly and extends reach to their followers\n*(Other valid answers: polls, Q&A stickers, comment sections, sharing/re-posting, direct messages, event listings, analytics/insights)*\n\n*Award 1 mark per valid feature named — 3 marks*\n\n**(b) Detailed explanation (example using Stories/Reels):**\nThe school could post weekly event preview Reels — 15–30 second vertical videos showing behind-the-scenes preparation for upcoming events, featuring students and staff. Reels are algorithmically promoted by Instagram to non-followers, increasing discoverability. Using trending audio or captions keeps content current. Ending each Reel with a call-to-action (\"Swipe up to register\" or \"Comment your questions below\") encourages direct engagement. Students tagged in Reels will share them to their own stories, further amplifying reach.\n\n*Award up to 3 marks: 1 mark for identifying how the feature works, 1 mark for a specific strategy, 1 mark for linking to engagement outcome*"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": 20,
+                    "questionType": "extended",
+                    "text": "(a) Name and describe two forms of cyberbullying. (4 marks)\n\n(b) Describe two strategies a victim of cyberbullying should use. (2 marks)",
+                    "marks": 6,
+                    "explanation": "**(a) Two forms of cyberbullying:**\n\n**Harassment / Flaming** — Sending repeated, offensive, abusive, or threatening messages to a person online. This includes posting hateful comments on someone's posts or sending abusive direct messages over a sustained period. (2 marks)\n\n**Impersonation / Catfishing** — Creating a fake profile using someone else's name, photos, or personal details, then using it to damage their reputation, spread false information, or deceive others into providing personal information. (2 marks)\n\n*(Other valid forms: doxxing, exclusion/ostracism, trolling, outing, stalking — award 1 mark for naming + 1 mark for description)*\n\n**(b) Two strategies:**\n\n1. **Block the perpetrator** — Use the platform's block or mute function to prevent them from contacting you or viewing your content. This immediately stops further harassment from that account.\n\n2. **Document/screenshot evidence** — Take screenshots of all bullying messages, posts, or profiles before reporting or blocking. This creates a record that can be provided to the platform, school, or authorities.\n\n*(Other valid strategies: report to the platform, tell a trusted adult, contact eSafety Commissioner — award 1 mark each)*"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": 21,
+                    "questionType": "extended",
+                    "text": "A teacher has a spreadsheet tracking student assessment marks. The data is arranged as follows:\n\n| | A | B | C | D |\n|---|---|---|---|---|\n| 1 | | Student ID | Name | Total Mark |\n| 2 | | S001 | Alice | 87 |\n| 3 | | S002 | Bob | 74 |\n| 4 | | S003 | Carol | 91 |\n| 5 | | S004 | David | 63 |\n\nCell G2 contains a Student ID entered by the user. The teacher wants cell H2 to display the student's **name** using VLOOKUP.\n\n(a) Write the complete VLOOKUP formula for cell H2. (5 marks)\n\n(b) If the teacher wanted H2 to show the student's **Total Mark** instead of their name, what single change would be made to the formula? (1 mark)",
+                    "marks": 6,
+                    "explanation": "**(a) VLOOKUP formula:**\n\n`=VLOOKUP(G2, B2:D5, 2, FALSE)`\n\n**Marking breakdown:**\n- `=VLOOKUP(` — correct function name (1 mark)\n- `G2` — correct lookup_value — the cell containing the Student ID being searched (1 mark)\n- `B2:D5` — correct table_array — starts at column B (the Student ID column that VLOOKUP searches) through to column D (1 mark)\n- `2` — correct col_index_num — Name is the 2nd column of the table_array (1 mark)\n- `FALSE` — correct range_lookup — ensures exact match, not approximate (1 mark)\n\n**(b) Change to show Total Mark:**\n\nChange the col_index_num from `2` to `3`:\n\n`=VLOOKUP(G2, B2:D5, **3**, FALSE)`\n\nTotal Mark is the 3rd column of the table_array (B=1, C=2, D=3)."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": 22,
+                    "questionType": "extended",
+                    "text": "(a) Explain why consistent text alignment is important in a professional document or digital design. (3 marks)\n\n(b) Give two specific examples of how poor alignment could negatively affect a reader's experience. (2 marks)",
+                    "marks": 5,
+                    "explanation": "**(a) Importance of consistent text alignment:**\n\nConsistent text alignment creates **visual order and readability** by establishing invisible grid lines that the eye can follow. When all body text is aligned to the same edge (typically left-aligned in English), it creates a clean, predictable reading path that reduces cognitive effort for the reader. Consistent alignment also communicates **professionalism** — misaligned text suggests carelessness and can undermine trust in the content. Finally, alignment reinforces **hierarchy** by distinguishing headings from body text through deliberate positioning choices.\n\n*(Award 1 mark each for: readability/flow, professionalism/credibility, reinforcing hierarchy — 3 marks total)*\n\n**(b) Two examples of poor alignment:**\n\n1. Mixing centred body text with left-aligned headings creates an inconsistent visual rhythm. Centred body text produces a ragged edge on both sides, making long paragraphs difficult to read.\n\n2. Switching between left-aligned and right-aligned paragraphs on the same page confuses the reader's eye — the reading path is interrupted each time the alignment changes, forcing the brain to re-orient.\n\n*(Award 1 mark per valid specific example — 2 marks total)*"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "unit1-exam-extended",
+              "title": "Section 3 — Extended Answer",
+              "blocks": [
+                {
+                  "type": "richText",
+                  "html": "<p><strong>Creative Hub</strong> is a graphic design studio in Fremantle, WA. They produce brand identities, print materials, and short promotional videos for small businesses. The studio currently has five designers sharing two ageing computers.</p><p>The owner, Priya, has received two quotations for new desktop computers. Study the quotations carefully before answering the questions.</p>"
+                },
+                {
+                  "type": "richText",
+                  "heading": "Quotation A — TechValue Systems ($2,150 per unit)",
+                  "html": ""
+                },
+                {
+                  "type": "table",
+                  "headers": [
+                    "Component",
+                    "Detail"
+                  ],
+                  "rows": [
+                    [
+                      "CPU",
+                      "Intel Core i5-12400 (6-core, 2.5 GHz base / 4.4 GHz boost)"
+                    ],
+                    [
+                      "RAM",
+                      "16 GB DDR4 (2 × 8 GB, 3200 MHz)"
+                    ],
+                    [
+                      "Monitor",
+                      "24\" Full HD (1920 × 1080) IPS"
+                    ],
+                    [
+                      "Storage",
+                      "512 GB SSD"
+                    ],
+                    [
+                      "Graphics",
+                      "Intel UHD 730 (integrated, shared memory)"
+                    ],
+                    [
+                      "Security",
+                      "Windows Defender (included)"
+                    ],
+                    [
+                      "Operating System",
+                      "Windows 11 Home"
+                    ]
+                  ]
+                },
+                {
+                  "type": "richText",
+                  "heading": "Quotation B — ProWorkstation Direct ($4,880 per unit)",
+                  "html": ""
+                },
+                {
+                  "type": "table",
+                  "headers": [
+                    "Component",
+                    "Detail"
+                  ],
+                  "rows": [
+                    [
+                      "CPU",
+                      "AMD Ryzen 9 7900X (12-core, 4.7 GHz base / 5.6 GHz boost)"
+                    ],
+                    [
+                      "RAM",
+                      "32 GB DDR5 (2 × 16 GB, 5600 MHz)"
+                    ],
+                    [
+                      "Monitor",
+                      "32\" 4K UHD (3840 × 2160) IPS"
+                    ],
+                    [
+                      "Storage",
+                      "2 TB NVMe SSD"
+                    ],
+                    [
+                      "Graphics",
+                      "NVIDIA RTX 4070 (12 GB GDDR6X VRAM, dedicated)"
+                    ],
+                    [
+                      "Security",
+                      "Norton 360 (1-year subscription included)"
+                    ],
+                    [
+                      "Operating System",
+                      "Windows 11 Pro"
+                    ]
+                  ]
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "Q23",
+                    "questionType": "extended",
+                    "text": "Identify two advantages and two disadvantages of desktop computers compared to laptops for use in a graphic design studio like Creative Hub.",
+                    "marks": 6,
+                    "explanation": "**Advantages of desktops for a graphic design studio:**\n\n1. **Greater performance per dollar** — Desktop components (CPU, GPU, RAM) are not constrained by thermal or space limitations, so higher-performance hardware is available at the same cost as a mid-range laptop. For demanding tasks like video rendering and large image editing, this is significant.\n\n2. **Easier and cheaper to upgrade** — Desktop components (RAM, storage, GPU) can be replaced individually as technology improves, extending the useful life of the machine. Laptop components are often soldered or proprietary.\n\n**Disadvantages of desktops:**\n\n1. **No portability** — Designers cannot take desktop computers to client meetings, photo shoots, or off-site work. Laptops allow creative work to continue from any location.\n\n2. **Require dedicated workspace** — Each desktop unit requires a permanent desk space, monitor, and peripherals. For a studio, this is a fixed infrastructure cost, and they cannot be easily relocated or shared between locations.\n\n*(Award 1 mark per clearly explained point — 2+2+2 marks)*"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "Q24",
+                    "questionType": "extended",
+                    "text": "Quotation B lists \"AMD Ryzen 9 7900X (12-core, 4.7 GHz base / 5.6 GHz boost)\". Explain what (i) the number of cores and (ii) clock speed (GHz) mean, and why each matters for graphic design work.",
+                    "marks": 4,
+                    "explanation": "**(i) Number of cores (12-core):**\nA CPU core is an independent processing unit within the chip. Multiple cores allow the CPU to perform many tasks simultaneously (parallel processing). For graphic design work involving video export, rendering, and batch image processing — which can split tasks across multiple cores — 12 cores provide a significant performance advantage over 6. This means a designer can export a video while continuing to edit another file without slowdown.\n*(2 marks: 1 for explaining cores, 1 for relevance to design work)*\n\n**(ii) Clock speed (4.7 GHz base / 5.6 GHz boost):**\nClock speed measures how many processing cycles a CPU completes per second (billions per second = GHz). A higher base clock means faster processing of single-threaded tasks. The boost clock is the maximum speed a core can temporarily reach under high demand. For tasks that cannot be fully parallelised (like applying a complex filter to a single image layer), higher GHz directly means faster completion.\n*(2 marks: 1 for explaining GHz, 1 for relevance to design work)*"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "Q25",
+                    "questionType": "extended",
+                    "text": "Explain the difference between volatile and non-volatile memory. Using the specifications in both quotations, give one example of each type and explain its role in the computer.",
+                    "marks": 4,
+                    "explanation": "**Volatile memory** requires continuous electrical power to retain data. When the computer is switched off, all data stored in volatile memory is lost.\n\n**Non-volatile memory** retains data without power — its contents persist when the computer is switched off.\n\n**Example of volatile memory from the quotations:**\nBoth quotations list **RAM** (16 GB DDR4 / 32 GB DDR5). RAM is the computer's working memory — it temporarily holds the programs, files, and data currently in use so the CPU can access them at high speed. When you open an image in Photoshop, it is loaded from storage into RAM for fast access while you edit. When you shut down, RAM is cleared.\n\n**Example of non-volatile memory from the quotations:**\nBoth quotations list **SSD** storage (512 GB / 2 TB NVMe SSD). The SSD permanently stores the operating system, applications, and files regardless of power state. When the computer restarts, the OS loads from SSD into RAM.\n\n*(Award 1 mark each: volatile definition, non-volatile definition, correct volatile example with explanation, correct non-volatile example with explanation)*"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "Q26",
+                    "questionType": "extended",
+                    "text": "The studio will need additional hardware to complete their design workflow. Name five peripheral devices (other than the monitor listed in the quotations) that a graphic design studio would use, and for each, identify whether it is an input, output, or storage device and state its purpose.",
+                    "marks": 5,
+                    "explanation": "| Device | Type | Purpose |\n|---|---|---|\n| **Graphics tablet (e.g. Wacom)** | Input | Allows designers to draw directly with a stylus, providing natural pen pressure for illustration and photo retouching |\n| **Colour calibration device** | Input | Measures and adjusts monitor colour accuracy so printed colours match what is seen on screen |\n| **Laser printer** | Output | Produces physical proofs and printed materials for client presentations |\n| **External hard drive** | Storage | Backs up completed project files and assets; also used to transport large files between locations |\n| **USB hub / docking station** | Input/Output | Expands the number of available ports, allowing multiple peripherals (drives, cameras, styluses) to connect simultaneously |\n\n*(Other valid answers: SD card reader, scanner, webcam for client video calls, colour laser printer, NAS drive)*\n*(Award 1 mark per device with correct type and relevant purpose — 5 marks)*"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "Q27",
+                    "questionType": "extended",
+                    "text": "Describe the four main functions of an operating system. For each function, provide a specific example of how it applies to the Creative Hub graphic design studio using the computer they purchase.",
+                    "marks": 10,
+                    "explanation": "**1. User Interface (UI)**\nThe operating system provides the interface through which users interact with the computer — either a Graphical User Interface (GUI) with windows, icons, and menus, or a Command Line Interface (CLI). Windows 11 provides a GUI that allows Creative Hub designers to navigate files, open applications like Adobe Photoshop, and switch between multiple open projects by clicking rather than memorising text commands.\n*(2.5 marks: definition 1 mark, relevant example 1.5 marks)*\n\n**2. Resource Management**\nThe OS manages and allocates the computer's hardware resources — CPU time, RAM, storage access, and peripheral use — between all running programs. At Creative Hub, when a designer is simultaneously running Photoshop, Illustrator, and a video export in Premiere Pro, Windows 11 distributes RAM and CPU cycles between them, prioritising active foreground tasks while managing background processes.\n*(2.5 marks)*\n\n**3. Security and Access Control**\nThe OS controls who can access the computer and its data through user accounts, passwords, permissions, and built-in security tools. Quotation B includes Windows 11 Pro, which supports Active Directory domain joining — allowing the studio owner to manage all five designers' accounts centrally, set folder access permissions so designers can only access their own client files, and apply group policies.\n*(2.5 marks)*\n\n**4. Running Applications**\nThe OS provides the environment and services that applications need to run — managing installation, execution, hardware communication, and file system access. When a designer double-clicks Adobe Illustrator, Windows loads the application from the SSD into RAM, allocates CPU and GPU resources, and handles communication with the graphics tablet driver, allowing the application to function correctly.\n*(2.5 marks)*"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "Q28",
+                    "questionType": "extended",
+                    "text": "Priya must choose between Quotation A ($2,150 per unit) and Quotation B ($4,880 per unit).\n\nReferring specifically to at least three components from the quotations, recommend which computer is more suitable for Creative Hub's graphic design workflow. Justify your recommendation.",
+                    "marks": 7,
+                    "explanation": "**Recommendation: Quotation B (ProWorkstation Direct — $4,880)**\n\nWhile Quotation B costs $2,730 more per unit, it is the correct choice for a professional graphic design studio. Three key components justify this:\n\n**1. Dedicated GPU — NVIDIA RTX 4070 (12 GB VRAM) vs Intel UHD 730 (integrated)**\nThis is the most critical difference. Professional design software (Adobe Premiere Pro, After Effects, Photoshop) uses the GPU for rendering previews, video effects, and colour correction. Integrated graphics (Quotation A) share system RAM and cannot handle GPU-accelerated rendering effectively. The RTX 4070 has dedicated 12 GB GDDR6X VRAM — essential for working with 4K video and large layered files. Without a dedicated GPU, designers will experience slow renders and playback lag.\n\n**2. RAM — 32 GB DDR5 vs 16 GB DDR4**\nGraphic design applications are RAM-intensive. Running Photoshop with a large layered PSD, Illustrator, and a browser simultaneously can consume 16 GB alone. 32 GB of faster DDR5 RAM ensures designers can multitask without slowdown. 16 GB (Quotation A) is the minimum and will create bottlenecks in a professional workflow.\n\n**3. Storage — 2 TB NVMe SSD vs 512 GB SSD**\nDesign projects involving photography, video, and layered files quickly consume storage. 512 GB (Quotation A) would require frequent file management and external drives for active projects. 2 TB allows designers to keep all active project files on the internal drive for maximum speed.\n\n**Conclusion:** For a studio generating revenue from professional design work, the performance difference justifies the cost. Slow render times and file management issues cost designers productive hours. Quotation B is the professional-grade investment.\n\n*(Award: recommendation clearly stated 1 mark; 3 component comparisons at 2 marks each = 6 marks; total 7)*"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "unit1-exam-scenario",
+              "title": "Section 4 — Scenario",
+              "blocks": [
+                {
+                  "type": "richText",
+                  "html": "<p><strong>Study Buddy</strong> is a new Perth-based tutoring service. Founders <strong>Mia</strong> and <strong>Daniel</strong> want to connect Year 11 and 12 ATAR students with qualified university tutors for face-to-face and online sessions.</p><p>They have hired you as a digital designer to create:</p><ul><li>A <strong>website</strong> for students and parents to discover and book tutors</li><li>A <strong>mobile app</strong> for students to manage bookings and connect with tutors</li></ul><p><strong>Study Buddy Brand Guidelines:</strong></p><ul><li>Primary colour: #2D6BE4 (bright blue)</li><li>Secondary colour: #F5F7FA (light grey)</li><li>Accent: #FF6B35 (orange) — for calls to action only</li><li>Typography: Headings in Poppins (bold); body in Inter (regular)</li><li>Tone: Friendly, professional, trustworthy</li></ul>"
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Study Buddy logo (top-left)",
+                    "Navigation menu (Home, Find a Tutor, Become a Tutor, About, Contact)",
+                    "Hero section with headline, sub-headline, and two CTA buttons (\"Find a Tutor\" in orange, \"Become a Tutor\" outlined)",
+                    "Subject filter bar (ATAR subjects: Maths, English, Chemistry, Physics, Biology, EALD)",
+                    "Featured tutor cards (photo, name, subjects, star rating, price per hour)",
+                    "\"How it works\" section (3 steps: Search → Book → Learn)",
+                    "Mobile app download section with QR code",
+                    "Footer with links and social media icons"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Study Buddy logo and app name at top",
+                    "Welcome/hero image or illustration",
+                    "Login / Sign Up buttons",
+                    "\"Find a Tutor\" primary action button (orange)",
+                    "Subject icon grid (tap to filter by subject)",
+                    "Upcoming sessions list with tutor name and time",
+                    "Bottom navigation bar (Home, Search, Bookings, Profile)",
+                    "Notification bell icon (top-right)"
+                  ]
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "Q29",
+                    "questionType": "extended",
+                    "text": "Identify three characteristics of Study Buddy's target audience. For each characteristic, explain why it is relevant to the design decisions that will be made for the website.",
+                    "marks": 3,
+                    "explanation": "**1. Age: 16–18 year olds (Year 11–12 students)**\nRelevance: Teenagers are highly familiar with mobile-first digital experiences (Instagram, TikTok, Snapchat). The website design must feel modern and visually engaging — not corporate or cluttered — to appeal to this demographic. Clean layouts, relatable photography, and fast load times are priorities.\n\n**2. Academic pressure / stress**\nRelevance: ATAR students are often anxious about performance. The website's tone must be encouraging and trustworthy — not intimidating. Clear pricing, tutor credentials, and star ratings reduce the perceived risk of booking an unfamiliar tutor.\n\n**3. Limited independent income / price sensitivity**\nRelevance: Students (and their parents) will compare prices carefully. The per-hour pricing on tutor cards must be clearly visible. Offering trial sessions or transparent pricing builds trust and reduces hesitation.\n\n*(Award 1 mark per characteristic with a relevant and specific design implication — 3 marks total)*"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "Q30",
+                    "questionType": "extended",
+                    "text": "Mia and Daniel want the website hero section to use the design principle of **reading gravity** and the **rule of thirds**.\n\n(a) Explain how reading gravity applies to a website hero section and describe where key elements should be placed as a result. (3 marks)\n\n(b) Explain the rule of thirds and describe how it could be applied to the hero section layout. (3 marks)",
+                    "marks": 6,
+                    "explanation": "**(a) Reading gravity in a hero section:**\nReading gravity refers to the natural tendency of Western audiences to scan a page from left to right and top to bottom (following the path they read text). In a website hero section, this means:\n- The **headline** should appear at the **top-left** — where the eye enters the composition — so the core message is read first\n- Supporting text (sub-headline) follows below or to the right of the headline\n- The primary **CTA button (\"Find a Tutor\")** should be placed after the text in the natural reading path, guiding the eye toward action\n\n*Award 1 mark each: explanation of reading gravity direction; correct placement of headline; correct placement of CTA — 3 marks*\n\n**(b) Rule of thirds:**\nThe rule of thirds divides a composition into a 3×3 grid using two vertical and two horizontal lines. The four points where these lines intersect (called \"power points\") are where the human eye is naturally drawn. Placing key elements at these intersections creates a more balanced and visually interesting composition than centring everything.\n\nApplied to the Study Buddy hero: The headline and CTA could be positioned on the **left third** of the hero, while a hero image of a tutor and student working together occupies the **right two-thirds**. The headline text would align to the left vertical gridline, and the tutor's face would be positioned near a top-right intersection point — where the eye naturally gravitates.\n\n*Award 1 mark each: definition of rule of thirds; description of grid/intersections; specific application to Study Buddy layout — 3 marks*"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "Q31",
+                    "questionType": "extended",
+                    "text": "Explain the purpose of a wireframe in the design process and describe two advantages of creating wireframes before beginning the final visual design.",
+                    "marks": 3,
+                    "explanation": "A **wireframe** is a low-fidelity structural diagram of a digital product (website, app, or screen) that shows the layout, placement of elements, and user interface structure — without visual design details like colour, typography, or imagery. It is essentially a blueprint for the layout.\n\n**Advantage 1 — Clarify structure before investing time in visuals:**\nWireframes allow designers and clients to agree on the placement of every element (navigation, hero, CTAs, content sections) before committing hours to visual design. Structural changes are fast to make in a wireframe; they are expensive to make once colour, typography, and imagery have been applied.\n\n**Advantage 2 — Communicate layout to clients clearly:**\nWireframes present the structure of a design without the distraction of visual style. Clients can focus on whether the layout meets their functional requirements (e.g., \"Is the booking button prominent enough?\") rather than reacting to colours or images. This separates structural approval from visual approval.\n\n*(Award 1 mark for explaining what a wireframe is; 1 mark each for two clearly explained advantages — 3 marks)*"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "Q32",
+                    "questionType": "extended",
+                    "text": "**Design Task — Study Buddy Website**\n\nUsing the brand guidelines, website requirements, and design principles covered in this course, create a **detailed wireframe and design annotation** for the Study Buddy website homepage.\n\nYour response must include:\n- A clearly labelled wireframe showing the layout of the homepage\n- Annotations identifying at least **4 elements of design** as applied in your layout\n- Annotations identifying at least **3 principles of design** as applied in your layout\n- A brief style guide covering: colour palette, typography choices, and tone\n\n**Marking criteria:**",
+                    "marks": 18,
+                    "explanation": "**WIREFRAME LAYOUT (suggested structure):**\n\n```\n┌─────────────────────────────────────────────────────────┐\n│ [Logo]    Home | Find a Tutor | Become a Tutor | Sign In│  ← NAVIGATION\n├─────────────────────────────────────────────────────────┤\n│                                                         │\n│  Your ATAR success          [Hero image:               │  ← HERO SECTION\n│  starts here.               student + tutor,           │    (rule of thirds:\n│                             right two-thirds]          │    text left,\n│  Connect with expert                                    │    image right)\n│  uni tutors, when you                                   │\n│  need them most.                                        │\n│                                                         │\n│  [FIND A TUTOR ▶]   [Become a Tutor]                   │\n│   (orange CTA)        (outlined)                        │\n├─────────────────────────────────────────────────────────┤\n│  Filter by subject:  [Maths] [English] [Chem] [Physics] │  ← SUBJECT FILTER\n├─────────────────────────────────────────────────────────┤\n│  ┌──────┐  ┌──────┐  ┌──────┐                          │  ← TUTOR CARDS\n│  │Photo │  │Photo │  │Photo │                          │\n│  │Name  │  │Name  │  │Name  │                          │\n│  │Subj  │  │Subj  │  │Subj  │                          │\n│  │★★★★★ │  │★★★★☆ │  │★★★★★ │                          │\n│  │$45/hr│  │$50/hr│  │$40/hr│                          │\n│  └──────┘  └──────┘  └──────┘                          │\n├─────────────────────────────────────────────────────────┤\n│         How it Works                                    │  ← HOW IT WORKS\n│  [1. Search]  →  [2. Book]  →  [3. Learn]              │\n├─────────────────────────────────────────────────────────┤\n│  [QR Code]  Download the Study Buddy app                │  ← APP DOWNLOAD\n├─────────────────────────────────────────────────────────┤\n│  © Study Buddy 2026  |  Privacy  |  Terms  |  Contact  │  ← FOOTER\n└─────────────────────────────────────────────────────────┘\n```\n\n**ELEMENT OF DESIGN ANNOTATIONS:**\n\n- **Colour** — #2D6BE4 (blue) is used for the navigation bar and headings to establish brand consistency. #FF6B35 (orange) is used exclusively for the primary \"Find a Tutor\" CTA, creating strong contrast that draws immediate attention to the key action.\n- **Line** — A thin horizontal line separates the navigation from the hero section and the hero from the filter bar. These lines create visual structure without adding clutter.\n- **Space (White Space)** — Generous padding around the hero headline and CTA buttons prevents the page from feeling crowded and gives the eye room to rest between sections.\n- **Shape** — Tutor profile cards use rounded-corner rectangles (#F5F7FA background). The rounded corners create a friendly, approachable feel consistent with the brand's tone.\n\n**PRINCIPLE OF DESIGN ANNOTATIONS:**\n\n- **Hierarchy** — The headline \"Your ATAR success starts here.\" is in Poppins Bold at 48px. The sub-headline is in Inter Regular at 18px. The CTA is in Poppins Bold at 16px in an orange button. This size and weight progression creates a clear reading order: headline → sub-headline → action.\n- **Rule of Thirds** — The hero section places the text and CTA in the left third of the composition and the hero image (student and tutor) in the right two-thirds. The student's face aligns with the top-right intersection point — a naturally attention-catching position.\n- **Proximity** — Related information is grouped together: tutor name, subject tags, star rating, and price are all contained within a single card. This grouping communicates that all these details belong to one tutor, reducing cognitive effort.\n\n**STYLE GUIDE:**\n\n| Element | Specification |\n|---|---|\n| Primary colour | #2D6BE4 (blue) — navigation, headings, icons |\n| Secondary colour | #F5F7FA (light grey) — card backgrounds, page background |\n| Accent colour | #FF6B35 (orange) — primary CTA buttons only |\n| Heading font | Poppins Bold — sizes 48px (hero), 32px (section headings), 20px (card headings) |\n| Body font | Inter Regular — size 16px body, 14px supporting text |\n| Tone | Friendly and professional — encouraging language, clear CTAs, no jargon |"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "Q33",
+                    "questionType": "extended",
+                    "text": "Identify and describe the six components of a project design process that Mia and Daniel should complete before beginning the visual design of the Study Buddy website.",
+                    "marks": 6,
+                    "explanation": "**1. Purpose and Criteria**\nDefine what the website must achieve and the measurable criteria for success. For Study Buddy: the website must allow students to search and book tutors, and must load within 2 seconds on mobile. Criteria guide design decisions and allow evaluation at the end.\n\n**2. Target Audience Analysis**\nIdentify the specific characteristics of the intended users — age, technical ability, preferences, and needs. Study Buddy's target audience is Year 11–12 ATAR students (16–18) and their parents, who may also browse the site.\n\n**3. Situation Analysis**\nResearch the existing environment — including competitor websites (e.g. Cluey Learning, Tutors Australia) — to identify what works well and what gaps Study Buddy can fill. This also includes technical constraints (device types, internet speeds of the audience).\n\n**4. Style Guide**\nDocument the visual design standards that must be applied consistently throughout the project: colour palette, typography, logo usage, image style, and tone of voice. Study Buddy's style guide includes the blue/orange palette and Poppins/Inter font pairing.\n\n**5. Presentation Medium**\nDetermine how and where the final product will be delivered and accessed — in this case, a responsive website viewed on desktop and mobile browsers, plus a separate mobile app. This affects all layout decisions (e.g., designing for mobile-first).\n\n**6. Wireframes / Storyboard / Prototype**\nCreate low-fidelity structural mockups of each key screen before applying visual design. Wireframes allow Mia and Daniel to confirm the layout meets all requirements before investing time in visual design. Changes are fast and cheap at the wireframe stage.\n\n*(Award 1 mark per component correctly named and described with relevance to Study Buddy — 6 marks)*"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "Q34",
+                    "questionType": "extended",
+                    "text": "**Design Task — Study Buddy Mobile App**\n\nUsing the brand guidelines, app requirements, and design principles covered in this course, create a **detailed wireframe and design annotation** for the Study Buddy mobile app home screen.\n\nYour response must include:\n- A clearly labelled wireframe showing the mobile home screen layout\n- Annotations identifying at least **4 elements of design** as applied in your layout\n- Annotations identifying at least **3 principles of design** as applied in your layout\n- A brief explanation of how the app design relates to and complements the website design\n\n**Marking criteria:**",
+                    "marks": 18,
+                    "explanation": "**MOBILE APP WIREFRAME (portrait, 390px wide — iPhone 14 reference):**\n\n```\n┌─────────────────────────┐\n│ [Logo] Study Buddy   🔔 │  ← HEADER (bell icon top-right)\n├─────────────────────────┤\n│                         │\n│   ┌─────────────────┐   │  ← HERO IMAGE / ILLUSTRATION\n│   │  Welcome image  │   │    (student studying, brand blue bg)\n│   │   \"Hi, Alex!\"   │   │\n│   └─────────────────┘   │\n│                         │\n│  ┌─────────────────────┐│  ← PRIMARY CTA (full-width, orange)\n│  │   FIND A TUTOR  ▶   ││\n│  └─────────────────────┘│\n│                         │\n│  Browse by subject:     │  ← SUBJECT ICON GRID\n│  ┌────┐ ┌────┐ ┌────┐  │\n│  │ M  │ │ E  │ │ Ch │  │    (3-column grid of subject icons)\n│  │Math│ │Eng │ │Chem│  │\n│  └────┘ └────┘ └────┘  │\n│  ┌────┐ ┌────┐ ┌────┐  │\n│  │ Ph │ │ Bi │ │ +  │  │\n│  │Phys│ │Bio │ │More│  │\n│  └────┘ └────┘ └────┘  │\n│                         │\n│  Upcoming sessions:     │  ← SESSION LIST\n│  ┌─────────────────────┐│\n│  │ 🗓 Maths — Dr Lee   ││\n│  │    Thu 23 May, 4pm  ││\n│  └─────────────────────┘│\n│                         │\n├─────────────────────────┤\n│  🏠    🔍    📅    👤   │  ← BOTTOM NAV (Home/Search/Bookings/Profile)\n└─────────────────────────┘\n```\n\n**ELEMENT OF DESIGN ANNOTATIONS:**\n\n- **Colour** — The hero image uses #2D6BE4 (brand blue) as a background, with white text. The \"Find a Tutor\" button uses #FF6B35 (orange), consistent with the website's CTA colour. Colour consistency across app and website reinforces brand identity.\n- **Shape** — Subject icon buttons use rounded square shapes (squircles), consistent with iOS design conventions familiar to the teen target audience. The bottom navigation bar is flat and rectangular.\n- **Space** — Generous vertical spacing between sections prevents the layout from feeling cluttered on a small screen. The hero section occupies approximately one-third of the visible screen.\n- **Tone** — The illustrated hero image (as opposed to a photograph) creates a warm, friendly visual tone consistent with an approachable tutoring service for stressed ATAR students.\n\n**PRINCIPLE OF DESIGN ANNOTATIONS:**\n\n- **Hierarchy** — The \"Find a Tutor\" orange button is the largest, most visually prominent interactive element on the screen. This creates a clear hierarchy where the primary action is unmistakable, followed by the subject grid (secondary), and session list (tertiary).\n- **Proximity** — The subject icon grid groups all filtering options together in one section, communicating that they are functionally related. The upcoming sessions list groups schedule information together, separate from discovery features.\n- **Balance** — The 3-column subject icon grid uses a symmetric layout creating visual balance across the screen. The header logo (left) and notification bell (right) create balanced endpoints at the top of the screen.\n\n**APP–WEBSITE DESIGN RELATIONSHIP:**\n\nThe app and website share a consistent visual identity through: the same colour palette (#2D6BE4 blue, #FF6B35 orange CTA, #F5F7FA grey backgrounds), the same typography (Poppins headings, Inter body), and the same \"Find a Tutor\" primary action labelling. The subject filter appears on both — as a horizontal bar on the website and as an icon grid on the app (adapted for touch interaction). This cross-platform consistency means users who visit the website before downloading the app immediately recognise the brand, and can switch between platforms without confusion."
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -5977,6 +6502,256 @@
                     "marks": 10,
                     "explanation": "Analysis phase (5 marks):\nRequirements gathering: Interview the business owner and staff to understand how the current paper system works, what its limitations are, and what they need the digital system to do. Observe the current booking process in action to identify all steps involved.\n\nFunctional requirements examples: The system must allow staff to create, view, modify, and cancel bookings; the system must send automated email reminders to customers 24 hours before their appointment; the system must prevent double-booking the same time slot.\n\nNon-functional requirements examples: The system must be accessible from any device via a web browser; the system must load booking pages within 2 seconds; staff must be able to learn the system with less than 2 hours of training.\n\nDocumentation: Produce a requirements specification document that the business owner signs off on before design begins, to confirm shared understanding of scope.\n\nDesign phase (5 marks):\nUser interface design: Create wireframes for the main screens — the booking calendar view, the new booking form, and the customer details page. Present these to the business owner for feedback before development begins.\n\nDatabase design: Create an entity-relationship diagram (ERD) showing the main entities (Customer, Booking, Service, Staff) and their relationships. Define the table structure with appropriate fields and primary/foreign keys.\n\nSystem flowchart: Document the flow of data through the system — from customer making a booking, to data being stored, to reminder email being sent.\n\nTechnology selection: Recommend appropriate platforms, programming languages, and hosting solutions that meet budget and technical constraints."
                   }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "glossary",
+      "title": "Glossary",
+      "status": "available",
+      "topics": [
+        {
+          "id": "glossary",
+          "title": "Glossary",
+          "description": "40 key terms",
+          "lessons": [
+            {
+              "id": "glossary-a-z",
+              "title": "Glossary (A–Z by topic)",
+              "blocks": [
+                {
+                  "type": "heading",
+                  "text": "Application Skills",
+                  "level": 3
+                },
+                {
+                  "type": "keyTerms",
+                  "items": [
+                    {
+                      "term": "Animation",
+                      "definition": "A sequence of images or frames displayed in rapid succession to create the illusion of movement."
+                    },
+                    {
+                      "term": "Bitmap (.bmp)",
+                      "definition": "A raster image format that stores pixel data without compression. Produces large file sizes."
+                    },
+                    {
+                      "term": "Codec",
+                      "definition": "Software that compresses and decompresses audio or video data. Common video codecs include H.264 and H.265."
+                    },
+                    {
+                      "term": "Responsive design",
+                      "definition": "A web design approach aimed at producing sites that provide an optimal viewing experience across a wide range of devices — including smartphones, tablets, laptops and desktop monitors — requiring minimal resizing, panning, and scrolling."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Design Concepts",
+                  "level": 3
+                },
+                {
+                  "type": "keyTerms",
+                  "items": [
+                    {
+                      "term": "Accessibility",
+                      "definition": "The design of digital products so they can be used by people with a range of disabilities, including visual, auditory, motor, and cognitive impairments."
+                    },
+                    {
+                      "term": "Alignment",
+                      "definition": "A design principle where every element has a visual connection to something else on the page. Creates order and organisation."
+                    },
+                    {
+                      "term": "Asymmetric balance",
+                      "definition": "A type of visual balance where elements of different sizes or weights are arranged so that the overall design still feels balanced."
+                    },
+                    {
+                      "term": "CMYK",
+                      "definition": "A colour model used in print: Cyan, Magenta, Yellow, and Key (Black). Used when preparing designs for physical printing."
+                    },
+                    {
+                      "term": "Colour palette",
+                      "definition": "A selected set of colours used consistently throughout a design to create visual cohesion."
+                    },
+                    {
+                      "term": "Complementary colours",
+                      "definition": "Colours that sit opposite each other on the colour wheel. When used together they create high contrast."
+                    },
+                    {
+                      "term": "Compositional rules",
+                      "definition": "Rules that guide the arrangement of elements in a design to direct the viewer's eye and create visual interest. Includes: Focal point/Centre of interest – the central point of attention within a design; Framing – presenting an image so it immediately captures the viewer's attention; Leading lines – drawing the viewer into an image so it is seen in a prescribed sequence; Reading gravity – the tendency of Western audiences to read left to right and top to bottom; Rule of thirds – dividing an image into nine equal parts with the eye naturally drawn to the intersection points; Underlying geometric framework/Eye-flow – planning a design so the viewer's eye moves around the page intentionally."
+                    },
+                    {
+                      "term": "Contrast",
+                      "definition": "A design principle that uses differences in colour, size, shape, or type to create visual interest and direct attention."
+                    },
+                    {
+                      "term": "Elements of design",
+                      "definition": "The parts or components within a design that can be individually defined. Together they construct the principles of design, provide the basic structure for the product, and communicate the design intentions. The placement of elements can alter the message communicated."
+                    },
+                    {
+                      "term": "Evaluation criteria",
+                      "definition": "The criteria employed to provide a consistent, standardised evaluation of a product's performance against an established benchmark or set of standards."
+                    },
+                    {
+                      "term": "Layout",
+                      "definition": "The process of planning and arranging, in detail, how the design will be reproduced. The arrangement of the various elements of design enables the production of an aesthetically pleasing and harmonious product."
+                    },
+                    {
+                      "term": "Principles of design",
+                      "definition": "Specific concepts utilised to organise or arrange the structural aspects of a design. Designers choose principles to ensure that the intention of their message is clear to the target audience."
+                    },
+                    {
+                      "term": "Style guide",
+                      "definition": "The set of rules, conventions, procedures or standards used for the designing and development of documents for publication, either electronic or print."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Hardware",
+                  "level": 3
+                },
+                {
+                  "type": "keyTerms",
+                  "items": [
+                    {
+                      "term": "Binary",
+                      "definition": "A number system using only two digits (0 and 1) that forms the basis of all digital data."
+                    },
+                    {
+                      "term": "CPU (Central Processing Unit)",
+                      "definition": "The primary component of a computer that executes program instructions. Measured in GHz; more cores allow simultaneous task processing."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Impacts of Technology",
+                  "level": 3
+                },
+                {
+                  "type": "keyTerms",
+                  "items": [
+                    {
+                      "term": "Antivirus software",
+                      "definition": "Software that detects, prevents, and removes malware from a computer system."
+                    },
+                    {
+                      "term": "Copyright Act 1968",
+                      "definition": "Australian legislation that protects the rights of creators over their original works. Makes it illegal to copy, distribute, or modify copyrighted material without permission."
+                    },
+                    {
+                      "term": "Creative Commons",
+                      "definition": "A set of licences that allow creators to specify how their work may be used by others, ranging from free use with attribution to restricted commercial use."
+                    },
+                    {
+                      "term": "Cyberbullying",
+                      "definition": "The use of digital technology to harass, threaten, or humiliate an individual. A form of online harm addressed through digital citizenship education."
+                    },
+                    {
+                      "term": "Cybercrime",
+                      "definition": "Criminal activity carried out using computers or the internet, including hacking, identity theft, phishing, and distributing malware."
+                    },
+                    {
+                      "term": "Digital citizenship",
+                      "definition": "The manner in which a user accesses and interacts using digital technologies. Responsible digital citizenship includes: Digital access – the ability to access electronic technologies; Digital commerce – the electronic sale and/or purchase of goods; Digital communication – the exchange of information via electronic devices; Digital etiquette – acceptable codes of conduct when communicating online; Digital health and wellness – the physical and mental well-being of those in the digital world, including ergonomics and internet addiction; Digital law – laws governing acceptable online behaviours including copyright and spam; Digital literacy – teaching and learning about technology and how it can be used; Digital rights and responsibilities – the rights and responsibilities of anyone operating within the digital world; Digital security – ensuring the electronic safety of digital content from external threat."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Managing Data",
+                  "level": 3
+                },
+                {
+                  "type": "keyTerms",
+                  "items": [
+                    {
+                      "term": "Archive",
+                      "definition": "The process of moving data that is no longer actively used to a separate storage location for long-term retention."
+                    },
+                    {
+                      "term": "Backup",
+                      "definition": "A copy of data made and stored separately so it can be restored if the original is lost or damaged. Backups are regular and intended for recovery."
+                    },
+                    {
+                      "term": "Cloud computing",
+                      "definition": "The delivery of computing services (storage, software, processing) over the internet rather than on local hardware."
+                    },
+                    {
+                      "term": "Compression",
+                      "definition": "Reducing the file size of data. Lossless compression preserves all data; lossy compression discards some data to achieve smaller file sizes."
+                    },
+                    {
+                      "term": "Data",
+                      "definition": "Raw facts and figures without context. Data becomes information when it is processed or organised to give it meaning."
+                    },
+                    {
+                      "term": "Data integrity",
+                      "definition": "The accuracy, consistency, and reliability of data stored in a system. Maintained through validation rules and good database design."
+                    },
+                    {
+                      "term": "Data redundancy",
+                      "definition": "The unnecessary duplication of data within a database or storage system. Can lead to inconsistencies and wastes storage space. Good database design minimises redundancy through normalisation."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Networks",
+                  "level": 3
+                },
+                {
+                  "type": "keyTerms",
+                  "items": [
+                    {
+                      "term": "Analogue signal",
+                      "definition": "A continuous signal that varies in amplitude or frequency. Contrasts with digital signals which use discrete binary values."
+                    },
+                    {
+                      "term": "Bandwidth",
+                      "definition": "The maximum amount of data that can be transmitted over a network connection in a given time, measured in bits per second (bps)."
+                    },
+                    {
+                      "term": "Browser",
+                      "definition": "Software used to access and display web pages (e.g. Chrome, Firefox, Edge)."
+                    },
+                    {
+                      "term": "Checksum",
+                      "definition": "A value calculated from data and used to detect errors during transmission or storage."
+                    },
+                    {
+                      "term": "Client-server network",
+                      "definition": "A network model where a central server provides resources and services to client devices. Common in business environments."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Project Management",
+                  "level": 3
+                },
+                {
+                  "type": "keyTerms",
+                  "items": [
+                    {
+                      "term": "Production process",
+                      "definition": "The stages required to complete a product, from the initial idea to the completion of the final product."
+                    },
+                    {
+                      "term": "Project",
+                      "definition": "A process or enterprise that is planned, designed and developed to achieve an aim. In the AIT ATAR course, students research IT-based ideas and processes that require project management approaches to create quality digital solutions."
+                    },
+                    {
+                      "term": "Project management",
+                      "definition": "The discipline of planning, organising, securing and managing resources to bring about the successful completion of a project efficiently and effectively."
+                    }
+                  ]
                 }
               ]
             }

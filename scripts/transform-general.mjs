@@ -51,6 +51,50 @@ const { topic3Lessons, topic4Lessons, topic5Lessons } = extractArrays(
   ["topic3Lessons", "topic4Lessons", "topic5Lessons"]
 );
 
+function extractCallObjects(filePath, callRegexSource) {
+  const txt = fs.readFileSync(filePath, "utf8");
+  const results = [];
+  const re = new RegExp(callRegexSource, "g");
+  let m;
+  while ((m = re.exec(txt))) {
+    const braceStart = txt.indexOf("{", m.index + m[0].length);
+    let i = braceStart;
+    let depth = 0;
+    let inStr = false;
+    let strCh = "";
+    let escaped = false;
+    for (; i < txt.length; i++) {
+      const c = txt[i];
+      if (inStr) {
+        if (escaped) escaped = false;
+        else if (c === "\\") escaped = true;
+        else if (c === strCh) inStr = false;
+        continue;
+      }
+      if (c === '"' || c === "'" || c === "`") {
+        inStr = true;
+        strCh = c;
+        continue;
+      }
+      if (c === "{") depth++;
+      if (c === "}") {
+        depth--;
+        if (depth === 0) {
+          i++;
+          break;
+        }
+      }
+    }
+    const literal = txt.slice(braceStart, i);
+    results.push({ varName: m[1], obj: new Function(`return (${literal});`)() });
+  }
+  return results;
+}
+
+const unit1File = BASE + "seed-unit1.ts";
+const unit1TopicCalls = extractCallObjects(unit1File, "upsertTopic\\(client, unit1Id, \\d+, ");
+const unit1LessonCalls = extractCallObjects(unit1File, "upsertLesson\\(client, (t\\dId), \\d+, ");
+
 function slugify(s) {
   return s
     .toLowerCase()
@@ -132,6 +176,19 @@ const topics = [
   lessons: t.lessons.map(mapLesson),
 }));
 
+const unit1Topics = unit1TopicCalls.map((t, idx) => {
+  const varName = `t${idx + 1}Id`;
+  const lessons = unit1LessonCalls
+    .filter((l) => l.varName === varName)
+    .map((l) => mapLesson(l.obj));
+  return {
+    id: slugify(t.obj.title),
+    title: t.obj.title,
+    description: t.obj.description,
+    lessons,
+  };
+});
+
 const content = {
   slug: "year-11-applied-it-general",
   title: "Applied IT — General",
@@ -139,9 +196,9 @@ const content = {
     {
       id: "personal-communication",
       title: "Personal Communication",
-      subtitle: "Using technology to meet personal needs",
-      status: "coming_soon",
-      topics: [],
+      subtitle: "Design, hardware, digital citizenship, and application skills",
+      status: "available",
+      topics: unit1Topics,
     },
     {
       id: "working-with-others",
@@ -158,6 +215,10 @@ fs.writeFileSync(
   JSON.stringify(content, null, 2)
 );
 console.log(
-  "General course written. Topics:",
+  "General course written. Unit 1 topics:",
+  unit1Topics.map((t) => `${t.title} (${t.lessons.length} lessons)`)
+);
+console.log(
+  "General course written. Unit 2 topics:",
   topics.map((t) => `${t.title} (${t.lessons.length} lessons)`)
 );

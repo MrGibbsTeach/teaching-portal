@@ -10,7 +10,9 @@ This consolidates three previously separate projects, archived for reference at 
 
 The real lesson content from all three has been migrated into this site's unified content format (`lib/content/types.ts`, `lib/content/data/*.json`). The `scripts/transform-*.mjs` scripts perform that migration programmatically by reading the archived source files directly — re-run them if the archived content ever changes upstream. The six remaining courses (Years 7–10, and Year 12 General/ATAR) have no prior content and are placeholder-only.
 
-Not yet ported from the archived projects: ATAR's glossary (`src/data/glossary.js`) and Unit 1 practice exam page (`src/data/unit1PracticeExam.js`), and the General course's "coming soon" Unit 1 content (`db/seed-unit1.ts`). Also not carried over: auth, teacher portal, and progress-tracking — this site is currently read-only published content.
+As of the latest migration pass, all known real content from the three archived projects has been ported, including: ATAR's glossary (now a "Glossary" section on the ATAR course page) and Unit 1 practice exam (`src/data/unit1PracticeExam.js`, now a "Unit 1 Practice Exam" topic with MCQ/short-answer/extended/scenario sections), and the General course's previously "coming soon" Unit 1 — Personal Communication (`db/seed-unit1.ts`), now fully available alongside Unit 2.
+
+Not carried over: auth, teacher portal, and progress-tracking from the old General course — this site is currently read-only published content. Interactive activity types from the Foundations course (drag-and-drop, hotspot, sort-buckets) are rendered as static summaries rather than full interactive widgets.
 
 ## Course list
 
