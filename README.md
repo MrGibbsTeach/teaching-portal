@@ -2,6 +2,8 @@
 
 Unified teaching site for Digital Technologies / Applied Information Technology, Years 7–12. Next.js (TypeScript, App Router) + Tailwind CSS + shadcn/ui + Supabase.
 
+See [STATUS.md](./STATUS.md) for what's done, what's deliberately not done yet, and next options.
+
 This consolidates three previously separate projects, archived for reference at `D:\OneDrive\Personal\Work\archive\`:
 
 - `11-ait-general-course` — Year 11 Applied IT, General (Next.js LMS: auth, teacher portal, DB-backed lessons)
