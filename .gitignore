@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# course reference material -- local working docs, not pushed to GitHub
+# (folder structure itself is kept via .gitkeep files)
+/course-reference/**/*
+!/course-reference/**/
+!/course-reference/**/.gitkeep
+!/course-reference/README.md
