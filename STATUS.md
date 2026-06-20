@@ -5,6 +5,7 @@ Living tracker for where MrGibbs Teach is at. Update this whenever a session wra
 **Live site:** https://teaching-portal-eta.vercel.app/ (auto-redeploys on every push to `main`)
 **Repo:** https://github.com/MrGibbsTeach/teaching-portal (private)
 **Archived source projects:** `D:\OneDrive\Personal\Work\archive\` (`11-ait-general-course`, `11-ait-atar-course`, `ait-foundations-course`) — untouched, kept for reference only
+**Curriculum reference docs:** `course-reference/<course-slug>/` (one folder per course) — curriculum documents, marking guides, past exams. Gitignored (local only, not on GitHub) — check here for source material when working on a specific course. See `course-reference/README.md`.
 
 ## Done
 
