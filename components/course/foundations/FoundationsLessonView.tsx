@@ -80,6 +80,7 @@ export function FoundationsLessonView({
           </p>
         )}
         <FoundationsCardCheck
+          key={index}
           block={screen.block}
           onVerified={() => markVerified(index)}
         />

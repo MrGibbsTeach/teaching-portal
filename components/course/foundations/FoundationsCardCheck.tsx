@@ -242,7 +242,91 @@ function SequenceCheck({
   );
 }
 
-function FillBlankCheck({
+function generateChoices(answer: string): string[] | null {
+  const range = answer.match(/^([A-Z]+)(\d+):([A-Z]+)(\d+)$/);
+  if (range) {
+    const [, col1, row1, col2, row2] = range;
+    const r1 = parseInt(row1, 10);
+    const r2 = parseInt(row2, 10);
+    const distractors = new Set(
+      [
+        `${col1}${r1}:${col2}${Math.max(r1, r2 - 1)}`,
+        `${col1}${r1 + 1}:${col2}${r2}`,
+        `${col1}${r1}:${col2}${r2 + 1}`,
+      ].filter((v) => v !== answer)
+    );
+    if (distractors.size >= 2) return shuffled([answer, ...[...distractors].slice(0, 2)]);
+  }
+
+  const cell = answer.match(/^([A-Z]+)(\d+)$/);
+  if (cell) {
+    const [, col, row] = cell;
+    const r = parseInt(row, 10);
+    const altCol = col === "A" ? "B" : String.fromCharCode(col.charCodeAt(0) - 1);
+    return shuffled([answer, `${altCol}${r}`, `${col}${r + 1}`]);
+  }
+
+  return null;
+}
+
+function FillBlankChoiceCheck({
+  title,
+  answer,
+  choices,
+  explanation,
+  onVerified,
+}: {
+  title: string;
+  answer: string;
+  choices: string[];
+  explanation?: string;
+  onVerified: () => void;
+}) {
+  const [selected, setSelected] = useState<string | null>(null);
+
+  return (
+    <div>
+      <p className="text-xl font-bold tracking-tight">{title}</p>
+      <div className="mt-4 space-y-3">
+        {choices.map((choice) => {
+          const isCorrect = choice === answer;
+          const isSelected = choice === selected;
+          const showState = selected !== null;
+          return (
+            <button
+              key={choice}
+              onClick={() => {
+                if (selected === null) {
+                  setSelected(choice);
+                  onVerified();
+                }
+              }}
+              disabled={selected !== null}
+              className={`flex w-full items-center justify-between rounded-2xl border-2 p-4 text-left font-mono text-lg font-semibold ${
+                showState && isCorrect
+                  ? "border-primary bg-primary/10"
+                  : showState && isSelected
+                    ? "border-destructive bg-destructive/10"
+                    : ""
+              }`}
+            >
+              {choice}
+              {showState && isCorrect && <Check className="h-6 w-6 shrink-0 text-primary" />}
+              {showState && isSelected && !isCorrect && (
+                <X className="h-6 w-6 shrink-0 text-destructive" />
+              )}
+            </button>
+          );
+        })}
+      </div>
+      {selected !== null && explanation && (
+        <p className="mt-4 rounded-2xl bg-muted p-4 text-base">{explanation}</p>
+      )}
+    </div>
+  );
+}
+
+function FillBlankTextCheck({
   title,
   answer,
   explanation,
@@ -301,6 +385,36 @@ function FillBlankCheck({
         </div>
       )}
     </div>
+  );
+}
+
+function FillBlankCheck({
+  title,
+  answer,
+  explanation,
+  onVerified,
+}: {
+  title: string;
+  answer: string;
+  explanation?: string;
+  onVerified: () => void;
+}) {
+  const choices = useMemo(() => generateChoices(answer), [answer]);
+  return choices ? (
+    <FillBlankChoiceCheck
+      title={title}
+      answer={answer}
+      choices={choices}
+      explanation={explanation}
+      onVerified={onVerified}
+    />
+  ) : (
+    <FillBlankTextCheck
+      title={title}
+      answer={answer}
+      explanation={explanation}
+      onVerified={onVerified}
+    />
   );
 }
 
