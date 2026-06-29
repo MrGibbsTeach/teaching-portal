@@ -7,28 +7,24 @@ import { BlockRenderer } from "@/components/course/BlockRenderer";
 import type { Block, Lesson } from "@/lib/content/types";
 
 interface Screen {
-  title?: string;
-  blocks: Block[];
+  sectionTitle?: string;
+  block: Block;
 }
 
 function groupIntoScreens(blocks: Block[]): Screen[] {
   const screens: Screen[] = [];
-  let current: Screen | null = null;
+  let sectionTitle: string | undefined;
 
   for (const block of blocks) {
-    if (block.type === "heading" && (block.level ?? 2) <= 2) {
-      current = { title: block.text, blocks: [] };
-      screens.push(current);
+    if (block.type === "heading") {
+      sectionTitle = block.text;
       continue;
     }
-    if (!current) {
-      current = { blocks: [] };
-      screens.push(current);
-    }
-    current.blocks.push(block);
+    if (block.type === "divider") continue;
+    screens.push({ sectionTitle, block });
   }
 
-  return screens.length ? screens : [{ blocks }];
+  return screens;
 }
 
 export function FoundationsLessonView({
@@ -71,13 +67,13 @@ export function FoundationsLessonView({
         ))}
       </div>
 
-      <div className="mt-8 min-h-[40vh] rounded-3xl border-2 p-6">
-        {screen.title && (
-          <h2 className="text-2xl font-bold tracking-tight">{screen.title}</h2>
+      <div className="mt-8 flex min-h-[40vh] flex-col justify-center rounded-3xl border-2 p-6">
+        {screen.sectionTitle && (
+          <p className="text-sm font-bold uppercase tracking-wide text-primary">
+            {screen.sectionTitle}
+          </p>
         )}
-        {screen.blocks.map((block, i) => (
-          <BlockRenderer key={i} block={block} />
-        ))}
+        <BlockRenderer block={screen.block} />
       </div>
 
       <div className="mt-6 flex items-center justify-between gap-4">
