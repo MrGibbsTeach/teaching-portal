@@ -125,7 +125,7 @@ function MatchingCheck({
       <p className="text-lg font-semibold text-muted-foreground">
         Tap a word, then tap its match.
       </p>
-      <div className="mt-4 grid grid-cols-2 gap-3">
+      <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
         <div className="space-y-2">
           {pairs.map((p) => (
             <button
