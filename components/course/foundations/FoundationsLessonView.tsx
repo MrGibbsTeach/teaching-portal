@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { BlockRenderer } from "@/components/course/BlockRenderer";
+import { FoundationsCardCheck } from "@/components/course/foundations/FoundationsCardCheck";
 import type { Block, Lesson } from "@/lib/content/types";
 
 interface Screen {
@@ -38,9 +38,15 @@ export function FoundationsLessonView({
 }) {
   const screens = groupIntoScreens(lesson.blocks);
   const [index, setIndex] = useState(0);
+  const [verified, setVerified] = useState<Set<number>>(new Set());
   const screen = screens[index];
   const isFirst = index === 0;
   const isLast = index === screens.length - 1;
+  const canAdvance = verified.has(index);
+
+  function markVerified(i: number) {
+    setVerified((prev) => new Set(prev).add(i));
+  }
 
   return (
     <div className="mx-auto max-w-2xl px-6 py-12">
@@ -73,7 +79,10 @@ export function FoundationsLessonView({
             {screen.sectionTitle}
           </p>
         )}
-        <BlockRenderer block={screen.block} />
+        <FoundationsCardCheck
+          block={screen.block}
+          onVerified={() => markVerified(index)}
+        />
       </div>
 
       <div className="mt-6 flex items-center justify-between gap-4">
@@ -88,14 +97,20 @@ export function FoundationsLessonView({
         {isLast ? (
           <Link
             href={`/courses/${courseSlug}`}
-            className="flex items-center gap-2 rounded-2xl bg-primary px-6 py-4 text-xl font-bold text-primary-foreground"
+            aria-disabled={!canAdvance}
+            className={`flex items-center gap-2 rounded-2xl px-6 py-4 text-xl font-bold ${
+              canAdvance
+                ? "bg-primary text-primary-foreground"
+                : "pointer-events-none bg-muted text-muted-foreground"
+            }`}
           >
             Finish
           </Link>
         ) : (
           <button
             onClick={() => setIndex((i) => Math.min(screens.length - 1, i + 1))}
-            className="flex items-center gap-2 rounded-2xl bg-primary px-6 py-4 text-xl font-bold text-primary-foreground"
+            disabled={!canAdvance}
+            className="flex items-center gap-2 rounded-2xl bg-primary px-6 py-4 text-xl font-bold text-primary-foreground disabled:opacity-30"
           >
             Next
             <ArrowRight className="h-6 w-6" />
