@@ -2,6 +2,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Badge } from "@/components/ui/badge";
 import { BlockRenderer } from "@/components/course/BlockRenderer";
+import { FoundationsLessonView } from "@/components/course/foundations/FoundationsLessonView";
+import { FoundationsThemeRoot } from "@/components/course/foundations/FoundationsThemeRoot";
+import { atkinson } from "@/components/course/foundations/font";
 import { getCourseBySlug } from "@/lib/courses";
 import { getCourseContent, findLesson } from "@/lib/content";
 
@@ -18,6 +21,18 @@ export default async function LessonPage({
   const found = findLesson(content, lessonId);
   if (!found) notFound();
   const { unit, topic, lesson } = found;
+
+  if (slug === "ait-foundations") {
+    return (
+      <FoundationsThemeRoot fontVariable={atkinson.variable}>
+        <FoundationsLessonView
+          courseSlug={course.slug}
+          courseTitle={course.title}
+          lesson={lesson}
+        />
+      </FoundationsThemeRoot>
+    );
+  }
 
   return (
     <div className="mx-auto max-w-3xl px-6 py-16">
