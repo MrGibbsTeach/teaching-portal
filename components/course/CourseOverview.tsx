@@ -19,15 +19,17 @@ export function CourseOverview({
       <div className="mt-10 space-y-8">
         {content.units.map((unit) => (
           <section key={unit.id}>
+            {unit.subtitle && (
+              <p className="mb-1 text-xs font-bold uppercase tracking-widest text-primary">
+                {unit.subtitle}
+              </p>
+            )}
             <div className="flex items-center justify-between">
               <h2 className="text-xl font-medium tracking-tight">{unit.title}</h2>
               {unit.status === "coming_soon" && (
                 <Badge variant="outline">Coming soon</Badge>
               )}
             </div>
-            {unit.subtitle && (
-              <p className="text-sm text-muted-foreground">{unit.subtitle}</p>
-            )}
 
             {unit.status === "coming_soon" ? (
               <div className="mt-3 rounded-lg border border-dashed p-6 text-center text-sm text-muted-foreground">
