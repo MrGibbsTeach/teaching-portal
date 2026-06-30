@@ -59,10 +59,10 @@
          "html": "It might help you write, draw, or play a game.<br><br>The system is built around what the user needs."
         },
         {
-         "type": "callout",
-         "variant": "video",
-         "heading": "🎬 Watch & Learn",
-         "text": "Open YouTube and search: \"how computers work for beginners\" — watch a short video to see this in real life before moving on."
+         "type": "video",
+         "youtubeId": "OAx_6-wdslM",
+         "title": "Introducing How Computers Work",
+         "caption": "Code.org — a great overview of what computers actually do."
         },
         {
          "type": "activity",
@@ -186,10 +186,10 @@
          "html": "A hard drive and a USB stick are storage devices.<br><br>Your files stay saved even when the power is off."
         },
         {
-         "type": "callout",
-         "variant": "video",
-         "heading": "🎬 Watch & Learn",
-         "text": "Open YouTube and search: \"how computers work for beginners\" — watch a short video to see this in real life before moving on."
+         "type": "video",
+         "youtubeId": "AkFi90lZmXA",
+         "title": "Inside Your Computer",
+         "caption": "TED-Ed — see exactly what's happening inside a computer."
         },
         {
          "type": "richText",
@@ -1554,10 +1554,10 @@
          "html": "<strong>Message</strong> — the words you write.<br><strong>Attachments</strong> — files you add, like photos or documents. 📎"
         },
         {
-         "type": "callout",
-         "variant": "video",
-         "heading": "🎬 Watch & Learn",
-         "text": "Open YouTube and search: \"how to stay safe online teenagers\" — watch a short video to see this in real life before moving on."
+         "type": "video",
+         "youtubeId": "7_LPdttKXPc",
+         "title": "How the Internet Works in 5 Minutes",
+         "caption": "A clear, simple explanation of how data travels online."
         },
         {
          "type": "richText",
@@ -1822,10 +1822,10 @@
          "html": "<strong>Cyberbullying</strong> — being mean to someone online. 😢<br><strong>Identity theft</strong> — someone steals your details. 🆔<br><strong>Cyber stalking</strong> — someone watches you online without asking. 👀<br><strong>SPAM</strong> — unwanted junk emails. 🗑️<br><strong>Viruses</strong> — programs that damage your device. 🦠"
         },
         {
-         "type": "callout",
-         "variant": "video",
-         "heading": "🎬 Watch & Learn",
-         "text": "Open YouTube and search: \"how to stay safe online teenagers\" — watch a short video to see this in real life before moving on."
+         "type": "video",
+         "youtubeId": "eHp1l73ztB8",
+         "title": "How Does The Internet Work? — BBC Click",
+         "caption": "BBC Click explains the internet in an easy-to-follow way."
         },
         {
          "type": "spotTheThreat",
@@ -4441,10 +4441,10 @@
          "html": "A Wi-Fi card or network cable lets a computer go online.<br><br>This lets it send and receive data."
         },
         {
-         "type": "callout",
-         "variant": "video",
-         "heading": "🎬 Watch & Learn",
-         "text": "Open YouTube and search: \"how antivirus and firewalls work simply\" — watch a short video to see this in real life before moving on."
+         "type": "video",
+         "youtubeId": "6mbFO0ZLMW8",
+         "title": "Hardware — CS50's Understanding Technology",
+         "caption": "Harvard's CS50 breaks down computer hardware clearly."
         },
         {
          "type": "richText",
@@ -6568,10 +6568,10 @@
          "html": "Social media connects you to friends and family.<br><br>You can talk to people anywhere in the world."
         },
         {
-         "type": "callout",
-         "variant": "video",
-         "heading": "🎬 Watch & Learn",
-         "text": "Open YouTube and search: \"digital footprint and online reputation teens\" — watch a short video to see this in real life before moving on."
+         "type": "video",
+         "youtubeId": "guvsH5OFizE",
+         "title": "The World Wide Web: Crash Course Computer Science #30",
+         "caption": "How the web, social media, and online services connect us all."
         },
         {
          "type": "activity",

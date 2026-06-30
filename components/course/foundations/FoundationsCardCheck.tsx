@@ -187,7 +187,7 @@ function MatchingCheck({
                 matched.has(p.term)
                   ? "border-primary bg-primary/10 opacity-60"
                   : selectedTerm === p.term
-                    ? "border-primary"
+                    ? "border-primary bg-primary text-primary-foreground scale-[1.02] shadow-md"
                     : "hover:bg-accent"
               }`}
             >
