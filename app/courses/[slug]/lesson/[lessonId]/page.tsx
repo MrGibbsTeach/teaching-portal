@@ -6,6 +6,7 @@ import { FoundationsLessonView } from "@/components/course/foundations/Foundatio
 import { FoundationsThemeRoot } from "@/components/course/foundations/FoundationsThemeRoot";
 import { atkinson } from "@/components/course/foundations/font";
 import { getCourseBySlug } from "@/lib/courses";
+import { GeneralLessonView } from "@/components/course/GeneralLessonView";
 import { getCourseContent, findLesson, findNextLesson } from "@/lib/content";
 
 export default async function LessonPage({
@@ -21,6 +22,23 @@ export default async function LessonPage({
   const found = findLesson(content, lessonId);
   if (!found) notFound();
   const { unit, topic, lesson } = found;
+
+  const isGeneral = slug === "year-11-applied-it-general" || slug === "year-12-applied-it-general";
+  if (isGeneral) {
+    const nextLesson = findNextLesson(content, lessonId);
+    return (
+      <GeneralLessonView
+        courseSlug={course.slug}
+        courseTitle={course.title}
+        unitTitle={unit.title}
+        topicTitle={topic.title}
+        lessonTitle={lesson.title}
+        estimatedMinutes={lesson.estimatedMinutes}
+        blocks={lesson.blocks}
+        nextLesson={nextLesson}
+      />
+    );
+  }
 
   if (slug === "ait-foundations") {
     const nextLesson = findNextLesson(content, lessonId);

@@ -28,6 +28,12 @@
          "text": "A client has asked your agency to redesign their corporate website — the brief says it looks 'messy and unprofessional.' Before you open Figma or Adobe XD, you need a shared vocabulary. The five elements of design are the raw material every visual communicator works with: line, shape, space, texture, and colour. Year 12 builds on Year 11 knowledge by focusing on how these elements are deliberately combined and why their relationship to design principles determines whether a product succeeds or fails."
         },
         {
+         "type": "video",
+         "youtubeId": "yNDgFK2Jj1E",
+         "title": "Understanding Visual Design Principles",
+         "caption": "Google UX Design — visual design principles applied in professional product design."
+        },
+        {
          "type": "heading",
          "text": "Line",
          "level": 3
@@ -316,6 +322,12 @@
         {
          "type": "paragraph",
          "text": "A national retailer has commissioned a new marketing campaign across three platforms: website, social media tiles, and printed flyers. The same products and brand, but three different design files and three different junior designers. When the campaign launches, the assets look completely different — different fonts, different spacing, different visual mood. The problem is a failure of unity. This lesson covers unity (the Year 12 syllabus principle that pulls all elements together) and typography (the design element with the greatest impact on readability and brand personality)."
+        },
+        {
+         "type": "video",
+         "youtubeId": "a5KYlHNKQB8",
+         "title": "Beginning Graphic Design: Layout & Composition",
+         "caption": "GCFLearnFree — how professional designers apply layout composition rules."
         },
         {
          "type": "heading",
@@ -792,6 +804,12 @@
          "text": "In Year 11 you covered the basics of CPU, memory, and storage. Year 12 takes this further — you are expected to apply this knowledge when advising on hardware purchases, diagnosing compatibility issues, and recommending the right system type for a given job role or business context."
         },
         {
+         "type": "video",
+         "youtubeId": "6mbFO0ZLMW8",
+         "title": "Hardware — CS50's Understanding Technology",
+         "caption": "Harvard's CS50 — a deep dive into computer hardware for IT professionals."
+        },
+        {
          "type": "heading",
          "text": "The Central Processing Unit (CPU)",
          "level": 3
@@ -1060,6 +1078,12 @@
         {
          "type": "paragraph",
          "text": "An operating system (OS) is the software layer that manages all hardware resources and provides a platform for applications to run. Without an OS, a computer is a collection of circuits with no way to receive user input, run programs, or communicate with peripherals."
+        },
+        {
+         "type": "video",
+         "youtubeId": "I0-izyq6q5s",
+         "title": "How Do Computers Remember?",
+         "caption": "Sebastian Lague — a beautiful visual explanation of how computer memory and storage work."
         },
         {
          "type": "keyTerm",
@@ -2026,6 +2050,12 @@
         {
          "type": "paragraph",
          "text": "The Copyright Act 1968 (Cth) is Australia's primary legislation protecting original creative works. Copyright applies automatically the moment an original work is expressed in a material form — there is no registration process and no need for the © symbol. The Act protects literary works, artistic works, musical works, films, sound recordings, broadcasts, and computer programs."
+        },
+        {
+         "type": "video",
+         "youtubeId": "guvsH5OFizE",
+         "title": "The World Wide Web: Crash Course CS #30",
+         "caption": "Crash Course CS — how the web works and how it's transformed how we publish and share information."
         },
         {
          "type": "keyTerms",
@@ -7571,6 +7601,12 @@
          "text": "A computer network is two or more devices connected together so they can communicate and share resources. Networks underpin almost everything in modern business — from sending an email to processing a credit card payment. Understanding networking is foundational for any IT career."
         },
         {
+         "type": "video",
+         "youtubeId": "3QhU9jd03a0",
+         "title": "Computer Networks: Crash Course CS #28",
+         "caption": "Crash Course Computer Science — network types, protocols, and how the internet is structured."
+        },
+        {
          "type": "keyTerms",
          "items": [
           {
@@ -8041,6 +8077,12 @@
         {
          "type": "paragraph",
          "text": "Every network is built from a set of physical components, each with a specific role. Understanding what each component does — and why it is needed — allows IT professionals to set up, maintain, and troubleshoot networks effectively. This lesson uses a real office network scenario to bring the components to life."
+        },
+        {
+         "type": "video",
+         "youtubeId": "ewrBalT_eBM",
+         "title": "A Packet's Tale: How Does the Internet Work?",
+         "caption": "World Science Festival — see exactly how data packets travel between computers."
         },
         {
          "type": "richText",

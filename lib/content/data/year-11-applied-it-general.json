@@ -31,6 +31,12 @@
          "text": "Graphic designers, UI/UX designers, and web developers use these design principles every day. Roles like UX Designer and Brand Manager start with exactly this knowledge. Top tools: Figma, Canva, Adobe Creative Suite."
         },
         {
+         "type": "video",
+         "youtubeId": "yNDgFK2Jj1E",
+         "title": "Understanding Visual Design Principles",
+         "caption": "Google UX Design — a great intro to the visual design principles you'll use throughout this course."
+        },
+        {
          "type": "heading",
          "text": "Elements of Design",
          "level": 2
@@ -189,6 +195,12 @@
          "type": "heading",
          "text": "Principles of Design",
          "level": 2
+        },
+        {
+         "type": "video",
+         "youtubeId": "a5KYlHNKQB8",
+         "title": "Beginning Graphic Design: Layout & Composition",
+         "caption": "GCFLearnFree — watch how layout and composition principles are applied in real graphic design work."
         },
         {
          "type": "paragraph",
@@ -830,6 +842,12 @@
          "text": "IT support technicians and systems administrators need deep hardware knowledge to troubleshoot, recommend, and maintain computer systems. CompTIA A+ certification tests these exact concepts."
         },
         {
+         "type": "video",
+         "youtubeId": "OAx_6-wdslM",
+         "title": "Introducing How Computers Work",
+         "caption": "Code.org — a clear overview of the hardware and software that make up a computer system."
+        },
+        {
          "type": "heading",
          "text": "Types of Computer Systems",
          "level": 2
@@ -976,6 +994,12 @@
          "level": 2
         },
         {
+         "type": "video",
+         "youtubeId": "AkFi90lZmXA",
+         "title": "Inside Your Computer",
+         "caption": "TED-Ed — a visual tour of what's physically happening inside a computer."
+        },
+        {
          "type": "paragraph",
          "text": "The CPU (Central Processing Unit) and memory are the core processing components of any computer. Together they determine how quickly and effectively a computer can handle tasks."
         },
@@ -1103,6 +1127,12 @@
          "type": "heading",
          "text": "Input, Output, and Peripheral Devices",
          "level": 2
+        },
+        {
+         "type": "video",
+         "youtubeId": "p3q5zWCw8J4",
+         "title": "How Computer Memory Works",
+         "caption": "TED-Ed — how RAM, ROM, and storage work together inside a computer."
         },
         {
          "type": "paragraph",
@@ -1692,6 +1722,12 @@
          "type": "heading",
          "text": "Privacy and Personal Information",
          "level": 2
+        },
+        {
+         "type": "video",
+         "youtubeId": "7_LPdttKXPc",
+         "title": "How the Internet Works in 5 Minutes",
+         "caption": "A simple, clear explanation of how data moves across the internet."
         },
         {
          "type": "paragraph",
@@ -4791,6 +4827,12 @@
          "text": "Network Engineers and Systems Administrators design and maintain the networks that businesses run on. Cisco certifications (CCNA) and CompTIA Network+ test these concepts at a professional level."
         },
         {
+         "type": "video",
+         "youtubeId": "3QhU9jd03a0",
+         "title": "Computer Networks: Crash Course CS #28",
+         "caption": "Crash Course Computer Science — how networks are structured and how they communicate."
+        },
+        {
          "type": "heading",
          "text": "What is a Network?",
          "level": 2
@@ -5007,6 +5049,12 @@
          "level": 2
         },
         {
+         "type": "video",
+         "youtubeId": "ewrBalT_eBM",
+         "title": "A Packet's Tale: How Does the Internet Work?",
+         "caption": "World Science Festival — follow a packet of data as it travels across the internet."
+        },
+        {
          "type": "paragraph",
          "text": "Setting up or upgrading a network requires selecting the right hardware for your specific situation. The ideal choice depends on the environment (home, school, office), the number of devices, the required speed, and budget constraints."
         },
@@ -5179,6 +5227,12 @@
          "type": "heading",
          "text": "Why Network Security Matters",
          "level": 2
+        },
+        {
+         "type": "video",
+         "youtubeId": "x3c1ih2NJEg",
+         "title": "How Does the Internet Work?",
+         "caption": "A step-by-step visual walkthrough of internet infrastructure."
         },
         {
          "type": "paragraph",
