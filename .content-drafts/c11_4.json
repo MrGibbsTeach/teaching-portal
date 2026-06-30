@@ -1,0 +1,454 @@
+{
+  "id": "c11_4",
+  "title": "Digital Citizenship",
+  "description": "C11.4",
+  "lessons": [
+    {
+      "id": "c11_4_l1",
+      "title": "Email and Netiquette",
+      "estimatedMinutes": 12,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Email lets you send messages online. 📧",
+          "html": "It is fast, free, and used at school and work.<br><br>Every email has a few key parts."
+        },
+        {
+          "type": "richText",
+          "heading": "To is who gets the email. 👤",
+          "html": "Type the email address of the person here.<br><br>Example: <strong>sam@school.wa.edu.au</strong>"
+        },
+        {
+          "type": "richText",
+          "heading": "CC sends a copy to someone else. 📋",
+          "html": "CC means \"carbon copy\".<br><br>Everyone can see who is in the CC list."
+        },
+        {
+          "type": "richText",
+          "heading": "BCC sends a hidden copy. 🙈",
+          "html": "BCC means \"blind carbon copy\".<br><br>People in the To and CC fields cannot see who is in BCC."
+        },
+        {
+          "type": "richText",
+          "heading": "Subject is a short title for your email. 🏷️",
+          "html": "It tells the reader what the email is about.<br><br>Example: \"Homework due Friday\""
+        },
+        {
+          "type": "richText",
+          "heading": "Message and Attachments finish the email. ✉️",
+          "html": "<strong>Message</strong> — the words you write.<br><strong>Attachments</strong> — files you add, like photos or documents. 📎"
+        },
+        {
+          "type": "richText",
+          "heading": "Netiquette is good manners online. 🤝",
+          "html": "It comes from the words \"net\" and \"etiquette\".<br><br>Be polite, use clear words, and never type in ALL CAPS — it looks like shouting."
+        },
+        {
+          "type": "activity",
+          "title": "Match each email part to its job. 🧩",
+          "pairs": [
+            {
+              "term": "To 👤",
+              "definition": "The main person who gets the email"
+            },
+            {
+              "term": "CC 📋",
+              "definition": "Sends a visible copy to someone else"
+            },
+            {
+              "term": "BCC 🙈",
+              "definition": "Sends a hidden copy that others cannot see"
+            },
+            {
+              "term": "Subject 🏷️",
+              "definition": "A short title that says what the email is about"
+            },
+            {
+              "term": "Attachments 📎",
+              "definition": "Files added to the email, like photos"
+            }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does BCC do? 🙈",
+            "options": [
+              "Sends a copy that everyone can see",
+              "Sends a hidden copy",
+              "Deletes the email"
+            ],
+            "correctIndex": 1,
+            "explanation": "BCC means blind carbon copy. People in To and CC cannot see who is in the BCC list."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What is netiquette? 🤝",
+            "options": [
+              "A type of virus",
+              "Good manners online",
+              "A search engine"
+            ],
+            "correctIndex": 1,
+            "explanation": "Netiquette means good manners on the internet, like being polite and not shouting in capitals."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Why should you avoid typing in ALL CAPS? 🔠",
+            "options": [
+              "It uses more data",
+              "It looks like you are shouting",
+              "It cannot be read by computers"
+            ],
+            "correctIndex": 1,
+            "explanation": "Typing in all capital letters looks like shouting. It is bad netiquette."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c11_4_l2",
+      "title": "Searching the Internet",
+      "estimatedMinutes": 14,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Boolean operators help you search better. 🔍",
+          "html": "They are special words you add to a search.<br><br>The three main ones are AND, OR, and NOT."
+        },
+        {
+          "type": "richText",
+          "heading": "AND narrows your search. ✅",
+          "html": "Example: <strong>dogs AND training</strong><br><br>This finds pages about both dogs and training together."
+        },
+        {
+          "type": "richText",
+          "heading": "OR widens your search. 🔀",
+          "html": "Example: <strong>cats OR dogs</strong><br><br>This finds pages about cats, or dogs, or both."
+        },
+        {
+          "type": "richText",
+          "heading": "NOT removes a word from your search. 🚫",
+          "html": "Example: <strong>jaguar NOT car</strong><br><br>This finds pages about the animal, not the car brand."
+        },
+        {
+          "type": "richText",
+          "heading": "A URL is a web address. It has parts. 🌐",
+          "html": "<strong>http://www.school.edu.au</strong><br><br><strong>http://</strong> = protocol<br><strong>www</strong> = server<br><strong>school</strong> = domain<br><strong>edu</strong> = purpose<br><strong>au</strong> = country"
+        },
+        {
+          "type": "richText",
+          "heading": "The purpose part tells you the site type. 🏢",
+          "html": "<strong>.com</strong> = business 💼<br><strong>.edu</strong> = education 🎓<br><strong>.gov</strong> = government 🏛️<br><strong>.org</strong> = organisation 🤲<br><strong>.net</strong> = network 🔗"
+        },
+        {
+          "type": "richText",
+          "heading": "Not every website tells the truth. ⚠️",
+          "html": "Always check a site before you trust it.<br><br>Look at who wrote it, and when."
+        },
+        {
+          "type": "richText",
+          "heading": "Check three things to judge a source. 🕵️",
+          "html": "<strong>Author</strong> — who wrote it?<br><strong>Publication date</strong> — when was it first written?<br><strong>Date last updated</strong> — when was it last checked or fixed?"
+        },
+        {
+          "type": "activity",
+          "title": "Match each URL part to what it means. 🧩",
+          "pairs": [
+            {
+              "term": "http:// 🔌",
+              "definition": "The protocol — the rules for sending the page"
+            },
+            {
+              "term": "www 🖥️",
+              "definition": "The server that holds the website"
+            },
+            {
+              "term": "edu 🎓",
+              "definition": "The purpose — shows it is an education site"
+            },
+            {
+              "term": "au 🇦🇺",
+              "definition": "The country the website is from"
+            }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Which Boolean operator narrows your search to both words? ✅",
+            "options": [
+              "AND",
+              "OR",
+              "NOT"
+            ],
+            "correctIndex": 0,
+            "explanation": "AND finds pages that include both search words. This makes your search more specific."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does .gov tell you about a website? 🏛️",
+            "options": [
+              "It is a government site",
+              "It is a games site",
+              "It is from Germany"
+            ],
+            "correctIndex": 0,
+            "explanation": ".gov shows the site's purpose is government. It is part of the URL."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Which is NOT a good way to check if a source is reliable? 🕵️",
+            "options": [
+              "Check who the author is",
+              "Check when it was last updated",
+              "Check if the page has nice colours"
+            ],
+            "correctIndex": 2,
+            "explanation": "Colours do not show if information is true. Check the author and the dates instead."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c11_4_l3",
+      "title": "Privacy and Online Risks",
+      "estimatedMinutes": 15,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Privacy means keeping your information safe. 🔒",
+          "html": "This matters when you use email and social media.<br><br>Once you post something, it can be hard to remove."
+        },
+        {
+          "type": "richText",
+          "heading": "Turn off location services when you do not need them. 📍",
+          "html": "Location services share where you are.<br><br>Strangers do not need to know where you are."
+        },
+        {
+          "type": "richText",
+          "heading": "Use strong passwords to stay secure. 🔑",
+          "html": "A strong password is long and hard to guess.<br><br>Never share your password with anyone."
+        },
+        {
+          "type": "richText",
+          "heading": "Privacy settings control who sees your posts. ⚙️",
+          "html": "Set your social media to \"Friends only\" where you can.<br><br>This stops strangers from seeing your life."
+        },
+        {
+          "type": "richText",
+          "heading": "An avatar is a picture that is not your real face. 🦸",
+          "html": "It can protect your identity online.<br><br>Many people use avatars instead of real photos."
+        },
+        {
+          "type": "richText",
+          "heading": "Phishing tricks you into giving away information. 🎣",
+          "html": "A phishing email looks real, but it is fake.<br><br>It tries to steal your passwords or bank details."
+        },
+        {
+          "type": "richText",
+          "heading": "There are many other online risks. ⚠️",
+          "html": "<strong>Cyberbullying</strong> — being mean to someone online. 😢<br><strong>Identity theft</strong> — someone steals your details. 🆔<br><strong>Cyber stalking</strong> — someone watches you online without asking. 👀<br><strong>SPAM</strong> — unwanted junk emails. 🗑️<br><strong>Viruses</strong> — programs that damage your device. 🦠"
+        },
+        {
+          "type": "spotTheThreat",
+          "title": "Spot the phishing email! 🎣",
+          "instruction": "Read each email. Decide if it is safe or a phishing scam.",
+          "emails": [
+            {
+              "isPhishing": true,
+              "from": "security@bankk-alert.com",
+              "subject": "Urgent! Your account will be locked in 24 hours",
+              "body": "Dear Customer, click this link now and enter your password to stop your account closing today.",
+              "redFlags": [
+                { "element": "Sender address", "detail": "\"bankk-alert.com\" is spelled oddly and is not a real bank domain." },
+                { "element": "Urgency", "detail": "Phishing emails often create panic to rush you into clicking." },
+                { "element": "Request", "detail": "Real banks never ask for your password by email." }
+              ]
+            },
+            {
+              "isPhishing": false,
+              "from": "newsletter@school.wa.edu.au",
+              "subject": "Reminder: Year 11 excursion on Friday",
+              "body": "Hi students, just a reminder that the excursion is this Friday. Please bring a hat and water bottle."
+            }
+          ]
+        },
+        {
+          "type": "activity",
+          "title": "Match each risk to what it means. 🧩",
+          "pairs": [
+            {
+              "term": "Phishing 🎣",
+              "definition": "A fake email or message that tries to steal your details"
+            },
+            {
+              "term": "Cyberbullying 😢",
+              "definition": "Being mean or cruel to someone online"
+            },
+            {
+              "term": "Identity theft 🆔",
+              "definition": "Someone steals your personal details to pretend to be you"
+            },
+            {
+              "term": "SPAM 🗑️",
+              "definition": "Unwanted junk messages sent to many people"
+            }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What is phishing? 🎣",
+            "options": [
+              "A fake message trying to steal your details",
+              "A type of strong password",
+              "A privacy setting on social media"
+            ],
+            "correctIndex": 0,
+            "explanation": "Phishing emails look real but are fake. They try to trick you into giving away passwords or bank details."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Why should you turn off location services? 📍",
+            "options": [
+              "It saves battery only",
+              "It stops strangers knowing where you are",
+              "It makes your phone faster"
+            ],
+            "correctIndex": 1,
+            "explanation": "Location services share where you are. Turning them off keeps strangers from finding you."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What is identity theft? 🆔",
+            "options": [
+              "Someone steals your personal details to pretend to be you",
+              "Someone sends you junk mail",
+              "A virus that slows your computer"
+            ],
+            "correctIndex": 0,
+            "explanation": "Identity theft happens when someone steals your details. They then pretend to be you, often to steal money."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c11_4_l4",
+      "title": "Copyright and Citing Sources",
+      "estimatedMinutes": 12,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Copyright protects work that someone created. ©️",
+          "html": "It covers writing, pictures, music, and videos.<br><br>You cannot just copy and use it as your own."
+        },
+        {
+          "type": "richText",
+          "heading": "Copyright applies online too. 🌐",
+          "html": "Photos, posts, and videos on social media still belong to their creator.<br><br>Sharing them without permission can break copyright rules."
+        },
+        {
+          "type": "richText",
+          "heading": "Citing means giving credit to the creator. ✍️",
+          "html": "If you use someone's words or ideas, say where they came from.<br><br>This is called citing a reference."
+        },
+        {
+          "type": "richText",
+          "heading": "A citation usually includes a few details. 📝",
+          "html": "<strong>Author</strong> — who wrote it.<br><strong>Title</strong> — the name of the work.<br><strong>Year</strong> — when it was published.<br><strong>Where you found it</strong> — website or book."
+        },
+        {
+          "type": "richText",
+          "heading": "A bibliography lists all your sources. 📚",
+          "html": "It goes at the end of your work.<br><br>It shows every source you used to find information."
+        },
+        {
+          "type": "richText",
+          "heading": "Always ask before using someone else's work. 🙋",
+          "html": "Some creators allow free use if you give credit.<br><br>If you are unsure, ask first or find a free image instead."
+        },
+        {
+          "type": "activity",
+          "title": "Put these steps in order for citing a source correctly. 📚",
+          "orderedItems": [
+            "Find the information you want to use",
+            "Note the author and title",
+            "Note the year it was published",
+            "Write the citation next to your work",
+            "Add it to your bibliography list"
+          ]
+        },
+        {
+          "type": "activity",
+          "title": "Complete the sentence: A ___ is a list of all the sources you used in your work.",
+          "answer": "bibliography",
+          "explanation": "A bibliography lists every source you used. It usually goes at the end of your project."
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does copyright protect? ©️",
+            "options": [
+              "Only books",
+              "Work that someone created, like writing or photos",
+              "Only government websites"
+            ],
+            "correctIndex": 1,
+            "explanation": "Copyright protects creative work such as writing, photos, music, and videos."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does citing a source mean? ✍️",
+            "options": [
+              "Deleting where you found information",
+              "Giving credit to where you got information",
+              "Copying without saying where it came from"
+            ],
+            "correctIndex": 1,
+            "explanation": "Citing means telling people where your information came from. It gives credit to the original creator."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Where does a bibliography usually go? 📚",
+            "options": [
+              "At the start of your work",
+              "At the end of your work",
+              "It is not needed"
+            ],
+            "correctIndex": 1,
+            "explanation": "A bibliography is a list of all your sources. It goes at the end of your work."
+          }
+        }
+      ]
+    }
+  ]
+}

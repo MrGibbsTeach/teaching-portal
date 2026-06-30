@@ -1,0 +1,414 @@
+{
+  "id": "c11_2",
+  "title": "Word Processing & Data Management",
+  "description": "C11.2",
+  "lessons": [
+    {
+      "id": "c11_2_l1",
+      "title": "Fonts and Formatting",
+      "estimatedMinutes": 12,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Word processing software is used to make documents. 📝",
+          "html": "You can write letters, reports, and stories.<br><br>Examples are Microsoft Word and Google Docs."
+        },
+        {
+          "type": "richText",
+          "heading": "A font is the style of your letters. 🔤",
+          "html": "Different fonts look different.<br><br>Example: <strong>Arial</strong> looks plain. <em>This looks fancy.</em>"
+        },
+        {
+          "type": "richText",
+          "heading": "Font size changes how big the letters are. 🔍",
+          "html": "Small text is good for long paragraphs.<br><br>Big text is good for titles and headings."
+        },
+        {
+          "type": "richText",
+          "heading": "Font style adds a look to your letters. 🖊️",
+          "html": "<strong>Bold</strong> makes text thick and dark.<br><em>Italic</em> makes text slanted.<br><u>Underline</u> puts a line under the text."
+        },
+        {
+          "type": "richText",
+          "heading": "Alignment is where your text sits on the page. ↔️",
+          "html": "Text can be lined up <strong>left</strong>, <strong>centre</strong>, <strong>right</strong>, or <strong>justified</strong> (even on both sides)."
+        },
+        {
+          "type": "richText",
+          "heading": "Line spacing is the gap between lines of text. 📏",
+          "html": "More space makes a document easier to read.<br><br>Less space fits more text on one page."
+        },
+        {
+          "type": "richText",
+          "heading": "You can add tables, pictures, and objects. 🖼️",
+          "html": "A table holds information in rows and columns.<br><br>Pictures and objects make your document more interesting."
+        },
+        {
+          "type": "richText",
+          "heading": "A header is text at the top of every page. ⬆️",
+          "html": "A footer is text at the bottom of every page. ⬇️<br><br>Headers and footers often show a page number or title."
+        },
+        {
+          "type": "activity",
+          "title": "Match each word to its meaning. 🧩",
+          "pairs": [
+            {
+              "term": "Font",
+              "definition": "The style of your letters 🔤"
+            },
+            {
+              "term": "Alignment",
+              "definition": "Where text sits on the page ↔️"
+            },
+            {
+              "term": "Header",
+              "definition": "Text at the top of every page ⬆️"
+            },
+            {
+              "term": "Footer",
+              "definition": "Text at the bottom of every page ⬇️"
+            }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does font size change? 🔍",
+            "options": [
+              "How big the letters are",
+              "The colour of the page",
+              "The name of the document"
+            ],
+            "correctIndex": 0,
+            "explanation": "Font size changes how big or small your letters look on the page."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Where is a footer found? ⬇️",
+            "options": [
+              "Top of every page",
+              "Bottom of every page",
+              "Middle of the page"
+            ],
+            "correctIndex": 1,
+            "explanation": "A footer is text that repeats at the bottom of every page, like a page number."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Which alignment makes text even on both sides? ↔️",
+            "options": [
+              "Left",
+              "Centre",
+              "Justified"
+            ],
+            "correctIndex": 2,
+            "explanation": "Justified alignment spreads text evenly so both the left and right edges line up."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c11_2_l2",
+      "title": "Formatting Documents",
+      "estimatedMinutes": 12,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Formatting is changing how a document looks. 🎨",
+          "html": "Good formatting makes a document easy to read.<br><br>It does not change the words, just the look."
+        },
+        {
+          "type": "richText",
+          "heading": "Use bold for titles and important words. 💪",
+          "html": "Bold text stands out from normal text.<br><br>Don't bold too much, or nothing stands out."
+        },
+        {
+          "type": "richText",
+          "heading": "A table organises information in a grid. ▦",
+          "html": "It has rows (across) and columns (up and down).<br><br>Tables are good for lists, prices, and schedules."
+        },
+        {
+          "type": "richText",
+          "heading": "Tight line spacing fits more on a page. 📐",
+          "html": "Wide line spacing is easier on the eyes.<br><br>Reports often use 1.5 or double line spacing."
+        },
+        {
+          "type": "richText",
+          "heading": "Pictures should match your topic. 🖼️",
+          "html": "Resize a picture by dragging its corner.<br><br>Keep pictures small enough that text still fits."
+        },
+        {
+          "type": "richText",
+          "heading": "Page numbers go in the header or footer. 🔢",
+          "html": "They help readers find a page quickly.<br><br>Most documents number every page automatically."
+        },
+        {
+          "type": "richText",
+          "heading": "Keep formatting consistent. ✅",
+          "html": "Use the same font and size all through your document.<br><br>This makes your work look neat and professional."
+        },
+        {
+          "type": "activity",
+          "title": "Put these document formatting steps in the correct order. 📝",
+          "orderedItems": [
+            "Type your text",
+            "Choose a font and size",
+            "Add a table or picture",
+            "Set the line spacing",
+            "Add a header or footer"
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What is a table used for? ▦",
+            "options": [
+              "Changing font colour",
+              "Organising information in rows and columns",
+              "Spell checking"
+            ],
+            "correctIndex": 1,
+            "explanation": "A table organises information into rows and columns, like a list or schedule."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Why should your formatting stay consistent? ✅",
+            "options": [
+              "It makes the document look neat",
+              "It makes the file smaller",
+              "It changes the words"
+            ],
+            "correctIndex": 0,
+            "explanation": "Using the same font and style throughout makes your document look neat and professional."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Where can a page number be added? 🔢",
+            "options": [
+              "Only in a table",
+              "In the header or footer",
+              "Only on page 1"
+            ],
+            "correctIndex": 1,
+            "explanation": "Page numbers are usually placed in the header or footer so they appear on every page."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c11_2_l3",
+      "title": "Editing and Proofreading",
+      "estimatedMinutes": 12,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Proofreading means checking your work for mistakes. 🔍",
+          "html": "Always proofread before you finish a document.<br><br>Mistakes are easier to fix early."
+        },
+        {
+          "type": "richText",
+          "heading": "Spell check finds spelling mistakes. 🔡",
+          "html": "It often shows a red wavy line under wrong words.<br><br>Right-click the word to see suggestions."
+        },
+        {
+          "type": "richText",
+          "heading": "Grammar check finds sentence mistakes. ✍️",
+          "html": "It often shows a blue or green wavy line.<br><br>It checks things like missing words or wrong tense."
+        },
+        {
+          "type": "richText",
+          "heading": "Spell check does not catch every mistake. ⚠️",
+          "html": "It cannot tell if you used the wrong word correctly spelled.<br><br>Example: \"their\" instead of \"there\". Always read your work too!"
+        },
+        {
+          "type": "richText",
+          "heading": "Print preview shows how your document will look on paper. 🖨️",
+          "html": "Use it before you print to check the layout.<br><br>This saves paper and ink."
+        },
+        {
+          "type": "richText",
+          "heading": "Print options let you change how a document prints. ⚙️",
+          "html": "You can choose the number of copies.<br><br>You can also choose which pages to print, and colour or black & white."
+        },
+        {
+          "type": "richText",
+          "heading": "Always check before you click print. ✅",
+          "html": "Check spelling, grammar, and the print preview.<br><br>This stops you from wasting paper on mistakes."
+        },
+        {
+          "type": "activity",
+          "title": "Match each word to its meaning. 🧩",
+          "pairs": [
+            {
+              "term": "Spell check",
+              "definition": "Finds spelling mistakes 🔡"
+            },
+            {
+              "term": "Grammar check",
+              "definition": "Finds sentence mistakes ✍️"
+            },
+            {
+              "term": "Print preview",
+              "definition": "Shows how the page will look on paper 🖨️"
+            },
+            {
+              "term": "Print options",
+              "definition": "Choose copies, pages, and colour ⚙️"
+            }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does spell check find? 🔡",
+            "options": [
+              "Spelling mistakes",
+              "Picture problems",
+              "Page numbers"
+            ],
+            "correctIndex": 0,
+            "explanation": "Spell check looks for words that are spelled wrong, often shown with a red wavy line."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Why should you still read your own work after spell check? ⚠️",
+            "options": [
+              "Spell check is always wrong",
+              "Spell check cannot catch every mistake, like the wrong word used correctly spelled",
+              "Spell check deletes your work"
+            ],
+            "correctIndex": 1,
+            "explanation": "Spell check cannot tell if a correctly spelled word is the wrong word, like \"their\" instead of \"there\"."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does print preview show you? 🖨️",
+            "options": [
+              "How the document will look on paper",
+              "Spelling mistakes",
+              "The file size"
+            ],
+            "correctIndex": 0,
+            "explanation": "Print preview shows exactly how your document will look once it is printed on paper."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c11_2_l4",
+      "title": "Managing Your Files",
+      "estimatedMinutes": 13,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "A file is one saved item on your computer. 📄",
+          "html": "A document, photo, or song are all files.<br><br>Every file has a name."
+        },
+        {
+          "type": "richText",
+          "heading": "A folder holds files together. 📁",
+          "html": "Folders help you stay organised.<br><br>You can put folders inside other folders too."
+        },
+        {
+          "type": "richText",
+          "heading": "Give your files clear, simple names. 🏷️",
+          "html": "A good name tells you what is inside.<br><br>Example: <strong>English_Essay_Draft1</strong> is better than <strong>Document1</strong>."
+        },
+        {
+          "type": "richText",
+          "heading": "Naming conventions are rules for naming files. 📋",
+          "html": "Many schools and workplaces use one style.<br><br>Example: <strong>Subject_Task_Date</strong>, like <strong>Maths_Test_2026-06-29</strong>."
+        },
+        {
+          "type": "richText",
+          "heading": "Version control means tracking changes to a file. 🔄",
+          "html": "Add a version number when you save a new draft.<br><br>Example: <strong>Essay_v1</strong>, <strong>Essay_v2</strong>, <strong>Essay_v3</strong>."
+        },
+        {
+          "type": "richText",
+          "heading": "Version control stops you losing your best work. 💾",
+          "html": "If a new version breaks, you can go back to an older one.<br><br>Never overwrite your only saved copy without a backup."
+        },
+        {
+          "type": "richText",
+          "heading": "A password protects your files and accounts. 🔒",
+          "html": "Use a password that is hard for others to guess.<br><br>Never share your password with people you don't trust."
+        },
+        {
+          "type": "richText",
+          "heading": "A strong password mixes letters, numbers, and symbols. 🔑",
+          "html": "Example: <strong>Sunset7!Kite</strong> is strong.<br><br>Example: <strong>123456</strong> is weak and easy to guess."
+        },
+        {
+          "type": "activity",
+          "title": "Complete this strong file name: Maths_Homework_______",
+          "answer": "v1",
+          "explanation": "Adding a version number like v1 helps you track changes if you save more drafts later, such as v2 or v3."
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does a folder do? 📁",
+            "options": [
+              "Holds files together",
+              "Checks your spelling",
+              "Prints your document"
+            ],
+            "correctIndex": 0,
+            "explanation": "A folder holds files together so you can stay organised and find them easily."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Why use version control, like naming files v1, v2, v3? 🔄",
+            "options": [
+              "It makes the file smaller",
+              "It tracks changes so you can go back to an older version",
+              "It changes the font automatically"
+            ],
+            "correctIndex": 1,
+            "explanation": "Version control tracks changes over time. If something goes wrong, you can return to an older saved version."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Which is the strongest password? 🔑",
+            "options": [
+              "123456",
+              "password",
+              "Sunset7!Kite"
+            ],
+            "correctIndex": 2,
+            "explanation": "A strong password mixes letters, numbers, and symbols. This makes it much harder to guess."
+          }
+        }
+      ]
+    }
+  ]
+}

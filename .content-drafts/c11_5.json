@@ -1,0 +1,315 @@
+{
+  "id": "c11_5",
+  "title": "Project Management",
+  "description": "C11.5",
+  "lessons": [
+    {
+      "id": "c11_5_l1",
+      "title": "The Design Process",
+      "estimatedMinutes": 12,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Making a digital product needs a plan. 🗂️",
+          "html": "A <strong>digital product</strong> is something made using technology.<br><br>Examples: a website, a poster, a video, an app."
+        },
+        {
+          "type": "richText",
+          "heading": "A digital solution fixes a problem. 💡",
+          "html": "A <strong>digital solution</strong> uses technology to solve a problem.<br><br>Example: an app that reminds you to drink water."
+        },
+        {
+          "type": "richText",
+          "heading": "Who will use your product? That is your target audience. 🎯",
+          "html": "A <strong>target audience</strong> is the group of people your product is made for.<br><br>Example: a game for young children needs simple words and bright colours."
+        },
+        {
+          "type": "richText",
+          "heading": "A design process has 4 stages. 🪜",
+          "html": "1️⃣ Investigate and plan<br>2️⃣ Design and draft<br>3️⃣ Produce<br>4️⃣ Evaluate<br><br>You follow these steps in order, every time."
+        },
+        {
+          "type": "richText",
+          "heading": "Stage 1: Investigate and plan. 🔎",
+          "html": "Find out what is needed.<br><br>Ask: Who is this for? What is the problem? What will it look like?"
+        },
+        {
+          "type": "richText",
+          "heading": "Stage 2: Design and draft. ✏️",
+          "html": "Sketch your ideas on paper or screen.<br><br>This is a rough plan, not the final product yet."
+        },
+        {
+          "type": "richText",
+          "heading": "Stage 3: Produce. 🛠️",
+          "html": "Now you make the real product.<br><br>You use your draft to build it on the computer."
+        },
+        {
+          "type": "richText",
+          "heading": "Stage 4: Evaluate. ✅",
+          "html": "Check if your product is good.<br><br>Ask: Does it work? Does it suit the target audience?"
+        },
+        {
+          "type": "activity",
+          "title": "Put the 4 stages of the design process in the correct order. 🪜",
+          "orderedItems": [
+            "Investigate and plan",
+            "Design and draft",
+            "Produce",
+            "Evaluate"
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What is a target audience? 🎯",
+            "options": [
+              "The price of a product",
+              "The group of people a product is made for",
+              "The software used to make a product"
+            ],
+            "correctIndex": 1,
+            "explanation": "The target audience is the group of people who will use your product. You design with them in mind."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Which stage comes first in the design process? 🪜",
+            "options": [
+              "Produce",
+              "Investigate and plan",
+              "Evaluate"
+            ],
+            "correctIndex": 1,
+            "explanation": "You always investigate and plan first. This helps you understand what you need to make."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What happens in the 'produce' stage? 🛠️",
+            "options": [
+              "You sketch rough ideas",
+              "You build the real product",
+              "You check if it worked"
+            ],
+            "correctIndex": 1,
+            "explanation": "Producing means building the real, finished product using your draft as a guide."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c11_5_l2",
+      "title": "Time Management and Storyboards",
+      "estimatedMinutes": 12,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Time management means using your time wisely. ⏰",
+          "html": "It helps you finish your project on time.<br><br>Without it, you might rush at the end."
+        },
+        {
+          "type": "richText",
+          "heading": "A time plan lists tasks and dates. 📅",
+          "html": "It shows what to do and when to do it.<br><br>Example: \"Week 1 — plan. Week 2 — draft. Week 3 — build.\""
+        },
+        {
+          "type": "richText",
+          "heading": "A journal records what you did each day. 📓",
+          "html": "Write down your progress and any problems.<br><br>This helps you remember what you have finished."
+        },
+        {
+          "type": "richText",
+          "heading": "Use a time plan and a journal together. 🤝",
+          "html": "The time plan shows your goals.<br><br>The journal shows what really happened."
+        },
+        {
+          "type": "richText",
+          "heading": "Before you build, you draw your design. ✏️",
+          "html": "This shows others your idea before you start.<br><br>It is much faster to fix a drawing than a finished product."
+        },
+        {
+          "type": "richText",
+          "heading": "An annotated diagram is a labelled drawing. 🏷️",
+          "html": "Annotated means it has notes added.<br><br>Example: a sketch of a poster with notes like \"logo here\" and \"blue background\"."
+        },
+        {
+          "type": "richText",
+          "heading": "A storyboard shows steps in order. 🎬",
+          "html": "It is a row of small pictures, like a comic strip.<br><br>Each picture shows one screen or one step of your product."
+        },
+        {
+          "type": "activity",
+          "title": "Match each word to its meaning. 🧩",
+          "pairs": [
+            {
+              "term": "Time plan",
+              "definition": "Lists tasks and the dates to do them 📅"
+            },
+            {
+              "term": "Journal",
+              "definition": "Records what you did each day 📓"
+            },
+            {
+              "term": "Annotated diagram",
+              "definition": "A drawing with labels and notes 🏷️"
+            },
+            {
+              "term": "Storyboard",
+              "definition": "A row of pictures showing steps in order 🎬"
+            }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does a time plan show? 📅",
+            "options": [
+              "What you did yesterday",
+              "Tasks and the dates to do them",
+              "The final product"
+            ],
+            "correctIndex": 1,
+            "explanation": "A time plan lists the tasks you need to do and when you plan to do them."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What is a storyboard used for? 🎬",
+            "options": [
+              "Recording daily progress",
+              "Showing steps or screens in order",
+              "Listing the price of materials"
+            ],
+            "correctIndex": 1,
+            "explanation": "A storyboard is a row of pictures that shows the steps or screens of your product in order."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Why do we keep a journal during a project? 📓",
+            "options": [
+              "To decorate the final product",
+              "To record what you did and any problems",
+              "To choose the target audience"
+            ],
+            "correctIndex": 1,
+            "explanation": "A journal records your progress each day, including any problems you ran into."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c11_5_l3",
+      "title": "Evaluating Your Product",
+      "estimatedMinutes": 12,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Evaluating means checking how good something is. 🔍",
+          "html": "You look at your finished product.<br><br>You decide what worked well and what did not."
+        },
+        {
+          "type": "richText",
+          "heading": "You can ask 3 different groups for feedback. 🗣️",
+          "html": "1️⃣ Peers — your classmates<br>2️⃣ Self — you check your own work<br>3️⃣ Target audience — the people it was made for"
+        },
+        {
+          "type": "richText",
+          "heading": "Peer evaluation means classmates give feedback. 🧑‍🤝‍🧑",
+          "html": "A peer is someone at the same level as you.<br><br>Peers can spot mistakes you might miss."
+        },
+        {
+          "type": "richText",
+          "heading": "Self evaluation means checking your own work. 🪞",
+          "html": "Ask yourself: Did I meet the brief? Is it easy to use?<br><br>Be honest about what could be better."
+        },
+        {
+          "type": "richText",
+          "heading": "Target audience evaluation is the most important. 🎯",
+          "html": "These are the real people who will use your product.<br><br>If they like it and can use it, your product is a success."
+        },
+        {
+          "type": "richText",
+          "heading": "Good feedback answers clear questions. ❓",
+          "html": "Example questions: Is it easy to use? Does it look good? Does it solve the problem?<br><br>Clear questions give clear answers."
+        },
+        {
+          "type": "activity",
+          "title": "Match each evaluator to who they are. 🧩",
+          "pairs": [
+            {
+              "term": "Peer",
+              "definition": "A classmate at the same level as you 🧑‍🤝‍🧑"
+            },
+            {
+              "term": "Self",
+              "definition": "You, checking your own work 🪞"
+            },
+            {
+              "term": "Target audience",
+              "definition": "The real people the product was made for 🎯"
+            }
+          ]
+        },
+        {
+          "type": "activity",
+          "title": "Complete this sentence: The ___ is the most important group to ask, because they are the real people who will use the product.",
+          "answer": "target audience",
+          "explanation": "The target audience is who the product was made for. Their feedback shows if the product really works for them."
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does 'evaluate' mean? 🔍",
+            "options": [
+              "Drawing a rough sketch",
+              "Checking how good something is",
+              "Listing tasks and dates"
+            ],
+            "correctIndex": 1,
+            "explanation": "To evaluate means to check how good your finished product is, and what could be improved."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Who is a 'peer'? 🧑‍🤝‍🧑",
+            "options": [
+              "A classmate at the same level as you",
+              "A teacher marking your work",
+              "The person who buys the product"
+            ],
+            "correctIndex": 0,
+            "explanation": "A peer is someone at the same level as you, like a classmate. Peers can give useful feedback."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Why is target audience feedback so important? 🎯",
+            "options": [
+              "They are the real people who will use the product",
+              "They always give the kindest feedback",
+              "They paid for the product"
+            ],
+            "correctIndex": 0,
+            "explanation": "The target audience is who the product is made for. Their feedback shows if it really works for them."
+          }
+        }
+      ]
+    }
+  ]
+}

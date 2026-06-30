@@ -1,0 +1,304 @@
+{
+  "id": "c12_4",
+  "title": "Project Management",
+  "description": "C12.4",
+  "lessons": [
+    {
+      "id": "c12_4_l1",
+      "title": "The Design Process",
+      "estimatedMinutes": 12,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Big projects need a plan. 🗺️",
+          "html": "Making a digital product takes many steps.<br><br>A <strong>design process</strong> is a set of steps you follow in order."
+        },
+        {
+          "type": "richText",
+          "heading": "There are 4 stages in the design process. 🔢",
+          "html": "<strong>1. Investigate and plan</strong><br><strong>2. Design and draft</strong><br><strong>3. Produce</strong><br><strong>4. Evaluate</strong><br><br>You do them in this order, one at a time."
+        },
+        {
+          "type": "richText",
+          "heading": "Stage 1: Investigate and plan. 🔍",
+          "html": "Find out who will use your product. This is your <strong>target audience</strong>.<br><br>Ask: what do they need? What do they already have?"
+        },
+        {
+          "type": "richText",
+          "heading": "Stage 2: Design and draft. ✏️",
+          "html": "Sketch your ideas before you build anything.<br><br>A draft could be a drawing, a storyboard, or a simple plan on paper."
+        },
+        {
+          "type": "richText",
+          "heading": "Stage 3: Produce. 🛠️",
+          "html": "Now you actually make the digital product.<br><br>You follow your draft from Stage 2 as you build it."
+        },
+        {
+          "type": "richText",
+          "heading": "Stage 4: Evaluate. ✅",
+          "html": "Check your finished product against your plan.<br><br>Ask: does it do what the target audience needs?"
+        },
+        {
+          "type": "activity",
+          "title": "Put the 4 design process stages in the correct order. 🔢",
+          "orderedItems": [
+            "Investigate and plan",
+            "Design and draft",
+            "Produce",
+            "Evaluate"
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What is a target audience? 🎯",
+            "options": [
+              "The people who will use your product",
+              "The software you use to build it",
+              "The final mark you get"
+            ],
+            "correctIndex": 0,
+            "explanation": "The target audience is the group of people your product is made for. You plan around their needs."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Which stage comes first in the design process? 🔍",
+            "options": [
+              "Produce",
+              "Investigate and plan",
+              "Evaluate"
+            ],
+            "correctIndex": 1,
+            "explanation": "You always investigate and plan first. This helps you understand the task before you design or build anything."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What happens in the Evaluate stage? ✅",
+            "options": [
+              "You sketch your first ideas",
+              "You check the product against your plan",
+              "You find your target audience"
+            ],
+            "correctIndex": 1,
+            "explanation": "Evaluate means checking your finished work. You ask if it meets the plan and the needs of the target audience."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c12_4_l2",
+      "title": "Roles in a Team",
+      "estimatedMinutes": 13,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Big projects are often done in teams. 👥",
+          "html": "One person cannot do everything alone.<br><br>Each team member gets a different <strong>role</strong>, or job, to do."
+        },
+        {
+          "type": "richText",
+          "heading": "There are 4 main roles in a project team. 🧑‍🤝‍🧑",
+          "html": "<strong>Project manager</strong><br><strong>Researcher</strong><br><strong>Media coordinator</strong><br><strong>Content writer</strong><br><br>Each role has its own job to do."
+        },
+        {
+          "type": "richText",
+          "heading": "The project manager keeps the team on track. 📋",
+          "html": "They watch the timeline and check deadlines.<br><br>They make sure every team member knows their job."
+        },
+        {
+          "type": "richText",
+          "heading": "The researcher finds information. 🔎",
+          "html": "They look up facts the team needs.<br><br>They check that information is true and correct."
+        },
+        {
+          "type": "richText",
+          "heading": "The media coordinator collects images and sound. 🎬",
+          "html": "They find or make photos, video, and audio.<br><br>They check that media files are the right type and size."
+        },
+        {
+          "type": "richText",
+          "heading": "The content writer writes the words. ✍️",
+          "html": "They write text for the product, like captions or pages.<br><br>They check the writing is clear and easy to read."
+        },
+        {
+          "type": "activity",
+          "title": "Match each role to what they do. 🧩",
+          "pairs": [
+            {
+              "term": "Project manager",
+              "definition": "Keeps the team on track and checks deadlines 📋"
+            },
+            {
+              "term": "Researcher",
+              "definition": "Finds and checks information 🔎"
+            },
+            {
+              "term": "Media coordinator",
+              "definition": "Collects images, video and sound 🎬"
+            },
+            {
+              "term": "Content writer",
+              "definition": "Writes the words for the product ✍️"
+            }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Who checks that the team meets its deadlines? 📋",
+            "options": [
+              "The researcher",
+              "The project manager",
+              "The content writer"
+            ],
+            "correctIndex": 1,
+            "explanation": "The project manager keeps the team on track. They watch the timeline and check deadlines."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Which role collects photos and video for the project? 🎬",
+            "options": [
+              "Media coordinator",
+              "Researcher",
+              "Project manager"
+            ],
+            "correctIndex": 0,
+            "explanation": "The media coordinator collects images, video, and sound. They check the files are the right type and size."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does the content writer do? ✍️",
+            "options": [
+              "Finds facts for the team",
+              "Writes the words for the product",
+              "Collects video files"
+            ],
+            "correctIndex": 1,
+            "explanation": "The content writer writes the text used in the product, such as captions or page text."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c12_4_l3",
+      "title": "Working Well as a Team",
+      "estimatedMinutes": 12,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Teams need rules to work well together. 🤝",
+          "html": "These rules are called <strong>group work protocols</strong>.<br><br>They help everyone know what to do and how to act."
+        },
+        {
+          "type": "richText",
+          "heading": "Strategy 1: Set group work protocols. 📜",
+          "html": "Agree on rules at the start, like meeting times.<br><br>Example rule: everyone listens before speaking."
+        },
+        {
+          "type": "richText",
+          "heading": "Strategy 2: Clearly identify roles. 🏷️",
+          "html": "Everyone should know their own job.<br><br>This stops two people doing the same task, or no one doing it."
+        },
+        {
+          "type": "richText",
+          "heading": "Strategy 3: Communicate well. 💬",
+          "html": "Talk often and tell others how your work is going.<br><br>Ask for help early if you are stuck."
+        },
+        {
+          "type": "richText",
+          "heading": "Strategy 4: Set clear goals and timelines. ⏰",
+          "html": "A <strong>goal</strong> is what you want to finish.<br>A <strong>timeline</strong> is when each part is due.<br><br>Clear goals and timelines help the team stay on track."
+        },
+        {
+          "type": "richText",
+          "heading": "Good teamwork makes better projects. 🌟",
+          "html": "When everyone does their role and talks often, the project goes smoothly.<br><br>Poor teamwork can make a project late or messy."
+        },
+        {
+          "type": "activity",
+          "title": "Sort each statement into the correct column. 📊",
+          "categories": [
+            {
+              "label": "Good teamwork ✅",
+              "items": [
+                "Everyone knows their role",
+                "The team talks often",
+                "The team has a clear timeline"
+              ]
+            },
+            {
+              "label": "Poor teamwork ⚠️",
+              "items": [
+                "No one knows who does what",
+                "Team members never talk to each other",
+                "There is no deadline for any task"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "activity",
+          "title": "Complete the sentence: A ___ is when each part of the project is due.",
+          "answer": "timeline",
+          "explanation": "A timeline shows when each part of the project must be finished by."
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What are group work protocols? 📜",
+            "options": [
+              "The final mark for the project",
+              "Rules the team agrees on for how to work together",
+              "A list of software to use"
+            ],
+            "correctIndex": 1,
+            "explanation": "Group work protocols are rules the team sets at the start, like meeting times and how to communicate."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Why is it important to clearly identify roles? 🏷️",
+            "options": [
+              "So the team can skip the evaluate stage",
+              "So everyone knows their own job and nothing is missed",
+              "So only one person needs to work"
+            ],
+            "correctIndex": 1,
+            "explanation": "Clear roles stop two people doing the same task, or a task being missed completely."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What helps a team know when each task is due? ⏰",
+            "options": [
+              "A timeline",
+              "A target audience",
+              "A draft"
+            ],
+            "correctIndex": 0,
+            "explanation": "A timeline sets clear dates for when each part of the project should be finished."
+          }
+        }
+      ]
+    }
+  ]
+}

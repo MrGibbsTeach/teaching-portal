@@ -1,0 +1,295 @@
+{
+  "id": "c12_1",
+  "title": "The Computer System",
+  "description": "C12.1",
+  "lessons": [
+    {
+      "id": "c12_1_l1",
+      "title": "Types of Computer Systems",
+      "estimatedMinutes": 12,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "A computer system is hardware and software working together. 🖥️",
+          "html": "Hardware is the parts you can touch.<br><br>Software is the programs that run on it."
+        },
+        {
+          "type": "richText",
+          "heading": "A desktop computer stays in one place. 🖱️",
+          "html": "It has a separate screen, keyboard, and mouse.<br><br>You find them in homes, schools, and offices."
+        },
+        {
+          "type": "richText",
+          "heading": "A mobile device is small and easy to carry. 📱",
+          "html": "Laptops, tablets, and phones are mobile devices.<br><br>They run on a battery, so you can use them anywhere."
+        },
+        {
+          "type": "richText",
+          "heading": "A server stores files and shares them with other computers. 🗄️",
+          "html": "Many people can connect to one server.<br><br>Servers are usually kept in a locked, cool room."
+        },
+        {
+          "type": "richText",
+          "heading": "Hardware does 4 main jobs. ⚙️",
+          "html": "<strong>Input</strong> — puts data in (keyboard, mouse). ⌨️<br><strong>Processing</strong> — does the thinking (CPU). 🧠<br><strong>Output</strong> — shows the result (screen, printer). 🖨️<br><strong>Storage</strong> — saves data for later (hard drive). 💾"
+        },
+        {
+          "type": "richText",
+          "heading": "Communication hardware connects computers together. 📶",
+          "html": "A Wi-Fi card or network cable lets a computer go online.<br><br>This lets it send and receive data."
+        },
+        {
+          "type": "richText",
+          "heading": "Software is split into 3 types. 💿",
+          "html": "<strong>Operating system</strong> — runs the whole computer (Windows, macOS). 🖥️<br><strong>Application</strong> — software you use for a task (Word, games). 📝<br><strong>Utility</strong> — software that fixes or cleans the computer (antivirus). 🧹"
+        },
+        {
+          "type": "activity",
+          "title": "Match each computer type to its description. 🧩",
+          "pairs": [
+            {
+              "term": "Desktop",
+              "definition": "Stays in one place, has separate parts 🖱️"
+            },
+            {
+              "term": "Mobile",
+              "definition": "Small, carried around, runs on battery 📱"
+            },
+            {
+              "term": "Server",
+              "definition": "Stores files for many other computers 🗄️"
+            }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does a server do? 🗄️",
+            "options": [
+              "Stores and shares files with other computers",
+              "Fits in your pocket",
+              "Only works without power"
+            ],
+            "correctIndex": 0,
+            "explanation": "A server stores files and shares them with many other computers at the same time."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Which hardware job does a keyboard do? ⌨️",
+            "options": [
+              "Output",
+              "Input",
+              "Storage"
+            ],
+            "correctIndex": 1,
+            "explanation": "A keyboard is an input device. It puts data into the computer."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What type of software is antivirus? 🧹",
+            "options": [
+              "Operating system",
+              "Application",
+              "Utility"
+            ],
+            "correctIndex": 2,
+            "explanation": "Antivirus is a utility. Utility software fixes or cleans the computer system."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c12_1_l2",
+      "title": "Caring for a Computer System",
+      "estimatedMinutes": 10,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Computers need physical care to keep working well. 🛡️",
+          "html": "Looking after the hardware stops damage.<br><br>It also makes the computer last longer."
+        },
+        {
+          "type": "richText",
+          "heading": "Ventilation means letting air flow around the computer. 💨",
+          "html": "Computers get hot when they run.<br><br>Leave space around the computer so air can move and cool it down."
+        },
+        {
+          "type": "richText",
+          "heading": "Blocked vents cause overheating. 🥵",
+          "html": "Never put a computer against a wall or in a closed box.<br><br>Overheating can damage parts inside."
+        },
+        {
+          "type": "richText",
+          "heading": "Keep liquids away from your computer. 🥤",
+          "html": "A spilled drink can ruin the keyboard or the inside parts.<br><br>Always keep cups and bottles away from your computer."
+        },
+        {
+          "type": "richText",
+          "heading": "Dust can build up inside a computer. 🌫️",
+          "html": "Dust traps heat and can stop fans from spinning.<br><br>Clean dust away regularly with a soft cloth or air duster."
+        },
+        {
+          "type": "richText",
+          "heading": "Dust minimisation keeps a computer running cool. ❄️",
+          "html": "Keep the computer away from carpets and dusty areas.<br><br>Wipe down the desk and screen often."
+        },
+        {
+          "type": "activity",
+          "title": "Match each care strategy to why it matters. 🧩",
+          "pairs": [
+            {
+              "term": "Ventilation",
+              "definition": "Lets air flow so the computer does not overheat 💨"
+            },
+            {
+              "term": "Liquids away",
+              "definition": "Stops spills damaging the hardware 🥤"
+            },
+            {
+              "term": "Dust minimisation",
+              "definition": "Stops dust trapping heat and clogging fans 🌫️"
+            }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Why does a computer need good ventilation? 💨",
+            "options": [
+              "To stop it overheating",
+              "To make it lighter",
+              "To make it louder"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ventilation lets air flow around the computer. This stops it from overheating and getting damaged."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What can dust do inside a computer? 🌫️",
+            "options": [
+              "Make it run faster",
+              "Trap heat and clog fans",
+              "Improve the screen colours"
+            ],
+            "correctIndex": 1,
+            "explanation": "Dust traps heat and can stop fans from spinning properly. This can damage the computer over time."
+          }
+        },
+        {
+          "type": "activity",
+          "title": "Fill in the blank: Never place a drink near your keyboard, because a spill could damage the ___.",
+          "answer": "hardware",
+          "explanation": "A spilled liquid can get inside the computer and damage the hardware parts."
+        }
+      ]
+    },
+    {
+      "id": "c12_1_l3",
+      "title": "Staying Safe: Threats and WSH",
+      "estimatedMinutes": 13,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "External threats can damage your computer or steal your data. 🦠",
+          "html": "A threat is something that can harm your computer system.<br><br>Threats can come from the internet or from other devices."
+        },
+        {
+          "type": "richText",
+          "heading": "Antivirus software finds and removes viruses. 🛡️",
+          "html": "A virus is harmful software that can damage files.<br><br>Antivirus software scans your computer to find and stop it."
+        },
+        {
+          "type": "richText",
+          "heading": "A firewall blocks unwanted traffic from the internet. 🧱",
+          "html": "It checks data coming in and out of your computer.<br><br>A firewall stops dangerous connections before they cause harm."
+        },
+        {
+          "type": "richText",
+          "heading": "WSH stands for Workplace Safety and Health. 🦺",
+          "html": "WSH rules keep you safe while using ICT.<br><br>They help to prevent injuries and health problems."
+        },
+        {
+          "type": "richText",
+          "heading": "Use electrical equipment safely. 🔌",
+          "html": "Check cords are not frayed or damaged.<br><br>Never overload a power point with too many plugs."
+        },
+        {
+          "type": "richText",
+          "heading": "Watch how much time you spend using technology. ⏱️",
+          "html": "Sitting too long can hurt your eyes, neck, and back.<br><br>Take regular breaks away from the screen."
+        },
+        {
+          "type": "activity",
+          "title": "Match each tool or rule to what it does. 🧩",
+          "pairs": [
+            {
+              "term": "Antivirus software",
+              "definition": "Finds and removes harmful viruses 🛡️"
+            },
+            {
+              "term": "Firewall",
+              "definition": "Blocks unwanted traffic from the internet 🧱"
+            },
+            {
+              "term": "Taking breaks",
+              "definition": "Protects your eyes, neck, and back ⏱️"
+            }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does a firewall do? 🧱",
+            "options": [
+              "Cleans dust from the computer",
+              "Blocks unwanted traffic from the internet",
+              "Charges the battery"
+            ],
+            "correctIndex": 1,
+            "explanation": "A firewall checks data going in and out of your computer. It blocks dangerous connections."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does WSH stand for? 🦺",
+            "options": [
+              "Wireless System Hardware",
+              "Workplace Safety and Health",
+              "Web Storage Hub"
+            ],
+            "correctIndex": 1,
+            "explanation": "WSH stands for Workplace Safety and Health. These rules help keep people safe while using ICT."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Why should you take breaks from screen time? ⏱️",
+            "options": [
+              "To save battery",
+              "To protect your eyes, neck, and back",
+              "To clean the keyboard"
+            ],
+            "correctIndex": 1,
+            "explanation": "Sitting and looking at a screen for too long can hurt your eyes, neck, and back. Breaks help prevent this."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,417 @@
+{
+  "id": "c12_2",
+  "title": "Word Processing & Data Management",
+  "description": "C12.2",
+  "lessons": [
+    {
+      "id": "c12_2_l1",
+      "title": "Formatting a Document",
+      "estimatedMinutes": 12,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Formatting changes how a document looks. 🎨",
+          "html": "It does not change the words.<br><br>Good formatting makes a document easy to read."
+        },
+        {
+          "type": "richText",
+          "heading": "Colour can make text stand out. 🌈",
+          "html": "Use colour on headings, not whole paragraphs.<br><br>Too much colour makes a page hard to read."
+        },
+        {
+          "type": "richText",
+          "heading": "Graphics are pictures inside your document. 🖼️",
+          "html": "A graphic could be a photo, a logo, or a chart.<br><br>Graphics help explain your ideas."
+        },
+        {
+          "type": "richText",
+          "heading": "Shading adds a background colour to text. 🟦",
+          "html": "Shading is often used behind a heading or a table row.<br><br>It helps that part stand out from the rest."
+        },
+        {
+          "type": "richText",
+          "heading": "Borders are lines around text or tables. ▭",
+          "html": "Borders separate one part of a page from another.<br><br>They make tables and boxes easy to see."
+        },
+        {
+          "type": "richText",
+          "heading": "Alignment lines up your text. ↔️",
+          "html": "<strong>Horizontal alignment</strong> — left, centre, right, or justified across the page.<br><br><strong>Vertical alignment</strong> — top, middle, or bottom of the page or cell."
+        },
+        {
+          "type": "richText",
+          "heading": "A table organises information into rows and columns. 🔢",
+          "html": "Tables are good for lists, prices, or timetables.<br><br>You can add borders and shading to a table too."
+        },
+        {
+          "type": "activity",
+          "title": "Match each formatting feature to what it does. 🧩",
+          "pairs": [
+            {
+              "term": "Colour",
+              "definition": "Makes text or headings stand out 🌈"
+            },
+            {
+              "term": "Graphics",
+              "definition": "Pictures placed inside a document 🖼️"
+            },
+            {
+              "term": "Shading",
+              "definition": "A background colour behind text 🟦"
+            },
+            {
+              "term": "Borders",
+              "definition": "Lines drawn around text or tables ▭"
+            },
+            {
+              "term": "Table",
+              "definition": "Organises information into rows and columns 🔢"
+            }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does shading do? 🟦",
+            "options": [
+              "Adds a background colour behind text",
+              "Draws a line around a table",
+              "Lines up text in the centre"
+            ],
+            "correctIndex": 0,
+            "explanation": "Shading adds a background colour. It is often used behind headings or table rows to make them stand out."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Which alignment spreads text evenly across the whole page width? ↔️",
+            "options": [
+              "Centre",
+              "Justified",
+              "Right"
+            ],
+            "correctIndex": 1,
+            "explanation": "Justified alignment spreads text so it touches both the left and right margins evenly."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What is a table best used for? 🔢",
+            "options": [
+              "Organising information into rows and columns",
+              "Changing the font colour",
+              "Adding a picture to a page"
+            ],
+            "correctIndex": 0,
+            "explanation": "A table organises information into rows and columns. It is good for lists, prices, and timetables."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c12_2_l2",
+      "title": "Edit, Proofread & Print",
+      "estimatedMinutes": 12,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Editing means changing your document. ✏️",
+          "html": "You might add words, delete words, or move a sentence.<br><br>You edit to make your document better."
+        },
+        {
+          "type": "richText",
+          "heading": "Proofreading means checking for mistakes. 🔍",
+          "html": "You check spelling, grammar, and punctuation.<br><br>Always proofread before you print or send a document."
+        },
+        {
+          "type": "richText",
+          "heading": "The thesaurus finds other words with the same meaning. 📖",
+          "html": "It helps you find a better word.<br><br>Example: instead of \"good\", the thesaurus might suggest \"great\" or \"excellent\"."
+        },
+        {
+          "type": "richText",
+          "heading": "Find and replace can change a word everywhere at once. 🔁",
+          "html": "Type the word to find, and the new word to use instead.<br><br>Click \"Replace All\" to change every match in one go."
+        },
+        {
+          "type": "richText",
+          "heading": "Print preview shows what your page will look like before you print it. 👀",
+          "html": "It helps you spot problems first.<br><br>This saves paper and ink."
+        },
+        {
+          "type": "richText",
+          "heading": "Print options let you choose how a document prints. 🖨️",
+          "html": "<strong>Number of copies</strong> — how many you want.<br><strong>Page range</strong> — all pages, or just some.<br><strong>Colour or black & white</strong> — saves ink if you choose black & white."
+        },
+        {
+          "type": "activity",
+          "title": "Put these steps in order for printing a document. 🖨️",
+          "orderedItems": [
+            "Proofread the document for mistakes",
+            "Open print preview to check the layout",
+            "Choose your print options",
+            "Click Print"
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does the thesaurus tool do? 📖",
+            "options": [
+              "Checks your spelling",
+              "Finds other words with a similar meaning",
+              "Prints your document"
+            ],
+            "correctIndex": 1,
+            "explanation": "A thesaurus suggests words with a similar meaning. It helps you find a better word to use."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "You typed \"colour\" 20 times but want to change it to \"shade\" everywhere. What is the fastest way? 🔁",
+            "options": [
+              "Use Find and Replace",
+              "Delete the whole document and start again",
+              "Use the thesaurus"
+            ],
+            "correctIndex": 0,
+            "explanation": "Find and Replace changes every matching word in one go. It is much faster than fixing each one by hand."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Why should you use print preview? 👀",
+            "options": [
+              "It checks your spelling for you",
+              "It lets you see the page before you print it",
+              "It saves your document automatically"
+            ],
+            "correctIndex": 1,
+            "explanation": "Print preview shows exactly what will print. It helps you spot layout problems before wasting paper and ink."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c12_2_l3",
+      "title": "Managing Your Personal Data",
+      "estimatedMinutes": 13,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Data is raw facts. Information is data that makes sense. 🧠",
+          "html": "<strong>Data</strong> — \"28, 31, 19\" on their own.<br><br><strong>Information</strong> — \"28°C, 31°C, 19°C — this week's temperatures.\" Now it has meaning."
+        },
+        {
+          "type": "richText",
+          "heading": "A password protects your files and accounts. 🔒",
+          "html": "A strong password is hard for others to guess.<br><br>Never share your password with anyone."
+        },
+        {
+          "type": "richText",
+          "heading": "A file is one single document. A folder holds many files. 🗂️",
+          "html": "Folders help you keep similar files together.<br><br>Example: a \"School\" folder full of assignment files."
+        },
+        {
+          "type": "richText",
+          "heading": "A naming convention is a consistent way to name files. 🏷️",
+          "html": "Good naming makes files easy to find later.<br><br>Example: <strong>Essay_Draft1_2026-06-12.docx</strong> tells you what it is and when it was made."
+        },
+        {
+          "type": "richText",
+          "heading": "Version control keeps track of changes to a document over time. 🔄",
+          "html": "Each saved version is called a <strong>document version</strong>.<br><br>This lets you go back to an older version if you make a mistake."
+        },
+        {
+          "type": "richText",
+          "heading": "Good habits keep your digital workspace tidy. ✅",
+          "html": "Use clear folder names.<br>Save new versions instead of overwriting good work.<br>Keep your password private and strong."
+        },
+        {
+          "type": "activity",
+          "title": "Match each term to its meaning. 🧩",
+          "pairs": [
+            {
+              "term": "Data",
+              "definition": "Raw facts with no meaning on their own 🧠"
+            },
+            {
+              "term": "Information",
+              "definition": "Data that has been given meaning"
+            },
+            {
+              "term": "Folder",
+              "definition": "Holds many related files together 🗂️"
+            },
+            {
+              "term": "Naming convention",
+              "definition": "A consistent way to name your files 🏷️"
+            },
+            {
+              "term": "Document version",
+              "definition": "A saved copy of a document at one point in time 🔄"
+            }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Which of these is information, not just data? 🧠",
+            "options": [
+              "15, 22, 9",
+              "\"15, 22, 9 students absent each day this week\"",
+              "A list of random numbers"
+            ],
+            "correctIndex": 1,
+            "explanation": "Information is data that has been given meaning. The numbers alone are just data; explaining what they mean makes it information."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Which file name follows a good naming convention? 🏷️",
+            "options": [
+              "asdf123.docx",
+              "Document1.docx",
+              "Science_Report_Draft2_2026-05-03.docx"
+            ],
+            "correctIndex": 2,
+            "explanation": "A good file name clearly tells you what the file is and when it was made. This makes it easy to find later."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What is version control used for? 🔄",
+            "options": [
+              "Protecting a file with a password",
+              "Keeping track of changes to a document over time",
+              "Choosing a file format"
+            ],
+            "correctIndex": 1,
+            "explanation": "Version control keeps track of saved versions of a document. This lets you see or restore an earlier version if needed."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c12_2_l4",
+      "title": "Backups & File Formats",
+      "estimatedMinutes": 13,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "A backup is an extra copy of your files. 💾",
+          "html": "If your device breaks or a file is deleted, the backup is safe.<br><br>Always keep more than one copy of important work."
+        },
+        {
+          "type": "richText",
+          "heading": "A local backup is stored on a device near you. 🏠",
+          "html": "Examples: a USB drive, an external hard drive, or a second computer.<br><br>Risk: if your house has a fire or flood, a local backup can be lost too."
+        },
+        {
+          "type": "richText",
+          "heading": "A remote backup is stored somewhere else, often online. ☁️",
+          "html": "Examples: Google Drive, OneDrive, or iCloud.<br><br>Benefit: it is safe even if your own device is lost, stolen, or damaged."
+        },
+        {
+          "type": "richText",
+          "heading": "The best plan uses both local and remote backups. ✅",
+          "html": "Local backups are fast to access.<br>Remote backups protect you if something happens at home.<br>Using both gives you the most protection."
+        },
+        {
+          "type": "richText",
+          "heading": "A file format is the type of file you save. 📄",
+          "html": "The format is shown after the dot in a file name.<br><br>Example: <strong>Essay.docx</strong> — the format is .docx"
+        },
+        {
+          "type": "richText",
+          "heading": "Each file format is linked to certain software. 🔗",
+          "html": "<strong>.docx</strong> — opens in word processing software.<br><strong>.xlsx</strong> — opens in spreadsheet software.<br><strong>.pdf</strong> — opens in a PDF reader.<br><strong>.jpg / .png</strong> — opens in image software."
+        },
+        {
+          "type": "richText",
+          "heading": "Your computer uses the file format to choose the right software. 🖥️",
+          "html": "This is called a software association.<br><br>That is why double-clicking a .docx file opens your word processor automatically."
+        },
+        {
+          "type": "activity",
+          "title": "Sort each backup example into local or remote. 📊",
+          "categories": [
+            {
+              "label": "Local backup 🏠",
+              "items": [
+                "USB drive",
+                "External hard drive",
+                "Second computer at home"
+              ]
+            },
+            {
+              "label": "Remote backup ☁️",
+              "items": [
+                "Google Drive",
+                "OneDrive",
+                "iCloud"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What is a remote backup? ☁️",
+            "options": [
+              "A copy stored on a USB drive at home",
+              "A copy stored somewhere else, often online",
+              "The original file you are working on"
+            ],
+            "correctIndex": 1,
+            "explanation": "A remote backup is stored away from your home, often online. This keeps it safe even if your device is lost or damaged."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Why is it risky to only use a local backup? 🏠",
+            "options": [
+              "Local backups cost too much money",
+              "A fire or flood at home could destroy both copies",
+              "Local backups cannot be opened on any device"
+            ],
+            "correctIndex": 1,
+            "explanation": "If your only backup is local, a disaster at home (like fire or flood) could destroy your original file and your backup together."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does a software association do? 🔗",
+            "options": [
+              "It deletes old file versions",
+              "It links a file format to the software that opens it",
+              "It backs up your files automatically"
+            ],
+            "correctIndex": 1,
+            "explanation": "A software association links a file format (like .docx) to the correct software (like a word processor) so it opens automatically."
+          }
+        }
+      ]
+    }
+  ]
+}

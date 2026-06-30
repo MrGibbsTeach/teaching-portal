@@ -1,0 +1,401 @@
+{
+  "id": "c12_5",
+  "title": "Online Ethics",
+  "description": "C12.5",
+  "lessons": [
+    {
+      "id": "c12_5_l1",
+      "title": "Social Media Tools",
+      "estimatedMinutes": 12,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Social media lets people connect online. 📱",
+          "html": "Social media is websites and apps for sharing and talking.<br><br>People use it to post, chat, and stay in touch."
+        },
+        {
+          "type": "richText",
+          "heading": "There are different types of social media. 🗂️",
+          "html": "<strong>Facebook</strong> — share posts and photos with friends.<br><strong>Instagram</strong> — share photos and short videos.<br><strong>TikTok</strong> — share short videos.<br><strong>Snapchat</strong> — send photos and messages that disappear."
+        },
+        {
+          "type": "richText",
+          "heading": "Social media tools share common features. ⚙️",
+          "html": "A <strong>profile</strong> — your name, photo, and information.<br>A <strong>news feed</strong> — posts from people you follow.<br><strong>Comments and likes</strong> — ways to react to posts.<br><strong>Messaging</strong> — sending private messages to others."
+        },
+        {
+          "type": "richText",
+          "heading": "Connectivity means staying linked to others. 🔗",
+          "html": "Social media connects you to friends and family.<br><br>You can talk to people anywhere in the world."
+        },
+        {
+          "type": "activity",
+          "title": "Match each social media feature to what it does. 🧩",
+          "pairs": [
+            {
+              "term": "Profile 👤",
+              "definition": "Your name, photo, and information on the app"
+            },
+            {
+              "term": "News feed 📰",
+              "definition": "A list of posts from people you follow"
+            },
+            {
+              "term": "Comments and likes 👍",
+              "definition": "Ways to react to someone's post"
+            },
+            {
+              "term": "Messaging 💬",
+              "definition": "Sending a private message to one person"
+            }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What is social media? 📱",
+            "options": [
+              "A type of computer hardware",
+              "Websites and apps for sharing and talking",
+              "A way to print documents"
+            ],
+            "correctIndex": 1,
+            "explanation": "Social media is websites and apps. People use them to post, chat, and stay connected."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does your profile show on social media? 👤",
+            "options": [
+              "Your name, photo, and information",
+              "A list of every website you visit",
+              "Your bank account details"
+            ],
+            "correctIndex": 0,
+            "explanation": "Your profile shows your name, photo, and basic information about you."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does connectivity mean on social media? 🔗",
+            "options": [
+              "How fast your internet loads a page",
+              "Staying linked to other people",
+              "How many photos you have posted"
+            ],
+            "correctIndex": 1,
+            "explanation": "Connectivity means staying linked to others. Social media connects you to people anywhere."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c12_5_l2",
+      "title": "Pros and Cons of Online Collaboration",
+      "estimatedMinutes": 12,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Online collaboration means working together online. 🤝",
+          "html": "You can chat, share files, and plan with others.<br><br>You do not need to be in the same room."
+        },
+        {
+          "type": "richText",
+          "heading": "Online collaboration has good points. ✅",
+          "html": "Better <strong>connectivity</strong> — you stay in touch with people far away.<br>More <strong>engagement</strong> — more people can join in and share ideas.<br>Quick to share files, photos, and updates."
+        },
+        {
+          "type": "richText",
+          "heading": "Online collaboration also has risks. ⚠️",
+          "html": "You may share your <strong>personal information</strong> by accident.<br>Apps can show your <strong>physical location</strong> to others.<br>Strangers may see things you only meant for friends."
+        },
+        {
+          "type": "richText",
+          "heading": "Be careful what you share online. 📍",
+          "html": "Sharing your location can tell strangers where you are.<br><br>Sharing personal details can put your safety at risk."
+        },
+        {
+          "type": "activity",
+          "title": "Sort each statement into Advantage or Disadvantage. 📊",
+          "categories": [
+            {
+              "label": "Advantage ✅",
+              "items": [
+                "Stay connected with people far away",
+                "More people can join in and share ideas",
+                "Easy to share files quickly"
+              ]
+            },
+            {
+              "label": "Disadvantage ⚠️",
+              "items": [
+                "Your location may be shared with strangers",
+                "Personal information can leak by accident",
+                "Strangers may see private posts"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What is online collaboration? 🤝",
+            "options": [
+              "Working together using the internet",
+              "Working alone with no internet",
+              "Printing documents at school"
+            ],
+            "correctIndex": 0,
+            "explanation": "Online collaboration means working together using the internet, even if you are far apart."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Which is a disadvantage of online collaboration? ⚠️",
+            "options": [
+              "You can chat with people far away",
+              "Your personal information or location may be shared",
+              "You can share files quickly"
+            ],
+            "correctIndex": 1,
+            "explanation": "A risk of online collaboration is accidentally sharing personal information or your location."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does increased engagement mean? 📈",
+            "options": [
+              "Fewer people use the app",
+              "More people join in and share ideas",
+              "The internet runs faster"
+            ],
+            "correctIndex": 1,
+            "explanation": "Increased engagement means more people are joining in, posting, and sharing ideas together."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c12_5_l3",
+      "title": "Online Behaviour and Consequences",
+      "estimatedMinutes": 14,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Ethical behaviour means doing the right thing. ✅",
+          "html": "This is true online too, not just in person.<br><br>Ethical online behaviour means being kind, honest, and respectful."
+        },
+        {
+          "type": "richText",
+          "heading": "Appropriate online behaviour looks like this. 👍",
+          "html": "Being polite and respectful in comments and messages.<br>Asking before sharing photos of other people.<br>Thinking before you post — is it true and is it kind?"
+        },
+        {
+          "type": "richText",
+          "heading": "Inappropriate online behaviour looks like this. 👎",
+          "html": "Posting mean comments or bullying someone.<br>Sharing private photos without asking.<br>Spreading rumours or lies about someone."
+        },
+        {
+          "type": "richText",
+          "heading": "Your digital reputation is what people think of you online. 🏷️",
+          "html": "Everything you post builds your digital reputation.<br><br>Bad posts can follow you for years, even if you delete them."
+        },
+        {
+          "type": "richText",
+          "heading": "Inappropriate behaviour has real consequences. ⚠️",
+          "html": "<strong>Digital reputation</strong> — others may see you as unkind or untrustworthy.<br><strong>Relationships</strong> — friends and family may lose trust in you.<br><strong>Employment</strong> — employers often check your social media before hiring."
+        },
+        {
+          "type": "activity",
+          "title": "Sort each action as Appropriate or Inappropriate. 🧩",
+          "categories": [
+            {
+              "label": "Appropriate 👍",
+              "items": [
+                "Being polite in comments",
+                "Asking before sharing a friend's photo",
+                "Thinking before you post"
+              ]
+            },
+            {
+              "label": "Inappropriate 👎",
+              "items": [
+                "Posting mean comments about someone",
+                "Sharing private photos without asking",
+                "Spreading rumours online"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What is a digital reputation? 🏷️",
+            "options": [
+              "How fast your device runs",
+              "What people think of you based on what you post online",
+              "The number of apps you have installed"
+            ],
+            "correctIndex": 1,
+            "explanation": "Your digital reputation is what people think of you based on what you post and do online."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Why might inappropriate posts affect your employment? 💼",
+            "options": [
+              "Employers cannot see social media",
+              "Employers often check social media before hiring someone",
+              "Posts always get deleted automatically"
+            ],
+            "correctIndex": 1,
+            "explanation": "Many employers check a person's social media before offering them a job."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Which of these is appropriate online behaviour? 👍",
+            "options": [
+              "Sharing a friend's photo without asking",
+              "Posting mean comments about someone",
+              "Thinking before you post"
+            ],
+            "correctIndex": 2,
+            "explanation": "Thinking before you post helps you avoid hurting others or damaging your reputation."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c12_5_l4",
+      "title": "Privacy and Codes of Conduct",
+      "estimatedMinutes": 12,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Privacy means keeping your information safe. 🔒",
+          "html": "Privacy is your right to control who sees your information.<br><br>Online, this includes your photos, messages, and location."
+        },
+        {
+          "type": "richText",
+          "heading": "Protect your privacy online. 🛡️",
+          "html": "Use privacy settings to control who sees your posts.<br>Do not share your address or phone number publicly.<br>Think twice before posting your location."
+        },
+        {
+          "type": "richText",
+          "heading": "A code of conduct sets the rules for behaviour. 📋",
+          "html": "A code of conduct is a list of rules for how to behave.<br><br>Schools and workplaces use them to keep everyone safe and respectful."
+        },
+        {
+          "type": "richText",
+          "heading": "Why do schools and workplaces need an ICT code of conduct? 🏫",
+          "html": "It tells people how to use computers and the internet properly.<br>It protects everyone's privacy and safety.<br>It explains what happens if someone breaks the rules."
+        },
+        {
+          "type": "spotTheThreat",
+          "title": "Spot the phishing email. 📧",
+          "instruction": "Read each email and decide if it is safe or a scam trying to steal your privacy.",
+          "emails": [
+            {
+              "isPhishing": true,
+              "from": "support@socialmedia-security.com",
+              "subject": "Your account will be locked! Verify now",
+              "body": "We noticed unusual activity. Click this link and enter your password within 24 hours or your account will be deleted.",
+              "redFlags": [
+                { "element": "Sender address", "detail": "Not the real company domain" },
+                { "element": "Urgent threat", "detail": "Says your account will be deleted to scare you" },
+                { "element": "Asks for password", "detail": "Real companies never ask for your password by email" }
+              ]
+            },
+            {
+              "isPhishing": false,
+              "from": "noreply@yourschool.edu.au",
+              "subject": "Reminder: ICT code of conduct training next week",
+              "body": "Hi students, just a reminder that our ICT code of conduct session is on Tuesday in the library. No action needed.",
+              "redFlags": []
+            },
+            {
+              "isPhishing": true,
+              "from": "prize-team@freegiftcardz.net",
+              "subject": "You won a $500 gift card! Claim your prize",
+              "body": "Congratulations! Enter your full name, address, and phone number here to claim your free gift card before it expires.",
+              "redFlags": [
+                { "element": "Too good to be true", "detail": "Random prizes you did not enter are a common scam" },
+                { "element": "Asks for personal information", "detail": "Wants your address and phone number" },
+                { "element": "Strange domain", "detail": "freegiftcardz.net is not a trusted company" }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "activity",
+          "title": "Put these steps for protecting your privacy online in order. 🔢",
+          "orderedItems": [
+            "Check the app's privacy settings",
+            "Choose who can see your posts",
+            "Avoid sharing your address or phone number",
+            "Think before posting your location",
+            "Report anything that feels unsafe"
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does privacy mean online? 🔒",
+            "options": [
+              "Controlling who can see your information",
+              "Having no internet connection",
+              "Deleting all your social media accounts"
+            ],
+            "correctIndex": 0,
+            "explanation": "Privacy means you control who can see your information, like photos and location."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What is a code of conduct? 📋",
+            "options": [
+              "A type of computer virus",
+              "A list of rules for how to behave",
+              "A password for logging in"
+            ],
+            "correctIndex": 1,
+            "explanation": "A code of conduct is a list of rules. Schools and workplaces use it to guide behaviour."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Why do schools have an ICT code of conduct? 🏫",
+            "options": [
+              "To make the internet faster",
+              "To keep everyone safe and using technology properly",
+              "To stop students from using computers"
+            ],
+            "correctIndex": 1,
+            "explanation": "An ICT code of conduct keeps people safe and explains how to use technology properly."
+          }
+        }
+      ]
+    }
+  ]
+}

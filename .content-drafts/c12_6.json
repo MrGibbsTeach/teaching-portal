@@ -1,0 +1,364 @@
+{
+  "id": "c12_6",
+  "title": "Spreadsheets",
+  "description": "C12.6",
+  "lessons": [
+    {
+      "id": "c12_6_l1",
+      "title": "Quick Recap: Spreadsheet Basics",
+      "estimatedMinutes": 10,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Let's remember spreadsheet basics. 📊",
+          "html": "You learned this last year. Let's go over it fast.<br><br>A spreadsheet stores data in a grid of rows and columns."
+        },
+        {
+          "type": "richText",
+          "heading": "Rows go across. Columns go up and down. ⬛",
+          "html": "Rows are numbered: 1, 2, 3...<br>Columns are labelled: A, B, C...<svg viewBox=\"0 0 280 152\" style=\"display:block;width:100%;margin-top:14px;border-radius:8px\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"280\" height=\"152\" fill=\"#f8fafc\" rx=\"6\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><rect width=\"280\" height=\"26\" fill=\"#e2e8f0\"/><rect x=\"0\" y=\"26\" width=\"36\" height=\"126\" fill=\"#f0f4f8\"/><rect x=\"36\" y=\"57\" width=\"78\" height=\"31\" fill=\"#bbf7d0\" stroke=\"#16a34a\" stroke-width=\"2.5\"/><line x1=\"36\" y1=\"0\" x2=\"36\" y2=\"152\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"114\" y1=\"0\" x2=\"114\" y2=\"152\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"192\" y1=\"0\" x2=\"192\" y2=\"152\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"26\" x2=\"280\" y2=\"26\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"57\" x2=\"280\" y2=\"57\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"88\" x2=\"280\" y2=\"88\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"119\" x2=\"280\" y2=\"119\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"75\" y=\"18\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">A</text><text x=\"153\" y=\"18\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">B</text><text x=\"236\" y=\"18\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">C</text><text x=\"18\" y=\"47\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">1</text><text x=\"18\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#16a34a\" text-anchor=\"middle\">2</text><text x=\"18\" y=\"109\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">3</text><text x=\"75\" y=\"44\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">Item</text><text x=\"75\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#16a34a\" text-anchor=\"middle\">A2</text><text x=\"153\" y=\"47\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">Price</text></svg>"
+        },
+        {
+          "type": "richText",
+          "heading": "A cell is one box. A worksheet is one page. 📦",
+          "html": "Cell A2 is in column A, row 2.<br><br>A worksheet is one page in a spreadsheet file. You can have many worksheets."
+        },
+        {
+          "type": "richText",
+          "heading": "Formulas calculate. Functions are shortcuts. 🧮",
+          "html": "A formula always starts with =.<br><br>Example: <strong>=A1+B1</strong> adds two cells.<br><br>SUM and AVERAGE are functions. They do the maths for you."
+        },
+        {
+          "type": "activity",
+          "title": "Match each word to its meaning. 🧩",
+          "pairs": [
+            {
+              "term": "Row",
+              "definition": "Goes across the page ➡️"
+            },
+            {
+              "term": "Column",
+              "definition": "Goes up and down the page ⬇️"
+            },
+            {
+              "term": "Cell",
+              "definition": "One single box in the grid 📦"
+            },
+            {
+              "term": "Function",
+              "definition": "A shortcut that does maths for you ⚙️"
+            }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What must every formula start with? 🧮",
+            "options": [
+              "A number",
+              "=",
+              "A column letter"
+            ],
+            "correctIndex": 1,
+            "explanation": "Every formula starts with the = sign. This tells the spreadsheet to calculate."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Which function adds up a group of cells? ➕",
+            "options": [
+              "SUM",
+              "PRINT",
+              "FORMAT"
+            ],
+            "correctIndex": 0,
+            "explanation": "SUM adds up all the values in a range of cells, like =SUM(B2:B6)."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What is cell B3? 📦",
+            "options": [
+              "Column B, Row 3",
+              "Column 3, Row B",
+              "The third worksheet"
+            ],
+            "correctIndex": 0,
+            "explanation": "Cell addresses are column first, then row. So B3 = column B, row 3."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c12_6_l2",
+      "title": "The PERCENTAGE Function",
+      "estimatedMinutes": 15,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Percentage shows how big a part is. 💯",
+          "html": "A percentage compares a part to a whole.<br><br>It is shown with a % sign. Example: 50%."
+        },
+        {
+          "type": "richText",
+          "heading": "You can turn a number into a percentage. 🔢",
+          "html": "Divide the part by the whole. Then multiply by 100.<br><br>Example: 20 out of 40 is <strong>50%</strong>."
+        },
+        {
+          "type": "richText",
+          "heading": "A percentage formula uses division. ➗",
+          "html": "Example: <strong>=B2/C2</strong><br><br>If B2 = 20 and C2 = 40, the answer is 0.5.<svg viewBox=\"0 0 280 110\" style=\"display:block;width:100%;margin-top:14px;border-radius:8px\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"280\" height=\"110\" fill=\"#f8fafc\" rx=\"6\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><rect width=\"280\" height=\"28\" fill=\"#f0f4f8\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><rect x=\"4\" y=\"4\" width=\"46\" height=\"20\" rx=\"3\" fill=\"white\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"27\" y=\"18\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"middle\">D2</text><rect x=\"54\" y=\"4\" width=\"222\" height=\"20\" rx=\"3\" fill=\"white\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"66\" y=\"18\" font-family=\"monospace,Arial\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">=B2/C2</text><rect width=\"280\" height=\"28\" y=\"28\" fill=\"#e2e8f0\"/><line x1=\"36\" y1=\"28\" x2=\"36\" y2=\"110\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"114\" y1=\"28\" x2=\"114\" y2=\"110\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"192\" y1=\"28\" x2=\"192\" y2=\"110\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"56\" x2=\"280\" y2=\"56\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"84\" x2=\"280\" y2=\"84\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"75\" y=\"46\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">B</text><text x=\"153\" y=\"46\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">C</text><text x=\"236\" y=\"46\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">D</text><text x=\"18\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">2</text><text x=\"75\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">20</text><text x=\"153\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">40</text><rect x=\"192\" y=\"56\" width=\"88\" height=\"28\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"1.5\"/><text x=\"236\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0284c7\" text-anchor=\"middle\">50%</text></svg>"
+        },
+        {
+          "type": "richText",
+          "heading": "Set the cell format to Percentage. 🏷️",
+          "html": "The spreadsheet then shows your answer as a % automatically.<br><br>0.5 becomes <strong>50%</strong> on the screen."
+        },
+        {
+          "type": "richText",
+          "heading": "Percentages help you compare fairly. ⚖️",
+          "html": "They show a share out of 100, no matter how big the totals are.<br><br>This makes results easy to compare."
+        },
+        {
+          "type": "activity",
+          "title": "Complete this formula to find what percentage B2 is of C2: =___",
+          "answer": "B2/C2",
+          "explanation": "Divide the part (B2) by the whole (C2). Then format the cell as a percentage."
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does a percentage show? 💯",
+            "options": [
+              "A part out of 100",
+              "A whole number only",
+              "The name of a cell"
+            ],
+            "correctIndex": 0,
+            "explanation": "A percentage shows a part compared to a whole, out of 100. It uses the % sign."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Which formula works out a percentage? 🧮",
+            "options": [
+              "=B2-C2",
+              "=B2/C2",
+              "=B2*C2"
+            ],
+            "correctIndex": 1,
+            "explanation": "Divide the part by the whole to get a percentage. Example: =B2/C2."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "20 out of 40 equals what percentage? 💯",
+            "options": [
+              "20%",
+              "40%",
+              "50%"
+            ],
+            "correctIndex": 2,
+            "explanation": "20 divided by 40 is 0.5. As a percentage, that is 50%."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c12_6_l3",
+      "title": "Choosing the Right Chart",
+      "estimatedMinutes": 15,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Different charts show data in different ways. 📊",
+          "html": "You learned about charts last year.<br><br>Now let's learn which chart to pick for the job."
+        },
+        {
+          "type": "richText",
+          "heading": "A column chart compares amounts. 📊",
+          "html": "It uses tall bars standing up.<br><br>Good for comparing groups, like sales by month."
+        },
+        {
+          "type": "richText",
+          "heading": "A bar chart compares amounts too. 📊",
+          "html": "It uses bars lying on their side.<br><br>Good for comparing items with long names."
+        },
+        {
+          "type": "richText",
+          "heading": "A pie chart shows parts of a whole. 🥧",
+          "html": "Each slice is a percentage of the total.<br><br>All slices together always make 100%."
+        },
+        {
+          "type": "richText",
+          "heading": "A line chart shows change over time. 📈",
+          "html": "It uses dots joined by a line.<br><br>Good for showing trends, like temperature over a week."
+        },
+        {
+          "type": "richText",
+          "heading": "Pick the chart that fits your data. ✅",
+          "html": "Comparing groups? Use <strong>column</strong> or <strong>bar</strong>.<br>Showing parts of 100%? Use <strong>pie</strong>.<br>Showing change over time? Use <strong>line</strong>."
+        },
+        {
+          "type": "activity",
+          "title": "Match each chart type to what it is best for. 🧩",
+          "pairs": [
+            {
+              "term": "Column chart",
+              "definition": "Comparing amounts with upright bars 📊"
+            },
+            {
+              "term": "Bar chart",
+              "definition": "Comparing amounts with sideways bars 📊"
+            },
+            {
+              "term": "Pie chart",
+              "definition": "Showing parts of a whole 🥧"
+            },
+            {
+              "term": "Line chart",
+              "definition": "Showing change over time 📈"
+            }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Which chart is best to show parts of a whole? 🥧",
+            "options": [
+              "Line chart",
+              "Pie chart",
+              "Column chart"
+            ],
+            "correctIndex": 1,
+            "explanation": "A pie chart shows percentages of a whole. All the slices together make 100%."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Which chart is best to show change over time? 📈",
+            "options": [
+              "Line chart",
+              "Pie chart",
+              "Bar chart"
+            ],
+            "correctIndex": 0,
+            "explanation": "A line chart uses dots joined by a line. This makes it easy to see a trend over time."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What is the difference between a column chart and a bar chart? 📊",
+            "options": [
+              "Column bars stand up, bar chart bars lie sideways",
+              "A bar chart can only show one value",
+              "There is no difference"
+            ],
+            "correctIndex": 0,
+            "explanation": "Column charts use upright bars. Bar charts use sideways bars. Both compare amounts."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c12_6_l4",
+      "title": "Design for Your Audience",
+      "estimatedMinutes": 15,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Spreadsheets need good design too. 🎨",
+          "html": "Good design helps your audience understand the data.<br><br>Your audience is the people who will read it."
+        },
+        {
+          "type": "richText",
+          "heading": "Use colour with a clear purpose. 🌈",
+          "html": "Use colour to highlight important cells, like the header row.<br><br>Too many colours make a spreadsheet confusing."
+        },
+        {
+          "type": "richText",
+          "heading": "Readability means easy to read. 👀",
+          "html": "Use a clear font and a sensible size.<br><br>Leave space between columns. Don't cram in too much."
+        },
+        {
+          "type": "richText",
+          "heading": "Charts must also be easy to read. 📊",
+          "html": "Always add a title to your chart.<br><br>Label each axis so people know what the numbers mean."
+        },
+        {
+          "type": "richText",
+          "heading": "Pick design choices for your audience. 🎯",
+          "html": "A spreadsheet for young children might use bright colours and pictures.<br><br>A spreadsheet for a business report should look neat and simple."
+        },
+        {
+          "type": "activity",
+          "title": "Put these design steps in the best order. 🎨",
+          "orderedItems": [
+            "Think about your audience",
+            "Choose a clear font and size",
+            "Add colour to the header row only",
+            "Build your chart",
+            "Add a title and axis labels to the chart"
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Why should you think about your audience first? 🎯",
+            "options": [
+              "It changes how you should design the spreadsheet",
+              "It does not matter for spreadsheets",
+              "It only matters for charts"
+            ],
+            "correctIndex": 0,
+            "explanation": "Your audience affects your design choices, like colour, font size, and layout."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What should every chart have to help readers understand it? 📊",
+            "options": [
+              "As many colours as possible",
+              "A title and labelled axes",
+              "No labels at all"
+            ],
+            "correctIndex": 1,
+            "explanation": "A title tells readers what the chart shows. Labelled axes explain what the numbers mean."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "How much colour should you use in a spreadsheet? 🌈",
+            "options": [
+              "As much as possible",
+              "Only where it helps, like the header row",
+              "None at all"
+            ],
+            "correctIndex": 1,
+            "explanation": "Use colour with a clear purpose, such as highlighting headers. Too much colour makes data hard to read."
+          }
+        }
+      ]
+    }
+  ]
+}

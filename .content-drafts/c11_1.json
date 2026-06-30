@@ -1,0 +1,410 @@
+{
+  "id": "c11_1",
+  "title": "The Computer System",
+  "description": "C11.1",
+  "lessons": [
+    {
+      "id": "c11_1_l1",
+      "title": "Hardware, Software and Users",
+      "estimatedMinutes": 12,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "A computer system has 3 main parts. 💻",
+          "html": "<strong>Hardware</strong>, <strong>software</strong>, and the <strong>user</strong>.<br><br>All 3 parts work together."
+        },
+        {
+          "type": "richText",
+          "heading": "Hardware is the parts you can touch. 🖱️",
+          "html": "A mouse, a keyboard, and a screen are hardware.<br><br>If you can pick it up, it is hardware."
+        },
+        {
+          "type": "richText",
+          "heading": "Software is the programs inside the computer. 🧩",
+          "html": "You cannot touch software.<br><br>Software gives the hardware instructions to follow."
+        },
+        {
+          "type": "richText",
+          "heading": "The user is the person using the computer. 🙋",
+          "html": "That could be you!<br><br>The user tells the computer what to do."
+        },
+        {
+          "type": "richText",
+          "heading": "A computer system helps the user do a task. 🎯",
+          "html": "It might help you write, draw, or play a game.<br><br>The system is built around what the user needs."
+        },
+        {
+          "type": "activity",
+          "title": "Match each word to its meaning. 🧩",
+          "pairs": [
+            {
+              "term": "Hardware",
+              "definition": "The parts you can touch 🖱️"
+            },
+            {
+              "term": "Software",
+              "definition": "The programs inside the computer 🧩"
+            },
+            {
+              "term": "User",
+              "definition": "The person using the computer 🙋"
+            },
+            {
+              "term": "Computer system",
+              "definition": "Hardware, software and a user working together 💻"
+            }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Which of these is hardware? 🖱️",
+            "options": [
+              "A mouse",
+              "A game program",
+              "The user"
+            ],
+            "correctIndex": 0,
+            "explanation": "Hardware is any part you can touch. A mouse is hardware."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What is software? 🧩",
+            "options": [
+              "A part you can touch",
+              "A program inside the computer",
+              "The person using the computer"
+            ],
+            "correctIndex": 1,
+            "explanation": "Software is a set of programs. You cannot touch software."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Who is the user? 🙋",
+            "options": [
+              "The screen",
+              "The keyboard",
+              "The person using the computer"
+            ],
+            "correctIndex": 2,
+            "explanation": "The user is the person who uses the computer system."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c11_1_l2",
+      "title": "Computer Types and Hardware Devices",
+      "estimatedMinutes": 14,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "There are 2 main types of computer systems. 💻",
+          "html": "<strong>Desktop</strong> computers stay in one place.<br><br><strong>Mobile</strong> devices can move with you. 📱"
+        },
+        {
+          "type": "richText",
+          "heading": "A desktop computer sits on a desk. 🖥️",
+          "html": "It has a separate screen, keyboard, and mouse.<br><br>It needs power from a wall plug."
+        },
+        {
+          "type": "richText",
+          "heading": "A mobile device is small and light. 📱",
+          "html": "Laptops, tablets, and phones are mobile devices.<br><br>You can carry them and use them anywhere."
+        },
+        {
+          "type": "richText",
+          "heading": "Input devices send information into the computer. ⌨️",
+          "html": "A keyboard, mouse, and microphone are input devices.<br><br>Input means \"going in\".<svg viewBox=\"0 0 280 140\" style=\"display:block;width:100%;margin-top:14px;border-radius:8px\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"280\" height=\"140\" fill=\"#f8fafc\" rx=\"6\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><rect x=\"16\" y=\"20\" width=\"110\" height=\"40\" rx=\"6\" fill=\"#bbf7d0\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"71\" y=\"36\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#166534\" text-anchor=\"middle\">INPUT</text><text x=\"71\" y=\"52\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#166534\" text-anchor=\"middle\">Keyboard, mouse</text><rect x=\"16\" y=\"80\" width=\"110\" height=\"40\" rx=\"6\" fill=\"#fed7aa\" stroke=\"#ea580c\" stroke-width=\"2\"/><text x=\"71\" y=\"96\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#9a3412\" text-anchor=\"middle\">OUTPUT</text><text x=\"71\" y=\"112\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#9a3412\" text-anchor=\"middle\">Screen, printer</text><rect x=\"154\" y=\"50\" width=\"110\" height=\"40\" rx=\"6\" fill=\"#bfdbfe\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"209\" y=\"66\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e3a8a\" text-anchor=\"middle\">PROCESSING</text><text x=\"209\" y=\"82\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#1e3a8a\" text-anchor=\"middle\">The CPU</text><line x1=\"126\" y1=\"40\" x2=\"154\" y2=\"65\" stroke=\"#16a34a\" stroke-width=\"2\"/><line x1=\"154\" y1=\"75\" x2=\"126\" y2=\"100\" stroke=\"#ea580c\" stroke-width=\"2\"/></svg>"
+        },
+        {
+          "type": "richText",
+          "heading": "Output devices show information to the user. 🖨️",
+          "html": "A screen, printer, and speaker are output devices.<br><br>Output means \"coming out\"."
+        },
+        {
+          "type": "richText",
+          "heading": "The processor is the brain of the computer. 🧠",
+          "html": "It is also called the CPU.<br><br>Processing means working out the answer."
+        },
+        {
+          "type": "richText",
+          "heading": "Storage devices save your files. 💾",
+          "html": "A hard drive and a USB stick are storage devices.<br><br>Your files stay saved even when the power is off."
+        },
+        {
+          "type": "richText",
+          "heading": "Communication devices connect computers together. 📡",
+          "html": "A modem and a network card are examples.<br><br>They let computers send and receive data."
+        },
+        {
+          "type": "activity",
+          "title": "Match each hardware type to its job. 🧩",
+          "pairs": [
+            {
+              "term": "Input",
+              "definition": "Sends information into the computer ⌨️"
+            },
+            {
+              "term": "Output",
+              "definition": "Shows information to the user 🖨️"
+            },
+            {
+              "term": "Processing",
+              "definition": "Works out the answer (the CPU) 🧠"
+            },
+            {
+              "term": "Storage",
+              "definition": "Saves your files 💾"
+            },
+            {
+              "term": "Communication",
+              "definition": "Connects computers together 📡"
+            }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Which is a mobile device? 📱",
+            "options": [
+              "A desktop computer",
+              "A laptop",
+              "A printer"
+            ],
+            "correctIndex": 1,
+            "explanation": "A laptop is small and light. You can carry it with you, so it is a mobile device."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Which device is an input device? ⌨️",
+            "options": [
+              "Printer",
+              "Microphone",
+              "Speaker"
+            ],
+            "correctIndex": 1,
+            "explanation": "A microphone sends sound into the computer. Input means information going in."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does the CPU do? 🧠",
+            "options": [
+              "Stores your files",
+              "Processes information",
+              "Connects to the internet"
+            ],
+            "correctIndex": 1,
+            "explanation": "The CPU is the brain of the computer. It processes information."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c11_1_l3",
+      "title": "Software Types and Troubleshooting",
+      "estimatedMinutes": 13,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "There are 3 main types of software. 🧩",
+          "html": "<strong>Operating system</strong>, <strong>application</strong>, and <strong>utility</strong>.<br><br>Each type does a different job."
+        },
+        {
+          "type": "richText",
+          "heading": "The operating system runs the whole computer. ⚙️",
+          "html": "Windows and macOS are operating systems.<br><br>It starts up first and controls everything else."
+        },
+        {
+          "type": "richText",
+          "heading": "An application helps you do a task. 📝",
+          "html": "Word, a game, and a web browser are applications.<br><br>You open an application to do something specific."
+        },
+        {
+          "type": "richText",
+          "heading": "A utility looks after the computer. 🛠️",
+          "html": "Antivirus software is a utility.<br><br>Utilities check, clean, and protect the system."
+        },
+        {
+          "type": "richText",
+          "heading": "Troubleshooting means fixing a problem. 🔧",
+          "html": "Computers sometimes stop working properly.<br><br>Troubleshooting finds the cause and fixes it."
+        },
+        {
+          "type": "richText",
+          "heading": "Try these steps when something goes wrong. 🔁",
+          "html": "1. Restart the computer.<br>2. Check all the cables.<br>3. Close the program and open it again.<br>4. Ask for help if it still does not work."
+        },
+        {
+          "type": "activity",
+          "title": "Put these troubleshooting steps in the correct order. 🔧",
+          "orderedItems": [
+            "Restart the computer",
+            "Check all the cables",
+            "Close and reopen the program",
+            "Ask for help"
+          ]
+        },
+        {
+          "type": "activity",
+          "title": "Complete this sentence: The ___ is the software that runs the whole computer.",
+          "answer": "operating system",
+          "explanation": "The operating system starts up first and controls everything else, like Windows or macOS."
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What type of software is Windows? ⚙️",
+            "options": [
+              "Application",
+              "Operating system",
+              "Utility"
+            ],
+            "correctIndex": 1,
+            "explanation": "Windows is an operating system. It runs the whole computer."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does antivirus software do? 🛠️",
+            "options": [
+              "Plays games",
+              "Protects the computer",
+              "Prints documents"
+            ],
+            "correctIndex": 1,
+            "explanation": "Antivirus is a utility. Utilities look after and protect the computer."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What should you try first if a program freezes? 🔧",
+            "options": [
+              "Throw the computer away",
+              "Restart the computer",
+              "Buy a new computer"
+            ],
+            "correctIndex": 1,
+            "explanation": "Restarting the computer is a simple first step. It often fixes small problems."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c11_1_l4",
+      "title": "Staying Safe and Healthy",
+      "estimatedMinutes": 12,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "WSH means workplace safety and health. 🦺",
+          "html": "It keeps you safe when you use a computer.<br><br>Good habits stop you from getting hurt."
+        },
+        {
+          "type": "richText",
+          "heading": "Good lighting helps you see clearly. 💡",
+          "html": "A room that is too dark or too bright hurts your eyes.<br><br>Use soft, even light around your screen."
+        },
+        {
+          "type": "richText",
+          "heading": "Ventilation means fresh air in the room. 🌬️",
+          "html": "Computers can make a room feel hot and stuffy.<br><br>Fresh air helps you stay alert and comfortable."
+        },
+        {
+          "type": "richText",
+          "heading": "Sit with correct posture. 🪑",
+          "html": "Keep your back straight and feet flat on the floor.<br><br>Your screen should be at eye level."
+        },
+        {
+          "type": "richText",
+          "heading": "Take regular breaks and exercise. 🚶",
+          "html": "Stand up and stretch every 30 minutes.<br><br>Moving your body stops your muscles getting stiff."
+        },
+        {
+          "type": "richText",
+          "heading": "Using a computer for too long can hurt your health. ⚠️",
+          "html": "<strong>OOS</strong> — sore muscles and joints from repeating the same movement.<br><strong>Back strain</strong> — pain from sitting badly.<br><strong>Eye strain</strong> — sore, tired eyes from screen time."
+        },
+        {
+          "type": "activity",
+          "title": "Match each health risk to its meaning. 🧩",
+          "pairs": [
+            {
+              "term": "OOS",
+              "definition": "Sore muscles and joints from repeating movements 🤲"
+            },
+            {
+              "term": "Back strain",
+              "definition": "Pain in your back from sitting badly 🪑"
+            },
+            {
+              "term": "Eye strain",
+              "definition": "Sore, tired eyes from too much screen time 👀"
+            }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does WSH stand for? 🦺",
+            "options": [
+              "Wireless system hub",
+              "Workplace safety and health",
+              "Web storage helper"
+            ],
+            "correctIndex": 1,
+            "explanation": "WSH stands for workplace safety and health. It keeps you safe while you work."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "How often should you stand up and stretch? 🚶",
+            "options": [
+              "Every 30 minutes",
+              "Once a day",
+              "Only at lunch"
+            ],
+            "correctIndex": 0,
+            "explanation": "Standing and stretching every 30 minutes helps stop your muscles from getting stiff."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What causes eye strain? 👀",
+            "options": [
+              "Fresh air",
+              "Too much screen time",
+              "Good posture"
+            ],
+            "correctIndex": 1,
+            "explanation": "Looking at a screen for too long can make your eyes sore and tired. This is eye strain."
+          }
+        }
+      ]
+    }
+  ]
+}

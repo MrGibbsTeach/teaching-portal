@@ -1,0 +1,396 @@
+{
+  "id": "c11_3",
+  "title": "Presentation Software",
+  "description": "C11.3",
+  "lessons": [
+    {
+      "id": "c11_3_l1",
+      "title": "What is Presentation Software?",
+      "estimatedMinutes": 12,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Presentation software helps you make slides. 💻",
+          "html": "Slides are like digital pages you show on a screen.<br><br>You use words, pictures and sound to share ideas."
+        },
+        {
+          "type": "richText",
+          "heading": "The layout is how things are placed on a slide. 📐",
+          "html": "A title might go at the top.<br><br>A picture might go in the middle.<br><br>Good layout makes a slide easy to read."
+        },
+        {
+          "type": "richText",
+          "heading": "A template is a ready-made design. 🎨",
+          "html": "It already has colours, fonts and a layout.<br><br>You just add your own words and pictures."
+        },
+        {
+          "type": "richText",
+          "heading": "A transition is how one slide changes to the next. 🔄",
+          "html": "Example: a slide might fade in, or slide across the screen.<br><br>Transitions should be simple, not distracting."
+        },
+        {
+          "type": "richText",
+          "heading": "Animation makes things move on a slide. ✨",
+          "html": "Example: text can fly in, or a picture can grow bigger.<br><br>Use animation only when it helps explain your idea."
+        },
+        {
+          "type": "richText",
+          "heading": "A hyperlink takes you to another place when you click it. 🔗",
+          "html": "It can jump to another slide, a website, or a file.<br><br>Hyperlinks are often shown in a different colour."
+        },
+        {
+          "type": "activity",
+          "title": "Match each word to its meaning. 🧩",
+          "pairs": [
+            {
+              "term": "Layout",
+              "definition": "How things are placed on a slide 📐"
+            },
+            {
+              "term": "Template",
+              "definition": "A ready-made design you can use 🎨"
+            },
+            {
+              "term": "Transition",
+              "definition": "How one slide changes to the next 🔄"
+            },
+            {
+              "term": "Animation",
+              "definition": "Movement added to text or pictures ✨"
+            },
+            {
+              "term": "Hyperlink",
+              "definition": "A link you click to jump somewhere else 🔗"
+            }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What is a template? 🎨",
+            "options": [
+              "A ready-made design",
+              "A type of animation",
+              "A sound effect"
+            ],
+            "correctIndex": 0,
+            "explanation": "A template is a ready-made design. It already has colours and a layout for you to use."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does a transition do? 🔄",
+            "options": [
+              "Changes the font",
+              "Changes one slide to the next",
+              "Adds a hyperlink"
+            ],
+            "correctIndex": 1,
+            "explanation": "A transition is the way one slide changes into the next slide, like a fade or a slide-across effect."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What happens when you click a hyperlink? 🔗",
+            "options": [
+              "The slide deletes",
+              "It jumps you to another place",
+              "It adds a transition"
+            ],
+            "correctIndex": 1,
+            "explanation": "A hyperlink takes you to another slide, a website, or a file when you click it."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c11_3_l2",
+      "title": "Slide Features",
+      "estimatedMinutes": 12,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Bullets list ideas one at a time. •",
+          "html": "Each bullet point is one short idea.<br><br>Bullets stop a slide from having too many words."
+        },
+        {
+          "type": "richText",
+          "heading": "Graphics and clip art are pictures on a slide. 🖼️",
+          "html": "They help explain your idea without using words.<br><br>Clip art is a simple, ready-made picture."
+        },
+        {
+          "type": "richText",
+          "heading": "Print preview shows what your slides will look like on paper. 🖨️",
+          "html": "Check it before you print.<br><br>You can choose to print one slide per page, or many slides per page."
+        },
+        {
+          "type": "richText",
+          "heading": "Document creation means making a new presentation file. 📄",
+          "html": "You give it a name and choose where to save it.<br><br>Then you can start adding slides."
+        },
+        {
+          "type": "richText",
+          "heading": "Always proofread your slides before you present. 🔍",
+          "html": "Check for spelling and typing mistakes.<br><br>Proofreading means reading your work carefully to find errors."
+        },
+        {
+          "type": "activity",
+          "title": "Put these steps in the order you would do them when making a presentation. 📋",
+          "orderedItems": [
+            "Create a new presentation file",
+            "Choose a template",
+            "Add text and bullet points",
+            "Add graphics or clip art",
+            "Proofread and check print preview"
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Why do we use bullet points? •",
+            "options": [
+              "To make the slide louder",
+              "To list short ideas one at a time",
+              "To add animation"
+            ],
+            "correctIndex": 1,
+            "explanation": "Bullet points list short ideas one at a time. This stops a slide from having too many words."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does print preview show you? 🖨️",
+            "options": [
+              "What your slides will look like on paper",
+              "A list of hyperlinks",
+              "Your spelling mistakes"
+            ],
+            "correctIndex": 0,
+            "explanation": "Print preview shows what your slides will look like before you print them."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does proofreading mean? 🔍",
+            "options": [
+              "Adding more pictures",
+              "Reading your work carefully to find errors",
+              "Choosing a template"
+            ],
+            "correctIndex": 1,
+            "explanation": "Proofreading means reading your work carefully to find spelling and typing mistakes."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c11_3_l3",
+      "title": "Fonts and Target Audience",
+      "estimatedMinutes": 12,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "A font is the style of your letters. 🔤",
+          "html": "Some fonts look plain. Some fonts look fancy.<br><br>Pick a font that is easy to read."
+        },
+        {
+          "type": "richText",
+          "heading": "Font size is how big or small the letters are. 🔠",
+          "html": "Titles should use a bigger size.<br><br>Body text should use a smaller size, but still easy to read."
+        },
+        {
+          "type": "richText",
+          "heading": "Alignment is where text sits on the slide. ↔️",
+          "html": "Text can be left, centre, or right aligned.<br><br>Keep your alignment the same on every slide."
+        },
+        {
+          "type": "richText",
+          "heading": "Format means things like bold, italic, or underline. 🔡",
+          "html": "<strong>Bold</strong> makes text stand out.<br><br><em>Italic</em> can show a special word."
+        },
+        {
+          "type": "richText",
+          "heading": "Spacing is the gap between lines and letters. ↕️",
+          "html": "Too little spacing is hard to read.<br><br>Good spacing makes your slide look neat."
+        },
+        {
+          "type": "richText",
+          "heading": "Target audience means the people you are presenting to. 🎯",
+          "html": "Example: young kids, adults, or experts.<br><br>You should change your words and pictures to suit them."
+        },
+        {
+          "type": "activity",
+          "title": "Fill in the missing word. Spacing, size, alignment and format are all features of ___.",
+          "answer": "fonts",
+          "explanation": "Size, alignment, format and spacing are all features of fonts. They change how your text looks."
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What is font size? 🔠",
+            "options": [
+              "How big or small the letters are",
+              "The colour of the letters",
+              "The gap between lines"
+            ],
+            "correctIndex": 0,
+            "explanation": "Font size is how big or small the letters are. Titles usually use a bigger size."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What is a target audience? 🎯",
+            "options": [
+              "A type of font",
+              "The people you are presenting to",
+              "A slide transition"
+            ],
+            "correctIndex": 1,
+            "explanation": "Your target audience is the group of people you are presenting to, like young kids or adults."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Why should you think about your target audience? 🎯",
+            "options": [
+              "So you can add more transitions",
+              "So you can choose words and pictures that suit them",
+              "So you can make the file bigger"
+            ],
+            "correctIndex": 1,
+            "explanation": "Thinking about your target audience helps you choose the right words and pictures so they understand you."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c11_3_l4",
+      "title": "Elements and Principles of Design",
+      "estimatedMinutes": 14,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "The elements of design are the basic building blocks of a slide. 🧱",
+          "html": "They are line, shape, space, and colour.<br><br>Every good slide uses these well."
+        },
+        {
+          "type": "richText",
+          "heading": "Line is a mark that can divide or connect parts of a slide. ➖",
+          "html": "A line can separate a title from the body text.<br><br>Lines can also guide the eye across the slide."
+        },
+        {
+          "type": "richText",
+          "heading": "Shape means circles, squares, and other forms. 🔵",
+          "html": "Shapes can hold text, or act as buttons.<br><br>Shapes can also group similar ideas together."
+        },
+        {
+          "type": "richText",
+          "heading": "Space is the empty area on a slide. ⬜",
+          "html": "Empty space gives your eyes a rest.<br><br>Too many words and pictures with no space looks messy."
+        },
+        {
+          "type": "richText",
+          "heading": "Colour can highlight ideas or set a mood. 🌈",
+          "html": "Bright colours can grab attention.<br><br>Soft colours can feel calm. Always make text easy to read against the background."
+        },
+        {
+          "type": "richText",
+          "heading": "Balance is the principle of spreading items evenly. ⚖️",
+          "html": "A balanced slide does not feel heavy on one side.<br><br>Balance makes a slide feel comfortable to look at."
+        },
+        {
+          "type": "richText",
+          "heading": "Emphasis is the principle of making one thing stand out. ⭐",
+          "html": "You can use size, colour or bold text to add emphasis.<br><br>Emphasis helps your audience know what is most important."
+        },
+        {
+          "type": "activity",
+          "title": "Match each design word to its meaning. 🧩",
+          "pairs": [
+            {
+              "term": "Line",
+              "definition": "A mark that divides or connects parts of a slide ➖"
+            },
+            {
+              "term": "Shape",
+              "definition": "Circles, squares, and other forms 🔵"
+            },
+            {
+              "term": "Space",
+              "definition": "The empty area on a slide ⬜"
+            },
+            {
+              "term": "Colour",
+              "definition": "Highlights ideas or sets a mood 🌈"
+            },
+            {
+              "term": "Balance",
+              "definition": "Spreading items evenly on a slide ⚖️"
+            },
+            {
+              "term": "Emphasis",
+              "definition": "Making one thing stand out ⭐"
+            }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What is space in design? ⬜",
+            "options": [
+              "A type of colour",
+              "The empty area on a slide",
+              "A shape with no sides"
+            ],
+            "correctIndex": 1,
+            "explanation": "Space is the empty area on a slide. It gives your eyes a rest and stops the slide looking messy."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What is emphasis? ⭐",
+            "options": [
+              "Spreading items evenly",
+              "Making one thing stand out",
+              "Adding a hyperlink"
+            ],
+            "correctIndex": 1,
+            "explanation": "Emphasis is making one thing stand out, often using size, colour, or bold text."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What is balance in design? ⚖️",
+            "options": [
+              "Spreading items evenly on a slide",
+              "Adding lots of bright colours",
+              "Using only one font"
+            ],
+            "correctIndex": 0,
+            "explanation": "Balance means spreading items evenly so the slide does not feel heavy on one side."
+          }
+        }
+      ]
+    }
+  ]
+}

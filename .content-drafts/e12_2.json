@@ -1,0 +1,387 @@
+{
+  "id": "e12_2",
+  "title": "Video Editing",
+  "description": "E12.2",
+  "lessons": [
+    {
+      "id": "e12_2_l1",
+      "title": "What Video Editing Software Can Do",
+      "estimatedMinutes": 15,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Video editing software lets you turn raw clips into a finished video. 🎬",
+          "html": "You import your video clips, photos, and audio.<br><br>Then you arrange and change them to tell your story."
+        },
+        {
+          "type": "richText",
+          "heading": "Multimedia means using more than one type of media together. 🎞️",
+          "html": "Video editors combine <strong>videos</strong>, <strong>images</strong>, and <strong>audio</strong> in one project.<br><br>Mixing these makes your video more interesting."
+        },
+        {
+          "type": "richText",
+          "heading": "You can add text on top of your video. 🔤",
+          "html": "<strong>Titles</strong> — show the name of your video at the start.<br><strong>Captions</strong> — show subtitles or extra words during the video.<br><strong>Credits</strong> — show who made the video at the end."
+        },
+        {
+          "type": "richText",
+          "heading": "Split and clip let you cut a video into pieces. ✂️",
+          "html": "<strong>Split</strong> cuts one clip into two clips.<br><strong>Clip</strong> (trim) removes the parts you don't want.<br><br>This helps you keep only the best parts."
+        },
+        {
+          "type": "richText",
+          "heading": "Transitions, effects, and animations make your video flow. ✨",
+          "html": "A <strong>transition</strong> is how one clip changes into the next, like a fade.<br><strong>Effects</strong> change how a clip looks, like black and white.<br><strong>Animations</strong> make text or images move on screen."
+        },
+        {
+          "type": "richText",
+          "heading": "Scenes, layout, and timing organise your whole video. 🗂️",
+          "html": "A <strong>scene</strong> is one part of your story.<br>The <strong>layout</strong> is how clips, text, and audio are arranged on the timeline.<br><strong>Timing</strong> is how long each part shows for."
+        },
+        {
+          "type": "activity",
+          "title": "Match each feature to what it does. 🎬",
+          "pairs": [
+            {
+              "term": "Title",
+              "definition": "Text shown at the start with the video's name"
+            },
+            {
+              "term": "Caption",
+              "definition": "Text shown during the video, like subtitles"
+            },
+            {
+              "term": "Split",
+              "definition": "Cuts one clip into two clips"
+            },
+            {
+              "term": "Transition",
+              "definition": "How one clip changes into the next clip"
+            },
+            {
+              "term": "Animation",
+              "definition": "Makes text or images move on screen"
+            }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does multimedia mean in video editing? 🎞️",
+            "options": [
+              "Using only video clips",
+              "Combining video, images, and audio together",
+              "Making a video very long"
+            ],
+            "correctIndex": 1,
+            "explanation": "Multimedia means combining different types of media — video, images, and audio — in one project."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "You want to cut one long clip into two shorter clips. What tool do you use? ✂️",
+            "options": [
+              "Split",
+              "Caption",
+              "Transition"
+            ],
+            "correctIndex": 0,
+            "explanation": "Split cuts one clip into two separate clips. You can then edit or remove each part."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What is a transition? ✨",
+            "options": [
+              "Text shown at the end of a video",
+              "How one clip changes into the next clip",
+              "The length of the whole video"
+            ],
+            "correctIndex": 1,
+            "explanation": "A transition is how one clip changes into the next, like a fade or a wipe."
+          }
+        }
+      ]
+    },
+    {
+      "id": "e12_2_l2",
+      "title": "Editing Your Footage",
+      "estimatedMinutes": 15,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "A timeline shows your whole video in order. ⏱️",
+          "html": "Clips, text, and audio sit on tracks along the timeline.<br><br>You drag clips left or right to change their order."
+        },
+        {
+          "type": "richText",
+          "heading": "Trim removes the start or end of a clip. ✂️",
+          "html": "Drag the edge of a clip to make it shorter.<br><br>This cuts out boring or shaky footage."
+        },
+        {
+          "type": "richText",
+          "heading": "Layout is how everything is arranged on screen. 🗂️",
+          "html": "Layout includes where text sits, how big a clip is, and what is on top.<br><br>A clear layout helps your audience understand your video."
+        },
+        {
+          "type": "richText",
+          "heading": "Timing controls how long each part shows. ⏳",
+          "html": "Show text long enough for people to read it.<br><br>Cut clips before they get boring."
+        },
+        {
+          "type": "richText",
+          "heading": "Add audio to support your video. 🔊",
+          "html": "<strong>Music</strong> sets the mood.<br><strong>Voiceover</strong> explains what is happening.<br><strong>Sound effects</strong> add extra detail."
+        },
+        {
+          "type": "activity",
+          "title": "Put these video editing steps in the correct order. 🎬",
+          "orderedItems": [
+            "Import your video clips, photos, and audio",
+            "Arrange clips on the timeline",
+            "Split and trim clips to remove unwanted parts",
+            "Add text, transitions, and effects",
+            "Export the finished video"
+          ]
+        },
+        {
+          "type": "activity",
+          "title": "Complete this sentence: trimming a clip makes it ___.",
+          "answer": "shorter",
+          "explanation": "Trim removes the start or end of a clip, making it shorter. It helps you cut out parts you don't want."
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does the timeline show? ⏱️",
+            "options": [
+              "Only the audio track",
+              "Your whole video laid out in order",
+              "The export settings"
+            ],
+            "correctIndex": 1,
+            "explanation": "The timeline shows all your clips, text, and audio arranged in the order they will play."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Why might you add a voiceover to your video? 🔊",
+            "options": [
+              "To make the video file smaller",
+              "To explain what is happening on screen",
+              "To change the aspect ratio"
+            ],
+            "correctIndex": 1,
+            "explanation": "A voiceover is spoken narration that explains what is happening in the video."
+          }
+        }
+      ]
+    },
+    {
+      "id": "e12_2_l3",
+      "title": "Video Files, Aspect Ratio and Resolution",
+      "estimatedMinutes": 15,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Project files and exported files are different. 💾",
+          "html": "A <strong>project file</strong> only opens in your editing software. It keeps all your clips and edits so you can keep changing them.<br><br>An <strong>exported file</strong> is the finished video, like an MP4. Anyone can watch it without editing software."
+        },
+        {
+          "type": "richText",
+          "heading": "Always keep your project file. 📁",
+          "html": "If you only save the exported video, you cannot go back and change it.<br><br>Keep the project file so you can fix mistakes later."
+        },
+        {
+          "type": "richText",
+          "heading": "Aspect ratio is the shape of your video. 📐",
+          "html": "<strong>16:9</strong> is wide — used for YouTube and TVs.<br><strong>9:16</strong> is tall — used for phone apps like stories and reels.<br><br>Pick the shape that matches where your video will be watched."
+        },
+        {
+          "type": "richText",
+          "heading": "Resolution is how sharp your video looks. 🔍",
+          "html": "Higher resolution, like 1080p or 4K, shows more detail.<br><br>Lower resolution looks blurry on a big screen."
+        },
+        {
+          "type": "richText",
+          "heading": "Match your settings to your audience. 🎯",
+          "html": "A video for a phone app should be tall (9:16).<br><br>A video for a TV or YouTube should be wide (16:9)."
+        },
+        {
+          "type": "activity",
+          "title": "Match each word to its meaning. 💾",
+          "pairs": [
+            {
+              "term": "Project file",
+              "definition": "An editable file that only opens in the editing software"
+            },
+            {
+              "term": "Exported file",
+              "definition": "The finished video that anyone can watch"
+            },
+            {
+              "term": "Aspect ratio",
+              "definition": "The shape of the video, like wide or tall"
+            },
+            {
+              "term": "Resolution",
+              "definition": "How sharp and detailed the video looks"
+            }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Why should you keep your project file? 📁",
+            "options": [
+              "It plays on any device",
+              "It lets you keep editing the video later",
+              "It has a smaller file size"
+            ],
+            "correctIndex": 1,
+            "explanation": "A project file keeps all your clips and edits, so you can open it later and keep changing your video."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "You are making a video for a phone story. Which aspect ratio should you use? 📐",
+            "options": [
+              "16:9 wide",
+              "9:16 tall",
+              "It does not matter"
+            ],
+            "correctIndex": 1,
+            "explanation": "Phone stories and reels are watched on a tall screen, so 9:16 fits best."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What happens if you use low resolution on a big screen? 🔍",
+            "options": [
+              "The video plays faster",
+              "The video looks blurry",
+              "The video file gets bigger"
+            ],
+            "correctIndex": 1,
+            "explanation": "Low resolution has less detail, so the video looks blurry when shown on a big screen."
+          }
+        }
+      ]
+    },
+    {
+      "id": "e12_2_l4",
+      "title": "Planning Your Video",
+      "estimatedMinutes": 15,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Always plan before you film. 📝",
+          "html": "Good planning saves time and stops mistakes.<br><br>The design process helps you plan step by step."
+        },
+        {
+          "type": "richText",
+          "heading": "The design process has clear steps. 🔄",
+          "html": "<strong>Investigate</strong> — who is your audience and what do they need?<br><strong>Devise</strong> — plan your scenes and shots.<br><strong>Produce</strong> — film and edit your video.<br><strong>Evaluate</strong> — check if it works for your audience."
+        },
+        {
+          "type": "richText",
+          "heading": "Know your target audience. 🎯",
+          "html": "Your target audience is the people who will watch your video.<br><br>Think about their age and what they like before you plan your video."
+        },
+        {
+          "type": "richText",
+          "heading": "Elements and principles of design still apply to video. 🎨",
+          "html": "Use <strong>colour</strong>, <strong>text</strong>, and <strong>layout</strong> that suit your audience.<br><br>Keep your video balanced and easy to follow."
+        },
+        {
+          "type": "richText",
+          "heading": "Project management keeps your video on track. 📅",
+          "html": "Set a <strong>timeline</strong> for filming and editing.<br><strong>List</strong> what equipment and people you need.<br><br>Check your progress so you finish on time."
+        },
+        {
+          "type": "activity",
+          "title": "Put these planning steps in the correct order. 🔄",
+          "orderedItems": [
+            "Investigate your target audience and purpose",
+            "Devise a plan for your scenes and shots",
+            "Produce the video by filming and editing",
+            "Evaluate the finished video with your audience"
+          ]
+        },
+        {
+          "type": "activity",
+          "title": "Match each planning idea to its meaning. 📅",
+          "pairs": [
+            {
+              "term": "Target audience",
+              "definition": "The people who will watch your video"
+            },
+            {
+              "term": "Design process",
+              "definition": "The steps used to plan and create a video"
+            },
+            {
+              "term": "Project management",
+              "definition": "Planning time and resources to finish on time"
+            }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What is a target audience? 🎯",
+            "options": [
+              "The software used to edit the video",
+              "The people who will watch your video",
+              "The length of the finished video"
+            ],
+            "correctIndex": 1,
+            "explanation": "A target audience is the group of people you are making the video for. Plan your video to suit them."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Which step of the design process happens first? 🔄",
+            "options": [
+              "Produce the video",
+              "Investigate your audience and purpose",
+              "Evaluate the finished video"
+            ],
+            "correctIndex": 1,
+            "explanation": "Investigate comes first. You need to understand your audience and purpose before you plan and film."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Why use project management when making a video? 📅",
+            "options": [
+              "To make the video file smaller",
+              "To plan time, people, and equipment so you finish on time",
+              "To change the aspect ratio automatically"
+            ],
+            "correctIndex": 1,
+            "explanation": "Project management helps you plan your time, equipment, and people so your video gets finished on time."
+          }
+        }
+      ]
+    }
+  ]
+}

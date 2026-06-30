@@ -1,0 +1,290 @@
+{
+  "id": "c12_3",
+  "title": "Presentation Software",
+  "description": "C12.3",
+  "lessons": [
+    {
+      "id": "c12_3_l1",
+      "title": "Presentation Features",
+      "estimatedMinutes": 12,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "A presentation is a set of slides. 🖥️",
+          "html": "In Year 11 you learned to make slides with text and pictures.<br><br>In Year 12 you learn how to make slides <strong>move</strong> and <strong>link</strong> to other places."
+        },
+        {
+          "type": "richText",
+          "heading": "A transition is the change between two slides. 🔄",
+          "html": "It happens when one slide ends and the next slide starts.<br><br>Example: the old slide fades away and the new slide fades in."
+        },
+        {
+          "type": "richText",
+          "heading": "Animation moves things on ONE slide. ✨",
+          "html": "A transition changes between slides.<br><br>An <strong>animation</strong> moves an object, like text or a picture, while you are still on the same slide."
+        },
+        {
+          "type": "richText",
+          "heading": "Use transitions and animations with care. ⚠️",
+          "html": "Too many effects can be distracting.<br><br>The audience should focus on your message, not on flashy effects."
+        },
+        {
+          "type": "richText",
+          "heading": "A hyperlink is a clickable link. 🔗",
+          "html": "Click it to jump to another slide, a website, or a file.<br><br>Hyperlinks help the audience move around quickly."
+        },
+        {
+          "type": "richText",
+          "heading": "Print preview shows your slides before printing. 🖨️",
+          "html": "It lets you check the layout looks right.<br><br>You can choose to print slides, handouts, or notes pages."
+        },
+        {
+          "type": "activity",
+          "title": "Match each word to its meaning. 🧩",
+          "pairs": [
+            { "term": "Transition", "definition": "The change between two slides 🔄" },
+            { "term": "Animation", "definition": "Movement of an object on one slide ✨" },
+            { "term": "Hyperlink", "definition": "A clickable link to another place 🔗" },
+            { "term": "Print preview", "definition": "Shows slides before you print them 🖨️" }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What is a transition? 🔄",
+            "options": [
+              "Movement of text on one slide",
+              "The change between two slides",
+              "A clickable link"
+            ],
+            "correctIndex": 1,
+            "explanation": "A transition is the change you see when moving from one slide to the next slide."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does an animation do? ✨",
+            "options": [
+              "Changes between two slides",
+              "Moves an object on one slide",
+              "Prints your slides"
+            ],
+            "correctIndex": 1,
+            "explanation": "Animation moves an object, like a picture or text box, while you stay on the same slide."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Why should you use effects with care? ⚠️",
+            "options": [
+              "They cost money",
+              "They can distract the audience from your message",
+              "They are hard to remove"
+            ],
+            "correctIndex": 1,
+            "explanation": "Too many transitions and animations distract the audience. Your message should always come first."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c12_3_l2",
+      "title": "Elements of Design",
+      "estimatedMinutes": 14,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Elements of design are the basic building blocks of a slide. 🧱",
+          "html": "There are four elements you need to know:<br><br><strong>Line</strong>, <strong>shape</strong>, <strong>space</strong>, and <strong>colour</strong>."
+        },
+        {
+          "type": "richText",
+          "heading": "A line connects or separates things. ➖",
+          "html": "Lines can guide the eye around the slide.<br><br>Example: a line under a heading separates it from the body text."
+        },
+        {
+          "type": "richText",
+          "heading": "A shape is a closed area, like a circle or box. ⬛",
+          "html": "Shapes can hold text or pictures.<br><br>Shapes can also group related items together."
+        },
+        {
+          "type": "richText",
+          "heading": "Space is the empty area on a slide. 🌌",
+          "html": "It is also called <strong>white space</strong>.<br><br>Empty space stops a slide from looking too busy and crowded."
+        },
+        {
+          "type": "richText",
+          "heading": "Colour sets the mood and draws attention. 🎨",
+          "html": "Bright colours grab attention fast.<br><br>Calm colours, like blue or grey, feel more relaxed and professional."
+        },
+        {
+          "type": "richText",
+          "heading": "Use colour the same way on every slide. 🌈",
+          "html": "This keeps your presentation looking neat.<br><br>Example: always use the same colour for headings."
+        },
+        {
+          "type": "activity",
+          "title": "Match each element of design to its meaning. 🧩",
+          "pairs": [
+            { "term": "Line", "definition": "Connects or separates things, and guides the eye ➖" },
+            { "term": "Shape", "definition": "A closed area, like a box or circle ⬛" },
+            { "term": "Space", "definition": "The empty area on a slide 🌌" },
+            { "term": "Colour", "definition": "Sets the mood and draws attention 🎨" }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What is another name for space in design? 🌌",
+            "options": [
+              "Dark space",
+              "White space",
+              "Dead space"
+            ],
+            "correctIndex": 1,
+            "explanation": "Empty space on a slide is called white space. It stops the slide from looking too crowded."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What is a shape used for in design? ⬛",
+            "options": [
+              "To guide the eye between two points",
+              "To hold text or pictures, or group items",
+              "To remove colour from a slide"
+            ],
+            "correctIndex": 1,
+            "explanation": "A shape is a closed area. It can hold text or pictures, or group related items together."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Which of these is one of the four elements of design? ➖",
+            "options": [
+              "Balance",
+              "Line",
+              "Unity"
+            ],
+            "correctIndex": 1,
+            "explanation": "The four elements of design are line, shape, space, and colour. Balance and unity are principles of design, not elements."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c12_3_l3",
+      "title": "Principles of Design",
+      "estimatedMinutes": 15,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Principles of design are the RULES for using the elements. 📐",
+          "html": "Elements are the building blocks (line, shape, space, colour).<br><br>Principles are the rules for arranging them well: <strong>balance</strong>, <strong>emphasis</strong>, and <strong>unity</strong>."
+        },
+        {
+          "type": "richText",
+          "heading": "Balance means items are spread out evenly. ⚖️",
+          "html": "A balanced slide does not feel heavy on one side.<br><br>Example: do not put all your pictures on the left and leave the right empty."
+        },
+        {
+          "type": "richText",
+          "heading": "See the difference between balanced and unbalanced. ⚖️",
+          "html": "The left slide is unbalanced. The right slide is balanced.<svg viewBox=\"0 0 280 130\" style=\"display:block;width:100%;margin-top:14px;border-radius:8px\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"280\" height=\"130\" fill=\"#f8fafc\" rx=\"6\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><rect x=\"8\" y=\"8\" width=\"122\" height=\"114\" rx=\"4\" fill=\"white\" stroke=\"#fca5a5\" stroke-width=\"1.5\"/><circle cx=\"35\" cy=\"30\" r=\"12\" fill=\"#fca5a5\"/><circle cx=\"60\" cy=\"30\" r=\"12\" fill=\"#fca5a5\"/><circle cx=\"35\" cy=\"58\" r=\"12\" fill=\"#fca5a5\"/><text x=\"69\" y=\"108\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#dc2626\" text-anchor=\"middle\">Unbalanced</text><rect x=\"150\" y=\"8\" width=\"122\" height=\"114\" rx=\"4\" fill=\"white\" stroke=\"#86efac\" stroke-width=\"1.5\"/><circle cx=\"178\" cy=\"30\" r=\"12\" fill=\"#86efac\"/><circle cx=\"244\" cy=\"30\" r=\"12\" fill=\"#86efac\"/><circle cx=\"178\" cy=\"95\" r=\"12\" fill=\"#86efac\"/><circle cx=\"244\" cy=\"95\" r=\"12\" fill=\"#86efac\"/><text x=\"211\" y=\"108\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#16a34a\" text-anchor=\"middle\">Balanced</text></svg>"
+        },
+        {
+          "type": "richText",
+          "heading": "Emphasis makes one thing stand out. ⭐",
+          "html": "Emphasis has two parts: <strong>contrast</strong> and <strong>proportion</strong>.<br><br>These both help the most important thing get noticed first."
+        },
+        {
+          "type": "richText",
+          "heading": "Contrast uses different colours to stand out. 🌓",
+          "html": "Example: dark text on a light background.<br><br>High contrast is easy to read from across a room."
+        },
+        {
+          "type": "richText",
+          "heading": "Proportion is the SIZE of one thing compared to another. 📏",
+          "html": "This is a new word for Year 12.<br><br>Example: make your title BIG and your footnote small. The size difference shows what matters most."
+        },
+        {
+          "type": "richText",
+          "heading": "Unity means everything looks like it belongs together. 🧩",
+          "html": "This is also a new word for Year 12.<br><br>A presentation has unity when every slide uses the same fonts, colours, and style."
+        },
+        {
+          "type": "richText",
+          "heading": "Unity vs balance — know the difference. 🔍",
+          "html": "<strong>Balance</strong> is about ONE slide looking even.<br><br><strong>Unity</strong> is about ALL slides looking like they belong to the same set."
+        },
+        {
+          "type": "activity",
+          "title": "Match each principle of design to its meaning. 🧩",
+          "pairs": [
+            { "term": "Balance", "definition": "Items are spread out evenly on a slide ⚖️" },
+            { "term": "Contrast", "definition": "Different colours make something stand out 🌓" },
+            { "term": "Proportion", "definition": "The size of one thing compared to another 📏" },
+            { "term": "Unity", "definition": "All slides look like they belong together 🧩" }
+          ]
+        },
+        {
+          "type": "activity",
+          "title": "Fill in the blank: Making your title bigger than your footnote is an example of ___.",
+          "answer": "proportion",
+          "explanation": "Proportion is the size of one thing compared to another. A bigger title shows it is more important than a small footnote."
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does balance mean in design? ⚖️",
+            "options": [
+              "Items are spread out evenly",
+              "One slide uses many bright colours",
+              "Text and pictures both move"
+            ],
+            "correctIndex": 0,
+            "explanation": "Balance means items on a slide are spread out evenly. The slide should not feel heavy on one side."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Emphasis is made up of which two things? ⭐",
+            "options": [
+              "Line and shape",
+              "Contrast and proportion",
+              "Balance and space"
+            ],
+            "correctIndex": 1,
+            "explanation": "Emphasis has two parts: contrast (different colours) and proportion (different sizes). Both help one thing stand out."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "A presentation where every slide uses the same fonts and colours has good... 🧩",
+            "options": [
+              "Unity",
+              "Contrast",
+              "Space"
+            ],
+            "correctIndex": 0,
+            "explanation": "Unity means all slides look like they belong together. Using the same fonts and colours creates unity."
+          }
+        }
+      ]
+    }
+  ]
+}

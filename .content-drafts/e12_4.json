@@ -1,0 +1,400 @@
+{
+  "id": "e12_4",
+  "title": "Website Development",
+  "description": "E12.4",
+  "lessons": [
+    {
+      "id": "e12_4_l1",
+      "title": "What is a Website?",
+      "estimatedMinutes": 12,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "A website is a set of linked pages on the internet. 🌐",
+          "html": "People visit websites to find information, shop, or be entertained.<br><br>Each page is connected to other pages by links."
+        },
+        {
+          "type": "richText",
+          "heading": "Web authoring software is used to build websites. 💻",
+          "html": "<strong>Authoring</strong> means creating something, like writing or building.<br><br>Web authoring software helps you create web pages without starting from nothing."
+        },
+        {
+          "type": "richText",
+          "heading": "A basic text editor lets you type plain code. 📝",
+          "html": "Examples are Notepad and TextEdit.<br><br>You type the website code yourself, line by line."
+        },
+        {
+          "type": "richText",
+          "heading": "A source code editor is a smarter text editor. 🖥️",
+          "html": "Examples are Visual Studio Code and Sublime Text.<br><br>It colours your code and helps you spot mistakes."
+        },
+        {
+          "type": "richText",
+          "heading": "A WYSIWYG tool shows your page as you build it. 👀",
+          "html": "WYSIWYG means \"What You See Is What You Get\".<br><br>Examples are Wix and WordPress. You drag and drop instead of typing code."
+        },
+        {
+          "type": "richText",
+          "heading": "A word processor can also make simple web pages. 📄",
+          "html": "Examples are Microsoft Word and Google Docs.<br><br>You can save a document as a web page, but it has fewer features than other tools."
+        },
+        {
+          "type": "activity",
+          "title": "Match each type of web authoring software to its example. 🧩",
+          "pairs": [
+            {
+              "term": "Basic text editor",
+              "definition": "Notepad"
+            },
+            {
+              "term": "Source code editor",
+              "definition": "Visual Studio Code"
+            },
+            {
+              "term": "WYSIWYG tool",
+              "definition": "Wix"
+            },
+            {
+              "term": "Word processor",
+              "definition": "Microsoft Word"
+            }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What is a website? 🌐",
+            "options": [
+              "A single picture saved on a computer",
+              "A set of linked pages on the internet",
+              "A type of printer"
+            ],
+            "correctIndex": 1,
+            "explanation": "A website is a set of linked pages on the internet. Links connect the pages together."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does WYSIWYG stand for? 👀",
+            "options": [
+              "What You See Is What You Get",
+              "Website You Save In Your Gallery",
+              "Web Your Site Will You Grow"
+            ],
+            "correctIndex": 0,
+            "explanation": "WYSIWYG stands for \"What You See Is What You Get\". The page you build looks the same as the finished website."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Which tool lets you drag and drop instead of typing code? 🖱️",
+            "options": [
+              "Basic text editor",
+              "WYSIWYG tool",
+              "Source code editor"
+            ],
+            "correctIndex": 1,
+            "explanation": "A WYSIWYG tool like Wix lets you drag and drop page elements. You do not need to type any code."
+          }
+        }
+      ]
+    },
+    {
+      "id": "e12_4_l2",
+      "title": "Key Features of a Website",
+      "estimatedMinutes": 13,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "A hyperlink takes you to another page or website. 🔗",
+          "html": "Click a hyperlink to jump to a new page.<br><br>Hyperlinks are often blue or underlined text, or a button."
+        },
+        {
+          "type": "richText",
+          "heading": "Media elements make a website interesting. 🎬",
+          "html": "Media elements are things like photos, videos, and sound.<br><br>They help explain information and keep visitors interested."
+        },
+        {
+          "type": "richText",
+          "heading": "A navigation structure helps visitors move around. 🧭",
+          "html": "Navigation is usually a menu bar near the top of the page.<br><br>It lists links to the other main pages, like Home, About, and Contact."
+        },
+        {
+          "type": "richText",
+          "heading": "Web authoring software lets you customise settings. ⚙️",
+          "html": "You can change things like page size, fonts, and colours.<br><br>Customising settings helps your website match your design."
+        },
+        {
+          "type": "richText",
+          "heading": "A simple page layout has 4 main parts. 📐",
+          "html": "<svg viewBox='0 0 300 220' xmlns='http://www.w3.org/2000/svg' style='width:100%;max-width:320px;height:auto;font-family:sans-serif'><rect x='10' y='10' width='280' height='40' fill='#bfdbfe' stroke='#2563eb' stroke-width='2'/><text x='150' y='35' text-anchor='middle' font-size='14' fill='#1e3a8a'>Header</text><rect x='10' y='55' width='280' height='30' fill='#fde68a' stroke='#d97706' stroke-width='2'/><text x='150' y='75' text-anchor='middle' font-size='13' fill='#92400e'>Navigation</text><rect x='10' y='90' width='280' height='90' fill='#bbf7d0' stroke='#16a34a' stroke-width='2'/><text x='150' y='140' text-anchor='middle' font-size='14' fill='#14532d'>Content</text><rect x='10' y='185' width='280' height='25' fill='#e5e7eb' stroke='#6b7280' stroke-width='2'/><text x='150' y='202' text-anchor='middle' font-size='12' fill='#374151'>Footer</text></svg><br>The header is at the top. Navigation links are under it. The content is in the middle. The footer is at the bottom."
+        },
+        {
+          "type": "activity",
+          "title": "Match each website feature to what it does. 🧩",
+          "pairs": [
+            {
+              "term": "Hyperlink",
+              "definition": "Takes you to another page or website"
+            },
+            {
+              "term": "Media element",
+              "definition": "A photo, video, or sound on the page"
+            },
+            {
+              "term": "Navigation structure",
+              "definition": "A menu that helps visitors move around"
+            },
+            {
+              "term": "Customise settings",
+              "definition": "Changing fonts, colours, and page size"
+            }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does a hyperlink do? 🔗",
+            "options": [
+              "Makes text bigger",
+              "Takes you to another page or website",
+              "Saves your document"
+            ],
+            "correctIndex": 1,
+            "explanation": "A hyperlink takes you to another page or website when you click it."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Where is the navigation menu usually placed? 🧭",
+            "options": [
+              "In the footer at the very bottom",
+              "Near the top of the page",
+              "Hidden inside an image"
+            ],
+            "correctIndex": 1,
+            "explanation": "The navigation menu is usually placed near the top of the page, often under the header."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Which of these is a media element? 🎬",
+            "options": [
+              "A video",
+              "A hyperlink",
+              "A navigation menu"
+            ],
+            "correctIndex": 0,
+            "explanation": "Media elements include photos, videos, and sound. They make a website more interesting."
+          }
+        }
+      ]
+    },
+    {
+      "id": "e12_4_l3",
+      "title": "Designing a Website",
+      "estimatedMinutes": 14,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Website layout is where you put things on the page. 📐",
+          "html": "A good layout puts the most important content where people look first.<br><br>It should be easy to read and not too crowded."
+        },
+        {
+          "type": "richText",
+          "heading": "Colour scheme means the colours used on your website. 🎨",
+          "html": "Pick 2 or 3 colours that work well together.<br><br>Using too many colours can make a page look messy."
+        },
+        {
+          "type": "richText",
+          "heading": "Fonts are the style of your text. 🔤",
+          "html": "Pick fonts that are easy to read on a screen.<br><br>Use the same font style for all your headings, and another for body text."
+        },
+        {
+          "type": "richText",
+          "heading": "Location of content means where information sits on the page. 📍",
+          "html": "Put the most important information near the top.<br><br>Group similar information together so it is easy to find."
+        },
+        {
+          "type": "richText",
+          "heading": "Plan your navigation before you build the website. 🧭",
+          "html": "Decide which pages you need, like Home, About, and Contact.<br><br>Then plan how hyperlinks will connect these pages together."
+        },
+        {
+          "type": "richText",
+          "heading": "Use media elements with a purpose. 🖼️",
+          "html": "Only add photos and videos that help explain your content.<br><br>Too many media elements can slow down your website."
+        },
+        {
+          "type": "activity",
+          "title": "Fill in the missing word for each design tip. ✏️",
+          "instruction": "Type the missing word in each sentence.",
+          "pairs": [
+            {
+              "term": "Pick 2 or 3 colours that work well together. This is your colour ___.",
+              "definition": "scheme"
+            },
+            {
+              "term": "Choose a ___ that is easy to read on a screen.",
+              "definition": "font"
+            },
+            {
+              "term": "Put the most important content where people look first. This is your ___.",
+              "definition": "layout"
+            },
+            {
+              "term": "Group similar information together. This is the ___ of content.",
+              "definition": "location"
+            }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What is a colour scheme? 🎨",
+            "options": [
+              "The fonts used on a page",
+              "The colours used on a website",
+              "The size of the images"
+            ],
+            "correctIndex": 1,
+            "explanation": "A colour scheme is the set of colours used on your website. Pick 2 or 3 that work well together."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Why should you only use 2 or 3 colours? 🎨",
+            "options": [
+              "Too many colours can make a page look messy",
+              "Computers cannot show more than 3 colours",
+              "Colours cost extra money to use"
+            ],
+            "correctIndex": 0,
+            "explanation": "Using too many colours can make a website look messy and hard to read."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What should you decide before you build the website? 🧭",
+            "options": [
+              "The price of internet data",
+              "Which pages you need and how they link together",
+              "The brand of your computer"
+            ],
+            "correctIndex": 1,
+            "explanation": "Plan your pages and navigation first. This makes it easier to build and link your website."
+          }
+        }
+      ]
+    },
+    {
+      "id": "e12_4_l4",
+      "title": "Testing and Publishing",
+      "estimatedMinutes": 14,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Testing means checking your website works properly. 🔍",
+          "html": "Click every hyperlink to make sure it goes to the right place.<br><br>Check that photos and videos load correctly."
+        },
+        {
+          "type": "richText",
+          "heading": "Proofreading means checking your spelling and wording. 📖",
+          "html": "Read all the text on your website carefully.<br><br>Fix any spelling mistakes or confusing sentences."
+        },
+        {
+          "type": "richText",
+          "heading": "Check your website on different screens. 📱💻",
+          "html": "A website should look good on a phone, tablet, and computer.<br><br>Some text or images might need to move on a smaller screen."
+        },
+        {
+          "type": "richText",
+          "heading": "Publishing puts your website on the internet. 🌍",
+          "html": "Before publishing, your website only you can see it.<br><br>After publishing, anyone with the link can visit your website."
+        },
+        {
+          "type": "richText",
+          "heading": "Step 1: Test all hyperlinks and media. 🔗",
+          "html": "Click through every link on every page.<br><br>Make sure every photo and video appears correctly."
+        },
+        {
+          "type": "richText",
+          "heading": "Step 2: Proofread all the text. 📖",
+          "html": "Check for spelling and grammar mistakes.<br><br>Ask someone else to read it too, if you can."
+        },
+        {
+          "type": "richText",
+          "heading": "Step 3: Publish your website. 🌍",
+          "html": "Use the Publish button in your web authoring software.<br><br>Your website is now live on the internet."
+        },
+        {
+          "type": "activity",
+          "title": "Put these steps in the correct order for finishing a website. 🌍",
+          "orderedItems": [
+            "Test all hyperlinks and media elements",
+            "Proofread all the text for mistakes",
+            "Check the website on different screens",
+            "Publish the website"
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does testing a website check? 🔍",
+            "options": [
+              "That the website works properly",
+              "How much the website costs",
+              "Who owns the website"
+            ],
+            "correctIndex": 0,
+            "explanation": "Testing checks that hyperlinks, photos, and videos all work properly before you publish."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does proofreading check? 📖",
+            "options": [
+              "The colour scheme",
+              "Spelling and wording mistakes",
+              "The size of the images"
+            ],
+            "correctIndex": 1,
+            "explanation": "Proofreading means checking your spelling and wording for mistakes before you publish."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What happens when you publish a website? 🌍",
+            "options": [
+              "It is deleted from your computer",
+              "It goes live on the internet for others to see",
+              "It is saved only on your own device"
+            ],
+            "correctIndex": 1,
+            "explanation": "Publishing puts your website on the internet. Anyone with the link can then visit it."
+          }
+        }
+      ]
+    }
+  ]
+}

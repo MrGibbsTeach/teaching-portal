@@ -1,0 +1,280 @@
+{
+  "id": "e12_1",
+  "title": "Sound Editing",
+  "description": "E12.1",
+  "lessons": [
+    {
+      "id": "e12_1_l1",
+      "title": "What Sound Editing Software Does",
+      "estimatedMinutes": 12,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "Sound editing software lets you make and change audio. 🎧",
+          "html": "Audio means sound — like music, voice, or sound effects.<br><br>Sound editing software is a computer app for working with audio."
+        },
+        {
+          "type": "richText",
+          "heading": "Create means making a brand new sound. 🎹",
+          "html": "Some apps let you make new sounds from nothing.<br><br>Example: adding a drum beat or a music track."
+        },
+        {
+          "type": "richText",
+          "heading": "Capture means recording a sound. 🎤",
+          "html": "Capture uses a microphone to record real sound.<br><br>Example: recording your voice for a podcast."
+        },
+        {
+          "type": "richText",
+          "heading": "Edit means changing a sound file. ✂️",
+          "html": "Editing can cut out parts you don't want.<br><br>Editing can also join two sounds together."
+        },
+        {
+          "type": "richText",
+          "heading": "Effects change how a sound feels. 🌀",
+          "html": "Effects can make a voice echo, sound louder, or sound smoother.<br><br>Example: fade in slowly raises the volume from silent to loud."
+        },
+        {
+          "type": "activity",
+          "title": "Match each word to what it means. 🎧",
+          "pairs": [
+            {
+              "term": "Create",
+              "definition": "Making a brand new sound"
+            },
+            {
+              "term": "Capture",
+              "definition": "Recording sound with a microphone"
+            },
+            {
+              "term": "Edit",
+              "definition": "Cutting or joining sound files"
+            },
+            {
+              "term": "Effects",
+              "definition": "Changing how a sound feels, like echo"
+            }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does capture mean in sound editing? 🎤",
+            "options": [
+              "Cutting out part of a song",
+              "Recording a sound with a microphone",
+              "Adding an echo effect"
+            ],
+            "correctIndex": 1,
+            "explanation": "Capture means recording a real sound using a microphone, like recording your voice."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Which word describes adding an echo to a voice recording? 🌀",
+            "options": [
+              "Create",
+              "Capture",
+              "Effects"
+            ],
+            "correctIndex": 2,
+            "explanation": "Effects change how a sound feels. An echo is an example of an effect."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What is sound editing software used for? 🎧",
+            "options": [
+              "Making and changing audio",
+              "Taking and editing photos",
+              "Writing documents"
+            ],
+            "correctIndex": 0,
+            "explanation": "Sound editing software is an app for making and changing audio, like music or voice recordings."
+          }
+        }
+      ]
+    },
+    {
+      "id": "e12_1_l2",
+      "title": "Audio File Formats",
+      "estimatedMinutes": 12,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "An audio file format is how a sound is saved. 💾",
+          "html": "Different formats save sound in different ways.<br><br>Each format has its own pros and cons."
+        },
+        {
+          "type": "richText",
+          "heading": "WAV is a high-quality audio format. 🎼",
+          "html": "WAV stands for Waveform Audio File Format.<br><br>It sounds great but the file size is very large."
+        },
+        {
+          "type": "richText",
+          "heading": "MP3 is a small, popular audio format. 📱",
+          "html": "MP3 squashes the file to make it much smaller.<br><br>This makes MP3 great for sharing and storing music."
+        },
+        {
+          "type": "richText",
+          "heading": "WMA was made by Microsoft. 🪟",
+          "html": "WMA stands for Windows Media Audio.<br><br>It is small in size, like MP3, but works best on Windows devices."
+        },
+        {
+          "type": "richText",
+          "heading": "Choose your format based on what you need. ⚖️",
+          "html": "Need the best quality for editing? Use <strong>WAV</strong>.<br><br>Need a small file to share online? Use <strong>MP3</strong>."
+        },
+        {
+          "type": "activity",
+          "title": "Match each audio format to what it is best used for. 🎵",
+          "pairs": [
+            {
+              "term": "WAV",
+              "definition": "Best sound quality for editing, but a big file"
+            },
+            {
+              "term": "MP3",
+              "definition": "Small file, great for sharing music online"
+            },
+            {
+              "term": "WMA",
+              "definition": "Small file made by Microsoft, works well on Windows"
+            }
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "Which audio format has the best quality but the largest file size? 🎼",
+            "options": [
+              "MP3",
+              "WAV",
+              "WMA"
+            ],
+            "correctIndex": 1,
+            "explanation": "WAV has the best sound quality, but this means the file size is very large."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "You want to share a song online and keep the file small. Which format should you use? 📱",
+            "options": [
+              "WAV",
+              "MP3",
+              "Neither, you must use WAV"
+            ],
+            "correctIndex": 1,
+            "explanation": "MP3 makes the file much smaller, which is great for sharing and storing online."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does WMA stand for? 🪟",
+            "options": [
+              "Waveform Music Audio",
+              "Windows Media Audio",
+              "Web Music App"
+            ],
+            "correctIndex": 1,
+            "explanation": "WMA stands for Windows Media Audio. It was made by Microsoft."
+          }
+        }
+      ]
+    },
+    {
+      "id": "e12_1_l3",
+      "title": "Editing and Combining Audio",
+      "estimatedMinutes": 15,
+      "blocks": [
+        {
+          "type": "richText",
+          "heading": "A waveform shows what sound looks like. 〜",
+          "html": "Loud parts of the sound look tall on the waveform.<br><br>Quiet parts of the sound look flat and small."
+        },
+        {
+          "type": "richText",
+          "heading": "Trim cuts off the start or end of a sound. ✂️",
+          "html": "Use trim to remove silence or mistakes.<br><br>Trim keeps the part of the recording you want."
+        },
+        {
+          "type": "richText",
+          "heading": "Fade in and fade out make sound smooth. 📈",
+          "html": "Fade in slowly raises the volume from silent to loud.<br><br>Fade out slowly lowers the volume from loud to silent."
+        },
+        {
+          "type": "richText",
+          "heading": "Combining means joining two or more audio files. 🔗",
+          "html": "You can place one sound file after another.<br><br>You can also layer sounds, like music under a voice."
+        },
+        {
+          "type": "richText",
+          "heading": "Always save your finished file with a clear name. 📁",
+          "html": "Use a name that says what the file is, like \"interview_final.mp3\".<br><br>This helps you find it again later."
+        },
+        {
+          "type": "activity",
+          "title": "Put these steps for editing a podcast recording in the correct order. 🎙️",
+          "orderedItems": [
+            "Capture the voice recording with a microphone",
+            "Trim the silence from the start and end",
+            "Add a fade in and fade out",
+            "Combine the voice track with background music",
+            "Save the finished file with a clear name"
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does trim do to an audio file? ✂️",
+            "options": [
+              "Adds an echo effect",
+              "Cuts off the start or end of a sound",
+              "Joins two sound files together"
+            ],
+            "correctIndex": 1,
+            "explanation": "Trim removes unwanted parts from the start or end of a recording, like silence or mistakes."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What happens during a fade out? 📉",
+            "options": [
+              "The volume slowly goes from loud to silent",
+              "The volume slowly goes from silent to loud",
+              "The recording is trimmed"
+            ],
+            "correctIndex": 0,
+            "explanation": "Fade out slowly lowers the volume until the sound becomes silent."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "questionType": "mcq",
+            "text": "What does combining audio files mean? 🔗",
+            "options": [
+              "Recording a brand new sound",
+              "Joining or layering two or more sound files",
+              "Saving a file in WAV format"
+            ],
+            "correctIndex": 1,
+            "explanation": "Combining means joining files one after another, or layering them, like music under a voice."
+          }
+        }
+      ]
+    }
+  ]
+}
