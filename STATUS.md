@@ -68,9 +68,10 @@ Explicitly deferred until the 9 courses are visually polished. When the time com
 ## Next steps (priority order, per Clayton)
 
 1. **Visual/brand polish, per-course** — apply the distinct design direction above to each course. This is the current priority.
-2. **Design the teacher/student portal** (talk through design before building — see architecture notes above). Don't start building until explicitly asked.
-3. **Write new content for placeholder courses** — Years 7–10 and Year 12 General/ATAR have no curriculum content yet; this is authoring work, not migration
-4. **Interactive activities** — upgrade the static drag-and-drop/hotspot/sort-bucket summaries into real interactive components
+2. **Split AIT Foundations into Year 11 and Year 12** — currently a single course showing all 4 units together. Split into two separate courses (Year 11 Foundations = Units 1–2, Year 12 Foundations = Units 3–4), each with its own card on the home page, matching the pattern of General and ATAR.
+3. **Design the teacher/student portal** (talk through design before building — see architecture notes above). Don't start building until explicitly asked.
+4. **Write new content for placeholder courses** — Years 7–10 and Year 12 ATAR have no curriculum content yet; this is authoring work, not migration
+5. **Interactive activities** — upgrade the static drag-and-drop/hotspot/sort-bucket summaries into real interactive components
 
 ## How to resume
 
