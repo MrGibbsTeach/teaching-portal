@@ -57,7 +57,7 @@ export const courseGroups: { heading: string; courses: Course[] }[] = [
     ],
   },
   {
-    heading: "Year 11 & 12 Applied IT",
+    heading: "Applied IT — General",
     courses: [
       {
         slug: "year-11-applied-it-general",
@@ -67,6 +67,18 @@ export const courseGroups: { heading: string; courses: Course[] }[] = [
         status: "active",
         sourceProject: "11-ait-general-course",
       },
+      {
+        slug: "year-12-applied-it-general",
+        title: "Applied IT — General",
+        yearLevel: "Year 12",
+        description: "WACE Applied Information Technology, General course.",
+        status: "active",
+      },
+    ],
+  },
+  {
+    heading: "Applied IT — ATAR",
+    courses: [
       {
         slug: "year-11-applied-it-atar",
         title: "Applied IT — ATAR",
@@ -81,13 +93,6 @@ export const courseGroups: { heading: string; courses: Course[] }[] = [
         yearLevel: "Year 12",
         description: "WACE Applied Information Technology, ATAR course.",
         status: "placeholder",
-      },
-      {
-        slug: "year-12-applied-it-general",
-        title: "Applied IT — General",
-        yearLevel: "Year 12",
-        description: "WACE Applied Information Technology, General course.",
-        status: "active",
       },
     ],
   },
