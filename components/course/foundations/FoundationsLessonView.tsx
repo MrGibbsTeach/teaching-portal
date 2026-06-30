@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, ChevronRight } from "lucide-react";
 import { FoundationsCardCheck } from "@/components/course/foundations/FoundationsCardCheck";
 import type { Block, Lesson } from "@/lib/content/types";
 
@@ -31,10 +31,12 @@ export function FoundationsLessonView({
   courseSlug,
   courseTitle,
   lesson,
+  nextLesson,
 }: {
   courseSlug: string;
   courseTitle: string;
   lesson: Lesson;
+  nextLesson?: { lessonId: string; lessonTitle: string } | null;
 }) {
   const screens = groupIntoScreens(lesson.blocks);
   const [index, setIndex] = useState(0);
@@ -66,8 +68,12 @@ export function FoundationsLessonView({
         {screens.map((_, i) => (
           <span
             key={i}
-            className={`h-3 flex-1 rounded-full ${
-              i <= index ? "bg-primary" : "bg-muted"
+            className={`h-3 flex-1 rounded-full transition-colors ${
+              i < index
+                ? "bg-primary"
+                : i === index
+                ? "bg-primary"
+                : "bg-muted"
             }`}
           />
         ))}
@@ -96,17 +102,28 @@ export function FoundationsLessonView({
           Back
         </button>
         {isLast ? (
-          <Link
-            href={`/courses/${courseSlug}`}
-            aria-disabled={!canAdvance}
-            className={`flex items-center gap-2 rounded-2xl px-6 py-4 text-xl font-bold ${
-              canAdvance
-                ? "bg-primary text-primary-foreground"
-                : "pointer-events-none bg-muted text-muted-foreground"
-            }`}
-          >
-            Finish
-          </Link>
+          <div className="flex flex-col items-end gap-3">
+            {nextLesson && canAdvance && (
+              <Link
+                href={`/courses/${courseSlug}/lesson/${nextLesson.lessonId}`}
+                className="flex items-center gap-2 rounded-2xl bg-primary px-6 py-4 text-xl font-bold text-primary-foreground"
+              >
+                Next: {nextLesson.lessonTitle}
+                <ChevronRight className="h-6 w-6" />
+              </Link>
+            )}
+            <Link
+              href={`/courses/${courseSlug}`}
+              aria-disabled={!canAdvance}
+              className={`flex items-center gap-2 rounded-2xl border-2 px-5 py-3 text-base font-bold ${
+                canAdvance
+                  ? "hover:bg-accent"
+                  : "pointer-events-none opacity-30"
+              }`}
+            >
+              Back to course
+            </Link>
+          </div>
         ) : (
           <button
             onClick={() => setIndex((i) => Math.min(screens.length - 1, i + 1))}

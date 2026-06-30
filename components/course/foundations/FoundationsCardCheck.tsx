@@ -35,6 +35,57 @@ function ConfirmGate({ onVerified }: { onVerified: () => void }) {
   );
 }
 
+function TrueFalseCheck({
+  question,
+  onVerified,
+}: {
+  question: QuizQuestion;
+  onVerified: () => void;
+}) {
+  const [selected, setSelected] = useState<boolean | null>(null);
+
+  function pick(val: boolean) {
+    if (selected !== null) return;
+    setSelected(val);
+    onVerified();
+  }
+
+  const isCorrect = (val: boolean) => val === question.correctAnswer;
+  const showState = selected !== null;
+
+  return (
+    <div>
+      <p className="text-2xl font-bold tracking-tight">{question.text}</p>
+      <div className="mt-6 grid grid-cols-2 gap-4">
+        {[true, false].map((val) => {
+          const label = val ? "True ✅" : "False ❌";
+          const picked = selected === val;
+          const correct = isCorrect(val);
+          return (
+            <button
+              key={String(val)}
+              onClick={() => pick(val)}
+              disabled={showState}
+              className={`flex items-center justify-center rounded-3xl border-2 py-6 text-2xl font-bold ${
+                showState && correct
+                  ? "border-primary bg-primary text-primary-foreground"
+                  : showState && picked && !correct
+                    ? "border-destructive bg-destructive/10"
+                    : "hover:bg-accent"
+              }`}
+            >
+              {label}
+            </button>
+          );
+        })}
+      </div>
+      {showState && question.explanation && (
+        <p className="mt-4 rounded-2xl bg-muted p-4 text-base">{question.explanation}</p>
+      )}
+    </div>
+  );
+}
+
 function McqCheck({
   question,
   onVerified,
@@ -427,6 +478,10 @@ export function FoundationsCardCheck({
 }) {
   if (block.type === "quizQuestion" && block.question.questionType === "mcq") {
     return <McqCheck question={block.question} onVerified={onVerified} />;
+  }
+
+  if (block.type === "quizQuestion" && block.question.questionType === "true_false") {
+    return <TrueFalseCheck question={block.question} onVerified={onVerified} />;
   }
 
   if (block.type === "activity" && block.pairs) {

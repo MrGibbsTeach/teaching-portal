@@ -124,13 +124,27 @@ export function BlockRenderer({ block }: { block: Block }) {
           ))}
         </dl>
       );
-    case "callout":
+    case "callout": {
+      const v = block.variant;
+      const cls =
+        v === "hook"
+          ? "mt-3 rounded-2xl border-2 border-primary bg-primary/8 p-5"
+          : v === "video"
+            ? "mt-3 rounded-2xl border-2 border-amber-400 bg-amber-50 p-5"
+            : v === "success"
+              ? "mt-3 rounded-2xl border-2 border-emerald-500 bg-emerald-50 p-5"
+              : "mt-3 rounded-lg border bg-accent/50 p-4";
       return (
-        <div className="mt-3 rounded-lg border bg-accent/50 p-4">
-          {block.heading && <p className="font-semibold">{block.heading}</p>}
-          <p className="text-sm text-foreground/90">{block.text}</p>
+        <div className={cls}>
+          {block.heading && (
+            <p className={`font-bold ${v === "hook" ? "text-primary" : v === "video" ? "text-amber-700" : v === "success" ? "text-emerald-700" : ""}`}>
+              {block.heading}
+            </p>
+          )}
+          <p className="mt-1 text-foreground/90">{block.text}</p>
         </div>
       );
+    }
     case "divider":
       return <hr className="my-6" />;
     case "video":

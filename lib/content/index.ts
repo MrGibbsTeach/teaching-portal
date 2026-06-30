@@ -22,3 +22,18 @@ export function findLesson(course: CourseContent, lessonId: string) {
   }
   return undefined;
 }
+
+export function findNextLesson(
+  course: CourseContent,
+  lessonId: string
+): { lessonId: string; lessonTitle: string } | null {
+  for (const unit of course.units) {
+    for (const topic of unit.topics) {
+      const idx = topic.lessons.findIndex((l) => l.id === lessonId);
+      if (idx === -1) continue;
+      const next = topic.lessons[idx + 1];
+      return next ? { lessonId: next.id, lessonTitle: next.title } : null;
+    }
+  }
+  return null;
+}

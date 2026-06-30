@@ -6,7 +6,7 @@ import { FoundationsLessonView } from "@/components/course/foundations/Foundatio
 import { FoundationsThemeRoot } from "@/components/course/foundations/FoundationsThemeRoot";
 import { atkinson } from "@/components/course/foundations/font";
 import { getCourseBySlug } from "@/lib/courses";
-import { getCourseContent, findLesson } from "@/lib/content";
+import { getCourseContent, findLesson, findNextLesson } from "@/lib/content";
 
 export default async function LessonPage({
   params,
@@ -23,12 +23,14 @@ export default async function LessonPage({
   const { unit, topic, lesson } = found;
 
   if (slug === "ait-foundations") {
+    const nextLesson = findNextLesson(content, lessonId);
     return (
       <FoundationsThemeRoot fontVariable={atkinson.variable}>
         <FoundationsLessonView
           courseSlug={course.slug}
           courseTitle={course.title}
           lesson={lesson}
+          nextLesson={nextLesson}
         />
       </FoundationsThemeRoot>
     );

@@ -19,6 +19,12 @@
        "estimatedMinutes": 12,
        "blocks": [
         {
+         "type": "callout",
+         "variant": "hook",
+         "heading": "Think about it… 🤔",
+         "text": "Have you ever wondered what goes on INSIDE your computer when you switch it on? 🖥️ By the end of this topic you'll know exactly what every part does — and how to keep yourself healthy using one."
+        },
+        {
          "type": "richText",
          "heading": "A computer system has 3 main parts. 💻",
          "html": "<strong>Hardware</strong>, <strong>software</strong>, and the <strong>user</strong>.<br><br>All 3 parts work together."
@@ -34,6 +40,15 @@
          "html": "You cannot touch software.<br><br>Software gives the hardware instructions to follow."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "A keyboard is an INPUT device. ⌨️",
+          "correctAnswer": true,
+          "explanation": "A keyboard sends information INTO the computer, so it is an input device."
+         }
+        },
+        {
          "type": "richText",
          "heading": "The user is the person using the computer. 🙋",
          "html": "That could be you!<br><br>The user tells the computer what to do."
@@ -42,6 +57,12 @@
          "type": "richText",
          "heading": "A computer system helps the user do a task. 🎯",
          "html": "It might help you write, draw, or play a game.<br><br>The system is built around what the user needs."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"how computers work for beginners\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -106,6 +127,12 @@
           "correctIndex": 2,
           "explanation": "The user is the person who uses the computer system."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🎉",
+         "text": "You've completed \"Hardware, Software and Users\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -135,6 +162,15 @@
          "html": "A keyboard, mouse, and microphone are input devices.<br><br>Input means \"going in\".<svg viewBox=\"0 0 280 140\" style=\"display:block;width:100%;margin-top:14px;border-radius:8px\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"280\" height=\"140\" fill=\"#f8fafc\" rx=\"6\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><rect x=\"16\" y=\"20\" width=\"110\" height=\"40\" rx=\"6\" fill=\"#bbf7d0\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"71\" y=\"36\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#166534\" text-anchor=\"middle\">INPUT</text><text x=\"71\" y=\"52\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#166534\" text-anchor=\"middle\">Keyboard, mouse</text><rect x=\"16\" y=\"80\" width=\"110\" height=\"40\" rx=\"6\" fill=\"#fed7aa\" stroke=\"#ea580c\" stroke-width=\"2\"/><text x=\"71\" y=\"96\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#9a3412\" text-anchor=\"middle\">OUTPUT</text><text x=\"71\" y=\"112\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#9a3412\" text-anchor=\"middle\">Screen, printer</text><rect x=\"154\" y=\"50\" width=\"110\" height=\"40\" rx=\"6\" fill=\"#bfdbfe\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"209\" y=\"66\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e3a8a\" text-anchor=\"middle\">PROCESSING</text><text x=\"209\" y=\"82\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#1e3a8a\" text-anchor=\"middle\">The CPU</text><line x1=\"126\" y1=\"40\" x2=\"154\" y2=\"65\" stroke=\"#16a34a\" stroke-width=\"2\"/><line x1=\"154\" y1=\"75\" x2=\"126\" y2=\"100\" stroke=\"#ea580c\" stroke-width=\"2\"/></svg>"
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "Software is the physical parts of a computer you can touch. 🖱️",
+          "correctAnswer": false,
+          "explanation": "Software is programs and apps — things you can't touch. Hardware is the physical parts you can touch."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Output devices show information to the user. 🖨️",
          "html": "A screen, printer, and speaker are output devices.<br><br>Output means \"coming out\"."
@@ -148,6 +184,12 @@
          "type": "richText",
          "heading": "Storage devices save your files. 💾",
          "html": "A hard drive and a USB stick are storage devices.<br><br>Your files stay saved even when the power is off."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"how computers work for beginners\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "richText",
@@ -221,6 +263,12 @@
           "correctIndex": 1,
           "explanation": "The CPU is the brain of the computer. It processes information."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! ⭐",
+         "text": "You've completed \"Computer Types and Hardware Devices\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -250,6 +298,15 @@
          "html": "Antivirus software is a utility.<br><br>Utilities check, clean, and protect the system."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "A keyboard is an INPUT device. ⌨️",
+          "correctAnswer": true,
+          "explanation": "A keyboard sends information INTO the computer, so it is an input device."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Troubleshooting means fixing a problem. 🔧",
          "html": "Computers sometimes stop working properly.<br><br>Troubleshooting finds the cause and fixes it."
@@ -258,6 +315,12 @@
          "type": "richText",
          "heading": "Try these steps when something goes wrong. 🔁",
          "html": "1. Restart the computer.<br>2. Check all the cables.<br>3. Close the program and open it again.<br>4. Ask for help if it still does not work."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"how computers work for beginners\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -316,6 +379,12 @@
           "correctIndex": 1,
           "explanation": "Restarting the computer is a simple first step. It often fixes small problems."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! ✅",
+         "text": "You've completed \"Software Types and Troubleshooting\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -345,6 +414,15 @@
          "html": "Keep your back straight and feet flat on the floor.<br><br>Your screen should be at eye level."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "Software is the physical parts of a computer you can touch. 🖱️",
+          "correctAnswer": false,
+          "explanation": "Software is programs and apps — things you can't touch. Hardware is the physical parts you can touch."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Take regular breaks and exercise. 🚶",
          "html": "Stand up and stretch every 30 minutes.<br><br>Moving your body stops your muscles getting stiff."
@@ -353,6 +431,12 @@
          "type": "richText",
          "heading": "Using a computer for too long can hurt your health. ⚠️",
          "html": "<strong>OOS</strong> — sore muscles and joints from repeating the same movement.<br><strong>Back strain</strong> — pain from sitting badly.<br><strong>Eye strain</strong> — sore, tired eyes from screen time."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"how computers work for beginners\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -413,6 +497,12 @@
           "correctIndex": 1,
           "explanation": "Looking at a screen for too long can make your eyes sore and tired. This is eye strain."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! ⭐",
+         "text": "You've completed \"Staying Safe and Healthy\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       }
@@ -429,6 +519,12 @@
        "estimatedMinutes": 12,
        "blocks": [
         {
+         "type": "callout",
+         "variant": "hook",
+         "heading": "Think about it… 🤔",
+         "text": "Have you ever sent an important document and then spotted a spelling mistake? 😬 Word processing software has tools to stop that happening. Let's learn them."
+        },
+        {
          "type": "richText",
          "heading": "Word processing software is used to make documents. 📝",
          "html": "You can write letters, reports, and stories.<br><br>Examples are Microsoft Word and Google Docs."
@@ -442,6 +538,15 @@
          "type": "richText",
          "heading": "Font size changes how big the letters are. 🔍",
          "html": "Small text is good for long paragraphs.<br><br>Big text is good for titles and headings."
+        },
+        {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "Spell check will always catch every mistake in your document. ✏️",
+          "correctAnswer": false,
+          "explanation": "Spell check misses correctly-spelled words used in the wrong way, like 'their' instead of 'there'."
+         }
         },
         {
          "type": "richText",
@@ -462,6 +567,12 @@
          "type": "richText",
          "heading": "You can add tables, pictures, and objects. 🖼️",
          "html": "A table holds information in rows and columns.<br><br>Pictures and objects make your document more interesting."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"word processing tips beginners\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "richText",
@@ -531,6 +642,12 @@
           "correctIndex": 2,
           "explanation": "Justified alignment spreads text evenly so both the left and right edges line up."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 👏",
+         "text": "You've completed \"Fonts and Formatting\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -560,6 +677,15 @@
          "html": "Wide line spacing is easier on the eyes.<br><br>Reports often use 1.5 or double line spacing."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "Saving a file with a new version number (like v2) is good version control. 📂",
+          "correctAnswer": true,
+          "explanation": "Version numbers let you track changes and go back to an earlier version if needed."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Pictures should match your topic. 🖼️",
          "html": "Resize a picture by dragging its corner.<br><br>Keep pictures small enough that text still fits."
@@ -568,6 +694,12 @@
          "type": "richText",
          "heading": "Page numbers go in the header or footer. 🔢",
          "html": "They help readers find a page quickly.<br><br>Most documents number every page automatically."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"word processing tips beginners\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "richText",
@@ -626,6 +758,12 @@
           "correctIndex": 1,
           "explanation": "Page numbers are usually placed in the header or footer so they appear on every page."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🎉",
+         "text": "You've completed \"Formatting Documents\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -655,6 +793,15 @@
          "html": "It cannot tell if you used the wrong word correctly spelled.<br><br>Example: \"their\" instead of \"there\". Always read your work too!"
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "Spell check will always catch every mistake in your document. ✏️",
+          "correctAnswer": false,
+          "explanation": "Spell check misses correctly-spelled words used in the wrong way, like 'their' instead of 'there'."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Print preview shows how your document will look on paper. 🖨️",
          "html": "Use it before you print to check the layout.<br><br>This saves paper and ink."
@@ -663,6 +810,12 @@
          "type": "richText",
          "heading": "Print options let you change how a document prints. ⚙️",
          "html": "You can choose the number of copies.<br><br>You can also choose which pages to print, and colour or black & white."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"word processing tips beginners\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "richText",
@@ -732,6 +885,12 @@
           "correctIndex": 0,
           "explanation": "Print preview shows exactly how your document will look once it is printed on paper."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! ⭐",
+         "text": "You've completed \"Editing and Proofreading\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -761,6 +920,15 @@
          "html": "Many schools and workplaces use one style.<br><br>Example: <strong>Subject_Task_Date</strong>, like <strong>Maths_Test_2026-06-29</strong>."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "Saving a file with a new version number (like v2) is good version control. 📂",
+          "correctAnswer": true,
+          "explanation": "Version numbers let you track changes and go back to an earlier version if needed."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Version control means tracking changes to a file. 🔄",
          "html": "Add a version number when you save a new draft.<br><br>Example: <strong>Essay_v1</strong>, <strong>Essay_v2</strong>, <strong>Essay_v3</strong>."
@@ -774,6 +942,12 @@
          "type": "richText",
          "heading": "A password protects your files and accounts. 🔒",
          "html": "Use a password that is hard for others to guess.<br><br>Never share your password with people you don't trust."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"word processing tips beginners\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "richText",
@@ -827,6 +1001,12 @@
           "correctIndex": 2,
           "explanation": "A strong password mixes letters, numbers, and symbols. This makes it much harder to guess."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! ✅",
+         "text": "You've completed \"Managing Your Files\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       }
@@ -843,6 +1023,12 @@
        "estimatedMinutes": 12,
        "blocks": [
         {
+         "type": "callout",
+         "variant": "hook",
+         "heading": "Think about it… 🤔",
+         "text": "Have you ever sat through a boring presentation and thought 'I could do better'? 🎤 By the end of this topic, you will be able to."
+        },
+        {
          "type": "richText",
          "heading": "Presentation software helps you make slides. 💻",
          "html": "Slides are like digital pages you show on a screen.<br><br>You use words, pictures and sound to share ideas."
@@ -858,6 +1044,15 @@
          "html": "It already has colours, fonts and a layout.<br><br>You just add your own words and pictures."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "Too many animations in a presentation make it look MORE professional. ✨",
+          "correctAnswer": false,
+          "explanation": "Too many animations are distracting. Presentations should be clear and easy to follow."
+         }
+        },
+        {
          "type": "richText",
          "heading": "A transition is how one slide changes to the next. 🔄",
          "html": "Example: a slide might fade in, or slide across the screen.<br><br>Transitions should be simple, not distracting."
@@ -866,6 +1061,12 @@
          "type": "richText",
          "heading": "Animation makes things move on a slide. ✨",
          "html": "Example: text can fly in, or a picture can grow bigger.<br><br>Use animation only when it helps explain your idea."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"how to make a good presentation students\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "richText",
@@ -939,6 +1140,12 @@
           "correctIndex": 1,
           "explanation": "A hyperlink takes you to another slide, a website, or a file when you click it."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🎉",
+         "text": "You've completed \"What is Presentation Software?\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -968,9 +1175,24 @@
          "html": "You give it a name and choose where to save it.<br><br>Then you can start adding slides."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "You should always think about your TARGET AUDIENCE when making a presentation. 👥",
+          "correctAnswer": true,
+          "explanation": "Different audiences need different language, visuals, and levels of detail."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Always proofread your slides before you present. 🔍",
          "html": "Check for spelling and typing mistakes.<br><br>Proofreading means reading your work carefully to find errors."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"how to make a good presentation students\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -1024,6 +1246,12 @@
           "correctIndex": 1,
           "explanation": "Proofreading means reading your work carefully to find spelling and typing mistakes."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! ⭐",
+         "text": "You've completed \"Slide Features\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -1053,6 +1281,15 @@
          "html": "<strong>Bold</strong> makes text stand out.<br><br><em>Italic</em> can show a special word."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "Too many animations in a presentation make it look MORE professional. ✨",
+          "correctAnswer": false,
+          "explanation": "Too many animations are distracting. Presentations should be clear and easy to follow."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Spacing is the gap between lines and letters. ↕️",
          "html": "Too little spacing is hard to read.<br><br>Good spacing makes your slide look neat."
@@ -1061,6 +1298,12 @@
          "type": "richText",
          "heading": "Target audience means the people you are presenting to. 🎯",
          "html": "Example: young kids, adults, or experts.<br><br>You should change your words and pictures to suit them."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"how to make a good presentation students\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -1109,6 +1352,12 @@
           "correctIndex": 1,
           "explanation": "Thinking about your target audience helps you choose the right words and pictures so they understand you."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🎉",
+         "text": "You've completed \"Fonts and Target Audience\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -1138,6 +1387,15 @@
          "html": "Empty space gives your eyes a rest.<br><br>Too many words and pictures with no space looks messy."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "You should always think about your TARGET AUDIENCE when making a presentation. 👥",
+          "correctAnswer": true,
+          "explanation": "Different audiences need different language, visuals, and levels of detail."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Colour can highlight ideas or set a mood. 🌈",
          "html": "Bright colours can grab attention.<br><br>Soft colours can feel calm. Always make text easy to read against the background."
@@ -1146,6 +1404,12 @@
          "type": "richText",
          "heading": "Balance is the principle of spreading items evenly. ⚖️",
          "html": "A balanced slide does not feel heavy on one side.<br><br>Balance makes a slide feel comfortable to look at."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"how to make a good presentation students\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "richText",
@@ -1223,6 +1487,12 @@
           "correctIndex": 0,
           "explanation": "Balance means spreading items evenly so the slide does not feel heavy on one side."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🎉",
+         "text": "You've completed \"Elements and Principles of Design\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       }
@@ -1239,6 +1509,12 @@
        "estimatedMinutes": 12,
        "blocks": [
         {
+         "type": "callout",
+         "variant": "hook",
+         "heading": "Think about it… 🤔",
+         "text": "Have you ever received a weird email asking you to click a link or enter your password? 🚨 That's a phishing attack. This topic teaches you how to spot them — and stay safe online."
+        },
+        {
          "type": "richText",
          "heading": "Email lets you send messages online. 📧",
          "html": "It is fast, free, and used at school and work.<br><br>Every email has a few key parts."
@@ -1254,6 +1530,15 @@
          "html": "CC means \"carbon copy\".<br><br>Everyone can see who is in the CC list."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "It is safe to share your home address in a public online forum. 🏠",
+          "correctAnswer": false,
+          "explanation": "Never share your home address, school, or location details publicly online — this puts you at risk."
+         }
+        },
+        {
          "type": "richText",
          "heading": "BCC sends a hidden copy. 🙈",
          "html": "BCC means \"blind carbon copy\".<br><br>People in the To and CC fields cannot see who is in BCC."
@@ -1267,6 +1552,12 @@
          "type": "richText",
          "heading": "Message and Attachments finish the email. ✉️",
          "html": "<strong>Message</strong> — the words you write.<br><strong>Attachments</strong> — files you add, like photos or documents. 📎"
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"how to stay safe online teenagers\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "richText",
@@ -1340,6 +1631,12 @@
           "correctIndex": 1,
           "explanation": "Typing in all capital letters looks like shouting. It is bad netiquette."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🎉",
+         "text": "You've completed \"Email and Netiquette\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -1369,6 +1666,15 @@
          "html": "Example: <strong>jaguar NOT car</strong><br><br>This finds pages about the animal, not the car brand."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "A phishing email often pretends to be from a trusted organisation like a bank. 🎣",
+          "correctAnswer": true,
+          "explanation": "Phishing emails look real but are designed to trick you into giving away personal details or passwords."
+         }
+        },
+        {
          "type": "richText",
          "heading": "A URL is a web address. It has parts. 🌐",
          "html": "<strong>http://www.school.edu.au</strong><br><br><strong>http://</strong> = protocol<br><strong>www</strong> = server<br><strong>school</strong> = domain<br><strong>edu</strong> = purpose<br><strong>au</strong> = country"
@@ -1382,6 +1688,12 @@
          "type": "richText",
          "heading": "Not every website tells the truth. ⚠️",
          "html": "Always check a site before you trust it.<br><br>Look at who wrote it, and when."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"how to stay safe online teenagers\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "richText",
@@ -1451,6 +1763,12 @@
           "correctIndex": 2,
           "explanation": "Colours do not show if information is true. Check the author and the dates instead."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! ✅",
+         "text": "You've completed \"Searching the Internet\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -1480,6 +1798,15 @@
          "html": "Set your social media to \"Friends only\" where you can.<br><br>This stops strangers from seeing your life."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "It is safe to share your home address in a public online forum. 🏠",
+          "correctAnswer": false,
+          "explanation": "Never share your home address, school, or location details publicly online — this puts you at risk."
+         }
+        },
+        {
          "type": "richText",
          "heading": "An avatar is a picture that is not your real face. 🦸",
          "html": "It can protect your identity online.<br><br>Many people use avatars instead of real photos."
@@ -1493,6 +1820,12 @@
          "type": "richText",
          "heading": "There are many other online risks. ⚠️",
          "html": "<strong>Cyberbullying</strong> — being mean to someone online. 😢<br><strong>Identity theft</strong> — someone steals your details. 🆔<br><strong>Cyber stalking</strong> — someone watches you online without asking. 👀<br><strong>SPAM</strong> — unwanted junk emails. 🗑️<br><strong>Viruses</strong> — programs that damage your device. 🦠"
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"how to stay safe online teenagers\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "spotTheThreat",
@@ -1590,6 +1923,12 @@
           "correctIndex": 0,
           "explanation": "Identity theft happens when someone steals your details. They then pretend to be you, often to steal money."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🎉",
+         "text": "You've completed \"Privacy and Online Risks\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -1619,6 +1958,15 @@
          "html": "<strong>Author</strong> — who wrote it.<br><strong>Title</strong> — the name of the work.<br><strong>Year</strong> — when it was published.<br><strong>Where you found it</strong> — website or book."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "A phishing email often pretends to be from a trusted organisation like a bank. 🎣",
+          "correctAnswer": true,
+          "explanation": "Phishing emails look real but are designed to trick you into giving away personal details or passwords."
+         }
+        },
+        {
          "type": "richText",
          "heading": "A bibliography lists all your sources. 📚",
          "html": "It goes at the end of your work.<br><br>It shows every source you used to find information."
@@ -1627,6 +1975,12 @@
          "type": "richText",
          "heading": "Always ask before using someone else's work. 🙋",
          "html": "Some creators allow free use if you give credit.<br><br>If you are unsure, ask first or find a free image instead."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"how to stay safe online teenagers\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -1686,6 +2040,12 @@
           "correctIndex": 1,
           "explanation": "A bibliography is a list of all your sources. It goes at the end of your work."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! ⭐",
+         "text": "You've completed \"Copyright and Citing Sources\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       }
@@ -1702,6 +2062,12 @@
        "estimatedMinutes": 12,
        "blocks": [
         {
+         "type": "callout",
+         "variant": "hook",
+         "heading": "Think about it… 🤔",
+         "text": "Ever started a big project and not known where to begin? 📋 This topic gives you a step-by-step design process that keeps you organised from start to finish."
+        },
+        {
          "type": "richText",
          "heading": "Making a digital product needs a plan. 🗂️",
          "html": "A <strong>digital product</strong> is something made using technology.<br><br>Examples: a website, a poster, a video, an app."
@@ -1715,6 +2081,15 @@
          "type": "richText",
          "heading": "Who will use your product? That is your target audience. 🎯",
          "html": "A <strong>target audience</strong> is the group of people your product is made for.<br><br>Example: a game for young children needs simple words and bright colours."
+        },
+        {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "The PRODUCE stage is the very FIRST step in the design process. 🏗️",
+          "correctAnswer": false,
+          "explanation": "Investigate & Plan comes first. You always research and plan before you start producing."
+         }
         },
         {
          "type": "richText",
@@ -1735,6 +2110,12 @@
          "type": "richText",
          "heading": "Stage 3: Produce. 🛠️",
          "html": "Now you make the real product.<br><br>You use your draft to build it on the computer."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"design process steps explained\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "richText",
@@ -1792,6 +2173,12 @@
           "correctIndex": 1,
           "explanation": "Producing means building the real, finished product using your draft as a guide."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🌟",
+         "text": "You've completed \"The Design Process\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -1821,6 +2208,15 @@
          "html": "The time plan shows your goals.<br><br>The journal shows what really happened."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "Self-evaluation means you check your own work to see if it meets the brief. ✅",
+          "correctAnswer": true,
+          "explanation": "Self-evaluation is when YOU review your own work against the original goals."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Before you build, you draw your design. ✏️",
          "html": "This shows others your idea before you start.<br><br>It is much faster to fix a drawing than a finished product."
@@ -1829,6 +2225,12 @@
          "type": "richText",
          "heading": "An annotated diagram is a labelled drawing. 🏷️",
          "html": "Annotated means it has notes added.<br><br>Example: a sketch of a poster with notes like \"logo here\" and \"blue background\"."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"design process steps explained\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "richText",
@@ -1898,6 +2300,12 @@
           "correctIndex": 1,
           "explanation": "A journal records your progress each day, including any problems you ran into."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🎉",
+         "text": "You've completed \"Time Management and Storyboards\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -1927,6 +2335,15 @@
          "html": "Ask yourself: Did I meet the brief? Is it easy to use?<br><br>Be honest about what could be better."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "The PRODUCE stage is the very FIRST step in the design process. 🏗️",
+          "correctAnswer": false,
+          "explanation": "Investigate & Plan comes first. You always research and plan before you start producing."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Target audience evaluation is the most important. 🎯",
          "html": "These are the real people who will use your product.<br><br>If they like it and can use it, your product is a success."
@@ -1935,6 +2352,12 @@
          "type": "richText",
          "heading": "Good feedback answers clear questions. ❓",
          "html": "Example questions: Is it easy to use? Does it look good? Does it solve the problem?<br><br>Clear questions give clear answers."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"design process steps explained\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -2001,6 +2424,12 @@
           "correctIndex": 0,
           "explanation": "The target audience is who the product is made for. Their feedback shows if it really works for them."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🎊",
+         "text": "You've completed \"Evaluating Your Product\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       }
@@ -2024,6 +2453,12 @@
        "estimatedMinutes": 15,
        "blocks": [
         {
+         "type": "callout",
+         "variant": "hook",
+         "heading": "Think about it… 🤔",
+         "text": "Did you know businesses use spreadsheets to track millions of numbers automatically? 📊 By the end of this topic, you'll be able to build one yourself."
+        },
+        {
          "type": "richText",
          "heading": "A spreadsheet stores information in a grid. 📊",
          "html": "You can use it to organise numbers and data.<svg viewBox=\"0 0 280 152\" style=\"display:block;width:100%;margin-top:14px;border-radius:8px\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"280\" height=\"152\" fill=\"#f8fafc\" rx=\"6\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><rect width=\"280\" height=\"26\" fill=\"#e2e8f0\"/><rect x=\"0\" y=\"26\" width=\"36\" height=\"126\" fill=\"#f0f4f8\"/><line x1=\"36\" y1=\"0\" x2=\"36\" y2=\"152\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"114\" y1=\"0\" x2=\"114\" y2=\"152\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"192\" y1=\"0\" x2=\"192\" y2=\"152\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"26\" x2=\"280\" y2=\"26\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"57\" x2=\"280\" y2=\"57\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"88\" x2=\"280\" y2=\"88\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"119\" x2=\"280\" y2=\"119\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"75\" y=\"18\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">A</text><text x=\"153\" y=\"18\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">B</text><text x=\"236\" y=\"18\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">C</text><text x=\"18\" y=\"47\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">1</text><text x=\"18\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">2</text><text x=\"18\" y=\"109\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">3</text><text x=\"18\" y=\"140\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">4</text><text x=\"75\" y=\"47\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#028090\" text-anchor=\"middle\">Name</text><text x=\"153\" y=\"47\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#028090\" text-anchor=\"middle\">Score</text><text x=\"75\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">Ali</text><text x=\"153\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">85</text><text x=\"75\" y=\"109\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">Mia</text><text x=\"153\" y=\"109\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">92</text><text x=\"75\" y=\"140\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">Sam</text><text x=\"153\" y=\"140\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">78</text></svg>"
@@ -2039,6 +2474,15 @@
          "html": "They are labelled: A, B, C...<svg viewBox=\"0 0 280 152\" style=\"display:block;width:100%;margin-top:14px;border-radius:8px\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"280\" height=\"152\" fill=\"#f8fafc\" rx=\"6\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><rect width=\"280\" height=\"26\" fill=\"#e2e8f0\"/><rect x=\"0\" y=\"26\" width=\"36\" height=\"126\" fill=\"#f0f4f8\"/><rect x=\"114\" y=\"26\" width=\"78\" height=\"126\" fill=\"#fed7aa\"/><rect x=\"114\" y=\"0\" width=\"78\" height=\"26\" fill=\"#fb923c\"/><line x1=\"36\" y1=\"0\" x2=\"36\" y2=\"152\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"114\" y1=\"0\" x2=\"114\" y2=\"152\" stroke=\"#ea580c\" stroke-width=\"2\"/><line x1=\"192\" y1=\"0\" x2=\"192\" y2=\"152\" stroke=\"#ea580c\" stroke-width=\"2\"/><line x1=\"0\" y1=\"26\" x2=\"280\" y2=\"26\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"57\" x2=\"280\" y2=\"57\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"88\" x2=\"280\" y2=\"88\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"119\" x2=\"280\" y2=\"119\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"75\" y=\"18\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">A</text><text x=\"153\" y=\"18\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"white\" text-anchor=\"middle\">B</text><text x=\"236\" y=\"18\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">C</text><text x=\"18\" y=\"47\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">1</text><text x=\"18\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">2</text><text x=\"18\" y=\"109\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">3</text><text x=\"18\" y=\"140\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">4</text><text x=\"75\" y=\"47\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">Ali</text><text x=\"153\" y=\"47\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#c2410c\" text-anchor=\"middle\">85</text><text x=\"75\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">Mia</text><text x=\"153\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#c2410c\" text-anchor=\"middle\">92</text><text x=\"75\" y=\"109\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">Sam</text><text x=\"153\" y=\"109\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#c2410c\" text-anchor=\"middle\">78</text><text x=\"153\" y=\"148\" font-family=\"Arial,sans-serif\" font-size=\"20\" fill=\"#c2410c\" text-anchor=\"middle\">↓</text></svg>"
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "Cell B3 means column 3, row B. 📊",
+          "correctAnswer": false,
+          "explanation": "Cell addresses are COLUMN then ROW. B3 means column B, row 3."
+         }
+        },
+        {
          "type": "richText",
          "heading": "A cell is one single box. 📦",
          "html": "Cell A1 is in column A, row 1.<svg viewBox=\"0 0 280 152\" style=\"display:block;width:100%;margin-top:14px;border-radius:8px\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"280\" height=\"152\" fill=\"#f8fafc\" rx=\"6\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><rect width=\"280\" height=\"26\" fill=\"#e2e8f0\"/><rect x=\"0\" y=\"26\" width=\"36\" height=\"126\" fill=\"#f0f4f8\"/><rect x=\"36\" y=\"26\" width=\"78\" height=\"31\" fill=\"#bbf7d0\" stroke=\"#16a34a\" stroke-width=\"2.5\"/><line x1=\"36\" y1=\"0\" x2=\"36\" y2=\"152\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"114\" y1=\"0\" x2=\"114\" y2=\"152\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"192\" y1=\"0\" x2=\"192\" y2=\"152\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"26\" x2=\"280\" y2=\"26\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"57\" x2=\"280\" y2=\"57\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"88\" x2=\"280\" y2=\"88\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"119\" x2=\"280\" y2=\"119\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"75\" y=\"18\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">A</text><text x=\"153\" y=\"18\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">B</text><text x=\"236\" y=\"18\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">C</text><text x=\"18\" y=\"47\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">1</text><text x=\"18\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">2</text><text x=\"18\" y=\"109\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">3</text><text x=\"75\" y=\"44\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#16a34a\" text-anchor=\"middle\">A1</text><text x=\"153\" y=\"47\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#94a3b8\" text-anchor=\"middle\">B1</text><text x=\"236\" y=\"47\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#94a3b8\" text-anchor=\"middle\">C1</text><text x=\"75\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#94a3b8\" text-anchor=\"middle\">A2</text><text x=\"75\" y=\"109\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#94a3b8\" text-anchor=\"middle\">A3</text></svg>"
@@ -2047,6 +2491,12 @@
          "type": "richText",
          "heading": "A worksheet is one page in a spreadsheet file. 📄",
          "html": "You can have more than one worksheet.<svg viewBox=\"0 0 280 170\" style=\"display:block;width:100%;margin-top:14px;border-radius:8px\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"280\" height=\"170\" fill=\"#f8fafc\" rx=\"6\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><rect width=\"280\" height=\"26\" fill=\"#e2e8f0\"/><rect x=\"0\" y=\"26\" width=\"36\" height=\"118\" fill=\"#f0f4f8\"/><line x1=\"36\" y1=\"0\" x2=\"36\" y2=\"144\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"114\" y1=\"0\" x2=\"114\" y2=\"144\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"192\" y1=\"0\" x2=\"192\" y2=\"144\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"26\" x2=\"280\" y2=\"26\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"57\" x2=\"280\" y2=\"57\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"88\" x2=\"280\" y2=\"88\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"119\" x2=\"280\" y2=\"119\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"144\" x2=\"280\" y2=\"144\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"75\" y=\"18\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">A</text><text x=\"153\" y=\"18\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">B</text><text x=\"236\" y=\"18\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">C</text><text x=\"18\" y=\"47\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">1</text><text x=\"18\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">2</text><text x=\"18\" y=\"109\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\">3</text><rect x=\"4\" y=\"148\" width=\"72\" height=\"20\" rx=\"4\" fill=\"white\" stroke=\"#028090\" stroke-width=\"1.5\"/><text x=\"40\" y=\"162\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#028090\" text-anchor=\"middle\">Sheet 1</text><rect x=\"80\" y=\"151\" width=\"66\" height=\"17\" rx=\"4\" fill=\"#e2e8f0\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"113\" y=\"163\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"middle\">Sheet 2</text><rect x=\"150\" y=\"151\" width=\"66\" height=\"17\" rx=\"4\" fill=\"#e2e8f0\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"183\" y=\"163\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"middle\">Sheet 3</text></svg>"
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"spreadsheets for beginners tutorial\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -2111,6 +2561,12 @@
           "correctIndex": 2,
           "explanation": "A worksheet is one page in your spreadsheet file. You can have many worksheets in one file."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🌟",
+         "text": "You've completed \"What is a Spreadsheet?\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -2140,9 +2596,24 @@
          "html": "Example: <strong>=A1*B1</strong><br><br>If A1 = 30 and B1 = 20, the answer is 600."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "The SUM function adds up a range of numbers in a spreadsheet. ➕",
+          "correctAnswer": true,
+          "explanation": "=SUM(B2:B6) adds up all the numbers from cell B2 to B6."
+         }
+        },
+        {
          "type": "richText",
          "heading": "The / sign divides numbers. ➗",
          "html": "Example: <strong>=A1/B1</strong><br><br>If A1 = 30 and B1 = 5, the answer is 6."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"spreadsheets for beginners tutorial\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "quizQuestion",
@@ -2200,6 +2671,12 @@
           "correctIndex": 1,
           "explanation": "In spreadsheet formulas, / is used to divide. For example: =A1/B1."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🎉",
+         "text": "You've completed \"Typing Formulas\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -2227,6 +2704,21 @@
          "type": "richText",
          "heading": "SUM and AVERAGE are called functions. ⚙️",
          "html": "Functions are shortcuts that do the maths for you.<br><br>You do not need to type each cell one by one."
+        },
+        {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "Cell B3 means column 3, row B. 📊",
+          "correctAnswer": false,
+          "explanation": "Cell addresses are COLUMN then ROW. B3 means column B, row 3."
+         }
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"spreadsheets for beginners tutorial\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -2275,6 +2767,12 @@
           "correctIndex": 2,
           "explanation": "AVERAGE adds all the values together. Then it divides by how many there are. That gives the average."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🏆",
+         "text": "You've completed \"SUM and AVERAGE\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -2304,9 +2802,24 @@
          "html": "It helps people find the headings fast.<br><br>Choose a colour that is easy to read."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "The SUM function adds up a range of numbers in a spreadsheet. ➕",
+          "correctAnswer": true,
+          "explanation": "=SUM(B2:B6) adds up all the numbers from cell B2 to B6."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Centre numbers in their cells. ↔️",
          "html": "Left-align text in their cells.<br><br>This follows the standard style used everywhere."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"spreadsheets for beginners tutorial\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -2354,6 +2867,12 @@
           "correctIndex": 1,
           "explanation": "Numbers should be centred in their cells. Text is usually left-aligned. This is the standard style."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🎉",
+         "text": "You've completed \"Making it Look Good\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -2383,6 +2902,15 @@
          "html": "Column, Bar, Line, or Pie charts all work.<br><br>Pick the one that suits your data best."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "Cell B3 means column 3, row B. 📊",
+          "correctAnswer": false,
+          "explanation": "Cell addresses are COLUMN then ROW. B3 means column B, row 3."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Step 4: Give your chart a title. 🏷️",
          "html": "A good title tells the reader what the chart shows.<br><br>Example: \"Test Scores for Class 11A\""
@@ -2391,6 +2919,12 @@
          "type": "richText",
          "heading": "Step 5: Move the chart below your data. ⬇️",
          "html": "Click and drag the chart to move it.<br><br>Placing it below keeps your data easy to find."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"spreadsheets for beginners tutorial\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -2444,6 +2978,12 @@
           "correctIndex": 1,
           "explanation": "Placing the chart below the data keeps everything together and easy to read."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🌟",
+         "text": "You've completed \"Creating Charts\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       }
@@ -2460,6 +3000,12 @@
        "estimatedMinutes": 15,
        "blocks": [
         {
+         "type": "callout",
+         "variant": "hook",
+         "heading": "Think about it… 🤔",
+         "text": "What tools do you use to talk to people online? 💬 This topic covers blogs, forums, social media, and e-commerce — and the smart ways to use them."
+        },
+        {
          "type": "richText",
          "heading": "A blog is a personal website. 📝",
          "html": "Someone writes regular posts on a blog.<br><br>People read it to follow their ideas and stories."
@@ -2475,6 +3021,15 @@
          "html": "You can read the latest news online anytime.<br><br>Examples: ABC News, BBC, The Guardian."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "E-commerce means buying and selling things using the internet. 🛒",
+          "correctAnswer": true,
+          "explanation": "E-commerce (electronic commerce) covers all buying, selling, and banking done online."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Photo-sharing sites let you post photos online. 📸",
          "html": "You can share photos with friends and followers.<br><br>Instagram and Flickr are popular examples."
@@ -2483,6 +3038,12 @@
          "type": "richText",
          "heading": "Online games let you play with others. 🎮",
          "html": "You connect to other players over the internet.<br><br>You can play with friends or strangers worldwide."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"how social media works explained simply\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "richText",
@@ -2552,6 +3113,12 @@
           "correctIndex": 1,
           "explanation": "YouTube is designed for watching and sharing videos. Anyone can upload a video."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 👏",
+         "text": "You've completed \"Online Communication Tools\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -2579,6 +3146,21 @@
          "type": "richText",
          "heading": "E-learning also has some challenges. ⚠️",
          "html": "You need internet access to learn online.<br>It is easy to get distracted at home.<br>You do not have a teacher nearby to help."
+        },
+        {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "A blog is a website where groups discuss topics by posting replies to each other. 💬",
+          "correctAnswer": false,
+          "explanation": "That describes a FORUM. A blog is a personal website with regular written posts, usually by one author."
+         }
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"how social media works explained simply\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -2643,6 +3225,12 @@
           "correctIndex": 2,
           "explanation": "E-learning requires internet. If you have no internet, you cannot access the lessons."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🎉",
+         "text": "You've completed \"E-Learning\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -2670,6 +3258,21 @@
          "type": "richText",
          "heading": "Online shopping also has some risks. ⚠️",
          "html": "You cannot touch or try items before buying.<br>There is a risk of scams and fake websites.<br>You may wait days or weeks for delivery."
+        },
+        {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "E-commerce means buying and selling things using the internet. 🛒",
+          "correctAnswer": true,
+          "explanation": "E-commerce (electronic commerce) covers all buying, selling, and banking done online."
+         }
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"how social media works explained simply\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -2734,6 +3337,12 @@
           "correctIndex": 1,
           "explanation": "Scam websites look real but steal your money or details. Always check the site is trusted."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🎉",
+         "text": "You've completed \"E-Commerce and Online Shopping\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -2761,6 +3370,21 @@
          "type": "richText",
          "heading": "Stay safe when banking online. 🔒",
          "html": "Always use a strong, unique password.<br>Only bank on websites that start with <strong>https://</strong>.<br>Log out when you are finished."
+        },
+        {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "A blog is a website where groups discuss topics by posting replies to each other. 💬",
+          "correctAnswer": false,
+          "explanation": "That describes a FORUM. A blog is a personal website with regular written posts, usually by one author."
+         }
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"how social media works explained simply\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -2825,6 +3449,12 @@
           "correctIndex": 1,
           "explanation": "https:// means the website uses encryption. Your data is protected as it travels online."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 👏",
+         "text": "You've completed \"Online Banking\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       }
@@ -2841,6 +3471,12 @@
        "estimatedMinutes": 15,
        "blocks": [
         {
+         "type": "callout",
+         "variant": "hook",
+         "heading": "Think about it… 🤔",
+         "text": "Have you ever made a poster, a birthday card, or a flyer? 🎨 Desktop publishing software makes professional-looking designs easy. Let's explore it."
+        },
+        {
          "type": "richText",
          "heading": "Desktop Publishing (DTP) makes layouts with text and images. 🖨️",
          "html": "You arrange words and pictures on a page.<br><br>The result can be printed or shared online."
@@ -2856,9 +3492,24 @@
          "html": "<strong>Microsoft Publisher</strong> — comes with Microsoft Office.<br><strong>Canva</strong> — a free online tool for everyone."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "A text frame and an image frame are the same thing in desktop publishing. 📄",
+          "correctAnswer": false,
+          "explanation": "A text frame holds written text; an image frame holds photos or graphics. They are different frames."
+         }
+        },
+        {
          "type": "richText",
          "heading": "A layout is where you put things on the page. 📐",
          "html": "You decide where text and images go.<br><br>A good layout is easy to read and looks great."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"desktop publishing tutorial beginners\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -2923,6 +3574,12 @@
           "correctIndex": 1,
           "explanation": "A layout is the arrangement of text and images on your page. A good layout is clear and easy to read."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🌟",
+         "text": "You've completed \"What is Desktop Publishing?\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -2952,6 +3609,15 @@
          "html": "Click on any text area to select it.<br><br>Delete the placeholder text and type your own."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "Desktop publishing software lets you create brochures, calendars, and cards. 🗓️",
+          "correctAnswer": true,
+          "explanation": "Desktop publishing is designed for creating professional layouts like brochures, flyers, and cards."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Step 4: Click an image frame and add your photo. 🖼️",
          "html": "Click on the image area to select it.<br><br>Upload your own photo to replace the placeholder."
@@ -2960,6 +3626,12 @@
          "type": "richText",
          "heading": "Step 5: Save your finished document. 💾",
          "html": "Save your work so you do not lose it.<br><br>You can save as a PDF to share or print."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"desktop publishing tutorial beginners\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -3013,6 +3685,12 @@
           "correctIndex": 2,
           "explanation": "Always save your work last. You can save as a PDF to share or print your document."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🌟",
+         "text": "You've completed \"Using Templates\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -3040,6 +3718,21 @@
          "type": "richText",
          "heading": "You can move and resize any frame. ↔️",
          "html": "Drag the frame to move it anywhere on the page.<br><br>Drag a corner handle to make it bigger or smaller."
+        },
+        {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "A text frame and an image frame are the same thing in desktop publishing. 📄",
+          "correctAnswer": false,
+          "explanation": "A text frame holds written text; an image frame holds photos or graphics. They are different frames."
+         }
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"desktop publishing tutorial beginners\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -3087,6 +3780,12 @@
           "correctIndex": 1,
           "explanation": "Drag a corner handle to resize a frame. Drag from the middle to move it instead."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! ✅",
+         "text": "You've completed \"Image Frames and Text Frames\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -3116,9 +3815,24 @@
          "html": "Right-click and choose Bring to Front or Send to Back.<br><br>This fixes objects that hide behind each other."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "Desktop publishing software lets you create brochures, calendars, and cards. 🗓️",
+          "correctAnswer": true,
+          "explanation": "Desktop publishing is designed for creating professional layouts like brochures, flyers, and cards."
+         }
+        },
+        {
          "type": "richText",
          "heading": "A colour scheme picks matching colours for the page. 🎨",
          "html": "Choose a colour scheme so all colours match.<br><br>This makes your document look professional."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"desktop publishing tutorial beginners\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -3183,6 +3897,12 @@
           "correctIndex": 0,
           "explanation": "A colour scheme picks matching colours for your whole page. This makes your work look professional."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! ⭐",
+         "text": "You've completed \"Editing Tools\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       }
@@ -3199,6 +3919,12 @@
        "estimatedMinutes": 15,
        "blocks": [
         {
+         "type": "callout",
+         "variant": "hook",
+         "heading": "Think about it… 🤔",
+         "text": "What makes a photo go from boring to brilliant? 📸 This topic teaches you the secrets of composition and editing that professional photographers use."
+        },
+        {
          "type": "richText",
          "heading": "Resolution is how sharp your photo is. 📷",
          "html": "High resolution means more detail in the photo.<br><br>Always use the highest resolution setting you can."
@@ -3214,6 +3940,15 @@
          "html": "Tap the screen to focus on your subject.<br><br>If the subject is blurry, the photo will not look good."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "A higher resolution photo always has SMALLER file size. 📷",
+          "correctAnswer": false,
+          "explanation": "Higher resolution means MORE detail, which means a LARGER file size."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Exposure controls how bright the photo is. ☀️",
          "html": "Too much light makes a washed-out photo.<br><br>Too little light makes a dark, hard-to-see photo."
@@ -3222,6 +3957,12 @@
          "type": "richText",
          "heading": "Use flash wisely. ⚡",
          "html": "Turn flash on in dark rooms to light your subject.<br><br>Turn flash off in bright light — it can wash things out."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"photography composition tips beginners\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -3285,6 +4026,12 @@
           "correctIndex": 2,
           "explanation": "JPEG is the most common photo format. It has a small file size and is great for sharing online."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 👏",
+         "text": "You've completed \"Using Your Camera\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -3312,6 +4059,21 @@
          "type": "richText",
          "heading": "Colour contrast makes your subject pop. 🌈",
          "html": "Place a bright subject against a darker background.<br><br>The contrast helps your subject stand out clearly."
+        },
+        {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "The rule of thirds means placing your subject off-centre to create a more interesting photo. 📐",
+          "correctAnswer": true,
+          "explanation": "The rule of thirds divides the image into a 3×3 grid. Placing subjects at the intersections makes photos more dynamic."
+         }
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"photography composition tips beginners\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -3376,6 +4138,12 @@
           "correctIndex": 2,
           "explanation": "Framing uses objects like doorways or trees to surround your subject. It draws the eye inward."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 👏",
+         "text": "You've completed \"Composition Rules\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -3405,9 +4173,24 @@
          "html": "Use rotate to fix a photo taken at an angle.<br><br>Turn it until the horizon looks straight."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "A higher resolution photo always has SMALLER file size. 📷",
+          "correctAnswer": false,
+          "explanation": "Higher resolution means MORE detail, which means a LARGER file size."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Red eye removal fixes red eyes from flash. 👁️",
          "html": "Flash can make eyes appear red in photos.<br><br>The red eye tool removes this effect automatically."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"photography composition tips beginners\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -3472,6 +4255,12 @@
           "correctIndex": 1,
           "explanation": "Flash can reflect inside the eye and cause red eye. Use the red eye removal tool to fix it."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! ⭐",
+         "text": "You've completed \"Editing Your Photos\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -3499,6 +4288,21 @@
          "type": "richText",
          "heading": "Think before you post. 🤔",
          "html": "Once a photo is online, it can spread quickly.<br><br>You may not be able to take it back."
+        },
+        {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "The rule of thirds means placing your subject off-centre to create a more interesting photo. 📐",
+          "correctAnswer": true,
+          "explanation": "The rule of thirds divides the image into a 3×3 grid. Placing subjects at the intersections makes photos more dynamic."
+         }
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"photography composition tips beginners\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -3562,6 +4366,12 @@
           "correctIndex": 1,
           "explanation": "Bias means only choosing photos that show one side unfairly. Always try to be fair and honest."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 👏",
+         "text": "You've completed \"Being Responsible with Photos\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       }
@@ -3586,6 +4396,12 @@
        "estimatedMinutes": 12,
        "blocks": [
         {
+         "type": "callout",
+         "variant": "hook",
+         "heading": "Think about it… 🤔",
+         "text": "Year 12 — let's go deeper. How do businesses protect their computers from viruses and hackers? 🔒 This topic covers real threats and how to stop them."
+        },
+        {
          "type": "richText",
          "heading": "A computer system is hardware and software working together. 🖥️",
          "html": "Hardware is the parts you can touch.<br><br>Software is the programs that run on it."
@@ -3601,6 +4417,15 @@
          "html": "Laptops, tablets, and phones are mobile devices.<br><br>They run on a battery, so you can use them anywhere."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "An antivirus program detects and removes software threats from your computer. 🦠",
+          "correctAnswer": true,
+          "explanation": "Antivirus software scans your computer for viruses, malware, and other threats and removes them."
+         }
+        },
+        {
          "type": "richText",
          "heading": "A server stores files and shares them with other computers. 🗄️",
          "html": "Many people can connect to one server.<br><br>Servers are usually kept in a locked, cool room."
@@ -3614,6 +4439,12 @@
          "type": "richText",
          "heading": "Communication hardware connects computers together. 📶",
          "html": "A Wi-Fi card or network cable lets a computer go online.<br><br>This lets it send and receive data."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"how antivirus and firewalls work simply\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "richText",
@@ -3679,6 +4510,12 @@
           "correctIndex": 2,
           "explanation": "Antivirus is a utility. Utility software fixes or cleans the computer system."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 👏",
+         "text": "You've completed \"Types of Computer Systems\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -3708,6 +4545,15 @@
          "html": "A spilled drink can ruin the keyboard or the inside parts.<br><br>Always keep cups and bottles away from your computer."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "You can safely leave a computer in direct sunlight to keep it warm. ☀️",
+          "correctAnswer": false,
+          "explanation": "Heat damages computer components. Computers need ventilation and should not be left in direct sunlight."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Dust can build up inside a computer. 🌫️",
          "html": "Dust traps heat and can stop fans from spinning.<br><br>Clean dust away regularly with a soft cloth or air duster."
@@ -3716,6 +4562,12 @@
          "type": "richText",
          "heading": "Dust minimisation keeps a computer running cool. ❄️",
          "html": "Keep the computer away from carpets and dusty areas.<br><br>Wipe down the desk and screen often."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"how antivirus and firewalls work simply\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -3768,6 +4620,12 @@
          "title": "Fill in the blank: Never place a drink near your keyboard, because a spill could damage the ___.",
          "answer": "hardware",
          "explanation": "A spilled liquid can get inside the computer and damage the hardware parts."
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🏆",
+         "text": "You've completed \"Caring for a Computer System\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -3797,6 +4655,15 @@
          "html": "WSH rules keep you safe while using ICT.<br><br>They help to prevent injuries and health problems."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "An antivirus program detects and removes software threats from your computer. 🦠",
+          "correctAnswer": true,
+          "explanation": "Antivirus software scans your computer for viruses, malware, and other threats and removes them."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Use electrical equipment safely. 🔌",
          "html": "Check cords are not frayed or damaged.<br><br>Never overload a power point with too many plugs."
@@ -3805,6 +4672,12 @@
          "type": "richText",
          "heading": "Watch how much time you spend using technology. ⏱️",
          "html": "Sitting too long can hurt your eyes, neck, and back.<br><br>Take regular breaks away from the screen."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"how antivirus and firewalls work simply\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -3865,6 +4738,12 @@
           "correctIndex": 1,
           "explanation": "Sitting and looking at a screen for too long can hurt your eyes, neck, and back. Breaks help prevent this."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🌟",
+         "text": "You've completed \"Staying Safe: Threats and WSH\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       }
@@ -3881,6 +4760,12 @@
        "estimatedMinutes": 12,
        "blocks": [
         {
+         "type": "callout",
+         "variant": "hook",
+         "heading": "Think about it… 🤔",
+         "text": "Did you know 'data' and 'information' are actually different things? 🤯 This topic also shows you advanced formatting, backup strategies, and how to never lose your files."
+        },
+        {
          "type": "richText",
          "heading": "Formatting changes how a document looks. 🎨",
          "html": "It does not change the words.<br><br>Good formatting makes a document easy to read."
@@ -3896,6 +4781,15 @@
          "html": "A graphic could be a photo, a logo, or a chart.<br><br>Graphics help explain your ideas."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "A local backup is stored on a device in a different physical location to the original. 💾",
+          "correctAnswer": false,
+          "explanation": "A local backup is stored nearby (on an external drive or USB). A REMOTE backup is stored in a different location, like the cloud."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Shading adds a background colour to text. 🟦",
          "html": "Shading is often used behind a heading or a table row.<br><br>It helps that part stand out from the rest."
@@ -3909,6 +4803,12 @@
          "type": "richText",
          "heading": "Alignment lines up your text. ↔️",
          "html": "<strong>Horizontal alignment</strong> — left, centre, right, or justified across the page.<br><br><strong>Vertical alignment</strong> — top, middle, or bottom of the page or cell."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"file management tips students\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "richText",
@@ -3982,6 +4882,12 @@
           "correctIndex": 0,
           "explanation": "A table organises information into rows and columns. It is good for lists, prices, and timetables."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 👏",
+         "text": "You've completed \"Formatting a Document\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -4011,6 +4917,15 @@
          "html": "Type the word to find, and the new word to use instead.<br><br>Click \"Replace All\" to change every match in one go."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "The thesaurus tool in word processing software suggests alternative words with similar meanings. 📖",
+          "correctAnswer": true,
+          "explanation": "The thesaurus helps you find synonyms — different words that mean the same thing — to improve your writing."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Print preview shows what your page will look like before you print it. 👀",
          "html": "It helps you spot problems first.<br><br>This saves paper and ink."
@@ -4019,6 +4934,12 @@
          "type": "richText",
          "heading": "Print options let you choose how a document prints. 🖨️",
          "html": "<strong>Number of copies</strong> — how many you want.<br><strong>Page range</strong> — all pages, or just some.<br><strong>Colour or black & white</strong> — saves ink if you choose black & white."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"file management tips students\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -4071,6 +4992,12 @@
           "correctIndex": 1,
           "explanation": "Print preview shows exactly what will print. It helps you spot layout problems before wasting paper and ink."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 👏",
+         "text": "You've completed \"Edit, Proofread & Print\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -4100,6 +5027,15 @@
          "html": "Good naming makes files easy to find later.<br><br>Example: <strong>Essay_Draft1_2026-06-12.docx</strong> tells you what it is and when it was made."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "A local backup is stored on a device in a different physical location to the original. 💾",
+          "correctAnswer": false,
+          "explanation": "A local backup is stored nearby (on an external drive or USB). A REMOTE backup is stored in a different location, like the cloud."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Version control keeps track of changes to a document over time. 🔄",
          "html": "Each saved version is called a <strong>document version</strong>.<br><br>This lets you go back to an older version if you make a mistake."
@@ -4108,6 +5044,12 @@
          "type": "richText",
          "heading": "Good habits keep your digital workspace tidy. ✅",
          "html": "Use clear folder names.<br>Save new versions instead of overwriting good work.<br>Keep your password private and strong."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"file management tips students\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -4176,6 +5118,12 @@
           "correctIndex": 1,
           "explanation": "Version control keeps track of saved versions of a document. This lets you see or restore an earlier version if needed."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! ✅",
+         "text": "You've completed \"Managing Your Personal Data\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -4205,6 +5153,15 @@
          "html": "Local backups are fast to access.<br>Remote backups protect you if something happens at home.<br>Using both gives you the most protection."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "The thesaurus tool in word processing software suggests alternative words with similar meanings. 📖",
+          "correctAnswer": true,
+          "explanation": "The thesaurus helps you find synonyms — different words that mean the same thing — to improve your writing."
+         }
+        },
+        {
          "type": "richText",
          "heading": "A file format is the type of file you save. 📄",
          "html": "The format is shown after the dot in a file name.<br><br>Example: <strong>Essay.docx</strong> — the format is .docx"
@@ -4213,6 +5170,12 @@
          "type": "richText",
          "heading": "Each file format is linked to certain software. 🔗",
          "html": "<strong>.docx</strong> — opens in word processing software.<br><strong>.xlsx</strong> — opens in spreadsheet software.<br><strong>.pdf</strong> — opens in a PDF reader.<br><strong>.jpg / .png</strong> — opens in image software."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"file management tips students\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "richText",
@@ -4282,6 +5245,12 @@
           "correctIndex": 1,
           "explanation": "A software association links a file format (like .docx) to the correct software (like a word processor) so it opens automatically."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 👏",
+         "text": "You've completed \"Backups & File Formats\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       }
@@ -4298,6 +5267,12 @@
        "estimatedMinutes": 12,
        "blocks": [
         {
+         "type": "callout",
+         "variant": "hook",
+         "heading": "Think about it… 🤔",
+         "text": "How do great designers make slides that keep an audience watching? 🎨 This topic adds new Year 12 design principles — unity, proportion, and contrast — to your toolkit."
+        },
+        {
          "type": "richText",
          "heading": "A presentation is a set of slides. 🖥️",
          "html": "In Year 11 you learned to make slides with text and pictures.<br><br>In Year 12 you learn how to make slides <strong>move</strong> and <strong>link</strong> to other places."
@@ -4313,6 +5288,15 @@
          "html": "A transition changes between slides.<br><br>An <strong>animation</strong> moves an object, like text or a picture, while you are still on the same slide."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "UNITY in design means every element on the slide looks like it belongs together. 🎨",
+          "correctAnswer": true,
+          "explanation": "Unity means the design feels consistent — same fonts, colours, and style used throughout so everything connects."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Use transitions and animations with care. ⚠️",
          "html": "Too many effects can be distracting.<br><br>The audience should focus on your message, not on flashy effects."
@@ -4321,6 +5305,12 @@
          "type": "richText",
          "heading": "A hyperlink is a clickable link. 🔗",
          "html": "Click it to jump to another slide, a website, or a file.<br><br>Hyperlinks help the audience move around quickly."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"elements and principles of design explained\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "richText",
@@ -4390,6 +5380,12 @@
           "correctIndex": 1,
           "explanation": "Too many transitions and animations distract the audience. Your message should always come first."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🎉",
+         "text": "You've completed \"Presentation Features\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -4419,6 +5415,15 @@
          "html": "It is also called <strong>white space</strong>.<br><br>Empty space stops a slide from looking too busy and crowded."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "EMPHASIS means making everything on the slide the same size so nothing stands out. 📐",
+          "correctAnswer": false,
+          "explanation": "Emphasis means making the MOST important thing stand out — through size, colour, or contrast. Not everything the same."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Colour sets the mood and draws attention. 🎨",
          "html": "Bright colours grab attention fast.<br><br>Calm colours, like blue or grey, feel more relaxed and professional."
@@ -4427,6 +5432,12 @@
          "type": "richText",
          "heading": "Use colour the same way on every slide. 🌈",
          "html": "This keeps your presentation looking neat.<br><br>Example: always use the same colour for headings."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"elements and principles of design explained\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -4491,6 +5502,12 @@
           "correctIndex": 1,
           "explanation": "The four elements of design are line, shape, space, and colour. Balance and unity are principles of design, not elements."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! ⭐",
+         "text": "You've completed \"Elements of Design\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -4520,6 +5537,15 @@
          "html": "Emphasis has two parts: <strong>contrast</strong> and <strong>proportion</strong>.<br><br>These both help the most important thing get noticed first."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "UNITY in design means every element on the slide looks like it belongs together. 🎨",
+          "correctAnswer": true,
+          "explanation": "Unity means the design feels consistent — same fonts, colours, and style used throughout so everything connects."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Contrast uses different colours to stand out. 🌓",
          "html": "Example: dark text on a light background.<br><br>High contrast is easy to read from across a room."
@@ -4538,6 +5564,12 @@
          "type": "richText",
          "heading": "Unity vs balance — know the difference. 🔍",
          "html": "<strong>Balance</strong> is about ONE slide looking even.<br><br><strong>Unity</strong> is about ALL slides looking like they belong to the same set."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"elements and principles of design explained\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -4608,6 +5640,12 @@
           "correctIndex": 0,
           "explanation": "Unity means all slides look like they belong together. Using the same fonts and colours creates unity."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 👏",
+         "text": "You've completed \"Principles of Design\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       }
@@ -4624,6 +5662,12 @@
        "estimatedMinutes": 12,
        "blocks": [
         {
+         "type": "callout",
+         "variant": "hook",
+         "heading": "Think about it… 🤔",
+         "text": "How do big companies manage teams working on the same project? 👥 This topic covers team roles, collaboration strategies, and the full design process."
+        },
+        {
          "type": "richText",
          "heading": "Big projects need a plan. 🗺️",
          "html": "Making a digital product takes many steps.<br><br>A <strong>design process</strong> is a set of steps you follow in order."
@@ -4639,6 +5683,15 @@
          "html": "Find out who will use your product. This is your <strong>target audience</strong>.<br><br>Ask: what do they need? What do they already have?"
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "The MEDIA COORDINATOR in a project team is responsible for researching information. 🔍",
+          "correctAnswer": false,
+          "explanation": "The RESEARCHER collects information. The MEDIA COORDINATOR manages photos, videos, and other media files."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Stage 2: Design and draft. ✏️",
          "html": "Sketch your ideas before you build anything.<br><br>A draft could be a drawing, a storyboard, or a simple plan on paper."
@@ -4647,6 +5700,12 @@
          "type": "richText",
          "heading": "Stage 3: Produce. 🛠️",
          "html": "Now you actually make the digital product.<br><br>You follow your draft from Stage 2 as you build it."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"how to work in a team effectively\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "richText",
@@ -4704,6 +5763,12 @@
           "correctIndex": 1,
           "explanation": "Evaluate means checking your finished work. You ask if it meets the plan and the needs of the target audience."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🌟",
+         "text": "You've completed \"The Design Process\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -4733,6 +5798,15 @@
          "html": "They look up facts the team needs.<br><br>They check that information is true and correct."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "Setting group work protocols at the start of a project helps a team work more efficiently. 📋",
+          "correctAnswer": true,
+          "explanation": "Clear agreements about how the team will communicate, share files, and divide work prevent confusion later."
+         }
+        },
+        {
          "type": "richText",
          "heading": "The media coordinator collects images and sound. 🎬",
          "html": "They find or make photos, video, and audio.<br><br>They check that media files are the right type and size."
@@ -4741,6 +5815,12 @@
          "type": "richText",
          "heading": "The content writer writes the words. ✍️",
          "html": "They write text for the product, like captions or pages.<br><br>They check the writing is clear and easy to read."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"how to work in a team effectively\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -4805,6 +5885,12 @@
           "correctIndex": 1,
           "explanation": "The content writer writes the text used in the product, such as captions or page text."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! ✅",
+         "text": "You've completed \"Roles in a Team\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -4834,6 +5920,15 @@
          "html": "Talk often and tell others how your work is going.<br><br>Ask for help early if you are stuck."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "The MEDIA COORDINATOR in a project team is responsible for researching information. 🔍",
+          "correctAnswer": false,
+          "explanation": "The RESEARCHER collects information. The MEDIA COORDINATOR manages photos, videos, and other media files."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Strategy 4: Set clear goals and timelines. ⏰",
          "html": "A <strong>goal</strong> is what you want to finish.<br>A <strong>timeline</strong> is when each part is due.<br><br>Clear goals and timelines help the team stay on track."
@@ -4842,6 +5937,12 @@
          "type": "richText",
          "heading": "Good teamwork makes better projects. 🌟",
          "html": "When everyone does their role and talks often, the project goes smoothly.<br><br>Poor teamwork can make a project late or messy."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"how to work in a team effectively\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -4912,6 +6013,12 @@
           "correctIndex": 0,
           "explanation": "A timeline sets clear dates for when each part of the project should be finished."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🎉",
+         "text": "You've completed \"Working Well as a Team\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       }
@@ -4928,6 +6035,12 @@
        "estimatedMinutes": 12,
        "blocks": [
         {
+         "type": "callout",
+         "variant": "hook",
+         "heading": "Think about it… 🤔",
+         "text": "Have you ever wondered how websites get built? 🌐 By the end of this topic, you'll understand website design from layout to publishing."
+        },
+        {
          "type": "richText",
          "heading": "A website is a set of linked pages on the internet. 🌐",
          "html": "People visit websites to find information, shop, or be entertained.<br><br>Each page is connected to other pages by links."
@@ -4943,6 +6056,15 @@
          "html": "Examples are Notepad and TextEdit.<br><br>You type the website code yourself, line by line."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "A WYSIWYG web editor shows you what the page will look like as you build it. 👀",
+          "correctAnswer": true,
+          "explanation": "WYSIWYG stands for 'What You See Is What You Get' — the editor shows a live preview as you add content."
+         }
+        },
+        {
          "type": "richText",
          "heading": "A source code editor is a smarter text editor. 🖥️",
          "html": "Examples are Visual Studio Code and Sublime Text.<br><br>It colours your code and helps you spot mistakes."
@@ -4951,6 +6073,12 @@
          "type": "richText",
          "heading": "A WYSIWYG tool shows your page as you build it. 👀",
          "html": "WYSIWYG means \"What You See Is What You Get\".<br><br>Examples are Wix and WordPress. You drag and drop instead of typing code."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"how websites are built for beginners\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "richText",
@@ -5020,6 +6148,12 @@
           "correctIndex": 1,
           "explanation": "A WYSIWYG tool like Wix lets you drag and drop page elements. You do not need to type any code."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🏆",
+         "text": "You've completed \"What is a Website?\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -5049,9 +6183,24 @@
          "html": "You can change things like page size, fonts, and colours.<br><br>Customising settings helps your website match your design."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "Every page on a website should have a different navigation menu to keep things interesting. 🗺️",
+          "correctAnswer": false,
+          "explanation": "Navigation should be CONSISTENT across all pages so users always know how to find their way around."
+         }
+        },
+        {
          "type": "richText",
          "heading": "A simple page layout has 4 main parts. 📐",
          "html": "<svg viewBox='0 0 300 220' xmlns='http://www.w3.org/2000/svg' style='width:100%;max-width:320px;height:auto;font-family:sans-serif'><rect x='10' y='10' width='280' height='40' fill='#bfdbfe' stroke='#2563eb' stroke-width='2'/><text x='150' y='35' text-anchor='middle' font-size='14' fill='#1e3a8a'>Header</text><rect x='10' y='55' width='280' height='30' fill='#fde68a' stroke='#d97706' stroke-width='2'/><text x='150' y='75' text-anchor='middle' font-size='13' fill='#92400e'>Navigation</text><rect x='10' y='90' width='280' height='90' fill='#bbf7d0' stroke='#16a34a' stroke-width='2'/><text x='150' y='140' text-anchor='middle' font-size='14' fill='#14532d'>Content</text><rect x='10' y='185' width='280' height='25' fill='#e5e7eb' stroke='#6b7280' stroke-width='2'/><text x='150' y='202' text-anchor='middle' font-size='12' fill='#374151'>Footer</text></svg><br>The header is at the top. Navigation links are under it. The content is in the middle. The footer is at the bottom."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"how websites are built for beginners\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -5116,6 +6265,12 @@
           "correctIndex": 0,
           "explanation": "Media elements include photos, videos, and sound. They make a website more interesting."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🏆",
+         "text": "You've completed \"Key Features of a Website\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -5145,6 +6300,15 @@
          "html": "Put the most important information near the top.<br><br>Group similar information together so it is easy to find."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "A WYSIWYG web editor shows you what the page will look like as you build it. 👀",
+          "correctAnswer": true,
+          "explanation": "WYSIWYG stands for 'What You See Is What You Get' — the editor shows a live preview as you add content."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Plan your navigation before you build the website. 🧭",
          "html": "Decide which pages you need, like Home, About, and Contact.<br><br>Then plan how hyperlinks will connect these pages together."
@@ -5153,6 +6317,12 @@
          "type": "richText",
          "heading": "Use media elements with a purpose. 🖼️",
          "html": "Only add photos and videos that help explain your content.<br><br>Too many media elements can slow down your website."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"how websites are built for beginners\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -5218,6 +6388,12 @@
           "correctIndex": 1,
           "explanation": "Plan your pages and navigation first. This makes it easier to build and link your website."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🎊",
+         "text": "You've completed \"Designing a Website\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -5247,6 +6423,15 @@
          "html": "Before publishing, your website only you can see it.<br><br>After publishing, anyone with the link can visit your website."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "Every page on a website should have a different navigation menu to keep things interesting. 🗺️",
+          "correctAnswer": false,
+          "explanation": "Navigation should be CONSISTENT across all pages so users always know how to find their way around."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Step 1: Test all hyperlinks and media. 🔗",
          "html": "Click through every link on every page.<br><br>Make sure every photo and video appears correctly."
@@ -5255,6 +6440,12 @@
          "type": "richText",
          "heading": "Step 2: Proofread all the text. 📖",
          "html": "Check for spelling and grammar mistakes.<br><br>Ask someone else to read it too, if you can."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"how websites are built for beginners\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "richText",
@@ -5312,6 +6503,12 @@
           "correctIndex": 1,
           "explanation": "Publishing puts your website on the internet. Anyone with the link can then visit it."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! ⭐",
+         "text": "You've completed \"Testing and Publishing\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       }
@@ -5336,6 +6533,12 @@
        "estimatedMinutes": 12,
        "blocks": [
         {
+         "type": "callout",
+         "variant": "hook",
+         "heading": "Think about it… 🤔",
+         "text": "What would happen to your job chances if you posted something embarrassing online right now? 😬 This topic is about your digital reputation — and how to protect it."
+        },
+        {
          "type": "richText",
          "heading": "Social media lets people connect online. 📱",
          "html": "Social media is websites and apps for sharing and talking.<br><br>People use it to post, chat, and stay in touch."
@@ -5351,9 +6554,24 @@
          "html": "A <strong>profile</strong> — your name, photo, and information.<br>A <strong>news feed</strong> — posts from people you follow.<br><strong>Comments and likes</strong> — ways to react to posts.<br><strong>Messaging</strong> — sending private messages to others."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "Once you delete a post on social media, it is completely gone forever. 🗑️",
+          "correctAnswer": false,
+          "explanation": "Once something is posted online, it can be copied, screenshotted, or cached. You may not be able to remove it completely."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Connectivity means staying linked to others. 🔗",
          "html": "Social media connects you to friends and family.<br><br>You can talk to people anywhere in the world."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"digital footprint and online reputation teens\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -5418,6 +6636,12 @@
           "correctIndex": 1,
           "explanation": "Connectivity means staying linked to others. Social media connects you to people anywhere."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! ⭐",
+         "text": "You've completed \"Social Media Tools\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -5445,6 +6669,21 @@
          "type": "richText",
          "heading": "Be careful what you share online. 📍",
          "html": "Sharing your location can tell strangers where you are.<br><br>Sharing personal details can put your safety at risk."
+        },
+        {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "Inappropriate online behaviour can damage your employment chances. 💼",
+          "correctAnswer": true,
+          "explanation": "Employers often check social media. Negative or inappropriate posts can stop you getting a job — even years later."
+         }
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"digital footprint and online reputation teens\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -5509,6 +6748,12 @@
           "correctIndex": 1,
           "explanation": "Increased engagement means more people are joining in, posting, and sharing ideas together."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! ⭐",
+         "text": "You've completed \"Pros and Cons of Online Collaboration\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -5538,9 +6783,24 @@
          "html": "Everything you post builds your digital reputation.<br><br>Bad posts can follow you for years, even if you delete them."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "Once you delete a post on social media, it is completely gone forever. 🗑️",
+          "correctAnswer": false,
+          "explanation": "Once something is posted online, it can be copied, screenshotted, or cached. You may not be able to remove it completely."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Inappropriate behaviour has real consequences. ⚠️",
          "html": "<strong>Digital reputation</strong> — others may see you as unkind or untrustworthy.<br><strong>Relationships</strong> — friends and family may lose trust in you.<br><strong>Employment</strong> — employers often check your social media before hiring."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"digital footprint and online reputation teens\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -5605,6 +6865,12 @@
           "correctIndex": 2,
           "explanation": "Thinking before you post helps you avoid hurting others or damaging your reputation."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🎊",
+         "text": "You've completed \"Online Behaviour and Consequences\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -5632,6 +6898,15 @@
          "type": "richText",
          "heading": "Why do schools and workplaces need an ICT code of conduct? 🏫",
          "html": "It tells people how to use computers and the internet properly.<br>It protects everyone's privacy and safety.<br>It explains what happens if someone breaks the rules."
+        },
+        {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "Inappropriate online behaviour can damage your employment chances. 💼",
+          "correctAnswer": true,
+          "explanation": "Employers often check social media. Negative or inappropriate posts can stop you getting a job — even years later."
+         }
         },
         {
          "type": "spotTheThreat",
@@ -5688,6 +6963,12 @@
          ]
         },
         {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"digital footprint and online reputation teens\" — watch a short video to see this in real life before moving on."
+        },
+        {
          "type": "activity",
          "title": "Put these steps for protecting your privacy online in order. 🔢",
          "orderedItems": [
@@ -5739,6 +7020,12 @@
           "correctIndex": 1,
           "explanation": "An ICT code of conduct keeps people safe and explains how to use technology properly."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🏆",
+         "text": "You've completed \"Privacy and Codes of Conduct\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       }
@@ -5755,6 +7042,12 @@
        "estimatedMinutes": 10,
        "blocks": [
         {
+         "type": "callout",
+         "variant": "hook",
+         "heading": "Think about it… 🤔",
+         "text": "Can a spreadsheet formula save you hours of work? Yes — and in Year 12 we add percentage formulas, more chart types, and design for a real audience. ⚡"
+        },
+        {
          "type": "richText",
          "heading": "Let's remember spreadsheet basics. 📊",
          "html": "You learned this last year. Let's go over it fast.<br><br>A spreadsheet stores data in a grid of rows and columns."
@@ -5770,9 +7063,24 @@
          "html": "Cell A2 is in column A, row 2.<br><br>A worksheet is one page in a spreadsheet file. You can have many worksheets."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "A PIE chart is the best choice for showing how values change over time. 🥧",
+          "correctAnswer": false,
+          "explanation": "A LINE chart is best for showing change over time. Pie charts show how parts make up a whole (percentages)."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Formulas calculate. Functions are shortcuts. 🧮",
          "html": "A formula always starts with =.<br><br>Example: <strong>=A1+B1</strong> adds two cells.<br><br>SUM and AVERAGE are functions. They do the maths for you."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"spreadsheet charts and formulas tutorial\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -5837,6 +7145,12 @@
           "correctIndex": 0,
           "explanation": "Cell addresses are column first, then row. So B3 = column B, row 3."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🎉",
+         "text": "You've completed \"Quick Recap: Spreadsheet Basics\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -5866,9 +7180,24 @@
          "html": "The spreadsheet then shows your answer as a % automatically.<br><br>0.5 becomes <strong>50%</strong> on the screen."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "The formula =A2/B2*100 calculates A2 as a percentage of B2. 💯",
+          "correctAnswer": true,
+          "explanation": "Dividing one number by another and multiplying by 100 gives you the percentage. This is the standard percentage formula."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Percentages help you compare fairly. ⚖️",
          "html": "They show a share out of 100, no matter how big the totals are.<br><br>This makes results easy to compare."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"spreadsheet charts and formulas tutorial\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -5917,6 +7246,12 @@
           "correctIndex": 2,
           "explanation": "20 divided by 40 is 0.5. As a percentage, that is 50%."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🎉",
+         "text": "You've completed \"The PERCENTAGE Function\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -5946,6 +7281,15 @@
          "html": "Each slice is a percentage of the total.<br><br>All slices together always make 100%."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "A PIE chart is the best choice for showing how values change over time. 🥧",
+          "correctAnswer": false,
+          "explanation": "A LINE chart is best for showing change over time. Pie charts show how parts make up a whole (percentages)."
+         }
+        },
+        {
          "type": "richText",
          "heading": "A line chart shows change over time. 📈",
          "html": "It uses dots joined by a line.<br><br>Good for showing trends, like temperature over a week."
@@ -5954,6 +7298,12 @@
          "type": "richText",
          "heading": "Pick the chart that fits your data. ✅",
          "html": "Comparing groups? Use <strong>column</strong> or <strong>bar</strong>.<br>Showing parts of 100%? Use <strong>pie</strong>.<br>Showing change over time? Use <strong>line</strong>."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"spreadsheet charts and formulas tutorial\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -6018,6 +7368,12 @@
           "correctIndex": 0,
           "explanation": "Column charts use upright bars. Bar charts use sideways bars. Both compare amounts."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🏆",
+         "text": "You've completed \"Choosing the Right Chart\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -6047,9 +7403,24 @@
          "html": "Always add a title to your chart.<br><br>Label each axis so people know what the numbers mean."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "The formula =A2/B2*100 calculates A2 as a percentage of B2. 💯",
+          "correctAnswer": true,
+          "explanation": "Dividing one number by another and multiplying by 100 gives you the percentage. This is the standard percentage formula."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Pick design choices for your audience. 🎯",
          "html": "A spreadsheet for young children might use bright colours and pictures.<br><br>A spreadsheet for a business report should look neat and simple."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"spreadsheet charts and formulas tutorial\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -6103,6 +7474,12 @@
           "correctIndex": 1,
           "explanation": "Use colour with a clear purpose, such as highlighting headers. Too much colour makes data hard to read."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🌟",
+         "text": "You've completed \"Design for Your Audience\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       }
@@ -6119,6 +7496,12 @@
        "estimatedMinutes": 12,
        "blocks": [
         {
+         "type": "callout",
+         "variant": "hook",
+         "heading": "Think about it… 🤔",
+         "text": "Did you know every song, podcast and movie you've ever heard has been edited? 🎙️ This topic teaches you how to create and edit audio files like a pro."
+        },
+        {
          "type": "richText",
          "heading": "Sound editing software lets you make and change audio. 🎧",
          "html": "Audio means sound — like music, voice, or sound effects.<br><br>Sound editing software is a computer app for working with audio."
@@ -6134,6 +7517,15 @@
          "html": "Capture uses a microphone to record real sound.<br><br>Example: recording your voice for a podcast."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "MP3 files are generally LARGER in file size than WAV files. 🎵",
+          "correctAnswer": false,
+          "explanation": "MP3 is a COMPRESSED format — it has smaller file sizes than WAV, which is uncompressed and has higher quality."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Edit means changing a sound file. ✂️",
          "html": "Editing can cut out parts you don't want.<br><br>Editing can also join two sounds together."
@@ -6142,6 +7534,12 @@
          "type": "richText",
          "heading": "Effects change how a sound feels. 🌀",
          "html": "Effects can make a voice echo, sound louder, or sound smoother.<br><br>Example: fade in slowly raises the volume from silent to loud."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"sound editing tutorial beginners\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -6206,6 +7604,12 @@
           "correctIndex": 0,
           "explanation": "Sound editing software is an app for making and changing audio, like music or voice recordings."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! ⭐",
+         "text": "You've completed \"What Sound Editing Software Does\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -6235,9 +7639,24 @@
          "html": "WMA stands for Windows Media Audio.<br><br>It is small in size, like MP3, but works best on Windows devices."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "Sound editing software lets you combine two or more audio clips into one file. 🎧",
+          "correctAnswer": true,
+          "explanation": "Combining audio clips is a core sound editing skill — used in music, podcasts, and film soundtracks."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Choose your format based on what you need. ⚖️",
          "html": "Need the best quality for editing? Use <strong>WAV</strong>.<br><br>Need a small file to share online? Use <strong>MP3</strong>."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"sound editing tutorial beginners\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -6298,6 +7717,12 @@
           "correctIndex": 1,
           "explanation": "WMA stands for Windows Media Audio. It was made by Microsoft."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! ⭐",
+         "text": "You've completed \"Audio File Formats\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -6327,9 +7752,24 @@
          "html": "You can place one sound file after another.<br><br>You can also layer sounds, like music under a voice."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "MP3 files are generally LARGER in file size than WAV files. 🎵",
+          "correctAnswer": false,
+          "explanation": "MP3 is a COMPRESSED format — it has smaller file sizes than WAV, which is uncompressed and has higher quality."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Always save your finished file with a clear name. 📁",
          "html": "Use a name that says what the file is, like \"interview_final.mp3\".<br><br>This helps you find it again later."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"sound editing tutorial beginners\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -6383,6 +7823,12 @@
           "correctIndex": 1,
           "explanation": "Combining means joining files one after another, or layering them, like music under a voice."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🌟",
+         "text": "You've completed \"Editing and Combining Audio\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       }
@@ -6399,6 +7845,12 @@
        "estimatedMinutes": 15,
        "blocks": [
         {
+         "type": "callout",
+         "variant": "hook",
+         "heading": "Think about it… 🤔",
+         "text": "Want to make your own mini movie? 🎬 This topic walks you through video editing — cuts, transitions, titles, and creating for an audience."
+        },
+        {
          "type": "richText",
          "heading": "Video editing software lets you turn raw clips into a finished video. 🎬",
          "html": "You import your video clips, photos, and audio.<br><br>Then you arrange and change them to tell your story."
@@ -6414,6 +7866,15 @@
          "html": "<strong>Titles</strong> — show the name of your video at the start.<br><strong>Captions</strong> — show subtitles or extra words during the video.<br><strong>Credits</strong> — show who made the video at the end."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "A project file in video editing contains all the final exported video data ready to share. 🎬",
+          "correctAnswer": false,
+          "explanation": "A project file is the EDITABLE file used in the editing software. An EXPORTED file is the finished video you share."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Split and clip let you cut a video into pieces. ✂️",
          "html": "<strong>Split</strong> cuts one clip into two clips.<br><strong>Clip</strong> (trim) removes the parts you don't want.<br><br>This helps you keep only the best parts."
@@ -6422,6 +7883,12 @@
          "type": "richText",
          "heading": "Transitions, effects, and animations make your video flow. ✨",
          "html": "A <strong>transition</strong> is how one clip changes into the next, like a fade.<br><strong>Effects</strong> change how a clip looks, like black and white.<br><strong>Animations</strong> make text or images move on screen."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"video editing tutorial beginners\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "richText",
@@ -6495,6 +7962,12 @@
           "correctIndex": 1,
           "explanation": "A transition is how one clip changes into the next, like a fade or a wipe."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🌟",
+         "text": "You've completed \"What Video Editing Software Can Do\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -6524,9 +7997,24 @@
          "html": "Show text long enough for people to read it.<br><br>Cut clips before they get boring."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "Aspect ratio 16:9 is the standard widescreen format used for most videos and presentations. 📺",
+          "correctAnswer": true,
+          "explanation": "16:9 is the standard widescreen ratio used on TVs, computers, YouTube, and most video content."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Add audio to support your video. 🔊",
          "html": "<strong>Music</strong> sets the mood.<br><strong>Voiceover</strong> explains what is happening.<br><strong>Sound effects</strong> add extra detail."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"video editing tutorial beginners\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -6572,6 +8060,12 @@
           "correctIndex": 1,
           "explanation": "A voiceover is spoken narration that explains what is happening in the video."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🎉",
+         "text": "You've completed \"Editing Your Footage\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -6601,9 +8095,24 @@
          "html": "Higher resolution, like 1080p or 4K, shows more detail.<br><br>Lower resolution looks blurry on a big screen."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "A project file in video editing contains all the final exported video data ready to share. 🎬",
+          "correctAnswer": false,
+          "explanation": "A project file is the EDITABLE file used in the editing software. An EXPORTED file is the finished video you share."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Match your settings to your audience. 🎯",
          "html": "A video for a phone app should be tall (9:16).<br><br>A video for a TV or YouTube should be wide (16:9)."
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"video editing tutorial beginners\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -6668,6 +8177,12 @@
           "correctIndex": 1,
           "explanation": "Low resolution has less detail, so the video looks blurry when shown on a big screen."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! ✅",
+         "text": "You've completed \"Video Files, Aspect Ratio and Resolution\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       },
@@ -6697,6 +8212,15 @@
          "html": "Use <strong>colour</strong>, <strong>text</strong>, and <strong>layout</strong> that suit your audience.<br><br>Keep your video balanced and easy to follow."
         },
         {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "Aspect ratio 16:9 is the standard widescreen format used for most videos and presentations. 📺",
+          "correctAnswer": true,
+          "explanation": "16:9 is the standard widescreen ratio used on TVs, computers, YouTube, and most video content."
+         }
+        },
+        {
          "type": "richText",
          "heading": "Project management keeps your video on track. 📅",
          "html": "Set a <strong>timeline</strong> for filming and editing.<br><strong>List</strong> what equipment and people you need.<br><br>Check your progress so you finish on time."
@@ -6710,6 +8234,12 @@
           "Produce the video by filming and editing",
           "Evaluate the finished video with your audience"
          ]
+        },
+        {
+         "type": "callout",
+         "variant": "video",
+         "heading": "🎬 Watch & Learn",
+         "text": "Open YouTube and search: \"video editing tutorial beginners\" — watch a short video to see this in real life before moving on."
         },
         {
          "type": "activity",
@@ -6770,6 +8300,12 @@
           "correctIndex": 1,
           "explanation": "Project management helps you plan your time, equipment, and people so your video gets finished on time."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "success",
+         "heading": "Well done! 🎉",
+         "text": "You've completed \"Planning Your Video\". Tap 'Next' to keep going, or come back anytime to review."
         }
        ]
       }
