@@ -8,6 +8,27 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { courseGroups } from "@/lib/courses";
 
+const COURSE_COLORS: Record<string, string> = {
+  "ait-foundations":
+    "border-l-4 border-l-teal-500 bg-teal-50/70 hover:bg-teal-50",
+  "year-11-applied-it-general":
+    "border-l-4 border-l-amber-500 bg-amber-50/70 hover:bg-amber-50",
+  "year-12-applied-it-general":
+    "border-l-4 border-l-amber-500 bg-amber-50/70 hover:bg-amber-50",
+  "year-11-applied-it-atar":
+    "border-l-4 border-l-indigo-500 bg-indigo-50/70 hover:bg-indigo-50",
+  "year-12-applied-it-atar":
+    "border-l-4 border-l-indigo-500 bg-indigo-50/70 hover:bg-indigo-50",
+  "year-7-digital-technologies":
+    "border-l-4 border-l-rose-400 bg-rose-50/70 hover:bg-rose-50",
+  "year-8-digital-technologies":
+    "border-l-4 border-l-rose-400 bg-rose-50/70 hover:bg-rose-50",
+  "year-9-digital-innovations":
+    "border-l-4 border-l-violet-400 bg-violet-50/70 hover:bg-violet-50",
+  "year-10-digital-enterprise":
+    "border-l-4 border-l-violet-400 bg-violet-50/70 hover:bg-violet-50",
+};
+
 export default function Home() {
   return (
     <div className="mx-auto max-w-5xl px-6 py-16">
@@ -24,12 +45,13 @@ export default function Home() {
           <div className="mt-4 grid gap-4 sm:grid-cols-2">
             {group.courses.map((course) => {
               const isPlaceholder = course.status === "placeholder";
+              const activeColor = COURSE_COLORS[course.slug] ?? "hover:bg-accent";
               const card = (
                 <Card
                   className={
                     isPlaceholder
                       ? "h-full opacity-60 grayscale"
-                      : "h-full transition-colors hover:bg-accent"
+                      : `h-full transition-colors ${activeColor}`
                   }
                 >
                   <CardHeader>
