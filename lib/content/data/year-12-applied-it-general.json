@@ -1,0 +1,20 @@
+{
+ "slug": "year-12-applied-it-general",
+ "title": "Applied IT — General",
+ "units": [
+  {
+   "id": "unit3",
+   "title": "Media Information and Communication Technologies",
+   "subtitle": "Year 12 · Unit 3",
+   "status": "available",
+   "topics": []
+  },
+  {
+   "id": "unit4",
+   "title": "Digital Technologies in Business",
+   "subtitle": "Year 12 · Unit 4",
+   "status": "available",
+   "topics": []
+  }
+ ]
+}

@@ -87,7 +87,7 @@ export const courseGroups: { heading: string; courses: Course[] }[] = [
         title: "Applied IT — General",
         yearLevel: "Year 12",
         description: "WACE Applied Information Technology, General course.",
-        status: "placeholder",
+        status: "active",
       },
     ],
   },

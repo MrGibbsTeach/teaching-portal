@@ -1,10 +1,12 @@
 import type { CourseContent } from "./types";
 import generalData from "./data/year-11-applied-it-general.json";
+import general12Data from "./data/year-12-applied-it-general.json";
 import atarData from "./data/year-11-applied-it-atar.json";
 import foundationsData from "./data/ait-foundations.json";
 
 const registry: Record<string, CourseContent> = {
   "year-11-applied-it-general": generalData as CourseContent,
+  "year-12-applied-it-general": general12Data as CourseContent,
   "year-11-applied-it-atar": atarData as CourseContent,
   "ait-foundations": foundationsData as CourseContent,
 };
