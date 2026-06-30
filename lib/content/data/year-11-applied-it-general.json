@@ -16,7 +16,7 @@
       {
        "id": "elements-of-design",
        "title": "Elements of Design",
-       "estimatedMinutes": 15,
+       "estimatedMinutes": 20,
        "blocks": [
         {
          "type": "callout",
@@ -31,159 +31,131 @@
          "text": "Graphic designers, UI/UX designers, and web developers use these design principles every day. Roles like UX Designer and Brand Manager start with exactly this knowledge. Top tools: Figma, Canva, Adobe Creative Suite."
         },
         {
+         "type": "paragraph",
+         "text": "Every visual design — from a website to a printed poster — is built from the same seven fundamental building blocks called the elements of design. Understanding these elements is the first step to analysing and creating effective digital media."
+        },
+        {
          "type": "video",
-         "youtubeId": "yNDgFK2Jj1E",
-         "title": "Understanding Visual Design Principles",
-         "caption": "Google UX Design — a great intro to the visual design principles you'll use throughout this course."
+         "youtubeId": "YqQx75OPRa0",
+         "title": "Beginning Graphic Design: Fundamentals",
+         "caption": "GCFLearnFree — a visual intro to the fundamental elements all designers use."
         },
         {
-         "type": "heading",
-         "text": "Elements of Design",
-         "level": 2
-        },
-        {
-         "type": "paragraph",
-         "text": "Design elements are the fundamental building blocks used in every visual product — from websites and posters to apps and infographics. Understanding these elements is essential before you can create or critique any digital work."
-        },
-        {
-         "type": "heading",
-         "text": "Line",
-         "level": 3
-        },
-        {
-         "type": "paragraph",
-         "text": "A line connects two points and is one of the most basic design elements. Lines guide the eye, create structure, divide space, and communicate mood. Horizontal lines suggest calm; diagonal lines create energy and movement."
-        },
-        {
-         "type": "heading",
-         "text": "Shape",
-         "level": 3
-        },
-        {
-         "type": "paragraph",
-         "text": "Shapes are closed areas defined by boundaries. Geometric shapes (circles, squares, triangles) feel ordered and structured. Organic shapes (freeform, irregular) feel natural and dynamic. Shapes help group related information and draw attention."
-        },
-        {
-         "type": "heading",
-         "text": "Colour",
-         "level": 3
-        },
-        {
-         "type": "paragraph",
-         "text": "Colour creates mood, draws attention, and communicates meaning. The colour wheel shows relationships between colours. Warm colours (red, orange, yellow) feel energetic; cool colours (blue, green, purple) feel calm. Always ensure sufficient contrast for readability."
-        },
-        {
-         "type": "keyTerm",
-         "term": "Hue",
-         "definition": "The pure colour itself (e.g., red, blue, yellow)."
-        },
-        {
-         "type": "keyTerm",
-         "term": "Saturation",
-         "definition": "The intensity or vibrancy of a colour — from vivid to grey."
-        },
-        {
-         "type": "keyTerm",
-         "term": "Value",
-         "definition": "The lightness or darkness of a colour (tint = lighter, shade = darker)."
-        },
-        {
-         "type": "heading",
-         "text": "Texture",
-         "level": 3
-        },
-        {
-         "type": "callout",
-         "heading": "🏭 Industry Tip",
-         "text": "In the IT industry, documentation matters as much as the technical work itself. Always write clear notes, comments, and reports — they're what clients and colleagues rely on."
-        },
-        {
-         "type": "paragraph",
-         "text": "Texture refers to the surface quality of an element — rough, smooth, soft, hard. In digital design, texture is implied (visual texture) rather than physical. Backgrounds and overlays often use texture to add depth and interest."
-        },
-        {
-         "type": "heading",
-         "text": "Space",
-         "level": 3
-        },
-        {
-         "type": "paragraph",
-         "text": "Space includes both positive space (the subject or content) and negative space (the empty area around it). Effective use of white space reduces clutter, improves readability, and gives designs a professional feel."
-        },
-        {
-         "type": "heading",
-         "text": "Form",
-         "level": 3
-        },
-        {
-         "type": "paragraph",
-         "text": "Form refers to 3D shapes or the illusion of depth in a 2D space. Drop shadows, gradients, and perspective techniques create the impression of form in flat designs."
-        },
-        {
-         "type": "heading",
-         "text": "Typography",
-         "level": 3
-        },
-        {
-         "type": "paragraph",
-         "text": "Typography — the style and arrangement of text — is a major design element covered in detail in Lesson 3. Font choice, size, weight, and spacing all affect readability and tone."
-        },
-        {
-         "type": "callout",
-         "variant": "tip",
-         "text": "When analysing any design, identify which elements are present and consider WHY the designer made each choice. Good design is always intentional."
-        },
-        {
-         "type": "table",
-         "headers": [
-          "Element",
-          "What it does",
-          "Design use"
-         ],
-         "rows": [
-          [
-           "Line",
-           "Guides the eye and creates structure",
-           "Dividers, borders, arrows, charts"
-          ],
-          [
-           "Shape",
-           "Groups content and draws attention",
-           "Buttons, icons, diagrams, frames"
-          ],
-          [
-           "Colour",
-           "Creates mood and communicates meaning",
-           "Branding, highlighting, contrast"
-          ],
-          [
-           "Texture",
-           "Adds depth and visual interest",
-           "Backgrounds, overlays, card surfaces"
-          ],
-          [
-           "Space",
-           "Controls breathing room and focus",
-           "White space, padding, margins"
-          ],
-          [
-           "Form",
-           "Creates illusion of depth",
-           "Shadows, gradients, 3D effects"
-          ],
-          [
-           "Typography",
-           "Communicates tone and hierarchy",
-           "Headings, body, captions, labels"
-          ]
+         "type": "grid",
+         "title": "The Seven Elements of Design",
+         "items": [
+          {
+           "icon": "📏",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Orient_IV_%28_%29_-_Bridget_Riley_%281931%29_%2844210674930%29.jpg/500px-Orient_IV_%28_%29_-_Bridget_Riley_%281931%29_%2844210674930%29.jpg",
+           "label": "Line",
+           "description": "A path between two points — straight, curved, thick, thin, solid or dashed. Lines guide the eye, divide space, and create structure and movement."
+          },
+          {
+           "icon": "⬡",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Composition%2C_1921_-_Piet_Mondrian%2C_MET_DT4479.jpg/500px-Composition%2C_1921_-_Piet_Mondrian%2C_MET_DT4479.jpg",
+           "label": "Shape",
+           "description": "A 2D area defined by a boundary. Geometric shapes (circles, squares, triangles) feel structured and ordered. Organic shapes feel fluid and dynamic."
+          },
+          {
+           "icon": "🔲",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Facevase.png/500px-Facevase.png",
+           "label": "Space",
+           "description": "Positive space is the subject; negative space is the empty area around it. White space improves readability and draws focus to key elements."
+          },
+          {
+           "icon": "🪨",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Weathered_wood_grain_texture_macro_closeup_detail.jpg/500px-Weathered_wood_grain_texture_macro_closeup_detail.jpg",
+           "label": "Texture",
+           "description": "The visual or tactile quality of a surface — rough, smooth, grainy, soft. In digital design, texture is implied through pattern and visual technique."
+          },
+          {
+           "icon": "🎨",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Color_star-en_%28tertiary_names%29.svg/500px-Color_star-en_%28tertiary_names%29.svg.png",
+           "label": "Colour",
+           "description": "Defined by hue (the colour family), saturation (intensity), and tone (lightness/darkness). Colour evokes emotion and establishes brand identity."
+          },
+          {
+           "icon": "🎲",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Platonic_solids.jpg/500px-Platonic_solids.jpg",
+           "label": "3D Form",
+           "description": "Three-dimensional shapes — sphere, cube, cylinder, cone. Form adds depth and realism, creating the illusion of volume in 2D designs."
+          },
+          {
+           "icon": "🌗",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Ansel-adams-monolith-the-face-of-half-dome_-_edit1.jpg/500px-Ansel-adams-monolith-the-face-of-half-dome_-_edit1.jpg",
+           "label": "Tone",
+           "description": "The degree of lightness or darkness — distinct from colour. A black-and-white photo still has tone. Tone creates contrast, depth, and mood."
+          }
          ]
+        },
+        {
+         "type": "callout",
+         "variant": "key",
+         "heading": "Elements vs Principles",
+         "text": "The elements of design are the WHAT — the raw materials (line, shape, colour, space, texture, form, tone). The principles of design are the HOW — the rules for combining those materials effectively. You need both to analyse or create strong designs."
+        },
+        {
+         "type": "keyTerms",
+         "items": [
+          {
+           "term": "Element of design",
+           "definition": "One of the seven fundamental building blocks of visual design: line, shape, space, texture, colour, form, and tone."
+          },
+          {
+           "term": "Negative space",
+           "definition": "The empty area around or between subjects in a composition — also called white space. Used strategically to improve readability and draw focus."
+          },
+          {
+           "term": "Organic shape",
+           "definition": "A freeform, irregular shape that appears natural rather than geometric — like leaves, clouds, or hand-drawn forms."
+          }
+         ]
+        },
+        {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "mcq",
+          "text": "Which element of design refers to the empty area around the main subject?",
+          "options": [
+           "Texture",
+           "Tone",
+           "Space",
+           "Line"
+          ],
+          "correctIndex": 2,
+          "explanation": "Space — specifically negative space — is the empty area around or between elements. Designers use it deliberately to reduce clutter and draw focus to key content."
+         }
+        },
+        {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "mcq",
+          "text": "A designer uses diagonal lines across a poster background. What do diagonal lines typically communicate?",
+          "options": [
+           "Calm and stability",
+           "Energy and movement",
+           "Structure and order",
+           "Depth and volume"
+          ],
+          "correctIndex": 1,
+          "explanation": "Diagonal lines create a sense of energy and movement. Horizontal lines convey calm; vertical lines suggest strength and structure."
+         }
+        },
+        {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "Texture in digital design is always physical and tactile.",
+          "correctAnswer": false,
+          "explanation": "In digital design, texture is always implied (visual texture) — created through patterns, overlays, and surface effects rather than something you can physically touch."
+         }
         }
        ]
       },
       {
        "id": "principles-of-design",
        "title": "Principles of Design",
-       "estimatedMinutes": 15,
+       "estimatedMinutes": 20,
        "blocks": [
         {
          "type": "callout",
@@ -192,386 +164,289 @@
          "text": "A client's website looks 'busy and hard to read' — your job is to diagnose which design principles are missing and propose fixes."
         },
         {
-         "type": "heading",
-         "text": "Principles of Design",
-         "level": 2
+         "type": "paragraph",
+         "text": "The principles of design describe how designers combine the elements to create effective, intentional compositions. Where elements are the raw materials, principles are the rules for using them."
         },
         {
          "type": "video",
-         "youtubeId": "a5KYlHNKQB8",
-         "title": "Beginning Graphic Design: Layout & Composition",
-         "caption": "GCFLearnFree — watch how layout and composition principles are applied in real graphic design work."
+         "youtubeId": "yNDgFK2Jj1E",
+         "title": "Understanding Visual Design Principles",
+         "caption": "Google UX Design Certificate — how design principles apply in professional product design."
         },
         {
-         "type": "paragraph",
-         "text": "Design principles are rules that guide how elements are arranged and used together to create effective, visually appealing work. While elements are what you design WITH, principles are how you design."
-        },
-        {
-         "type": "heading",
-         "text": "Contrast",
-         "level": 3
-        },
-        {
-         "type": "paragraph",
-         "text": "Contrast is the difference between elements — dark vs. light, large vs. small, bold vs. thin. Strong contrast draws the eye to key content and improves readability. Poor contrast makes text hard to read and designs feel flat."
-        },
-        {
-         "type": "keyTerm",
-         "term": "Contrast",
-         "definition": "The degree of visual difference between elements; used to create emphasis and improve readability."
-        },
-        {
-         "type": "heading",
-         "text": "Alignment",
-         "level": 3
-        },
-        {
-         "type": "paragraph",
-         "text": "Alignment means positioning elements so they line up with each other. Even when elements look randomly placed, good alignment creates hidden structure that makes designs feel orderly and professional. Left-alignment is most common for body text in Western cultures."
-        },
-        {
-         "type": "heading",
-         "text": "Repetition",
-         "level": 3
-        },
-        {
-         "type": "paragraph",
-         "text": "Repeating visual elements (colours, fonts, shapes) throughout a design creates consistency and strengthens brand identity. Repetition ties different parts of a design together into a cohesive whole."
-        },
-        {
-         "type": "heading",
-         "text": "Proximity",
-         "level": 3
-        },
-        {
-         "type": "paragraph",
-         "text": "Related items should be grouped close together. Proximity creates visual relationships — items near each other are perceived as belonging together. Unrelated items should have more space between them."
-        },
-        {
-         "type": "heading",
-         "text": "Balance",
-         "level": 3
+         "type": "grid",
+         "title": "The Principles of Design",
+         "items": [
+          {
+           "icon": "⚖️",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat_03.jpg/500px-Cat_03.jpg",
+           "label": "Balance",
+           "description": "The even distribution of visual weight. Symmetrical balance mirrors elements on each side. Asymmetrical balance uses different elements that still feel equally weighted."
+          },
+          {
+           "icon": "🔦",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/500px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg",
+           "label": "Emphasis",
+           "description": "Making the most important element stand out through size, colour, contrast, or position. Every strong design has a clear focal point."
+          },
+          {
+           "icon": "👑",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Camponotus_flavomarginatus_ant.jpg/500px-Camponotus_flavomarginatus_ant.jpg",
+           "label": "Dominance",
+           "description": "The element that stands out most and catches attention first. Usually the largest, most colourful, or most isolated element in a design."
+          },
+          {
+           "icon": "🔗",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Lego_Color_Bricks.jpg/500px-Lego_Color_Bricks.jpg",
+           "label": "Unity",
+           "description": "All elements look like they belong together — consistent fonts, colours, and style. Unity creates a cohesive, professional feel across a design."
+          },
+          {
+           "icon": "📐",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Khoury_College_New_Graphic.svg/500px-Khoury_College_New_Graphic.svg.png",
+           "label": "Proportion",
+           "description": "The size relationship between elements. Large elements feel more important; small elements feel secondary. Correct proportion creates visual harmony."
+          },
+          {
+           "icon": "🎼",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/GoldenRatio_Parthenon.jpg/500px-GoldenRatio_Parthenon.jpg",
+           "label": "Contrast",
+           "description": "The difference between opposing elements — light/dark, large/small, rough/smooth, bold/thin. Contrast creates visual interest and makes key information stand out."
+          }
+         ]
         },
         {
          "type": "callout",
          "heading": "🏭 Industry Tip",
-         "text": "Most IT employers rate communication skills as highly as technical skills. Practice explaining complex concepts in simple terms."
+         "text": "When evaluating any design, work through each principle systematically: Where is the emphasis? Is the layout balanced? Do all elements look unified? This framework is used in professional design critiques."
         },
         {
-         "type": "paragraph",
-         "text": "Balance refers to the visual weight distribution in a design. Symmetrical balance (same on both sides) feels formal and stable. Asymmetrical balance uses different elements of equal visual weight on each side, creating a more dynamic feel."
-        },
-        {
-         "type": "keyTerm",
-         "term": "Visual weight",
-         "definition": "How heavy an element appears — larger, darker, and more complex elements feel heavier."
-        },
-        {
-         "type": "heading",
-         "text": "Emphasis / Hierarchy",
-         "level": 3
-        },
-        {
-         "type": "paragraph",
-         "text": "Not all content is equally important. Emphasis directs the viewer's attention to the most important element first, then guides them through secondary and tertiary information. Size, colour, position, and contrast all create hierarchy."
-        },
-        {
-         "type": "heading",
-         "text": "Unity",
-         "level": 3
-        },
-        {
-         "type": "paragraph",
-         "text": "Unity means all parts of a design feel like they belong together. A unified design has consistent colour schemes, fonts, and spacing. Lack of unity makes designs feel chaotic and unprofessional."
-        },
-        {
-         "type": "callout",
-         "variant": "important",
-         "text": "SCSA exams ask you to both IDENTIFY and JUSTIFY design principles. Don't just name a principle — explain what it does and why the designer used it."
-        },
-        {
-         "type": "table",
-         "headers": [
-          "Principle",
-          "Definition",
-          "Example"
-         ],
-         "rows": [
-          [
-           "Contrast",
-           "Visual difference between elements",
-           "White text on dark background"
-          ],
-          [
-           "Alignment",
-           "Elements lined up to create structure",
-           "All headings left-aligned"
-          ],
-          [
-           "Repetition",
-           "Consistent visual elements throughout",
-           "Same brand colours on every page"
-          ],
-          [
-           "Proximity",
-           "Related items grouped together",
-           "Caption placed directly under image"
-          ],
-          [
-           "Balance",
-           "Even distribution of visual weight",
-           "Two columns of equal visual weight"
-          ],
-          [
-           "Emphasis",
-           "Directing attention to key content",
-           "Large bold headline above body text"
-          ],
-          [
-           "Unity",
-           "Cohesive, consistent overall feel",
-           "Consistent fonts and spacing throughout"
-          ]
+         "type": "keyTerms",
+         "items": [
+          {
+           "term": "Balance",
+           "definition": "The even distribution of visual weight across a composition. Can be symmetrical or asymmetrical."
+          },
+          {
+           "term": "Emphasis",
+           "definition": "Making the most important element stand out — through size, colour, contrast, or position."
+          },
+          {
+           "term": "Dominance",
+           "definition": "The single element that draws the eye first and establishes the visual hierarchy."
+          },
+          {
+           "term": "Unity",
+           "definition": "A sense that all elements belong together — consistent fonts, colours, and style create a cohesive design."
+          }
          ]
+        },
+        {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "mcq",
+          "text": "A logo uses the same typeface and colour palette across all its marketing materials. Which principle does this demonstrate?",
+          "options": [
+           "Balance",
+           "Contrast",
+           "Unity",
+           "Dominance"
+          ],
+          "correctIndex": 2,
+          "explanation": "Unity means all elements look like they belong together. Consistent use of the same typeface and colour palette across all materials creates a cohesive brand identity."
+         }
+        },
+        {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "mcq",
+          "text": "A designer makes the 'Buy Now' button large and bright orange on a white page. Which two principles are at work?",
+          "options": [
+           "Balance and unity",
+           "Emphasis and contrast",
+           "Dominance and texture",
+           "Proportion and tone"
+          ],
+          "correctIndex": 1,
+          "explanation": "Making the button large and bright creates emphasis (it stands out as the most important element) and contrast (the bright orange against white creates visual difference)."
+         }
         }
        ]
       },
       {
        "id": "typography",
        "title": "Typography",
-       "estimatedMinutes": 12,
+       "estimatedMinutes": 20,
        "blocks": [
         {
          "type": "callout",
          "variant": "hook",
          "heading": "🌐 Real World Scenario",
-         "text": "A startup wants a new brand identity. You've been asked to select fonts that match their values. What do you choose and why?"
-        },
-        {
-         "type": "heading",
-         "text": "Typography",
-         "level": 2
+         "text": "A startup wants a new brand identity. You've been asked to select fonts that match their values — professional but approachable. What do you choose and why?"
         },
         {
          "type": "paragraph",
-         "text": "Typography is the art and technique of arranging type to make written language readable, legible, and appealing. In digital design, good typography is essential for communicating information clearly and setting the tone of a product."
+         "text": "Typography is the art of arranging type. Poor font choices make great content hard to read. The right font choices make content feel professional, appropriate, and aligned with its audience."
         },
         {
-         "type": "heading",
-         "text": "Font Classifications",
-         "level": 3
+         "type": "video",
+         "youtubeId": "sByzHoiYFX0",
+         "title": "Beginning Graphic Design: Typography",
+         "caption": "GCFLearnFree — a clear guide to typefaces, spacing, and professional typography."
         },
         {
-         "type": "keyTerm",
-         "term": "Serif",
-         "definition": "Fonts with small decorative strokes (serifs) at the ends of letters. Examples: Times New Roman, Georgia. Often used in print and formal documents."
-        },
-        {
-         "type": "keyTerm",
-         "term": "Sans-serif",
-         "definition": "Fonts without serifs — clean and modern. Examples: Arial, Helvetica, Roboto. Preferred for screens and digital interfaces."
-        },
-        {
-         "type": "keyTerm",
-         "term": "Script",
-         "definition": "Fonts that mimic handwriting. Decorative — use sparingly and never for body text."
-        },
-        {
-         "type": "keyTerm",
-         "term": "Monospace",
-         "definition": "Each character takes the same width. Examples: Courier, Consolas. Used for code and technical documents."
-        },
-        {
-         "type": "heading",
-         "text": "Key Typography Terms",
-         "level": 3
-        },
-        {
-         "type": "keyTerm",
-         "term": "Typeface / Font family",
-         "definition": "A set of related fonts sharing a common design (e.g., \"Arial\" includes Arial Regular, Bold, Italic)."
-        },
-        {
-         "type": "keyTerm",
-         "term": "Font weight",
-         "definition": "The thickness of strokes — from thin/light through regular to bold and black."
-        },
-        {
-         "type": "keyTerm",
-         "term": "Leading (line spacing)",
-         "definition": "The vertical space between lines of text. Too tight = hard to read; too loose = disconnected."
-        },
-        {
-         "type": "callout",
-         "heading": "🏭 Industry Tip",
-         "text": "Version control is standard practice in professional IT teams. Never overwrite a file without saving the previous version first."
-        },
-        {
-         "type": "keyTerm",
-         "term": "Kerning",
-         "definition": "The space between individual character pairs, adjusted for visual balance."
-        },
-        {
-         "type": "keyTerm",
-         "term": "Tracking",
-         "definition": "The uniform spacing applied across a whole word or block of text."
-        },
-        {
-         "type": "heading",
-         "text": "Type Hierarchy",
-         "level": 3
-        },
-        {
-         "type": "paragraph",
-         "text": "Type hierarchy organises text into levels of importance. A typical hierarchy has: H1 (main heading) → H2 (subheading) → H3 (section heading) → Body text → Captions. Each level should be visually distinct through size, weight, or colour."
-        },
-        {
-         "type": "heading",
-         "text": "Readability Guidelines",
-         "level": 3
-        },
-        {
-         "type": "list",
-         "style": "bullet",
+         "type": "grid",
+         "title": "Typeface Categories",
          "items": [
-          "Use a maximum of 2–3 fonts per design (usually one for headings, one for body)",
-          "Body text should be at least 14–16px for screen readability",
-          "Maintain strong contrast between text and background (WCAG recommends at least 4.5:1 ratio)",
-          "Avoid long lines of text — aim for 50–75 characters per line",
-          "Use sentence case for body text; use title case or ALL CAPS sparingly"
+          {
+           "icon": "✒️",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Garamond_Roman_Sample.svg/500px-Garamond_Roman_Sample.svg.png",
+           "label": "Serif",
+           "description": "Small strokes at the ends of letters (Times New Roman, Georgia). Feel traditional, trustworthy, and editorial. Best for print body text."
+          },
+          {
+           "icon": "🔡",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Helvetica_Neue_typeface_sizes.jpg/500px-Helvetica_Neue_typeface_sizes.jpg",
+           "label": "Sans-serif",
+           "description": "No strokes — clean and modern (Helvetica, Arial, Roboto). Highly legible on screens. Used for websites, apps, and headings."
+          },
+          {
+           "icon": "✍️",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Pacifico_font_specimen.png/500px-Pacifico_font_specimen.png",
+           "label": "Script / Handwritten",
+           "description": "Mimic handwriting (Pacifico, Dancing Script). Convey creativity, warmth, and personality. Use sparingly — headings only."
+          },
+          {
+           "icon": "🔠",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Futura_Specimen.svg/500px-Futura_Specimen.svg.png",
+           "label": "Display / Decorative",
+           "description": "Eye-catching, highly stylised (Impact, Futura). Best for logos, posters, and headlines. Never use for body text."
+          }
+         ]
+        },
+        {
+         "type": "richText",
+         "heading": "Typographic Spacing",
+         "html": "<p>Three spacing concepts control how readable and professional your type looks:</p><ul><li><strong>Kerning</strong> — the space between two specific letters (adjusted to fix awkward gaps)</li><li><strong>Tracking</strong> — the uniform spacing between all letters across a word or line</li><li><strong>Leading</strong> — the space between lines of text (line height). Tight leading = dense; loose leading = airy and readable</li></ul>"
+        },
+        {
+         "type": "comparison",
+         "title": "Typeface: Serif vs Sans-serif",
+         "items": [
+          {
+           "label": "Serif (Times, Georgia)",
+           "points": [
+            "Small strokes at letter ends",
+            "Traditional, trustworthy feel",
+            "Best for print body text",
+            "Good for long documents and books"
+           ]
+          },
+          {
+           "label": "Sans-serif (Arial, Roboto)",
+           "points": [
+            "No strokes — clean and modern",
+            "Highly legible on screens",
+            "Used for websites and apps",
+            "Most UI and digital design uses sans-serif"
+           ]
+          }
          ]
         },
         {
          "type": "callout",
-         "variant": "warning",
-         "text": "Using too many fonts is one of the most common amateur design mistakes. Stick to one or two complementary typefaces and use weight and size to create variety."
+         "heading": "🏭 Industry Tip",
+         "text": "The golden rule: limit yourself to two font families per design — one for headings, one for body text. Choose typefaces that contrast with each other but complement each other's mood. Never use decorative fonts for body text."
+        },
+        {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "mcq",
+          "text": "Which typeface category is most appropriate for a law firm's website body text?",
+          "options": [
+           "Display/decorative",
+           "Script/handwritten",
+           "Serif or sans-serif",
+           "Comic Sans"
+          ],
+          "correctIndex": 2,
+          "explanation": "Law firms need to project professionalism and trust. Serif typefaces (traditional, authoritative) or clean sans-serif fonts are appropriate. Display and script fonts are too informal for body text."
+         }
+        },
+        {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "true_false",
+          "text": "You should use as many different fonts as possible to make a design more interesting.",
+          "correctAnswer": false,
+          "explanation": "Too many fonts create visual chaos and look unprofessional. The rule is to use a maximum of two font families per design — one for headings, one for body text."
+         }
         }
        ]
       },
       {
        "id": "compositional-rules",
        "title": "Compositional Rules",
-       "estimatedMinutes": 12,
+       "estimatedMinutes": 20,
        "blocks": [
         {
          "type": "callout",
          "variant": "hook",
          "heading": "🌐 Real World Scenario",
-         "text": "A photographer sends you 10 photos and asks which ones will work best for their new website header. How do you evaluate them?"
-        },
-        {
-         "type": "heading",
-         "text": "Compositional Rules",
-         "level": 2
+         "text": "A photographer sends you 10 photos and asks which ones will work best for their new website header. How do you evaluate them using compositional rules?"
         },
         {
          "type": "paragraph",
-         "text": "Compositional rules are guidelines for placing elements within a design canvas to create visually appealing and effective layouts. These rules come from photography and art but are directly applicable to digital design."
+         "text": "Composition is how you arrange elements within a design space. Strong composition guides the viewer's eye and makes designs feel intentional and professional — even when viewers can't explain why."
         },
         {
-         "type": "heading",
-         "text": "Rule of Thirds",
-         "level": 3
+         "type": "grid",
+         "title": "Three Compositional Rules",
+         "items": [
+          {
+           "icon": "⊞",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/FingerRuleOfThirds.jpg/500px-FingerRuleOfThirds.jpg",
+           "label": "Rule of Thirds",
+           "description": "Divide the canvas into a 3×3 grid. Place key subjects or focal points at the four intersections — not dead centre. Creates natural, dynamic compositions."
+          },
+          {
+           "icon": "⬜",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Gridded_Page_Spread.svg/500px-Gridded_Page_Spread.svg.png",
+           "label": "Grid & Alignment",
+           "description": "Align elements to invisible grid lines. Consistent alignment creates order, professionalism, and makes pages easier to scan."
+          },
+          {
+           "icon": "🌀",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Fibonacci_spiral_34.svg/500px-Fibonacci_spiral_34.svg.png",
+           "label": "Golden Ratio",
+           "description": "A natural proportion (1:1.618) found throughout nature and architecture. Designers use it to proportion layouts, font sizes, and spacing for inherent visual harmony."
+          }
+         ]
         },
         {
-         "type": "paragraph",
-         "text": "Divide your canvas into a 3×3 grid. Place key subjects or content at the intersections of those grid lines (called \"power points\"). This creates a more dynamic and interesting composition than simply centring everything."
-        },
-        {
-         "type": "keyTerm",
-         "term": "Rule of Thirds",
-         "definition": "A compositional guideline that divides the frame into a 3×3 grid and places subjects at the intersection points for a balanced, dynamic result."
-        },
-        {
-         "type": "heading",
-         "text": "Visual Flow",
-         "level": 3
-        },
-        {
-         "type": "paragraph",
-         "text": "Visual flow is the path the viewer's eye naturally travels through a design. In Western cultures, the eye typically starts top-left and moves right, then down (the \"Z-pattern\"). Place the most important content where the eye starts."
-        },
-        {
-         "type": "keyTerm",
-         "term": "Z-pattern",
-         "definition": "A common eye-movement pattern in Western readers: left-to-right across the top, diagonally down-left, then left-to-right again across the bottom."
-        },
-        {
-         "type": "keyTerm",
-         "term": "F-pattern",
-         "definition": "An eye-movement pattern common on text-heavy pages: readers scan across the top, then down the left side with shorter horizontal scans — forming an F shape."
-        },
-        {
-         "type": "heading",
-         "text": "White Space",
-         "level": 3
+         "type": "richText",
+         "heading": "Applying the Rules",
+         "html": "<p><strong>Rule of Thirds:</strong> Mentally divide your canvas into a 3×3 grid. Place your focal point at one of the four intersections — not dead centre. Off-centre subjects feel more dynamic and natural.</p><p><strong>Grid & Alignment:</strong> Align all elements to invisible grid lines. Consistent alignment creates structure and makes pages easier to scan. In web design, CSS Grid and Flexbox enforce these rules automatically.</p><p><strong>Golden Ratio:</strong> The proportion 1:1.618 appears throughout nature (shells, flowers, human faces). Using it to proportion layouts, font sizes, and element spacing creates inherent visual harmony.</p>"
         },
         {
          "type": "callout",
          "heading": "🏭 Industry Tip",
-         "text": "When troubleshooting, always start with the simplest explanation first (cable unplugged? power on?) before assuming a complex problem."
+         "text": "Rules are guidelines, not laws. Expert designers break these rules intentionally to create surprise or draw attention. But you need to understand the rules before you can break them effectively — and you need to be able to explain why you broke them."
         },
         {
-         "type": "paragraph",
-         "text": "White space (also called negative space) is the empty area between and around design elements. It is not wasted space — it gives designs room to breathe, improves readability, and creates a sense of professionalism and elegance."
-        },
-        {
-         "type": "heading",
-         "text": "Grid Systems",
-         "level": 3
-        },
-        {
-         "type": "paragraph",
-         "text": "Grids are invisible frameworks of rows and columns that help align content consistently. Most websites and digital documents use a 12-column grid, allowing flexible layouts (1 column, 2, 3, 4, or 6 columns) while maintaining alignment."
-        },
-        {
-         "type": "heading",
-         "text": "Focal Point",
-         "level": 3
-        },
-        {
-         "type": "paragraph",
-         "text": "Every good design has a clear focal point — the element that immediately catches the viewer's attention. This is usually achieved through size (make it bigger), colour (use a contrasting colour), or position (place it prominently)."
-        },
-        {
-         "type": "callout",
-         "variant": "info",
-         "text": "When asked to analyse a design in an exam, start by identifying the focal point and then describe how compositional rules have been used to guide the viewer's eye to it."
-        },
-        {
-         "type": "table",
-         "headers": [
-          "Rule",
-          "What it involves",
-          "Why it works"
-         ],
-         "rows": [
-          [
-           "Rule of Thirds",
-           "Place subjects at grid intersection points",
-           "Creates dynamic, balanced compositions"
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "mcq",
+          "text": "According to the rule of thirds, where should a photographer position their main subject?",
+          "options": [
+           "Dead centre of the frame",
+           "At one of the four grid intersections",
+           "In the top-left corner",
+           "At the bottom edge"
           ],
-          [
-           "Visual flow",
-           "Guide the eye through content in logical order",
-           "Ensures important content is seen first"
-          ],
-          [
-           "White space",
-           "Leave empty area around and between elements",
-           "Reduces clutter, improves readability"
-          ],
-          [
-           "Grid system",
-           "Align content to invisible column structure",
-           "Creates consistent, professional layouts"
-          ],
-          [
-           "Focal point",
-           "One element dominates and attracts attention first",
-           "Communicates priority and hierarchy"
-          ]
-         ]
+          "correctIndex": 1,
+          "explanation": "The rule of thirds places the main subject at one of the four intersections created by dividing the frame into a 3×3 grid. This creates a more dynamic, natural composition than placing the subject dead centre."
+         }
         }
        ]
       },

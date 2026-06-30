@@ -16,165 +16,117 @@
       {
        "id": "elements-of-design-y12",
        "title": "Elements of Design",
-       "estimatedMinutes": 20,
+       "estimatedMinutes": 25,
        "blocks": [
         {
-         "type": "heading",
-         "text": "Elements of Design",
-         "level": 2
+         "type": "callout",
+         "variant": "hook",
+         "heading": "🌐 Real World Scenario",
+         "text": "A design agency has hired you as a junior designer. Your first task: audit a client's flyer and identify every design element used, then write a brief design critique."
         },
         {
          "type": "paragraph",
-         "text": "A client has asked your agency to redesign their corporate website — the brief says it looks 'messy and unprofessional.' Before you open Figma or Adobe XD, you need a shared vocabulary. The five elements of design are the raw material every visual communicator works with: line, shape, space, texture, and colour. Year 12 builds on Year 11 knowledge by focusing on how these elements are deliberately combined and why their relationship to design principles determines whether a product succeeds or fails."
+         "text": "Every visual design is built from seven fundamental building blocks — the elements of design. In Year 12, you'll learn to not just identify these elements, but explain how they work together and modify existing designs using them."
         },
         {
          "type": "video",
-         "youtubeId": "yNDgFK2Jj1E",
-         "title": "Understanding Visual Design Principles",
-         "caption": "Google UX Design — visual design principles applied in professional product design."
+         "youtubeId": "YqQx75OPRa0",
+         "title": "Beginning Graphic Design: Fundamentals",
+         "caption": "GCFLearnFree — a visual intro to the fundamental design elements."
         },
         {
-         "type": "heading",
-         "text": "Line",
-         "level": 3
-        },
-        {
-         "type": "paragraph",
-         "text": "Lines do far more than divide space — they direct attention, imply motion, and communicate emotion before a viewer reads a single word. Thin hairlines suggest precision and elegance (common in luxury branding); thick bold rules convey strength; diagonal lines create energy and urgency. In UI design, horizontal rules separate content sections while subtle vertical lines create column structure in data tables. Every line you place is a decision."
-        },
-        {
-         "type": "keyTerm",
-         "term": "Implied line",
-         "definition": "A line that does not physically exist but is created by the eye connecting a series of elements — e.g., a row of icons or the gaze direction of a person in a photograph."
-        },
-        {
-         "type": "heading",
-         "text": "Shape",
-         "level": 3
-        },
-        {
-         "type": "paragraph",
-         "text": "Shapes are closed areas created by lines, colour, or contrast. Geometric shapes (squares, circles, triangles) feel ordered, logical, and modern — which is why they dominate tech branding. Organic shapes feel natural, approachable, and human — used frequently in health and education design. In digital products, shapes define clickable regions (buttons), organise content into cards, and create visual hierarchy through scale differences."
-        },
-        {
-         "type": "callout",
-         "variant": "info",
-         "heading": "Real World Example",
-         "text": "Google's Material Design system uses rounded rectangles (a blend of geometric precision and organic softness) for cards and buttons. The corner radius is a deliberate shape choice that communicates 'approachable but structured'."
-        },
-        {
-         "type": "heading",
-         "text": "Space",
-         "level": 3
-        },
-        {
-         "type": "paragraph",
-         "text": "Space is the area within, around, and between elements. Positive space holds the content; negative space (white space) is everything else. Contrary to its name, white space does not need to be white — it is simply empty area. Professional designers use white space strategically: generous padding around a call-to-action button increases click-through rates; breathing room between paragraphs improves reading speed. Overcrowded designs signal amateur work."
-        },
-        {
-         "type": "keyTerm",
-         "term": "Negative space",
-         "definition": "The empty area surrounding or between design elements. Used deliberately to reduce visual noise, improve readability, and guide viewer attention toward key content."
-        },
-        {
-         "type": "heading",
-         "text": "Texture",
-         "level": 3
-        },
-        {
-         "type": "paragraph",
-         "text": "Digital design uses visual texture — the implied surface quality of an element — rather than physical texture. Subtle paper grain, noise overlays, fabric-like patterns, or brushstroke effects add depth and tactile interest to otherwise flat interfaces. Texture also carries cultural meaning: rough concrete textures suggest industrial or urban contexts; soft linen textures suggest premium lifestyle brands. Flat design (popularised by iOS 7 and Material Design) deliberately removed most texture in favour of clean, minimal surfaces."
-        },
-        {
-         "type": "heading",
-         "text": "Colour",
-         "level": 3
-        },
-        {
-         "type": "paragraph",
-         "text": "Colour is arguably the most powerful element — it triggers emotional responses before conscious analysis. In professional product design, colour decisions are documented in brand guidelines and applied consistently across all touchpoints. Designers work with colour models (RGB for screens, CMYK for print), colour harmonies (complementary, analogous, triadic), and accessibility standards that require minimum contrast ratios between text and background."
-        },
-        {
-         "type": "keyTerm",
-         "term": "Colour harmony",
-         "definition": "A deliberate combination of colours that are visually pleasing because of their relationship on the colour wheel — e.g., complementary (opposite hues), analogous (adjacent hues), or triadic (three evenly spaced hues)."
-        },
-        {
-         "type": "keyTerm",
-         "term": "Contrast ratio",
-         "definition": "A numerical measure of the luminance difference between foreground text and its background. WCAG 2.1 AA standard requires a minimum ratio of 4.5:1 for normal text to ensure readability for users with visual impairments."
+         "type": "grid",
+         "title": "The Seven Elements of Design",
+         "items": [
+          {
+           "icon": "📏",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Orient_IV_%28_%29_-_Bridget_Riley_%281931%29_%2844210674930%29.jpg/500px-Orient_IV_%28_%29_-_Bridget_Riley_%281931%29_%2844210674930%29.jpg",
+           "label": "Line",
+           "description": "A path between two points — straight, curved, thick, thin, solid or dashed. Lines guide the eye, divide space, and create structure and movement."
+          },
+          {
+           "icon": "⬡",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Composition%2C_1921_-_Piet_Mondrian%2C_MET_DT4479.jpg/500px-Composition%2C_1921_-_Piet_Mondrian%2C_MET_DT4479.jpg",
+           "label": "Shape",
+           "description": "A 2D area defined by a boundary. Geometric shapes (circles, squares, triangles) feel structured and ordered. Organic shapes feel fluid and dynamic."
+          },
+          {
+           "icon": "🔲",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Facevase.png/500px-Facevase.png",
+           "label": "Space",
+           "description": "Positive space is the subject; negative space is the empty area around it. White space improves readability and draws focus to key elements."
+          },
+          {
+           "icon": "🪨",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Weathered_wood_grain_texture_macro_closeup_detail.jpg/500px-Weathered_wood_grain_texture_macro_closeup_detail.jpg",
+           "label": "Texture",
+           "description": "The visual or tactile quality of a surface — rough, smooth, grainy, soft. In digital design, texture is implied through pattern and visual technique."
+          },
+          {
+           "icon": "🎨",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Color_star-en_%28tertiary_names%29.svg/500px-Color_star-en_%28tertiary_names%29.svg.png",
+           "label": "Colour",
+           "description": "Defined by hue (the colour family), saturation (intensity), and tone (lightness/darkness). Colour evokes emotion and establishes brand identity."
+          },
+          {
+           "icon": "🎲",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Platonic_solids.jpg/500px-Platonic_solids.jpg",
+           "label": "3D Form",
+           "description": "Three-dimensional shapes — sphere, cube, cylinder, cone. Form adds depth and realism, creating the illusion of volume in 2D designs."
+          },
+          {
+           "icon": "🌗",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Ansel-adams-monolith-the-face-of-half-dome_-_edit1.jpg/500px-Ansel-adams-monolith-the-face-of-half-dome_-_edit1.jpg",
+           "label": "Tone",
+           "description": "The degree of lightness or darkness — distinct from colour. A black-and-white photo still has tone. Tone creates contrast, depth, and mood."
+          }
+         ]
         },
         {
          "type": "callout",
-         "variant": "tip",
-         "heading": "Industry Tip",
-         "text": "Tools like Figma's built-in contrast checker, Adobe Color, and the WebAIM Contrast Checker let you verify colour accessibility instantly. Checking contrast ratios should be a standard step in any professional design workflow."
+         "variant": "key",
+         "heading": "Elements vs Principles",
+         "text": "The elements of design are the WHAT — the raw materials (line, shape, colour, space, texture, form, tone). The principles of design are the HOW — the rules for combining those materials effectively. You need both to analyse or create strong designs."
         },
         {
-         "type": "table",
-         "headers": [
-          "Element",
-          "Core purpose",
-          "Professional application",
-          "Common tools"
-         ],
-         "rows": [
-          [
-           "Line",
-           "Direct eye movement and create structure",
-           "Section dividers, data visualisation axes, UI borders",
-           "Figma pen tool, Illustrator"
-          ],
-          [
-           "Shape",
-           "Group content and define interactive regions",
-           "Buttons, cards, icons, logo forms",
-           "Figma frames, Adobe XD components"
-          ],
-          [
-           "Space",
-           "Control focus and reduce cognitive load",
-           "Padding, margins, white space in layouts",
-           "CSS box model, Figma auto-layout"
-          ],
-          [
-           "Texture",
-           "Add depth and communicate brand personality",
-           "Background overlays, hero images, card surfaces",
-           "Photoshop filters, CSS backgrounds"
-          ],
-          [
-           "Colour",
-           "Evoke emotion and create visual hierarchy",
-           "Brand palettes, accessibility-compliant UI",
-           "Adobe Color, Figma styles, Canva brand kit"
-          ]
+         "type": "keyTerms",
+         "items": [
+          {
+           "term": "Element of design",
+           "definition": "One of seven fundamental building blocks of visual design: line, shape, space, texture, colour, form, and tone."
+          },
+          {
+           "term": "Visual texture",
+           "definition": "The implied surface quality in 2D digital design — roughness, smoothness, or grain created through patterns rather than actual physical texture."
+          },
+          {
+           "term": "Negative space",
+           "definition": "The empty area around or between subjects. Skilled designers use negative space deliberately to create focus and improve readability."
+          }
          ]
         },
         {
          "type": "quizQuestion",
          "question": {
-          "id": "y12dc-elem-q1",
           "questionType": "mcq",
-          "text": "A designer places generous padding around a call-to-action button and leaves large empty areas between sections of a webpage. Which element of design is being deliberately used?",
+          "text": "A graphic designer uses diagonal lines across a poster background. What effect do diagonal lines typically create?",
           "options": [
-           "Texture",
-           "Line",
-           "Space",
-           "Shape"
+           "Calm and stability",
+           "Energy and movement",
+           "Structure and order",
+           "Depth and volume"
           ],
-          "correctIndex": 2,
-          "explanation": "Space (negative/white space) is the empty area within, around, and between elements. Using it generously around important elements like buttons focuses attention and reduces cognitive load — a professional technique, not an accident."
+          "correctIndex": 1,
+          "explanation": "Diagonal lines create energy and movement. Horizontal lines convey calm and stability; vertical lines suggest strength."
          }
         },
         {
          "type": "quizQuestion",
          "question": {
-          "id": "y12dc-elem-q2",
           "questionType": "short_answer",
-          "text": "A tech startup is designing a new mobile app. Explain how the choice between geometric and organic shapes in the app's UI might communicate different brand personalities to users.",
-          "marks": 4,
-          "explanation": "Geometric shapes (squares, circles, sharp corners) communicate precision, logic, and modernity — appropriate for a data or productivity app. Organic shapes (rounded, freeform) communicate approachability, warmth, and humanity — appropriate for a wellness or social app. The choice should align with the intended brand values and target user expectations. (2 marks per shape type with justification.)"
+          "text": "Explain how a designer could use the element of SPACE to improve the readability of a busy infographic.",
+          "marks": 3,
+          "explanation": "A strong answer: The designer should increase negative space (white space) around key elements to reduce visual clutter, create breathing room between sections, and draw the eye to the most important information. Grouping related elements and separating unrelated ones using space also improves scan-ability."
          }
         }
        ]
@@ -182,129 +134,98 @@
       {
        "id": "principles-of-design-y12",
        "title": "Principles of Design",
-       "estimatedMinutes": 20,
+       "estimatedMinutes": 25,
        "blocks": [
         {
-         "type": "heading",
-         "text": "Principles of Design",
-         "level": 2
-        },
-        {
-         "type": "paragraph",
-         "text": "Your design agency has received two poster concepts from junior designers. Both use the same elements — same fonts, colours, and images — but one looks polished and one looks amateur. The difference is almost always the principles: how those elements are arranged, balanced, and emphasised. The Year 12 syllabus focuses on four principles — balance, emphasis, dominance, and unity — and critically, how they relate to the elements you studied in Lesson 1."
-        },
-        {
-         "type": "heading",
-         "text": "Balance",
-         "level": 3
-        },
-        {
-         "type": "paragraph",
-         "text": "Balance refers to the distribution of visual weight across a composition. Symmetrical balance places equal visual weight on both sides of a central axis — common in formal contexts like government websites or corporate annual reports, where the design communicates stability and authority. Asymmetrical balance uses different elements of unequal size or colour but achieves equilibrium through careful arrangement — a single large dark shape balanced by multiple small light shapes. Asymmetrical layouts feel dynamic and contemporary and are dominant in modern web design."
-        },
-        {
-         "type": "keyTerm",
-         "term": "Visual weight",
-         "definition": "The perceived heaviness of an element in a composition. Larger elements, darker colours, complex textures, and isolated elements all carry more visual weight than their opposites."
-        },
-        {
-         "type": "keyTerm",
-         "term": "Radial balance",
-         "definition": "A third type of balance where elements radiate outward from a central point, like the spokes of a wheel. Used in logos, mandalas, and circular infographics."
-        },
-        {
-         "type": "heading",
-         "text": "Emphasis",
-         "level": 3
-        },
-        {
-         "type": "paragraph",
-         "text": "Emphasis establishes what the viewer sees first. In a well-designed product, there is a clear visual hierarchy: a primary focal point commands attention immediately, secondary elements provide context, and tertiary content supports or supplements. Emphasis is achieved through contrast (a bright colour on a neutral background), proportion (a large element among small ones), isolation (an element surrounded by space), or placement (top-left or centre positions attract the eye first in Western reading patterns)."
-        },
-        {
-         "type": "paragraph",
-         "text": "Contrast and proportion are the two key mechanisms for creating emphasis in the Year 12 syllabus. Contrast uses difference — size, colour, value, texture — to make one element stand out. Proportion uses relative scale — a large headline against small body text creates immediate hierarchy. A common exam error is confusing emphasis with dominance: emphasis is directional (it guides the eye), while dominance is about presence (one element visually controls the whole composition)."
-        },
-        {
          "type": "callout",
-         "variant": "important",
-         "heading": "Exam Note",
-         "text": "The SCSA syllabus lists emphasis as including both contrast AND proportion as sub-mechanisms. When asked to identify emphasis in a design, explain WHICH mechanism is creating it — don't just write 'emphasis is present.'"
-        },
-        {
-         "type": "heading",
-         "text": "Dominance",
-         "level": 3
+         "variant": "hook",
+         "heading": "🌐 Real World Scenario",
+         "text": "A client's website looks 'cluttered and overwhelming'. Using design principles as your framework, write a professional critique with specific recommendations."
         },
         {
          "type": "paragraph",
-         "text": "Dominance occurs when one element is significantly stronger than all others in a composition — it controls the viewer's eye and sets the visual tone. A dominant element is typically the largest, most colourful, or most centrally placed item. Well-designed products often use a single dominant element (a hero image, a bold headline, a standout call-to-action) to anchor the composition. Designs without a dominant element tend to feel indecisive — the eye has nowhere to rest."
+         "text": "The principles of design describe how to combine design elements effectively. Year 12 goes deeper: you need to understand the relationship between elements and principles, and be able to apply and annotate them in your own designs."
         },
         {
-         "type": "callout",
-         "variant": "info",
-         "heading": "Real World Example",
-         "text": "On Apple's product pages, the product photograph is always the dominant element: large, centrally placed, with minimal competing content. Every other element — headline, price, button — is subordinate. This makes the product the unambiguous focal point and aligns with Apple's brand values of simplicity and product focus."
+         "type": "video",
+         "youtubeId": "yNDgFK2Jj1E",
+         "title": "Understanding Visual Design Principles",
+         "caption": "Google UX Design Certificate — how design principles apply in professional product design."
         },
         {
-         "type": "table",
-         "headers": [
-          "Principle",
-          "Definition",
-          "How elements create it",
-          "Design example"
-         ],
-         "rows": [
-          [
-           "Balance",
-           "Even distribution of visual weight",
-           "Colour, size, and position of elements",
-           "Two-column layout with equal visual mass on each side"
-          ],
-          [
-           "Emphasis (contrast)",
-           "Difference between elements draws the eye",
-           "Colour contrast, size contrast, texture contrast",
-           "Bright red button on a white background"
-          ],
-          [
-           "Emphasis (proportion)",
-           "Relative scale creates hierarchy",
-           "A dominant large element against small ones",
-           "Large hero headline above small subtext"
-          ],
-          [
-           "Dominance",
-           "One element controls the composition",
-           "Scale, colour saturation, or placement",
-           "Full-bleed hero image anchoring a landing page"
-          ]
+         "type": "grid",
+         "title": "The Principles of Design",
+         "items": [
+          {
+           "icon": "⚖️",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat_03.jpg/500px-Cat_03.jpg",
+           "label": "Balance",
+           "description": "The even distribution of visual weight. Symmetrical balance mirrors elements on each side. Asymmetrical balance uses different elements that still feel equally weighted."
+          },
+          {
+           "icon": "🔦",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/500px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg",
+           "label": "Emphasis",
+           "description": "Making the most important element stand out through size, colour, contrast, or position. Every strong design has a clear focal point."
+          },
+          {
+           "icon": "👑",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Camponotus_flavomarginatus_ant.jpg/500px-Camponotus_flavomarginatus_ant.jpg",
+           "label": "Dominance",
+           "description": "The element that stands out most and catches attention first. Usually the largest, most colourful, or most isolated element in a design."
+          },
+          {
+           "icon": "🔗",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Lego_Color_Bricks.jpg/500px-Lego_Color_Bricks.jpg",
+           "label": "Unity",
+           "description": "All elements look like they belong together — consistent fonts, colours, and style. Unity creates a cohesive, professional feel across a design."
+          },
+          {
+           "icon": "📐",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Khoury_College_New_Graphic.svg/500px-Khoury_College_New_Graphic.svg.png",
+           "label": "Proportion",
+           "description": "The size relationship between elements. Large elements feel more important; small elements feel secondary. Correct proportion creates visual harmony."
+          },
+          {
+           "icon": "🎼",
+           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/GoldenRatio_Parthenon.jpg/500px-GoldenRatio_Parthenon.jpg",
+           "label": "Contrast",
+           "description": "The difference between opposing elements — light/dark, large/small, rough/smooth, bold/thin. Contrast creates visual interest and makes key information stand out."
+          }
          ]
+        },
+        {
+         "type": "richText",
+         "heading": "The Relationship Between Elements and Principles",
+         "html": "<p>Elements and principles are interdependent — you cannot apply a principle without using elements to do so:</p><ul><li><strong>Emphasis</strong> is created through <em>colour contrast</em>, <em>size</em> (form/shape), or <em>space</em> (isolation)</li><li><strong>Balance</strong> is achieved by distributing <em>colour</em>, <em>shape</em>, and <em>tone</em> across the composition</li><li><strong>Unity</strong> comes from consistent use of <em>colour</em>, <em>line</em> style, and <em>typography</em></li><li><strong>Contrast</strong> exploits differences in <em>tone</em>, <em>colour</em>, or <em>scale</em></li></ul><p>When annotating your designs, always name both the element and the principle it serves.</p>"
+        },
+        {
+         "type": "callout",
+         "heading": "🏭 Industry Tip",
+         "text": "Professional designers use a design critique framework: identify the target audience, list the design elements present, evaluate which principles are working or missing, and give specific recommendations. Practice this framework on every design you analyse."
         },
         {
          "type": "quizQuestion",
          "question": {
-          "id": "y12dc-prin-q1",
           "questionType": "mcq",
-          "text": "A web designer places a large, high-saturation product image in the centre of a landing page while all text and navigation elements are noticeably smaller. Which principle of design is most clearly demonstrated?",
+          "text": "A designer places a small logo in the bottom-right corner of a page and a large hero image at the top. The page still feels visually balanced. What type of balance is this?",
           "options": [
-           "Balance",
-           "Unity",
-           "Dominance",
-           "Repetition"
+           "Symmetrical balance",
+           "Radial balance",
+           "Asymmetrical balance",
+           "No balance is present"
           ],
           "correctIndex": 2,
-          "explanation": "Dominance occurs when one element significantly overpowers all others in a composition — here, the large, saturated image controls the composition. Balance would require equal visual weight distribution; unity relates to cohesion across the whole design."
+          "explanation": "Asymmetrical balance places different-sized elements in positions that create visual equilibrium without mirroring. The large image's visual weight is counterbalanced by colour, placement, and other elements."
          }
         },
         {
          "type": "quizQuestion",
          "question": {
-          "id": "y12dc-prin-q2",
           "questionType": "short_answer",
-          "text": "Identify TWO differences between emphasis achieved through contrast and emphasis achieved through proportion, using design examples to support your answer.",
+          "text": "A student is designing a poster for a school event. The poster has five equally-sized elements with the same font weight and colour. Identify which principles are missing and explain how to fix this.",
           "marks": 4,
-          "explanation": "Contrast creates emphasis through difference in qualities (colour, value, texture, tone) — e.g., a white call-to-action button on a dark hero section. Proportion creates emphasis through relative scale — e.g., a 72pt headline next to 12pt body text. Contrast can involve colour or texture without size change; proportion involves size relationships specifically. (2 marks per mechanism with example.)"
+          "explanation": "Missing principles: Emphasis/dominance (no single element draws the eye), contrast (elements don't differentiate in weight or colour), and visual hierarchy (nothing indicates priority). Fix: Make the event title significantly larger and bolder (emphasis/dominance), use colour contrast to highlight the date and call-to-action, and vary font weights to create hierarchy between heading, supporting details, and contact information."
          }
         }
        ]
