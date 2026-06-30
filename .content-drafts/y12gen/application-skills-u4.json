@@ -1,0 +1,1102 @@
+{
+  "id": "application-skills-u4",
+  "title": "Application Skills",
+  "description": "Year 12 Unit 4",
+  "lessons": [
+    {
+      "id": "animation-fundamentals",
+      "title": "Animation Fundamentals",
+      "estimatedMinutes": 20,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Animation Fundamentals",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Animation is the process of creating the illusion of movement by displaying a sequence of images or frames rapidly. In digital products — websites, apps, advertising, and games — animation is used to guide attention, communicate change, and create engaging user experiences. Two core approaches are used in professional animation software: frame-by-frame animation and tween animation."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "heading": "Industry Tool: Adobe Animate",
+          "text": "Adobe Animate (formerly Flash) is the industry-standard tool for creating interactive animations for web, games, and advertising. It supports both frame-by-frame and tween animation, and can export to HTML5 Canvas, WebGL, and video formats."
+        },
+        {
+          "type": "heading",
+          "text": "The Timeline",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "The timeline is the central panel in animation software. It shows every layer and every frame in your animation. Time moves from left to right — the further right a frame is, the later it plays. Layers stack on top of each other, so objects on higher layers appear in front of objects on lower layers."
+        },
+        {
+          "type": "keyTerms",
+          "items": [
+            {
+              "term": "Frame",
+              "definition": "A single still image in an animation. When frames play in sequence at a set speed (frames per second, or fps), they create the illusion of movement."
+            },
+            {
+              "term": "Keyframe",
+              "definition": "A special frame that marks a significant point in the animation — a starting position, an ending position, or a point where something changes. Animation software uses keyframes to know what to animate between."
+            },
+            {
+              "term": "Frames per second (fps)",
+              "definition": "How many frames are displayed each second. 24fps is common for film; 12fps is often used for web animation; 60fps for smooth game animation."
+            },
+            {
+              "term": "Layer",
+              "definition": "A separate track in the timeline that holds its own objects. Using multiple layers keeps complex animations organised and allows objects to move independently."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Frame-by-Frame Animation",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Frame-by-frame animation (also called traditional or hand-drawn animation) requires the animator to draw or place the content in every single frame. Each frame is slightly different from the last, creating movement when played back. This technique gives the most control over every detail but is time-consuming."
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Used for: character animation, expressive motion, cartoon-style effects",
+            "Advantage: complete control over every moment — no surprises from the software",
+            "Disadvantage: very time-intensive; changing the animation later requires editing many frames",
+            "Common in: traditional cartoons, 2D game sprites, animated GIFs, hand-drawn explainer videos"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Tween Animation",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Tween animation (short for \"in-between\") lets the software automatically calculate the frames between two keyframes you define. You set the start state and the end state — the software fills in all the motion in between. This is far faster than frame-by-frame for smooth, mechanical motion."
+        },
+        {
+          "type": "table",
+          "headers": ["Tween Type", "What it animates", "Example use"],
+          "rows": [
+            ["Motion tween", "Position, size, rotation, opacity of an object", "A logo sliding in from the left, then fading out"],
+            ["Shape tween", "The shape itself morphing from one form to another", "A circle transforming into a square"],
+            ["Classic tween", "Position and properties of a symbol between two keyframes", "A bouncing ball moving across the screen"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Buttons and Interactivity",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Animation software like Adobe Animate allows you to create interactive buttons — objects that respond to user actions such as hovering or clicking. A button has four states that you can design separately: Up (normal), Over (hover), Down (click), and Hit (the clickable area). Buttons are used in interactive presentations, educational games, and web banners."
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Up state — how the button looks normally",
+            "Over state — how it looks when the mouse hovers over it",
+            "Down state — how it looks when clicked",
+            "Hit state — defines the invisible clickable area (usually matches the button shape)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Real-World Uses of Animation",
+          "level": 3
+        },
+        {
+          "type": "table",
+          "headers": ["Context", "Animation use", "Tool commonly used"],
+          "rows": [
+            ["Marketing / advertising", "Animated web banners, social media posts", "Adobe Animate, After Effects"],
+            ["Websites", "Loading spinners, hover effects, page transitions", "CSS animations, JavaScript"],
+            ["Mobile apps", "Onboarding animations, button feedback, loading states", "Lottie (JSON animations)"],
+            ["Games", "Character sprites, background parallax, UI effects", "Animate, Unity, Spine"],
+            ["Education", "Explainer animations, interactive quizzes", "Animate, Canva, Vyond"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "heading": "CSS Animations — Web Without Flash",
+          "text": "Modern websites use CSS animations and transitions instead of Flash/Animate for lightweight effects. A button growing when hovered, a menu sliding in, or a loading spinner can all be built with a few lines of CSS — no plugin required. You will explore this in the HTML and CSS lesson."
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading",
+          "text": "Check Your Understanding",
+          "level": 2
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "anim-q1",
+            "questionType": "mcq",
+            "text": "A web designer wants to animate a company logo so it slides in from the left and fades to full opacity when the page loads. Which animation technique is most efficient for this?",
+            "options": [
+              "Frame-by-frame animation, because it gives full control over every frame",
+              "Tween animation, because the software can calculate the motion between two keyframes automatically",
+              "Button animation, because it responds to user interaction",
+              "Shape tween, because the logo needs to change shape"
+            ],
+            "correctIndex": 1,
+            "explanation": "A motion tween is ideal here — you define the logo's start position (off-screen, transparent) and end position (in place, fully visible), and the software calculates all the frames in between. Frame-by-frame would require drawing every intermediate position manually."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "anim-q2",
+            "questionType": "mcq",
+            "text": "Which button state in Adobe Animate defines the area that responds to mouse clicks, even if it is invisible?",
+            "options": [
+              "Up",
+              "Over",
+              "Down",
+              "Hit"
+            ],
+            "correctIndex": 3,
+            "explanation": "The Hit state defines the invisible clickable area of a button. It is not visible to the user but tells the software exactly where mouse clicks will trigger the button action."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "anim-q3",
+            "questionType": "true_false",
+            "text": "Frame-by-frame animation is more time-efficient than tween animation for creating smooth mechanical motion like a sliding menu.",
+            "correctAnswer": false,
+            "explanation": "False. Tween animation is far more efficient for smooth mechanical motion — you only define the start and end keyframes and the software fills in all the in-between frames. Frame-by-frame is better for expressive, hand-crafted motion but requires drawing every frame manually."
+          }
+        },
+        {
+          "type": "task",
+          "title": "Exploring Animation Types",
+          "software": "Adobe Animate (or free alternative: OpenToonz or Pencil2D)",
+          "intro": "In this task you will create a short animation demonstrating both frame-by-frame and tween techniques.",
+          "steps": [
+            "Open Adobe Animate. Create a new HTML5 Canvas document at 800×450 pixels, 24fps.",
+            "Rename Layer 1 to 'Background'. Draw a simple background shape using the Rectangle Tool — fill it with a gradient colour.",
+            "Add a new layer called 'Ball'. Draw a circle (hold Shift) of about 60px diameter and fill it with a bright colour.",
+            "Right-click the circle and select 'Convert to Symbol' → choose Graphic. Name it 'ball'.",
+            "With the ball symbol selected, right-click on frame 1 and choose 'Create Motion Tween'. Drag the playhead to frame 48.",
+            "Move the ball to a new position on the canvas. Adobe Animate will automatically create the motion path between the two positions.",
+            "Add a new layer called 'Text'. Use the Text Tool to type your name. Go to frame 1 and insert a keyframe, then go to frame 12 and insert another keyframe.",
+            "On frame 1, set the text opacity to 0% (in the Properties panel). On frame 12, set it to 100%. Right-click between the two keyframes and choose 'Create Classic Tween' — this creates a fade-in effect.",
+            "Press Enter to preview the animation. Adjust timing by dragging keyframes left or right on the timeline.",
+            "Export your animation: File → Export → Export Movie → select MP4 or Animated GIF. Save as 'Animation_Task_[YourName]'."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "audio-editing-for-digital-products",
+      "title": "Audio Editing for Digital Products",
+      "estimatedMinutes": 18,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Audio Editing for Digital Products",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Audio is a critical but often overlooked component of digital products. Whether you are building a website with background music, producing a podcast, adding sound effects to a game, or creating a promotional video, understanding how to record, edit, convert, and export audio is an essential professional skill."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "heading": "Industry Tool: Audacity",
+          "text": "Audacity is a free, open-source audio editor used by podcasters, musicians, educators, and IT professionals worldwide. It supports multi-track editing, noise reduction, format conversion, and a wide range of effects. Adobe Audition is the industry-standard paid alternative, used in professional recording studios and post-production."
+        },
+        {
+          "type": "heading",
+          "text": "Key Features of Audio Software",
+          "level": 3
+        },
+        {
+          "type": "heading",
+          "text": "Editing",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Audio editing involves cutting, trimming, rearranging, and enhancing audio clips. Most audio editors display audio as a waveform — a visual representation of the sound's volume over time. Common editing operations include:"
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Cut / Trim — remove unwanted sections (silence, mistakes, background noise at the start)",
+            "Split — divide one clip into two separate clips at a specific point",
+            "Fade in / Fade out — gradually increase or decrease volume at the start or end of a clip",
+            "Normalise — adjust the volume of a clip so its peak reaches a standard level",
+            "Noise reduction — analyse and remove consistent background noise (air conditioning hum, static)",
+            "Equalisation (EQ) — boost or reduce specific frequency ranges to improve clarity",
+            "Compression — reduce the dynamic range so quiet and loud parts are closer in volume"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Converting Audio Formats",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Different contexts require different audio formats. Audio software allows you to convert between formats based on the output requirements. Understanding the difference between lossy and lossless compression is important when choosing the right format."
+        },
+        {
+          "type": "table",
+          "headers": ["Format", "Type", "File size", "Best used for"],
+          "rows": [
+            [".wav", "Lossless / Uncompressed", "Large", "Recording, editing masters, professional production"],
+            [".mp3", "Lossy compressed", "Small", "Web audio, podcasts, music streaming"],
+            [".aac", "Lossy compressed", "Small", "Apple devices, streaming, YouTube"],
+            [".ogg", "Lossy compressed", "Small", "Web audio (open-source alternative to mp3)"],
+            [".flac", "Lossless compressed", "Medium", "High-quality music archives, audiophile listening"],
+            [".aiff", "Lossless / Uncompressed", "Large", "Mac/Apple professional audio production"]
+          ]
+        },
+        {
+          "type": "keyTerms",
+          "items": [
+            {
+              "term": "Lossy compression",
+              "definition": "Reduces file size by permanently removing audio data the human ear is least likely to notice. Results in smaller files but reduced quality. MP3 and AAC are lossy formats."
+            },
+            {
+              "term": "Lossless compression",
+              "definition": "Reduces file size without removing any audio data — the original audio can be perfectly reconstructed. FLAC and WAV are lossless formats."
+            },
+            {
+              "term": "Bit rate",
+              "definition": "The amount of data processed per second of audio, measured in kilobits per second (kbps). Higher bit rate = better quality but larger file. 128kbps is acceptable for voice; 320kbps is high quality for music."
+            },
+            {
+              "term": "Sample rate",
+              "definition": "How many times per second the audio is sampled, measured in Hz. 44,100 Hz (44.1 kHz) is standard for music (CD quality); 48,000 Hz is standard for video production."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Exporting for Different Contexts",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "The export settings you choose depend on where and how the audio will be used. Exporting at the wrong settings can result in unnecessarily large files on a website, or poor quality audio in a professional production."
+        },
+        {
+          "type": "table",
+          "headers": ["Output context", "Recommended format", "Bit rate / Quality", "Reason"],
+          "rows": [
+            ["Website background audio", "MP3 or OGG", "128kbps", "Small file size, broad browser support"],
+            ["Podcast episode", "MP3", "128kbps (voice) / 192kbps (music)", "Small download, good voice clarity"],
+            ["Video soundtrack", "WAV or AAC, 48kHz", "High quality / lossless", "Sync with video; re-encoding risk if already compressed"],
+            ["Archival / master copy", "WAV or FLAC", "Lossless", "Preserve original quality for future editing"],
+            ["Social media video", "AAC", "256kbps", "Compatible with all major platforms"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "text": "Always keep a master copy of your audio in a lossless format (WAV or FLAC) before exporting to lossy formats. Once audio is converted to MP3 and back, the quality loss is permanent and compounding."
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading",
+          "text": "Check Your Understanding",
+          "level": 2
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "audio-q1",
+            "questionType": "mcq",
+            "text": "A student records a podcast episode. During recording, a constant hum from the air conditioner is audible throughout. Which audio editing feature should they use to fix this?",
+            "options": [
+              "Normalise",
+              "Noise reduction",
+              "Compression",
+              "Fade out"
+            ],
+            "correctIndex": 1,
+            "explanation": "Noise reduction analyses a sample of the unwanted background noise and then removes that frequency pattern from the entire recording. It is specifically designed for consistent background noise like air conditioning hum or electrical static."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "audio-q2",
+            "questionType": "mcq",
+            "text": "A web developer needs to add a short background music clip to a website. Which format and bit rate combination is most appropriate?",
+            "options": [
+              "WAV, lossless — to preserve maximum quality",
+              "FLAC, lossless — smaller than WAV but still lossless",
+              "MP3, 128kbps — small file size, good enough quality for web",
+              "AIFF, lossless — standard for web audio"
+            ],
+            "correctIndex": 2,
+            "explanation": "MP3 at 128kbps strikes the right balance for website audio — small file size for fast loading and good enough quality for background music. WAV and FLAC are unnecessarily large for web delivery and would slow page load times."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "audio-q3",
+            "questionType": "short_answer",
+            "text": "Explain the difference between lossy and lossless audio compression. Give one example of each format type and state a suitable use case for each.",
+            "marks": 4,
+            "explanation": "Lossy compression (e.g. MP3) permanently removes audio data to achieve smaller files — suitable for web audio or podcasts where file size matters. Lossless compression (e.g. FLAC or WAV) preserves all audio data so the original can be perfectly reconstructed — suitable for master recordings or professional production where quality is critical. [2 marks: correct definition of each; 1 mark each for valid example and use case pair]"
+          }
+        },
+        {
+          "type": "task",
+          "title": "Record, Edit and Export a Podcast Introduction",
+          "software": "Audacity (free download: audacityteam.org)",
+          "intro": "You will record a short podcast-style introduction, clean up the audio, and export it in two formats for different purposes.",
+          "steps": [
+            "Open Audacity. Set the recording sample rate to 44100 Hz (check the bottom toolbar).",
+            "Click the red Record button and record a 30–60 second spoken introduction: \"Welcome to [your topic] podcast. My name is [your name] and today we are discussing [topic]. Let's get started.\" Press Stop when done.",
+            "Listen back to your recording. Identify any sections with mistakes or long silences.",
+            "Select a section of silence or background noise at the start of the recording (before you speak). Go to Effect → Noise Reduction → Get Noise Profile. Then select all audio (Ctrl+A) and apply the noise reduction.",
+            "Use the Selection Tool to select and delete any long silences or mistakes in your recording.",
+            "Select the first 0.5 seconds of audio. Go to Effect → Fade In. Select the last 0.5 seconds and apply Effect → Fade Out.",
+            "Go to Effect → Normalize. Set the peak amplitude to -1.0 dB and apply. This makes your audio a consistent, professional volume.",
+            "Export for podcast: File → Export → Export as MP3. Set bit rate to 128kbps. Name the file 'Podcast_Intro_[YourName].mp3'.",
+            "Export a master copy: File → Export → Export as WAV. Name it 'Podcast_Intro_Master_[YourName].wav'.",
+            "Compare the two file sizes in your file explorer. Write a brief note explaining why you would distribute the MP3 but archive the WAV."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "web-authoring-basics",
+      "title": "Web Authoring Basics",
+      "estimatedMinutes": 18,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Web Authoring Basics",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Web authoring is the process of creating and publishing content for the web. Professional websites are built using a combination of tools — from drag-and-drop website builders to hand-coded HTML and CSS. Understanding how websites are structured and the role each component plays is essential knowledge for anyone working in IT."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "heading": "Web Developer Career",
+          "text": "Web development is one of the most in-demand IT careers. Front-end developers build what users see; back-end developers build the systems behind the scenes; full-stack developers do both. The median salary in Australia for a web developer is $85,000–$110,000 AUD. Entry-level roles often start with exactly the skills covered in this topic."
+        },
+        {
+          "type": "heading",
+          "text": "How Professional Websites Are Built",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Most websites use a combination of three technologies working together: HTML provides the structure and content, CSS controls the visual presentation and layout, and JavaScript adds interactivity and dynamic behaviour. Web authoring tools let you create these without necessarily writing all the code by hand."
+        },
+        {
+          "type": "comparison",
+          "title": "Web Authoring Approaches",
+          "items": [
+            {
+              "label": "Website Builders (No-Code)",
+              "points": [
+                "Drag-and-drop interface — no coding required",
+                "Examples: Wix, Squarespace, Weebly",
+                "Fast to launch; limited customisation",
+                "Best for: small businesses, personal portfolios, simple sites",
+                "Code generated automatically in the background"
+              ]
+            },
+            {
+              "label": "Content Management Systems (CMS)",
+              "points": [
+                "WordPress, Joomla, Drupal",
+                "Uses templates and plugins for features",
+                "Powers over 40% of all websites on the internet",
+                "Some code knowledge helpful for customisation",
+                "Best for: blogs, business sites, e-commerce"
+              ]
+            },
+            {
+              "label": "Hand-Coded (HTML/CSS/JS)",
+              "points": [
+                "Write HTML, CSS, and JavaScript directly",
+                "Full control over every aspect of the site",
+                "Used by professional developers for custom builds",
+                "Tools: VS Code, Sublime Text, WebStorm",
+                "Best for: custom web applications, complex interactive sites"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Key Web Authoring Features",
+          "level": 3
+        },
+        {
+          "type": "heading",
+          "text": "Hyperlinks",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Hyperlinks (or simply links) connect pages and resources together — they are what makes the web navigable. Every link has a destination (the URL it points to) and anchor text (the visible, clickable text or image). Links can connect to pages within the same website (internal links) or to pages on other websites (external links)."
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Internal links — navigate between pages on the same website (e.g., Home → About → Contact)",
+            "External links — point to a page on a different website (always open in a new tab for UX)",
+            "Anchor links — jump to a specific section on the same page (e.g., a 'Back to top' button)",
+            "Email links — open the user's email client with a pre-filled recipient address (mailto:)",
+            "Download links — trigger a file download rather than opening a page"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Graphics and Images",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Images are a critical part of web design but must be optimised for the web. Unoptimised images are one of the most common causes of slow-loading websites. Key considerations include choosing the right file format and compressing images before uploading."
+        },
+        {
+          "type": "table",
+          "headers": ["Format", "Best used for", "Supports transparency?", "Animation?"],
+          "rows": [
+            ["JPEG / JPG", "Photographs, complex images with many colours", "No", "No"],
+            ["PNG", "Graphics, logos, images needing transparency", "Yes", "No"],
+            ["GIF", "Simple animations, icons with few colours", "Yes (1-bit)", "Yes"],
+            ["SVG", "Logos, icons, illustrations (vector — scales to any size)", "Yes", "Yes (CSS)"],
+            ["WebP", "Modern web images — better quality at smaller size than JPEG/PNG", "Yes", "Yes"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Templates",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Templates are pre-designed page layouts that provide a consistent look and feel across a website. In WordPress, templates are called themes. In website builders like Wix, they are called templates. Using a template means you don't need to design every page from scratch — you customise the colours, fonts, images, and text to suit your client or brand."
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Templates provide consistent navigation, header, and footer across all pages",
+            "Colour schemes and fonts are pre-set but can be customised",
+            "Placeholder content ('Lorem ipsum' text and sample images) shows where your content goes",
+            "Choosing the right template for the purpose (portfolio vs shop vs blog) saves significant time"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Navigation Maps",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Before building a website, professionals create a navigation map (also called a sitemap or site structure diagram). This is a diagram showing all the pages of the website and how they connect to each other. It helps plan the user experience before any design or coding begins."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "text": "A well-planned navigation map prevents the most common website mistake: creating a site where users cannot find what they need. Think about the user's journey first — what do they want to do, and how many clicks does it take to get there?"
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading",
+          "text": "Check Your Understanding",
+          "level": 2
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "web-q1",
+            "questionType": "mcq",
+            "text": "A photographer wants to add their company logo to their website. The logo is a vector graphic and needs to display crisp and sharp at any screen size, including on large monitors. Which image format is most appropriate?",
+            "options": [
+              "JPEG — best for photographic images",
+              "PNG — supports transparency and is widely supported",
+              "SVG — vector format that scales to any size without losing quality",
+              "GIF — supports animation and transparency"
+            ],
+            "correctIndex": 2,
+            "explanation": "SVG (Scalable Vector Graphics) is a vector format, meaning it is defined mathematically and can scale to any resolution without losing quality. It is ideal for logos and icons on websites. JPEG is for photographs; PNG is raster (pixels) so loses quality when scaled up; GIF is for simple animations."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "web-q2",
+            "questionType": "mcq",
+            "text": "Which type of hyperlink would be most appropriate to use when linking from a long product page to a 'Specifications' section lower on the same page?",
+            "options": [
+              "External link",
+              "Download link",
+              "Email link (mailto:)",
+              "Anchor link"
+            ],
+            "correctIndex": 3,
+            "explanation": "An anchor link (also called an in-page link or fragment link) jumps to a specific section of the same page identified by an id attribute. This is commonly used for 'Jump to section' navigation on long pages."
+          }
+        },
+        {
+          "type": "task",
+          "title": "Design a Website Navigation Map",
+          "software": "Google Drawings, draw.io (diagrams.net), or Microsoft Visio",
+          "intro": "Before building any website, professionals plan the structure using a navigation map. In this task you will create a professional navigation map for a client scenario.",
+          "steps": [
+            "Read the client brief: A local IT support business called 'TechFix Perth' needs a new website. They want pages for: Home, Services (with sub-pages: Laptop Repair, Network Setup, Data Recovery), About Us, Testimonials, and Contact.",
+            "Open your diagramming tool. Create a rectangle at the top of the canvas and label it 'Home' — this is the root page.",
+            "Add rectangles below for each main section: Services, About Us, Testimonials, Contact. Connect them to Home with lines (arrows pointing down from Home to each).",
+            "Under 'Services', add three sub-page boxes: Laptop Repair, Network Setup, Data Recovery. Connect them with lines from the Services box.",
+            "Label all arrows to indicate the navigation direction.",
+            "Add a footer navigation bar — in website design, the footer often contains additional links. Add a 'Footer' element at the bottom and connect it to: Home, Contact, and a Privacy Policy page.",
+            "Use colour coding: make the Home page one colour, top-level pages another colour, and sub-pages a third colour.",
+            "Review your map: How many clicks does it take to reach 'Data Recovery' from the Home page? Is that acceptable? (Industry best practice is three clicks or fewer to reach any page.)",
+            "Export your navigation map as a PDF or PNG and save as 'NavMap_TechFix_[YourName]'."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "html-and-css-fundamentals",
+      "title": "HTML and CSS Fundamentals",
+      "estimatedMinutes": 25,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "HTML and CSS Fundamentals",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Every website on the internet is built on HTML and CSS. Understanding what these files are, how they work together, and how to make basic edits is a foundational IT skill — even if you go on to use website builders, you will encounter these files when customising templates, troubleshooting layouts, or working with a developer."
+        },
+        {
+          "type": "heading",
+          "text": "What is an HTML File?",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "HTML stands for HyperText Markup Language. An HTML file (with the extension .html or .htm) is a plain text file containing markup — special tags that tell the browser how to structure and display content. HTML defines what is on the page: headings, paragraphs, images, links, tables, forms, and more."
+        },
+        {
+          "type": "keyTerms",
+          "items": [
+            {
+              "term": "Tag",
+              "definition": "An HTML instruction written inside angle brackets < >. Most tags come in pairs: an opening tag <p> and a closing tag </p>. The content between them is affected by the tag."
+            },
+            {
+              "term": "Element",
+              "definition": "A complete HTML structure made of an opening tag, content, and a closing tag. For example: <h1>Welcome</h1> is a heading element."
+            },
+            {
+              "term": "Attribute",
+              "definition": "Extra information added inside an opening tag to modify its behaviour. For example, the src attribute in <img src=\"logo.png\"> tells the browser where to find the image."
+            },
+            {
+              "term": "DOCTYPE",
+              "definition": "The declaration at the top of every HTML file: <!DOCTYPE html>. It tells the browser this is a modern HTML5 document."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Basic HTML Structure",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Every valid HTML page has the same basic structure. Here is a minimal complete HTML page:"
+        },
+        {
+          "type": "codePreview",
+          "title": "Basic HTML Page Structure",
+          "defaultCode": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>My First Page</title>\n    <link rel=\"stylesheet\" href=\"style.css\">\n  </head>\n  <body>\n\n    <header>\n      <h1>Welcome to My Website</h1>\n      <nav>\n        <a href=\"index.html\">Home</a>\n        <a href=\"about.html\">About</a>\n        <a href=\"contact.html\">Contact</a>\n      </nav>\n    </header>\n\n    <main>\n      <h2>About This Site</h2>\n      <p>This is a paragraph of content on my webpage.</p>\n      <img src=\"photo.jpg\" alt=\"A description of the image\">\n    </main>\n\n    <footer>\n      <p>&copy; 2026 My Website. All rights reserved.</p>\n    </footer>\n\n  </body>\n</html>",
+          "challenge": "Try changing the title in the <title> tag and the text in the <h1> tag. What appears in the browser tab versus what appears on the page?"
+        },
+        {
+          "type": "heading",
+          "text": "Common HTML Tags",
+          "level": 3
+        },
+        {
+          "type": "table",
+          "headers": ["Tag", "Purpose", "Example"],
+          "rows": [
+            ["<h1> to <h6>", "Headings (h1 is largest/most important)", "<h1>Main Title</h1>"],
+            ["<p>", "Paragraph of text", "<p>This is a paragraph.</p>"],
+            ["<a href=\"...\">", "Hyperlink", "<a href=\"about.html\">About Us</a>"],
+            ["<img src=\"...\" alt=\"...\">", "Image (self-closing)", "<img src=\"logo.png\" alt=\"Company logo\">"],
+            ["<ul> / <ol>", "Unordered / ordered list", "<ul><li>Item one</li></ul>"],
+            ["<div>", "Generic container (block)", "<div class=\"card\">Content</div>"],
+            ["<span>", "Generic container (inline)", "<span class=\"highlight\">text</span>"],
+            ["<table>", "Data table", "<table><tr><td>Data</td></tr></table>"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "What is a CSS File?",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "CSS stands for Cascading Style Sheets. A CSS file (with the extension .css) controls the visual presentation of an HTML page — colours, fonts, sizes, spacing, layout, and positioning. HTML defines the structure; CSS defines how it looks. Separating content (HTML) from presentation (CSS) is a fundamental principle of modern web development."
+        },
+        {
+          "type": "heading",
+          "text": "CSS Syntax",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "A CSS rule has two parts: a selector (which HTML elements to style) and a declaration block (what styles to apply). Each declaration is a property-value pair."
+        },
+        {
+          "type": "codePreview",
+          "title": "Basic CSS Styling",
+          "defaultCode": "/* This is a CSS comment */\n\n/* Style the body (entire page) */\nbody {\n  font-family: Arial, sans-serif;\n  background-color: #f4f4f4;\n  color: #333333;\n  margin: 0;\n  padding: 0;\n}\n\n/* Style all h1 headings */\nh1 {\n  font-size: 2rem;\n  color: #0056b3;\n  text-align: center;\n}\n\n/* Style paragraphs */\np {\n  font-size: 1rem;\n  line-height: 1.6;\n  margin-bottom: 16px;\n}\n\n/* Style the navigation links */\nnav a {\n  color: white;\n  text-decoration: none;\n  padding: 8px 16px;\n  background-color: #0056b3;\n  border-radius: 4px;\n  margin-right: 8px;\n}\n\n/* Change appearance when mouse hovers over a link */\nnav a:hover {\n  background-color: #003d82;\n}",
+          "challenge": "Change the background-color of the body to a different hex colour (try #ffffff for white or #1a1a2e for dark). Change the color of h1 headings to green (#2e7d32). What happens to the page appearance?"
+        },
+        {
+          "type": "heading",
+          "text": "How HTML and CSS Work Together",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "The HTML file links to the CSS file using a <link> tag in the <head> section. The browser reads the HTML for structure, then reads the CSS file and applies the matching styles. This means one CSS file can style hundreds of HTML pages — change the CSS once and all pages update automatically."
+        },
+        {
+          "type": "codePreview",
+          "title": "CSS Classes and IDs",
+          "defaultCode": "<!-- In your HTML file -->\n<div class=\"card\">\n  <h2 class=\"card-title\">Product Name</h2>\n  <p class=\"card-description\">A short description of the product.</p>\n  <button id=\"buy-btn\">Buy Now</button>\n</div>\n\n<!-- In your CSS file (style.css) -->\n/* Class selector — applies to any element with class=\"card\" */\n.card {\n  background-color: white;\n  border: 1px solid #ddd;\n  border-radius: 8px;\n  padding: 20px;\n  max-width: 300px;\n  box-shadow: 0 2px 8px rgba(0,0,0,0.1);\n}\n\n.card-title {\n  font-size: 1.25rem;\n  color: #222;\n}\n\n.card-description {\n  color: #666;\n  font-size: 0.9rem;\n}\n\n/* ID selector — applies to the unique element with id=\"buy-btn\" */\n#buy-btn {\n  background-color: #e44d26;\n  color: white;\n  border: none;\n  padding: 10px 20px;\n  border-radius: 4px;\n  cursor: pointer;\n}",
+          "challenge": "Add a second <div class=\"card\"> to the HTML section with a different product name and description. Notice that both cards automatically receive the .card styling — this is the power of CSS classes."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "heading": "Inspect Any Website",
+          "text": "Right-click on any element on any website and choose 'Inspect' (or press F12) to open Developer Tools. You can see exactly which HTML elements and CSS rules create any visual effect. This is how most developers learn — by inspecting real websites."
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading",
+          "text": "Check Your Understanding",
+          "level": 2
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "html-q1",
+            "questionType": "mcq",
+            "text": "A developer has a CSS file (style.css) and wants to link it to their HTML page. Which code should they place inside the <head> section of the HTML file?",
+            "options": [
+              "<script src=\"style.css\"></script>",
+              "<link rel=\"stylesheet\" href=\"style.css\">",
+              "<css href=\"style.css\">",
+              "<style src=\"style.css\">"
+            ],
+            "correctIndex": 1,
+            "explanation": "The correct syntax for linking an external CSS file is <link rel=\"stylesheet\" href=\"style.css\"> placed in the <head> section. The rel attribute specifies the relationship (stylesheet) and href specifies the file path."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "html-q2",
+            "questionType": "short_answer",
+            "text": "Look at this CSS rule: .card { background-color: #ffffff; padding: 20px; border-radius: 8px; } Explain what each of the three declarations does, and state what type of selector .card is.",
+            "marks": 4,
+            "explanation": ".card is a class selector (any element with class='card'). background-color: #ffffff sets the background to white; padding: 20px adds 20 pixels of space inside all four edges of the element; border-radius: 8px rounds the corners of the element by 8 pixels. [1 mark for identifying class selector; 1 mark each for each declaration explained correctly — maximum 3, total 4 marks]"
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "html-q3",
+            "questionType": "mcq",
+            "text": "What is the purpose of the alt attribute in an <img> tag?",
+            "options": [
+              "To set the size of the image on the page",
+              "To provide alternative text if the image cannot be displayed, and for screen readers used by people with visual impairments",
+              "To link the image to another page",
+              "To specify which CSS class applies to the image"
+            ],
+            "correctIndex": 1,
+            "explanation": "The alt attribute provides a text description of the image. It is displayed if the image fails to load, and is read aloud by screen readers used by visually impaired users. It also helps search engines understand the image content. Providing meaningful alt text is both an accessibility requirement and good SEO practice."
+          }
+        },
+        {
+          "type": "task",
+          "title": "Build and Style a Simple Web Page",
+          "software": "VS Code (or any text editor) + a web browser",
+          "intro": "In this task you will create a real HTML file and CSS file, link them together, and view the result in your browser.",
+          "steps": [
+            "Create a new folder on your computer called 'my-webpage'. Open VS Code and open this folder.",
+            "Create a new file called 'index.html'. Type the basic HTML structure from the code example above (DOCTYPE, html, head, body elements).",
+            "In the <head> section, add: <link rel=\"stylesheet\" href=\"style.css\"> to link your CSS file (which you will create next).",
+            "In the <body>, add a <header> with an <h1> containing your name, and a <nav> with three links: Home, Portfolio, Contact.",
+            "Add a <main> section with: an <h2> heading, two paragraphs of text about yourself or a topic of your choice, and an unordered list (<ul>) with at least four items.",
+            "Add a <footer> with a paragraph containing a copyright notice and the current year.",
+            "Create a new file called 'style.css' in the same folder.",
+            "Write CSS rules for: body (set font-family, background colour, and remove default margins), h1 (choose a colour and text-align: center), nav a (style the navigation links — remove the underline and add some padding), and the footer (add a background colour and padding).",
+            "Save both files and open index.html in your browser (double-click the file). Check that your CSS is working.",
+            "Use browser DevTools (F12) to experiment: change a colour in the Styles panel and watch it update live. Screenshot your final result and save it with your files."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "responsive-design-and-online-collaboration",
+      "title": "Responsive Design and Online Collaboration",
+      "estimatedMinutes": 18,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Responsive Design and Online Collaboration",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Modern websites must work on screens of all sizes — from a 4-inch smartphone screen to a 32-inch desktop monitor. Responsive design is the approach that makes this possible. Alongside this, today's IT teams rarely work in isolation — online collaboration tools are central to how digital products are planned, built, and maintained by distributed teams."
+        },
+        {
+          "type": "heading",
+          "text": "Responsive Design",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Responsive web design (RWD) is a design approach where a website's layout and content automatically adapt to the size of the screen displaying it. Rather than building a separate 'mobile website', a responsive site uses flexible layouts, fluid images, and CSS media queries to reformat itself for any screen."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "heading": "Responsive Design Tip",
+          "text": "Over 60% of all web traffic globally comes from mobile devices. Google uses mobile-first indexing — it primarily uses the mobile version of a website for ranking in search results. If your website is not responsive, it will rank lower in Google search and frustrate the majority of your users."
+        },
+        {
+          "type": "keyTerms",
+          "items": [
+            {
+              "term": "Responsive web design (RWD)",
+              "definition": "A design approach that makes web pages render well across a wide range of devices and screen sizes, using flexible layouts and CSS media queries."
+            },
+            {
+              "term": "Media query",
+              "definition": "A CSS rule that applies styles only when certain conditions are met — most commonly a specific screen width. For example: @media (max-width: 768px) { ... } applies styles only on screens 768px wide or narrower."
+            },
+            {
+              "term": "Breakpoint",
+              "definition": "A specific screen width at which a responsive layout changes. Common breakpoints: 480px (mobile), 768px (tablet), 1024px (desktop), 1200px (large desktop)."
+            },
+            {
+              "term": "Mobile-first design",
+              "definition": "A design philosophy where you design the mobile version of a site first, then progressively add features and layout changes for larger screens. Produces leaner, faster websites."
+            },
+            {
+              "term": "Fluid grid",
+              "definition": "A layout system that uses percentages instead of fixed pixel widths, so columns and elements resize proportionally with the screen."
+            },
+            {
+              "term": "Viewport",
+              "definition": "The visible area of a web page in a browser window. The <meta name='viewport'> tag in HTML tells mobile browsers not to zoom out and display the page at the device's actual screen width."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "How Media Queries Work",
+          "level": 3
+        },
+        {
+          "type": "codePreview",
+          "title": "CSS Media Queries for Responsive Design",
+          "defaultCode": "/* Default styles — applied on ALL screen sizes (mobile first) */\n.container {\n  width: 100%;        /* Full width on small screens */\n  padding: 10px;\n}\n\n.card {\n  width: 100%;        /* Each card takes full width on mobile */\n  margin-bottom: 16px;\n}\n\nnav {\n  display: flex;\n  flex-direction: column;   /* Navigation stacks vertically on mobile */\n}\n\n/* Tablet — screens wider than 768px */\n@media (min-width: 768px) {\n  .container {\n    max-width: 720px;\n    margin: 0 auto;         /* Centre the container */\n  }\n\n  .card {\n    width: 48%;             /* Two cards side by side on tablet */\n    display: inline-block;\n  }\n\n  nav {\n    flex-direction: row;    /* Navigation goes horizontal on tablet */\n  }\n}\n\n/* Desktop — screens wider than 1024px */\n@media (min-width: 1024px) {\n  .container {\n    max-width: 960px;\n  }\n\n  .card {\n    width: 30%;             /* Three cards in a row on desktop */\n  }\n}",
+          "challenge": "In the code above, identify what happens to .card width at each breakpoint: on mobile, on tablet (768px+), and on desktop (1024px+). How many cards would appear in each row at each screen size?"
+        },
+        {
+          "type": "heading",
+          "text": "Online Collaboration",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "IT professionals rarely work alone. Web development teams, software projects, and IT support departments all rely on online collaboration tools to communicate, share files, track tasks, and manage code. Knowing which tools are used for which purposes is important for workplace readiness."
+        },
+        {
+          "type": "heading",
+          "text": "Types of Online Collaboration",
+          "level": 3
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Real-time communication — instant messaging and video calls for immediate team communication",
+            "Document collaboration — multiple people editing the same document simultaneously",
+            "Project and task management — tracking who is doing what and by when",
+            "Version control — tracking changes to code and allowing multiple developers to work on the same project without conflicts",
+            "Cloud file storage and sharing — storing and sharing files accessible from any device"
+          ]
+        },
+        {
+          "type": "table",
+          "headers": ["Tool", "Provider", "Primary use", "Best for"],
+          "rows": [
+            ["Google Docs / Sheets / Slides", "Google Workspace", "Real-time document collaboration", "Teams that need simultaneous document editing with comments and version history"],
+            ["Microsoft Teams", "Microsoft 365", "Chat, video calls, file sharing, integration with Office", "Corporate environments using Microsoft products; combining meetings and documents in one platform"],
+            ["Slack", "Salesforce", "Channel-based team messaging and file sharing", "Tech startups and development teams; organising conversations by topic/project"],
+            ["GitHub", "Microsoft", "Version control and code collaboration", "Software developers; tracking code changes, reviewing pull requests, managing projects"],
+            ["Trello / Jira", "Atlassian", "Project and task management (Kanban/Agile)", "Managing development sprints, tracking bugs, assigning and completing tasks"],
+            ["Figma", "Figma", "Collaborative UI/UX design", "Design teams working together on website and app mockups in real time"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "heading": "Web Developer Career — Collaboration Tools",
+          "text": "In a real IT workplace, you might use Slack to chat with your team, Jira to track which features you are building, GitHub to manage your code, Figma to review the designer's mockups, and Google Docs to write your documentation — all on the same day. Employers expect graduates to be able to pick up these tools quickly."
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading",
+          "text": "Check Your Understanding",
+          "level": 2
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "resp-q1",
+            "questionType": "mcq",
+            "text": "A CSS file contains the rule: @media (max-width: 600px) { .sidebar { display: none; } }. What will happen when a user views the page on a smartphone with a 390px wide screen?",
+            "options": [
+              "The sidebar will be displayed normally as on a desktop",
+              "The sidebar will be hidden because the screen width is less than 600px",
+              "The entire page will not display on screens narrower than 600px",
+              "The sidebar will move to the bottom of the page"
+            ],
+            "correctIndex": 1,
+            "explanation": "The media query applies when the screen is 600px wide or narrower. A 390px smartphone screen meets this condition, so the rule display: none will hide the sidebar. This is a common responsive design technique — removing secondary content on small screens to prioritise the main content."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "resp-q2",
+            "questionType": "mcq",
+            "text": "An IT development team uses GitHub for their project. What is the primary purpose of GitHub in a collaborative development context?",
+            "options": [
+              "To create and share design mockups between team members",
+              "To manage version control of code and allow multiple developers to work on the same project without conflicts",
+              "To hold team video meetings and share screens",
+              "To track project tasks on a Kanban board"
+            ],
+            "correctIndex": 1,
+            "explanation": "GitHub's primary purpose is version control (built on Git). It tracks every change to the codebase, allows multiple developers to work on separate branches simultaneously, and enables code review before changes are merged. While GitHub has added project management features, version control is its core function."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "resp-q3",
+            "questionType": "short_answer",
+            "text": "Explain what 'mobile-first design' means and give two reasons why it is recommended practice for web development today.",
+            "marks": 3,
+            "explanation": "Mobile-first design means designing the mobile version of a website first, then adding layout changes for larger screens using media queries. Reasons it is recommended: (1) Over 60% of web traffic comes from mobile devices — designing for the majority of users first makes sense. (2) Google uses mobile-first indexing, so non-responsive sites rank lower in search results. (3) Starting small forces designers to prioritise essential content, resulting in leaner, faster sites. [1 mark for correct definition; 2 marks for any two valid reasons]"
+          }
+        },
+        {
+          "type": "activity",
+          "title": "Collaboration Tool Matching",
+          "instruction": "Match each collaboration tool to its primary use case.",
+          "pairs": [
+            { "term": "GitHub", "definition": "Version control and code collaboration for development teams" },
+            { "term": "Slack", "definition": "Channel-based team messaging organised by project or topic" },
+            { "term": "Figma", "definition": "Collaborative UI/UX design and website mockups" },
+            { "term": "Jira", "definition": "Agile project and task management with sprint tracking" },
+            { "term": "Google Docs", "definition": "Real-time document editing with simultaneous multiple users" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "integrated-digital-production-project",
+      "title": "Integrated Digital Production Project",
+      "estimatedMinutes": 45,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Integrated Digital Production Project",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "This lesson brings together all the skills from Unit 4 Application Skills: animation, audio editing, web authoring, HTML and CSS, and responsive design. You will work on a real client scenario, producing a mini website and digital product that combines all these skills. This mirrors the kind of integrated digital production task you may face in your SCSA external assessment."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "text": "This project is designed to take approximately 40–45 minutes for the planning and production phases, plus additional time for refinement. Work through the scenario carefully — read the brief, plan before you build, and check the requirements at the end."
+        },
+        {
+          "type": "scenarioChallenge",
+          "title": "Client Scenario: SoundWave Music School",
+          "scenario": "SoundWave Music School is a new music school opening in Perth. They have hired you as their junior web developer and digital media producer. The school director, Ms Rivera, has provided the following brief:\n\n\"We need a simple website to attract new students. We want a professional homepage that introduces the school and our teaching approach. We also need a short audio introduction (30–60 seconds) that could play as a welcome message, and we'd like a simple animated banner for our homepage that shows our logo and tagline. The website must work on mobile phones as well as desktop computers. We are aiming for a professional, calm, and modern look.\"\n\nYour task is to plan and partially build this digital product suite, demonstrating skills in web authoring, audio production, animation, and responsive design.",
+          "questions": [
+            {
+              "question": "Planning — Navigation Map: Design a navigation map for the SoundWave website. Include at minimum: Home, About, Courses (with sub-pages for at least three course types), Teachers, and Contact. Justify your structure in two sentences.",
+              "marks": 4
+            },
+            {
+              "question": "Web Authoring — HTML Page: Create an index.html file for the SoundWave homepage. Include: a <header> with the school name as an <h1>, a <nav> with links to all main sections, a <main> section with a welcome heading, two paragraphs about the school, and an unordered list of three key features. Add a <footer> with contact details.",
+              "marks": 6
+            },
+            {
+              "question": "CSS and Responsive Design: Write a style.css file that styles your homepage. Requirements: set a font-family and colour scheme suitable for a music school; style the navigation links; add a media query that changes the navigation layout from horizontal (desktop) to vertical (mobile) at 768px or narrower. Explain in a comment in your CSS why you chose the mobile breakpoint value you used.",
+              "marks": 6
+            },
+            {
+              "question": "Audio Production: Using Audacity, record the following script as a 30–60 second audio clip and export it as both MP3 (128kbps) and WAV: 'Welcome to SoundWave Music School. Whether you're a complete beginner or a returning musician, we have a course for you. Our experienced teachers offer lessons in guitar, piano, voice, and drums. Call us today to book a free trial lesson.' Apply noise reduction and normalise the audio before exporting.",
+              "marks": 5
+            },
+            {
+              "question": "Animation: In Adobe Animate (or your available animation tool), create a 3-second animated banner (800×200px) for the SoundWave homepage. The banner must include: the school name appearing via a motion tween (fades in or slides in), the tagline 'Music for everyone' appearing after the name, and at least one animated shape or graphic element. Export as an animated GIF.",
+              "marks": 5
+            },
+            {
+              "question": "Reflection: Describe two specific decisions you made during this project that were influenced by the target audience (new music students) or the client's requirements. For each decision, explain what you did and why.",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading",
+          "text": "Production Checklist",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Before submitting your project, use this checklist to verify your work meets all requirements."
+        },
+        {
+          "type": "list",
+          "style": "numbered",
+          "items": [
+            "Navigation map: all required pages included, structure is logical, sub-pages connected correctly",
+            "index.html: valid HTML structure with DOCTYPE, head, body; all required elements present",
+            "style.css: linked correctly to HTML; font-family and colour scheme applied; navigation styled; media query present and functional",
+            "Audio: recording is 30–60 seconds; noise reduction applied; normalised; exported as both MP3 (128kbps) and WAV",
+            "Animation: banner is 800×200px; name and tagline both appear with animation; minimum 3 seconds; exported as animated GIF",
+            "All files named professionally (e.g., index.html, style.css, SoundWave_Banner.gif, SoundWave_Welcome.mp3)"
+          ]
+        },
+        {
+          "type": "task",
+          "title": "Project Submission and Peer Review",
+          "software": "All tools used throughout the unit",
+          "intro": "After completing the SoundWave project, you will conduct a structured peer review of a classmate's work.",
+          "steps": [
+            "Collect all your project files into a single folder named 'SoundWave_[YourName]'. Ensure all six deliverables are present: navigation map, index.html, style.css, MP3 audio, WAV audio, and animated GIF banner.",
+            "Open your index.html in a browser. Resize the browser window to a narrow width (approximately 375px to simulate a mobile screen). Verify that the navigation changes layout as intended by your media query.",
+            "Open Developer Tools (F12) and use the device toolbar (Ctrl+Shift+M in Chrome) to preview your page on iPhone SE and iPad screen sizes. Take a screenshot of each view.",
+            "Exchange your project folder with a classmate. Open their index.html and style.css. Check: Does the page structure match the navigation map? Is the CSS linked and working? Does the responsive layout work on mobile?",
+            "Listen to your classmate's audio. Evaluate: Is it within 30–60 seconds? Does it sound professional? Is there noticeable background noise? Is the volume consistent?",
+            "View your classmate's animated banner. Evaluate: Does the school name and tagline appear with animation? Is it visually appropriate for a music school?",
+            "Write three specific pieces of feedback for your classmate using this structure: 'What worked well: [specific observation]', 'One improvement: [specific, actionable suggestion]', 'A question I have: [something you are curious about their decision]'.",
+            "Receive your classmate's feedback. Make at least one improvement to your own project based on their feedback. Note what you changed and why in a brief comment at the top of your HTML file."
+          ]
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading",
+          "text": "Unit 4 Application Skills — Revision",
+          "level": 2
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "proj-q1",
+            "questionType": "mcq",
+            "text": "A student exports their animation as an animated GIF for a client's website banner. The file is 4.2MB. What is the most likely cause of this large file size and what should the student do?",
+            "options": [
+              "The animation is too long; shorten it to under 1 second to reduce file size",
+              "The GIF has too many colours and/or frames; reduce the colour palette, frame rate, or dimensions to reduce file size",
+              "GIF files are always large; the student should switch to MP4 for web use",
+              "The file size is within an acceptable range for web use"
+            ],
+            "correctIndex": 1,
+            "explanation": "GIF file size is determined by the number of colours (GIFs support a maximum of 256), the number of frames, and the image dimensions. To reduce the file size: reduce the colour palette to the minimum needed, lower the frame rate, reduce the canvas size, or consider using WebP animation or CSS animation as a more efficient alternative. 4.2MB is too large for a web banner — aim for under 500KB."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "proj-q2",
+            "questionType": "mcq",
+            "text": "A web developer is working on a team project. They need to work on the 'contact page' while a colleague works on the 'homepage' simultaneously, without their changes interfering with each other. Which collaboration tool and feature is most appropriate?",
+            "options": [
+              "Google Docs — use different sections of the same document for each page",
+              "Slack — coordinate who is working on what via the team channel",
+              "GitHub — use separate branches for each feature; merge when complete",
+              "Trello — create a card for each page and assign team members"
+            ],
+            "correctIndex": 2,
+            "explanation": "GitHub branches allow each developer to work on a separate copy of the codebase. When each feature is complete and tested, the branches are merged back into the main codebase. This is the standard workflow for collaborative software development and prevents one developer's changes from breaking another's work."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "proj-q3",
+            "questionType": "short_answer",
+            "text": "A client asks you to add a short music clip to their website homepage. Describe the steps you would take to prepare and export the audio file for web use, including the format and settings you would choose and why.",
+            "marks": 5,
+            "explanation": "Model answer should include: (1) Import/record the audio in a lossless format (WAV) in Audacity. (2) Edit: trim unwanted sections, apply noise reduction if needed, add fade in/out, normalise to -1dB. (3) Keep the clip short (under 60 seconds for a homepage). (4) Export as MP3 at 128kbps (or OGG as an alternative) — because MP3 has excellent browser support, 128kbps is sufficient quality for music on a website, and the file size will be small enough not to impact page load time. (5) Consider also providing a WAV master for future editing. [1 mark each for editing, format choice with justification, bit rate choice with justification, consideration of file size, and lossless master]"
+          }
+        }
+      ]
+    }
+  ]
+}

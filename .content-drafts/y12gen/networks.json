@@ -1,0 +1,909 @@
+{
+  "id": "networks",
+  "title": "Networks",
+  "description": "Year 12 Unit 4",
+  "lessons": [
+    {
+      "id": "why-networks-matter",
+      "title": "Why Networks Matter",
+      "estimatedMinutes": 20,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "What is a Computer Network?",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "A computer network is two or more devices connected together so they can communicate and share resources. Networks underpin almost everything in modern business — from sending an email to processing a credit card payment. Understanding networking is foundational for any IT career."
+        },
+        {
+          "type": "keyTerms",
+          "items": [
+            {
+              "term": "Computer Network",
+              "definition": "Two or more devices connected together to share resources, data, and services."
+            },
+            {
+              "term": "LAN (Local Area Network)",
+              "definition": "A network covering a single building or site — such as an office, school, or home."
+            },
+            {
+              "term": "WAN (Wide Area Network)",
+              "definition": "A network spanning large geographic distances — connecting offices in different cities or countries."
+            },
+            {
+              "term": "Internet",
+              "definition": "A global WAN — a vast interconnection of millions of networks that allows worldwide communication."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Types of Networks",
+          "level": 2
+        },
+        {
+          "type": "table",
+          "headers": ["Type", "Full Name", "Coverage", "Real-World Example"],
+          "rows": [
+            ["LAN", "Local Area Network", "Single building or site", "Office computers connected to a shared server and printer"],
+            ["WAN", "Wide Area Network", "Multiple cities / countries", "A bank's branch offices connected to head office"],
+            ["Internet", "Interconnected Networks", "Global", "Billions of devices connected worldwide via ISPs"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Advantages of Networking",
+          "level": 2
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Resource sharing — printers, scanners, and storage can be shared across many users, reducing costs",
+            "File sharing — staff can access and collaborate on the same documents from any connected device",
+            "Communication — email, video calls, and messaging work through the network",
+            "Centralised management — IT staff can update software, apply security patches, and manage user accounts from one location",
+            "Internet access — a single internet connection can be shared across all devices on the network",
+            "Data backup — files stored on a central server are easier to back up regularly"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Disadvantages of Networking",
+          "level": 2
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Setup cost — cabling, switches, routers, and servers require significant upfront investment",
+            "Security risks — a connected network can be attacked; one infected device can spread malware to all",
+            "Dependence on infrastructure — if the network goes down, staff may be unable to work",
+            "Requires technical expertise — networks need skilled staff to set up, maintain, and troubleshoot",
+            "Privacy concerns — shared resources require careful access control to protect sensitive data"
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "insight",
+          "heading": "Industry Insight: Why Networks Are Business-Critical",
+          "text": "A 2023 Gartner study estimated that unplanned network downtime costs businesses an average of $5,600 per minute. For a large organisation, a one-hour outage can cost hundreds of thousands of dollars in lost productivity, sales, and reputation. Network reliability is not just an IT issue — it's a business continuity issue."
+        },
+        {
+          "type": "heading",
+          "text": "Business Networking Needs",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Different businesses have different networking requirements. A small business with five staff has very different needs to a hospital or a university. When designing or evaluating a network, IT professionals consider: the number of users, the types of tasks performed, security requirements, budget, and physical layout of the building."
+        },
+        {
+          "type": "table",
+          "headers": ["Business Size", "Typical Needs", "Key Consideration"],
+          "rows": [
+            ["Small (1–10 staff)", "Shared internet, shared printer, file server or cloud storage", "Cost and simplicity"],
+            ["Medium (10–100 staff)", "Dedicated server, managed switches, VLAN segmentation, firewall", "Security and reliability"],
+            ["Large (100+ staff)", "Multiple servers, redundant links, data centre, 24/7 monitoring", "Uptime and scalability"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "career",
+          "heading": "Network Admin Career Path",
+          "text": "Networking skills open doors to high-demand roles:\n\n• IT Support Technician — entry-level, $55,000–$70,000/yr; installs and troubleshoots network connections\n• Network Administrator — manages and maintains organisation networks, $75,000–$95,000/yr\n• Network Engineer — designs and builds complex networks, $90,000–$120,000/yr\n• Cloud Network Architect — designs cloud-based network infrastructure, $130,000+/yr\n\nCertifications such as CompTIA Network+, Cisco CCNA, and AWS Certified Advanced Networking are highly valued by employers in Australia."
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading",
+          "text": "Check Your Understanding",
+          "level": 2
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "wnm-q1",
+            "questionType": "mcq",
+            "text": "A business has three offices in different Australian cities. Each office has its own internal network. What type of network connects all three offices together?",
+            "options": [
+              "LAN — Local Area Network",
+              "PAN — Personal Area Network",
+              "WAN — Wide Area Network",
+              "WLAN — Wireless Local Area Network"
+            ],
+            "correctIndex": 2,
+            "explanation": "A WAN (Wide Area Network) spans large geographic areas, connecting networks in different cities or countries. The internet is the world's largest WAN. A LAN only covers a single building or site."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "wnm-q2",
+            "questionType": "mcq",
+            "text": "Which of the following is a DISADVANTAGE of computer networking?",
+            "options": [
+              "Multiple users can share a single printer",
+              "Staff can access files from any device on the network",
+              "A virus on one device can spread to all networked devices",
+              "Software updates can be deployed centrally"
+            ],
+            "correctIndex": 2,
+            "explanation": "One significant disadvantage of networking is that security threats can spread quickly. Malware, ransomware, or viruses on one machine can propagate to every device connected to the same network if not properly contained."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "wnm-q3",
+            "questionType": "extended",
+            "text": "Explain TWO advantages and ONE disadvantage of networking computers in a small legal firm with eight employees. In your answer, refer to the specific needs of this type of business.",
+            "marks": 6,
+            "explanation": "Strong answers will identify advantages relevant to a legal firm (e.g. shared access to case files/documents on a central server; shared printer/scanner for paperwork; easier data backup of confidential client files) and a relevant disadvantage (e.g. security risk — legal firms hold sensitive client data and a network breach could expose confidential information and breach professional obligations). Award 2 marks per well-explained point with business context."
+          }
+        }
+      ]
+    },
+    {
+      "id": "transmission-media",
+      "title": "Transmission Media",
+      "estimatedMinutes": 20,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "How Data Travels Across a Network",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Data must travel from one device to another through some form of transmission medium. The choice of medium affects speed, reliability, cost, and suitability for different environments. There are three main categories: optic fibre, copper wired, and wireless."
+        },
+        {
+          "type": "keyTerms",
+          "items": [
+            {
+              "term": "Transmission Medium",
+              "definition": "The physical or wireless path through which data travels between network devices."
+            },
+            {
+              "term": "Transmission Rate",
+              "definition": "The speed at which data is transferred across a network, measured in bits per second (bps). Common units: Mbps (megabits per second) and Gbps (gigabits per second)."
+            },
+            {
+              "term": "Bandwidth",
+              "definition": "The maximum amount of data that can be transmitted over a network connection in a given time — like the width of a pipe."
+            },
+            {
+              "term": "Latency",
+              "definition": "The delay between sending and receiving data — measured in milliseconds (ms). Low latency is critical for video calls and gaming."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Optic Fibre",
+          "level": 2
+        },
+        {
+          "type": "richText",
+          "heading": "How Optic Fibre Works",
+          "html": "<p>Optic fibre transmits data as <strong>pulses of light</strong> through thin strands of glass or plastic. Light travels at close to 200,000 km/s through the fibre, making it the fastest transmission medium available.</p><pre style='background:#f4f4f4;padding:12px;border-radius:6px;font-family:monospace;font-size:13px;'>Light source                       Light detector\n   [LASER] ===~~~~~~~~~~~~~~~~~~~~=== [RECEIVER]\n             glass/plastic fibre\n             (hair-thin strand)\n\nData encoded as light pulses:\n  ON  = 1\n  OFF = 0</pre><p>Fibre is used in long-distance infrastructure (undersea cables, city backbones) and increasingly in homes and businesses via NBN fibre connections.</p>"
+        },
+        {
+          "type": "heading",
+          "text": "Copper Wired (Ethernet)",
+          "level": 2
+        },
+        {
+          "type": "richText",
+          "heading": "How Ethernet Cable Works",
+          "html": "<p>Ethernet cables (Cat5e, Cat6, Cat6a) use <strong>copper wire</strong> to transmit data as electrical signals. They are the standard for wired connections within office LANs.</p><pre style='background:#f4f4f4;padding:12px;border-radius:6px;font-family:monospace;font-size:13px;'>Device A                           Device B\n [PC] ---[===copper cable===]--- [Switch]\n\nCat5e: up to 1 Gbps  (100m)\nCat6:  up to 10 Gbps (55m)\nCat6a: up to 10 Gbps (100m)</pre>"
+        },
+        {
+          "type": "heading",
+          "text": "Wireless (Wi-Fi)",
+          "level": 2
+        },
+        {
+          "type": "richText",
+          "heading": "How Wireless Transmission Works",
+          "html": "<p>Wireless networks transmit data as <strong>radio waves</strong> through the air. A Wireless Access Point (WAP) sends and receives signals, allowing devices to connect without physical cables.</p><pre style='background:#f4f4f4;padding:12px;border-radius:6px;font-family:monospace;font-size:13px;'>        )))  Wi-Fi signal  (((\n[WAP] ~~~~~~~~~~~~~~~~~~~~~  [Laptop]\n        radio waves\n\nWi-Fi 5 (802.11ac): up to ~3.5 Gbps\nWi-Fi 6 (802.11ax): up to ~9.6 Gbps\n(real-world speeds much lower due to walls/interference)</pre>"
+        },
+        {
+          "type": "heading",
+          "text": "Comparing Transmission Media",
+          "level": 2
+        },
+        {
+          "type": "table",
+          "headers": ["Feature", "Optic Fibre", "Copper Wired (Ethernet)", "Wireless (Wi-Fi)"],
+          "rows": [
+            ["Transmission speed", "Up to 100 Gbps+", "Up to 10 Gbps (Cat6a)", "Up to 9.6 Gbps (Wi-Fi 6, theoretical)"],
+            ["Real-world speed", "Very fast, consistent", "Fast, consistent", "Variable — affected by interference, distance"],
+            ["Reliability", "Excellent — no interference", "Very good", "Good, but can drop in crowded areas"],
+            ["Maximum distance", "Kilometres (with repeaters)", "~100 metres", "~50–100m indoors (walls reduce range)"],
+            ["Cost", "High — expensive to install", "Moderate — cabling + installation", "Lower setup cost, no cabling"],
+            ["Security", "Very secure — hard to tap", "Secure — physical access required", "Less secure — signals can be intercepted"],
+            ["Mobility", "None — fixed cable", "None — fixed cable", "High — connect from anywhere in range"],
+            ["Best for", "ISP backbone, NBN, long runs", "Office desktop PCs, servers", "Laptops, phones, tablets, IoT devices"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Transmission Rates",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Transmission rate (also called data transfer rate or bandwidth) is the speed at which data moves across a network. It is measured in bits per second (bps). When choosing a network medium, higher transmission rates mean faster file transfers, better video streaming quality, and more users supported simultaneously."
+        },
+        {
+          "type": "table",
+          "headers": ["Unit", "Abbreviation", "Equivalent", "Context"],
+          "rows": [
+            ["Kilobits per second", "Kbps", "1,000 bits/sec", "Old dial-up internet (56 Kbps)"],
+            ["Megabits per second", "Mbps", "1,000,000 bits/sec", "NBN home internet (25–250 Mbps typical)"],
+            ["Gigabits per second", "Gbps", "1,000,000,000 bits/sec", "Office Ethernet, fibre backbone"],
+            ["Terabits per second", "Tbps", "1,000 Gbps", "Undersea fibre cables, data centre links"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "heading": "Bits vs Bytes",
+          "text": "Network speeds are measured in bits (b), while file sizes are measured in bytes (B). There are 8 bits in a byte. A 100 Mbps connection downloads at approximately 12.5 MB/s. This is why internet marketing uses Mbps — it sounds faster than MB/s!"
+        },
+        {
+          "type": "heading",
+          "text": "Business vs Home: Which Medium?",
+          "level": 2
+        },
+        {
+          "type": "comparison",
+          "title": "Home vs Business Network Media Choices",
+          "items": [
+            {
+              "label": "Home Network",
+              "points": [
+                "Wireless (Wi-Fi) for phones, tablets, laptops — convenience is priority",
+                "NBN (optic fibre or copper to the premises) for internet connection",
+                "Some households use Ethernet for smart TVs or gaming consoles (better reliability)",
+                "Cost is a key factor — minimal cabling preferred"
+              ]
+            },
+            {
+              "label": "Business / Office Network",
+              "points": [
+                "Ethernet (copper Cat6) for desktop PCs, servers, and printers — reliability and speed",
+                "Wi-Fi for laptops, phones, and meeting rooms — flexibility for mobile workers",
+                "Fibre backbone between floors or between buildings on a campus",
+                "High uptime requirements justify higher infrastructure costs"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "insight",
+          "heading": "Industry Insight: The NBN and Fibre Rollout",
+          "text": "Australia's National Broadband Network (NBN) uses a mix of technologies — Fibre to the Premises (FTTP), Fibre to the Node (FTTN), and Hybrid Fibre Coaxial (HFC). Network engineers working for NBN Co, Telstra, and ISPs manage this infrastructure daily. Understanding transmission media is essential for roles in telecommunications and network installation."
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading",
+          "text": "Check Your Understanding",
+          "level": 2
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "tm-q1",
+            "questionType": "mcq",
+            "text": "Which transmission medium transmits data as pulses of light through glass strands?",
+            "options": [
+              "Copper Ethernet cable",
+              "Wireless (Wi-Fi)",
+              "Optic fibre",
+              "Coaxial cable"
+            ],
+            "correctIndex": 2,
+            "explanation": "Optic fibre uses pulses of light — generated by a laser or LED — to transmit data through thin glass or plastic strands. This allows very high speeds over long distances without electrical interference."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "tm-q2",
+            "questionType": "mcq",
+            "text": "A network technician is setting up a busy open-plan office with 40 desktop PCs that need fast, reliable connections. They need consistent speed for large file transfers. Which transmission medium is MOST appropriate for connecting the desktop PCs?",
+            "options": [
+              "Wireless (Wi-Fi) — no cabling needed",
+              "Copper Ethernet (Cat6) — fast and reliable wired connection",
+              "Optic fibre to each desktop — fastest option",
+              "Bluetooth — easiest to set up"
+            ],
+            "correctIndex": 1,
+            "explanation": "Copper Ethernet (Cat6) is the standard choice for office desktop PCs. It provides consistent Gigabit speeds, is not affected by wireless interference, and is cost-effective for a fixed installation. Optic fibre to every desktop would be unnecessarily expensive; Wi-Fi is less reliable under heavy load."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "tm-q3",
+            "questionType": "mcq",
+            "text": "A file is 500 MB in size. Approximately how long would it take to transfer over a 100 Mbps network connection?",
+            "options": [
+              "5 seconds",
+              "40 seconds",
+              "500 seconds",
+              "4 seconds"
+            ],
+            "correctIndex": 1,
+            "explanation": "500 MB = 500 × 8 = 4,000 Mb. At 100 Mbps: 4,000 ÷ 100 = 40 seconds. Remember to convert bytes to bits (multiply by 8) before dividing by the connection speed in Mbps."
+          }
+        }
+      ]
+    },
+    {
+      "id": "network-components",
+      "title": "Network Components",
+      "estimatedMinutes": 20,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "The Hardware That Makes a Network Work",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Every network is built from a set of physical components, each with a specific role. Understanding what each component does — and why it is needed — allows IT professionals to set up, maintain, and troubleshoot networks effectively. This lesson uses a real office network scenario to bring the components to life."
+        },
+        {
+          "type": "richText",
+          "heading": "A Typical Small Business Office Network",
+          "html": "<pre style='background:#f4f4f4;padding:16px;border-radius:6px;font-family:monospace;font-size:12px;line-height:1.6;'>\n                        INTERNET\n                           |\n                        [MODEM]\n                           |\n                        [ROUTER]\n                           |\n                 ________[SWITCH]________\n                |          |            |\n            [Server]    [PC 1]      [PC 2]\n            (files,\n            backups)      |            |\n                       [NIC]        [NIC]\n\n         Wi-Fi signal from router:\n              )))(((   )))(((   )))(((  \n             [Laptop] [Phone] [Tablet]\n</pre><p>Each component in this diagram has a specific purpose — removing any one of them would break part of the network.</p>"
+        },
+        {
+          "type": "heading",
+          "text": "Core Network Components",
+          "level": 2
+        },
+        {
+          "type": "grid",
+          "title": "What Each Component Does",
+          "items": [
+            {
+              "icon": "🖥️",
+              "label": "Server",
+              "description": "A powerful computer that provides services to other devices (clients) on the network. Stores shared files, hosts applications, manages user accounts, and handles backups. In a business, the server is the central hub for data and services."
+            },
+            {
+              "icon": "📡",
+              "label": "Router",
+              "description": "Connects your network to the internet (and to other networks). Directs data packets to the correct destination — inside the network or out to the internet. Assigns IP addresses to devices via DHCP. Usually connects to the modem."
+            },
+            {
+              "icon": "🔌",
+              "label": "Network Interface Card (NIC)",
+              "description": "Hardware inside every networked device (PC, server, printer) that allows it to connect to a network. Wired NICs have an Ethernet port; wireless NICs have a Wi-Fi antenna built in. Every NIC has a unique MAC address."
+            },
+            {
+              "icon": "🔀",
+              "label": "Switch",
+              "description": "Connects multiple wired devices on the same LAN. Intelligently sends data only to the intended device (unlike an older hub which broadcast to all). An office might have one or more switches connecting dozens of PCs, printers, and servers."
+            },
+            {
+              "icon": "📶",
+              "label": "Modem",
+              "description": "Connects your network to the internet via your ISP (Internet Service Provider). Converts the ISP's signal (phone line, cable, or fibre) into a format your router can use. MOdulator-DEModulator — converts digital to analogue and back."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Component Function Comparison",
+          "level": 2
+        },
+        {
+          "type": "table",
+          "headers": ["Component", "OSI Layer", "Key Function", "Connects To", "Without It..."],
+          "rows": [
+            ["Modem", "Physical", "Converts ISP signal for local network", "ISP line + Router", "No internet connection"],
+            ["Router", "Network (Layer 3)", "Routes packets between networks; assigns IP addresses", "Modem + Switch/WAP", "Devices cannot communicate with internet or other networks"],
+            ["Switch", "Data Link (Layer 2)", "Connects multiple wired devices on the same LAN", "Router + all wired devices", "Only one device can connect wired to the router"],
+            ["NIC", "Physical/Data Link", "Allows a device to connect to the network", "Inside every device", "That device cannot join the network"],
+            ["Server", "Application", "Provides shared services (files, apps, email)", "Switch (usually wired)", "No centralised storage, authentication, or services"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "heading": "Modem + Router Combo Units",
+          "text": "In home and small office setups, the modem and router are often combined into one device (a 'gateway' or 'modem-router'). In larger businesses, they are kept separate so each can be configured and upgraded independently. Network engineers always distinguish between the two functions."
+        },
+        {
+          "type": "heading",
+          "text": "The Role of the Server",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "In a business network, the server is critical. It runs continuously (24/7) and provides services that all users depend on. Common server roles include:"
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "File server — stores and manages shared files and folders that staff access from their own PCs",
+            "Print server — manages print jobs sent to shared printers from any device",
+            "Domain controller / authentication server — verifies usernames and passwords when staff log in",
+            "Web server — hosts internal websites or external customer-facing sites",
+            "Backup server — automatically backs up data from all devices on the network",
+            "Email server — manages all incoming and outgoing email for the organisation"
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "career",
+          "heading": "Network Admin Career Path: Server Skills",
+          "text": "Server administration is a core competency for Network Administrators and Systems Administrators. In Australia, Microsoft Windows Server and Linux (Ubuntu Server, Red Hat) are the dominant server platforms. Certifications: Microsoft Certified: Azure Administrator, CompTIA Server+. Entry-level roles in server support typically start at $60,000–$75,000/yr."
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading",
+          "text": "Check Your Understanding",
+          "level": 2
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "nc-q1",
+            "questionType": "mcq",
+            "text": "In a small business office, which device is responsible for directing data packets between the local network and the internet?",
+            "options": [
+              "Switch",
+              "Server",
+              "NIC",
+              "Router"
+            ],
+            "correctIndex": 3,
+            "explanation": "The router directs (routes) data packets between networks — including between your local network (LAN) and the internet. It uses IP addresses to determine where each packet should go. The switch connects devices within the LAN but does not route to the internet."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "nc-q2",
+            "questionType": "mcq",
+            "text": "A PC in the office cannot connect to the network. The technician discovers the network port on the PC is not working. Which component is most likely faulty?",
+            "options": [
+              "The router",
+              "The switch",
+              "The NIC (Network Interface Card)",
+              "The modem"
+            ],
+            "correctIndex": 2,
+            "explanation": "The NIC (Network Interface Card) is the hardware inside the PC that provides the network port (Ethernet socket). If the port is faulty, the NIC needs to be replaced. The router and switch would still work for other devices — only this one PC is affected."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "nc-q3",
+            "questionType": "matching",
+            "text": "Match each network component to its primary function.",
+            "pairs": [
+              { "term": "Modem", "definition": "Connects the local network to the internet via the ISP" },
+              { "term": "Switch", "definition": "Connects multiple wired devices on the same LAN" },
+              { "term": "Server", "definition": "Provides shared files, applications, and services to client devices" },
+              { "term": "NIC", "definition": "Hardware that allows a device to physically connect to a network" },
+              { "term": "Router", "definition": "Routes data packets between networks and assigns IP addresses" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "network-topologies",
+      "title": "Network Topologies",
+      "estimatedMinutes": 25,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "What is a Network Topology?",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Network topology describes how devices are arranged and connected in a network — both the physical layout of cables and devices, and the logical flow of data. Choosing the right topology affects performance, reliability, cost, and ease of management. The Australian curriculum focuses on four topologies relevant to LANs."
+        },
+        {
+          "type": "keyTerms",
+          "items": [
+            {
+              "term": "Network Topology",
+              "definition": "The arrangement of devices and connections in a network — how they are physically or logically structured."
+            },
+            {
+              "term": "Node",
+              "definition": "Any device connected to a network (PC, printer, server, phone, etc.)."
+            },
+            {
+              "term": "LAN (Local Area Network)",
+              "definition": "A network covering a single site — the context for all four topologies studied in this topic."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "1. Wired Star Topology",
+          "level": 2
+        },
+        {
+          "type": "richText",
+          "heading": "Diagram: Wired Star",
+          "html": "<pre style='background:#f4f4f4;padding:16px;border-radius:6px;font-family:monospace;font-size:13px;line-height:1.8;'>\n         [PC 1]\n            |\n[PC 4] ---[SWITCH]--- [PC 2]\n            |\n         [PC 3]\n            |\n         [Server]\n\nAll devices connect via cables to a central switch.\nIf one cable fails, only that device is affected.\n</pre>"
+        },
+        {
+          "type": "paragraph",
+          "text": "In a wired star topology, every device connects to a central switch using Ethernet cables. The switch manages all communication between devices. This is the most common topology in modern business office networks."
+        },
+        {
+          "type": "heading",
+          "text": "2. Wireless Topology",
+          "level": 2
+        },
+        {
+          "type": "richText",
+          "heading": "Diagram: Wireless",
+          "html": "<pre style='background:#f4f4f4;padding:16px;border-radius:6px;font-family:monospace;font-size:13px;line-height:1.8;'>\n    [Laptop]   [Phone]   [Tablet]\n         )))  ((( )))  (((\n              [WAP]\n               |\n            [Router] --- [Internet]\n               |\n            [Switch]\n               |\n            [Server] (wired)\n\nMobile devices connect wirelessly via the WAP.\nFixed devices (server) remain wired for reliability.\n</pre>"
+        },
+        {
+          "type": "paragraph",
+          "text": "A wireless topology uses a Wireless Access Point (WAP) — often built into the router — so devices connect using Wi-Fi rather than cables. In practice, most business networks are hybrid: fixed devices use Ethernet, while mobile devices use Wi-Fi."
+        },
+        {
+          "type": "heading",
+          "text": "3. Client-Server Topology",
+          "level": 2
+        },
+        {
+          "type": "richText",
+          "heading": "Diagram: Client-Server",
+          "html": "<pre style='background:#f4f4f4;padding:16px;border-radius:6px;font-family:monospace;font-size:13px;line-height:1.8;'>\n          [SERVER]\n         /    |    \\\n        /     |     \\\n  [PC 1]  [PC 2]  [PC 3]\n  client   client   client\n\nThe SERVER:\n  - Stores all files centrally\n  - Manages user accounts & login\n  - Controls access permissions\n  - Handles printing & email\n\nCLIENTS request services from the server.\n</pre>"
+        },
+        {
+          "type": "paragraph",
+          "text": "In a client-server network, one or more dedicated servers provide resources and services. Client computers (PCs, laptops) request these services. This is a logical arrangement that works on top of the physical topology (usually wired star). It is the standard model for business networks."
+        },
+        {
+          "type": "heading",
+          "text": "4. Peer-to-Peer Topology",
+          "level": 2
+        },
+        {
+          "type": "richText",
+          "heading": "Diagram: Peer-to-Peer",
+          "html": "<pre style='background:#f4f4f4;padding:16px;border-radius:6px;font-family:monospace;font-size:13px;line-height:1.8;'>\n  [PC 1] ------- [PC 2]\n     |      \\  /    |\n     |       \\/     |\n     |       /\\     |\n     |      /  \\    |\n  [PC 3] ------- [PC 4]\n\nEach PC can share its own files and resources.\nNo central server — all devices are equal (peers).\n</pre>"
+        },
+        {
+          "type": "paragraph",
+          "text": "In a peer-to-peer (P2P) network, all devices are equal — any device can share its own files, printer, or internet connection with others. There is no central server. This is common in very small home or micro-business networks."
+        },
+        {
+          "type": "heading",
+          "text": "Client-Server vs Peer-to-Peer",
+          "level": 2
+        },
+        {
+          "type": "comparison",
+          "title": "Client-Server vs Peer-to-Peer",
+          "items": [
+            {
+              "label": "Client-Server",
+              "points": [
+                "Centralised control — IT staff manage one server, applying security policies and updates to all users",
+                "Easier to back up — all data stored on the server in one place",
+                "Better security — access permissions controlled by the server",
+                "Scales well — can support hundreds of users",
+                "Higher cost — requires a dedicated server and server operating system licence",
+                "Server = single point of failure — if the server goes down, all clients lose access",
+                "Used in: businesses, schools, hospitals, government organisations"
+              ]
+            },
+            {
+              "label": "Peer-to-Peer",
+              "points": [
+                "Decentralised — each device manages its own files and sharing",
+                "Cheap to set up — no dedicated server hardware or licence needed",
+                "Easy for small groups — good for 2–5 computers in a home or tiny office",
+                "No central backup — each user responsible for their own files",
+                "Harder to secure — no central policy enforcement",
+                "Does not scale — becomes unmanageable with more than ~10 devices",
+                "Used in: home networks, very small offices, temporary setups"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Topology Comparison Table",
+          "level": 2
+        },
+        {
+          "type": "table",
+          "headers": ["Topology", "Physical Setup", "Advantages", "Disadvantages", "Best Used When..."],
+          "rows": [
+            [
+              "Wired Star",
+              "All devices cabled to central switch",
+              "Fast and reliable; easy to add/remove devices; one cable fault doesn't affect others",
+              "Requires cabling to every device; switch is a single point of failure",
+              "Office with fixed desktop PCs needing reliable, high-speed connections"
+            ],
+            [
+              "Wireless",
+              "Devices connect via radio waves to WAP",
+              "No cabling needed; supports mobile devices; easy to add devices",
+              "Slower and less reliable than wired; security risks; interference from walls and devices",
+              "Laptops, phones, and tablets; areas where cabling is impractical"
+            ],
+            [
+              "Client-Server",
+              "Logical arrangement over wired/wireless physical topology",
+              "Centralised control; easy to manage; scalable; better security and backup",
+              "Expensive server required; server failure disrupts all clients",
+              "Any business with more than ~5 users needing centralised data and security"
+            ],
+            [
+              "Peer-to-Peer",
+              "All devices connected directly (no server)",
+              "Low cost; easy to set up; no server needed",
+              "No central management; poor security; does not scale; backup is each user's responsibility",
+              "Very small home networks or temporary setups with 2–5 devices"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "insight",
+          "heading": "Industry Insight: Real Networks Are Hybrid",
+          "text": "In practice, modern business networks combine topologies. A typical office uses a wired star physical topology, client-server logical arrangement, AND wireless for mobile devices. Network Engineers need to understand all topologies to design networks that balance cost, reliability, security, and scalability for each client's specific needs."
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading",
+          "text": "Check Your Understanding",
+          "level": 2
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "nt-q1",
+            "questionType": "mcq",
+            "text": "In a wired star topology, what happens if the central switch fails?",
+            "options": [
+              "Only the device directly connected to the failed port loses connection",
+              "The entire network loses connectivity — all devices are affected",
+              "Devices automatically switch to wireless to maintain connection",
+              "Only the server loses connection; client PCs keep working"
+            ],
+            "correctIndex": 1,
+            "explanation": "In a star topology, the central switch is a single point of failure. Every device connects through the switch, so if the switch fails, all devices lose network connectivity. This is a key disadvantage of the star topology — but it can be mitigated by using a redundant (backup) switch."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "nt-q2",
+            "questionType": "mcq",
+            "text": "A small graphic design studio has 4 computers. The owner wants to share files between computers and connect to a shared printer, but cannot afford a dedicated server. Which network topology is most appropriate?",
+            "options": [
+              "Client-server — best for all business networks",
+              "Peer-to-peer — suitable for small networks without a dedicated server",
+              "Wired star — requires too many cables for a small studio",
+              "Wireless only — most modern option"
+            ],
+            "correctIndex": 1,
+            "explanation": "Peer-to-peer is appropriate for a very small network (4 devices) where cost is a concern and there is no need for centralised management. Each computer can share its files and the printer with the others. Client-server would be better for larger networks needing security and central management."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "nt-q3",
+            "questionType": "extended",
+            "text": "A medical clinic with 15 staff is setting up a new network. They need to store patient records securely, allow staff to log in from any PC in the clinic, and ensure files are backed up nightly. Explain which network topology is most suitable and justify your choice.",
+            "marks": 6,
+            "explanation": "Strong answers will recommend a client-server topology (logical) over a wired star physical layout. Justification should include: centralised storage of patient records on a secure server; centralised user accounts allowing staff to log in from any PC; centralised nightly backup of all patient data; IT administrator can control access permissions (ensuring only authorised staff see certain records); scalability for future growth. A peer-to-peer network would be inappropriate because there is no central security control, no centralised backup, and it does not scale to 15 users. Award 2 marks for correct topology identified with brief reason, 2 marks for security/privacy justification, 2 marks for backup/scalability justification."
+          }
+        }
+      ]
+    },
+    {
+      "id": "designing-a-network",
+      "title": "Designing a Network for a Client",
+      "estimatedMinutes": 30,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "From Theory to Practice: Network Design",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Network Engineers and IT Consultants are regularly asked to design networks for clients — from a small office to a large enterprise. This requires applying knowledge of components, transmission media, and topologies to meet a client's specific business needs. In this lesson you will apply everything from this unit to design a real network."
+        },
+        {
+          "type": "callout",
+          "variant": "career",
+          "heading": "Network Admin Career Path: What IT Consultants Do",
+          "text": "IT Consultants and Network Designers are paid to understand a client's business needs and translate them into a technical solution. They prepare network diagrams, write specifications, recommend hardware, and provide cost estimates. This role requires both technical knowledge AND communication skills — you must explain technical decisions to non-technical clients. Average salary in Australia: $90,000–$115,000/yr."
+        },
+        {
+          "type": "heading",
+          "text": "The Design Process",
+          "level": 2
+        },
+        {
+          "type": "list",
+          "style": "numbered",
+          "items": [
+            "Understand the requirements — how many users? What tasks? What devices? What budget?",
+            "Choose a topology — wired star, wireless, client-server, peer-to-peer, or hybrid?",
+            "Select components — which server, switch, router, modem, NIC specifications are needed?",
+            "Choose transmission media — Ethernet cable, fibre, wireless, or a combination?",
+            "Draw the network diagram — show all devices and how they connect",
+            "Document the design — list all hardware with justification for each choice",
+            "Present to the client — explain the design in plain language with costs and benefits"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Key Design Considerations",
+          "level": 2
+        },
+        {
+          "type": "table",
+          "headers": ["Consideration", "Questions to Ask", "Impact on Design"],
+          "rows": [
+            ["Number of users", "How many staff? Will it grow?", "Determines switch port count, server capacity, IP address range"],
+            ["Task types", "Video calls? Large file transfers? Point-of-sale?", "Affects bandwidth requirements and reliability needs"],
+            ["Security needs", "Is sensitive data involved? (medical, legal, financial)", "May require client-server, firewall, VPN, encryption"],
+            ["Budget", "What is the total IT budget?", "Determines whether to use wired/wireless, dedicated server vs cloud"],
+            ["Physical space", "Open plan? Multiple floors? Remote workers?", "Affects cable runs, need for wireless coverage, WAP placement"],
+            ["Future growth", "Will the business expand?", "Design should be scalable — choose a managed switch, allow room for more ports"]
+          ]
+        },
+        {
+          "type": "scenarioChallenge",
+          "title": "Scenario: The Gibbstown Travel Agency",
+          "scenario": "You have been hired as an IT consultant for Gibbstown Travel Agency, a new small business opening in a single-floor office. They have provided the following brief:\n\n• 5 staff members, each with their own desktop PC\n• 1 dedicated file server to store booking records and client files\n• 1 shared laser printer used by all staff\n• Staff also use laptops and tablets in the meeting room for client presentations\n• The business handles client financial information and passport details — security is important\n• Budget: moderate — willing to invest in good infrastructure\n• The office is a single room, approximately 12m × 8m",
+          "questions": [
+            {
+              "question": "Recommend a network topology for Gibbstown Travel Agency. Explain why this topology is appropriate for their specific needs, referring to the number of staff, security requirements, and the presence of a file server.",
+              "marks": 4
+            },
+            {
+              "question": "Identify the network components that should be included in this network design. For each component, briefly explain its role in the Gibbstown network.",
+              "marks": 6
+            },
+            {
+              "question": "The 5 desktop PCs and the file server need to be connected to the network. The meeting room requires wireless access for laptops and tablets. Recommend the transmission media you would use for each situation and justify your choices.",
+              "marks": 4
+            },
+            {
+              "question": "Identify ONE potential disadvantage of your recommended topology for Gibbstown, and explain how you would address it in your design.",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "type": "task",
+          "title": "Task: Draw the Gibbstown Network Diagram",
+          "software": "draw.io (diagrams.net) or Microsoft Visio — or pencil and paper",
+          "intro": "Using your answers from the scenario challenge above, draw a network diagram for Gibbstown Travel Agency. Your diagram should be clear, labelled, and professional.",
+          "steps": [
+            "Open draw.io (free at diagrams.net) or use pencil and paper for a hand-drawn diagram",
+            "Draw and label the following devices: 5 × desktop PC, 1 × file server, 1 × shared laser printer, 1 × switch, 1 × router, 1 × modem, 1 × wireless access point (or router with built-in WAP), 2 × laptop (meeting room), 1 × tablet (meeting room)",
+            "Use solid lines (——) to show wired Ethernet connections between the switch, server, PCs, and printer",
+            "Use dashed lines (- - -) or a Wi-Fi symbol ((())) to show wireless connections from the WAP to the laptops and tablet in the meeting room",
+            "Label the connection between the modem and the internet with the ISP/internet label",
+            "Add a legend explaining your symbols (wired connection, wireless connection, each device type)",
+            "Add a title: 'Gibbstown Travel Agency — Proposed LAN Design' and include your name and date",
+            "Review your diagram: does it show all required devices? Are all connections logical? Is the diagram clear enough for a non-technical client to understand?",
+            "Export or photograph your diagram and submit it with your scenario challenge written responses"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Sample Network Diagram (Reference)",
+          "level": 2
+        },
+        {
+          "type": "richText",
+          "heading": "A Well-Designed Small Business LAN",
+          "html": "<pre style='background:#f4f4f4;padding:16px;border-radius:6px;font-family:monospace;font-size:12px;line-height:1.7;'>\nINTERNET\n    |\n [MODEM]\n    |\n [ROUTER] )))Wi-Fi((( --- [Laptop] [Tablet]\n    |        (meeting room wireless)\n [SWITCH]\n  / | \\ \\ \\\n /  |  \\ \\ \\\n[S] [P1][P2][P3][P4][P5]  [Printer]\n(Server)\n\nS   = File Server (wired — critical device)\nP1-5 = Staff PCs (wired — reliability)\nPrinter = Shared laser printer (wired to switch)\nLaptop/Tablet = Meeting room (wireless via Router WAP)\n\nAll wired connections: Cat6 Ethernet\nWireless: Wi-Fi 6 (802.11ax)\n</pre><p>This hybrid design uses a wired star physical topology with client-server logical arrangement for staff PCs and the server, plus wireless access for mobile devices in the meeting room.</p>"
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading",
+          "text": "Review: Networks Unit Summary",
+          "level": 2
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "A network connects devices to share resources — advantages include file sharing, resource sharing, and centralised management; disadvantages include cost, security risks, and dependency on infrastructure",
+            "LANs cover a single site; WANs connect multiple sites; the internet is the global WAN",
+            "Transmission media: optic fibre (fastest, most expensive, long distance), copper Ethernet (reliable, standard for office LANs), wireless (flexible, supports mobile devices but variable speed)",
+            "Transmission rate measures data transfer speed in bps (Kbps, Mbps, Gbps) — convert bytes to bits (×8) for calculations",
+            "Network components: modem (ISP connection), router (routes packets, assigns IPs), switch (connects LAN devices), NIC (device's network hardware), server (provides centralised services)",
+            "Wired star: all devices cable to a central switch — standard for office LANs; reliable but switch is single point of failure",
+            "Wireless: devices connect via WAP using radio waves — flexible but slower and less secure",
+            "Client-server: dedicated server manages resources centrally — scalable, secure, expensive; used in businesses",
+            "Peer-to-peer: all devices equal, no server — cheap, simple, not scalable; suitable for very small home/micro-business networks"
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "dn-q1",
+            "questionType": "mcq",
+            "text": "Gibbstown Travel Agency stores client passport details and financial information. Which network arrangement BEST ensures this data is backed up securely and access is restricted to authorised staff only?",
+            "options": [
+              "Peer-to-peer — cheapest to set up",
+              "Wireless only — most modern option",
+              "Client-server with a dedicated file server and access permissions",
+              "Peer-to-peer with a shared folder on one staff PC"
+            ],
+            "correctIndex": 2,
+            "explanation": "A client-server arrangement with a dedicated file server allows the IT administrator to set access permissions (controlling who can view sensitive files), perform centralised nightly backups of all data, and enforce security policies. Peer-to-peer has no central security control, making it inappropriate for sensitive client data."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "dn-q2",
+            "questionType": "scenario",
+            "text": "A new café with 3 staff and no server wants to share a printer between their 3 PCs and connect to the internet. They have a small budget. Describe the most appropriate network setup for this café, including topology type, whether they need a server, and what components are required.",
+            "marks": 5,
+            "explanation": "Model answer: A peer-to-peer network is most suitable — 3 devices is small enough to manage without a server, and budget is limited. Components needed: modem (for internet via ISP), router (with built-in wireless for customer Wi-Fi if needed), switch (to connect the 3 PCs and shared printer), NIC in each PC, and a network-connected printer (or a print server adapter for a non-network printer). No dedicated server is required — one PC can share the printer to the others. A wired star physical topology using Cat6 Ethernet would provide reliable connections in a small space."
+          }
+        }
+      ]
+    }
+  ]
+}

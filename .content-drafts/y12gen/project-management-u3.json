@@ -1,0 +1,1050 @@
+{
+  "id": "project-management-u3",
+  "title": "Project Management",
+  "description": "Year 12 Unit 3",
+  "lessons": [
+    {
+      "id": "understanding-the-client-brief",
+      "title": "Understanding the Client Brief",
+      "estimatedMinutes": 25,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Understanding the Client Brief",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "In professional IT work, every project begins with a client brief — a document or conversation that defines what the client wants, why they want it, and what success looks like. Your ability to read and interpret a brief accurately determines whether the final product actually solves the client's problem."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "heading": "Career Path: Project Coordinator",
+          "text": "Project coordinators spend a significant portion of their time clarifying requirements with clients. A misunderstood brief at the start of a project costs far more to fix at the end. In industry, this is called 'the cost of change' — the later a mistake is caught, the more expensive it is to fix."
+        },
+        {
+          "type": "heading",
+          "text": "What Is a Client Brief?",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "A client brief outlines the context and requirements for a project. It is the starting point for all planning decisions. In Applied IT, your brief may be provided by a teacher, a simulated client scenario, or — in industry placement — a real business client."
+        },
+        {
+          "type": "keyTerms",
+          "items": [
+            {
+              "term": "Client brief",
+              "definition": "A document or statement from the client describing the project purpose, requirements, constraints, and expected outcomes."
+            },
+            {
+              "term": "Scope",
+              "definition": "The boundaries of a project — what IS included and, importantly, what is NOT included."
+            },
+            {
+              "term": "Requirements analysis",
+              "definition": "The process of examining a brief to extract, clarify, and prioritise what the solution must do."
+            },
+            {
+              "term": "Constraint",
+              "definition": "A limitation placed on the project — such as time, budget, software tools, or audience."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "The Four Dimensions of a Brief",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "When you receive a brief, examine it through four lenses:"
+        },
+        {
+          "type": "table",
+          "headers": ["Dimension", "Questions to ask", "Why it matters"],
+          "rows": [
+            [
+              "Scope",
+              "What must be included? What is out of scope? How big is this project?",
+              "Prevents scope creep — the gradual expansion of project requirements beyond what was agreed."
+            ],
+            [
+              "Time",
+              "When is it due? Are there milestones? How many work sessions do I have?",
+              "Drives your Gantt chart and task prioritisation."
+            ],
+            [
+              "Resources",
+              "What software, hardware, assets, or data do I have access to? What skills do I need?",
+              "Identifies gaps early — before they become problems."
+            ],
+            [
+              "Client intent",
+              "Why does the client need this? Who will use it? What problem does it solve?",
+              "Ensures the solution is fit for purpose, not just technically complete."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Asking the Right Questions",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Clients rarely provide every detail in a brief. Part of your job is to identify the gaps and ask targeted questions. Good questions are specific, open-ended, and focused on understanding — not on seeking approval."
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Who specifically will be using the final product?",
+            "Are there existing brand guidelines, colours, or styles I need to follow?",
+            "What format should the final deliverable be in (print, web, video, app)?",
+            "Are there any content or features that are definitely NOT required?",
+            "What does a successful outcome look like to you?"
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "heading": "Project Manager Tip",
+          "text": "Document every clarification. If a client answers a question verbally, follow up with a written summary: 'Just to confirm, you said the app does not need to work offline — is that correct?' This protects you if requirements change later."
+        },
+        {
+          "type": "scenarioChallenge",
+          "title": "Client Brief: Local Music Festival",
+          "scenario": "You have been approached by the coordinator of a local community music festival. She says: 'We need something digital to promote the festival. We want people to know when it is, who is playing, and how to get tickets. Our audience is mainly 18–35 year olds and we use a lot of Instagram. Oh, and we need it done in three weeks — our graphic designer is busy so it's just you.' No other written documentation has been provided.",
+          "questions": [
+            {
+              "question": "Identify THREE pieces of information that are missing or unclear in this brief that you would need to clarify before starting work.",
+              "marks": 3
+            },
+            {
+              "question": "Write two targeted clarifying questions you would ask the client, explaining why each question is important for your planning.",
+              "marks": 4
+            },
+            {
+              "question": "Define the scope of this project in your own words, including at least one thing that is explicitly out of scope based on what the client has said.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Interpreting the Brief: Your Written Response",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Once you have read and clarified the brief, you write an 'interpreted brief' — a restatement of the requirements in your own words. This shows the client (and your assessor) that you have understood the project, not just copied the brief."
+        },
+        {
+          "type": "list",
+          "style": "numbered",
+          "items": [
+            "State the purpose of the product (what it is and what problem it solves).",
+            "Describe the target audience (who will use it and what their needs are).",
+            "List the functional requirements (what it must do).",
+            "List the constraints (time, tools, format, content boundaries).",
+            "State your evaluation criteria (how you will know the solution is successful)."
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "pm-u3-q1",
+            "questionType": "mcq",
+            "text": "A client tells you verbally that the project does NOT need to include a mobile version. What is the most professionally appropriate next step?",
+            "options": [
+              "Proceed with the project and leave mobile out, as instructed.",
+              "Send the client a written summary confirming that mobile is out of scope.",
+              "Include mobile anyway in case the client changes their mind.",
+              "Ask the client to rewrite the brief to include this detail."
+            ],
+            "correctIndex": 1,
+            "explanation": "Verbal agreements should always be confirmed in writing. Sending a summary protects both you and the client if requirements are disputed later — a standard practice in professional project management."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "pm-u3-q2",
+            "questionType": "short_answer",
+            "text": "Explain the difference between scope and constraints in the context of a client brief. Give one example of each.",
+            "marks": 4
+          }
+        }
+      ]
+    },
+    {
+      "id": "planning-your-project",
+      "title": "Planning Your Project",
+      "estimatedMinutes": 30,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Planning Your Project",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Professional project planning transforms a client brief into an actionable schedule. It forces you to break large, vague tasks into specific, time-bound actions — and it gives you an early warning when something is falling behind."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "heading": "Industry Standard",
+          "text": "The Project Management Institute (PMI) reports that organisations with mature project planning practices waste 28 times less money on failed projects than those without. Planning is not busywork — it is the highest-leverage activity in any project."
+        },
+        {
+          "type": "heading",
+          "text": "Scope Creep: The Silent Project Killer",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Scope creep occurs when the project gradually expands beyond what was originally agreed — one small addition at a time. Each individual addition seems reasonable, but together they blow out time and resources. Recognising and managing scope creep is one of the most important skills a project manager can have."
+        },
+        {
+          "type": "keyTerm",
+          "term": "Scope creep",
+          "definition": "The gradual, uncontrolled expansion of a project's scope beyond what was originally agreed, typically without corresponding adjustments to time or resources."
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Signs of scope creep: 'Can we just add one more feature?', new requirements appearing after work has started, the brief being reinterpreted mid-project.",
+            "Prevention: Document the scope clearly at the start; get client sign-off on the interpreted brief.",
+            "Response: When new requirements arise, assess their impact on time and resources, then negotiate with the client — add time, remove another feature, or defer the addition to a future phase."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Time Management: Breaking Down the Work",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Before you create a schedule, list every task required to complete the project. This is called a Work Breakdown Structure (WBS). A WBS turns 'create a website' into specific, estimable tasks like 'design homepage wireframe', 'source and edit hero image', 'write navigation labels'."
+        },
+        {
+          "type": "keyTerms",
+          "items": [
+            {
+              "term": "Work Breakdown Structure (WBS)",
+              "definition": "A hierarchical decomposition of all the work required to complete a project, broken into manageable tasks."
+            },
+            {
+              "term": "Gantt chart",
+              "definition": "A horizontal bar chart that plots project tasks on a timeline, showing start and end dates, duration, and task dependencies."
+            },
+            {
+              "term": "Milestone",
+              "definition": "A significant checkpoint in a project — often a deliverable or decision point — that marks progress."
+            },
+            {
+              "term": "Task dependency",
+              "definition": "A relationship where one task cannot start (or finish) until another task is complete."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Reading a Gantt Chart",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "A Gantt chart has tasks listed vertically on the left and a calendar timeline across the top. Each task is shown as a horizontal bar spanning its start and end date. Milestones are often shown as diamonds. Dependency arrows show which tasks must finish before others can begin."
+        },
+        {
+          "type": "table",
+          "headers": ["Element", "What it means", "Example"],
+          "rows": [
+            ["Horizontal bar", "Duration of the task", "Design wireframes: 2 days"],
+            ["Diamond symbol", "Milestone — a key deliverable or checkpoint", "Client sign-off on design"],
+            ["Arrow between bars", "Task dependency — B cannot start until A finishes", "Build site cannot start until wireframes are approved"],
+            ["Red bar or colour change", "Task is delayed or at risk", "Content writing is overdue"],
+            ["Baseline vs actual", "Planned vs real progress", "Site build planned for Day 5 but started on Day 7"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Resource Allocation",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Resources are everything required to complete the project: time, people, software, hardware, stock images, fonts, data, and even physical space. Identifying resources early prevents being blocked mid-project because you lack access to a tool or asset."
+        },
+        {
+          "type": "table",
+          "headers": ["Resource type", "Examples in AIT projects", "Planning action"],
+          "rows": [
+            ["Software", "Adobe Illustrator, Figma, Microsoft Publisher, DaVinci Resolve", "Confirm you have access and a valid licence before starting"],
+            ["Digital assets", "Stock photos, icons, fonts, audio", "Identify sources; check licence (royalty-free vs commercial)"],
+            ["Hardware", "School computers, drawing tablet, scanner, camera", "Book equipment in advance if shared"],
+            ["Time", "Available class periods, homework sessions", "Map to your Gantt chart; identify your critical path"],
+            ["Skills / knowledge", "Video editing, CSS, photography", "Identify gaps early; plan learning time or seek support"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "heading": "Project Manager Tip",
+          "text": "When estimating how long tasks will take, use the '3-point estimation' technique: estimate the best case, the worst case, and the most likely time. Use the most likely estimate in your Gantt chart, but build buffer time before critical milestones."
+        },
+        {
+          "type": "task",
+          "title": "Build Your Project Gantt Chart",
+          "software": "Microsoft Excel / Google Sheets / Canva / GanttProject (free)",
+          "intro": "Using a brief provided by your teacher (or the music festival scenario from Lesson 1), create a Gantt chart for the full project. Your chart must show at least 10 tasks, 2 milestones, and at least one dependency.",
+          "steps": [
+            "List every task needed to complete the project. Aim for tasks that are 1–3 days in duration — if a task takes longer, break it down further.",
+            "Identify dependencies: which tasks cannot start until another is finished? Draw these relationships on paper first.",
+            "Estimate the time for each task using 3-point estimation (best/worst/likely). Record your estimates.",
+            "Identify your milestones: client sign-off on design, completion of first draft, final submission.",
+            "Plot all tasks and milestones on your Gantt chart, colour-coding by phase (plan / create / review / evaluate).",
+            "Add a 'resources' column to your task list, noting what you need for each task.",
+            "Share your chart with a classmate and ask them to identify any gaps, missing tasks, or unrealistic time estimates.",
+            "Annotate your chart with a brief note explaining two planning decisions you made (e.g., why you allowed 2 days for the wireframe review)."
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "pm-u3-q3",
+            "questionType": "mcq",
+            "text": "Halfway through a project, your client asks you to add three new pages to the website that were not in the original brief. What is the correct project management response?",
+            "options": [
+              "Add the pages immediately — the client is always right.",
+              "Refuse to add anything that was not in the original brief.",
+              "Assess the impact on time and resources, then negotiate a scope change or timeline extension with the client.",
+              "Add the pages and work extra hours to keep the same deadline."
+            ],
+            "correctIndex": 2,
+            "explanation": "New requirements mid-project are a scope change. The professional response is to assess the impact, document it, and negotiate with the client — adjusting the deadline, removing other features, or agreeing to defer the additions to a future version."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "pm-u3-q4",
+            "questionType": "short_answer",
+            "text": "A student has one week to create a promotional video. They spend the first three days filming without creating a Gantt chart. On day four they realise they have no time left for editing. Explain what project management technique would have prevented this problem, and describe how it works.",
+            "marks": 4
+          }
+        }
+      ]
+    },
+    {
+      "id": "design-representation-techniques",
+      "title": "Design Representation Techniques",
+      "estimatedMinutes": 35,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Design Representation Techniques",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Before you build anything, you design it. Design representation techniques are the visual tools that let you plan, communicate, and test your design ideas before committing hours of build time. They are used by professional UX designers, web developers, video producers, and software engineers alike."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "heading": "Career Path: UX Designer",
+          "text": "UX (User Experience) Designers spend most of their time in the design representation phase — sketching ideas, building wireframes, creating prototypes, and testing with users — before any final product is built. Mastering these techniques is a direct pathway to a career in UX, UI design, or digital product management."
+        },
+        {
+          "type": "heading",
+          "text": "Why Represent Your Design First?",
+          "level": 3
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Identify problems in the layout or user flow before they are built in — changes are free on paper, expensive in code.",
+            "Communicate your vision to clients and team members who may not read technical documentation.",
+            "Get client approval on the look and feel before investing build time.",
+            "Test usability: can a user find what they need without instruction?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Technique 1: Thumbnails",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Thumbnails are rapid, small-scale sketches that explore multiple layout ideas quickly. Done by hand or digitally, they are intentionally rough — the goal is quantity of ideas, not quality of drawing. A designer might produce 10–20 thumbnails in 20 minutes before selecting 2–3 to develop further."
+        },
+        {
+          "type": "keyTerm",
+          "term": "Thumbnail sketch",
+          "definition": "A small, rapid, rough sketch used to explore multiple layout or design concepts quickly before committing to a direction."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "heading": "Industry Standard",
+          "text": "Professional designers at companies like Google and Apple routinely fill pages with thumbnail sketches before opening any digital tool. Do not skip this step because you think your first idea is good — the best designs usually emerge from comparison, not inspiration."
+        },
+        {
+          "type": "heading",
+          "text": "Technique 2: Annotated Sketches and Diagrams",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "An annotated sketch is a more refined drawing with written notes (annotations) that explain design decisions. Annotations clarify things that the drawing cannot: colour choices, font sizes, interactive behaviour, content type, or the reasoning behind a layout decision."
+        },
+        {
+          "type": "keyTerm",
+          "term": "Annotated sketch / Annotated diagram",
+          "definition": "A hand-drawn or digital design diagram with written notes explaining design decisions, colour choices, content, and functionality."
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Label all major elements: navigation, hero image, body text, call-to-action button.",
+            "Note colours using hex codes, colour names, or references to a brand guide.",
+            "Explain why a design decision was made: 'Navigation at top — standard web convention; users expect it here.'",
+            "For interactive elements, note what happens on click or hover.",
+            "Annotations can be handwritten or typed and added digitally to a scanned sketch."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Technique 3: Wireframes",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "A wireframe is a structural blueprint of a screen or page. It shows the layout and hierarchy of content — what goes where — without any visual styling (colour, fonts, final images). Wireframes use boxes for images, lines for text, and simple shapes to represent UI components."
+        },
+        {
+          "type": "keyTerm",
+          "term": "Wireframe",
+          "definition": "A low-fidelity structural layout of a screen or page that shows content placement and hierarchy without visual design styling."
+        },
+        {
+          "type": "comparison",
+          "title": "Wireframe Fidelity Levels",
+          "items": [
+            {
+              "label": "Low fidelity (Lo-fi)",
+              "points": [
+                "Hand-drawn or simple digital boxes",
+                "No colour or real content",
+                "Used in early planning stages",
+                "Fast to produce; easy to change",
+                "Good for testing layout concepts"
+              ]
+            },
+            {
+              "label": "High fidelity (Hi-fi)",
+              "points": [
+                "Digital tool (Figma, Adobe XD, Balsamiq)",
+                "Actual colours, fonts, images, and content",
+                "Used for client presentations and developer handoff",
+                "Takes longer; reflects near-final design",
+                "Can be made interactive (clickable prototype)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "softwareExamples",
+          "title": "Industry Wireframing and Prototyping Tools",
+          "apps": [
+            {
+              "name": "Figma",
+              "licence": "Free (education)",
+              "note": "Industry standard for UI/UX design. Browser-based with real-time collaboration. Used at Google, Microsoft, Airbnb. Excellent for both wireframing and hi-fi prototypes."
+            },
+            {
+              "name": "Balsamiq",
+              "licence": "Paid (trial available)",
+              "note": "Specialist wireframing tool with a 'sketchy' aesthetic that keeps focus on structure. Very fast for lo-fi wireframes. Popular in agile teams."
+            },
+            {
+              "name": "Adobe XD",
+              "licence": "Paid (school licence may apply)",
+              "note": "Part of the Adobe Creative Cloud. Strong prototyping features and integration with Photoshop and Illustrator."
+            },
+            {
+              "name": "Canva",
+              "licence": "Free (education)",
+              "note": "Accessible for beginners. Not a specialist wireframing tool but useful for simple layout mockups and poster/presentation design planning."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Technique 4: Storyboards",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "A storyboard is a sequence of frames that shows how a product will unfold over time — used for video, animation, interactive media, and user journeys through websites or apps. Each frame represents a moment, screen, or scene, with annotations describing the content, transitions, and timing."
+        },
+        {
+          "type": "keyTerm",
+          "term": "Storyboard",
+          "definition": "A sequence of annotated frames that represents the flow of a video, animation, interactive experience, or user journey through a digital product."
+        },
+        {
+          "type": "table",
+          "headers": ["Frame element", "What to include"],
+          "rows": [
+            ["Visual", "Sketch or image of what is seen on screen or in frame"],
+            ["Scene / Frame number", "Sequential numbering for reference"],
+            ["Duration", "How long this moment lasts (seconds)"],
+            ["Audio / Voiceover", "What is heard — music, narration, sound effects"],
+            ["Transition", "How the scene changes — cut, fade, dissolve, swipe"],
+            ["On-screen text", "Titles, captions, subtitles, or UI labels"],
+            ["Action / Interaction", "What happens — button press, animation, camera move"]
+          ]
+        },
+        {
+          "type": "task",
+          "title": "Create a Wireframe for a Client Landing Page",
+          "software": "Figma (free) or hand-drawn on A4 paper",
+          "intro": "Using the music festival brief from Lesson 1, create a lo-fi wireframe for the festival's landing page. Your wireframe must clearly show content hierarchy and all major page sections.",
+          "steps": [
+            "Start with 3 thumbnail sketches exploring different layouts for the landing page. Consider: Where is the event name? Where is the ticket link? What is the hero visual?",
+            "Choose your strongest thumbnail and develop it into a labelled wireframe on A4 (or in Figma).",
+            "Include these sections in your wireframe: navigation bar, hero section (event name, date, location), lineup preview, ticket purchase call-to-action, footer with social links.",
+            "Use boxes with an 'X' through them to represent images. Use horizontal lines to represent text blocks. Label each element.",
+            "Add annotations explaining at least four design decisions. For example: 'Ticket button placed above the fold — users should not need to scroll to find it.'",
+            "If using Figma: create your wireframe using only rectangles, lines, and text. Do not add colours or final fonts yet.",
+            "Present your wireframe to a partner. Ask: Can they identify where to buy tickets without you explaining? Record their feedback."
+          ]
+        },
+        {
+          "type": "task",
+          "title": "Create a Storyboard for a Promotional Video",
+          "software": "Hand-drawn, Canva, or PowerPoint",
+          "intro": "The music festival client wants a 30-second promotional video for Instagram. Create a storyboard planning the full video sequence.",
+          "steps": [
+            "Plan the video structure: Introduction (0–5s), Key information (5–20s), Call to action (20–30s).",
+            "Create at least 8 storyboard frames covering the full 30 seconds.",
+            "For each frame, sketch the visual, note the audio/music, write any on-screen text, and note the transition to the next frame.",
+            "Include at least one text overlay (event name, date), one transition effect (fade or cut), and one call to action ('Get tickets at...').",
+            "Annotate two frames in detail, explaining why you chose that visual approach for that moment in the video.",
+            "Review your storyboard: does the sequence make sense without sound? If not, revise it."
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "pm-u3-q5",
+            "questionType": "mcq",
+            "text": "What is the key difference between a wireframe and a high-fidelity mockup?",
+            "options": [
+              "A wireframe is used for video projects; a mockup is used for web projects.",
+              "A wireframe shows structure without visual styling; a mockup includes colours, fonts, and near-final design.",
+              "A wireframe must be hand-drawn; a mockup must be created in a digital tool.",
+              "A wireframe is submitted to the client; a mockup is only for the developer."
+            ],
+            "correctIndex": 1,
+            "explanation": "A wireframe focuses on layout and content hierarchy without any visual design styling. A high-fidelity mockup adds colour, typography, imagery, and detailed styling to show what the final product will look like."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "pm-u3-q6",
+            "questionType": "short_answer",
+            "text": "A student creates a detailed, colourful hi-fi mockup as their first design step, without producing any thumbnail sketches or lo-fi wireframes. Identify TWO problems with this approach and explain how the missing steps would have helped.",
+            "marks": 4
+          }
+        }
+      ]
+    },
+    {
+      "id": "target-audience-and-presentation-medium",
+      "title": "Target Audience and Presentation Medium",
+      "estimatedMinutes": 28,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Target Audience and Presentation Medium",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "The most technically perfect product fails if it is designed for the wrong person or delivered in the wrong format. Understanding your target audience and choosing the right presentation medium are core skills in the design process — and are explicitly required in SCSA AIT Unit 3 project work."
+        },
+        {
+          "type": "heading",
+          "text": "Target Audience Analysis",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Your target audience is the specific group of people who will use your product. Analysing the audience means going beyond 'young people' or 'adults' to understand their digital habits, preferences, technical ability, context of use, and what they actually need from the product."
+        },
+        {
+          "type": "keyTerms",
+          "items": [
+            {
+              "term": "Target audience",
+              "definition": "The specific group of people for whom a digital product is designed, defined by characteristics such as age, digital literacy, interests, and context of use."
+            },
+            {
+              "term": "User persona",
+              "definition": "A fictional but research-based profile of a typical user, used to guide design decisions and keep the team focused on user needs."
+            },
+            {
+              "term": "Context of use",
+              "definition": "The environment and circumstances in which a user will interact with the product — e.g., on a phone while commuting, or at a desk in a quiet office."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Target Audience Characteristics",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "When describing your target audience in project documentation, address the following characteristics:"
+        },
+        {
+          "type": "table",
+          "headers": ["Characteristic", "What to identify", "Design implication"],
+          "rows": [
+            [
+              "Age and life stage",
+              "Are they children, teens, adults, seniors?",
+              "Affects font size, language complexity, visual style, and assumed knowledge."
+            ],
+            [
+              "Digital literacy",
+              "Are they confident tech users or occasional users?",
+              "Low literacy → simpler navigation, more guidance, fewer features. High literacy → richer functionality acceptable."
+            ],
+            [
+              "Device and platform",
+              "Desktop, mobile, tablet? iOS, Android, Windows?",
+              "Determines responsive design requirements and file format choices."
+            ],
+            [
+              "Context of use",
+              "Where and when will they use it? Work, home, commute?",
+              "Affects content density, attention span assumptions, and accessibility needs."
+            ],
+            [
+              "Goals and motivations",
+              "What are they trying to accomplish?",
+              "Ensures design supports the user's task, not just the client's preferences."
+            ],
+            [
+              "Accessibility needs",
+              "Do any users have visual, motor, or cognitive considerations?",
+              "May require colour contrast compliance, large text, keyboard navigation, or simple language."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Creating a User Persona",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "A user persona is a one-page profile of a fictional but representative user. It keeps design decisions grounded in real human needs. Industry teams refer to personas throughout the entire project: 'Would Sarah find this confusing?' is a more productive design question than 'Does this look good?'"
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "heading": "Career Path: UX Designer / Project Coordinator",
+          "text": "User personas are a foundational tool in UX design. Senior UX Designers at companies like Spotify, Canva, and the ABC conduct interviews and surveys to build research-backed personas. In your AIT project, your persona can be based on your own experience with the target audience — e.g., if designing for Year 9 students, think about what you knew and needed at that age."
+        },
+        {
+          "type": "heading",
+          "text": "Choosing the Right Presentation Medium",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "The presentation medium is the format in which the final product will be delivered and consumed. It is not just 'a website' or 'a video' — it includes the platform, the device, the context, and sometimes the software environment. The medium must match the audience's context and the product's purpose."
+        },
+        {
+          "type": "table",
+          "headers": ["Medium", "Best suited for", "Audience/context fit"],
+          "rows": [
+            [
+              "Website / Web app",
+              "Information access, e-commerce, interactive services",
+              "Any audience with internet access; scalable; accessible on multiple devices"
+            ],
+            [
+              "Social media content (posts, Reels, Stories)",
+              "Promotional material, event awareness, community engagement",
+              "Audiences already active on the platform; short attention span; mobile-first"
+            ],
+            [
+              "Digital document (PDF, Word, Google Docs)",
+              "Reports, guides, instructional content",
+              "Office/academic audiences; needs to be readable offline or printable"
+            ],
+            [
+              "Presentation (PowerPoint, Google Slides)",
+              "Pitches, lessons, structured information delivery",
+              "Audience being presented to live or watching a recorded walkthrough"
+            ],
+            [
+              "Video (YouTube, MP4, Instagram Reel)",
+              "Tutorials, promotional content, storytelling",
+              "Audiences who prefer visual/audio content; commuters; social media users"
+            ],
+            [
+              "Printed material (poster, flyer, brochure)",
+              "Physical environments — noticeboards, events, retail",
+              "Audiences who may not be online; physical location contexts"
+            ],
+            [
+              "Interactive multimedia / app",
+              "Games, training simulations, interactive infographics",
+              "Tech-confident users; gamified or education contexts"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "heading": "Project Manager Tip",
+          "text": "When justifying your choice of medium in project documentation, don't just name it — explain why it suits this specific audience. Example: 'I chose Instagram Stories because the target audience of 18–25 year olds are active Instagram users who access content on mobile; Stories format is optimised for mobile screens and has high engagement rates with this demographic.'"
+        },
+        {
+          "type": "scenarioChallenge",
+          "title": "Audience and Medium Match",
+          "scenario": "Three clients each need a digital product. Client A: A retirement village wants to help residents aged 65–80 find the weekly activities schedule. Client B: A surf school wants to promote their summer holiday camps to parents of children aged 10–14. Client C: A tech startup wants to onboard new employees with a company policy guide that staff can reference on the job.",
+          "questions": [
+            {
+              "question": "For each client, identify the most appropriate presentation medium and justify your choice by referencing specific target audience characteristics.",
+              "marks": 6
+            },
+            {
+              "question": "For Client A, describe THREE specific design decisions (not just medium choice) that would make the product accessible and usable for the described audience.",
+              "marks": 3
+            },
+            {
+              "question": "Create a brief user persona for one of the three clients. Include: name, age, digital habits, context of use, primary goal, and one frustration with technology.",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "type": "task",
+          "title": "Write a Target Audience Analysis",
+          "software": "Microsoft Word / Google Docs",
+          "intro": "Write a one-page target audience analysis for your current project (or the music festival brief). This document will be part of your project folio.",
+          "steps": [
+            "Write a paragraph describing the target audience using at least four characteristics from the table above (age, digital literacy, device, context, goals, accessibility).",
+            "Create a user persona using this structure: Name, Age, Occupation/Year level, Devices they use, Digital confidence (1–5), How they will access your product, Their primary goal, One frustration or barrier.",
+            "Write one paragraph justifying your choice of presentation medium, explicitly connecting it to the audience characteristics you identified.",
+            "List three design decisions you will make specifically because of this audience (e.g., 'I will use 18pt minimum body font because many users are over 65').",
+            "Peer-check: swap your analysis with a classmate. Can they identify who the audience is from your description alone? Revise based on their feedback."
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "pm-u3-q7",
+            "questionType": "mcq",
+            "text": "A student is designing a resource for Year 7 students to learn about online safety. Which medium would LEAST suit this audience and context?",
+            "options": [
+              "An animated explainer video on YouTube",
+              "A printed A3 poster for the classroom wall",
+              "A 40-page technical PDF report",
+              "An interactive quiz website"
+            ],
+            "correctIndex": 2,
+            "explanation": "A 40-page technical PDF report is poorly suited for Year 7 students — the format, length, and likely language complexity do not match the age, attention span, or reading level of the target audience. Animated video, posters, and interactive quizzes are all more appropriate for this age group."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "pm-u3-q8",
+            "questionType": "short_answer",
+            "text": "Define 'context of use' and explain how it should influence design decisions for a digital product. Give a specific example.",
+            "marks": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "evaluation-and-iteration",
+      "title": "Evaluation and Iteration",
+      "estimatedMinutes": 30,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Evaluation and Iteration",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "In professional IT, a product is never truly 'finished' after one pass. Evaluation and iteration — the cycle of testing, gathering feedback, and improving — are what separate professional-quality work from a first attempt. The SCSA AIT assessment requires you to demonstrate this cycle explicitly."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "heading": "Industry Standard",
+          "text": "Software teams at companies like Atlassian, Canva, and Atlassian run 'sprint reviews' at the end of every two-week development cycle — presenting work, gathering feedback, and adjusting the next sprint accordingly. This is the Agile methodology, and it is built on the principle that iteration produces better outcomes than trying to get everything right the first time."
+        },
+        {
+          "type": "heading",
+          "text": "What Are Evaluation Criteria?",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Evaluation criteria are specific, measurable statements that define what a successful product looks like. They are written during the planning phase — before you build anything — so that evaluation at the end is objective, not subjective."
+        },
+        {
+          "type": "keyTerms",
+          "items": [
+            {
+              "term": "Evaluation criteria",
+              "definition": "Specific, measurable standards against which a completed digital product or solution is assessed. Defined at the planning stage."
+            },
+            {
+              "term": "Functional criteria",
+              "definition": "Criteria related to what the product does — whether required features work correctly."
+            },
+            {
+              "term": "Aesthetic criteria",
+              "definition": "Criteria related to visual design — whether design principles are applied effectively and consistently."
+            },
+            {
+              "term": "Usability criteria",
+              "definition": "Criteria related to user experience — whether the product is easy and intuitive to use for the target audience."
+            },
+            {
+              "term": "Iteration",
+              "definition": "The process of making targeted improvements to a product based on evaluation findings, then re-evaluating."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Writing Strong Evaluation Criteria",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Weak criteria are vague and unmeasurable. Strong criteria are specific, testable, and tied to the brief. Compare the examples below:"
+        },
+        {
+          "type": "table",
+          "headers": ["Weak criterion", "Strong criterion", "Why the strong version is better"],
+          "rows": [
+            [
+              "The website looks good.",
+              "The website uses a consistent colour palette of no more than three colours that align with the festival brand guide.",
+              "Specific, testable, and tied to a design principle (repetition/consistency)."
+            ],
+            [
+              "The video is easy to understand.",
+              "A person with no prior knowledge of the festival can identify the event name, date, and ticket URL after watching the video once.",
+              "Can be tested with a real user; gives a clear pass/fail outcome."
+            ],
+            [
+              "The poster is accessible.",
+              "All body text on the poster meets WCAG AA contrast ratio requirements (minimum 4.5:1 for normal text).",
+              "References an industry standard; can be verified with a contrast-checking tool."
+            ],
+            [
+              "The spreadsheet works.",
+              "The budget spreadsheet automatically calculates totals and highlights cells that exceed the budget in red.",
+              "Specific functionality; testable with sample data."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Methods of Evaluation",
+          "level": 3
+        },
+        {
+          "type": "table",
+          "headers": ["Method", "How it works", "What it reveals"],
+          "rows": [
+            [
+              "Criteria checklist (self)",
+              "Assess each criterion as met / partially met / not met, with evidence.",
+              "Structured, objective overview of how well the product meets the brief."
+            ],
+            [
+              "Client review",
+              "Present the product to the client; gather feedback using specific questions.",
+              "Whether the product meets the client's intent — often reveals mismatches between your interpretation and their vision."
+            ],
+            [
+              "Peer review",
+              "A classmate evaluates the product against the criteria — they do not know your design decisions.",
+              "Fresh perspective; identifies blind spots and usability issues you cannot see in your own work."
+            ],
+            [
+              "User testing",
+              "A member of the target audience uses the product while you observe — without guidance from you.",
+              "Reveals real usability issues; where users get confused, what they miss, what they find intuitive."
+            ],
+            [
+              "Self-reflection",
+              "Honest personal assessment of the process as well as the product.",
+              "Demonstrates critical thinking; identifies what you would do differently next time."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "The Iteration Cycle",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Iteration is not about fixing everything — it is about making targeted improvements based on evidence, then re-evaluating. A single iteration cycle: evaluate → identify the most critical issues → make specific changes → re-evaluate against the same criteria."
+        },
+        {
+          "type": "list",
+          "style": "numbered",
+          "items": [
+            "Evaluate the product against your criteria — document the results clearly.",
+            "Prioritise: which issues most significantly affect the product's ability to meet the brief?",
+            "Make targeted improvements — document what you changed and why.",
+            "Re-evaluate the specific criteria that were not met — did the change work?",
+            "Document the iteration: before/after screenshots, change log, and reflection on the outcome."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "heading": "Project Manager Tip",
+          "text": "In your evaluation write-up, always provide evidence. Screenshots, contrast ratio checker results, user testing notes, and client email responses are all valid evidence. 'I think it meets the criterion' is an opinion. 'The user completed the task in 30 seconds without any help' is evidence."
+        },
+        {
+          "type": "heading",
+          "text": "Portfolio Presentation",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "In SCSA AIT, your project folio is the complete record of your project management process. It demonstrates that you did not just build a product — you planned, represented, evaluated, and iterated. A strong folio tells a story from brief to final product."
+        },
+        {
+          "type": "table",
+          "headers": ["Folio section", "What to include"],
+          "rows": [
+            ["Interpreted brief", "Your restatement of the project requirements in your own words, including target audience and constraints."],
+            ["Target audience analysis and persona", "Detailed description of your audience with design implications."],
+            ["Design representations", "Thumbnail sketches, annotated wireframes or storyboards, with notes explaining decisions."],
+            ["Gantt chart / project schedule", "Your planning timeline with milestones and resource allocation."],
+            ["Evaluation criteria", "Your pre-defined criteria — written before you built the product."],
+            ["Evaluation results", "Criteria checklist with evidence; peer review feedback; client feedback."],
+            ["Iteration record", "Documentation of changes made based on evaluation, with before/after evidence."],
+            ["Final reflection", "Honest assessment of the process, what you learned, and what you would do differently."]
+          ]
+        },
+        {
+          "type": "scenarioChallenge",
+          "title": "Evaluating a Peer's Product",
+          "scenario": "Your classmate has created a website homepage for a local bakery. The original brief required: (1) the bakery's name and opening hours visible without scrolling, (2) at least one high-quality food photo, (3) a contact form, (4) colour palette matching the bakery's existing brand (brown, cream, and terracotta), (5) usable on mobile. You are conducting a peer review.",
+          "questions": [
+            {
+              "question": "Write a peer review using a criteria checklist format. For each criterion, state whether it is met, partially met, or not met, and provide a specific observation as evidence for your judgement.",
+              "marks": 5
+            },
+            {
+              "question": "Based on your review, identify the TWO most critical issues to fix first and explain why these should be prioritised over other issues.",
+              "marks": 4
+            },
+            {
+              "question": "Write a constructive peer feedback comment (3–4 sentences) that would help the designer improve their product without being vague or discouraging.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "type": "task",
+          "title": "Evaluate and Iterate Your Design Representation",
+          "software": "Microsoft Word / Google Docs (for documentation)",
+          "intro": "Using the wireframe or storyboard you created in Lesson 3, conduct a structured evaluation and complete one iteration cycle.",
+          "steps": [
+            "Write your evaluation criteria: create a checklist of 5–6 specific criteria your design representation must meet (e.g., 'All page sections are labelled', 'The ticket call-to-action is visible above the fold', 'Annotations explain at least 4 design decisions').",
+            "Self-evaluate: go through each criterion and rate it met / partially met / not met. Write one sentence of evidence for each rating.",
+            "Peer review: swap your wireframe or storyboard with a partner. They complete the same criteria checklist independently. Compare your results — where do you disagree?",
+            "Identify the two most important improvements based on the combined self and peer review.",
+            "Make the improvements to your wireframe or storyboard. Document each change: what you changed, why you changed it, and which criterion it addresses.",
+            "Photograph or export your revised design representation and annotate it to show what changed.",
+            "Write a 150-word reflection: What did the evaluation process reveal that you had not noticed yourself? What would you do differently in the planning phase next time?"
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "pm-u3-q9",
+            "questionType": "mcq",
+            "text": "Which evaluation criterion is written most effectively?",
+            "options": [
+              "The app looks professional and modern.",
+              "Users find the app easy to navigate.",
+              "A Year 10 student can find the homework submission page within 30 seconds without any instruction.",
+              "The app has good design principles applied."
+            ],
+            "correctIndex": 2,
+            "explanation": "Option C is specific (Year 10 student), measurable (30 seconds), and testable (without instruction). The other options are vague, subjective, or cannot be objectively verified — they describe impressions rather than measurable outcomes."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "pm-u3-q10",
+            "questionType": "mcq",
+            "text": "Why should evaluation criteria be written BEFORE the product is built, not after?",
+            "options": [
+              "Because criteria are not needed once the product is finished.",
+              "To ensure the evaluation is objective and not influenced by what was actually built.",
+              "Because clients will not accept criteria written after the deadline.",
+              "To save time at the end of the project."
+            ],
+            "correctIndex": 1,
+            "explanation": "Writing criteria after the product is built introduces bias — you unconsciously write criteria that match what you made, rather than what was originally required. Pre-defined criteria ensure the evaluation measures the product against the brief, not against itself."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "pm-u3-q11",
+            "questionType": "short_answer",
+            "text": "A student evaluates their project poster and writes: 'I think it looks good and I am happy with it.' Explain why this is an inadequate evaluation and describe what a professional evaluation response would include instead.",
+            "marks": 4
+          }
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "heading": "Project Manager Tip — Final Portfolio Checklist",
+          "text": "Before submitting your project folio, check: (1) Does your folio include evidence of ALL phases — plan, represent, create, evaluate, iterate? (2) Have you written an interpreted brief that shows you understood the client's needs? (3) Do your design representations include annotations, not just drawings? (4) Are your evaluation criteria specific and measurable? (5) Do you have evidence (screenshots, feedback, test results) for every criterion judgement? (6) Does your reflection show genuine critical thinking — not just what went well, but what you would do differently?"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,976 @@
+{
+  "id": "project-management-u4",
+  "title": "Project Management",
+  "description": "Year 12 Unit 4",
+  "lessons": [
+    {
+      "id": "advanced-project-planning",
+      "title": "Advanced Project Planning",
+      "estimatedMinutes": 50,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "From Student Projects to Professional Practice",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "In Year 11 you learned the foundations — design briefs, the design process, basic time management. In Year 12, Unit 4, you apply all of that in a capstone project that mirrors professional IT practice. You will plan, execute, and deliver a real digital product for a real (or realistic) client. That means your planning documents, your schedules, and your decisions must be professional-grade."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "heading": "Career Ready",
+          "text": "Project management is consistently listed as one of the top skills employers seek in IT graduates. Completing a well-documented capstone project gives you tangible evidence — something you can show in a job interview or include in a portfolio."
+        },
+        {
+          "type": "heading",
+          "text": "Scope Management",
+          "level": 2
+        },
+        {
+          "type": "keyTerm",
+          "term": "Project Scope",
+          "definition": "The defined boundaries of a project — what is included, what is excluded, and what constitutes a completed deliverable. A clear scope is the single most important ingredient in a successful project."
+        },
+        {
+          "type": "keyTerm",
+          "term": "Scope Creep",
+          "definition": "The gradual, uncontrolled expansion of a project's requirements beyond the original agreement. Scope creep is the number one cause of IT projects running over time and over budget."
+        },
+        {
+          "type": "paragraph",
+          "text": "Scope creep rarely arrives as a dramatic demand. It arrives as small, reasonable-sounding additions: 'Can you add a photo gallery?' 'Could it also do bookings?' 'What about a loyalty card system?' Each request seems minor in isolation — together, they can double the size of your project."
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Define scope in writing before work begins — a signed-off specification prevents later disputes",
+            "Use a change request process for anything outside the original scope",
+            "Be polite but firm: 'That's a great idea — let's add it to a future phase'",
+            "Every scope addition must trigger a revision of the timeline and resources"
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "heading": "Project Manager",
+          "text": "As project manager, it is your responsibility to protect the scope. Clients (and even teachers) will suggest additions — your job is to evaluate whether each one is feasible within the existing plan, and to communicate clearly if it is not."
+        },
+        {
+          "type": "heading",
+          "text": "The Plan of Action",
+          "level": 2
+        },
+        {
+          "type": "keyTerm",
+          "term": "Plan of Action",
+          "definition": "A formal project planning document that outlines all tasks, their sequence, who is responsible for each, the resources required, and the deadlines. It is the master reference document for the entire project."
+        },
+        {
+          "type": "paragraph",
+          "text": "A professional plan of action goes well beyond a to-do list. It documents decisions, identifies risks, and provides a basis for evaluation at the project's end. In industry, this document is sometimes called a project plan, project charter, or statement of work — the terminology varies, but the purpose is the same."
+        },
+        {
+          "type": "table",
+          "headers": ["Section", "What it contains", "Why it matters"],
+          "rows": [
+            ["Project overview", "Name, purpose, client, key dates", "Establishes shared understanding at a glance"],
+            ["Scope statement", "What is in scope, what is out of scope", "Prevents scope creep and misunderstandings"],
+            ["Deliverables", "List of specific outputs the client will receive", "Creates clear, measurable success criteria"],
+            ["Task breakdown", "All tasks, sequence, dependencies, owner", "Enables realistic scheduling and accountability"],
+            ["Resource list", "Hardware, software, people, budget (if applicable)", "Ensures resources are in place before work begins"],
+            ["Timeline / Gantt", "Visual schedule with milestones", "Allows progress tracking and early warning of delays"],
+            ["Risk register", "Identified risks, likelihood, mitigation strategies", "Prepares the team for foreseeable problems"],
+            ["Evaluation criteria", "How success will be measured at project end", "Ensures the team knows what 'done' looks like"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Resource Planning",
+          "level": 2
+        },
+        {
+          "type": "keyTerm",
+          "term": "Resource Planning",
+          "definition": "The process of identifying and scheduling all resources needed to complete a project — including human resources (people and their skills), physical resources (hardware, equipment), digital resources (software, licences, cloud storage), and time."
+        },
+        {
+          "type": "paragraph",
+          "text": "Many student projects fail not because the student lacked ability, but because a critical resource was unavailable at a critical moment: the school's licence for software X didn't cover the new feature; the video footage was on a personal device with a cracked screen; the collaboration tool wasn't accessible from home. Resource planning identifies these risks before they become crises."
+        },
+        {
+          "type": "list",
+          "style": "numbered",
+          "items": [
+            "List every tool, piece of software, and hardware you will need",
+            "Verify access and availability for each resource now, not later",
+            "Identify substitutes for critical resources in case of failure",
+            "Document software versions — compatibility issues are a leading source of lost time",
+            "If working in a team, map each person's skills to the tasks that require them"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Realistic Timelines",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Students (and professional developers) almost universally underestimate how long tasks take. A useful rule of thumb from experienced project managers: estimate the time, then double it. This is not pessimism — it accounts for the reality of sick days, technical problems, revision cycles, and the inevitable tasks you forgot to list."
+        },
+        {
+          "type": "table",
+          "headers": ["Rookie mistake", "Professional practice"],
+          "rows": [
+            ["'I'll build the whole website in the last two weeks'", "Break the build into daily tasks with internal milestones"],
+            ["No buffer time in the schedule", "Add 10–20% buffer before every major deadline"],
+            ["Assuming everything works first time", "Schedule time for testing, revision, and debugging"],
+            ["Forgetting documentation time", "Documentation is a deliverable — it needs its own tasks"],
+            ["Starting without a plan", "No code before the plan is approved"]
+          ]
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "scenarioChallenge",
+          "title": "Capstone Scenario: The Riverside Cafe",
+          "scenario": "Riverside Cafe is a small, family-run cafe that currently has no online presence. The owner, Lisa, wants a website and a social media content plan to attract a younger customer base. She has given you 6 weeks, a logo file, and some photos. She has mentioned — casually, not as a formal request — that 'it would be great if customers could book a table online too.' Your class will be assessed on the quality of your project management, the digital product, and your formal presentation to Lisa at the end.",
+          "questions": [
+            {
+              "question": "Identify three pieces of information you would need to clarify with Lisa before writing the plan of action. Explain why each piece of information is essential.",
+              "marks": 6
+            },
+            {
+              "question": "Lisa's comment about online bookings is a potential scope addition. Write a professional response you could give to Lisa explaining how you will handle this request within the project framework.",
+              "marks": 4
+            },
+            {
+              "question": "Draft a scope statement for the Riverside Cafe project. Clearly list at least four items that are in scope and two that are out of scope.",
+              "marks": 6
+            }
+          ]
+        },
+        {
+          "type": "task",
+          "title": "Create Your Plan of Action",
+          "intro": "Using the template structure below as a guide, create a professional plan of action document for your capstone project. This document will be submitted as a graded component of your Unit 4 assessment.",
+          "steps": [
+            "Write a project overview section: project name, client name, purpose (1–2 sentences), key start and end dates",
+            "Write a scope statement: list at least 5 in-scope deliverables and at least 2 explicit out-of-scope items",
+            "Create a task breakdown: list every task needed to complete the project, estimate the hours for each, and identify any task dependencies (which tasks must be completed before others can begin)",
+            "Identify all resources: software (name and version), hardware, file storage, and any external assets (images, fonts, icons) including their licences",
+            "Write a brief risk register: identify at least 3 foreseeable risks, rate each as Low/Medium/High likelihood, and describe your mitigation strategy for each",
+            "Draft your evaluation criteria: write at least 5 measurable criteria by which the finished project can be judged as successful"
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "pm-u4-q1",
+            "questionType": "mcq",
+            "text": "A client asks mid-project if you can add a new feature that was not in the original scope. What is the most professional response?",
+            "options": [
+              "Refuse the request immediately — the scope is locked and cannot change",
+              "Agree to add it — the client is always right",
+              "Evaluate the impact on timeline and resources, then discuss options with the client using a formal change request process",
+              "Add it quietly without telling anyone so as not to cause conflict"
+            ],
+            "correctIndex": 2,
+            "explanation": "Professional project managers use a change request process. This acknowledges the client's request, evaluates the real impact, and makes any change a deliberate decision — not an accidental expansion of scope."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "pm-u4-q2",
+            "questionType": "mcq",
+            "text": "Which of the following is NOT typically included in a professional plan of action?",
+            "options": [
+              "A list of project deliverables",
+              "The client's personal opinions about competitors",
+              "A risk register identifying foreseeable problems",
+              "Resource requirements for the project"
+            ],
+            "correctIndex": 1,
+            "explanation": "A plan of action contains deliverables, tasks, resources, timelines, risks, and evaluation criteria — all of which are directly relevant to managing and completing the project. A client's personal opinions about competitors are not relevant to project planning."
+          }
+        }
+      ]
+    },
+    {
+      "id": "working-with-a-client-brief",
+      "title": "Working with a Client Brief",
+      "estimatedMinutes": 50,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "What is a Client Brief?",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "A client brief is the starting point for any professional design or development project. It is the client's statement of what they want — but rarely is it complete, precise, or technically coherent. Your job as the project lead is to translate a vague client brief into a precise, actionable project specification."
+        },
+        {
+          "type": "keyTerm",
+          "term": "Client Brief",
+          "definition": "A document or conversation in which a client describes what they want to achieve, who the audience is, what the product should do, and any constraints (budget, timeline, technical). Briefs are often incomplete and require clarifying questions."
+        },
+        {
+          "type": "keyTerm",
+          "term": "Project Specification",
+          "definition": "A formal, detailed document derived from the client brief that specifies exactly what will be built, how success will be measured, technical requirements, and constraints. Unlike a brief, a specification is precise and agreed to by both parties."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "heading": "Industry Standard: Agile vs Waterfall",
+          "text": "In a Waterfall project, the full specification is locked in before development begins. In Agile, requirements evolve through short development cycles (sprints) with regular client feedback. Most school capstone projects use a hybrid: a fixed specification for the major deliverables, with iterative feedback during development. Understanding both models is expected in IT industry roles."
+        },
+        {
+          "type": "heading",
+          "text": "Asking the Right Questions",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "The most valuable skill in client communication is knowing what questions to ask — and asking them before work begins, not after. The cost of clarifying a requirement during planning is a five-minute conversation. The cost of discovering a misunderstanding after two weeks of development is starting over."
+        },
+        {
+          "type": "table",
+          "headers": ["Category", "Key questions to ask", "Why it matters"],
+          "rows": [
+            ["Purpose", "What problem does this product solve? What does success look like for you in 6 months?", "Ensures you are solving the right problem, not just building what was requested"],
+            ["Audience", "Who are the users? What is their technical skill level? How will they access the product (device, location)?", "Shapes design decisions — a website for elderly users looks very different to one for teenagers"],
+            ["Content", "Do you have existing content (text, images, logos)? Who will provide new content? Who owns it?", "Missing content is one of the leading causes of project delays"],
+            ["Technical", "Are there existing systems this must connect to? Are there software preferences or restrictions?", "Technical constraints must be known before selecting tools"],
+            ["Timeline", "Are there fixed deadlines (events, launches, seasons)? Which features are must-have vs nice-to-have?", "Helps prioritise and ensures the most critical work is done first"],
+            ["Success criteria", "How will you know the product is finished? What would make you rate this project a 10 out of 10?", "Gives you specific, testable goals rather than vague satisfaction"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Writing a Formal Project Specification",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "The project specification is the document that both you and the client agree to before a single line of code is written or a single design element is created. It protects both parties: the client knows what they will receive, and you know exactly what you are expected to deliver."
+        },
+        {
+          "type": "list",
+          "style": "numbered",
+          "items": [
+            "Project title and parties: names of the student/team and the client",
+            "Project purpose: a clear, one-paragraph description of what the product is and what problem it solves",
+            "Target audience: specific description of who will use the product",
+            "Functional requirements: numbered list of what the product must do (e.g., 'The website must display a menu with prices')",
+            "Non-functional requirements: quality standards (e.g., 'Pages must load within 3 seconds on a standard internet connection')",
+            "Technical requirements: software, platform, file formats, compatibility requirements",
+            "Constraints: time, budget, software licences, available hardware, content ownership",
+            "Exclusions: explicit list of what the product will NOT do (scope boundary)",
+            "Deliverables: complete list of what will be handed to the client, and in what format",
+            "Approval: signatures or written confirmation from both parties"
+          ]
+        },
+        {
+          "type": "keyTerm",
+          "term": "Functional Requirements",
+          "definition": "Specific, measurable descriptions of what a product must do. A functional requirement can be tested: either the product does it or it does not. Example: 'Users must be able to submit a contact form that sends an email to the business owner.'"
+        },
+        {
+          "type": "keyTerm",
+          "term": "Non-Functional Requirements",
+          "definition": "Quality or performance standards the product must meet, independent of specific features. Examples include load time, accessibility standards, compatibility with specific browsers, or visual design consistency."
+        },
+        {
+          "type": "heading",
+          "text": "Change Management",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Even with a perfect specification, clients change their minds. Technology changes. Circumstances change. Professional project management includes a formal process for handling these changes — so that the project doesn't silently grow out of control."
+        },
+        {
+          "type": "keyTerm",
+          "term": "Change Request",
+          "definition": "A formal proposal to modify the agreed project scope, timeline, or deliverables. Every change request must be documented, evaluated for impact, approved by both parties, and reflected in an updated plan of action."
+        },
+        {
+          "type": "table",
+          "headers": ["Change request step", "Action required"],
+          "rows": [
+            ["1. Receive the request", "Document the change in writing — even if it was raised verbally"],
+            ["2. Evaluate the impact", "Assess how the change affects timeline, resources, and other tasks"],
+            ["3. Communicate the impact", "Inform the client of any timeline or scope implications honestly"],
+            ["4. Gain approval", "Both parties agree to the change in writing before implementation"],
+            ["5. Update the plan", "Revise the plan of action, timeline, and specification to reflect the approved change"]
+          ]
+        },
+        {
+          "type": "scenarioChallenge",
+          "title": "Scenario: The Moving Target",
+          "scenario": "You are two weeks into a 6-week project building a website for a local gym. You have completed the homepage, the 'About Us' page, and the class timetable. The client emails: 'I've been thinking — we'd really love an online shop where members can buy gym merchandise. Also, can you change the colour scheme from blue to orange? My partner thinks blue looks cold.' You have four weeks remaining and your schedule is already tight.",
+          "questions": [
+            {
+              "question": "Classify each of the client's two requests as either a minor change or a major scope addition. Justify your classification for each.",
+              "marks": 4
+            },
+            {
+              "question": "Write a professional email response to the client. Your response must acknowledge both requests, explain the impact of the merchandise shop request on the project timeline, and propose a clear path forward. Maintain a professional and client-focused tone throughout.",
+              "marks": 6
+            },
+            {
+              "question": "Update your project risk register to include 'client requests scope changes mid-project' as a risk. Assign a likelihood rating and describe an appropriate mitigation strategy.",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "type": "task",
+          "title": "Write a Project Specification Document",
+          "intro": "Using the Riverside Cafe scenario (or your own capstone client), write a formal project specification document. This is a professional document — use clear headings, numbered lists for requirements, and formal language throughout.",
+          "steps": [
+            "Write the project purpose section: who is the client, what is the product, and what problem does it solve? (3–4 sentences minimum)",
+            "Describe the target audience in detail: age range, technical literacy, how they will most likely access the product, and any accessibility considerations",
+            "Write at least 6 functional requirements using the format 'The product must [action]...' — each requirement must be testable",
+            "Write at least 3 non-functional requirements (performance, accessibility, or visual consistency standards)",
+            "List all technical requirements: software, file formats, browser compatibility, device compatibility",
+            "Write a constraints section: what are the time, budget, software, and content limitations?",
+            "Write an exclusions section: list at least 3 things the product will explicitly NOT do",
+            "List all deliverables: what exactly will the client receive when the project is complete?",
+            "Have a classmate or teacher review your specification and provide written feedback before you finalise it"
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "pm-u4-q3",
+            "questionType": "extended",
+            "text": "You are working on a website for a community sports club. Halfway through the project, the club president asks you to also create a members-only portal where players can log in, see their training schedules, and pay annual fees online. Describe the steps you would take to handle this request professionally, and explain how this situation could have been avoided during the initial planning phase.",
+            "marks": 8,
+            "explanation": "A strong response will: describe the change request process (document, evaluate impact, communicate, gain approval, update plan); explain that the portal is a major scope addition requiring significant additional time, technical skills, and possibly a different technology stack; and identify that clearer initial scoping questions — especially 'What features might you want to add in the future?' — could have surfaced this requirement early."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "pm-u4-q4",
+            "questionType": "mcq",
+            "text": "What is the key difference between a client brief and a project specification?",
+            "options": [
+              "A brief is written by the project team; a specification is written by the client",
+              "A brief describes what the client wants at a high level; a specification is a precise, agreed document defining exactly what will be delivered",
+              "A specification is only needed for large commercial projects, not school assessments",
+              "A brief contains technical requirements; a specification contains only visual design requirements"
+            ],
+            "correctIndex": 1,
+            "explanation": "The client brief is the starting point — a description of what the client wants, often vague or incomplete. The project specification is a precise document, developed from the brief after clarifying questions, that both parties formally agree to. It is the binding agreement for what will be delivered."
+          }
+        }
+      ]
+    },
+    {
+      "id": "time-management-and-scheduling",
+      "title": "Time Management and Scheduling",
+      "estimatedMinutes": 55,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Professional Scheduling in IT Projects",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "According to the Standish Group's CHAOS Report, schedule overruns affect the majority of IT projects globally. In Year 12, your capstone project has a fixed deadline — there is no 'extension' in the professional world. Learning to build and manage a realistic project schedule is the difference between delivering on time and delivering an excuse."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "heading": "Career Ready",
+          "text": "Every IT role from junior developer to project manager requires scheduling skills. Tools like Microsoft Project, Asana, Trello, Jira, and Monday.com are industry standards — familiarity with even one of these tools is a genuine competitive advantage in job applications."
+        },
+        {
+          "type": "heading",
+          "text": "Gantt Charts",
+          "level": 2
+        },
+        {
+          "type": "keyTerm",
+          "term": "Gantt Chart",
+          "definition": "A horizontal bar chart that visualises a project schedule. Each task is represented as a bar spanning its start and end dates. Gantt charts show the sequence of tasks, their duration, and which tasks run in parallel or depend on one another."
+        },
+        {
+          "type": "paragraph",
+          "text": "Gantt charts were invented by Henry Gantt in the early 20th century and are still the most widely used project scheduling tool in existence. A well-constructed Gantt chart communicates the entire project schedule at a glance — to the team, to the client, and to anyone reviewing the project documentation."
+        },
+        {
+          "type": "table",
+          "headers": ["Gantt chart element", "What it shows"],
+          "rows": [
+            ["Task name", "The work to be done"],
+            ["Start date", "When the task begins"],
+            ["End date / duration", "When the task is due to finish"],
+            ["Dependencies", "Which tasks must be completed before this one can begin (often shown as arrows)"],
+            ["Milestones", "Key project checkpoints — shown as a diamond or vertical line"],
+            ["Progress bar", "How much of the task has been completed (used during project execution)"],
+            ["Critical path", "The sequence of tasks that determines the minimum project duration — any delay here delays the whole project"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "heading": "Industry Standard: Agile vs Waterfall",
+          "text": "Waterfall projects use Gantt charts extensively — the entire schedule is planned upfront. Agile projects use sprint boards (like Trello or Jira) instead, planning only 1–2 weeks ahead in each iteration. Most real IT projects use elements of both: a high-level Gantt for the overall project, and a sprint board for week-to-week task management."
+        },
+        {
+          "type": "heading",
+          "text": "The Priority Matrix (Eisenhower Matrix)",
+          "level": 2
+        },
+        {
+          "type": "keyTerm",
+          "term": "Priority Matrix",
+          "definition": "Also known as the Eisenhower Matrix, this is a decision tool that categorises tasks by urgency and importance. It helps you focus effort on what matters rather than what feels pressing."
+        },
+        {
+          "type": "table",
+          "headers": ["", "Urgent", "Not Urgent"],
+          "rows": [
+            ["Important", "DO FIRST — critical tasks with deadlines approaching (e.g. submit project spec today)", "SCHEDULE — important progress tasks (e.g. build homepage wireframes this week)"],
+            ["Not Important", "DELEGATE or minimise — interruptions disguised as tasks (e.g. fix a minor typo)", "ELIMINATE — time-wasters (e.g. endlessly browsing colour palettes without deciding)"]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "In a capstone project, the most common priority mistake is spending too much time in the 'Not Important / Not Urgent' quadrant — refining things that are already good enough, or avoiding difficult tasks by doing easier ones. A weekly priority review forces you to consciously allocate your time."
+        },
+        {
+          "type": "heading",
+          "text": "Milestone Tracking",
+          "level": 2
+        },
+        {
+          "type": "keyTerm",
+          "term": "Milestone",
+          "definition": "A significant checkpoint in a project that marks the completion of a major phase or deliverable. Milestones have no duration — they are moments in time. Examples: 'Specification approved by client', 'Wireframes completed', 'Testing phase begins'."
+        },
+        {
+          "type": "paragraph",
+          "text": "Milestones serve as the early warning system for a project. If a milestone is missed, the project is in trouble — and you know it immediately, while there is still time to recover. Without milestones, you may not realise the project is behind until it is too late to fix it."
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Set milestones at the end of each major project phase, not just at the final deadline",
+            "A missed milestone requires an immediate plan update — not wishful thinking that you'll 'make it up'",
+            "Milestones should be binary: either achieved or not — avoid 'almost done' milestones",
+            "Review milestone status at the start of every work session"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Managing Multiple Deliverables",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Your capstone project is not the only thing happening in Term 3. You have other subjects, other assessments, sport, part-time work, and everything else that makes up Year 12. Professional project managers deal with the same reality — projects do not exist in a vacuum. The solution is integrated scheduling: your capstone project milestones must be planned alongside your other commitments."
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Map all your major deadlines (all subjects) onto a single calendar before building your project schedule",
+            "Identify your peak pressure periods and plan lighter capstone tasks during those weeks",
+            "Build contingency time before any week you know will be disrupted",
+            "Communicate proactively — if a conflict arises, tell your teacher early, not the day before"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Industry Tools",
+          "level": 2
+        },
+        {
+          "type": "comparison",
+          "title": "Project Scheduling Tools",
+          "items": [
+            {
+              "label": "Trello",
+              "points": [
+                "Free tier available; browser-based",
+                "Kanban board interface — cards move between columns (To Do / In Progress / Done)",
+                "Excellent for team projects and visual task tracking",
+                "Integrates with Google Drive, Slack, and other tools",
+                "Less suited to complex dependency tracking"
+              ]
+            },
+            {
+              "label": "Asana",
+              "points": [
+                "Free tier for up to 15 users",
+                "Supports both list and Gantt-style timeline views",
+                "Strong milestone and dependency tracking",
+                "Used widely in marketing and creative agencies",
+                "More complex than Trello — steeper learning curve"
+              ]
+            },
+            {
+              "label": "Microsoft Project (concept)",
+              "points": [
+                "Industry-standard enterprise tool — not free",
+                "Full Gantt charting with critical path analysis",
+                "Resource management and budget tracking built in",
+                "Used on large construction, IT, and government projects",
+                "Covered in TAFE and university IT management courses"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "task",
+          "title": "Build a Gantt Chart for Your Capstone Project",
+          "software": "Google Sheets, Excel, or Trello/Asana",
+          "intro": "Create a Gantt chart for your capstone project covering the full project duration. This chart will form part of your submitted plan of action.",
+          "steps": [
+            "List every task from your plan of action task breakdown in the first column",
+            "Add columns for each week (or day, depending on your project length) of the project",
+            "Shade the cells corresponding to each task's start and end dates — use colour to distinguish task types (e.g. planning in blue, development in green, testing in orange, documentation in purple)",
+            "Mark all milestones with a distinct symbol (e.g. a bold border, a diamond cell, or a different fill colour)",
+            "Draw arrows or add a 'Depends on' column to show task dependencies",
+            "Identify and highlight the critical path — the sequence of tasks where any delay causes the whole project to be delayed",
+            "Screenshot or export the Gantt chart and include it in your plan of action document",
+            "Review the chart: is there any single week where you have more than you can realistically complete? Redistribute tasks now, not later."
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "pm-u4-q5",
+            "questionType": "mcq",
+            "text": "On a Gantt chart, the 'critical path' refers to:",
+            "options": [
+              "The tasks that are most interesting or technically challenging",
+              "The sequence of tasks that determines the minimum total project duration, where any delay causes the whole project to be delayed",
+              "The tasks that require the most expensive resources",
+              "The first and last task in the project only"
+            ],
+            "correctIndex": 1,
+            "explanation": "The critical path is the longest sequence of dependent tasks in the project. Any task on the critical path that runs late directly delays the project completion date. Tasks not on the critical path have 'float' — they can be delayed slightly without affecting the end date."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "pm-u4-q6",
+            "questionType": "extended",
+            "text": "Your capstone project has 5 weeks remaining. You have just missed your 'Wireframes complete' milestone because you spent too long on the homepage design. Describe the steps you would take to get the project back on track, and explain what planning strategies could have prevented this situation.",
+            "marks": 6,
+            "explanation": "A strong response will include: immediate actions (reassess remaining tasks, identify what can be compressed or cut, communicate with the teacher, update the Gantt chart); and prevention strategies (setting sub-milestones within large tasks, using a priority matrix to avoid over-investing in one task, scheduling a weekly review of milestone status)."
+          }
+        }
+      ]
+    },
+    {
+      "id": "managing-resources-and-team-collaboration",
+      "title": "Managing Resources and Team Collaboration",
+      "estimatedMinutes": 50,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Resource Management in Practice",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Identifying your resources in the plan of action is just the beginning. Managing those resources throughout the project — ensuring they are available when needed, used effectively, and not wasted — is an ongoing responsibility. In professional IT environments, poor resource management is among the most common reasons projects fail to deliver."
+        },
+        {
+          "type": "keyTerm",
+          "term": "Resource Allocation",
+          "definition": "The process of assigning specific resources (people, time, tools) to specific tasks. Effective allocation matches the right resource to the right task at the right time, without overloading any single resource."
+        },
+        {
+          "type": "keyTerm",
+          "term": "Resource Conflict",
+          "definition": "A situation where the same resource is required by two tasks simultaneously, or where a resource is over-allocated (assigned more work than is physically possible in the available time)."
+        },
+        {
+          "type": "table",
+          "headers": ["Resource type", "Examples", "Common management challenges"],
+          "rows": [
+            ["Human resources", "Your own skills and time; team members' skills", "Skill gaps, unavailability, uneven workload distribution"],
+            ["Software tools", "Adobe suite, VS Code, Canva, Wix, WordPress", "Licence limitations, version incompatibility, access from home vs school"],
+            ["Hardware", "School computers, personal devices, cameras", "Equipment unavailability, storage limitations, compatibility between devices"],
+            ["Digital assets", "Client-provided images, fonts, icons, videos", "Missing assets blocking progress, copyright issues, wrong file format"],
+            ["Time", "Class periods, homework time, teacher consultation time", "Competing demands from other subjects, unexpected absences"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "heading": "Project Manager",
+          "text": "If you are managing a team, resource management means actively checking on your team members — not assuming everything is on track. A weekly 5-minute check-in where each person reports their status prevents small problems from becoming project-ending crises."
+        },
+        {
+          "type": "heading",
+          "text": "Working in Teams",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Most real IT projects involve teams. Even if your capstone project is individual, understanding team dynamics and professional collaboration skills is an assessed expectation in Year 12 General IT. These skills are also among the most frequently cited by employers as 'missing' in new IT graduates."
+        },
+        {
+          "type": "keyTerm",
+          "term": "Work Breakdown Structure (WBS)",
+          "definition": "A hierarchical decomposition of a project into smaller, manageable components. Each component is assigned to a team member, ensuring all work is accounted for and responsibilities are clear."
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Define roles and responsibilities in writing before work begins — verbal agreements are forgotten",
+            "Assign tasks based on skills and interest, but ensure no team member carries a disproportionate load",
+            "Use a shared project management tool (Trello, Asana, shared Google Sheet) so all team members see the same current status",
+            "Set a regular team meeting schedule — even a 10-minute weekly check-in prevents misalignment",
+            "Document decisions made in team meetings — a brief set of notes keeps everyone accountable"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Communication Protocols",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Communication failures are the leading cause of team project problems in both schools and industry. A communication protocol is simply an agreed set of rules for how the team will communicate — which tools they will use, how quickly they will respond, and how decisions will be made."
+        },
+        {
+          "type": "table",
+          "headers": ["Communication type", "Recommended tool", "Protocol"],
+          "rows": [
+            ["Daily status updates", "Trello / shared document", "Each person updates their task card before the end of each work session"],
+            ["Team discussions", "Group chat (Teams, Slack, or Google Chat)", "Responses expected within 24 hours on school days"],
+            ["Client communication", "Email (formal)", "All client emails to be reviewed by the team before sending; keep copies on file"],
+            ["File sharing", "Google Drive / OneDrive (shared folder)", "All project files saved to shared folder — never only on a personal device"],
+            ["Decisions", "Meeting notes document", "All decisions recorded in writing with the date and who agreed"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Version Control in Team Projects",
+          "level": 2
+        },
+        {
+          "type": "keyTerm",
+          "term": "Version Control",
+          "definition": "A system for tracking changes to files over time, enabling multiple team members to work on the same project simultaneously and revert to earlier versions if something goes wrong."
+        },
+        {
+          "type": "paragraph",
+          "text": "Every professional software development team uses version control. In IT courses, even if you are not writing code, version control principles apply to your design files, documents, and assets. The most common version control system is Git, hosted on platforms like GitHub or GitLab."
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Never save over the previous version of a file without a backup — use filenames like 'homepage-v1', 'homepage-v2', or cloud version history",
+            "Commit your work regularly — frequent small saves are safer than one large save at the end",
+            "Write meaningful commit messages or file notes: 'Updated nav bar colours per client feedback 15 June' is more useful than 'changes'",
+            "Before any major change, create a saved checkpoint you can return to if the change does not work",
+            "If using Git: create a new branch for experimental changes, so the main project is always in a working state"
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "heading": "Industry Standard: Agile vs Waterfall",
+          "text": "Agile teams use Git branching strategies (like GitFlow) to manage simultaneous work on multiple features. Each new feature gets its own branch; it is only merged into the main project once it is tested and approved. This keeps the main codebase always in a releasable state — a critical requirement for teams deploying live software."
+        },
+        {
+          "type": "scenarioChallenge",
+          "title": "Scenario: The Team in Trouble",
+          "scenario": "You are three weeks into a group website project. Your team of three was assigned clear roles: you are the project manager and lead developer; Jamie is responsible for content and copywriting; Alex is responsible for visual design. At your week-3 check-in, you discover: Jamie has done none of the copywriting because 'I didn't know what style to write in'; Alex completed the design but saved all the files only on a personal USB drive that has now been lost; and your own development work is on track. The project is due in two weeks.",
+          "questions": [
+            {
+              "question": "Identify two project management failures that led to this situation. For each failure, explain what planning measure could have prevented it.",
+              "marks": 6
+            },
+            {
+              "question": "As project manager, write a brief action plan for the next two weeks that gives the project the best chance of delivering a complete product on deadline. Be specific about task reassignment and prioritisation.",
+              "marks": 6
+            },
+            {
+              "question": "After the project is completed, you hold a team retrospective (a review of what went well and what to improve). Identify two team collaboration protocols you would implement from the start of the next project, and explain why each would be effective.",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "type": "task",
+          "title": "Create a Team Resource and Collaboration Plan",
+          "intro": "Whether your capstone project is individual or team-based, complete this resource management plan. Individual students should complete sections 1–4; team projects should complete all sections.",
+          "steps": [
+            "Create a resource inventory table: list every tool, software application, and hardware item your project requires. For each, note: where it is accessed (school / home / cloud), whether access is confirmed, and who is responsible for it",
+            "For team projects: create a roles and responsibilities matrix. List each team member and their assigned tasks, skills they contribute, and the tasks they are accountable for completing",
+            "Write your team's communication protocol: which tools will be used for which purposes, expected response times, and how decisions will be documented",
+            "Design a file management system: choose a cloud storage platform, create a logical folder structure for your project files, and document the file naming convention your team will use",
+            "Identify your version control approach: describe how you will track changes to files and ensure previous versions can be recovered",
+            "Identify two resource risks (e.g. 'a team member is absent for a week') and write a contingency plan for each"
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "pm-u4-q7",
+            "questionType": "mcq",
+            "text": "A team member saves all their design files only on a personal USB drive and it is lost. Which project management practice would have prevented this problem?",
+            "options": [
+              "A more detailed Gantt chart",
+              "A formal communication protocol requiring client approval before file changes",
+              "A file management protocol requiring all project files to be saved to a shared cloud storage folder",
+              "A more detailed scope statement"
+            ],
+            "correctIndex": 2,
+            "explanation": "A file management protocol — part of resource management planning — specifies where project files must be stored. Requiring all files to be saved to a shared cloud folder (e.g. Google Drive, OneDrive) ensures that no single device failure can result in permanent data loss."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "pm-u4-q8",
+            "questionType": "mcq",
+            "text": "In project management, what is a 'Work Breakdown Structure'?",
+            "options": [
+              "A chart showing how tasks are divided by the number of team members",
+              "A hierarchical decomposition of a project into smaller components, each assigned to a responsible team member",
+              "A list of the resources required for each task",
+              "A summary of the project's risk register"
+            ],
+            "correctIndex": 1,
+            "explanation": "A Work Breakdown Structure (WBS) breaks the project down into its component parts in a hierarchical way — from the overall project to major phases, then to individual tasks. Each task is assigned a responsible owner, ensuring complete coverage of all project work."
+          }
+        }
+      ]
+    },
+    {
+      "id": "evaluation-and-professional-delivery",
+      "title": "Evaluation and Professional Delivery",
+      "estimatedMinutes": 55,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "What Does 'Done' Actually Mean?",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "One of the most important questions in any project is: how do we know when the product is finished? 'I think it looks good' is not a professional answer. Professional evaluation is criteria-based — you measure the product against specific, pre-agreed standards that were defined at the start of the project. This is why your evaluation criteria must appear in your plan of action, not be invented at the end."
+        },
+        {
+          "type": "keyTerm",
+          "term": "Criteria-Based Evaluation",
+          "definition": "An assessment method in which a product or outcome is judged against a specific, pre-defined list of measurable criteria. Each criterion is either met, partially met, or not met — providing an objective basis for evaluation rather than subjective impressions."
+        },
+        {
+          "type": "heading",
+          "text": "Building an Evaluation Framework",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Your evaluation framework should assess the product across multiple dimensions — not just whether it works, but whether it meets the client's needs, is usable, is professional in appearance, and was delivered on time and within constraints."
+        },
+        {
+          "type": "table",
+          "headers": ["Evaluation dimension", "Example criteria", "How to measure"],
+          "rows": [
+            ["Functionality", "All functional requirements from the specification are working", "Test each requirement individually — pass/fail checklist"],
+            ["Usability", "Target audience can navigate the product without instruction", "Ask a real member of the target audience to complete 2–3 tasks and observe"],
+            ["Visual design", "Consistent colour scheme, typography, and spacing throughout", "Compare against the approved design brief / style guide"],
+            ["Client satisfaction", "Client confirms the product meets their expectations", "Formal client sign-off or feedback form"],
+            ["Project management", "Project was delivered on time; documentation is complete", "Compare actual vs planned timeline; check all deliverables submitted"],
+            ["Technical quality", "No broken links, no errors on load, appropriate file sizes", "Systematic testing checklist"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "heading": "Career Ready",
+          "text": "In the IT industry, formal product evaluation is called Quality Assurance (QA) or User Acceptance Testing (UAT). QA testers are professional roles — IT companies pay specialists to ensure products meet their defined standards before release. Documenting your own evaluation process demonstrates this professional mindset to teachers and future employers."
+        },
+        {
+          "type": "heading",
+          "text": "Reflective Practice",
+          "level": 2
+        },
+        {
+          "type": "keyTerm",
+          "term": "Reflective Practice",
+          "definition": "A professional habit of systematically reviewing your own performance and processes — identifying what worked, what did not, why, and what you would do differently next time. Used in teaching, healthcare, engineering, and IT."
+        },
+        {
+          "type": "paragraph",
+          "text": "Reflection is not self-criticism — it is a tool for professional growth. In your capstone evaluation, you are expected to evaluate both the product (how well does it meet the criteria?) and the process (how well did you manage the project?). Strong reflective evaluations acknowledge problems honestly and propose genuine improvements."
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "What went according to plan? Why did those things work?",
+            "What did not go as planned? What were the root causes?",
+            "Were there scope changes? How were they managed?",
+            "Were milestones met? If not, what caused the delays?",
+            "What would you do differently if starting the project again?",
+            "What skills did you develop through this project?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Client Presentation Skills",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "The final client presentation is the moment where all your work is translated into value for the client. No matter how technically excellent your product is, a poor presentation can undermine confidence in it. Conversely, a polished, confident presentation that walks the client through the product's features — relating each to their original requirements — demonstrates genuine professional maturity."
+        },
+        {
+          "type": "list",
+          "style": "numbered",
+          "items": [
+            "Open by revisiting the client's original need — show that you understood the brief from the start",
+            "Demonstrate the product live where possible — showing is more powerful than telling",
+            "Walk through each functional requirement and show it working",
+            "Acknowledge any limitations or constraints honestly — do not hide problems",
+            "Show your process documentation briefly — the plan of action, Gantt chart, and specification demonstrate professionalism",
+            "Invite questions and answer them directly — 'I don't know, but I'll find out' is an acceptable professional answer",
+            "End with clear next steps — what happens after today? (handover of files, training, future maintenance?)"
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "heading": "Career Ready",
+          "text": "IT professionals regularly present technical work to non-technical stakeholders — clients, managers, board members. The ability to translate technical detail into plain language, and to tailor your communication to your audience, is one of the highest-value professional skills in the IT industry."
+        },
+        {
+          "type": "heading",
+          "text": "Portfolio Documentation",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Your capstone project — the plan of action, the specification, the Gantt chart, the final product, and the evaluation — is evidence of your professional capability. Packaging this as a portfolio is a direct career asset. Year 12 graduates entering the workforce or further study with a documented portfolio are meaningfully ahead of those who cannot demonstrate their skills."
+        },
+        {
+          "type": "table",
+          "headers": ["Portfolio item", "What it demonstrates"],
+          "rows": [
+            ["Plan of action", "You can scope, plan, and document a professional project"],
+            ["Project specification", "You can translate client needs into precise technical requirements"],
+            ["Gantt chart", "You can schedule complex, multi-task projects with dependencies and milestones"],
+            ["The finished product", "You have technical skills in design and/or development"],
+            ["Evaluation report", "You can assess your own work critically and professionally"],
+            ["Client feedback", "You have worked with a real (or realistic) client successfully"],
+            ["Reflection", "You learn from experience and can articulate your growth — a key employability trait"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Preparing for Industry Assessment Tasks",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "The Year 12 General IT Unit 4 assessment tests your ability to apply project management techniques under realistic conditions. It is a performance-based assessment — you will be judged on the quality of your documentation, your product, and your ability to explain your decisions. The following strategies will maximise your performance."
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Start all documentation early — do not leave your plan of action until the project is nearly finished",
+            "Keep your process diary / progress log updated throughout the project — it is evidence and an assessment item",
+            "Review the marking criteria for each assessment task before you start — design your work to meet those criteria explicitly",
+            "Submit all components — an incomplete plan of action loses marks even if the final product is excellent",
+            "Practise your presentation to a peer before the real thing — timing, transitions, and clarity all improve with rehearsal",
+            "Save everything in multiple locations — losing your work is not an acceptable excuse for incomplete assessment"
+          ]
+        },
+        {
+          "type": "scenarioChallenge",
+          "title": "Scenario: Preparing for the Final Presentation",
+          "scenario": "You have completed your capstone website project for the Riverside Cafe. The site has five pages: Home, Menu, About Us, Gallery, and Contact. You have a 10-minute presentation slot with Lisa (the client). Your plan of action, Gantt chart, and project specification are all complete. The contact form has a known bug — it does not send emails, but it does display a confirmation message to the user. You have tested the site on Chrome and Firefox, but not on Safari or mobile.",
+          "questions": [
+            {
+              "question": "Plan the structure of your 10-minute client presentation. List the sections you would include and the approximate time you would allocate to each. Justify your structure.",
+              "marks": 6
+            },
+            {
+              "question": "How would you handle the known contact form bug in the presentation? Write the exact words you would say to Lisa when you reach this feature. Your response should be honest, professional, and solution-focused.",
+              "marks": 4
+            },
+            {
+              "question": "Write three evaluation criteria for this project that could be used to formally assess whether the website is complete and successful. For each criterion, describe how you would measure whether it has been met.",
+              "marks": 6
+            }
+          ]
+        },
+        {
+          "type": "task",
+          "title": "Write Your Capstone Evaluation Report",
+          "intro": "Complete a formal evaluation report for your capstone project. This report is a graded assessment component — it should be professional in language and rigorous in its analysis. A strong report is honest about shortcomings and proposes genuine improvements.",
+          "steps": [
+            "Create an evaluation table: for each evaluation criterion from your plan of action, record whether it was met, partially met, or not met, and provide specific evidence (e.g. 'The menu page displays all 12 menu items and their prices as required by the specification')",
+            "Write a product evaluation section: discuss the finished product's strengths and weaknesses with reference to the client brief and specification",
+            "Write a process evaluation section: assess your project management — were milestones met? Was scope maintained? Were resources managed effectively?",
+            "Write a reflective section: identify the two most significant challenges you faced during the project and explain specifically what you would do differently next time",
+            "Include client feedback: if you presented to a client or conducted user testing, summarise the feedback received and note which items you addressed and which are 'future improvements'",
+            "Conclude with a 'Future Improvements' list: identify at least 3 specific improvements that would add value to the product in a future version, ranked by priority"
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "pm-u4-q9",
+            "questionType": "mcq",
+            "text": "Why should evaluation criteria be written at the start of a project, not at the end?",
+            "options": [
+              "Because the teacher requires them to be in the plan of action",
+              "Because criteria written at the end tend to be designed to match what was built, rather than what was needed — removing their value as objective measures of success",
+              "Because it is easier to think of criteria before you start working",
+              "Because the client does not need to see the evaluation criteria"
+            ],
+            "correctIndex": 1,
+            "explanation": "If you write evaluation criteria after the project is finished, you will unconsciously write criteria that match what you built — making the evaluation meaningless. Pre-defined criteria force you to measure the product against its original purpose and the client's actual needs."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "pm-u4-q10",
+            "questionType": "extended",
+            "text": "During your capstone project evaluation, you discover that two of your five functional requirements were not fully met — the contact form has a bug, and one page is not displaying correctly on mobile. Write a professional evaluation entry for each issue. Your entries should acknowledge the problem clearly, provide evidence of testing, explain the likely cause, and describe either how you resolved it or what the next steps would be to resolve it.",
+            "marks": 8,
+            "explanation": "A strong response will: acknowledge the issue without making excuses; describe specific testing evidence (e.g. tested on Chrome 124 on Windows 11, error appeared on iPhone 13 in portrait mode); identify a plausible technical cause; and propose a specific, actionable resolution (e.g. check PHP mail server configuration; use responsive CSS media queries to fix the mobile layout). Language should be formal and precise throughout."
+          }
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "heading": "Project Manager",
+          "text": "Congratulations on completing Unit 4 Project Management. The skills you have developed here — scoping projects, managing resources, communicating with clients, evaluating your own work honestly — are not just assessment skills. They are the professional habits of successful IT practitioners at every level, from junior roles to executive positions. Use this project as the foundation for your professional portfolio."
+        }
+      ]
+    }
+  ]
+}

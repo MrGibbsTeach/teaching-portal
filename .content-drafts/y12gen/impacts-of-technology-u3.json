@@ -1,0 +1,1296 @@
+{
+  "id": "impacts-of-technology-u3",
+  "title": "Impacts of Technology",
+  "description": "Year 12 Unit 3",
+  "lessons": [
+    {
+      "id": "copyright-and-intellectual-property-u3",
+      "title": "Copyright and Intellectual Property",
+      "estimatedMinutes": 50,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "The Copyright Act 1968 (Australia)",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "The Copyright Act 1968 (Cth) is Australia's primary legislation protecting original creative works. Copyright applies automatically the moment an original work is expressed in a material form — there is no registration process and no need for the © symbol. The Act protects literary works, artistic works, musical works, films, sound recordings, broadcasts, and computer programs."
+        },
+        {
+          "type": "keyTerms",
+          "items": [
+            {
+              "term": "Copyright",
+              "definition": "The exclusive legal right of a creator to reproduce, publish, adapt, communicate, and sell their original work. In Australia it is automatic and governed by the Copyright Act 1968 (Cth)."
+            },
+            {
+              "term": "Intellectual Property (IP)",
+              "definition": "Legal rights that protect creations of the mind — literary, artistic, musical, and technological works — giving creators control over how those works are used and commercially exploited."
+            },
+            {
+              "term": "Moral Rights",
+              "definition": "Personal rights that belong to the creator of a work, separate from economic copyright. They include the right of attribution (to be credited), the right against false attribution (not to have someone else's work attributed to you), and the right of integrity (not to have the work treated in a derogatory way)."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Fair Dealing Exceptions",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "The Copyright Act 1968 does not give copyright owners absolute control. \"Fair dealing\" is a set of statutory exceptions that allow limited use of copyrighted material without permission, provided the use is for a specified purpose and the amount used is reasonable. Fair dealing in Australia is narrower than the American concept of \"fair use\" — only the following purposes qualify:"
+        },
+        {
+          "type": "table",
+          "headers": ["Fair Dealing Purpose", "What is Permitted", "Example in an IT Context"],
+          "rows": [
+            [
+              "Research or study",
+              "Copying a reasonable portion for your own educational use",
+              "Saving excerpts from a technical whitepaper to include in a research report"
+            ],
+            [
+              "Criticism or review",
+              "Quoting from a work to comment on or analyse it",
+              "Reproducing a screenshot of an app's UI in a published review"
+            ],
+            [
+              "Parody or satire",
+              "Using a work for humorous creative commentary",
+              "Creating a satirical video that parodies a software company's advertising"
+            ],
+            [
+              "Reporting news",
+              "Reproducing content incidentally in news reporting",
+              "A news website embedding a social media post in a breaking news story"
+            ],
+            [
+              "Judicial or professional advice proceedings",
+              "Using works in the course of legal or professional advisory processes",
+              "A lawyer reproducing software code as evidence in a court case"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "heading": "Legal Alert",
+          "text": "Fair dealing is not a blanket exception. Copying an entire work — even for study — is unlikely to qualify. Courts consider the purpose, the nature of the work, the amount copied, and the effect on the market for the original. When in doubt, seek permission or use openly licensed alternatives."
+        },
+        {
+          "type": "heading",
+          "text": "Private Use",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "The Act also contains a private use exception for certain types of content. The most relevant to digital consumers is the time-shifting provision: you may legally record a broadcast to watch or listen to later at a more convenient time, provided you do not keep the copy indefinitely or share it. Similarly, format-shifting allows you to convert legally purchased content (a CD you bought) to another format for personal use only."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "heading": "Legal Alert",
+          "text": "Streaming a film from an unlicensed website is not private use — it is infringement. Private use exceptions apply only to content you have lawfully acquired. Downloading content from torrent sites or illegal streaming services is copyright infringement regardless of whether you share it."
+        },
+        {
+          "type": "heading",
+          "text": "Moral Rights",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Unlike economic copyright (which can be sold or transferred), moral rights belong permanently to the creator of the work — they cannot be assigned to another party. The three moral rights under the Copyright Act 1968 are:"
+        },
+        {
+          "type": "list",
+          "style": "numbered",
+          "items": [
+            "Right of attribution — the creator has the right to be identified as the author of the work. Posting someone's photo or code online without crediting them violates this right.",
+            "Right against false attribution — a person must not have someone else's work falsely attributed to them. AI-generated content falsely credited to a human author could constitute a breach.",
+            "Right of integrity — the creator's work must not be treated in a derogatory way that harms their honour or reputation. Cropping an artwork to remove important context, or altering a photograph in a misleading way, may breach this right."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Real Cases: IP Violations in Digital Media",
+          "level": 2
+        },
+        {
+          "type": "comparison",
+          "title": "Notable Australian and International IP Cases",
+          "items": [
+            {
+              "label": "Freelancer/UGC Image Theft",
+              "points": [
+                "Common scenario: businesses use Google Image search results in marketing materials without checking licence terms",
+                "Consequence: rights holders (stock image agencies, photographers) issue DMCA takedown notices and pursue civil claims",
+                "Lesson: always verify the licence — image appearance on Google does not mean it is free to use"
+              ]
+            },
+            {
+              "label": "Music in YouTube Videos",
+              "points": [
+                "YouTube's Content ID system automatically detects copyrighted music in uploaded videos",
+                "The rights holder can monetise the video (taking ad revenue), mute the audio, or block the video globally",
+                "Using Spotify music as background in a social media post or promotional video is infringement — a Spotify licence gives you personal listening rights only"
+              ]
+            },
+            {
+              "label": "Software Piracy in Workplaces",
+              "points": [
+                "Installing unlicensed copies of Adobe Creative Suite, Microsoft Office, or other software on work computers exposes organisations to audits and significant fines",
+                "The Business Software Alliance (BSA) audits Australian companies and has recovered millions in unpaid licence fees",
+                "IT professionals are expected to maintain software asset management records and ensure licence compliance"
+              ]
+            },
+            {
+              "label": "Open Source Licence Violations",
+              "points": [
+                "Using GPL-licensed open source code in a commercial product without releasing your source code breaches the licence conditions",
+                "This is a growing issue as developers incorporate open source libraries into proprietary software without checking licence obligations"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Acknowledging the IP Owner",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "When you legitimately use someone else's intellectual property — under a fair dealing exception, a Creative Commons licence, or with explicit permission — you must acknowledge the IP owner. Acknowledgement does not transfer or waive copyright; it is a legal and ethical obligation that respects the creator's moral right of attribution. In professional and academic contexts, this acknowledgement takes the form of referencing (covered in the next lesson)."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "heading": "Industry Standard",
+          "text": "In professional IT work, always document the licence for every third-party asset you use — images, fonts, code libraries, audio files. Maintain a licences.txt or CREDITS file in your project. This is standard practice in software development and protects both you and your employer from legal risk."
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading",
+          "text": "Spot the IP Violation",
+          "level": 2
+        },
+        {
+          "type": "spotTheThreat",
+          "title": "Spot the IP Violation",
+          "instruction": "Read each scenario. Decide whether it is a legitimate use of copyrighted content or an IP violation — then review the analysis.",
+          "emails": [
+            {
+              "isPhishing": true,
+              "from": "Marketing Manager — Zara, TrendCo Clothing",
+              "subject": "New Instagram campaign — using influencer photos",
+              "body": "I found some great photos on Instagram that perfectly match our brand. I downloaded them, cropped out the photographer's watermark, and uploaded them to our business Instagram page. The photos look great and our engagement has doubled this week!",
+              "redFlags": [
+                {
+                  "element": "Downloading without permission",
+                  "detail": "Instagram photos are the copyright of the person who took them. Downloading and using them commercially without the photographer's consent is infringement."
+                },
+                {
+                  "element": "Removing the watermark",
+                  "detail": "Deliberately removing a copyright notice or watermark is a separate aggravating offence and may also breach the photographer's moral right of attribution."
+                },
+                {
+                  "element": "Commercial use",
+                  "detail": "Using images in a business promotion — even if the images were publicly visible — requires a licence. Increased engagement does not justify infringement."
+                }
+              ]
+            },
+            {
+              "isPhishing": false,
+              "from": "Year 12 IT Student — Assessment Submission",
+              "subject": "Using a graph from the ABS website in my report",
+              "body": "I included a graph from the Australian Bureau of Statistics website in my research report on digital access. I cited it as: Australian Bureau of Statistics (2023), Internet Activity, Australia, ABS, Canberra — and noted that Australian Government data is available under a Creative Commons Attribution 4.0 licence.",
+              "redFlags": []
+            },
+            {
+              "isPhishing": true,
+              "from": "Podcast Producer — Liam, ByteCast",
+              "subject": "Background music sorted!",
+              "body": "I downloaded the intro music for our tech podcast from Spotify — it's a song I really love and it fits the vibe perfectly. I've uploaded the first episode to YouTube with the song playing in the background. Can't wait to grow our audience!",
+              "redFlags": [
+                {
+                  "element": "Spotify licence does not cover redistribution",
+                  "detail": "A Spotify subscription gives you the right to stream music for personal listening only. It does not grant a licence to use the music in content you publish."
+                },
+                {
+                  "element": "YouTube Content ID",
+                  "detail": "The record label will almost certainly detect the song via Content ID and either monetise the video (taking all ad revenue) or block it entirely."
+                },
+                {
+                  "element": "Commercial context",
+                  "detail": "A podcast aiming to build an audience is a commercial or semi-commercial activity, making fair dealing for personal study or private use inapplicable."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading",
+          "text": "Check Your Understanding",
+          "level": 2
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "u3-cip-q1",
+            "questionType": "mcq",
+            "text": "Under the Copyright Act 1968 (Cth), which of the following is a moral right that belongs to a creator?",
+            "options": [
+              "The right to sell or transfer ownership of their work to another party",
+              "The right to be identified as the author of their work (right of attribution)",
+              "The right to prevent any criticism or review of their work",
+              "The right to receive royalty payments from all users of their work"
+            ],
+            "correctIndex": 1,
+            "explanation": "Moral rights are personal rights that cannot be transferred. The right of attribution means the creator must be credited when their work is used. The other options describe economic rights (which can be sold) or are not rights that exist under Australian law."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "u3-cip-q2",
+            "questionType": "mcq",
+            "text": "A student copies three chapters from a textbook to avoid buying it and shares the scanned PDF with their class group chat. Which fair dealing exception could they rely on?",
+            "options": [
+              "Research or study, because they are using it for educational purposes",
+              "Private use, because they are not selling the copy",
+              "No exception applies — the amount copied is excessive and sharing it publicly removes any private use defence",
+              "Criticism or review, because they might discuss the chapters in class"
+            ],
+            "correctIndex": 2,
+            "explanation": "Fair dealing for research or study requires that the amount copied is reasonable — three chapters of a textbook is likely to exceed what is 'fair'. More importantly, sharing the copy with a class group chat means it is no longer private use. Both conditions fail, so the copying is an infringement."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "u3-cip-q3",
+            "questionType": "short_answer",
+            "text": "Explain the difference between economic copyright and moral rights, and give one example of how each could be relevant to a freelance web developer who creates a website for a client. (4 marks)",
+            "marks": 4,
+            "explanation": "Economic copyright: the developer owns the copyright in the code and design assets they create (2 marks). They can assign or licence this to the client — many contracts transfer economic copyright to the client on final payment. Moral rights: even after the economic copyright is transferred, the developer retains the moral right of attribution (to be credited as creator) and the right of integrity (the client cannot alter the site in a way that is derogatory to the developer's reputation) (2 marks)."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "u3-cip-q4",
+            "questionType": "true_false",
+            "text": "In Australia, you must register your creative work with a government authority before copyright protection applies.",
+            "correctAnswer": false,
+            "explanation": "False. Copyright in Australia is automatic. As soon as an original work is expressed in material form (written, recorded, coded), copyright applies immediately under the Copyright Act 1968. No registration, payment, or © symbol is required."
+          }
+        }
+      ]
+    },
+    {
+      "id": "referencing-and-acknowledging-sources",
+      "title": "Referencing and Acknowledging Sources",
+      "estimatedMinutes": 45,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Why Referencing Matters in IT Contexts",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Referencing is not just an academic formality — it is a professional and legal obligation. When you use another person's ideas, data, images, code, or research in your work, you must acknowledge the source. This respects the creator's moral right of attribution, demonstrates academic integrity, allows readers to verify your sources, and protects you from allegations of plagiarism. In industry, properly crediting third-party components (libraries, APIs, datasets) in technical documentation and public-facing products is standard professional practice."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "heading": "Career Connection",
+          "text": "Technical writers, content creators, and IT consultants routinely produce reports, proposals, and documentation that draw on external sources. Professionals who reference accurately and consistently are seen as trustworthy and detail-oriented — two highly valued qualities in IT roles."
+        },
+        {
+          "type": "heading",
+          "text": "Referencing Techniques for Digital Publications",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Two referencing styles are commonly used in Australian education and many industry contexts. Both can be applied to digital sources, but each treats online content slightly differently."
+        },
+        {
+          "type": "comparison",
+          "title": "APA vs Harvard Referencing",
+          "items": [
+            {
+              "label": "APA 7th Edition",
+              "points": [
+                "Used in psychology, social sciences, education, and many IT vocational courses",
+                "Author-date citations in-text: (Gibbs, 2024)",
+                "Reference list at the end, alphabetical by author surname",
+                "For websites: Author, A. A. (Year, Month Day). Title of page. Site Name. URL",
+                "DOI (Digital Object Identifier) preferred over URL where available"
+              ]
+            },
+            {
+              "label": "Harvard (Author-Date)",
+              "points": [
+                "Common in business, engineering, and many Australian university faculties",
+                "In-text citation: (Gibbs 2024) — no comma before year",
+                "Reference list at the end, alphabetical by author surname",
+                "For websites: Author, A.A. Year, Title of page, Site Name, viewed Day Month Year, <URL>",
+                "Accessed/viewed date is included to show when you retrieved the content"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencing Digital Sources — Worked Examples",
+          "level": 2
+        },
+        {
+          "type": "table",
+          "headers": ["Source Type", "APA 7th Edition Reference", "Harvard Reference"],
+          "rows": [
+            [
+              "Webpage / Website article",
+              "Australian Bureau of Statistics. (2024, March 15). Internet activity, Australia. ABS. https://www.abs.gov.au/statistics/industry/technology-and-innovation",
+              "Australian Bureau of Statistics 2024, Internet activity, Australia, ABS, viewed 15 March 2024, <https://www.abs.gov.au/statistics/industry/technology-and-innovation>"
+            ],
+            [
+              "YouTube video",
+              "Crash Course. (2023, September 12). How the internet works [Video]. YouTube. https://www.youtube.com/watch?v=example",
+              "Crash Course 2023, How the internet works, YouTube, viewed 12 September 2023, <https://www.youtube.com/watch?v=example>"
+            ],
+            [
+              "Social media post",
+              "eSafety Commissioner. [@eSafetyOffice]. (2024, February 20). New research shows... [Post]. Instagram. https://www.instagram.com/p/example",
+              "eSafety Commissioner 2024, New research shows..., Instagram post, viewed 20 February 2024, <https://www.instagram.com/p/example>"
+            ],
+            [
+              "Online news article",
+              "Smith, J. (2024, January 8). Cybercrime costs Australian businesses $4 billion. The Australian. https://www.theaustralian.com.au/example",
+              "Smith, J. 2024, 'Cybercrime costs Australian businesses $4 billion', The Australian, 8 January, viewed 8 January 2024, <https://www.theaustralian.com.au/example>"
+            ],
+            [
+              "PDF or document from a website",
+              "Department of Home Affairs. (2023). Australian Cyber Security Strategy 2023–2030. Australian Government. https://www.homeaffairs.gov.au/cyber/example.pdf",
+              "Department of Home Affairs 2023, Australian Cyber Security Strategy 2023–2030, Australian Government, viewed 1 November 2023, <https://www.homeaffairs.gov.au/cyber/example.pdf>"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "heading": "Industry Standard",
+          "text": "When no author is listed for a digital source, use the organisation name (e.g. 'Australian Signals Directorate') as the author. If no date is available, write 'n.d.' (no date) in place of the year. Always include a retrieval date for webpages because online content can change or be removed."
+        },
+        {
+          "type": "heading",
+          "text": "In-Text Citations for Digital Sources",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Every reference list entry needs a corresponding in-text citation at the point where you use the source. In-text citations are brief — they point the reader to the full entry in your reference list."
+        },
+        {
+          "type": "table",
+          "headers": ["Situation", "APA In-Text", "Harvard In-Text"],
+          "rows": [
+            [
+              "Direct quote",
+              "(Smith, 2024, p. 14) or (eSafety Commissioner, 2024, para. 3) for webpages without page numbers",
+              "(Smith 2024, p. 14) or (eSafety Commissioner 2024, para. 3)"
+            ],
+            [
+              "Paraphrase / summary",
+              "(Smith, 2024)",
+              "(Smith 2024)"
+            ],
+            [
+              "No author — use organisation name",
+              "(Australian Bureau of Statistics, 2024)",
+              "(Australian Bureau of Statistics 2024)"
+            ],
+            [
+              "Two authors",
+              "(Nguyen & Patel, 2023)",
+              "(Nguyen & Patel 2023)"
+            ],
+            [
+              "Three or more authors",
+              "(Nguyen et al., 2023)",
+              "(Nguyen et al. 2023)"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Plagiarism — Definition and Consequences",
+          "level": 2
+        },
+        {
+          "type": "keyTerm",
+          "term": "Plagiarism",
+          "definition": "Presenting another person's words, ideas, images, code, or data as your own without attribution. Plagiarism can be deliberate (copying and passing off as your own) or unintentional (poor paraphrasing, forgotten citations, sloppy referencing)."
+        },
+        {
+          "type": "table",
+          "headers": ["Context", "Possible Consequences of Plagiarism"],
+          "rows": [
+            [
+              "School / TAFE assessment",
+              "Zero mark for the assessment task; academic misconduct notation; possible exclusion from qualification"
+            ],
+            [
+              "University",
+              "Failing grade for the unit; suspension; expulsion; notation on academic record"
+            ],
+            [
+              "Workplace / professional",
+              "Dismissal; damage to professional reputation; legal action from the original IP owner; public exposure"
+            ],
+            [
+              "Publishing / journalism",
+              "Article retraction; career destruction; civil lawsuit; damages payable to the original creator"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "heading": "Legal Alert",
+          "text": "Plagiarism of code is a growing issue in software development. Copying code from Stack Overflow, GitHub, or other repositories without checking the licence — and without attribution — can constitute both plagiarism and copyright infringement. Many open source licences (MIT, Apache 2.0, GPL) allow use but require attribution."
+        },
+        {
+          "type": "heading",
+          "text": "Referencing in Professional IT Documents",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Professional IT documents — feasibility studies, technical reports, security audits, proposals — often draw on industry standards, vendor documentation, research papers, and government guidelines. Referencing in these documents typically follows a simpler in-line style (hyperlinks and footnotes) rather than a formal academic style, but the principle of acknowledging sources remains the same."
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Technical reports: use numbered footnotes or endnotes with source details",
+            "Business proposals: embed hyperlinks to sources and list references in an appendix",
+            "Software documentation: include a CREDITS or ATTRIBUTION file listing third-party libraries and their licences",
+            "Presentations: include source citations on individual slides; list all references on a final 'References' slide"
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "heading": "Career Connection",
+          "text": "Tools like Zotero (free), EndNote, and Mendeley help professionals manage references automatically. Many IT students start using these tools in Year 12 and find them invaluable throughout university and their careers. Zotero has a browser extension that can capture webpage references in one click."
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading",
+          "text": "Referencing Practice Activity",
+          "level": 2
+        },
+        {
+          "type": "activity",
+          "title": "Build the Reference",
+          "instruction": "A student is writing a report on cyberbullying. They want to reference the following webpage: The eSafety Commissioner published an article called 'Cyberbullying and young people' on 12 June 2024 on the website esafety.gov.au. The URL is https://www.esafety.gov.au/young-people/cyberbullying. Write this reference in APA 7th edition format.",
+          "answer": "eSafety Commissioner. (2024, June 12). Cyberbullying and young people. eSafety Commissioner. https://www.esafety.gov.au/young-people/cyberbullying",
+          "explanation": "Note: the organisation name (eSafety Commissioner) is used as the author because no individual author is named. The year, month, and day are all included because the page has a specific publication date. The website name and URL are both required in APA 7th edition."
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading",
+          "text": "Check Your Understanding",
+          "level": 2
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "u3-ref-q1",
+            "questionType": "mcq",
+            "text": "A student includes the following in-text citation in their report: (Department of Home Affairs, 2023). Which referencing style are they using?",
+            "options": [
+              "Harvard, because there is no comma between the author and year",
+              "APA, because there is a comma between the author and year inside the brackets",
+              "Chicago, because the author is an organisation rather than an individual",
+              "MLA, because they used round brackets"
+            ],
+            "correctIndex": 1,
+            "explanation": "APA 7th edition uses a comma between the author and year: (Author, Year). Harvard style does NOT use a comma: (Author Year). The type of author (individual vs organisation) and the use of round brackets do not distinguish the styles."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "u3-ref-q2",
+            "questionType": "true_false",
+            "text": "If you put someone else's idea into your own words (paraphrase) rather than quoting them directly, you do not need to include a reference.",
+            "correctAnswer": false,
+            "explanation": "False. You must reference the source whenever you use someone else's idea, regardless of whether you quote directly or paraphrase. Failing to reference a paraphrase is plagiarism — the only difference from a direct quote is that you do not need quotation marks or a page number."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "u3-ref-q3",
+            "questionType": "short_answer",
+            "text": "Explain why IT professionals need to acknowledge third-party code libraries and APIs in their software documentation. Refer to both intellectual property law and professional practice. (4 marks)",
+            "marks": 4,
+            "explanation": "IP law: open source libraries are protected by copyright and released under specific licences (e.g. MIT, GPL, Apache 2.0). These licences require attribution — failure to acknowledge the library is a licence breach and may constitute copyright infringement (2 marks). Professional practice: documenting dependencies (in a CREDITS, NOTICES, or ATTRIBUTION file) is a standard requirement in professional software development, required by many organisations' legal and compliance teams. It also allows future maintainers to verify licence compatibility and update dependencies safely (2 marks)."
+          }
+        }
+      ]
+    },
+    {
+      "id": "digital-citizenship-and-social-networking",
+      "title": "Digital Citizenship and Social Networking",
+      "estimatedMinutes": 50,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Digital Citizenship in a Professional Context",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Digital citizenship refers to the responsible, ethical, and legal use of technology. At Year 12 and beyond, digital citizenship extends beyond online safety into professional contexts: how you represent yourself and your employer online, how you engage with colleagues and clients on digital platforms, and how your digital footprint affects your career. Employers now routinely review candidates' social media profiles during hiring processes."
+        },
+        {
+          "type": "keyTerm",
+          "term": "Digital Citizenship",
+          "definition": "The responsible, ethical, and safe participation in digital environments — including understanding digital rights and responsibilities, contributing positively to online communities, and understanding the personal, legal, and professional consequences of online behaviour."
+        },
+        {
+          "type": "heading",
+          "text": "Responsible Use of Social Networking",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Social networking platforms — LinkedIn, Instagram, X (formerly Twitter), Facebook, TikTok, Snapchat — are part of both personal and professional life. Responsible use requires understanding that:"
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Content posted online is permanent — even deleted posts can be screenshot and shared",
+            "You represent not only yourself but potentially your employer when you post publicly",
+            "Platform terms of service are legally binding agreements — violating them can result in account suspension",
+            "Sharing another person's private information without consent may breach the Privacy Act 1988",
+            "Defamatory posts — false statements of fact that damage someone's reputation — carry legal consequences regardless of the platform",
+            "Many Australian workplaces have explicit social media policies that employees must follow"
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "heading": "Career Connection",
+          "text": "LinkedIn is the world's largest professional network, with over 1 billion members. IT students and professionals use it to showcase projects, connect with industry, find internships and jobs, and follow companies. A professional LinkedIn profile is increasingly expected when applying for IT roles. Ensure your profile is complete, professional in tone, and consistent with how you present yourself in job applications."
+        },
+        {
+          "type": "heading",
+          "text": "Forms of Cyberbullying",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Cyberbullying is the repeated, intentional use of digital technology to harass, intimidate, humiliate, or harm another person. At Year 12 level, it is important to understand the specific forms cyberbullying takes — this knowledge is relevant both personally and professionally, as IT graduates may work in schools, community organisations, or platform companies that deal with cyberbullying."
+        },
+        {
+          "type": "table",
+          "headers": ["Form of Cyberbullying", "Description", "Platform Example"],
+          "rows": [
+            [
+              "Harassment",
+              "Sending repeated offensive, threatening, or abusive messages",
+              "Continuous DMs on Instagram; repeated abusive comments on TikTok videos"
+            ],
+            [
+              "Exclusion",
+              "Deliberately and repeatedly leaving someone out of online groups or activities",
+              "Removing someone from a class group chat; excluding from a gaming group"
+            ],
+            [
+              "Impersonation",
+              "Creating fake accounts or profiles to pose as the victim or to post harmful content as if it were from them",
+              "Creating a fake Instagram profile with the victim's name and photos"
+            ],
+            [
+              "Outing / Doxing",
+              "Sharing a person's private or sensitive information — including location, sexual orientation, health details — without consent",
+              "Posting someone's address or photos in private spaces to a public forum"
+            ],
+            [
+              "Cyberstalking",
+              "Repeated, threatening monitoring of a person's online activity, location check-ins, or social media posts",
+              "Tracking check-ins on Facebook; monitoring location-tagged posts"
+            ],
+            [
+              "Trolling",
+              "Posting inflammatory, provocative, or offensive content specifically intended to upset or provoke others",
+              "Deliberately posting negative comments on a person's creative content"
+            ],
+            [
+              "Fraping",
+              "Accessing another person's social media account without permission and posting embarrassing or harmful content",
+              "Logging into a friend's account while they are away and posting offensive content"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Strategies to Manage and Limit Cyberbullying",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Managing cyberbullying requires a multi-layered response: personal action, platform reporting mechanisms, and legal escalation where necessary."
+        },
+        {
+          "type": "list",
+          "style": "numbered",
+          "items": [
+            "Save evidence — screenshot all instances of cyberbullying before blocking the person, as blocking may prevent you from accessing evidence later",
+            "Block and restrict — use the platform's block and restrict tools to prevent further contact",
+            "Report to the platform — all major platforms (Instagram, TikTok, Snapchat, YouTube) have reporting mechanisms; platforms with more than 10,000 Australian users must comply with the Online Safety Act 2021",
+            "Tell a trusted adult or HR — in school contexts, report to a teacher; in workplace contexts, report to HR or a manager",
+            "eSafety Commissioner — if the platform fails to act, you can submit a complaint to the Australian eSafety Commissioner at esafety.gov.au, who has legal powers to require content removal",
+            "Police — if the behaviour constitutes threats, stalking, or criminal conduct, report to police"
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "heading": "Industry Standard",
+          "text": "Australia's Online Safety Act 2021 created a Basic Online Safety Expectations (BOSE) framework. Under it, large social media platforms must take reasonable steps to minimise harmful content — including cyberbullying material. Platforms that fail to meet these expectations can face regulatory action from the eSafety Commissioner."
+        },
+        {
+          "type": "heading",
+          "text": "Workplace Social Media Policies",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Most organisations have formal social media policies that govern how employees use social media — both on company platforms and in their personal accounts when they reference the organisation or their role. These policies typically address:"
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Confidentiality — prohibiting the posting of commercial-in-confidence information, client details, or internal project information",
+            "Professional conduct — requiring that employees do not post content that could embarrass the organisation or constitute harassment",
+            "Disclosure — if an employee publicly discusses their employer's products or services, many policies require them to disclose the employment relationship",
+            "Personal use — many policies limit personal social media use during work hours and on work devices",
+            "Consequences — breaching a social media policy is typically a disciplinary matter and in serious cases grounds for dismissal"
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "heading": "Legal Alert",
+          "text": "Fair Work Commission rulings have upheld dismissals of employees who posted critical or embarrassing content about their employers on personal social media accounts. The law recognises that an employer's reputation can be damaged by an employee's private posts — especially when the employee is publicly identifiable. Posting about a client or a workplace incident on social media can also breach confidentiality obligations in your employment contract."
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading",
+          "text": "Spot the Cyberbullying",
+          "level": 2
+        },
+        {
+          "type": "spotTheThreat",
+          "title": "Spot the Cyberbullying",
+          "instruction": "Read each scenario. Identify whether it is an example of cyberbullying and, if so, which form — then review the analysis.",
+          "emails": [
+            {
+              "isPhishing": true,
+              "from": "Year 12 group chat — screenshot posted by Jordan",
+              "subject": "Group chat behaviour",
+              "body": "Jordan screenshots a private conversation between two classmates and posts it to the broader year group chat, including personal comments the classmates made about their health struggles. Jordan adds a laughing emoji and says 'look what these two have been saying lol'.",
+              "redFlags": [
+                {
+                  "element": "Outing",
+                  "detail": "Sharing private information (personal health details from a private conversation) without consent is a form of cyberbullying called outing or doxing."
+                },
+                {
+                  "element": "Wide distribution",
+                  "detail": "Posting to the whole year group magnifies the harm significantly — once sent to a group, the content can be further shared."
+                },
+                {
+                  "element": "Humiliation intent",
+                  "detail": "The laughing emoji and mocking comment indicate intent to humiliate, satisfying the 'intentional' element of cyberbullying."
+                }
+              ]
+            },
+            {
+              "isPhishing": false,
+              "from": "Sam — Discord gaming server moderator",
+              "subject": "Warning issued to disruptive member",
+              "body": "A member of our gaming server was repeatedly posting offensive slurs in the general chat. I issued them a formal warning, muted them for 24 hours per our server rules, and documented the incidents. I've told them that a second violation will result in a permanent ban.",
+              "redFlags": []
+            },
+            {
+              "isPhishing": true,
+              "from": "Unknown account — @real_mia_j19",
+              "subject": "Instagram account — impersonation",
+              "body": "An account using Mia's name, profile photo, and school has been created. The account has been posting rude comments on other students' photos as if it were Mia, and has sent messages to Mia's friends claiming Mia said things she never said.",
+              "redFlags": [
+                {
+                  "element": "Impersonation",
+                  "detail": "Creating a fake account using someone's real identity, photo, and personal details is a clear form of cyberbullying — and may also breach the platform's terms of service and Australian defamation law."
+                },
+                {
+                  "element": "Reputation damage",
+                  "detail": "False statements posted as if they came from Mia could constitute defamation — a legal wrong as well as a form of cyberbullying."
+                },
+                {
+                  "element": "Action required",
+                  "detail": "Report the impersonation account to the platform immediately and preserve screenshots. If the platform does not act, escalate to the eSafety Commissioner."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading",
+          "text": "Check Your Understanding",
+          "level": 2
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "u3-dc-q1",
+            "questionType": "mcq",
+            "text": "A student is being cyberbullied. The bully's posts are visible on Instagram. What is the MOST important first action the student should take?",
+            "options": [
+              "Immediately delete all their social media accounts to prevent further harassment",
+              "Reply to the bully directly to tell them to stop",
+              "Screenshot and save all evidence before taking any other action",
+              "Wait and see if the bully stops on their own after a few days"
+            ],
+            "correctIndex": 2,
+            "explanation": "Saving evidence (screenshots with timestamps) is the most critical first step. If you block the bully first or the platform removes the content, the evidence may become inaccessible. Evidence is required for platform reports, eSafety Commissioner complaints, and potential police involvement. Replying can escalate the situation; waiting allows harm to continue."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "u3-dc-q2",
+            "questionType": "mcq",
+            "text": "Which form of cyberbullying involves accessing another person's social media account without permission and posting content as if it were from them?",
+            "options": [
+              "Outing",
+              "Cyberstalking",
+              "Fraping",
+              "Trolling"
+            ],
+            "correctIndex": 2,
+            "explanation": "Fraping involves accessing someone else's account without consent and posting as them. It may also constitute an offence under the Criminal Code Act 1995 (Cth) regarding unauthorised access to computer systems, in addition to being a form of cyberbullying."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "u3-dc-q3",
+            "questionType": "short_answer",
+            "text": "An IT graduate starts a new job at a software company. After their first week, they post on their personal Instagram: 'Settling into my new role at TechCorp — the code is a mess and the clients are demanding! #newjob'. Explain two ways this post could have professional consequences. (4 marks)",
+            "marks": 4,
+            "explanation": "1. Breach of confidentiality/employment contract: describing internal work quality ('the code is a mess') publicly may breach confidentiality obligations in the employee's contract, even on a personal account — because TechCorp's professional reputation is affected (2 marks). 2. Breach of workplace social media policy: many organisations have social media policies requiring employees to represent the company professionally. A post that could be seen as critical of the company or its clients may be grounds for disciplinary action or, in serious cases, dismissal — as upheld in Fair Work Commission rulings (2 marks)."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "u3-dc-q4",
+            "questionType": "true_false",
+            "text": "Under Australia's Online Safety Act 2021, large social media platforms are legally required to take reasonable steps to minimise cyberbullying content targeting Australian users.",
+            "correctAnswer": true,
+            "explanation": "True. The Online Safety Act 2021 established the Basic Online Safety Expectations (BOSE) framework. Platforms with significant Australian user bases must take reasonable steps to reduce harmful content, including cyberbullying. The eSafety Commissioner can enforce these requirements."
+          }
+        }
+      ]
+    },
+    {
+      "id": "work-life-balance-and-digital-wellbeing",
+      "title": "Work-Life Balance and Digital Wellbeing",
+      "estimatedMinutes": 45,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "The Impact of Digital Technologies on Work-Life Balance",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Digital technologies have fundamentally changed the relationship between work and personal life. Email, instant messaging (Slack, Teams), cloud-based systems, and remote access tools mean that work is accessible from anywhere at any time. For IT professionals — who may be on call, managing cloud infrastructure, or supporting global teams across time zones — the boundary between work and personal time is particularly blurred. While this flexibility offers benefits, it creates significant risks for physical and mental health."
+        },
+        {
+          "type": "keyTerms",
+          "items": [
+            {
+              "term": "Work-life balance",
+              "definition": "The equilibrium between the time and energy a person devotes to work and paid obligations versus personal life, rest, relationships, and leisure activities. Digital connectivity has made this balance increasingly difficult to maintain."
+            },
+            {
+              "term": "Digital wellbeing",
+              "definition": "The state of using technology in a way that supports physical and mental health — including managing screen time, digital boundaries, notification management, and the ability to disconnect from digital devices."
+            },
+            {
+              "term": "Always-on culture",
+              "definition": "The expectation — sometimes explicit, often implicit — that employees remain contactable and responsive outside of formal working hours through digital devices and communication tools."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "How Technology Affects Personal and Professional Boundaries",
+          "level": 2
+        },
+        {
+          "type": "table",
+          "headers": ["Technology / Practice", "Benefit", "Work-Life Balance Risk"],
+          "rows": [
+            [
+              "Work email on personal smartphone",
+              "Flexibility to respond when convenient; stay informed while travelling",
+              "Inability to mentally 'switch off'; pressure to check email constantly, including evenings and weekends"
+            ],
+            [
+              "Remote access / VPN to work systems",
+              "Can work from home; business continuity during disruptions",
+              "No physical separation between 'work space' and 'home space'; work can intrude at any hour"
+            ],
+            [
+              "Instant messaging platforms (Slack, Teams)",
+              "Fast team communication; reduces email volume",
+              "Informal culture of 24/7 availability; message read receipts create pressure to respond immediately"
+            ],
+            [
+              "Cloud collaboration (Google Workspace, Office 365)",
+              "Real-time document collaboration; access from any device",
+              "Work is never 'put away'; colleagues can see when you are active and may expect responses"
+            ],
+            [
+              "On-call rostering in IT operations",
+              "Ensures systems are monitored and incidents resolved quickly",
+              "Significant disruption to sleep, social plans, and family time; sustained on-call obligations can lead to burnout"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "heading": "Industry Standard",
+          "text": "The 'Right to Disconnect' — the legal right of employees not to be required to respond to work communications outside of their working hours — became law in Australia in August 2024 under the Fair Work Legislation Amendment (Closing Loopholes No. 2) Act 2024. For large employers, it applies immediately; for small businesses, it applies from August 2025. IT professionals and their managers need to understand how this affects rostering, on-call expectations, and communication norms."
+        },
+        {
+          "type": "heading",
+          "text": "Employer Expectations and Technology",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Employers in the IT sector often have explicit or implicit expectations around availability that go beyond standard hours. Understanding these expectations — and your rights — is essential as you enter the workforce."
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "On-call expectations: many IT operations, DevOps, and support roles include structured on-call components — these should be documented in your employment contract and compensated (through loading, time in lieu, or overtime)",
+            "Response time expectations: some organisations have informal cultures where fast responses to messages — even after hours — are rewarded and slow responses are penalised. Under the Right to Disconnect legislation, unreasonable after-hours contact expectations may now be legally challengeable",
+            "Bring Your Own Device (BYOD) policies: if you use a personal device for work, your employer may require you to install mobile device management (MDM) software — understand what access this gives them to your device",
+            "Monitoring: Australian employers can legally monitor work devices and work email accounts — but must disclose this in workplace policies. Personal devices and personal email are generally not subject to monitoring"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Strategies for Switching Off",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Actively managing the boundary between work and personal life is a professional skill. Research consistently shows that recovery time — complete disengagement from work — is essential for long-term performance, health, and job satisfaction. IT professionals are particularly at risk of burnout due to demanding problem-solving work and always-on cultures."
+        },
+        {
+          "type": "list",
+          "style": "numbered",
+          "items": [
+            "Notification management: set do-not-disturb schedules on your phone; use work communication apps' focus modes to silence non-urgent messages outside work hours",
+            "Physical separation: if you work from home, designate a specific workspace — when you leave it, you are 'off work'. Avoid checking work email from the couch or bedroom",
+            "Clear communication: let colleagues and managers know your working hours. Set an auto-response if you will be unavailable. Normalise others doing the same",
+            "Structured end-of-day routines: close all work apps, write a brief task list for tomorrow, and perform a deliberate 'shutdown ritual' that signals the end of your work day",
+            "Digital detox periods: schedule regular periods — evenings, weekends, holidays — where you do not access work systems. Protect these times as you would a meeting",
+            "Sleep hygiene: avoid screens for at least 30–60 minutes before bed. Blue light from screens suppresses melatonin production and impairs sleep quality — crucial for cognitive performance in demanding IT roles"
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "important",
+          "heading": "Career Connection",
+          "text": "Burnout is one of the leading causes of career departure in IT. The 2023 Stack Overflow Developer Survey reported that work-life balance is among the most important factors for developer job satisfaction — ranking above salary for many respondents. Graduates who establish healthy digital boundaries early in their careers demonstrate maturity, self-awareness, and sustainability — qualities valued by progressive employers."
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading",
+          "text": "Ethical Dilemma — Work-Life Balance",
+          "level": 2
+        },
+        {
+          "type": "scenarioChallenge",
+          "title": "Scenario Challenge — Digital Work-Life Boundaries",
+          "scenario": "Read the following scenarios carefully. Answer each structured response question using your knowledge of digital wellbeing, Australian workplace law, and professional practice. These are the kinds of extended response questions that appear in Applied IT assessments.",
+          "questions": [
+            {
+              "question": "Scenario A — After-hours contact: Mia has just started her first IT graduate role at a cloud services company. Her manager regularly sends Slack messages at 9 pm expecting same-evening responses. The company's employment contract states 'standard business hours are 8:30 am – 5:00 pm'. No on-call component is mentioned. Identify whether the manager's expectations are reasonable under Australian law, and explain what steps Mia could take to manage the situation professionally. (5 marks)",
+              "marks": 5
+            },
+            {
+              "question": "Scenario B — BYOD and monitoring: A small IT consultancy asks all staff to install the company's MDM (mobile device management) software on their personal iPhones to receive work email. The MDM software can remotely wipe the phone and view app usage statistics. Discuss one benefit and two concerns a new employee should raise before agreeing to this arrangement. (4 marks)",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading",
+          "text": "Check Your Understanding",
+          "level": 2
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "u3-wlb-q1",
+            "questionType": "mcq",
+            "text": "Australia's Right to Disconnect legislation (2024) gives employees the right to:",
+            "options": [
+              "Refuse to work any hours beyond their contracted hours under any circumstances",
+              "Ignore unreasonable contact from their employer outside their working hours without facing disciplinary action",
+              "Disconnect their work devices from the internet permanently after 5 pm",
+              "Work from home permanently regardless of their employer's policy"
+            ],
+            "correctIndex": 1,
+            "explanation": "The Right to Disconnect means employees can refuse to monitor, read, or respond to employer contact outside of working hours — without this being considered insubordination — when the request is unreasonable. It does not prohibit all after-hours contact, but it protects employees from being penalised for not responding to unreasonable requests."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "u3-wlb-q2",
+            "questionType": "mcq",
+            "text": "Which of the following is the MOST effective strategy for an IT worker to maintain work-life balance when working from home?",
+            "options": [
+              "Check work email first thing in the morning and last thing at night to stay on top of everything",
+              "Designate a specific physical workspace and perform a deliberate shutdown ritual at the end of each work day",
+              "Keep all work apps open permanently so you never miss an urgent message",
+              "Avoid telling colleagues your working hours so you appear available and committed"
+            ],
+            "correctIndex": 1,
+            "explanation": "Physical and psychological separation is key to work-life balance when working from home. A designated workspace and deliberate shutdown ritual signals to your brain that work has ended. Checking email first/last thing and keeping apps permanently open blurs the work-personal boundary, increasing the risk of burnout."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "u3-wlb-q3",
+            "questionType": "true_false",
+            "text": "Australian employers can legally monitor employees' personal devices and personal email accounts as long as employees are using those devices for some work-related tasks.",
+            "correctAnswer": false,
+            "explanation": "False. Australian employers can generally monitor work-provided devices and work communication systems — but only if they have disclosed this in workplace policies. Personal devices (and personal email/social media accounts on those devices) are generally not subject to lawful employer monitoring. Installing MDM software on a personal device requires the employee's informed consent."
+          }
+        }
+      ]
+    },
+    {
+      "id": "social-media-and-information-distribution",
+      "title": "Social Media and Information Distribution",
+      "estimatedMinutes": 50,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "The Concept of Social Networking",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Social networking refers to the use of internet-based platforms and applications that allow individuals and organisations to create profiles, connect with others, share content, and participate in online communities. Social networking is both a technology and a social behaviour — platforms provide the infrastructure, but users generate the content and relationships that give the platforms value."
+        },
+        {
+          "type": "keyTerms",
+          "items": [
+            {
+              "term": "Social networking",
+              "definition": "The use of digital platforms to create profiles, form connections, and share content with other users — including individuals, groups, organisations, and brands."
+            },
+            {
+              "term": "User-generated content (UGC)",
+              "definition": "Any content — text, photos, video, reviews, comments — created and published by individual users of a platform, rather than by the platform itself or professional media organisations."
+            },
+            {
+              "term": "Algorithm",
+              "definition": "A set of rules used by social networking platforms to determine which content is shown to which users, in what order, and how prominently — typically optimised to maximise engagement and time spent on the platform."
+            },
+            {
+              "term": "Viral content",
+              "definition": "Content that spreads rapidly across social networks through sharing, reaching large audiences organically — often unpredictably — without paid promotion."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "How Social Networking Changed Information Publication and Distribution",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Before social networking, information publication followed a controlled, hierarchical model. Professional journalists, editors, and publishers acted as gatekeepers — deciding what was published, when, and to whom. Social networking fundamentally disrupted this model by enabling anyone with internet access to publish content immediately, at scale, and at near-zero cost."
+        },
+        {
+          "type": "comparison",
+          "title": "Traditional vs Social Media Information Distribution",
+          "items": [
+            {
+              "label": "Traditional Media (Pre-Social Networking)",
+              "points": [
+                "Gatekeepers: editors, publishers, broadcasters decided what was published",
+                "Distribution: newspapers, TV, radio — physical or broadcast-limited reach",
+                "Timescales: daily newspapers; nightly TV news; hours or days to publication",
+                "Cost: high — printing, broadcasting, distribution infrastructure required",
+                "Audience interaction: letters to the editor; phone-ins; passive consumption",
+                "Corrections: published in later editions — limited reach compared to the original",
+                "Geographic reach: national or regional; international distribution was expensive"
+              ]
+            },
+            {
+              "label": "Social Networking Media",
+              "points": [
+                "No gatekeepers: anyone can publish; moderation is reactive, not preventative",
+                "Distribution: global, instant, mobile-first — reach is determined by algorithms and sharing behaviour",
+                "Timescales: real-time — breaking news on Twitter/X often precedes traditional media by hours",
+                "Cost: near-zero — free to publish on most platforms; paid promotion available",
+                "Audience interaction: comments, likes, shares, replies — highly interactive and two-way",
+                "Corrections: misinformation can spread faster than corrections; retractions rarely achieve the same reach",
+                "Geographic reach: global by default; language is the primary barrier"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "heading": "Legal Alert",
+          "text": "The ability to publish instantly and globally does not remove legal responsibility. Defamation law applies to social media posts — Australian courts have found individuals and media organisations liable for defamatory content posted on or shared via social media platforms. The 'Voller case' (Fairfax Media Publications v Voller, 2021) established that Australian media companies can be liable as publishers of defamatory third-party comments posted on their social media pages."
+        },
+        {
+          "type": "heading",
+          "text": "Mobile Devices and Information Distribution",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "The proliferation of smartphones has been the single biggest enabler of social networking's disruption of traditional media. Mobile devices allow users to capture events in real time (photo, video, live streaming), publish immediately from the scene, and consume news and information at any time and place. This has created phenomena such as citizen journalism — ordinary people reporting on events as they happen — which has both democratised information and created significant challenges for accuracy and verification."
+        },
+        {
+          "type": "table",
+          "headers": ["Impact Area", "Traditional Media Response", "Social Media Disruption via Mobile"],
+          "rows": [
+            [
+              "Breaking news",
+              "Journalists travel to scene; broadcast at scheduled news times",
+              "Eyewitnesses livestream from smartphones within seconds; events trend globally before journalists arrive"
+            ],
+            [
+              "Advertising revenue",
+              "Newspapers and TV earned revenue from classified and display advertising",
+              "Advertising spend has shifted massively to Facebook, Google, and Instagram — decimating newspaper revenue models"
+            ],
+            [
+              "Publishing gatekeeping",
+              "Editors, sub-editors, and fact-checkers reviewed content before publication",
+              "No pre-publication review — misinformation, deepfakes, and false reports spread before they can be checked"
+            ],
+            [
+              "Audience reach",
+              "Measured in subscribers or viewers — typically regional or national",
+              "A single post can reach millions globally within hours through sharing and algorithms"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Implications for IT Careers",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "The transformation of information distribution has created entirely new IT and digital career categories, while requiring traditional IT roles to adapt. Understanding social media platforms at a technical and strategic level is now a core competency for many IT graduates."
+        },
+        {
+          "type": "grid",
+          "title": "IT Career Roles Created or Expanded by Social Networking",
+          "items": [
+            {
+              "label": "Social Media Manager",
+              "description": "Plans and publishes content across social platforms, manages community engagement, monitors analytics, and runs paid campaigns. Requires understanding of platform algorithms and audience behaviour."
+            },
+            {
+              "label": "Content Creator / Digital Storyteller",
+              "description": "Produces video, written, graphic, and interactive content for social platforms and digital publications. Increasingly uses AI tools for content generation and editing."
+            },
+            {
+              "label": "Digital Marketing Analyst",
+              "description": "Uses data analytics tools to measure the reach, engagement, and conversion rates of social media and digital marketing campaigns. Heavy use of tools like Google Analytics, Meta Business Suite, and Tableau."
+            },
+            {
+              "label": "Trust and Safety Specialist",
+              "description": "Works within social media companies to review reported content, develop moderation policies, and work with AI-based content detection systems to combat misinformation, cyberbullying, and harmful content."
+            },
+            {
+              "label": "SEO / Digital Content Strategist",
+              "description": "Optimises digital content to rank highly in search engines and gain organic traction on social platforms. Combines technical knowledge of search algorithms with content strategy skills."
+            },
+            {
+              "label": "Platform Developer",
+              "description": "Builds and maintains the APIs, features, and infrastructure that power social networking platforms. Involves backend development, distributed systems, real-time data processing, and ML recommendation systems."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "heading": "Career Connection",
+          "text": "Social media management and content creation are among the fastest-growing job categories in Australia's digital economy. These roles increasingly require technical skills alongside communication abilities — understanding how platforms' APIs work, how to read analytics dashboards, how to run A/B tests on content, and how to use AI tools for content generation and optimisation. IT graduates are well-positioned to move into these roles because they understand the technical infrastructure behind the platforms."
+        },
+        {
+          "type": "heading",
+          "text": "Misinformation and the Responsibility of Platforms",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "One of the most significant negative impacts of social networking on information distribution is the rapid spread of misinformation — false or inaccurate information — and disinformation — deliberately false information spread with intent to deceive. Social media algorithms optimise for engagement, and emotionally charged false content often generates more engagement than accurate but less dramatic reporting. This creates structural incentives that favour the spread of misinformation."
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Deepfakes — AI-generated synthetic video or audio content that realistically depicts people saying or doing things they never did",
+            "Health misinformation — false medical claims that spread rapidly on social platforms (e.g. vaccine misinformation during COVID-19)",
+            "Electoral misinformation — false information about voting processes, candidates, or election results",
+            "Financial scams — fraudulent investment schemes and cryptocurrency scams amplified through social media reach"
+          ]
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading",
+          "text": "Ethical Dilemma — Social Media and Information",
+          "level": 2
+        },
+        {
+          "type": "scenarioChallenge",
+          "title": "Scenario Challenge — Social Media and Information Distribution",
+          "scenario": "Apply your knowledge of social networking, information distribution, digital citizenship, and copyright law to the following scenarios. Write structured responses that address the specific questions asked.",
+          "questions": [
+            {
+              "question": "Scenario A — Viral misinformation: A student working as a social media manager for a local business notices that a post they shared (which they did not create) has gone viral. The post contains a health claim that a new study has found is false. The post now has 45,000 shares. The student's employer is asking them to leave the post up because 'the engagement is great for our reach.' Discuss the ethical and legal obligations the student faces, and recommend a course of action. (6 marks)",
+              "marks": 6
+            },
+            {
+              "question": "Scenario B — Traditional vs digital publication: A Year 12 student argues that 'newspapers are irrelevant because everything is on social media now.' Evaluate this claim by identifying two ways traditional media still provides value that social networking cannot fully replicate, and two genuine advantages social networking has over traditional media for information distribution. (6 marks)",
+              "marks": 6
+            }
+          ]
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading",
+          "text": "Check Your Understanding",
+          "level": 2
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "u3-sm-q1",
+            "questionType": "mcq",
+            "text": "Which of the following BEST describes the role of algorithms in social networking platforms?",
+            "options": [
+              "They ensure all users see content in strict chronological order from accounts they follow",
+              "They determine which content is shown to which users based on rules optimised to maximise engagement",
+              "They fact-check all posts before they appear in users' feeds",
+              "They are used exclusively to display paid advertising content"
+            ],
+            "correctIndex": 1,
+            "explanation": "Social networking algorithms decide what content users see, in what order, and how prominently — based on predicted engagement (likes, comments, shares, time spent). This is not chronological, not based on fact-checking, and applies to both organic and paid content. The optimisation for engagement is one reason misinformation can spread rapidly — it often generates strong emotional reactions that drive engagement metrics."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "u3-sm-q2",
+            "questionType": "mcq",
+            "text": "The Voller case (Fairfax Media Publications v Voller, 2021) established which important legal principle about social media in Australia?",
+            "options": [
+              "Social media companies are not liable for any content posted by their users",
+              "Individual users cannot be sued for defamatory comments posted on social media",
+              "Media organisations can be held liable as publishers of defamatory third-party comments posted on their social media pages",
+              "The Australian Government must approve all social media posts before publication"
+            ],
+            "correctIndex": 2,
+            "explanation": "The Voller case (affirmed by the High Court of Australia) established that media companies which operate public Facebook pages and invite public comment can be held responsible as publishers of defamatory comments left by third-party users — even if the company did not write the comment itself. This has significant implications for any organisation that runs public social media accounts."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "u3-sm-q3",
+            "questionType": "short_answer",
+            "text": "Identify two specific ways that the widespread use of mobile devices has changed how information is distributed through social networking platforms. For each, explain whether this change has been beneficial, harmful, or both. (6 marks)",
+            "marks": 6,
+            "explanation": "Acceptable answers include: 1. Real-time citizen journalism — mobile cameras and live streaming allow anyone to capture and publish events as they happen (beneficial: democratises reporting, enables accountability; harmful: unverified footage can spread misinformation, invades privacy of people filmed without consent). 2. Constant connectivity — smartphones mean users are always connected to social platforms (beneficial: breaking news reaches people instantly; harmful: information overload, reduced ability to critically evaluate content, addiction to notification cycles). 3. Global reach from any location — content can be shared globally from a remote location without infrastructure (beneficial: amplifies voices that would otherwise be unheard; harmful: misinformation and harmful content spread before moderation can act). Award 2 marks per point: 1 for identifying the change with an example, 1 for the nuanced beneficial/harmful analysis."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "u3-sm-q4",
+            "questionType": "mcq",
+            "text": "A small business owner shares a news article on their Facebook page. The article is later found to contain false health information. Under what circumstances could the business owner face legal consequences?",
+            "options": [
+              "Never — sharing someone else's article means the original publisher is always responsible",
+              "Only if they personally wrote the false information in the original article",
+              "If the false information in the shared post constitutes defamation and they continued to share it after being made aware it was false",
+              "Only if they are a media company — individuals cannot be sued for social media shares"
+            ],
+            "correctIndex": 2,
+            "explanation": "Sharing false information that is defamatory can expose the sharer to liability — particularly if they continue sharing after being notified the information is false. While the original publisher bears primary responsibility, anyone who republishes defamatory content can be treated as a publisher in Australian law. Individuals — not just media companies — can be sued for defamatory social media posts and shares."
+          }
+        }
+      ]
+    }
+  ]
+}

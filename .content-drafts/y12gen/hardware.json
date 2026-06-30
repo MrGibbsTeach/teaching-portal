@@ -1,0 +1,918 @@
+{
+  "id": "hardware",
+  "title": "Hardware & Operating Systems",
+  "description": "Year 12 Unit 3",
+  "lessons": [
+    {
+      "id": "computer-systems-and-components",
+      "title": "Computer Systems and Components",
+      "estimatedMinutes": 25,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Computer Systems and Components",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "In Year 11 you covered the basics of CPU, memory, and storage. Year 12 takes this further — you are expected to apply this knowledge when advising on hardware purchases, diagnosing compatibility issues, and recommending the right system type for a given job role or business context."
+        },
+        {
+          "type": "heading",
+          "text": "The Central Processing Unit (CPU)",
+          "level": 3
+        },
+        {
+          "type": "keyTerm",
+          "term": "CPU (Central Processing Unit)",
+          "definition": "The primary processor that executes all program instructions. It carries out the fetch-decode-execute cycle billions of times per second, controlling every other component in the system."
+        },
+        {
+          "type": "paragraph",
+          "text": "When selecting hardware for a business, the CPU specification matters for the intended workload. A reception computer handling email and scheduling needs far less processing power than a workstation used for video editing or 3D rendering. Over-specifying wastes budget; under-specifying creates bottlenecks."
+        },
+        {
+          "type": "table",
+          "headers": ["CPU Specification", "What it measures", "Relevance when buying"],
+          "rows": [
+            ["Clock speed (GHz)", "Processing cycles per second", "Higher = faster single-threaded tasks (e.g. spreadsheets)"],
+            ["Core count", "Independent execution units on the chip", "More cores = better multitasking and parallel workloads"],
+            ["Cache (L1/L2/L3)", "Ultra-fast on-chip memory", "Larger cache reduces delays fetching data from RAM"],
+            ["TDP (Thermal Design Power)", "Heat output in watts", "Higher TDP needs better cooling; important in confined spaces"],
+            ["Architecture generation", "e.g. Intel 13th Gen, AMD Ryzen 7000", "Newer = better efficiency and feature support"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Memory: Primary and Secondary",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Memory is divided into two categories based on its role. Primary memory is directly accessible by the CPU; secondary memory provides long-term storage."
+        },
+        {
+          "type": "keyTerms",
+          "items": [
+            {
+              "term": "Primary memory (RAM)",
+              "definition": "Volatile, high-speed memory that holds currently running programs and active data. Larger RAM allows more applications to run simultaneously without slowdown. Typical office PCs need 8–16 GB; workstations 32 GB or more."
+            },
+            {
+              "term": "ROM (Read-Only Memory)",
+              "definition": "Non-volatile memory that stores the system firmware (BIOS/UEFI). It initialises hardware at startup and cannot normally be modified by the user."
+            },
+            {
+              "term": "Cache memory",
+              "definition": "Very fast memory built into or adjacent to the CPU. Stores recently or frequently accessed data so the CPU avoids slower RAM lookups."
+            },
+            {
+              "term": "Secondary storage (HDD/SSD)",
+              "definition": "Non-volatile storage for the operating system, applications, and files. Persists when power is off. SSDs are now standard in most professional environments due to speed and reliability advantages over HDDs."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": ["Storage type", "Speed", "Capacity range", "Durability", "Typical use"],
+          "rows": [
+            ["SSD (NVMe)", "Very fast (3,000–7,000 MB/s)", "256 GB – 4 TB", "Very high (no moving parts)", "OS drive, boot drive, workstations"],
+            ["SSD (SATA)", "Fast (500–600 MB/s)", "128 GB – 4 TB", "Very high", "Budget laptops, upgrade from HDD"],
+            ["HDD (spinning disk)", "Slow (80–160 MB/s)", "500 GB – 20 TB", "Moderate (moving parts)", "Bulk/archival storage, NAS"],
+            ["USB flash drive", "Moderate (30–400 MB/s)", "8 GB – 1 TB", "Moderate", "Portable data transfer"],
+            ["Cloud storage", "Depends on internet speed", "Scalable (subscription)", "Provider-managed", "Backup, remote access, collaboration"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Types of Peripheral Devices",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Peripheral devices extend the capability of a computer system. They are classified as input, output, or storage/communication devices. In a professional context, choosing the right peripheral for the role is a key IT support skill."
+        },
+        {
+          "type": "table",
+          "headers": ["Category", "Examples", "Professional context"],
+          "rows": [
+            ["Input", "Keyboard, mouse, scanner, microphone, webcam, graphics tablet, barcode reader", "Scanners in medical records; graphics tablets in design studios; barcode readers in retail/logistics"],
+            ["Output", "Monitor, printer, projector, speakers, label printer", "Dual monitors increase productivity in office roles; label printers in warehouses"],
+            ["Input/Output", "Touchscreen, USB storage, network card, modem", "Touchscreens in point-of-sale systems; network cards in every networked device"],
+            ["Communication", "NIC, Wi-Fi adapter, Bluetooth dongle", "Essential for connecting to business networks and wireless peripherals"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Types of Computer Systems",
+          "level": 3
+        },
+        {
+          "type": "table",
+          "headers": ["System type", "Key characteristics", "Typical deployment"],
+          "rows": [
+            ["Desktop PC", "High performance, upgradeable, not portable; separate components", "Office workstations, CAD/design, reception desks, school computer labs"],
+            ["Laptop / Notebook", "Portable, battery-powered, integrated display and keyboard; harder to upgrade", "Field staff, students, business travel, flexible working"],
+            ["Tablet / iPad", "Touchscreen-first, very portable, limited local processing", "Frontline workers (retail, healthcare), customer-facing kiosks, presentations"],
+            ["Smartphone", "Pocket-sized, always-connected, camera/GPS/sensors integrated", "Mobile workforce, communication, field data capture"],
+            ["Server", "High reliability, large storage/RAM, designed for 24/7 operation; rack or tower form", "School network servers, business file/print/email servers, web hosting"],
+            ["Thin client", "Minimal local hardware; relies on a server for processing", "Call centres, school labs where central management is preferred"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "heading": "Industry Tip",
+          "text": "IT support technicians need to know which system type suits which role before they can advise management or complete a hardware request form. A single-purpose reception desk usually justifies a desktop; a travelling sales rep needs a laptop or tablet with a mobile data plan."
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "y12hw-q1",
+            "questionType": "mcq",
+            "text": "A business is setting up a call centre with 40 workstations. They want centralised management and the ability to control all software from a single server. Which computer system type is most suitable for each workstation?",
+            "options": [
+              "High-end gaming desktop",
+              "Thin client",
+              "Server",
+              "Tablet"
+            ],
+            "correctIndex": 1,
+            "explanation": "Thin clients have minimal local hardware and rely on a server for processing. This makes them ideal for centralised management — software and data are managed on the server, reducing IT maintenance at each workstation."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "y12hw-q2",
+            "questionType": "short_answer",
+            "text": "Explain the difference between primary and secondary memory. Give one example of each.",
+            "marks": 4,
+            "explanation": "Primary memory (e.g. RAM) is directly accessible by the CPU, volatile (lost when power is off), and used for currently running programs. Secondary memory (e.g. SSD/HDD) is non-volatile, used for long-term storage of files and the OS, and is accessed more slowly than primary memory."
+          }
+        },
+        {
+          "type": "task",
+          "title": "System Specification Analysis",
+          "intro": "Read two hardware specification sheets (or product listings from a retailer website) — one for a budget office laptop and one for a mid-range workstation desktop. Answer the following.",
+          "steps": [
+            "Record the CPU model, core count, and clock speed for each system.",
+            "Record the amount of RAM and storage type (SSD/HDD) for each system.",
+            "Identify which system you would recommend for: (a) a receptionist who uses email and calendar software; (b) a graphic designer who edits large image files.",
+            "Justify each recommendation with reference to specific specifications.",
+            "Calculate the price difference and explain whether the extra cost of the workstation is justified for each role."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "operating-systems",
+      "title": "Operating Systems",
+      "estimatedMinutes": 25,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Operating Systems",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "An operating system (OS) is the software layer that manages all hardware resources and provides a platform for applications to run. Without an OS, a computer is a collection of circuits with no way to receive user input, run programs, or communicate with peripherals."
+        },
+        {
+          "type": "keyTerm",
+          "term": "Operating system (OS)",
+          "definition": "System software that manages hardware resources (CPU, memory, storage, peripherals), provides a user interface, and enables application software to function. It acts as the intermediary between hardware and software."
+        },
+        {
+          "type": "heading",
+          "text": "Core Functions of an OS",
+          "level": 3
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Process management — allocates CPU time to running programs",
+            "Memory management — controls which programs can use which areas of RAM",
+            "File system management — organises how data is stored and retrieved on drives",
+            "Device management — communicates with hardware using drivers",
+            "Security — manages user accounts, permissions, and authentication",
+            "User interface — provides GUI (graphical) or CLI (command-line) for interaction"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Major Operating Systems",
+          "level": 3
+        },
+        {
+          "type": "table",
+          "headers": ["OS", "Developer", "Typical device", "Key strengths", "Common in"],
+          "rows": [
+            ["Windows 11", "Microsoft", "Desktop / Laptop", "Widest software compatibility, enterprise tools, Active Directory integration", "Business offices, schools, home users"],
+            ["macOS Sequoia", "Apple", "Mac desktop / MacBook", "Creative software ecosystem, Unix base, tight hardware/software integration", "Design, video, music production"],
+            ["iOS 18", "Apple", "iPhone / iPad", "Closed ecosystem, strong security, App Store, optimised for touch", "Consumer devices, corporate BYOD, frontline workers"],
+            ["Android 15", "Google (open source)", "Smartphones / Tablets", "Open platform, wide device range, Google services, customisable", "Diverse business and consumer mobile use"],
+            ["Linux (Ubuntu/Debian/etc.)", "Open source community", "Server / Desktop / Embedded", "Free, highly customisable, stable for servers, strong security", "Web servers, developers, IT professionals, embedded systems"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Choosing an OS for a Job Role",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "In industry, the OS choice is rarely just personal preference — it is driven by the software required for the role, existing infrastructure, licensing costs, and support considerations."
+        },
+        {
+          "type": "comparison",
+          "title": "OS Selection by Role",
+          "items": [
+            {
+              "label": "School IT administrator",
+              "points": [
+                "Windows Server for file/print services and Active Directory user management",
+                "Windows 10/11 on student workstations for compatibility with curriculum software",
+                "Linux possible on servers for web hosting and cost savings"
+              ]
+            },
+            {
+              "label": "Graphic designer / video editor",
+              "points": [
+                "macOS preferred for Adobe Creative Cloud, Final Cut Pro, Logic Pro",
+                "Windows viable with same Adobe software if budget is a constraint",
+                "Linux rarely used due to limited professional creative app support"
+              ]
+            },
+            {
+              "label": "Web developer / software engineer",
+              "points": [
+                "Linux (Ubuntu) popular for its Unix toolchain, native terminal, and server parity",
+                "macOS also widely used for Unix-based development",
+                "Windows with WSL (Windows Subsystem for Linux) is a common compromise"
+              ]
+            },
+            {
+              "label": "Field sales / customer service",
+              "points": [
+                "iOS or Android smartphone/tablet for CRM apps and communication",
+                "Windows laptop if detailed document work is required",
+                "Choice often dictated by company MDM (Mobile Device Management) platform"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "heading": "Career Connection",
+          "text": "IT support technicians need to be comfortable working across all major operating systems — not just the one they use at home. Many businesses run a mix of Windows desktops and Apple phones, or Linux servers alongside Windows clients. Cross-platform fluency is a key employability skill."
+        },
+        {
+          "type": "heading",
+          "text": "OS Licensing and Cost",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Operating systems are not all free. Windows requires a licence per device (retail) or per-user (volume licensing for businesses). macOS is free updates but tied to Apple hardware. Linux distributions are generally free and open source, which makes them attractive for server deployments and organisations with large numbers of devices."
+        },
+        {
+          "type": "keyTerm",
+          "term": "Volume licensing",
+          "definition": "A purchasing agreement that allows a business to deploy software on many devices at a reduced per-unit cost. Microsoft offers volume licensing through agreements like Microsoft 365 Business and Microsoft Open License."
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "y12hw-q3",
+            "questionType": "mcq",
+            "text": "A small business is deploying 15 new desktop computers. They need to run Microsoft Office and accounting software. The IT manager wants centralised user account management. Which OS is most appropriate?",
+            "options": [
+              "Android",
+              "iOS",
+              "Linux (Ubuntu Desktop)",
+              "Windows 11 with Microsoft 365"
+            ],
+            "correctIndex": 3,
+            "explanation": "Windows 11 with Microsoft 365 provides native compatibility with Office applications, centralised user management via Azure Active Directory or on-premises Active Directory, and is supported by most business accounting software."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "y12hw-q4",
+            "questionType": "mcq",
+            "text": "Which operating system is most commonly found on web servers because it is free, stable, and highly customisable?",
+            "options": [
+              "Windows Server",
+              "macOS",
+              "iOS",
+              "Linux"
+            ],
+            "correctIndex": 3,
+            "explanation": "Linux (in distributions such as Ubuntu Server, Debian, or CentOS) powers the majority of web servers worldwide. It is free, open source, extremely stable for long-running server environments, and can be configured precisely for the server's purpose."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "y12hw-q5",
+            "questionType": "short_answer",
+            "text": "A school wants to deploy tablets for Year 7 students. Give two reasons why iOS (iPad) might be preferred over Android tablets in a school environment.",
+            "marks": 4,
+            "explanation": "Accept any two: iOS is a closed ecosystem with stricter app vetting (App Store), reducing risk of students installing inappropriate apps; Apple School Manager and MDM tools allow centralised control of all devices; iPads have a consistent hardware/software experience unlike Android's many device variations; strong integration with education apps such as Keynote, Pages, Numbers, and Google Workspace."
+          }
+        },
+        {
+          "type": "task",
+          "title": "OS Comparison Research Task",
+          "intro": "You are advising a startup business with three roles: office manager, software developer, and field sales representative. Research and recommend an OS for each role.",
+          "steps": [
+            "Create a table with columns: Role | Recommended OS | Software needed | Reason for OS choice | Estimated cost.",
+            "For the office manager, consider what productivity and accounting software they will need and which OS supports it best.",
+            "For the software developer, research what OS is most common in the software development industry and why.",
+            "For the field sales rep, determine whether they need a desktop/laptop OS or a mobile OS.",
+            "Present your completed table and write a two-sentence justification for each recommendation."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "software-compatibility",
+      "title": "Software Compatibility",
+      "estimatedMinutes": 20,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Software Compatibility",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Software compatibility refers to how well a piece of software functions on a given hardware and operating system combination. Compatibility issues are among the most common problems IT support staff encounter — they arise whenever there is a mismatch between what software requires and what the system provides."
+        },
+        {
+          "type": "keyTerm",
+          "term": "Software compatibility",
+          "definition": "The ability of software to run correctly on a given hardware configuration, operating system version, and alongside other installed software without errors or loss of function."
+        },
+        {
+          "type": "heading",
+          "text": "Running Older Software on Current Hardware",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Businesses often continue using software long after it was released — particularly specialised applications in accounting, manufacturing, or medicine. When that software is moved to newer hardware or a newer OS, compatibility problems can emerge."
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "32-bit software may not install or run correctly on a 64-bit OS (though most modern OSes still support 32-bit apps through compatibility layers)",
+            "Drivers for old peripherals (e.g. a legacy label printer) may not exist for Windows 11",
+            "Old software may rely on deprecated system libraries or security protocols (e.g. TLS 1.0) that have been removed from the OS",
+            "Interface elements may render incorrectly at modern screen resolutions",
+            "Some macOS updates have dropped support for 32-bit applications entirely (macOS Catalina onwards)"
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "heading": "Industry Tip",
+          "text": "In practice, IT technicians are sometimes asked to keep an older computer running a legacy OS (e.g. Windows 7) purely to support one piece of critical software that cannot be updated. This is a security risk — those machines must be isolated from the network."
+        },
+        {
+          "type": "heading",
+          "text": "Running Newer Software on Older Hardware",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "The reverse problem occurs when software is updated and its minimum hardware requirements increase beyond what existing machines can provide."
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Minimum RAM requirements increase — e.g. an accounting suite that required 4 GB RAM now requires 8 GB after a major update",
+            "New software features may require a CPU instruction set not present in older processors",
+            "Storage requirements grow — a new OS update may require 64 GB of disk space on a device that only has 32 GB",
+            "GPU requirements for modern software (e.g. AI features in Microsoft 365) may exceed what older integrated graphics can provide",
+            "Windows 11 requires a TPM 2.0 chip and a compatible 8th-generation or newer Intel CPU — many business machines from 2017–2018 were excluded"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Real Workplace Scenarios",
+          "level": 3
+        },
+        {
+          "type": "table",
+          "headers": ["Scenario", "Compatibility issue", "Likely solution"],
+          "rows": [
+            ["School replaces all PCs with Windows 11; old NAPLAN software doesn't launch", "Legacy 32-bit software; incompatible runtime", "Contact vendor for updated version; run in compatibility mode; or keep one old machine"],
+            ["Small business upgrades accounting software; older laptops slow to a crawl", "New version requires 16 GB RAM; machines have 8 GB", "Upgrade RAM in machines where possible; replace machines that cannot be upgraded"],
+            ["Graphic designer updates macOS to latest version; font management plugin stops working", "Plugin developer has not released a macOS update", "Roll back OS or wait for plugin update; contact vendor"],
+            ["Medical practice uses custom patient management software from 2012", "Software only runs on Windows 7; vendor no longer exists", "Virtualise the old OS using a VM; procure modern replacement software"],
+            ["Staff member tries to open a .docx file received from a client in Office 2007", "Newer file format not fully supported by old Office version", "Install compatibility pack; upgrade Office; use Microsoft 365 online"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Checking Minimum System Requirements",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Before installing any software, IT staff check the minimum hardware requirements published by the software vendor. These specify the minimum OS version, CPU, RAM, and storage needed for the software to function. Recommended requirements describe what is needed for comfortable performance."
+        },
+        {
+          "type": "keyTerms",
+          "items": [
+            {
+              "term": "Minimum requirements",
+              "definition": "The lowest hardware and OS specification on which software will technically run — often with degraded performance."
+            },
+            {
+              "term": "Recommended requirements",
+              "definition": "The hardware and OS specification at which software runs with full features and acceptable speed for everyday professional use."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "heading": "Career Connection",
+          "text": "IT support technicians and procurement officers always check software requirements before approving purchases or upgrades. Recommending a software package that won't run on a client's current hardware is a costly mistake — both financially and for client trust."
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "y12hw-q6",
+            "questionType": "mcq",
+            "text": "A business has computers running Windows 10 with 4 GB RAM. They want to install new project management software that requires Windows 10 or later and a minimum of 8 GB RAM. What is the compatibility issue?",
+            "options": [
+              "The operating system is incompatible",
+              "The computers do not have enough RAM",
+              "The CPU architecture is wrong",
+              "The storage capacity is too small"
+            ],
+            "correctIndex": 1,
+            "explanation": "The OS requirement (Windows 10 or later) is met, but the RAM requirement (8 GB minimum) is not — the computers only have 4 GB. The computers will need a RAM upgrade before the software can be installed."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "y12hw-q7",
+            "questionType": "mcq",
+            "text": "A company's accounts department uses software that only runs on Windows 7. The rest of the business has upgraded to Windows 11. What is the most appropriate solution?",
+            "options": [
+              "Reinstall Windows 7 on all computers",
+              "Delete the accounting software and stop using it",
+              "Run the Windows 7 software in a virtual machine on a Windows 11 computer",
+              "Downgrade the operating system of the entire network"
+            ],
+            "correctIndex": 2,
+            "explanation": "Virtualisation allows the legacy OS to run inside a virtual machine on modern hardware and OS. This keeps the business secure and up-to-date while still running the legacy software — without needing to maintain old physical hardware running Windows 7."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "y12hw-q8",
+            "questionType": "short_answer",
+            "text": "Explain what 'minimum hardware requirements' means and why IT professionals check them before installing software.",
+            "marks": 4,
+            "explanation": "Minimum requirements are the lowest CPU, RAM, storage, and OS specifications on which software will run. IT professionals check them before installation to confirm the existing hardware can support the software — installing software on under-spec hardware causes poor performance, crashes, or failed installation, which wastes time and affects productivity."
+          }
+        },
+        {
+          "type": "task",
+          "title": "Compatibility Check Scenario",
+          "intro": "You are an IT support technician at a small business. They want to upgrade from Microsoft Office 2016 to Microsoft 365. Three of their computers have the following specifications.",
+          "steps": [
+            "Look up the minimum and recommended system requirements for Microsoft 365 on the Microsoft website (support.microsoft.com).",
+            "Computer A: Windows 10, Intel Core i3 (7th Gen), 4 GB RAM, 128 GB SSD. Assess whether it meets minimum requirements.",
+            "Computer B: Windows 8.1, Intel Core i5 (6th Gen), 8 GB RAM, 256 GB HDD. Assess whether it meets minimum requirements.",
+            "Computer C: Windows 11, Intel Core i5 (10th Gen), 16 GB RAM, 512 GB SSD. Assess whether it meets minimum requirements.",
+            "For each computer that does not meet requirements, state what would need to be upgraded or changed.",
+            "Write a brief recommendation to the business manager explaining which computers can be updated immediately and which require hardware upgrades first."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "selecting-and-purchasing-hardware",
+      "title": "Selecting and Purchasing Hardware",
+      "estimatedMinutes": 25,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Selecting and Purchasing Hardware",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Selecting the right hardware is a core IT skill that goes beyond simply choosing the most powerful or most expensive option. Effective hardware procurement balances three key factors: cost, technical specifications, and the actual needs of the user."
+        },
+        {
+          "type": "heading",
+          "text": "Key Considerations for Hardware Purchase",
+          "level": 3
+        },
+        {
+          "type": "keyTerms",
+          "items": [
+            {
+              "term": "Cost",
+              "definition": "The total expenditure including hardware purchase price, any required software licences, peripherals, installation labour, and ongoing maintenance. Total cost of ownership (TCO) often exceeds the initial purchase price."
+            },
+            {
+              "term": "Specifications",
+              "definition": "The technical details of the hardware: CPU model, RAM capacity, storage type and size, display resolution, connectivity ports, and battery life. Specifications must meet or exceed the requirements of intended software and workloads."
+            },
+            {
+              "term": "User needs",
+              "definition": "The actual functional requirements of the person or role using the hardware. Includes portability, the software they run, the volume of work, accessibility needs, and environment of use."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Balancing Cost Against Specifications",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Higher specifications do not always translate to better value. An IT purchaser must identify the minimum viable specification for the role and avoid over-provisioning where budget could be better spent elsewhere."
+        },
+        {
+          "type": "table",
+          "headers": ["Role / use case", "Minimum viable spec", "Where to spend more", "Where to save"],
+          "rows": [
+            ["Reception / administration", "Intel Core i5, 8 GB RAM, 256 GB SSD, 24\" monitor", "Ergonomic peripherals, dual monitors", "High-end GPU, large storage"],
+            ["Graphic designer", "Intel Core i7 / Ryzen 7, 32 GB RAM, 1 TB NVMe SSD, colour-accurate 4K display", "Dedicated GPU, high-res calibrated monitor", "Portability (desktop preferred)"],
+            ["Field technician", "Mid-range laptop, 8 GB RAM, 256 GB SSD, 4G/LTE capability, rugged chassis", "Battery life, durability rating", "Display resolution, heavy storage"],
+            ["School student laptop", "Intel Core i5, 8 GB RAM, 128 GB SSD, Wi-Fi 6", "Battery life, keyboard quality", "Gaming GPU, high-end display"],
+            ["Server (file/print)", "Xeon or EPYC CPU, 32–64 GB ECC RAM, RAID storage, redundant PSU", "Redundancy, hot-swap drives, UPS", "Monitor (servers are usually headless)"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Understanding User Needs",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Before recommending hardware, a professional IT purchaser gathers requirements from the user or department. This is sometimes formalised as a Request for Quotation (RFQ) — a document sent to suppliers asking them to provide pricing and product details for specified requirements."
+        },
+        {
+          "type": "keyTerm",
+          "term": "RFQ (Request for Quotation)",
+          "definition": "A formal document sent to suppliers asking for pricing on specified hardware or services. It outlines minimum requirements, quantity needed, delivery timeframe, and any support conditions. Suppliers respond with a quote; the business then evaluates and selects."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "heading": "Industry Tip",
+          "text": "When drafting an RFQ for a business client, always specify minimum requirements rather than exact models. This gives suppliers flexibility to quote comparable products and encourages competitive pricing. Locking in a single brand or model in an RFQ can inflate cost and reduce your options."
+        },
+        {
+          "type": "heading",
+          "text": "Sample Hardware Comparison",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Imagine a small business with 10 staff members needs to replace their ageing desktop computers. The IT manager receives three quotes. Each quote must be evaluated against the required specifications and total cost."
+        },
+        {
+          "type": "table",
+          "headers": ["", "Quote A — Budget", "Quote B — Mid-range", "Quote C — Premium"],
+          "rows": [
+            ["CPU", "Intel Core i3-12100", "Intel Core i5-13400", "Intel Core i7-13700"],
+            ["RAM", "8 GB DDR4", "16 GB DDR5", "32 GB DDR5"],
+            ["Storage", "256 GB SATA SSD", "512 GB NVMe SSD", "1 TB NVMe SSD"],
+            ["Display", "21.5\" 1080p", "24\" 1080p IPS", "27\" 4K IPS"],
+            ["Warranty", "1 year RTB", "3 year on-site", "5 year on-site"],
+            ["Unit price", "$649", "$1,149", "$2,199"],
+            ["Total (x10)", "$6,490", "$11,490", "$21,990"]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "For a standard office environment running Microsoft 365, email, and accounting software, Quote B (mid-range) likely represents the best value: it meets requirements with headroom, includes a 3-year on-site warranty (reducing future labour costs), and the per-seat cost is reasonable for a professional deployment."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "heading": "Career Connection",
+          "text": "Procurement is a real IT career pathway. IT procurement officers, vendor managers, and asset managers spend significant time evaluating hardware quotes, negotiating with suppliers, and managing asset lifecycles. Understanding how to read a spec sheet and compare quotes is a foundational workplace skill."
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "y12hw-q9",
+            "questionType": "mcq",
+            "text": "A business is selecting laptops for 20 field technicians who work outdoors and travel frequently. Which specification is MOST important for this use case?",
+            "options": [
+              "Dedicated gaming GPU",
+              "64 GB RAM",
+              "Battery life and durable chassis",
+              "4K OLED display"
+            ],
+            "correctIndex": 2,
+            "explanation": "Field technicians need laptops they can use away from power sources and in varied environments. Battery life and durability are critical — a premium display or gaming GPU add cost and weight without benefiting the role."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "y12hw-q10",
+            "questionType": "mcq",
+            "text": "What is the purpose of a Request for Quotation (RFQ)?",
+            "options": [
+              "To install new software on purchased hardware",
+              "To formally request pricing from suppliers for specified hardware or services",
+              "To report a fault with purchased equipment to the vendor",
+              "To update firmware on existing hardware"
+            ],
+            "correctIndex": 1,
+            "explanation": "An RFQ is a procurement document sent to suppliers specifying what is needed (minimum specs, quantity, delivery, warranty) and asking suppliers to respond with pricing. It is part of the formal purchasing process in businesses."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "y12hw-q11",
+            "questionType": "short_answer",
+            "text": "A school IT department has a budget of $8,000 to purchase computers for a media arts classroom. Students will be using video editing software. Identify two specifications that should be prioritised and explain why each is important for this use case.",
+            "marks": 4,
+            "explanation": "Any two of: RAM (16–32 GB recommended for video editing — large video files are held in memory during editing; insufficient RAM causes crashes and slowdowns); dedicated GPU (video editing software uses GPU acceleration for rendering and playback); fast NVMe SSD (video files are very large; a fast drive reduces load times and prevents stuttering during playback); multi-core CPU (rendering video is CPU-intensive; more cores = faster export times)."
+          }
+        },
+        {
+          "type": "task",
+          "title": "RFQ Scenario — School IT Department",
+          "intro": "The school IT department has asked you to draft a hardware requirements list for 30 new student laptops to be used across Years 10–12 in all subject areas. The budget is $1,200 per unit.",
+          "steps": [
+            "List the core tasks students will perform on these laptops: word processing, spreadsheets, presentations, web research, light image editing.",
+            "Based on these tasks, specify the minimum requirements for: OS, CPU, RAM, storage, display, battery life, connectivity (Wi-Fi standard, USB ports, HDMI).",
+            "Search two different retailers (e.g. JB Hi-Fi Education, Officeworks, or a business IT supplier) for laptops that match your minimum requirements within the $1,200 budget.",
+            "Compare the two options in a table, including model name, specifications, price, and warranty.",
+            "Write a recommendation paragraph: which laptop should the school purchase, and why?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maintenance-and-troubleshooting",
+      "title": "Maintenance and Troubleshooting",
+      "estimatedMinutes": 30,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Maintenance and Troubleshooting",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Maintaining computer hardware and resolving common faults are core competencies for anyone working in IT support. Proactive maintenance prevents downtime; systematic troubleshooting minimises its impact when it does occur."
+        },
+        {
+          "type": "heading",
+          "text": "Physical Maintenance Strategies",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Physical maintenance focuses on keeping hardware in good working order through environmental controls and protective measures. The two most important strategies at Year 12 level are the use of an Uninterruptible Power Supply and appropriate temperature management."
+        },
+        {
+          "type": "keyTerm",
+          "term": "UPS (Uninterruptible Power Supply)",
+          "definition": "A device that provides emergency battery power to connected equipment when the mains power supply fails or fluctuates. A UPS gives users time to save work and shut down safely, and protects hardware from power surges and voltage spikes."
+        },
+        {
+          "type": "paragraph",
+          "text": "A UPS is essential for servers, network equipment, and any system where sudden power loss could result in data corruption or hardware damage. In a school environment, the network server room should be protected by a UPS. In a home office, a UPS protects against brownouts and storms."
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Provides battery backup power when mains power fails",
+            "Protects against power surges and voltage spikes that can damage components",
+            "Allows a graceful shutdown — preventing file system corruption and data loss",
+            "Higher-capacity UPS units can power equipment for 10–30 minutes, allowing full system shutdown procedures",
+            "UPS units include a display showing battery level, load percentage, and estimated runtime"
+          ]
+        },
+        {
+          "type": "keyTerm",
+          "term": "Environmental temperature control",
+          "definition": "Managing the operating temperature of computer hardware to keep it within the manufacturer's specified range. Excessive heat is the most common cause of hardware failure and reduced component lifespan."
+        },
+        {
+          "type": "paragraph",
+          "text": "Computers generate heat during normal operation. If that heat cannot escape, the system will throttle performance to protect components — and eventually shut down or fail permanently. In professional environments, server rooms and data centres use dedicated air conditioning to maintain a safe temperature range (typically 18–27°C)."
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Ensure adequate airflow: don't block case vents or place equipment in enclosed spaces",
+            "Clean dust from heatsinks, fans, and vents using compressed air — dust acts as thermal insulation",
+            "Server rooms require dedicated air conditioning, often with redundant units in case one fails",
+            "Monitor CPU and case temperatures using built-in software (e.g. HWiNFO, BIOS/UEFI sensors)",
+            "In hot climates or summer conditions, pay extra attention to laptop vents and cooling surfaces",
+            "Never place a laptop on a soft surface (bed, carpet) that blocks the underside vents"
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "heading": "Industry Tip",
+          "text": "Server room temperature is taken seriously in enterprise IT. Industry standards (such as ASHRAE A2) define acceptable temperature and humidity ranges for data centre equipment. IT teams set temperature alarms so they are notified immediately if cooling fails — uncontrolled heat can destroy thousands of dollars of equipment within hours."
+        },
+        {
+          "type": "heading",
+          "text": "Troubleshooting Common Problems",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Effective troubleshooting is systematic, not random. The professional approach: identify the symptom, form a hypothesis about the cause, test it, implement the fix, verify the problem is resolved, and document the outcome."
+        },
+        {
+          "type": "heading",
+          "text": "No Sound",
+          "level": 3
+        },
+        {
+          "type": "table",
+          "headers": ["Check", "How to check", "Fix if this is the cause"],
+          "rows": [
+            ["Volume muted or very low", "Check the volume icon in the taskbar; check physical volume buttons on speakers/headphones", "Unmute; raise volume"],
+            ["Wrong output device selected", "Windows: Settings > Sound > Output device; check if headphones are selected instead of speakers", "Select the correct output device"],
+            ["Speakers/headphones not connected", "Check physical cables (3.5mm, USB) or Bluetooth pairing status", "Reconnect; re-pair Bluetooth device"],
+            ["Audio driver issue", "Device Manager > Sound — look for yellow warning icons", "Update or reinstall audio driver"],
+            ["Application-level mute", "Check the volume mixer (right-click taskbar volume icon) for individual app volumes", "Unmute the specific application"],
+            ["Hardware fault", "Test with different speakers/headphones on the same computer", "If the fault follows the device, replace device; if it stays with computer, service the audio jack or card"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Frozen Screen, Keyboard, and Mouse",
+          "level": 3
+        },
+        {
+          "type": "table",
+          "headers": ["Check", "How to check", "Fix if this is the cause"],
+          "rows": [
+            ["Single application frozen", "Observe whether other applications still respond; check if cursor moves", "Task Manager (Ctrl+Shift+Esc) > End Task on frozen application"],
+            ["Entire system frozen", "No cursor movement, no response to keyboard", "Hold power button 5–10 seconds to force shutdown; restart"],
+            ["Insufficient RAM causing freeze", "After restart, check Task Manager — RAM usage at or near 100%", "Close background applications; consider RAM upgrade"],
+            ["Overheating causing shutdown/freeze", "Check CPU temperature in BIOS or third-party software after a brief period of load", "Clean dust from cooling system; improve airflow; replace thermal paste"],
+            ["Wireless peripheral battery/connection issue", "Test with a wired keyboard or mouse", "Replace batteries; re-pair wireless device; check USB receiver"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "No Connection to a Data Projector",
+          "level": 3
+        },
+        {
+          "type": "table",
+          "headers": ["Check", "How to check", "Fix if this is the cause"],
+          "rows": [
+            ["Cable not connected or loose", "Check both ends of the HDMI or VGA cable", "Reconnect; try a different cable"],
+            ["Wrong projector input selected", "Check the projector's input/source button", "Cycle through inputs (HDMI 1, HDMI 2, VGA, etc.) until the computer is detected"],
+            ["Computer not set to output to external display", "Windows: Win+P shortcut to cycle display modes (PC screen only / Duplicate / Extend / Second screen only)", "Select Duplicate or Extend as appropriate"],
+            ["Display driver not detecting projector", "Display Settings > Detect", "Click Detect; update display drivers"],
+            ["Adapter required", "Check laptop output port (USB-C, Mini DisplayPort, Thunderbolt) vs projector input (HDMI, VGA)", "Use the appropriate adapter (USB-C to HDMI, DisplayPort to HDMI, etc.)"],
+            ["Projector lamp warming up", "Some projectors take 30–60 seconds to display an image after power on", "Wait for the projector to fully warm up before concluding there is a connection issue"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "heading": "Industry Tip",
+          "text": "Before assuming a hardware fault, always check the simple things first: cables, mute buttons, input selection, and whether the device is powered on. In IT support, the most common faults have the simplest causes — and the most embarrassing call-outs are for things the user could have fixed themselves. Good technicians confirm the basics before escalating."
+        },
+        {
+          "type": "heading",
+          "text": "Documenting Solutions",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Professional IT staff document every fault and its resolution in a helpdesk or ticketing system. This creates a knowledge base that helps other technicians resolve similar issues faster in future, tracks recurring problems that may indicate a systemic hardware fault, and provides evidence for warranty claims."
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "y12hw-q12",
+            "questionType": "mcq",
+            "text": "What is the primary purpose of an Uninterruptible Power Supply (UPS)?",
+            "options": [
+              "To increase the processing speed of a server",
+              "To provide backup power during a mains power failure, allowing safe shutdown",
+              "To regulate the operating temperature of server hardware",
+              "To distribute power evenly across multiple monitors"
+            ],
+            "correctIndex": 1,
+            "explanation": "A UPS provides battery backup power when mains power fails or fluctuates. It gives users and systems time to save work and shut down safely, preventing data corruption and protecting hardware from sudden power loss and voltage spikes."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "y12hw-q13",
+            "questionType": "mcq",
+            "text": "A teacher reports that their laptop won't display on the classroom projector. The projector is on and the HDMI cable is connected. What is the NEXT most likely thing to check?",
+            "options": [
+              "Replace the projector",
+              "Reinstall Windows",
+              "Check the projector's input source setting and press Win+P on the laptop",
+              "Upgrade the laptop's RAM"
+            ],
+            "correctIndex": 2,
+            "explanation": "After confirming cables and power, the next checks are: the projector's input/source setting (it may be set to VGA while the laptop is connected via HDMI) and the laptop's display output mode (Win+P cycles through PC only / Duplicate / Extend / Second screen)."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "y12hw-q14",
+            "questionType": "mcq",
+            "text": "A computer in a server room begins to throttle performance and eventually shuts down during a busy period. What is the most likely cause?",
+            "options": [
+              "Insufficient RAM",
+              "Software virus",
+              "Overheating due to inadequate temperature control",
+              "Hard drive failure"
+            ],
+            "correctIndex": 2,
+            "explanation": "CPUs and other components throttle (reduce performance) to protect themselves from heat damage, and shut down entirely if temperatures become critical. In a server room, this usually indicates cooling failure, blocked airflow, or dust buildup — all related to temperature control."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "y12hw-q15",
+            "questionType": "short_answer",
+            "text": "Describe the steps an IT technician should follow when troubleshooting a 'no sound' problem on a Windows computer. Include at least three distinct checks.",
+            "marks": 6,
+            "explanation": "Expected steps (any three, with explanation): Check whether audio is muted in the taskbar volume icon and unmute if so; check the audio output device in Sound Settings to ensure speakers (not headphones) are selected; check the volume mixer to confirm the specific application is not muted; check Device Manager for driver issues (yellow warning icons) and update/reinstall audio drivers; test with different speakers/headphones to isolate whether the issue is with the device or the computer's audio output."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "y12hw-q16",
+            "questionType": "mcq",
+            "text": "Why should IT technicians document the cause and solution of each technical fault they resolve?",
+            "options": [
+              "It is required by hardware warranty conditions",
+              "It creates a knowledge base that helps resolve similar future faults more quickly",
+              "It automatically backs up user data",
+              "It updates the computer's operating system"
+            ],
+            "correctIndex": 1,
+            "explanation": "Documentation creates an organisational knowledge base. When a similar fault occurs in future, technicians can search previous tickets for the solution rather than spending time re-diagnosing. It also helps identify recurring faults that may indicate a systemic or hardware problem."
+          }
+        },
+        {
+          "type": "task",
+          "title": "Troubleshooting Role-Play Task",
+          "intro": "Work in pairs. One person plays the IT support technician; the other plays the user reporting the problem. Work through two of the following scenarios using the systematic troubleshooting approach.",
+          "steps": [
+            "Scenario A — No sound: The user says they cannot hear audio during a video call. As the technician, work through at least four checks in a logical order. Document each check and the result.",
+            "Scenario B — Frozen screen: The user's computer has completely stopped responding. As the technician, walk the user through the steps to attempt recovery, and document what you would check after restart.",
+            "Scenario C — No projector connection: A staff member cannot get their laptop to display on the projector for a presentation in 10 minutes. As the technician, guide them through the fastest possible diagnostic steps.",
+            "After each scenario, write up your troubleshooting log: Problem reported | Steps taken (in order) | Cause identified | Solution applied | Resolution confirmed.",
+            "Reflection: For one of your scenarios, describe one thing you would do differently next time to solve the problem faster."
+          ]
+        },
+        {
+          "type": "task",
+          "title": "Maintenance Plan for a School Computer Lab",
+          "intro": "You are the IT support officer for a school with a 30-seat computer lab. Create a physical maintenance plan for the next 12 months.",
+          "steps": [
+            "List the physical maintenance tasks that should be performed: include dust cleaning, cable checks, temperature monitoring, UPS testing, and any others you can identify.",
+            "For each task, specify the recommended frequency (weekly / monthly / termly / annually).",
+            "Research the recommended temperature range for computer operation (hint: check manufacturer documentation or ASHRAE standards).",
+            "Explain how you would monitor server room temperature and what would trigger an alert.",
+            "Write two paragraphs explaining to the school principal why investing in a UPS for the server room is worthwhile, using cost-benefit reasoning."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1034 @@
+{
+  "id": "application-skills-u3",
+  "title": "Application Skills",
+  "description": "Year 12 Unit 3",
+  "lessons": [
+    {
+      "id": "file-formats-graphics-audio",
+      "title": "File Formats for Graphics and Audio",
+      "estimatedMinutes": 20,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "File Formats for Graphics and Audio",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Choosing the right file format is one of the most fundamental decisions in digital production. The wrong format can result in blurry images, enormous file sizes, or audio that sounds muffled on professional speakers. Industry professionals select formats deliberately based on how the asset will be used — and so should you."
+        },
+        {
+          "type": "heading",
+          "text": "Vector Graphics",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Vector graphics store images as mathematical equations describing lines, curves, and shapes rather than a grid of pixels. This means they can be scaled to any size — from a business card to a billboard — without any loss of quality."
+        },
+        {
+          "type": "keyTerms",
+          "items": [
+            {
+              "term": "Vector graphic",
+              "definition": "An image defined by mathematical paths and shapes. Infinitely scalable with no quality loss. Ideal for logos, icons, and illustrations."
+            },
+            {
+              "term": "SVG (Scalable Vector Graphic)",
+              "definition": "The standard web vector format. Text-based XML file that can be opened in a browser or edited in a text editor. Supported by all modern browsers."
+            },
+            {
+              "term": "AI (Adobe Illustrator)",
+              "definition": "Adobe's native vector format. Full editing capability but requires Adobe Illustrator to open in its original form."
+            },
+            {
+              "term": "EPS (Encapsulated PostScript)",
+              "definition": "An older vector format widely used in print production and compatible with most professional design software."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "heading": "Industry Standard",
+          "text": "Professional designers deliver logo files in SVG (for web/digital) and EPS or AI (for print). If a client asks for a logo \"in the highest quality\", they want a vector file — not a JPG."
+        },
+        {
+          "type": "heading",
+          "text": "Raster (Bitmap) Graphics",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Raster graphics store images as a grid of coloured pixels. They are ideal for photographs and complex imagery with gradients and fine detail, but they lose quality when scaled up — the pixels become visible, causing a blurry or blocky appearance known as pixelation."
+        },
+        {
+          "type": "keyTerms",
+          "items": [
+            {
+              "term": "Raster graphic",
+              "definition": "An image stored as a fixed grid of pixels. Quality is tied to resolution — enlarging a raster image causes pixelation."
+            },
+            {
+              "term": "PNG (Portable Network Graphic)",
+              "definition": "Lossless raster format. Supports transparency (alpha channel). Best for graphics, logos on backgrounds, screenshots, and web images where quality must be preserved."
+            },
+            {
+              "term": "JPG/JPEG (Joint Photographic Experts Group)",
+              "definition": "Lossy compressed raster format. Excellent for photographs. Smaller file sizes than PNG but loses some data each time it is saved — not suitable for images that will be repeatedly edited."
+            },
+            {
+              "term": "GIF (Graphics Interchange Format)",
+              "definition": "Limited to 256 colours. Supports simple animation. Used for short looping animations on the web."
+            },
+            {
+              "term": "TIFF (Tagged Image File Format)",
+              "definition": "High-quality lossless raster format used in professional print production and archiving. Files are large but contain all original image data."
+            },
+            {
+              "term": "PSD (Photoshop Document)",
+              "definition": "Adobe Photoshop's native format. Stores layers, masks, and adjustment data for continued editing."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vector vs Raster: Comparison",
+          "level": 3
+        },
+        {
+          "type": "table",
+          "headers": ["Property", "Vector (SVG, AI, EPS)", "Raster (PNG, JPG, TIFF)"],
+          "rows": [
+            ["Storage method", "Mathematical paths and shapes", "Grid of pixels"],
+            ["Scalability", "Infinitely scalable — no quality loss", "Fixed resolution — enlarging causes pixelation"],
+            ["File size", "Generally small (unless very complex)", "Can be very large at high resolution"],
+            ["Best for", "Logos, icons, illustrations, typography", "Photographs, detailed imagery, textures"],
+            ["Editing software", "Adobe Illustrator, Inkscape, Canva (SVG)", "Adobe Photoshop, GIMP, Canva"],
+            ["Common formats", "SVG, AI, EPS", "PNG, JPG, TIFF, GIF, PSD"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Audio File Formats",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Audio formats fall into two main categories: uncompressed (lossless) formats that preserve every detail of the original recording, and compressed formats that reduce file size by removing audio data the human ear is less likely to notice."
+        },
+        {
+          "type": "keyTerms",
+          "items": [
+            {
+              "term": "WAV (Waveform Audio File Format)",
+              "definition": "Uncompressed, lossless audio format developed by Microsoft. Highest quality but very large file sizes. Industry standard for recording, editing, and audio production."
+            },
+            {
+              "term": "MP3 (MPEG Audio Layer III)",
+              "definition": "Lossy compressed audio format. Significantly smaller than WAV. Universally supported. Quality degrades slightly but acceptable for music distribution and podcasting."
+            },
+            {
+              "term": "AAC (Advanced Audio Coding)",
+              "definition": "Lossy compressed format, successor to MP3. Better audio quality at the same file size. Used by Apple (iTunes, iPhone) and YouTube."
+            },
+            {
+              "term": "FLAC (Free Lossless Audio Codec)",
+              "definition": "Lossless compressed format — smaller than WAV but no quality loss. Preferred by audiophiles and for archiving audio."
+            },
+            {
+              "term": "OGG Vorbis",
+              "definition": "Open-source lossy compressed format. Often used in games and open-source projects where MP3 licensing is a concern."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": ["Format", "Type", "Quality", "File Size", "Best Use"],
+          "rows": [
+            ["WAV", "Uncompressed", "Maximum — no data loss", "Very large (~10MB/min)", "Recording studio, audio editing, broadcast"],
+            ["MP3", "Lossy compressed", "Good — slight data loss", "Small (~1MB/min at 128kbps)", "Music streaming, podcasts, web audio"],
+            ["AAC", "Lossy compressed", "Better than MP3 at same size", "Small (~0.8MB/min)", "Apple ecosystem, YouTube, streaming services"],
+            ["FLAC", "Lossless compressed", "Maximum — no data loss", "Medium (~5MB/min)", "Archiving, audiophile music distribution"],
+            ["OGG", "Lossy compressed", "Good — similar to MP3", "Small", "Game audio, open-source projects"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "heading": "Workplace Application",
+          "text": "Always record and edit audio in an uncompressed format (WAV) to preserve quality during production. Export to a compressed format (MP3 or AAC) only for final distribution. Re-compressing already-compressed audio multiplies quality loss."
+        },
+        {
+          "type": "heading",
+          "text": "Choosing the Right Format",
+          "level": 3
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Company logo for a website → SVG (vector, sharp at any size, small file)",
+            "Company logo for a printed banner → AI or EPS (vector, print-ready)",
+            "Photograph for a news article website → JPG (compressed, small, acceptable quality)",
+            "Graphic with a transparent background for web → PNG (supports transparency, lossless)",
+            "Audio recording to edit in Audacity → WAV (lossless, preserves all data for editing)",
+            "Podcast episode to upload to Spotify → MP3 at 128–192kbps (industry-standard distribution format)",
+            "Music track for an iPhone app → AAC (Apple's preferred format)"
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "ff-q1",
+            "questionType": "mcq",
+            "text": "A graphic designer needs to provide a client's logo to a sign-making company for a 3-metre banner. Which file format is most appropriate?",
+            "options": ["JPG", "PNG", "SVG or EPS", "GIF"],
+            "correctIndex": 2,
+            "explanation": "Vector formats (SVG, EPS, AI) are required for large-format printing because they scale to any size without quality loss. JPG and PNG are raster formats that would pixelate when enlarged to banner size."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "ff-q2",
+            "questionType": "mcq",
+            "text": "A podcaster records their episode in WAV format using Audacity. When they finish editing, which format should they export to for publishing on Spotify?",
+            "options": ["WAV — keep it as-is for best quality", "MP3 — smaller file size, universally supported for streaming", "FLAC — lossless compression", "TIFF — professional audio format"],
+            "correctIndex": 1,
+            "explanation": "MP3 (and AAC) are the standard distribution formats for podcasts. WAV files are far too large to stream efficiently. FLAC is lossless but not widely supported by streaming platforms. TIFF is an image format, not audio."
+          }
+        }
+      ]
+    },
+    {
+      "id": "software-licences",
+      "title": "Software Licences",
+      "estimatedMinutes": 20,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Software Licences",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "When you install software, you do not own it — you purchase (or receive for free) a licence to use it under specific conditions. Understanding licence types is essential for both legal compliance and making informed software decisions for yourself, your clients, and your organisation."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "heading": "Workplace Application",
+          "text": "Using software beyond the terms of its licence is software piracy — a form of theft with serious legal consequences. IT professionals are responsible for ensuring their organisation's software is properly licensed. Audits by the Business Software Alliance (BSA) can result in significant fines."
+        },
+        {
+          "type": "heading",
+          "text": "Open Source vs Closed Source",
+          "level": 3
+        },
+        {
+          "type": "keyTerms",
+          "items": [
+            {
+              "term": "Open source",
+              "definition": "Software where the source code is publicly available. Anyone can view, modify, and distribute it (subject to the specific open-source licence terms). Examples: Linux, Firefox, LibreOffice, GIMP, Audacity, VLC."
+            },
+            {
+              "term": "Closed source (proprietary)",
+              "definition": "Software where the source code is kept secret by the developer. Users can only run the software — they cannot modify or distribute it. Examples: Microsoft Windows, Adobe Photoshop, Microsoft Office."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Types of Software Licences",
+          "level": 3
+        },
+        {
+          "type": "keyTerms",
+          "items": [
+            {
+              "term": "Proprietary licence",
+              "definition": "The software is owned by a company. Users pay for a licence to use it but cannot view, modify, or redistribute the source code. Full terms defined by the EULA (End-User Licence Agreement)."
+            },
+            {
+              "term": "Shareware",
+              "definition": "Software distributed freely for a trial period or with limited functionality. Users are expected to pay for the full version after the trial. Example: WinRAR (technically shareware — the trial never expires but prompts for payment)."
+            },
+            {
+              "term": "Freeware",
+              "definition": "Software that is free to use permanently, but the source code is not available and the software cannot be modified or redistributed. Example: Adobe Acrobat Reader, Skype."
+            },
+            {
+              "term": "GNU GPL (General Public Licence)",
+              "definition": "A widely-used open-source licence. Any software built using GPL code must also be released under the GPL — known as 'copyleft'. Example: Linux kernel, WordPress."
+            },
+            {
+              "term": "MIT Licence",
+              "definition": "A permissive open-source licence. Developers can use, modify, and distribute the code — even in commercial closed-source projects — with minimal restrictions. Example: many web frameworks and libraries."
+            },
+            {
+              "term": "Creative Commons",
+              "definition": "A family of licences primarily for creative works (images, music, text). Different CC licences specify whether attribution is required, whether commercial use is allowed, and whether derivatives must share the same licence."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Licence Type Comparison",
+          "level": 3
+        },
+        {
+          "type": "table",
+          "headers": ["Licence Type", "Cost", "Source Code Available?", "Can Modify?", "Can Redistribute?", "Example"],
+          "rows": [
+            ["Proprietary", "Usually paid (or subscription)", "No", "No", "No", "Microsoft Windows, Adobe CC"],
+            ["Freeware", "Free", "No", "No", "No (typically)", "Adobe Reader, Skype"],
+            ["Shareware", "Free trial, then paid", "No", "No", "Limited", "WinRAR, early Winamp"],
+            ["Open Source (GPL)", "Free", "Yes", "Yes", "Yes (must stay open)", "Linux, GIMP, Audacity"],
+            ["Open Source (MIT)", "Free", "Yes", "Yes", "Yes (even in commercial)", "React, jQuery"],
+            ["SaaS (subscription)", "Monthly/annual fee", "No", "No", "No", "Adobe CC, Microsoft 365"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Real-World Software Examples",
+          "level": 3
+        },
+        {
+          "type": "softwareExamples",
+          "title": "Licence Types in Practice",
+          "apps": [
+            {
+              "name": "Microsoft Windows 11",
+              "licence": "Proprietary",
+              "note": "Closed source. Purchased via OEM licence (pre-installed on PCs) or retail. Cannot be copied or redistributed. Source code is a closely-guarded trade secret."
+            },
+            {
+              "name": "Ubuntu Linux",
+              "licence": "Open Source (GPL)",
+              "note": "Free to download, use, modify, and redistribute. Source code is public. Powers a significant proportion of the world's web servers."
+            },
+            {
+              "name": "Adobe Photoshop",
+              "licence": "Proprietary (subscription SaaS)",
+              "note": "Industry-standard raster image editor. Requires a Creative Cloud subscription (~$35/month). Source code is closed. Cannot be shared between users."
+            },
+            {
+              "name": "GIMP",
+              "licence": "Open Source (GPL)",
+              "note": "Free and open-source raster image editor. Equivalent to many Photoshop features. Widely used in education and by organisations with limited software budgets."
+            },
+            {
+              "name": "Adobe Acrobat Reader",
+              "licence": "Freeware",
+              "note": "Free to download and use permanently. Cannot be modified or redistributed. Adobe monetises through the paid Acrobat Pro (for editing PDFs)."
+            },
+            {
+              "name": "Canva (Free tier)",
+              "licence": "Freeware / Freemium",
+              "note": "Core features free permanently. Premium content and features (Canva Pro) require a subscription. Assets created in Canva are subject to Canva's own content licence."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Business Implications of Licence Choices",
+          "level": 3
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Cost: Open source and freeware reduce software costs, which is significant for small businesses and schools.",
+            "Support: Proprietary software typically includes vendor support. Open source relies on community forums and documentation.",
+            "Security: Open source code can be reviewed by anyone — vulnerabilities can be found and fixed quickly, but also exploited by attackers before patching.",
+            "Customisation: Open source allows modification to suit specific business needs. Proprietary software cannot be altered.",
+            "Compliance: Organisations must track all installed software and ensure it is correctly licensed to avoid legal risk.",
+            "Vendor lock-in: Proprietary software can create dependency on a single vendor — if they raise prices or discontinue the product, migrating is costly."
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "sl-q1",
+            "questionType": "mcq",
+            "text": "A small business wants to use image editing software but cannot afford Adobe Photoshop subscriptions. They want software they can use permanently for free. Which is the best option?",
+            "options": ["Microsoft Windows", "WinRAR (shareware)", "GIMP (open source)", "Adobe Acrobat Reader"],
+            "correctIndex": 2,
+            "explanation": "GIMP is a free, open-source raster image editor with capabilities comparable to Photoshop. It can be used permanently at no cost. WinRAR is shareware (requires eventual payment). Adobe Reader is freeware but is a PDF reader, not an image editor."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "sl-q2",
+            "questionType": "true_false",
+            "text": "Freeware software provides access to its source code, allowing users to modify and redistribute it.",
+            "correctAnswer": false,
+            "explanation": "False. Freeware is free to use but the source code is not available and users cannot modify or redistribute it. Open source software is what provides access to source code."
+          }
+        },
+        {
+          "type": "activity",
+          "title": "Classify the Licence",
+          "instruction": "Match each software description to its licence type.",
+          "pairs": [
+            { "term": "Free to use, source code public, must keep derivatives open", "definition": "Open source (GPL)" },
+            { "term": "Free to use permanently, no source code, cannot modify", "definition": "Freeware" },
+            { "term": "Free trial with limited features, pay for full version", "definition": "Shareware" },
+            { "term": "Must pay, source code secret, cannot copy or share", "definition": "Proprietary" },
+            { "term": "Free, source code public, can use in commercial projects", "definition": "Open source (MIT)" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "software-management",
+      "title": "Software Management",
+      "estimatedMinutes": 20,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Software Management",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "In any organisation, managing software is as important as managing hardware. IT departments are responsible for ensuring that software is properly installed, kept up-to-date, and tracked across all devices. Poor software management leads to security vulnerabilities, licensing breaches, and compatibility problems."
+        },
+        {
+          "type": "heading",
+          "text": "Software Installation",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Installing software involves more than just clicking 'Next'. IT professionals consider compatibility, security, licensing, and system requirements before deploying software across an organisation."
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Check system requirements — does the hardware meet the minimum specifications (RAM, CPU, storage, OS version)?",
+            "Verify the source — only download software from official vendor websites or trusted repositories to avoid malware.",
+            "Check licence availability — ensure the organisation holds enough licences before installing.",
+            "Test before deploying — pilot-test new software on one or two machines before rolling it out across an organisation.",
+            "Administrator rights — installation often requires administrator privileges; in organisations, this is typically restricted to IT staff.",
+            "Silent/remote installation — enterprise IT departments use tools like Microsoft SCCM or Intune to push software to hundreds of machines remotely without visiting each device."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Software Updates and Patching",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Software updates are released to add features, fix bugs, and most critically — close security vulnerabilities. A vulnerability that is left unpatched is an open door for attackers. The WannaCry ransomware attack of 2017 exploited a Windows vulnerability for which a patch had already been released — organisations that had not applied the update were compromised."
+        },
+        {
+          "type": "keyTerms",
+          "items": [
+            {
+              "term": "Patch",
+              "definition": "A small software update that fixes a specific bug or security vulnerability without changing the major version of the software."
+            },
+            {
+              "term": "Major version update",
+              "definition": "A significant new release of software (e.g., Windows 10 → Windows 11, Photoshop 2024 → 2025). May introduce new features, change the interface, or require hardware upgrades."
+            },
+            {
+              "term": "Automatic updates",
+              "definition": "A setting that allows software to download and install updates without user intervention. Keeps security patches current but can cause disruption if a bad update is released."
+            },
+            {
+              "term": "Rollback",
+              "definition": "Reverting to a previous version of software after an update causes problems. Important to have in an enterprise environment to recover from faulty updates."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "heading": "Industry Standard",
+          "text": "In a professional environment, updates are never applied to production systems immediately. IT departments test updates in a staging environment first, then schedule deployment during maintenance windows (usually overnight or on weekends) to minimise disruption."
+        },
+        {
+          "type": "heading",
+          "text": "Software Version Control",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Version numbering helps users and administrators understand the maturity and compatibility of software. Most software uses a format like MAJOR.MINOR.PATCH (e.g., 3.2.1)."
+        },
+        {
+          "type": "table",
+          "headers": ["Version Component", "Meaning", "Example"],
+          "rows": [
+            ["Major (first number)", "Significant changes — may break backward compatibility", "Photoshop 24 → 25"],
+            ["Minor (second number)", "New features added, backward compatible", "Chrome 120.0 → 120.1"],
+            ["Patch (third number)", "Bug fixes and security patches", "Windows 11 22H2 → update KB5031354"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "IT Asset Management",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "IT Asset Management (ITAM) is the process of tracking all hardware and software in an organisation. A proper ITAM system records what software is installed, on which device, under which licence, and when licences expire."
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Licence compliance: Know exactly how many licences you own vs how many are installed. Over-deployment is a legal risk; under-deployment is wasted money.",
+            "Renewal tracking: Software subscriptions and licence agreements expire. ITAM systems alert IT managers before renewals are due.",
+            "End-of-life software: Vendors stop releasing security updates for old software versions (e.g., Windows 7 end-of-life in January 2020). ITAM helps identify and replace unsupported software.",
+            "Software audit readiness: Companies like Adobe and Microsoft conduct licence audits. Organisations with proper ITAM records can respond quickly and confidently.",
+            "Tools used: Microsoft SCCM, ManageEngine, Lansweeper, Snow Software, and Ivanti are common enterprise ITAM platforms."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "heading": "Workplace Application",
+          "text": "Many small businesses fail to track their software licences properly. As an IT professional entering the workforce, creating and maintaining a simple software register (even in a spreadsheet) can save an organisation from costly compliance failures."
+        },
+        {
+          "type": "task",
+          "title": "Software Audit Register",
+          "software": "Microsoft Excel or Google Sheets",
+          "intro": "Create a software asset register that an IT manager could use to track installed software across a small organisation of 10 computers.",
+          "steps": [
+            "Open a new spreadsheet. Create the following column headers in row 1: Device Name, Software Name, Version, Licence Type, Licence Key (last 5 digits), Licences Owned, Licences Used, Licence Expiry, Vendor Contact, Notes.",
+            "Bold the header row and apply a fill colour to distinguish it from data rows.",
+            "Enter data for at least 8 software titles. Include a mix of proprietary (e.g., Microsoft Office 365), open source (e.g., GIMP), and freeware (e.g., Adobe Reader).",
+            "In the Licence Type column, create a drop-down validation list with the options: Proprietary, Open Source, Freeware, Shareware, SaaS Subscription.",
+            "In a column to the right of your data, use a formula to flag any software where Licences Used exceeds Licences Owned. Use an IF formula: =IF(G2>F2,\"OVER-LICENSED\",\"OK\").",
+            "Add conditional formatting to that flag column: red fill for 'OVER-LICENSED', green fill for 'OK'.",
+            "Add a Licence Expiry column. Use conditional formatting to highlight any expiry date within the next 90 days in orange.",
+            "Freeze row 1 so headers remain visible when scrolling.",
+            "Save the file as 'Software_Asset_Register_[YourName].xlsx'."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "advanced-spreadsheet-design",
+      "title": "Advanced Spreadsheet Design",
+      "estimatedMinutes": 25,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Advanced Spreadsheet Design",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "A well-designed spreadsheet is not just functional — it communicates clearly, is easy to navigate, and looks professional. In Year 12, you are expected to go beyond entering data and formulas. You need to apply composition, layout, and design principles to produce spreadsheets that a client or employer could use without guidance."
+        },
+        {
+          "type": "heading",
+          "text": "Composition and Layout Principles for Spreadsheets",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "The same design principles you apply to posters and websites apply to spreadsheets. A spreadsheet is a visual product — poor layout makes data harder to read and increases errors."
+        },
+        {
+          "type": "table",
+          "headers": ["Design Principle", "Applied to Spreadsheets", "Example"],
+          "rows": [
+            ["Hierarchy", "Most important information at the top; summaries prominent", "Title in row 1, key totals in a shaded summary section at the top"],
+            ["Alignment", "Data consistently left-, right-, or centre-aligned by type", "Numbers right-aligned; text left-aligned; headers centred"],
+            ["Consistency", "Same formatting throughout — fonts, colours, number formats", "All currency cells formatted as $#,##0.00; all headings in the same font and colour"],
+            ["White space", "Row height and column width adjusted; empty rows between sections", "Extra row between data table and summary; adequate column widths so data is not truncated"],
+            ["Contrast", "Headers and key cells clearly distinguished from data", "Bold header row with dark background and white text"],
+            ["Simplicity", "Minimal colours; only what aids comprehension", "Two accent colours maximum; avoid decorative borders that add clutter"],
+            ["Grouping", "Related data visually grouped together", "Related columns close together; summary section clearly separated"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Professional Formatting Techniques",
+          "level": 3
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Use a clear, descriptive title in a merged cell at the top of the spreadsheet.",
+            "Apply a consistent colour palette — one accent colour for headers, one for totals/summaries.",
+            "Format numbers appropriately: currency as $#,##0.00; percentages as 0.00%; dates as DD/MM/YYYY.",
+            "Freeze the top row (and sometimes the leftmost column) so headers remain visible when scrolling.",
+            "Use named ranges to make formulas readable: =SUM(Q1_Sales) instead of =SUM(B2:B32).",
+            "Protect formula cells from accidental editing using cell protection (Review > Protect Sheet).",
+            "Use data validation to restrict user input to valid values (e.g., dropdown lists, number ranges).",
+            "Remove gridlines from the printed view and add your own borders to define the data clearly.",
+            "Include a date stamp, version number, and author name in a footer or dedicated info row."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Chart Design for Data Presentation",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Charts must support the data they display — not just fill space. Every chart needs a title, labelled axes, and a legend where applicable. Chart type choice should match the message you are communicating."
+        },
+        {
+          "type": "table",
+          "headers": ["Chart Type", "Best Used For", "Example"],
+          "rows": [
+            ["Column / Bar chart", "Comparing values across categories", "Sales by product category"],
+            ["Line chart", "Showing trends over time", "Website visitors by month"],
+            ["Pie chart", "Showing proportions of a whole (use sparingly, max 6 segments)", "Market share by brand"],
+            ["Scatter plot", "Showing correlation between two variables", "Age vs income; temperature vs sales"],
+            ["Stacked bar", "Comparing parts of a whole across categories", "Revenue breakdown by region"],
+            ["Combo chart", "Comparing two data series with different scales", "Monthly sales (bars) vs profit margin (line)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "heading": "Industry Standard",
+          "text": "Professional analysts avoid 3D charts and gratuitous special effects. 3D charts distort proportions and make values harder to read. Keep charts clean: remove unnecessary gridlines, use a white or neutral background, and let the data speak."
+        },
+        {
+          "type": "heading",
+          "text": "Advanced Formulas for Analysis",
+          "level": 3
+        },
+        {
+          "type": "codePreview",
+          "title": "SUMIF — Sum values that meet a condition",
+          "defaultCode": "=SUMIF(range, criteria, sum_range)\n\n-- Example: Total sales for the 'West' region only\n=SUMIF(B2:B100, \"West\", C2:C100)\n\n-- Example: Total sales greater than $500\n=SUMIF(C2:C100, \">500\", C2:C100)",
+          "challenge": "Write a SUMIF formula that totals sales in column D only where the product category in column A is 'Software'."
+        },
+        {
+          "type": "codePreview",
+          "title": "COUNTIF — Count cells that meet a condition",
+          "defaultCode": "=COUNTIF(range, criteria)\n\n-- Example: Count how many sales reps exceeded $10,000 in sales\n=COUNTIF(D2:D50, \">10000\")\n\n-- Example: Count how many orders are 'Pending'\n=COUNTIF(E2:E100, \"Pending\")",
+          "challenge": "Write a COUNTIF formula that counts how many cells in B2:B200 contain the word 'Completed'."
+        },
+        {
+          "type": "codePreview",
+          "title": "AVERAGEIF — Average values that meet a condition",
+          "defaultCode": "=AVERAGEIF(range, criteria, average_range)\n\n-- Example: Average score for students in 'Class A'\n=AVERAGEIF(A2:A30, \"Class A\", C2:C30)",
+          "challenge": "Write an AVERAGEIF formula that calculates the average sales amount (column C) for all orders from 'Perth' (column B)."
+        },
+        {
+          "type": "heading",
+          "text": "Spreadsheet Design Checklist",
+          "level": 3
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Title clearly identifies the spreadsheet's purpose",
+            "Header row is bold and visually distinct from data",
+            "Numbers are formatted consistently (currency, percentage, dates)",
+            "Formulas are correct and update automatically when data changes",
+            "Charts have titles, labelled axes, and a legend where applicable",
+            "Colours are consistent and purposeful — not decorative",
+            "Row 1 is frozen for easy scrolling through long datasets",
+            "Data validation is applied where user input is expected",
+            "Summary totals are clearly separated and easy to locate",
+            "File is saved with a clear, descriptive filename"
+          ]
+        },
+        {
+          "type": "task",
+          "title": "Professional Sales Dashboard",
+          "software": "Microsoft Excel or Google Sheets",
+          "intro": "Design and build a professional sales report spreadsheet for a fictional IT company. Apply all layout and design principles from this lesson.",
+          "steps": [
+            "Open a new blank spreadsheet. In row 1, merge cells A1:H1 and type the title 'Coastal IT Solutions — Q3 Sales Report'. Apply a dark blue background with white bold text, font size 16.",
+            "In row 2, add a subtitle showing the reporting period: 'July – September 2025'. Apply a lighter blue background, font size 12, italic.",
+            "Leave row 3 blank for visual separation. In row 4, add these column headers: Sale ID, Sales Rep, Region, Product Category, Units Sold, Unit Price, Total Revenue, Commission (10%).",
+            "Bold the header row. Apply a medium blue fill and white text. Centre all headers.",
+            "Enter data for 20 fictional sales. Use three regions (North, South, West), three product categories (Hardware, Software, Services), and vary units and prices.",
+            "In column G (Total Revenue), write a formula: =E5*F5. Copy down for all 20 rows.",
+            "In column H (Commission), write a formula calculating 10% of revenue: =G5*0.1. Copy down for all rows.",
+            "Below the data, create a Summary section (leave a blank row). Calculate: Total Revenue (SUM), Total Commission (SUM), Average Sale Value (AVERAGE), Best Region (use SUMIF for each region), Top Product Category (use SUMIF).",
+            "Create a bar chart showing Total Revenue by Region. Give it the title 'Revenue by Region — Q3 2025'. Delete chart gridlines and apply a clean white background.",
+            "Create a pie chart showing revenue split by Product Category with a clear legend.",
+            "Format all revenue and commission cells as currency ($#,##0.00). Format 'Units Sold' as a whole number.",
+            "Freeze row 4 (the header row). Add alternating row shading (light grey / white) to the data rows for readability.",
+            "Set up print area to include only the data and charts. Add a footer with your name and the date.",
+            "Save as 'Sales_Dashboard_Q3_[YourName].xlsx'."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sorting-filtering-data-analysis",
+      "title": "Sorting, Filtering and Data Analysis",
+      "estimatedMinutes": 20,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Sorting, Filtering and Data Analysis",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Raw data is only useful when you can find patterns and make decisions from it. Sorting and filtering are the most fundamental data organisation tools in any spreadsheet application — and conditional formatting makes those patterns immediately visible. Together, these tools allow you to extract meaningful insights for clients and stakeholders."
+        },
+        {
+          "type": "heading",
+          "text": "Sorting Data",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Sorting rearranges rows in your dataset based on the values in one or more columns. It is one of the first steps in organising data for analysis or presentation."
+        },
+        {
+          "type": "keyTerms",
+          "items": [
+            {
+              "term": "Ascending sort",
+              "definition": "Arranges data from smallest to largest (A–Z for text, 0–9 for numbers, earliest to latest for dates)."
+            },
+            {
+              "term": "Descending sort",
+              "definition": "Arranges data from largest to smallest (Z–A for text, 9–0 for numbers, latest to earliest for dates)."
+            },
+            {
+              "term": "Multi-level sort",
+              "definition": "Sorting by more than one column — e.g., first by Region (A–Z), then by Sales (highest to lowest) within each region."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "text": "Always select the entire dataset (all columns) before sorting. Sorting only one column while leaving others in place scrambles your data — names get matched to the wrong values."
+        },
+        {
+          "type": "heading",
+          "text": "Filtering Data",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Filters hide rows that do not match your criteria, letting you focus on a subset of your data without deleting anything. AutoFilter is the most common tool, but advanced filters give much more control."
+        },
+        {
+          "type": "table",
+          "headers": ["Filter Type", "What it does", "When to use it"],
+          "rows": [
+            ["AutoFilter", "Drop-down menus on each column header to filter by value, text, or number rules", "Quick filtering of a single column — e.g., show only 'West' region sales"],
+            ["Number filter", "Filter by conditions: greater than, less than, between, top 10, above average", "Identifying high-value transactions, underperforming products"],
+            ["Text filter", "Filter by begins with, ends with, contains, does not contain", "Finding all products with 'Pro' in the name"],
+            ["Date filter", "Filter by specific date, date range, this week/month/quarter", "Viewing all sales from last quarter"],
+            ["Multi-column filter", "Apply filters to more than one column simultaneously", "Show only 'Software' sales in 'North' region above $1,000"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Conditional Formatting",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Conditional formatting automatically applies colour, icons, or data bars to cells based on their values. It turns a table of numbers into a visual dashboard — patterns and outliers become instantly visible."
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Highlight cells greater than a value — e.g., all sales over $5,000 in green",
+            "Colour scale — gradient from red (low) to green (high) across a column",
+            "Data bars — small horizontal bars inside cells showing relative magnitude",
+            "Icon sets — traffic lights, arrows, stars applied to cells based on value ranges",
+            "Duplicate values — highlight any repeated entries in a column (useful for data cleaning)",
+            "Top/bottom rules — automatically highlight the top 10% or bottom 10 values in a range"
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "heading": "Workplace Application",
+          "text": "Conditional formatting is used in business dashboards to make performance immediately readable. A sales manager can look at a red/amber/green report and instantly identify which regions need attention — without reading every number."
+        },
+        {
+          "type": "heading",
+          "text": "Data-Driven Decision Making",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Sorting and filtering are not ends in themselves — they support decision making. When working with a client, you need to identify what question they are trying to answer, then select the right technique to surface that answer from the data."
+        },
+        {
+          "type": "table",
+          "headers": ["Client question", "Technique to use"],
+          "rows": [
+            ["Who are our top 5 highest-value customers?", "Sort by Total Purchase (descending); take first 5 rows"],
+            ["Which products have not sold in the past 30 days?", "Filter by Date of Last Sale; apply 'before [date 30 days ago]' filter"],
+            ["Are any staff consistently missing their targets?", "Multi-level sort by Department then by Sales (ascending)"],
+            ["Which regions are below average performance?", "AVERAGEIF formula + conditional formatting (red below average)"],
+            ["How many orders are overdue?", "COUNTIF with date criteria; filter to show overdue only"]
+          ]
+        },
+        {
+          "type": "codePreview",
+          "title": "COUNTIF with date and text criteria",
+          "defaultCode": "-- Count orders placed after 1 July 2025\n=COUNTIF(A2:A100, \">01/07/2025\")\n\n-- Count cells containing 'Overdue' in status column\n=COUNTIF(D2:D100, \"Overdue\")\n\n-- Count sales above the column average\n=COUNTIF(C2:C100, \">\"&AVERAGE(C2:C100))",
+          "challenge": "Write a COUNTIF formula that counts how many values in column B are greater than $1,000."
+        },
+        {
+          "type": "task",
+          "title": "Retail Sales Analysis for a Client",
+          "software": "Microsoft Excel or Google Sheets",
+          "intro": "A retail client has given you a spreadsheet of 50 sales transactions. Your job is to analyse the data and prepare a sorted, filtered report with conditional formatting to help them identify trends and make decisions.",
+          "steps": [
+            "Open a new spreadsheet and set up the following columns: Transaction ID, Date, Customer Name, Region, Product Category, Units Sold, Unit Price, Total Sale, Payment Method, Status.",
+            "Enter 50 rows of realistic fictional data. Use three regions, three product categories (Electronics, Clothing, Homewares), three payment methods (Card, Cash, Online), and two status values (Completed, Pending).",
+            "Calculate Total Sale in column H using the formula =F2*G2. Copy down for all rows.",
+            "Apply AutoFilter to all columns (Data > Filter). Test your filters by showing only 'Completed' transactions from the 'North' region.",
+            "Sort the data by Total Sale, descending. Identify the top 5 sales transactions — add a note column and mark them 'High Value'.",
+            "Apply a colour scale conditional format to the Total Sale column (red for low values, green for high values).",
+            "Apply a conditional format to the Status column: 'Completed' rows in light green, 'Pending' rows in light orange.",
+            "Create a summary table below the data (separated by two blank rows). Use SUMIF to calculate total sales by Region and by Product Category.",
+            "Create a COUNTIF formula that counts how many transactions are 'Pending'.",
+            "Insert a bar chart showing Total Sales by Region. Title it 'Sales by Region — Client Report'.",
+            "Use a multi-level sort: first by Region (A–Z), then by Total Sale (descending) within each region.",
+            "Save as 'Client_Sales_Analysis_[YourName].xlsx' and export a PDF version of the data range and charts only."
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "sf-q1",
+            "questionType": "mcq",
+            "text": "A spreadsheet contains 500 rows of sales data. A manager wants to see only transactions from the 'East' region where the sale value is greater than $2,000. Which technique is most appropriate?",
+            "options": [
+              "Sort the data by region descending",
+              "Apply multi-column AutoFilter: Region = 'East' AND Total Sale > 2000",
+              "Use conditional formatting to highlight East region rows",
+              "Delete all rows that do not match the criteria"
+            ],
+            "correctIndex": 1,
+            "explanation": "Multi-column AutoFilter is the correct tool — it hides non-matching rows temporarily without deleting any data. Sorting alone would not filter out rows, conditional formatting only changes appearance, and deleting rows would permanently remove data."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "sf-q2",
+            "questionType": "short_answer",
+            "text": "A client asks: 'Which product category generates the most revenue?' Describe the steps you would take in a spreadsheet to answer this question.",
+            "marks": 4,
+            "explanation": "Use SUMIF to calculate total revenue for each product category. Then either compare the results directly, sort the summary table by revenue (descending), or create a bar/pie chart showing revenue by category. The category with the highest SUMIF total is the answer."
+          }
+        }
+      ]
+    },
+    {
+      "id": "integrated-digital-production",
+      "title": "Integrated Digital Production",
+      "estimatedMinutes": 55,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Integrated Digital Production",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Professional digital projects rarely use just one tool or one skill. A complete digital product might combine a professionally designed logo (vector graphics), photographs (raster graphics), background music or narration (audio), and a data-driven report (spreadsheet). In this project, you will combine the skills from all previous lessons to produce a complete digital product for a client brief."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "heading": "About This Lesson",
+          "text": "This is a 50–60 minute project task. It is designed to assess your ability to select and apply appropriate file formats, software, and design principles across a complete digital product. Work through each stage in order and save your work regularly."
+        },
+        {
+          "type": "heading",
+          "text": "The Client Brief",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Your client is Nexus Digital — a small IT services company. They have asked you to produce a digital media package to support a new service they are launching: a monthly IT Health Check subscription for small businesses."
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "A professional logo for the 'IT Health Check' service (vector graphic, SVG format)",
+            "A promotional banner image for the company website (raster graphic, PNG format, 1200 x 400 px)",
+            "A short audio introduction (15–30 seconds) for a podcast or website landing page",
+            "A pricing and service comparison spreadsheet that the client can provide to potential customers",
+            "A brief written report (within the spreadsheet or as a separate document) explaining your file format choices and software decisions"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Stage 1: Logo Design (Vector Graphic)",
+          "level": 3
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "text": "Use Canva (free) or Adobe Illustrator if available. In Canva, use a Logo template and download as SVG. Alternatively, use Inkscape (free, open source vector editor)."
+        },
+        {
+          "type": "task",
+          "title": "IT Health Check Logo",
+          "software": "Canva, Adobe Illustrator, or Inkscape",
+          "intro": "Design a professional logo for the 'IT Health Check' service. The logo must be clean, modern, and convey trust and technology.",
+          "steps": [
+            "Open your chosen vector software. Create a new document sized 500 x 500px (square logos scale well).",
+            "Design a logo that includes: the text 'IT Health Check', a simple icon (e.g., a shield, tick, or monitor), and a consistent colour palette of no more than 3 colours.",
+            "Use clean sans-serif typography (e.g., Montserrat, Roboto, or Open Sans). Do not use more than two font styles.",
+            "Ensure the logo works on both a white background and a dark background (test both).",
+            "Export/download as SVG format. Also export as PNG at 500x500px for raster use.",
+            "In your report, explain: Why is SVG the preferred format for a logo? What would happen if you used JPG instead?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Stage 2: Promotional Banner (Raster Graphic)",
+          "level": 3
+        },
+        {
+          "type": "task",
+          "title": "Website Promotional Banner",
+          "software": "Canva, Adobe Photoshop, or GIMP",
+          "intro": "Create a website banner for Nexus Digital advertising the IT Health Check service. Dimensions: 1200 x 400 pixels.",
+          "steps": [
+            "Create a new document at 1200 x 400px. This is a standard web banner size (also called a leaderboard banner).",
+            "Include: the company name 'Nexus Digital', the service name 'IT Health Check', a brief tagline (e.g., 'Keep your business running smoothly'), and a call-to-action button ('Get Started Today').",
+            "Use the same colour palette as your logo for brand consistency.",
+            "Use a stock photo or abstract background appropriate to an IT services company (avoid clip art).",
+            "Place your SVG logo on the banner — ensure it looks sharp at this resolution.",
+            "Export as PNG at 1200 x 400px. Explain in your report: Why PNG and not JPG for this banner? Under what circumstances would JPG be acceptable?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Stage 3: Audio Introduction",
+          "level": 3
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "text": "Use Audacity (free, open source) to record and edit your audio. Record in a quiet environment. Even a built-in laptop microphone works if background noise is minimised."
+        },
+        {
+          "type": "task",
+          "title": "Podcast/Website Audio Introduction",
+          "software": "Audacity",
+          "intro": "Record and edit a 15–30 second audio introduction for the Nexus Digital IT Health Check service. This will be used on the company website and podcast.",
+          "steps": [
+            "Open Audacity. Set the recording sample rate to 44100 Hz (CD quality). Check your microphone input is selected.",
+            "Write a short script (3–5 sentences) introducing the IT Health Check service. Example: 'Welcome to Nexus Digital's IT Health Check — the smart way for small businesses to stay secure and running smoothly. Our monthly check covers security updates, software licences, backup verification, and more. Get started today at nexusdigital.com.au.'",
+            "Record your script. Aim for a confident, professional tone. Record 2–3 takes and select the best one.",
+            "Edit the audio: trim silence at the start and end, remove any obvious errors or long pauses, and adjust volume levels so the audio is clear and consistent.",
+            "Export as WAV (for your working master file). Also export as MP3 at 128kbps for web distribution.",
+            "In your report, explain why you saved two versions: one WAV and one MP3. What would be lost if you only saved MP3 from the start?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Stage 4: Pricing and Service Comparison Spreadsheet",
+          "level": 3
+        },
+        {
+          "type": "task",
+          "title": "Service Pricing Spreadsheet",
+          "software": "Microsoft Excel or Google Sheets",
+          "intro": "Build a professional pricing and service comparison spreadsheet that Nexus Digital can provide to potential customers comparing their three subscription tiers.",
+          "steps": [
+            "Create a new spreadsheet. Title: 'Nexus Digital — IT Health Check Pricing Guide'. Apply professional formatting consistent with the brand colours from your logo.",
+            "Create three subscription tiers: Basic ($49/month), Standard ($99/month), and Premium ($199/month). These are the column headers.",
+            "List the following services as row headers: Security Updates Check, Software Licence Audit, Backup Verification, Network Performance Report, Malware Scan, Priority Support, Monthly Report, Quarterly Review Meeting.",
+            "Mark each cell with a tick (✓) or cross (✗) to indicate which features are included at each tier. Use conditional formatting: green fill for ✓, light red fill for ✗.",
+            "Below the feature table, add a row for 'Annual Cost (12 months)' using a formula: =monthly_price * 12 for each tier.",
+            "Add a 'Savings vs Monthly' row that calculates how much the client saves if Nexus Digital offers a 10% discount for annual payment: =annual_cost * 0.1.",
+            "Format all dollar amounts as currency. Bold the pricing row and the savings row.",
+            "Add a callout row at the bottom: 'Most Popular: Standard Plan — best value for small businesses with 1–10 staff.' Merge the cell across all columns and apply a prominent background colour.",
+            "Export as PDF for client distribution. Save the source file as 'Nexus_Pricing_Guide_[YourName].xlsx'."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Stage 5: Reflection Report",
+          "level": 3
+        },
+        {
+          "type": "scenarioChallenge",
+          "title": "Project Reflection",
+          "scenario": "You have completed the Nexus Digital digital media package. Now reflect on your technical and design decisions.",
+          "questions": [
+            { "question": "Why did you choose SVG for the logo rather than PNG or JPG? What would happen if the logo was sent to a sign company as a JPG file?", "marks": 3 },
+            { "question": "You recorded your audio in WAV format before exporting to MP3. Explain the difference between these formats and why working in WAV first is better practice.", "marks": 3 },
+            { "question": "What licence type applies to Audacity and GIMP? How does this affect whether your school or workplace can use them?", "marks": 2 },
+            { "question": "Describe two composition/design principles you applied to the pricing spreadsheet and explain how each improves the document for the client.", "marks": 4 }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Submission Checklist",
+          "level": 3
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Logo: SVG file + PNG export",
+            "Banner: PNG file at 1200 x 400px",
+            "Audio: WAV master + MP3 distribution version",
+            "Spreadsheet: XLSX source file + PDF export",
+            "Reflection report: Answers to all four reflection questions (can be added as a second sheet in the spreadsheet)",
+            "All files named clearly: Nexus_[Asset]_[YourName].[ext]"
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "idp-q1",
+            "questionType": "mcq",
+            "text": "A student saves their logo as a JPG file and delivers it to a printing company for use on a 2-metre display banner. What problem will occur?",
+            "options": [
+              "The logo will display in the wrong colours",
+              "The JPG file will be too large to open",
+              "The logo will be pixelated and blurry when scaled up to banner size",
+              "JPG files are not supported by printing companies"
+            ],
+            "correctIndex": 2,
+            "explanation": "JPG is a raster format — it stores the image as a fixed grid of pixels. When enlarged to banner size, those pixels become visible and the image looks blurry or blocky. A vector format (SVG, EPS, AI) is required for large-format printing because it scales without quality loss."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "idp-q2",
+            "questionType": "mcq",
+            "text": "Audacity and GIMP are both used in this project. What type of software licence applies to both of them?",
+            "options": [
+              "Proprietary — you need to purchase a licence",
+              "Shareware — free to trial, pay after 30 days",
+              "Freeware — free to use but cannot be modified",
+              "Open source — free to use, modify, and redistribute"
+            ],
+            "correctIndex": 3,
+            "explanation": "Both Audacity and GIMP are open-source software released under the GNU General Public Licence (GPL). They are free to download, use, modify, and redistribute. This makes them excellent choices for educational and small business settings where software costs are a concern."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1421 @@
+{
+  "id": "managing-data",
+  "title": "Managing Data",
+  "description": "Year 12 Unit 4",
+  "lessons": [
+    {
+      "id": "file-compression",
+      "title": "File Compression",
+      "estimatedMinutes": 50,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Why Compress Files?",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Every file you create — a photo, a video, a Word document — takes up storage space and takes time to transfer across a network. File compression reduces file size, making files faster to upload, download, and share, while consuming less storage. In a professional environment, unoptimised files can slow down websites, fill up servers quickly, and cost businesses money in cloud storage and bandwidth fees."
+        },
+        {
+          "type": "keyTerms",
+          "items": [
+            {
+              "term": "File Compression",
+              "definition": "The process of encoding data using fewer bits than the original representation, reducing file size."
+            },
+            {
+              "term": "Lossy Compression",
+              "definition": "Compression that permanently removes some data to achieve smaller file sizes. Quality is reduced and the original cannot be perfectly restored."
+            },
+            {
+              "term": "Lossless Compression",
+              "definition": "Compression that reduces file size without losing any data. The original file can be perfectly reconstructed from the compressed version."
+            },
+            {
+              "term": "Compression Ratio",
+              "definition": "The ratio of the original file size to the compressed file size. A ratio of 4:1 means the file is one quarter of its original size."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Lossy vs Lossless Compression",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "The two main types of compression each suit different use cases. Understanding which to apply — and when — is a core professional skill in IT, design, and media roles."
+        },
+        {
+          "type": "comparison",
+          "title": "Lossy vs Lossless Compression",
+          "items": [
+            {
+              "label": "Lossy Compression",
+              "points": [
+                "Permanently discards data that the algorithm deems less noticeable",
+                "Achieves much smaller file sizes than lossless",
+                "Each time you save, quality degrades further (generational loss)",
+                "Best for images displayed on screen or audio for casual listening",
+                "Examples: JPEG (images), MP3 (audio), MP4/H.264 (video), AAC (audio)"
+              ]
+            },
+            {
+              "label": "Lossless Compression",
+              "points": [
+                "Reduces file size by finding and encoding repeated patterns",
+                "Original data is perfectly restored when decompressed",
+                "No quality loss — what you compress is what you get back",
+                "Best for documents, software, archiving, and professional editing workflows",
+                "Examples: PNG (images), FLAC (audio), ZIP (any file type), PDF/A (documents)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "heading": "Generational Loss",
+          "text": "If you open a JPEG, edit it, and save it again as JPEG, compression is applied a second time — degrading quality further. Always keep master copies in a lossless format (e.g. PSD, TIFF, or PNG) and export lossy versions only for delivery."
+        },
+        {
+          "type": "heading",
+          "text": "Real-World File Size Comparison",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "The numbers below show how dramatically compression affects file size. All examples start from the same source content captured at high quality."
+        },
+        {
+          "type": "table",
+          "headers": ["File Type", "Format", "Compression Type", "Approximate Size", "Notes"],
+          "rows": [
+            ["Photograph (12 MP)", "RAW / TIFF", "None", "24 MB", "Uncompressed — used by professional photographers"],
+            ["Photograph (12 MP)", "PNG", "Lossless", "8–12 MB", "All data preserved; larger than JPEG"],
+            ["Photograph (12 MP)", "JPEG (high quality)", "Lossy", "3–5 MB", "Good balance for web and print"],
+            ["Photograph (12 MP)", "JPEG (low quality)", "Lossy", "300–600 KB", "Visible artefacts; fast loading"],
+            ["3-minute audio", "WAV (uncompressed)", "None", "~31 MB", "Studio recording source"],
+            ["3-minute audio", "FLAC", "Lossless", "~18 MB", "Preferred by audiophiles and archivists"],
+            ["3-minute audio", "MP3 (320 kbps)", "Lossy", "~7 MB", "High-quality streaming and download"],
+            ["3-minute audio", "MP3 (128 kbps)", "Lossy", "~2.8 MB", "Acceptable for casual listening"],
+            ["Folder of files (100 MB)", "ZIP", "Lossless", "~40–70 MB", "Depends heavily on file types inside"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Calculating File Size Savings",
+          "level": 2
+        },
+        {
+          "type": "formulaBreakdown",
+          "title": "File Size Saving Percentage",
+          "functionName": "Saving % = ((Original − Compressed) ÷ Original) × 100",
+          "args": [
+            {
+              "name": "Original",
+              "description": "The file size before compression (use consistent units — both in KB, or both in MB)"
+            },
+            {
+              "name": "Compressed",
+              "description": "The file size after compression in the same units"
+            },
+            {
+              "name": "Result",
+              "description": "The percentage of the original size that was saved. Example: a 24 MB RAW file compressed to 3 MB JPEG saves ((24 − 3) ÷ 24) × 100 = 87.5%"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Common Compression Formats at a Glance",
+          "level": 2
+        },
+        {
+          "type": "table",
+          "headers": ["Format", "Media Type", "Compression", "When to Use"],
+          "rows": [
+            ["JPEG / JPG", "Image", "Lossy", "Web display, email attachments, social media"],
+            ["PNG", "Image", "Lossless", "Logos, graphics with transparency, screenshots"],
+            ["GIF", "Image / Animation", "Lossless (limited colour)", "Simple animations, low-colour graphics"],
+            ["WebP", "Image", "Both modes", "Modern web images — smaller than JPEG/PNG with similar quality"],
+            ["MP3", "Audio", "Lossy", "Music streaming, podcasts, casual playback"],
+            ["AAC", "Audio", "Lossy", "Apple ecosystem streaming, iTunes, YouTube audio"],
+            ["FLAC", "Audio", "Lossless", "Archiving, high-fidelity listening, mastering"],
+            ["WAV", "Audio", "None (PCM)", "Studio recording, video production audio tracks"],
+            ["H.264 (MP4)", "Video", "Lossy", "Video streaming, social media, presentations"],
+            ["H.265 (HEVC)", "Video", "Lossy", "High-resolution video (4K) with smaller files than H.264"],
+            ["ZIP", "Any", "Lossless", "Archiving and transferring collections of files"],
+            ["PDF", "Document", "Lossless", "Sharing documents while preserving layout"]
+          ]
+        },
+        {
+          "type": "task",
+          "title": "Compare File Sizes Hands-On",
+          "software": "Any image editor (Photoshop, GIMP, Paint.NET, or Canva export settings)",
+          "intro": "In this activity you will export the same image in multiple formats and measure the size difference to see compression in action.",
+          "steps": [
+            "Find or take a high-resolution photograph (at least 2 MB). Download a royalty-free image from Unsplash.com if needed.",
+            "Open the image in your image editor. Note the original file size.",
+            "Export/Save As the image as PNG (lossless). Record the file size.",
+            "Export the same image as JPEG at quality 90%. Record the file size.",
+            "Export the same image as JPEG at quality 40%. Record the file size.",
+            "Create a table in a Word document with columns: Format, Quality Setting, File Size (KB), Size vs Original (%), Visual Quality Rating (1–5).",
+            "Fill in your table with your measurements. Which format gave the best balance of file size and quality?",
+            "Write a one-paragraph recommendation: for a client who needs to display this photo on their website, which format and quality setting would you recommend, and why?"
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "career",
+          "heading": "Data Analyst Career",
+          "text": "Data analysts regularly work with large datasets stored in compressed formats like Parquet and CSV.GZ. Understanding compression helps you choose the right format for speed vs storage, a common consideration when working with cloud platforms like AWS S3 or Google BigQuery."
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading",
+          "text": "Check Your Understanding",
+          "level": 2
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "fc-q1",
+            "questionType": "mcq",
+            "text": "A graphic designer saves a logo as a JPEG to reduce file size. After sending it to a client, they discover some pixels along the edges of text look blurry. What is the most likely cause?",
+            "options": [
+              "The screen resolution is too low to display the image",
+              "JPEG lossy compression introduced compression artefacts",
+              "The file was corrupted during email transfer",
+              "JPEG does not support text-based images"
+            ],
+            "correctIndex": 1,
+            "explanation": "JPEG uses lossy compression, which introduces artefacts — especially on sharp edges like text and logos. PNG (lossless) is always the correct choice for logos and graphics with sharp edges or transparency."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "fc-q2",
+            "questionType": "mcq",
+            "text": "A music producer wants to archive a completed recording so it can be retrieved at exactly the same quality in the future. Which format should they choose?",
+            "options": [
+              "MP3 at 320 kbps",
+              "AAC at 256 kbps",
+              "FLAC",
+              "OGG Vorbis"
+            ],
+            "correctIndex": 2,
+            "explanation": "FLAC (Free Lossless Audio Codec) is lossless — the compressed file can be perfectly decompressed to recreate the original audio. MP3, AAC, and OGG are all lossy and permanently discard audio data."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "fc-q3",
+            "questionType": "mcq",
+            "text": "An original photo is 18 MB. After JPEG compression it is 2.7 MB. What percentage of the file size was saved?",
+            "options": [
+              "15%",
+              "75%",
+              "85%",
+              "150%"
+            ],
+            "correctIndex": 2,
+            "explanation": "Saving % = ((18 − 2.7) ÷ 18) × 100 = (15.3 ÷ 18) × 100 = 85%. The compressed file is 85% smaller than the original."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "fc-q4",
+            "questionType": "short_answer",
+            "text": "Explain the difference between lossy and lossless compression. In your answer, give one example of each and describe a scenario where each type is the appropriate choice.",
+            "marks": 4,
+            "explanation": "Lossy compression permanently removes data to achieve smaller file sizes (e.g. JPEG for photos, MP3 for music). It is appropriate when some quality loss is acceptable — such as displaying images on a website. Lossless compression reduces file size without any data loss, allowing perfect reconstruction (e.g. PNG for graphics, FLAC for audio). It is appropriate when quality must be fully preserved — such as archiving master files or storing logos."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "fc-q5",
+            "questionType": "true_false",
+            "text": "Saving a JPEG file multiple times causes quality to degrade each time because lossy compression is applied repeatedly.",
+            "correctAnswer": true,
+            "explanation": "True. This is called generational loss. Each save cycle applies lossy compression again, discarding more data. Always maintain a lossless master copy and only export to JPEG for final delivery."
+          }
+        }
+      ]
+    },
+    {
+      "id": "file-optimisation-platforms",
+      "title": "File Optimisation for Different Platforms",
+      "estimatedMinutes": 50,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "One File, Many Destinations",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "A single piece of content — a photograph, a logo, a video — will often need to be delivered across multiple platforms: a printed brochure, a website, a social media post. Each platform has different technical requirements. Exporting without understanding these requirements leads to images that look blurry in print, slow websites, or pixelated graphics on high-resolution screens."
+        },
+        {
+          "type": "keyTerms",
+          "items": [
+            {
+              "term": "Resolution",
+              "definition": "The number of pixels in an image, typically expressed as width × height (e.g. 1920 × 1080). Higher resolution means more detail."
+            },
+            {
+              "term": "DPI (Dots Per Inch)",
+              "definition": "A measure of print resolution — how many ink dots are printed per inch. Higher DPI = sharper printed output."
+            },
+            {
+              "term": "PPI (Pixels Per Inch)",
+              "definition": "A measure of screen or digital image resolution — how many pixels appear per inch. Used for digital displays and image editing."
+            },
+            {
+              "term": "Resampling",
+              "definition": "Changing the number of pixels in an image — either upsampling (adding pixels, reducing quality) or downsampling (removing pixels, reducing file size)."
+            },
+            {
+              "term": "Cropping",
+              "definition": "Removing unwanted areas from the edges of an image to change its composition or aspect ratio, reducing file size."
+            },
+            {
+              "term": "Colour Mode",
+              "definition": "The colour system an image uses. RGB is used for screens; CMYK is used for professional printing."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Platform Requirements at a Glance",
+          "level": 2
+        },
+        {
+          "type": "table",
+          "headers": ["Platform", "Recommended DPI/PPI", "Colour Mode", "Common Format", "Typical Dimensions"],
+          "rows": [
+            ["Professional Print (brochures, posters)", "300 DPI", "CMYK", "PDF, TIFF", "A4 = 2480 × 3508 px at 300 DPI"],
+            ["Home / Office Print", "150–200 DPI", "RGB or CMYK", "PDF, JPEG", "A4 = 1240 × 1754 px at 150 DPI"],
+            ["Website / Digital display", "72–96 PPI", "RGB", "JPEG, PNG, WebP", "Full-width hero: 1920 × 1080 px"],
+            ["Social Media — Instagram post", "72 PPI", "RGB", "JPEG, PNG", "1080 × 1080 px (square)"],
+            ["Social Media — Instagram Story / Reel", "72 PPI", "RGB", "JPEG, MP4", "1080 × 1920 px (9:16)"],
+            ["Social Media — Facebook cover", "72 PPI", "RGB", "JPEG, PNG", "820 × 312 px"],
+            ["Email newsletter image", "72 PPI", "RGB", "JPEG, PNG", "600 px wide maximum"],
+            ["Mobile app icon", "72–163 PPI", "RGB", "PNG (transparent)", "Multiple sizes: 16 × 16 to 512 × 512 px"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "heading": "Always Start Large",
+          "text": "It is always better to start with a high-resolution original and scale down for digital use. You cannot add detail that was never there — scaling up a small image creates pixelation and blur. Maintain a high-resolution master and export appropriately sized copies for each destination."
+        },
+        {
+          "type": "heading",
+          "text": "File Size Minimisation Techniques",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Beyond choosing a compressed format, two specific techniques are used to further reduce file size before exporting."
+        },
+        {
+          "type": "heading",
+          "text": "Cropping",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Cropping removes pixels from the edges of an image. This reduces both the pixel dimensions and the file size, and improves composition by removing distracting elements. For web use, crop images to the exact dimensions needed — there is no benefit in serving a 4000-pixel-wide image if it will only ever be displayed at 800 pixels wide."
+        },
+        {
+          "type": "heading",
+          "text": "Resampling (Downsampling)",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Resampling adjusts the number of pixels in an image. Downsampling reduces pixel count — useful when converting a 300 DPI print image for web use. Most image editors offer resampling algorithms (Bicubic, Lanczos) that reduce the image while preserving as much sharpness as possible."
+        },
+        {
+          "type": "formulaBreakdown",
+          "title": "Pixel Dimension from Physical Size and DPI",
+          "functionName": "Pixels = Physical Size (inches) × DPI",
+          "args": [
+            {
+              "name": "Physical Size",
+              "description": "The intended print size in inches (e.g. an A4 page is approximately 8.27 × 11.69 inches)"
+            },
+            {
+              "name": "DPI",
+              "description": "The target print resolution (300 DPI for professional print, 72 PPI for web)"
+            },
+            {
+              "name": "Result",
+              "description": "Example: A4 at 300 DPI = 8.27 × 300 = 2481 px wide. The same A4 at 72 PPI for web preview = 8.27 × 72 = 595 px wide — a much smaller file."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Exporting for Purpose — A Practical Workflow",
+          "level": 2
+        },
+        {
+          "type": "list",
+          "style": "numbered",
+          "items": [
+            "Start with the highest resolution original available (camera RAW, layered PSD, or vector file).",
+            "Determine each destination (print, website, social media) and its specific requirements (DPI, pixel dimensions, colour mode, format).",
+            "Crop to the appropriate aspect ratio for each destination.",
+            "Resample (downsample) to the required pixel dimensions.",
+            "Convert colour mode if necessary (RGB for screens, CMYK for professional print).",
+            "Export in the appropriate format with appropriate compression settings.",
+            "Name the exported file clearly to reflect its destination (e.g. logo_web_72ppi.png, logo_print_300dpi.pdf).",
+            "Test — view the web image in a browser; send the print file to a proof if possible."
+          ]
+        },
+        {
+          "type": "task",
+          "title": "Optimise One Image for Three Platforms",
+          "software": "Photoshop, GIMP, or Canva (with download settings)",
+          "intro": "You will take a single source image and correctly optimise and export it for three different purposes: professional print, website banner, and Instagram post.",
+          "steps": [
+            "Download a high-resolution royalty-free photograph from Unsplash.com (choose a landscape or cityscape — at least 3000 px wide).",
+            "Note the original pixel dimensions and file size.",
+            "Export 1 — Print: Resample to 2480 × 1654 px (A4 landscape at 300 DPI). Save as JPEG at 95% quality. Record the file size.",
+            "Export 2 — Website Banner: Resample to 1920 × 600 px (16:5 crop). Save as JPEG at 80% quality. Record the file size.",
+            "Export 3 — Instagram Post: Crop and resample to 1080 × 1080 px. Save as JPEG at 85% quality. Record the file size.",
+            "Create a summary table: Destination | Dimensions | DPI/PPI | Format | File Size | Compression Quality.",
+            "Write a short paragraph explaining why each export used different settings."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "industry",
+          "heading": "Industry Standard: Cloud-First Approach",
+          "text": "Professional design agencies use digital asset management (DAM) systems to store master files in the cloud and automatically generate optimised versions for every platform. Tools like Adobe Experience Manager, Bynder, and Cloudinary apply rules-based optimisation — you upload once and the platform handles all exports. Understanding manual optimisation gives you the knowledge to configure these systems correctly."
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading",
+          "text": "Check Your Understanding",
+          "level": 2
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "fop-q1",
+            "questionType": "mcq",
+            "text": "A designer creates a poster that needs to be printed professionally. What DPI should the image be?",
+            "options": [
+              "72 DPI",
+              "96 DPI",
+              "150 DPI",
+              "300 DPI"
+            ],
+            "correctIndex": 3,
+            "explanation": "Professional print requires 300 DPI to produce sharp, detailed output. 72 DPI is the standard for digital/screen display and would result in a blurry, pixelated print."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "fop-q2",
+            "questionType": "mcq",
+            "text": "Which colour mode should be used when preparing an image for display on a website?",
+            "options": [
+              "CMYK",
+              "LAB",
+              "RGB",
+              "Grayscale"
+            ],
+            "correctIndex": 2,
+            "explanation": "RGB (Red, Green, Blue) is the colour mode used by all digital screens. CMYK is used for professional printing. If you send a CMYK image to a website, colours may appear differently than intended."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "fop-q3",
+            "questionType": "short_answer",
+            "text": "A student takes a photo at 4032 × 3024 pixels (12 MP) on their phone and wants to use it as a website banner (display size: 1200 × 400 px). Describe two specific techniques they should apply to optimise the file for this purpose, and explain the benefit of each.",
+            "marks": 4,
+            "explanation": "1. Cropping — crop the image to a 3:1 aspect ratio to match the banner shape, removing unnecessary pixels and improving composition. This reduces file size and ensures the image fills the banner correctly without distortion. 2. Resampling (downsampling) — reduce pixel dimensions from 4032 × 3024 to 1200 × 400 (or up to 2× for retina displays). This dramatically reduces file size, meaning faster page load times for website visitors."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "fop-q4",
+            "questionType": "true_false",
+            "text": "Upsampling an image (increasing its pixel dimensions beyond the original) improves its quality when printed.",
+            "correctAnswer": false,
+            "explanation": "False. Upsampling adds pixels by interpolation — the software guesses at values for new pixels. This does not add real detail and results in blurry or soft output. Always use the highest-resolution original source."
+          }
+        }
+      ]
+    },
+    {
+      "id": "version-control-document-management",
+      "title": "Version Control and Document Management",
+      "estimatedMinutes": 55,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "The Problem of Uncontrolled Files",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Without a system for managing document versions, projects quickly become chaotic. Professionals working on documents, code, or design files often encounter situations where multiple people edit the same file, earlier versions are accidentally overwritten, and no one can determine which file is the most recent or correct. Document version control solves these problems."
+        },
+        {
+          "type": "callout",
+          "variant": "scenario",
+          "heading": "Real-World Problem",
+          "text": "A marketing team is working on an annual report. Without version control, the folder ends up with files named: report_final.docx, report_FINAL2.docx, report_FINAL_v3_Johns edits.docx, report_USE THIS ONE.docx. Nobody is certain which contains the approved content. Deadlines are missed. This is a real scenario in many workplaces — and entirely avoidable."
+        },
+        {
+          "type": "keyTerms",
+          "items": [
+            {
+              "term": "Version Control",
+              "definition": "A system for tracking and managing changes to documents or files over time, allowing you to view, compare, or restore earlier versions."
+            },
+            {
+              "term": "Revision History",
+              "definition": "A record of all changes made to a document, including who made them and when."
+            },
+            {
+              "term": "Repository (Repo)",
+              "definition": "A storage location for files and their complete history of changes, used in version control systems."
+            },
+            {
+              "term": "Commit",
+              "definition": "A saved snapshot of changes in a version control system, with a description of what was changed and why."
+            },
+            {
+              "term": "Rollback",
+              "definition": "Reverting a file or project to a previous version — useful when a change introduces errors."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "File Naming Conventions",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "A consistent file naming convention is the simplest form of version control. It allows team members to identify the purpose and version of any file at a glance, without opening it."
+        },
+        {
+          "type": "table",
+          "headers": ["Element", "Purpose", "Example"],
+          "rows": [
+            ["Project name or code", "Identifies which project the file belongs to", "AnnualReport2025"],
+            ["Document type", "Describes the content", "Budget, Logo, Brief"],
+            ["Version number", "Indicates revision history", "v1, v2, v1.3"],
+            ["Date (YYYYMMDD)", "Sortable chronological record", "20251015"],
+            ["Author initials (optional)", "Identifies who last edited", "CG, JT"],
+            ["Status (optional)", "Shows stage of completion", "draft, review, final, approved"]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A well-named file might look like: AnnualReport2025_Budget_v3_20251015_CG_review.xlsx. Anyone on the team can immediately understand what this file is, when it was saved, who saved it, and what stage it is at."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "heading": "Date Format Tip",
+          "text": "Always use YYYYMMDD (year first, then month, then day). Files will then sort correctly in alphabetical order — oldest first. Using DDMMYYYY causes files from different months to sort incorrectly."
+        },
+        {
+          "type": "heading",
+          "text": "Folder Structure for Version Control",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "A logical folder structure complements naming conventions. A common approach in professional environments uses separate folders for working files, reviews, and final approved assets."
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "01_briefs — client briefs and project requirements",
+            "02_working — active drafts and working files (versioned by filename)",
+            "03_review — files sent to client or team for review",
+            "04_approved — client-approved versions only",
+            "05_assets — source images, fonts, brand assets",
+            "06_delivery — final exported/delivered files"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Built-In Version History — Office and Cloud Tools",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Many modern applications automatically track document history without you needing to create multiple copies. These built-in tools are your first line of version control."
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Microsoft Word / OneDrive — Version History panel shows every saved version. Right-click a file in OneDrive to see and restore previous versions.",
+            "Google Docs — File > Version History > See Version History shows all changes with timestamps and authors. Named versions can be created at key milestones.",
+            "SharePoint (Microsoft) — Enterprise document management with check-in/check-out to prevent two people editing simultaneously.",
+            "Adobe Creative Cloud — Version History is available for cloud documents in Photoshop, Illustrator, and InDesign."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Git — The Industry-Standard Version Control System",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Git is the world's most widely used version control system, and it is the industry standard for software development. While it was designed for code, the concepts apply to any file-based project. Understanding Git at a conceptual level is important for anyone entering an IT role."
+        },
+        {
+          "type": "table",
+          "headers": ["Git Concept", "What It Means in Plain English"],
+          "rows": [
+            ["Repository", "A folder where Git tracks all changes to every file"],
+            ["Commit", "A saved checkpoint — like a named, timestamped version"],
+            ["Branch", "A parallel version of the project — test changes without affecting the main version"],
+            ["Merge", "Bring changes from one branch back into the main version"],
+            ["Pull / Push", "Download changes from a remote server (pull) or upload your changes (push)"],
+            ["GitHub / GitLab / Bitbucket", "Cloud hosting platforms for Git repositories — widely used in industry for team collaboration"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "career",
+          "heading": "Data Analyst Career",
+          "text": "Data analysts and IT professionals are expected to know Git. Version-controlling scripts, SQL queries, and data pipelines prevents accidental overwrites and allows teams to collaborate without conflicts. Most IT job advertisements mention Git as a required skill. Even if you don't write code, understanding Git gives you a significant advantage."
+        },
+        {
+          "type": "heading",
+          "text": "Business Document Management Systems",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Larger organisations use formal Document Management Systems (DMS) to control how documents are created, reviewed, approved, stored, and archived. These systems go beyond file naming and version history to enforce business workflows."
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Microsoft SharePoint — most common in Australian businesses; integrates with Microsoft 365",
+            "Google Workspace (Google Drive + Shared Drives) — widely used by SMEs and schools",
+            "Confluence (Atlassian) — used alongside Jira for software and IT project documentation",
+            "Notion — increasingly used by startups and creative agencies for collaborative documentation",
+            "DocuWare, M-Files, OpenText — enterprise-grade DMS used in regulated industries (healthcare, legal, government)"
+          ]
+        },
+        {
+          "type": "task",
+          "title": "Set Up a Professional Folder Structure",
+          "software": "Windows File Explorer or OneDrive",
+          "intro": "In this activity you will design and implement a professional folder structure and file naming convention for a mock project.",
+          "steps": [
+            "Create a new folder called ClientProject_SchoolFete2025 on your desktop or OneDrive.",
+            "Inside it, create subfolders following the professional structure: 01_Briefs, 02_Working, 03_Review, 04_Approved, 05_Assets, 06_Delivery.",
+            "Create three Word documents and save them in 02_Working using a proper naming convention (e.g. SchoolFete2025_EventProgram_v1_20250901_draft.docx).",
+            "Make a small change to one document and save it as v2 (a new file — don't overwrite v1).",
+            "Move the v2 file to 03_Review to simulate sending it for approval.",
+            "Take a screenshot of your completed folder structure.",
+            "Write a short explanation (3–4 sentences) of why this folder structure and naming convention is more professional than saving everything to the desktop with names like 'program2.docx'."
+          ]
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading",
+          "text": "Check Your Understanding",
+          "level": 2
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "vc-q1",
+            "questionType": "mcq",
+            "text": "A team member opens a shared Word document and makes major changes, overwriting the previous version. Which version control approach would have best prevented this problem?",
+            "options": [
+              "Saving the file with a new version number before making changes",
+              "Using a different font to indicate new edits",
+              "Emailing the document to a colleague for safekeeping",
+              "Saving the document as a PDF"
+            ],
+            "correctIndex": 0,
+            "explanation": "Creating a new versioned copy (e.g. v2) before editing preserves the previous version. Alternatively, a system with check-in/check-out (like SharePoint) or automatic version history (like Google Docs or OneDrive) would also prevent this problem."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "vc-q2",
+            "questionType": "mcq",
+            "text": "Which date format should be used in file names to ensure files sort correctly in chronological order?",
+            "options": [
+              "DDMMYYYY (e.g. 15102025)",
+              "MMDDYYYY (e.g. 10152025)",
+              "YYYYMMDD (e.g. 20251015)",
+              "DD-MM-YY (e.g. 15-10-25)"
+            ],
+            "correctIndex": 2,
+            "explanation": "YYYYMMDD (year-month-day) is the ISO 8601 standard and ensures files sort alphabetically in the correct chronological order. Other date formats cause sorting errors — for example, files from October and November appear mixed with files from other months."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "vc-q3",
+            "questionType": "short_answer",
+            "text": "Explain what a 'commit' is in Git and why adding a descriptive message to each commit is considered best practice.",
+            "marks": 3,
+            "explanation": "A commit is a saved snapshot of all changes made to files in a repository at a specific point in time. It records what changed, when, and who made the change. Adding a descriptive commit message (e.g. 'Updated homepage banner image and compressed for web') is best practice because it allows team members (and your future self) to understand what changed without having to open and compare the files. This makes it much faster to locate a specific version or understand the history of a project."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "vc-q4",
+            "questionType": "extended",
+            "text": "A small business has five employees who all share files through a single network drive. They have no version control system — they just save files and overwrite each other's work. Propose a practical document management solution for this business. Your answer should describe the system you recommend, how files would be named and organised, and what version control features it provides. (6 marks)",
+            "marks": 6,
+            "explanation": "A strong response would: recommend a cloud-based solution (e.g. Microsoft OneDrive for Business with SharePoint, or Google Shared Drive) and explain why it suits a small team; describe a folder structure (e.g. by client or project with subfolders for working/review/approved); propose a file naming convention using project name, version number, date, and status; explain automatic version history features (e.g. OneDrive retains versions for 30+ days); mention the ability to restore previous versions if a file is accidentally overwritten; and potentially mention access permissions to control who can edit vs view files."
+          }
+        }
+      ]
+    },
+    {
+      "id": "cloud-computing",
+      "title": "Cloud Computing",
+      "estimatedMinutes": 50,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "What is Cloud Computing?",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Cloud computing is the delivery of computing services — including servers, storage, databases, networking, software, analytics, and intelligence — over the internet (\"the cloud\"). Instead of running software on your own computer or maintaining your own physical servers, you access these resources on-demand from a provider's data centres around the world."
+        },
+        {
+          "type": "paragraph",
+          "text": "The term 'the cloud' simply refers to servers, storage, and software that are accessed over the internet rather than stored locally on your device. You have already used cloud computing — every time you access Gmail, stream on YouTube, use Google Docs, or save a file to OneDrive, you are using the cloud."
+        },
+        {
+          "type": "keyTerms",
+          "items": [
+            {
+              "term": "Cloud Computing",
+              "definition": "The delivery of computing services (servers, storage, software, databases) over the internet, accessed on demand."
+            },
+            {
+              "term": "Data Centre",
+              "definition": "A large facility housing thousands of servers and networking equipment. Cloud providers operate many data centres globally."
+            },
+            {
+              "term": "Scalability",
+              "definition": "The ability to increase or decrease computing resources quickly to match demand, without purchasing physical hardware."
+            },
+            {
+              "term": "Redundancy",
+              "definition": "Storing data in multiple locations so that if one server or data centre fails, data remains available from another."
+            },
+            {
+              "term": "SaaS (Software as a Service)",
+              "definition": "Software delivered over the internet and accessed via a browser, without local installation (e.g. Google Workspace, Microsoft 365, Canva)."
+            },
+            {
+              "term": "IaaS (Infrastructure as a Service)",
+              "definition": "Cloud-based computing infrastructure — virtual servers, storage, and networking — rented from a provider (e.g. AWS EC2, Azure Virtual Machines)."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Advantages of Cloud Computing",
+          "level": 2
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Accessibility — access your files and applications from any device with an internet connection, anywhere in the world",
+            "Cost efficiency — no upfront hardware costs; pay only for what you use (pay-as-you-go pricing)",
+            "Automatic backups — cloud providers automatically replicate data across multiple locations, protecting against data loss",
+            "Scalability — instantly scale storage or computing power up or down as your needs change",
+            "Collaboration — multiple users can access and edit the same files simultaneously in real time",
+            "Automatic updates — software is maintained and updated by the provider, reducing IT maintenance burden",
+            "Disaster recovery — data stored in the cloud survives local disasters (fire, theft, hardware failure)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Risks and Disadvantages",
+          "level": 2
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Internet dependency — no internet connection means no access to cloud services or files",
+            "Security and privacy concerns — sensitive data is stored on third-party servers; a data breach at the provider could expose your data",
+            "Vendor lock-in — migrating large amounts of data from one provider to another can be costly and complex",
+            "Ongoing costs — subscription fees accumulate over time; costs can exceed owning local hardware for some use cases",
+            "Data sovereignty — data stored overseas may be subject to foreign laws (e.g. US data stored on AWS servers is subject to US law)",
+            "Outages — when a cloud provider experiences downtime, all services and data may be temporarily inaccessible"
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "heading": "Data Sovereignty in Australia",
+          "text": "Australian businesses handling sensitive data (health records, financial data, government information) must consider where cloud data is physically stored. The Australian Privacy Act and sector-specific regulations may require data to be stored on Australian soil. Major providers offer Australian data centre regions (AWS Sydney, Azure Australia East) to address this."
+        },
+        {
+          "type": "heading",
+          "text": "Major Cloud Providers",
+          "level": 2
+        },
+        {
+          "type": "table",
+          "headers": ["Provider", "Company", "Consumer Products", "Business / Enterprise Products", "Market Position"],
+          "rows": [
+            ["AWS (Amazon Web Services)", "Amazon", "Amazon Photos, Alexa", "EC2, S3, RDS, Lambda, CloudFront", "Market leader — largest global cloud provider (~32% market share)"],
+            ["Microsoft Azure", "Microsoft", "OneDrive, Xbox Game Pass", "Azure VMs, Azure SQL, Microsoft 365, Teams", "Second largest — dominant in enterprise and Australian government"],
+            ["Google Cloud Platform (GCP)", "Google", "Google Drive, Gmail, Google Photos", "Google Compute Engine, BigQuery, Google Kubernetes Engine", "Third largest — strong in data analytics and machine learning"],
+            ["OneDrive", "Microsoft", "Personal file storage (5 GB free)", "OneDrive for Business (integrated with Microsoft 365)", "Most widely used in Australian schools and businesses"],
+            ["Google Drive", "Google", "Personal file storage (15 GB free)", "Google Workspace Shared Drives", "Widely used in education and SMEs"],
+            ["iCloud", "Apple", "Photos, device backup, Documents", "Limited enterprise adoption", "Dominant in personal Apple ecosystem"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "industry",
+          "heading": "Industry Standard: Cloud-First Approach",
+          "text": "Most organisations today operate a 'cloud-first' strategy — when evaluating new software or infrastructure, the cloud option is considered before any on-premises (local server) alternative. According to IBRS research, over 80% of Australian enterprises now run significant workloads in the cloud. Entry-level IT roles are expected to understand at least one cloud platform."
+        },
+        {
+          "type": "heading",
+          "text": "Business Applications of Cloud Computing",
+          "level": 2
+        },
+        {
+          "type": "grid",
+          "title": "How Businesses Use the Cloud",
+          "items": [
+            {
+              "label": "File Storage and Sharing",
+              "description": "Store all business documents in OneDrive or Google Drive — accessible from any device, anywhere, with automatic version history and backup."
+            },
+            {
+              "label": "Communication and Collaboration",
+              "description": "Microsoft Teams, Slack, and Google Meet are cloud-based platforms enabling video meetings, messaging, and real-time document collaboration."
+            },
+            {
+              "label": "Business Software (SaaS)",
+              "description": "Accounting (Xero), CRM (Salesforce), HR (Employment Hero), and project management (Monday.com, Asana) are all delivered as cloud SaaS products."
+            },
+            {
+              "label": "Website and App Hosting",
+              "description": "Websites and web applications run on cloud servers (AWS, Azure, GCP), enabling global availability and automatic scaling during traffic spikes."
+            },
+            {
+              "label": "Data Backup and Recovery",
+              "description": "Automated cloud backups protect against ransomware, hardware failure, and natural disaster. Recovery is faster than restoring from local tape or disk."
+            },
+            {
+              "label": "Data Analytics",
+              "description": "Cloud platforms provide powerful analytics tools (BigQuery, Azure Synapse, AWS Redshift) that process huge datasets without expensive local hardware."
+            }
+          ]
+        },
+        {
+          "type": "task",
+          "title": "Cloud Provider Research and Comparison",
+          "software": "Web browser, Word or Google Docs",
+          "intro": "Research the three major cloud providers (AWS, Azure, Google Cloud) and compare them for a specific business scenario.",
+          "steps": [
+            "Scenario: A Perth-based accounting firm with 20 staff needs to move their file storage, email, and accounting software to the cloud. They handle sensitive client financial data.",
+            "Research each provider's Australian data centre locations. Does each provider offer Australian-region storage? (Search: 'AWS Australia regions', 'Azure Australia regions', 'Google Cloud Australia')",
+            "Compare storage pricing: How much does 1 TB of cloud storage cost per month from each provider? (Research OneDrive for Business, Google Workspace Business Starter, AWS S3 Standard)",
+            "Investigate their security certifications — look for ISO 27001, SOC 2, and Australian Government IRAP certifications.",
+            "Create a comparison table: Provider | Australian Data Centre | Price per TB/month | Key Security Certifications | Best Suited For.",
+            "Write a recommendation (one paragraph): which cloud provider would you recommend for this accounting firm and why? Consider data sovereignty, cost, and security."
+          ]
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading",
+          "text": "Check Your Understanding",
+          "level": 2
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "cc-q1",
+            "questionType": "mcq",
+            "text": "Which of the following best describes cloud computing?",
+            "options": [
+              "Storing files on a USB drive that is kept in a physically secure location",
+              "Accessing computing services and storage over the internet from remote data centres",
+              "Using a powerful desktop computer with maximum RAM and storage",
+              "Backing up files to an external hard drive weekly"
+            ],
+            "correctIndex": 1,
+            "explanation": "Cloud computing refers to delivering computing resources (storage, servers, software) over the internet from remote data centres, accessed on demand. Local storage devices like USBs and hard drives are on-premises solutions, not cloud."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "cc-q2",
+            "questionType": "mcq",
+            "text": "Which of the following is a significant risk of relying entirely on cloud storage for business data?",
+            "options": [
+              "Files can be accessed from too many devices",
+              "Cloud storage is always more expensive than local storage",
+              "If internet connectivity is lost, access to files and services is unavailable",
+              "Cloud providers do not offer any security measures"
+            ],
+            "correctIndex": 2,
+            "explanation": "Internet dependency is a key risk of cloud computing. Without an internet connection, cloud-stored files and cloud-based applications cannot be accessed. Cloud providers generally do offer strong security, and pricing can be competitive with local storage at scale."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "cc-q3",
+            "questionType": "mcq",
+            "text": "A startup needs email, video conferencing, and document editing tools for its team of 10. They want minimal IT maintenance overhead and pay-as-you-go pricing. Which cloud service model is most appropriate?",
+            "options": [
+              "IaaS — they should build their own servers in the cloud",
+              "SaaS — they should use ready-made cloud applications like Google Workspace or Microsoft 365",
+              "They should purchase physical servers and install their own software",
+              "PaaS — they should build a custom platform to host their applications"
+            ],
+            "correctIndex": 1,
+            "explanation": "SaaS (Software as a Service) delivers ready-to-use applications over the internet. Google Workspace and Microsoft 365 provide email, video conferencing, and document tools with no IT infrastructure to manage — perfect for a small team wanting minimal overhead."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "cc-q4",
+            "questionType": "short_answer",
+            "text": "An Australian medical clinic is considering moving patient records to a cloud service hosted in the United States. Identify two concerns they should consider and explain why each is significant.",
+            "marks": 4,
+            "explanation": "1. Data sovereignty — data stored in the US is subject to US laws, including the CLOUD Act, which may allow US authorities to access data without notifying Australian parties. Australian health data may be required to stay within Australia under the Privacy Act and Australian Digital Health Agency guidelines. 2. Security and privacy — medical records contain highly sensitive personal health information (PHI). If the cloud provider suffers a data breach, patient privacy is compromised. The clinic should verify the provider's security certifications (ISO 27001, SOC 2) and whether they offer Australian-region data storage."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "cc-q5",
+            "questionType": "true_false",
+            "text": "Cloud computing allows businesses to scale their computing resources up or down without purchasing additional physical hardware.",
+            "correctAnswer": true,
+            "explanation": "True. Scalability is one of the primary advantages of cloud computing. A business can increase storage, computing power, or software licences instantly through the provider's portal, and scale back down when demand decreases — only paying for what is used."
+          }
+        }
+      ]
+    },
+    {
+      "id": "system-maintenance-tools",
+      "title": "System Maintenance Tools",
+      "estimatedMinutes": 45,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Why System Maintenance Matters",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Computers accumulate unnecessary files, fragmented data, and security threats over time. Without regular maintenance, systems slow down, storage fills up, and security vulnerabilities go unaddressed. In a business environment, a slow or compromised system costs money — downtime, reduced productivity, and potential data breaches all have real financial impacts."
+        },
+        {
+          "type": "paragraph",
+          "text": "System utility tools are software tools built into operating systems or provided as third-party applications to help maintain, optimise, and secure a computer system. Understanding these tools — and knowing when and why to use them — is a core IT skill."
+        },
+        {
+          "type": "heading",
+          "text": "Disk Clean-Up and Temporary Files",
+          "level": 2
+        },
+        {
+          "type": "keyTerms",
+          "items": [
+            {
+              "term": "Temporary Files",
+              "definition": "Files created by the operating system or applications during normal operation. They are intended to be short-lived but often accumulate and consume significant storage."
+            },
+            {
+              "term": "Internet Cache",
+              "definition": "Copies of web pages, images, and scripts stored locally by a browser to speed up repeat visits. Over time, the cache can consume gigabytes of storage."
+            },
+            {
+              "term": "Disk Clean-Up",
+              "definition": "A Windows utility that identifies and safely removes unnecessary files including temporary files, Recycle Bin contents, and cached Windows updates."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Common files that accumulate and can be safely removed include: Windows Update installation files (often several GB), browser cache and cookies, Recycle Bin contents, thumbnail cache, system error logs, and application temporary files (found in C:\\Users\\[Username]\\AppData\\Local\\Temp)."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "heading": "How Much Space Can You Recover?",
+          "text": "On a computer that has never been cleaned, Disk Clean-Up on Windows can often recover 5–15 GB or more — including Windows Update files that are kept after installation 'just in case' a rollback is needed. Running Disk Clean-Up as Administrator reveals even more options including system files."
+        },
+        {
+          "type": "heading",
+          "text": "Disk Fragmentation",
+          "level": 2
+        },
+        {
+          "type": "keyTerm",
+          "term": "Disk Fragmentation",
+          "definition": "A condition where files are broken into pieces (fragments) stored in different, non-contiguous locations on a hard disk drive (HDD). The read head must physically move between fragments, slowing performance."
+        },
+        {
+          "type": "paragraph",
+          "text": "When files are saved and deleted repeatedly, the disk gradually becomes fragmented — file pieces are scattered across the physical disk surface. Defragmentation (or 'defragging') reorganises these fragments, placing file pieces contiguously so the drive can read them faster."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "heading": "SSDs Do Not Need Defragmenting",
+          "text": "Disk defragmentation applies only to traditional Hard Disk Drives (HDDs), which use a physical read/write head. Solid State Drives (SSDs) have no moving parts — they access data electronically and are equally fast regardless of where data is stored. Running a defragmenter on an SSD is unnecessary and actually shortens its lifespan by causing unnecessary write cycles. Windows 10 and 11 automatically detect drive type and apply the correct maintenance (Defragment for HDD, TRIM for SSD)."
+        },
+        {
+          "type": "heading",
+          "text": "Anti-Malware and Antivirus",
+          "level": 2
+        },
+        {
+          "type": "keyTerms",
+          "items": [
+            {
+              "term": "Malware",
+              "definition": "Malicious software designed to damage, disrupt, or gain unauthorised access to a computer system. Includes viruses, ransomware, spyware, trojans, and worms."
+            },
+            {
+              "term": "Antivirus Software",
+              "definition": "Software that detects, quarantines, and removes known viruses and some other malware using a database of known threat signatures."
+            },
+            {
+              "term": "Anti-Malware Software",
+              "definition": "A broader category that detects a wider range of threats than traditional antivirus, including ransomware, spyware, adware, and zero-day exploits."
+            },
+            {
+              "term": "Real-Time Protection",
+              "definition": "A feature that continuously monitors file activity and network traffic, blocking threats as they occur rather than only during scheduled scans."
+            },
+            {
+              "term": "Definition Updates",
+              "definition": "Updates to the threat database used by antivirus/anti-malware software. Without current definitions, new threats may not be detected."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Modern security software goes far beyond scanning for viruses. Today's threats include: ransomware (encrypts your files and demands payment), spyware (secretly monitors your activity and sends data to attackers), keyloggers (record keystrokes to steal passwords), and rootkits (hide deep in the system to avoid detection). Multi-layered protection is the industry standard — antivirus alone is no longer sufficient."
+        },
+        {
+          "type": "heading",
+          "text": "Spam Filters",
+          "level": 2
+        },
+        {
+          "type": "keyTerm",
+          "term": "Spam Filter",
+          "definition": "Software that analyses incoming email messages and separates legitimate mail from unsolicited bulk email (spam) and potentially malicious phishing messages."
+        },
+        {
+          "type": "paragraph",
+          "text": "Email is the most common vector for cyberattacks. Spam filters use a combination of techniques to identify unwanted or dangerous email: rule-based filtering (blocking known spam domains), content analysis (detecting suspicious language patterns), reputation scoring (checking sender IP reputation), and machine learning (adapting to new spam patterns over time)."
+        },
+        {
+          "type": "paragraph",
+          "text": "In business environments, email security gateways (such as Microsoft Defender for Office 365 or Proofpoint) scan all incoming and outgoing email for malware attachments, phishing links, and business email compromise (BEC) attacks."
+        },
+        {
+          "type": "heading",
+          "text": "Spyware",
+          "level": 2
+        },
+        {
+          "type": "keyTerm",
+          "term": "Spyware",
+          "definition": "A type of malware that secretly collects information about a user's activities — including browsing history, login credentials, and personal data — and transmits it to a third party without consent."
+        },
+        {
+          "type": "paragraph",
+          "text": "Spyware is often bundled with free software downloads or installed via malicious websites. It can be difficult to detect because it is designed to run silently in the background. Signs of spyware infection include: unexplained slow performance, browser homepage changing without permission, new toolbars or extensions appearing, and unusual network activity. Dedicated anti-spyware tools (or anti-malware suites that include anti-spyware) are the primary defence."
+        },
+        {
+          "type": "heading",
+          "text": "System Maintenance — Summary",
+          "level": 2
+        },
+        {
+          "type": "table",
+          "headers": ["Tool / Task", "Purpose", "How Often", "Applies To"],
+          "rows": [
+            ["Disk Clean-Up", "Remove temp files, cache, old update files", "Monthly (or when low on space)", "HDD and SSD"],
+            ["Delete Temporary Files", "Clear AppData\\Temp and browser cache", "Monthly", "HDD and SSD"],
+            ["Disk Defragmenter", "Reorganise fragmented file data for faster access", "Monthly (automatic in Windows)", "HDD only — NOT SSD"],
+            ["Antivirus / Anti-Malware Scan", "Detect and remove malicious software", "Weekly full scan; real-time always on", "All systems"],
+            ["Definition Updates", "Keep threat database current", "Daily (automatic)", "All systems"],
+            ["Spam Filter Review", "Check junk folder for false positives; update rules", "Weekly", "Email systems"],
+            ["Operating System Updates", "Apply security patches and bug fixes", "As released (enable automatic updates)", "All systems"],
+            ["Browser Cache Clear", "Free up space and fix browser performance issues", "Monthly", "All systems"]
+          ]
+        },
+        {
+          "type": "task",
+          "title": "Run a System Maintenance Check",
+          "software": "Windows (Disk Clean-Up, Windows Security, Settings)",
+          "intro": "In this activity you will perform real system maintenance tasks on a Windows computer and document what you find.",
+          "steps": [
+            "Open Disk Clean-Up: type 'Disk Clean-Up' in the Windows search bar. Select the C: drive. Wait for it to calculate.",
+            "Record: how many MB/GB of files are available to clean up? What categories have the most space (e.g. Windows Update files, Recycle Bin, Temporary files)?",
+            "Open Windows Security (type 'Windows Security' in search). Navigate to Virus and Threat Protection.",
+            "Check: When was the last scan run? Are threat definitions up to date? Take a screenshot.",
+            "Navigate to Device Performance and Health. Review the Health Report — are any issues flagged?",
+            "Open Settings > System > Storage. Review what is using the most space on your C: drive.",
+            "Open your web browser, go to Settings/History and find the option to clear cached data. Note how much space the cache is using.",
+            "Write a summary (half a page) of the current health of the system you examined. What maintenance tasks would you recommend be performed and why?"
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "career",
+          "heading": "Data Analyst Career",
+          "text": "IT support and systems administration roles require regular maintenance tasks to keep business systems running efficiently. Even in analytical and development roles, understanding how to maintain a clean, secure system is expected. Knowledge of security tools is increasingly important as cyber threats to organisations grow — the Australian Cyber Security Centre (ACSC) reported a cyberattack on Australian businesses every 6 minutes in 2023."
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading",
+          "text": "Check Your Understanding",
+          "level": 2
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "smt-q1",
+            "questionType": "mcq",
+            "text": "A computer running Windows 11 with a solid-state drive (SSD) is running slowly. A student suggests running Disk Defragmenter. Is this appropriate?",
+            "options": [
+              "Yes — defragmenting an SSD always improves performance",
+              "No — SSDs do not use a physical read head and are not affected by fragmentation; defragmenting is unnecessary and reduces SSD lifespan",
+              "Yes — all storage devices benefit from defragmentation regardless of type",
+              "No — Windows 11 does not include a defragmenter"
+            ],
+            "correctIndex": 1,
+            "explanation": "SSDs (Solid State Drives) access data electronically with no moving parts, so fragmentation does not affect their performance. Running a defragmenter on an SSD causes unnecessary write cycles, wearing out the drive faster. Windows automatically detects drive type and applies TRIM (for SSDs) instead of defragmentation."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "smt-q2",
+            "questionType": "mcq",
+            "text": "Which of the following best describes spyware?",
+            "options": [
+              "Software that displays unwanted advertisements on your screen",
+              "Malware that encrypts your files and demands a ransom for decryption",
+              "Malware that secretly collects user activity and personal data and sends it to a third party",
+              "Software that blocks legitimate programs from running"
+            ],
+            "correctIndex": 2,
+            "explanation": "Spyware secretly monitors user activity and transmits data (browsing history, passwords, personal information) to unauthorised third parties. Adware (option A) displays ads; ransomware (option B) encrypts files for ransom."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "smt-q3",
+            "questionType": "mcq",
+            "text": "Why is it important to keep antivirus definition files regularly updated?",
+            "options": [
+              "Outdated definitions use more memory and slow down the computer",
+              "Antivirus software without current definitions cannot detect newly discovered threats",
+              "Definition updates add new features to the antivirus interface",
+              "Updated definitions reduce the file size of the antivirus program"
+            ],
+            "correctIndex": 1,
+            "explanation": "Antivirus software identifies threats by comparing files against a database of known threat signatures (definitions). New malware is created constantly — without current definitions, the software does not know what the new threats look like and cannot detect or block them."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "smt-q4",
+            "questionType": "short_answer",
+            "text": "A business has not run any system maintenance for 12 months. List three specific maintenance tasks that should be performed immediately and explain what risk each addresses.",
+            "marks": 6,
+            "explanation": "Responses should include three of: 1. Run antivirus/anti-malware scan with updated definitions — addresses risk of undetected malware, ransomware, or spyware that may have compromised the system. 2. Run Disk Clean-Up / delete temporary files — addresses risk of storage filling up, which can cause system instability and prevent new files from being saved. 3. Apply operating system updates and security patches — addresses risk of known vulnerabilities being exploited by attackers. 4. Clear browser cache — addresses performance issues and removes potentially sensitive cached data. 5. Defragment HDD (if applicable) — addresses slow file access speeds caused by fragmentation."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "smt-q5",
+            "questionType": "true_false",
+            "text": "A spam filter only blocks unwanted advertising emails and has no role in cybersecurity.",
+            "correctAnswer": false,
+            "explanation": "False. Spam filters play an important cybersecurity role. The majority of phishing attacks, malware delivery, and business email compromise (BEC) scams arrive via email. Spam filters analyse incoming messages for malicious links, suspicious attachments, spoofed sender addresses, and known phishing patterns — blocking many attacks before they reach users."
+          }
+        }
+      ]
+    },
+    {
+      "id": "integrated-data-management-project",
+      "title": "Integrated Data Management Project",
+      "estimatedMinutes": 90,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Project Overview",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "In this project you will take on the role of a junior digital asset manager at a small creative agency. You have been handed a disorganised collection of digital assets for a client project and asked to clean them up, optimise them for their destinations, apply proper version control, and present a recommendation for how the business should manage its data going forward."
+        },
+        {
+          "type": "callout",
+          "variant": "scenario",
+          "heading": "Your Scenario",
+          "text": "Client: Coastal Eats — a new café opening in Fremantle. You have received a USB drive from the client containing: a logo file (large TIFF, no folder structure), 12 high-resolution photos from a professional photographer (RAW files, mixed naming), a menu document (three versions with confusing names: menu_v2.docx, menu_NEW.docx, menu_USE THIS.docx), and a short promotional video (uncompressed MOV, 2.1 GB). The client needs all assets prepared for: (a) their printed menu, (b) their website, (c) their Instagram profile, and (d) internal file management going forward."
+        },
+        {
+          "type": "heading",
+          "text": "Project Tasks",
+          "level": 2
+        },
+        {
+          "type": "heading",
+          "text": "Task 1 — Design a Folder Structure and Naming Convention",
+          "level": 3
+        },
+        {
+          "type": "task",
+          "title": "Task 1: Organise the Project Assets",
+          "intro": "Before optimising anything, establish a professional folder structure and naming convention for all Coastal Eats assets.",
+          "steps": [
+            "Design a folder structure for the Coastal Eats project. You must have at minimum: separate folders for raw/master files, working files, and delivery-ready exported files. Organise by asset type (images, documents, video) or by destination (print, web, social) — justify your choice.",
+            "Write a file naming convention document (one page) that specifies: how files should be named, what version numbering system to use, what date format to use, and what status labels to use (draft, review, approved).",
+            "Apply your naming convention: rename the three menu documents according to your convention and place them correctly in your folder structure. Show which is the 'current' version.",
+            "Take a screenshot of your complete folder structure. Annotate it (using Word or a drawing tool) to explain the purpose of each folder."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Task 2 — Optimise Images for Each Platform",
+          "level": 3
+        },
+        {
+          "type": "task",
+          "title": "Task 2: Export Images for Three Destinations",
+          "intro": "Select two of the Coastal Eats photographs (use royalty-free images from Unsplash if you don't have access to real assets). Optimise and export each for three destinations.",
+          "steps": [
+            "For each image, record the original pixel dimensions and file size.",
+            "Print Export: Resize/resample to 300 DPI at A4 size (2480 × 1654 px for landscape). Save as JPEG at 95% quality. Record the output file size.",
+            "Website Export: Crop and resize to 1920 × 1080 px (16:9). Save as JPEG at 80% quality. Record the output file size.",
+            "Instagram Export: Crop and resize to 1080 × 1080 px (square). Save as JPEG at 85% quality. Record the output file size.",
+            "Create a table comparing: Original vs Print vs Web vs Instagram — pixel dimensions, file size, and format.",
+            "Calculate the percentage file size saving for the web and Instagram exports compared to the original.",
+            "Name all files according to your naming convention from Task 1 and place them in the correct delivery folders."
+          ]
+        },
+        {
+          "type": "formulaBreakdown",
+          "title": "Reminder: File Size Saving Calculation",
+          "functionName": "Saving % = ((Original − Compressed) ÷ Original) × 100",
+          "args": [
+            {
+              "name": "Original",
+              "description": "File size before compression/resampling (in KB or MB — use consistent units)"
+            },
+            {
+              "name": "Compressed",
+              "description": "File size of the exported/optimised file in the same units"
+            },
+            {
+              "name": "Example",
+              "description": "If the original photo is 22 MB and the web export is 1.8 MB: ((22 − 1.8) ÷ 22) × 100 = 91.8% saving"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Task 3 — Cloud Storage Recommendation",
+          "level": 3
+        },
+        {
+          "type": "task",
+          "title": "Task 3: Recommend a Cloud Solution for Coastal Eats",
+          "intro": "The café owner currently stores everything on a USB drive that has nearly been lost twice. They need a cloud storage and collaboration solution for their 4-person team (owner + 3 casual staff). Budget is limited.",
+          "steps": [
+            "Research two cloud storage options suitable for a small business with 4 users and a limited budget (consider Google Workspace Business Starter, Microsoft 365 Business Basic, or Dropbox Business).",
+            "Compare them on: cost per user per month, storage per user, file version history, sharing/collaboration features, and mobile app quality.",
+            "Create a comparison table in your report document.",
+            "Write a recommendation (one paragraph, approximately 150 words) explaining which solution you recommend for Coastal Eats and why. Address: cost, ease of use for non-technical staff, version history, and file access from multiple devices."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Task 4 — System Maintenance Plan",
+          "level": 3
+        },
+        {
+          "type": "task",
+          "title": "Task 4: Create a Maintenance Schedule",
+          "intro": "The café's office computer has not been maintained for over a year. Create a practical maintenance plan.",
+          "steps": [
+            "Identify five specific maintenance tasks that should be performed on the café's Windows computer.",
+            "For each task, specify: what tool is used, how often it should be done, and what problem it prevents.",
+            "Format this as a professional maintenance schedule table that a non-technical café owner could follow.",
+            "Add a brief note explaining why keeping antivirus definitions updated is especially important for a business that processes customer payments."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Task 5 — Reflection",
+          "level": 3
+        },
+        {
+          "type": "scenarioChallenge",
+          "title": "Project Reflection — Analysis Questions",
+          "scenario": "You have completed the Coastal Eats digital asset management project. Reflect on what you have applied and why these professional practices matter.",
+          "questions": [
+            {
+              "question": "Explain why a business like Coastal Eats benefits from storing assets in the cloud rather than on a USB drive. In your answer, refer to at least two specific advantages of cloud storage. (3 marks)",
+              "marks": 3
+            },
+            {
+              "question": "You exported the same photograph at different quality levels for print, web, and Instagram. Explain why using a single high-resolution file for all three purposes would be a problem. (3 marks)",
+              "marks": 3
+            },
+            {
+              "question": "The client wants to know if they should use JPEG or PNG for their café logo on the website. Advise them, explaining the reason for your choice in terms of compression type and image characteristics. (2 marks)",
+              "marks": 2
+            },
+            {
+              "question": "Evaluate the importance of document version control for a small business. What could go wrong without it, and how does a naming convention and folder structure address those risks? (4 marks)",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Project Submission Checklist",
+          "level": 2
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Task 1 — Screenshot of folder structure (annotated) + naming convention document (1 page)",
+            "Task 1 — Three menu files renamed and placed correctly in folder structure",
+            "Task 2 — Comparison table: original vs print vs web vs Instagram (pixel dimensions, file size, format)",
+            "Task 2 — File size saving percentage calculations shown",
+            "Task 2 — All exported files named correctly and saved in delivery folders",
+            "Task 3 — Cloud provider comparison table",
+            "Task 3 — Written recommendation for Coastal Eats (~150 words)",
+            "Task 4 — Maintenance schedule table (5 tasks, tool, frequency, risk addressed)",
+            "Task 4 — Note on antivirus importance for payment processing",
+            "Task 5 — Written responses to all four reflection questions"
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "industry",
+          "heading": "Industry Standard: Cloud-First Approach",
+          "text": "The skills you have applied in this project — asset optimisation, version control, cloud storage, and system maintenance — are daily tasks in digital marketing agencies, IT departments, graphic design studios, and data teams. Employers consistently identify these as fundamental digital literacy skills expected of all IT graduates, regardless of specialisation."
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading",
+          "text": "Project Review Questions",
+          "level": 2
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "proj-q1",
+            "questionType": "mcq",
+            "text": "During the project, you needed to save the café logo for the website. The logo has a transparent background and sharp edges. Which format should you choose?",
+            "options": [
+              "JPEG — smaller file size is important for websites",
+              "PNG — supports transparency and lossless compression preserves sharp edges",
+              "TIFF — the highest quality format available",
+              "GIF — the most widely supported web format"
+            ],
+            "correctIndex": 1,
+            "explanation": "PNG is the correct choice for logos on websites. It supports transparency (so the logo can sit over any background colour) and uses lossless compression, preserving the sharp edges of text and vector-style graphics. JPEG does not support transparency and its lossy compression creates artefacts on sharp edges."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "proj-q2",
+            "questionType": "mcq",
+            "text": "The client's promotional video is 2.1 GB in MOV format. They need to upload it to Instagram. What is the most appropriate action?",
+            "options": [
+              "Upload the 2.1 GB MOV file directly — Instagram will handle compression",
+              "Convert to H.264 MP4 at 1080p using lossy video compression to reduce the file size significantly",
+              "Convert to PNG format to reduce the file size",
+              "Split the file into smaller pieces using a ZIP archiver"
+            ],
+            "correctIndex": 1,
+            "explanation": "H.264 (MP4) lossy video compression will reduce the 2.1 GB file to roughly 200–500 MB at 1080p — a reduction of 75–90% — while maintaining sufficient quality for social media. Instagram also has a maximum file size limit (4 GB) and requires specific formats. MOV files may not upload correctly, and PNG is not a video format."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "proj-q3",
+            "questionType": "extended",
+            "text": "Write a short email (150–200 words) to the Coastal Eats café owner explaining the three most important data management practices you have implemented for their business and why each matters. Write as a junior IT professional communicating with a non-technical client.",
+            "marks": 6,
+            "explanation": "A strong response will: use professional but accessible language (avoid unexplained jargon); clearly explain file compression/optimisation (faster website, correct quality for print); explain version control/naming conventions (prevents overwriting work, easy to find the right file); explain cloud storage benefits (data not lost if USB is lost, access from anywhere, team collaboration); be appropriately concise and structured for a business email; and demonstrate understanding of why each practice benefits the client specifically."
+          }
+        }
+      ]
+    }
+  ]
+}

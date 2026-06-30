@@ -1,0 +1,653 @@
+{
+  "id": "design-concepts",
+  "title": "Design Concepts",
+  "description": "Year 12 Unit 3",
+  "lessons": [
+    {
+      "id": "elements-of-design-y12",
+      "title": "Elements of Design",
+      "estimatedMinutes": 20,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Elements of Design",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "A client has asked your agency to redesign their corporate website — the brief says it looks 'messy and unprofessional.' Before you open Figma or Adobe XD, you need a shared vocabulary. The five elements of design are the raw material every visual communicator works with: line, shape, space, texture, and colour. Year 12 builds on Year 11 knowledge by focusing on how these elements are deliberately combined and why their relationship to design principles determines whether a product succeeds or fails."
+        },
+        {
+          "type": "heading",
+          "text": "Line",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Lines do far more than divide space — they direct attention, imply motion, and communicate emotion before a viewer reads a single word. Thin hairlines suggest precision and elegance (common in luxury branding); thick bold rules convey strength; diagonal lines create energy and urgency. In UI design, horizontal rules separate content sections while subtle vertical lines create column structure in data tables. Every line you place is a decision."
+        },
+        {
+          "type": "keyTerm",
+          "term": "Implied line",
+          "definition": "A line that does not physically exist but is created by the eye connecting a series of elements — e.g., a row of icons or the gaze direction of a person in a photograph."
+        },
+        {
+          "type": "heading",
+          "text": "Shape",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Shapes are closed areas created by lines, colour, or contrast. Geometric shapes (squares, circles, triangles) feel ordered, logical, and modern — which is why they dominate tech branding. Organic shapes feel natural, approachable, and human — used frequently in health and education design. In digital products, shapes define clickable regions (buttons), organise content into cards, and create visual hierarchy through scale differences."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "heading": "Real World Example",
+          "text": "Google's Material Design system uses rounded rectangles (a blend of geometric precision and organic softness) for cards and buttons. The corner radius is a deliberate shape choice that communicates 'approachable but structured'."
+        },
+        {
+          "type": "heading",
+          "text": "Space",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Space is the area within, around, and between elements. Positive space holds the content; negative space (white space) is everything else. Contrary to its name, white space does not need to be white — it is simply empty area. Professional designers use white space strategically: generous padding around a call-to-action button increases click-through rates; breathing room between paragraphs improves reading speed. Overcrowded designs signal amateur work."
+        },
+        {
+          "type": "keyTerm",
+          "term": "Negative space",
+          "definition": "The empty area surrounding or between design elements. Used deliberately to reduce visual noise, improve readability, and guide viewer attention toward key content."
+        },
+        {
+          "type": "heading",
+          "text": "Texture",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Digital design uses visual texture — the implied surface quality of an element — rather than physical texture. Subtle paper grain, noise overlays, fabric-like patterns, or brushstroke effects add depth and tactile interest to otherwise flat interfaces. Texture also carries cultural meaning: rough concrete textures suggest industrial or urban contexts; soft linen textures suggest premium lifestyle brands. Flat design (popularised by iOS 7 and Material Design) deliberately removed most texture in favour of clean, minimal surfaces."
+        },
+        {
+          "type": "heading",
+          "text": "Colour",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Colour is arguably the most powerful element — it triggers emotional responses before conscious analysis. In professional product design, colour decisions are documented in brand guidelines and applied consistently across all touchpoints. Designers work with colour models (RGB for screens, CMYK for print), colour harmonies (complementary, analogous, triadic), and accessibility standards that require minimum contrast ratios between text and background."
+        },
+        {
+          "type": "keyTerm",
+          "term": "Colour harmony",
+          "definition": "A deliberate combination of colours that are visually pleasing because of their relationship on the colour wheel — e.g., complementary (opposite hues), analogous (adjacent hues), or triadic (three evenly spaced hues)."
+        },
+        {
+          "type": "keyTerm",
+          "term": "Contrast ratio",
+          "definition": "A numerical measure of the luminance difference between foreground text and its background. WCAG 2.1 AA standard requires a minimum ratio of 4.5:1 for normal text to ensure readability for users with visual impairments."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "heading": "Industry Tip",
+          "text": "Tools like Figma's built-in contrast checker, Adobe Color, and the WebAIM Contrast Checker let you verify colour accessibility instantly. Checking contrast ratios should be a standard step in any professional design workflow."
+        },
+        {
+          "type": "table",
+          "headers": ["Element", "Core purpose", "Professional application", "Common tools"],
+          "rows": [
+            ["Line", "Direct eye movement and create structure", "Section dividers, data visualisation axes, UI borders", "Figma pen tool, Illustrator"],
+            ["Shape", "Group content and define interactive regions", "Buttons, cards, icons, logo forms", "Figma frames, Adobe XD components"],
+            ["Space", "Control focus and reduce cognitive load", "Padding, margins, white space in layouts", "CSS box model, Figma auto-layout"],
+            ["Texture", "Add depth and communicate brand personality", "Background overlays, hero images, card surfaces", "Photoshop filters, CSS backgrounds"],
+            ["Colour", "Evoke emotion and create visual hierarchy", "Brand palettes, accessibility-compliant UI", "Adobe Color, Figma styles, Canva brand kit"]
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "y12dc-elem-q1",
+            "questionType": "mcq",
+            "text": "A designer places generous padding around a call-to-action button and leaves large empty areas between sections of a webpage. Which element of design is being deliberately used?",
+            "options": [
+              "Texture",
+              "Line",
+              "Space",
+              "Shape"
+            ],
+            "correctIndex": 2,
+            "explanation": "Space (negative/white space) is the empty area within, around, and between elements. Using it generously around important elements like buttons focuses attention and reduces cognitive load — a professional technique, not an accident."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "y12dc-elem-q2",
+            "questionType": "short_answer",
+            "text": "A tech startup is designing a new mobile app. Explain how the choice between geometric and organic shapes in the app's UI might communicate different brand personalities to users.",
+            "marks": 4,
+            "explanation": "Geometric shapes (squares, circles, sharp corners) communicate precision, logic, and modernity — appropriate for a data or productivity app. Organic shapes (rounded, freeform) communicate approachability, warmth, and humanity — appropriate for a wellness or social app. The choice should align with the intended brand values and target user expectations. (2 marks per shape type with justification.)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "principles-of-design-y12",
+      "title": "Principles of Design",
+      "estimatedMinutes": 20,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Principles of Design",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Your design agency has received two poster concepts from junior designers. Both use the same elements — same fonts, colours, and images — but one looks polished and one looks amateur. The difference is almost always the principles: how those elements are arranged, balanced, and emphasised. The Year 12 syllabus focuses on four principles — balance, emphasis, dominance, and unity — and critically, how they relate to the elements you studied in Lesson 1."
+        },
+        {
+          "type": "heading",
+          "text": "Balance",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Balance refers to the distribution of visual weight across a composition. Symmetrical balance places equal visual weight on both sides of a central axis — common in formal contexts like government websites or corporate annual reports, where the design communicates stability and authority. Asymmetrical balance uses different elements of unequal size or colour but achieves equilibrium through careful arrangement — a single large dark shape balanced by multiple small light shapes. Asymmetrical layouts feel dynamic and contemporary and are dominant in modern web design."
+        },
+        {
+          "type": "keyTerm",
+          "term": "Visual weight",
+          "definition": "The perceived heaviness of an element in a composition. Larger elements, darker colours, complex textures, and isolated elements all carry more visual weight than their opposites."
+        },
+        {
+          "type": "keyTerm",
+          "term": "Radial balance",
+          "definition": "A third type of balance where elements radiate outward from a central point, like the spokes of a wheel. Used in logos, mandalas, and circular infographics."
+        },
+        {
+          "type": "heading",
+          "text": "Emphasis",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Emphasis establishes what the viewer sees first. In a well-designed product, there is a clear visual hierarchy: a primary focal point commands attention immediately, secondary elements provide context, and tertiary content supports or supplements. Emphasis is achieved through contrast (a bright colour on a neutral background), proportion (a large element among small ones), isolation (an element surrounded by space), or placement (top-left or centre positions attract the eye first in Western reading patterns)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Contrast and proportion are the two key mechanisms for creating emphasis in the Year 12 syllabus. Contrast uses difference — size, colour, value, texture — to make one element stand out. Proportion uses relative scale — a large headline against small body text creates immediate hierarchy. A common exam error is confusing emphasis with dominance: emphasis is directional (it guides the eye), while dominance is about presence (one element visually controls the whole composition)."
+        },
+        {
+          "type": "callout",
+          "variant": "important",
+          "heading": "Exam Note",
+          "text": "The SCSA syllabus lists emphasis as including both contrast AND proportion as sub-mechanisms. When asked to identify emphasis in a design, explain WHICH mechanism is creating it — don't just write 'emphasis is present.'"
+        },
+        {
+          "type": "heading",
+          "text": "Dominance",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Dominance occurs when one element is significantly stronger than all others in a composition — it controls the viewer's eye and sets the visual tone. A dominant element is typically the largest, most colourful, or most centrally placed item. Well-designed products often use a single dominant element (a hero image, a bold headline, a standout call-to-action) to anchor the composition. Designs without a dominant element tend to feel indecisive — the eye has nowhere to rest."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "heading": "Real World Example",
+          "text": "On Apple's product pages, the product photograph is always the dominant element: large, centrally placed, with minimal competing content. Every other element — headline, price, button — is subordinate. This makes the product the unambiguous focal point and aligns with Apple's brand values of simplicity and product focus."
+        },
+        {
+          "type": "table",
+          "headers": ["Principle", "Definition", "How elements create it", "Design example"],
+          "rows": [
+            ["Balance", "Even distribution of visual weight", "Colour, size, and position of elements", "Two-column layout with equal visual mass on each side"],
+            ["Emphasis (contrast)", "Difference between elements draws the eye", "Colour contrast, size contrast, texture contrast", "Bright red button on a white background"],
+            ["Emphasis (proportion)", "Relative scale creates hierarchy", "A dominant large element against small ones", "Large hero headline above small subtext"],
+            ["Dominance", "One element controls the composition", "Scale, colour saturation, or placement", "Full-bleed hero image anchoring a landing page"]
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "y12dc-prin-q1",
+            "questionType": "mcq",
+            "text": "A web designer places a large, high-saturation product image in the centre of a landing page while all text and navigation elements are noticeably smaller. Which principle of design is most clearly demonstrated?",
+            "options": [
+              "Balance",
+              "Unity",
+              "Dominance",
+              "Repetition"
+            ],
+            "correctIndex": 2,
+            "explanation": "Dominance occurs when one element significantly overpowers all others in a composition — here, the large, saturated image controls the composition. Balance would require equal visual weight distribution; unity relates to cohesion across the whole design."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "y12dc-prin-q2",
+            "questionType": "short_answer",
+            "text": "Identify TWO differences between emphasis achieved through contrast and emphasis achieved through proportion, using design examples to support your answer.",
+            "marks": 4,
+            "explanation": "Contrast creates emphasis through difference in qualities (colour, value, texture, tone) — e.g., a white call-to-action button on a dark hero section. Proportion creates emphasis through relative scale — e.g., a 72pt headline next to 12pt body text. Contrast can involve colour or texture without size change; proportion involves size relationships specifically. (2 marks per mechanism with example.)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "unity-and-typography",
+      "title": "Unity and Typography",
+      "estimatedMinutes": 20,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Unity and Typography",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "A national retailer has commissioned a new marketing campaign across three platforms: website, social media tiles, and printed flyers. The same products and brand, but three different design files and three different junior designers. When the campaign launches, the assets look completely different — different fonts, different spacing, different visual mood. The problem is a failure of unity. This lesson covers unity (the Year 12 syllabus principle that pulls all elements together) and typography (the design element with the greatest impact on readability and brand personality)."
+        },
+        {
+          "type": "heading",
+          "text": "Unity",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Unity is the principle that all parts of a design feel like they belong together — as though they come from a single intentional system rather than a collection of independent decisions. A unified design is visually coherent: the eye moves smoothly through it without jarring inconsistencies. Unity is not the same as monotony; variety can coexist with unity when elements share an underlying logic."
+        },
+        {
+          "type": "heading",
+          "text": "Proximity",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Proximity is the primary mechanism for creating unity at the local level: elements that are close together are perceived as belonging together. A product image grouped with its name, price, and purchase button forms a visual unit. Separating those elements across the page breaks the unity and forces the viewer to work harder to understand the relationship. In UI design, proximity is enforced through consistent spacing systems — for example, Figma's 8pt grid where related elements are separated by 8px and distinct sections by 32px or more."
+        },
+        {
+          "type": "keyTerm",
+          "term": "Proximity",
+          "definition": "A design principle stating that related elements should be grouped physically close together to signal their relationship and create visual unity within a composition."
+        },
+        {
+          "type": "heading",
+          "text": "Repetition",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Repetition creates unity at the global level by reusing visual elements — colours, typefaces, shapes, icon styles, spacing patterns — consistently across a product or campaign. When a brand uses the same primary colour, the same heading font, and the same button style on every page of a website, the repetition signals coherence and professionalism. Brand style guides exist to formalise repetition rules: they specify exact hex codes, font names and weights, logo spacing, and approved imagery styles."
+        },
+        {
+          "type": "keyTerm",
+          "term": "Brand style guide",
+          "definition": "A formal document specifying the rules for consistent visual presentation of a brand — including colour palettes, typography, logo usage, imagery style, and spacing systems. Sometimes called a 'design system' in digital contexts."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "heading": "Career Connection",
+          "text": "Every major organisation maintains a brand style guide. Working within these constraints is a core professional skill — whether you are a junior designer at an agency, an internal comms officer, or a web developer building new pages. Tools like Figma's team libraries and Canva's brand kit enforce repetition rules automatically."
+        },
+        {
+          "type": "heading",
+          "text": "Typography in Professional Products",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Typography is the design element with the greatest impact on a product's readability, tone, and professional credibility. Poor typography choices — mismatched fonts, inconsistent sizes, inadequate line spacing — are among the most common reasons designs are rejected by clients. The Year 12 syllabus covers five typographic properties: typeface, size, alignment, format, and spacing."
+        },
+        {
+          "type": "heading",
+          "text": "Typeface",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "A typeface (or font family) is a coordinated set of letterforms with a consistent visual character. Serif typefaces (Times New Roman, Georgia, Garamond) carry traditional, authoritative, and editorial connotations — preferred in print-heavy contexts like legal documents, academic publishing, and newspapers. Sans-serif typefaces (Helvetica, Inter, Roboto) feel clean, modern, and neutral — dominant in digital UI design. Display typefaces are decorative, used sparingly for headings and branding. Professional work typically uses a maximum of two complementary typefaces: one for headings, one for body text."
+        },
+        {
+          "type": "heading",
+          "text": "Size, Alignment, Format, and Spacing",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Type size creates hierarchy — larger text signals importance. Consistent size scales (e.g., 12/14/18/24/36pt) across a product reinforce visual unity. Alignment determines how text sits relative to a margin or axis: left-aligned text is most readable for Western audiences and is standard for body content; centred text suits short headings and invitations; right-aligned is used for specific typographic effects or RTL languages. Format refers to weight (bold, regular, light), style (italic), and case (uppercase, sentence case) — used to create contrast and hierarchy. Spacing includes leading (line height, vertical space between lines), kerning (space between individual letter pairs), and tracking (uniform letter-spacing across a text block)."
+        },
+        {
+          "type": "table",
+          "headers": ["Typographic property", "Definition", "Professional standard"],
+          "rows": [
+            ["Typeface", "The font family used — serif, sans-serif, display", "Max 2 complementary families per product; align with brand guide"],
+            ["Size", "The scale of text in points or pixels", "Establish a consistent type scale (e.g. 12/16/24/36px); headings 2–4x body size"],
+            ["Alignment", "How text lines up against an axis", "Left-align body text; use centred text sparingly for short headings only"],
+            ["Format", "Weight (bold/light), style (italic), case (caps)", "Use format to create contrast and hierarchy, not decoration"],
+            ["Spacing (leading)", "Vertical space between lines of text", "1.4–1.6× font size for comfortable body text readability"],
+            ["Spacing (kerning)", "Space between individual character pairs", "Auto-kern headings; manually adjust display type at large sizes"],
+            ["Spacing (tracking)", "Uniform letter-spacing across a text block", "Increase tracking on uppercase labels; avoid over-tracking body text"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "heading": "Industry Tip",
+          "text": "Google Fonts (free, web-optimised) and Adobe Fonts (included with Creative Cloud) are the two primary professional sources for typefaces in digital products. Canva's built-in font library is convenient for quick projects. When choosing fonts for a client, always check the licence — some free fonts prohibit commercial use."
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "y12dc-unity-q1",
+            "questionType": "mcq",
+            "text": "A designer ensures that all buttons across a website use the same corner radius, the same colour, and the same font weight. Which principle of design and which mechanism is primarily being applied?",
+            "options": [
+              "Emphasis through contrast",
+              "Unity through repetition",
+              "Balance through symmetry",
+              "Dominance through proportion"
+            ],
+            "correctIndex": 1,
+            "explanation": "Repeating identical visual properties (corner radius, colour, font weight) across all instances of a component is a direct application of unity through repetition. It signals visual coherence and professional consistency — the viewer learns the pattern once and recognises it throughout."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "y12dc-unity-q2",
+            "questionType": "short_answer",
+            "text": "Explain how proximity and repetition work together to achieve unity in a multi-page digital document such as a business report created in Microsoft Publisher or Adobe InDesign.",
+            "marks": 4,
+            "explanation": "Proximity groups related elements together on each page (e.g., heading with its body text, image with its caption), creating local visual unity within each section. Repetition applies consistent colours, fonts, and spacing rules across every page, creating global unity across the document. Together they ensure the document reads as a single coherent product rather than a collection of unrelated pages. (2 marks per mechanism with contextual application.)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "compositional-rules",
+      "title": "Compositional Rules",
+      "estimatedMinutes": 20,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Compositional Rules",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "A photographer has handed you 20 raw product shots for a new e-commerce website. Some feel dynamic and professional; others look flat and forgettable — even though the products are identical. The difference is composition: how elements are arranged within the frame. Compositional rules give designers a structured basis for making placement decisions. The Year 12 syllabus focuses on the rule of thirds and grid-and-alignment systems, plus the skill of annotating designs to justify compositional choices."
+        },
+        {
+          "type": "heading",
+          "text": "Rule of Thirds",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "The rule of thirds divides any canvas — a webpage, a poster, a photograph — into a 3×3 grid using two horizontal and two vertical lines. The four intersection points (often called 'power points') are the positions where the human eye is naturally drawn. Placing key subjects, focal points, or call-to-action elements at these intersections creates compositions that feel more dynamic and visually interesting than centring everything. Horizon lines in photography placed on the upper or lower horizontal line — rather than the middle — create stronger compositions."
+        },
+        {
+          "type": "keyTerm",
+          "term": "Rule of Thirds",
+          "definition": "A compositional guideline that divides the canvas into a 3×3 grid and recommends placing key visual subjects at or near the four intersection points to create dynamic, balanced compositions."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "heading": "Real World Example",
+          "text": "Most smartphone cameras include an optional 3×3 grid overlay — this is the rule of thirds grid. Professional photographers enable it by default. In web design, Figma and Adobe XD allow you to display custom grid overlays to guide element placement using the same principle."
+        },
+        {
+          "type": "heading",
+          "text": "Grid Systems and Alignment",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "A grid system is a structural framework of columns, rows, and gutters (the spaces between columns) that organises content into a consistent spatial structure. Grids are invisible in the final product but essential during design. Web design typically uses 12-column grids (popularised by Bootstrap and Material Design) because 12 divides evenly into halves, thirds, quarters, and sixths — giving designers maximum layout flexibility. A three-column editorial layout, a two-column product listing, and a six-column icon row can all coexist within the same 12-column grid."
+        },
+        {
+          "type": "paragraph",
+          "text": "Alignment means positioning elements so their edges or centres line up with each other or with grid lines. Even when alignment is invisible to casual viewers, misaligned elements create a subconscious sense of disorder. Consistent alignment is one of the fastest ways to improve an amateur design. In Figma and Adobe XD, smart guides and snap-to-grid features enforce alignment automatically. In print tools like Microsoft Publisher, margin and column guides serve the same purpose."
+        },
+        {
+          "type": "keyTerm",
+          "term": "Gutter",
+          "definition": "The fixed space between columns in a grid system. Consistent gutters ensure even spacing between content blocks and prevent elements from crowding each other."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "heading": "Industry Tip",
+          "text": "The 8-point grid (all spacing values multiples of 8px) has become a de facto standard in professional UI design. It ensures visual consistency across different screen densities and aligns with most icon sizes. Figma's auto-layout feature makes implementing an 8pt grid straightforward."
+        },
+        {
+          "type": "heading",
+          "text": "Annotating Designs",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Annotation is the skill of labelling and explaining design choices — identifying which elements and principles are present and justifying why they were used. Detailed annotation is a Year 12 assessment requirement and a professional practice: in industry, annotated design mockups (called 'redlines' or 'specs') communicate design intent to developers and stakeholders. A strong annotation identifies the element or principle by name, describes how it manifests in the specific design, and justifies why it serves the design's purpose or audience."
+        },
+        {
+          "type": "list",
+          "style": "numbered",
+          "items": [
+            "Identify: Name the specific design element or principle (e.g., 'emphasis through contrast').",
+            "Describe: Explain how it appears in this particular design (e.g., 'the call-to-action button is rendered in a high-saturation orange against the grey background').",
+            "Justify: Explain why this choice serves the design's purpose or audience (e.g., 'the warm, high-contrast colour draws the eye immediately and prompts user action, which is critical for conversion on an e-commerce landing page')."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "important",
+          "heading": "Exam Note",
+          "text": "SCSA assessments require 'detailed annotations relevant to a particular design brief.' A one-word annotation ('balance') scores zero. You must identify, describe, AND justify each choice in the context of the specific brief and audience."
+        },
+        {
+          "type": "table",
+          "headers": ["Compositional tool", "Purpose", "Digital tool support"],
+          "rows": [
+            ["Rule of Thirds", "Create dynamic focal point placement", "Camera grid overlay; Figma/XD custom grid"],
+            ["Column grid", "Organise content into consistent horizontal structure", "Bootstrap 12-col; Figma grid settings; Publisher columns"],
+            ["Baseline grid", "Align text consistently across columns", "InDesign baseline grid; CSS line-height systems"],
+            ["Gutter spacing", "Maintain consistent breathing room between columns", "CSS gap property; Figma auto-layout gap"],
+            ["Alignment guides", "Ensure elements share invisible structural axes", "Figma smart guides; Publisher alignment tools"]
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "y12dc-comp-q1",
+            "questionType": "mcq",
+            "text": "A web designer is arranging a hero section with a product image and a headline. Using the rule of thirds, where would the most effective placement of the key subject be?",
+            "options": [
+              "Centred both horizontally and vertically",
+              "In the top-left corner of the frame",
+              "At or near one of the four intersection points of a 3×3 grid",
+              "Along the bottom edge of the frame"
+            ],
+            "correctIndex": 2,
+            "explanation": "The rule of thirds places key subjects at the four intersection points of a 3×3 grid overlay — these are the positions the human eye is naturally drawn to. Centring subjects is the common amateur approach; the rule of thirds creates more dynamic and visually interesting compositions."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "y12dc-comp-q2",
+            "questionType": "short_answer",
+            "text": "A student annotates a poster design with the note: 'I used balance.' Rewrite this annotation to meet the Year 12 standard of 'identify, describe, and justify.'",
+            "marks": 3,
+            "explanation": "A complete annotation might read: 'The principle of asymmetrical balance is applied: the large product photograph on the left side of the composition is visually counterweighted by the bold white headline text block and call-to-action button on the right, despite the different sizes. This asymmetrical arrangement creates a dynamic, modern feel appropriate for the youth-oriented fashion brand, while still ensuring neither side overwhelms the viewer.' (1 mark identify, 1 mark describe, 1 mark justify with audience/purpose reference.)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "applying-design-to-digital-products",
+      "title": "Applying Design to Digital Products",
+      "estimatedMinutes": 30,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Applying Design to Digital Products",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "You are now a junior designer at a small creative agency. A new client — a local surf school called Coastline Surf Academy — needs a promotional digital flyer for their summer program. They want it to look 'fresh and professional' and be suitable for posting on Instagram and printing as an A5 flyer. This is a realistic design brief, and your job is to apply every concept from this topic — elements, principles, unity, typography, and compositional rules — in an integrated way to produce and annotate a complete design solution."
+        },
+        {
+          "type": "heading",
+          "text": "From Elements to Finished Products",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Professional designers do not think about elements and principles as separate checklists — they are internalised as a shared vocabulary for making and critiquing decisions. When a senior designer reviews a junior's work and says 'it lacks emphasis' or 'the typography is fighting itself,' they are using this vocabulary to communicate specific, actionable feedback. Understanding these concepts lets you both produce better work and communicate about it precisely."
+        },
+        {
+          "type": "paragraph",
+          "text": "The relationship between elements and principles is fundamental: elements are what you use, principles are how you use them. Colour (element) applied with contrast (principle) creates emphasis. Shapes (element) repeated consistently (principle) create unity. Space (element) distributed with balance (principle) creates visual equilibrium. Every design decision involves at least one element and at least one principle working together."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "heading": "Career Connection",
+          "text": "Graphic and web designers are consistently listed among the fastest-growing occupations in Australia's digital economy. The WA Department of Education's Applied IT pathway prepares students for roles including UI/UX designer, digital marketing coordinator, web developer, and multimedia specialist — all of which require fluency in design concepts as a baseline professional skill."
+        },
+        {
+          "type": "heading",
+          "text": "Choosing the Right Software",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "The choice of design tool affects workflow efficiency but not the underlying design principles — those apply regardless of software. For digital-first products (websites, apps, social tiles), Figma and Adobe XD are industry standard. For print-digital hybrid products like the surf school flyer, Adobe InDesign is the professional choice, though Canva handles simpler A5 flyer projects effectively. Microsoft Publisher remains available as a lower-barrier option in school and small business contexts."
+        },
+        {
+          "type": "softwareExamples",
+          "title": "Design Tools for Digital Products",
+          "apps": [
+            {
+              "name": "Figma",
+              "licence": "Free (Education), Paid (Professional)",
+              "note": "Browser-based UI and graphic design tool. Industry standard for web/app design, prototyping, and team collaboration. Supports auto-layout, component libraries, and real-time co-design."
+            },
+            {
+              "name": "Adobe XD",
+              "licence": "Included with Creative Cloud subscription",
+              "note": "Adobe's UI/UX design and prototyping tool. Deep integration with Photoshop and Illustrator. Supports interactive prototypes and developer handoff specs."
+            },
+            {
+              "name": "Canva",
+              "licence": "Free (Basic), Paid (Pro/Education)",
+              "note": "Template-based design tool suited to flyers, social tiles, and presentations. Brand kit feature enforces repetition/unity. Excellent for rapid client-ready deliverables."
+            },
+            {
+              "name": "Microsoft Publisher",
+              "licence": "Included with Microsoft 365",
+              "note": "Desktop publishing tool for print-focused products (flyers, brochures, newsletters). Strong grid and alignment guides. Accessible alternative for school and small business use."
+            }
+          ]
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "scenarioChallenge",
+          "title": "Design Brief: Coastline Surf Academy",
+          "scenario": "You have been contracted by Coastline Surf Academy to design a promotional flyer for their Summer Surf Program. The brief: the flyer must work as both an Instagram square post (1080×1080px) and an A5 printed handout. Target audience: 14–25 year-olds interested in outdoor activities. Tone: energetic, youthful, professional. Required content: academy logo area, program name ('Summer Surf Program 2027'), three key details (dates, price, location), and a call to action ('Book online at coastlinesurfacademy.com.au'). The client has specified a colour palette of ocean blue (#1A6B9A) and warm sand (#F5E6C8) with white (#FFFFFF) for text.",
+          "questions": [
+            {
+              "question": "Identify which compositional rule you would apply when placing the hero image and program name headline on the flyer, and justify your placement decision with reference to the design brief and target audience.",
+              "marks": 4
+            },
+            {
+              "question": "The brief specifies two brand colours (ocean blue and warm sand) plus white. Explain how you would use these colours to create emphasis AND unity in the flyer, identifying which specific elements receive each colour and why.",
+              "marks": 5
+            },
+            {
+              "question": "Select ONE typeface for headings and ONE for body text. Name each typeface, classify it (serif/sans-serif/display), and justify both choices with reference to the tone and audience specified in the brief.",
+              "marks": 4
+            },
+            {
+              "question": "Write a three-part annotation (identify, describe, justify) for ONE design principle you would apply in your flyer layout. Your annotation must reference the specific design brief requirements.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "task",
+          "title": "Practical Task: Design and Annotate the Flyer",
+          "software": "Canva (free) or Figma (free education account) or Microsoft Publisher",
+          "intro": "Using the Coastline Surf Academy brief above, create the promotional flyer and produce a detailed annotated version. This task mirrors the type of practical design task assessed in Year 12 Applied IT.",
+          "steps": [
+            "Open your chosen design tool and create a new file at 1080×1080px (square, for Instagram use).",
+            "Set up a grid: enable a 3×3 rule-of-thirds overlay (Figma: View > Layout grids; Canva: enable grid from Elements panel; Publisher: use guides).",
+            "Apply the brand colours (#1A6B9A, #F5E6C8, #FFFFFF) to your colour palette or brand kit before placing any elements.",
+            "Select and apply your heading typeface and body typeface. Set up a type scale: heading (32–40pt), subheading (18–24pt), body (12–14pt).",
+            "Place a placeholder hero image (ocean/surfing theme) and position the subject near a rule-of-thirds intersection point.",
+            "Add all required text content (program name, dates, price, location, call to action) and arrange using your grid structure and alignment guides.",
+            "Apply the design principles: create a dominant element, ensure visual balance, use proximity to group related information, and use repetition to maintain unity.",
+            "Export a clean version (JPEG/PNG) for Instagram.",
+            "Create an annotated version: add text boxes or callout arrows identifying at least FOUR specific design decisions (one element, one principle, one typographic choice, one compositional choice), each with a full identify-describe-justify annotation.",
+            "Save both the clean and annotated versions. Peer-review a classmate's annotated version using the identify-describe-justify criteria."
+          ]
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "y12dc-apply-q1",
+            "questionType": "mcq",
+            "text": "A student's flyer design uses four different fonts, three different button styles, and inconsistent spacing between sections. Which design principle is most clearly violated?",
+            "options": [
+              "Dominance",
+              "Balance",
+              "Unity",
+              "Emphasis"
+            ],
+            "correctIndex": 2,
+            "explanation": "Unity is violated when a design lacks visual coherence — inconsistent fonts, button styles, and spacing all signal a breakdown in repetition (global unity) and proximity rules (local unity). The design appears to be assembled from unrelated parts rather than designed as a system."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "y12dc-apply-q2",
+            "questionType": "mcq",
+            "text": "Which statement BEST describes the relationship between design elements and design principles?",
+            "options": [
+              "Elements and principles are the same thing described in different ways.",
+              "Elements are the tools you design with; principles are how you use those tools together.",
+              "Principles apply only to print design; elements apply to digital design.",
+              "You must apply all five elements and all four principles in every design."
+            ],
+            "correctIndex": 1,
+            "explanation": "Elements (line, shape, space, texture, colour) are the fundamental building blocks — what you design with. Principles (balance, emphasis, dominance, unity) are the rules that govern how elements are combined effectively. A principle cannot exist without elements to apply it to; elements without principles produce incoherent design."
+          }
+        },
+        {
+          "type": "quizQuestion",
+          "question": {
+            "id": "y12dc-apply-q3",
+            "questionType": "short_answer",
+            "text": "Explain why the relationship between design elements and design principles is important when evaluating a digital product. Use a specific example of one element and one principle working together.",
+            "marks": 4,
+            "explanation": "Elements and principles are interdependent: a principle cannot be applied without elements to apply it to, and elements alone do not produce effective design. For example, colour (element) used with contrast (principle) creates emphasis by making one element stand out from its surroundings — as when a high-saturation call-to-action button in orange stands out against a muted grey background, directing user attention and driving conversions. Evaluating a digital product means assessing not just which elements are present, but whether the principles governing their arrangement serve the product's purpose and audience. (2 marks for explaining relationship, 2 marks for specific element+principle example with justification.)"
+          }
+        }
+      ]
+    }
+  ]
+}
