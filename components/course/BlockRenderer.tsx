@@ -126,6 +126,34 @@ export function BlockRenderer({ block }: { block: Block }) {
       );
     case "callout": {
       const v = block.variant;
+
+      // ── Apprenticeship Framework variants ───────────────────────────────
+      if (v === "ticket") return (
+        <div className="mt-4 rounded-xl border-2 border-slate-700 bg-slate-900 p-5 text-white">
+          <p className="text-xs font-mono tracking-widest text-slate-400 uppercase">{block.heading}</p>
+          <p className="mt-2 text-sm leading-relaxed text-slate-200">{block.text}</p>
+        </div>
+      );
+      if (v === "sandbox") return (
+        <div className="mt-4 rounded-xl border-2 border-emerald-600 bg-emerald-950 p-5">
+          <p className="text-xs font-mono font-bold tracking-widest text-emerald-400 uppercase">{block.heading}</p>
+          <p className="mt-2 text-sm leading-relaxed text-emerald-100">{block.text}</p>
+        </div>
+      );
+      if (v === "pr-review") return (
+        <div className="mt-4 rounded-xl border-2 border-amber-400 bg-amber-950 p-5">
+          <p className="text-xs font-mono font-bold tracking-widest text-amber-400 uppercase">{block.heading}</p>
+          <p className="mt-2 text-sm leading-relaxed text-amber-100">{block.text}</p>
+        </div>
+      );
+      if (v === "senior-wisdom") return (
+        <div className="mt-4 rounded-xl border-2 border-violet-500 bg-violet-950 p-5">
+          <p className="text-xs font-mono font-bold tracking-widest text-violet-400 uppercase">{block.heading}</p>
+          <p className="mt-2 text-sm leading-relaxed text-violet-100 italic">{block.text}</p>
+        </div>
+      );
+
+      // ── Standard callout variants ────────────────────────────────────────
       const cls =
         v === "hook"
           ? "mt-3 rounded-2xl border-2 border-primary bg-primary/8 p-5"

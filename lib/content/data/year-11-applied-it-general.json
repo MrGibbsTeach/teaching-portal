@@ -20,25 +20,19 @@
        "blocks": [
         {
          "type": "callout",
-         "variant": "hook",
-         "heading": "🌐 Real World Scenario",
-         "text": "A design agency has hired you as a junior designer. Your first task: audit a client's flyer and identify every design element used. Ready?"
-        },
-        {
-         "type": "callout",
-         "variant": "hook",
-         "heading": "💼 Career Connection: Graphic & UI Designer",
-         "text": "Graphic designers, UI/UX designers, and web developers use these design principles every day. Roles like UX Designer and Brand Manager start with exactly this knowledge. Top tools: Figma, Canva, Adobe Creative Suite."
-        },
-        {
-         "type": "paragraph",
-         "text": "Every visual design — from a website to a printed poster — is built from the same seven fundamental building blocks called the elements of design. Understanding these elements is the first step to analysing and creating effective digital media."
+         "variant": "ticket",
+         "heading": "🎟️ TICKET #0042 · KOOMBANA CREATIVE LABS",
+         "text": "Status: 🔴 URGENT | Sprint 3 | Assigned to: New Intern\n\nA Bunbury real estate agency just rejected our design proposal. Client feedback: 'It looks random — no visual logic.' Leo needs you to audit their existing brochure, identify which design elements are misused or missing, and have your analysis ready before the 2pm client call."
         },
         {
          "type": "video",
          "youtubeId": "YqQx75OPRa0",
          "title": "Beginning Graphic Design: Fundamentals",
-         "caption": "GCFLearnFree — a visual intro to the fundamental elements all designers use."
+         "caption": "GCFLearnFree — Leo's recommended pre-read before touching any client brief."
+        },
+        {
+         "type": "paragraph",
+         "text": "Every design — website, poster, app, brochure — is built from seven fundamental building blocks. Leo calls them the 'ingredients'. Know these cold, or you'll ship something that looks like a word salad."
         },
         {
          "type": "grid",
@@ -48,107 +42,108 @@
            "icon": "📏",
            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Orient_IV_%28_%29_-_Bridget_Riley_%281931%29_%2844210674930%29.jpg/500px-Orient_IV_%28_%29_-_Bridget_Riley_%281931%29_%2844210674930%29.jpg",
            "label": "Line",
-           "description": "A path between two points — straight, curved, thick, thin, solid or dashed. Lines guide the eye, divide space, and create structure and movement."
+           "description": "Path between two points. Straight = stability. Diagonal = energy. Curved = flow. We use line to guide the user's eye toward the CTA."
           },
           {
            "icon": "⬡",
            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Composition%2C_1921_-_Piet_Mondrian%2C_MET_DT4479.jpg/500px-Composition%2C_1921_-_Piet_Mondrian%2C_MET_DT4479.jpg",
            "label": "Shape",
-           "description": "A 2D area defined by a boundary. Geometric shapes (circles, squares, triangles) feel structured and ordered. Organic shapes feel fluid and dynamic."
+           "description": "2D bounded areas. Geometric = structured, trustworthy (banks, gov). Organic = natural, friendly (health, lifestyle). Shape carries brand personality."
           },
           {
            "icon": "🔲",
            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Facevase.png/500px-Facevase.png",
            "label": "Space",
-           "description": "Positive space is the subject; negative space is the empty area around it. White space improves readability and draws focus to key elements."
+           "description": "Positive = content. Negative = breathing room. White space is NOT wasted space — it's a power move. Apple built an empire on it."
           },
           {
            "icon": "🪨",
            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Weathered_wood_grain_texture_macro_closeup_detail.jpg/500px-Weathered_wood_grain_texture_macro_closeup_detail.jpg",
            "label": "Texture",
-           "description": "The visual or tactile quality of a surface — rough, smooth, grainy, soft. In digital design, texture is implied through pattern and visual technique."
+           "description": "Visual surface quality. On screen it's always implied — subtle noise overlays, grain, or pattern. Adds depth without real weight."
           },
           {
            "icon": "🎨",
            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Color_star-en_%28tertiary_names%29.svg/500px-Color_star-en_%28tertiary_names%29.svg.png",
            "label": "Colour",
-           "description": "Defined by hue (the colour family), saturation (intensity), and tone (lightness/darkness). Colour evokes emotion and establishes brand identity."
+           "description": "Hue (the colour). Saturation (vivid → muted). Tone (light → dark). Colour is the fastest emotional signal in any design system."
           },
           {
            "icon": "🎲",
            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Platonic_solids.jpg/500px-Platonic_solids.jpg",
            "label": "3D Form",
-           "description": "Three-dimensional shapes — sphere, cube, cylinder, cone. Form adds depth and realism, creating the illusion of volume in 2D designs."
+           "description": "The illusion of volume in 2D space. Shadows, gradients, and perspective create depth. iOS went from fake-3D to flat and back. Know why."
           },
           {
            "icon": "🌗",
            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Ansel-adams-monolith-the-face-of-half-dome_-_edit1.jpg/500px-Ansel-adams-monolith-the-face-of-half-dome_-_edit1.jpg",
            "label": "Tone",
-           "description": "The degree of lightness or darkness — distinct from colour. A black-and-white photo still has tone. Tone creates contrast, depth, and mood."
+           "description": "Lightness vs darkness — independent of colour. A greyscale version of your design should still communicate hierarchy. If not, the design fails."
           }
          ]
         },
         {
          "type": "callout",
          "variant": "key",
-         "heading": "Elements vs Principles",
-         "text": "The elements of design are the WHAT — the raw materials (line, shape, colour, space, texture, form, tone). The principles of design are the HOW — the rules for combining those materials effectively. You need both to analyse or create strong designs."
+         "heading": "⚡ Leo's Rule",
+         "text": "Elements are the WHAT. Principles are the HOW. You can't apply a principle without elements to work with. Master elements first — they're your vocabulary."
         },
         {
-         "type": "keyTerms",
-         "items": [
-          {
-           "term": "Element of design",
-           "definition": "One of the seven fundamental building blocks of visual design: line, shape, space, texture, colour, form, and tone."
-          },
-          {
-           "term": "Negative space",
-           "definition": "The empty area around or between subjects in a composition — also called white space. Used strategically to improve readability and draw focus."
-          },
-          {
-           "term": "Organic shape",
-           "definition": "A freeform, irregular shape that appears natural rather than geometric — like leaves, clouds, or hand-drawn forms."
-          }
-         ]
+         "type": "callout",
+         "variant": "sandbox",
+         "heading": "💻 SANDBOX CHALLENGE · AUDIT THE REJECTED BROCHURE",
+         "text": "The real estate client's brochure has five design problems. For each item below, identify which element of design is being misused and what it should be instead.\n\n1. The heading font is the same size as the body text.\n2. A diagonal slash background is used on a 'trust and stability' investment page.\n3. Text is crammed edge-to-edge with no breathing room.\n4. A photo of a house uses a rough, scratchy texture overlay on a luxury listing.\n5. The 'Call us now' button is the same colour as the background.\n\nWrite your audit. One sentence per item: element misused → what to fix."
+        },
+        {
+         "type": "callout",
+         "variant": "pr-review",
+         "heading": "🛑 PR REVIEW · LEO IS PUSHING BACK",
+         "text": "Leo's reviewing your audit. He's not satisfied yet. Answer his questions before this gets merged:\n\nQ1: 'You flagged the button colour as a colour problem. But which specific property of colour is the issue — hue, saturation, or tone?'\nQ2: 'You said the heading needs to be bigger. What element of design are you actually adjusting when you change text size?'\nQ3: 'The scratch texture on the luxury listing — a student said it's a texture issue. But couldn't it also be read as a tone issue? Defend your choice.'"
         },
         {
          "type": "quizQuestion",
          "question": {
           "questionType": "mcq",
-          "text": "Which element of design refers to the empty area around the main subject?",
+          "text": "Leo's Q1: The 'Call us now' button blends into the background. Which colour property is the problem?",
           "options": [
-           "Texture",
-           "Tone",
-           "Space",
-           "Line"
+           "Hue — the colour family is wrong",
+           "Saturation — the colour is too muted",
+           "Tone — there is not enough lightness/darkness contrast",
+           "All three are equally at fault"
           ],
           "correctIndex": 2,
-          "explanation": "Space — specifically negative space — is the empty area around or between elements. Designers use it deliberately to reduce clutter and draw focus to key content."
+          "explanation": "Tone (lightness vs darkness) is the issue. Even if button and background are different hues, if their tones are too similar they'll blend together. This is why greyscale testing of designs matters — if contrast disappears in greyscale, your button is invisible to many users."
          }
         },
         {
          "type": "quizQuestion",
          "question": {
           "questionType": "mcq",
-          "text": "A designer uses diagonal lines across a poster background. What do diagonal lines typically communicate?",
+          "text": "Leo's Q2: Making the heading text larger is adjusting which element of design?",
           "options": [
-           "Calm and stability",
-           "Energy and movement",
-           "Structure and order",
-           "Depth and volume"
+           "Colour — you're changing the visual weight",
+           "Space — larger text takes up more room",
+           "Form — you're adding 3D depth",
+           "Tone — size controls contrast"
           ],
           "correctIndex": 1,
-          "explanation": "Diagonal lines create a sense of energy and movement. Horizontal lines convey calm; vertical lines suggest strength and structure."
+          "explanation": "Adjusting size changes how much space an element occupies and therefore its visual weight. Space (both the element itself and the negative space around it) is the design element being manipulated when you change type size."
          }
         },
         {
          "type": "quizQuestion",
          "question": {
           "questionType": "true_false",
-          "text": "Texture in digital design is always physical and tactile.",
+          "text": "A design that looks strong in full colour will always work in greyscale too.",
           "correctAnswer": false,
-          "explanation": "In digital design, texture is always implied (visual texture) — created through patterns, overlays, and surface effects rather than something you can physically touch."
+          "explanation": "False — and this is Leo's favourite test. If your design relies solely on hue for contrast (e.g. red text on green background) it collapses in greyscale. Strong designs work in greyscale because they use tonal contrast as the foundation, then layer colour on top."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "senior-wisdom",
+         "heading": "💡 SENIOR WISDOM · LEO THORNE, KOOMBANA CREATIVE LABS",
+         "text": "Every bad design makes the same mistake: too many competing focal points, and no designer brave enough to remove one. The most powerful thing you can do in any layout is delete an element. Restraint is a skill. Your job is to build beautiful, accessible interfaces — not to impress yourself with how much you know. Build for the user, cut for clarity, ship with confidence."
         }
        ]
       },
@@ -159,117 +154,112 @@
        "blocks": [
         {
          "type": "callout",
-         "variant": "hook",
-         "heading": "🌐 Real World Scenario",
-         "text": "A client's website looks 'busy and hard to read' — your job is to diagnose which design principles are missing and propose fixes."
+         "variant": "ticket",
+         "heading": "🎟️ TICKET #0051 · KOOMBANA CREATIVE LABS",
+         "text": "Status: 🟡 HIGH | Sprint 3 | Assigned to: New Intern\n\nSame real estate client. Second round. They've now seen your element audit and they want a redesign mockup. But before you open Figma, Leo needs you to define the design principles this layout must follow. Without a principles brief, you're guessing. We don't guess here."
         },
         {
          "type": "paragraph",
-         "text": "The principles of design describe how designers combine the elements to create effective, intentional compositions. Where elements are the raw materials, principles are the rules for using them."
-        },
-        {
-         "type": "video",
-         "youtubeId": "yNDgFK2Jj1E",
-         "title": "Understanding Visual Design Principles",
-         "caption": "Google UX Design Certificate — how design principles apply in professional product design."
+         "text": "If elements are ingredients, principles are the recipe. You can have great ingredients and still make inedible food if you don't know the recipe. Same deal here."
         },
         {
          "type": "grid",
-         "title": "The Principles of Design",
+         "title": "The Six Principles of Design",
          "items": [
           {
            "icon": "⚖️",
            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat_03.jpg/500px-Cat_03.jpg",
            "label": "Balance",
-           "description": "The even distribution of visual weight. Symmetrical balance mirrors elements on each side. Asymmetrical balance uses different elements that still feel equally weighted."
+           "description": "Even distribution of visual weight. Symmetrical = formal, stable. Asymmetrical = dynamic, modern. Know which one matches the client's brand."
           },
           {
            "icon": "🔦",
-           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/500px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg",
            "label": "Emphasis",
-           "description": "Making the most important element stand out through size, colour, contrast, or position. Every strong design has a clear focal point."
+           "description": "One dominant focal point. Everything else is secondary. If everything is important, nothing is. In UI: your CTA button is the hero. Make it obvious."
           },
           {
            "icon": "👑",
-           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Camponotus_flavomarginatus_ant.jpg/500px-Camponotus_flavomarginatus_ant.jpg",
            "label": "Dominance",
-           "description": "The element that stands out most and catches attention first. Usually the largest, most colourful, or most isolated element in a design."
+           "description": "The single element that catches the eye first. Usually the largest, most saturated, or most isolated. Clients often want everything dominant — your job is to say no."
           },
           {
            "icon": "🔗",
-           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Lego_Color_Bricks.jpg/500px-Lego_Color_Bricks.jpg",
            "label": "Unity",
-           "description": "All elements look like they belong together — consistent fonts, colours, and style. Unity creates a cohesive, professional feel across a design."
+           "description": "Everything looks like it belongs in the same family. Consistent typeface, colour palette, corner radius, icon style. A brand guide enforces unity at scale."
           },
           {
            "icon": "📐",
-           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Khoury_College_New_Graphic.svg/500px-Khoury_College_New_Graphic.svg.png",
            "label": "Proportion",
-           "description": "The size relationship between elements. Large elements feel more important; small elements feel secondary. Correct proportion creates visual harmony."
+           "description": "Size relationships between elements. Heading 3× the body text. Hero image filling 60% of the viewport. Numbers matter. Eyeballing it is for students."
           },
           {
-           "icon": "🎼",
-           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/GoldenRatio_Parthenon.jpg/500px-GoldenRatio_Parthenon.jpg",
+           "icon": "🌗",
            "label": "Contrast",
-           "description": "The difference between opposing elements — light/dark, large/small, rough/smooth, bold/thin. Contrast creates visual interest and makes key information stand out."
+           "description": "The tension between opposites. Large vs small. Dark vs light. Bold vs thin. Contrast creates interest, hierarchy, and accessibility. Low contrast = inaccessible."
           }
          ]
         },
         {
          "type": "callout",
-         "heading": "🏭 Industry Tip",
-         "text": "When evaluating any design, work through each principle systematically: Where is the emphasis? Is the layout balanced? Do all elements look unified? This framework is used in professional design critiques."
+         "variant": "sandbox",
+         "heading": "💻 SANDBOX CHALLENGE · PRINCIPLES BRIEF",
+         "text": "You're writing the principles brief before the Figma mockup begins. For each of the 6 principles, write ONE design decision for the real estate client's homepage. Be specific.\n\nExample: 'Balance — Asymmetrical layout: large hero image left (60%), contact form right (40%)'\n\nComplete the brief:\n- Emphasis: ___\n- Dominance: ___\n- Unity: ___\n- Proportion: ___\n- Contrast: ___\n- Balance: ___"
         },
         {
-         "type": "keyTerms",
-         "items": [
-          {
-           "term": "Balance",
-           "definition": "The even distribution of visual weight across a composition. Can be symmetrical or asymmetrical."
-          },
-          {
-           "term": "Emphasis",
-           "definition": "Making the most important element stand out — through size, colour, contrast, or position."
-          },
-          {
-           "term": "Dominance",
-           "definition": "The single element that draws the eye first and establishes the visual hierarchy."
-          },
-          {
-           "term": "Unity",
-           "definition": "A sense that all elements belong together — consistent fonts, colours, and style create a cohesive design."
-          }
-         ]
+         "type": "callout",
+         "heading": "🏭 Cross-Talk from Rory Quinn @ Bunbury Tech Launchpad",
+         "text": "Rory here. 'Leo's principles brief is the design equivalent of my sprint specification. If you don't write it before you build, you'll rebuild twice. Document first, build second — every time.'"
+        },
+        {
+         "type": "callout",
+         "variant": "pr-review",
+         "heading": "🛑 PR REVIEW · LEO IS IN THE REVIEW THREAD",
+         "text": "Leo dropped comments on your brief. Respond to each:\n\nComment 1: 'You wrote \"make the heading big\" for Emphasis. That's vague. What specific proportion increase creates emphasis without destroying the rest of the hierarchy?'\nComment 2: 'You said \"use consistent colours\" for Unity. What THREE elements does unity ACTUALLY control beyond colour?'\nComment 3: 'You used high contrast for the body text but identical background colours for the nav and footer. Is this consistent with your contrast principle? Why or why not?'"
         },
         {
          "type": "quizQuestion",
          "question": {
           "questionType": "mcq",
-          "text": "A logo uses the same typeface and colour palette across all its marketing materials. Which principle does this demonstrate?",
+          "text": "A logo uses the same typeface, corner radius on buttons, and amber colour palette everywhere across the website, app, and print materials. Which principle is this?",
           "options": [
-           "Balance",
+           "Emphasis",
            "Contrast",
            "Unity",
-           "Dominance"
+           "Proportion"
           ],
           "correctIndex": 2,
-          "explanation": "Unity means all elements look like they belong together. Consistent use of the same typeface and colour palette across all materials creates a cohesive brand identity."
+          "explanation": "Unity — consistent visual language across all touchpoints. This is what a brand design system enforces at scale. When Leo says 'it looks like it belongs together', he's talking about unity."
          }
         },
         {
          "type": "quizQuestion",
          "question": {
           "questionType": "mcq",
-          "text": "A designer makes the 'Buy Now' button large and bright orange on a white page. Which two principles are at work?",
+          "text": "A landing page has a headline, three columns of text, two images, a video, and six buttons, all the same visual weight. Which principle is being violated most severely?",
           "options": [
-           "Balance and unity",
-           "Emphasis and contrast",
-           "Dominance and texture",
-           "Proportion and tone"
+           "Balance — the layout is uneven",
+           "Emphasis — there is no single focal point",
+           "Texture — the page lacks surface variation",
+           "Proportion — the columns are wrong size"
           ],
           "correctIndex": 1,
-          "explanation": "Making the button large and bright creates emphasis (it stands out as the most important element) and contrast (the bright orange against white creates visual difference)."
+          "explanation": "Emphasis — when everything is the same visual weight, nothing stands out. The page has no hierarchy, so the user doesn't know where to look or what to do first. Leo's rule: one hero, one message, one CTA per screen."
          }
+        },
+        {
+         "type": "quizQuestion",
+         "question": {
+          "questionType": "short_answer",
+          "text": "A student's poster design has a bright red 'BUY NOW' button that stands out clearly. However, the body text uses light grey on white. Identify which principle each of these decisions relates to, and evaluate whether each decision is effective.",
+          "marks": 4,
+          "explanation": "Strong answer: The red button demonstrates Emphasis (creating a clear focal point) and Contrast (high colour contrast against the design). The light grey body text violates Contrast and Accessibility — text must meet WCAG AA contrast ratio minimum. The button decision is effective; the text decision is a design failure that makes content unreadable for users with low vision."
+         }
+        },
+        {
+         "type": "callout",
+         "variant": "senior-wisdom",
+         "heading": "💡 SENIOR WISDOM · LEO THORNE, KOOMBANA CREATIVE LABS",
+         "text": "I've reviewed 400+ student projects in 12 years. The difference between the top 10% and everyone else is not talent — it's restraint. They used ONE font. ONE primary colour. ONE dominant element per screen. The grads who ship great products understand that principles aren't rules to follow — they're tools to communicate intent. Use them deliberately, or the user will feel the chaos even if they can't name it."
         }
        ]
       },
@@ -280,19 +270,19 @@
        "blocks": [
         {
          "type": "callout",
-         "variant": "hook",
-         "heading": "🌐 Real World Scenario",
-         "text": "A startup wants a new brand identity. You've been asked to select fonts that match their values — professional but approachable. What do you choose and why?"
-        },
-        {
-         "type": "paragraph",
-         "text": "Typography is the art of arranging type. Poor font choices make great content hard to read. The right font choices make content feel professional, appropriate, and aligned with its audience."
+         "variant": "ticket",
+         "heading": "🎟️ TICKET #0058 · KOOMBANA CREATIVE LABS",
+         "text": "Status: 🟡 HIGH | Sprint 4 | Assigned to: New Intern\n\nA local Bunbury brewery wants a rebrand. The founder sent Leo a mood board with 14 different fonts. 'I want it to feel handcrafted but also professional.' Leo needs you to cut this to 2 fonts, define the typographic system, and brief the founder in plain language why the other 12 were cut."
         },
         {
          "type": "video",
          "youtubeId": "sByzHoiYFX0",
          "title": "Beginning Graphic Design: Typography",
-         "caption": "GCFLearnFree — a clear guide to typefaces, spacing, and professional typography."
+         "caption": "GCFLearnFree — Leo's go-to primer before any typography brief."
+        },
+        {
+         "type": "paragraph",
+         "text": "Typography is the design element that most non-designers abuse and most senior designers obsess over. Bad font choices communicate distrust, chaos, or inaccessibility before the user reads a single word."
         },
         {
          "type": "grid",
@@ -302,151 +292,179 @@
            "icon": "✒️",
            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Garamond_Roman_Sample.svg/500px-Garamond_Roman_Sample.svg.png",
            "label": "Serif",
-           "description": "Small strokes at the ends of letters (Times New Roman, Georgia). Feel traditional, trustworthy, and editorial. Best for print body text."
+           "description": "Small strokes at letter ends (Georgia, Times). Traditional, trustworthy, editorial. Law firms, newspapers, finance. Excellent for print body text."
           },
           {
            "icon": "🔡",
            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Helvetica_Neue_typeface_sizes.jpg/500px-Helvetica_Neue_typeface_sizes.jpg",
            "label": "Sans-serif",
-           "description": "No strokes — clean and modern (Helvetica, Arial, Roboto). Highly legible on screens. Used for websites, apps, and headings."
+           "description": "No strokes — clean and modern (Roboto, Inter, Helvetica). Dominant in tech and UI. Every major OS default UI font is sans-serif. Your default choice for screens."
           },
           {
            "icon": "✍️",
            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Pacifico_font_specimen.png/500px-Pacifico_font_specimen.png",
            "label": "Script / Handwritten",
-           "description": "Mimic handwriting (Pacifico, Dancing Script). Convey creativity, warmth, and personality. Use sparingly — headings only."
+           "description": "Mimics handwriting (Pacifico, Dancing Script). Warm, personal, artisanal. The brewery mood board is full of these. Used ONLY for headings, max one per design."
           },
           {
            "icon": "🔠",
            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Futura_Specimen.svg/500px-Futura_Specimen.svg.png",
            "label": "Display / Decorative",
-           "description": "Eye-catching, highly stylised (Impact, Futura). Best for logos, posters, and headlines. Never use for body text."
+           "description": "Eye-catching, highly stylised (Impact, Bebas Neue). Loud and specific. Perfect for event posters. Never for body text. Never more than one per project."
           }
          ]
         },
         {
-         "type": "richText",
-         "heading": "Typographic Spacing",
-         "html": "<p>Three spacing concepts control how readable and professional your type looks:</p><ul><li><strong>Kerning</strong> — the space between two specific letters (adjusted to fix awkward gaps)</li><li><strong>Tracking</strong> — the uniform spacing between all letters across a word or line</li><li><strong>Leading</strong> — the space between lines of text (line height). Tight leading = dense; loose leading = airy and readable</li></ul>"
-        },
-        {
-         "type": "comparison",
-         "title": "Typeface: Serif vs Sans-serif",
-         "items": [
-          {
-           "label": "Serif (Times, Georgia)",
-           "points": [
-            "Small strokes at letter ends",
-            "Traditional, trustworthy feel",
-            "Best for print body text",
-            "Good for long documents and books"
-           ]
-          },
-          {
-           "label": "Sans-serif (Arial, Roboto)",
-           "points": [
-            "No strokes — clean and modern",
-            "Highly legible on screens",
-            "Used for websites and apps",
-            "Most UI and digital design uses sans-serif"
-           ]
-          }
+         "type": "table",
+         "headers": [
+          "Property",
+          "What it controls",
+          "Example"
+         ],
+         "rows": [
+          [
+           "Typeface",
+           "The font family / personality",
+           "Inter, Georgia, Pacifico"
+          ],
+          [
+           "Weight",
+           "Thin → Regular → Bold → Black",
+           "100 (thin) → 400 (regular) → 700 (bold) → 900 (black)"
+          ],
+          [
+           "Size",
+           "Hierarchy between text levels",
+           "H1: 48px / H2: 32px / Body: 16px / Caption: 12px"
+          ],
+          [
+           "Alignment",
+           "Left, centre, right, justified",
+           "Body text = left. Centred = signage/headings only. Justified = almost never for digital."
+          ],
+          [
+           "Leading",
+           "Line height (space between lines)",
+           "1.4–1.6× font size for readable body text. Tight = posters. Loose = long-form reading."
+          ],
+          [
+           "Kerning / Tracking",
+           "Space between specific/all letters",
+           "Tracking expanded on ALL CAPS for logo treatment. Kerning fixed for specific awkward pairs."
+          ]
          ]
         },
         {
          "type": "callout",
-         "heading": "🏭 Industry Tip",
-         "text": "The golden rule: limit yourself to two font families per design — one for headings, one for body text. Choose typefaces that contrast with each other but complement each other's mood. Never use decorative fonts for body text."
+         "variant": "sandbox",
+         "heading": "💻 SANDBOX CHALLENGE · THE BREWERY BRIEF",
+         "text": "The founder's 14 fonts have been narrowed to 4 finalists:\n1. Playfair Display (serif) — 'elegant, premium'\n2. Pacifico (script) — 'handcrafted, warm'\n3. Inter (sans-serif) — 'clean, digital'\n4. Bebas Neue (display) — 'bold, industrial'\n\nYour job: Pick exactly 2. Write your type system:\n- Heading font: ___  (Why? One sentence)\n- Body font: ___  (Why? One sentence)\n- Fonts you cut and why: ___\n\nBonus: Leo will ask what font pairing rule makes your system work. Have the answer ready."
+        },
+        {
+         "type": "callout",
+         "variant": "pr-review",
+         "heading": "🛑 PR REVIEW · LEO IS CHECKING YOUR PAIRING",
+         "text": "Leo reviewed your selection. Comments in the thread:\n\nComment 1: 'You chose a script font for the heading. Tell me one rule you must follow about using script fonts for accessibility.'\nComment 2: 'Your body font is 16px. A developer on your team wants to compress it to 12px to fit more content. Give them three reasons why this is wrong.'\nComment 3: 'The founder wants the menu items in ALL CAPS. You've added spacing between the letters. What typography property did you adjust, and why does it help?'"
         },
         {
          "type": "quizQuestion",
          "question": {
           "questionType": "mcq",
-          "text": "Which typeface category is most appropriate for a law firm's website body text?",
+          "text": "A graduate designer uses a script font at 10px for a website's body text. What are the TWO most critical problems?",
           "options": [
-           "Display/decorative",
-           "Script/handwritten",
-           "Serif or sans-serif",
-           "Comic Sans"
+           "Brand inconsistency and wrong colour",
+           "Readability at small sizes and inaccessibility for users with dyslexia",
+           "It's too expensive to license and slow to load",
+           "Wrong alignment and no contrast"
           ],
-          "correctIndex": 2,
-          "explanation": "Law firms need to project professionalism and trust. Serif typefaces (traditional, authoritative) or clean sans-serif fonts are appropriate. Display and script fonts are too informal for body text."
+          "correctIndex": 1,
+          "explanation": "Script fonts have inconsistent stroke widths that become illegible below ~24px. They're also one of the hardest typefaces for dyslexic users to read. These are functional failures, not just aesthetic preferences — they make your interface inaccessible."
          }
         },
         {
          "type": "quizQuestion",
          "question": {
           "questionType": "true_false",
-          "text": "You should use as many different fonts as possible to make a design more interesting.",
+          "text": "Using more than two typeface families in a single design system makes it feel more professional and varied.",
           "correctAnswer": false,
-          "explanation": "Too many fonts create visual chaos and look unprofessional. The rule is to use a maximum of two font families per design — one for headings, one for body text."
+          "explanation": "False — the professional rule is two typeface families maximum. Additional fonts create visual noise and brand inconsistency. Inter + Playfair Display. That's it. Variety within a system comes from weight, size, and colour — not from adding more fonts."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "senior-wisdom",
+         "heading": "💡 SENIOR WISDOM · LEO THORNE, KOOMBANA CREATIVE LABS",
+         "text": "In ten years I've never once heard a user say 'I love this site because it has seven different fonts.' I have heard 'this feels chaotic and I don't trust it.' Typography is 95% of design because text is 95% of the internet. Two fonts, clear hierarchy, generous leading, left-aligned body text. That's not a limitation — that's professional discipline. The craft is in the details, not the variety."
         }
        ]
       },
       {
        "id": "compositional-rules",
        "title": "Compositional Rules",
-       "estimatedMinutes": 20,
+       "estimatedMinutes": 15,
        "blocks": [
         {
          "type": "callout",
-         "variant": "hook",
-         "heading": "🌐 Real World Scenario",
-         "text": "A photographer sends you 10 photos and asks which ones will work best for their new website header. How do you evaluate them using compositional rules?"
-        },
-        {
-         "type": "paragraph",
-         "text": "Composition is how you arrange elements within a design space. Strong composition guides the viewer's eye and makes designs feel intentional and professional — even when viewers can't explain why."
+         "variant": "ticket",
+         "heading": "🎟️ TICKET #0071 · KOOMBANA CREATIVE LABS",
+         "text": "Status: 🟢 STANDARD | Sprint 5 | Assigned to: New Intern\n\nA Margaret River photography studio wants you to select 3 hero images from a set of 10 they've provided for their new homepage. Leo needs you to apply compositional evaluation criteria, score each image, and give the studio a written rationale for the three you selected."
         },
         {
          "type": "grid",
-         "title": "Three Compositional Rules",
+         "title": "Three Compositional Rules Every Designer Uses",
          "items": [
           {
            "icon": "⊞",
            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/FingerRuleOfThirds.jpg/500px-FingerRuleOfThirds.jpg",
            "label": "Rule of Thirds",
-           "description": "Divide the canvas into a 3×3 grid. Place key subjects or focal points at the four intersections — not dead centre. Creates natural, dynamic compositions."
+           "description": "Divide canvas into 3×3. Place focal point at an intersection — not dead centre. Off-centre subjects feel natural, dynamic, and intentional. The most-used rule in photography and web design."
           },
           {
            "icon": "⬜",
            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Gridded_Page_Spread.svg/500px-Gridded_Page_Spread.svg.png",
            "label": "Grid & Alignment",
-           "description": "Align elements to invisible grid lines. Consistent alignment creates order, professionalism, and makes pages easier to scan."
+           "description": "All elements align to invisible grid lines. In CSS this is Grid and Flexbox. In Figma it's auto-layout. Consistent alignment = professional. Random placement = student project."
           },
           {
            "icon": "🌀",
            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Fibonacci_spiral_34.svg/500px-Fibonacci_spiral_34.svg.png",
            "label": "Golden Ratio",
-           "description": "A natural proportion (1:1.618) found throughout nature and architecture. Designers use it to proportion layouts, font sizes, and spacing for inherent visual harmony."
+           "description": "1:1.618 — found in nature, architecture, and logo design. Governs ideal proportions for layout sections, font-size scales (e.g. 16/26/42px follows the ratio), and image cropping."
           }
          ]
         },
         {
-         "type": "richText",
-         "heading": "Applying the Rules",
-         "html": "<p><strong>Rule of Thirds:</strong> Mentally divide your canvas into a 3×3 grid. Place your focal point at one of the four intersections — not dead centre. Off-centre subjects feel more dynamic and natural.</p><p><strong>Grid & Alignment:</strong> Align all elements to invisible grid lines. Consistent alignment creates structure and makes pages easier to scan. In web design, CSS Grid and Flexbox enforce these rules automatically.</p><p><strong>Golden Ratio:</strong> The proportion 1:1.618 appears throughout nature (shells, flowers, human faces). Using it to proportion layouts, font sizes, and element spacing creates inherent visual harmony.</p>"
+         "type": "callout",
+         "variant": "sandbox",
+         "heading": "💻 SANDBOX CHALLENGE · IMAGE SCORING RUBRIC",
+         "text": "Create a scoring rubric for the photography studio. Score each compositional rule out of 5. Then define:\n\n1. What does a 5/5 'Rule of Thirds' image look like? (One sentence)\n2. What does a 1/5 'Rule of Thirds' image look like? (One sentence)\n3. An image scores 5/5 on composition but the subject is slightly blurry. Does it still qualify as a hero image? Why or why not?\n4. The studio insists on using an image where the subject is dead centre. Make the design case for why this is wrong — then describe ONE situation where a centred composition is actually intentional and correct."
         },
         {
          "type": "callout",
-         "heading": "🏭 Industry Tip",
-         "text": "Rules are guidelines, not laws. Expert designers break these rules intentionally to create surprise or draw attention. But you need to understand the rules before you can break them effectively — and you need to be able to explain why you broke them."
+         "variant": "pr-review",
+         "heading": "🛑 PR REVIEW · LEO IS CHECKING YOUR RATIONALE",
+         "text": "Leo reviewed your image selections. His comments:\n\nComment 1: 'You selected Image 7 which has the horizon dead centre. You said it was balanced. But which compositional rule does this violate, and how does it affect the user's emotional response?'\nComment 2: 'Image 3 follows rule of thirds perfectly but the grid alignment on the website would put text over the subject's face. How do you solve this while preserving the compositional rule?'"
         },
         {
          "type": "quizQuestion",
          "question": {
           "questionType": "mcq",
-          "text": "According to the rule of thirds, where should a photographer position their main subject?",
+          "text": "A photographer places the horizon line exactly in the middle of every landscape photo. Which compositional rule are they ignoring?",
           "options": [
-           "Dead centre of the frame",
-           "At one of the four grid intersections",
-           "In the top-left corner",
-           "At the bottom edge"
+           "Golden ratio",
+           "Grid and alignment",
+           "Rule of thirds",
+           "Colour harmony"
           ],
-          "correctIndex": 1,
-          "explanation": "The rule of thirds places the main subject at one of the four intersections created by dividing the frame into a 3×3 grid. This creates a more dynamic, natural composition than placing the subject dead centre."
+          "correctIndex": 2,
+          "explanation": "Rule of thirds — placing the horizon at the top or bottom third creates a more dynamic, intentional image. Dead-centre horizon creates tension and feels static. The rule of thirds is the first compositional rule taught to every photography and design student for this exact reason."
          }
+        },
+        {
+         "type": "callout",
+         "variant": "senior-wisdom",
+         "heading": "💡 SENIOR WISDOM · LEO THORNE, KOOMBANA CREATIVE LABS",
+         "text": "Rules are guidelines. Break them deliberately, not by accident. I've seen centred compositions become iconic logos. I've seen 'incorrect' grids create masterpiece album covers. The difference is intent and mastery. Learn the rules until they're instinct. Then — and only then — break them on purpose, and be ready to defend every decision in the client meeting."
         }
        ]
       },
