@@ -197,12 +197,22 @@ export function BlockRenderer({ block }: { block: Block }) {
           {block.title && <h3 className="font-semibold">{block.title}</h3>}
           <div className="mt-2 grid gap-3 sm:grid-cols-2">
             {block.items.map((it, i) => (
-              <div key={i} className="rounded-lg border p-3">
-                <p className="font-medium">
-                  {it.icon ? `${it.icon} ` : ""}
-                  {it.label}
-                </p>
-                <p className="mt-1 text-sm text-muted-foreground">{it.description}</p>
+              <div key={i} className="overflow-hidden rounded-lg border">
+                {it.photo && (
+                  <img
+                    src={it.photo}
+                    alt={it.label}
+                    className="h-36 w-full object-cover"
+                    loading="lazy"
+                  />
+                )}
+                <div className="p-3">
+                  <p className="font-medium">
+                    {it.icon ? `${it.icon} ` : ""}
+                    {it.label}
+                  </p>
+                  <p className="mt-1 text-sm text-muted-foreground">{it.description}</p>
+                </div>
               </div>
             ))}
           </div>
