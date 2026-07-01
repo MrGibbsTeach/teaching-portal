@@ -1,0 +1,639 @@
+[
+  {
+    "id": "privacy-act-1988",
+    "title": "Privacy Act 1988",
+    "estimatedMinutes": 25,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #4001 · REGIONAL ETHICS TECH GROUP",
+        "text": "INTERN BRIEFING: Sloane's team is finalising a data management system for a regional health provider. The system will collect patient identifiers, appointment histories, Medicare numbers, and health condition records. Before a single patient record enters the database, the Ethics Tech Group must confirm that the system's architecture, consent model, and data governance framework are compliant with the Privacy Act 1988 and the Australian Privacy Principles. This is the most legally consequential brief on your desk this week."
+      },
+      {
+        "type": "paragraph",
+        "text": "The Privacy Act 1988 (Cth) is Australia's primary federal privacy legislation. It establishes the Australian Privacy Principles (APPs) — 13 legally binding obligations governing how organisations collect, use, store, disclose, and provide access to personal information. Any IT professional building, operating, or advising on systems that handle personal data needs to understand these obligations in depth, not in summary."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Privacy Act 1988 (Cth)", "definition": "Australia's principal federal privacy law, establishing the Australian Privacy Principles and the Notifiable Data Breaches scheme. Applies to Australian government agencies and many private sector organisations." },
+          { "term": "Personal Information", "definition": "Information or an opinion about an identified individual, or an individual who is reasonably identifiable — whether true or not, and whether recorded in material form or not. (Privacy Act 1988, s6)" },
+          { "term": "Sensitive Information", "definition": "A subset of personal information attracting higher protection: health and medical information, racial or ethnic origin, political opinions, religious beliefs, sexual orientation, criminal records, and biometric data." },
+          { "term": "Notifiable Data Breaches (NDB) Scheme", "definition": "A mandatory notification framework under Part IIIC of the Privacy Act 1988 requiring covered entities to notify the OAIC and affected individuals when an eligible data breach is likely to result in serious harm." },
+          { "term": "Office of the Australian Information Commissioner (OAIC)", "definition": "The independent federal regulatory body responsible for administering the Privacy Act 1988, investigating complaints, and issuing determinations and enforceable undertakings." }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · DR. ELARA FINCH, REGIONAL ETHICS TECH GROUP",
+        "text": "Health data is the most sensitive category of personal information the Privacy Act covers. A breach of patient records doesn't just create a legal liability — it can damage trust in the health system, expose vulnerable people to discrimination, and cause direct psychological harm. When I review health IT systems, I start with the worst-case breach scenario and work backwards to the design. If the architecture can't survive that scenario without catastrophic harm, it needs to be redesigned before it goes live."
+      },
+      {
+        "type": "heading",
+        "text": "The Australian Privacy Principles (APPs)",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "The 13 APPs are divided into three functional groups: how organisations manage personal information (APPs 1–3), how they use and disclose it (APPs 4–8), and how individuals can access and correct their own information (APPs 12–13). Understanding which APPs apply to which system functions is a core IT governance skill."
+      },
+      {
+        "type": "table",
+        "headers": ["APP", "Principle", "IT System Implication"],
+        "rows": [
+          ["APP 1", "Open and transparent management — publish a privacy policy", "Systems must have a publicly accessible, accurate privacy policy"],
+          ["APP 2", "Anonymity and pseudonymity — individuals may interact anonymously where practicable", "Where possible, allow users to interact without mandatory identification"],
+          ["APP 3", "Collection of solicited personal information — collect only what is necessary", "Minimum data collection design; no harvesting beyond stated purpose"],
+          ["APP 4", "Dealing with unsolicited personal information — must be de-identified or destroyed if not needed", "If data arrives that wasn't requested, it must be assessed and handled appropriately"],
+          ["APP 5", "Notification of collection — notify individuals at time of collection", "Collection notices at data entry points; clearly stated purpose"],
+          ["APP 6", "Use and disclosure — only use data for the purpose it was collected", "No secondary commercial use; no on-selling without consent"],
+          ["APP 7", "Direct marketing — strict limits on using data for marketing", "Opt-in requirements; easy unsubscribe; links to Spam Act 2003"],
+          ["APP 8", "Cross-border disclosure — ensure overseas recipients meet equivalent standards", "Vendor contracts; cloud storage location review; data residency clauses"],
+          ["APP 9", "Government identifiers — strict rules on using Medicare, tax file numbers etc.", "Cannot use government IDs as universal record keys without authorisation"],
+          ["APP 10", "Quality — ensure personal information is accurate, complete, current", "Data validation; regular audits; correction processes"],
+          ["APP 11", "Security — protect against misuse, interference, loss, and unauthorised access", "Encryption, access controls, audit logs, penetration testing"],
+          ["APP 12", "Access — individuals can request access to their own information", "User self-service portals; response within 30 days"],
+          ["APP 13", "Correction — individuals can request correction of inaccurate data", "Correction request workflow; response and documentation obligations"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Identity Theft and the Privacy Act",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Identity theft is enabled by inadequate privacy protection. When personal information is collected beyond what is necessary, stored insecurely, or shared without proper controls, it creates the conditions for identity theft at scale. The Privacy Act 1988 does not criminalise identity theft directly — that falls under the Criminal Code Act 1995 — but APP 11's security obligation creates a legal duty to implement safeguards that reduce the risk."
+      },
+      {
+        "type": "scenarioChallenge",
+        "title": "Scenario: Health System Privacy Audit",
+        "scenario": "Sloane's health data system collects: patient name, Medicare number, date of birth, home address, phone number, GP referral notes (including mental health diagnoses), appointment history, and payment information. The system is hosted on a US-based cloud server. Patients are not notified what their data is used for beyond 'providing health services.' The system uses the Medicare number as the unique identifier across all records. Admin staff have access to all fields including the mental health diagnoses.",
+        "questions": [
+          { "question": "Identify three specific Australian Privacy Principle violations in this system design and explain what changes are required to achieve compliance.", "marks": 6 },
+          { "question": "The system is hosted on a US-based cloud server. Which APP specifically governs cross-border data disclosure, and what must the health provider do before data can be lawfully stored overseas?", "marks": 3 },
+          { "question": "A patient's mental health diagnosis is accidentally included in an email sent to the wrong recipient. Assess whether this triggers the Notifiable Data Breaches scheme, including all relevant factors.", "marks": 4 }
+        ]
+      },
+      {
+        "type": "spotTheThreat",
+        "title": "Spot the Privacy Threat",
+        "instruction": "Review these two communications. Identify which one represents a phishing attempt targeting personal health information and explain the specific tactics used.",
+        "emails": [
+          {
+            "isPhishing": true,
+            "from": "noreply@myhealth-gov-au.info",
+            "subject": "ACTION REQUIRED: Verify your My Health Record to continue access",
+            "body": "Dear Medicare cardholder,\n\nDue to a system upgrade, your My Health Record requires immediate verification. Without verification within 48 hours, your record will be suspended.\n\nPlease provide the following to verify:\n• Medicare card number\n• Date of birth\n• Address\n• Mother's maiden name\n\nClick here to verify: http://myhealthrecord-verify.info/login\n\nAustralian Government Digital Health Agency",
+            "redFlags": [
+              { "element": "Domain spoofing", "detail": "myhealth-gov-au.info is not a government domain — legitimate Australian government sites use .gov.au. The hyphenated structure is a classic spoof." },
+              { "element": "Requests for mother's maiden name", "detail": "Government health systems never request security questions via email — this is a standard identity theft credential harvesting tactic" },
+              { "element": "Verification link domain", "detail": "The link goes to myhealthrecord-verify.info, not digitalhealth.gov.au — a phishing redirect to a credential-harvesting page" },
+              { "element": "Urgency and suspension threat", "detail": "'48 hours or suspension' is a pressure tactic designed to override critical thinking and prevent verification of the email's legitimacy" }
+            ]
+          },
+          {
+            "isPhishing": false,
+            "from": "noreply@digitalhealth.gov.au",
+            "subject": "Your My Health Record — Summary of recent activity",
+            "body": "This is your monthly My Health Record activity summary. In the past 30 days, 2 healthcare providers have accessed your record.\n\nTo review who accessed your record, visit myhealth.gov.au and log in using your myGov credentials.\n\nIf you did not consent to these access events, contact us via the secure message centre on the My Health Record portal.\n\nAustralian Digital Health Agency",
+            "redFlags": []
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · DR. FINCH IS IN THE REVIEW",
+        "text": "Before the health system goes live:\n1. The system currently gives all admin staff access to full patient records, including mental health diagnoses. What access control principle would you apply, and which APP requires it?\n2. The health provider wants to use de-identified patient data for medical research. Does de-identified data fall outside the Privacy Act 1988? What risks does 're-identification' create?\n3. If there is a data breach and the health provider fails to notify the OAIC within the required timeframe, what penalties can the OAIC impose — and have these increased since 2022?"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "pa88-u4-q1",
+          "questionType": "mcq",
+          "text": "Under the Australian Privacy Principles, which principle specifically requires organisations to protect personal information from misuse, interference, loss, and unauthorised access or disclosure?",
+          "options": [
+            "APP 3 — Collection of solicited personal information",
+            "APP 6 — Use or disclosure of personal information",
+            "APP 11 — Security of personal information",
+            "APP 13 — Correction of personal information"
+          ],
+          "correctIndex": 2,
+          "explanation": "APP 11 requires organisations to take reasonable steps to protect personal information from misuse, interference, and loss, and from unauthorised access, modification, or disclosure. It also requires proper destruction or de-identification when the information is no longer needed."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "pa88-u4-q2",
+          "questionType": "short_answer",
+          "text": "What is the Notifiable Data Breaches (NDB) scheme, and what must an organisation do when an eligible data breach occurs? Include the key timeframe and the parties who must be notified.",
+          "marks": 4,
+          "explanation": "Award 2 marks for correctly describing the NDB scheme as the mandatory notification framework under Part IIIC of the Privacy Act 1988 requiring covered entities to notify affected parties when a breach is likely to result in serious harm. Award 1 mark for identifying that notification must be made to the OAIC. Award 1 mark for the notification timeframe — as soon as practicable, and no later than 30 days after becoming aware of the eligible breach — and that affected individuals must also be notified."
+        }
+      }
+    ]
+  },
+  {
+    "id": "safe-disposal-of-data-and-devices",
+    "title": "Safe Disposal of Data and Devices",
+    "estimatedMinutes": 25,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #4002 · REGIONAL ETHICS TECH GROUP",
+        "text": "INTERN BRIEFING: A government legal firm is disposing of 80 computers as part of a hardware refresh. An audit has revealed that previous disposals at this organisation resulted in drives being donated to a charity shop — still containing client files, including privileged legal communications and personal financial records. We have been asked to develop a binding data disposal protocol that meets Privacy Act 1988 obligations and industry data sanitisation standards. The previous approach was not just negligent — it was a notifiable breach."
+      },
+      {
+        "type": "paragraph",
+        "text": "End-of-life hardware is one of the most consistently underestimated data security risks in Australian organisations. Studies have found recoverable personal and confidential data on second-hand devices purchased at charity shops, online marketplaces, and corporate asset sales. The Privacy Act 1988 does not end when a device is switched off — the obligation to protect personal information persists until that information is properly destroyed or de-identified."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Data Sanitisation", "definition": "The deliberate, verifiable, and irreversible process of removing all data from a storage device, such that it cannot be recovered by any technical means — going beyond simple deletion or formatting." },
+          { "term": "NIST SP 800-88", "definition": "The National Institute of Standards and Technology's Guidelines for Media Sanitisation — the internationally recognised standard for secure data erasure across different media types." },
+          { "term": "Degaussing", "definition": "Exposing a magnetic storage device (hard drive, magnetic tape) to a powerful magnetic field that permanently scrambles the magnetic storage patterns, rendering data unrecoverable — not effective on SSDs." },
+          { "term": "BYOD (Bring Your Own Device)", "definition": "A workplace policy allowing employees to use personally owned devices for work purposes — creating complex obligations around data separation, sanitisation, and disposal when employment ends." }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · DR. ELARA FINCH, REGIONAL ETHICS TECH GROUP",
+        "text": "The charity shop drive story isn't rare — it's common. I've personally recovered client files, HR records, and banking credentials from 'wiped' drives purchased at second-hand stores. And I've done it with free tools in under an hour. The moment you allow a device to leave the building without verified data destruction, you have made a decision about your clients' privacy. Make it deliberately, with a documented process — or own the consequences when the breach report arrives."
+      },
+      {
+        "type": "heading",
+        "text": "Why Simple Deletion Is Insufficient",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "When a file is 'deleted' on a conventional operating system, only the index entry pointing to that file is removed. The data itself remains on the storage media until it is overwritten by new data — a process that may take months or never occur on lightly used drives. Free data recovery tools such as Recuva can recover 'deleted' files in minutes on drives that have not been properly sanitised."
+      },
+      {
+        "type": "list",
+        "style": "bullet",
+        "items": [
+          "Recycle bin / trash emptying: only removes the file listing — data is fully recoverable",
+          "Quick format: rewrites the file system header — data beneath it remains fully intact",
+          "Full format (Windows): overwrites all sectors with zeros — significantly more secure but not certified for sensitive data",
+          "Factory reset (mobile devices): effectiveness varies by device and OS — may not overwrite encrypted containers correctly",
+          "Encryption then deletion: if the device was fully encrypted before deletion, destruction of the encryption key renders remaining data unrecoverable"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Methods of Secure Data Disposal",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Method", "How It Works", "Best For", "Limitation"],
+        "rows": [
+          ["NIST 800-88 overwriting software (e.g., DBAN, Blancco)", "Overwrites all storage sectors with patterns of data multiple times", "HDDs; reusable drives; large-volume disposal", "Slow on large drives; not certified for SSDs; requires power and boot capability"],
+          ["Secure Erase (ATA/NVMe command)", "Device's own firmware-level erase command — wipes all sectors including remapped sectors", "SSDs; NVMe drives; flash storage", "Must verify manufacturer implementation; not all firmware implementations are equal"],
+          ["Degaussing", "Strong magnetic field scrambles magnetic storage patterns permanently", "HDDs and magnetic tape; high-security environments", "Renders drive unusable; does NOT work on SSDs, USB flash, or optical media"],
+          ["Physical destruction (shredding)", "Industrial shredding reduces drive to fragments below recoverable threshold", "Classified/sensitive data; end-of-life devices with no reuse value", "Device cannot be reused; must use certified shredding with chain of custody documentation"],
+          ["Cryptographic erasure", "Destroy the encryption key, rendering encrypted data permanently inaccessible", "Encrypted full-disk devices; cloud storage", "Requires device to have been fully encrypted before disposal — planning required upfront"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Industry Standards and Documentation Requirements",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Professional data disposal requires more than technical action — it requires a documented audit trail. For each disposed asset, organisations should record: the asset identifier, the disposal method used, the date of disposal, the name of the person who performed it, and (for physical destruction) a certificate of destruction from the service provider. This documentation is essential evidence in the event of a Privacy Act investigation."
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · DATA DISPOSAL PROTOCOL",
+        "text": "Design a 'Data Disposal Protocol' for the law firm. Your protocol must cover: (1) a data classification tier system (e.g., public, internal, confidential, legal privilege) and the appropriate disposal method for each tier; (2) the specific process for each device type in the firm's inventory — desktops, laptops, SSDs, USB drives, mobile phones; (3) the documentation requirements for each disposal event; (4) the BYOD policy provisions for departing employees; and (5) which Privacy Act 1988 obligations the protocol addresses. The protocol must be a working document, not an academic essay."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · DR. FINCH IS IN THE REVIEW",
+        "text": "Before the disposal protocol is finalised:\n1. A partner at the law firm insists on keeping a 10-year-old laptop for personal use after retirement, arguing it contains 'nothing important.' What is your process for verifying this claim — and what is your answer if the verification reveals client files?\n2. The firm uses a cloud storage provider for some client documents. When the firm terminates its cloud contract, what data disposal obligations exist for both the firm and the cloud provider?\n3. A junior employee accidentally runs a disposal process on an active production server. What immediate steps must the firm take — and does this incident trigger the Notifiable Data Breaches scheme?"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "disp-u4-q1",
+          "questionType": "mcq",
+          "text": "A law firm needs to securely dispose of 20 SSDs containing privileged client files. Which of the following disposal methods is MOST appropriate?",
+          "options": [
+            "Quick format each drive using Windows Explorer",
+            "Degaussing — expose each drive to a strong magnetic field",
+            "Physical shredding using a certified destruction service with a chain of custody certificate",
+            "Running a single-pass overwrite using standard deletion software"
+          ],
+          "correctIndex": 2,
+          "explanation": "For highly sensitive data (legal privilege) on SSDs, physical destruction via certified shredding is the most reliable method. Degaussing does not work on SSDs (which use flash memory, not magnetic storage). Quick format and single-pass overwrite are insufficient for sensitive legal data."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "disp-u4-q2",
+          "questionType": "short_answer",
+          "text": "Explain why degaussing is NOT an appropriate data sanitisation method for solid-state drives (SSDs) and describe one method that is appropriate for SSD disposal.",
+          "marks": 3,
+          "explanation": "Award 2 marks for correctly explaining that degaussing works by disrupting magnetic storage patterns — SSDs use flash memory (NAND), which stores data electrically and is not affected by magnetic fields. Degaussing an SSD has no effect on the data. Award 1 mark for a correct alternative: NIST 800-88 ATA Secure Erase command (using the drive's own firmware), cryptographic erasure (if the drive was pre-encrypted), or physical shredding."
+        }
+      }
+    ]
+  },
+  {
+    "id": "the-digital-divide",
+    "title": "The Digital Divide",
+    "estimatedMinutes": 25,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #4003 · REGIONAL ETHICS TECH GROUP",
+        "text": "INTERN BRIEFING: The Ethics Tech Group has been commissioned by a federal parliamentary committee to provide evidence on the impact of the digital divide on access to government services in regional and remote Australia. The committee wants to understand: who is excluded, why, what the consequences are, and what policy interventions have proven effective. This is a high-stakes evidence submission — it will inform funding decisions affecting hundreds of thousands of Australians."
+      },
+      {
+        "type": "paragraph",
+        "text": "The digital divide is not simply a gap between those who own devices and those who don't. It is a multi-layered social inequality that encompasses access to infrastructure, the skills to use it effectively, the economic means to maintain connectivity, and the relevance of digital content to different communities. As IT professionals, we build the digital systems that society increasingly depends on — and if those systems only serve people who are already digitally included, we are actively perpetuating inequality."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Digital Divide", "definition": "The gap between individuals, households, and communities who have meaningful access to digital technology and the internet, and those who do not — extending beyond device ownership to encompass skills, affordability, and relevance." },
+          { "term": "Digital Inclusion", "definition": "The set of conditions that enable all people to participate meaningfully in digital society — including affordable access, appropriate devices, digital skills, and locally relevant content." },
+          { "term": "WCAG (Web Content Accessibility Guidelines)", "definition": "International standards (published by the W3C) defining how to make web content accessible to people with disabilities — including visual, auditory, cognitive, and motor impairments. Australian government websites must meet WCAG 2.1 AA." },
+          { "term": "Infrastructure Inequality", "definition": "Disparity in the quality, reliability, and affordability of digital infrastructure — particularly the contrast between metropolitan NBN speeds and remote satellite or mobile connectivity." }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · DR. ELARA FINCH, REGIONAL ETHICS TECH GROUP",
+        "text": "When we moved Centrelink online, we assumed everyone could access the internet from home. We were wrong. A single mother in remote Queensland with a pre-paid $30 mobile plan, a cracked phone screen, and no fixed broadband isn't digitally excluded by choice — she's excluded by circumstance. Every government service that moves online without a non-digital alternative is a gate that closes in front of people who already have the least. Accessibility is not a feature request — it's a justice issue."
+      },
+      {
+        "type": "heading",
+        "text": "Dimensions of the Digital Divide",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Dimension", "Description", "Australian Example"],
+        "rows": [
+          ["Access divide", "No reliable broadband or mobile connectivity available", "Remote and very remote communities with no NBN fixed-line access; reliance on low-speed satellite"],
+          ["Affordability divide", "Cost of devices and data plans is prohibitive", "Low-income households choosing between data and food; prepaid plans limiting daily data access"],
+          ["Skills divide", "Lack of digital literacy to use technology effectively", "Older Australians unfamiliar with online government portals; people who never received digital education"],
+          ["Relevance divide", "Digital content and services do not meet the needs of a community", "Government services offered only in English; platforms not designed for low-literacy users"],
+          ["Accessibility divide", "Technology is not usable by people with disabilities without adaptation", "Websites that do not meet WCAG 2.1 AA; apps with no screen reader support"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "The Digital Divide in Australia",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Australia's digital divide maps closely onto existing social inequalities: geographic remoteness, Indigenous Australians, people with disabilities, low-income households, older Australians, and newly arrived migrants are all statistically more likely to be digitally excluded. The Australian Digital Inclusion Index (ADII) annually tracks inclusion levels and consistently shows significant gaps between metropolitan and regional or remote populations."
+      },
+      {
+        "type": "heading",
+        "text": "Government Initiatives to Bridge the Divide",
+        "level": 2
+      },
+      {
+        "type": "list",
+        "style": "bullet",
+        "items": [
+          "National Broadband Network (NBN): universal broadband program extending fibre, fixed wireless, and satellite connectivity — though speeds and reliability still vary significantly by technology type",
+          "Starlink and Sky Muster Plus: low-latency satellite internet for remote properties and communities — improving access but still cost-prohibitive for many",
+          "Be Connected program: federal government digital literacy initiative targeting Australians over 50 and other at-risk groups",
+          "WCAG 2.1 AA compliance mandate: Australian Government sites required to meet accessibility standards under the Web Accessibility National Transition Strategy",
+          "Remote Indigenous Community Wi-Fi programs: federally funded community Wi-Fi infrastructure in remote Aboriginal and Torres Strait Islander communities"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · PARLIAMENTARY SUBMISSION",
+        "text": "Draft a 600-word evidence submission to the Parliamentary Committee on Digital Inclusion. Your submission must: (1) identify the three groups most severely affected by the digital divide in Australia and provide evidence for each; (2) analyse how the shift of government services online has affected these groups; (3) evaluate the effectiveness of one existing government initiative (choose: NBN, Be Connected, or WCAG mandate); and (4) recommend two additional policy interventions, with justification. Write for a parliamentary audience — precise, evidenced, and policy-focused."
+      },
+      {
+        "type": "scenarioChallenge",
+        "title": "Scenario: The Online-Only Welfare System",
+        "scenario": "The federal government proposes that from next year, all Centrelink payments will require online-only applications, digital identity verification, and monthly online check-ins. Face-to-face service centres will close. Services Australia estimates this will save $400 million annually. Independent modelling suggests 15% of current Centrelink recipients have no reliable internet access.",
+        "questions": [
+          { "question": "Who are the specific population groups most likely to be excluded by this policy change, and what evidence exists about their current digital access?", "marks": 3 },
+          { "question": "Assess this policy against the principle of digital inclusion. What obligations does a government have to ensure its services are accessible to all citizens?", "marks": 4 },
+          { "question": "Propose three specific design modifications to the policy that would maintain cost savings while protecting the rights of digitally excluded citizens.", "marks": 4 }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · DR. FINCH IS IN THE REVIEW",
+        "text": "Before the parliamentary submission is finalised:\n1. The committee chair argues that the digital divide will solve itself as younger, more digitally literate generations replace older ones. What is the evidence for and against this 'generational solution' argument?\n2. WCAG 2.1 AA is the current Australian government accessibility standard. What specific user groups benefit from WCAG compliance — and what types of barrier does WCAG not address?\n3. A policy advisor suggests that public libraries could serve as the digital access point of last resort for excluded groups. What are the realistic limitations of this proposal, particularly in remote and rural contexts?"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "dd-u4-q1",
+          "questionType": "mcq",
+          "text": "Which of the following BEST describes the concept of the digital divide?",
+          "options": [
+            "The gap between old and new computer hardware within a single organisation",
+            "The difference between the number of apps available on iOS versus Android",
+            "A multi-dimensional inequality in access to, ability to use, and benefit from digital technology — affecting participation in social, economic, and civic life",
+            "The security gap between devices that have and have not installed antivirus software"
+          ],
+          "correctIndex": 2,
+          "explanation": "The digital divide is a multi-dimensional concept encompassing not just physical access to devices and connectivity, but digital literacy, affordability, the relevance of digital services, and accessibility for people with disabilities. It is fundamentally a social equity issue, not just a technical one."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "dd-u4-q2",
+          "questionType": "short_answer",
+          "text": "Explain what WCAG 2.1 AA means and give two specific examples of how a website that does not meet WCAG 2.1 AA standards would exclude particular groups of users.",
+          "marks": 4,
+          "explanation": "Award 2 marks for correctly explaining that WCAG 2.1 AA are the Web Content Accessibility Guidelines — an international standard (W3C) mandated for Australian government websites — that define how web content can be made accessible to people with a range of disabilities. Award 1 mark each for two valid examples: e.g., a site with no alt-text on images excludes users of screen readers (visual impairment); a site with no keyboard navigation excludes users with motor impairments who cannot use a mouse; videos with no captions exclude users who are deaf or hard of hearing; insufficient colour contrast excludes users with colour vision deficiency."
+        }
+      }
+    ]
+  },
+  {
+    "id": "ecommerce-and-247-business",
+    "title": "E-Commerce and 24/7 Business",
+    "estimatedMinutes": 25,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #4004 · REGIONAL ETHICS TECH GROUP",
+        "text": "INTERN BRIEFING: A regional artisan food producer wants to move from a Saturday farmers' market stall to a fully online 24/7 e-commerce operation. They've asked the Ethics Tech Group for advice on the legal, ethical, and practical obligations they will take on as an online business. Key questions: what consumer protection laws apply, what privacy obligations arise when they collect customer data, and how should they handle aggressive automated marketing. This is a growth advisory — but it's also a compliance audit before they launch."
+      },
+      {
+        "type": "paragraph",
+        "text": "E-commerce has transformed the economics of small business by removing geographic constraints and extending trading hours to 24 hours a day, 7 days a week. But 24/7 availability is not simply a technical feature — it creates legal obligations, customer service expectations, security requirements, and supply chain pressures that physical businesses rarely face. Understanding this ecosystem is essential for IT professionals who build and advise on e-commerce platforms."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "E-Commerce", "definition": "Commercial transactions conducted electronically over the internet — including the buying and selling of goods and services, online payments, digital product delivery, and electronic business-to-business transactions." },
+          { "term": "Australian Consumer Law (ACL)", "definition": "Schedule 2 of the Competition and Consumer Act 2010 (Cth) — the primary law governing consumer rights and business obligations in Australia, including online sales, refunds, warranties, and misleading conduct." },
+          { "term": "Spam Act 2003 (Cth)", "definition": "Australian legislation prohibiting the sending of unsolicited commercial electronic messages (spam). Requires that commercial emails have consent, identify the sender, and contain a functional unsubscribe mechanism." },
+          { "term": "Payment Card Industry Data Security Standard (PCI DSS)", "definition": "A mandatory security standard for any organisation that stores, processes, or transmits credit card data — specifying controls for encryption, access, monitoring, and vulnerability management." }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · DR. ELARA FINCH, REGIONAL ETHICS TECH GROUP",
+        "text": "Going online doesn't shrink your legal obligations — it multiplies them. A physical shop has a handful of legal touchpoints: lease, trading hours, food safety, fair trading. An e-commerce business has all of those plus: a privacy policy, cookie consent, PCI DSS compliance, Australian Consumer Law online-specific obligations, Spam Act compliance, data breach notification, and platform terms of service. None of this is optional. The ones who skip it don't fail gradually — they fail suddenly, with an ACCC investigation or a ransomware attack."
+      },
+      {
+        "type": "heading",
+        "text": "How E-Commerce Changed Business Models",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "E-commerce removed the physical constraints on trade: geography, opening hours, retail space, and local customer base. A small producer in regional Western Australia can now sell directly to customers in Singapore with the same ease as selling locally. This democratisation of market access has been transformative — but it requires IT infrastructure, security, logistics, and legal compliance sophistication that physical-only businesses have never needed."
+      },
+      {
+        "type": "heading",
+        "text": "24/7 Availability — Benefits and Obligations",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Benefit", "Detail"],
+        "rows": [
+          ["No geographic limits", "Products and services accessible to customers globally, not just locally"],
+          ["Extended revenue window", "Sales can occur at any hour without staffing costs"],
+          ["Reduced overhead", "No retail lease, reduced staffing, lower physical infrastructure costs"],
+          ["Customer convenience", "Customers purchase on their schedule — increases conversion rates"],
+          ["Data-driven insights", "Every transaction generates analytics data enabling targeted improvement"]
+        ]
+      },
+      {
+        "type": "table",
+        "headers": ["Obligation / Challenge", "Detail"],
+        "rows": [
+          ["Consumer Law compliance", "ACL requires accurate product descriptions, statutory guarantees, and clear refund policies — same for online sales as physical"],
+          ["Privacy Act obligations", "Collecting customer data (name, address, payment, browsing history) triggers APP compliance requirements"],
+          ["Spam Act compliance", "Marketing emails require consent, sender identification, and a functional unsubscribe mechanism"],
+          ["PCI DSS compliance", "Any business storing or processing credit card data must meet PCI DSS security controls"],
+          ["24/7 security monitoring", "Online stores are targets for fraud, account takeover, and payment interception — require continuous monitoring"],
+          ["Cybersecurity incident response", "A breach at 3am requires an incident response plan — it can't wait until Monday morning"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "The Spam Act 2003 in E-Commerce",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "The Spam Act 2003 makes it an offence to send unsolicited commercial electronic messages (spam) to Australian accounts. For e-commerce businesses, this is directly relevant to email marketing, SMS campaigns, and automated promotional messages. Three rules must be satisfied: the message must be consented to; it must clearly identify the sender; and it must contain a functional unsubscribe mechanism that is actioned within 5 business days."
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · E-COMMERCE COMPLIANCE CHECKLIST",
+        "text": "The artisan food producer is ready to launch their e-commerce store. Before launch, create a compliance checklist that covers: (1) Australian Consumer Law requirements for online product listings and refund policies; (2) Privacy Act 1988 requirements, including what their privacy policy must contain; (3) Spam Act 2003 requirements for their email newsletter and promotional SMS campaign; (4) PCI DSS compliance for payment processing; and (5) cybersecurity minimum requirements for their platform. For each item, specify what must be in place BEFORE launch and what can be implemented in the first 90 days."
+      },
+      {
+        "type": "scenarioChallenge",
+        "title": "Scenario: The Aggressive Marketing Campaign",
+        "scenario": "Three months after launch, the artisan food producer has 4,000 customers. Their marketing consultant recommends: sending a daily promotional email to all customers who purchased in the last year; purchasing a list of 10,000 email addresses from a data broker to expand reach; sending SMS messages at 9pm to customers who haven't purchased in 60 days; and enabling 'cart abandonment' emails that automatically trigger when a customer adds to cart without purchasing.",
+        "questions": [
+          { "question": "Which of these four marketing strategies would breach the Spam Act 2003, and why? Be specific about which element of the Act is violated.", "marks": 4 },
+          { "question": "The purchased email list was described as 'opted-in marketing contacts.' Does purchasing a list satisfy the Spam Act's consent requirement? What are the legal risks?", "marks": 3 },
+          { "question": "The cart abandonment emails use customer browsing data collected when users visited the site. Which Australian Privacy Principles are relevant to this practice, and what must the business have in place to use this data lawfully?", "marks": 4 }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · DR. FINCH IS IN THE REVIEW",
+        "text": "Before the e-commerce advisory is finalised:\n1. The client asks: 'If our platform is hosted in Ireland, does Australian Consumer Law still apply to our Australian customers?' What is the answer, and what legal principle does it rest on?\n2. A competitor is running fake five-star reviews and the client wants to respond with their own fake positive reviews. What specific section of the Australian Consumer Law does this engage, and what are the penalties?\n3. The client stores credit card details to allow 'one-click checkout.' What PCI DSS obligations arise from storing this data — and what would you recommend as a safer technical alternative?"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "ecom-u4-q1",
+          "questionType": "mcq",
+          "text": "Under the Spam Act 2003, which of the following is a MANDATORY requirement for all commercial electronic messages sent to Australian recipients?",
+          "options": [
+            "The message must be sent between 9am and 5pm AEST",
+            "The message must include a functional unsubscribe mechanism",
+            "The message must be approved by the ACMA before sending",
+            "The message must only be sent to existing customers"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Spam Act 2003 requires all commercial electronic messages to: (1) be consented to; (2) clearly identify the sender; and (3) contain a functional unsubscribe mechanism that is processed within 5 business days. There is no time-of-day restriction or pre-approval requirement."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "ecom-u4-q2",
+          "questionType": "short_answer",
+          "text": "An online retailer sends promotional emails to 5,000 customers who purchased from them 3 years ago but never ticked an 'email me promotions' box. Explain whether this practice complies with the Spam Act 2003, citing the relevant provision.",
+          "marks": 3,
+          "explanation": "Award 3 marks for correctly identifying that this is likely a breach. The Spam Act 2003 requires consent for commercial electronic messages — either express consent (explicit opt-in) or inferred consent (where it's reasonably inferred from context, e.g., an ongoing business relationship). A purchase 3 years ago without any marketing opt-in is unlikely to constitute valid inferred consent, especially given the gap in time. Sending to these contacts without re-obtaining consent risks enforcement action by the ACMA, with penalties up to $250,000 per day for businesses."
+        }
+      }
+    ]
+  },
+  {
+    "id": "societys-dependency-on-digital-technology",
+    "title": "Society's Dependency on Digital Technology",
+    "estimatedMinutes": 25,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #4005 · REGIONAL ETHICS TECH GROUP",
+        "text": "INTERN BRIEFING: A major cyber attack has taken down the billing and SCADA systems of a regional electricity provider for 72 hours. Hospitals switched to emergency generators, traffic management systems failed, EFTPOS networks went offline, and essential medical refrigeration in some remote communities lost power for 18 hours before backup systems activated. The Ethics Tech Group has been asked to produce a risk assessment on society's critical dependency on digital infrastructure — and advise on what ethical obligations IT professionals carry as stewards of that infrastructure."
+      },
+      {
+        "type": "paragraph",
+        "text": "We have built a society that cannot function without digital technology. Healthcare, banking, transport, utilities, communications, food supply, and emergency services all depend on interconnected digital systems. This dependency is so deep that a significant cyber attack on a single sector can cascade into failures across multiple others. As IT professionals, we are not just technicians — we are custodians of infrastructure that people's lives depend on."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Critical Infrastructure", "definition": "Physical and digital systems essential to national security, public health, safety, and economic prosperity — including electricity grids, water systems, banking networks, hospitals, and communications. Defined under the Security of Critical Infrastructure Act 2018 (Cth)." },
+          { "term": "Systemic Risk", "definition": "The risk that failure in one interconnected system will cascade into failures across other dependent systems — particularly relevant when multiple sectors share common digital infrastructure." },
+          { "term": "Digital Resilience", "definition": "The capacity of a system, organisation, or society to anticipate, absorb, recover from, and adapt to disruptions — including cyber attacks, hardware failures, and natural disasters affecting digital infrastructure." },
+          { "term": "Privacy Responsibility (Individual)", "definition": "The personal obligation of individuals to make informed choices about the personal information they share, the platforms they trust, and the security practices they maintain in their own digital lives." }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · DR. ELARA FINCH, REGIONAL ETHICS TECH GROUP",
+        "text": "When I brief government ministers on cyber risk, I use the '72-hour test': if every digital system went offline for 72 hours, what would break first — and who would die? The answer isn't hypothetical. It's insulin that wasn't refrigerated, 000 calls that didn't connect, ATMs that didn't dispense cash, and water treatment that didn't run. The IT professionals who built those systems carry a moral weight that most professions simply don't. Understanding that weight is the first step to designing responsibly."
+      },
+      {
+        "type": "heading",
+        "text": "Critical Infrastructure Dependency",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Sector", "Digital Dependency", "Consequence of Digital Failure"],
+        "rows": [
+          ["Healthcare", "Electronic patient records, medical devices, pharmacy dispensing, diagnostic equipment, telehealth", "Inability to access patient histories; medical device failures; delayed diagnosis; prescription errors"],
+          ["Banking and finance", "EFTPOS networks, internet banking, ATM networks, interbank settlement", "Cash access failure; inability to pay for essentials; supply chain payment disruption"],
+          ["Electricity", "SCADA control systems managing generation and grid distribution", "Cascading power outage; loss of heating, cooling, medical refrigeration, lighting"],
+          ["Transport", "Traffic management, GPS navigation, airport control systems, freight tracking", "Traffic gridlock, flight delays and diversions, supply chain disruption"],
+          ["Water and sewerage", "Digital treatment monitoring, pump control, quality testing systems", "Contaminated water supply; sewage system failures; public health emergency"],
+          ["Emergency services", "000 call routing, computer-aided dispatch, GPS-tracked emergency vehicles", "Delayed emergency response; inability to coordinate multi-agency response"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Individual Responsibility in a Digitally Dependent Society",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Critical infrastructure security is not solely a government or corporate responsibility. Personal cyber hygiene — using strong passwords, enabling MFA, keeping software updated, and not clicking suspicious links — reduces the attack surface available to adversaries who target individuals as a pathway into organisational systems. When an employee clicks a phishing link on their work laptop, they may be opening a door into a hospital's patient system or a utility's SCADA network."
+      },
+      {
+        "type": "list",
+        "style": "bullet",
+        "items": [
+          "Use unique, strong passwords for work and personal accounts — a breached personal account can be used to access work systems via password reuse",
+          "Enable multi-factor authentication (MFA) on all accounts — reduces the effectiveness of stolen credentials by approximately 99%",
+          "Keep all software and firmware updated — most successful ransomware attacks exploit known, patched vulnerabilities that victims have not installed",
+          "Be critical of what you share online — personal details used to answer security questions (mother's maiden name, pet's name) are often publicly available from social media",
+          "Report suspicious activity immediately — the faster an incident is identified, the lower the cascading impact on interconnected systems"
+        ]
+      },
+      {
+        "type": "scenarioChallenge",
+        "title": "Scenario: The 72-Hour Blackout",
+        "scenario": "A ransomware attack on the electricity provider's SCADA system causes a 72-hour regional outage affecting 180,000 customers. The regional hospital operates on emergency generators for 72 hours, but three dialysis patients miss scheduled sessions due to transport failures. Three remote Indigenous communities lose refrigeration for insulin and vaccines for 18 hours. EFTPOS and ATMs in the region are offline for the full 72 hours. The attack originated from a phishing email clicked by a contractor who had temporary access to the SCADA vendor's system.",
+        "questions": [
+          { "question": "Identify three cascading failures in this scenario and explain how each one demonstrates the systemic nature of critical infrastructure dependency.", "marks": 6 },
+          { "question": "The attack entry point was a phishing email to a contractor. Identify three specific technical and procedural controls that could have prevented or limited the impact of this attack pathway.", "marks": 3 },
+          { "question": "Apply an ethical framework to the electricity provider's responsibilities before and after this attack. What obligations did they have to their most vulnerable customers, and what should their response priorities be?", "marks": 4 }
+        ]
+      },
+      {
+        "type": "spotTheThreat",
+        "title": "Spot the Infrastructure Threat",
+        "instruction": "Review these two communications received by an employee at the electricity provider. Identify which is a threat to critical infrastructure and explain the specific tactics and risks involved.",
+        "emails": [
+          {
+            "isPhishing": true,
+            "from": "scada-support@schneider-electric-au.helpdesk.info",
+            "subject": "URGENT: Critical firmware update for your SCADA units — action required by COB Friday",
+            "body": "Dear System Administrator,\n\nA critical security vulnerability (CVE-2025-XXXX) has been identified in the firmware version running on your SCADA control units. This vulnerability allows remote code execution.\n\nPlease download and install the patch immediately using the link below. Failure to patch within 48 hours may result in regulatory non-compliance.\n\nDownload patch: http://schneider-update-portal.info/patch_v7.4.2.exe\n\nSchneider Electric Technical Support\nAU: 1800-XXX-XXX",
+            "redFlags": [
+              { "element": "Domain spoofing", "detail": "schneider-electric-au.helpdesk.info is not Schneider Electric's domain — official communications come from @se.com. The long subdomain structure is a tell-tale spoof" },
+              { "element": "Executable download link", "detail": "Legitimate vendors never ask critical infrastructure operators to download firmware patches via email links — patches are distributed through authenticated vendor portals with verified checksums" },
+              { "element": "Urgency with regulatory threat", "detail": "'48 hours or non-compliance' is designed to bypass the change management processes that would normally catch this — a deliberate pressure tactic against industrial control operators" },
+              { "element": "CVE reference without verification path", "detail": "A real CVE would be verifiable on the NIST NVD database. No verification link or CVE details provided — a hallmark of fabricated urgency" }
+            ]
+          },
+          {
+            "isPhishing": false,
+            "from": "critical-infrastructure-alerts@asd.gov.au",
+            "subject": "ASD Advisory: Ransomware campaign targeting industrial control systems — protective actions",
+            "body": "This advisory from the Australian Signals Directorate (ASD) provides information about an active ransomware campaign targeting industrial control systems in the energy sector.\n\nOperators should: review remote access configurations, enforce MFA on all privileged accounts, and contact the ASD 24/7 hotline if suspicious activity is detected.\n\nFull advisory: cyber.gov.au/alerts [official government domain]\n\nAustralian Signals Directorate | 1300 CYBER 1",
+            "redFlags": []
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · DR. FINCH IS IN THE REVIEW",
+        "text": "Before the risk assessment is delivered to government:\n1. The Security of Critical Infrastructure Act 2018 (Cth) has been significantly expanded since its introduction. What obligations does it now place on operators of critical infrastructure — and what sectors does it cover?\n2. The electricity provider argues that it cannot be held responsible for the contractor's phishing click because the contractor was not a direct employee. Under Australian law, what factors determine liability when a contractor's action causes a cyber incident?\n3. The three most vulnerable groups in this scenario (dialysis patients, remote Indigenous communities, and people without cash access) were also the groups least likely to have redundant alternatives. What specific ethical obligations does critical infrastructure dependency create for IT professionals designing these systems — and which design principles would address them?"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "dep-u4-q1",
+          "questionType": "mcq",
+          "text": "The Security of Critical Infrastructure Act 2018 (Cth) defines 'critical infrastructure' as systems essential to which of the following?",
+          "options": [
+            "Commercial internet services and social media platforms",
+            "National security, public health, safety, and economic prosperity",
+            "Government administration and record-keeping systems only",
+            "Any computer system connected to the internet in Australia"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Security of Critical Infrastructure Act 2018 (Cth) defines critical infrastructure as assets and systems essential to national security, public safety, public health, and Australia's economic prosperity. This includes electricity, water, banking, communications, healthcare, transport, and food supply sectors."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "dep-u4-q2",
+          "questionType": "extended",
+          "text": "Using the electricity blackout scenario as your case study, analyse the ethical responsibilities of IT professionals who design, build, and maintain critical infrastructure systems. Your response should address: (a) the concept of systemic risk and how it changes the ethical calculus of technical decisions; (b) the specific obligations IT professionals carry to protect the most vulnerable members of society who are disproportionately harmed by system failures; and (c) three specific design or governance practices that would reduce the ethical risk identified in (a) and (b). (Approximately 300 words)",
+          "marks": 10,
+          "explanation": "High-quality responses will demonstrate that IT professionals designing critical systems carry a higher ethical burden than those working on non-critical software — because failures cascade and disproportionately affect vulnerable groups. Systemic risk means that individual technical decisions (e.g., allowing contractor remote access without MFA) have consequences far beyond the immediate system. Specific obligations include: designing for failure (assuming failure will occur and building resilient alternatives); equity-aware design (identifying which populations have no alternatives if the system fails); and proportional security investment (the higher the human cost of failure, the higher the investment in prevention and resilience). Design/governance practices should include: mandatory MFA for all privileged access; principle of least privilege for contractors; redundant analogue backup systems for life-safety functions; community-specific resilience plans for vulnerable groups; and regular scenario-based exercises testing worst-case failures."
+        }
+      }
+    ]
+  }
+]

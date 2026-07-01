@@ -1,0 +1,1208 @@
+[
+  {
+    "id": "data-vs-information",
+    "title": "Data vs Information",
+    "estimatedMinutes": 20,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #1001 · SW LOGISTICAL ANALYTICS",
+        "text": "Status: 🔴 URGENT | Sprint 1 | Assigned to: New Analyst\n\nA logistics client has delivered a 50,000-row spreadsheet of numbers with no headers, no units, and no context. The ops team can't tell if column C is kilometres, kilograms, or cost. Before you run a single query, I need you to understand the difference between what they've given us (data) and what we actually need (information). Get this wrong and every report we produce for the next six weeks is garbage."
+      },
+      {
+        "type": "heading",
+        "text": "Data vs Information — The Core Distinction",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "At SW Logistical Analytics, every decision a client makes is backed by information — but information has to be built from data. Raw data on its own tells you nothing. The moment you add context, structure, and meaning, data becomes information you can act on."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Data",
+            "definition": "Raw, unprocessed facts, figures, or symbols. On their own, they carry no meaning — they are simply values waiting for context."
+          },
+          {
+            "term": "Information",
+            "definition": "Data that has been processed, organised, or given context so that it is meaningful and useful for decision-making."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Think of it this way: the number 47 is data. \"47 pallets of frozen goods are delayed at Fremantle port\" is information. Same number — completely different operational value."
+      },
+      {
+        "type": "table",
+        "headers": ["Raw Data", "Information (Data + Context)"],
+        "rows": [
+          ["47", "47 pallets delayed at Fremantle port — ETA pushed to Thursday"],
+          ["12.4", "Average delivery time is 12.4 hours — 2.1 hours over the SLA target"],
+          ["0, 1, 1, 0, 1", "Boolean flags: 1 = delivery confirmed, 0 = delivery failed — 3 of 5 shipments succeeded"],
+          ["2025-07-01", "Contract start date — billing cycle begins today"],
+          ["CSV, JSON, PDF", "File formats used in the client's data pipeline — all three must be supported by the intake system"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Types of Data",
+        "level": 2
+      },
+      {
+        "type": "comparison",
+        "title": "Quantitative vs Qualitative Data",
+        "items": [
+          {
+            "label": "Quantitative (Numbers)",
+            "points": [
+              "Expressed as numbers — can be measured or counted",
+              "Examples: delivery time in hours, payload in kg, number of failed scans",
+              "Can be analysed with maths: averages, totals, percentages",
+              "Stored efficiently in CSV or database columns"
+            ]
+          },
+          {
+            "label": "Qualitative (Descriptive)",
+            "points": [
+              "Describes characteristics, categories, or qualities",
+              "Examples: delivery status labels, driver feedback, client satisfaction ratings",
+              "Cannot be averaged — but can be counted (how many said 'poor'?)",
+              "Often stored as text fields in JSON or database VARCHAR columns"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "comparison",
+        "title": "Primary vs Secondary Data",
+        "items": [
+          {
+            "label": "Primary Data",
+            "points": [
+              "Collected firsthand for a specific purpose",
+              "Examples: sensor readings from our fleet, surveys we run with clients",
+              "High reliability — we control collection conditions",
+              "More expensive and time-consuming to gather"
+            ]
+          },
+          {
+            "label": "Secondary Data",
+            "points": [
+              "Collected by someone else, repurposed for our analysis",
+              "Examples: ABS freight statistics, publicly available port schedules",
+              "Faster and cheaper to access — but quality depends on the source",
+              "Always validate secondary data before using it in client reports"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · SLOANE VANE, SW LOGISTICAL ANALYTICS",
+        "text": "Every data quality problem we've ever had comes down to one thing: someone treated raw data as if it were information. Check your context before you run your analysis. What are the units? Who collected it? When? Those three questions will save you hours of rework."
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · CLASSIFY THE DATASET",
+        "text": "The client's 50,000-row spreadsheet has five columns with no headers. Based on what you know about data types, classify each column and explain what context would be needed to turn it into useful information.\n\nColumn A: 47, 23, 89, 112, 6\nColumn B: TRUE, FALSE, FALSE, TRUE, TRUE\nColumn C: 'Completed', 'Pending', 'Cancelled', 'Completed', 'Pending'\nColumn D: 2025-06-28, 2025-06-29, 2025-06-30, 2025-07-01, 2025-07-01\nColumn E: 3.2, 1.8, 4.7, 0.9, 2.1\n\nFor each column: (1) Is it quantitative or qualitative? (2) What context would make it actionable information? (3) What file format would be most appropriate to store this data and why?"
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · SLOANE IS AUDITING YOUR WORK",
+        "text": "Before I sign off on your data classification, answer these:\n\n1. The client says Column A is 'important numbers' — but doesn't know the units. Can you use this data to build a delivery performance report? What do you tell the client?\n\n2. Column C contains 'Completed', 'Pending', and 'Cancelled'. Is this qualitative or quantitative? If I ask you to calculate the average status, what do you say?\n\n3. A colleague says 'data and information mean the same thing — it's just semantics.' How do you correct them using a specific example from the logistics industry?"
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "heading",
+        "text": "Check Your Understanding",
+        "level": 2
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-dvi-q1",
+          "questionType": "mcq",
+          "text": "SW Logistical Analytics receives a spreadsheet with a column of values: 3.2, 1.8, 4.7, 0.9. Which of the following turns this raw data into information?",
+          "options": [
+            "Saving the spreadsheet as a CSV file",
+            "Adding context: these are average delivery times in hours, where the SLA target is 2.0 hours",
+            "Sorting the column from smallest to largest",
+            "Copying the values into a PDF report"
+          ],
+          "correctIndex": 1,
+          "explanation": "Data becomes information when context is added. Knowing these are delivery times in hours, measured against an SLA of 2.0 hours, immediately makes the values meaningful — two routes are within target, two are over."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-dvi-q2",
+          "questionType": "true_false",
+          "text": "A logistics database column containing the values 'Completed', 'Pending', and 'Cancelled' is an example of quantitative data.",
+          "correctAnswer": false,
+          "explanation": "False. These values describe categories or statuses — they are qualitative data. Quantitative data is expressed as numbers that can be measured or calculated. You cannot find the 'average' of 'Completed'."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-dvi-q3",
+          "questionType": "mcq",
+          "text": "Sloane uses ABS freight statistics (collected by the Australian Bureau of Statistics) to benchmark client performance. What type of data is this?",
+          "options": [
+            "Primary qualitative data",
+            "Secondary quantitative data",
+            "Primary quantitative data",
+            "Secondary qualitative data"
+          ],
+          "correctIndex": 1,
+          "explanation": "ABS data is secondary (collected by someone else, not by SW Logistical Analytics) and quantitative (expressed as measurable numbers like freight volumes and delivery times)."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-dvi-q4",
+          "questionType": "short_answer",
+          "text": "A client sends Sloane a file named 'data.csv' containing the number 1,247 in a single cell. Explain why this is data and not information, and describe what would need to be added to make it useful.",
+          "marks": 3,
+          "explanation": "The number 1,247 is data because it has no context — it could be kilometres, units, dollars, or anything else. To become information it needs context: what does 1,247 measure? What are the units? What time period does it cover? What should it be compared against? For example: '1,247 packages delivered in June 2025 — up 12% on last month' is information that can drive a decision."
+        }
+      }
+    ]
+  },
+  {
+    "id": "accuracy-and-reliability-of-sources",
+    "title": "Accuracy and Reliability of Sources",
+    "estimatedMinutes": 20,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #1002 · SW LOGISTICAL ANALYTICS",
+        "text": "Status: 🟡 HIGH | Sprint 1 | Assigned to: New Analyst\n\nA junior analyst pulled shipping delay statistics from a logistics blog to support a client proposal. The blog cited no sources, had no author, and the 'data' was three years old. The client pushed back and the proposal was rejected. I need you to understand how to evaluate sources before anything goes into a report under the SW Logistical Analytics name. Our credibility is not negotiable."
+      },
+      {
+        "type": "heading",
+        "text": "Why Source Quality Matters in Data Work",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "At SW Logistical Analytics, every figure in a client report has to stand up to scrutiny. If a client's lawyer or auditor asks 'where did this number come from?' — you need an answer. Using inaccurate or unreliable sources doesn't just produce bad analysis; it damages the firm's reputation and can expose clients to costly decisions based on false data."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Accuracy",
+            "definition": "How correct and error-free the information is. Accurate data reflects reality without mistakes."
+          },
+          {
+            "term": "Reliability",
+            "definition": "How consistently trustworthy a source is over time. A reliable source produces dependable information repeatedly."
+          },
+          {
+            "term": "Validity",
+            "definition": "Whether the data actually measures what it claims to measure. A survey about delivery satisfaction is only valid if it asks the right people the right questions."
+          },
+          {
+            "term": "Bias",
+            "definition": "A tendency to present data in a way that favours one outcome. A freight company's own performance report may present only favourable statistics."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Evaluating Sources — The CRAAP Framework",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Before any external data goes into a SW Logistical Analytics report, run it through the CRAAP test. This is a professional evaluation framework — not optional."
+      },
+      {
+        "type": "table",
+        "headers": ["Criterion", "Key Question", "Red Flag in Logistics Data"],
+        "rows": [
+          ["Currency", "When was this data collected or last updated?", "Freight statistics older than 12 months — conditions change rapidly"],
+          ["Relevance", "Does this data relate specifically to our client's context?", "Australian freight data used for a New Zealand client"],
+          ["Authority", "Who collected this? What are their qualifications?", "Anonymous blog post, no author listed, no methodology"],
+          ["Accuracy", "Is the data supported by evidence? Can it be verified elsewhere?", "Statistics that can't be found in any other source"],
+          ["Purpose", "Why was this data published? To inform, persuade, or sell?", "Data from a company promoting its own product"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Source Reliability Hierarchy",
+        "level": 2
+      },
+      {
+        "type": "comparison",
+        "title": "Reliable vs Unreliable Sources",
+        "items": [
+          {
+            "label": "High Reliability",
+            "points": [
+              "Government agencies: ABS, Department of Infrastructure, Australian Border Force",
+              "Peer-reviewed research and industry reports (e.g. Deloitte, IBISWorld)",
+              "Established industry bodies: Freight & Trade Alliance, Supply Chain Australia",
+              "Our own primary data collected via client contracts and sensors"
+            ]
+          },
+          {
+            "label": "Low Reliability — Approach with Caution",
+            "points": [
+              "Anonymous or unsigned web content — no accountability",
+              "Social media posts, even from large companies",
+              "Press releases from companies with commercial interest in the outcome",
+              "Wikipedia — useful to find references, never cite it directly in a report",
+              "AI-generated summaries without cited primary sources"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · SLOANE VANE, SW LOGISTICAL ANALYTICS",
+        "text": "If a data point seems too good to be true — or too alarming to be real — it probably needs a second source. I run a 'can I find this in two independent, authoritative places?' check before anything goes into a proposal. One source is a lead. Two matching sources is evidence."
+      },
+      {
+        "type": "heading",
+        "text": "Recognising Bias in Data",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Bias doesn't always mean the data is fabricated — it means the data may only be showing you part of the picture. A shipping company reporting on its own on-time performance will typically report only successful deliveries. A government transport report may focus only on metrics that support current policy. Always ask: who benefits if this data is believed?"
+      },
+      {
+        "type": "list",
+        "style": "bullet",
+        "items": [
+          "Selection bias — only reporting data that supports a particular conclusion",
+          "Confirmation bias — seeking sources that agree with an existing view",
+          "Funding bias — research funded by an industry body may favour that industry's interests",
+          "Recency bias — over-weighting very recent events in trend analysis",
+          "Sample bias — drawing conclusions from a non-representative group (e.g. surveying only premium clients)"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · EVALUATE THREE SOURCES",
+        "text": "Sloane needs freight delay statistics for a client proposal. She's found three potential sources. Apply the CRAAP test to each and rate their reliability (High / Medium / Low) with justification.\n\nSource 1: ABS Survey of Motor Vehicle Use, 2024 — published by Australian Bureau of Statistics, methodology documented, sample of 18,000 businesses.\n\nSource 2: Blog post titled 'Why Australian Freight is Broken' — author listed as 'Admin', no date, published on a site selling freight consulting services.\n\nSource 3: Deloitte Access Economics 2023 Logistics Industry Report — commissioned by the Supply Chain Council, 60-page report with methodology and data sources documented.\n\nFor each source: score it on Currency, Relevance, Authority, Accuracy, and Purpose (1 = weak, 3 = strong). Total the scores. Recommend which source Sloane should use and why."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · SLOANE IS AUDITING YOUR WORK",
+        "text": "Before I approve this for the proposal, answer these:\n\n1. A colleague says 'the blog said it had 10,000 views — that means it's credible.' What's wrong with using view count as a measure of data reliability?\n\n2. The Deloitte report was commissioned by the Supply Chain Council — a lobby group for freight companies. Does this automatically make the data biased? How would you handle this in your report?\n\n3. The ABS data is from 2024 but our client wants analysis of conditions in 2025. Is currency still a concern? How would you address this gap?"
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "heading",
+        "text": "Check Your Understanding",
+        "level": 2
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-ars-q1",
+          "questionType": "mcq",
+          "text": "Sloane finds a statistic on a freight consulting company's blog: '92% of Australian businesses report supply chain disruptions.' No author, no date, no methodology. Which CRAAP criterion is most clearly failing?",
+          "options": [
+            "Currency — the data is obviously outdated",
+            "Authority — there is no identifiable author or methodology",
+            "Relevance — the data is not about logistics",
+            "Purpose — the statistic is too positive"
+          ],
+          "correctIndex": 1,
+          "explanation": "Authority is the failing criterion — with no identifiable author, no organisation, and no methodology, there is no way to verify who collected this data or how. Without authority, the statistic cannot be trusted in a professional report."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-ars-q2",
+          "questionType": "true_false",
+          "text": "A government website (.gov.au) is always 100% free from bias and can be used in any report without question.",
+          "correctAnswer": false,
+          "explanation": "False. Government sources are generally reliable, but they are not bias-free. Government agencies may present data in ways that support current policy. You still apply CRAAP — particularly Purpose — when using government data in professional analysis."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-ars-q3",
+          "questionType": "mcq",
+          "text": "Which type of bias occurs when a freight company only publishes its on-time delivery statistics and does not report late or failed deliveries?",
+          "options": [
+            "Confirmation bias",
+            "Recency bias",
+            "Selection bias",
+            "Sample bias"
+          ],
+          "correctIndex": 2,
+          "explanation": "Selection bias occurs when only data that supports a favourable conclusion is reported. Choosing to publish only on-time deliveries while omitting failures creates a distorted picture of performance."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-ars-q4",
+          "questionType": "short_answer",
+          "text": "Explain in your own words why the 'Purpose' criterion in the CRAAP test is important when evaluating logistics data. Give a specific example of a source where Purpose would raise a red flag.",
+          "marks": 3,
+          "explanation": "The Purpose criterion asks why the data was published. If a source was created to sell a product, promote an industry, or persuade rather than inform, the data may be selectively presented. Example: a freight company publishing a 'State of Australian Logistics' report has a commercial interest in presenting the industry (and their services) favourably — statistics may be cherry-picked to support that narrative rather than present a balanced picture."
+        }
+      }
+    ]
+  },
+  {
+    "id": "search-engines-and-boolean-operators",
+    "title": "Search Engines and Boolean Operators",
+    "estimatedMinutes": 20,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #1003 · SW LOGISTICAL ANALYTICS",
+        "text": "Status: 🟡 HIGH | Sprint 2 | Assigned to: New Analyst\n\nA new analyst spent three hours searching for 'Australian freight delays' and returned 40 unhelpful results. I spent six minutes using precise Boolean queries and found three usable industry reports. This is not a Google skill gap — this is a professional research skill gap. Before you go near any client data, you need to be able to conduct targeted searches that return exactly what you're looking for."
+      },
+      {
+        "type": "heading",
+        "text": "How Search Engines Index Data",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Search engines like Google work by crawling web pages, extracting and indexing text, and ranking results based on relevance signals. Understanding this process matters because it tells you how to write queries that return precise results — not a flood of marginally related pages."
+      },
+      {
+        "type": "heading",
+        "text": "Boolean Operators — The Foundation of Precise Search",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Boolean logic underpins every search engine. The three core operators — AND, OR, NOT — control how search terms are combined. Most search engines apply AND by default, but understanding all three gives you control over the scope and specificity of your results."
+      },
+      {
+        "type": "table",
+        "headers": ["Operator", "Effect", "Logistics Example", "Result"],
+        "rows": [
+          ["AND", "Both terms must appear — narrows results", "freight delay AND Australia", "Only pages mentioning both concepts"],
+          ["OR", "Either term can appear — broadens results", "CSV OR JSON OR XML", "Pages about any of these data formats"],
+          ["NOT", "Excludes the second term", "logistics software NOT SAP", "Removes SAP-specific results"],
+          ["\" \"", "Exact phrase match", "\"supply chain disruption\"", "Only pages containing this exact phrase"],
+          ["-", "Exclude a word (Google shorthand for NOT)", "freight -road", "Removes road freight results, leaving sea/air"],
+          ["site:", "Search within a specific domain", "site:abs.gov.au freight", "ABS government data only"],
+          ["filetype:", "Find specific file types", "annual report filetype:pdf", "Returns PDF documents only"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · SLOANE VANE, SW LOGISTICAL ANALYTICS",
+        "text": "The difference between a 45-minute research task and a 6-minute one is usually the first search query. Start specific — use exact phrases and site: to restrict to government or industry domains. If you get too few results, broaden with OR. Never start broad and try to filter afterward — that's how you waste hours."
+      },
+      {
+        "type": "heading",
+        "text": "Building a Professional Search Strategy",
+        "level": 2
+      },
+      {
+        "type": "list",
+        "style": "numbered",
+        "items": [
+          "Identify your core concept — what exactly do you need? (e.g. Australian port congestion data 2024)",
+          "Identify synonyms and related terms — what else might a source call this? (congestion, delays, throughput, capacity)",
+          "Choose trusted domains first — use site: to limit results to .gov.au, .edu.au, or known industry bodies",
+          "Use exact phrases for specific terms — \"container throughput\" will outperform container throughput",
+          "Use filetype:pdf to find formal reports — these are more likely to contain cited methodology",
+          "Use NOT or the minus sign to eliminate noise from your results",
+          "Evaluate every result through the CRAAP lens before using it"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · BUILD THE QUERY",
+        "text": "Sloane needs three types of information for a client proposal on rail freight in Western Australia. Build a precise Boolean search query for each requirement and explain why each query would return better results than a basic keyword search.\n\nRequirement 1: Government statistics on WA freight volumes — must be from an official Australian source, preferably a PDF report.\n\nRequirement 2: Information about freight software options — you want results about rail-specific systems, NOT road freight software and NOT SAP.\n\nRequirement 3: Research on either CSV or JSON data formats used in freight management systems.\n\nWrite each query. Then test your queries in a real search engine and record: how many results did you get? Were the top 5 results relevant? What would you change?"
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · SLOANE IS AUDITING YOUR WORK",
+        "text": "Before I accept your search results, answer these:\n\n1. You searched for 'freight data Australia' and got 4.2 million results. What is wrong with this approach, and what specific changes to the query would reduce the results to something manageable?\n\n2. A colleague uses the query: site:gov.au freight statistics. They get results from the Department of Transport and the ABS. Is this a reliable result set? What does site: actually restrict — and what doesn't it guarantee?\n\n3. You find a PDF report from 2019 titled 'WA Rail Freight 5-Year Outlook'. The filetype:pdf filter found it. Should you use it? Walk me through your CRAAP check on this specific source."
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "heading",
+        "text": "Check Your Understanding",
+        "level": 2
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-sebo-q1",
+          "questionType": "mcq",
+          "text": "Sloane wants to find official Australian government PDFs about freight statistics. Which search query is most precise?",
+          "options": [
+            "freight statistics australia",
+            "\"freight statistics\" site:gov.au filetype:pdf",
+            "freight OR statistics site:gov.au",
+            "\"freight\" AND \"statistics\" pdf australia"
+          ],
+          "correctIndex": 1,
+          "explanation": "This query uses an exact phrase match for the core concept, restricts results to government domains with site:gov.au, and limits to PDF files with filetype:pdf. The other queries are less precise — they lack exact phrases or use operators incorrectly."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-sebo-q2",
+          "questionType": "mcq",
+          "text": "Sloane is searching for information about data formats used in logistics — she wants results about CSV and JSON but NOT XML. Which query achieves this?",
+          "options": [
+            "data formats logistics CSV JSON XML",
+            "\"data formats\" logistics CSV OR JSON NOT XML",
+            "data formats logistics -XML",
+            "\"data formats\" AND logistics AND (CSV OR JSON) NOT XML"
+          ],
+          "correctIndex": 3,
+          "explanation": "The most precise query uses an exact phrase for the core concept, AND to require logistics be present, parentheses with OR for the two acceptable formats, and NOT to exclude XML. Option C is close but lacks the structure to ensure both CSV and JSON are included."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-sebo-q3",
+          "questionType": "true_false",
+          "text": "Using the NOT operator (or minus sign) in a search query broadens the results by including more sources.",
+          "correctAnswer": false,
+          "explanation": "False. NOT (and its shorthand, the minus sign) narrows results by excluding pages containing the specified term. OR is the operator that broadens search results by including either of two terms."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-sebo-q4",
+          "questionType": "short_answer",
+          "text": "Explain the difference between searching for freight delays and \"freight delays\" in a search engine. Why would Sloane use quotation marks when searching for industry-specific terms?",
+          "marks": 2,
+          "explanation": "Without quotation marks, the search engine treats 'freight' and 'delays' as separate terms and may return pages that contain these words anywhere in the text — not necessarily together. With quotation marks, only pages containing the exact phrase 'freight delays' are returned. Sloane would use this for industry-specific terms to avoid pages that discuss freight in one context and delays in a completely different context — making results far more targeted and relevant."
+        }
+      }
+    ]
+  },
+  {
+    "id": "common-file-formats",
+    "title": "Common File Formats",
+    "estimatedMinutes": 20,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #1004 · SW LOGISTICAL ANALYTICS",
+        "text": "Status: 🟡 HIGH | Sprint 2 | Assigned to: New Analyst\n\nA client sent us their delivery records as a PNG screenshot of a spreadsheet. Not a CSV. Not a JSON. A PNG. I need you to understand why this is a problem — and why every file format choice has consequences for data integrity, compatibility, and size. Leo Thorne's reporting dashboard expects specific file types. If you send the wrong format, his UI breaks. If Sparky Miller's network is throttling uploads, oversized files fail silently. File format decisions are not trivial."
+      },
+      {
+        "type": "heading",
+        "text": "Why File Format Choice Matters",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Every file format encodes data differently. The format determines file size, compatibility, editability, and quality retention. In logistics analytics, the wrong format wastes bandwidth, breaks integrations, and destroys data structure. A spreadsheet as a PNG is a photograph of data — it cannot be processed, filtered, or queried."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "File Extension",
+            "definition": "The letters after the dot in a filename (e.g. .csv, .json, .pdf) that identify the file format and tell software how to open and process the file."
+          },
+          {
+            "term": "Compression",
+            "definition": "Encoding data using fewer bits to reduce file size. Can be lossless (no quality lost, original reconstructable) or lossy (some quality permanently discarded)."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Data and Document Formats",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Format", "Extension", "Best Used For", "Key Feature in Analytics Work"],
+        "rows": [
+          ["CSV (Comma-Separated Values)", ".csv", "Exchanging structured data between systems", "Universal — every database, spreadsheet, and analytics tool reads CSV"],
+          ["JSON (JavaScript Object Notation)", ".json", "API responses, nested/hierarchical data", "Human-readable, supports nested structures — used in web APIs and data pipelines"],
+          ["PDF (Portable Document Format)", ".pdf", "Final reports, documents not to be edited", "Preserves layout on any device — not machine-readable for data processing"],
+          ["DOCX (Word Document)", ".docx", "Editable reports and written documents", "Rich formatting — not suitable for raw data exchange"],
+          ["TXT (Plain Text)", ".txt", "Logs, simple notes, raw data", "Universally readable — no formatting overhead, very small file size"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · SLOANE VANE, SW LOGISTICAL ANALYTICS",
+        "text": "CSV is the universal language of data. JSON is for systems that need structure. PDF is for humans who need to read and sign off. Never mix these up. If a client sends you a PDF of their data, your first job is extracting it into a CSV — that's two hours of work caused by one bad format decision on their end."
+      },
+      {
+        "type": "heading",
+        "text": "Image Formats",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Format", "Extension", "Compression Type", "When We Use It at SW Logistical Analytics"],
+        "rows": [
+          ["JPEG", ".jpg / .jpeg", "Lossy", "Photographs in client reports and presentations — small file size acceptable"],
+          ["PNG", ".png", "Lossless", "Charts, graphs, screenshots, logos — crisp edges essential, transparency supported"],
+          ["SVG", ".svg", "None (vector)", "Company logos, icons — scales without quality loss at any size"],
+          ["WebP", ".webp", "Both modes available", "Web-based dashboards — better quality-to-size ratio than JPEG or PNG"]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "When Leo Thorne builds the client-facing dashboard, he needs charts as PNG or SVG — never JPEG. JPEG compression introduces artefacts on sharp lines and text, which makes data visualisations look unprofessional and harder to read."
+      },
+      {
+        "type": "heading",
+        "text": "Audio and Video Formats",
+        "level": 2
+      },
+      {
+        "type": "list",
+        "style": "bullet",
+        "items": [
+          "MP3 (.mp3) — Lossy compressed audio. Small file size. Used for recorded briefings and presentations — not professional audio production",
+          "WAV (.wav) — Uncompressed audio. Full quality. Used when audio must be edited or archived without quality loss",
+          "MP4 (.mp4) — Compressed video with audio. Standard for sharing, uploading, and client presentations",
+          "SVG (.svg) — Not audio/video, but worth noting: vector graphics never pixelate unlike raster formats"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "The Three Questions Before Choosing a Format",
+        "level": 2
+      },
+      {
+        "type": "list",
+        "style": "numbered",
+        "items": [
+          "Will the recipient need to process or edit the data? → If yes, use CSV or JSON. Not PDF. Not PNG.",
+          "Does quality or precision need to be preserved exactly? → If yes, use lossless formats: PNG, WAV, SVG, CSV.",
+          "Is file size a constraint? (Sparky's network, email limits, upload quotas) → If yes, consider lossy compression or optimise before sending."
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · FORMAT AUDIT",
+        "text": "SW Logistical Analytics received a batch of files from a new client. For each file below, identify: (a) whether the format is appropriate for its stated purpose, (b) what the correct format should be if it's wrong, and (c) what problem the wrong format causes.\n\n1. delivery-records-june.png — client says this is their complete delivery database\n2. sw-logo-for-website.jpg — the company logo at 72×72 pixels for the website header\n3. client-performance-report-final.docx — sent to a client who should not be able to edit it\n4. warehouse-briefing-audio.mp3 — a 3-minute recorded meeting briefing\n5. product-prices-2025.json — a catalogue of 5,000 products and prices to import into our database"
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · SLOANE IS AUDITING YOUR WORK",
+        "text": "Before I accept this format audit, answer these:\n\n1. A colleague argues that PDF is always the safest choice because 'it works on every device.' What's the one major reason PDF is completely unsuitable for data that needs to be processed or queried?\n\n2. A client wants to send us their sales data as a WAV file — they've 'recorded it as a voice memo.' Ignore the humour. Explain specifically why audio is not a valid data format for structured tabular data and what they should send instead.\n\n3. Leo wants a chart from our analysis for his dashboard. You have it saved as JPEG at medium quality. He says PNG would be better. Is he right? Explain the compression difference and what it means visually for a chart with sharp lines and text labels."
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "heading",
+        "text": "Check Your Understanding",
+        "level": 2
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-cff-q1",
+          "questionType": "mcq",
+          "text": "SW Logistical Analytics needs to import 50,000 delivery records from a client into their database. Which format is most appropriate?",
+          "options": [
+            "PDF — preserves the layout exactly",
+            "PNG — visual format everyone can open",
+            "CSV — structured text data that any database can import",
+            "MP4 — compressed format with small file size"
+          ],
+          "correctIndex": 2,
+          "explanation": "CSV is the standard format for exchanging structured tabular data between systems. Every database, spreadsheet application, and analytics tool can import CSV. PDF cannot be queried, PNG is an image of data (not data itself), and MP4 is a video format."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-cff-q2",
+          "questionType": "true_false",
+          "text": "Saving the SW Logistical Analytics company logo as a JPEG is the best choice because JPEG files are smaller than PNG files.",
+          "correctAnswer": false,
+          "explanation": "False. While JPEG files are smaller, JPEG uses lossy compression that introduces artefacts on sharp edges and text — making logos look blurry or blocky. PNG (lossless) or SVG (vector) are always correct for logos. File size is secondary to quality for logos and branding assets."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-cff-q3",
+          "questionType": "mcq",
+          "text": "Sloane needs to send the final client performance report to a client who must not be able to edit it and who must see it formatted identically regardless of their device. Which format is correct?",
+          "options": [
+            "DOCX — widely compatible with Microsoft Office",
+            "CSV — clean and simple to open",
+            "PDF — preserves layout and is not easily editable",
+            "TXT — universally readable on any system"
+          ],
+          "correctIndex": 2,
+          "explanation": "PDF (Portable Document Format) preserves formatting across all devices and platforms and cannot be easily edited. DOCX can be modified in Word, CSV has no formatting, and TXT has no formatting at all."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-cff-q4",
+          "questionType": "mcq",
+          "text": "Leo Thorne needs a scalable logo file for SW Logistical Analytics' new web dashboard — it must look sharp at 16px and at 512px. Which format should he request?",
+          "options": [
+            "JPEG at 512×512 pixels",
+            "PNG at 512×512 pixels",
+            "SVG (vector format)",
+            "WAV (uncompressed format)"
+          ],
+          "correctIndex": 2,
+          "explanation": "SVG (Scalable Vector Graphics) is a vector format that scales to any size without quality loss. JPEG and PNG are raster formats — they have a fixed pixel dimension and become pixelated when enlarged beyond their native resolution."
+        }
+      }
+    ]
+  },
+  {
+    "id": "file-and-folder-organisation",
+    "title": "File and Folder Organisation",
+    "estimatedMinutes": 20,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #1005 · SW LOGISTICAL ANALYTICS",
+        "text": "Status: 🔴 URGENT | Sprint 3 | Assigned to: New Analyst\n\nI just had to tell a client their report would be delayed by 24 hours because the analyst working on it had saved the current version as 'report_final_FINAL_v3_USE THIS ONE.docx' on their desktop. Three people edited three different files and we can't determine which contains the approved content. This is not a technology problem — it is a professional standards problem. Every analyst at this firm follows a naming convention and folder structure. Today you learn ours."
+      },
+      {
+        "type": "heading",
+        "text": "The Cost of Poor File Organisation",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Wasted time searching for files, overwritten work, version confusion, and failed handovers are all symptoms of the same root cause: no system. At SW Logistical Analytics, a client file that can't be found or verified on deadline is a contract risk. Organisation is not optional — it's part of the job."
+      },
+      {
+        "type": "heading",
+        "text": "File Naming Conventions",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "A file name should tell you what the file is, what version it is, and when it was saved — without opening it. At SW Logistical Analytics, we use this naming structure consistently."
+      },
+      {
+        "type": "table",
+        "headers": ["Element", "Purpose", "Format", "Example"],
+        "rows": [
+          ["Client/Project code", "Identifies which client or project", "Short code or name", "SWL-CoastalFreight"],
+          ["Document type", "Describes the content", "Descriptive noun", "DeliveryReport, DataSchema, Invoice"],
+          ["Version number", "Tracks revision history", "v1.0, v1.1, v2.0", "v1.2"],
+          ["Date (YYYYMMDD)", "Enables chronological sorting", "Year first — always", "20250701"],
+          ["Status (optional)", "Shows stage of completion", "draft / review / approved", "draft"]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "A correctly named file looks like: SWL-CoastalFreight_DeliveryReport_v1.2_20250701_review.docx. Anyone on the team can see immediately what this is, when it was saved, and that it is in review — without opening it."
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · SLOANE VANE, SW LOGISTICAL ANALYTICS",
+        "text": "Use YYYYMMDD — year first, month second, day last. This is ISO 8601 and it means files sort chronologically in any file browser without any configuration. DDMMYYYY causes chaos: all your 'January' files from 2024 and 2025 appear mixed together. Use the standard. Always."
+      },
+      {
+        "type": "heading",
+        "text": "Folder Hierarchy — The SW Logistical Analytics Standard",
+        "level": 2
+      },
+      {
+        "type": "list",
+        "style": "numbered",
+        "items": [
+          "01_Briefs — client requirements, signed contracts, scope documents",
+          "02_Working — active drafts; all files versioned using the naming convention",
+          "03_Review — files sent to client or team lead for sign-off",
+          "04_Approved — client-approved versions only; no editing without creating a new version",
+          "05_Assets — raw data files (CSV, JSON), source images, reference documents",
+          "06_Delivery — final exported or submitted files; what the client actually received"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "The numbered prefix forces correct alphabetical sort order regardless of system settings. Never rely on modification date — that changes when a file is moved or synced to cloud storage."
+      },
+      {
+        "type": "heading",
+        "text": "Storage: Local, External, and Cloud",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Storage Type", "Examples", "Advantages", "Risks"],
+        "rows": [
+          ["Local (internal)", "SSD, HDD in laptop", "Fast, no internet needed", "Lost if device is stolen, damaged, or fails"],
+          ["External", "USB drive, portable HDD", "Portable, offline backup", "Easy to lose, limited capacity, no automatic sync"],
+          ["Cloud", "OneDrive, Google Drive, SharePoint", "Accessible anywhere, auto-backup, team access, version history", "Requires internet, data on third-party servers, ongoing subscription cost"]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "At SW Logistical Analytics all client files live on OneDrive in a shared workspace — not on individual laptops. If Sparky Miller's network goes down and someone hasn't synced, that's a problem. If a laptop is stolen and the analyst had local-only files, that's a bigger problem."
+      },
+      {
+        "type": "list",
+        "style": "bullet",
+        "items": [
+          "3-2-1 backup rule: 3 copies of critical data, on 2 different storage media, with 1 copy off-site (cloud)",
+          "Never use the desktop as a file storage location — it is not backed up on most systems",
+          "Avoid spaces in file names — use hyphens (-) or underscores (_) instead; spaces cause issues in command-line tools and URLs",
+          "Never use these characters: \\ / : * ? \" < > | — reserved by operating systems"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · CLEAN UP THE DISASTER",
+        "text": "A junior analyst left the project before completing a client handover. Their desktop contains these files:\n\n- report final.docx\n- report_FINAL2.docx  \n- Report Final v3 REAL.docx\n- client data.csv\n- logo.png\n- logo_small.png\n- new logo.png\n- delivery stats June.xlsx\n- BACKUP delivery stats June.xlsx\n\nYour tasks:\n1. Rename every file using the SW Logistical Analytics naming convention (invent a client code: SWL-Alpha). Use today's date (20250701) and assign appropriate version numbers.\n2. Design the folder structure (01–06) and state which folder each file belongs in.\n3. Identify which naming convention rules the original files violated (list at least four violations).\n4. Write a one-paragraph explanation of why the original file naming caused a risk to the client handover."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · SLOANE IS AUDITING YOUR WORK",
+        "text": "Before I accept your folder structure, answer these:\n\n1. You've named a file SWL-Alpha_DeliveryStats_v1_20250701.xlsx and placed it in 02_Working. The client approves it the next day. What do you do next — and what do you NOT do?\n\n2. A colleague argues that cloud storage eliminates the need for the 3-2-1 backup rule because OneDrive is 'always backed up'. What are two specific scenarios where cloud-only storage could still result in data loss?\n\n3. The folder structure uses numbered prefixes (01_, 02_). What specific problem does this solve that alphabetical folder names do not?"
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "heading",
+        "text": "Check Your Understanding",
+        "level": 2
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-ffo-q1",
+          "questionType": "mcq",
+          "text": "Which file name follows the SW Logistical Analytics naming convention correctly?",
+          "options": [
+            "Report Final REAL v3 USE THIS.docx",
+            "SWL-CoastalFreight_DeliveryReport_v2.0_20250701_approved.docx",
+            "delivery report june 2025.docx",
+            "DeliveryReport_Final.docx"
+          ],
+          "correctIndex": 1,
+          "explanation": "The correct name includes: client/project code (SWL-CoastalFreight), document type (DeliveryReport), version number (v2.0), date in YYYYMMDD format (20250701), and status (approved). The others use spaces, vague naming, or lack version and date information."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-ffo-q2",
+          "questionType": "true_false",
+          "text": "The date format DDMMYYYY (e.g. 01072025) is preferred over YYYYMMDD (e.g. 20250701) for file names because it is easier to read.",
+          "correctAnswer": false,
+          "explanation": "False. YYYYMMDD (ISO 8601) is the professional standard because files sort correctly in chronological order when sorted alphabetically. DDMMYYYY causes files from different months and years to sort incorrectly — all '01' dates appear together regardless of month or year."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-ffo-q3",
+          "questionType": "mcq",
+          "text": "An analyst stores all client files only on their work laptop. Which risk does this NOT address compared to using OneDrive (cloud storage)?",
+          "options": [
+            "Files are accessible from any device with internet access",
+            "Files are automatically version-controlled with a revision history",
+            "Files are backed up even if the laptop is stolen or damaged",
+            "All three of the above are risks that local-only storage does not address"
+          ],
+          "correctIndex": 3,
+          "explanation": "All three are genuine risks of local-only storage: loss of access if the device fails or is stolen, no automatic version history, and no remote access. Cloud storage (with correct sync settings) addresses all three — though it introduces its own risks like internet dependency and data sovereignty."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-ffo-q4",
+          "questionType": "short_answer",
+          "text": "Sloane finds three files in the client project folder: ClientReport_v1.0_20250601.docx, ClientReport_v2.0_20250615.docx, and ClientReport_v2.1_20250628.docx. Without opening any of them, what can she determine about the project history? What would she know is missing if she opened v2.1 and found it was identical to v1.0?",
+          "marks": 3,
+          "explanation": "From the filenames alone, Sloane can determine: there were at least three versions produced over approximately four weeks; v2.0 was a significant revision (major version change on June 15); v2.1 was a minor revision on June 28. If v2.1 is identical to v1.0, the naming convention is being used inconsistently — version numbers are being incremented without actual content changes, or previous work was reverted without clear documentation. A proper version control approach would require a changelog or commit message explaining each version change."
+        }
+      }
+    ]
+  },
+  {
+    "id": "version-control-for-data-files",
+    "title": "Version Control for Data Files",
+    "estimatedMinutes": 20,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #1006 · SW LOGISTICAL ANALYTICS",
+        "text": "Status: 🔴 URGENT | Sprint 3 | Assigned to: New Analyst\n\nA data analyst overwrote the approved v1.0 delivery schema with an untested edit. The client's system, which Sparky Miller integrated last week, broke immediately. We rolled back to v1.0 from a backup — but only because we had one. This ticket is your version control briefing. You will not touch a client data file — CSV, JSON, or otherwise — without understanding how version numbering, backup, and rollback work. This is non-negotiable."
+      },
+      {
+        "type": "heading",
+        "text": "What is Version Control?",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Version control is a system for tracking changes to files over time so that specific versions can be retrieved, compared, or restored. In a data environment, version control protects against accidental overwrites, allows teams to work on files simultaneously without conflict, and creates an audit trail of every change made to client data."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Version Control",
+            "definition": "A system that tracks and manages changes to files over time, allowing specific versions to be retrieved or restored."
+          },
+          {
+            "term": "Revision History",
+            "definition": "A log of all changes made to a file, including who made them, when, and what changed."
+          },
+          {
+            "term": "Rollback",
+            "definition": "Reverting a file to a previous version — essential when a change introduces errors or breaks a dependent system."
+          },
+          {
+            "term": "Overwrite",
+            "definition": "Saving changes to a file in a way that permanently replaces the previous version without preserving it."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Manual Version Control — Naming Convention Approach",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "The simplest form of version control is never overwriting files — always saving changes as a new versioned copy. Version numbers follow a major.minor format: the major number increments for significant changes, the minor for small corrections."
+      },
+      {
+        "type": "table",
+        "headers": ["Version", "What Changed", "Who Approved", "Date"],
+        "rows": [
+          ["v1.0", "Initial delivery data schema — baseline", "Sloane Vane", "20250601"],
+          ["v1.1", "Added 'DeliveryZone' column — minor addition", "Sloane Vane", "20250608"],
+          ["v2.0", "Complete restructure of schema to match new client API — major change", "Sloane Vane + Client", "20250622"],
+          ["v2.1", "Fixed column header capitalisation issue flagged in QA", "Sloane Vane", "20250628"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · SLOANE VANE, SW LOGISTICAL ANALYTICS",
+        "text": "v1.0 is released, approved, and integrated into Sparky's network pipeline. If you need to make a change, you open v1.0, save it immediately as v1.1 — before making a single edit. Then you make your changes in v1.1. v1.0 never gets touched again. This is not bureaucracy. The day you need to rollback, you'll understand why."
+      },
+      {
+        "type": "heading",
+        "text": "Cloud-Based Version History",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Modern cloud platforms provide automatic version history as a safety net alongside manual version control. At SW Logistical Analytics, both are in use — the naming convention is the team's system; cloud version history is the last line of defence."
+      },
+      {
+        "type": "list",
+        "style": "bullet",
+        "items": [
+          "OneDrive — right-click any file → Version History to see and restore any previous saved state",
+          "Google Docs / Sheets — File → Version History → See Version History; named versions can be set at key milestones",
+          "SharePoint — enterprise-grade version control with check-in/check-out to prevent simultaneous edits",
+          "Both systems combined give you: manual version tracking (names + dates) + automatic safety net (cloud history)"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Version Control for CSV and JSON Data Files",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Data files require the same version discipline as documents — but the stakes are higher. A v1.0 CSV schema that has been shared with a client and integrated into their system cannot be changed without creating a new version and notifying all stakeholders. Changing column headers in a CSV, or restructuring a JSON object, can break every downstream system that depends on it."
+      },
+      {
+        "type": "list",
+        "style": "bullet",
+        "items": [
+          "Always version data files: SWL-Client_DeliveryData_v1.0_20250701.csv — not just report documents",
+          "Never modify a shared or integrated data file in place — always create a new version",
+          "When a schema change is needed, document what changed between versions in a changelog file",
+          "Coordinate with Sparky's team before releasing a new schema version — network integrations need time to update"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · VERSION CONTROL SIMULATION",
+        "text": "You are working on SWL-CoastalFreight_DataSchema_v1.0_20250620.csv — a live file integrated into the client's warehouse system.\n\nThe client emails at 9am to say they need three changes:\n- Add a new column called 'TrackingID' (between columns B and C)\n- Rename 'Destination' to 'DestinationPort'\n- Remove the 'LegacyCode' column — it's no longer used\n\nYour tasks:\n1. Describe step-by-step how you would implement these changes using proper version control — what do you do before opening the file, what version number do you assign, and what do you do after making the changes?\n2. Write the filename for the new version.\n3. Write a short changelog entry (3–4 sentences) that documents what changed between v1.0 and the new version.\n4. Explain why Sparky Miller needs to be notified before the new version goes live."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · SLOANE IS AUDITING YOUR WORK",
+        "text": "Before I approve this schema change, answer these:\n\n1. You've created v1.1 with the three changes. A colleague opens v1.0 and makes a completely different change, saving it as 'DataSchema_edited.csv'. What problem has this created, and what version control rule did they break?\n\n2. The client approves v1.1 and it goes live. Two weeks later, they discover the 'TrackingID' column has caused an error in their reporting because it's in the wrong position. They want to go back to v1.0. Walk me through the rollback process — what do you restore, and what do you do with v1.1?\n\n3. Why is cloud version history (OneDrive's automatic versioning) not a complete substitute for manual version numbering in filenames?"
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "heading",
+        "text": "Check Your Understanding",
+        "level": 2
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-vc-q1",
+          "questionType": "mcq",
+          "text": "An analyst needs to make a minor correction to SWL-CoastalFreight_Schema_v2.0_20250615.csv. Following SW Logistical Analytics' version control protocol, what should they do first?",
+          "options": [
+            "Open v2.0 and make the correction directly — minor changes don't need a new version",
+            "Open v2.0, immediately save it as v2.1 before making any changes, then edit v2.1",
+            "Delete v2.0 and create a completely new file from scratch",
+            "Ask the client to resubmit their data with the correction already made"
+          ],
+          "correctIndex": 1,
+          "explanation": "The correct protocol is to create a new version before making any changes. Open v2.0, immediately save as v2.1, then edit v2.1. This preserves v2.0 as an intact, rollback-able version. Never edit a shared or approved file in place."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-vc-q2",
+          "questionType": "true_false",
+          "text": "A version number jump from v1.3 to v2.0 indicates a minor correction was made to the file.",
+          "correctAnswer": false,
+          "explanation": "False. In semantic versioning (major.minor), the major version number (the number before the decimal) increments for significant or breaking changes — changes that might affect systems depending on the file. Minor corrections increment only the minor number. A jump to v2.0 signals a major revision."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-vc-q3",
+          "questionType": "mcq",
+          "text": "A data schema CSV file (v1.0) has been integrated into Sparky Miller's network pipeline. The client requests adding a new column. What is the primary risk of making this change without creating a new version number and notifying Sparky's team?",
+          "options": [
+            "The file will become too large to store on OneDrive",
+            "The downstream system expecting v1.0's column structure will break when it receives data in the new format",
+            "The version history in OneDrive will be overwritten",
+            "The client will not be able to access the updated file"
+          ],
+          "correctIndex": 1,
+          "explanation": "Any system that reads and processes a CSV schema depends on a specific column structure — column count, names, and order. Adding a column without notification means the downstream system receives unexpected data, causing parsing errors and potentially corrupting the client's data pipeline."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-vc-q4",
+          "questionType": "short_answer",
+          "text": "Explain why OneDrive's automatic version history is described as a 'last line of defence' rather than a complete version control solution for SW Logistical Analytics.",
+          "marks": 3,
+          "explanation": "OneDrive's automatic version history saves versions whenever the file is saved, but it does not communicate to team members what changed, why it changed, or who changed it. It also relies on the file being synced and the account remaining active. Manual version control through naming conventions provides: a clear visual record in the filename itself (version number + date), a communication signal to all stakeholders (sharing a file named v2.0 communicates a major change), and a rollback mechanism that works even without internet or cloud access. Both systems together provide the most robust protection."
+        }
+      }
+    ]
+  },
+  {
+    "id": "managing-data-review-quiz",
+    "title": "Managing Data — Sloane's Final Audit",
+    "estimatedMinutes": 20,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #1007 · SW LOGISTICAL ANALYTICS",
+        "text": "Status: 🟢 REVIEW | Sprint 4 | Assigned to: New Analyst\n\nYou've completed the Managing Data onboarding sequence. Before I sign off on your access to live client data, I need to verify you've absorbed the fundamentals. This is Sloane's Final Audit — no help, no notes. Every question maps to a scenario you'll face in this role. If you can't answer them here, you're not ready for the data."
+      },
+      {
+        "type": "heading",
+        "text": "Sloane's Final Audit — Managing Data",
+        "level": 2
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-md-rq1",
+          "questionType": "mcq",
+          "text": "SW Logistical Analytics receives a spreadsheet with a single column of values: 847, 23, 1204, 56, 389. Which statement is correct?",
+          "options": [
+            "This is information because it is in a spreadsheet",
+            "This is data — the numbers have no context and cannot be acted on",
+            "This is qualitative data because the numbers describe something",
+            "This is primary data because SW Logistical Analytics received it directly"
+          ],
+          "correctIndex": 1,
+          "explanation": "Numbers without context are data, not information. They could be anything — delivery times, package weights, costs, distances. Without knowing what they measure, what the units are, and what they should be compared against, they cannot inform any decision."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-md-rq2",
+          "questionType": "mcq",
+          "text": "Sloane finds a freight delay report published by a national freight association. The report was written in 2021, is authored by the association's CEO, and was funded by member freight companies. Which CRAAP criterion raises the most significant concern?",
+          "options": [
+            "Relevance — freight associations don't cover logistics",
+            "Currency — 2021 data may not reflect current conditions, and the Purpose (funded by industry members) raises bias concerns",
+            "Authority — a CEO is not qualified to write a freight report",
+            "Accuracy — government reports are always more accurate than industry reports"
+          ],
+          "correctIndex": 1,
+          "explanation": "Two CRAAP criteria are failing here: Currency (2021 data for a rapidly changing industry) and Purpose (funded by the very companies whose performance is being reported on — a clear conflict of interest). The CEO's role is not necessarily disqualifying if the methodology is documented."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-md-rq3",
+          "questionType": "true_false",
+          "text": "The Boolean query \"freight delays\" site:gov.au returns results from any Australian government website that mention freight and delays in any order.",
+          "correctAnswer": false,
+          "explanation": "False. The quotation marks around 'freight delays' require the exact phrase to appear in that exact order. The site:gov.au restricts results to government domains. Without the quotes, words could appear separately anywhere in the page."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-md-rq4",
+          "questionType": "mcq",
+          "text": "SW Logistical Analytics needs to send a client their 50,000-row delivery database for import into the client's system. Which format is correct?",
+          "options": [
+            "PDF — the most universally compatible document format",
+            "PNG — everyone can open images",
+            "CSV — structured text format that any database or spreadsheet can import",
+            "MP4 — compressed format with a small file size"
+          ],
+          "correctIndex": 2,
+          "explanation": "CSV is the standard for exchanging structured tabular data between systems. PDF cannot be machine-processed. PNG is an image — not processable data. MP4 is video. The choice of CSV is non-negotiable for database import."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-md-rq5",
+          "questionType": "mcq",
+          "text": "An analyst saves a file as 'DataReport_v1.2_20250701.csv' and needs to make a major structural change. What version number should the new file use?",
+          "options": [
+            "v1.2 — overwrite with the new content",
+            "v1.3 — minor increment for any change",
+            "v2.0 — major version change for a significant structural change",
+            "v1.2.1 — add a third level for structural changes"
+          ],
+          "correctIndex": 2,
+          "explanation": "A major structural change — one that could break systems depending on the file's current format — warrants a major version increment to v2.0. Minor corrections increment the minor number (v1.3). Never overwrite an existing version."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-md-rq6",
+          "questionType": "true_false",
+          "text": "A JPEG file is the best choice for exporting a bar chart from an analytics dashboard because JPEG files have smaller file sizes than PNG files.",
+          "correctAnswer": false,
+          "explanation": "False. JPEG uses lossy compression that introduces artefacts on sharp edges and text — making chart labels and axis lines blurry or blocky. PNG (lossless) should always be used for charts, graphs, screenshots, and any image with sharp edges or text. The quality trade-off is unacceptable for professional data visualisations."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-md-rq7",
+          "questionType": "mcq",
+          "text": "Which file name correctly follows the YYYYMMDD date convention and the SW Logistical Analytics naming standard?",
+          "options": [
+            "CoastalFreight Report 01 07 2025 Final.docx",
+            "SWL-CoastalFreight_AnnualReport_v3.0_20250701_approved.docx",
+            "AnnualReport_July2025_v3_FINAL.docx",
+            "report-2025.docx"
+          ],
+          "correctIndex": 1,
+          "explanation": "The correct filename includes: project code (SWL-CoastalFreight), document type (AnnualReport), version (v3.0), date in YYYYMMDD (20250701), and status (approved). No spaces, no ambiguity, sorts correctly."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-md-rq8",
+          "questionType": "mcq",
+          "text": "SW Logistical Analytics uses the 3-2-1 backup rule. Which of the following correctly describes this rule?",
+          "options": [
+            "Back up files 3 times a day, across 2 cloud providers, within 1 business hour",
+            "Keep 3 copies of critical data, stored on 2 different types of media, with 1 copy off-site",
+            "Keep 3 copies on the same server, review 2 monthly, delete 1 outdated version per week",
+            "Share files with 3 team members, on 2 devices, with 1 backup every month"
+          ],
+          "correctIndex": 1,
+          "explanation": "The 3-2-1 rule: 3 total copies, on 2 different storage media types (e.g. internal SSD + cloud), with 1 copy off-site (cloud storage or offsite HDD). This protects against device failure, theft, and physical disasters."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-md-rq9",
+          "questionType": "mcq",
+          "text": "What does the Boolean search operator NOT (or the minus sign in Google) do?",
+          "options": [
+            "Broadens results by including additional related terms",
+            "Requires both terms to appear in every result",
+            "Excludes results containing the specified term",
+            "Searches only within a specified website domain"
+          ],
+          "correctIndex": 2,
+          "explanation": "NOT (or the minus sign prefix) excludes pages containing the specified word. For example: 'logistics software -SAP' removes all results mentioning SAP. It narrows results by filtering out an unwanted term."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv-md-rq10",
+          "questionType": "short_answer",
+          "text": "Sloane receives a client file named 'data_new_REAL_final.csv'. Identify four naming convention violations in this filename and explain what a correct version of the filename should look like for a SW Logistical Analytics client data file.",
+          "marks": 4,
+          "explanation": "Violations: (1) No client/project code — cannot identify which client this belongs to without opening it. (2) No version number — 'new' and 'REAL' and 'final' are ambiguous status labels that do not enable chronological tracking. (3) No date — cannot determine when this version was created or sort it chronologically. (4) Spaces in filename — spaces cause issues in command-line tools, URLs, and some systems. A correct filename: SWL-ClientName_DataFile_v1.0_20250701.csv"
+        }
+      }
+    ]
+  }
+]

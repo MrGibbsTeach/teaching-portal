@@ -1,0 +1,607 @@
+[
+  {
+    "id": "planning-a-digital-solution",
+    "title": "Planning a Digital Solution",
+    "estimatedMinutes": 45,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #3001 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟡 IN PROGRESS | Sprint 1 | Assigned to: Junior Analyst\n\nWe've just landed a new client — a local community sports club that needs a digital booking system for their courts and facilities. Leo's ready to start designing, Sparky is scoping the hardware requirements, and Sloane will handle the data layer. But none of that starts until YOU deliver a solid project plan. I need a project brief, a timeline, and a clear scope document on my desk before anyone writes a single line of code. Let's move."
+      },
+      {
+        "type": "heading",
+        "text": "Why Planning Comes Before Everything Else",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "At Bunbury Tech Launchpad, the number one cause of project failure isn't bad code — it's bad planning. When we skip the planning phase, we end up building the wrong thing, running out of time, or blowing the client's budget on features they never asked for. A solid plan is your licence to start building."
+      },
+      {
+        "type": "paragraph",
+        "text": "Planning a digital solution means defining what you are building, why you are building it, who it is for, and how long it will take. These four questions must be answered before Leo touches Figma or Sparky orders a single component. If you can't answer them, the project doesn't start — it's that simple."
+      },
+      {
+        "type": "paragraph",
+        "text": "We work in a structured environment here. Every project at the Launchpad goes through a planning phase that produces three key artefacts: a project brief, a scope statement, and a project timeline. These documents protect you, protect the client, and protect the team."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Project Brief",
+            "definition": "A document that summarises the purpose, goals, audience, constraints, and deliverables of a project. It is agreed upon by the client and the project team before work begins."
+          },
+          {
+            "term": "Scope",
+            "definition": "The defined boundaries of a project — what is included and, equally importantly, what is NOT included. Scope creep (adding features outside the agreed scope) is one of the biggest risks in project delivery."
+          },
+          {
+            "term": "Milestone",
+            "definition": "A significant checkpoint in a project timeline that marks the completion of a major phase or deliverable, such as 'Prototype approved by client'."
+          },
+          {
+            "term": "Gantt Chart",
+            "definition": "A visual timeline tool that shows project tasks, their duration, start and end dates, and dependencies between tasks. Commonly built in tools like Google Sheets, Trello, or dedicated project management software."
+          },
+          {
+            "term": "Stakeholder",
+            "definition": "Any person or group with an interest in the outcome of a project. Stakeholders include the client, the project team, end users, and anyone affected by the solution."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "The Components of a Project Plan",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "A project plan is not a single document — it is a collection of planning artefacts that together answer every important question about the project. Each artefact serves a different purpose, and together they give the whole team — including Leo, Sparky, and Sloane — a shared understanding of what success looks like."
+      },
+      {
+        "type": "table",
+        "headers": ["Planning Artefact", "Purpose", "Tool We Use"],
+        "rows": [
+          ["Project Brief", "Defines the client's problem, goals, audience, and constraints", "Google Docs"],
+          ["Scope Statement", "Lists features IN scope and explicitly rules out what is NOT in scope", "Google Docs"],
+          ["Gantt Chart / Timeline", "Maps all tasks to dates so the team knows who does what by when", "Trello or Google Sheets"],
+          ["Risk Register", "Identifies potential problems and mitigation strategies before they occur", "Google Sheets"],
+          ["Communication Plan", "Defines how and when the team will update the client throughout the project", "Google Docs / Email"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Agile vs Waterfall: Choosing Your Approach",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Before you can build your timeline, you need to decide on a project management methodology. The two most common approaches are Waterfall and Agile. Waterfall is linear — you complete each phase fully before moving to the next. Agile is iterative — you work in short cycles called sprints and deliver working features regularly throughout the project."
+      },
+      {
+        "type": "comparison",
+        "title": "Waterfall vs Agile",
+        "items": [
+          {
+            "label": "Waterfall",
+            "points": [
+              "Linear, sequential phases: Plan → Design → Build → Test → Deploy",
+              "Best for projects with fixed, well-understood requirements",
+              "Changes are costly once a phase is complete",
+              "Delivers the full product at the end of the project",
+              "Example: building a government compliance report system"
+            ]
+          },
+          {
+            "label": "Agile (Scrum / Kanban)",
+            "points": [
+              "Iterative sprints (1–4 weeks) with working deliverables each cycle",
+              "Best for evolving requirements and client feedback loops",
+              "Changes are expected and accommodated between sprints",
+              "Delivers usable features progressively throughout the project",
+              "Example: developing the sports club booking system we're building now"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "Clients will always say 'we know exactly what we want.' They never do. Use Agile for anything client-facing — you want them reviewing a working prototype in week two, not discovering they hate the colour scheme at the product launch. The earlier you get feedback, the cheaper it is to fix. Leo learned that the hard way on the Coastal Coffee project. Don't repeat history."
+      },
+      {
+        "type": "task",
+        "title": "Create a Project Brief in Google Docs",
+        "software": "Google Docs",
+        "intro": "You've been assigned to the Bunbury Sports Club digital booking system project. Your first job is to write a project brief that the whole team — including Leo, Sparky, and Sloane — can work from. Follow these steps to produce a professional planning document.",
+        "steps": [
+          "Open Google Docs and create a new document titled 'Project Brief — Bunbury Sports Club Booking System'.",
+          "Add a heading 'Project Overview' and write 2–3 sentences describing the client's problem: the sports club currently manages court bookings manually via phone calls and a whiteboard.",
+          "Add a heading 'Project Goals' and list at least 3 specific, measurable goals (e.g. 'Allow members to book courts online 24/7 without staff assistance').",
+          "Add a heading 'Target Audience' and describe who will use the system — include at least two different user types (e.g. club members and club administrators).",
+          "Add a heading 'Scope — In Scope' and list 4–5 features that WILL be built in this project.",
+          "Add a heading 'Scope — Out of Scope' and list at least 2 features that are explicitly NOT being built in this phase (e.g. 'Mobile app — web browser only for Phase 1').",
+          "Add a heading 'Constraints' and list any limitations such as budget, timeline, technology, or skills.",
+          "Add a heading 'Key Milestones' and list at least 4 milestones with target dates, starting from today.",
+          "Share the document with a peer and ask them to review the scope section for any gaps or ambiguities."
+        ]
+      },
+      {
+        "type": "scenarioChallenge",
+        "title": "Scenario: The Scope Creep Emergency",
+        "scenario": "Three weeks into the Bunbury Sports Club project, the client contacts Rory and asks to add an online merchandise shop, a member forum, and a live streaming option for matches — none of which were in the original project brief. Leo estimates the additional design work would take two weeks. Sparky says the streaming feature alone would require new server infrastructure. The project deadline is fixed and cannot be extended.",
+        "questions": [
+          {
+            "question": "Identify TWO specific problems that accepting all three new features would cause for the project. Use project management terminology in your answer.",
+            "marks": 4
+          },
+          {
+            "question": "Explain how a clearly written scope statement would help Rory manage this situation with the client. What specific language should a scope statement include to prevent this type of request?",
+            "marks": 4
+          },
+          {
+            "question": "Suggest a realistic strategy Rory could propose to the client that acknowledges their requests without derailing the current sprint. How does this reflect Agile project management principles?",
+            "marks": 4
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "Before you submit your project brief, I want you to think critically about what you've produced. Answer these questions honestly — I'll be asking them in our next stand-up.\n\n1. Is every goal in your project brief specific and measurable, or have you written vague statements like 'improve the user experience'? How would you know if a goal had been achieved?\n\n2. Look at your 'Out of Scope' list. Could a client reasonably assume that any feature you haven't mentioned is included? What are you missing?\n\n3. Your milestone dates — did you work backwards from the deadline, or did you just space them out evenly? How does the complexity of each phase affect how much time it should receive?"
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · BUILD A KANBAN BOARD IN TRELLO",
+        "text": "Set up a Trello board for the Bunbury Sports Club project. Create four lists: Backlog, In Progress, In Review, and Done. Add at least 8 task cards to the Backlog based on the project brief you wrote. Each card must include: a clear task title, a description of what 'done' looks like for that task, and a label indicating whether it belongs to Design (Leo), Hardware (Sparky), Data (Sloane), or Development. Move 2 cards into 'In Progress' to simulate the start of your first sprint. Take a screenshot of your completed board and save it as evidence."
+      }
+    ]
+  },
+  {
+    "id": "evaluating-a-digital-solution",
+    "title": "Evaluating a Digital Solution",
+    "estimatedMinutes": 45,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #3002 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟢 REVIEW | Sprint 4 (Final) | Assigned to: Junior Analyst\n\nThe Bunbury Sports Club booking system is built. Leo's screens are polished, Sparky's check-in hardware is installed, and Sloane's database is humming. But we don't ship until we evaluate. I need a formal evaluation report that measures this solution against every success criterion in the original brief. If something doesn't meet the standard, it goes back into the backlog — no exceptions. Shipping broken software is worse than shipping late. Get this evaluation done right."
+      },
+      {
+        "type": "heading",
+        "text": "What Does It Mean to Evaluate a Digital Solution?",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Evaluation is not the same as testing. Testing checks whether the system works technically — does the button function, does the database save correctly? Evaluation checks whether the system actually solves the problem it was designed to solve, for the people it was designed to serve. These are very different questions."
+      },
+      {
+        "type": "paragraph",
+        "text": "At Bunbury Tech Launchpad, every solution is evaluated against the success criteria defined in the original project brief. If you wrote a good brief at the start — which you did, right? — then evaluation is simply a process of checking each criterion systematically and recording the evidence. If you skipped the brief, evaluation becomes guesswork, and guesswork doesn't get past my review."
+      },
+      {
+        "type": "paragraph",
+        "text": "Evaluation also looks forward, not just backward. A good evaluation identifies what worked well, what should be improved, and what would be included in a future version of the solution. This feeds directly back into the next project's planning phase — which is how professional teams get better over time."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Evaluation Criteria",
+            "definition": "The specific, measurable standards against which a digital solution is judged. These are derived from the project brief and may include functionality, usability, performance, and accessibility requirements."
+          },
+          {
+            "term": "Functional Requirements",
+            "definition": "What the system must DO — the specific features and behaviours it must deliver. Example: 'The system must allow a member to book a court up to 7 days in advance.'"
+          },
+          {
+            "term": "Non-Functional Requirements",
+            "definition": "How well the system must perform its functions — relating to speed, security, reliability, and usability. Example: 'The booking page must load within 2 seconds on a standard NBN connection.'"
+          },
+          {
+            "term": "User Acceptance Testing (UAT)",
+            "definition": "A testing phase in which real end users — not developers — test the system to confirm it meets their needs. UAT evidence is a critical part of any evaluation."
+          },
+          {
+            "term": "Feedback Loop",
+            "definition": "A process where user feedback gathered during evaluation is used to improve the solution in the next development cycle. Core to Agile methodology."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Methods of Evaluation",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "There is no single right way to evaluate a digital solution — professionals use a combination of methods to build a complete picture. Quantitative methods give you numbers: load times, error rates, task completion rates. Qualitative methods give you insight: why users struggled, what they found confusing, what they loved. You need both."
+      },
+      {
+        "type": "table",
+        "headers": ["Evaluation Method", "What It Measures", "Example Tool / Approach"],
+        "rows": [
+          ["Criteria checklist", "Whether each functional requirement has been met (yes/no)", "Google Sheets checklist"],
+          ["User survey / questionnaire", "User satisfaction, perceived ease of use, and feature usefulness", "Google Forms"],
+          ["Observation / usability testing", "Where real users struggle or make errors when completing tasks", "Screen recording, moderated session"],
+          ["Performance testing", "Load times, uptime, response times under normal and peak conditions", "Browser DevTools, Lighthouse"],
+          ["Peer review", "Whether the solution meets professional standards from a team perspective", "Structured checklist with Leo, Sparky, Sloane"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Writing a Criteria-Based Evaluation",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "The most important type of evaluation you'll write at the Launchpad is a criteria-based evaluation. For each success criterion from your project brief, you need to provide: the original criterion, the evidence collected, a judgement of whether the criterion is met, and a recommendation if it is not. This structure makes your evaluation objective and defensible."
+      },
+      {
+        "type": "comparison",
+        "title": "Weak vs Strong Evaluation Statements",
+        "items": [
+          {
+            "label": "Weak Evaluation (don't do this)",
+            "points": [
+              "'The website looks good and is easy to use.' — No evidence, no criterion referenced.",
+              "'Users seemed happy with the system.' — 'Seemed' is not evidence.",
+              "'The booking feature works.' — Works how? For whom? Compared to what standard?",
+              "'There are some things that could be improved.' — Which things? Why? How?"
+            ]
+          },
+          {
+            "label": "Strong Evaluation (this is the standard)",
+            "points": [
+              "'Criterion: Members can complete a court booking in under 3 minutes. Evidence: Usability test with 5 members averaged 2 min 14 sec. Criterion MET.'",
+              "'Criterion: System loads in under 2 seconds. Evidence: Lighthouse audit averaged 3.4 sec on mobile. Criterion NOT MET — recommend image compression and lazy loading in Sprint 5.'",
+              "'Criterion: System is accessible on mobile devices. Evidence: Tested on iPhone 14 and Samsung Galaxy S22 — all core functions operational. Criterion MET.'",
+              "'Criterion: Admin can export bookings as a CSV. Evidence: Export function returns a malformed file when date range exceeds 30 days. Criterion NOT MET — logged as Bug #47.'"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "I've seen junior analysts write evaluations that say everything is fine when it clearly isn't. That's not evaluation — that's wishful thinking with a heading. Your evaluation report will be read by the client and possibly by the next team who inherits this project. If you hide a problem now, someone else will find it in production, and they'll know exactly who signed off on the evaluation. Write honestly. A criterion that is 'partially met' with a clear remediation plan is infinitely more professional than a false 'met' that blows up later."
+      },
+      {
+        "type": "task",
+        "title": "Write a Criteria-Based Evaluation Report",
+        "software": "Google Docs",
+        "intro": "Using the project brief you created in the previous lesson as your source of criteria, write a formal evaluation report for the Bunbury Sports Club booking system. You will evaluate a hypothetical completed version of the system.",
+        "steps": [
+          "Open Google Docs and create a new document titled 'Evaluation Report — Bunbury Sports Club Booking System'.",
+          "Add an 'Executive Summary' section (3–4 sentences) that briefly describes the solution, the evaluation approach used, and an overall judgement.",
+          "Create a 'Criteria Evaluation' table with four columns: Criterion, Evidence, Judgement (Met / Partially Met / Not Met), and Recommendation.",
+          "Add at least 5 rows to the table — one for each of the success criteria from your project brief. For each row, write realistic evidence as if you had run usability tests and performance checks.",
+          "Include at least one 'Not Met' result and write a specific, actionable recommendation for how it would be addressed in a future sprint.",
+          "Add a 'User Feedback Summary' section. Write a short paragraph summarising feedback as if you had collected responses from 10 club members via a Google Form survey.",
+          "Add a 'Strengths and Limitations' section with two sub-headings. Under each, write 3 bullet points using specific examples from the system.",
+          "Add a 'Future Development Recommendations' section and suggest 2–3 features or improvements that could be included in a Phase 2 of this project.",
+          "Proofread the document and ensure all judgements are backed by specific evidence — remove any vague statements."
+        ]
+      },
+      {
+        "type": "scenarioChallenge",
+        "title": "Scenario: The Client Pushes Back on the Evaluation",
+        "scenario": "Rory presents the evaluation report to the Bunbury Sports Club committee. The report identifies that two criteria have not been met: the mobile load time exceeds the target, and the CSV export feature has a bug affecting exports over 30 days. The club president says, 'We've already announced the launch date publicly. Can't we just launch and fix those things later? They're minor.' Rory must respond professionally.",
+        "questions": [
+          {
+            "question": "Explain why launching with known, documented defects against agreed criteria creates a problem even if the client gives verbal permission to proceed. Consider both technical and professional risks in your answer.",
+            "marks": 4
+          },
+          {
+            "question": "Describe how Rory could use the evaluation report to negotiate a solution that respects the client's launch deadline while still maintaining professional standards. What specific options could be offered?",
+            "marks": 4
+          },
+          {
+            "question": "If the team decides to launch with the mobile performance issue unresolved, what documentation should Rory ensure is in place, and why is this important for future development cycles?",
+            "marks": 3
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "Put your evaluation report down and answer these questions before you consider it done.\n\n1. Every judgement in your criteria table says 'Met' — is that realistic? In a real project, is it common for every single criterion to be fully met on the first delivery? What does it say about your evaluation process if nothing ever falls short?\n\n2. Your 'User Feedback Summary' mentions that users found the system 'easy to use.' What specific tasks did they attempt? How many users participated? What would make this evidence credible to a client or examiner?\n\n3. Look at your 'Future Recommendations' — are they genuinely based on the evaluation evidence, or did you just add features you thought would be cool? How does each recommendation connect back to a specific finding in your report?"
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · DESIGN A USER SURVEY IN GOOGLE FORMS",
+        "text": "Create a Google Form that could be used to gather UAT feedback for the Bunbury Sports Club booking system. Your form must include: at least 2 rating-scale questions (e.g. 'Rate the ease of booking a court from 1–5'), at least 2 multiple-choice questions about specific features, at least 1 open-text question asking for suggestions, and a section header that groups the questions logically. When your form is complete, share the link with a classmate and have them complete it as if they were a club member. Record their responses and write a 3-sentence summary of what the feedback tells you about the system."
+      }
+    ]
+  },
+  {
+    "id": "personal-digital-project-task",
+    "title": "Personal Digital Project Task",
+    "estimatedMinutes": 45,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #3003 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🔵 OPEN | Personal Sprint | Assigned to: YOU\n\nThis is your ticket and yours alone. No Leo, no Sparky, no Sloane — this is the sprint where you run your own project from brief to delivery. You are the project manager, the designer, the developer, and the evaluator. I'll be checking in at each milestone, but the decisions are yours. Pick a real problem you can actually solve digitally, plan it properly, build something that works, and evaluate it honestly. This is the assignment that separates analysts who understand project management from those who just know the vocabulary."
+      },
+      {
+        "type": "heading",
+        "text": "Your Personal Digital Project — What Is It?",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "The personal digital project task asks you to independently manage the full lifecycle of a small digital solution: from identifying a problem, through planning and development, to delivery and evaluation. This is not a group task and it is not a hypothetical — you are producing real artefacts that demonstrate your ability to apply project management skills in practice."
+      },
+      {
+        "type": "paragraph",
+        "text": "Choosing the right project scope is the first critical decision you will make. Too small, and you won't demonstrate enough planning complexity. Too large, and you'll run out of time and submit something incomplete. The sweet spot is a solution that has at least 4 distinct functional features, requires a timeline of at least 3 phases, and serves a clearly identified audience."
+      },
+      {
+        "type": "paragraph",
+        "text": "At the Launchpad, we assess personal projects on four dimensions: the quality of the planning documentation, the evidence of iterative development, the rigour of the evaluation, and the professionalism of the final deliverable. A brilliant product with no documentation will score lower than a modest product with excellent artefacts. Document everything as you go — not at the end."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Project Lifecycle",
+            "definition": "The complete sequence of phases a project passes through from initial conception to final delivery and review. In digital projects, these typically include: Initiation, Planning, Development, Testing, Deployment, and Evaluation."
+          },
+          {
+            "term": "Iterative Development",
+            "definition": "A development approach where the solution is built and refined in repeated cycles, with each cycle producing a progressively more complete version. Each cycle incorporates feedback from the previous one."
+          },
+          {
+            "term": "Version Control",
+            "definition": "A system for tracking changes to project files over time, allowing you to see the history of your work and revert to earlier versions if needed. At a basic level, this can be as simple as dated file backups or a Google Drive version history."
+          },
+          {
+            "term": "Sprint Review",
+            "definition": "A regular meeting (in Agile) at the end of each sprint where the team demonstrates completed work, gathers feedback, and adjusts the plan for the next sprint."
+          },
+          {
+            "term": "Acceptance Criteria",
+            "definition": "The specific conditions that must be satisfied before a feature or deliverable is considered complete. Written in the format: 'Given [context], when [action], then [expected result].'"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Choosing and Scoping Your Project",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Your project must solve a real problem for a real (or realistic) audience. It does not need to be technically complex — what matters is that it is well-planned and well-documented. Previous students at the Launchpad have built event booking spreadsheets, school timetable tools, simple websites for local businesses, interactive study guides, and digital resource libraries for community groups."
+      },
+      {
+        "type": "table",
+        "headers": ["Project Idea", "Audience", "Digital Tool", "Minimum Features"],
+        "rows": [
+          ["School club event scheduler", "Students and club coordinators", "Google Sheets + Forms", "Event listing, RSVP form, automated confirmation, coordinator dashboard"],
+          ["Local business website", "Small business owner + customers", "Google Sites or Wix", "Home page, services/products page, contact form, opening hours"],
+          ["Study revision tool", "Year 11 students in your subject", "Google Slides or Canva", "Key terms, practice questions, worked examples, self-assessment checklist"],
+          ["Digital noticeboard prototype", "School community", "Figma (prototype only)", "Home screen, category filter, notice detail view, post-a-notice form"],
+          ["Personal portfolio site", "Future employers or teachers", "Google Sites or Wix", "About page, skills section, project showcase, contact form"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Managing Your Personal Project with Agile Sprints",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Even working solo, you should structure your project using Agile sprints. A personal sprint is typically one week. At the start of each sprint, you write down exactly what you will complete that week. At the end of each sprint, you review what you actually finished, note anything that didn't get done, and update your plan for the next sprint. This keeps you honest and gives you evidence of iterative development for your assessment."
+      },
+      {
+        "type": "comparison",
+        "title": "Common Personal Project Pitfalls vs Professional Practice",
+        "items": [
+          {
+            "label": "Common Student Mistakes",
+            "points": [
+              "Starting to build before writing a project brief",
+              "Changing the scope halfway through without documenting the change",
+              "Leaving all documentation until the night before submission",
+              "Evaluating only against criteria they know they've met",
+              "Treating the Trello board as optional rather than as a key artefact"
+            ]
+          },
+          {
+            "label": "Professional Practice (Launchpad Standard)",
+            "points": [
+              "Brief approved before any development work begins",
+              "Scope changes formally documented with a reason and date",
+              "Documentation updated at the end of every sprint — not at the end of the project",
+              "Evaluation includes honest 'Not Met' findings with remediation plans",
+              "Kanban board maintained throughout, showing movement of tasks across sprints"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "Every year I mentor a student who picks a massive project, spends three weeks planning it, and then panics when they realise they have one week left to build it. Scope small, execute well, and document everything. A polished, fully-documented solution to a small problem will outscore a half-finished ambitious one every single time. Sloane once delivered a one-page data dashboard that scored higher than a classmate's five-page app that was never finished. Quality over quantity — always."
+      },
+      {
+        "type": "task",
+        "title": "Set Up Your Personal Project Portfolio in Google Drive",
+        "software": "Google Drive, Google Docs, Trello",
+        "intro": "You are setting up the complete project management infrastructure for your personal digital project. This folder structure and these documents will form the submission portfolio for your assessment. Do this properly at the start and it will save you significant time later.",
+        "steps": [
+          "Create a new folder in Google Drive titled 'Personal Digital Project — [Your Name] — [Year]'.",
+          "Inside that folder, create four sub-folders: '1. Planning', '2. Development Evidence', '3. Evaluation', and '4. Final Deliverable'.",
+          "In the '1. Planning' folder, create a Google Doc titled 'Project Brief' and complete all sections: Project Title, Problem Statement, Goals (at least 3), Target Audience, Scope (In and Out), Constraints, and Key Milestones.",
+          "In the same folder, create a Google Sheet titled 'Project Timeline'. Add columns for Task, Phase, Start Date, End Date, Status, and Notes. Enter all planned tasks for your project.",
+          "Set up a Trello board for your project with lists: Backlog, Sprint 1, Sprint 2, Sprint 3, and Done. Add all your planned tasks as cards in the Backlog.",
+          "Create a Google Doc titled 'Sprint Log' in the '1. Planning' folder. This document will track what you planned and what you actually completed each sprint — update it every week.",
+          "In the '3. Evaluation' folder, create a Google Doc titled 'Evaluation Report Template' with all headings pre-built: Executive Summary, Criteria Evaluation Table, User Feedback Summary, Strengths and Limitations, and Future Recommendations. Leave the content blank for now.",
+          "Share your Planning folder with your teacher for their records — this timestamp proves when your planning was completed relative to your development work."
+        ]
+      },
+      {
+        "type": "scenarioChallenge",
+        "title": "Scenario: Mid-Project Crisis",
+        "scenario": "Two weeks into your personal project, you realise the tool you planned to use (Google Sites) does not support the interactive form functionality you specified in your brief. You have two options: Option A — switch to a different tool (Wix) which has all the features but means some of your completed work is incompatible. Option B — reduce the scope and remove the interactive feature, replacing it with a simpler static version.",
+        "questions": [
+          {
+            "question": "For EACH option, identify one advantage and one disadvantage from a project management perspective. Use terms from your studies in your answer.",
+            "marks": 4
+          },
+          {
+            "question": "Describe how you would document this scope or tool change professionally in your project portfolio. What specific records should you create or update, and what information should they include?",
+            "marks": 4
+          },
+          {
+            "question": "Explain how this type of mid-project problem could have been identified during the planning phase. What planning activity or artefact would have surfaced this risk before development began?",
+            "marks": 3
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "End of Sprint 1. Before you move on, I need you to sit with these three questions.\n\n1. Open your Sprint Log. What did you plan to complete this sprint, and what did you actually complete? If there's a gap, what caused it — and have you adjusted next sprint's plan to account for it, or are you just hoping to 'catch up'?\n\n2. Look at your Trello board. Are the cards in 'Done' genuinely done — as in, they meet the acceptance criteria you wrote? Or did you mark them done because you started them and they feel mostly finished?\n\n3. Your project brief — does your development so far still match what you planned, or have you made decisions on the fly that aren't reflected in your brief? If yes, update the brief now. An out-of-date brief is a liability, not a safety net."
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · WRITE YOUR OWN ACCEPTANCE CRITERIA",
+        "text": "Choose any 3 features from your personal project's scope. For each feature, write a formal acceptance criterion using the Given/When/Then format. Example: 'Given a registered member is logged in, when they select a date and time on the booking screen, then the system saves the booking and displays a confirmation message with a unique reference number.' Your acceptance criteria should be specific enough that someone who has never seen your project could test whether the feature is working correctly. Once written, paste these criteria as card descriptions in your Trello board — they become your definition of 'done' for those cards."
+      }
+    ]
+  },
+  {
+    "id": "project-management-quiz",
+    "title": "Project Management Quiz",
+    "estimatedMinutes": 30,
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "Project Management Knowledge Check",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "This quiz covers the key concepts from across the Y11 Project Management unit: planning a digital solution, evaluating a digital solution, and managing your own project through its full lifecycle. Work through each question carefully — some ask you to choose the best answer, and others ask you to explain your thinking. This is not a race. Read every question twice before answering."
+      },
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #3004 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟣 ASSESSMENT | Sprint Review | Assigned to: All Junior Analysts\n\nRory here. Before you start this quiz, I want you to remember something: the point of project management is not to fill in templates — it's to ship the right thing on time, with evidence that you planned and evaluated it properly. Every question in this quiz connects to a real decision you'd make on a real project. Think like a professional. You have 30 minutes."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A junior analyst begins writing code for a new client app before completing the project brief. Which project management risk does this MOST directly create?",
+          "options": [
+            "The project will automatically use a Waterfall methodology instead of Agile",
+            "The team may build features that don't match the client's actual requirements, leading to rework",
+            "The Kanban board cannot be set up until the brief is finalised",
+            "The project's Gantt chart will be inaccurate because tasks haven't been estimated yet"
+          ],
+          "correctIndex": 1,
+          "marks": 2,
+          "explanation": "Skipping the project brief means the team has no agreed requirements to build against. The most direct risk is building the wrong features — which wastes time and budget and leads to costly rework. While Gantt chart accuracy (D) is also affected, the primary risk is misalignment with client needs."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "Which of the following BEST describes 'scope creep' in a digital project?",
+          "options": [
+            "When the project timeline is extended due to team members being absent",
+            "When the client changes their mind about the visual design after it has been approved",
+            "When additional features or requirements are added to a project beyond what was originally agreed in the scope statement",
+            "When the project manager fails to update the Gantt chart to reflect completed tasks"
+          ],
+          "correctIndex": 2,
+          "marks": 2,
+          "explanation": "Scope creep refers specifically to the expansion of a project's scope beyond what was originally agreed — adding features, requirements, or deliverables that were not in the original scope statement. This is different from a timeline extension (A), a design change within approved scope (B), or poor documentation practices (D)."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A team is building a community website. They release a basic working version after two weeks, gather user feedback, then improve it in the next two-week cycle. This approach is BEST described as:",
+          "options": [
+            "Waterfall methodology, because each phase is completed before the next begins",
+            "Agile methodology, because the team works in iterative cycles and incorporates feedback",
+            "A risk register approach, because the team is identifying and responding to problems",
+            "User Acceptance Testing, because real users are reviewing the product"
+          ],
+          "correctIndex": 1,
+          "marks": 2,
+          "explanation": "Working in short, repeated cycles (sprints) and incorporating user feedback between cycles is the defining characteristic of Agile methodology. Waterfall (A) would deliver the full product only at the end. The other options describe specific project management activities, not overall methodologies."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "true_false",
+          "text": "A project evaluation should only measure criteria that the solution has successfully met, to give the client a positive impression of the team's work.",
+          "correctAnswer": false,
+          "marks": 1,
+          "explanation": "FALSE. A professional evaluation must measure ALL success criteria from the project brief — including those that were not met. Hiding failures is dishonest and unprofessional. Identifying unmet criteria allows the team to recommend remediation and plan future improvements. Clients benefit from accurate information, not a falsely positive picture."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "short_answer",
+          "text": "Rory has written the following evaluation statement: 'The system is easy to use and most users were happy with it.' Explain TWO specific weaknesses of this statement as evaluation evidence, and rewrite it as a stronger, criteria-based evaluation statement. (4 marks)",
+          "marks": 4,
+          "explanation": "Strong answers identify: (1) Vague language — 'easy to use' is not measurable, there is no criterion referenced, no specific feature mentioned. (2) No evidence — 'most users' is unquantified; no number of participants, no testing method, no specific task mentioned. A rewritten statement might read: 'Criterion: A member can complete a court booking in under 3 minutes without assistance. Evidence: Usability testing with 6 club members averaged 2 min 45 sec with no assistance required. Criterion: MET.'"
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "short_answer",
+          "text": "Describe the purpose of a project brief and explain why it should be completed BEFORE any design or development work begins. In your answer, identify TWO specific problems that can occur when a project brief is skipped. (4 marks)",
+          "marks": 4,
+          "explanation": "A project brief defines the problem, goals, audience, scope, constraints, and milestones for a project. It gives the entire team a shared understanding of what success looks like and protects both the client and the team by documenting agreed expectations. Problems when skipped include: (1) Scope creep — without an agreed scope, the client or team may continuously add requirements; (2) Misaligned deliverables — the team builds features the client didn't ask for, or misses features the client assumed were included; (3) Disputes over requirements — without documentation, there is no record of what was agreed; (4) Inefficient resource allocation — team members (like Leo, Sparky, and Sloane) work on tasks without clear priorities or dependencies."
+        }
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "If you've been paying attention across this unit, every answer in this quiz connects to something you've actually done — a brief you wrote, a Trello board you set up, a scenario you worked through. Project management is not theoretical. The tools and the vocabulary only matter because they help real teams ship real things for real clients. Whatever you build next — at school, at university, or in your first job — you now know how to plan it, manage it, and evaluate it properly. That's not nothing. That's the whole job."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "Quiz submitted. But before you close your laptop, I want you to reflect — not on your answers, but on your thinking.\n\n1. Were there any questions where you knew the vocabulary but weren't sure how it applied to a real scenario? Which concepts do you need to spend more time with before your next assessment?\n\n2. Look at the short-answer questions. Did you give specific examples, or did you answer in generalities? If your answer could apply to any project in any context, it's not specific enough.\n\n3. If Rory asked you right now to walk a new junior analyst through the difference between Waterfall and Agile using a real example — could you do it confidently? If not, which part of the unit do you need to revisit?"
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · REFLECT AND REVISE",
+        "text": "After completing the quiz, open your personal project's Sprint Log in Google Drive. Write a short reflection (4–6 sentences) that answers: Which concept from this unit has had the biggest impact on how you approached your personal project? Give one specific example of how that concept changed a decision you made. Then identify one area of your project documentation that you will improve before final submission, and describe exactly what you will do to improve it."
+      }
+    ]
+  }
+]

@@ -1,0 +1,585 @@
+[
+  {
+    "id": "elements-of-design-y12",
+    "title": "Elements of Design",
+    "estimatedMinutes": 25,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #1101 · KOOMBANA CREATIVE LABS",
+        "text": "Status: 🔴 URGENT | Sprint 7 | Assigned to: Junior Designer (Year 2)\n\nYou've graduated from intern to junior. Different league. A Busselton tourism board has come back to us after a competitor agency failed them. Their digital campaign looked 'thrown together.' Leo's verdict: the agency knew what the elements were — they didn't understand HOW they interact. Your job this sprint: produce a deep-dive element analysis of the failed campaign assets and a written brief explaining precisely which element relationships broke down and why."
+      },
+      {
+        "type": "video",
+        "youtubeId": "YqQx75OPRa0",
+        "title": "Beginning Graphic Design: Fundamentals",
+        "caption": "GCFLearnFree — Leo's pre-read. Year 12 context: watch it with element RELATIONSHIPS in mind, not just identification."
+      },
+      {
+        "type": "paragraph",
+        "text": "In Year 11 you learned to name the seven elements. Year 12 demands something harder: understanding how elements interact with each other and serve design principles. A line isn't just a line — it's a tonal shift, a spatial divider, and a movement cue simultaneously. Leo's test for Year 12 work: 'If you can only name it, you're still a student. If you can explain what it does to every other element around it, you're a designer.'"
+      },
+      {
+        "type": "grid",
+        "title": "The Seven Elements — Interaction Layer",
+        "items": [
+          {
+            "icon": "📏",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Orient_IV_%28_%29_-_Bridget_Riley_%281931%29_%2844210674930%29.jpg/500px-Orient_IV_%28_%29_-_Bridget_Riley_%281931%29_%2844210674930%29.jpg",
+            "label": "Line",
+            "description": "Line interacts with space (it divides it), tone (thick/dark lines carry more weight), and movement (diagonal lines create energy that affects adjacent shapes). In digital UI, invisible lines — alignment axes — hold entire layouts together."
+          },
+          {
+            "icon": "⬡",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Composition%2C_1921_-_Piet_Mondrian%2C_MET_DT4479.jpg/500px-Composition%2C_1921_-_Piet_Mondrian%2C_MET_DT4479.jpg",
+            "label": "Shape",
+            "description": "Shape cannot exist without space defining its boundary. Its perceived weight depends on tone and colour saturation. A large organic shape competes with nearby geometric shapes for visual dominance — and usually wins."
+          },
+          {
+            "icon": "🔲",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Facevase.png/500px-Facevase.png",
+            "label": "Space",
+            "description": "Negative space is not nothing — it's an active element that defines positive shapes. More space around an element signals its importance (emphasis through isolation). Tight space creates tension; generous space signals premium and calm."
+          },
+          {
+            "icon": "🪨",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Weathered_wood_grain_texture_macro_closeup_detail.jpg/500px-Weathered_wood_grain_texture_macro_closeup_detail.jpg",
+            "label": "Texture",
+            "description": "Visual texture modifies the perceived tone of a surface. A rough texture on a mid-tone shape makes it read darker. Texture also affects spatial depth — rough textures feel closer, smooth textures recede. Use texture to add dimension without changing colour."
+          },
+          {
+            "icon": "🎨",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Color_star-en_%28tertiary_names%29.svg/500px-Color_star-en_%28tertiary_names%29.svg.png",
+            "label": "Colour",
+            "description": "Colour's three properties (hue, saturation, tone) each interact differently with other elements. Hue communicates emotion; saturation controls visual intensity relative to neighbouring elements; tone determines contrast and hierarchy — and is the only property that matters in greyscale."
+          },
+          {
+            "icon": "🎲",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Platonic_solids.jpg/500px-Platonic_solids.jpg",
+            "label": "3D Form",
+            "description": "Form is created through the interaction of tone (light/shadow), texture (surface variation), and space (depth cues). Remove any one of these and the illusion of three-dimensionality collapses. Flat design deliberately eliminates form to achieve clarity."
+          },
+          {
+            "icon": "🌗",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Ansel-adams-monolith-the-face-of-half-dome_-_edit1.jpg/500px-Ansel-adams-monolith-the-face-of-half-dome_-_edit1.jpg",
+            "label": "Tone",
+            "description": "Tone is the foundation of all contrast, depth, and hierarchy. It is the only element that functions independent of colour. Leo's greyscale test: strip colour from any design — if hierarchy and emphasis collapse, the design was built on hue rather than tone, and it will fail for colourblind users."
+          }
+        ]
+      },
+      {
+        "type": "richText",
+        "heading": "How Elements Interact: The Dependency Map",
+        "html": "<p>Understanding element relationships is the Y12 skill. Here is how the seven elements depend on each other:</p><ul><li><strong>Form</strong> requires Tone (shadow/highlight), Texture (surface), and Space (depth cues) to exist</li><li><strong>Contrast</strong> (a principle) is achieved through Tone, Colour saturation, and Size (Space)</li><li><strong>Emphasis</strong> (a principle) is created through Colour hue, Tone contrast, and Space (isolation)</li><li><strong>Line</strong> creates edges for Shape AND divides Space simultaneously</li><li><strong>Texture</strong> modifies the perceived Tone of any surface it occupies</li></ul><p>When you annotate a design at Year 12 level, you must trace these relationships — not just name individual elements.</p>"
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · ELEMENT INTERACTION ANALYSIS",
+        "text": "The tourism board's failed campaign has three specific problems. For each one, identify the ELEMENT INTERACTION that broke down — not just the single element at fault.\n\nProblem 1: The hero image of Cape Naturaliste lighthouse uses golden-hour warm tones, but the text overlay is in a warm orange — it reads as one undifferentiated mass.\n\nProblem 2: The layout uses both diagonal beach wave lines AND horizontal rule dividers between sections. The page feels restless and unfocused.\n\nProblem 3: The logo sits in a busy textured background panel with no surrounding space, and it's the same tonal value as the panel.\n\nFor each problem:\n- Name the two or more elements interacting\n- Explain precisely how they are competing rather than complementing\n- Propose a fix that respects the existing brand colours"
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · LEO IS PUSHING BACK",
+        "text": "Leo reviewed your interaction analysis. His comments:\n\nComment 1: 'Problem 1 — you said it's a colour problem. But strip the colour out. In greyscale, the text STILL disappears into the image. What element is actually failing here, and how does this change your fix?'\n\nComment 2: 'Problem 2 — you said \"too many lines.\" That's identification, not analysis. What principle are the two types of lines violating through their interaction, and what would you remove to fix it?'\n\nComment 3: 'Problem 3 — you correctly identified isolation (space) as missing. But the logo also has the same TONE as the background. Which element — space or tone — do you fix first? Does it matter? Defend your answer.'"
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Element interaction",
+            "definition": "The way two or more design elements affect each other's perceived properties — for example, how texture modifies the apparent tone of a surface, or how negative space enhances the visual weight of a shape."
+          },
+          {
+            "term": "Tonal contrast",
+            "definition": "The difference in lightness/darkness between adjacent elements. The primary mechanism for creating readable contrast, independent of colour. Measured objectively as a contrast ratio (e.g. WCAG AA requires 4.5:1 for body text)."
+          },
+          {
+            "term": "Visual weight",
+            "definition": "The perceived heaviness or presence of an element in a composition — determined by its size, colour saturation, tone, and surrounding space. Elements with high visual weight dominate compositions."
+          }
+        ]
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A designer places white text on a pale yellow background. The text is readable in colour but disappears when the image is viewed in greyscale. Which element is primarily failing?",
+          "options": [
+            "Colour — the hue choice is wrong",
+            "Tone — there is insufficient lightness/darkness contrast",
+            "Texture — the background is too smooth",
+            "Space — the text needs more padding"
+          ],
+          "correctIndex": 1,
+          "explanation": "Tone (lightness/darkness) is failing. White and pale yellow may be different hues but have nearly identical tonal values. In greyscale this reads as two similar greys with almost no contrast. The fix is to darken the background or darken the text — not to change the colour. Tonal contrast must exist independently of colour."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "short_answer",
+          "text": "A student annotates a design decision: 'I used colour to create emphasis.' Rewrite this annotation to Year 12 standard, identifying the specific colour property used, which element it interacts with, and how together they create emphasis.",
+          "marks": 4,
+          "explanation": "A strong Y12 annotation: 'Emphasis is created through high tonal contrast between the call-to-action button (deep navy, tone value ~15%) and the surrounding white space (tone value 100%). The 85% tonal difference isolates the button visually, directing the viewer's eye before they consciously register the colour. The interaction between the colour's tone property and the surrounding negative space — rather than the hue itself — is what drives the emphasis.' (2 marks for naming specific colour property + interaction element; 2 marks for explaining the mechanism)"
+        }
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · LEO THORNE, KOOMBANA CREATIVE LABS",
+        "text": "A junior designer sees elements as a checklist. A senior designer sees them as a system. The moment you understand that changing one element changes everything around it — that removing space from beside a logo is the same as adding visual noise to it — you've crossed the line. Year 12 is where you make that crossing. Elements don't live alone on your canvas. They negotiate. Your job is to be the mediator."
+      }
+    ]
+  },
+  {
+    "id": "principles-of-design-y12",
+    "title": "Principles of Design",
+    "estimatedMinutes": 25,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #1108 · KOOMBANA CREATIVE LABS",
+        "text": "Status: 🟡 HIGH | Sprint 7 | Assigned to: Junior Designer (Year 2)\n\nThe tourism board's campaign is salvageable, but we need a principles audit before we touch a single element. A new client — Koombana Bay Developments — is watching this project as a test of whether to hire us for their residential branding. Leo needs your principles analysis as a written document he can present at Thursday's pitch meeting. It has to justify every design decision with both the principle AND the element that delivers it."
+      },
+      {
+        "type": "paragraph",
+        "text": "In Year 11, you learned the six principles. Year 12 goes a layer deeper: principles don't operate alone, and they don't operate without elements. Balance requires colour, tone, and shape to distribute visual weight. Emphasis requires tonal contrast, spatial isolation, and often colour saturation to create a focal point. At Y12 standard, every principle annotation must name the elements used to achieve it."
+      },
+      {
+        "type": "grid",
+        "title": "The Six Principles — Element Dependencies",
+        "items": [
+          {
+            "icon": "⚖️",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat_03.jpg/500px-Cat_03.jpg",
+            "label": "Balance",
+            "description": "Achieved by distributing visual weight — which is itself created by colour saturation, tone, shape size, and spatial isolation. Symmetrical balance mirrors these properties; asymmetrical balance counterweights different combinations of them. You cannot assess balance without examining these underlying elements."
+          },
+          {
+            "icon": "🔦",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/500px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg",
+            "label": "Emphasis",
+            "description": "Created through the strategic use of tonal contrast (tone element), spatial isolation (space element), scale difference (shape/space), or colour saturation spike (colour element). Emphasis fails when the target element doesn't sufficiently differentiate itself from surrounding elements along at least two of these dimensions."
+          },
+          {
+            "icon": "👑",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Camponotus_flavomarginatus_ant.jpg/500px-Camponotus_flavomarginatus_ant.jpg",
+            "label": "Dominance",
+            "description": "The dominant element typically combines maximum scale (space), highest tonal contrast (tone), and strongest colour saturation (colour) relative to all other elements. In digital interfaces, the hero image or primary CTA holds dominance. Changing its size, tone, or saturation redistributes dominance — sometimes unintentionally."
+          },
+          {
+            "icon": "🔗",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Lego_Color_Bricks.jpg/500px-Lego_Color_Bricks.jpg",
+            "label": "Unity",
+            "description": "Created by repeating the same elements consistently: the same line style (line element), the same colour palette (colour element), the same typeface and weight (typography), the same spatial intervals (space element). Unity is not a single choice — it's a system of consistent element repetition across an entire product."
+          },
+          {
+            "icon": "📐",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Khoury_College_New_Graphic.svg/500px-Khoury_College_New_Graphic.svg.png",
+            "label": "Proportion",
+            "description": "The size relationships between elements — governed by the interaction of shape dimensions and spatial allocation. The golden ratio (1:1.618) is a classic proportion guideline. Type scale proportions (H1:H2:body ≈ 3:2:1) use the space element to signal information hierarchy. Wrong proportion destroys hierarchy even when individual elements are correctly styled."
+          },
+          {
+            "icon": "🎼",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/GoldenRatio_Parthenon.jpg/500px-GoldenRatio_Parthenon.jpg",
+            "label": "Contrast",
+            "description": "The planned difference between elements along any dimension: tone (light/dark), colour saturation (vivid/muted), scale (large/small), texture (rough/smooth), line weight (heavy/thin). Contrast creates visual interest, signals hierarchy, and enables accessibility. Low contrast fails both aesthetically and functionally — inaccessible text is a legal issue in Australia."
+          }
+        ]
+      },
+      {
+        "type": "richText",
+        "heading": "The Principles–Elements Framework: Y12 Annotation Standard",
+        "html": "<p>Every Y12 annotation must link a principle to the element(s) that deliver it. Use this structure:</p><table style='border-collapse:collapse;width:100%;font-size:14px;'><tr style='background:#f0f0f0;'><th style='padding:8px;border:1px solid #ddd;text-align:left;'>Principle</th><th style='padding:8px;border:1px solid #ddd;text-align:left;'>Primary elements delivering it</th><th style='padding:8px;border:1px solid #ddd;text-align:left;'>Annotation standard</th></tr><tr><td style='padding:8px;border:1px solid #ddd;'>Emphasis</td><td style='padding:8px;border:1px solid #ddd;'>Tone, Colour, Space</td><td style='padding:8px;border:1px solid #ddd;'>Name the element property + its interaction with surroundings</td></tr><tr style='background:#f9f9f9;'><td style='padding:8px;border:1px solid #ddd;'>Balance</td><td style='padding:8px;border:1px solid #ddd;'>Colour, Tone, Shape, Space</td><td style='padding:8px;border:1px solid #ddd;'>Describe how weight is distributed, not just that it is</td></tr><tr><td style='padding:8px;border:1px solid #ddd;'>Unity</td><td style='padding:8px;border:1px solid #ddd;'>Colour, Line, Space</td><td style='padding:8px;border:1px solid #ddd;'>List the specific repeated element properties</td></tr><tr style='background:#f9f9f9;'><td style='padding:8px;border:1px solid #ddd;'>Contrast</td><td style='padding:8px;border:1px solid #ddd;'>Tone, Colour, Shape</td><td style='padding:8px;border:1px solid #ddd;'>Quantify where possible (e.g. 4.5:1 contrast ratio)</td></tr></table>"
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · PRINCIPLES AUDIT FOR THE TOURISM CAMPAIGN",
+        "text": "Write a 6-principle audit of the Busselton tourism campaign. For each principle, do THREE things:\n\n1. State whether it is working, partially working, or broken\n2. Identify the specific ELEMENTS (not just the principle) involved\n3. Write one concrete fix using correct design vocabulary\n\nExample format:\nEmphasis — BROKEN. The headline uses the same tonal value and colour saturation as the subheading. No tonal contrast exists between levels. Fix: Increase headline to 72px and apply a near-black (#1A1A1A) to create an 8:1 contrast ratio against the white background, establishing tonal dominance.\n\nComplete all six: Emphasis, Dominance, Balance, Unity, Proportion, Contrast."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · LEO IS PUSHING BACK",
+        "text": "Leo's reviewed the audit draft. His comments before it goes to the client:\n\nComment 1: 'You said Unity is \"partially working\" because the colours are consistent. But what about line style? Spacing intervals? Typeface weight variations? List the specific elements that ARE consistent and the ones that ARE NOT. Half-marks for vague assessments.'\n\nComment 2: 'For Contrast you wrote \"the text should be darker.\" The Koombana Bay client is sitting across the table from me on Thursday. Give me a number. What contrast ratio are you targeting and why does it matter to this particular client?'\n\nComment 3: 'Your Proportion fix changes the headline to 72px. Walk me through how this affects the Balance of the layout — because changing one element changes everything. What else moves?'"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A student writes: 'I applied the principle of balance.' Which response would Leo give?",
+          "options": [
+            "Correct — naming the principle is sufficient for Year 12",
+            "Incorrect — you must name which type of balance and which elements were used to achieve it",
+            "Partially correct — naming balance is enough if you can identify it in the design",
+            "Incorrect — balance is a Year 11 concept and should not be used at Year 12"
+          ],
+          "correctIndex": 1,
+          "explanation": "At Year 12 level, naming the principle alone scores poorly. You must identify: (1) the type of balance (symmetrical/asymmetrical/radial); (2) the elements used to achieve it (e.g. colour saturation, tone, shape size); and (3) how they are distributed to create equilibrium. SCSA assessments use 'identify, describe, justify' — a bare principle name only satisfies 'identify'."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "short_answer",
+          "text": "A redesigned tourism poster has a large ocean photograph filling the top 60% of the layout, with a bold white headline in the lower third and a teal call-to-action button. Identify which principle governs the 60/40 split, and write a full Year 12 annotation (identify, describe, justify) for it.",
+          "marks": 5,
+          "explanation": "Principle: Proportion (and related: Dominance). Full annotation: 'The principle of proportion governs the 60/40 division between the hero photograph (upper 60%) and the text zone (lower 40%). The larger spatial allocation to the image exploits the interaction between the space element (size of allocation) and the colour element (the vivid ocean tones) to create a dominant visual anchor that establishes place and emotion before the viewer processes any text. The 40% text zone uses proportion to signal hierarchy — headline above, smaller subtext below, CTA last — matching the intended reading order for a tourism audience who respond to place imagery before logistical details. This proportion ratio was chosen over 50/50 because equal division would split visual dominance between image and text, eliminating the clear emotional entry point critical for tourism marketing.' (1 mark principle, 2 marks describe with elements named, 2 marks justify with audience/purpose)"
+        }
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · LEO THORNE, KOOMBANA CREATIVE LABS",
+        "text": "The client doesn't know the vocabulary. They'll say 'it feels off' or 'something's not right.' Your job — and the job your Year 12 exam is testing — is to translate that feeling into a precise diagnosis. 'Your emphasis is broken because the headline and the CTA share the same tonal value' is a diagnosis. 'It needs to pop more' is not. One of those gets you hired. Learn the vocabulary until it's instinct, then use it to solve real problems, not impress teachers."
+      }
+    ]
+  },
+  {
+    "id": "unity-and-typography",
+    "title": "Unity and Typography",
+    "estimatedMinutes": 25,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #1117 · KOOMBANA CREATIVE LABS",
+        "text": "Status: 🟡 HIGH | Sprint 8 | Assigned to: Junior Designer (Year 2)\n\nKoombana Bay Developments liked the pitch and signed us. First deliverable: a unified design system for their residential branding. Three touchpoints — website homepage, print brochure, and Instagram tile. Different software, different junior designers, same brand. Leo's absolute rule: unity must be documented BEFORE anyone opens a design tool. Your deliverable: a typography and unity specification document."
+      },
+      {
+        "type": "video",
+        "youtubeId": "sByzHoiYFX0",
+        "title": "Beginning Graphic Design: Typography",
+        "caption": "GCFLearnFree — Y12 focus: watch for how typography choices create or destroy unity across a brand system."
+      },
+      {
+        "type": "paragraph",
+        "text": "Unity is the Year 12 version of a concept you saw in Year 11. The upgrade: Year 12 requires you to understand the MECHANISMS that create unity — proximity and repetition — and to specify them precisely. 'Use the same colours' is not a unity specification. A unity specification names exact values: #1A3C5E, Inter Bold 700, 8px corner radius on all interactive elements, 24px minimum padding inside all cards. That's what Leo needs for Koombana Bay."
+      },
+      {
+        "type": "richText",
+        "heading": "The Two Mechanisms of Unity",
+        "html": "<p>Unity in design is created by two distinct mechanisms that operate at different scales:</p><h4>1. Proximity (local unity)</h4><p>Elements that are physically close are perceived as related. Proximity creates visual groupings — a product image with its name, price, and button forms a unit. In CSS, margin and padding control proximity. In Figma, auto-layout enforces it. The rule: <strong>related elements share a spacing interval; unrelated elements are separated by a larger interval</strong>. An 8px grid makes this systematic: 8px between related items, 32px between groups, 64px between sections.</p><h4>2. Repetition (global unity)</h4><p>Repeating the same element properties across all parts of a product creates coherence. Every button has the same corner radius, colour, and padding. Every heading uses the same typeface and weight. Every section uses the same spacing system. Repetition is what a <strong>brand style guide</strong> formalises — it transforms individual design decisions into a system. Without a style guide, every new designer makes different decisions and unity breaks.</p>"
+      },
+      {
+        "type": "grid",
+        "title": "Typography: The Five Properties at Year 12 Depth",
+        "items": [
+          {
+            "icon": "🔡",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Helvetica_Neue_typeface_sizes.jpg/500px-Helvetica_Neue_typeface_sizes.jpg",
+            "label": "Typeface",
+            "description": "Max two typeface families per product. One for headings (personality), one for body (readability). Serif = editorial/print authority. Sans-serif = digital clarity. The brand brief determines which — never personal preference."
+          },
+          {
+            "icon": "📏",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Garamond_Roman_Sample.svg/500px-Garamond_Roman_Sample.svg.png",
+            "label": "Size",
+            "description": "A type scale creates hierarchy through proportion: H1 (hero), H2 (section), H3 (subhead), body, caption. Each level must be visually distinct. A 1.25 or 1.333 ratio scale ensures consistent mathematical spacing between levels — not arbitrary sizing."
+          },
+          {
+            "icon": "⬅️",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Futura_Specimen.svg/500px-Futura_Specimen.svg.png",
+            "label": "Alignment",
+            "description": "Left-align body text for Western audiences (fastest reading path). Centre only for short headings or invitations. Right-align only for specific stylistic effects. Justified text creates uneven letter gaps (rivers) in digital — avoid for body text."
+          },
+          {
+            "icon": "✏️",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Pacifico_font_specimen.png/500px-Pacifico_font_specimen.png",
+            "label": "Format (weight/style/case)",
+            "description": "Bold, italic, uppercase — each is a contrast tool. Use format to create emphasis within a text block: bold for terms, italic for titles, uppercase for labels. Do not use formatting decoratively. Every format change must serve a specific hierarchical purpose."
+          },
+          {
+            "icon": "↕️",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Orient_IV_%28_%29_-_Bridget_Riley_%281931%29_%2844210674930%29.jpg/500px-Orient_IV_%28_%29_-_Bridget_Riley_%281931%29_%2844210674930%29.jpg",
+            "label": "Spacing (leading/kerning/tracking)",
+            "description": "Leading (line height): 1.4–1.6× font size for body text readability. Kerning: adjust specific letter pairs at display sizes (AV, WA, etc.). Tracking: increase for ALL CAPS labels (+50–100 units); never increase tracking on body text — it breaks word shapes."
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "headers": ["Property", "Koombana Bay Specification", "Why this choice"],
+        "rows": [
+          ["Heading typeface", "Playfair Display (serif), Bold 700", "Conveys premium residential quality; editorial authority matches print brochure context"],
+          ["Body typeface", "Inter (sans-serif), Regular 400", "Optimal screen readability; neutral, modern, works at 14–16px across devices"],
+          ["Type scale (px)", "H1: 48 / H2: 32 / H3: 22 / Body: 16 / Caption: 12", "1.333 ratio scale creates consistent mathematical hierarchy"],
+          ["Body alignment", "Left-aligned", "Fastest reading path; consistent across all three touchpoints"],
+          ["Leading", "Body: 1.5× font size (24px)", "Comfortable reading rhythm for marketing copy; not too tight for small screens"],
+          ["Tracking", "+80 units on all uppercase labels (NAV, CTAs)", "Improves readability of spaced capitals; signals premium brand positioning"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · THE UNITY SPECIFICATION",
+        "text": "Write the proximity and repetition rules for Koombana Bay's design system. Be specific enough that a designer you've never met could implement them without asking a question.\n\nProximity rules (local unity):\n- Base spacing unit: ___ px\n- Gap between related elements within a card: ___ px\n- Gap between cards/sections: ___ px\n- Minimum padding inside interactive elements (buttons): ___ px\n\nRepetition rules (global unity) — complete for each:\n- Button corner radius: ___ px (applied to ALL buttons across web, print, Instagram)\n- Primary brand colour (hex): ___\n- Heading typeface + weight: ___\n- Body typeface + weight: ___\n- Icon style (flat / outlined / filled): ___\n\nBonus: Explain in one sentence WHY proximity and repetition together achieve unity, where each alone would not."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · LEO IS PUSHING BACK",
+        "text": "Leo's read the spec. Comments before it goes to the team:\n\nComment 1: 'You've specified the heading typeface but not the weight. Someone will use Regular instead of Bold and the hierarchy will collapse. What's the exact weight value?'\n\nComment 2: 'Your spacing spec says \"comfortable gaps between sections.\" That's useless. What is the number? What happens on mobile when that number has to change for a smaller viewport?'\n\nComment 3: 'The Instagram designer is going to use Canva and the web developer is going to use Figma and the brochure designer is going to use InDesign. How do you ensure the Playfair Display heading looks the same in all three? What file do you give each of them?'"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A brand has a perfect colour palette and typeface system. However, different designers use 4px, 8px, 12px, and 16px padding inside buttons with no consistent rule. Which mechanism of unity is broken?",
+          "options": [
+            "Proximity — related elements are not grouped correctly",
+            "Repetition — a specific element property is not applied consistently",
+            "Emphasis — the buttons have no clear focal point",
+            "Balance — the padding creates asymmetry"
+          ],
+          "correctIndex": 1,
+          "explanation": "Repetition (global unity) is broken. The button padding is a specific element property — the space element's internal dimensions — that should be repeated identically across all instances. Four different values mean the brand has no system, only individual decisions. Users subconsciously detect this inconsistency as unprofessionalism."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "short_answer",
+          "text": "Explain how proximity and repetition work as the two distinct mechanisms of unity in a multi-page real estate brochure. Give a specific example of each mechanism in action within this context.",
+          "marks": 4,
+          "explanation": "Proximity (local unity): Groups related information so the viewer reads it as a single unit without confusion. Example: On each property listing page, the property photo, address, price, and 'Enquire' button are placed within a fixed 16px spacing system, so they read as one card regardless of content length. Removing any item from that grouping or spacing it further apart would signal to the reader that it belongs to a different section. Repetition (global unity): Reuses the same element properties across all pages, so every page looks like it belongs to the same document. Example: Every page heading uses Playfair Display Bold 700 at 32px, and every property price uses Inter Bold 600 in the brand navy — even if different designers produced different pages. This consistency signals a single, professional brand identity. Together they work because proximity handles in-page organisation while repetition handles across-page coherence. (2 marks per mechanism: mechanism explained + specific contextual example)"
+        }
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · LEO THORNE, KOOMBANA CREATIVE LABS",
+        "text": "The most expensive design mistake I see from graduates is confusing creative decisions with system decisions. Choosing a font is a creative decision — you make it once. Specifying the exact weight, size, leading, and tracking for that font in every context it appears is a system decision — and you make it in the style guide, not in each individual file. The creative decision is the fun part. The system decision is what stops the project from falling apart when a second designer touches the files."
+      }
+    ]
+  },
+  {
+    "id": "compositional-rules",
+    "title": "Compositional Rules",
+    "estimatedMinutes": 25,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #1124 · KOOMBANA CREATIVE LABS",
+        "text": "Status: 🟡 HIGH | Sprint 8 | Assigned to: Junior Designer (Year 2)\n\nKoombana Bay's web developer needs a Figma handoff file for the homepage. The layout mockup looks 'scattered and random' according to the dev team — they can't build from it because there's no clear grid structure and the hero image placement doesn't match the verbal brief. Leo needs you to (a) analyse what went wrong compositionally, (b) fix it with documented grid decisions, and (c) produce annotated specs showing EXACTLY how the rule of thirds and grid system are applied. The dev team builds from the annotations, not the design."
+      },
+      {
+        "type": "paragraph",
+        "text": "Compositional rules at Year 12 level are not just about placing elements correctly — they are about documenting WHY you placed them where you did, with enough precision that a developer can replicate your intent in code. Annotating a composition is the skill that separates a junior designer from a professional one. In industry, annotated layouts are called 'redlines' or 'design specs' — they are as important as the visual itself."
+      },
+      {
+        "type": "grid",
+        "title": "Compositional Tools at Year 12 Depth",
+        "items": [
+          {
+            "icon": "⊞",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/FingerRuleOfThirds.jpg/500px-FingerRuleOfThirds.jpg",
+            "label": "Rule of Thirds",
+            "description": "A 3×3 grid creates four intersection points — the positions where the eye is most naturally drawn. At Y12, you must not only apply the rule but justify which intersection point you used and why it serves the design's purpose and audience. No credit for 'I used rule of thirds' without justification."
+          },
+          {
+            "icon": "⬜",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Gridded_Page_Spread.svg/500px-Gridded_Page_Spread.svg.png",
+            "label": "12-Column Grid",
+            "description": "The professional web layout standard. 12 columns allow 2, 3, 4, and 6-column content blocks without fraction columns. Gutters (fixed gaps between columns) maintain breathing room. The grid is invisible in the final product — its purpose is structural discipline during design, not decorative pattern."
+          },
+          {
+            "icon": "🌀",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Fibonacci_spiral_34.svg/500px-Fibonacci_spiral_34.svg.png",
+            "label": "Golden Ratio",
+            "description": "1:1.618 — the ratio that appears in nature, architecture, and classical art. In design, it governs layout proportions (a 7:5 column split approximates it), font-size scales, and image cropping. It is a guideline, not a rule — but understanding it explains WHY certain proportions feel inherently correct."
+          },
+          {
+            "icon": "✏️",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/GoldenRatio_Parthenon.jpg/500px-GoldenRatio_Parthenon.jpg",
+            "label": "Annotation",
+            "description": "In industry, design specs document every compositional decision: column widths, gutter sizes, margin values, spacing between elements. Without this documentation, developers interpret the design differently from the designer's intent. Annotation IS the deliverable — not just a nice-to-have."
+          }
+        ]
+      },
+      {
+        "type": "richText",
+        "heading": "The Three-Part Annotation Standard (Y12 Required)",
+        "html": "<p>SCSA requires 'detailed annotations relevant to a particular design brief.' This is the standard for every annotation you produce:</p><ol><li><strong>Identify</strong> — name the specific compositional rule or tool by its correct term.<br><em>Example: 'The principle of rule of thirds is applied to the hero image.'</em></li><li><strong>Describe</strong> — explain precisely how it manifests in THIS design, with reference to measurements, positions, or specific elements.<br><em>Example: 'The lighthouse subject is positioned at the upper-left intersection point of the 3×3 grid, approximately 33% from the left edge and 33% from the top of the frame.'</em></li><li><strong>Justify</strong> — explain WHY this compositional choice serves the design brief, the audience, and the intended purpose.<br><em>Example: 'Placing the subject off-centre creates a dynamic, aspirational quality appropriate for a premium tourism brand targeting 35–55 year olds seeking unique experiences. The left-positioned subject also leaves empty sky space on the right for text overlay without obscuring the focal point.'</em></li></ol><p>A one-sentence annotation ('I used rule of thirds') scores zero in Year 12 assessments.</p>"
+      },
+      {
+        "type": "table",
+        "headers": ["Compositional tool", "Y12 annotation requirement", "Common Y12 error"],
+        "rows": [
+          ["Rule of thirds", "Specify WHICH intersection point and justify why that position serves the audience/purpose", "Saying 'I used rule of thirds' without specifying which power point or why"],
+          ["12-column grid", "Specify column count per section, gutter width, and how content blocks span columns", "Describing the grid without stating how it organises the specific content of this brief"],
+          ["Alignment", "Identify the axis of alignment and explain how it creates visual order in this specific layout", "Saying 'elements are aligned' without identifying the shared axis or the effect"],
+          ["Gutter/spacing", "Give values in px and explain how the spacing system enforces proximity relationships", "Describing spacing as 'consistent' without specifying the base unit or values"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · ANNOTATE THE KOOMBANA BAY HOMEPAGE",
+        "text": "The Koombana Bay homepage has these compositional decisions. Write a full three-part annotation (identify, describe, justify) for EACH of the four decisions below.\n\nDecision 1: The hero photograph occupies the full-width top section. The main subject (a family on a deck with ocean view) is placed at the upper-right rule-of-thirds intersection.\n\nDecision 2: The property listing section uses a 3-column grid (each listing spans 4 of the 12 available columns), with 24px gutters.\n\nDecision 3: The headline 'Life on the Bay' appears at 72px in Playfair Display Bold, left-aligned, with 48px of white space above it and 24px below it.\n\nDecision 4: The call-to-action button ('View Properties') is placed in the lower-left third of the hero section.\n\nEach annotation should be 3–5 sentences. Reference the client brief: premium residential development, target audience 35–55, brand tone: aspirational, calm, coastal."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · LEO IS PUSHING BACK",
+        "text": "Leo read your annotation draft before sending to the developer. His comments:\n\nComment 1: 'Decision 1 — you identified and described the rule of thirds correctly. But your justification says \"it looks more natural.\" The client is spending $400k on this campaign. \"Looks more natural\" is not a justification. What specifically about this audience and this brief makes off-centre placement the right call over a centred hero? Rewrite.'\n\nComment 2: 'Decision 3 — 48px white space above the headline. You stated the value but you didn't justify it. Why 48px specifically? What spacing system does this come from? What happens to this annotation if the developer halves it to 24px?'\n\nComment 3: 'Decision 4 — the CTA is in the lower-left third. Your justification says \"so users can find it.\" Every designer says that. Tell me which compositional principle this placement relies on and what user behaviour it is designed to exploit.'"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A designer places a hero product image at the upper-right rule-of-thirds intersection on a landing page. Which is the BEST Year 12-standard justification for this placement?",
+          "options": [
+            "The rule of thirds makes designs look more professional",
+            "Off-centre placement creates visual tension that engages viewers",
+            "Upper-right placement positions the focal point where the eye naturally lands after scanning the headline from left to right, and leaves the upper-left area for the brand logo without visual competition",
+            "The rule of thirds was taught in Year 11 and should be applied to all designs"
+          ],
+          "correctIndex": 2,
+          "explanation": "Option C is the only justification that references audience behaviour (reading pattern), relates the placement to another element (the logo), and explains the functional benefit (avoiding visual competition). Options A, B, and D are generic statements that do not reference this specific design context. Year 12 justifications must be brief-specific, not generic."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "short_answer",
+          "text": "A student's annotation reads: 'I used a grid to make the layout look organised.' Rewrite this as a complete Year 12 annotation (identify, describe, justify) for a 12-column grid used in the Koombana Bay property listing section.",
+          "marks": 3,
+          "explanation": "Identify: 'A 12-column grid system is applied to the property listings section.' Describe: 'Each of the three property cards spans 4 of the 12 available columns, with 24px gutters between them, creating a consistent three-column layout at desktop viewport width. All card edges align to column boundaries, with 48px horizontal margins on each side.' Justify: 'The 12-column system was chosen because it divides evenly into three — matching the three featured properties in this section — while the 24px gutters provide sufficient spatial separation to distinguish each property as an independent unit. The consistent column boundaries create professional visual alignment that reinforces the premium positioning of Koombana Bay to its 35–55 year old audience.' (1 mark identify, 1 mark describe with values, 1 mark justify with brief/audience reference)"
+        }
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · LEO THORNE, KOOMBANA CREATIVE LABS",
+        "text": "I've hired junior designers who can produce beautiful layouts and I've fired them six months later because they couldn't explain their decisions to a client or a developer. The layout is what you make. The annotation is what you know. When the developer sends back a build that looks wrong, you need to be able to point to your spec document and say 'look at line 7 — the gutter is 24px, not 16px.' Without documentation, you're arguing from memory and you will lose. Annotate everything. Annotate it before someone asks."
+      }
+    ]
+  },
+  {
+    "id": "applying-design-to-digital-products",
+    "title": "Applying Design to Digital Products",
+    "estimatedMinutes": 30,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #1133 · KOOMBANA CREATIVE LABS",
+        "text": "Status: 🔴 URGENT | Sprint 9 | Assigned to: Junior Designer (Year 2)\n\nKoombana Bay Developments wants a final integrated deliverable: a design for their Instagram campaign tile (1080×1080px) and a full annotated specification document. This is a real client brief. The deliverable will be reviewed by Leo, the client, AND a developer. Your annotations must be precise enough for the developer to build from without a single follow-up question. This is your final sprint. No second chances."
+      },
+      {
+        "type": "paragraph",
+        "text": "Everything from this topic — elements, principles, unity, typography, composition — converges in a single real client project. At Year 12 level, you are expected to move fluently between all of these frameworks: using elements to deliver principles, using principles to serve the brief, using compositional tools to structure the layout, and documenting every decision to Year 12 annotation standard. This is what professional designers do on every project."
+      },
+      {
+        "type": "richText",
+        "heading": "The Koombana Bay Instagram Campaign Brief",
+        "html": "<div style='background:#f8f4ef;border-left:4px solid #8B6C42;padding:16px;border-radius:4px;'><h4 style='margin-top:0;color:#5C3D1E;'>CLIENT BRIEF — CONFIDENTIAL</h4><p><strong>Client:</strong> Koombana Bay Developments, Bunbury WA</p><p><strong>Product:</strong> Instagram campaign tile — 1080×1080px, static image</p><p><strong>Campaign line:</strong> 'Life on the Bay'</p><p><strong>Target audience:</strong> 35–55 year olds, professional, WA regional or Perth-based, interested in coastal lifestyle and premium property</p><p><strong>Tone:</strong> Aspirational, calm, premium — NOT flashy or aggressive</p><p><strong>Required content:</strong></p><ul><li>Development name: 'Koombana Bay' (heading)</li><li>Campaign line: 'Life on the Bay' (subheading)</li><li>Call to action: 'Register your interest' (button)</li><li>Website URL: koombana.com.au (caption text)</li></ul><p><strong>Approved colour palette:</strong> Deep navy #1A3C5E, warm sand #C8A97A, white #FFFFFF</p><p><strong>Approved typefaces:</strong> Playfair Display (headings), Inter (body/CTA)</p><p><strong>Image:</strong> A horizontal ocean-view photograph provided — calm water, golden light, no people</p></div>"
+      },
+      {
+        "type": "paragraph",
+        "text": "The element–principle relationship is not a concept for an exam — it is the lens through which every design decision is made. When you place the text overlay, you are using the colour element (white text) to create tonal contrast (principle: emphasis) against the image. When you apply 48px padding inside the CTA button, you are using the space element to create visual weight (principle: proportion) that signals importance. When you repeat the same corner radius on every element, you are using the space element (shape boundary) to create repetition (mechanism of unity). Every decision has this structure."
+      },
+      {
+        "type": "softwareExamples",
+        "title": "Design Tools for This Brief",
+        "apps": [
+          {
+            "name": "Figma",
+            "licence": "Free (Education)",
+            "note": "Create an 1080×1080px frame. Set up a 12-column grid. Use component libraries for the button and text styles. Export to PNG at 2x for retina screens. Add annotation layers showing all spacing values."
+          },
+          {
+            "name": "Canva",
+            "licence": "Free (Basic)",
+            "note": "Use a blank Instagram post template (1080×1080). Set custom brand colours in Brand Kit. Suitable for the design execution but annotations must be added manually in a separate document."
+          },
+          {
+            "name": "Adobe Photoshop / Express",
+            "licence": "Paid / Free (limited)",
+            "note": "Strong for photo manipulation and overlay. Suitable if the hero image requires colour correction or composition adjustment before design work begins."
+          }
+        ]
+      },
+      {
+        "type": "scenarioChallenge",
+        "title": "Final Brief: Koombana Bay Instagram Tile",
+        "scenario": "Using the client brief above, complete the Koombana Bay Instagram campaign tile. Your final submission must include: (1) the finished design exported at 1080×1080px; (2) an annotated version showing all compositional, typographic, and element/principle decisions; (3) a written design rationale of 250–350 words addressed to Leo Thorne for the client presentation.",
+        "questions": [
+          {
+            "question": "Identify which compositional rule you applied to place the campaign line 'Life on the Bay' and justify your placement with specific reference to the audience (35–55, premium market) and the image content (calm ocean, no people). Include measurements.",
+            "marks": 4
+          },
+          {
+            "question": "Explain how you used the element of COLOUR to deliver the principle of EMPHASIS for the CTA button ('Register your interest'). Name the specific colour properties involved (hue, saturation, tone) and the target contrast ratio.",
+            "marks": 4
+          },
+          {
+            "question": "Write the full three-part annotation (identify, describe, justify) for the typographic hierarchy you applied in this design — identifying both typefaces, their specific weights and sizes, and justifying the choice against the tone and audience of the brief.",
+            "marks": 5
+          },
+          {
+            "question": "Explain how proximity and repetition together create unity across this Instagram tile. Give one specific example of each mechanism in this design with exact values.",
+            "marks": 4
+          }
+        ]
+      },
+      {
+        "type": "task",
+        "title": "Practical Task: Build and Annotate the Koombana Bay Tile",
+        "software": "Figma (recommended) or Canva",
+        "intro": "Produce the complete design deliverable for Koombana Bay. This mirrors the type of practical design assessment in Year 12 Applied IT. Your annotation layer must be detailed enough for a developer to build from without follow-up questions.",
+        "steps": [
+          "Create a new file at 1080×1080px. Set up a 12-column grid with 24px gutters and 48px margins on each side.",
+          "Import the ocean image (or use a placeholder). Apply the rule of thirds overlay and position the image or crop it so the horizon falls on the lower horizontal third line.",
+          "Set up your type styles: Playfair Display Bold 700 for headings, Inter Regular 400 for body and CTA, using the approved scale.",
+          "Place 'Koombana Bay' at 64px Playfair Display Bold (white). Apply 8px tracking to the uppercase variant if used.",
+          "Place 'Life on the Bay' at 36px Playfair Display Regular (white, 80% opacity). Position it below the heading with 16px gap.",
+          "Create the CTA button: deep navy #1A3C5E fill, 'Register your interest' in Inter Medium 500 at 16px (white), 48px horizontal padding, 16px vertical padding, 4px corner radius.",
+          "Place the URL 'koombana.com.au' in Inter Regular at 12px (white, 60% opacity) at the bottom of the tile with 32px margin from the edge.",
+          "Create an annotation layer: label every spacing value, every colour hex code, every font size and weight. Add three-part annotations for at least four design decisions.",
+          "Export the clean version at 2x (2160×2160px) as PNG for Instagram.",
+          "Write the 250–350 word design rationale using correct element/principle vocabulary. Address it to Leo Thorne."
+        ]
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "y12dc-apply-q1",
+          "questionType": "mcq",
+          "text": "The developer builds the Koombana Bay tile but the CTA button is barely visible against the ocean image. The designer's spec said 'deep navy button.' What element interaction was inadequately specified?",
+          "options": [
+            "The typeface was not specified correctly",
+            "The colour hue was correct but the tone contrast between the button and the image was not measured or specified",
+            "The grid system was not applied to the button",
+            "The button's corner radius was too small to be visible"
+          ],
+          "correctIndex": 1,
+          "explanation": "The hue (navy) was correct, but the specification failed to address tonal contrast between the button and the underlying image. If the image includes deep blue ocean water, a dark navy button may have insufficient tonal contrast (below 4.5:1 WCAG AA) making the CTA hard to read. A professional spec would include the contrast ratio, not just the hex code. The fix: test the button against the darkest possible image area and specify a minimum acceptable contrast ratio in the annotation."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "y12dc-apply-q2",
+          "questionType": "extended",
+          "text": "Leo reviews the final Koombana Bay tile and asks: 'Walk me through how the principle of unity is achieved across every element of this design.' Write your response as a professional designer briefing a senior colleague. Reference both mechanisms of unity with specific examples from the tile.",
+          "marks": 6,
+          "explanation": "A strong response covers both mechanisms with specific examples: PROXIMITY (local unity) — related text elements (heading, subheading, URL) are grouped vertically with consistent 16px intervals between them, signalling their relationship as a content unit. The CTA button is spatially separated from the text group by 32px, signalling it is a distinct interactive element. REPETITION (global unity) — the white colour is repeated across all text elements and the colour white creates a visual family within the design. The 4px corner radius on the button uses the same spatial language as any rounded shape in the brand system. The Playfair Display / Inter type system repeats the same typeface-per-function rule established in the style guide. Together: proximity prevents the tile from reading as scattered individual elements; repetition makes every element feel as though it was made by the same hand for the same brand. (2 marks for proximity with example, 2 marks for repetition with example, 2 marks for explaining how both work together toward unity)"
+        }
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · LEO THORNE, KOOMBANA CREATIVE LABS",
+        "text": "Every project I've worked on that failed in client review had the same problem: the designer fell in love with the visual and stopped thinking about whether it worked. 'It looks good' is the most dangerous phrase in design. Good relative to what? Good for whom? Good for what purpose? Your job is not to make something that looks good — it's to make something that communicates precisely to a specific audience through a system of deliberate decisions, each of which you can defend with vocabulary and evidence. That's the difference between Year 12 and Year 11. That's the difference between a professional and a hobbyist. That's what Leo Thorne expects from anyone sitting across from him in a client meeting."
+      }
+    ]
+  }
+]

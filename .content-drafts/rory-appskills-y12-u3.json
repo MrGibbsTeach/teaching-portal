@@ -1,0 +1,859 @@
+[
+  {
+    "id": "file-formats-graphics-audio",
+    "title": "File Formats for Graphics and Audio",
+    "estimatedMinutes": 50,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #3001 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟡 IN PROGRESS | Sprint 12 | Assigned to: Junior Developer\n\nLeo's design assets for the Collie River Festival campaign have arrived in the wrong formats — again. We have a 47 MB BMP logo, a WAV voiceover at 96 kHz/24-bit, and a client who wants everything embedded in a webpage by Friday. Sparky's hardware display requires SVG for the LED signage controller. Sloane needs compressed CSVs, not images, for the analytics dashboard — but Leo keeps sending PNGs of tables.\n\nYour sprint task: audit every asset in the /assets folder, produce a format conversion plan with justification for each decision, and execute the conversions using the approved toolchain. Document your choices in the sprint notes. We ship Friday. No excuses."
+      },
+      {
+        "type": "heading",
+        "text": "Why File Format Decisions Are Delivery Decisions",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "At Year 12 level, choosing a file format is not a technical checkbox — it is a project management decision. The wrong format wastes bandwidth, breaks rendering pipelines, and kills deadlines. When Leo sends a 47 MB BMP and the client's CMS has a 2 MB upload limit, that is not Leo's problem: it is a project failure that lands on your sprint board."
+      },
+      {
+        "type": "paragraph",
+        "text": "Every format choice involves three trade-offs: file size, quality fidelity, and compatibility. Lossy compression (JPEG, MP3) discards data permanently to reduce size — ideal for web delivery where pixel-perfect quality is unnecessary. Lossless compression (PNG, FLAC) preserves every bit but produces larger files suited to editing workflows and archiving. Understanding which trade-off is acceptable in context separates a junior who follows instructions from a mid-level who makes decisions."
+      },
+      {
+        "type": "paragraph",
+        "text": "Raster and vector graphics have fundamentally different use cases. Raster formats (JPEG, PNG, WebP) store pixels — they look perfect at the intended size and break apart when scaled up. Vector formats (SVG, AI) store mathematical paths — they scale infinitely with no quality loss, which is exactly what Sparky's LED controller needs. Always ask: will this asset be displayed at multiple sizes? If yes, vector is the right default unless the content is photographic."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Lossy compression",
+            "definition": "A compression method that permanently removes data to reduce file size, resulting in quality degradation. Used in JPEG and MP3 formats. Each re-save compounds the quality loss."
+          },
+          {
+            "term": "Lossless compression",
+            "definition": "A compression method that reduces file size without discarding any data. The original file can be perfectly reconstructed. Used in PNG and FLAC formats."
+          },
+          {
+            "term": "Raster graphic",
+            "definition": "An image stored as a grid of pixels. Quality degrades when scaled beyond the original resolution. Examples: JPEG, PNG, GIF, WebP, BMP."
+          },
+          {
+            "term": "Vector graphic",
+            "definition": "An image stored as mathematical paths and shapes. Scales to any size without quality loss. Examples: SVG, AI, EPS."
+          },
+          {
+            "term": "Bit depth (audio)",
+            "definition": "The number of bits used to represent each audio sample. Higher bit depth (e.g. 24-bit vs 16-bit) allows greater dynamic range. Production uses 24-bit; distribution typically uses 16-bit."
+          },
+          {
+            "term": "Sample rate",
+            "definition": "The number of audio samples captured per second, measured in Hz or kHz. CD quality is 44.1 kHz; broadcast is 48 kHz. Higher rates increase file size without perceptible benefit to most listeners."
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "headers": ["Format", "Type", "Compression", "Best Use Case", "Avoid When"],
+        "rows": [
+          ["JPEG / JPG", "Raster", "Lossy", "Photographs, web images where quality loss is acceptable", "Editing source files; images with text or sharp edges"],
+          ["PNG", "Raster", "Lossless", "Graphics with transparency, screenshots, images with text", "Large photographic images needing small file sizes"],
+          ["WebP", "Raster", "Both (lossy/lossless)", "Web delivery — smaller than JPEG/PNG at equivalent quality", "Older browsers or non-web contexts without WebP support"],
+          ["GIF", "Raster", "Lossless (256 colours)", "Simple looping animations, graphics with flat colour", "Photographs or any image requiring more than 256 colours"],
+          ["SVG", "Vector", "None (text-based)", "Logos, icons, charts — any graphic scaled at multiple sizes", "Photographs or highly complex raster images"],
+          ["BMP", "Raster", "None", "Windows system graphics (legacy)", "Almost all modern digital production contexts"],
+          ["MP3", "Audio", "Lossy", "Music and speech distribution, podcast delivery", "Audio editing source files; situations where quality is critical"],
+          ["WAV", "Audio", "None (PCM)", "Audio editing and production master files", "Web streaming or any context where file size matters"],
+          ["FLAC", "Audio", "Lossless", "High-quality audio archiving and audiophile distribution", "Web streaming — limited browser support"],
+          ["AAC", "Audio", "Lossy", "Streaming platforms, Apple ecosystem, web audio", "Professional editing workflows"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "I had a junior once who converted every image to PNG 'because it's lossless.' The homepage took 14 seconds to load on a 4G connection. The client's bounce rate doubled. PNG is not better — it is appropriate in specific contexts. Master the question: what is this asset's final destination and who is the audience? A photographic hero image on a public website is a JPEG at 80% quality every single time. A logo used across merchandise, signage, and a website is an SVG every single time. Context drives format. Format drives delivery. Delivery drives outcomes."
+      },
+      {
+        "type": "comparison",
+        "title": "Audio Format Trade-offs: WAV vs MP3 vs AAC vs FLAC",
+        "items": [
+          {
+            "label": "WAV (Production Master)",
+            "points": [
+              "Uncompressed PCM audio — no quality loss whatsoever",
+              "File size: ~10 MB per minute at 44.1 kHz / 16-bit",
+              "At 96 kHz / 24-bit (Sparky's hardware spec): ~34 MB per minute",
+              "Use for: recording, editing, mixing, archiving",
+              "Never distribute to end users as WAV — too large"
+            ]
+          },
+          {
+            "label": "MP3 (Universal Distribution)",
+            "points": [
+              "Lossy compression using perceptual coding (removes sounds humans typically do not notice)",
+              "320 kbps = near-CD quality; 128 kbps = acceptable for speech/podcasts",
+              "File size: ~1 MB per minute at 128 kbps",
+              "Universal compatibility across all devices and platforms",
+              "Re-encoding MP3 to MP3 compounds quality loss — always encode from WAV master"
+            ]
+          },
+          {
+            "label": "AAC (Modern Streaming)",
+            "points": [
+              "Lossy compression with better efficiency than MP3 at equivalent bitrates",
+              "Preferred format for Apple platforms (iTunes, Apple Music, iOS)",
+              "~20% smaller than MP3 at equivalent perceptual quality",
+              "Use for: streaming services, mobile apps, YouTube uploads",
+              "Less universal than MP3 but improving rapidly"
+            ]
+          },
+          {
+            "label": "FLAC (Lossless Distribution)",
+            "points": [
+              "Lossless compression — identical to WAV in quality, ~50–60% of the file size",
+              "Not supported natively in all browsers — check deployment environment",
+              "Used by audiophile platforms: Bandcamp, Tidal, Qobuz",
+              "Ideal when distributing to musicians or audio professionals",
+              "Not appropriate for general web use without fallback format"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "task",
+        "title": "Format Audit and Conversion — Festival Campaign Assets",
+        "software": "GIMP / Audacity / VS Code",
+        "intro": "Work through the Collie River Festival asset set and execute the required format conversions. Document your decisions as you go — Rory will review your sprint notes.",
+        "steps": [
+          "Open GIMP. Go to File > Open and load the provided BMP logo file (festival-logo.bmp).",
+          "Inspect the image: check Image > Canvas Size for dimensions and Image > Mode to confirm it is RGB. Note the file size displayed in the title bar.",
+          "Go to File > Export As. In the filename field, change the extension to .svg. GIMP does not natively export SVG paths — instead, export as PNG at maximum resolution (600 dpi) for web use. Name it festival-logo-web.png.",
+          "Separately, open the BMP in Inkscape (free vector editor). Use Path > Trace Bitmap (Shift+Alt+B) with 'Colours' mode to create a true vector SVG. Save as festival-logo.svg for Sparky's LED controller.",
+          "Open Audacity. Go to File > Import > Audio and load the WAV voiceover (voiceover-master.wav).",
+          "Check the track properties: note the sample rate (bottom-left of track) and bit depth. If it is 96 kHz / 24-bit, go to Tracks > Resample to set 44100 Hz, then Tracks > Mix and Render.",
+          "Go to File > Export > Export as MP3. Set quality to 192 kbps (good balance for spoken word delivery). Name it voiceover-web.mp3.",
+          "For a second export (archive quality), go to File > Export > Export as WAV at 44100 Hz / 16-bit. Name it voiceover-cd.wav.",
+          "In VS Code, create a new file sprint-notes.md. Document each conversion: original format, new format, justification (one sentence), and the tool used.",
+          "Cross-reference with the deployment checklist: confirm each web asset is under 2 MB and that the SVG file opens correctly in a browser tab before marking the ticket as Ready for Review."
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · FORMAT DECISION MATRIX",
+        "text": "Sloane has just dropped a new requirement: the analytics dashboard needs embedded charts. She has given you three options for each chart and wants you to pick one with justification.\n\nChart A — Monthly visitor numbers (bar chart, 800×400 px, displayed at various sizes on the dashboard):\nOption 1: PNG export from Excel  |  Option 2: SVG export from Google Sheets  |  Option 3: JPEG screenshot\n\nChart B — Festival atmosphere hero image (photograph, 3000×2000 px, displayed at 1200×800 px max):\nOption 1: Original TIFF at 18 MB  |  Option 2: JPEG at 85% quality (~1.2 MB)  |  Option 3: WebP at equivalent quality (~800 KB)\n\nChart C — Animated ticket sale counter (simple 4-frame animation, flat colour):\nOption 1: GIF  |  Option 2: Animated SVG  |  Option 3: MP4 video\n\nFor each chart, write: (a) your chosen format, (b) why it is optimal for this context, and (c) one real-world risk if you chose one of the rejected options."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "Three questions before I merge this ticket:\n\n1. You converted the WAV from 96 kHz to 44.1 kHz before exporting to MP3. What specific audio quality information, if any, is lost in that sample rate reduction — and is that loss perceptible to a typical festival website visitor?\n\n2. The SVG you produced with Inkscape's Trace Bitmap tool has a file size of 340 KB — larger than the PNG equivalent. What does that tell you about the source image, and when would you choose PNG over SVG even for a logo?\n\n3. Sloane's analytics pipeline ingests data in CSV format, but Leo keeps sending PNG screenshots of Excel tables. Beyond the obvious 'it is not machine-readable,' what are two other specific technical consequences of receiving data as a PNG image rather than a CSV?"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "Leo sends you a logo file in BMP format. The logo will be used on the website, on a 6-metre event banner, and on Sparky's LED display controller. Which format is most appropriate for all three uses?",
+          "options": [
+            "PNG — lossless raster format that preserves quality",
+            "JPEG — small file size suitable for web delivery",
+            "SVG — vector format that scales to any size without quality loss",
+            "GIF — supports animation and has wide browser compatibility"
+          ],
+          "correctIndex": 2,
+          "marks": 2,
+          "explanation": "SVG is a vector format that stores graphics as mathematical paths rather than pixels. This means it scales from a small website favicon to a 6-metre banner and to any LED resolution without quality loss. PNG and JPEG are raster formats that would become pixelated when scaled up. GIF is limited to 256 colours and is also a raster format."
+        }
+      }
+    ]
+  },
+  {
+    "id": "software-licences",
+    "title": "Software Licences",
+    "estimatedMinutes": 50,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #3002 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🔴 URGENT | Sprint 13 | Assigned to: Junior Developer\n\nWe have a compliance problem. A previous junior installed unlicensed copies of Adobe Premiere on three studio machines, used a cracked version of a font pack in client deliverables, and distributed modified open-source code without including the required attribution file. Legal has flagged all three issues. The studio is potentially liable.\n\nYour sprint task: (1) audit all software on the studio machines and classify each licence type, (2) produce a licence compliance report for the studio manager, and (3) recommend cost-effective replacements for any non-compliant software. This is not optional. Compliance is part of delivery."
+      },
+      {
+        "type": "heading",
+        "text": "Software Licences: The Legal Framework You Cannot Ignore",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Software licences define what you are legally permitted to do with a piece of software. When you install software, you are not purchasing the software itself — you are purchasing a right to use it under the terms the developer specifies. Violating those terms is not a technical mistake: it is a legal exposure that can result in fines, legal action, and reputational damage for the studio."
+      },
+      {
+        "type": "paragraph",
+        "text": "The landscape of software licencing has expanded significantly beyond the traditional commercial vs. free binary. Open-source licences form a spectrum from highly permissive (MIT, Apache 2.0) to strongly protective (GPL). Understanding the difference matters in a professional context: some open-source licences require you to release your own code if you incorporate theirs. That is a business decision, not just a technical one. When Sloane builds the analytics pipeline using Python libraries, she needs to check every dependency's licence before we deliver the codebase to a client."
+      },
+      {
+        "type": "paragraph",
+        "text": "Freeware and free software are not the same concept and confusing them is a common junior mistake. Freeware is software distributed at no cost, but the source code is not available and redistribution may be restricted. Free software (in the 'free as in freedom' sense) means the source code is available, modifiable, and redistributable — but this freedom comes with licence obligations you must honour. Always read the licence before you redistribute, modify, or embed someone else's code."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Proprietary licence",
+            "definition": "A restrictive licence where the software owner retains all rights. Users may only use the software as explicitly permitted (e.g. on a set number of machines). Modifying, redistributing, or reverse-engineering is typically prohibited. Examples: Adobe CC, Microsoft Office."
+          },
+          {
+            "term": "Open-source licence",
+            "definition": "A licence that grants users the right to view, modify, and distribute the source code, subject to conditions that vary by licence type. Examples: MIT, GPL, Apache 2.0."
+          },
+          {
+            "term": "GNU GPL (General Public Licence)",
+            "definition": "A 'copyleft' open-source licence requiring that any software incorporating GPL code must also be distributed under the GPL with source code available. Creates a viral effect on derivative works."
+          },
+          {
+            "term": "MIT Licence",
+            "definition": "A permissive open-source licence that allows use, modification, and redistribution in proprietary software with minimal conditions — typically just attribution in the licence notice."
+          },
+          {
+            "term": "Freeware",
+            "definition": "Software distributed at no cost but with source code closed and redistribution often restricted. The developer retains copyright. Examples: Skype (historically), WinRAR (technically shareware)."
+          },
+          {
+            "term": "Shareware",
+            "definition": "Software distributed freely for a trial period or with limited features, requiring payment to unlock full functionality or continued use. A distribution model, not a rights framework."
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "headers": ["Licence Type", "Cost", "Source Code Available?", "Can Modify?", "Can Redistribute?", "Commercial Use?"],
+        "rows": [
+          ["Proprietary (Commercial)", "Paid (per seat or subscription)", "No", "No", "No (without permission)", "Yes — within licence terms"],
+          ["Freeware", "Free", "No", "No", "Often restricted", "Often restricted — check terms"],
+          ["Shareware / Freemium", "Free (limited) / Paid (full)", "No", "No", "Often permitted (trial version)", "Requires paid licence"],
+          ["MIT / BSD", "Free", "Yes", "Yes", "Yes (with attribution)", "Yes"],
+          ["Apache 2.0", "Free", "Yes", "Yes", "Yes (with attribution + patent notice)", "Yes"],
+          ["GNU GPL v3", "Free", "Yes", "Yes", "Yes — but derivative must also be GPL", "Yes — but source must be released"],
+          ["Creative Commons (BY)", "Free", "N/A (media licence)", "Yes", "Yes (with attribution)", "Yes"],
+          ["Creative Commons (NC)", "Free", "N/A (media licence)", "Varies by variant", "Varies", "No — non-commercial only"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "The GPL trap catches studios every year. A junior pulls in a GPL library for a client project — it is free, it works, it ships. Six months later the client wants to sell their product. Their legal team discovers that because the product includes GPL code, the entire codebase must be open-sourced under GPL. That is potentially millions of dollars of IP made public. Your job is to check licence compatibility before the code goes in, not after. Maintain a LICENCE.md file in every project listing every dependency and its licence type. I review this file in every PR. If it is missing, the PR is rejected."
+      },
+      {
+        "type": "comparison",
+        "title": "Proprietary vs Open-Source: Professional Trade-offs",
+        "items": [
+          {
+            "label": "Proprietary Software (e.g. Adobe CC, Microsoft Office)",
+            "points": [
+              "Predictable, professional-grade support with SLAs",
+              "Regular updates included in subscription cost",
+              "Legal clarity — licence terms are explicit and enforceable",
+              "Cost: Adobe CC all-apps is ~$90 AUD/month per user",
+              "Lock-in risk: proprietary file formats (.ai, .psd) may not be portable",
+              "Cannot inspect or modify source code — must trust vendor's security"
+            ]
+          },
+          {
+            "label": "Open-Source Software (e.g. GIMP, LibreOffice, Audacity)",
+            "points": [
+              "No licence cost — significant savings at studio scale",
+              "Full source code available — can audit security and customise behaviour",
+              "Community-driven development: features depend on volunteer priorities",
+              "Licence compliance obligations vary — must read and document each licence",
+              "Professional support requires paid third-party contracts or in-house expertise",
+              "Format compatibility with proprietary tools may require additional workflow steps"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "task",
+        "title": "Software Licence Audit — Studio Compliance Report",
+        "software": "VS Code / Google Sheets",
+        "intro": "Complete a licence audit for the Bunbury Tech Launchpad studio. You will research licence types and produce a compliance report in spreadsheet format.",
+        "steps": [
+          "Open Google Sheets and create a new spreadsheet titled 'Studio Licence Audit — Bunbury Tech Launchpad.'",
+          "Create the following column headers: Software Name | Version | Licence Type | Cost Model | Number of Seats/Installs | Compliant? (Y/N) | Notes / Action Required.",
+          "Add the following software to your audit (you will need to research each): GIMP 2.10, Audacity 3.4, Google Chrome, Adobe Photoshop CC, Microsoft Word (Office 365), Python 3.12, VS Code, Canva Pro, LibreOffice Calc, Inkscape.",
+          "For each item, research the licence type using the official software website. Identify whether it is proprietary, open-source (and which specific licence), freeware, or freemium.",
+          "In the 'Compliant?' column, mark as 'N' any software that is installed on more machines than the licence permits, or where the studio does not hold a valid licence. Mark known open-source tools as 'Y' with the licence name in Notes.",
+          "Add a summary row at the bottom: count the number of compliant tools, non-compliant tools, and total estimated annual cost for all paid licences at 1 seat.",
+          "In a second sheet tab, write a 150-word executive summary for the studio manager explaining the three highest-risk compliance issues and recommended actions. Present this as if you are Rory briefing the team."
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · LICENCE SCENARIO DECISIONS",
+        "text": "Rory has put three real-world licence decisions on your desk. Each one requires a written recommendation with justification.\n\nScenario 1 — Sloane wants to use a Python library licenced under LGPL v2.1 in a proprietary commercial analytics tool we are building for a client. She says 'it is open source so it is fine.' Is she correct? What are the actual LGPL obligations and do they affect our proprietary codebase?\n\nScenario 2 — Leo found a font pack labelled 'Free for personal use' on a design resource website. He wants to use it in the festival campaign materials that we will be paid to produce. Is this permitted? What licence type should Leo specifically look for?\n\nScenario 3 — Sparky wants to fork a GitHub repository licenced under MIT, make modifications, and redistribute the modified version as part of a paid hardware toolkit. What does the MIT licence require him to do, and what can he NOT do?\n\nWrite a one-paragraph recommendation for each scenario."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "Three questions before I sign off on the compliance report:\n\n1. You listed GIMP as 'GPL v3' in the audit. If our studio modifies GIMP's source code to add a custom tool for our workflow, are we obligated to publish those modifications? Under what specific conditions does the GPL obligation to share source code apply?\n\n2. The previous junior's font pack issue: a font is typically licenced separately from software under a font-specific licence or Creative Commons. Why does 'free for personal use' not cover our commercial client deliverables, and what is the legal risk if a client discovers we used a non-commercial font in their brand materials?\n\n3. You recommended replacing Adobe Premiere (unlicensed) with DaVinci Resolve (free tier). What due diligence steps should you take before recommending an open-source or free tool as a professional replacement — beyond checking that it 'does the same thing'?"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A developer incorporates a library licenced under GNU GPL v3 into a commercial software product. The product is then sold to customers. Which of the following statements is correct?",
+          "options": [
+            "The developer must make the product free of charge because it includes GPL code",
+            "The developer must release the product's complete source code under GPL v3",
+            "The developer may keep the source code proprietary as long as they attribute the GPL library",
+            "The developer is not affected because they are only using the library, not modifying it"
+          ],
+          "correctIndex": 1,
+          "marks": 2,
+          "explanation": "The GPL's 'copyleft' provision requires that any software incorporating GPL-licenced code must itself be distributed under the GPL — which means the source code must be made available. The developer can still charge for the software, but cannot keep the source proprietary. This is the 'viral' effect of the GPL that distinguishes it from permissive licences like MIT."
+        }
+      }
+    ]
+  },
+  {
+    "id": "software-management",
+    "title": "Software Management",
+    "estimatedMinutes": 50,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #3003 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟠 REVIEW | Sprint 14 | Assigned to: Junior Developer\n\nSparky's development machine crashed mid-sprint because a Windows update ran automatically and rebooted the machine, corrupting an unsaved Unity project. Leo cannot open his Canva designs from two months ago because his subscription lapsed and he exported nothing. Sloane's Python environment has three conflicting library versions that are breaking her data pipeline.\n\nAll three problems are software management failures — update mismanagement, no export/backup discipline, and uncontrolled dependency environments. Your sprint task: produce a studio software management policy document covering updates, backups, and environment management. Then implement the correct tools and procedures on your own machine. This is infrastructure, and infrastructure is your responsibility."
+      },
+      {
+        "type": "heading",
+        "text": "Software Management: Keeping the Studio Running",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Software management covers the full lifecycle of software in a professional environment: acquisition, installation, configuration, updating, troubleshooting, and retirement. At a studio scale, poor software management creates compounding technical debt — outdated dependencies introduce security vulnerabilities, uncontrolled updates break working pipelines, and unmanaged storage fills disks mid-project. None of these are 'IT problems': they are delivery risks that sit on the project manager's radar."
+      },
+      {
+        "type": "paragraph",
+        "text": "Update management is one of the most misunderstood responsibilities in a junior role. Automatic updates are not always desirable in a professional environment. A major version update to a production tool mid-project can break file compatibility, change UI workflows, or remove features the team depends on. The professional approach is to maintain a tested stable version on production machines and evaluate updates in a separate test environment before rolling them out. Critical security patches are the exception — these should be applied promptly regardless of timing."
+      },
+      {
+        "type": "paragraph",
+        "text": "Virtual environments and dependency management tools (like Python's venv and pip, or Node's package.json) exist specifically to solve the 'it works on my machine' problem. Sloane's conflicting library versions happened because she installed everything into the global Python environment. The fix is simple but must be habitual: every project gets its own isolated environment, and that environment's dependencies are committed to the project repository as a requirements file. When another developer checks out the project, they recreate the exact same environment. Reproducibility is not optional at a professional studio."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Software versioning",
+            "definition": "A system of numbering software releases to communicate the nature and scope of changes. Semantic versioning (SemVer) uses MAJOR.MINOR.PATCH format — e.g. 3.2.1. A major version change may include breaking changes."
+          },
+          {
+            "term": "Dependency",
+            "definition": "An external library, framework, or tool that a software project relies on to function. Managing dependencies includes tracking versions, resolving conflicts, and ensuring licence compatibility."
+          },
+          {
+            "term": "Virtual environment",
+            "definition": "An isolated Python (or other language) environment with its own interpreter and packages, independent of the global system installation. Created with `python -m venv env` in Python. Prevents dependency conflicts between projects."
+          },
+          {
+            "term": "Software rollback",
+            "definition": "The process of reverting to a previous version of software after an update causes problems. Requires version-controlled configuration or installation media for the prior version."
+          },
+          {
+            "term": "Backup strategy (3-2-1 rule)",
+            "definition": "A best-practice backup policy: keep 3 copies of data, on 2 different media types, with 1 copy offsite or in the cloud. Protects against hardware failure, ransomware, and localised disasters."
+          },
+          {
+            "term": "Software audit",
+            "definition": "A systematic review of all software installed on systems in an organisation, including version numbers, licence status, and usage. Used for compliance, security, and cost management."
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "headers": ["Management Area", "Common Failure", "Professional Practice", "Tools / Examples"],
+        "rows": [
+          ["Update management", "Auto-updates break a working pipeline mid-project", "Disable auto-updates on production machines; stage updates in a test environment first; schedule update windows between sprints", "Windows Update settings; macOS System Preferences; apt-hold (Linux)"],
+          ["Dependency management (Python)", "Global pip installs create version conflicts across projects", "Create a virtual environment (venv) per project; generate requirements.txt; commit to repo", "python -m venv; pip freeze > requirements.txt"],
+          ["Dependency management (Node.js)", "Mismatched node_modules cause build failures across team members", "Commit package-lock.json to repo; use npm ci (not npm install) in CI pipelines", "npm; yarn; package.json; package-lock.json"],
+          ["File backup", "Unsaved work lost to power failure or accidental deletion", "Auto-save enabled; version control for code; cloud sync for design files; 3-2-1 backup rule", "Git; Google Drive; OneDrive; Time Machine; Backblaze"],
+          ["Software inventory", "Unlicensed software accumulates unnoticed", "Maintain a living software register; review quarterly", "Google Sheets audit; Snipe-IT (open source asset manager)"],
+          ["Security patching", "Unpatched vulnerabilities exploited", "Apply critical security patches promptly regardless of sprint phase; maintain a patch log", "Windows Update; `pip list --outdated`; Dependabot (GitHub)"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "Sparky lost three days of Unity work to an auto-update reboot. Three days. That is half a sprint. The machine was not set up as a production environment — it was set up like a home PC. In a studio, every machine has a role: development machines have controlled update schedules, production rendering machines do not receive updates during active projects, and test machines receive all updates first. This is not overcomplicated — it is a one-time configuration that saves you weeks of pain across a year. Set it up once, document it in the studio wiki, and move on. The machine should be working for the project, not against it."
+      },
+      {
+        "type": "codePreview",
+        "title": "Python Virtual Environment — Standard Project Setup",
+        "defaultCode": "# Step 1: Create a virtual environment in the project folder\npython -m venv env\n\n# Step 2: Activate the environment\n# Windows:\nenv\\Scripts\\activate\n# macOS / Linux:\nsource env/bin/activate\n\n# Step 3: Install project dependencies\npip install pandas matplotlib openpyxl\n\n# Step 4: Freeze the dependency list to a file\npip freeze > requirements.txt\n\n# The requirements.txt file now contains:\n# pandas==2.1.4\n# matplotlib==3.8.2\n# openpyxl==3.1.2\n# (plus all their sub-dependencies)\n\n# Step 5: Another developer recreates the exact environment\npip install -r requirements.txt\n\n# Step 6: Deactivate the environment when done\ndeactivate",
+        "challenge": "Sloane's data pipeline uses pandas 1.5.3, but a new project requires pandas 2.1.4. Without virtual environments, installing 2.1.4 breaks the old pipeline. Modify this setup to create two separate environments — `env-legacy` (pandas 1.5.3) and `env-new` (pandas 2.1.4) — and write the command to switch between them on Windows. Then explain in a comment why `pip install -r requirements.txt` is safer than `pip install pandas` for a shared team project."
+      },
+      {
+        "type": "task",
+        "title": "Studio Software Management Policy Implementation",
+        "software": "Windows Settings / Google Sheets / VS Code terminal",
+        "intro": "Implement the core software management practices on your own machine and document them for the studio policy.",
+        "steps": [
+          "Open Windows Settings > Windows Update > Advanced Options. Disable 'Receive updates for other Microsoft products.' Set Active Hours to cover your typical work hours so reboots cannot occur during work time. Take a screenshot.",
+          "Open VS Code's integrated terminal. Navigate to your Documents folder: cd ~/Documents",
+          "Create a new project folder: mkdir rory-mgmt-demo and navigate into it: cd rory-mgmt-demo",
+          "Create a Python virtual environment: python -m venv env",
+          "Activate it (Windows): env\\Scripts\\activate — you should see (env) appear at the start of your prompt.",
+          "Install two libraries: pip install requests beautifulsoup4",
+          "Generate a requirements file: pip freeze > requirements.txt",
+          "Open requirements.txt in VS Code and inspect the contents. Note every library listed, including sub-dependencies you did not explicitly install.",
+          "Deactivate the environment: deactivate",
+          "Open Google Sheets and create a software management register for your own machine: list five applications, their versions, last update date, and whether auto-update is enabled or controlled.",
+          "In a new VS Code file called STUDIO-POLICY.md, write three short sections: (1) Update Management Policy, (2) Dependency Management Policy, (3) Backup Policy. Base each on the practices from this lesson. This becomes part of the studio wiki."
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · TROUBLESHOOT SLOANE'S ENVIRONMENT",
+        "text": "Sloane's requirements.txt (from her global environment) is a disaster. Here is what it contains:\n\npandas==1.5.3\npandas==2.1.4\nnumpy==1.23.0\nnumpy==1.26.4\nrequests==2.28.1\nopenpyxl==3.0.10\nflask==2.2.2\nflask==3.0.0\n\nTask 1: Identify every conflict in this file. Explain why pip will fail to install from this requirements.txt.\n\nTask 2: Sloane says she needs pandas 2.1.4 for the new dashboard project, but her legacy ETL script requires pandas 1.5.3. Write the complete terminal commands (Windows) to create TWO separate virtual environments that resolve this conflict without either script breaking.\n\nTask 3: Write a three-bullet 'requirements.txt hygiene' rule set for the studio wiki that would prevent this situation from recurring. Each rule should be actionable, not generic."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "Three questions before the policy document goes to the studio manager:\n\n1. You recommend disabling auto-updates on production machines. A security researcher just published a critical zero-day vulnerability in Windows that is being actively exploited. Does your policy cover this exception? Write the specific policy clause that handles emergency security patches differently from standard feature updates.\n\n2. The 3-2-1 backup rule says one copy must be offsite or in the cloud. Leo stores his design files on his studio workstation and a USB drive he keeps in his desk drawer. How many of the 3-2-1 criteria does this meet, and what specific risk does the current setup leave Leo exposed to?\n\n3. You committed a requirements.txt to the project repository. It includes the `env/` folder in the same commit. Why is committing the `env/` folder itself a problem, and how should it be handled instead?"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "Sloane runs `pip install pandas` on her studio machine and it updates pandas from version 1.5.3 to 2.1.4 globally. Her legacy ETL script immediately breaks with an ImportError. What is the correct long-term solution to prevent this class of problem?",
+          "options": [
+            "Avoid updating any Python libraries to maintain stability",
+            "Use a separate Python virtual environment for each project, with a requirements.txt file specifying exact versions",
+            "Uninstall the new version and reinstall the old version each time she switches projects",
+            "Use two separate computers — one for legacy projects and one for new projects"
+          ],
+          "correctIndex": 1,
+          "marks": 2,
+          "explanation": "Virtual environments isolate each project's dependencies from the global Python installation and from other projects. A requirements.txt file with pinned version numbers (e.g. pandas==1.5.3) ensures every developer recreates the exact same environment. This is the professional standard. Manually switching versions is error-prone and does not scale. Using separate computers is wasteful and still does not address the underlying configuration management problem."
+        }
+      }
+    ]
+  },
+  {
+    "id": "advanced-spreadsheet-design",
+    "title": "Advanced Spreadsheet Design",
+    "estimatedMinutes": 50,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #3004 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟡 IN PROGRESS | Sprint 15 | Assigned to: Junior Developer\n\nSloane has handed you the festival budget tracker and it is a mess. Hardcoded numbers everywhere, formulas that reference cells by address with no named ranges, no data validation, and a 'Total' column that adds a fixed number of rows — which means it silently breaks every time someone adds a new budget line.\n\nThe studio uses spreadsheets as mini-applications, not just tables. Clients interact with them directly, which means they must be robust, self-validating, and readable without the original author present. Your sprint task: rebuild the festival budget tracker as a professional-grade spreadsheet using named ranges, structured formulas, conditional formatting, and data validation. Sloane will stress-test it on Friday."
+      },
+      {
+        "type": "heading",
+        "text": "Spreadsheets as Applications: The Y12 Mindset Shift",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "At Year 12, the shift from 'using a spreadsheet' to 'designing a spreadsheet' requires treating the file as a product. A well-designed spreadsheet separates data entry from calculation from presentation, uses consistent naming conventions, validates inputs before they cause downstream errors, and works correctly even when the user does something unexpected. This is called defensive spreadsheet design, and it is standard practice in finance, operations, and project management."
+      },
+      {
+        "type": "paragraph",
+        "text": "Named ranges transform a spreadsheet from a grid of cell references into something readable. A formula like `=SUMIF(Category,\"Design\",Amount)` is immediately understandable; `=SUMIF(B2:B47,\"Design\",D2:D47)` requires the reader to navigate to those cells to understand what they contain. Named ranges also make formulas resilient to structural changes — if rows are inserted or deleted, named ranges adjust automatically. This is not a comfort feature: it is a correctness feature."
+      },
+      {
+        "type": "paragraph",
+        "text": "Nested IF functions and lookup formulas (VLOOKUP, XLOOKUP, INDEX/MATCH) are the logic layer of spreadsheet design. They allow a spreadsheet to respond intelligently to input — classifying budget items, flagging overruns, retrieving data from reference tables without manual copying. At Y12 level, you are expected to construct these formulas from first principles, debug them when they return unexpected results, and explain the logic to a non-technical stakeholder."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Named range",
+            "definition": "A label assigned to a cell or range of cells (e.g. naming B2:B100 as 'Category'). Named ranges make formulas readable, reduce reference errors, and automatically adjust when rows are inserted or deleted."
+          },
+          {
+            "term": "VLOOKUP",
+            "definition": "A function that searches the first column of a table for a value and returns data from a specified column in the same row. Syntax: =VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup]). Superseded by XLOOKUP in newer versions of Excel/Sheets."
+          },
+          {
+            "term": "SUMIF / SUMIFS",
+            "definition": "SUMIF sums values in a range where a corresponding range meets a single condition. SUMIFS supports multiple conditions. Syntax: =SUMIF(range, criteria, sum_range)."
+          },
+          {
+            "term": "Conditional formatting",
+            "definition": "A spreadsheet feature that automatically changes the appearance (colour, font, border) of cells based on their value or formula result. Used to visually highlight overruns, anomalies, or status indicators."
+          },
+          {
+            "term": "Data validation",
+            "definition": "A spreadsheet feature that restricts what values can be entered into a cell — for example, a dropdown list of approved categories, or a rule that only allows numbers between 0 and 100,000. Prevents input errors at the source."
+          },
+          {
+            "term": "Absolute vs relative reference",
+            "definition": "A relative reference (e.g. A1) adjusts when a formula is copied to another cell. An absolute reference (e.g. $A$1) does not adjust. Mixed references ($A1 or A$1) lock one dimension only. Critical to understand for formulas that are dragged across ranges."
+          }
+        ]
+      },
+      {
+        "type": "codePreview",
+        "title": "Advanced Spreadsheet Formulas — Festival Budget Tracker",
+        "defaultCode": "// === NAMED RANGES (defined via Name Manager or Sheets Named Ranges) ===\n// Category   → Column B (B2:B200)\n// Description → Column C (C2:C200)\n// Budgeted   → Column D (D2:D200)\n// Actual     → Column E (E2:E200)\n// Variance   → Column F (F2:F200)  ← calculated\n\n// === VARIANCE COLUMN (Column F) ===\n// Simple variance: positive = under budget, negative = over budget\n=D2-E2\n\n// === STATUS COLUMN (Column G) — Nested IF ===\n// Returns: \"On Track\", \"At Risk\", or \"Over Budget\"\n=IF(F2>0, \"On Track\", IF(F2>=-500, \"At Risk\", \"Over Budget\"))\n\n// === SUMMARY SHEET — SUMIF by Category ===\n// Total budgeted for Design category:\n=SUMIF(Category, \"Design\", Budgeted)\n\n// Total actual spend for Logistics category:\n=SUMIF(Category, \"Logistics\", Actual)\n\n// === VLOOKUP — Retrieve supplier contact from reference table ===\n// Looks up the Category in a Suppliers sheet (Sheet2!A:C)\n// Returns the contact email from column 3\n=VLOOKUP(B2, Sheet2!$A:$C, 3, FALSE)\n\n// === XLOOKUP (Excel 365 / Google Sheets) — More robust alternative ===\n// Advantage: no need to count column index; handles not-found gracefully\n=XLOOKUP(B2, Sheet2!$A:$A, Sheet2!$C:$C, \"No supplier found\")\n\n// === COUNTIF — Count how many items are Over Budget ===\n=COUNTIF(G2:G200, \"Over Budget\")\n\n// === CONDITIONAL FORMATTING RULE (applied to Column G) ===\n// Red fill: =G2=\"Over Budget\"\n// Orange fill: =G2=\"At Risk\"\n// Green fill: =G2=\"On Track\"",
+        "challenge": "The studio manager wants to see the percentage of the total budget consumed by each category. Using the named ranges above, write a formula for a 'Budget Share %' column that calculates each category's Budgeted amount as a percentage of the grand total. Use an absolute reference for the total so the formula can be dragged down without breaking. Then write a SUMIFS formula that totals Actual spend ONLY for items where Category is 'Design' AND Status is 'Over Budget'."
+      },
+      {
+        "type": "table",
+        "headers": ["Formula / Feature", "Syntax", "What It Does", "Common Mistake"],
+        "rows": [
+          ["SUMIF", "=SUMIF(range, criteria, sum_range)", "Sums values where one condition is met", "Swapping range and sum_range arguments"],
+          ["SUMIFS", "=SUMIFS(sum_range, range1, criteria1, range2, criteria2)", "Sums where multiple conditions are all met", "Forgetting that sum_range comes FIRST in SUMIFS (opposite to COUNTIFS)"],
+          ["VLOOKUP", "=VLOOKUP(lookup, table, col_num, FALSE)", "Returns value from a table at a specified column", "Using TRUE (approximate match) when exact match is needed; table not sorted"],
+          ["XLOOKUP", "=XLOOKUP(lookup, lookup_array, return_array, [if_not_found])", "Modern replacement for VLOOKUP; searches any column", "Not available in Excel 2016 or earlier"],
+          ["Nested IF", "=IF(cond1, val1, IF(cond2, val2, val3))", "Returns different values based on multiple conditions", "Exceeding 7 nested levels; forgetting closing parentheses"],
+          ["Absolute reference", "=$A$1 or =SUM($D$2:$D$200)", "Cell reference does not shift when formula is copied", "Forgetting $ signs when a formula is dragged across rows/columns"]
+        ]
+      },
+      {
+        "type": "task",
+        "title": "Rebuild the Festival Budget Tracker",
+        "software": "Microsoft Excel / Google Sheets",
+        "intro": "You will build a professional-grade budget tracker from scratch using the design principles and formulas covered in this lesson.",
+        "steps": [
+          "Open a new Google Sheets (or Excel) file. Name it 'Festival Budget Tracker v2 — Bunbury Tech Launchpad'.",
+          "Create a 'Data' sheet tab. Add these column headers in row 1: Item ID | Category | Description | Budgeted ($) | Actual ($) | Variance ($) | Status | Supplier Code.",
+          "Add at least 10 rows of sample festival budget data across four categories: Design, Logistics, Technology, Marketing.",
+          "Select column B (Category). Go to Data > Data Validation. Set the validation type to 'List of items' and enter: Design,Logistics,Technology,Marketing. This creates a dropdown and prevents invalid input.",
+          "In column F (Variance), enter the formula =D2-E2 for the first data row. Do NOT hardcode numbers. Copy this formula down all data rows.",
+          "In column G (Status), enter the nested IF formula from the codePreview block. Adjust the thresholds if needed for your data. Copy down.",
+          "Select column G. Apply conditional formatting: red fill for 'Over Budget,' orange fill for 'At Risk,' green fill for 'On Track.'",
+          "Select columns B through H (the data range). Go to Data > Named Ranges (Sheets) or Formulas > Name Manager (Excel). Define the named ranges: Category, Description, Budgeted, Actual, Variance, Status.",
+          "Create a second sheet tab called 'Summary.' Add a category breakdown table with SUMIF formulas for Budgeted and Actual amounts for each of the four categories.",
+          "Add a 'Grand Total' row at the bottom of the summary using SUM formulas. Add a 'Budget Used %' row: =SUM(Actual)/SUM(Budgeted) formatted as a percentage.",
+          "Test the data validation: attempt to type an invalid category in column B. Confirm the dropdown appears and rejects invalid text."
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · SPREADSHEET STRESS TEST",
+        "text": "Sloane is stress-testing your budget tracker. Here are the four things she is going to try:\n\nTest 1 — She inserts a new row in the middle of the data range. Do your SUMIF formulas still capture the new row? Do your named ranges expand to include it? (Hint: named ranges in Google Sheets do NOT automatically expand when rows are inserted inside them.)\n\nTest 2 — She types 'design' (lowercase) in the Category column. Does your SUMIF pick it up, or is it case-sensitive? (Google Sheets SUMIF is not case-sensitive; Excel is. How does this affect your formula design?)\n\nTest 3 — She enters a negative number in the Budgeted column. Your Status formula uses 'Over Budget' when Variance < -500. What does a negative budget create as output, and how would you add input validation to prevent it?\n\nTest 4 — She wants to add a 'Q1 Budget' and 'Q2 Budget' split. You currently have a single Budgeted column. What structural change to the spreadsheet would support quarterly tracking without breaking existing formulas?\n\nAnswer each test as a written troubleshooting note."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "Three questions before Sloane gets this tracker:\n\n1. Your VLOOKUP formula references Sheet2!$A:$C — the entire columns A through C. On a spreadsheet with 10,000 rows of supplier data, how does searching an entire column range affect spreadsheet performance compared to referencing a defined table range like Sheet2!$A$1:$C$500? What feature in Excel Tables (Ctrl+T) would make this reference both readable and dynamically sized?\n\n2. You used a nested IF with three levels to produce 'On Track / At Risk / Over Budget.' The studio manager now wants five status levels. At what point does a nested IF become unmanageable, and what alternative formula approach (using a lookup table) would produce the same result while being easier to maintain?\n\n3. The original tracker had hardcoded totals that silently broke when rows were added. You fixed this with named ranges and SUMIF. But a junior team member could still break it by accidentally deleting the named range definition. What two protective measures can you apply to the spreadsheet to prevent accidental modification of the formula infrastructure?"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A spreadsheet formula in cell G2 is: =SUMIF(Category, \"Design\", Budgeted). When this formula is copied to cell G3, what happens?",
+          "options": [
+            "The formula breaks because named ranges cannot be used in SUMIF",
+            "The formula in G3 becomes =SUMIF(Category, \"Design\", Budgeted) — identical, because named ranges do not shift when copied",
+            "The formula adjusts to =SUMIF(Category, \"Marketing\", Budgeted) because the criteria argument shifts down one row",
+            "The formula returns an error because the criteria must be a cell reference, not a text string"
+          ],
+          "correctIndex": 1,
+          "marks": 2,
+          "explanation": "Named ranges behave like absolute references — they refer to the same cells regardless of where the formula is copied. When you copy =SUMIF(Category, \"Design\", Budgeted) to any cell, it continues to reference the same named ranges and produces the same result. This is one of the key advantages of named ranges over cell address references, where SUMIF(B2:B100, \"Design\", D2:D100) would shift incorrectly when copied."
+        }
+      }
+    ]
+  },
+  {
+    "id": "sorting-filtering-data-analysis",
+    "title": "Sorting, Filtering and Data Analysis",
+    "estimatedMinutes": 50,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #3005 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🔴 URGENT | Sprint 16 | Assigned to: Junior Developer\n\nSloane has pulled 1,847 rows of festival ticket sales data from the event platform. The client wants answers by 9 AM tomorrow: which ticket category generated the highest revenue, which day of the week had peak sales, and which postcode cluster is underperforming. The data is raw — inconsistent capitalisation in the Category column, blank rows, duplicate transaction IDs, and dates stored as text strings.\n\nYour task: clean the dataset, build pivot tables answering the three questions, and produce a one-page executive summary with supporting charts. Sloane says if you sort without filtering duplicates first, your pivot will lie to you. She is correct. Work systematically — data cleaning before analysis, always."
+      },
+      {
+        "type": "heading",
+        "text": "Data Analysis Workflow: Clean First, Analyse Second",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Data analysis in a professional context follows a strict sequence: data cleaning, then transformation, then analysis, then visualisation. Skipping or reordering steps is the fastest way to produce confidently wrong answers. A pivot table built on dirty data — duplicates, inconsistent categories, blank rows — produces numbers that look authoritative but are misleading. The client makes a decision based on those numbers, and when the error is discovered, the trust you spent months building is gone in one meeting."
+      },
+      {
+        "type": "paragraph",
+        "text": "Sorting and filtering are not just navigational tools — they are analytical techniques. Multi-level sorting (sort by Category, then by Date, then by Revenue) reveals patterns invisible in unsorted data. Advanced filter criteria with AND/OR logic allow you to isolate specific subsets for comparison. At Y12 level, you are expected to use these tools intentionally, not randomly, and to document your analytical decisions so another team member can reproduce your results."
+      },
+      {
+        "type": "paragraph",
+        "text": "Pivot tables are the most powerful analytical tool available in a spreadsheet application, and most users use approximately 20% of their capability. A pivot table does not just summarise data — it allows you to dynamically reframe the same dataset from multiple analytical angles without writing a single formula. The key skill is choosing the right field for each pivot zone (Rows, Columns, Values, Filters) based on the analytical question you are answering, not based on how the data happens to be organised."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Pivot table",
+            "definition": "An interactive data summarisation tool that aggregates, groups, and cross-tabulates large datasets without modifying the source data. Allows dynamic reorganisation of analysis by dragging fields between Rows, Columns, Values, and Filters."
+          },
+          {
+            "term": "Data cleaning",
+            "definition": "The process of identifying and correcting errors, inconsistencies, and missing values in a dataset before analysis. Includes removing duplicates, standardising formats, handling blanks, and correcting data types."
+          },
+          {
+            "term": "TRIM / CLEAN functions",
+            "definition": "TRIM removes leading, trailing, and extra internal spaces from text. CLEAN removes non-printable characters. Both are essential for standardising imported data before analysis or matching."
+          },
+          {
+            "term": "Multi-level sort",
+            "definition": "A sort operation that orders data by multiple columns in sequence. For example: sort by Category A→Z, then within each category sort by Revenue largest→smallest."
+          },
+          {
+            "term": "Advanced filter",
+            "definition": "A filtering mode (available in Excel) that allows complex filter criteria — including AND/OR combinations and wildcard matching — defined in a separate criteria range rather than through dropdown menus."
+          },
+          {
+            "term": "Descriptive statistics",
+            "definition": "Summary measures that describe a dataset's central tendency and spread: mean (average), median (middle value), mode (most frequent value), minimum, maximum, and standard deviation."
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "headers": ["Data Problem", "How to Detect", "How to Fix", "Formula / Tool"],
+        "rows": [
+          ["Duplicate rows", "Sort by transaction ID; visually scan for repeats", "Select data range > Data > Remove Duplicates (Excel) or Data > Data Cleanup > Remove Duplicates (Sheets)", "=COUNTIF(A:A,A2)>1 to flag duplicates"],
+          ["Inconsistent capitalisation (e.g. 'design' vs 'Design' vs 'DESIGN')", "Sort the Category column and scan visually", "Add a helper column with =PROPER(B2) or =UPPER(B2); paste-special as values to replace originals", "=PROPER(), =UPPER(), =LOWER()"],
+          ["Dates stored as text", "Dates left-align instead of right-align; sort does not work chronologically", "Use =DATEVALUE(A2) to convert; or Text to Columns wizard in Excel", "=DATEVALUE(), =TEXT(), Format Cells"],
+          ["Leading/trailing spaces", "VLOOKUP returns no match despite apparent identical values", "Apply =TRIM(A2) in a helper column; paste-special as values", "=TRIM(), =CLEAN()"],
+          ["Blank rows", "Pivot table includes a blank category; counts are off", "Filter for blanks (filter > sort > blank check); delete blank rows; or use Go To Special > Blanks", "=COUNTA() vs =COUNT() to detect gaps"],
+          ["Numbers stored as text", "SUM formula returns 0; numbers left-align", "Select range > Data > Text to Columns > Finish (forces conversion); or multiply by 1", "=VALUE(A2) or =A2*1"]
+        ]
+      },
+      {
+        "type": "codePreview",
+        "title": "Data Analysis Formulas — Festival Ticket Sales",
+        "defaultCode": "// Assume data is in a table named TicketSales with columns:\n// TransactionID | Date | Category | Quantity | UnitPrice | Revenue | Postcode | DayOfWeek\n\n// === BASIC DESCRIPTIVE STATS ===\n=AVERAGE(TicketSales[Revenue])        // Mean revenue per transaction\n=MEDIAN(TicketSales[Revenue])         // Median — less affected by outliers\n=MAX(TicketSales[Revenue])            // Highest single transaction\n=STDEV(TicketSales[Revenue])          // Standard deviation — spread of values\n\n// === SUMIFS — Revenue by Category AND Day ===\n// Total revenue for General Admission tickets on Saturday:\n=SUMIFS(TicketSales[Revenue], TicketSales[Category], \"General Admission\", TicketSales[DayOfWeek], \"Saturday\")\n\n// === COUNTIFS — Count transactions meeting multiple conditions ===\n// How many VIP transactions were above $200 revenue?\n=COUNTIFS(TicketSales[Category], \"VIP\", TicketSales[Revenue], \">200\")\n\n// === TEXT functions for data cleaning ===\n// Standardise Category column:\n=PROPER(TRIM(B2))   // Removes spaces AND fixes capitalisation in one step\n\n// === WEEKDAY function — Extract day of week from date ===\n// Returns 1=Sunday, 2=Monday ... 7=Saturday\n=TEXT(A2, \"dddd\")   // Returns full day name: \"Monday\", \"Tuesday\", etc.\n\n// === IFERROR — Prevent #N/A errors in VLOOKUP results ===\n=IFERROR(VLOOKUP(A2, PostcodeRef!$A:$B, 2, FALSE), \"Postcode not found\")\n\n// === LARGE / SMALL — Find top 3 postcodes by revenue ===\n=LARGE(TicketSales[Revenue], 1)   // Highest revenue transaction\n=LARGE(TicketSales[Revenue], 2)   // Second highest\n=LARGE(TicketSales[Revenue], 3)   // Third highest",
+        "challenge": "Sloane needs a formula that calculates the average revenue per transaction for each Category, without using a pivot table — purely using worksheet formulas. Write an AVERAGEIF formula to do this. Then write a second formula that identifies the category with the HIGHEST average transaction revenue, using a combination of AVERAGEIF and MATCH (or INDEX/MATCH). Explain in a comment why you would still prefer a pivot table for this task in a production context."
+      },
+      {
+        "type": "task",
+        "title": "Festival Ticket Sales Analysis",
+        "software": "Microsoft Excel / Google Sheets",
+        "intro": "Work through the complete data analysis pipeline on the provided ticket sales dataset. Follow the clean-transform-analyse-visualise sequence.",
+        "steps": [
+          "Open the provided festival-tickets-raw.xlsx file (or create a sample dataset with 20+ rows: columns TransactionID, Date, Category, Quantity, UnitPrice, Revenue, Postcode).",
+          "Data cleaning step: Use COUNTIF to flag duplicate TransactionIDs in a helper column. Formula: =COUNTIF($A$2:$A$2000,A2)>1. Filter for TRUE values and delete duplicate rows.",
+          "Standardise the Category column: add a helper column with =PROPER(TRIM(B2)). Copy the helper column, paste-special as Values only over the original Category column, then delete the helper column.",
+          "Check the Date column: if dates are left-aligned, they are stored as text. Add a helper column with =DATEVALUE(C2), format as Date, paste-special as Values to replace the text dates.",
+          "Add a DayOfWeek column: =TEXT(C2, \"dddd\") to extract the day name from each date.",
+          "Insert a Pivot Table (Insert > PivotTable). Place it on a new sheet called 'Analysis.'",
+          "Pivot Table 1 — Revenue by Category: drag Category to Rows, Revenue to Values (Sum). Sort by Sum of Revenue descending.",
+          "Pivot Table 2 — Revenue by Day of Week: drag DayOfWeek to Rows, Revenue to Values (Sum), Quantity to Values (Sum). Identify peak day.",
+          "Pivot Table 3 — Revenue by Postcode: drag Postcode to Rows, Revenue to Values (Sum). Sort descending. Identify the bottom 5 postcodes.",
+          "Create a bar chart from Pivot Table 1 and a line chart from Pivot Table 2. Label axes, add a title, and remove chart junk (unnecessary gridlines, legend if redundant).",
+          "On a new sheet called 'Executive Summary,' write three bullet points answering the client's three questions, citing the specific numbers from your pivot tables."
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · SLOANE'S DATA QUALITY CHALLENGE",
+        "text": "Sloane has sent you a second dataset: postcode-performance.csv. It has three problems she wants you to diagnose and fix before the client presentation.\n\nProblem 1: The Revenue column contains values formatted as '$1,234.56' (text with dollar sign and comma). When you SUM the column it returns 0. Write the Excel formula that extracts the numeric value from this text string. (Hint: you will need SUBSTITUTE and VALUE.)\n\nProblem 2: The Postcode column contains a mix of 4-digit postcodes (correct: '6230') and 3-digit postcodes (likely missing a leading zero: '623' instead of '0623'). Write a formula that detects postcodes shorter than 4 characters and displays the corrected version with a leading zero. (Hint: LEN and TEXT functions.)\n\nProblem 3: The Category column has three spellings of the same thing: 'Gen Admission', 'General Admission', and 'GA'. Sloane wants all three standardised to 'General Admission'. Write a formula using nested SUBSTITUTE or IFS that normalises all three spellings. Show the formula logic step by step."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "Three questions before the executive summary goes to the client:\n\n1. Your pivot table shows Saturday as the highest revenue day. But Sloane points out that there were three Saturdays in the dataset and only one Friday. Is total revenue the right metric to compare day-of-week performance, or should you be using average revenue per occurrence? What change to the pivot table's Value Field Settings would give a fairer comparison?\n\n2. You reported 'Postcode 6230 is underperforming.' The dataset has 847 transactions in postcode 6230 and only 12 in postcode 6232. Is 'underperforming' a meaningful comparison when the transaction counts are so different? What additional metric would make this comparison valid?\n\n3. The client wants to filter the pivot table to show only transactions above $100 revenue. You applied a manual filter on the source data. Why is filtering the source data the wrong approach here, and what pivot-table-specific tool should you use instead?"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "Sloane runs =SUM(D2:D1848) on a Revenue column and gets 0, even though the column appears to contain numbers. What is the most likely cause?",
+          "options": [
+            "The SUM formula has the wrong range — it should reference the entire column",
+            "The numbers in column D are stored as text (e.g. imported with a dollar sign or comma), so SUM treats them as non-numeric",
+            "Google Sheets and Excel use different SUM syntax, causing the formula to fail",
+            "The column has conditional formatting applied, which interferes with the SUM calculation"
+          ],
+          "correctIndex": 1,
+          "marks": 2,
+          "explanation": "When numbers are stored as text — for example, imported as '$1,234.56' or '1,234' with a comma — Excel and Sheets cannot perform arithmetic on them. SUM ignores text values and returns 0. The fix is to use =VALUE(SUBSTITUTE(SUBSTITUTE(D2,\"$\",\"\"),\",\",\"\")) to strip the formatting characters and convert to a true number, or use the Text to Columns tool to force conversion. Conditional formatting has no effect on calculated values."
+        }
+      }
+    ]
+  },
+  {
+    "id": "integrated-digital-production",
+    "title": "Integrated Digital Production",
+    "estimatedMinutes": 50,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #3006 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🔴 SPRINT FINAL | Sprint 17 | Assigned to: Junior Developer\n\nThis is the capstone sprint. The Collie River Festival campaign ships on Friday. Every team member's output must be integrated into a single cohesive deliverable: Leo's SVG assets, Sparky's hardware display config, Sloane's analytics dashboard data, and your own spreadsheet models and project documentation.\n\nIntegrated digital production means the whole is greater than the sum of the parts — but only if the parts are compatible. You need to manage the handoffs, resolve the format conflicts, ensure version control is active across all assets, and produce a final delivery package that a client can actually open, use, and maintain after we hand it over. Rory's rule: the client does not care about your internal process. They care that everything works on the day."
+      },
+      {
+        "type": "heading",
+        "text": "Integrated Production: Managing Digital Handoffs",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Integrated digital production is the discipline of combining outputs from multiple tools, team members, and media types into a unified deliverable. In a professional studio, this means managing asset handoffs (Leo's designs into the web build), format compatibility (Sparky's hardware requirements vs. web delivery requirements), version control (ensuring the team is working from the same source files), and quality assurance (testing the integrated output against the client's actual requirements, not your assumptions about them)."
+      },
+      {
+        "type": "paragraph",
+        "text": "The most common failure point in integrated production is the assumption of compatibility. Leo designed the hero banner at 1920×1080 px, but the CMS requires 1200×630 px for social sharing meta tags. Sparky's LED controller accepts SVG 1.1, but Leo exported SVG 1.2 with features the controller does not support. These are not individual errors — they are coordination failures that a project manager must anticipate, not react to. The fix is a technical specification document agreed before any production begins, not a rush conversion the night before delivery."
+      },
+      {
+        "type": "paragraph",
+        "text": "Version control is not optional in an integrated production environment. When Sloane updates the data model, Leo's chart assets may need to be re-exported. When Sparky changes the hardware display dimensions, Leo's SVG layout must be updated. Without version-controlled assets and a clear asset dependency map, these cascading changes create chaos. At minimum, every project should use a shared folder with clearly named version suffixes (_v1, _v2, _FINAL, _FINAL-v2 — the last one being a red flag that the versioning discipline has already broken down)."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Asset pipeline",
+            "definition": "The defined sequence of tools and processes through which a raw asset (e.g. a photograph or audio recording) passes to reach its final delivered form. A well-defined pipeline includes format specifications at each stage."
+          },
+          {
+            "term": "Technical specification (tech spec)",
+            "definition": "A document agreed before production begins that defines file formats, dimensions, colour profiles, naming conventions, and delivery requirements for all assets. Prevents compatibility failures at handoff."
+          },
+          {
+            "term": "Version control",
+            "definition": "A system for tracking changes to files over time, allowing the team to identify who changed what, when, and why — and to revert to previous versions if needed. Git is the professional standard for code; shared drives with naming conventions serve this role for design assets."
+          },
+          {
+            "term": "Handoff",
+            "definition": "The transfer of an asset or deliverable from one team member or tool to another. A clean handoff includes the asset in the correct format, at the correct specification, with any necessary documentation about how it was created."
+          },
+          {
+            "term": "Quality assurance (QA)",
+            "definition": "The systematic process of testing a deliverable against its requirements before client delivery. For integrated digital production, QA includes cross-device testing, format validation, link checking, and review against the original brief."
+          },
+          {
+            "term": "Delivery package",
+            "definition": "The final set of files delivered to a client, organised so the client can understand, use, and maintain the deliverable independently. Typically includes assets, documentation, source files, and a README explaining the folder structure."
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "headers": ["Integration Challenge", "Example", "Prevention", "Resolution if It Occurs"],
+        "rows": [
+          ["Format incompatibility", "Sparky's LED controller rejects SVG 1.2 features used by Leo", "Agree SVG version and feature set in tech spec before production", "Re-export SVG from Leo's source file with compatibility settings; test in controller simulator"],
+          ["Dimension/resolution mismatch", "Hero banner is 1920×1080 but CMS social share requires 1200×630", "List all required dimensions per platform in tech spec", "Batch export multiple sizes from Leo's master file; do not resize rasterised exports"],
+          ["Colour profile conflict", "Leo designs in P3 wide gamut; website renders in sRGB — colours shift noticeably", "Specify sRGB as the production colour space in the tech spec", "Convert Leo's files to sRGB before export; check in browser"],
+          ["File naming inconsistency", "'hero-FINAL.png', 'hero_FINAL_v2.png', 'hero (1).png' in the delivery folder", "Enforce naming convention at project kickoff: component-variant-version.ext", "Audit delivery folder; rename all assets according to convention before packaging"],
+          ["Data dependency break", "Sloane updates the sales CSV; Leo's chart images are now out of date", "Identify asset dependencies at kickoff; flag data-driven assets for update when source data changes", "Re-export all data-driven assets from the updated source; version the new exports"],
+          ["Missing documentation", "Client cannot identify which file is the editable source and which is the export", "Include a README in the delivery package explaining every file's purpose and tool required to edit it", "Create retrospectively from team knowledge; add to delivery package before handover"]
+        ]
+      },
+      {
+        "type": "comparison",
+        "title": "Tools for Integrated Digital Production at the Studio",
+        "items": [
+          {
+            "label": "Version Control: Git + GitHub",
+            "points": [
+              "Industry-standard version control for code, configuration files, and text assets",
+              "Every change is logged with author, timestamp, and commit message",
+              "Branching allows parallel development without overwriting each other's work",
+              "Pull requests enable peer review before changes are merged to main",
+              "Not ideal for large binary files (PSD, MP4) — use Git LFS or alternative for media",
+              "Rory's requirement: every project repository includes a .gitignore, README, and LICENCE file"
+            ]
+          },
+          {
+            "label": "Design Handoff: Canva / Figma",
+            "points": [
+              "Canva: Leo's primary tool — assets can be shared via link with edit or view permissions",
+              "Figma: industry standard for UI design handoff — developers can inspect design tokens without needing the app",
+              "Both generate shareable links instead of file attachments — single source of truth",
+              "Version history built into both tools — earlier versions are recoverable",
+              "Export formats configurable per asset: PNG, SVG, PDF, WebP",
+              "Limitation: if the link is broken or account access is revoked, the client loses access — always export a backup set"
+            ]
+          },
+          {
+            "label": "Asset Organisation: Shared Drive Structure",
+            "points": [
+              "Google Drive / OneDrive: accessible to all team members and the client",
+              "Folder structure should mirror the delivery package: /source /exports /delivery",
+              "Naming convention enforced at project level: component-variant-vX.ext",
+              "Permissions: client gets read-only access to /delivery; team has edit on /source",
+              "Not a replacement for Git on code files — use both: Git for code, Drive for media",
+              "Backup rule: Drive is synced locally on all team machines — not a single-point-of-failure cloud-only store"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "task",
+        "title": "Capstone: Build and Package the Festival Campaign Delivery",
+        "software": "VS Code / Google Drive / Canva / Google Sheets / Audacity",
+        "intro": "You will assemble all sprint outputs into a professional delivery package and perform quality assurance checks before the client handover.",
+        "steps": [
+          "Create a project delivery folder structure in Google Drive: /collie-river-festival /source /exports /delivery /documentation",
+          "Move all source files (Leo's Canva designs, Sparky's hardware config, Sloane's CSV data, your spreadsheet models) into /source with correct version naming: component-variant-v1.ext",
+          "Produce final exports: export Leo's logo as SVG (for hardware), PNG at 600 dpi (for print), and WebP at 80% quality (for web). Place all exports in /exports.",
+          "Perform format QA: open each export in its target tool or browser. Confirm SVG opens correctly in Chrome (drag file into browser tab), PNG dimensions match spec, WebP renders in Chrome and Firefox.",
+          "Perform data QA: open Sloane's CSV in Google Sheets. Confirm no blank rows, no duplicate transaction IDs, correct postcode format. Run =COUNTA(A:A)-COUNTBLANK(A:A) to verify row count against the expected total.",
+          "Perform audio QA: open the exported voiceover-web.mp3 in Audacity. Confirm sample rate is 44,100 Hz, duration matches the script, and there are no clipping artefacts (peaks above 0 dBFS shown in red).",
+          "Create a README.md in VS Code for the delivery package. Include: project name, delivery date, client contact, file inventory (filename, format, purpose, tool needed to edit), and known limitations.",
+          "Move all QA-passed assets to /delivery. Confirm the folder contains ONLY delivery-ready files — no source PSDs, no draft versions, no _OLD files.",
+          "Share the /delivery folder with the client (Google Drive share link, view only). Test the link in an incognito browser window to confirm client-accessible.",
+          "Update the sprint board: mark Ticket #3001 through #3005 as Done, mark #3006 as Ready for Review. Write a one-paragraph sprint retrospective: what integration challenge took the most time, and what technical specification clause would have prevented it."
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · PRE-DELIVERY QA CHECKLIST",
+        "text": "Rory has given you the studio's pre-delivery QA checklist. Work through each item for the festival campaign and record Pass / Fail / Not Applicable with a one-line note.\n\n1. All assets in /delivery are in the correct format for their intended use (web, print, hardware). ✓/✗\n2. No source or draft files are present in /delivery. ✓/✗\n3. File naming follows the convention: component-variant-vX.ext for all assets. ✓/✗\n4. README.md is present and lists every file with its purpose and the tool required to edit it. ✓/✗\n5. The SVG logo opens and renders correctly in Chrome 120+ without JavaScript errors. ✓/✗\n6. The MP3 voiceover plays in a browser audio element (test with a simple HTML file: <audio src='voiceover-web.mp3' controls>). ✓/✗\n7. All spreadsheet formulas return expected results with the final production data (not test data). ✓/✗\n8. The client's share link is view-only and opens correctly in an incognito browser window. ✓/✗\n9. The sprint board has been updated with all ticket statuses and a retrospective note. ✓/✗\n10. The studio licence register has been updated to include any new tools used in this sprint. ✓/✗\n\nFor any item that fails: write the specific remediation action and the team member responsible."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "Three questions before this project ships:\n\n1. The README you wrote describes every file in /delivery, but a new team member asks: 'How do I regenerate the festival-revenue-chart.png if the underlying data changes?' The current README does not answer this question. What specific information about the asset's production process should a professional README include for any data-driven asset?\n\n2. You shared the /delivery folder with the client using a Google Drive link set to 'Anyone with the link can view.' The client's marketing manager accidentally shared that link in a public Facebook post. What are the data exposure risks — given the delivery package includes postcode-level customer revenue data — and what permission model should be used for client deliverables containing personal or commercially sensitive data?\n\n3. During sprint retrospective, you identify that the format conflict between Leo's SVG 1.2 export and Sparky's SVG 1.1 controller took four hours to resolve. Write a specific technical specification clause — two or three sentences in plain language — that you would add to the studio's project kickoff template to prevent this exact problem recurring on future projects."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "At the end of a project, the /delivery folder contains the following files: hero-banner-FINAL.png, hero-banner-FINAL-v2.png, hero-banner-FINAL-v2-USE THIS ONE.png, logo.svg, logo_old.svg, voiceover.mp3, voiceover-web.mp3. Which of the following best describes the primary problem with this delivery package?",
+          "options": [
+            "The folder contains both PNG and SVG formats, which is unnecessary duplication",
+            "The file naming convention has broken down, making it impossible to identify with confidence which version of each asset is the correct final deliverable",
+            "The MP3 file should be in WAV format for client delivery",
+            "The delivery package should only contain one file per asset type"
+          ],
+          "correctIndex": 1,
+          "marks": 2,
+          "explanation": "The presence of 'FINAL,' 'FINAL-v2,' and 'FINAL-v2-USE THIS ONE' naming patterns indicates that file versioning discipline broke down during the project. A client (or future team member) cannot reliably identify which file to use. Professional practice requires a clear naming convention enforced throughout the project, and a /delivery folder that contains only the confirmed final versions with no ambiguity. Having multiple formats (PNG and SVG) can be entirely appropriate when each serves a different delivery purpose."
+        }
+      }
+    ]
+  }
+]

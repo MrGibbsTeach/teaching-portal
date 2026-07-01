@@ -1,0 +1,862 @@
+[
+  {
+    "id": "types-of-computer-systems",
+    "title": "Types of Computer Systems",
+    "estimatedMinutes": 20,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #1001 · BUNBURY HARDWARE INTEGRATORS",
+        "text": "Client: Bunbury Regional Council. They're upgrading from paper-based workflows to digital. They need systems for three environments: a front counter, a field inspector who drives between sites, and a back-of-house data server. Your job as the junior tech: identify the right system type for each use case and justify your picks before we order anything."
+      },
+      {
+        "type": "video",
+        "youtubeId": "OAx_6-wdslM",
+        "title": "Introducing How Computers Work",
+        "caption": "Code.org — a solid foundation before we get hands-on. Watch how input, processing, output, and storage all tie together."
+      },
+      {
+        "type": "heading",
+        "text": "What Is a Computer System?",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Any device that accepts input, processes it, stores data, and produces output is a computer system. That definition covers a lot of ground — from a Raspberry Pi sitting in a school project to a $50,000 rack server running 200 virtual machines at Bankwest."
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · JAXEN 'SPARKY' MILLER, BUNBURY HARDWARE INTEGRATORS",
+        "text": "The hardware decision is always driven by the workload. Never spec a machine without knowing exactly what it'll be running, how many users will hit it, and whether it needs to be portable. I've seen clients burn $8,000 on a server-grade workstation for a receptionist who checks email."
+      },
+      {
+        "type": "heading",
+        "text": "The Main System Types",
+        "level": 2
+      },
+      {
+        "type": "grid",
+        "title": "Computer System Types",
+        "items": [
+          {
+            "icon": "🖥️",
+            "label": "Desktop PC",
+            "description": "Stays on a desk. Separate monitor, tower, keyboard, mouse. High performance per dollar, easy to upgrade. Best for: office workstations, graphic design, gaming rigs."
+          },
+          {
+            "icon": "💻",
+            "label": "Laptop / Notebook",
+            "description": "Battery-powered, all-in-one portable form factor. Slightly less raw power than equivalent desktops. Best for: mobile workers, students, field staff."
+          },
+          {
+            "icon": "📱",
+            "label": "Tablet",
+            "description": "Touchscreen, lightweight, ARM-based. No physical keyboard by default. Best for: casual browsing, point-of-sale, form collection in the field."
+          },
+          {
+            "icon": "📲",
+            "label": "Smartphone",
+            "description": "Pocket computer with cellular, GPS, camera, and sensors built in. Runs iOS or Android. Best for: communication, mobile apps, field data capture."
+          },
+          {
+            "icon": "🗄️",
+            "label": "Server",
+            "description": "High-spec machine (or rack of machines) designed to run 24/7 and serve requests from many users simultaneously. Best for: hosting websites, files, email, databases."
+          },
+          {
+            "icon": "🔧",
+            "label": "Embedded System",
+            "description": "A processor built into a dedicated device to do one job. Examples: ATM, traffic light controller, washing machine, Cisco router firmware. Not general-purpose."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Side-by-Side Comparison",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["System Type", "Portability", "Performance", "Upgradeable?", "Typical Cost Range"],
+        "rows": [
+          ["Desktop PC", "None — fixed location", "High", "Yes — RAM, GPU, storage", "$600 – $3,000+"],
+          ["Laptop", "High — battery-powered", "Medium–High", "Limited (RAM/SSD only)", "$800 – $3,500+"],
+          ["Tablet", "Very high — lightweight", "Medium", "No", "$300 – $1,500"],
+          ["Smartphone", "Pocket-sized", "Medium", "No", "$400 – $2,000"],
+          ["Server", "None — rack-mounted", "Very high", "Yes — fully modular", "$2,000 – $50,000+"],
+          ["Embedded", "Built into device", "Task-specific", "No", "Varies widely"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Servers: A Closer Look",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Servers are not just fast PCs. They're built with redundancy, reliability, and uptime in mind — redundant power supplies, ECC RAM (that corrects its own memory errors), and RAID storage arrays. A Dell PowerEdge or HPE ProLiant rack server is designed to run without rebooting for years."
+      },
+      {
+        "type": "paragraph",
+        "text": "Cloud services — AWS, Azure, Google Cloud — are still just servers. The difference is you're renting compute time on someone else's hardware. When Leo's front-end UI hits Sloane's database, that request is bouncing through server hardware somewhere."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Client", "definition": "A device that requests services or resources from a server." },
+          { "term": "Server", "definition": "A device that provides services, files, or compute resources to clients over a network." },
+          { "term": "Embedded system", "definition": "A computer integrated into a device for a single dedicated purpose — not general-purpose computing." },
+          { "term": "ECC RAM", "definition": "Error-Correcting Code RAM — server-grade memory that detects and fixes single-bit errors automatically." }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · SYSTEM SELECTION FOR BUNBURY REGIONAL COUNCIL",
+        "text": "Return to Ticket #1001. For each of these three roles, choose the system type and write two dot-point justifications:\n\n1. Front counter staff — greet visitors, update records in a web-based system, print forms.\n2. Field building inspector — moves between 8–10 sites per day, needs to photograph and log data on-site.\n3. Back-of-house — stores all council records, 30 staff access it simultaneously.\n\nBonus: The council asked if they could 'just use tablets for everyone to save money.' Write a one-paragraph response Sparky would give them."
+      },
+      {
+        "type": "heading",
+        "text": "Check Your Understanding",
+        "level": 2
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "tcs-q1",
+          "questionType": "mcq",
+          "text": "A warehouse manager needs to scan barcodes, check inventory, and log deliveries while walking the floor. Which system type is MOST suitable?",
+          "options": [
+            "Desktop PC — highest performance",
+            "Tablet or Smartphone — portable and purpose-built for field data capture",
+            "Server — can handle many simultaneous requests",
+            "Embedded system — designed for a dedicated task"
+          ],
+          "correctIndex": 1,
+          "explanation": "Portability is the key requirement here. A tablet or smartphone can run inventory apps, scan barcodes with the camera, and be used while moving around. A desktop can't leave the desk; a server handles requests from other machines; an embedded system is locked to one task."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "tcs-q2",
+          "questionType": "true_false",
+          "text": "Cloud computing means there are no physical servers — all processing happens in the internet itself.",
+          "correctAnswer": false,
+          "explanation": "False. Cloud computing runs on physical server hardware in data centres owned by companies like Amazon (AWS), Microsoft (Azure), and Google. The 'cloud' is someone else's servers. The hardware still exists — you just don't own or manage it."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "tcs-q3",
+          "questionType": "mcq",
+          "text": "Which of the following is an example of an embedded system?",
+          "options": [
+            "A Windows laptop used for graphic design",
+            "A Dell PowerEdge rack server in a data centre",
+            "The processor controlling fuel injection in a car engine",
+            "A tablet running Android apps"
+          ],
+          "correctIndex": 2,
+          "explanation": "An embedded system is a processor built into a device for a single, dedicated function. The car fuel injection controller fits this perfectly — it runs one job and can't be used for general computing."
+        }
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · SPARKY IS CHECKING YOUR WORK",
+        "text": "Before you close this ticket, answer these three questions:\n\n1. You've recommended a server for the council's back-of-house storage. What happens if that server's hard drive fails at 11 PM on a Friday? What hardware feature should have been spec'd to handle this?\n2. Why would a tablet be a poor choice for a graphic designer who works with 4K video files all day, even though tablets run powerful ARM chips now?\n3. A client says 'I just need a cheap laptop for the staff — all they do is use our web-based system.' What questions would you ask before approving that purchase?"
+      }
+    ]
+  },
+  {
+    "id": "cpu-and-memory",
+    "title": "CPU and Memory",
+    "estimatedMinutes": 22,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #1002 · BUNBURY HARDWARE INTEGRATORS",
+        "text": "Client: Bunbury Video Productions. Their video editor is complaining his export times have blown out from 20 minutes to over 2 hours. We've been asked to diagnose whether it's a CPU, RAM, or storage bottleneck — and quote a fix. You're shadowing me on-site today. Let's figure out what's choking this machine."
+      },
+      {
+        "type": "video",
+        "youtubeId": "AkFi90lZmXA",
+        "title": "Inside Your Computer",
+        "caption": "TED-Ed — visual breakdown of what's physically inside the machine. Watch before we dig into specs."
+      },
+      {
+        "type": "heading",
+        "text": "The CPU: Engine of the Machine",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "The CPU (Central Processing Unit) executes every instruction your software sends. It runs the fetch-decode-execute cycle billions of times per second. Modern CPUs from Intel (Core i5/i7/i9) and AMD (Ryzen 5/7/9) contain multiple cores, allowing true parallel processing."
+      },
+      {
+        "type": "table",
+        "headers": ["CPU Spec", "What It Means", "Impact on Performance"],
+        "rows": [
+          ["Clock speed (GHz)", "Cycles per second per core", "Higher = faster single-threaded tasks (spreadsheets, basic apps)"],
+          ["Core count", "Independent processing units on one chip", "More cores = better for video rendering, compiling, multitasking"],
+          ["Cache (L1/L2/L3)", "Ultra-fast on-chip memory buffer", "Larger cache = fewer slow RAM lookups = snappier response"],
+          ["Hyper-threading / SMT", "Each physical core handles 2 threads", "Effectively doubles logical core count for multi-threaded workloads"],
+          ["TDP (watts)", "Heat output", "Higher TDP needs better cooling; impacts laptop battery life"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · JAXEN 'SPARKY' MILLER, BUNBURY HARDWARE INTEGRATORS",
+        "text": "Core count beats clock speed for video work. A 3.0 GHz 8-core AMD Ryzen 7 will smoke a 4.5 GHz 2-core chip when rendering 4K footage. Clock speed matters for single-threaded tasks like gaming. Know your workload before you spec the CPU."
+      },
+      {
+        "type": "heading",
+        "text": "Memory (RAM): The Workbench",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "RAM (Random Access Memory) is volatile — it loses everything when the power goes off. Think of it as your desk: the bigger it is, the more work you can spread out at once without shuffling things to the filing cabinet (storage). When RAM fills up, the OS starts using storage as 'virtual memory' — and that's when things grind."
+      },
+      {
+        "type": "video",
+        "youtubeId": "p3q5zWCw8J4",
+        "title": "How Computer Memory Works",
+        "caption": "TED-Ed — how RAM, cache, and storage interact at a hardware level."
+      },
+      {
+        "type": "comparison",
+        "title": "Types of Memory",
+        "items": [
+          {
+            "label": "RAM (Primary Memory)",
+            "points": [
+              "Volatile — cleared when power off",
+              "Holds currently running programs and active data",
+              "DDR4 / DDR5 — current standard",
+              "Typical ranges: 8 GB (basic), 16 GB (standard), 32–64 GB (workstation)",
+              "Directly accessed by CPU at high speed"
+            ]
+          },
+          {
+            "label": "ROM (Read-Only Memory)",
+            "points": [
+              "Non-volatile — persists without power",
+              "Contains the BIOS/UEFI firmware",
+              "Initialises hardware at startup",
+              "Cannot be written to by normal software",
+              "Usually 16–128 MB on a motherboard"
+            ]
+          },
+          {
+            "label": "Cache Memory",
+            "points": [
+              "Built into or adjacent to the CPU",
+              "Fastest memory in the system (nanosecond access)",
+              "L1 cache: tiny but fastest (per core)",
+              "L2/L3 cache: larger but slightly slower",
+              "Holds recently/frequently used data to avoid RAM round-trips"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "The Memory Hierarchy",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Memory Level", "Speed", "Capacity", "Volatile?", "Cost"],
+        "rows": [
+          ["CPU Registers", "< 1 nanosecond", "< 1 KB", "Yes", "Built into CPU"],
+          ["L1 Cache", "~1 ns", "32–512 KB per core", "Yes", "Built into CPU"],
+          ["L2/L3 Cache", "~5–10 ns", "1–64 MB", "Yes", "Built into CPU"],
+          ["RAM", "~50–100 ns", "4 GB – 512 GB", "Yes", "$30 – $500+"],
+          ["SSD Storage", "~50–500 µs", "128 GB – 8 TB", "No", "$60 – $600+"],
+          ["HDD Storage", "~5–10 ms", "500 GB – 20 TB", "No", "$40 – $400+"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · DIAGNOSE THE VIDEO EDITOR",
+        "text": "The Bunbury Video Productions machine has these specs: Intel Core i5 (4 cores, 2.9 GHz), 8 GB DDR4 RAM, 500 GB HDD (spinning disk). The editor is working with 4K footage files averaging 40 GB each.\n\nTasks:\n1. Identify THREE specific bottlenecks in this setup for 4K video editing. For each, name the component, explain why it's a bottleneck, and suggest a specific upgrade (include a real product name like 'Intel Core i7-13700' or 'Samsung 870 EVO SSD').\n2. The client has a $1,200 upgrade budget. Rank your upgrades by impact-per-dollar and justify the order.\n3. After the upgrades, which component do you predict will become the new bottleneck? Why?"
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "CPU (Central Processing Unit)", "definition": "The primary processor that executes program instructions via the fetch-decode-execute cycle." },
+          { "term": "Core", "definition": "An independent processing unit within a CPU. A quad-core CPU has four units that can each process instructions simultaneously." },
+          { "term": "RAM (Random Access Memory)", "definition": "Volatile primary memory that holds currently running programs and active data. Cleared on power-off." },
+          { "term": "Cache", "definition": "Ultra-fast memory built into or near the CPU that stores recently accessed data to avoid slower RAM lookups." },
+          { "term": "Virtual memory", "definition": "When RAM is full, the OS uses storage space (page file) as overflow memory. Much slower than actual RAM." },
+          { "term": "Clock speed", "definition": "Measured in GHz — the number of processing cycles a CPU can complete per second per core." }
+        ]
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "cam-q1",
+          "questionType": "mcq",
+          "text": "A graphic designer has a PC with a fast CPU but only 8 GB of RAM. When she opens Photoshop, Illustrator, and Chrome simultaneously, the machine slows dramatically. What is the most likely cause?",
+          "options": [
+            "The CPU clock speed is too low",
+            "The RAM is full and the OS is using slow virtual memory on storage",
+            "The L2 cache is too small",
+            "The ROM firmware needs updating"
+          ],
+          "correctIndex": 1,
+          "explanation": "When RAM fills up, Windows or macOS moves data to a 'page file' on the hard drive or SSD — called virtual memory. Storage is orders of magnitude slower than RAM, which causes the dramatic slowdown. Adding more RAM is the fix."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "cam-q2",
+          "questionType": "true_false",
+          "text": "ROM stores the operating system and is cleared every time the computer shuts down.",
+          "correctAnswer": false,
+          "explanation": "False. ROM contains the BIOS/UEFI firmware and is non-volatile — it persists without power. The operating system is stored on secondary storage (HDD/SSD) and loaded into RAM when the computer starts."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "cam-q3",
+          "questionType": "short_answer",
+          "text": "Explain why a CPU with more cores is better suited to video rendering than a CPU with a higher clock speed but fewer cores.",
+          "marks": 3,
+          "explanation": "Video rendering is a highly parallel workload — the software can split the job across many processing threads simultaneously. More cores allow more rendering threads to run in parallel, dramatically reducing total time. A higher clock speed helps per-core tasks but does not compensate for having fewer cores on a parallel workload."
+        }
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · SPARKY IS CHECKING YOUR WORK",
+        "text": "Before I sign off Ticket #1002, tell me:\n\n1. The client asks 'Can I just add more cache to speed things up?' — how do you explain why they can't buy or add cache like they can buy RAM?\n2. We've upgraded the RAM from 8 GB to 32 GB. The editor says it's still slow when doing very long timelines. The Task Manager shows CPU usage at 100% during exports. What does that tell you, and what's the next step?\n3. Why does the memory hierarchy go from tiny-and-fast at the top to large-and-slow at the bottom? What would it take to make all memory as fast as L1 cache?"
+      }
+    ]
+  },
+  {
+    "id": "input-output-and-peripheral-devices",
+    "title": "Input, Output, and Peripheral Devices",
+    "estimatedMinutes": 20,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #1003 · BUNBURY HARDWARE INTEGRATORS",
+        "text": "Client: Bunbury TAFE Campus IT Department. They're fitting out a new digital media lab — 20 workstations for graphic design, audio production, and video editing students. They've asked us to recommend the peripheral setup for each station. They want to know what input and output devices each workstation needs, and why. Budget per workstation: $400 for peripherals."
+      },
+      {
+        "type": "heading",
+        "text": "Input vs Output — The Basics",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Every peripheral device does one of two things: it sends data INTO the computer (input) or delivers data OUT of the computer (output). Some devices do both — they're called input/output (I/O) devices."
+      },
+      {
+        "type": "comparison",
+        "title": "Input vs Output vs I/O",
+        "items": [
+          {
+            "label": "Input Devices",
+            "points": [
+              "Send data INTO the computer",
+              "Keyboard — text and command entry",
+              "Mouse / Trackpad — cursor and selection",
+              "Microphone — audio capture",
+              "Webcam / Camera — image and video capture",
+              "Scanner — digitise physical documents",
+              "Barcode reader — product identification",
+              "Graphics tablet (e.g. Wacom) — pressure-sensitive drawing"
+            ]
+          },
+          {
+            "label": "Output Devices",
+            "points": [
+              "Deliver data OUT of the computer",
+              "Monitor / Display — visual output",
+              "Printer — physical document output",
+              "Speakers / Headphones — audio output",
+              "Projector — large-scale display",
+              "3D Printer — physical object output"
+            ]
+          },
+          {
+            "label": "I/O (Both)",
+            "points": [
+              "Send and receive data",
+              "Touchscreen — input touch, output display",
+              "USB hub — data flows both ways",
+              "Network interface card — transmit and receive",
+              "External SSD — read and write",
+              "Headset — input mic, output audio"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · JAXEN 'SPARKY' MILLER, BUNBURY HARDWARE INTEGRATORS",
+        "text": "Peripherals are where the bottleneck hides in creative workstations. I've seen studios drop $4,000 on a CPU and then plug in a $30 mouse and a budget monitor with terrible colour accuracy. Your monitor IS your canvas if you're in design. Don't skimp on the devices your hands and eyes touch all day."
+      },
+      {
+        "type": "heading",
+        "text": "Connection Interfaces",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "How a peripheral connects to the computer matters for speed, compatibility, and convenience. USB is the universal standard for most peripherals. Thunderbolt (used on Macs and high-end PCs) carries far more bandwidth than standard USB — critical for high-resolution external displays and fast storage."
+      },
+      {
+        "type": "table",
+        "headers": ["Interface", "Max Speed", "Common Uses", "Notes"],
+        "rows": [
+          ["USB 2.0", "480 Mbps", "Keyboards, mice, older devices", "Still everywhere, fine for low-bandwidth peripherals"],
+          ["USB 3.0 / 3.1", "5–10 Gbps", "External drives, webcams, hubs", "Blue port colour in most systems"],
+          ["USB-C / USB4", "Up to 40 Gbps", "Modern everything", "Reversible connector, carries power + data + video"],
+          ["Thunderbolt 3/4", "40 Gbps", "High-res displays, fast storage, docking stations", "Common on Apple Macs and premium Windows laptops"],
+          ["HDMI 2.1", "48 Gbps", "Monitor and TV display", "Supports 4K 144Hz and 8K"],
+          ["DisplayPort 2.0", "77 Gbps", "High-refresh monitors", "Preferred by PC gamers and design professionals"],
+          ["Bluetooth 5.0", "2 Mbps (wireless)", "Wireless keyboards, mice, headsets", "Low latency but susceptible to interference"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Monitors: Resolution, Refresh Rate, Colour Accuracy",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "For graphic design and video work, monitor specs matter more than almost any other peripheral. Resolution determines how much you can see at once. Colour accuracy (measured as DCI-P3 or sRGB coverage percentage) determines whether what you see on-screen matches what prints or publishes."
+      },
+      {
+        "type": "table",
+        "headers": ["Monitor Spec", "What It Means", "Recommendation for Creative Work"],
+        "rows": [
+          ["Resolution", "Number of pixels (e.g. 1920×1080, 3840×2160)", "Minimum 1920×1080; 4K preferred for video/photo editing"],
+          ["Refresh rate", "Frames per second the panel can display (Hz)", "60 Hz fine for design; 144+ Hz for gaming/animation"],
+          ["Colour gamut", "Range of colours the panel can display", "Look for 99% sRGB or 90%+ DCI-P3 for design work"],
+          ["Panel type", "IPS, TN, VA, OLED", "IPS or OLED for colour accuracy; TN is fastest but poor colour"],
+          ["Calibration", "Hardware colour calibration support", "Professional monitors (e.g. BenQ PD series) support hardware calibration"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · SPEC THE TAFE MEDIA LAB",
+        "text": "You have $400 per workstation for peripherals. Each station already has the PC tower. Your job is to build the peripheral list for a graphic design/video editing student workstation.\n\n1. Create a table listing at least 6 peripherals. For each: name the device, classify it (input/output/I/O), specify a real product (brand + model), and give the price and justification.\n2. Your total must not exceed $400. Show your working.\n3. Sloane's data management curriculum requires students to print reports and scan paper documents. Add the appropriate devices and adjust your budget accordingly.\n4. One student has a disability requiring voice control. What additional input device would you include, and why?"
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Input device", "definition": "Hardware that sends data into the computer (keyboard, mouse, microphone, scanner, webcam)." },
+          { "term": "Output device", "definition": "Hardware that delivers data from the computer to the user (monitor, printer, speakers)." },
+          { "term": "Peripheral device", "definition": "Any hardware device connected to a computer that is not the core processor or internal storage." },
+          { "term": "USB (Universal Serial Bus)", "definition": "The dominant standard for connecting peripherals. Versions range from USB 2.0 (480 Mbps) to USB4 (40 Gbps)." },
+          { "term": "Resolution", "definition": "The number of pixels on a display (width × height). Higher resolution = more detail and screen space." },
+          { "term": "Colour gamut", "definition": "The range of colours a display can reproduce. Measured as % coverage of sRGB or DCI-P3 colour spaces." }
+        ]
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "iopd-q1",
+          "questionType": "mcq",
+          "text": "A music producer wants to record vocals and play them back through studio monitors. Which combination of devices does she need?",
+          "options": [
+            "Two output devices: speakers and a display",
+            "An input device (microphone) and output devices (speakers and display)",
+            "Only a USB audio interface — it handles everything",
+            "An I/O device only — the audio interface counts as both input and output"
+          ],
+          "correctIndex": 3,
+          "explanation": "A USB audio interface is an I/O device — it takes the microphone signal in (input) and sends audio to the monitors out (output). However, she also needs a monitor/display (output) to see her DAW software. Option B is closest to correct but the question is about the most accurate classification. An audio interface IS an I/O device."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "iopd-q2",
+          "questionType": "true_false",
+          "text": "A touchscreen is classified as an output device only, because its primary purpose is to display information.",
+          "correctAnswer": false,
+          "explanation": "False. A touchscreen is an input/output (I/O) device. It outputs visual information (display) AND receives input from the user's touch. Many definitions are both, not just one."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "iopd-q3",
+          "questionType": "mcq",
+          "text": "A video editor needs to connect an external SSD for fast file transfer. Which connection interface should she use for maximum speed?",
+          "options": [
+            "USB 2.0 — it's the most compatible",
+            "Bluetooth — wireless is most convenient",
+            "Thunderbolt 3 or USB4 — provides up to 40 Gbps",
+            "HDMI — designed for high-bandwidth data transfer"
+          ],
+          "correctIndex": 2,
+          "explanation": "Thunderbolt 3/4 or USB4 provides up to 40 Gbps — essential for transferring large 4K video files quickly. USB 2.0 at 480 Mbps would create a massive bottleneck. Bluetooth is far too slow. HDMI is for display signals, not storage."
+        }
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · SPARKY IS CHECKING YOUR WORK",
+        "text": "You've submitted the peripheral spec for the TAFE lab. Before I approve the order:\n\n1. You've listed a 1080p monitor for the graphic design stations. The lecturer says students will be working on branding and print work. What specific monitor spec should you change, and why does it matter for design accuracy?\n2. You recommended a USB 2.0 hub to connect all peripherals. The video students are complaining about lag when scrubbing 4K footage from their external drives. What's the problem and how do you fix it?\n3. One of the recommended keyboards is wireless Bluetooth. The IT dept is worried about pairing conflicts in a lab of 20. What wired alternative would you suggest, and what connection type?"
+      }
+    ]
+  },
+  {
+    "id": "troubleshooting-hardware-and-software",
+    "title": "Troubleshooting Hardware and Software",
+    "estimatedMinutes": 22,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #1004 · BUNBURY HARDWARE INTEGRATORS",
+        "text": "Emergency callout. Client: Bunbury Accounting Partners. A staff member's PC won't boot. Another machine is running hot and randomly shutting down. A third user says Windows is giving BSOD (Blue Screen of Death) errors once or twice a day. All three machines are needed for end-of-financial-year work starting Monday. You've got Friday afternoon to fix all three. Let's go."
+      },
+      {
+        "type": "heading",
+        "text": "The Troubleshooting Mindset",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Troubleshooting is systematic, not random. You don't swap parts until something works — that's expensive and wastes time. The process is: gather symptoms, form a hypothesis, test it, document the result, escalate or resolve."
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · JAXEN 'SPARKY' MILLER, BUNBURY HARDWARE INTEGRATORS",
+        "text": "Always check the simple stuff first. Is it plugged in? Is the power strip on? Has anything changed recently — new software, moved the machine, Windows update? 80% of 'complex' faults I get called out to are something embarrassingly simple. Check before you diagnose."
+      },
+      {
+        "type": "heading",
+        "text": "The Troubleshooting Process",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Step", "Action", "Example"],
+        "rows": [
+          ["1. Identify the problem", "Gather symptoms — what is and isn't working. Ask the user what changed recently.", "PC won't boot. Last thing user did: installed a Windows update."],
+          ["2. Establish a theory", "Form a hypothesis based on symptoms. Start with the most likely cause.", "Theory: Update corrupted a boot file."],
+          ["3. Test the theory", "Try one fix at a time. Don't change multiple variables simultaneously.", "Boot into Safe Mode. If it works, the theory is likely correct."],
+          ["4. Create an action plan", "Plan the fix steps before executing. Consider risks (data loss, downtime).", "Roll back the Windows update via Recovery Options."],
+          ["5. Implement the fix", "Execute the plan. Document every action taken.", "Rolled back update. Machine boots normally."],
+          ["6. Verify and document", "Confirm the problem is fully resolved. Record the cause and fix.", "Tested for 30 minutes. Stable. Logged in ticketing system."]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Common Hardware Faults and Causes",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Symptom", "Likely Cause(s)", "Diagnostic Step", "Fix"],
+        "rows": [
+          ["PC won't turn on", "PSU failed, power cable issue, surge damage", "Check power light, test with different power cable/outlet", "Replace PSU or cable"],
+          ["Random shutdowns / overheating", "Dust-blocked fans, dried thermal paste, failed CPU fan", "Check temperatures in BIOS or HWMonitor", "Clean fans, reapply thermal paste, replace cooler"],
+          ["POST beep codes at startup", "RAM fault, GPU not seated, missing component", "Listen to beep pattern — refer to motherboard manual", "Reseat RAM and GPU, replace faulty module"],
+          ["BSOD (Blue Screen)", "Driver conflict, RAM fault, corrupted OS files", "Note the STOP code on the BSOD screen", "Update/rollback driver, run memtest86, run sfc /scannow"],
+          ["Slow performance", "Full RAM, fragmented HDD, malware, overheating CPU throttling", "Task Manager — check CPU/RAM/Disk usage", "Add RAM, run disk cleanup, malware scan, clean CPU cooler"],
+          ["No display output", "GPU/monitor cable issue, monitor power, GPU failure", "Check cable connections, try different port (HDMI→DP)", "Reseat GPU, replace cable, test with different monitor"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Software Troubleshooting Tools (Windows)",
+        "level": 2
+      },
+      {
+        "type": "grid",
+        "title": "Windows Diagnostic Tools",
+        "items": [
+          {
+            "icon": "🔧",
+            "label": "Task Manager",
+            "description": "Real-time view of CPU, RAM, disk, and network usage. Spot resource hogs instantly. Ctrl+Shift+Esc."
+          },
+          {
+            "icon": "📋",
+            "label": "Event Viewer",
+            "description": "Logs every system event including errors and crashes. BSOD details appear here after restart."
+          },
+          {
+            "icon": "💾",
+            "label": "Device Manager",
+            "description": "Lists all hardware. Yellow exclamation = driver problem. Right-click to update or roll back drivers."
+          },
+          {
+            "icon": "🛡️",
+            "label": "sfc /scannow",
+            "description": "System File Checker. Run in elevated CMD to scan and repair corrupted Windows system files."
+          },
+          {
+            "icon": "🧪",
+            "label": "Memtest86",
+            "description": "Bootable RAM tester. Runs outside the OS to test for faulty memory modules. Run overnight."
+          },
+          {
+            "icon": "🌡️",
+            "label": "HWiNFO / HWMonitor",
+            "description": "Real-time hardware temperature, fan speed, and voltage monitoring. Essential for thermal faults."
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · BUNBURY ACCOUNTING PARTNERS — THREE FAULTS",
+        "text": "Work through each of the three machines from Ticket #1004:\n\nMachine A — Won't boot. Screen is black, no POST beeps, power LED is off.\nMachine B — Randomly shutting down after 15–30 minutes of use. BIOS shows CPU temp hitting 95°C.\nMachine C — Random BSODs. STOP code: MEMORY_MANAGEMENT. BSODs occur when running multiple browser tabs and their accounting software simultaneously.\n\nFor each machine:\n1. State your initial hypothesis (most likely cause)\n2. List the exact diagnostic steps you'd take in order\n3. Propose the fix with the specific tool or action\n4. Estimate the time and cost (parts + labour at $120/hr)\n\nBonus: The office manager says 'Why don't you just reinstall Windows on all three? That fixes everything, right?' Write Sparky's response."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "POST (Power-On Self-Test)", "definition": "The self-diagnostic test a computer runs at startup before loading the OS. Beep codes indicate specific hardware faults." },
+          { "term": "BSOD (Blue Screen of Death)", "definition": "A Windows critical error screen that appears when the OS encounters a fatal system error it cannot recover from. Displays a STOP code." },
+          { "term": "Thermal throttling", "definition": "When a CPU automatically reduces its clock speed to prevent overheating damage. Causes sudden slowdowns under load." },
+          { "term": "Driver", "definition": "Software that allows the OS to communicate with a hardware device. Outdated or corrupt drivers cause many BSOD errors." },
+          { "term": "PSU (Power Supply Unit)", "definition": "Converts mains AC power to DC voltages the computer components require. A failing PSU causes random shutdowns and boot failures." }
+        ]
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "ths-q1",
+          "questionType": "mcq",
+          "text": "A PC is randomly shutting down after about 20 minutes. No error message appears. The most likely cause is:",
+          "options": [
+            "A corrupted operating system file causing a silent crash",
+            "A full hard drive — the PC shuts down when storage is depleted",
+            "Thermal shutdown — the CPU is overheating and the motherboard cuts power to protect itself",
+            "A failing monitor — the display turns off and the user assumes the PC shut down"
+          ],
+          "correctIndex": 2,
+          "explanation": "Random shutdowns after a consistent warm-up period are a classic sign of thermal issues. When CPU temperature exceeds the safety threshold (typically 90–100°C), the motherboard performs an emergency shutdown to prevent physical damage. Check HWMonitor or BIOS temperature readings."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "ths-q2",
+          "questionType": "mcq",
+          "text": "You're troubleshooting a PC and want to test whether the RAM modules are faulty. Which tool is most appropriate?",
+          "options": [
+            "Task Manager — check if RAM usage is at 100%",
+            "Memtest86 — boots independently of the OS to run comprehensive RAM tests",
+            "Device Manager — shows if the RAM driver has an error",
+            "sfc /scannow — scans memory and system files simultaneously"
+          ],
+          "correctIndex": 1,
+          "explanation": "Memtest86 is the correct tool — it boots from a USB drive before Windows loads, running comprehensive tests on all RAM without the OS interfering. Task Manager shows usage, not faults. RAM doesn't have drivers in the Device Manager. sfc /scannow checks OS system files, not RAM."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "ths-q3",
+          "questionType": "short_answer",
+          "text": "Explain why you should change only one variable at a time when troubleshooting a hardware fault.",
+          "marks": 2,
+          "explanation": "If you change multiple things at once and the problem is fixed, you don't know which change fixed it — and if a similar problem appears later, you can't replicate the solution. Changing one variable at a time lets you identify the exact cause, document a reliable fix, and avoid introducing new faults while chasing the original one."
+        }
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · SPARKY IS CHECKING YOUR WORK",
+        "text": "You've submitted your diagnostic reports for Ticket #1004. Three questions before I sign off:\n\n1. For Machine C (MEMORY_MANAGEMENT BSOD), Memtest86 runs overnight and shows no errors. Does that rule out RAM as the cause? What else could explain the STOP code?\n2. You cleaned Machine B's fans and reapplied thermal paste. The temperatures dropped from 95°C to 72°C. Is 72°C acceptable for a CPU under load? What's the safe operating range for most Intel/AMD desktop CPUs?\n3. A colleague suggests you 'just image all three machines from a clean Windows backup' to save time. What are the risks of this approach, and when would it be appropriate versus when would it destroy important data?"
+      }
+    ]
+  },
+  {
+    "id": "hardware-quiz",
+    "title": "Hardware Quiz",
+    "estimatedMinutes": 25,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #1005 · BUNBURY HARDWARE INTEGRATORS",
+        "text": "End of your first rotation at Bunbury Hardware Integrators. Before you move to the Networks team, Sparky needs to sign off on your hardware competency. This is the final assessment. Read each question carefully — some are scenario-based, the way they come up in real callouts."
+      },
+      {
+        "type": "heading",
+        "text": "Hardware Competency Assessment",
+        "level": 2
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · JAXEN 'SPARKY' MILLER, BUNBURY HARDWARE INTEGRATORS",
+        "text": "Hardware knowledge is foundational. You can't troubleshoot what you don't understand. Sloane can write the most efficient database queries in the world and Leo can build a beautiful UI — but if the physical layer fails, none of it matters. Know your hardware cold."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "hwq-q1",
+          "questionType": "mcq",
+          "text": "A school wants to set up a device for each classroom that automatically controls the heating, cooling, and lighting based on occupancy sensors — it needs to do nothing else. Which system type is MOST appropriate?",
+          "options": [
+            "Desktop PC — provides the most computing power",
+            "Embedded system — purpose-built for a single dedicated task",
+            "Server — can manage multiple classrooms simultaneously",
+            "Tablet — easy to program and update remotely"
+          ],
+          "correctIndex": 1,
+          "explanation": "An embedded system is purpose-built for a single task. Building automation controllers (like those from Schneider Electric or Honeywell) are embedded systems — they don't need general-purpose computing, just reliable, dedicated execution of their specific control logic."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "hwq-q2",
+          "questionType": "mcq",
+          "text": "Which memory type retains its contents when the computer is powered off?",
+          "options": [
+            "RAM — stores all active data including when powered down",
+            "Cache — the CPU retains data between sessions",
+            "ROM — non-volatile memory that persists without power",
+            "Virtual memory — stored on disk so it always persists"
+          ],
+          "correctIndex": 2,
+          "explanation": "ROM (Read-Only Memory) is non-volatile — it retains its data without power. It stores the BIOS/UEFI firmware. RAM and cache are volatile (cleared when powered off). Virtual memory is not a type of memory chip — it's OS-managed storage space used as RAM overflow."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "hwq-q3",
+          "questionType": "mcq",
+          "text": "A video editing workstation has a 6-core Intel Core i7 and 16 GB RAM. The editor frequently works on 8K footage with multiple streams. Which upgrade would provide the most significant performance improvement?",
+          "options": [
+            "Replace the CPU with a higher clock speed 6-core model",
+            "Add a dedicated GPU with CUDA cores for GPU-accelerated rendering",
+            "Upgrade to 32 GB RAM",
+            "Install a faster monitor with 4K resolution"
+          ],
+          "correctIndex": 1,
+          "explanation": "Modern video editing software (Premiere Pro, DaVinci Resolve) uses GPU-accelerated rendering via CUDA (NVIDIA) or OpenCL/Metal. An 8K multi-stream workflow will heavily benefit from a dedicated GPU like an NVIDIA RTX 4070. The monitor doesn't affect render speed; the CPU and RAM upgrades may help but GPU is the biggest unlock for this specific workload."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "hwq-q4",
+          "questionType": "mcq",
+          "text": "During the POST (Power-On Self-Test), a computer emits three short beeps and fails to boot. What does this most likely indicate?",
+          "options": [
+            "The hard drive has failed",
+            "The operating system is corrupted",
+            "A RAM or memory fault has been detected",
+            "The CPU fan is not spinning"
+          ],
+          "correctIndex": 2,
+          "explanation": "Beep codes during POST indicate specific hardware faults. Three short beeps on common BIOS implementations (AMI, Award) typically indicate a RAM error. The exact code varies by motherboard manufacturer, so always check the manual — but memory faults are among the most common POST beep error causes."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "hwq-q5",
+          "questionType": "true_false",
+          "text": "An SSD (Solid State Drive) uses spinning magnetic platters and a read/write head to store data.",
+          "correctAnswer": false,
+          "explanation": "False. An SSD stores data on NAND flash memory chips — no moving parts. Hard Disk Drives (HDDs) use spinning magnetic platters and a read/write head. SSDs are faster, more shock-resistant, and silent because of this fundamental difference."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "hwq-q6",
+          "questionType": "mcq",
+          "text": "A laptop user reports their machine is very slow when running multiple applications. Task Manager shows CPU at 25% but RAM at 98%. What is the most likely cause of the slowdown?",
+          "options": [
+            "The CPU is too slow to handle the workload",
+            "The RAM is full; the OS is using virtual memory (page file on the slow SSD), causing lag",
+            "The GPU is insufficient for running multiple apps",
+            "The hard drive is nearly full, reducing storage speeds"
+          ],
+          "correctIndex": 1,
+          "explanation": "CPU at 25% rules out a processing bottleneck. RAM at 98% means the system has almost no working memory left. Windows is using the page file (virtual memory on storage) for overflow — storage is many times slower than RAM, creating severe performance degradation. Adding more RAM is the fix."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "hwq-q7",
+          "questionType": "short_answer",
+          "text": "Describe two differences between an HDD (Hard Disk Drive) and an SSD (Solid State Drive). For each difference, explain how it affects the use of the storage device in a real-world scenario.",
+          "marks": 4,
+          "explanation": "Speed: SSDs access data in microseconds (no mechanical movement); HDDs take milliseconds due to physical platter spinning and head movement. In practice: an SSD boots Windows in 10–20 seconds vs 60+ seconds for an HDD. Durability: SSDs have no moving parts so they survive drops and vibration better; HDDs can suffer head crashes if moved while running. In practice: SSDs are essential in laptops used in the field; HDDs are more suitable in stationary desktop storage where cost per GB matters more."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "hwq-q8",
+          "questionType": "mcq",
+          "text": "Which of the following BEST describes the role of the CPU cache?",
+          "options": [
+            "It stores the operating system files for fast access at startup",
+            "It provides long-term non-volatile storage like an SSD but inside the CPU",
+            "It holds recently and frequently used data so the CPU avoids slower RAM lookups",
+            "It stores backup copies of RAM contents in case of a power failure"
+          ],
+          "correctIndex": 2,
+          "explanation": "CPU cache is ultra-fast memory (L1/L2/L3) built onto or near the CPU die. Its purpose is to hold recently accessed data and predicted future data so the CPU can retrieve it in nanoseconds rather than the tens-of-nanoseconds required to access RAM. It is volatile and has nothing to do with startup files or backups."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "hwq-q9",
+          "questionType": "short_answer",
+          "text": "A receptionist's PC has a 12-core Intel Core i9 processor but only 8 GB of RAM. Her work involves email, Microsoft Word, and a browser-based booking system. Evaluate whether this is a well-specced machine for her role.",
+          "marks": 3,
+          "explanation": "The i9 is massively over-specced for this use case — receptionist workloads are light single-threaded tasks that barely use 2 cores. The real bottleneck is the 8 GB RAM, which may struggle if multiple tabs and applications are open simultaneously. A better spec would be a mid-range CPU (i5 or Ryzen 5) with 16 GB RAM — same or lower cost, better real-world performance for this user. This wastes budget on an unnecessary processor while under-investing in the component that actually affects her daily experience."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "hwq-q10",
+          "questionType": "mcq",
+          "text": "You are called out to fix a PC that shows a black screen with the message 'No bootable device found'. The user says the PC worked fine yesterday. What is the FIRST step in your troubleshooting process?",
+          "options": [
+            "Immediately reinstall Windows from a USB drive",
+            "Replace the hard drive — this message always means drive failure",
+            "Check if a USB drive or disc is inserted that the BIOS might be trying to boot from before the internal drive",
+            "Open the case and reseat all internal cables"
+          ],
+          "correctIndex": 2,
+          "explanation": "The first step is always the simplest check. 'No bootable device' can be caused by a USB stick, DVD, or SD card being present that the BIOS is attempting to boot from instead of the internal drive. Remove all removable media and restart. If the problem persists, then investigate BIOS boot order, drive connection, and drive health."
+        }
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · SPARKY IS CHECKING YOUR WORK",
+        "text": "Before I sign your rotation certificate for Hardware:\n\n1. Looking back at all four lessons — types, CPU/memory, peripherals, and troubleshooting — which concept do you think matters most day-to-day in a real IT support role? Build your argument in 3–4 sentences.\n2. A client asks you 'Why is my computer slow?' What is the single most important piece of information you need from them before you can even begin diagnosing?\n3. If you had to explain the memory hierarchy (cache → RAM → storage) to a non-technical client in one analogy, what would you say?"
+      }
+    ]
+  }
+]

@@ -1,0 +1,591 @@
+[
+  {
+    "id": "why-networks-matter",
+    "title": "Why Networks Matter",
+    "estimatedMinutes": 20,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #2201 · BUNBURY HARDWARE INTEGRATORS",
+        "text": "Status: 🔴 URGENT | Job #BHI-2201 | Assigned to: Junior Technician\n\nFirst day on the tools with Sparky. A Margaret River winery has called — their network went down at 8am and they've lost access to the point-of-sale system, stock management, and all shared drives. Revenue is stopped. Before Sparky will touch a cable, he needs a written assessment: What type of network do they have? What are the business-critical advantages this network was providing? And what is the real cost to this business of every minute of downtime? Have it on his workbench before the site visit."
+      },
+      {
+        "type": "video",
+        "youtubeId": "3QhU9jd03a0",
+        "title": "Computer Networks: Crash Course CS #28",
+        "caption": "Crash Course Computer Science — network types, protocols, and how the internet is structured. Sparky watches this with every new junior on day one."
+      },
+      {
+        "type": "paragraph",
+        "text": "In Year 11 you learned what a network is and how it works technically. Year 12 asks a harder question: WHY do networks exist, and what does it actually cost a business when they fail? Sparky's approach: 'Every cable I run is a business decision. Understand the business first, then the technology.' Networks are not IT infrastructure — they are business infrastructure."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Computer Network",
+            "definition": "Two or more devices connected to share resources, data, and services. Networks are business infrastructure — their failure is a business failure, not just a technical inconvenience."
+          },
+          {
+            "term": "LAN (Local Area Network)",
+            "definition": "A network covering a single building or site. The Margaret River winery operates on a LAN — all devices on the one property sharing a single network infrastructure."
+          },
+          {
+            "term": "WAN (Wide Area Network)",
+            "definition": "A network spanning large geographic distances — connecting multiple sites. A winery group with three estate properties would use a WAN to connect their sites."
+          },
+          {
+            "term": "Network downtime",
+            "definition": "The period when a network is non-functional. Gartner research estimates unplanned downtime costs organisations an average of $5,600 per minute — including lost sales, idle staff, and reputational damage."
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "headers": ["Network Type", "Coverage", "Real Business Example", "Downtime Impact"],
+        "rows": [
+          ["LAN", "Single building/site", "Winery: POS, stock management, shared drives, Wi-Fi for tasting room", "Total site paralysis — no sales, no stock, no communication"],
+          ["WAN", "Multiple sites", "Winery group: HQ connected to three vineyard estates", "Inter-site services fail; each site may still function independently on its local LAN"],
+          ["Internet (WAN)", "Global", "Online wine sales platform, cloud POS, remote staff VPN", "Online revenue stops; remote staff locked out; cloud services inaccessible"]
+        ]
+      },
+      {
+        "type": "richText",
+        "heading": "The Business Case for Networking",
+        "html": "<p>For the Y12 exam, you need to go beyond listing advantages — you must be able to argue the business case for networking in a specific context. Use this framework:</p><ol><li><strong>Resource sharing</strong> — shared printers, scanners, and storage reduce hardware costs. In a winery: one high-capacity label printer on the network serves all three departments.</li><li><strong>File sharing and collaboration</strong> — staff access the same stock database and wine records from any device. No version conflicts, no emailing spreadsheets.</li><li><strong>Communication</strong> — email, internal VOIP phone calls, video calls with distributors all run through the network.</li><li><strong>Centralised management</strong> — Sparky can apply software updates, security patches, and access controls from one server. Without this, he'd need to touch every device individually.</li><li><strong>Internet access sharing</strong> — one NBN connection shared to 30 devices. Without a network, each device needs its own connection — a cost multiple of 30.</li><li><strong>Data backup</strong> — all sales data and stock records back up automatically to a central server nightly. No network = each staff member responsible for their own backups. Most won't do it.</li></ol>"
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · THE WINERY DOWNTIME REPORT",
+        "text": "Before the site visit, Sparky needs your written assessment. Answer all three sections:\n\nSection A — Network Classification:\nThe winery has 1 building, 12 staff PCs, 3 POS terminals, a file server, and wireless access for visitor iPads. Classify the network type. Justify your answer with reference to the specific devices and coverage.\n\nSection B — Business Advantages Being Lost:\nList FOUR specific advantages the winery is losing right now during the outage. For each, explain the specific business impact in this context (not a generic advantage).\n\nSection C — Downtime Cost Estimate:\nThe winery's tasting room processes an average of $2,400 in sales per hour. The winery employs 12 staff at an average of $28/hour. The outage is now at 90 minutes. Calculate the estimated minimum revenue loss and the staff idle-time cost. What is the total minimum cost of this 90-minute outage to the business?"
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · SPARKY IS PUSHING BACK",
+        "text": "Sparky read your assessment on the drive to the winery. His comments:\n\nComment 1: 'You classified it as a LAN. Correct. But the winery's online sales platform is cloud-based and accessed through the internet. Is the internet connection part of the LAN? Where does the LAN end and something else begin? Add a sentence clarifying this.'\n\nComment 2: 'Section B — you listed \"file sharing\" as a lost advantage. Good. But you said \"staff can't access files.\" Be specific: which files and what is the business consequence of not accessing THOSE files right now, at 10am on a Saturday in the peak season?'\n\nComment 3: 'Your cost estimate. The winery also has two staff members who are now on hold with suppliers waiting to confirm a Monday delivery order. How do you quantify that cost? Is your \"minimum cost\" actually the minimum?'"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A boutique hotel has 45 rooms, a restaurant, a reception desk, and a management office. All are in the same building. What type of network connects all devices in this hotel?",
+          "options": [
+            "WAN — Wide Area Network, because it covers a large building",
+            "LAN — Local Area Network, because all devices are on one site",
+            "Internet — because the hotel connects to online booking systems",
+            "MAN — Metropolitan Area Network, because the hotel is in a city"
+          ],
+          "correctIndex": 1,
+          "explanation": "A LAN covers a single site — regardless of the number of devices or the size of the building. All 45 rooms, the restaurant, reception, and office are on the same property, making this a LAN. The hotel may also connect to the internet or cloud services via this LAN, but the internal network is still a LAN."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "short_answer",
+          "text": "A small accounting firm with 8 staff is considering whether to invest $15,000 in a proper server and wired network, or to continue using a simple Wi-Fi router with each staff member saving files to their own laptop. Using TWO specific business advantages of networking, argue the case for the $15,000 investment.",
+          "marks": 4,
+          "explanation": "Strong answers select context-relevant advantages: (1) Centralised data backup — an accounting firm holds critical client financial data. Files on individual laptops are at risk of permanent loss if a laptop fails, is stolen, or is infected with ransomware. A central server enables automated nightly backups of all client files, protecting the firm from data loss that could result in professional negligence claims. (2) Security and access control — accounting firms handle confidential financial records that must be protected under privacy law. A server-based network enables IT to control who accesses which files, log access attempts, and apply password policies centrally. Individual laptops with no central control cannot enforce these protections. (2 marks per advantage: advantage stated + specific business-context justification)"
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "extended",
+          "text": "Explain TWO advantages and ONE disadvantage of networking for the Margaret River winery (12 staff, peak tourist season, online wine sales). In your answer, relate each point specifically to the type of business and its context.",
+          "marks": 6,
+          "explanation": "Advantages (context-specific): (1) Shared POS and stock management — a networked POS system allows all three terminals to read from the same real-time inventory database, preventing overselling of limited-edition wines and ensuring staff across the tasting room, cellar door, and dispatch area see the same stock figures simultaneously. This is critical during peak season when multiple sales channels are active concurrently. (2) Centralised backup of sales records — all daily transaction records, customer data, and online order history back up automatically to the server each night. If an individual POS terminal fails, no data is lost and the transaction history is immediately available for accounting and compliance. Disadvantage (context-specific): Security risk — the winery's network holds customer credit card transaction data, which must comply with PCI DSS (Payment Card Industry Data Security Standard). A network attack or data breach could expose this data, resulting in significant financial penalties, legal liability, and reputational damage to a brand built on trust and premium positioning. Award 2 marks per advantage with business-context specificity; 2 marks for a disadvantage with specific risk named and its consequence for this business type."
+        }
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · JAXEN 'SPARKY' MILLER, BUNBURY HARDWARE INTEGRATORS",
+        "text": "I don't sell cable. I sell uptime. When a business owner calls me at 7am because their network is down, they're not thinking about Cat6 versus Cat6a. They're thinking about their revenue, their staff standing around doing nothing, and the customer who just walked out because the EFTPOS wouldn't work. Understand the business cost before you touch the technology. If you can calculate the downtime cost faster than the business owner can, you've already earned your callout fee."
+      }
+    ]
+  },
+  {
+    "id": "transmission-media",
+    "title": "Transmission Media",
+    "estimatedMinutes": 20,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #2208 · BUNBURY HARDWARE INTEGRATORS",
+        "text": "Status: 🟡 HIGH | Job #BHI-2208 | Assigned to: Junior Technician\n\nThe winery network is back up — turned out to be a faulty Cat5e patch cable. While we were on site, the owner asked Sparky to quote on upgrading the entire cabling infrastructure. The current network is a mix of old Cat5e, one run of Cat6 to the office, and Wi-Fi everywhere else. The owner wants to run a new cellar automation system that transfers 2GB sensor data files every 15 minutes. Sparky needs a transmission media recommendation with technical justification. That's your job."
+      },
+      {
+        "type": "paragraph",
+        "text": "Transmission media is the physical or wireless path data travels between devices. Year 12 goes beyond identifying the three types — you need to evaluate them for a specific use case, calculate whether a medium can handle the required data rate, and justify your recommendation with technical evidence. Sparky's rule: 'The cheapest cable that meets the spec is the right cable. But you have to PROVE it meets the spec.'"
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Transmission Rate",
+            "definition": "The speed at which data moves across a medium, measured in bits per second (bps). Converting file sizes from bytes to bits: multiply by 8. A 2 GB file = 16 Gb = 16,000 Mb."
+          },
+          {
+            "term": "Bandwidth",
+            "definition": "The maximum data capacity of a transmission medium under ideal conditions. Real-world throughput is typically 60–80% of theoretical maximum due to overhead, interference, and protocol handling."
+          },
+          {
+            "term": "Latency",
+            "definition": "The time delay between transmitting and receiving data. Critical for real-time applications (POS transactions, video calls, sensor control systems). Optic fibre has the lowest latency of any medium."
+          },
+          {
+            "term": "Attenuation",
+            "definition": "Signal weakening over distance. All physical media experience attenuation — copper degrades faster over distance than optic fibre. This is why Cat6a has a 100m maximum distance limit."
+          }
+        ]
+      },
+      {
+        "type": "grid",
+        "title": "The Three Transmission Media — Technical Comparison",
+        "items": [
+          {
+            "icon": "💡",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Optical_fiber_tapping.jpg/500px-Optical_fiber_tapping.jpg",
+            "label": "Optic Fibre",
+            "description": "Light pulses through glass strands. Speeds: up to 100 Gbps+. Distance: kilometres without repeaters. Zero electrical interference. Immune to water damage. Cost: high installation (specialist termination tools, fusion splicing). Best for: inter-building runs, ISP backbone, high-throughput industrial systems."
+          },
+          {
+            "icon": "🔌",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/USMC-110505-M-EF955-130.jpg/500px-USMC-110505-M-EF955-130.jpg",
+            "label": "Copper Wired (Ethernet)",
+            "description": "Electrical signals through twisted copper pairs. Cat6: up to 10 Gbps at 55m; 1 Gbps at 100m. Cat6a: 10 Gbps at 100m. Susceptible to EMI (motors, fluorescent lighting, industrial equipment). Cost: moderate. Best for: office desktops, fixed workstations, server rooms. Not suitable near high-EMI industrial equipment."
+          },
+          {
+            "icon": "📶",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Wifi_Logo.png/500px-Wifi_Logo.png",
+            "label": "Wireless (Wi-Fi)",
+            "description": "Radio waves through air. Wi-Fi 6 (802.11ax): theoretical 9.6 Gbps; real-world 300–800 Mbps per device. Affected by walls, distance, interference from other devices and appliances. Shared medium — bandwidth divided among all connected devices. Cost: low setup. Best for: mobile devices, visitor access, areas where cabling is impractical."
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "headers": ["Feature", "Optic Fibre", "Cat6 Ethernet", "Cat6a Ethernet", "Wi-Fi 6"],
+        "rows": [
+          ["Max speed", "100 Gbps+", "10 Gbps (55m) / 1 Gbps (100m)", "10 Gbps (100m)", "9.6 Gbps theoretical / ~600 Mbps real"],
+          ["Max distance", "Kilometres (multimode: 2km)", "55m at 10 Gbps / 100m at 1 Gbps", "100m at 10 Gbps", "~50m indoors (walls reduce range)"],
+          ["EMI immunity", "Complete — light is unaffected", "Moderate — shielded (STP) variants help", "Good — Cat6a uses better shielding", "None — radio waves vulnerable to interference"],
+          ["Reliability", "Extremely high", "Very high", "Very high", "Variable — shared medium, drops under load"],
+          ["Installation cost", "High (specialist tools)", "Low-moderate", "Moderate", "Low (no cabling required)"],
+          ["Security", "Very high — hard to tap", "High — physical access required", "High", "Lower — signals can be intercepted"],
+          ["Best for", "Inter-building, ISP links, industrial", "Office desktops ≤ 55m 10Gbps runs", "Office desktops, servers, 10Gbps full distance", "Laptops, phones, visitor access"]
+        ]
+      },
+      {
+        "type": "richText",
+        "heading": "The Calculation Sparky Always Does First",
+        "html": "<p>Before recommending any medium, Sparky calculates whether it can handle the required throughput. Here's the method:</p><pre style='background:#f4f4f4;padding:12px;border-radius:6px;font-family:monospace;font-size:13px;'>Winery cellar automation requirement:\n\n  File size: 2 GB = 2 × 8 = 16 Gb = 16,000 Mb\n  Transfer frequency: every 15 minutes\n  Required throughput: 16,000 Mb ÷ 15 min ÷ 60 sec\n                    = 17.8 Mbps sustained\n\nOptions:\n  Wi-Fi 6 real-world: ~400 Mbps  ✓ (speed OK)\n  But: EMI from cellar equipment?  ✗ (reliability risk)\n  But: Is Wi-Fi shared with visitors? ✗ (contention risk)\n\n  Cat6a at 10 Gbps:  ✓ (speed OK)\n  EMI from cellar motors: RISK — need shielded Cat6a (S/FTP)\n\n  Optic Fibre to cellar: ✓ (overkill on speed, zero EMI risk)\n  Cost: higher, but justified by industrial environment\n\nSparky's recommendation: Optic fibre for cellar run.\nOffice = Cat6a. Visitor areas = Wi-Fi 6.</pre>"
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · THE TRANSMISSION MEDIA RECOMMENDATION",
+        "text": "Write Sparky's transmission media recommendation for the winery upgrade. Structure it as a professional quote document with three sections:\n\nSection A — Data Rate Analysis:\nThe cellar automation transfers 500 MB files every 5 minutes AND the office runs daily video calls at 8 Mbps per session (4 concurrent sessions). Calculate the required throughput for each use case. Show your working.\n\nSection B — Medium Recommendation:\nFor each zone (cellar, office, tasting room visitor Wi-Fi), recommend a specific medium and standard (e.g. Cat6a, optic fibre single-mode, Wi-Fi 6). Justify each recommendation with at least TWO technical criteria from your comparison.\n\nSection C — Trade-Off Analysis:\nThe owner asks: 'Why not just use Wi-Fi everywhere? It's cheaper to install.' Write a professional response explaining what the owner gains and what they risk by choosing all-wireless, using specific technical details relevant to the winery environment."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · SPARKY IS PUSHING BACK",
+        "text": "Sparky reviewed your recommendation on his laptop in the van. Comments before the quote goes to the client:\n\nComment 1: 'Section A — your throughput calculation for the video calls. You added 4 × 8 Mbps = 32 Mbps. But you didn't add headroom. Network engineers always add 20–30% headroom for overhead, retransmission, and protocol handling. Redo the calculation with 25% headroom. Does your recommended medium still handle it?'\n\nComment 2: 'You recommended Cat6a for the office. Good. But the office is 85m from the server room. Check your spec sheet: does Cat6a at 10 Gbps support 85m? What happens to performance if it doesn't? What is your contingency?'\n\nComment 3: 'Your Wi-Fi trade-off analysis mentions \"interference\" but doesn't name the specific interference sources in a winery cellar environment. Name them. The owner needs to understand WHY wired is better in THEIR building, not in a generic office.'"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A file is 750 MB. It needs to transfer in under 60 seconds. What is the minimum required network speed?",
+          "options": [
+            "750 Mbps",
+            "100 Mbps",
+            "100 MBps",
+            "6,000 Mbps"
+          ],
+          "correctIndex": 0,
+          "explanation": "750 MB × 8 = 6,000 Mb. 6,000 Mb ÷ 60 seconds = 100 Mbps sustained. Wait — 100 Mbps would take exactly 60 seconds under ideal conditions, but real-world throughput is 60–80% of rated speed. At 80% efficiency, a 100 Mbps link delivers ~80 Mbps real throughput, meaning transfer time = 6,000 ÷ 80 = 75 seconds. To complete in under 60 seconds with headroom, you need approximately 125–150 Mbps minimum. Nearest standard answer: 750 Mbps (a 1 Gbps Ethernet link) provides comfortable headroom. Always add headroom in professional calculations."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "short_answer",
+          "text": "A winery cellar uses large electric motors for temperature control and bottling equipment. Explain why this environment creates a specific risk for copper Ethernet cabling, and identify the most suitable transmission medium with technical justification.",
+          "marks": 4,
+          "explanation": "Electric motors generate electromagnetic interference (EMI) — a fluctuating electromagnetic field that induces noise into adjacent copper conductors through a process called electromagnetic induction. Standard Cat6 and even shielded Cat6a copper cable running alongside or near motor power cables can experience data corruption, packet loss, and speed reduction as the copper conductors pick up the EMI. In a winery cellar with multiple industrial motors, this is a significant reliability risk. The most suitable alternative is optic fibre: light signals travelling through glass strands are completely unaffected by electromagnetic fields — light does not interact with magnetic forces. Optic fibre (even multimode OM3/OM4) provides 10 Gbps+ capacity with zero EMI vulnerability, making it the correct choice for any run near industrial electrical equipment. (2 marks for explaining EMI mechanism; 2 marks for recommending optic fibre with technical justification)"
+        }
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · JAXEN 'SPARKY' MILLER, BUNBURY HARDWARE INTEGRATORS",
+        "text": "Every technician I've trained gets the speed comparison right. Fibre is fastest, Cat6a is second, Wi-Fi is third. That's the textbook answer and it scores your test mark. What it doesn't tell you is why we ran fibre to the cellar and Cat6a to the office and Wi-Fi only for the visitors — and why the winery owner went home happy instead of calling us back three months later to redo it. The textbook answer is the starting point. The site survey is the answer. Know the theory. Then look at the actual building."
+      }
+    ]
+  },
+  {
+    "id": "network-components",
+    "title": "Network Components",
+    "estimatedMinutes": 20,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #2215 · BUNBURY HARDWARE INTEGRATORS",
+        "text": "Status: 🟡 HIGH | Job #BHI-2215 | Assigned to: Junior Technician\n\nA new client: Bunbury Medical Centre, 22 staff, moving to a new premises next month. They need Sparky to design and install a complete network from scratch — no existing infrastructure. Before the first cable goes in, Sparky needs a component specification: what hardware is needed, what each component does, how they connect, and why each one has been chosen for a medical environment. The component list is your deliverable."
+      },
+      {
+        "type": "video",
+        "youtubeId": "ewrBalT_eBM",
+        "title": "A Packet's Tale: How Does the Internet Work?",
+        "caption": "World Science Festival — watch how data packets actually travel between components. Sparky shows this to every new hire."
+      },
+      {
+        "type": "paragraph",
+        "text": "Network components are the hardware that makes a network function. In Year 11 you identified what each component does. Year 12 demands more: why is this component needed in a specific context, what happens if it's removed or fails, and what specification is appropriate for the scale and purpose of this particular network. Sparky's test: 'If you can't explain to the practice manager why we need a server and what it actually DOES for the doctors, you're not ready to work client-facing.'"
+      },
+      {
+        "type": "grid",
+        "title": "Network Components — Function and Context",
+        "items": [
+          {
+            "icon": "🖥️",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Server_room.jpg/500px-Server_room.jpg",
+            "label": "Server",
+            "description": "In a medical centre: stores patient records (file server), manages staff logins (domain controller), handles appointment system data (application server), and runs nightly backups. Must meet 99.9%+ uptime requirements — medical decisions depend on patient record access. Specification: redundant power supplies, RAID storage, 24/7 support contract."
+          },
+          {
+            "icon": "📡",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Router_transparent.png/500px-Router_transparent.png",
+            "label": "Router",
+            "description": "Routes data between the medical centre's internal LAN and the internet. In healthcare: must support VLAN segmentation to separate patient record traffic from visitor Wi-Fi. Should have a built-in firewall. Connects the internet (via modem) to the internal switch. Assigns IP addresses via DHCP."
+          },
+          {
+            "icon": "🔌",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IEEE_802_11bgn_network_interface_card.jpg/500px-IEEE_802_11bgn_network_interface_card.jpg",
+            "label": "Network Interface Card (NIC)",
+            "description": "Every networked device — PCs, printers, the server, reception terminals — contains a NIC that allows physical network connection. Wired NICs provide an Ethernet port; wireless NICs include a Wi-Fi antenna. Each has a unique MAC address used by the switch to direct traffic. In a medical network, wired NICs for all fixed workstations ensure consistent, reliable connectivity for clinical applications."
+          },
+          {
+            "icon": "🔀",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Cisco_Catalyst_2960-Plus.jpg/500px-Cisco_Catalyst_2960-Plus.jpg",
+            "label": "Switch",
+            "description": "Connects all wired devices on the LAN. A managed switch (used in business/medical networks) allows VLAN configuration, port security, and traffic monitoring. 24-port gigabit managed switch supports 22 staff PCs, server, printers, and spare ports for future expansion. Unlike a hub, a switch directs traffic only to the intended recipient — reducing congestion and improving security."
+          },
+          {
+            "icon": "📶",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Linksys_SPA941.jpg/500px-Linksys_SPA941.jpg",
+            "label": "Modem",
+            "description": "Connects the medical centre's router to the NBN connection provided by their ISP. Converts the ISP's signal into a format the router can use. In a medical setting, a business-grade modem with a static IP address is specified — essential for remote access, online appointment systems, and telehealth services. Consumer-grade modems are not suitable."
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "headers": ["Component", "Layer", "Function in Bunbury Medical Centre", "Specification Requirement"],
+        "rows": [
+          ["Modem", "Physical", "Connects NBN fibre connection to router", "Business-grade, static IP, ISP-supported"],
+          ["Router", "Network (L3)", "Routes traffic; separates patient LAN from visitor Wi-Fi via VLANs", "Firewall capable, VLAN support, dual-WAN for redundancy"],
+          ["Switch (managed)", "Data Link (L2)", "Connects 22 PCs, server, 3 printers, WAPs via Ethernet", "24-port gigabit managed; VLAN-capable; PoE for WAPs"],
+          ["NIC", "Physical/L2", "Installed in every PC and the server for network connection", "Gigabit wired NIC in all fixed PCs; separate wireless for laptops"],
+          ["Server", "Application", "Hosts patient records, staff authentication, appointment system, backups", "RAID-1 minimum; redundant PSU; server OS (Windows Server or Linux)"]
+        ]
+      },
+      {
+        "type": "richText",
+        "heading": "What Happens When Each Component Fails?",
+        "html": "<p>Understanding failure modes helps you justify the cost of quality components to clients:</p><ul><li><strong>Modem fails</strong> → No internet access. Online bookings stop. Telehealth stops. Electronic prescriptions cannot be verified. However, the internal LAN continues operating — staff can still access local patient records.</li><li><strong>Router fails</strong> → No traffic routing between networks. If internet-only: same as modem failure. If routing between VLANs internally: department isolation. Visitor Wi-Fi and staff network may merge (security risk).</li><li><strong>Switch fails</strong> → Total LAN failure. All wired devices lose connectivity. No patient records, no printer access, no server connection. This is the highest-impact component failure for a medical centre. <strong>Single point of failure — justify a spare switch in the quote.</strong></li><li><strong>NIC fails</strong> → One specific device loses connectivity. Isolated impact. Other devices unaffected. Replace the NIC or connect via USB Ethernet adapter as temporary fix.</li><li><strong>Server fails</strong> → No patient records, no authentication (staff cannot log in to any PC), no appointment system, no backup. Most catastrophic failure for clinical operations. RAID and UPS (Uninterruptible Power Supply) are essential — not optional extras.</li></ul>"
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · THE MEDICAL CENTRE COMPONENT SPEC",
+        "text": "Write the component specification for the Bunbury Medical Centre network. For each of the five components, provide:\n\n1. The component name and specific model type (e.g. 'managed 24-port gigabit switch' not just 'switch')\n2. Its primary function in THIS medical context (not a generic definition)\n3. What happens to clinical operations if this component fails\n4. One specific reason the quality/spec level you've chosen is appropriate for a medical environment (not a home or small business)\n\nBonus: Sparky's quote also needs a brief explanation for the practice manager who is not technical. Rewrite the server description in 2–3 sentences that a GP who has never set up a network can understand, without losing any of the important information."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · SPARKY IS PUSHING BACK",
+        "text": "Sparky reviewed the spec. His comments before the client meeting:\n\nComment 1: 'You specified a 24-port managed switch. Good. But the medical centre also needs three wireless access points for the waiting room, the back office, and the treatment corridor. How do those WAPs connect to the switch? What specification of switch port do WAPs typically need, and why does it matter?'\n\nComment 2: 'Your server description for the practice manager says \"it stores patient records.\" That's correct but incomplete. The practice manager is also worried about what happens if the building loses power for 2 hours. How does your server specification address this? What component are you NOT listing that you should be?'\n\nComment 3: 'You said the switch is a single point of failure and justified a spare. The client said the budget is tight. Write one sentence to the practice manager explaining — in dollars — why a $400 spare switch is worth buying. What is the cost of NOT having it?'"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "At a medical centre, a staff member reports that their PC cannot connect to the network, but all other PCs are working normally. Which component is most likely faulty?",
+          "options": [
+            "The switch — it has stopped directing traffic",
+            "The router — it has stopped assigning IP addresses",
+            "The NIC in the affected PC — the hardware connecting it to the network has failed",
+            "The server — it has stopped accepting client connections"
+          ],
+          "correctIndex": 2,
+          "explanation": "A fault affecting only ONE device while all others operate normally isolates the problem to that device's NIC. The switch, router, and server affect all devices on the network — if they failed, all devices would be affected. The NIC is the device-specific hardware that enables network connection. Replacing or bypassing the NIC (with a USB Ethernet adapter temporarily) is the first diagnostic step."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "matching",
+          "text": "Match each network component to its primary function in a medical centre network.",
+          "pairs": [
+            {
+              "term": "Switch",
+              "definition": "Connects all wired devices on the LAN and directs traffic only to the intended recipient"
+            },
+            {
+              "term": "Server",
+              "definition": "Stores patient records, manages staff logins, and runs automated nightly backups"
+            },
+            {
+              "term": "Router",
+              "definition": "Routes traffic between the internal LAN and the internet; separates patient data from visitor Wi-Fi"
+            },
+            {
+              "term": "Modem",
+              "definition": "Converts the ISP's NBN signal into a format the internal router can use"
+            },
+            {
+              "term": "NIC",
+              "definition": "The hardware inside each PC and the server that physically connects it to the network"
+            }
+          ]
+        }
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · JAXEN 'SPARKY' MILLER, BUNBURY HARDWARE INTEGRATORS",
+        "text": "A network is only as reliable as its weakest component. I've seen a $60 unmanaged consumer switch bring down a medical clinic for four hours because it couldn't handle the packet volume of 22 simultaneous connections. The managed gigabit switch costs $400 more. The four-hour clinic shutdown cost $6,000 in lost appointments and three hours of my emergency callout rate. Do the maths for your client. The 'expensive' option is always cheaper when you count the downtime."
+      }
+    ]
+  },
+  {
+    "id": "network-topologies",
+    "title": "Network Topologies",
+    "estimatedMinutes": 25,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #2223 · BUNBURY HARDWARE INTEGRATORS",
+        "text": "Status: 🟡 HIGH | Job #BHI-2223 | Assigned to: Junior Technician\n\nNew client: Bunbury South Primary School. They're rebuilding their ICT infrastructure after an outdated peer-to-peer setup failed to support remote learning during the last school closure. 28 classroom computers, 8 admin workstations, 60 student tablets, and a new staff room with 6 laptops. The ICT coordinator has asked Sparky to recommend a topology, draw a network diagram, and explain — in terms the Principal can understand — why the recommended topology is the right choice for a school environment. Your topology recommendation is the first deliverable."
+      },
+      {
+        "type": "paragraph",
+        "text": "Network topology is the arrangement of how devices connect — both physically (the cables and hardware) and logically (how data flows). Year 12 asks you to move beyond describing topologies to evaluating which one is appropriate for a specific context, justifying the trade-offs, and understanding that most real networks combine multiple topologies. Sparky's rule: 'No real business network is a textbook diagram. You mix and match based on what the client actually needs.'"
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Network Topology",
+            "definition": "The arrangement of devices and connections in a network — both physical (cable layout) and logical (data flow pattern). Physical topology describes where cables go; logical topology describes how data is directed."
+          },
+          {
+            "term": "Single point of failure",
+            "definition": "A component whose failure brings down the entire network or a critical section of it. Identifying and mitigating single points of failure is a core network design skill."
+          },
+          {
+            "term": "Redundancy",
+            "definition": "Duplicate components or paths that allow a network to continue functioning if one component fails. Enterprise networks build redundancy at every critical point; small business networks balance cost against redundancy."
+          }
+        ]
+      },
+      {
+        "type": "comparison",
+        "title": "The Four LAN Topologies: Trade-Off Analysis",
+        "items": [
+          {
+            "label": "Wired Star (physical)",
+            "points": [
+              "All devices cable to a central switch — industry standard for modern office/school LANs",
+              "One cable fault affects only that device — all others remain connected",
+              "Switch is a single point of failure — if it fails, the entire network goes down",
+              "Scales easily — add devices by connecting more cables to the switch or adding another switch",
+              "Cost: higher than peer-to-peer (requires switch and cabling), lower than providing redundant links",
+              "For Bunbury South: correct topology for classroom PCs and admin workstations"
+            ]
+          },
+          {
+            "label": "Wireless (physical/logical overlay)",
+            "points": [
+              "No cables — devices connect via Wi-Fi through a Wireless Access Point (WAP)",
+              "Supports mobile devices — tablets, student laptops, staff phones",
+              "Shared medium — all devices on a WAP share its bandwidth; heavy use slows all users",
+              "Security risk — wireless signals extend beyond physical walls; requires WPA3 encryption and separate SSIDs for staff and students",
+              "WAP placement critical — one WAP per 20–30 devices maximum; dead spots in thick-walled buildings",
+              "For Bunbury South: essential for 60 student tablets, layered over wired star for fixed devices"
+            ]
+          },
+          {
+            "label": "Client-Server (logical)",
+            "points": [
+              "One or more central servers provide all resources — files, authentication, printing, software deployment",
+              "IT staff manage one location (server) and policies push to all clients automatically",
+              "Students log in from any classroom PC and get their personal files — no device-specific storage",
+              "Server failure is the most impactful event — entire school network loses central resources",
+              "Scales to hundreds of devices under centralised administration",
+              "For Bunbury South: essential for managing 28 PCs + 8 admin workstations under central IT control"
+            ]
+          },
+          {
+            "label": "Peer-to-Peer (logical)",
+            "points": [
+              "No central server — devices share directly with each other",
+              "Low cost — no server hardware or OS licence required",
+              "No centralised management — each user controls their own sharing settings",
+              "No centralised backup — data loss risk is very high in an education context",
+              "Security control is absent — no way to enforce password policies or restrict student access",
+              "For Bunbury South: NOT appropriate — was the old failing setup; cannot manage 90+ users without a server"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "richText",
+        "heading": "Bunbury South Primary: Real Networks are Hybrid",
+        "html": "<pre style='background:#f4f4f4;padding:16px;border-radius:6px;font-family:monospace;font-size:12px;line-height:1.8;'>\n                   INTERNET\n                      |\n                   [MODEM]\n                      |\n                   [ROUTER] (firewall, VLANs: Staff / Student / Admin)\n                      |\n              [MANAGED SWITCH]\n             /      |       \\\n    [Admin PCs]  [Server]  [Classroom WAPs x4]\n    (8 wired)    (files,   )\n                 auth,     ) 60 student tablets\n                 backups)  ) connect wirelessly\n                           )\n              [Staff Room WAP]\n                  6 laptops\n\nPhysical topology:  Wired STAR (all wired devices → switch)\nLogical topology:   CLIENT-SERVER (all clients → server)\nWireless overlay:   WIRELESS (tablets + staff laptops via WAPs)\n\nThis is not one topology. It's three working together.\n</pre>"
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · TOPOLOGY RECOMMENDATION REPORT",
+        "text": "Write Sparky's topology recommendation for Bunbury South Primary. Structure it as a professional report:\n\nSection 1 — Recommended Topology:\nState the recommended topology combination (physical + logical). Do not just say 'star' — describe the full hybrid approach as it would actually be deployed.\n\nSection 2 — Justification for Client-Server over Peer-to-Peer:\nThe school's old peer-to-peer network failed during remote learning. Explain specifically why client-server is appropriate for a school with 90+ users. Use THREE criteria: security/access control, centralised management, and backup/data protection.\n\nSection 3 — The Principal's Plain-Language Summary:\nWrite 3–4 sentences for the Principal who has asked: 'What's the difference between what you're recommending and what we had before, and why is the new system worth the extra cost?' No jargon. No acronyms. Focus on what it means for teachers and students."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · SPARKY IS PUSHING BACK",
+        "text": "Sparky reviewed your recommendation. Comments before it goes to the ICT coordinator:\n\nComment 1: 'You recommended client-server. Correct. But you didn't mention who manages the server. The school doesn't have an IT admin on staff. Does this affect your recommendation? What are the options — on-premises server, cloud services, or managed IT service provider? Should this be in the recommendation?'\n\nComment 2: 'You wrote that the wireless topology \"supports student tablets.\" The school has 60 tablets across 4 classrooms. If all 60 are active simultaneously in the same lesson and sharing one WAP, what actually happens? Is your WAP specification in your diagram sufficient? Recalculate.'\n\nComment 3: 'The Principal's plain-language summary — it's good, but you used the word \"server\" twice. The Principal doesn't know what that means. Replace it with a phrase that describes what it does without naming what it is. Read your summary aloud and ask: would a non-technical person who has never worked in IT understand every sentence?'"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "In a wired star topology, the central switch fails. What is the impact on the network?",
+          "options": [
+            "Only the devices on the faulty port lose connection; others remain online",
+            "The entire network loses connectivity because all devices connect through the switch",
+            "Devices automatically switch to wireless to maintain connection",
+            "Only the server loses connection; client PCs continue working peer-to-peer"
+          ],
+          "correctIndex": 1,
+          "explanation": "In a star topology, the switch is the central hub through which ALL traffic passes. Every device connects to the switch — not directly to each other. If the switch fails, every device simultaneously loses network connectivity. This is why the switch is called a 'single point of failure' in star topology. Enterprise networks mitigate this by installing a second (redundant) switch and cross-connecting them — if one fails, traffic routes through the other."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "extended",
+          "text": "Bunbury South Primary School is replacing its old peer-to-peer network with a client-server arrangement on a wired star physical topology. Explain why this change is appropriate for a school with 90+ users, using three specific criteria. In your answer, refer to the limitations of the old peer-to-peer arrangement that this change addresses.",
+          "marks": 6,
+          "explanation": "Strong answers address three criteria with specific comparison to P2P: (1) Security and access control — in the peer-to-peer network, each device independently controlled its own sharing settings, meaning there was no mechanism to prevent students from accessing staff files or from each other's work. A client-server arrangement allows centralised access control: the server administrator defines which users access which resources. Students can only see their own files and shared classroom resources; they cannot browse other users' data. (2) Centralised management — the peer-to-peer network required each of the 28 classroom PCs to be updated individually with software, security patches, and curriculum resources. With client-server, the IT administrator (or managed service provider) deploys software from the server and it distributes to all clients simultaneously, saving significant time and ensuring consistency. (3) Data protection and backup — in the peer-to-peer setup, student and staff work was stored on individual devices. If a laptop failed, that data was lost. In a client-server arrangement, all data is stored on the server, which runs automated nightly backups. A device failure means only the hardware is lost — all files are intact on the server and accessible from any replacement device. Award 2 marks per criterion: limitation of old system identified + specific benefit of new arrangement with school context)"
+        }
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · JAXEN 'SPARKY' MILLER, BUNBURY HARDWARE INTEGRATORS",
+        "text": "I get asked every year: 'Sparky, which topology is best?' And every year I say: the one that matches the client. Star topology for the desktop PCs because reliability is non-negotiable in a classroom. Wireless overlay for the tablets because you can't cable sixty kids. Client-server logical arrangement because no school can afford to have thirty different file-sharing permissions managed by thirty different teachers. Know the topology. Know WHY it exists. Then look at the building, count the users, assess the risk, and make the call. The textbook diagram is the starting point. The site survey is the answer."
+      }
+    ]
+  },
+  {
+    "id": "designing-a-network",
+    "title": "Designing a Network for a Client",
+    "estimatedMinutes": 30,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #2231 · BUNBURY HARDWARE INTEGRATORS",
+        "text": "Status: 🔴 URGENT | Job #BHI-2231 | Assigned to: Junior Technician\n\nFinal sprint. A new Bunbury client — Albatross Accounting, 18 staff across two floors — needs a complete network design delivered as a professional specification document by Friday. The partners want to see: a network diagram, component list with justifications, transmission media choices, topology recommendation, and a plain-language summary for the non-technical managing partner. This is a billable deliverable. It must be professional, technically accurate, and defensible in a client meeting. Sparky is in the room when you present it."
+      },
+      {
+        "type": "paragraph",
+        "text": "Network design is the integration of everything from this topic: transmission media, components, and topology combined to meet a specific client's business needs and constraints. In Year 12, you must move from describing individual concepts to applying them together to solve a real problem. Professional network designers call this a 'network design specification' — it is both a technical document and a client communication tool."
+      },
+      {
+        "type": "richText",
+        "heading": "The Albatross Accounting Client Brief",
+        "html": "<div style='background:#eef4fb;border-left:4px solid #1A3C5E;padding:16px;border-radius:4px;'><h4 style='margin-top:0;color:#1A3C5E;'>CLIENT BRIEF — ALBATROSS ACCOUNTING</h4><p><strong>Location:</strong> Bunbury CBD, 2-storey building, 30m between server room (Ground) and upstairs office</p><p><strong>Staff:</strong> 18 — 10 ground floor, 8 upstairs</p><p><strong>Devices required on network:</strong></p><ul><li>18 × desktop PCs (fixed workstations, wired)</li><li>1 × dedicated file server (ground floor server room)</li><li>3 × network printers (distributed across both floors)</li><li>6 × staff laptops (used in meeting rooms and between floors)</li><li>8 × visitor tablets (client-facing meeting rooms, guest Wi-Fi only)</li></ul><p><strong>Business requirements:</strong></p><ul><li>All client financial files stored and backed up centrally</li><li>Staff must log in from any PC and access their personal files</li><li>Visitor devices must NOT be able to access any staff or client data</li><li>High uptime requirement — downtime costs ~$1,200/hr in lost billable time</li><li>Compliance: must meet privacy law requirements for client financial data</li></ul><p><strong>Budget:</strong> $12,000 for hardware and installation. No premium on cabling — do it right the first time.</p></div>"
+      },
+      {
+        "type": "list",
+        "style": "numbered",
+        "items": [
+          "Analyse requirements — users, device types, data sensitivity, compliance, budget, physical layout",
+          "Choose topology — physical (wired star for fixed devices, wireless for mobile) and logical (client-server)",
+          "Specify components — server (RAID, redundant PSU), managed switch (VLAN-capable), router (firewall), WAPs, NICs",
+          "Choose transmission media — Cat6a wired (18 PCs + server + printers), fibre backbone between floors (30m inter-floor run), Wi-Fi 6 for laptops and visitor tablets on separate VLAN",
+          "Design VLANs — Staff LAN (PCs + server + printers), Mobile (staff laptops), Guest (visitor tablets, internet only)",
+          "Draw the network diagram — show all devices, connections, VLANs, and the inter-floor link",
+          "Document the specification — every component with model type, quantity, justification, and cost estimate",
+          "Write the client summary — technical decisions explained in business language for the managing partner"
+        ]
+      },
+      {
+        "type": "table",
+        "headers": ["Consideration", "Albatross Accounting Answer", "Impact on Design"],
+        "rows": [
+          ["Users and devices", "18 PCs, 6 laptops, 8 visitor tablets, 3 printers", "24-port managed switch minimum; separate WAP for visitor devices"],
+          ["Data sensitivity", "Client financial data — privacy law compliance required", "Mandatory VLAN segmentation; firewall; staff-only network isolated from guests"],
+          ["Physical layout", "2 floors, 30m vertical between server and upstairs office", "Inter-floor fibre run (EMI-resistant, faster than Cat6a at this distance)"],
+          ["Uptime requirement", "$1,200/hr downtime cost", "Managed switch (faster failover diagnostics); server RAID; spare switch in budget"],
+          ["Compliance", "Privacy Act — financial data protection", "No guest access to internal network; encrypted Wi-Fi (WPA3); server access logs"],
+          ["Budget", "$12,000 — 'no premium on cabling'", "Prioritise Cat6a over Cat6; fibre for inter-floor; invest in quality switch"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · THE ALBATROSS ACCOUNTING NETWORK DESIGN",
+        "text": "Produce the complete network design specification for Albatross Accounting. Your document must include:\n\n1. NETWORK DIAGRAM\nDraw (by hand or using a diagramming tool) the full network showing all devices, how they connect, the inter-floor link, VLANs (labelled), and which devices are wired vs wireless.\n\n2. COMPONENT LIST\nFor each component type (server, switch, router, WAPs, NICs), specify: model type, quantity, key specification, and a one-sentence justification tied to the Albatross brief.\n\n3. TRANSMISSION MEDIA CHOICES\nFor each cable run, specify the medium and standard. Include: ground floor PCs → switch, inter-floor backbone (server room to upstairs switch), WAP connections to switch.\n\n4. TOPOLOGY RECOMMENDATION\nState the full topology (physical + logical) and justify each choice with reference to the business requirements.\n\n5. MANAGING PARTNER SUMMARY (4–6 sentences)\nExplain the design in plain language. Address: what the server does for the firm, why guest tablets cannot access client files, and why the upstairs office connects differently from the ground floor. No acronyms."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · SPARKY IS PUSHING BACK",
+        "text": "Sparky reviewed the design before the client meeting. His comments:\n\nComment 1: 'Your component list specifies a 24-port managed switch. Albatross has 18 PCs, 3 printers, 1 server, and WAPs. Count the required ports. Do you have enough? What about growth? The partners mentioned they're hiring 4 more staff next year. Does your switch still work?'\n\nComment 2: 'You specified Cat6a for the ground floor desktop runs and fibre for the inter-floor link. What is the specific length of the longest desktop PC run on the ground floor? If the building is 25m long and the server room is at one end, is any run approaching the Cat6a 100m limit? Show your working.'\n\nComment 3: 'Your managing partner summary says the guest tablets are on a \"separate VLAN.\" The managing partner asked you: \"What does VLAN mean in plain English?\" Write the answer you will give in the room. Remember: this is a person who is very good at tax law and has never set up a network.'"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "Albatross Accounting requires that visitor tablets cannot access client financial data. Which network design feature is specifically required to enforce this?",
+          "options": [
+            "Using Cat6a cabling for all connections",
+            "Installing a managed switch with VLAN configuration to logically separate visitor and staff traffic",
+            "Placing visitor WAPs on a different floor from the server",
+            "Setting stronger Wi-Fi passwords for the staff network"
+          ],
+          "correctIndex": 1,
+          "explanation": "VLAN (Virtual Local Area Network) segmentation on a managed switch is the correct solution. A VLAN logically separates traffic at the switch level — even if visitor tablets and staff PCs physically connect to the same switch, the VLAN configuration ensures they cannot communicate. Physical separation (different floor, different WAPs) helps but is not sufficient on its own — a visitor on the guest WAP could still reach internal devices without VLAN enforcement. Password-only separation is insufficient for compliance requirements."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "extended",
+          "text": "The managing partner of Albatross Accounting asks: 'We're paying $12,000 for this network. What do we get for our money that we don't already have with our current setup of a Wi-Fi router and everyone saving files to their own PC?' Write a professional response, in plain language, that covers the three most important improvements this network design provides. Reference the specific business context of an accounting firm.",
+          "marks": 6,
+          "explanation": "Strong answers address three business benefits in plain language: (1) Central storage and automatic backup of ALL client files — currently, a staff member's laptop failure means permanent loss of the client files on that device. With the new server, every file is stored in one secure location and backed up automatically every night. No client file can be lost because of a hardware failure. (2) Privacy compliance and access control — accounting firms hold client financial data that must be protected under the Privacy Act. The current setup has no mechanism to prevent one staff member accessing another's client files, or a visiting client picking up someone else's work on a device. The new network restricts access so each staff member sees only their authorised files, and visiting clients on the guest Wi-Fi cannot see any internal data at all. (3) Secure, reliable infrastructure for a $1,200/hr business — the current Wi-Fi router is a consumer-grade device not designed for 18 concurrent professional users. At $1,200/hr in lost billable time, a network failure is $19,200 per day. The new managed switch, server with redundant storage, and professional-grade components are specifically designed for business reliability and can be monitored and fixed remotely if a problem occurs. Award 2 marks per benefit: benefit clearly stated in plain language + specific relevance to accounting firm context)"
+        }
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · JAXEN 'SPARKY' MILLER, BUNBURY HARDWARE INTEGRATORS",
+        "text": "The year I started Bunbury Hardware Integrators, I thought the job was about networks. It's not. It's about businesses. I've never had a client ask me to install a managed gigabit switch with VLAN segmentation. What they ask is: 'Can you make sure our clients' tax returns are safe?' and 'Can you make sure we don't lose work if a computer dies?' and 'Can you make sure we don't get a bill for six hours of downtime because someone tripped over a cable?' Those questions are answered by technology, but asked in business language. Your job is to hear the business problem and translate it into a technical solution — and then translate the technical solution back into business language so they know what they've paid for. Do that, and you'll never be short of work in this town."
+      }
+    ]
+  }
+]

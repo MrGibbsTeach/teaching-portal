@@ -1,0 +1,765 @@
+[
+  {
+    "id": "work-health-and-safety-in-the-digital-workplace",
+    "title": "Work Health and Safety in the Digital Workplace",
+    "estimatedMinutes": 20,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #1001 · REGIONAL ETHICS TECH GROUP",
+        "text": "INTERN BRIEFING: The Ethics Tech Group has been asked to audit the workstation setup at a local start-up whose developers have reported rising rates of back pain and eye strain. Your task this week is to advise management on their legal WHS obligations and recommend evidence-based ergonomic improvements. Welcome to your first field assignment."
+      },
+      {
+        "type": "paragraph",
+        "text": "Using digital technology for extended periods without proper setup causes real, measurable harm. Work Health and Safety (WHS) law in Australia places legal duties on both employers and workers to identify and control these risks. As a future IT professional, you will be the person others look to for advice on safe digital work practices."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Ergonomics", "definition": "The science of designing workspaces, equipment, and tasks to fit the human body and reduce the risk of injury or strain during prolonged use." },
+          { "term": "Repetitive Strain Injury (RSI)", "definition": "Damage to muscles, tendons, or nerves caused by repetitive movements — common in keyboard and mouse users who do not take adequate breaks." },
+          { "term": "20-20-20 Rule", "definition": "A clinically recommended eye-rest technique: every 20 minutes, look at an object 20 feet (6 metres) away for at least 20 seconds to reduce digital eye strain." },
+          { "term": "WHS Act 2011", "definition": "The Work Health and Safety Act 2011 (WA) — the primary legislation requiring employers to provide safe working environments, including safe computer workstation setups." }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · DR. ELARA FINCH, REGIONAL ETHICS TECH GROUP",
+        "text": "People underestimate WHS because the injuries are slow and invisible — until they aren't. RSI doesn't announce itself with a snap; it builds quietly over months and then stops a developer's career cold. Advising on ergonomics isn't a 'soft' task. It's risk management with real human cost attached."
+      },
+      {
+        "type": "heading",
+        "text": "Ergonomic Workstation Setup",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "A correctly set-up workstation dramatically reduces the likelihood of physical injury during long computer sessions. The following principles apply whether working in an office, a lab, or from home."
+      },
+      {
+        "type": "list",
+        "style": "bullet",
+        "items": [
+          "Monitor: top of screen at eye level, approximately arm's length away, tilted back 10–20°",
+          "Chair: height adjusted so feet sit flat on the floor, lower back supported by lumbar cushion or adjustable backrest",
+          "Keyboard and mouse: positioned so forearms are horizontal and wrists remain straight — not bent up or down",
+          "Lighting: use indirect or diffused lighting to prevent screen glare; avoid sitting with bright windows directly behind or in front of the monitor",
+          "Documents: place beside the monitor at the same height using a document holder to minimise neck rotation",
+          "Breaks: leave the workstation for at least 5 minutes every hour and apply the 20-20-20 rule for eye health"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Common WHS Risks in Digital Workplaces",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Risk", "Primary Cause", "Evidence-Based Prevention"],
+        "rows": [
+          ["Repetitive Strain Injury (RSI)", "Repetitive mouse and keyboard movements, poor wrist position", "Ergonomic peripherals, regular micro-breaks, proper technique"],
+          ["Digital Eye Strain", "Prolonged screen use, glare, poor contrast settings, blue light", "20-20-20 rule, screen brightness calibration, anti-glare filter"],
+          ["Back and Neck Pain", "Poor posture, non-adjustable chair, monitor height wrong", "Adjustable chair with lumbar support, monitor at eye level"],
+          ["Tension Headaches", "Eye strain, poor lighting, dehydration, stress", "Correct lighting, regular breaks, stay hydrated throughout day"],
+          ["Sedentary Behaviour", "Long unbroken periods of sitting", "Scheduled movement breaks, sit-stand desk, walking meetings"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "WHS Legal Obligations",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Under the Work Health and Safety Act 2011 (WA), employers must provide and maintain a working environment that is safe and without risks to health. This obligation extends to computer workstations, lighting, and software tools. Workers share a reciprocal duty to follow safe work practices and report hazards promptly."
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · WORKSTATION AUDIT",
+        "text": "You have been given photographs of four workstations at the start-up. For each one, identify: (1) at least two ergonomic problems visible in the setup, (2) the specific health risk each problem creates, and (3) one practical, low-cost fix the employer could implement immediately. Present your findings as a short briefing memo addressed to the start-up's management team."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · DR. FINCH IS IN THE REVIEW",
+        "text": "Before you finalise your workstation audit memo, answer these questions:\n1. Under the WHS Act 2011, who is responsible if a worker develops RSI — the employer, the worker, or both? What does the legislation actually say?\n2. If a company allows staff to work from home, do their WHS obligations still apply to the home workstation setup? Why or why not?\n3. A manager argues that providing ergonomic chairs costs too much and staff 'should just take more breaks.' How would you respond using both legal and ethical reasoning?"
+      },
+      {
+        "type": "heading",
+        "text": "Check Your Understanding",
+        "level": 2
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "whs-y11-q1",
+          "questionType": "mcq",
+          "text": "According to the 20-20-20 rule, what should a computer user do every 20 minutes?",
+          "options": [
+            "Close their eyes for 20 seconds",
+            "Look at something 20 feet away for 20 seconds",
+            "Take a 20-minute break from the screen",
+            "Blink 20 times rapidly"
+          ],
+          "correctIndex": 1,
+          "explanation": "The 20-20-20 rule recommends looking at something approximately 20 feet (6 metres) away for at least 20 seconds every 20 minutes. This relaxes the eye muscles that lock in close-focus mode during prolonged screen use."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "whs-y11-q2",
+          "questionType": "mcq",
+          "text": "Which piece of Australian legislation primarily governs employer obligations regarding safe computer workstations?",
+          "options": [
+            "Privacy Act 1988",
+            "Copyright Act 1968",
+            "Work Health and Safety Act 2011",
+            "Australian Consumer Law"
+          ],
+          "correctIndex": 2,
+          "explanation": "The Work Health and Safety Act 2011 (WA) requires employers to provide and maintain a safe working environment, which includes ergonomically appropriate computer workstations. The Privacy Act and Copyright Act cover different aspects of digital work."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "whs-y11-q3",
+          "questionType": "short_answer",
+          "text": "A graphic designer works 8-hour days at a desktop computer and has started experiencing wrist pain. Identify two ergonomic changes to her workstation that could reduce this risk, and explain the WHS obligation her employer has in this situation.",
+          "marks": 4,
+          "explanation": "Award 1 mark each for two valid ergonomic changes (e.g., ergonomic mouse/keyboard, wrist rest, adjusted chair height, scheduled micro-breaks). Award 2 marks for correctly identifying the employer's WHS Act 2011 obligation to provide a safe environment and take reasonable steps to address identified hazards."
+        }
+      }
+    ]
+  },
+  {
+    "id": "privacy-and-personal-information",
+    "title": "Privacy and Personal Information",
+    "estimatedMinutes": 20,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #1002 · REGIONAL ETHICS TECH GROUP",
+        "text": "INTERN BRIEFING: A local school is building a student management portal. They want to collect names, photos, health records, and GPS check-in data for every student. Before a single line of code goes live, they need a Privacy Act compliance review. That review is your job. Sloane's data systems need to comply with the Privacy Act 1988 before they go live — and right now, they're a long way from compliant."
+      },
+      {
+        "type": "paragraph",
+        "text": "Every time you sign up for an app, use a school portal, or buy something online, personal information is collected about you. The Privacy Act 1988 (Cth) is Australia's primary law protecting that information. As IT professionals, we don't just need to know this law — we need to build systems that comply with it from day one."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Personal Information", "definition": "Any information or opinion about an identified individual, or an individual who is reasonably identifiable — including name, address, photo, health records, and financial details (Privacy Act 1988)." },
+          { "term": "Sensitive Information", "definition": "A subset of personal information that attracts higher legal protection: health, racial or ethnic origin, political opinions, religious beliefs, sexual orientation, and biometric data." },
+          { "term": "Data Breach", "definition": "An incident where personal information is accessed, disclosed, or lost without authorisation — triggering mandatory notification requirements under the Notifiable Data Breaches scheme." },
+          { "term": "Australian Privacy Principles (APPs)", "definition": "The 13 principles in Schedule 1 of the Privacy Act 1988 that govern how organisations collect, use, store, and disclose personal information." }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · DR. ELARA FINCH, REGIONAL ETHICS TECH GROUP",
+        "text": "The Privacy Act is not optional reading. Any organisation with an annual turnover above $3 million — and many smaller ones — must comply. But beyond legal compliance, privacy is a human right. When we collect data about people, we take on a responsibility to protect it as if it were our own. The moment that obligation becomes bureaucratic box-ticking, people get hurt."
+      },
+      {
+        "type": "heading",
+        "text": "What the Privacy Act 1988 Requires",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "The Australian Privacy Principles establish 13 obligations for any organisation covered by the Act. The most critical for IT developers and administrators are: collecting only the minimum information necessary; using it only for the purpose it was collected; storing it securely; and allowing individuals to access and correct their own records."
+      },
+      {
+        "type": "table",
+        "headers": ["Principle Area", "Plain-Language Obligation", "Failure Example"],
+        "rows": [
+          ["Collection limitation", "Only collect personal information you genuinely need", "Collecting GPS location when only a postcode is required"],
+          ["Purpose limitation", "Only use data for the purpose it was originally collected for", "Selling customer email addresses to a third-party advertiser"],
+          ["Data security", "Store personal information securely and protect it from misuse", "Storing passwords in plain text in an unencrypted database"],
+          ["Access and correction", "Allow individuals to see and correct their own data", "Refusing a customer's request to update an incorrect address"],
+          ["Notifiable Data Breaches", "Notify the OAIC and affected individuals of eligible breaches", "Discovering a breach but quietly fixing it without notification"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Protecting Your Own Privacy Online",
+        "level": 2
+      },
+      {
+        "type": "list",
+        "style": "bullet",
+        "items": [
+          "Use strong, unique passwords for each account and enable multi-factor authentication (MFA)",
+          "Read privacy policies before entering personal information — look for what data is collected and how it is shared",
+          "Limit the personal information you share on social media (birthdates, addresses, phone numbers)",
+          "Use privacy settings to restrict who can see your posts and personal details",
+          "Be cautious of apps that request permissions beyond what their function requires (e.g., a torch app requesting contacts)"
+        ]
+      },
+      {
+        "type": "scenarioChallenge",
+        "title": "Scenario: The School Portal",
+        "scenario": "Harmony High is building a student portal that will collect: full name, home address, photo, daily GPS check-in location, health records, and exam results. The portal will be accessible to all teaching staff and will share anonymised data with a commercial research company to 'improve education outcomes.' A Year 11 student has asked to see what data the school holds about her and has it corrected.",
+        "questions": [
+          { "question": "Which of the data items collected would be classified as 'sensitive information' under the Privacy Act 1988? Why does this classification matter?", "marks": 3 },
+          { "question": "Is sharing data with the commercial research company permitted under the Australian Privacy Principles? What would need to be true for this sharing to be lawful?", "marks": 3 },
+          { "question": "The school must respond to the student's request to access and correct her data. What are their obligations under the Privacy Act 1988, and what outcome should the student receive?", "marks": 2 }
+        ]
+      },
+      {
+        "type": "spotTheThreat",
+        "title": "Spot the Privacy Breach",
+        "instruction": "Review these two emails received by a student. Identify which one is a privacy threat and what the red flags are.",
+        "emails": [
+          {
+            "isPhishing": true,
+            "from": "no-reply@myschoolportaI.com.au",
+            "subject": "URGENT: Verify your student account to avoid suspension",
+            "body": "Dear Student,\n\nYour account at Harmony High School Portal requires immediate verification. Please click the link below and enter your full name, date of birth, student ID, and home address to confirm your identity.\n\nFAILURE TO VERIFY WITHIN 24 HOURS WILL RESULT IN ACCOUNT SUSPENSION.\n\nClick here: http://myschoolportal-verify.xyz/login\n\nHarmony High IT Department",
+            "redFlags": [
+              { "element": "Domain name", "detail": "Uses a capital 'I' instead of lowercase 'l' in 'portaI' — a look-alike domain designed to deceive" },
+              { "element": "Verification link URL", "detail": "Links to an external .xyz domain, not the school's official domain — a classic phishing redirect" },
+              { "element": "Urgency and threat", "detail": "'24 hours or suspension' is a pressure tactic used to bypass critical thinking" },
+              { "element": "Data requested", "detail": "Legitimate school portals already hold student data — they would never ask you to re-enter it via email" }
+            ]
+          },
+          {
+            "isPhishing": false,
+            "from": "itsupport@harmonyhigh.wa.edu.au",
+            "subject": "Scheduled maintenance: portal unavailable Saturday 8am–10am",
+            "body": "Hi Students,\n\nPlease be advised that the Harmony High student portal will be unavailable for scheduled maintenance this Saturday from 8:00am to 10:00am.\n\nNo action is required from you. Your data will not be affected.\n\nIf you have questions, please contact the IT Help Desk via the school website.\n\nThanks,\nHarmony High IT Support",
+            "redFlags": []
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · DR. FINCH IS IN THE REVIEW",
+        "text": "Before we sign off on the privacy compliance review:\n1. The portal collects GPS location data. Under which Australian Privacy Principle must the school justify this collection — and what test must they meet?\n2. A staff member accidentally emails a student's health record to the wrong parent. Does this trigger the Notifiable Data Breaches scheme? What factors determine this?\n3. The research company says all data is 'anonymised' before they receive it. Is anonymised data automatically outside the scope of the Privacy Act? What are the risks of over-relying on anonymisation?"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "priv-y11-q1",
+          "questionType": "mcq",
+          "text": "Under the Privacy Act 1988, which of the following best describes 'sensitive information'?",
+          "options": [
+            "Any information that the individual considers private",
+            "Information that is expensive or difficult to collect",
+            "Health, racial origin, religious beliefs, and biometric data — attracting stronger legal protection",
+            "Financial information held by banks"
+          ],
+          "correctIndex": 2,
+          "explanation": "Sensitive information is defined in the Privacy Act 1988 and includes health information, racial or ethnic origin, political opinions, religious beliefs, sexual orientation, and biometric data. It attracts stricter obligations around collection and use than ordinary personal information."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "priv-y11-q2",
+          "questionType": "true_false",
+          "text": "Under the Privacy Act 1988, an organisation can use personal information collected for one purpose for any other purpose it chooses, as long as the data is kept secure.",
+          "correctAnswer": false,
+          "explanation": "False. The Australian Privacy Principles restrict the use of personal information to the purpose for which it was originally collected. Using it for a different purpose generally requires fresh consent from the individual, unless a specific exception applies."
+        }
+      }
+    ]
+  },
+  {
+    "id": "digital-citizenship-and-online-conduct",
+    "title": "Digital Citizenship and Online Conduct",
+    "estimatedMinutes": 20,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #1003 · REGIONAL ETHICS TECH GROUP",
+        "text": "INTERN BRIEFING: The Ethics Tech Group has received a formal complaint from a school about a coordinated cyberbullying campaign targeting a Year 11 student across three platforms. You have been asked to brief the school's leadership on: what constitutes cyberbullying under Australian law, what platforms are required to do, and what actions the school can take. This is a legal, ethical, and reputational issue — handle it with precision."
+      },
+      {
+        "type": "paragraph",
+        "text": "Being online isn't just a technical activity — it's a social and civic one. Digital citizenship describes the responsible, ethical, and safe use of technology. It includes how we treat others online, the content we share, and the long-term implications of the digital footprint we leave behind. These are not abstract values; they are increasingly backed by enforceable law."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Digital Citizenship", "definition": "The responsible, ethical, and safe use of technology — including respectful online communication, protecting personal information, and understanding the legal consequences of online behaviour." },
+          { "term": "Cyberbullying", "definition": "Using digital technology to repeatedly harass, intimidate, threaten, or humiliate another person. In Australia, serious cyberbullying of a child is a criminal offence under the Online Safety Act 2021." },
+          { "term": "Digital Footprint", "definition": "The permanent trail of data left by online activity — including posts, messages, searches, and account sign-ups. Digital footprints can be accessed by employers, universities, and law enforcement." },
+          { "term": "Defamation", "definition": "Publishing false information that damages a person's reputation. Online posts, comments, and reviews can constitute defamation under Australian law — individuals can be personally sued." }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · DR. ELARA FINCH, REGIONAL ETHICS TECH GROUP",
+        "text": "The internet has a longer memory than you do. Students have lost university placements and job offers because of posts made years earlier. The question I ask organisations — and that I want you to ask yourselves — is: would you be comfortable if this post, this comment, this message appeared on the front page of a newspaper? If not, don't publish it. The digital world doesn't have an 'unsend' button that actually works."
+      },
+      {
+        "type": "heading",
+        "text": "Forms of Cyberbullying",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Form", "Description", "Example"],
+        "rows": [
+          ["Harassment", "Repeated threatening or abusive messages sent directly to a person", "Sending dozens of insulting messages to a classmate's phone each night"],
+          ["Exclusion", "Deliberately and repeatedly excluding someone from online groups or activities", "Removing a student from every group chat and telling others not to include them"],
+          ["Outing / Doxxing", "Sharing someone's private information or secrets publicly without consent", "Posting someone's home address or revealing private health information online"],
+          ["Impersonation", "Creating fake accounts to post harmful content in someone else's name", "Making a fake Instagram account using a classmate's photo and posting offensive content"],
+          ["Cyberstalking", "Using technology to repeatedly monitor and intimidate a specific person", "Tracking someone's location via social media check-ins and showing up uninvited"],
+          ["Flaming", "Posting hostile, aggressive messages in public online spaces to provoke", "Writing vicious public comments attacking a student on their social media page"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Legal Framework: Online Conduct in Australia",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Law / Regulation", "What It Covers", "Consequence of Breach"],
+        "rows": [
+          ["Online Safety Act 2021 (Cth)", "Cyberbullying of children; removal of harmful content; platform obligations", "eSafety Commissioner can order removal of content; platforms face fines"],
+          ["Criminal Code Act 1995 (Cth)", "Using a carriage service (internet/phone) to menace, harass, or offend", "Up to 3 years imprisonment for using the internet to harass"],
+          ["Defamation law", "Publishing false statements that damage a person's reputation", "Civil lawsuits; court orders to remove content; damages payments"],
+          ["Privacy Act 1988 (Cth)", "Sharing personal information about others without consent", "Complaints to the OAIC; financial penalties for organisations"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Managing Your Digital Footprint",
+        "level": 2
+      },
+      {
+        "type": "list",
+        "style": "bullet",
+        "items": [
+          "Google yourself regularly to understand what information is publicly visible about you",
+          "Review and tighten privacy settings on all social media platforms",
+          "Think before posting: consider whether future employers, universities, or family members would see this",
+          "Avoid sharing others' personal information without explicit consent",
+          "Report harmful content to platform moderators and, where appropriate, to the eSafety Commissioner (esafety.gov.au)"
+        ]
+      },
+      {
+        "type": "spotTheThreat",
+        "title": "Spot the Cyberbullying",
+        "instruction": "Read these two messages. Identify which one constitutes cyberbullying under the Online Safety Act 2021 and explain the specific behaviours that make it harmful and potentially unlawful.",
+        "emails": [
+          {
+            "isPhishing": true,
+            "from": "Anonymous account: @nobody_cares_2024",
+            "subject": "Public post on a school Facebook group",
+            "body": "Everyone look at this loser [name]'s photo lmao. Can't believe this person thinks they're good at anything. We all know what you did at the camp. Keep your mouth shut or I'll post the whole story. FYI I've added your home address so people know where to find you. Everyone share this 😂",
+            "redFlags": [
+              { "element": "Harassment and threats", "detail": "'Keep your mouth shut or I'll post the whole story' is an explicit threat — a criminal offence under the Criminal Code Act 1995" },
+              { "element": "Doxxing", "detail": "Publishing someone's home address without consent is a serious privacy violation and a form of cyberbullying" },
+              { "element": "Coordinated humiliation", "detail": "Asking others to 'share this' turns individual harassment into coordinated group bullying — covered by the Online Safety Act 2021" },
+              { "element": "Anonymous account", "detail": "Hiding behind anonymity does not provide legal protection — investigators can and do trace anonymous accounts" }
+            ]
+          },
+          {
+            "isPhishing": false,
+            "from": "Student council group chat",
+            "subject": "Hey everyone",
+            "body": "Hey team — just a reminder that our fundraiser meeting has moved to Thursday at lunch. Room B14. If you can't make it, just let me know and I'll send you the notes. Cheers!",
+            "redFlags": []
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · DIGITAL CITIZENSHIP POLICY BRIEF",
+        "text": "A local sporting club has asked you to draft a 'Digital Conduct Policy' for its members, covering online communications, social media, and group chats. Your policy must: (1) define acceptable and unacceptable online conduct in plain language; (2) reference at least two relevant Australian laws; (3) specify what will happen if a member breaches the policy; and (4) include a reporting mechanism for members experiencing online harassment. Keep it to one page — policies that are too long don't get read."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · DR. FINCH IS IN THE REVIEW",
+        "text": "Before your digital conduct policy goes to the club:\n1. The policy says members who violate it will be 'banned from social media.' Can a club legally ban a member from using social media? What can the club actually enforce?\n2. A member is being harassed via private messages, not public posts. Does the Online Safety Act 2021 still apply to private communications? Who has jurisdiction?\n3. Your policy requires members to report cyberbullying to the club president. What if the club president is the person doing the bullying? How should your policy account for this?"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "dc-y11-q1",
+          "questionType": "mcq",
+          "text": "Which Australian body has the power to order social media platforms to remove cyberbullying content targeting children?",
+          "options": [
+            "The Australian Federal Police",
+            "The Office of the Australian Information Commissioner (OAIC)",
+            "The eSafety Commissioner",
+            "The Australian Competition and Consumer Commission (ACCC)"
+          ],
+          "correctIndex": 2,
+          "explanation": "The eSafety Commissioner has powers under the Online Safety Act 2021 to issue removal notices to social media platforms requiring them to take down cyberbullying content. The OAIC handles privacy complaints, and the AFP handles criminal investigations."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "dc-y11-q2",
+          "questionType": "short_answer",
+          "text": "Explain what a 'digital footprint' is and describe two specific ways a young person's digital footprint could negatively affect their future employment prospects.",
+          "marks": 4,
+          "explanation": "Award 1 mark for a correct definition of digital footprint (the permanent trail of data left by online activity). Award 1 mark each for two valid examples, such as: offensive social media posts found by a prospective employer; discriminatory comments that contradict an organisation's values; evidence of dishonesty contradicting a job application claim. Award up to 4 marks total."
+        }
+      }
+    ]
+  },
+  {
+    "id": "e-waste-and-environmental-responsibility",
+    "title": "E-Waste and Environmental Responsibility",
+    "estimatedMinutes": 20,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #1004 · REGIONAL ETHICS TECH GROUP",
+        "text": "INTERN BRIEFING: A regional government office is upgrading 200 computers. They plan to throw the old ones in a general waste skip. Before they do, we need to stop them — and explain why this is both illegal and ethically indefensible. Your brief must cover the environmental harm, the data security risk, and the legal disposal obligations. Sparky's network upgrade is technically sound, but where does the hardware go? That's our problem to solve."
+      },
+      {
+        "type": "paragraph",
+        "text": "Electronic waste — or e-waste — is the fastest-growing solid waste stream in the world. Australia generates approximately 554,000 tonnes of e-waste per year, much of which is still disposed of in landfill. As IT professionals, we have an ethical and legal responsibility for what happens to hardware when it reaches end of life."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "E-Waste", "definition": "Discarded electrical and electronic equipment including computers, phones, televisions, batteries, and peripherals — which contain hazardous materials that can leach into soil and water if landfilled." },
+          { "term": "Product Stewardship Act 2011", "definition": "Australian legislation that creates shared responsibility for the environmental impact of products across their entire lifecycle, including end-of-life disposal." },
+          { "term": "National Television and Computer Recycling Scheme (NTCRS)", "definition": "An Australian government program that provides free drop-off recycling for televisions and computers, funded by product importers and manufacturers." },
+          { "term": "Data Sanitisation", "definition": "The deliberate, permanent, and irreversible removal of data from storage media — going beyond simple deletion to ensure data cannot be recovered by any method." }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · DR. ELARA FINCH, REGIONAL ETHICS TECH GROUP",
+        "text": "Throwing a computer in a skip is not just lazy — it's a liability. Those hard drives almost certainly still contain recoverable data. And the lead, mercury, and cadmium in that hardware will be in someone's groundwater within a decade. When we talk about ethical technology, we mean the entire lifecycle: from design to disposal. End-of-life is not someone else's problem."
+      },
+      {
+        "type": "heading",
+        "text": "Why E-Waste Is Harmful",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Electronic devices contain materials that are both valuable and hazardous. Lead in circuit boards, mercury in screens, and cadmium in batteries can all cause severe environmental and human health damage when they leach out of landfill into soil and groundwater. Informal e-waste recycling in developing countries — where Australian e-waste is sometimes illegally shipped — exposes workers to toxic fumes from burning cables and circuit boards."
+      },
+      {
+        "type": "table",
+        "headers": ["Hazardous Material", "Found In", "Health / Environmental Risk"],
+        "rows": [
+          ["Lead (Pb)", "Solder, circuit boards, CRT screens", "Neurological damage, especially in children; soil and water contamination"],
+          ["Mercury (Hg)", "Fluorescent backlights, switches", "Severe neurological damage; bioaccumulates in food chains"],
+          ["Cadmium (Cd)", "Rechargeable batteries, semiconductors", "Kidney damage, bone disease; very persistent in soil"],
+          ["Brominated flame retardants", "Plastic casings, circuit boards", "Toxic fumes when incinerated; endocrine disruption"],
+          ["Rare earth metals", "Screens, motors, batteries", "Mining causes environmental destruction; finite global supply"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Responsible Disposal Options",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Method", "Description", "Best For"],
+        "rows": [
+          ["NTCRS drop-off", "Free recycling at authorised collection points for computers and TVs", "Household and small business e-waste"],
+          ["Manufacturer take-back", "Return old devices to the manufacturer for responsible recycling", "Phones, printers, batteries — check brand programs"],
+          ["Donation / refurbishment", "Donate working equipment to schools, charities, or community programs", "Devices with remaining useful life"],
+          ["Certified e-waste recycler", "Commercial recycling companies certified to safely process hazardous materials", "Large volumes; corporate asset disposal"],
+          ["Council e-waste events", "Local government periodic collection events", "Households with items not covered by NTCRS"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Data Security Before Disposal",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Disposing of hardware without first sanitising storage media is a serious data breach risk. Simply deleting files or emptying the recycle bin does not remove data — it only removes the file index. The underlying data remains accessible with freely available recovery software. Effective data sanitisation must occur before any device leaves your control."
+      },
+      {
+        "type": "list",
+        "style": "bullet",
+        "items": [
+          "Factory reset alone is insufficient for secure disposal — it does not wipe flash storage fully",
+          "Use NIST 800-88 compliant wiping software (e.g., DBAN) to overwrite all storage sectors",
+          "For highly sensitive data, physical destruction of the drive (shredding or degaussing) is the most secure option",
+          "Document the disposal process — who destroyed what, when, and by what method — for audit trail purposes",
+          "For BYOD (Bring Your Own Device) policies, ensure corporate data partitions are wiped when an employee leaves"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · E-WASTE DISPOSAL PLAN",
+        "text": "The government office has 200 computers to dispose of. Draft a step-by-step disposal plan that covers: (1) data classification — which machines may hold sensitive data and what sanitisation method is appropriate for each tier; (2) the disposal pathway for the hardware (which NTCRS or certified recycler, with location); (3) documentation requirements for each disposed asset; and (4) a brief explanation for management of why general waste disposal would violate both the Privacy Act 1988 and the Product Stewardship Act 2011."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · DR. FINCH IS IN THE REVIEW",
+        "text": "Before the disposal plan is finalised:\n1. The office manager says 'we did a factory reset on all the machines — that's enough.' What would you tell them, and what is the specific risk if they're wrong?\n2. One staff member wants to keep her old work laptop for personal use. Under the Privacy Act 1988, what data security obligations apply before the device can be transferred to personal ownership?\n3. The government office considers shipping 50 non-working computers to a recycling facility overseas. What international and Australian legal considerations should they check before doing this?"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "ewaste-y11-q1",
+          "questionType": "mcq",
+          "text": "A school wants to dispose of 30 old computers. Which free, government-backed Australian scheme allows them to do this responsibly?",
+          "options": [
+            "The National Television and Computer Recycling Scheme (NTCRS)",
+            "The Australian Consumer Law disposal program",
+            "The Privacy Act 1988 disposal framework",
+            "The Product Safety Australia program"
+          ],
+          "correctIndex": 0,
+          "explanation": "The National Television and Computer Recycling Scheme (NTCRS) provides free drop-off recycling for computers and televisions at authorised collection points across Australia, funded by product importers and manufacturers under the Product Stewardship Act 2011."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "ewaste-y11-q2",
+          "questionType": "short_answer",
+          "text": "Explain why simply deleting files from a computer before donating it is insufficient, and describe one method that would constitute effective data sanitisation.",
+          "marks": 3,
+          "explanation": "Award 1 mark for explaining that deleting files or emptying the recycle bin only removes the file index — the underlying data remains on the disk and can be recovered using freely available software. Award 2 marks for describing an effective method: e.g., using NIST 800-88 compliant overwriting software (like DBAN) that overwrites all storage sectors; or physical destruction of the drive via shredding or degaussing."
+        }
+      }
+    ]
+  },
+  {
+    "id": "digital-vs-traditional-communication",
+    "title": "Digital vs Traditional Communication",
+    "estimatedMinutes": 20,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #1005 · REGIONAL ETHICS TECH GROUP",
+        "text": "INTERN BRIEFING: A regional hospital board is reviewing its communication protocols. They currently mix email, messaging apps, phone calls, and face-to-face meetings for everything from patient referrals to emergency callouts. They've asked us to help them design a communication policy that matches the right channel to the right context — especially where privacy and safety are at stake. This is a policy design and risk analysis task."
+      },
+      {
+        "type": "paragraph",
+        "text": "The shift from traditional to digital communication is one of the most profound social changes technology has produced. The way we work, form relationships, and access information has been transformed in less than a generation. Understanding the trade-offs — speed vs. depth, reach vs. privacy, convenience vs. permanence — is essential for both IT professionals and digital citizens."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Synchronous Communication", "definition": "Communication that occurs in real time, requiring all parties to be present simultaneously — e.g., phone calls, video conferences, face-to-face meetings." },
+          { "term": "Asynchronous Communication", "definition": "Communication that does not require simultaneous presence — messages can be sent and responded to at different times — e.g., email, letters, recorded video." },
+          { "term": "Digital Communication", "definition": "Any communication transmitted electronically via digital networks — including email, instant messaging, social media, video conferencing, and VoIP." },
+          { "term": "Non-verbal Cues", "definition": "The body language, facial expressions, tone of voice, and gestures that convey meaning beyond words — largely absent from text-based digital communication." }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · DR. ELARA FINCH, REGIONAL ETHICS TECH GROUP",
+        "text": "Digital communication is extraordinarily powerful — and extraordinarily easy to misuse. In a hospital setting, a misread tone in an email can delay a critical patient handover. In a school, a short message stripped of context gets screenshotted and sent to 300 people. The right communication channel isn't always the fastest one. It's the one that gets the right information to the right person with the right level of privacy and context. That's policy thinking, not just technology thinking."
+      },
+      {
+        "type": "heading",
+        "text": "Comparing Communication Methods",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Aspect", "Traditional (Face-to-Face / Letter / Phone)", "Digital (Email / Messaging / Video)"],
+        "rows": [
+          ["Speed", "Slower — especially letters and formal documents", "Near-instant — global delivery in seconds"],
+          ["Cost", "Higher for physical delivery; phone calls can be costly over distance", "Very low cost — most digital platforms are free or subscription-based"],
+          ["Reach", "Limited by geography and time zones for real-time communication", "Global, 24/7 reach regardless of geography"],
+          ["Privacy", "Physical documents can be secured; verbal conversations leave no record", "Digital messages are logged, stored, and potentially accessible by third parties"],
+          ["Permanence", "Letters and documents are permanent; verbal conversations are not recorded by default", "All digital communications create a permanent record — messages can be retrieved years later"],
+          ["Non-verbal cues", "Full range of body language, tone, and expression available in person", "Limited in text; partial in video; absent in email and messaging"],
+          ["Accessibility", "Requires physical presence or postal access", "Requires internet access and device — creates digital divide for some groups"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Impact on Work and Society",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Digital communication has enabled remote work, global collaboration, and rapid information sharing at a scale previously impossible. However, it has also blurred the boundary between professional and personal life, enabled the instant spread of misinformation, and created new forms of harassment and exclusion. These are not side effects to be managed — they are design considerations that ethical IT professionals must address."
+      },
+      {
+        "type": "scenarioChallenge",
+        "title": "Scenario: The Hospital Communication Policy",
+        "scenario": "Regional Health Service uses a mix of channels: urgent patient alerts go via a consumer messaging app (WhatsApp), referrals are emailed to GPs using personal Gmail accounts, administrative updates go via the hospital's internal system, and shift managers call staff directly for emergency callouts. A patient's confidential test results were accidentally shared in the wrong WhatsApp group last month.",
+        "questions": [
+          { "question": "Identify two specific communication practices in this scenario that likely breach the Privacy Act 1988 and explain why.", "marks": 4 },
+          { "question": "Recommend a communication framework for the hospital that matches the appropriate channel to each type of communication (clinical, administrative, emergency). Justify each recommendation.", "marks": 4 },
+          { "question": "The hospital is considering banning all consumer messaging apps (WhatsApp, iMessage) for clinical communication. What are the likely benefits and unintended consequences of this policy?", "marks": 3 }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · CHANNEL SELECTION MATRIX",
+        "text": "Design a 'Communication Channel Matrix' for a medium-sized IT company. The matrix must specify which communication channel (email, instant messaging, video call, phone, face-to-face) is appropriate for each scenario type, and why. Include at least 6 scenario types: e.g., urgent technical incident, performance review, client project update, team social event announcement, data breach notification, and employee grievance. For each, consider: privacy requirements, tone, urgency, and the need for a documented record."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · DR. FINCH IS IN THE REVIEW",
+        "text": "Before the hospital communication framework is finalised:\n1. A clinician argues that banning WhatsApp will slow down emergency communication and put patients at risk. How do you balance communication speed against privacy obligations under the Privacy Act?\n2. The Spam Act 2003 governs commercial electronic messages — does it apply to internal hospital emails? What about emails sent to patients about appointment reminders?\n3. If a hospital employee sends patient data to a personal Gmail account to work from home, what specific Privacy Act obligations are potentially breached — and who is liable, the employee or the hospital?"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "comm-y11-q1",
+          "questionType": "mcq",
+          "text": "Which of the following is the most significant privacy risk when using consumer messaging apps (like WhatsApp) for clinical communication in a hospital?",
+          "options": [
+            "Messages can be delivered to the wrong recipient accidentally",
+            "The hospital cannot control data storage, access logs, or where the data is held",
+            "Messages cost money to send internationally",
+            "Video calls may have poor quality"
+          ],
+          "correctIndex": 1,
+          "explanation": "Consumer apps store data on servers controlled by private companies (often overseas), outside the hospital's data governance framework. The hospital cannot audit access, control data retention, or guarantee compliance with the Privacy Act 1988 using consumer platforms."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "comm-y11-q2",
+          "questionType": "short_answer",
+          "text": "Describe two advantages and two disadvantages of digital communication compared to face-to-face communication in a professional workplace setting.",
+          "marks": 4,
+          "explanation": "Award 1 mark each for two valid advantages (e.g., instant delivery regardless of geography; asynchronous — can respond at a convenient time; creates a permanent documented record; low cost). Award 1 mark each for two valid disadvantages (e.g., lack of non-verbal cues can cause misunderstandings; creates a permanent record that can be used against you; privacy risks from data interception or misdirection; contributes to 'always on' culture blurring work-life boundaries)."
+        }
+      }
+    ]
+  },
+  {
+    "id": "impacts-of-technology-quiz",
+    "title": "Impacts of Technology — Unit Review Quiz",
+    "estimatedMinutes": 25,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #1006 · REGIONAL ETHICS TECH GROUP",
+        "text": "INTERN REVIEW: You've completed your first rotation in the Digital Policy & Innovation team. Before you move to your next assignment, Dr. Finch needs to see that you can apply what you've learned — not just recall it. This quiz tests your ability to identify issues, reason through ethical dilemmas, and apply Australian law. Policy thinking under pressure is a core professional skill."
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · DR. ELARA FINCH, REGIONAL ETHICS TECH GROUP",
+        "text": "In this industry, 'I know the theory' is never enough. Every question below reflects a situation I have dealt with in practice. Think about the law, the ethics, and the human impact — in that order. A technically correct answer that ignores the human cost is still an incomplete answer."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "iot-quiz-y11-q1",
+          "questionType": "mcq",
+          "text": "An employer is required under Australian law to provide employees with ergonomically safe computer workstations. Which legislation creates this obligation?",
+          "options": [
+            "Privacy Act 1988",
+            "Work Health and Safety Act 2011",
+            "Australian Consumer Law",
+            "Copyright Act 1968"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Work Health and Safety Act 2011 (WA) places a duty on employers to provide and maintain a working environment that is safe and without risks to health — this includes ergonomic workstation requirements for computer users."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "iot-quiz-y11-q2",
+          "questionType": "true_false",
+          "text": "Under the Privacy Act 1988, an organisation can sell customer email addresses to a marketing company without the customer's consent, provided the data remains in Australia.",
+          "correctAnswer": false,
+          "explanation": "False. The Australian Privacy Principles prohibit using or disclosing personal information for a purpose other than the one for which it was collected, regardless of where the data is stored. Selling email addresses to a third party for marketing requires explicit consent."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "iot-quiz-y11-q3",
+          "questionType": "mcq",
+          "text": "Which of the following correctly describes a 'digital footprint'?",
+          "options": [
+            "The physical space occupied by digital hardware in an office",
+            "The permanent trail of data created by a person's online activities",
+            "The carbon emissions produced by running data centres",
+            "The storage capacity used by a user's digital files"
+          ],
+          "correctIndex": 1,
+          "explanation": "A digital footprint is the accumulation of data traces left by a person's online activities — including social media posts, search history, online purchases, and account sign-ups. It is effectively permanent and can be accessed by employers, universities, and law enforcement."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "iot-quiz-y11-q4",
+          "questionType": "mcq",
+          "text": "A student repeatedly sends threatening private messages to a classmate on Instagram. Under which law could this conduct be prosecuted in Australia?",
+          "options": [
+            "The Privacy Act 1988",
+            "The Copyright Act 1968",
+            "The Criminal Code Act 1995 — using a carriage service to menace or harass",
+            "The Australian Consumer Law"
+          ],
+          "correctIndex": 2,
+          "explanation": "Using a carriage service (which includes the internet and mobile networks) to menace, harass, or cause offence is a criminal offence under section 474.17 of the Criminal Code Act 1995, carrying a penalty of up to 3 years imprisonment."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "iot-quiz-y11-q5",
+          "questionType": "mcq",
+          "text": "Which Australian government program provides FREE recycling for old computers and televisions?",
+          "options": [
+            "The Privacy Act Disposal Framework",
+            "The National Television and Computer Recycling Scheme (NTCRS)",
+            "The Australian Consumer Law Exchange Program",
+            "The Digital Divides Reduction Initiative"
+          ],
+          "correctIndex": 1,
+          "explanation": "The National Television and Computer Recycling Scheme (NTCRS) provides free drop-off recycling for televisions and computers under the Product Stewardship Act 2011. It is funded by product importers and manufacturers."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "iot-quiz-y11-q6",
+          "questionType": "short_answer",
+          "text": "A company is replacing 50 old desktop computers. The IT manager says 'we deleted everything and ran a factory reset — we're good to go.' Evaluate whether this is sufficient and explain what the company should have done instead.",
+          "marks": 4,
+          "explanation": "Award 2 marks for correctly identifying that factory reset and deletion are insufficient — they remove the file index but not the underlying data, which can be recovered using freely available software, creating a Privacy Act breach risk. Award 2 marks for describing adequate sanitisation: NIST 800-88 compliant overwriting software (e.g., DBAN); physical destruction (shredding/degaussing) for sensitive data; and documentation of disposal for audit purposes."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "iot-quiz-y11-q7",
+          "questionType": "extended",
+          "text": "Dr. Finch has been asked to advise a new online retail startup on its legal and ethical obligations regarding customer data. Using your knowledge of the Privacy Act 1988 and the Australian Privacy Principles, write a briefing note (approximately 200 words) that identifies: (a) what types of data the company will likely collect; (b) at least three specific obligations under the APPs; and (c) the consequences of a data breach, including mandatory notification requirements.",
+          "marks": 8,
+          "explanation": "High-mark response should identify: relevant personal information (name, address, payment details, purchase history, browsing behaviour); at least three APPs (e.g., APP 1 — transparency via privacy policy; APP 3 — collect only what is necessary; APP 6 — use data only for original purpose; APP 11 — secure storage; APP 12 — access and correction rights); and consequences of a data breach including Notifiable Data Breaches scheme, required notification to the OAIC and affected individuals, and potential penalties. Award marks for accuracy, relevance, and quality of reasoning."
+        }
+      }
+    ]
+  }
+]

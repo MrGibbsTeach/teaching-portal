@@ -1,0 +1,1387 @@
+[
+  {
+    "id": "file-compression",
+    "title": "File Compression — Lossy vs Lossless",
+    "estimatedMinutes": 50,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #2001 · SW LOGISTICAL ANALYTICS",
+        "text": "Status: 🔴 URGENT | Sprint 1 | Assigned to: Analyst\n\nLeo Thorne flagged it first: his client-facing dashboard is loading in 14 seconds. I checked the data payloads — Leo's UI is requesting 4MB PNG chart exports on every page load. Sparky Miller's network can handle it, but the client's branch office in regional WA is on a 10Mbps ADSL connection and it's timing out. We need to audit every file in this pipeline, understand what's compressed and what isn't, and make deliberate choices — not defaults. File compression is not a design decision. It's an engineering decision."
+      },
+      {
+        "type": "heading",
+        "text": "Why Compression Decisions Are Professional Decisions",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Every unoptimised file in a system has a cost: storage space, bandwidth, load time, and infrastructure spend. A 24MB RAW photograph and a 300KB JPEG can look identical on screen, but one costs 80 times more to serve. At SW Logistical Analytics, we do not accept file size defaults — we choose compression deliberately based on what the file is for and who receives it."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "File Compression",
+            "definition": "Encoding data using fewer bits than the original, reducing file size. Can be applied to any file type — documents, images, audio, video, or data archives."
+          },
+          {
+            "term": "Lossy Compression",
+            "definition": "Permanently discards some data to achieve smaller file sizes. The original cannot be exactly reconstructed. Best for media where minor quality loss is acceptable."
+          },
+          {
+            "term": "Lossless Compression",
+            "definition": "Reduces file size by encoding repeated patterns without discarding any data. The original file can be perfectly reconstructed. Essential for data files and professional assets."
+          },
+          {
+            "term": "Compression Ratio",
+            "definition": "The ratio of original file size to compressed file size. A 4:1 ratio means the compressed file is one quarter of the original size."
+          },
+          {
+            "term": "Generational Loss",
+            "definition": "The progressive quality degradation that occurs when a lossy-compressed file is decompressed, edited, and re-compressed multiple times."
+          },
+          {
+            "term": "Artefact",
+            "definition": "A visible distortion introduced by lossy compression — commonly seen as blurry edges, pixelated blocks, or noise in images and video."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Lossy vs Lossless — The Core Trade-Off",
+        "level": 2
+      },
+      {
+        "type": "comparison",
+        "title": "Lossy vs Lossless Compression",
+        "items": [
+          {
+            "label": "Lossy Compression",
+            "points": [
+              "Permanently discards data the algorithm judges as less perceptible",
+              "Achieves significantly smaller file sizes than lossless",
+              "Each re-save degrades quality further — generational loss",
+              "Best for: photographs for web, audio for streaming, video for delivery",
+              "Never use for: logos, charts, data files, documents, archival masters",
+              "Formats: JPEG (image), MP3 (audio), AAC (audio), H.264/MP4 (video)"
+            ]
+          },
+          {
+            "label": "Lossless Compression",
+            "points": [
+              "Finds and encodes repeated patterns — no data discarded",
+              "Original file perfectly reconstructed on decompression",
+              "Larger file sizes than lossy — but full quality is preserved",
+              "Best for: logos, charts, data archives, professional editing masters, CSV/JSON",
+              "Never compromise: if quality integrity matters, use lossless",
+              "Formats: PNG (image), FLAC (audio), WAV (audio, uncompressed), ZIP (any), PDF (document)"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · SLOANE VANE, SW LOGISTICAL ANALYTICS",
+        "text": "Leo saves his dashboard charts as JPEG because 'they're smaller.' Every time he re-exports from his design tool, the compression runs again. After six iterations, the axis labels on that bar chart are a blur. Always keep master files in lossless formats. Export lossy only at the final delivery stage — never work in lossy formats."
+      },
+      {
+        "type": "heading",
+        "text": "Real File Size Impact — What the Numbers Look Like",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["File Type", "Format", "Compression", "Approx. Size", "SW Logistical Analytics Use Case"],
+        "rows": [
+          ["Photograph (12 MP)", "RAW / TIFF", "None", "24 MB", "Master file — never shared, never served to web"],
+          ["Photograph (12 MP)", "PNG", "Lossless", "8–12 MB", "When exact pixel data must be preserved"],
+          ["Photograph (12 MP)", "JPEG (90% quality)", "Lossy", "3–5 MB", "Client report imagery — good balance"],
+          ["Photograph (12 MP)", "JPEG (40% quality)", "Lossy", "300–600 KB", "Web thumbnails — artefacts visible at full size"],
+          ["3-min audio brief", "WAV", "None", "~31 MB", "Recording source — never shared as-is"],
+          ["3-min audio brief", "MP3 (320 kbps)", "Lossy", "~7 MB", "Internal distribution — acceptable quality"],
+          ["3-min audio brief", "MP3 (128 kbps)", "Lossy", "~2.8 MB", "External web delivery — reduced quality"],
+          ["CSV dataset (100 MB)", "ZIP", "Lossless", "~25–60 MB", "Sending large data exports to clients — all data preserved"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Calculating Compression Savings",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Sloane uses this formula when auditing Leo's dashboard payloads and calculating bandwidth savings for client proposals."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "File Size Saving %",
+            "definition": "((Original Size − Compressed Size) ÷ Original Size) × 100. Example: ((24 MB − 3 MB) ÷ 24 MB) × 100 = 87.5% saving."
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "headers": ["Scenario", "Original", "Compressed", "Saving (MB)", "Saving (%)"],
+        "rows": [
+          ["PNG chart → JPEG (80%)", "4.2 MB", "320 KB", "3.88 MB", "92%"],
+          ["WAV audio → MP3 (320kbps)", "31 MB", "7 MB", "24 MB", "77%"],
+          ["RAW photo → JPEG (90%)", "24 MB", "4 MB", "20 MB", "83%"],
+          ["Folder of files (100 MB) → ZIP", "100 MB", "45 MB", "55 MB", "55%"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Format Decisions at SW Logistical Analytics",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Format", "Type", "Compression", "Use Case", "Never Use For"],
+        "rows": [
+          ["JPEG", "Image", "Lossy", "Photographs in reports, web delivery", "Logos, charts, screenshots, text-heavy images"],
+          ["PNG", "Image", "Lossless", "Charts, graphs, logos, screenshots, transparency", "Large photographic backgrounds on web (too large)"],
+          ["SVG", "Image (vector)", "None", "Logos and icons at any scale", "Photographic images"],
+          ["WebP", "Image", "Both modes", "Web image delivery — better quality at smaller size than JPEG", "Systems that don't support modern formats"],
+          ["MP3", "Audio", "Lossy", "Audio briefs, streaming delivery", "Studio masters, archival recordings"],
+          ["WAV", "Audio", "None", "Recording masters, professional production", "Delivery to clients — too large"],
+          ["FLAC", "Audio", "Lossless", "Archiving, high-fidelity listening", "Casual streaming delivery"],
+          ["MP4 / H.264", "Video", "Lossy", "Presentation video, client deliverables", "Video editing source files"],
+          ["ZIP", "Any", "Lossless", "Archiving and transferring file collections", "Files that are already compressed (adds no benefit)"],
+          ["PDF", "Document", "Lossless", "Final reports for clients — layout preserved", "Data that needs to be processed or queried"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · AUDIT LEO'S DASHBOARD",
+        "text": "Leo Thorne's dashboard audit has identified these files in the pipeline. For each one, identify the problem with the current format choice, state the correct format, and calculate the potential file size saving.\n\n1. sw-logo-header.jpg — 280 KB, JPEG at 60% quality. Used as the company logo in the dashboard header at 120×40px.\n2. delivery-performance-chart.png — 4.2 MB, PNG. A bar chart with 6 data points, served on every page load.\n3. quarterly-briefing-audio.wav — 31 MB, WAV. A 3-minute internal briefing for client distribution.\n4. client-data-archive.zip — 45 MB, ZIP containing CSVs. Already compressed. Correct?\n5. client-report-final.jpg — 2.8 MB, JPEG of a scanned and signed approval document.\n\nFor each: state the problem, correct format, and estimated size after conversion. Then calculate: how much total bandwidth is saved per page load if all issues are corrected?"
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · SLOANE IS AUDITING YOUR WORK",
+        "text": "Before I sign off on these compression decisions, answer these:\n\n1. A colleague says converting Leo's 4.2 MB PNG chart to JPEG will reduce it to around 300 KB — a 93% saving. Is this always the right decision? What would be lost, and what would the consequences be for a client reading the chart's axis labels at 150% zoom?\n\n2. Explain generational loss in concrete terms using the JPEG chart example. If Leo exports the chart as JPEG, someone edits it in Photoshop and saves again as JPEG, and this happens four more times — what accumulates?\n\n3. A client wants to archive 10 years of audio briefings. Each MP3 is 7 MB. They ask whether converting to FLAC will save space. What do you tell them — and why is this different from the WAV → MP3 conversion?"
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "heading",
+        "text": "Check Your Understanding",
+        "level": 2
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv12-fc-q1",
+          "questionType": "mcq",
+          "text": "Leo Thorne exports the SW Logistical Analytics company logo as a JPEG at 60% quality to reduce dashboard load time. What is the primary problem with this decision?",
+          "options": [
+            "JPEG files cannot be displayed in web browsers",
+            "JPEG lossy compression introduces artefacts on sharp edges and text, making the logo look blurry and unprofessional",
+            "The file size saving is not significant enough to justify using JPEG",
+            "JPEG files cannot be used in client-facing dashboards"
+          ],
+          "correctIndex": 1,
+          "explanation": "JPEG uses lossy compression that introduces visible artefacts — particularly on sharp edges and text. Logos have sharp edges, flat colours, and fine text that JPEG compression degrades visibly. PNG (lossless) or SVG (vector) are always the correct choice for logos."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv12-fc-q2",
+          "questionType": "mcq",
+          "text": "A 24 MB RAW photograph is compressed to 4 MB as a JPEG. What is the file size saving percentage?",
+          "options": [
+            "16.7%",
+            "83.3%",
+            "600%",
+            "20%"
+          ],
+          "correctIndex": 1,
+          "explanation": "Saving % = ((24 − 4) ÷ 24) × 100 = (20 ÷ 24) × 100 = 83.3%. The compressed file is 83.3% smaller than the original."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv12-fc-q3",
+          "questionType": "true_false",
+          "text": "Compressing a ZIP archive that already contains JPEG images will significantly reduce the total file size.",
+          "correctAnswer": false,
+          "explanation": "False. JPEG images are already compressed using lossy compression. Applying ZIP (lossless) compression to already-compressed files yields little to no additional size reduction because the data no longer contains the repeated patterns that lossless compression exploits. ZIP is most effective on uncompressed files like TXT, CSV, and DOCX."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv12-fc-q4",
+          "questionType": "mcq",
+          "text": "SW Logistical Analytics archives audio briefings from client meetings for future legal reference. Which format is most appropriate for these archives?",
+          "options": [
+            "MP3 at 128 kbps — smallest file size",
+            "AAC at 256 kbps — good balance of quality and size",
+            "FLAC — lossless compression preserves full audio quality for future playback and legal purposes",
+            "MP4 — widely compatible video format"
+          ],
+          "correctIndex": 2,
+          "explanation": "FLAC is lossless — the compressed file can be perfectly decompressed to recreate the original audio. For legal archives, data integrity is non-negotiable. MP3 and AAC are lossy and permanently discard audio data. MP4 is a video container format."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv12-fc-q5",
+          "questionType": "short_answer",
+          "text": "Explain what generational loss is and why Sloane's rule — 'never work in lossy formats, only export lossy for final delivery' — prevents it. Give a specific example from the SW Logistical Analytics context.",
+          "marks": 4,
+          "explanation": "Generational loss is the cumulative quality degradation that occurs when a lossy-compressed file is decompressed, modified, and re-compressed multiple times. Each save cycle applies lossy compression again, discarding more data than the last. Example: if a data visualisation chart is exported as JPEG, edited to update figures, saved as JPEG again, then adjusted for colour and saved again as JPEG — each round of saves degrades the chart's axis labels and line edges further. By the third or fourth save, text may be unreadable and data points ambiguous. Sloane's rule prevents this by maintaining the master chart in a lossless format (PNG or the original tool's native format) and only exporting a JPEG copy at the point of client delivery — never for working files."
+        }
+      }
+    ]
+  },
+  {
+    "id": "file-optimisation-platforms",
+    "title": "File Optimisation for Different Platforms",
+    "estimatedMinutes": 50,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #2002 · SW LOGISTICAL ANALYTICS",
+        "text": "Status: 🟡 HIGH | Sprint 1 | Assigned to: Analyst\n\nLeo Thorne designed a new client report this week. The same photograph appears in: (a) a printed A4 executive summary, (b) the web dashboard banner, and (c) an email newsletter thumbnail. He exported one file — a 24 MB TIFF — and sent it everywhere. The printed version looks sharp. The web version takes 8 seconds to load. The email client rejected it as over-size. Three destinations, three completely different technical requirements. You need to know this before you touch any file destined for client delivery."
+      },
+      {
+        "type": "heading",
+        "text": "One Source, Multiple Destinations",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "The single most important rule in file optimisation: always start with the highest-resolution source file and produce separate, purpose-built exports for each destination. You can never recover detail from a file that was exported too small. You can always produce a smaller version from a larger one."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "DPI (Dots Per Inch)",
+            "definition": "A measure of print resolution — how many ink dots are placed per inch. Higher DPI = sharper printed output. Professional print requires 300 DPI."
+          },
+          {
+            "term": "PPI (Pixels Per Inch)",
+            "definition": "A measure of digital image resolution — how many pixels appear per inch on screen. Standard screens use 72–96 PPI."
+          },
+          {
+            "term": "Resampling",
+            "definition": "Changing the number of pixels in an image. Downsampling (reducing pixels) shrinks file size. Upsampling (adding pixels) reduces quality — it invents data that was never there."
+          },
+          {
+            "term": "Cropping",
+            "definition": "Removing pixels from the edges of an image. Changes aspect ratio, removes irrelevant content, and reduces file size."
+          },
+          {
+            "term": "Colour Mode",
+            "definition": "The colour system an image uses. RGB is used for all digital screens. CMYK is used for professional ink printing. Sending a CMYK image to a website causes colour inaccuracy."
+          },
+          {
+            "term": "Aspect Ratio",
+            "definition": "The width-to-height proportion of an image or display area. Common ratios: 16:9 (widescreen), 1:1 (square/Instagram), 9:16 (portrait/mobile stories)."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Platform-Specific Requirements",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Platform / Destination", "DPI / PPI", "Colour Mode", "Preferred Format", "Typical Dimensions"],
+        "rows": [
+          ["Professional print (brochures, posters)", "300 DPI", "CMYK", "PDF, TIFF", "A4: 2480 × 3508 px at 300 DPI"],
+          ["Office / desktop print", "150–200 DPI", "RGB or CMYK", "PDF, JPEG", "A4: 1240 × 1754 px at 150 DPI"],
+          ["Website / web dashboard", "72–96 PPI", "RGB", "JPEG, PNG, WebP", "Full width banner: 1920 × 1080 px max"],
+          ["Email newsletter image", "72 PPI", "RGB", "JPEG, PNG", "Maximum 600 px wide — email clients often block large images"],
+          ["Instagram post", "72 PPI", "RGB", "JPEG, PNG", "1080 × 1080 px (square)"],
+          ["Instagram Story / Reel", "72 PPI", "RGB", "JPEG, MP4", "1080 × 1920 px (9:16 portrait)"],
+          ["LinkedIn / Facebook cover", "72 PPI", "RGB", "JPEG, PNG", "820 × 312 px (Facebook) / 1584 × 396 px (LinkedIn)"],
+          ["Mobile app icon", "72–163 PPI", "RGB", "PNG (transparent background)", "Multiple: 16×16 px to 512×512 px"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · SLOANE VANE, SW LOGISTICAL ANALYTICS",
+        "text": "Leo's mistake was a single export for multiple destinations. The professional workflow is: one master file, multiple exports named by destination. SWL-ClientLogo_print_300dpi.pdf, SWL-ClientLogo_web_72ppi.png, SWL-ClientLogo_email_600px.jpg. Name the export file by its destination — not by the date or your initials. The destination is what matters."
+      },
+      {
+        "type": "heading",
+        "text": "Two Techniques for Reducing File Size Before Exporting",
+        "level": 2
+      },
+      {
+        "type": "heading",
+        "text": "Cropping",
+        "level": 3
+      },
+      {
+        "type": "paragraph",
+        "text": "Cropping removes pixels from the edges of an image. A 4032 × 3024 pixel phone photo served as a 600px-wide email thumbnail is still 4032 pixels wide internally — the browser just scales it down on the fly, wasting bandwidth. Crop to the exact required dimensions before exporting. Every pixel you don't send is bandwidth you don't consume."
+      },
+      {
+        "type": "heading",
+        "text": "Resampling (Downsampling)",
+        "level": 3
+      },
+      {
+        "type": "paragraph",
+        "text": "Resampling adjusts the pixel count. Downsampling a 300 DPI print image to 72 PPI for web use reduces the pixel dimensions and file size dramatically while maintaining visual quality at screen size. Most image editors use algorithms (Bicubic, Lanczos) that preserve sharpness when reducing. Never upsample — enlarging a small image does not add detail; it blurs."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Pixel Dimension Formula",
+            "definition": "Pixels = Physical Size (inches) × DPI. Example: A4 at 300 DPI = 8.27 × 300 = 2481 px wide. Same A4 at 72 PPI = 8.27 × 72 = 595 px wide — a dramatically smaller file."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Professional Export Workflow",
+        "level": 2
+      },
+      {
+        "type": "list",
+        "style": "numbered",
+        "items": [
+          "Always start with the highest-resolution source: camera RAW, layered PSD, or SVG vector",
+          "List all destinations: print, web dashboard, email, social media",
+          "For each destination: identify the required dimensions, DPI/PPI, colour mode, and format",
+          "Crop to the required aspect ratio for each destination",
+          "Downsample to the required pixel dimensions — never upsample",
+          "Convert colour mode if required (RGB for screens, CMYK for professional print)",
+          "Export with appropriate compression settings for the format",
+          "Name each export file by destination: filename_web_1920px.jpg, filename_print_300dpi.pdf",
+          "Test: view the web export in a browser; check the print export in preview at 100%"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · THREE PLATFORM EXPORTS",
+        "text": "SW Logistical Analytics has a new client photograph: 4032 × 3024 px at 72 PPI, saved as JPEG at 90% quality — approximately 5.2 MB. The photograph needs to be used in three places:\n\n1. Printed A4 executive report (300 DPI, professional printer, CMYK)\n2. SW Logistical Analytics website news banner (1920 × 600 px, web, RGB)\n3. LinkedIn post (1200 × 628 px, social media, RGB)\n\nFor each export:\n- State the required pixel dimensions\n- State the colour mode and format\n- Describe the cropping or resampling steps\n- Calculate the pixel dimension formula for the print export (A4 width at 300 DPI)\n- Estimate the output file size relative to the 5.2 MB source\n\nAlso: write three export filenames following Sloane's naming convention (include destination in the name)."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · SLOANE IS AUDITING YOUR WORK",
+        "text": "Before I approve these exports, answer these:\n\n1. The original photograph is 4032 × 3024 px and Leo wants to use it at 600 px wide in an email newsletter. He proposes just setting the HTML width attribute to 600px in the email code. Why is this incorrect — even though it will display at 600px? What should he do instead?\n\n2. A colleague exports the print version using RGB colour mode instead of CMYK. The digital proof looks fine. The printed version has noticeably different colours from the screen version — particularly the reds. Explain why this happened.\n\n3. The client provides a new logo at 200 × 80 px as a PNG. They want it used at 400 × 160 px on the website header. Your colleague upsamples it in Photoshop. What will the result look like and why? What should the client have provided instead?"
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "heading",
+        "text": "Check Your Understanding",
+        "level": 2
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv12-fop-q1",
+          "questionType": "mcq",
+          "text": "SW Logistical Analytics is preparing a brochure for professional printing. What DPI and colour mode should the images be set to?",
+          "options": [
+            "72 PPI, RGB",
+            "300 DPI, CMYK",
+            "96 PPI, RGB",
+            "150 DPI, CMYK"
+          ],
+          "correctIndex": 1,
+          "explanation": "Professional print requires 300 DPI for sharp output and CMYK colour mode — the colour system used by inkjet and offset printers. 72 PPI is for screen display. Sending RGB files to a professional printer results in colour inaccuracies."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv12-fop-q2",
+          "questionType": "mcq",
+          "text": "An image for SW Logistical Analytics' website dashboard needs to be A4 width at 72 PPI. Using the formula Pixels = Size (inches) × PPI, what is the pixel width? (A4 width = 8.27 inches)",
+          "options": [
+            "595 pixels",
+            "2481 pixels",
+            "1920 pixels",
+            "300 pixels"
+          ],
+          "correctIndex": 0,
+          "explanation": "8.27 inches × 72 PPI = 595.44 pixels — approximately 595 pixels. Compare this to A4 at 300 DPI = 8.27 × 300 = 2481 pixels. The web version is approximately one quarter the pixel width of the print version — and the file size difference is even more dramatic."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv12-fop-q3",
+          "questionType": "true_false",
+          "text": "Upsampling an image — increasing its pixel dimensions beyond the original — improves its quality for high-resolution printing.",
+          "correctAnswer": false,
+          "explanation": "False. Upsampling adds pixels by interpolation — the software estimates values for new pixels. This does not add real detail that was never captured. The result is a larger file that appears blurry or soft when printed. Always use the highest-resolution original available."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv12-fop-q4",
+          "questionType": "short_answer",
+          "text": "A client submits a photograph at 4032 × 3024 px (approximately 5.5 MB) for use as a 600 px-wide email newsletter banner. Describe two specific optimisation steps that should be applied and explain the benefit of each.",
+          "marks": 4,
+          "explanation": "1. Cropping: The original 4:3 aspect ratio photograph should be cropped to match the banner's proportions (approximately 3:1 for a wide banner). This removes irrelevant image area, improves composition, and directly reduces the pixel count and file size before any resampling. 2. Resampling (downsampling): Reduce pixel dimensions from 4032 × 3024 to 600 × 200 px (or similar banner dimensions). This dramatically reduces file size — from approximately 5.5 MB to well under 100 KB — meaning the email loads quickly and is not rejected by email clients that enforce file size limits. A JPEG export at 80–85% quality after downsampling is appropriate."
+        }
+      }
+    ]
+  },
+  {
+    "id": "version-control-document-management",
+    "title": "Version Control and Document Management",
+    "estimatedMinutes": 55,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #2003 · SW LOGISTICAL ANALYTICS",
+        "text": "Status: 🔴 URGENT | Sprint 2 | Assigned to: Analyst\n\nThe client has requested an audit trail for the Q2 delivery schema — they need to know exactly what changed between the version their system integrated in May and the version that caused a data mismatch in June. We have four files in the folder: schema_v2.csv, schema_v2_edited.csv, schema_FINAL.csv, and schema_USE_THIS.csv. I can't determine which file was approved, when each change was made, or who authorised it. This is a data governance failure. Version control is not a workflow preference — it is a professional requirement with legal implications."
+      },
+      {
+        "type": "heading",
+        "text": "The Problem Version Control Solves",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Without version control, every file-based project eventually becomes a chaos of confusingly named files, overwritten work, and lost audit trails. In a data analytics environment, the consequences are more severe than in a document-only workflow: a schema change that cannot be traced can corrupt a client's database, trigger SLA breaches, and expose the firm to liability."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Version Control",
+            "definition": "A system for tracking and managing changes to files over time, enabling specific versions to be retrieved, compared, or restored."
+          },
+          {
+            "term": "Revision History",
+            "definition": "A record of all changes made to a document or file, including author, timestamp, and a description of what changed."
+          },
+          {
+            "term": "Repository (Repo)",
+            "definition": "A storage location for files and their complete change history — used in formal version control systems like Git."
+          },
+          {
+            "term": "Commit",
+            "definition": "A saved snapshot of changes in a version control system, with a message describing what was changed and why."
+          },
+          {
+            "term": "Rollback",
+            "definition": "Reverting a file or project to a previous version — essential when a change introduces errors or breaks a dependent system."
+          },
+          {
+            "term": "Changelog",
+            "definition": "A document or file that records what changed between each version of a file — who changed it, when, and why."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Professional File Naming — The SW Logistical Analytics Standard",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Element", "Format", "Purpose", "Example"],
+        "rows": [
+          ["Project/Client code", "SWL-ClientName", "Links file to project", "SWL-CoastalFreight"],
+          ["Document type", "Descriptive noun", "Describes content without opening", "DataSchema, DeliveryReport, Invoice"],
+          ["Version (major.minor)", "v1.0, v1.1, v2.0", "Major = breaking change; minor = small correction", "v2.1"],
+          ["Date (YYYYMMDD)", "Year first — always", "Chronological sorting in any file browser", "20250701"],
+          ["Author initials (optional)", "Initials", "Accountability on shared projects", "SV, LT"],
+          ["Status (optional)", "draft / review / approved", "Stage at point of saving", "approved"]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "A complete filename: SWL-CoastalFreight_DataSchema_v2.1_20250701_SV_approved.csv. Anyone on the team — or an auditor — can determine the project, content, revision, date, author, and approval status without opening the file."
+      },
+      {
+        "type": "heading",
+        "text": "Professional Folder Structure for Version Control",
+        "level": 2
+      },
+      {
+        "type": "list",
+        "style": "bullet",
+        "items": [
+          "01_Briefs — client requirements, contracts, scope of work",
+          "02_Working — versioned active drafts; only analysts with write access",
+          "03_Review — files at review stage sent to client or team lead",
+          "04_Approved — only client-approved versions; write-protected where possible",
+          "05_Assets — source data files (CSV, JSON), raw imagery, reference materials",
+          "06_Delivery — final files as delivered; what the client actually received and when"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Cloud Built-In Version History — Your Safety Net",
+        "level": 2
+      },
+      {
+        "type": "comparison",
+        "title": "Cloud Version History Tools",
+        "items": [
+          {
+            "label": "OneDrive / SharePoint",
+            "points": [
+              "Right-click any file → Version History to see and restore any previous version",
+              "SharePoint adds check-in/check-out: prevents two people editing simultaneously",
+              "Versions retained for 30+ days (enterprise plans: 180 days)",
+              "No manual action required — saves automatically on every change"
+            ]
+          },
+          {
+            "label": "Google Docs / Drive",
+            "points": [
+              "File → Version History → See Version History shows all changes with timestamps and authors",
+              "Named versions can be set at key milestones (e.g. 'Client-Approved-v2.0')",
+              "Shared Drives allow team-wide access without individual account dependency",
+              "History is retained indefinitely for Google Workspace accounts"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Git — The Industry-Standard System for Code and Data",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Git is the world's most widely used formal version control system. Originally designed for software code, it is now used for data pipelines, SQL queries, configuration files, and any text-based file where change tracking and team collaboration are critical. At Y12 level, you need to understand Git conceptually and know how it applies in a data analytics context."
+      },
+      {
+        "type": "table",
+        "headers": ["Git Concept", "Plain English Meaning", "Logistics Analytics Equivalent"],
+        "rows": [
+          ["Repository (Repo)", "A folder where Git tracks every change to every file", "The SWL-CoastalFreight project folder in OneDrive with full version history"],
+          ["Commit", "A saved checkpoint with a description of what changed and why", "Saving v2.1 with a changelog entry: 'Added TrackingID column per client request 2025-07-01'"],
+          ["Branch", "A parallel copy of the project for testing changes without affecting the main version", "A test copy of the schema to trial a new column structure before client approval"],
+          ["Merge", "Bringing a branch's changes back into the main version after testing", "Moving approved test schema changes into the live client file"],
+          ["Pull / Push", "Download (pull) or upload (push) changes from a shared server", "Syncing your OneDrive files — downloading team changes, uploading your edits"],
+          ["GitHub / GitLab", "Cloud hosting for Git repositories — used for team collaboration", "The equivalent of a shared OneDrive for Git-tracked files"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · SLOANE VANE, SW LOGISTICAL ANALYTICS",
+        "text": "Every IT job advertisement I've reviewed in the last five years lists Git as a required skill. Even if you're not writing code, you'll be expected to version-control SQL queries, data schemas, and configuration files. Understanding Git at a conceptual level — what a commit is, what a branch does, why you don't edit the main branch directly — separates candidates who've worked in professional environments from those who haven't."
+      },
+      {
+        "type": "task",
+        "title": "Build a Professional Version Control System",
+        "software": "Windows File Explorer or OneDrive, Word or Google Docs",
+        "intro": "You will set up a complete professional document management system for a mock client project and apply version control practices.",
+        "steps": [
+          "Create a project folder called SWL-MockClient_Project and inside it create the six numbered subfolders: 01_Briefs, 02_Working, 03_Review, 04_Approved, 05_Assets, 06_Delivery.",
+          "Create three documents in 02_Working using the correct naming convention: a DataSchema CSV, a DeliveryReport DOCX, and a ClientBrief DOCX. Version each as v1.0 with today's date in YYYYMMDD format.",
+          "Make a substantive change to the DataSchema document and save it as v1.1 — do not overwrite v1.0.",
+          "Write a changelog entry (4–5 sentences) describing what changed between v1.0 and v1.1 and why.",
+          "Move the v1.1 DataSchema to 03_Review to simulate sending for approval. Record the date in the changelog.",
+          "Simulate approval: copy it to 04_Approved with status changed to 'approved' in the filename.",
+          "Take annotated screenshots of your complete folder structure and at least two file history views (if using OneDrive or Google Drive).",
+          "Write a one-page reflection: why is this system more professional than saving everything to the desktop with names like 'schema_edited_FINAL.csv'?"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · GIT CONCEPTUAL AUDIT",
+        "text": "A client's data team uses Git to version-control their data pipeline scripts. They've provided their commit history:\n\nCommit 4f2a9d3 — 'updates' — 2025-06-28 — Alice\nCommit 7c81b2e — 'fixed bug' — 2025-06-27 — Bob\nCommit 3a55f91 — 'changed stuff' — 2025-06-25 — Alice\nCommit 9d04c78 — 'Added TrackingID column to delivery schema, updated import script to match — resolves Ticket #1847' — 2025-06-20 — Sloane\n\nIdentify three problems with Alice and Bob's commit messages. Then rewrite commit 4f2a9d3 as a professional commit message, assuming the change was adding a new 'DestinationPort' column to the delivery schema."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · SLOANE IS AUDITING YOUR WORK",
+        "text": "Before I accept this document management system, answer these:\n\n1. A colleague argues that OneDrive's automatic version history makes manual version numbering in filenames redundant. Give two specific reasons why manual version control through filenames is still necessary even when automatic version history is enabled.\n\n2. The folder structure uses numbered prefixes (01_, 02_). Why does this matter — what specific problem does it prevent that alphabetical naming doesn't?\n\n3. You have a data schema in 04_Approved. A client requests a significant structural change — three columns removed, two added. Walk through every step of your version control process, including what version number the new file gets and what happens in each folder."
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "heading",
+        "text": "Check Your Understanding",
+        "level": 2
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv12-vc-q1",
+          "questionType": "mcq",
+          "text": "A client requests a minor correction to an approved data schema file (SWL-CoastalFreight_DataSchema_v2.0_20250615_approved.csv). What is the correct version number for the corrected file?",
+          "options": [
+            "v2.0 — overwrite the existing approved file",
+            "v2.1 — minor increment for a small correction",
+            "v3.0 — new major version for any client request",
+            "v2.0-edit — append a suffix to indicate the edit"
+          ],
+          "correctIndex": 1,
+          "explanation": "Minor corrections increment the minor version number — from v2.0 to v2.1. The original v2.0 file must never be overwritten. A new major version (v3.0) would be appropriate for a significant structural change. Appended suffixes like '-edit' are not a recognised convention and create ambiguity."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv12-vc-q2",
+          "questionType": "mcq",
+          "text": "Which date format ensures files sort in correct chronological order when listed alphabetically in File Explorer?",
+          "options": [
+            "DDMMYYYY — e.g. 01072025",
+            "MMDDYYYY — e.g. 07012025",
+            "YYYYMMDD — e.g. 20250701",
+            "DD-MM-YY — e.g. 01-07-25"
+          ],
+          "correctIndex": 2,
+          "explanation": "YYYYMMDD (ISO 8601 standard) sorts files correctly alphabetically because the most significant part (year) comes first. DDMMYYYY causes January files from 2024 and 2025 to appear together before February files. YYYYMMDD is the only format that sorts correctly without any configuration."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv12-vc-q3",
+          "questionType": "short_answer",
+          "text": "In Git terminology, explain what a 'commit' is and why writing a descriptive commit message (rather than 'updates' or 'fixed stuff') is considered professional best practice in a data analytics team.",
+          "marks": 3,
+          "explanation": "A commit is a saved snapshot of all changes made to files in a Git repository at a specific point in time. It records what was changed, when, and who made the change. A descriptive commit message (e.g. 'Added TrackingID column to delivery schema — resolves Ticket #1847') allows team members and auditors to understand what changed without comparing files line by line. In a data analytics context, this is critical when clients request audit trails, when debugging a data mismatch, or when rolling back to a known good version. Vague messages like 'updates' provide no actionable information and are unprofessional in a team environment."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv12-vc-q4",
+          "questionType": "extended",
+          "text": "SW Logistical Analytics is onboarding a new client who currently stores all their data files on a shared network drive with no version control — files are overwritten directly and named without conventions. Propose a complete document management system for this client. Your answer should cover: recommended platform, folder structure, file naming convention, version control approach, and at least two specific risks the system addresses. (6 marks)",
+          "marks": 6,
+          "explanation": "A strong answer covers: Platform: recommend OneDrive for Business or Google Workspace Shared Drive — justifying with automatic version history, access control, and multi-device access. Folder structure: at minimum 01_Briefs through 06_Delivery with numbered prefixes — explain why numbered prefixes avoid alphabetical sorting issues. File naming: ProjectCode_DocumentType_vX.X_YYYYMMDD_Status.ext — explain each element. Version control: never overwrite; create new versions; use major.minor numbering; maintain a changelog. Two risks addressed: (1) Accidental overwrite — version history and new-version protocol means previous versions are always recoverable. (2) Audit trail gaps — descriptive filenames and changelogs mean any version change can be traced to a person, date, and reason. Additional risks may include: no clear current version identification (solved by folder structure with 04_Approved), difficulty working remotely (solved by cloud platform)."
+        }
+      }
+    ]
+  },
+  {
+    "id": "cloud-computing",
+    "title": "Cloud Computing",
+    "estimatedMinutes": 50,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #2004 · SW LOGISTICAL ANALYTICS",
+        "text": "Status: 🟡 HIGH | Sprint 2 | Assigned to: Analyst\n\nA prospective client — a Perth-based medical logistics firm — is asking whether their client records should move to cloud storage. Their data includes patient transport records. There are two competing voices in the room: their CFO wants to cut IT infrastructure costs immediately, and their compliance officer is asking about data sovereignty and the Australian Privacy Act. Your job is to give them a balanced, informed recommendation — not a sales pitch for whichever provider we have a referral relationship with."
+      },
+      {
+        "type": "heading",
+        "text": "What is Cloud Computing?",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Cloud computing is the delivery of computing resources — servers, storage, databases, networking, software, and analytics — over the internet from remote data centres. Instead of purchasing and maintaining physical hardware, organisations access these resources on demand and pay only for what they use."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Cloud Computing",
+            "definition": "The delivery of computing services (servers, storage, software, databases) over the internet, accessed on demand from remote data centres."
+          },
+          {
+            "term": "SaaS (Software as a Service)",
+            "definition": "Software delivered via the internet and accessed through a browser, with no local installation required. Examples: Google Workspace, Microsoft 365, Xero, Canva."
+          },
+          {
+            "term": "IaaS (Infrastructure as a Service)",
+            "definition": "Cloud-based computing infrastructure — virtual servers, storage, and networking — rented from a provider. Examples: AWS EC2, Azure Virtual Machines."
+          },
+          {
+            "term": "PaaS (Platform as a Service)",
+            "definition": "A cloud platform for developers to build and deploy applications without managing underlying infrastructure. Examples: Google App Engine, Azure App Service."
+          },
+          {
+            "term": "Scalability",
+            "definition": "The ability to increase or decrease computing resources instantly to match demand, without purchasing physical hardware."
+          },
+          {
+            "term": "Redundancy",
+            "definition": "Storing data across multiple physical locations so that if one server or data centre fails, data remains available from another."
+          },
+          {
+            "term": "Data Sovereignty",
+            "definition": "The principle that data is subject to the laws of the country where it is physically stored. Data stored on US servers is subject to US laws, regardless of the data owner's nationality."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Cloud Service Models",
+        "level": 2
+      },
+      {
+        "type": "comparison",
+        "title": "SaaS vs IaaS vs PaaS",
+        "items": [
+          {
+            "label": "SaaS — Software as a Service",
+            "points": [
+              "Ready-to-use applications accessed via browser or app",
+              "No infrastructure to manage — provider handles everything",
+              "Examples: Google Workspace, Microsoft 365, Xero, Salesforce, Canva",
+              "Best for: small–medium businesses, standard workflows, fast deployment"
+            ]
+          },
+          {
+            "label": "IaaS — Infrastructure as a Service",
+            "points": [
+              "Virtual servers and storage rented from provider",
+              "Organisation manages the operating system and software",
+              "Examples: AWS EC2, Azure VMs, Google Compute Engine",
+              "Best for: businesses needing custom configurations or large-scale computing"
+            ]
+          },
+          {
+            "label": "PaaS — Platform as a Service",
+            "points": [
+              "Development environment in the cloud — build apps without managing servers",
+              "Provider manages infrastructure; developer manages the application",
+              "Examples: Google App Engine, Heroku, Azure App Service",
+              "Best for: software development teams building web or mobile applications"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Advantages of Cloud Computing",
+        "level": 2
+      },
+      {
+        "type": "list",
+        "style": "bullet",
+        "items": [
+          "Accessibility — access files and applications from any device, anywhere, with an internet connection",
+          "Cost efficiency — no upfront hardware costs; pay-as-you-go eliminates capital expenditure",
+          "Automatic backups — providers replicate data across multiple locations, protecting against hardware failure",
+          "Scalability — increase or decrease storage and computing power instantly without purchasing hardware",
+          "Collaboration — multiple team members access and edit the same files simultaneously in real time",
+          "Automatic software updates — providers handle maintenance, reducing IT overhead",
+          "Disaster recovery — data in the cloud survives local fires, theft, floods, and hardware failures",
+          "Sparky Miller's note: cloud platforms reduce demand on local network infrastructure — less data is stored and processed on-premises"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Risks and Disadvantages",
+        "level": 2
+      },
+      {
+        "type": "list",
+        "style": "bullet",
+        "items": [
+          "Internet dependency — no internet access means no cloud access; critical for businesses in areas with unreliable connectivity",
+          "Data sovereignty — data stored overseas may be subject to foreign laws, including law enforcement access",
+          "Vendor lock-in — migrating large datasets from one provider to another is costly and technically complex",
+          "Ongoing subscription costs — over time, subscription fees may exceed the cost of owned hardware",
+          "Security and privacy — a data breach at the cloud provider could expose sensitive client data",
+          "Service outages — when a provider experiences downtime, all cloud-dependent services become unavailable"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · SLOANE VANE, SW LOGISTICAL ANALYTICS",
+        "text": "Data sovereignty is not a theoretical concern in Australia. The Privacy Act 1988, the Australian Privacy Principles, and sector-specific regulations (health, finance, government) can all impose requirements on where data is physically stored. A medical logistics firm storing patient transport data on a US cloud server — even a reputable one — may be in breach of the Privacy Act without an Australian-region data storage selection. Always check: does this provider offer an Australian data centre region? Can we select it explicitly in the configuration?"
+      },
+      {
+        "type": "heading",
+        "text": "Major Cloud Providers — Australian Context",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Provider", "Australian Data Centres", "Key Services", "Typical Use in Australia"],
+        "rows": [
+          ["AWS (Amazon Web Services)", "Sydney (ap-southeast-2)", "S3, EC2, RDS, Lambda, Redshift", "Largest cloud platform globally — common in enterprise and government"],
+          ["Microsoft Azure", "Sydney, Melbourne", "Azure VMs, Azure SQL, OneDrive, Microsoft 365", "Dominant in Australian business and government — integrates with Microsoft tools"],
+          ["Google Cloud Platform (GCP)", "Sydney, Melbourne", "Compute Engine, BigQuery, Cloud Storage", "Strong in data analytics and machine learning workloads"],
+          ["OneDrive for Business", "Microsoft data centres (AUS region selectable)", "File storage, version history, SharePoint integration", "Most widely used in Australian schools and SMEs"],
+          ["Google Drive / Workspace", "Google data centres (AUS region selectable)", "Drive, Docs, Sheets, Gmail", "Widely used in education and SMEs"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · RECOMMEND FOR THE MEDICAL LOGISTICS FIRM",
+        "text": "SW Logistical Analytics needs to recommend a cloud storage solution for a Perth-based medical logistics firm (25 staff). They handle patient transport records, schedule data, and billing. Requirements:\n- Data must be physically stored in Australia\n- Must support file version history (client has had data loss from overwrites)\n- Must be accessible on mobile devices in the field\n- Budget: under $25 AUD per user per month\n- The client currently uses Microsoft Outlook for email\n\nResearch OneDrive for Business (Plan 2), Google Workspace Business Standard, and AWS S3 with an Australian region. For each:\n1. Confirm whether Australian-region storage is available and how it's configured\n2. Find the price per user per month (current as of today)\n3. Identify version history features\n4. Note mobile app support\n\nCreate a comparison table, then write a 150-word recommendation with specific reference to data sovereignty and the client's requirement for version history."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · SLOANE IS AUDITING YOUR WORK",
+        "text": "Before I present this to the medical logistics client, answer these:\n\n1. The CFO says 'our data is backed up by Microsoft — we don't need local backups anymore.' What would you tell them? Does cloud storage eliminate the 3-2-1 backup requirement, and if not, why not?\n\n2. The compliance officer asks: 'If Microsoft or Amazon receives a legal subpoena from US authorities, can they access our patient data stored in their Australian data centres?' What is the answer, and what does this mean for the firm's risk profile?\n\n3. The firm's field teams are in areas of Western Australia with unreliable mobile data. How does this affect the cloud-only recommendation, and what mitigation would you propose?"
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "heading",
+        "text": "Check Your Understanding",
+        "level": 2
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv12-cc-q1",
+          "questionType": "mcq",
+          "text": "SW Logistical Analytics recommends Microsoft 365 Business Standard to a client. Which cloud service model does this represent?",
+          "options": [
+            "IaaS — the client is renting virtual server infrastructure",
+            "PaaS — the client is building custom applications on a cloud platform",
+            "SaaS — the client is accessing ready-made software applications via the internet",
+            "On-premises — Microsoft 365 is installed on local hardware"
+          ],
+          "correctIndex": 2,
+          "explanation": "Microsoft 365 is SaaS (Software as a Service) — ready-to-use applications (Word, Excel, Teams, Outlook) delivered over the internet with no local installation of the core service required. The client pays a subscription and accesses software through a browser or thin client."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv12-cc-q2",
+          "questionType": "mcq",
+          "text": "A client's patient transport data is stored in the AWS Sydney region. Under what legal framework is this data primarily governed?",
+          "options": [
+            "US law only — because AWS is an American company",
+            "Australian law — because the data is physically stored in Australia",
+            "International law — because cloud data has no national jurisdiction",
+            "No law — cloud data is exempt from national regulations"
+          ],
+          "correctIndex": 1,
+          "explanation": "Data sovereignty means data is primarily governed by the laws of the country where it is physically stored. Data in AWS Sydney is stored in Australia and is primarily subject to Australian law, including the Privacy Act 1988 and Australian Privacy Principles. However, the US CLOUD Act may still allow US authorities to request data from US-based companies operating Australian data centres — this nuance is important in compliance discussions."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv12-cc-q3",
+          "questionType": "true_false",
+          "text": "If a business stores all its data in OneDrive for Business with automatic backup enabled, the 3-2-1 backup rule is fully satisfied.",
+          "correctAnswer": false,
+          "explanation": "False. OneDrive provides cloud redundancy (data replicated across multiple data centres) and version history, but it is a single service from a single provider. The 3-2-1 rule requires 3 copies on 2 different media types with 1 off-site. If the OneDrive account is compromised, deleted, or the service experiences an outage, a business with no alternative copy has no fallback. At minimum, a secondary backup to a different platform or local storage is recommended."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv12-cc-q4",
+          "questionType": "short_answer",
+          "text": "An Australian medical logistics firm is evaluating AWS (US-based company) versus Microsoft Azure for storing patient transport records. Identify two specific data sovereignty concerns they should raise and explain why storing data in an Australian-region data centre partially but not completely addresses these concerns.",
+          "marks": 4,
+          "explanation": "Concern 1: Foreign law enforcement access — the US CLOUD Act (2018) enables US authorities to compel US-based companies to provide data stored anywhere in the world, including Australian data centres, without notification to Australian parties. Storing data in AWS Sydney reduces exposure but does not eliminate it entirely because AWS remains a US company. Concern 2: Australian Privacy Act compliance — the Privacy Act and Australian Privacy Principles require health data to be handled with strict protections. While storing in an Australian region helps meet the data residency expectation, the firm still needs to verify that the provider's data processing terms, employee access controls, and breach notification procedures comply with Australian health data regulations. An Australian-region selection addresses where data physically sits, but not who can legally compel access to it."
+        }
+      }
+    ]
+  },
+  {
+    "id": "system-maintenance-tools",
+    "title": "System Maintenance Tools",
+    "estimatedMinutes": 45,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #2005 · SW LOGISTICAL ANALYTICS",
+        "text": "Status: 🟡 HIGH | Sprint 3 | Assigned to: Analyst\n\nSparky Miller flagged our analytics workstation last week — it's running a scheduled Python data job at 35% of its normal speed and Disk Clean-Up shows 23 GB of recoverable space. Antivirus definitions haven't updated in six days. The last full scan was three weeks ago. This machine processes client data daily and it's running like it was bought in 2015. System maintenance is not an IT department problem for someone else to solve — every analyst at this firm owns the state of the machine they work on."
+      },
+      {
+        "type": "heading",
+        "text": "Why System Maintenance is a Data Integrity Issue",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "A poorly maintained system is a liability. Accumulated temporary files consume storage and slow processing. Fragmented disk data increases read times. Outdated antivirus definitions leave client data exposed. At SW Logistical Analytics, where we process sensitive logistics and financial data, a compromised or degraded system is a contractual and reputational risk — not just a performance inconvenience."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Disk Clean-Up",
+            "definition": "A Windows utility that identifies and safely removes unnecessary files: temporary files, cached Windows updates, Recycle Bin contents, thumbnail cache, and error log files."
+          },
+          {
+            "term": "Temporary Files",
+            "definition": "Files created by the OS and applications during normal operation, intended to be short-lived but frequently accumulating to consume significant storage over time."
+          },
+          {
+            "term": "Internet Cache",
+            "definition": "Local copies of web pages, images, and scripts stored by the browser to speed up repeat visits. Can consume multiple gigabytes of storage."
+          },
+          {
+            "term": "Disk Fragmentation",
+            "definition": "A condition where file data is stored in non-contiguous locations on a hard disk drive (HDD), requiring the read head to move between multiple positions to read a single file — slowing performance."
+          },
+          {
+            "term": "Defragmentation",
+            "definition": "Reorganising fragmented file data on an HDD so that file fragments are stored contiguously, improving read speed. Not applicable to SSDs."
+          },
+          {
+            "term": "Malware",
+            "definition": "Malicious software designed to damage, disrupt, or gain unauthorised access to a system. Includes viruses, ransomware, spyware, trojans, and worms."
+          },
+          {
+            "term": "Spyware",
+            "definition": "Malware that secretly monitors user activity and transmits data — including credentials, browsing history, and files — to unauthorised third parties."
+          },
+          {
+            "term": "Definition Updates",
+            "definition": "Updates to the threat database used by antivirus and anti-malware software. Without current definitions, new threats are undetectable."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Disk Clean-Up and Temporary File Management",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Windows accumulates junk automatically: update installation files kept post-install, browser cache, Recycle Bin contents, thumbnail indexes, application temp files, and system error logs. On a machine that hasn't been cleaned in six months, Disk Clean-Up run as Administrator can routinely recover 10–25 GB — storage that would otherwise slow down write operations and fill analytics working directories."
+      },
+      {
+        "type": "list",
+        "style": "bullet",
+        "items": [
+          "Windows Update files — often 5–15 GB alone; kept 'just in case' rollback is needed after installation",
+          "Browser cache — Chrome and Edge can accumulate 1–5 GB of cached web data",
+          "Recycle Bin — deleted files occupy storage until the bin is emptied",
+          "Thumbnail cache — Windows Explorer image previews; rebuilds automatically when needed",
+          "Temp folder (C:\\Users\\[User]\\AppData\\Local\\Temp) — accumulated application working files"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Disk Fragmentation — HDD vs SSD",
+        "level": 2
+      },
+      {
+        "type": "comparison",
+        "title": "HDD vs SSD — Fragmentation Relevance",
+        "items": [
+          {
+            "label": "HDD (Hard Disk Drive)",
+            "points": [
+              "Stores data on spinning magnetic platters",
+              "A physical read/write head moves to the location of data",
+              "Fragmented files require the head to move to multiple positions — slower",
+              "Defragmentation reorganises fragments onto contiguous sectors",
+              "Monthly defragmentation recommended (Windows does this automatically)"
+            ]
+          },
+          {
+            "label": "SSD (Solid State Drive)",
+            "points": [
+              "Stores data in flash memory chips — no moving parts",
+              "Access speed is uniform regardless of where data is stored",
+              "Fragmentation does not affect SSD performance",
+              "Running a defragmenter on an SSD causes unnecessary write cycles, wearing it out faster",
+              "Windows uses TRIM for SSDs instead — automatically manages flash cell usage"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · SLOANE VANE, SW LOGISTICAL ANALYTICS",
+        "text": "Sparky Miller checked the analytics workstation — it's running an SSD. The analyst who defragmented it last month wasted an hour and shortened the drive's lifespan. Windows 10 and 11 detect drive type automatically and apply the correct maintenance. If it's an SSD, let Windows manage it with TRIM. If you're not sure what storage type a machine has, check Device Manager before touching anything."
+      },
+      {
+        "type": "heading",
+        "text": "Anti-Malware, Antivirus, and Threat Defence",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Modern threat landscapes go far beyond viruses. At SW Logistical Analytics, the risk is not a crashed machine — it's undetected spyware exfiltrating client logistics data for months before anyone notices. Multi-layered protection is the minimum standard."
+      },
+      {
+        "type": "list",
+        "style": "bullet",
+        "items": [
+          "Antivirus — detects known threats using a signature database; requires current definition updates",
+          "Anti-malware — broader detection covering ransomware, spyware, adware, and zero-day exploits",
+          "Real-time protection — continuously monitors file and network activity, blocking threats as they occur",
+          "Ransomware — encrypts files and demands payment; can render an entire client data archive inaccessible",
+          "Spyware — runs silently, capturing credentials, screen content, or keystrokes; often undetected for weeks",
+          "Keyloggers — a category of spyware recording every keystroke, capturing passwords and client data inputs"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Spam Filters — Email as the Primary Attack Vector",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "The majority of cyberattacks on Australian businesses arrive via email — phishing links, malicious attachments, and business email compromise (BEC) scams. Spam filters are not just for blocking advertising; they are the first line of defence against the most common attack vector in corporate environments. Microsoft Defender for Office 365 and similar enterprise email security gateways scan every inbound and outbound message for malicious content."
+      },
+      {
+        "type": "heading",
+        "text": "System Maintenance Schedule",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Tool / Task", "Purpose", "Frequency", "Applies To"],
+        "rows": [
+          ["Disk Clean-Up (run as Admin)", "Remove temp files, update remnants, Recycle Bin, cache", "Monthly, or when storage is low", "HDD and SSD"],
+          ["Clear Temp folder", "Remove AppData\\Temp application working files", "Monthly", "HDD and SSD"],
+          ["Disk Defragmenter", "Reorganise fragmented data for faster access", "Monthly — Windows handles automatically", "HDD only — NEVER SSD"],
+          ["Antivirus / Anti-malware full scan", "Detect and remove hidden threats", "Weekly full scan; real-time always on", "All systems"],
+          ["Definition updates", "Keep threat signature database current", "Daily (automatic)", "All systems"],
+          ["Spam filter review", "Check junk folder; update filter rules", "Weekly", "Email systems"],
+          ["OS and security updates", "Apply patches for known vulnerabilities", "As released; enable automatic updates", "All systems"],
+          ["Browser cache clear", "Free storage; fix browser performance; remove cached sensitive data", "Monthly", "All systems"]
+        ]
+      },
+      {
+        "type": "task",
+        "title": "Run a System Maintenance Audit",
+        "software": "Windows (Disk Clean-Up, Windows Security, Settings, Device Manager)",
+        "intro": "Perform and document a real system maintenance check on a Windows computer — the analytics workstation in your scenario or your own school computer.",
+        "steps": [
+          "Open Disk Clean-Up: search 'Disk Clean-Up' in Windows, select C: drive. Record what categories are available and the total recoverable space.",
+          "Run as Administrator: click 'Clean up system files' and note how much additional space is available. Record the difference between standard and admin mode.",
+          "Open Windows Security → Virus and Threat Protection. Record: last scan date, last definition update, and whether real-time protection is active. Screenshot this screen.",
+          "Open Device Manager → Disk Drives. Identify whether the primary storage device is an HDD or SSD. Take a screenshot.",
+          "Open Settings → System → Storage. Record what is consuming the most space on the C: drive.",
+          "Open your browser → Settings → Privacy and Security → Clear Browsing Data. Note the estimated cache size before clearing.",
+          "Create a maintenance report table: Task | Tool Used | Finding | Recommended Action.",
+          "Write a one-page summary for a non-technical manager: what is the current health state of this system, what risks exist, and what maintenance should be scheduled?"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · MAINTENANCE PLAN FOR THE ANALYTICS WORKSTATION",
+        "text": "SW Logistical Analytics' analytics workstation hasn't been maintained in 6 months. Sparky Miller's assessment report states:\n- C: drive is 89% full (only 22 GB free of 200 GB)\n- Last antivirus scan: 3 weeks ago\n- Antivirus definitions: 6 days out of date\n- Last Disk Clean-Up: not recorded\n- Drive type: SSD (Samsung 870 EVO)\n- A new 'analytics_helper.exe' process appeared in Task Manager last Tuesday — not a known application\n\nYour tasks:\n1. Prioritise the maintenance issues by risk level (Critical / High / Medium) with justification.\n2. Write a maintenance action plan: for each issue, specify the tool, the exact steps, and the expected outcome.\n3. Address the unknown 'analytics_helper.exe' process — what does this potentially indicate and what do you do?\n4. Since this is an SSD: what maintenance tasks from the standard schedule do NOT apply, and why?"
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · SLOANE IS AUDITING YOUR WORK",
+        "text": "Before I approve your maintenance plan, answer these:\n\n1. You've identified that antivirus definitions are 6 days out of date. How many new malware variants could have been released in that time, and why does this create a specific risk for the client data we process on this machine?\n\n2. The C: drive is 89% full. Beyond performance issues, what specific risk does critically low disk space pose to an analytics workstation that runs scheduled Python data jobs daily?\n\n3. A colleague suggests the unknown 'analytics_helper.exe' is probably just a Windows update. You're not sure. Walk me through exactly how you would investigate this — what tools, what specifically you check, and at what point you escalate to Sparky Miller."
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "heading",
+        "text": "Check Your Understanding",
+        "level": 2
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv12-smt-q1",
+          "questionType": "mcq",
+          "text": "The SW Logistical Analytics analytics workstation runs an SSD. A colleague runs Disk Defragmenter to try to improve its performance. What is the outcome?",
+          "options": [
+            "Performance improves because file fragments are reorganised into contiguous sectors",
+            "No change in performance — SSDs are not affected by fragmentation; however, the unnecessary write cycles reduce the SSD's lifespan",
+            "The SSD is wiped — defragmenter deletes data when run on flash storage",
+            "Windows prevents defragmenter from running on SSDs entirely"
+          ],
+          "correctIndex": 1,
+          "explanation": "SSDs access data electronically with no moving parts — fragmentation has no impact on SSD read speed. Running a defragmenter on an SSD writes data unnecessarily, consuming write endurance cycles and shortening the drive's lifespan. Windows 10 and 11 automatically apply TRIM to SSDs instead of defragmentation."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv12-smt-q2",
+          "questionType": "mcq",
+          "text": "Antivirus definitions on the analytics workstation are 6 days out of date. What is the primary risk?",
+          "options": [
+            "The antivirus software will stop working and need to be reinstalled",
+            "New malware variants released in the last 6 days are not in the threat database and cannot be detected",
+            "The operating system will become unstable without current definitions",
+            "Definition updates are only cosmetic — they don't affect threat detection"
+          ],
+          "correctIndex": 1,
+          "explanation": "Antivirus software identifies threats by matching files against a database of known signatures (definitions). New malware is created and released constantly. Any threat released in the 6 days since the last update is not in the database — the antivirus has no knowledge of it and cannot detect or block it."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv12-smt-q3",
+          "questionType": "true_false",
+          "text": "Spam filters only block unwanted advertising emails and play no role in protecting against cyberattacks.",
+          "correctAnswer": false,
+          "explanation": "False. Email is the most common vector for cyberattacks on Australian businesses. Spam filters scan for phishing links, malicious attachments, spoofed sender addresses, and business email compromise (BEC) attacks. Blocking these at the email gateway prevents many attacks before they reach users."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv12-smt-q4",
+          "questionType": "short_answer",
+          "text": "An unknown executable 'analytics_helper.exe' has appeared in the Task Manager on SW Logistical Analytics' analytics workstation. Describe the investigation steps you would take to determine whether this is a legitimate application or a potential threat, and identify which type of malware this might indicate.",
+          "marks": 4,
+          "explanation": "Investigation steps: 1. Right-click 'analytics_helper.exe' in Task Manager → Open File Location to identify where on disk the executable is stored. Legitimate applications are typically in C:\\Program Files or C:\\Windows\\System32 — unknown locations (e.g. AppData\\Temp or Downloads) are suspicious. 2. Search the filename in a reputable threat database (e.g. VirusTotal.com — upload or hash-check the file). 3. Check Windows Event Viewer for the process start time and user account that launched it. 4. Review network activity: use Resource Monitor or a tool like Wireshark to check whether the process is making unexpected outbound connections. If any of these steps indicate suspicious behaviour (non-standard location, unknown network connections, no legitimate software matches the name), escalate to Sparky Miller immediately and isolate the machine from the network. This behaviour pattern — a silently running executable making network connections — is consistent with spyware or a Trojan."
+        }
+      }
+    ]
+  },
+  {
+    "id": "integrated-data-management-project",
+    "title": "Integrated Data Management Project",
+    "estimatedMinutes": 90,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #2006 · SW LOGISTICAL ANALYTICS",
+        "text": "Status: 🟢 SPRINT PROJECT | Sprint 4 | Assigned to: Analyst\n\nNew client onboarding: Vasco Logistics, a mid-size freight brokerage in Fremantle. They've handed us a USB drive containing: raw photos from their warehouse (uncompressed RAW, no naming convention), a client database dump in CSV (2019 vintage, no version), a promotional video (uncompressed MOV, 4.2 GB), and three versions of their service agreement document with names like 'contract_FINAL_REAL_v2.docx'. Their IT setup is a shared network drive with no cloud backup and an antivirus that last updated in February. This is your project. Own it."
+      },
+      {
+        "type": "heading",
+        "text": "Project Overview",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "This project integrates all skills from the Managing Data topic. You will take a disorganised client asset collection, apply professional data management practices across compression, file optimisation, version control, cloud strategy, and system maintenance, and deliver a complete professional recommendation package."
+      },
+      {
+        "type": "heading",
+        "text": "Task 1 — File Compression Audit and Decisions",
+        "level": 3
+      },
+      {
+        "type": "task",
+        "title": "Task 1: Compression Audit",
+        "intro": "Audit the Vasco Logistics file collection and make explicit compression decisions for each asset type.",
+        "steps": [
+          "List all file types in the Vasco USB collection (RAW photos, CSV, MOV video, DOCX documents). For each, state the current format and whether it is compressed (lossy, lossless, or none).",
+          "The promotional video is a 4.2 GB MOV. Identify the target format and compression type for: (a) delivery to Vasco for their website, (b) archiving the master copy. State the expected file size range for each and justify the compression choice.",
+          "The warehouse RAW photos average 24 MB each. Export format decisions needed for: (a) the SW Logistical Analytics printed client report (A4, 300 DPI), (b) the Vasco Logistics website gallery, (c) the Vasco LinkedIn business page. State format, compression type, and expected file size for each.",
+          "Calculate the file size saving percentage for: converting a 24 MB RAW photo to a JPEG for web at 4 MB; converting the 4.2 GB MOV to H.264 MP4 at an estimated 420 MB.",
+          "Write a compression policy statement (half page) for Vasco Logistics: when should they use lossy vs lossless, and what master file rule should they always follow?"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Task 2 — Multi-Platform File Optimisation",
+        "level": 3
+      },
+      {
+        "type": "task",
+        "title": "Task 2: Platform-Specific Exports",
+        "intro": "Select one Vasco Logistics warehouse photograph (use a royalty-free substitute from Unsplash.com if needed). Produce three platform-specific exports.",
+        "steps": [
+          "Record the original image: pixel dimensions, file size, format.",
+          "Export 1 — Print (A4 executive report): 300 DPI, CMYK, TIFF or JPEG at 95% quality. Use the formula Pixels = Size (inches) × DPI to calculate the required pixel width for A4. Record the output dimensions and file size.",
+          "Export 2 — Website hero banner: 1920 × 600 px, 72 PPI, RGB, JPEG at 80% quality. Crop first to the correct aspect ratio, then downsample. Record output file size.",
+          "Export 3 — LinkedIn post: 1200 × 628 px, 72 PPI, RGB, JPEG at 85% quality. Record output file size.",
+          "Build a comparison table: Destination | Pixel Dimensions | DPI/PPI | Colour Mode | Format | File Size | Saving % vs Original.",
+          "Name each export file using Sloane's naming convention — include the client code 'VL', destination, and correct date format.",
+          "Write one paragraph explaining why a single high-resolution export for all three destinations would cause problems — be specific about file size, load time, and colour mode."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Task 3 — Version Control System",
+        "level": 3
+      },
+      {
+        "type": "task",
+        "title": "Task 3: Version Control for Vasco Data Files",
+        "intro": "Vasco has three versions of their service agreement: 'contract_FINAL_REAL_v2.docx', 'contract_new.docx', and 'contract_USE_THIS_ONE.docx'. Apply professional version control.",
+        "steps": [
+          "Identify four naming convention violations in the existing file names.",
+          "Rename all three files using the SW Logistical Analytics convention. Assign version numbers (v1.0, v1.1, v2.0) in a logical order — you decide which represents the most recent approved version.",
+          "Design the folder structure (01–06) and specify which folder each renamed file belongs in.",
+          "Write a changelog document for the service agreement — invent plausible changes between each version (3–4 sentences per version change).",
+          "The CSV client database is from 2019 with no version number. Rename it with the appropriate convention and explain what version number system you would apply going forward.",
+          "Write a 200-word version control policy for Vasco Logistics covering: naming convention rules, version numbering approach, folder structure, and the rule about never overwriting approved files."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Task 4 — Cloud Strategy Recommendation",
+        "level": 3
+      },
+      {
+        "type": "task",
+        "title": "Task 4: Cloud Storage for Vasco Logistics",
+        "intro": "Vasco currently uses only a shared network drive. They have 12 staff, handle some sensitive client freight contracts, and have a modest IT budget.",
+        "steps": [
+          "Research two cloud storage options appropriate for a 12-person logistics SME: compare OneDrive for Business Plan 2 and Google Workspace Business Standard.",
+          "For each: find current Australian pricing per user per month, storage allocation, version history retention, Australian data centre availability, and mobile app support.",
+          "Evaluate data sovereignty: does Vasco's client freight contract data trigger any Australian privacy regulation concerns? Research the Australian Privacy Principles (APP 8 — Cross-border disclosure).",
+          "Create a comparison table: Provider | Price/User/Month | Storage | Version History | AUS Data Centre | Mobile App | Key Risk.",
+          "Write a 200-word recommendation specifying which provider you recommend and why, with explicit reference to data sovereignty, version control features, and cost."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Task 5 — System Maintenance Plan",
+        "level": 3
+      },
+      {
+        "type": "task",
+        "title": "Task 5: Maintenance Schedule for Vasco IT",
+        "intro": "Vasco's office computer runs Windows 11 on an SSD. Antivirus last updated February. No maintenance records exist.",
+        "steps": [
+          "Identify five critical maintenance tasks for this machine, ordered by priority (address the most severe risk first).",
+          "For each task: name the tool, describe the steps in plain language, state the frequency, and explain what risk it mitigates.",
+          "Specifically address: should Vasco run Disk Defragmenter on their SSD? Justify your answer technically.",
+          "Vasco processes client payment details for freight invoices. Write a paragraph explaining why current antivirus definitions are especially critical in this context — reference spyware and keyloggers specifically.",
+          "Format the complete maintenance plan as a professional schedule table that a non-technical office manager can follow."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Task 6 — Integration Analysis",
+        "level": 3
+      },
+      {
+        "type": "scenarioChallenge",
+        "title": "Integration Analysis — Vasco Logistics",
+        "scenario": "You have completed the Vasco Logistics data management review. Reflect on how these professional practices interconnect.",
+        "questions": [
+          {
+            "question": "Explain how a poor file compression decision (e.g. using lossy JPEG for the client CSV data export) could directly impact Sparky Miller's network integration of Vasco's data pipeline. What would happen to the data integrity? (3 marks)",
+            "marks": 3
+          },
+          {
+            "question": "Vasco sends Leo Thorne the 4.2 GB MOV promotional video to embed on their website. Leo embeds it directly without compression. Sparky Miller's analysis shows the Vasco website is now serving 4.2 GB to every visitor. Calculate the bandwidth cost if 500 visitors access the page in one day. If H.264 MP4 compression reduces the file to 420 MB, what is the new daily bandwidth consumption? (3 marks)",
+            "marks": 3
+          },
+          {
+            "question": "Vasco's 2019 CSV database is integrated into their new logistics platform. Six months later, a column structure change is required. Without version control, what specific risks arise? Describe three risks and their potential business consequence. (4 marks)",
+            "marks": 4
+          },
+          {
+            "question": "The compliance officer at Vasco asks whether moving their client freight contracts to Google Drive satisfies their obligations under the Australian Privacy Principles. Provide a balanced answer — what does cloud storage with an Australian data centre address, and what does it not address? (4 marks)",
+            "marks": 4
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Project Submission Checklist",
+        "level": 2
+      },
+      {
+        "type": "list",
+        "style": "bullet",
+        "items": [
+          "Task 1 — Compression audit table (all Vasco file types, format, compression type, target format)",
+          "Task 1 — File size saving calculations for RAW→JPEG and MOV→MP4 conversions",
+          "Task 1 — Compression policy statement for Vasco Logistics (half page)",
+          "Task 2 — Three platform exports with comparison table (dimensions, DPI, colour mode, format, file size, saving %)",
+          "Task 2 — All exports named using Sloane's convention (client code, destination, date, format)",
+          "Task 3 — Four naming convention violations identified with corrections",
+          "Task 3 — All three service agreement files renamed and placed in correct folder structure",
+          "Task 3 — Changelog document for service agreement versions",
+          "Task 3 — Version control policy (200 words)",
+          "Task 4 — Cloud provider comparison table",
+          "Task 4 — Cloud recommendation (200 words) referencing data sovereignty and APP 8",
+          "Task 5 — Maintenance schedule table (5 tasks, tool, frequency, risk addressed)",
+          "Task 5 — Written justification on defragmentation and SSD",
+          "Task 5 — Paragraph on antivirus relevance for payment data processing",
+          "Task 6 — Written responses to all four integration analysis questions"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · SLOANE VANE, SW LOGISTICAL ANALYTICS",
+        "text": "Everything in this project — compression, optimisation, version control, cloud strategy, system maintenance — is a decision with a professional consequence. The file format choice affects Sparky's pipeline. The version control failure creates a legal exposure. The cloud recommendation involves someone's regulatory obligations. Data management is not admin work. It is the foundation everything else is built on."
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "heading",
+        "text": "Check Your Understanding",
+        "level": 2
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv12-idmp-q1",
+          "questionType": "mcq",
+          "text": "Vasco Logistics wants to archive their client contract documents in a format that preserves layout identically and cannot be easily edited. Which format is correct?",
+          "options": [
+            "DOCX — widely editable",
+            "CSV — structured and lightweight",
+            "PDF — preserves layout and is not easily editable",
+            "PNG — image format visible on any device"
+          ],
+          "correctIndex": 2,
+          "explanation": "PDF (Portable Document Format) preserves document layout across all devices and platforms and is not easily editable. It is the standard format for final client documents, contracts, and reports that must be read consistently regardless of the recipient's software."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv12-idmp-q2",
+          "questionType": "mcq",
+          "text": "Vasco's 4.2 GB MOV promotional video needs to be embedded on their website. After H.264 MP4 compression it becomes 420 MB. If 500 visitors watch the video in one day, how much total bandwidth is consumed?",
+          "options": [
+            "420 MB total",
+            "4.2 GB total",
+            "210 GB total",
+            "2.1 TB total"
+          ],
+          "correctIndex": 2,
+          "explanation": "420 MB × 500 visitors = 210,000 MB = 210 GB per day. Compare this to the uncompressed version: 4.2 GB × 500 = 2,100 GB (2.1 TB) per day. Compression reduces daily bandwidth consumption by 90%, which directly reduces hosting costs and improves page load performance for visitors."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv12-idmp-q3",
+          "questionType": "true_false",
+          "text": "A company that stores client data using Google Drive's Australian data centre region is fully compliant with all Australian Privacy Principles and has no further privacy obligations.",
+          "correctAnswer": false,
+          "explanation": "False. Storing data in an Australian data centre region addresses the physical location requirement but does not satisfy all Australian Privacy Principles. Obligations remain around: how data is handled and who can access it (APP 11), cross-border disclosure rules even within a multinational provider's infrastructure (APP 8), and the provider's security practices, breach notification obligations, and employee access policies. Compliance requires review of the full provider agreement, not just data centre location selection."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sv12-idmp-q4",
+          "questionType": "short_answer",
+          "text": "Vasco Logistics' logistics database CSV has been live and integrated for 6 months with no version control. A column name change is now required. Identify three specific risks of making this change directly to the existing file without version control, and for each risk describe a real consequence for Vasco's operations.",
+          "marks": 6,
+          "explanation": "Risk 1: No rollback capability — if the column name change breaks the logistics platform integration, there is no clean previous version to restore. Consequence: the platform data pipeline fails and Vasco cannot process freight orders until the issue is manually diagnosed and corrected — potentially hours of operational downtime. Risk 2: No audit trail — without version numbering and a changelog, it is impossible to determine who made the change, when, or why. Consequence: if a data discrepancy is discovered in a client's shipment record, Vasco cannot demonstrate what the data looked like before the change, creating liability exposure. Risk 3: Downstream system breakage — any system querying the CSV by column name will fail silently or produce errors after the column is renamed. Consequence: Vasco's automated invoicing or dispatch system, which may read the CSV column by name, stops working correctly — incorrect invoices are generated or shipment records are lost."
+        }
+      }
+    ]
+  }
+]

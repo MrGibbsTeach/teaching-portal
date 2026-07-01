@@ -1,0 +1,1164 @@
+[
+  {
+    "id": "word-processing-features",
+    "title": "Word Processing Features",
+    "estimatedMinutes": 45,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #2201 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟡 IN PROGRESS | Sprint 4 | Assigned to: Junior Analyst\n\nThe client needs a polished project proposal document — 3 pages, professionally formatted, ready for the board by Friday. Leo's done the branding, Sloane's supplied the data tables, now it's on you to pull it together in Word. Before you touch the keyboard, you need to know every formatting tool at your disposal. A document that looks like it was typed in Notepad does not leave this office."
+      },
+      {
+        "type": "heading",
+        "text": "Word Processing — Your Document Delivery Engine",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Word processing software is not just a fancy typewriter — it is the primary tool for producing professional written deliverables in every business on the planet. At Bunbury Tech Launchpad, every client proposal, technical brief, and meeting summary goes through Word or Google Docs before it goes out the door. Understanding the full feature set is not optional; it is table stakes for working in this team."
+      },
+      {
+        "type": "paragraph",
+        "text": "Microsoft Word and Google Docs share the same core feature set, but Word has deeper formatting control and is the industry standard for formal documents. Google Docs wins on real-time collaboration — which is why Sloane uses it for shared data summaries. Know both, and know when to reach for which one."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Styles",
+            "definition": "Named sets of formatting (font, size, colour, spacing) applied to text in one click. Using Heading 1, Heading 2, and Normal styles consistently is what makes automatic Tables of Contents work."
+          },
+          {
+            "term": "Mail Merge",
+            "definition": "A feature that combines a template document with a data source (e.g. a spreadsheet) to produce personalised copies — used for bulk letters, invoices, and certificates."
+          },
+          {
+            "term": "Track Changes",
+            "definition": "A review mode that records every edit made to a document, showing who changed what and when. Clients and managers use this to approve or reject revisions before a document is finalised."
+          },
+          {
+            "term": "Section Break",
+            "definition": "A formatting marker that divides a document into independent sections, each of which can have its own page orientation, columns, headers, or footers."
+          },
+          {
+            "term": "Table of Contents (TOC)",
+            "definition": "An automatically generated list of headings and their page numbers, built from the Styles applied in the document. It updates with one click when the document changes."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Core Feature Categories",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Feature Category", "Key Tools", "When You Use It"],
+        "rows": [
+          ["Text Formatting", "Bold, Italic, Underline, Font size, Colour", "Emphasising key terms, applying brand typography"],
+          ["Paragraph Formatting", "Alignment, Line spacing, Indentation, Bullets", "Structuring readable body text and lists"],
+          ["Styles & Themes", "Heading 1–3, Normal, TOC, Custom styles", "Keeping document formatting consistent end-to-end"],
+          ["Page Layout", "Margins, Orientation, Columns, Section breaks", "Producing landscape tables or multi-column newsletters"],
+          ["References", "Table of Contents, Footnotes, Citations", "Formal reports, academic submissions, legal documents"],
+          ["Review Tools", "Track Changes, Comments, Compare Documents", "Client review cycles and internal proofreading"],
+          ["Mail Merge", "Data source linkage, Merge fields, Preview", "Personalised letters, certificates, bulk correspondence"],
+          ["Inserting Objects", "Tables, Images, Charts, Smart Art, Text boxes", "Embedding Sloane's data charts or Leo's brand graphics"]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Styles are the single most important feature a junior analyst ignores and a senior one depends on. If you manually bold every heading instead of applying the Heading 2 style, your Table of Contents will be empty and your document will collapse the moment the client asks for a redesign. Use styles from the first keystroke."
+      },
+      {
+        "type": "comparison",
+        "title": "Microsoft Word vs Google Docs",
+        "items": [
+          {
+            "label": "Microsoft Word",
+            "points": [
+              "Industry standard for formal business and legal documents",
+              "Superior mail merge, macro support (VBA), and print layout control",
+              "Works offline — no internet connection required",
+              "Better for complex multi-section documents with precise formatting",
+              "Files saved as .docx — universally accepted by clients"
+            ]
+          },
+          {
+            "label": "Google Docs",
+            "points": [
+              "Real-time multi-user collaboration with live cursors",
+              "Version history stored automatically in Google Drive",
+              "Accessible from any device with a browser",
+              "Commenting and suggestion mode ideal for team reviews",
+              "Integrates directly with Google Sheets for linked data"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "I have received beautifully written proposals that were rejected at the door because the formatting screamed 'student assignment'. Three things give you away every time: inconsistent heading sizes set manually instead of with Styles, page numbers missing or wrong, and a Table of Contents that lists 'Error! Bookmark not defined.' Apply Styles first. Build your structure. Then write your content. The document should hold itself together, not be held together by you hitting Ctrl+B a hundred times."
+      },
+      {
+        "type": "heading",
+        "text": "Headers, Footers, and Page Numbering",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Every formal document Bunbury Tech Launchpad sends to a client includes a header with the project name and our logo, and a footer with the page number, document version, and date. This is not decoration — it is professionalism. If the client prints a 20-page proposal and drops it, they can reassemble it. If your pages are not numbered, that document is a pile of paper."
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · FORMAT A PROPOSAL DOCUMENT",
+        "text": "Open Word (or Google Docs). Create a new document titled 'Bunbury Tech Launchpad — Project Proposal'. Apply Heading 1 to the title, then add three sections using Heading 2: 'Project Overview', 'Scope of Work', 'Timeline'. Write two sentences of placeholder text under each heading. Insert a Table of Contents at the top. Add a footer with your name and the page number. Save as rory-proposal-draft.docx."
+      },
+      {
+        "type": "task",
+        "title": "Applying Styles and Generating a Table of Contents",
+        "software": "Microsoft Word",
+        "intro": "Follow these steps to build a correctly styled document that generates an automatic Table of Contents.",
+        "steps": [
+          "Open Microsoft Word and create a new blank document.",
+          "Type your document title and, with the cursor on that line, click 'Heading 1' in the Styles panel on the Home tab.",
+          "Add three section headings below it. Select each and apply 'Heading 2' from the Styles panel.",
+          "Write 2–3 sentences of body text under each heading. Leave the style on 'Normal'.",
+          "Click at the very top of the document (before the title) and press Enter to create a blank line.",
+          "Move your cursor to that blank line. Go to the References tab and click 'Table of Contents', then choose 'Automatic Table 1'.",
+          "The TOC will appear. If any heading is missing, check that you applied the correct style.",
+          "Go to Insert > Header & Footer > Header and type the document title.",
+          "Go to Insert > Header & Footer > Footer, then use Insert > Page Number to add automatic page numbering.",
+          "Save the file as rory-proposal-practice.docx."
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "Before I sign off on your document deliverable, answer these three questions — and I mean think, not Google:\n\n1. If I asked you to change every Heading 2 in a 30-page document from blue to black, what is the fastest way to do it — and why does it only take 10 seconds if you used Styles correctly?\n\n2. A colleague sends you a revised version of your proposal with Track Changes turned on. You accept all changes and now the Table of Contents shows wrong page numbers. What do you do, and why did this happen?\n\n3. You need to send 200 personalised invitation letters — same content, different names and addresses. Which Word feature do you use, and what two files do you need to set it up?"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "Which Word feature automatically generates a list of headings and page numbers that updates when the document changes?",
+          "options": [
+            "Mail Merge",
+            "Track Changes",
+            "Table of Contents",
+            "Section Break"
+          ],
+          "correctIndex": 2,
+          "marks": 1,
+          "explanation": "A Table of Contents is built automatically from the Heading styles applied in the document and can be refreshed with a single click whenever content changes."
+        }
+      }
+    ]
+  },
+  {
+    "id": "word-processing-practical-task",
+    "title": "Word Processing Practical Task",
+    "estimatedMinutes": 45,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #2202 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🔴 DUE TODAY | Sprint 4 | Assigned to: Junior Analyst\n\nThis is not a theory lesson — this is a delivery sprint. The client presentation is at 9 AM tomorrow and we need a polished two-page project brief in Word format. Leo has sent the colour palette and logo. Sloane has provided a comparison table. You are producing the finished document. I will review it at 4 PM. If the formatting is inconsistent or the TOC is broken, it comes back to you tonight."
+      },
+      {
+        "type": "heading",
+        "text": "Putting It Together — The Full Document Sprint",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Practical word processing skill is not about knowing where the buttons are — it is about producing a clean, professional document under time pressure. In this sprint, you will build a complete client brief from scratch: structure, styles, table, image placeholder, header and footer, and a mail merge field. This is a realistic replica of what the Bunbury Tech Launchpad team produces every week."
+      },
+      {
+        "type": "paragraph",
+        "text": "Before you open Word, plan your structure. The worst mistake a junior makes is typing content and then trying to format it. Start with your Styles, build your skeleton, then fill it in. You will save thirty minutes and avoid the 'I've formatted myself into a corner' disaster at 3:45 PM."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Document Skeleton",
+            "definition": "A version of a document containing only headings and placeholder text, used to confirm structure and navigation before writing full content."
+          },
+          {
+            "term": "Widow / Orphan Control",
+            "definition": "A Word setting that prevents a single line of a paragraph from appearing alone at the top or bottom of a page, keeping paragraphs visually cohesive."
+          },
+          {
+            "term": "Merge Field",
+            "definition": "A placeholder in a mail merge template (e.g. «FirstName») that is replaced with data from a linked spreadsheet when the merge is run."
+          },
+          {
+            "term": "Accessibility Checker",
+            "definition": "A built-in Word tool that scans the document for issues that may make it hard to read for people using screen readers — checks alt text on images, colour contrast, and heading structure."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Document Quality Checklist",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Quality Check", "What to Look For", "Pass / Fail Indicator"],
+        "rows": [
+          ["Consistent Styles", "All body text in Normal, all section headings in Heading 2", "TOC populated correctly = PASS"],
+          ["Page Numbers", "Footer shows correct page number on every page", "Page 1 appears on page 1 = PASS"],
+          ["Table Formatting", "Table has header row, consistent column widths, no overflowing text", "Prints within page margins = PASS"],
+          ["Spelling & Grammar", "No red or blue underlines remain in the final document", "Spell check shows 0 errors = PASS"],
+          ["Image Alt Text", "Every inserted image has descriptive alt text added", "Accessibility Checker = 0 warnings"],
+          ["File Naming", "Saved as lastname-projectname-v1.docx, not Document3.docx", "File name follows naming convention = PASS"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "Every time you finish a document, run three checks before you send it. First: scroll through in Print Layout view — if anything looks wrong on screen it will look wrong on paper. Second: run the Spelling and Grammar checker, because your brain autocorrects what your eyes miss. Third: save it with a version number. 'Final.docx' is not a version number. 'Final_v2.docx' is still not a version number. Use 'clientbrief-2025-07-04-v3.docx' and you will never email the wrong version to a client again."
+      },
+      {
+        "type": "task",
+        "title": "Build the Bunbury Tech Launchpad Client Brief",
+        "software": "Microsoft Word",
+        "intro": "Complete this end-to-end document production task. Allow 30–40 minutes. Work through the steps in order — do not skip ahead.",
+        "steps": [
+          "Open Word. Set page margins to Narrow (Layout > Margins > Narrow) to give more working space.",
+          "Apply the 'Office' document theme (Design > Themes > Office) to set consistent fonts.",
+          "Type 'Bunbury Tech Launchpad — Client Project Brief' and apply the Heading 1 style.",
+          "Add a blank line, then type 'Prepared for: «ClientName»' — this will become your mail merge field later.",
+          "Add three sections using Heading 2: 'Project Overview', 'Deliverables', 'Project Timeline'.",
+          "Write 2–3 sentences of content under each section heading. Use Normal style for all body text.",
+          "Under 'Deliverables', insert a 3-column table with headers: 'Deliverable', 'Owner', 'Due Date'. Add 4 rows of sample data.",
+          "Go to References > Table of Contents and insert Automatic Table 1 at the top of the document (before the title).",
+          "Go to Insert > Header, type 'Bunbury Tech Launchpad | Confidential' in the header area.",
+          "Go to Insert > Footer, then Insert > Page Number > Bottom of Page > Plain Number 2.",
+          "Run Mailings > Start Mail Merge > Letters, then use Select Recipients > Type a New List. Add two test client records.",
+          "Highlight '«ClientName»' and click Insert Merge Field > ClientName. Preview the merge to confirm names appear.",
+          "Run the Accessibility Checker (Review > Check Accessibility) and resolve any issues flagged.",
+          "Save the file as lastname-clientbrief-v1.docx."
+        ]
+      },
+      {
+        "type": "codePreview",
+        "title": "Mail Merge — Understanding the Data Link",
+        "defaultCode": "=== MAIL MERGE DATA SOURCE (Excel / CSV) ===\n\nClientName     | Organisation          | ProjectCode\n---------------|----------------------|------------\nSarah Mitchell | Mitchell Accounting  | BTL-2025-04\nJames Okafor   | Okafor Constructions | BTL-2025-05\n\n=== WORD TEMPLATE (simplified view) ===\n\nDear «ClientName»,\n\nThank you for engaging Bunbury Tech Launchpad on project «ProjectCode».\nThis brief outlines the agreed scope of work for «Organisation».\n\n=== MERGE RESULT — COPY 1 ===\n\nDear Sarah Mitchell,\n\nThank you for engaging Bunbury Tech Launchpad on project BTL-2025-04.\nThis brief outlines the agreed scope of work for Mitchell Accounting.",
+        "challenge": "You have a CSV with 50 client records. Write the mail merge field syntax you would use in Word to insert the client's first name, last name, and project code into the greeting line of a letter."
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · MAIL MERGE SPRINT",
+        "text": "Create a new Excel spreadsheet with three columns: ClientName, Organisation, and ProjectCode. Add five rows of fictional client data. Save it as merge-data.xlsx. Open a new Word document, write a short 3-sentence letter, and set up a mail merge linked to your spreadsheet. Insert merge fields for all three columns. Preview all five letters and confirm the data appears correctly. Export (finish merge) to a new document and save as merged-letters.docx."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "I have your document open. Answer these before I mark it as reviewed:\n\n1. Your Table of Contents shows 'Error! Bookmark not defined.' for Section 3. You have not changed the headings. What are three possible causes, and how do you fix the one you would check first?\n\n2. A client has opened your .docx on a Mac using Pages and the formatting has completely changed. What file format issue caused this, and what is a safe export format you could have used to prevent it?\n\n3. The Accessibility Checker flagged your company logo as an issue. What specific information is missing, and why does it matter for some readers?"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "short_answer",
+          "text": "Explain what 'Track Changes' does in Word and describe one situation in a professional workplace where you would use it.",
+          "marks": 3,
+          "explanation": "Track Changes records every insertion, deletion, and formatting change made to a document, attributing each edit to the user who made it. Typical uses include: a manager reviewing a junior's report before sending it to a client, a client providing feedback on a contract draft, or a team collaborating on a policy document where all edits must be approved before finalising."
+        }
+      }
+    ]
+  },
+  {
+    "id": "spreadsheet-features",
+    "title": "Spreadsheet Features",
+    "estimatedMinutes": 45,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #2203 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟡 IN PROGRESS | Sprint 5 | Assigned to: Junior Analyst\n\nSloane's handed you a raw data file: 800 rows of project hours, costs, and team members across six months. The client wants a summary: total hours per team member, average cost per project, and a flag for any project that has gone over budget. You cannot do this by hand and you cannot use a calculator. You are going to learn Excel properly, right now, and then you are going to build the summary Sloane needs."
+      },
+      {
+        "type": "heading",
+        "text": "Spreadsheets — The Data Workhorse of Every Business",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Microsoft Excel and Google Sheets are the most widely used business software tools in existence. Sloane uses them for data analysis and dashboards. I use them for project budget tracking, sprint velocity, and resource allocation. Even Leo uses Sheets to track client colour palette approvals. If you can only master one piece of software in your early career, make it a spreadsheet application."
+      },
+      {
+        "type": "paragraph",
+        "text": "A spreadsheet is not just a grid of numbers — it is a calculation engine, a database, a charting tool, and an automation platform rolled into one. The difference between someone who types values into cells and someone who builds dynamic, formula-driven workbooks is the difference between spending four hours on a report and spending twenty minutes on it."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Cell Reference",
+            "definition": "The address of a cell in a spreadsheet, written as a column letter followed by a row number (e.g. B4). Formulas use cell references so they recalculate automatically when data changes."
+          },
+          {
+            "term": "Absolute Reference",
+            "definition": "A cell reference that does not change when a formula is copied to other cells. Written with dollar signs: $B$4 always refers to cell B4, regardless of where the formula moves."
+          },
+          {
+            "term": "Named Range",
+            "definition": "A descriptive label assigned to a cell or range of cells (e.g. 'Budget_Total') that can be used in formulas instead of cell addresses, making formulas easier to read and maintain."
+          },
+          {
+            "term": "Pivot Table",
+            "definition": "An interactive summary table that automatically groups, sorts, counts, sums, or averages data from a larger dataset. Sloane uses these to turn 800-row data dumps into one-page summaries in under two minutes."
+          },
+          {
+            "term": "Conditional Formatting",
+            "definition": "A feature that automatically changes the colour, font, or style of a cell based on its value or a formula — used to visually highlight over-budget items, deadlines, or outliers."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Essential Formula Categories",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Category", "Key Functions", "Business Use Case"],
+        "rows": [
+          ["Arithmetic", "SUM, PRODUCT, MOD", "Totalling project costs, calculating percentage splits"],
+          ["Statistical", "AVERAGE, MIN, MAX, MEDIAN, COUNT, COUNTA", "Summarising sprint data, finding outliers in delivery times"],
+          ["Logical", "IF, AND, OR, NOT, IFS", "Flagging over-budget projects, categorising client status"],
+          ["Lookup", "VLOOKUP, HLOOKUP, INDEX, MATCH, XLOOKUP", "Finding a team member's hourly rate from a reference table"],
+          ["Text", "CONCATENATE, LEFT, RIGHT, MID, TRIM, UPPER, LOWER", "Cleaning imported data, building full names from split columns"],
+          ["Date & Time", "TODAY, NOW, DATE, DATEDIF, NETWORKDAYS", "Calculating days until deadline, tracking sprint durations"],
+          ["Reference", "OFFSET, INDIRECT, ROW, COLUMN", "Building dynamic ranges for charts and pivot tables"]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "The most important formula to master first is IF. Every other logical function builds on it. Once you can write a nested IF that flags a project status, you are ready for IFS, AND, and OR combinations that will handle almost every business rule you encounter."
+      },
+      {
+        "type": "codePreview",
+        "title": "Core Spreadsheet Formulas — Excel / Google Sheets",
+        "defaultCode": "// === BASIC SUM AND AVERAGE ===\n=SUM(B2:B10)           // Adds all values in B2 through B10\n=AVERAGE(B2:B10)        // Calculates the mean of B2:B10\n=COUNT(B2:B10)          // Counts only numeric cells\n=COUNTA(A2:A10)         // Counts all non-empty cells (including text)\n\n// === CONDITIONAL LOGIC ===\n=IF(C2>5000,\"OVER BUDGET\",\"On Track\")\n// If the value in C2 exceeds 5000, show \"OVER BUDGET\", otherwise \"On Track\"\n\n=IF(AND(C2>5000, D2=\"Active\"),\"URGENT REVIEW\",\"OK\")\n// Flag only active projects that are also over budget\n\n=IFS(C2<1000,\"Low\", C2<5000,\"Medium\", C2>=5000,\"High\")\n// Assign a cost category based on the value in C2\n\n// === LOOKUP FORMULAS ===\n=VLOOKUP(A2, RateTable!A:B, 2, FALSE)\n// Look up the value in A2 in the first column of RateTable,\n// return the matching value from column 2. FALSE = exact match.\n\n=XLOOKUP(A2, RateTable!A:A, RateTable!B:B, \"Not Found\")\n// Modern replacement for VLOOKUP — no column number needed,\n// returns \"Not Found\" if no match exists.\n\n// === DATE CALCULATIONS ===\n=TODAY()                         // Returns today's date\n=DATEDIF(B2, TODAY(), \"D\")       // Days between date in B2 and today\n=NETWORKDAYS(B2, C2)             // Working days between two dates (excludes weekends)\n\n// === TEXT FUNCTIONS ===\n=CONCATENATE(A2,\" \",B2)          // Joins first name and last name with a space\n=TRIM(A2)                        // Removes extra spaces from imported data\n=UPPER(A2)                       // Converts text to uppercase",
+        "challenge": "Sloane's spreadsheet has a column (D) containing project costs and a column (E) containing the project budget. Write a formula for column F that shows 'OVER' if cost exceeds budget, 'AT RISK' if cost is within 10% of budget, and 'OK' otherwise. Hint: you will need a nested IF or IFS."
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "The single habit that separates a competent spreadsheet user from an expert is this: never hardcode a number inside a formula. If your formula says =SUM(B2:B10)*0.10, what happens when the GST rate changes? You have to find every formula and update it manually. Put 0.10 in a named cell called GST_Rate and write =SUM(B2:B10)*GST_Rate. Now when the rate changes, you change one cell and the entire workbook updates. Build your spreadsheets to be maintained, not rebuilt."
+      },
+      {
+        "type": "comparison",
+        "title": "Relative vs Absolute Cell References",
+        "items": [
+          {
+            "label": "Relative Reference (e.g. B4)",
+            "points": [
+              "Changes automatically when the formula is copied to another cell",
+              "If =B4*C4 is in D4, copying it to D5 gives =B5*C5",
+              "Use when you want the formula to apply row-by-row down a column",
+              "Default behaviour in both Excel and Google Sheets"
+            ]
+          },
+          {
+            "label": "Absolute Reference (e.g. $B$4)",
+            "points": [
+              "Stays fixed on the same cell no matter where the formula is copied",
+              "If =B4*$C$1 is in D4, copying to D5 gives =B5*$C$1",
+              "Use for values that should not move: tax rates, fixed multipliers, lookup headers",
+              "Press F4 after clicking a cell reference to toggle the dollar signs on/off"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "task",
+        "title": "Build a Project Budget Tracker",
+        "software": "Microsoft Excel or Google Sheets",
+        "intro": "Build a working budget tracker from scratch using the formulas covered in this lesson.",
+        "steps": [
+          "Open Excel or Google Sheets. Name the file project-budget-tracker.xlsx.",
+          "In row 1, add headers: Project Name, Team Member, Hours, Hourly Rate, Total Cost, Budget, Status.",
+          "Enter data for five fictional projects across rows 2–6. Include a mix of over-budget and under-budget projects.",
+          "In column E (Total Cost), write a formula: =C2*D2. Copy it down for all five rows.",
+          "In column G (Status), write an IF formula that shows 'OVER BUDGET' if Total Cost exceeds Budget, and 'On Track' otherwise.",
+          "Apply Conditional Formatting to the Status column: red fill for 'OVER BUDGET', green fill for 'On Track'.",
+          "In row 8, add labels 'Total Hours' and 'Total Cost'. Use SUM formulas in the data columns.",
+          "Add a row for 'Average Hourly Rate' using the AVERAGE function.",
+          "Insert a Column chart showing Project Name on the X axis and Total Cost vs Budget as two data series.",
+          "Name the range E2:E6 as 'ProjectCosts' and use that named range in your SUM formula for the total."
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · VLOOKUP TASK",
+        "text": "Create a second sheet called 'Rates' with two columns: Team Member (A) and Hourly Rate (B). Enter five team members including Leo, Sparky, and Sloane with different rates. Go back to Sheet 1 and, in the Hourly Rate column, replace your manually entered rates with a VLOOKUP formula that looks up each team member's name in the Rates sheet. Change Sloane's rate on the Rates sheet and confirm the Total Cost on Sheet 1 updates automatically."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "I have your budget tracker open. Three questions before I approve it:\n\n1. Your SUM formula in E8 returns 0 even though there are values in E2:E6. What are two possible reasons the cells might not be calculating, and how would you diagnose which one it is?\n\n2. You used VLOOKUP with TRUE as the fourth argument. Why is this potentially dangerous for a team member lookup, and what argument should you have used?\n\n3. A new team member joins and you need to add their rate to the Rates sheet. Your VLOOKUP range is hardcoded as A1:B5. What happens if they are added in row 6, and what is the correct way to define the lookup range to avoid this problem?"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "You write the formula =IF(D2>E2,\"OVER BUDGET\",\"On Track\") in cell F2 and copy it down to F3:F6. What type of cell reference are D2 and E2 in this formula?",
+          "options": [
+            "Absolute references — they will stay fixed on D2 and E2 in every row",
+            "Relative references — they will adjust to D3/E3, D4/E4, etc. as the formula is copied down",
+            "Named ranges — they refer to labelled areas of the spreadsheet",
+            "Mixed references — the column is fixed but the row changes"
+          ],
+          "correctIndex": 1,
+          "marks": 1,
+          "explanation": "D2 and E2 are relative references. When copied down one row, they become D3 and E3; two rows down, D4 and E4 — and so on. This is the desired behaviour here, as each row should compare its own cost and budget values."
+        }
+      }
+    ]
+  },
+  {
+    "id": "spreadsheet-practical-task",
+    "title": "Spreadsheet Practical Task",
+    "estimatedMinutes": 45,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #2204 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🔴 SPRINT DELIVERY | Sprint 5 | Assigned to: Junior Analyst\n\nSloane has handed off the raw hours log — 6 team members, 3 projects, 8 weeks. The client meeting is at 2 PM. They want: total hours per project, cost per project (using each member's rate), a chart showing project comparison, and a status flag. Sloane says this should take you an hour. I am giving you 40 minutes. Make it happen."
+      },
+      {
+        "type": "heading",
+        "text": "Spreadsheet Sprint — Analysis Under Pressure",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Knowing formula syntax is the theory. Building a working analysis workbook in a fixed time window is the skill. This practical task replicates a real Bunbury Tech Launchpad delivery: raw data comes in, you clean it, model it, and produce a summary that a client can read without any spreadsheet knowledge. Speed and accuracy both count — a fast answer that is wrong is worse than no answer."
+      },
+      {
+        "type": "paragraph",
+        "text": "The workflow for any spreadsheet analysis task is always the same: inspect the raw data first, clean it second, build formulas third, add presentation last. Analysts who skip to the formulas before checking the data produce beautiful summaries of corrupted numbers. Sloane's cardinal rule is: garbage in, garbage out."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Data Validation",
+            "definition": "A spreadsheet feature that restricts what can be entered into a cell — e.g. only dates, only numbers within a range, or only items from a dropdown list. Prevents incorrect data from entering the model."
+          },
+          {
+            "term": "SUMIF / SUMIFS",
+            "definition": "Functions that sum values in a range only where a condition (or multiple conditions) is met. SUMIF checks one condition; SUMIFS checks multiple conditions simultaneously."
+          },
+          {
+            "term": "Freeze Panes",
+            "definition": "A view setting that locks specified rows or columns in place so that headers remain visible as you scroll through a large dataset."
+          },
+          {
+            "term": "Sparkline",
+            "definition": "A tiny chart embedded inside a single cell, used to show a trend or pattern in a row of data without taking up a full chart area."
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "headers": ["Analysis Stage", "Action", "Tool / Formula"],
+        "rows": [
+          ["1. Inspect", "Check for blank rows, duplicate entries, inconsistent formatting", "Ctrl+End to find last row; Filter to spot blanks"],
+          ["2. Clean", "Remove extra spaces, fix date formats, standardise text case", "TRIM(), TEXT(), UPPER(), LOWER()"],
+          ["3. Summarise", "Calculate totals and averages per group", "SUMIF(), AVERAGEIF(), Pivot Table"],
+          ["4. Flag", "Mark exceptions (over budget, late, incomplete)", "IF(), Conditional Formatting"],
+          ["5. Visualise", "Create chart from summary data", "Insert > Chart (Column, Bar, or Line)"],
+          ["6. Present", "Freeze header row, hide raw data sheet, name the file correctly", "View > Freeze, Format > Hide Sheet"]
+        ]
+      },
+      {
+        "type": "codePreview",
+        "title": "SUMIF and SUMIFS — Conditional Totals",
+        "defaultCode": "// === SUMIF — One Condition ===\n// Syntax: =SUMIF(range, criteria, sum_range)\n\n=SUMIF(B2:B20, \"Leo\", D2:D20)\n// Adds all values in D2:D20 where the matching cell in B2:B20 equals \"Leo\"\n// Use: total hours logged by Leo across all projects\n\n// === SUMIFS — Multiple Conditions ===\n// Syntax: =SUMIFS(sum_range, criteria_range1, criteria1, criteria_range2, criteria2, ...)\n\n=SUMIFS(D2:D20, B2:B20, \"Leo\", C2:C20, \"Project Alpha\")\n// Adds hours in D2:D20 where team member is Leo AND project is Project Alpha\n// Use: Leo's total hours on Project Alpha specifically\n\n// === AVERAGEIF — Conditional Average ===\n=AVERAGEIF(C2:C20, \"Project Alpha\", D2:D20)\n// Average hours per entry where project is Project Alpha\n\n// === COUNTIF — Count Matching Cells ===\n=COUNTIF(B2:B20, \"Sparky\")\n// How many rows have Sparky as the team member?",
+        "challenge": "Your data has columns: A=Week, B=Team Member, C=Project, D=Hours, E=Hourly Rate. Write a formula to calculate Sloane's total cost across Project Beta only. Remember: cost = hours × rate, and you need the SUM of (hours × rate) for matching rows. Hint: SUMPRODUCT may help here."
+      },
+      {
+        "type": "task",
+        "title": "Build the Project Hours Analysis Workbook",
+        "software": "Microsoft Excel or Google Sheets",
+        "intro": "Complete this full analysis sprint. This is a timed task — aim to finish in 40 minutes.",
+        "steps": [
+          "Create a new workbook called hours-analysis.xlsx with two sheets: 'Raw Data' and 'Summary'.",
+          "On the Raw Data sheet, create columns: Week (1–8), Team Member, Project (Alpha/Beta/Gamma), Hours, Hourly Rate. Enter at least 24 rows of data (6 team members × 4 entries each).",
+          "Freeze the header row on the Raw Data sheet: View > Freeze Rows > Freeze 1 Row.",
+          "Add Data Validation to the Team Member column: restrict to a dropdown list of your 6 team members' names.",
+          "On the Summary sheet, create a table with rows for each of the three projects and columns: Project, Total Hours, Total Cost, Average Hours per Entry.",
+          "In the Total Hours column, use SUMIF to calculate hours per project from the Raw Data sheet.",
+          "In the Total Cost column, use SUMPRODUCT to calculate (hours × hourly rate) per project.",
+          "Add an IF formula in a Status column: 'REVIEW' if Total Cost exceeds 10,000, otherwise 'OK'.",
+          "Apply Conditional Formatting: red fill for 'REVIEW', green fill for 'OK'.",
+          "Insert a clustered column chart on the Summary sheet showing Total Hours and Total Cost per project.",
+          "Add sparklines in column F of the Raw Data sheet showing each team member's hours trend across weeks 1–8.",
+          "Hide the Raw Data sheet so the Summary sheet is the default view, then save the file."
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · PIVOT TABLE POWER",
+        "text": "On your Raw Data sheet, select the entire dataset and insert a Pivot Table on a new sheet called 'Pivot'. Set Team Member as the Row field, Project as the Column field, and Hours as the Values field (summarised by SUM). Add a second Values field for Hours summarised by AVERAGE. Format the pivot table using a built-in style. Add a Slicer for the Team Member field so you can filter the pivot table with one click."
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "A chart in a spreadsheet is a communication tool, not a decoration. Every chart you insert must have a title that tells the reader what they are looking at, axis labels that include units, and a legend if there are multiple data series. I have sat in client meetings where an analyst showed a chart with no axis labels and the client spent ten minutes asking what the numbers represented. Label everything. If the chart cannot stand alone without a verbal explanation, it is not finished."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "Your workbook is open. Walk me through these before I sign off:\n\n1. Your SUMIF formula for Project Alpha is returning 0 but there are clearly matching rows in the raw data. You spell-check the project name — it looks right. What else could cause a text-match condition to fail silently?\n\n2. You used a Pivot Table to summarise the data, but when you added three new rows to the raw data, the pivot table did not update. What two-step process do you follow to make sure a pivot table always reflects the latest data?\n\n3. The client prints your Summary sheet and the chart spills off the edge of the page. What two actions can you take in Excel to fix this before printing?"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "Which function would you use to calculate the total hours logged only by the team member named 'Sparky' from a column of team member names?",
+          "options": [
+            "=SUM(D2:D20) with a filter applied",
+            "=COUNTIF(B2:B20, \"Sparky\")",
+            "=SUMIF(B2:B20, \"Sparky\", D2:D20)",
+            "=VLOOKUP(\"Sparky\", B2:D20, 3, FALSE)"
+          ],
+          "correctIndex": 2,
+          "marks": 1,
+          "explanation": "SUMIF(range, criteria, sum_range) adds values in the sum_range only where the corresponding cell in range matches the criteria. =SUMIF(B2:B20, \"Sparky\", D2:D20) checks column B for 'Sparky' and sums the matching values in column D."
+        }
+      }
+    ]
+  },
+  {
+    "id": "email-and-webmail",
+    "title": "Email and Webmail",
+    "estimatedMinutes": 45,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #2205 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟡 IN PROGRESS | Sprint 3 | Assigned to: Junior Analyst\n\nI received a forwarded email from the client this morning. It was a reply-all to an internal chain where someone on our team had said, quote, 'the client's timeline is unrealistic lol'. That someone was a junior analyst on their second week. The client relationship is now damaged, the project is at risk, and that analyst is no longer with us. Email is a professional communication tool. This lesson is not optional."
+      },
+      {
+        "type": "heading",
+        "text": "Email — The Written Record of Your Professional Life",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Every email you send from a work account is a legally discoverable business record. It represents you, your team, and Bunbury Tech Launchpad. Unlike a phone call, it cannot be unsaid — it sits in servers, inboxes, and sent folders indefinitely. Writing well, organising effectively, and understanding the difference between To, CC, and BCC is not a soft skill — it is a core business competency."
+      },
+      {
+        "type": "paragraph",
+        "text": "Webmail services like Gmail and Outlook Online give you access to your email through a browser, with no installed software required. They also include calendaring, task lists, and collaborative document tools — making them full productivity platforms, not just message delivery systems. The Bunbury Tech Launchpad team uses Gmail for internal communication and Outlook for client-facing correspondence."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "To",
+            "definition": "The primary recipient(s) of the email — the people who need to read it and are expected to take action or respond."
+          },
+          {
+            "term": "CC (Carbon Copy)",
+            "definition": "Recipients who receive the email for information only. They are not expected to reply, but they can see who else received the message."
+          },
+          {
+            "term": "BCC (Blind Carbon Copy)",
+            "definition": "Recipients who receive the email but whose address is hidden from all other recipients. Used to include someone privately without revealing their involvement."
+          },
+          {
+            "term": "Email Thread",
+            "definition": "A chain of replies to an original email, grouped together in a conversation view. Threads keep the context of a conversation in one place."
+          },
+          {
+            "term": "Email Signature",
+            "definition": "A block of formatted text automatically appended to outgoing emails, typically containing name, job title, organisation, contact details, and sometimes a logo."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "To, CC, BCC — The Rules That Protect Everyone",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Field", "Who Goes Here", "Can See Other Recipients?", "Expected to Reply?"],
+        "rows": [
+          ["To", "Primary recipient — action required", "Yes — sees all To and CC addresses", "Yes"],
+          ["CC", "Stakeholders who need to be informed", "Yes — sees all To and CC addresses", "No (optional)"],
+          ["BCC", "Private copy to someone not visible to others", "No — only sees their own address", "No"],
+          ["Reply", "Sends response to the sender only", "—", "—"],
+          ["Reply All", "Sends response to sender AND all To/CC recipients", "—", "— (use with caution)"]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "The Reply All disaster is one of the most common professional email mistakes in existence. Before you click Reply All, ask: does every person on this thread need to read my response? If the answer is no, use Reply. The client who received our internal sarcasm received it because someone hit Reply All on a message that should have been a direct reply to a colleague."
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "My personal rule for every email before I send it: read it as if the client, your manager, and a lawyer are all in the room. Would you say every word out loud in that room? If not, rewrite it. Subject lines should be specific — 'Follow-up' tells no one anything; 'BTL Project Alpha — Invoice Approval Required by Friday' tells everyone exactly what they need to do. Keep the body to three paragraphs maximum: what you need, why you need it, and what happens next. Nobody reads a twelve-paragraph email in full."
+      },
+      {
+        "type": "comparison",
+        "title": "Webmail Platforms — Gmail vs Outlook Online",
+        "items": [
+          {
+            "label": "Gmail (Google Workspace)",
+            "points": [
+              "Conversation threading groups all replies in one view automatically",
+              "Labels (not folders) — an email can have multiple labels",
+              "Integrates with Google Docs, Sheets, Meet, and Calendar natively",
+              "Powerful search with advanced operators (from:, subject:, has:attachment)",
+              "Filters and rules for automatic sorting and labelling"
+            ]
+          },
+          {
+            "label": "Outlook Online (Microsoft 365)",
+            "points": [
+              "Folders-based organisation — traditional and familiar for corporate environments",
+              "Deep integration with Word, Excel, Teams, and SharePoint",
+              "Rules for automatic sorting, forwarding, and flagging",
+              "Focused Inbox separates important from less important emails automatically",
+              "Calendar and Tasks tightly integrated with Exchange server"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "task",
+        "title": "Organise Your Inbox with Filters and Folders",
+        "software": "Gmail or Outlook Online",
+        "intro": "A disorganised inbox is a missed deadline waiting to happen. Follow these steps to set up an inbox management system.",
+        "steps": [
+          "Open your Gmail or Outlook Online account.",
+          "In Gmail: click the Settings gear > See all settings > Filters and Blocked Addresses > Create new filter. In Outlook: go to Settings > View all Outlook settings > Mail > Rules.",
+          "Create a filter/rule: any email from your teacher's domain (or a fictional client domain) is automatically labelled 'Client' (Gmail) or moved to a 'Client Correspondence' folder (Outlook).",
+          "Create a second filter: any email with 'Invoice' in the subject line is starred (Gmail) or flagged (Outlook).",
+          "Create a folder or label structure: Client Correspondence, Internal, Invoices, Archive.",
+          "Drag or assign three existing emails to the appropriate folder or label.",
+          "Set up an email signature: go to Settings > Signature. Include your full name, year level, school, and a professional email sign-off.",
+          "Compose a new email to yourself with a professional subject line, a three-paragraph body, and a greeting and sign-off. CC your teacher.",
+          "Send the email and verify your signature appears correctly in the sent copy."
+        ]
+      },
+      {
+        "type": "codePreview",
+        "title": "Gmail Search Operators — Finding Emails Instantly",
+        "defaultCode": "// Gmail advanced search operators — type these in the search bar\n\nfrom:rory@bunburytechlaunchpad.com\n// Find all emails from Rory\n\nsubject:\"Project Alpha\"\n// Find emails with exact phrase in subject\n\nhas:attachment filename:pdf\n// Emails with PDF attachments\n\nafter:2025/01/01 before:2025/06/30\n// Emails received in the first half of 2025\n\nis:unread label:Client\n// Unread emails tagged with the Client label\n\nfrom:sloane OR from:leo\n// Emails from either Sloane or Leo\n\n-label:Archive is:unread\n// Unread emails NOT in the Archive label\n\n// Combine operators for powerful searches:\nfrom:client@company.com has:attachment after:2025/06/01 subject:invoice",
+        "challenge": "Write a Gmail search query that finds all unread emails from any sender at a domain ending in .com.au, received after 1 January 2025, that contain an attachment. Check the Gmail search operators documentation if you need to look up the domain search syntax."
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · PROFESSIONAL EMAIL SPRINT",
+        "text": "Scenario: Rory has asked you to follow up with a fictional client, Sarah Mitchell from Mitchell Accounting, about an overdue invoice (Invoice #BTL-2025-04, $4,500, due 15 days ago). Write a professional email to Sarah. Use a specific subject line. Open with a polite but firm greeting, state the invoice details and overdue status, request payment or a response by end of week, and close professionally. CC Rory (rory@bunburytechlaunchpad.com). Then write a brief internal email to Rory (in a separate draft) explaining what you sent and why you worded it the way you did."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "I have read your client email before you sent it. Three questions:\n\n1. You put both the client and Rory in the 'To' field. What is the professional convention for where Rory should appear, and what does that field choice communicate to the client about Rory's role in this correspondence?\n\n2. Your email subject line reads 'Follow Up'. Rewrite it so it is specific, actionable, and tells the recipient immediately what the email is about.\n\n3. You wrote 'As per my last email' in the second paragraph. Why is this phrase considered passive-aggressive in professional correspondence, and how would you rephrase it to achieve the same factual purpose without the implied accusation?"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "true_false",
+          "text": "Using the BCC field on an email means all recipients can see who else received the message.",
+          "correctAnswer": false,
+          "marks": 1,
+          "explanation": "BCC (Blind Carbon Copy) hides the recipient's address from all other recipients. Only the sender can see who is in the BCC field. Recipients in To and CC cannot see BCC recipients at all."
+        }
+      }
+    ]
+  },
+  {
+    "id": "document-design-and-layout",
+    "title": "Document Design and Layout",
+    "estimatedMinutes": 45,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #2206 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟢 NEW | Sprint 6 | Assigned to: Junior Analyst\n\nLeo's on leave this week. The client has requested a one-page product summary flyer and a three-slide deck overview by Thursday. Normally this is Leo's territory, but Leo has left you his Canva brand kit and a Figma component file. You are going to learn the fundamentals of document design well enough to produce something that does not embarrass us. Leo will review it when he's back, but you need to get it 90% there."
+      },
+      {
+        "type": "heading",
+        "text": "Design Principles That Every Analyst Must Know",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "You do not need to be Leo to produce professional-looking documents. You need to understand four design principles: contrast, repetition, alignment, and proximity — commonly abbreviated as CRAP. These principles were not invented for graphic designers; they describe how every human brain processes visual information. Violate them and your document looks amateur. Apply them and your document looks intentional."
+      },
+      {
+        "type": "paragraph",
+        "text": "Leo's first rule when he reviews any document: 'Did you use a grid?' White space is not wasted space — it is breathing room that directs the eye and reduces cognitive load. The instinct to fill every gap with text or colour is the number one mistake non-designers make. Less, placed deliberately, is always more powerful than more, scattered randomly."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Contrast",
+            "definition": "The visual difference between elements — such as dark text on a light background, or a large heading against small body text. Contrast creates hierarchy and draws the reader's eye to what matters most."
+          },
+          {
+            "term": "Alignment",
+            "definition": "The positioning of elements along a consistent invisible line. Left-aligned text, centred headings, and grid-snapped images all create visual order. Random alignment creates visual noise."
+          },
+          {
+            "term": "Proximity",
+            "definition": "Grouping related elements close together and separating unrelated elements. A label placed next to its data field is immediately understood; a label two centimetres away creates confusion."
+          },
+          {
+            "term": "Repetition",
+            "definition": "Using the same visual style (fonts, colours, icon set, spacing) consistently throughout a document. Repetition creates unity — the reader's brain recognises the pattern and navigates more efficiently."
+          },
+          {
+            "term": "Hierarchy",
+            "definition": "The visual ranking of information — the most important element should be the largest, boldest, or most prominent. Hierarchy tells the reader where to look first, second, and third."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Typography and Colour in Business Documents",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Design Element", "Best Practice", "Common Mistake"],
+        "rows": [
+          ["Font choice", "Maximum 2 typefaces per document — one for headings, one for body", "Using 4+ fonts — looks unprofessional and inconsistent"],
+          ["Font size", "Body: 10–12pt; Headings: 16–24pt; Captions: 8–9pt", "Body text at 9pt — unreadable in print"],
+          ["Line spacing", "1.15–1.5 for body text; generous for headings", "Single spacing on dense paragraphs — fatigues the reader"],
+          ["Colour", "Use the brand palette — maximum 3 colours in a document", "Rainbow effect: using 6+ colours with no visual logic"],
+          ["Contrast ratio", "Text must meet WCAG AA: 4.5:1 contrast against background", "Light grey text on white background — fails accessibility"],
+          ["Margins", "Minimum 1.5 cm on all sides for print documents", "0.5 cm margins — text is cut off by the printer's non-print zone"],
+          ["Image resolution", "Minimum 150 dpi for screen, 300 dpi for print", "Stretching a small web image — appears pixelated when printed"]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Colour is a brand asset, not a personal preference. Every organisation has a brand colour palette and Leo guards Bunbury Tech Launchpad's palette fiercely. When you create a document, you open the brand kit in Canva or paste the hex codes into your application. You do not 'pick something that looks close'. Hex code #1A3A5C is not the same as #1B3B5D — and the client notices."
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "The fastest way to make any document look more professional is to remove half of what is on the page. Seriously — take your draft, remove every element that is not carrying essential information, and see what is left. Every time I try this, the document becomes clearer and more persuasive. Leo calls it 'editing to the essence'. I call it 'stop decorating and start communicating'. Your audience has thirty seconds of attention — every element on the page is competing for it."
+      },
+      {
+        "type": "comparison",
+        "title": "Design Tools for Business Documents",
+        "items": [
+          {
+            "label": "Canva",
+            "points": [
+              "Browser-based, drag-and-drop — minimal design skill required",
+              "Thousands of professional templates for flyers, presentations, and social graphics",
+              "Brand Kit feature stores colours, fonts, and logos for consistent use",
+              "Exports to PDF, PNG, MP4, or PowerPoint format",
+              "Ideal for one-page flyers, social posts, and presentation slides"
+            ]
+          },
+          {
+            "label": "Figma",
+            "points": [
+              "Industry-standard UI/UX and graphic design tool",
+              "Component-based design — Leo's component library can be reused in any project",
+              "Real-time collaboration with commenting and version history",
+              "Steeper learning curve than Canva but far more design control",
+              "Used for wireframes, prototypes, and production-ready design files"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "task",
+        "title": "Create a One-Page Product Summary Flyer in Canva",
+        "software": "Canva (canva.com)",
+        "intro": "Build a professional one-page flyer using Canva's tools and Leo's design principles.",
+        "steps": [
+          "Go to canva.com and sign in or create a free account.",
+          "Click 'Create a design' and choose 'A4 Document' as the format.",
+          "Choose a clean, minimal template — avoid anything with more than 3 colours or 2 font styles.",
+          "Replace the template heading with your product or project name (e.g. 'Bunbury Tech Launchpad — App Development Services').",
+          "Replace body text with 3 short bullet points describing the service or product. Keep each bullet to one sentence.",
+          "Delete any decorative elements from the template that do not carry useful information.",
+          "Upload a simple logo or placeholder image and position it in the top-left corner.",
+          "Ensure all text is left-aligned or follows a consistent alignment — nothing should be randomly placed.",
+          "Check that the body text is at least 11pt and has sufficient contrast against the background.",
+          "Add a simple call-to-action at the bottom: 'Contact us: rory@bunburytechlaunchpad.com'.",
+          "Download the design as a PDF (Print) at 300 dpi.",
+          "Show the design to a classmate and ask: is it clear what this is and who it is for within 5 seconds?"
+        ]
+      },
+      {
+        "type": "codePreview",
+        "title": "Figma — Understanding the Component System",
+        "defaultCode": "// Figma uses a component-based design system.\n// Leo's component library contains reusable building blocks.\n\n// HOW COMPONENTS WORK IN FIGMA:\n// 1. A 'Main Component' (marked with a ◆ icon) is the master design\n// 2. 'Instances' are copies placed in designs — they inherit from the main\n// 3. Editing the main component updates ALL instances automatically\n\n// Leo's Bunbury Tech Launchpad Component Library:\n// ◆ BTL/Buttons/Primary     — blue CTA button, 44px height\n// ◆ BTL/Buttons/Secondary   — outlined button\n// ◆ BTL/Cards/Project       — project summary card with title + status\n// ◆ BTL/Typography/H1       — Heading 1: Inter Bold 32pt #1A3A5C\n// ◆ BTL/Typography/Body     — Body: Inter Regular 14pt #333333\n\n// COLOUR TOKENS (Leo's brand palette):\n// --btl-navy:    #1A3A5C   (primary brand colour)\n// --btl-orange:  #E87722   (accent / CTA)\n// --btl-white:   #FFFFFF   (background)\n// --btl-grey:    #F4F4F4   (secondary background)\n// --btl-text:    #333333   (body text)\n\n// To use a component: Ctrl+Alt+K opens the component panel.\n// Drag an instance from Leo's library into your frame.",
+        "challenge": "Leo's brand uses Inter font at 14pt for body text on a white (#FFFFFF) background, with text colour #AAAAAA (light grey). Look up the WCAG AA contrast ratio requirement for normal text. Does #AAAAAA on #FFFFFF meet the standard? What is the minimum contrast Leo should be using, and what text colour would you suggest instead?"
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · REDESIGN A BAD DOCUMENT",
+        "text": "Your teacher will provide (or you will create) a deliberately poorly designed one-page document: mismatched fonts, clashing colours, misaligned elements, overcrowded layout. Identify every design violation — name the principle it breaks (Contrast, Alignment, Proximity, Repetition) and explain what the fix is. Then redesign the document in Canva, applying all four CRAP principles. Submit both the 'before' description and the 'after' Canva export."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "Leo has reviewed your flyer remotely and sent me his notes. Before I relay them, answer these:\n\n1. You used three different shades of blue in the document — none of them from the brand palette. Name two specific problems this creates: one visual and one business/brand-related.\n\n2. You centred all of your body text. Leo says this is almost always wrong for body copy. Explain why left-aligned text is easier to read for multi-line body content, referencing how the human eye tracks across lines of text.\n\n3. Your flyer has six different font sizes in use. Describe a font hierarchy system that would replace all six sizes with a maximum of three, and explain what each size level communicates to the reader."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A document uses a dark navy heading, a medium grey subheading, and light grey body text on a white background. Which design principle is most clearly violated?",
+          "options": [
+            "Proximity — the elements are not grouped logically",
+            "Contrast — the text does not stand out sufficiently against the background",
+            "Repetition — inconsistent typography is used throughout",
+            "Alignment — the text is not aligned along a consistent axis"
+          ],
+          "correctIndex": 1,
+          "marks": 1,
+          "explanation": "Light grey text on a white background has insufficient contrast, making it difficult to read — particularly for users with low vision. This violates the principle of contrast and likely fails WCAG AA accessibility standards. Dark text on a light background (or vice versa) is required for readable, accessible documents."
+        }
+      }
+    ]
+  },
+  {
+    "id": "collaborative-software-tools",
+    "title": "Collaborative Software Tools",
+    "estimatedMinutes": 45,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #2207 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟡 IN PROGRESS | Sprint 7 | Assigned to: Junior Analyst\n\nWe have a problem. Leo updated the design brief in his local copy of the document. Sparky edited the hardware spec in a different version. You wrote the timeline in a third copy. Now we have three conflicting documents and a client meeting in two hours. This is exactly what collaborative tools are designed to prevent. Starting today, everything — and I mean everything — goes through shared tools. This lesson is the reason why."
+      },
+      {
+        "type": "heading",
+        "text": "Collaboration Tools — The Infrastructure of a Productive Team",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "A team that communicates by emailing document attachments back and forth is not a team — it is a collection of individuals hoping their versions eventually match. The Bunbury Tech Launchpad team uses collaborative software tools as the backbone of every project: shared documents for content, project management boards for tasks, and communication platforms for real-time discussion. The tools do not replace communication — they structure it."
+      },
+      {
+        "type": "paragraph",
+        "text": "Collaborative tools introduce concepts that do not exist in single-user software: version history, simultaneous editing, commenting, access permissions, and change notifications. Understanding these concepts is as important as knowing how to use the tools, because misusing them — sharing the wrong link, editing without permission, or ignoring a comment — can cause the exact document chaos the tools are designed to prevent."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Real-Time Collaboration",
+            "definition": "The ability for multiple users to view and edit the same document simultaneously, with changes appearing instantly on all users' screens."
+          },
+          {
+            "term": "Version History",
+            "definition": "An automatic record of every saved state of a document, allowing users to view, compare, and restore previous versions. Google Docs saves version history continuously; Word saves it per save action."
+          },
+          {
+            "term": "Access Permissions",
+            "definition": "Controls that determine who can view, comment on, or edit a shared document. Setting the wrong permission level is a common security and collaboration error."
+          },
+          {
+            "term": "Sprint Board",
+            "definition": "A visual project management tool (e.g. in Trello or Asana) that organises tasks into columns representing stages — typically To Do, In Progress, and Done — based on Agile sprint methodology."
+          },
+          {
+            "term": "Asynchronous Communication",
+            "definition": "Communication that does not require all parties to be available at the same time — such as email, comments, or task comments. Essential for teams working across different time zones or schedules."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "The Bunbury Tech Launchpad Tool Stack",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Tool", "Category", "Used For", "Primary Users"],
+        "rows": [
+          ["Google Docs / Slides", "Document Collaboration", "Shared project documents, proposals, reports", "All team members"],
+          ["Google Sheets", "Data Collaboration", "Shared budget trackers, data analysis workbooks", "Sloane, Rory"],
+          ["Trello", "Project Management", "Sprint boards, task cards, deadline tracking", "Rory (PM), all team"],
+          ["Asana", "Project Management", "Advanced task dependencies, milestone tracking", "Rory (PM)"],
+          ["Figma", "Design Collaboration", "Shared UI design files, component libraries", "Leo, design reviewers"],
+          ["Slack / Teams", "Team Communication", "Real-time chat, file sharing, channel-based discussion", "All team members"],
+          ["GitHub", "Code Collaboration", "Version-controlled code, pull requests, code review", "Developers, Sparky"]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Trello and Asana both implement the Kanban board model — tasks are represented as cards that move through columns as they progress. The difference is complexity: Trello is simple and visual, which makes it perfect for sprint planning; Asana adds task dependencies, timeline views, and reporting, which I use for projects that span multiple teams. Sparky uses GitHub Projects for hardware firmware tasks because the development workflow matches."
+      },
+      {
+        "type": "comparison",
+        "title": "Trello vs Asana",
+        "items": [
+          {
+            "label": "Trello",
+            "points": [
+              "Card-and-column Kanban board — clean and visual",
+              "Minimal setup — boards are ready to use in minutes",
+              "Power-Ups (integrations) for GitHub, Slack, Google Drive",
+              "Best for small teams and simple sprint tracking",
+              "Free tier covers most small project needs"
+            ]
+          },
+          {
+            "label": "Asana",
+            "points": [
+              "Multiple views: List, Board, Timeline (Gantt), Calendar",
+              "Task dependencies — set which tasks must complete before others begin",
+              "Advanced reporting and project dashboards",
+              "Better for large projects with multiple teams and milestones",
+              "Automations can trigger actions when task status changes"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "A Trello board only works if every team member updates their cards. A shared document only works if everyone uses the same link. A version history only saves you if you name your versions when it matters. These tools do not run themselves — they require discipline. My rule for the team: if it is not on the board, it does not exist. If you completed something that is not on a card, create the card, move it to Done, and add a note. Your accountability is visible. That is a feature, not a bug."
+      },
+      {
+        "type": "task",
+        "title": "Set Up a Sprint Board and Shared Document in Trello + Google Docs",
+        "software": "Trello, Google Docs",
+        "intro": "Build a functional sprint board and link it to a shared team document.",
+        "steps": [
+          "Go to trello.com and create a free account, or sign in if you have one.",
+          "Create a new board called 'BTL Sprint 7 — App Skills Unit'.",
+          "Create four lists (columns): Backlog, To Do, In Progress, Done.",
+          "Create five task cards in the Backlog list: one for each lesson in this unit (Word Processing, Spreadsheets, Email, Document Design, Collaboration Tools).",
+          "Add a due date to each card: space them one day apart from today's date.",
+          "Assign yourself to each card using the Members feature.",
+          "Add a checklist to the 'Collaboration Tools' card with three items: Complete reading, Complete task, Answer PR review questions.",
+          "Move the 'Collaboration Tools' card to 'In Progress'.",
+          "Open Google Docs and create a new document called 'BTL Sprint 7 — Team Notes'.",
+          "Share the document: click Share, change access to 'Anyone with the link can comment', copy the link.",
+          "Add the Google Docs link as an Attachment to the Trello board description.",
+          "In Google Docs, use the Insert > Comment feature to add a comment on the first paragraph asking a fictional team member ('Leo') to review the design section."
+        ]
+      },
+      {
+        "type": "codePreview",
+        "title": "Google Docs — Understanding Sharing Permissions",
+        "defaultCode": "// Google Docs sharing permission levels:\n\n// RESTRICTED\n// - Only specific people you add can access\n// - Best for: confidential client documents, financial records\n// - Example: the client's contract draft\n\n// ANYONE WITH THE LINK — Viewer\n// - Anyone who has the link can read but not edit\n// - Best for: published reports, reference documents\n// - Example: a completed project brief sent to stakeholders\n\n// ANYONE WITH THE LINK — Commenter\n// - Anyone with the link can add comments but not edit text\n// - Best for: document reviews where you want feedback without edits\n// - Example: sharing a draft proposal for stakeholder feedback\n\n// ANYONE WITH THE LINK — Editor\n// - Anyone with the link can edit the document\n// - ⚠️  RISK: if this link is shared publicly or forwarded,\n//    anyone on the internet can edit your document\n// - Only use for: trusted internal team documents\n\n// Individual user permissions override link permissions:\n// You can give one person Editor access while keeping the\n// link set to Viewer — useful for adding a manager as an editor\n// without opening editing to the whole team.",
+        "challenge": "You have a Google Slides presentation for a client pitch. You want the client to be able to view it but not edit it. You want your manager (Rory) to be able to add comments. You want Leo to be able to edit the design slides. Describe exactly what sharing settings you would configure: what link permission level you would set, and what individual permissions you would assign to Rory and Leo."
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · SIMULATE A TEAM COLLABORATION",
+        "text": "With a partner (or using two browser windows / accounts), open a shared Google Doc. Person A writes a project overview paragraph. Person B uses the Comment feature to suggest a change to one sentence. Person A resolves the comment and makes the edit. Person B uses Suggest Edits mode (Edit > Suggesting) to propose a new sentence. Person A accepts the suggestion. Then: check the Version History (File > Version History > See version history) and identify the point at which each edit was made. Write a two-sentence reflection: what would have happened to these edits if you had both been editing a local Word file emailed back and forth?"
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "Your Trello board is up. Before I mark this sprint complete:\n\n1. Leo is going on leave tomorrow and needs to hand off his Figma design files to you. He shares the file with 'Anyone with the link — Editor' access and sends the link in a team Slack message. Three people outside the project are in that Slack channel. What is the security risk, and what is the correct way to share the file?\n\n2. Your Trello card for 'Email and Webmail' has been sitting in 'In Progress' for six days. You actually completed it four days ago but forgot to update the card. Aside from looking unorganised, what practical problem does this create for the rest of the team using the board to plan their work?\n\n3. You and Sloane are both editing the same Google Sheet at the same time. You are both in cell C5. Sloane saves a value of 4500. You type 3800 and press Enter. What happens to Sloane's value, and what feature in Google Sheets could have prevented this conflict?"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "Which Google Docs sharing setting allows a recipient to suggest changes to text without being able to directly edit the document?",
+          "options": [
+            "Viewer",
+            "Commenter",
+            "Editor with Track Changes enabled",
+            "Restricted access"
+          ],
+          "correctIndex": 1,
+          "marks": 1,
+          "explanation": "The 'Commenter' permission level allows recipients to add comments and, in Google Docs, to use the 'Suggesting' mode to propose edits — but they cannot directly change the document text. The document owner can then accept or reject each suggestion."
+        }
+      }
+    ]
+  },
+  {
+    "id": "application-skills-quiz",
+    "title": "Application Skills Quiz",
+    "estimatedMinutes": 30,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #2208 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🔴 SPRINT REVIEW | Sprint 8 | Assigned to: Junior Analyst\n\nEnd of unit. No notes, no Google, no 'I think it was something like that'. This is your sprint retrospective — you either know this material or you find out what to revise. The team is only as strong as its weakest link, and I need to know if you are ready to operate independently. Six questions. Show your reasoning. Let's go."
+      },
+      {
+        "type": "heading",
+        "text": "Application Skills — Unit Review Quiz",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "This quiz covers all six content lessons of the Y11 Application Skills unit: word processing, spreadsheets, email, document design, and collaborative tools. Each question targets a real workplace skill. Read each question carefully — several options are designed to look similar. Take your time."
+      },
+      {
+        "type": "paragraph",
+        "text": "Before you start: close your notes. If you genuinely cannot answer a question, mark it and move on — come back to it at the end. Guessing randomly wastes a mark you could earn by eliminating wrong answers systematically. Use what you know."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Revision Coverage",
+            "definition": "This quiz assesses: Word Processing Features, Word Processing Practical Task, Spreadsheet Features, Spreadsheet Practical Task, Email and Webmail, Document Design and Layout, and Collaborative Software Tools."
+          },
+          {
+            "term": "Question Types",
+            "definition": "Multiple choice (1 mark each) and short answer (2–3 marks each). Read the mark allocation before writing — a 3-mark question requires three distinct points."
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "headers": ["Lesson", "Topics Assessed", "Question Number(s)"],
+        "rows": [
+          ["Word Processing", "Styles, TOC, Mail Merge, Track Changes", "Q1, Q2"],
+          ["Spreadsheets", "Formulas, references, SUMIF, Conditional Formatting", "Q3, Q4"],
+          ["Email and Webmail", "To/CC/BCC, professional communication, filters", "Q5"],
+          ["Document Design", "CRAP principles, typography, colour, tools", "Q6"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "Every skill in this unit is one you will use in your first week at a real job. The graduate who can produce a clean Word document, build a working spreadsheet formula, write a professional email, and set up a Trello board on day one walks in with an advantage. The one who cannot does not. You have had the lessons. You have done the tasks. This quiz is just proof of the work."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "You apply 'Heading 2' style to five section headings in a 20-page Word document. The manager asks you to change all five headings from blue to black. What is the fastest way to make this change?",
+          "options": [
+            "Select each heading individually and change the font colour to black five times",
+            "Use Find & Replace to find 'blue text' and replace it with 'black text'",
+            "Modify the Heading 2 style definition to use black text — all five headings update automatically",
+            "Delete the headings and retype them with black font colour applied manually"
+          ],
+          "correctIndex": 2,
+          "marks": 1,
+          "explanation": "Because Styles were used, modifying the Heading 2 style (right-click the style > Modify) changes every instance of that style throughout the document simultaneously. This is the core benefit of using Styles: global, consistent, instant updates."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "short_answer",
+          "text": "Describe the purpose of Mail Merge in Word and outline the two files required to run a mail merge. Give one example of when a business would use mail merge.",
+          "marks": 3,
+          "explanation": "Mail Merge combines a template document (containing fixed text and merge fields like «FirstName») with a data source (such as an Excel spreadsheet or CSV file containing the variable information for each recipient). When the merge runs, Word produces one personalised copy of the document for each row in the data source. Business examples include: sending personalised invoices to clients, producing certificates of completion for students, or generating bulk letters for a promotional campaign."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "In a spreadsheet, you write the formula =SUM(B2:B10)*$C$1 in cell D2 and copy it down to D3. What does the value in $C$1 do when the formula is in D3?",
+          "options": [
+            "It changes to $C$2 because the formula moved down one row",
+            "It stays fixed as $C$1 because the dollar signs make it an absolute reference",
+            "It becomes C1 (relative) because copying removes the absolute reference",
+            "The formula produces an error because absolute references cannot be copied"
+          ],
+          "correctIndex": 1,
+          "marks": 1,
+          "explanation": "The dollar signs in $C$1 create an absolute reference. When the formula is copied to any other cell, $C$1 remains fixed — it will always refer to cell C1. Only the relative part of the formula (B2:B10, which becomes B3:B11 in D3) adjusts with the copy."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "short_answer",
+          "text": "Explain the difference between the CC and BCC fields in an email. Describe a specific workplace situation where using BCC would be appropriate, and explain why CC would not be suitable in that situation.",
+          "marks": 3,
+          "explanation": "CC (Carbon Copy) sends a visible copy to additional recipients — all To and CC recipients can see each other's email addresses. BCC (Blind Carbon Copy) sends a hidden copy — BCC recipients are invisible to all other recipients. A workplace example where BCC is appropriate: you are sending a follow-up email to an overdue client and want to keep your manager informed without revealing to the client that they are being monitored. Using CC would be unsuitable here because the client would see the manager's address, which could affect the relationship or escalate the situation unnecessarily."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "Which design principle is described by this rule: 'group related elements close together and leave space between unrelated elements'?",
+          "options": [
+            "Contrast",
+            "Repetition",
+            "Alignment",
+            "Proximity"
+          ],
+          "correctIndex": 3,
+          "marks": 1,
+          "explanation": "Proximity is the principle that related items should be grouped visually close together, while unrelated items should have clear space between them. This helps readers understand which pieces of information belong together without needing to read all the text first."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "short_answer",
+          "text": "A team of four people is working on the same report. Explain TWO specific advantages of using Google Docs instead of emailing a Word document as an attachment. In your answer, refer to features of Google Docs that make collaboration more effective.",
+          "marks": 2,
+          "explanation": "1. Real-time collaboration: all four team members can edit the document simultaneously, with each person's cursor visible and changes appearing instantly — eliminating the problem of conflicting versions created by separate local copies. 2. Version history: Google Docs automatically saves a complete version history, allowing the team to see who changed what and when, and to restore any previous version if an edit is accidentally deleted or incorrect — this is not possible with emailed attachments unless someone manually tracks versions."
+        }
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · RAPID-FIRE SKILLS CHECK",
+        "text": "Complete all five tasks as quickly and accurately as possible. Timer starts now:\n1. Open a new Word document. Apply Heading 1 to a title and Heading 2 to two sections. Insert a Table of Contents.\n2. Open Excel or Sheets. In A1:A5, enter five numbers. In B1, write a formula using IF to show 'High' if A1 > 50, 'Low' otherwise. Copy it down to B5.\n3. Write a professional one-paragraph email (in a text doc) to a fictional client asking them to approve an invoice. Use a specific subject line, greeting, and sign-off.\n4. In Canva, create a blank A4 document and place a heading, a short paragraph, and a simple shape, all left-aligned.\n5. In Trello, create a board with three lists and add one card to each list.\nSubmit screenshots of all five completed items."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "Quiz done. Sprint closed. Three final questions before the retrospective:\n\n1. Which lesson in this unit did you find most difficult, and specifically what concept or skill gave you the most trouble? How would you approach learning it differently if you were starting this unit again?\n\n2. Name one feature from ANY tool covered in this unit that you had not used before this unit and that you think you will genuinely use in a real job or project. Explain why it is useful.\n\n3. If a new junior analyst joined Bunbury Tech Launchpad tomorrow and you had to teach them the single most important habit from this entire unit — the one thing that would prevent the most mistakes — what would it be, and why?"
+      }
+    ]
+  }
+]

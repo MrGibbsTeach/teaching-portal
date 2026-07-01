@@ -1,0 +1,656 @@
+[
+  {
+    "id": "copyright-and-intellectual-property-u3",
+    "title": "Copyright and Intellectual Property",
+    "estimatedMinutes": 25,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #3001 · REGIONAL ETHICS TECH GROUP",
+        "text": "INTERN BRIEFING: A regional arts organisation has asked the Ethics Tech Group to review their digital content library. They've been using images from Google Image Search in their promotional materials, streaming a third-party soundtrack on their website, and sharing digitised copies of published books for a reading program — without licences for any of it. Before their annual grant report is filed, they need a full IP compliance audit. Your analysis needs to reference the Copyright Act 1968."
+      },
+      {
+        "type": "paragraph",
+        "text": "Intellectual property law exists to reward creators by giving them exclusive rights over how their work is used and distributed. In the digital age, those rights are constantly tested by the ease of copying, remixing, and sharing content. Understanding the Copyright Act 1968 is not optional for IT professionals — every website, app, and digital publication you produce is a potential copyright minefield."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Copyright", "definition": "The exclusive legal right of a creator to reproduce, publish, communicate, and adapt their original work — automatically applied in Australia under the Copyright Act 1968 from the moment the work is created, with no registration required." },
+          { "term": "Intellectual Property (IP)", "definition": "A broad category of legal rights over creations of the mind — including copyright, patents, trademarks, and trade secrets. In digital contexts, copyright is the most frequently relevant." },
+          { "term": "Fair Dealing", "definition": "A set of specific, narrowly defined exceptions in the Copyright Act 1968 that permit limited use of copyrighted material without permission — limited to research, criticism, review, news reporting, parody, and judicial proceedings." },
+          { "term": "Moral Rights", "definition": "Non-economic rights of creators under the Copyright Act 1968 that cannot be sold or transferred: the right of attribution (to be named as author), the right against false attribution, and the right of integrity (protection against derogatory treatment of their work)." },
+          { "term": "Creative Commons (CC)", "definition": "A licensing framework that allows copyright holders to grant specific permissions for reuse in advance — ranging from free use with attribution (CC BY) to more restrictive terms. CC licences are widely used for open educational resources and stock media." }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · DR. ELARA FINCH, REGIONAL ETHICS TECH GROUP",
+        "text": "The phrase 'it was free online so I assumed it was free to use' has ended careers and cost organisations tens of thousands of dollars in litigation. In Australia, copyright attaches automatically at creation — no watermark, no © symbol, no registration needed. If someone made it, they own it. Your job as an IT professional is to know that before you download, embed, or redistribute anything."
+      },
+      {
+        "type": "heading",
+        "text": "The Copyright Act 1968 — Core Framework",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "The Copyright Act 1968 (Cth) protects original literary, artistic, musical, and dramatic works, as well as published editions, sound recordings, films, broadcasts, and software code. Copyright protection lasts for the life of the author plus 70 years in Australia. There is no need to register — protection is automatic and immediate upon creation."
+      },
+      {
+        "type": "table",
+        "headers": ["Work Type", "Examples in IT Context", "Duration of Protection"],
+        "rows": [
+          ["Literary works", "Software code, web content, ebooks, reports, scripts", "Life of author + 70 years"],
+          ["Artistic works", "Logos, UI designs, photographs, illustrations, icons", "Life of author + 70 years"],
+          ["Musical works", "Soundtracks, notification sounds, background music", "Life of author + 70 years"],
+          ["Films and broadcasts", "Video content, explainer animations, streamed recordings", "70 years from publication"],
+          ["Sound recordings", "Podcasts, voiceovers, audio datasets", "70 years from publication"],
+          ["Software / databases", "Apps, operating systems, compiled datasets", "Life of author + 70 years"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Fair Dealing Exceptions",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Fair dealing in Australia is strictly purpose-based — unlike the broader US 'fair use' doctrine, Australian fair dealing only applies to a closed list of permitted purposes. It is not a blanket defence for any 'reasonable' use."
+      },
+      {
+        "type": "table",
+        "headers": ["Fair Dealing Purpose", "What Is Permitted", "What Is NOT Covered"],
+        "rows": [
+          ["Research or study", "Reproducing a reasonable portion of a work for personal academic research", "Distributing copies to a whole class; commercial research"],
+          ["Criticism or review", "Quoting from a work to critique or comment on it", "Reproducing large extracts; copying without commentary"],
+          ["News reporting", "Using brief clips or quotes to report current events", "Reproducing full articles or broadcasts for convenience"],
+          ["Parody or satire", "Creating a comedic or satirical work based on the original", "Simply copying with minor modifications and calling it a parody"],
+          ["Judicial proceedings", "Using material as evidence in court or legal processes", "Using as a general exemption outside formal legal proceedings"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Creative Commons Licences",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Licence", "What You Can Do", "Restrictions"],
+        "rows": [
+          ["CC BY", "Use, share, adapt for any purpose including commercial", "Must attribute the original creator"],
+          ["CC BY-SA", "Use, share, adapt — including commercially", "Attribution required; derivative works must carry same licence"],
+          ["CC BY-NC", "Use and adapt for non-commercial purposes", "Attribution required; no commercial use"],
+          ["CC BY-ND", "Share but not adapt the original work", "No modifications; attribution required"],
+          ["CC0 (Public Domain)", "Use for any purpose, no attribution required", "No restrictions — effectively public domain"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · IP COMPLIANCE AUDIT",
+        "text": "Review the following digital content used by the arts organisation:\n• 12 images sourced from Google Image Search — no licence checked\n• A Spotify playlist embedded in the website's homepage\n• PDF copies of 5 published novels distributed to 80 participants in a reading program\n• A promotional video using a 30-second clip from a YouTube documentary\n\nFor each item: (1) identify the likely copyright status; (2) determine whether fair dealing applies; (3) recommend what the organisation must do to achieve compliance. Cite specific sections of the Copyright Act 1968 where relevant."
+      },
+      {
+        "type": "heading",
+        "text": "Moral Rights — The Non-Commercial Dimension",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Even when an organisation has purchased or licenced content, moral rights remain with the original creator. Failing to attribute authorship, misrepresenting the source, or using a work in a context that distorts or demeans it can breach moral rights — even if copyright was legally cleared. This is especially relevant in digital publishing and social media content curation."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · DR. FINCH IS IN THE REVIEW",
+        "text": "Before the IP audit report is delivered:\n1. The arts organisation argues that they only used small portions of the copyrighted novels — surely that falls under fair dealing for research? Is this correct? What factors determine whether a use qualifies as fair dealing?\n2. A volunteer photographer claims the photos she took at the organisation's events belong to the organisation since they paid for her travel. Who owns the copyright in the photographs, and why?\n3. The organisation wants to post a parody of a well-known song on social media. What does Australian law require for a parody defence to succeed under the Copyright Act 1968?"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "ip-u3-q1",
+          "questionType": "mcq",
+          "text": "Under the Copyright Act 1968, when does copyright protection begin for an original work in Australia?",
+          "options": [
+            "When the creator registers the work with the Australian Copyright Council",
+            "When the creator adds a © symbol to the work",
+            "Automatically when the original work is created and expressed in material form",
+            "After the work has been published commercially"
+          ],
+          "correctIndex": 2,
+          "explanation": "In Australia, copyright protection attaches automatically at the moment an original work is expressed in material form (written, recorded, drawn, coded, etc.). No registration, no symbol, and no publication is required."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "ip-u3-q2",
+          "questionType": "mcq",
+          "text": "A student copies three chapters of a textbook to share with their study group of 15 people. Which of the following most accurately describes the legal position?",
+          "options": [
+            "This is lawful because fair dealing permits copying for research or study",
+            "This is likely an infringement — fair dealing for research permits personal use but not distribution to a group",
+            "This is lawful because education is always exempt from copyright",
+            "This is lawful because textbooks are government publications"
+          ],
+          "correctIndex": 1,
+          "explanation": "Fair dealing for research or study in Australia permits personal copying of a reasonable portion of a work. Distributing copies to a group of 15 people goes beyond what the Copyright Act 1968 permits under the research exception — this is likely infringement."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "ip-u3-q3",
+          "questionType": "short_answer",
+          "text": "Explain the difference between economic rights and moral rights under the Copyright Act 1968. Give one example of each being breached in a digital publishing context.",
+          "marks": 4,
+          "explanation": "Award 2 marks for correctly explaining that economic rights (reproduction, communication, adaptation rights) can be transferred or licenced, while moral rights (attribution, integrity, false attribution) remain permanently with the creator and cannot be transferred. Award 1 mark each for a valid example of each breach, e.g., reproducing an image without a licence (economic rights) and using a photographer's image in a political advertisement without their consent or attribution (moral rights — integrity)."
+        }
+      }
+    ]
+  },
+  {
+    "id": "referencing-and-acknowledging-sources",
+    "title": "Referencing and Acknowledging Sources",
+    "estimatedMinutes": 25,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #3002 · REGIONAL ETHICS TECH GROUP",
+        "text": "INTERN BRIEFING: The Ethics Tech Group produces policy reports that are published publicly online and cited by government bodies. Last month, an intern submitted a report that included unattributed text from three academic sources and used statistics from a government website without acknowledgement. The organisation's credibility is at stake. Your task is to audit the report and develop a referencing standard that all team members will follow going forward."
+      },
+      {
+        "type": "paragraph",
+        "text": "Referencing is not just an academic formality — it is a professional and legal obligation. In the IT and policy sectors, citing your sources accurately demonstrates intellectual integrity, protects you against plagiarism allegations, and allows readers to verify your claims. Digital publications have their own referencing conventions, and as an IT professional producing public-facing documents, you are expected to know them."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Plagiarism", "definition": "Presenting someone else's work, ideas, or words as your own, without attribution — whether intentional or accidental. A breach of academic integrity and, in published professional contexts, a potential copyright violation." },
+          { "term": "In-text Citation", "definition": "A brief reference inserted within the body of a document to indicate the source of a specific piece of information, quotation, or idea — linking to the full reference in the bibliography." },
+          { "term": "Reference List / Bibliography", "definition": "The complete list of all sources cited in a document, formatted according to the referencing style in use (APA, Harvard, Chicago, etc.)." },
+          { "term": "APA 7th Edition", "definition": "A widely used academic and professional referencing style developed by the American Psychological Association — commonly required in Australian education and public policy documents." }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · DR. ELARA FINCH, REGIONAL ETHICS TECH GROUP",
+        "text": "I've seen careers damaged by unreferenced reports. Not because the ideas were wrong — often they were right — but because the lack of attribution made the author look dishonest. In policy work, your credibility is everything. A well-referenced report says: 'I've done the research, I can back every claim up, and I'm not hiding where my ideas come from.' That's the standard we hold ourselves to here."
+      },
+      {
+        "type": "heading",
+        "text": "Why Referencing Matters in IT Contexts",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "IT professionals regularly produce public-facing documents: technical reports, policy submissions, software documentation, user guides, and white papers. Each of these may draw on external research, statistics, legislation, or other people's designs. Acknowledging these sources is required by professional ethics, copyright law, and often by the commissioning organisation's own standards."
+      },
+      {
+        "type": "heading",
+        "text": "Referencing Digital Sources — Worked Examples",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Source Type", "APA 7th Edition Format", "Harvard Format"],
+        "rows": [
+          ["Website / webpage", "Author, A. A. (Year, Month Day). Title of page. Site Name. URL", "Author, A.A. Year, Title of page, Site Name, viewed Day Month Year, <URL>"],
+          ["Government report (PDF)", "Department Name. (Year). Title of report (Report No. X). Publisher. URL", "Department Name Year, Title of report, Report No. X, Publisher, URL"],
+          ["YouTube video", "Author, A. A. [Channel Name]. (Year, Month Day). Title of video [Video]. YouTube. URL", "Author, A.A. Year, Title of video [video], YouTube, viewed Day Month Year, <URL>"],
+          ["Online news article", "Author, A. A. (Year, Month Day). Article title. Publication Name. URL", "Author, A.A. Year, 'Article title', Publication Name, Day Month, URL"],
+          ["Legislation", "Title of Act year (jurisdiction). URL", "Title of Act year (jurisdiction), URL"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "In-Text Citations for Digital Sources",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Situation", "APA In-Text", "Harvard In-Text"],
+        "rows": [
+          ["Paraphrasing an idea", "(Author, Year)", "(Author Year)"],
+          ["Direct quote", "(Author, Year, p. X) or (Author, Year, para. X for webpages)", "(Author Year, p. X)"],
+          ["No author (use title)", "(Shortened Title, Year)", "(Shortened Title Year)"],
+          ["Organisation as author", "(Organisation Name, Year)", "(Organisation Name Year)"],
+          ["No date", "(Author, n.d.)", "(Author n.d.)"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Plagiarism — Consequences in Professional IT Contexts",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Context", "Possible Consequence of Plagiarism"],
+        "rows": [
+          ["Academic submission", "Fail grade, academic misconduct investigation, suspension or exclusion"],
+          ["Published professional report", "Retraction of the document, reputational damage, employment termination"],
+          ["Commercial software documentation", "Copyright infringement claim, financial liability, loss of client contract"],
+          ["Policy submission to government", "Disqualification, investigation, professional body disciplinary action"],
+          ["Social media / blog post", "Platform takedown, public naming and shaming, defamation counterclaim"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · REFERENCING AUDIT",
+        "text": "The following excerpt from the intern's report has three referencing problems. Identify each problem and rewrite the paragraph with correct APA 7th edition in-text citations. Then write the full reference list entries for the three sources.\n\n'According to research, Australians spend an average of 5.5 hours per day on digital devices. The Australian Privacy Principles require organisations to notify affected individuals within 30 days of a data breach. As has been noted by many experts, the digital divide disproportionately affects rural and Indigenous communities in Australia.'"
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · DR. FINCH IS IN THE REVIEW",
+        "text": "Before the referencing standard is published to the team:\n1. A colleague says that paraphrasing someone's idea in your own words means you don't need to reference it. Is this correct? What are the ethical and legal implications?\n2. The team frequently cites government websites that are updated and sometimes taken offline. What referencing practice minimises risk when citing web-based sources?\n3. A team member has used an AI tool to help draft a section of the report. How should AI-generated content be acknowledged in a professional document — and is there a copyright issue with the AI's output?"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "ref-u3-q1",
+          "questionType": "mcq",
+          "text": "In APA 7th edition, how is a direct quote from a webpage (with no page numbers) cited in-text?",
+          "options": [
+            "(Author, Year)",
+            "(Author, Year, para. X) where X is the paragraph number",
+            "(Author, Year, n.p.)",
+            "No in-text citation needed — just include the URL in brackets"
+          ],
+          "correctIndex": 1,
+          "explanation": "When quoting directly from a webpage that has no page numbers, APA 7th edition recommends using a paragraph number (para. X), section heading, or timestamp as a locator: (Author, Year, para. 3). This allows readers to find the specific passage."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "ref-u3-q2",
+          "questionType": "short_answer",
+          "text": "An IT student copies three sentences from a government website into their project report without attribution. Identify (a) the academic integrity issue and (b) the possible copyright issue this creates.",
+          "marks": 4,
+          "explanation": "Award 2 marks for identifying that this constitutes plagiarism — presenting another's words as one's own without attribution, breaching academic integrity policies. Award 2 marks for identifying the copyright dimension — government website content is typically protected by Crown copyright under the Copyright Act 1968 (unless explicitly licensed otherwise), and reproducing it without acknowledgement or permission may constitute copyright infringement."
+        }
+      }
+    ]
+  },
+  {
+    "id": "digital-citizenship-and-social-networking",
+    "title": "Digital Citizenship and Social Networking",
+    "estimatedMinutes": 25,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #3003 · REGIONAL ETHICS TECH GROUP",
+        "text": "INTERN BRIEFING: A mid-sized technology company has approached the Ethics Tech Group for urgent advice. One of their software engineers posted a thread on X (Twitter) criticising a client's product, using their work email in their bio. The client has seen the posts and is threatening to terminate the service contract. The engineer says it was their personal account and they have a right to free speech. Your briefing must cover: digital citizenship, workplace social media obligations, and the legal and reputational risks."
+      },
+      {
+        "type": "paragraph",
+        "text": "Social networking has created an unprecedented merging of professional and personal identity online. Digital citizenship in a professional context goes beyond avoiding cyberbullying — it encompasses how publicly visible behaviour reflects on employers, how platforms can amplify both positivity and harm at speed, and what specific legal obligations apply to online conduct in Australian workplaces."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Digital Citizenship (Professional)", "definition": "The responsible, ethical, and legally compliant use of digital platforms in professional contexts — including representing an employer's brand, respecting client confidentiality, and complying with workplace social media policies." },
+          { "term": "Social Media Policy", "definition": "An organisational policy that defines acceptable and unacceptable use of social media by employees — particularly where the employee's online identity is connected (explicitly or implicitly) to their employer." },
+          { "term": "Vicarious Liability", "definition": "Legal doctrine where an employer may be held legally responsible for the online conduct of an employee if the conduct is sufficiently connected to their employment — even on a personal account." },
+          { "term": "Defamation (Online)", "definition": "Publishing a false statement of fact that damages a person's or organisation's reputation. Social media posts, reviews, and comments are all subject to defamation law in Australia." }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · DR. ELARA FINCH, REGIONAL ETHICS TECH GROUP",
+        "text": "I've had to tell CEOs that one of their engineers' tweets just cost them a $2 million contract. 'It was a personal account' doesn't matter when the bio says the company name. Every IT professional is a walking brand ambassador the moment they put their employer in their profile. Social media policy isn't bureaucratic overreach — it's basic risk management that protects both the company and the individual."
+      },
+      {
+        "type": "heading",
+        "text": "Forms of Cyberbullying on Social Platforms",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Form", "Description", "Platform Example"],
+        "rows": [
+          ["Harassment", "Persistent abusive or threatening messages directed at an individual", "Direct messages on Instagram; replies on X (Twitter)"],
+          ["Public shaming / pile-on", "Coordinated group attacks on a specific person's posts", "Quote-tweeting with mockery; Facebook group targeting"],
+          ["Doxxing", "Publishing private personal information (address, employer, family members)", "Reddit threads; anonymous forums like 4chan"],
+          ["Impersonation", "Creating fake accounts using another person's name or image", "Fake Instagram profiles; spoofed LinkedIn accounts"],
+          ["Review bombing", "Coordinated negative reviews designed to damage someone's reputation or business", "Google Maps; App Store; Trustpilot"],
+          ["Screenshot harassment", "Sharing private conversations or DMs publicly to humiliate", "Any platform — content shared to public stories or feeds"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Workplace Social Media Obligations",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "In Australia, the Fair Work Commission has repeatedly upheld dismissals of employees for social media posts that damaged an employer's reputation, disclosed confidential information, or harassed colleagues — even on personal accounts. The key legal test is whether the post has a sufficient nexus (connection) to the employment relationship."
+      },
+      {
+        "type": "list",
+        "style": "bullet",
+        "items": [
+          "Never identify your employer in association with personal opinions on controversial topics",
+          "Never post confidential client information, project details, or internal communications",
+          "Never use social media to harass or demean colleagues, clients, or competitors",
+          "Review your employer's social media policy before posting anything that could be perceived as professional commentary",
+          "Remember that content posted 'privately' can be screenshotted and shared publicly without your consent"
+        ]
+      },
+      {
+        "type": "spotTheThreat",
+        "title": "Spot the Cyberbullying / Policy Breach",
+        "instruction": "Review these two social media scenarios. Identify which one constitutes a cyberbullying/policy breach, and explain the specific risks it creates for the individual and their employer.",
+        "emails": [
+          {
+            "isPhishing": true,
+            "from": "Employee X — Personal Twitter/X account, bio: 'Senior Dev @ TechCo | Opinions my own'",
+            "subject": "Public tweet thread",
+            "body": "Thread: Why [Client Company]'s new product is a disaster 🧵\n\n1/ Their UX is genuinely embarrassing. Our team has been telling them for 6 months. They don't listen.\n2/ Here's the actual user testing data they ignored [attaches screenshot of internal report]\n3/ Don't buy it until they sort out the security issues. Trust me, I know.\n4/ If anyone from [Client Company] is reading — yes, this is public, and yes, I work on your account.",
+            "redFlags": [
+              { "element": "Client identification", "detail": "Naming the client publicly while working on their account breaches confidentiality obligations — a potential contract and employment termination risk" },
+              { "element": "Confidential data leak", "detail": "Attaching a screenshot of internal testing data likely breaches the NDA and confidentiality provisions of the service contract" },
+              { "element": "Employer nexus", "detail": "'Opinions my own' disclaimers do not legally sever the connection when the bio names the employer — vicarious liability risk for TechCo" },
+              { "element": "Defamation risk", "detail": "Making public claims about 'security issues' with a client's product could constitute defamation if the claims are false or exaggerated" }
+            ]
+          },
+          {
+            "isPhishing": false,
+            "from": "Employee Y — Personal LinkedIn account",
+            "subject": "Post",
+            "body": "Excited to be attending the Australian Tech Conference this week! Looking forward to sessions on AI ethics and data governance. Always learning — that's what keeps this industry interesting. #techconf #auspol #AI",
+            "redFlags": []
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · SOCIAL MEDIA POLICY DRAFT",
+        "text": "Using the scenario at TechCo as your case study, draft a 'Social Media and Digital Conduct Policy' for a technology company of 50 employees. Your policy must include: (1) scope — what accounts and platforms it covers; (2) specific prohibited conduct with examples; (3) obligations regarding client and company confidentiality online; (4) the consequences of breaching the policy, referencing Fair Work Act 2009 provisions; and (5) a process for reviewing borderline cases before posting. The policy must be clear enough that a new employee could follow it without legal training."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · DR. FINCH IS IN THE REVIEW",
+        "text": "Before the social media policy is finalised:\n1. An employee argues that a policy restricting personal social media posts is an invasion of privacy. Under Australian employment law, what is the legal balance between an employer's right to protect its reputation and an employee's right to personal expression?\n2. The policy prohibits 'negative commentary about clients.' Could this provision itself breach whistleblower protections if an employee is trying to report genuine misconduct at a client company?\n3. How should the policy address AI-generated content posted by employees — for example, using ChatGPT to draft professional posts? What specific risks does AI-generated content introduce that human-authored posts don't?"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "dc-sn-u3-q1",
+          "questionType": "mcq",
+          "text": "An employee is dismissed for a social media post made on their personal account, outside work hours, that criticised a client. The employee argues this is unfair because it was personal. Under Australian law, which factor most determines whether the dismissal is lawful?",
+          "options": [
+            "Whether the post was made outside of working hours",
+            "Whether the employer has a written social media policy",
+            "Whether there is a sufficient connection between the post and the employment relationship",
+            "Whether the post was made anonymously"
+          ],
+          "correctIndex": 2,
+          "explanation": "Australian Fair Work Commission decisions consistently apply a 'nexus' test — the key question is whether there is a sufficient connection between the employee's online conduct and their employment. Factors include: identifying the employer, discussing clients or colleagues, and the impact on the employer's reputation. Time of posting is only one minor factor."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "dc-sn-u3-q2",
+          "questionType": "short_answer",
+          "text": "Describe two specific online behaviours that could constitute defamation under Australian law and explain what an individual or organisation would need to prove to succeed in a defamation claim.",
+          "marks": 5,
+          "explanation": "Award 1 mark each for two valid examples (e.g., posting a false review claiming a business committed fraud; sharing fabricated quotes attributed to a named individual; publicly accusing someone of a crime without basis). Award 3 marks for correctly identifying the elements of defamation: (1) the statement was published (made available to at least one other person); (2) it identified the plaintiff; (3) it was defamatory (likely to lower them in the estimation of reasonable people or cause them to be shunned)."
+        }
+      }
+    ]
+  },
+  {
+    "id": "work-life-balance-and-digital-wellbeing",
+    "title": "Work-Life Balance and Digital Wellbeing",
+    "estimatedMinutes": 25,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #3004 · REGIONAL ETHICS TECH GROUP",
+        "text": "INTERN BRIEFING: The Ethics Tech Group has been retained by a state government department to review its digital work policies following a spike in staff burnout reports. Staff are expected to respond to Slack messages after hours, take work calls on personal phones during leave, and remain 'available' 24/7 via email. The union has flagged this as a wellbeing and industrial relations risk. Your brief is to advise on what the research says, what the law permits, and what a healthy digital work policy looks like."
+      },
+      {
+        "type": "paragraph",
+        "text": "Digital technology was supposed to give us more flexibility. In many organisations, it has instead made us perpetually available. The erosion of the boundary between work and personal life — enabled by smartphones, remote access, and always-on communication platforms — has produced measurable increases in burnout, anxiety, and reduced productivity. As IT professionals and policy advisors, we have a responsibility to design and advocate for healthier digital work environments."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Digital Wellbeing", "definition": "The state of physical, psychological, and social health that results from a person's relationship with technology — including the ability to set boundaries around digital use and recover genuine rest time." },
+          { "term": "Right to Disconnect", "definition": "A legal right provided under the Fair Work Legislation Amendment (Closing Loopholes No. 2) Act 2024 (Cth), giving eligible Australian employees the right to refuse unreasonable employer contact outside working hours from 26 August 2024." },
+          { "term": "Always-On Culture", "definition": "An organisational expectation that employees remain contactable and responsive outside standard working hours via digital tools — a driver of chronic stress and work-life boundary erosion." },
+          { "term": "Burnout", "definition": "A state of chronic physical and emotional exhaustion caused by prolonged stress, characterised by cynicism, reduced efficacy, and disengagement — recognised by the WHO as an occupational phenomenon." }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · DR. ELARA FINCH, REGIONAL ETHICS TECH GROUP",
+        "text": "The organisations I worry about most are the ones where leadership wears their 24/7 availability as a badge of honour. They have normalised a culture where rest is seen as weakness and boundary-setting reads as a lack of commitment. The research is unambiguous: chronically overworked people make worse decisions, produce lower quality work, and leave organisations faster. A healthy digital boundary policy isn't soft — it's strategic."
+      },
+      {
+        "type": "heading",
+        "text": "How Technology Affects Personal and Professional Boundaries",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Technology / Practice", "Workplace Benefit", "Work-Life Balance Risk"],
+        "rows": [
+          ["Smartphones with work email", "Constant access to urgent communications", "Inability to switch off; sleep disruption from late-night notifications"],
+          ["Instant messaging (Slack, Teams)", "Fast internal communication; reduced email", "Expectation of immediate response; work conversations intrude into home time"],
+          ["Remote access to work systems", "Flexibility; business continuity", "Work intrudes into home environment; blurs when 'work' ends"],
+          ["Video conferencing (Zoom, Teams)", "Reduced travel; global collaboration", "Meeting fatigue; lack of informal social contact; 'always on camera' stress"],
+          ["Work apps on personal phones", "Convenience; flexibility", "Employer can effectively contact staff 24/7; personal device becomes a work obligation"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "The Right to Disconnect — Australian Law",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Since 26 August 2024, eligible Australian employees have a legal right to refuse unreasonable contact from their employer outside of working hours under the Fair Work Legislation Amendment (Closing Loopholes No. 2) Act 2024. Factors determining whether contact is 'reasonable' include the reason for the contact, whether extra pay is provided for availability, and the employee's role and personal circumstances. This is a landmark change in Australian employment law."
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · DIGITAL WELLBEING POLICY",
+        "text": "Design a 'Digital Wellbeing Policy' for the government department. Your policy must address: (1) hours during which staff are expected to respond to digital communications; (2) how the Right to Disconnect (Fair Work Act) will be implemented; (3) standards for after-hours meetings, messages, and email; (4) manager expectations and modelling behaviour; and (5) what support is available for staff experiencing digital overwhelm. Include a rationale section explaining why this policy is in the organisation's strategic interest, not just a staff welfare issue."
+      },
+      {
+        "type": "scenarioChallenge",
+        "title": "Ethical Dilemma: The Always-On Manager",
+        "scenario": "Priya manages a team of 8 IT support officers. She routinely sends Slack messages and emails at 10pm and on weekends, and responds to her own messages instantly at all hours. She doesn't explicitly require her team to respond outside hours, but team members report feeling pressure to respond because she can see when messages are read. One team member, Marcus, has asked HR if he can turn off Slack notifications after 6pm. Priya's manager has told her to 'tone it down' but she says she works when inspiration strikes and it shouldn't affect others.",
+        "questions": [
+          { "question": "Under the Right to Disconnect (Fair Work Act 2024), does Marcus have the legal right to ignore Priya's after-hours messages? Are there limits to this right?", "marks": 3 },
+          { "question": "Even if Priya is not explicitly requiring responses, identify the specific psychological and cultural mechanism that is creating pressure on the team, and explain how this constitutes a WHS risk.", "marks": 3 },
+          { "question": "As an external adviser from the Ethics Tech Group, what specific recommendations would you make to Priya's manager to resolve this situation — covering both individual and systemic changes?", "marks": 4 }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · DR. FINCH IS IN THE REVIEW",
+        "text": "Before the digital wellbeing policy is finalised:\n1. The department's CIO argues that IT staff are different from other employees — systems go down at 3am and someone has to respond. How should the policy handle genuinely on-call roles versus the general expectation of availability?\n2. Research shows that banning smartphones at work improves focus but reduces flexibility. How would you advise the department to balance these competing interests in a policy context?\n3. The policy will require manager behaviour change. What specific mechanisms (not just guidelines) would you build into the policy to ensure managers actually change, rather than just paying lip service to digital wellbeing?"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "wlb-u3-q1",
+          "questionType": "mcq",
+          "text": "Under the Fair Work Legislation Amendment (Closing Loopholes No. 2) Act 2024, from what date do eligible Australian employees have the right to refuse unreasonable contact outside working hours?",
+          "options": [
+            "1 January 2024",
+            "26 August 2024",
+            "1 July 2025",
+            "This right does not yet exist in Australian law"
+          ],
+          "correctIndex": 1,
+          "explanation": "The right to disconnect came into effect for most employees on 26 August 2024 under the Fair Work Legislation Amendment (Closing Loopholes No. 2) Act 2024. It gives eligible employees the right to refuse unreasonable contact from their employer outside of working hours."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "wlb-u3-q2",
+          "questionType": "short_answer",
+          "text": "Explain what 'burnout' is, identify two ways that digital technology contributes to burnout in modern workplaces, and suggest one organisational strategy to reduce this risk.",
+          "marks": 4,
+          "explanation": "Award 1 mark for a correct definition of burnout (chronic physical and emotional exhaustion from prolonged stress; WHO-recognised occupational phenomenon). Award 1 mark each for two valid technology-related causes (e.g., always-on communication expectations eroding rest; notification overload disrupting concentration; inability to detach from work via remote access). Award 1 mark for a valid organisational strategy (e.g., right to disconnect policy; meeting-free blocks; notification curfews; digital detox leave)."
+        }
+      }
+    ]
+  },
+  {
+    "id": "social-media-and-information-distribution",
+    "title": "Social Media and Information Distribution",
+    "estimatedMinutes": 25,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #3005 · REGIONAL ETHICS TECH GROUP",
+        "text": "INTERN BRIEFING: During a recent natural disaster, a social media post containing false evacuation instructions spread to 200,000 people within 45 minutes. Three families followed the incorrect route and were placed in danger. The Ethics Tech Group has been asked to brief the State Emergency Management Committee on: how social media enables this kind of rapid misinformation spread, what platforms are legally required to do, and what policies should govern official emergency communication. This is a public safety and information ethics issue."
+      },
+      {
+        "type": "paragraph",
+        "text": "Social media has fundamentally restructured how information moves through society. The gatekeeping function previously performed by journalists, editors, and broadcasters has been democratised — anyone can now publish to a potential global audience in seconds. This is simultaneously liberating and dangerous. As IT professionals and digital policy advisors, we need to understand both the architecture that makes this possible and the ethical, legal, and social implications that follow."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Misinformation", "definition": "False or inaccurate information spread without intent to deceive — often the result of sharing content without verifying its accuracy." },
+          { "term": "Disinformation", "definition": "False information deliberately created and spread with the intent to deceive — including state-sponsored propaganda, fake news campaigns, and coordinated inauthentic behaviour." },
+          { "term": "Algorithmic Amplification", "definition": "The process by which social media algorithms preferentially distribute emotionally engaging content — including outrage, fear, and sensationalism — at the expense of accuracy or nuance." },
+          { "term": "Platform Liability", "definition": "The degree to which social media platforms are legally responsible for the content their users publish — an actively contested area of Australian and international law." }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · DR. ELARA FINCH, REGIONAL ETHICS TECH GROUP",
+        "text": "Social media platforms are not neutral pipes — they are opinionated editorial systems that decide, via algorithm, what you see and how prominently. And their editorial choices are optimised for engagement, not truth. Content that makes you angry or afraid is more engaging than content that is accurate and balanced. That's not an accident; it's a business model. Understanding that is the first step to thinking clearly about information distribution in the digital age."
+      },
+      {
+        "type": "heading",
+        "text": "How Social Networking Changed Information Distribution",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Prior to social media, information reached the public through a limited number of channels — broadcast television, radio, newspapers — each with editorial standards, regulatory obligations, and production delays that functioned as a quality filter. Social media removed all of these friction points simultaneously. The result is a system where the speed of information spread is inversely correlated with the time available for verification."
+      },
+      {
+        "type": "table",
+        "headers": ["Impact Area", "Traditional Media", "Social Media via Mobile"],
+        "rows": [
+          ["Publication speed", "Hours to days from event to publication", "Seconds from event to global distribution"],
+          ["Editorial oversight", "Trained editors, fact-checkers, legal review", "None by default — individual users publish without review"],
+          ["Reach", "Limited by broadcast geography and subscription", "Global, instant, free to publish"],
+          ["Source accountability", "Named journalists; legal responsibility for publishers", "Anonymous accounts; pseudonyms; diffuse accountability"],
+          ["Correction mechanisms", "Published corrections with editorial weight", "Corrections rarely reach the same audience as the original false claim"],
+          ["Emotional engagement", "Editorial standards limit most extreme content", "Algorithms amplify high-emotion content regardless of accuracy"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Platform Responsibilities Under Australian Law",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "The Online Safety Act 2021 (Cth) places obligations on social media platforms to remove illegal and harmful content, including cyberbullying material and content that could cause serious harm. The Australian Communications and Media Authority (ACMA) has been given new powers under the ACMA Misinformation Bill to require platforms to take action against systemic misinformation. These regulatory frameworks are evolving rapidly."
+      },
+      {
+        "type": "spotTheThreat",
+        "title": "Spot the Misinformation",
+        "instruction": "Review these two social media posts circulating during an emergency event. Identify which is likely misinformation and explain the specific indicators and risks.",
+        "emails": [
+          {
+            "isPhishing": true,
+            "from": "Account: @bushfire_alerts_WA (created 2 days ago, 47 followers)",
+            "subject": "URGENT EVACUATION — shared 8,400 times in 2 hours",
+            "body": "BREAKING: Roads closed — ALL residents in the Shire of X must evacuate via Highway 7 IMMEDIATELY. Do NOT use Stirling Road — it is cut off by fire. Share this NOW. Lives depend on it. [No source link. No official agency logo.]",
+            "redFlags": [
+              { "element": "Unverified account", "detail": "Account created 2 days ago with 47 followers — not a verified official emergency account. Legitimate emergency alerts come from @DFES_WA or @WAPoliceForum" },
+              { "element": "No official source", "detail": "No link to DFES, police, or local government source. Official emergency alerts always reference the issuing authority and provide a verification link" },
+              { "element": "Urgency without attribution", "detail": "'Share NOW. Lives depend on it.' is a manipulation tactic common in misinformation — genuine emergency services do not rely on viral sharing for safety-critical communication" },
+              { "element": "Specific route direction without context", "detail": "Directing people to a specific route without official verification could cause harm — if this is wrong, people following it may drive into danger" }
+            ]
+          },
+          {
+            "isPhishing": false,
+            "from": "@DFES_WA (Verified — 89,000 followers, official account since 2011)",
+            "subject": "Emergency Alert — Shire of X",
+            "body": "EMERGENCY ALERT — DFES UPDATE 14:32:\nAll residents east of Stirling Road in the Shire of X should prepare to evacuate. Monitor the Emergency WA website (emergency.wa.gov.au) and ABC Emergency (720AM) for route instructions. Do NOT rely on social media for evacuation routes. Call 000 if in immediate danger.",
+            "redFlags": []
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · EMERGENCY INFORMATION PROTOCOL",
+        "text": "Using the misinformation incident as your case study, design an 'Emergency Information Protocol' for the State Emergency Management Committee. Your protocol must specify: (1) the authoritative channels for emergency information publication; (2) how platforms should be required to label or remove unverified emergency content; (3) what the public should be advised to do before sharing emergency information; and (4) what legal mechanisms currently exist — and what gaps remain — in Australian law for addressing emergency misinformation."
+      },
+      {
+        "type": "scenarioChallenge",
+        "title": "Ethical Dilemma: The Viral False Story",
+        "scenario": "A journalist at a regional newspaper writes a factually accurate story about a local council's decision to close a community pool. A social media influencer with 180,000 followers reads the headline (but not the article) and posts: 'This is DISGUSTING — they're closing EVERY pool in the shire to save money while giving themselves pay rises!!!' The post is shared 12,000 times within 3 hours. The council receives death threats. The influencer refuses to delete the post, saying 'that's my interpretation and I have free speech.'",
+        "questions": [
+          { "question": "Does the influencer's post constitute defamation of the council? What would the council need to prove to succeed in a defamation action?", "marks": 3 },
+          { "question": "What obligation, if any, does the social media platform have to act on this content — and under which Australian law?", "marks": 3 },
+          { "question": "The influencer claims 'free speech.' Does Australia have a constitutional right to freedom of speech that would protect this post? Explain your answer carefully.", "marks": 4 }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · DR. FINCH IS IN THE REVIEW",
+        "text": "Before the emergency protocol is finalised:\n1. The protocol proposes that platforms should be required to remove unverified emergency content within 30 minutes. What are the technical, legal, and human rights challenges with this requirement?\n2. A platform argues that it has no editorial responsibility for user-generated content — it is merely a 'conduit.' How does Australian law respond to this argument, and has it changed since 2021?\n3. Who bears moral responsibility when misinformation causes harm — the original poster, the people who shared it, the algorithm that amplified it, or the platform that hosts it? Construct a reasoned argument."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "smi-u3-q1",
+          "questionType": "mcq",
+          "text": "What is the key distinction between 'misinformation' and 'disinformation'?",
+          "options": [
+            "Misinformation is only found on social media; disinformation appears in mainstream news",
+            "Misinformation is false content spread without intent to deceive; disinformation is false content deliberately created to deceive",
+            "Misinformation is less harmful than disinformation",
+            "There is no legal distinction between the two terms in Australian law"
+          ],
+          "correctIndex": 1,
+          "explanation": "Misinformation refers to false or inaccurate content spread without deliberate deceptive intent — often because the sharer hasn't verified it. Disinformation is deliberately created and distributed to deceive. The intent is the key distinguishing factor, though the harm caused may be similar."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "smi-u3-q2",
+          "questionType": "extended",
+          "text": "Analyse how social media algorithms contribute to the spread of misinformation. In your response, explain (a) how algorithmic amplification works; (b) why emotionally engaging false content spreads faster than accurate content; and (c) what responsibilities platforms, governments, and individuals each have in addressing this problem. (Approximately 250 words)",
+          "marks": 8,
+          "explanation": "High-quality responses will explain that algorithms are designed to maximise engagement (time-on-platform), and that emotional content — particularly fear, outrage, and surprise — generates more engagement than neutral accurate content. False but emotionally compelling claims therefore propagate faster through algorithmic systems than corrections. Award marks for: accurate description of engagement-optimised algorithms; discussion of how this creates asymmetry between the speed of false claims and corrections; and a balanced discussion of platform obligations (Online Safety Act 2021, ACMA powers), government regulatory responsibilities, and individual media literacy obligations. 8-mark responses should demonstrate analytical depth, not just description."
+        }
+      }
+    ]
+  }
+]

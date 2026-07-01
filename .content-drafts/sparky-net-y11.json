@@ -1,0 +1,894 @@
+[
+  {
+    "id": "components-of-a-wireless-network",
+    "title": "Components of a Wireless Network",
+    "estimatedMinutes": 20,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #2001 · BUNBURY HARDWARE INTEGRATORS",
+        "text": "Client: Bunbury Surf Club. They've just moved into a newly renovated clubhouse and need Wi-Fi from scratch. The building is 40m × 20m, single storey, concrete block walls. They need coverage across the bar area, the function room, the outdoor deck, and the admin office. They want both members and staff to be able to connect. You're scoping the job — figure out what hardware components we need and where they go."
+      },
+      {
+        "type": "video",
+        "youtubeId": "3QhU9jd03a0",
+        "title": "Computer Networks: Crash Course CS #28",
+        "caption": "Crash Course Computer Science — how networks are structured, protocols, and how data moves between devices."
+      },
+      {
+        "type": "heading",
+        "text": "What Is a Network?",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "A network is two or more devices connected so they can share resources and communicate. In a business context that means sharing internet access, printers, file servers, and applications. Every time Leo's website serves a page or Sloane's database returns a result, network hardware is making it happen."
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · JAXEN 'SPARKY' MILLER, BUNBURY HARDWARE INTEGRATORS",
+        "text": "Wireless is convenient but cabling is king for reliability. A Wi-Fi signal drops packets — a Cat6 Ethernet cable does not. In any serious installation, I cable every access point and anything that doesn't physically move. Wi-Fi is for laptops, phones, and IoT. Wired is for desktops, servers, and anything where a dropoff would be a problem."
+      },
+      {
+        "type": "heading",
+        "text": "The Core Network Components",
+        "level": 2
+      },
+      {
+        "type": "grid",
+        "title": "Network Hardware Components",
+        "items": [
+          {
+            "icon": "📡",
+            "label": "Modem",
+            "description": "Connects your premises to the internet via your ISP (e.g. Telstra, Optus, iiNet). Converts the ISP signal (NBN fibre, cable, ADSL) into a standard Ethernet connection your router understands."
+          },
+          {
+            "icon": "🔀",
+            "label": "Router",
+            "description": "Directs traffic between your local network and the internet. Assigns IP addresses to all devices. Makes the decision about which path data takes. Often combined with the modem in home/small business units."
+          },
+          {
+            "icon": "📶",
+            "label": "Wireless Access Point (WAP)",
+            "description": "Broadcasts the Wi-Fi signal that devices connect to. In large buildings you need multiple WAPs for full coverage. Cisco Meraki, Ubiquiti UniFi, and TP-Link EAP series are common in commercial installs."
+          },
+          {
+            "icon": "🔌",
+            "label": "Switch",
+            "description": "Connects multiple wired devices on the same network. Smarter than a hub — sends data only to the specific port where the destination device is connected, not to all ports. Cisco Catalyst and Netgear are common brands."
+          },
+          {
+            "icon": "🖧",
+            "label": "Network Interface Card (NIC)",
+            "description": "Hardware inside every device that allows it to connect to a network. Modern PCs have a built-in Ethernet NIC and a Wi-Fi NIC. The MAC address — the device's unique hardware ID — is stored on the NIC."
+          },
+          {
+            "icon": "🔒",
+            "label": "Firewall",
+            "description": "Monitors and controls incoming and outgoing network traffic based on security rules. Can be a physical appliance (Cisco ASA, Fortinet) or software-based (Windows Defender Firewall)."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "How Wi-Fi Works",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Wi-Fi uses radio waves to transmit data between devices and an access point. When your phone requests a webpage, it sends radio signals to the nearest WAP, which passes the request via Ethernet cable to the router, which forwards it to the internet via the modem, and routes the response back the same way."
+      },
+      {
+        "type": "table",
+        "headers": ["Wi-Fi Standard", "Max Speed", "Frequency", "Range", "Year"],
+        "rows": [
+          ["Wi-Fi 4 (802.11n)", "~150 Mbps", "2.4/5 GHz", "Medium", "2009"],
+          ["Wi-Fi 5 (802.11ac)", "~3.5 Gbps", "5 GHz", "Medium", "2014"],
+          ["Wi-Fi 6 (802.11ax)", "~9.6 Gbps", "2.4/5 GHz", "Good", "2019"],
+          ["Wi-Fi 6E (802.11ax)", "~9.6 Gbps", "6 GHz added", "Shorter (6 GHz)", "2021"],
+          ["Wi-Fi 7 (802.11be)", "~46 Gbps", "2.4/5/6 GHz", "Good", "2024"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "2.4 GHz vs 5 GHz — Choosing the Right Band",
+        "level": 2
+      },
+      {
+        "type": "comparison",
+        "title": "2.4 GHz vs 5 GHz",
+        "items": [
+          {
+            "label": "2.4 GHz",
+            "points": [
+              "Longer range — better penetration through walls",
+              "Slower speeds (max ~600 Mbps with Wi-Fi 4/5)",
+              "Only 3 non-overlapping channels (1, 6, 11) — congested in dense areas",
+              "Shared with microwaves, Bluetooth, baby monitors — interference-prone",
+              "Best for: IoT devices, devices far from the router, older devices"
+            ]
+          },
+          {
+            "label": "5 GHz",
+            "points": [
+              "Shorter range — concrete walls reduce coverage significantly",
+              "Faster speeds (up to 3.5 Gbps with Wi-Fi 5/6)",
+              "More non-overlapping channels — less congestion",
+              "Less interference from household devices",
+              "Best for: streaming, gaming, laptops close to the router"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Types of Networks by Coverage",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Type", "Full Name", "Coverage Area", "Real-World Example"],
+        "rows": [
+          ["PAN", "Personal Area Network", "1–10 metres", "Your phone connected to Bluetooth earbuds and a smartwatch"],
+          ["LAN", "Local Area Network", "Building or campus", "School computers connected to each other and to the internet via one router"],
+          ["WLAN", "Wireless Local Area Network", "Building or campus (wireless)", "The Wi-Fi network at the surf club — same as a LAN but wireless"],
+          ["MAN", "Metropolitan Area Network", "Suburb or city", "Telstra's fibre network connecting city business premises"],
+          ["WAN", "Wide Area Network", "Countries or global", "The internet itself; also a company's VPN connecting offices in Perth and Sydney"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · SCOPE THE SURF CLUB NETWORK",
+        "text": "Using the site description from Ticket #2001 (40m × 20m clubhouse, concrete block walls, bar / function room / outdoor deck / admin office), design the network installation:\n\n1. Draw a simple floor plan (on paper or in a diagram tool) and mark where you'd place each WAP. How many do you need to cover the whole building including the outdoor deck?\n2. Create a hardware list: for each component (modem, router, switch, WAPs, cabling), list the quantity, a real product name, and approximate price.\n3. The surf club wants a separate Wi-Fi password for members vs. staff. What network feature allows this, and which consumer/commercial routers support it? (Hint: look up 'SSID' and 'VLAN'.)\n4. The concrete walls between the function room and bar are 300mm thick. What impact does this have on 5 GHz signal? How would you address it?"
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Network", "definition": "Two or more devices connected to share resources and communicate." },
+          { "term": "Modem", "definition": "Connects a premises to the internet via an ISP. Converts ISP signal to Ethernet." },
+          { "term": "Router", "definition": "Directs traffic between a local network and the internet. Assigns IP addresses to devices." },
+          { "term": "Wireless Access Point (WAP)", "definition": "Broadcasts a Wi-Fi signal. Devices connect to it wirelessly to access the network." },
+          { "term": "Switch", "definition": "Connects wired devices on a network. Sends data only to the target port, not all ports." },
+          { "term": "NIC (Network Interface Card)", "definition": "Hardware inside a device that enables network connectivity. Contains the device's MAC address." },
+          { "term": "MAC address", "definition": "A unique hardware identifier assigned to every NIC. Used to identify devices at the local network level." },
+          { "term": "LAN (Local Area Network)", "definition": "A network covering a building or campus — your home or school network is a LAN." }
+        ]
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "cwn-q1",
+          "questionType": "mcq",
+          "text": "A business has 15 wired desktop PCs and a server in one room, all needing to communicate with each other and share internet access. Which device is MOST appropriate for connecting all the wired devices together on the local network?",
+          "options": [
+            "Wireless Access Point — broadcasts Wi-Fi to all devices",
+            "Modem — connects the network to the internet",
+            "Switch — connects multiple wired devices on the same local network",
+            "Router — the only device that can connect multiple devices"
+          ],
+          "correctIndex": 2,
+          "explanation": "A switch is the right tool for connecting multiple wired devices on a LAN. It sends data only to the specific device that's the target (unlike a hub which broadcasts to all ports). The router connects the local network to the internet; the modem connects to the ISP; the WAP handles wireless connections."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "cwn-q2",
+          "questionType": "mcq",
+          "text": "A user's laptop connects to the office Wi-Fi network from the far end of the building. The connection is very slow and drops frequently. Which 2.4 GHz characteristic explains this issue?",
+          "options": [
+            "2.4 GHz has too many non-overlapping channels",
+            "2.4 GHz is congested by other devices on the same channels and has lower throughput at range",
+            "2.4 GHz cannot reach through standard plasterboard walls",
+            "2.4 GHz is only supported on Wi-Fi 6 and newer devices"
+          ],
+          "correctIndex": 1,
+          "explanation": "At long range, 2.4 GHz signal strength drops, reducing throughput. The 2.4 GHz band has only 3 non-overlapping channels (1, 6, 11) and is heavily congested by other networks and interference from devices like microwaves and Bluetooth. Solutions include adding a WAP closer to the user or moving to 5 GHz if they're close enough."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "cwn-q3",
+          "questionType": "true_false",
+          "text": "A WAN (Wide Area Network) is just a very large LAN that covers an entire building or campus.",
+          "correctAnswer": false,
+          "explanation": "False. A WAN covers cities, countries, or the globe — it connects geographically separate networks. A LAN covers a single building or campus. A MAN covers a metropolitan area. The internet is the world's largest WAN."
+        }
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · SPARKY IS CHECKING YOUR WORK",
+        "text": "You've submitted the scope for the surf club. Before I approve the quote:\n\n1. You've placed only one WAP to cover the entire 40m × 20m building with concrete walls. What coverage problems will occur, and what's the fix?\n2. The client asks 'Can we just use a really powerful router instead of separate access points?' What's the difference between a router's built-in Wi-Fi and a dedicated WAP — and why does it matter in a commercial building?\n3. The admin office handles the club's financial records. Should it be on the same wireless network as the members' Wi-Fi? What security concern does this raise?"
+      }
+    ]
+  },
+  {
+    "id": "selecting-hardware-for-a-network",
+    "title": "Selecting Hardware for a Network",
+    "estimatedMinutes": 20,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #2002 · BUNBURY HARDWARE INTEGRATORS",
+        "text": "Client: Bunbury Medical Centre. They're moving to a new premises and need a complete network infrastructure build. 15 consulting rooms, a reception area with 4 staff desktops, a server room for their practice management software, and a separate guest Wi-Fi for patients in the waiting room. Budget: $8,000 for all network hardware. Your job: specify every device with justification."
+      },
+      {
+        "type": "heading",
+        "text": "Matching Hardware to Requirements",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Network hardware selection is driven by scale, reliability requirements, and budget. A home network router isn't suitable for 15 consulting rooms. You need to match enterprise or SMB-grade hardware to business-grade demands."
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · JAXEN 'SPARKY' MILLER, BUNBURY HARDWARE INTEGRATORS",
+        "text": "Never cheap out on switching and routing in a medical or financial environment. If the practice management software drops packets because you used a $50 consumer router to handle 20 simultaneous sessions, the doctor can't access patient records mid-consultation. That's a clinical risk, not just an IT inconvenience. Spec it right the first time."
+      },
+      {
+        "type": "heading",
+        "text": "Network Hardware: Features and Selection Criteria",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Device", "Key Specs to Check", "Home/SMB Examples", "Enterprise Examples"],
+        "rows": [
+          ["Router", "Throughput (Mbps/Gbps), concurrent connections, VPN support, VLAN support", "TP-Link Archer, ASUS RT series", "Cisco RV series, Fortinet FortiGate"],
+          ["Switch", "Port count, speed (Fast Ethernet vs Gigabit), managed vs unmanaged, PoE support", "Netgear GS308 (unmanaged)", "Cisco Catalyst, HPE Aruba (managed)"],
+          ["Wireless Access Point", "Wi-Fi standard (Wi-Fi 5/6), maximum clients, PoE-powered, coverage radius", "TP-Link EAP225 (Wi-Fi 5)", "Cisco Meraki MR, Ubiquiti UniFi AP-6 Pro"],
+          ["Modem", "NBN technology type (FTTP, FTTC, FTTN, HFC), WAN speed support", "TP-Link TC-7610 (cable)", "Draytek Vigor (multi-WAN, failover)"],
+          ["Firewall", "Throughput, rules support, VPN clients, UTM (Unified Threat Management)", "Windows Defender (software)", "Fortinet FortiGate, Cisco ASA, pfSense"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Managed vs Unmanaged Switches",
+        "level": 2
+      },
+      {
+        "type": "comparison",
+        "title": "Managed vs Unmanaged Switches",
+        "items": [
+          {
+            "label": "Unmanaged Switch",
+            "points": [
+              "Plug-and-play — no configuration needed",
+              "No remote management or monitoring",
+              "Cannot set up VLANs (virtual network separation)",
+              "No QoS (Quality of Service) traffic prioritisation",
+              "Cheap — $30–$150 for 8–24 ports",
+              "Best for: small offices, home networks, simple setups"
+            ]
+          },
+          {
+            "label": "Managed Switch",
+            "points": [
+              "Web or CLI interface for configuration",
+              "Supports VLANs — separate guest Wi-Fi from staff network",
+              "QoS — prioritise video calls over downloads",
+              "Port monitoring and traffic statistics",
+              "Remote management via SSH or web browser",
+              "$200–$2,000+ for SMB/Enterprise models",
+              "Best for: any business with security or traffic management needs"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Power over Ethernet (PoE)",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "PoE allows a network switch to deliver electrical power over the Ethernet cable to a connected device — no separate power adaptor needed. This is how commercial access points, IP cameras, and VoIP phones are typically powered. A PoE switch costs more but eliminates the need for power outlets near every WAP location."
+      },
+      {
+        "type": "table",
+        "headers": ["PoE Standard", "Max Power Delivered", "Typical Devices Powered"],
+        "rows": [
+          ["PoE (802.3af)", "15.4 W per port", "IP phones, basic access points, cameras"],
+          ["PoE+ (802.3at)", "30 W per port", "Higher-power WAPs, pan-tilt cameras, thin clients"],
+          ["PoE++ (802.3bt)", "60–100 W per port", "High-performance WAPs, video conferencing systems, laptops"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Wired vs Wireless: Which Devices Should Use Which?",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Device Type", "Recommended Connection", "Reason"],
+        "rows": [
+          ["Desktop PCs / workstations", "Wired Ethernet", "Consistent speed, no interference, no dropouts"],
+          ["Servers", "Wired Ethernet (often dual NICs)", "Maximum reliability; uptime is critical"],
+          ["Printers (shared)", "Wired Ethernet or USB to print server", "Reliability — wireless printer connections are a common fault point"],
+          ["Laptops (staff)", "Wired when docked, Wi-Fi when mobile", "Best of both worlds"],
+          ["Patients' devices (guest Wi-Fi)", "Wireless only", "Separated from clinical network for security"],
+          ["IP cameras", "Wired Ethernet (PoE)", "Continuous stream; wireless cameras drop frames"],
+          ["Mobile devices (phones, tablets)", "Wireless", "Inherently mobile — cabling not practical"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · SPEC THE MEDICAL CENTRE NETWORK",
+        "text": "Using Ticket #2002 requirements (15 consulting rooms, 4 reception desktops, server room, patient guest Wi-Fi, $8,000 budget), create a complete network hardware specification:\n\n1. Create a bill of materials table: Device, Product Name, Quantity, Unit Price, Total, Justification. Research real current prices.\n2. Total your bill of materials. If it exceeds $8,000, identify what you'd cut and why. If under, identify what you'd add.\n3. The practice manager insists on separating the patient Wi-Fi from the clinical network. What specific hardware feature makes this possible, and which device implements it?\n4. The server room has two servers — one for practice management software, one for patient records backup. Should these servers use PoE connections? Explain why or why not."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Managed switch", "definition": "A configurable network switch that supports VLANs, QoS, port monitoring, and remote management. Required for business networks with security or traffic management needs." },
+          { "term": "PoE (Power over Ethernet)", "definition": "Allows network switches to deliver electrical power through Ethernet cables to connected devices like WAPs and IP cameras." },
+          { "term": "VLAN (Virtual Local Area Network)", "definition": "A logical separation of a physical network into multiple isolated segments. Used to separate guest traffic from internal staff traffic on the same hardware." },
+          { "term": "QoS (Quality of Service)", "definition": "A managed switch/router feature that prioritises certain types of network traffic (e.g. VoIP calls, video conferencing) over lower-priority traffic (e.g. downloads)." },
+          { "term": "Throughput", "definition": "The actual data transfer rate a network device can sustain under real conditions. Always lower than the theoretical maximum speed." },
+          { "term": "Firewall", "definition": "A device or software that filters network traffic based on security rules — blocking unauthorised access while allowing legitimate traffic." }
+        ]
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "shn-q1",
+          "questionType": "mcq",
+          "text": "A medical centre wants to separate patient guest Wi-Fi from the clinical staff network on the same physical hardware. Which feature makes this possible?",
+          "options": [
+            "QoS (Quality of Service) — prioritises clinical traffic over guest traffic",
+            "VLAN (Virtual Local Area Network) — creates logical network separation on the same physical switch",
+            "PoE (Power over Ethernet) — powers the WAPs separately for each network",
+            "A second router — the only way to create two separate networks"
+          ],
+          "correctIndex": 1,
+          "explanation": "VLANs allow a single physical managed switch to host multiple logically separate networks. Patient Wi-Fi traffic is tagged with one VLAN ID and clinical traffic with another — they cannot see each other even though they use the same cables and switch. This is standard practice in healthcare IT."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "shn-q2",
+          "questionType": "true_false",
+          "text": "PoE (Power over Ethernet) eliminates the need for a separate power cable for devices like wireless access points and IP cameras.",
+          "correctAnswer": true,
+          "explanation": "True. PoE delivers electrical power through the same Cat5e/Cat6 Ethernet cable that carries network data. This means a WAP mounted on a ceiling only needs a single cable run — no power outlet is required at that location. PoE switches cost more but reduce installation complexity significantly."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "shn-q3",
+          "questionType": "mcq",
+          "text": "A business has 10 Mbps NBN broadband but their local network transfers files at 800 Mbps between PCs. Which statement BEST explains this?",
+          "options": [
+            "The NBN speed is wrong — NBN always delivers at least 100 Mbps",
+            "LAN speeds are independent of WAN speeds — local transfers use Gigabit Ethernet (1000 Mbps) while internet traffic is limited to the NBN plan speed",
+            "The 800 Mbps is the Wi-Fi speed — it only applies to wireless devices",
+            "File transfers always bypass the router and use direct connections between PCs"
+          ],
+          "correctIndex": 1,
+          "explanation": "LAN (local) transfers and WAN (internet) speeds are completely independent. The local Gigabit Ethernet switch can move data at up to 1000 Mbps between devices on the same network. When those devices communicate with the internet, they're limited to the NBN plan speed (10 Mbps in this case). The two speeds don't affect each other."
+        }
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · SPARKY IS CHECKING YOUR WORK",
+        "text": "You've submitted the medical centre network spec. Before I approve:\n\n1. You've specified unmanaged switches to save $400 on the budget. The practice manager is asking about separating the patient Wi-Fi from clinical records. What problem has your switch choice created, and what's the cost to fix it?\n2. The server room has two servers. You've connected both to a single switch. What single point of failure does this create, and what hardware addition would address it?\n3. The practice has NBN 250/25 (download/upload). A doctor complains that uploading large patient imaging files to the cloud referral system is slow. The local network is fine. Where is the bottleneck, and what are the options to fix it?"
+      }
+    ]
+  },
+  {
+    "id": "network-security",
+    "title": "Network Security",
+    "estimatedMinutes": 22,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #2003 · BUNBURY HARDWARE INTEGRATORS",
+        "text": "Priority callout. Client: Bunbury Accounting Partners (same firm from Ticket #1004). Their office manager got an email claiming to be from their IT provider, clicked a link, and entered her network admin password. Since then, several staff PCs have been showing ransom screens. We need to contain the damage, understand what happened, and harden the network so it can't happen again. You're in the van with me — let's move."
+      },
+      {
+        "type": "heading",
+        "text": "Why Network Security Matters",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Network security isn't optional — it's fundamental. Every device on a network is a potential entry point for an attacker. In 2024, the average cost of a data breach in Australia was $4.26 million AUD. For a small accounting firm, a single ransomware attack could be terminal."
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · JAXEN 'SPARKY' MILLER, BUNBURY HARDWARE INTEGRATORS",
+        "text": "Security is always about layers. No single measure stops everything. You want a firewall, strong passwords, MFA, patch management, and a backup strategy that's actually been tested. If any one layer fails, the next one catches it. The accountants' problem today was no MFA on the admin account — one compromised password gave the attacker the keys to everything."
+      },
+      {
+        "type": "heading",
+        "text": "Common Network Threats",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Threat", "How It Works", "Real-World Example", "Prevention"],
+        "rows": [
+          ["Phishing", "Deceptive emails/sites trick users into revealing credentials or downloading malware", "Office manager clicks fake IT support email, enters admin password", "MFA, email filtering, user training"],
+          ["Ransomware", "Malware encrypts files; attackers demand payment for decryption key", "WannaCry, LockBit — encrypted hospital and business data globally", "Backups (offline/offsite), patching, endpoint protection"],
+          ["Man-in-the-Middle (MitM)", "Attacker intercepts traffic between two parties — reads or modifies data", "Fake public Wi-Fi hotspot captures login credentials", "HTTPS/TLS encryption, VPN on public Wi-Fi"],
+          ["Denial of Service (DoS/DDoS)", "Floods a server with fake requests until it can't serve real users", "DDoS attack on a retail site during a sales event", "CDN services (Cloudflare), rate limiting, upstream filtering"],
+          ["Unauthorised access", "Gaining access to a network or system without permission", "Former employee uses unchanged credentials to access company files", "Access revocation procedures, MFA, least privilege principle"],
+          ["Malware/Spyware", "Malicious software installed without user knowledge to steal, corrupt, or encrypt data", "Keylogger records passwords in background", "Endpoint protection (Microsoft Defender, Malwarebytes)"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Network Security Measures",
+        "level": 2
+      },
+      {
+        "type": "grid",
+        "title": "Security Layers",
+        "items": [
+          {
+            "icon": "🔥",
+            "label": "Firewall",
+            "description": "Filters traffic based on rules — blocks unauthorised inbound connections. Hardware firewalls (Fortinet, Cisco) sit at the network edge. Windows Defender Firewall provides software-level protection per device."
+          },
+          {
+            "icon": "🔐",
+            "label": "WPA3 Encryption",
+            "description": "The current Wi-Fi security standard. Encrypts all wireless data in transit. Always use WPA3 (or minimum WPA2) — never WEP (easily cracked in minutes) or open (no encryption)."
+          },
+          {
+            "icon": "👤",
+            "label": "Multi-Factor Authentication (MFA)",
+            "description": "Requires two or more forms of identity verification — typically password + phone code or authenticator app. Even if a password is stolen, MFA stops the attacker."
+          },
+          {
+            "icon": "🔑",
+            "label": "Strong Password Policy",
+            "description": "Minimum 12 characters, mix of types, no reuse, regular rotation for privileged accounts. Use a password manager (Bitwarden, 1Password) for unique passwords per service."
+          },
+          {
+            "icon": "📦",
+            "label": "Software Updates / Patching",
+            "description": "Unpatched software is the #1 attack vector. Enable automatic updates for Windows, browsers, and security software. WannaCry in 2017 exploited a Windows flaw that had been patched 2 months earlier."
+          },
+          {
+            "icon": "🗄️",
+            "label": "Backups (3-2-1 Rule)",
+            "description": "3 copies of data, on 2 different media types, with 1 stored offsite (cloud or physically separate location). Test restores regularly — a backup you haven't tested is not a backup."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Wi-Fi Security Best Practices",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Practice", "Why It Matters"],
+        "rows": [
+          ["Use WPA3 or WPA2 encryption", "Prevents attackers from reading your wireless traffic even if they're nearby"],
+          ["Change default router admin credentials", "Default passwords (admin/admin) are publicly known — first thing an attacker tries"],
+          ["Keep firmware updated", "Router firmware patches fix security vulnerabilities discovered after manufacture"],
+          ["Separate guest Wi-Fi (VLAN)", "Guest users cannot access your internal network, servers, or printers"],
+          ["Disable WPS (Wi-Fi Protected Setup)", "WPS has known security flaws — brute-force attacks can crack the PIN"],
+          ["Hide SSID (optional, low impact)", "Makes the network less visible but is easily bypassed by determined attackers — not a primary security measure"],
+          ["Place WAPs centrally", "Minimises signal leaking beyond your premises where it can be intercepted"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · CONTAIN AND HARDEN THE ACCOUNTING FIRM",
+        "text": "Ticket #2003 is a live incident. Work through the response in two phases:\n\nPhase 1 — Incident Response (right now):\n1. List the first 5 actions you'd take in order to contain the ransomware attack. Be specific — name actual tools or steps (e.g. 'Disconnect affected PCs from the network by unplugging Ethernet and disabling Wi-Fi').\n2. The ransom note demands $15,000 in Bitcoin for the decryption key. The firm asks if they should pay. What is your advice and why?\n3. The firm's last backup was six months ago. What data loss will they face if they restore from that backup?\n\nPhase 2 — Security Hardening (after the incident):\n4. List 6 specific security measures the firm should implement to prevent a recurrence. For each: name the measure, explain what it prevents, and name a specific product or tool.\n5. Sloane's recommendation: all financial data should be encrypted at rest on the server. Name the Windows Server feature that handles this and explain how it helps in a ransomware scenario."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Phishing", "definition": "A social engineering attack using deceptive emails or websites to trick users into revealing passwords or installing malware." },
+          { "term": "Ransomware", "definition": "Malware that encrypts a victim's files and demands payment for the decryption key." },
+          { "term": "MFA (Multi-Factor Authentication)", "definition": "Security requiring two or more verification factors — something you know (password), something you have (phone), or something you are (biometric)." },
+          { "term": "Firewall", "definition": "Hardware or software that filters network traffic based on security rules, blocking unauthorised connections." },
+          { "term": "WPA3", "definition": "The current Wi-Fi encryption standard. Protects wireless data in transit. Supersedes WPA2 and the broken WEP standard." },
+          { "term": "3-2-1 Backup Rule", "definition": "3 copies of data, on 2 different storage media, with 1 stored offsite. Protects against hardware failure, theft, fire, and ransomware." }
+        ]
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "ns-q1",
+          "questionType": "mcq",
+          "text": "An office manager receives an email from 'IT Support' asking her to click a link and verify her admin password urgently. This is an example of:",
+          "options": [
+            "Ransomware — software that encrypts files for payment",
+            "A DoS attack — overwhelming the server with requests",
+            "Phishing — a social engineering attack designed to steal credentials",
+            "A Man-in-the-Middle attack — intercepting communications between two parties"
+          ],
+          "correctIndex": 2,
+          "explanation": "This is a phishing attack — the attacker is impersonating a trusted source (IT Support) to trick the victim into voluntarily handing over credentials. Phishing is the most common entry point for data breaches globally. MFA would have limited the damage even if she entered her password."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "ns-q2",
+          "questionType": "true_false",
+          "text": "Using WEP (Wired Equivalent Privacy) encryption on a business Wi-Fi network provides adequate security for protecting confidential data.",
+          "correctAnswer": false,
+          "explanation": "False. WEP is cryptographically broken and can be cracked in minutes using freely available tools. It was deprecated in 2004. Any business network should use WPA2 at minimum, and WPA3 where supported. Using WEP provides essentially no security against modern attacks."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "ns-q3",
+          "questionType": "mcq",
+          "text": "Under the 3-2-1 backup rule, which scenario meets all three criteria?",
+          "options": [
+            "One copy on the office PC, one copy on a USB drive kept in the same drawer",
+            "Three copies on three different USB drives stored in the server room",
+            "One copy on the office PC, one copy on an external HDD at the office, one copy in Microsoft OneDrive",
+            "Two copies in Dropbox and one in Google Drive"
+          ],
+          "correctIndex": 2,
+          "explanation": "Option C meets 3-2-1: 3 copies (PC, HDD, cloud), on 2 different media types (internal HDD + external HDD + cloud storage), with 1 offsite (OneDrive is cloud-based = offsite). Options A and B have no offsite copy. Option D has 3 copies but all are cloud services — if your internet is down or the cloud provider has an outage, you can't restore."
+        }
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · SPARKY IS CHECKING YOUR WORK",
+        "text": "You've submitted the incident response and hardening plan. Before I close this ticket:\n\n1. You've recommended MFA for all accounts. The senior accountant says 'I use a really long, complex password — that's enough.' How do you explain to him why MFA is still necessary even with a strong password?\n2. The firm asks if they can use the same external drive for daily backups and keep it plugged into the server permanently. What specific security threat does this practice fail to protect against, and what's the fix?\n3. After the incident, you recommend a hardware firewall (Fortinet FortiGate) at the network edge. The office already has Windows Defender on every PC. Why are both layers still needed?"
+      }
+    ]
+  },
+  {
+    "id": "connecting-and-troubleshooting-networks",
+    "title": "Connecting and Troubleshooting Networks",
+    "estimatedMinutes": 22,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #2004 · BUNBURY HARDWARE INTEGRATORS",
+        "text": "Client: Bunbury High School IT Department. The school has 120 student laptops on Wi-Fi and 30 staff desktops on wired Ethernet. Three issues logged this morning: (1) Seven laptops can't connect to the internet but can see each other on the network. (2) One staff desktop can't reach the file server but has internet. (3) The network is mysteriously slow for everyone after 9:30 AM when students arrive. You've got a laptop, a network cable tester, and a copy of Wireshark. Let's diagnose."
+      },
+      {
+        "type": "video",
+        "youtubeId": "ewrBalT_eBM",
+        "title": "A Packet's Tale",
+        "caption": "How a data packet travels across a network — essential context before we troubleshoot at the packet level."
+      },
+      {
+        "type": "heading",
+        "text": "How Data Travels: IP Addressing",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Every device on a network has an IP address — a logical address that identifies it. IP addresses are either IPv4 (e.g. 192.168.1.45) or IPv6 (e.g. 2001:0db8:85a3::8a2e:0370:7334). On most local networks, a router's DHCP server automatically assigns IP addresses to devices when they connect."
+      },
+      {
+        "type": "table",
+        "headers": ["Address Type", "Example", "Purpose"],
+        "rows": [
+          ["Private IPv4 (LAN)", "192.168.1.x, 10.0.0.x", "Used inside your local network — not routable on the public internet"],
+          ["Public IPv4 (WAN)", "203.0.113.42", "Your network's address on the internet — assigned by your ISP"],
+          ["Loopback", "127.0.0.1", "The device itself — used to test local networking stack"],
+          ["APIPA / Link-local", "169.254.x.x", "Automatic fallback when DHCP fails — device can't get an IP from the router"],
+          ["IPv6", "2001:db8::1", "Next-gen addressing — 340 undecillion possible addresses vs IPv4's 4.3 billion"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · JAXEN 'SPARKY' MILLER, BUNBURY HARDWARE INTEGRATORS",
+        "text": "If a device shows a 169.254.x.x address, DHCP has failed. The device gave up waiting for the router and assigned itself a local link address. That tells you to look at the DHCP server (router), the network cable, or the NIC — the device cannot reach anything outside its own subnet in that state."
+      },
+      {
+        "type": "heading",
+        "text": "Network Troubleshooting Tools",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Command / Tool", "What It Does", "Example Use"],
+        "rows": [
+          ["ping", "Tests connectivity to another device by sending ICMP packets and measuring round-trip time", "ping 8.8.8.8 — tests internet connectivity to Google DNS"],
+          ["ipconfig (Windows) / ifconfig (Linux/Mac)", "Shows the device's current IP address, subnet mask, default gateway, and DNS", "ipconfig /all — shows full network configuration including DHCP lease"],
+          ["tracert (Windows) / traceroute (Linux)", "Shows every hop (router) a packet passes through to reach its destination", "tracert google.com — find where packets are being dropped or delayed"],
+          ["nslookup", "Queries DNS servers to resolve domain names to IP addresses", "nslookup bunburyschool.edu.au — test if DNS is working"],
+          ["netstat", "Shows active network connections, listening ports, and routing table", "netstat -an — check for unexpected outbound connections (malware indicator)"],
+          ["Wireshark", "Packet capture tool — shows every packet on the network in real time", "Identify bandwidth hogs, protocol errors, and suspicious traffic patterns"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "A Systematic Approach to Network Faults",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Network troubleshooting follows a layered approach: start at the physical layer (cables, ports, lights) and work up to the application layer (DNS, software config). Don't jump to software diagnostics if a cable is unplugged."
+      },
+      {
+        "type": "table",
+        "headers": ["Layer", "Check", "Tool / Method"],
+        "rows": [
+          ["Physical", "Is the cable connected? Is the port light on? Is the device powered?", "Visual inspection, cable tester"],
+          ["Data Link", "Is the NIC recognised? Is the MAC address visible on the switch?", "Device Manager, switch port status"],
+          ["Network (IP)", "Does the device have a valid IP address? Can it reach the gateway?", "ipconfig, ping [gateway IP]"],
+          ["Transport", "Are required ports open? Is a firewall blocking the connection?", "netstat, firewall logs"],
+          ["Application", "Is the correct DNS server set? Can the app reach its server by name?", "nslookup, browser dev tools, app logs"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Common Network Faults and Diagnostics",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Symptom", "Likely Cause", "Diagnostic Command", "Fix"],
+        "rows": [
+          ["No internet, can see local devices", "Default gateway wrong, router fault, ISP outage", "ping [gateway IP] then ping 8.8.8.8", "Check router, call ISP, verify gateway setting"],
+          ["169.254.x.x address", "DHCP server not responding", "ipconfig — look for APIPA address", "Release/renew IP (ipconfig /release /renew), check router DHCP"],
+          ["Can't reach file server by name", "DNS fault — can't resolve hostname to IP", "ping [server IP] — if works, DNS is the issue", "nslookup [server name], check DNS server setting"],
+          ["Slow network for all users", "Bandwidth saturation, broadcast storm, faulty NIC spamming traffic", "Wireshark — identify heavy traffic sources", "Identify and isolate the bandwidth hog, check switch logs"],
+          ["Intermittent drops", "Faulty cable, damaged port, interference (wireless)", "Cable tester, check event logs, move to another port", "Replace cable, change switch port, check WAP channel"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · DIAGNOSE THE SCHOOL'S THREE FAULTS",
+        "text": "Work through each of the three issues from Ticket #2004:\n\nIssue 1 — 7 laptops can't reach the internet but can see each other.\nIssue 2 — 1 staff desktop can't reach the file server by name, but has internet access.\nIssue 3 — Network-wide slowdown starting at 9:30 AM daily when students arrive.\n\nFor each issue:\n1. State which OSI layer the fault is most likely at.\n2. List the exact diagnostic commands or steps you'd run in order.\n3. Propose the most likely cause and the fix.\n\nBonus: Issue 3 has multiple possible causes. Name three different root causes that would all produce the same 'slow network at 9:30 AM' symptom, and explain how you'd distinguish between them."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "IP address", "definition": "A numerical label assigned to each device on a network. IPv4 uses dotted-decimal notation (e.g. 192.168.1.1). Used to route packets to the correct destination." },
+          { "term": "DHCP (Dynamic Host Configuration Protocol)", "definition": "A service (usually on the router) that automatically assigns IP addresses, subnet masks, gateways, and DNS servers to devices when they connect to a network." },
+          { "term": "DNS (Domain Name System)", "definition": "Translates human-readable domain names (google.com) into IP addresses that routers can use. The 'phone book' of the internet." },
+          { "term": "Default gateway", "definition": "The router's IP address on your local network. All traffic destined for outside the local network is sent to the default gateway first." },
+          { "term": "APIPA (169.254.x.x)", "definition": "Automatic Private IP Addressing — a fallback IP assigned by a device when it cannot get an address from a DHCP server. Indicates a DHCP or network connectivity failure." },
+          { "term": "ping", "definition": "A network diagnostic command that sends ICMP echo packets to a target IP address and measures round-trip time. Used to test basic connectivity." }
+        ]
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "ctn-q1",
+          "questionType": "mcq",
+          "text": "A student's laptop shows an IP address of 169.254.12.43. She can't access the internet or the school file server. What is the MOST likely cause?",
+          "options": [
+            "The internet is down at the ISP level",
+            "The file server has been turned off",
+            "The DHCP server (router) is unreachable — the laptop fell back to an automatic private IP address",
+            "The laptop's NIC has failed"
+          ],
+          "correctIndex": 2,
+          "explanation": "169.254.x.x is an APIPA (Automatic Private IP Addressing) address. Windows assigns it when the device cannot contact a DHCP server to get a real IP address. This means the laptop cannot reach the router for internet, and cannot route to other subnets where the file server lives. First step: check the router/DHCP server, then the network connection (cable, Wi-Fi signal)."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "ctn-q2",
+          "questionType": "mcq",
+          "text": "A staff member can ping the file server by IP address (e.g. ping 192.168.1.50) but cannot connect to it by name (e.g. \\\\fileserver). What is the fault?",
+          "options": [
+            "The file server is turned off",
+            "The network cable between the desktop and the switch is faulty",
+            "DNS is not resolving the server name to its IP address",
+            "The firewall is blocking file sharing ports"
+          ],
+          "correctIndex": 2,
+          "explanation": "Successful ping by IP proves the device is reachable at a network level — there is no physical or IP routing problem. The failure to connect by name means DNS cannot resolve the hostname 'fileserver' to its IP address. Run nslookup fileserver to confirm. The fix is to check the DNS server setting on the workstation, or add the file server to DNS or the hosts file."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "ctn-q3",
+          "questionType": "short_answer",
+          "text": "Explain the difference between ping and tracert/traceroute, and give a scenario where tracert would be more useful than ping.",
+          "marks": 3,
+          "explanation": "Ping sends packets to a destination and reports if it's reachable and the round-trip time — it confirms basic connectivity. Tracert shows every router hop the packets pass through, with the latency at each hop. Tracert is more useful when you know the destination is unreachable (ping fails) and you need to identify WHERE on the path the connection is failing — for example, determining whether the issue is within the local network, at the ISP, or further upstream toward the destination."
+        }
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · SPARKY IS CHECKING YOUR WORK",
+        "text": "You've submitted your diagnostic reports for the school. Three questions:\n\n1. You ran 'ping 8.8.8.8' from one of the affected laptops and got 'Request timed out.' You then ran 'ping 192.168.1.1' and got replies. What do these two results together tell you about where the fault is?\n2. For Issue 3 (slow network at 9:30 AM), Wireshark shows that one particular student's laptop is sending ARP broadcast packets every 2 seconds to every device on the network. What is this likely caused by, and what's the impact on the rest of the network?\n3. A teacher asks why you're using command-line tools rather than 'just Googling the answer.' How do you explain the value of diagnostic commands over trial-and-error fixes?"
+      }
+    ]
+  },
+  {
+    "id": "networks-review-quiz",
+    "title": "Networks Review Quiz",
+    "estimatedMinutes": 25,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #2005 · BUNBURY HARDWARE INTEGRATORS",
+        "text": "Final rotation sign-off for Networks. Sparky needs to certify you're competent before you move to the Software and Systems team. This quiz covers everything from network components and selection through to security and troubleshooting. Take your time — treat each question like a real callout."
+      },
+      {
+        "type": "heading",
+        "text": "Networks Competency Assessment",
+        "level": 2
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · JAXEN 'SPARKY' MILLER, BUNBURY HARDWARE INTEGRATORS",
+        "text": "Networks connect everything. Sloane's data doesn't get from the database to Leo's front-end without a working network layer. If the physical infrastructure is solid, the higher-level stuff — apps, security, cloud services — can do their job. If the physical layer is broken, none of it matters. Networks first."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "nrq-q1",
+          "questionType": "mcq",
+          "text": "A café installs a wireless network for customers. They want customers to have internet access but not be able to access each other's devices or the café's POS (Point of Sale) system. What is the BEST solution?",
+          "options": [
+            "Give customers the same Wi-Fi password as staff but at lower signal strength",
+            "Set up a separate VLAN for guest Wi-Fi, isolated from the POS and staff network",
+            "Hide the SSID of the staff network so customers can't find it",
+            "Use 2.4 GHz for customers and 5 GHz for staff — the different frequencies prevent cross-access"
+          ],
+          "correctIndex": 1,
+          "explanation": "A VLAN (Virtual Local Area Network) creates a logically separate network on the same physical hardware. Guest traffic is isolated and cannot reach the POS or staff systems. Hiding the SSID is not a security measure — it's easily bypassed. Different Wi-Fi bands do not prevent access between networks."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "nrq-q2",
+          "questionType": "mcq",
+          "text": "Which device assigns IP addresses to devices on a local network?",
+          "options": [
+            "Switch — it manages which port each device connects to",
+            "Wireless Access Point — it controls wireless device registration",
+            "DHCP server — typically the router in small networks, or a dedicated server in enterprise",
+            "Modem — it manages all IP assignments for both local and internet traffic"
+          ],
+          "correctIndex": 2,
+          "explanation": "DHCP (Dynamic Host Configuration Protocol) assigns IP addresses. In home and small business networks, the router runs the DHCP server function. In enterprise environments, a dedicated Windows Server or Linux machine runs DHCP. The switch handles MAC-level forwarding; the WAP handles wireless connectivity; the modem just bridges to the ISP."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "nrq-q3",
+          "questionType": "mcq",
+          "text": "A company's office is on the 4th floor of a building. They need a wireless network covering the entire floor. The building has concrete internal walls. They install one WAP in the reception area. Staff at the far end of the floor report weak signal and frequent disconnections. What is the PRIMARY cause?",
+          "options": [
+            "The WAP is set to 5 GHz which cannot penetrate concrete walls at that distance",
+            "A single WAP cannot provide adequate coverage for the whole floor through multiple concrete walls — additional WAPs are needed",
+            "The staff devices don't support the WAP's Wi-Fi standard",
+            "The ISP connection is too slow to serve all users simultaneously"
+          ],
+          "correctIndex": 1,
+          "explanation": "Concrete walls significantly attenuate (weaken) Wi-Fi signals. A single WAP at one end of a large floor with concrete walls cannot provide adequate signal strength throughout. The solution is multiple WAPs placed to provide overlapping coverage — a standard enterprise wireless design. ISP speed affects internet access, not local signal strength."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "nrq-q4",
+          "questionType": "mcq",
+          "text": "An employee's laptop gets a 169.254.x.x IP address when connecting to the office Wi-Fi. She cannot access any network resources. Which diagnostic step should be performed FIRST?",
+          "options": [
+            "Replace the laptop's NIC — it's clearly faulty",
+            "Check if the DHCP server (router) is functioning and reachable",
+            "Reinstall Windows — this is a software issue",
+            "Check the DNS settings on the laptop"
+          ],
+          "correctIndex": 1,
+          "explanation": "A 169.254.x.x (APIPA) address means the laptop failed to get an IP from the DHCP server. The first step is checking the DHCP server — is the router on? Is it out of IP addresses in its pool? Can you reach the router from another device? Only investigate the NIC or OS if the router is confirmed working and other devices are getting IP addresses normally."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "nrq-q5",
+          "questionType": "true_false",
+          "text": "A switch sends incoming data to ALL ports simultaneously to ensure every device receives the packet.",
+          "correctAnswer": false,
+          "explanation": "False. A switch learns which device (MAC address) is on each port and sends data only to the specific port where the destination device is located. This is a switch's key advantage over a hub (which does broadcast to all ports). Sending to all ports would create unnecessary traffic and is a security concern — it's called 'flooding' and only occurs when the switch doesn't know the destination MAC yet."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "nrq-q6",
+          "questionType": "mcq",
+          "text": "You run 'ping 8.8.8.8' on a laptop and get replies, but 'ping google.com' times out. What does this tell you?",
+          "options": [
+            "The internet connection is down",
+            "Google's servers are offline",
+            "DNS is not working — the laptop can reach the internet by IP but cannot resolve domain names",
+            "The laptop's firewall is blocking ICMP packets"
+          ],
+          "correctIndex": 2,
+          "explanation": "Successful ping to 8.8.8.8 (Google's DNS server IP) proves internet connectivity at the IP level. Failed ping to google.com means DNS lookup is failing — the system cannot translate 'google.com' into an IP address. Run nslookup google.com to confirm. The fix is usually correcting the DNS server setting in the network adapter properties."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "nrq-q7",
+          "questionType": "mcq",
+          "text": "An accountant receives an email from 'support@microsofft.com' asking her to click a link to verify her Office 365 account or it will be suspended. What type of attack is this and what should she do?",
+          "options": [
+            "Ransomware — she should immediately disconnect from the network",
+            "Phishing — she should report it to IT and delete the email without clicking",
+            "A DoS attack — she should restart her computer",
+            "A legitimate Microsoft email — she should follow the instructions"
+          ],
+          "correctIndex": 1,
+          "explanation": "This is a phishing attack — the sender domain 'microsofft.com' has a double 'f' (typosquatting). The urgency tactic ('account will be suspended') is a classic social engineering pressure technique. She should report it to IT, delete the email, and never click links in unsolicited emails claiming to be from technology companies. Microsoft will never ask for account verification via unsolicited email."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "nrq-q8",
+          "questionType": "mcq",
+          "text": "Which Wi-Fi security protocol should be used on a business network to ensure encrypted wireless communications?",
+          "options": [
+            "WEP — the original Wi-Fi security standard, widely supported",
+            "Open / No password — easier for staff to connect without remembering passwords",
+            "WPA3 (or minimum WPA2) — current secure standards that properly encrypt wireless traffic",
+            "WPS — specifically designed for business security environments"
+          ],
+          "correctIndex": 2,
+          "explanation": "WPA3 is the current standard; WPA2 is the minimum acceptable. WEP is completely broken and can be cracked in minutes with freely available tools. Open networks have no encryption — all traffic is readable by anyone nearby. WPS (Wi-Fi Protected Setup) has known vulnerabilities and should be disabled."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "nrq-q9",
+          "questionType": "short_answer",
+          "text": "Explain the purpose of the 3-2-1 backup rule and describe how ransomware can defeat a backup strategy that doesn't follow this rule. Include a specific example.",
+          "marks": 4,
+          "explanation": "The 3-2-1 rule: 3 copies of data, on 2 different media types, with 1 stored offsite. Ransomware encrypts files on connected storage — if the backup drive is permanently attached to the infected PC (violating the 'offsite' rule), ransomware will encrypt it too. For example: if daily backups run to an external hard drive plugged into the file server, ransomware that infects the server will also encrypt the backup drive, leaving no clean copy to restore from. An offsite or cloud backup that is not permanently connected (or uses immutable/versioned storage like Azure Backup or Backblaze) would survive the attack."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "nrq-q10",
+          "questionType": "short_answer",
+          "text": "A small business has 8 wired desktop PCs, a file server, and 15 wireless devices (laptops and phones). They are connected to the internet via an NBN connection. Identify the network devices required and explain the role each plays in this network.",
+          "marks": 5,
+          "explanation": "Modem: connects the NBN service from the ISP to the network — converts the NBN signal to Ethernet. Router: manages traffic between the local network and the internet; assigns IP addresses via DHCP; also provides the firewall between the internet and the local network. Switch (Gigabit, managed): connects all 8 wired desktops and the file server with reliable, fast wired connections; a managed switch allows VLAN separation if needed. Wireless Access Point (WAP): provides Wi-Fi coverage for the 15 wireless devices — should be a commercial-grade unit (e.g. Ubiquiti UniFi) rather than a consumer router with built-in Wi-Fi for reliability. NIC in each device: allows each PC, laptop, and server to physically connect to the network (wired Ethernet NIC or Wi-Fi chip)."
+        }
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · SPARKY IS CHECKING YOUR WORK",
+        "text": "Before I sign your Networks rotation certificate, three final questions:\n\n1. Looking across all four lessons — components, hardware selection, security, troubleshooting — which skill do you think is most valuable in day-to-day network support work? Build your argument.\n2. A junior tech suggests: 'If we just get faster internet, the network problems will go away.' What's wrong with this thinking, and what's the more accurate way to diagnose network performance problems?\n3. A client says their Wi-Fi is fine at home with their $80 router. Why can't they just buy the same thing for their 40-person office? What are three specific limitations of a consumer router in a business environment?"
+      }
+    ]
+  }
+]

@@ -1,0 +1,894 @@
+[
+  {
+    "id": "computer-systems-and-components",
+    "title": "Computer Systems and Components",
+    "estimatedMinutes": 25,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #3001 · BUNBURY HARDWARE INTEGRATORS",
+        "text": "Client: Bunbury Creative Studios — a small media production house. They're pitching for a contract to produce 4K and 8K commercial video content for Channel 7 regional. If they win it, they'll need to upgrade their whole production workflow from end to end. They want us to audit their current hardware, identify what needs replacing, and specify new systems with justification for each purchase decision. Budget: $25,000. Their current specs: 4× Mac Mini M1 (2020), 2× Dell OptiPlex 7070 (i5, 16 GB RAM, 500 GB SSD), 1× synology NAS for shared storage. Leo's UI team will be rendering previews. Sloane's data pipeline will be pushing raw footage files. Everything depends on the hardware holding up."
+      },
+      {
+        "type": "heading",
+        "text": "Beyond Year 11: Applying Hardware Knowledge to Business Decisions",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "In Year 11 you learned what components do. Year 12 is about applying that knowledge to real procurement decisions — justifying purchases with technical evidence, matching workloads to specifications, and advising clients on the cost-benefit tradeoffs of different hardware configurations."
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · JAXEN 'SPARKY' MILLER, BUNBURY HARDWARE INTEGRATORS",
+        "text": "Clients don't want to hear specs. They want to hear outcomes. Don't say '128 GB RAM and an RTX 4090.' Say 'your 8K timelines will render 4× faster, meaning you can turn around a 30-second commercial in one hour instead of four.' Translate specs to business outcomes, every time."
+      },
+      {
+        "type": "heading",
+        "text": "CPU Selection for Professional Workloads",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Not all CPUs are equal — and the right one depends entirely on the workload. Creative studios need multi-core performance for rendering. Servers need reliability and ECC memory support. Office workstations need efficient single-threaded performance for productivity apps."
+      },
+      {
+        "type": "table",
+        "headers": ["Workload Type", "Priority CPU Spec", "Example CPU", "Why"],
+        "rows": [
+          ["4K/8K Video Rendering", "High core count (12–24 cores), large cache", "AMD Ryzen 9 7950X (16 cores), Apple M3 Max", "Rendering splits across all cores — more cores = proportionally faster"],
+          ["3D Modelling / CAD", "High clock speed + strong single-threaded IPC", "Intel Core i9-14900K", "CAD tools run many single-threaded calculations in sequence"],
+          ["Database Server", "ECC RAM support, high core count, server-grade reliability", "AMD EPYC 9354, Intel Xeon Gold", "ECC corrects memory errors — critical for data integrity"],
+          ["General Office / Reception", "Efficient mid-range, low TDP", "Intel Core i5-13400, AMD Ryzen 5 7600", "Task is light — high-end CPU wastes budget and generates heat"],
+          ["Machine Learning / AI", "Many cores + AVX-512 support, paired with GPU", "Intel Xeon Scalable, AMD EPYC", "ML training is massively parallel — often offloaded to GPU (NVIDIA H100)"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "RAM: Capacity, Speed, and Type",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "DDR5 is the current standard in new builds, offering higher bandwidth and lower power consumption than DDR4. For creative workstations, 32 GB is the minimum for 4K work; 8K timelines with multiple streams demand 64–128 GB. ECC (Error-Correcting Code) RAM is mandatory for servers — it detects and corrects single-bit memory errors automatically."
+      },
+      {
+        "type": "table",
+        "headers": ["RAM Type", "ECC?", "Typical Use", "Max Speed (approx)"],
+        "rows": [
+          ["DDR4 DIMM", "No (consumer) / Yes (server)", "Desktops, workstations (2016–2023)", "3200–5000 MT/s"],
+          ["DDR5 DIMM", "No (consumer) / Yes (server)", "Current-gen desktops and workstations", "4800–8400 MT/s"],
+          ["LPDDR5 (soldered)", "No", "Laptops, Apple Silicon (unified memory)", "6400 MT/s — shared with GPU on Apple M-series"],
+          ["RDIMM / RDIMM ECC", "Yes (mandatory)", "Server-grade — requires server motherboard", "4800 MT/s (DDR5 ECC)"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Storage: Matching Type to Workload",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Storage Type", "Speed", "Capacity Range", "Cost/TB", "Best For"],
+        "rows": [
+          ["NVMe SSD (PCIe 4.0)", "5,000–7,000 MB/s read", "250 GB – 8 TB", "High", "OS, active project files, applications"],
+          ["NVMe SSD (PCIe 5.0)", "10,000–14,000 MB/s read", "1–4 TB", "Very High", "High-throughput workstations, 8K editing"],
+          ["SATA SSD", "500–550 MB/s read", "120 GB – 4 TB", "Medium", "Secondary drives, less demanding workloads"],
+          ["HDD (7200 RPM)", "150–200 MB/s read", "500 GB – 20 TB", "Low", "Bulk archive, backup, cold storage"],
+          ["NAS (RAID array)", "Depends on RAID level + drives", "Multiple TB to PB", "Low–Medium", "Shared team storage, file servers, backups"],
+          ["LTO Tape", "~400 MB/s", "12–45 TB per cartridge", "Very Low", "Long-term archive, broadcast production standard"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "GPUs in Creative and Professional Workflows",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Modern video editing software (Adobe Premiere Pro, DaVinci Resolve, Final Cut Pro) uses GPU-accelerated rendering. NVIDIA RTX cards use CUDA cores for this; AMD cards use OpenCL. Apple Silicon (M3/M4 Pro/Max) has a powerful integrated GPU in the same chip. The GPU is now a critical spec for any creative production workstation — not just for gaming."
+      },
+      {
+        "type": "comparison",
+        "title": "GPU Platform Comparison for Video Production",
+        "items": [
+          {
+            "label": "NVIDIA RTX (Windows/Linux)",
+            "points": [
+              "CUDA cores for GPU-accelerated rendering in Premiere, Resolve, After Effects",
+              "NVENC hardware encoder — accelerates export with minimal CPU load",
+              "RTX 4070 Super: ~$800 AUD — excellent for 4K",
+              "RTX 4090: ~$3,000 AUD — 8K real-time playback capable",
+              "Separate GPU + CPU — more power, more heat, more cost"
+            ]
+          },
+          {
+            "label": "Apple Silicon (M3/M4 Pro/Max)",
+            "points": [
+              "Unified memory architecture — GPU and CPU share the same fast memory pool",
+              "M3 Max: 40-core GPU, up to 128 GB unified memory",
+              "Final Cut Pro optimised for Apple Silicon — extremely fast render times",
+              "No separate GPU — fixed configuration, not upgradeable",
+              "Mac Pro or MacBook Pro M3 Max: excellent for Final Cut/DaVinci workflows"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · AUDIT AND SPEC BUNBURY CREATIVE STUDIOS",
+        "text": "Using the client brief from Ticket #3001 ($25,000 budget, 4K and 8K production), complete the following:\n\n1. Audit their current setup. For each current system, identify whether it's adequate for 4K/8K production and give a specific reason why or why not (reference real specifications).\n2. Build a new hardware specification. Create a bill of materials table with: Device/Component, Quantity, Specific Product Name, Unit Price (researched current AUD prices), Total, Justification.\n3. Prioritise your spending. If you can't fit everything in $25,000, explain what you'd compromise on first and why.\n4. The team uses shared storage on the Synology NAS. Given that Sloane's data pipeline will push 50+ GB raw footage files per project, evaluate whether the existing NAS is adequate or what upgrade path you'd recommend."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "ECC RAM (Error-Correcting Code)", "definition": "Server-grade memory that automatically detects and corrects single-bit errors. Prevents data corruption in critical systems. Requires server/workstation-class motherboards and CPUs." },
+          { "term": "NVMe (Non-Volatile Memory Express)", "definition": "A high-speed storage protocol that connects SSDs directly via PCIe lanes. Up to 14 GB/s on PCIe 5.0 — far faster than SATA SSD (550 MB/s) or HDD." },
+          { "term": "GPU (Graphics Processing Unit)", "definition": "A processor with thousands of small cores optimised for parallel computation. Used for rendering video, 3D graphics, machine learning, and scientific simulation." },
+          { "term": "Unified memory", "definition": "Apple Silicon architecture where CPU and GPU share the same high-speed memory pool. Eliminates transfer bottlenecks between CPU and GPU memory." },
+          { "term": "RAID (Redundant Array of Independent Disks)", "definition": "Combines multiple drives for performance (striping) and/or redundancy (mirroring). RAID 1 mirrors; RAID 5 stripes with parity for fault tolerance; RAID 10 combines both." },
+          { "term": "Thermal Design Power (TDP)", "definition": "The maximum heat a CPU or GPU generates under sustained load, measured in watts. Higher TDP requires better cooling solutions and increases power consumption." }
+        ]
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "csc12-q1",
+          "questionType": "mcq",
+          "text": "A production company is choosing between a 16-core AMD Ryzen 9 and a 6-core Intel Core i9 with a higher clock speed for 8K video rendering. Which is likely to perform better for this specific workload, and why?",
+          "options": [
+            "The Intel Core i9 — higher clock speed always results in faster rendering",
+            "They will perform identically — rendering is not affected by core count",
+            "The AMD Ryzen 9 — video rendering is a highly parallel workload that scales with core count",
+            "Neither — the GPU is the only component that matters for rendering"
+          ],
+          "correctIndex": 2,
+          "explanation": "Video rendering is a massively parallel workload — rendering software can distribute the work across all available cores simultaneously. A 16-core processor will typically render significantly faster than a 6-core processor even if the 6-core has a higher clock speed. GPU acceleration also helps, but the CPU core count is the primary factor for timeline rendering in software like DaVinci Resolve."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "csc12-q2",
+          "questionType": "short_answer",
+          "text": "A client's server has been experiencing occasional data corruption on large database records. The IT team suspects RAM errors. Why would ECC RAM solve this problem, and why can't they simply swap to ECC RAM without any other changes?",
+          "marks": 3,
+          "explanation": "ECC RAM continuously monitors for and corrects single-bit memory errors before they can corrupt data — essential for servers holding critical data. However, ECC RAM cannot simply be swapped into any system. It requires a motherboard and CPU that specifically support ECC — consumer-grade Intel Core CPUs and motherboards typically do not support ECC (Intel Xeon and AMD EPYC/Threadpro are needed for servers). Simply purchasing ECC DIMMs and installing them in an existing consumer system will result in them either running without ECC enabled or not working at all."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "csc12-q3",
+          "questionType": "mcq",
+          "text": "A video editing workstation will store 8K RAW footage files (individual files up to 500 GB each). The editor needs to scrub through footage in real-time without buffering. Which storage solution is MOST appropriate for the active project drive?",
+          "options": [
+            "7200 RPM HDD — highest capacity at lowest cost",
+            "SATA SSD — faster than HDD with good capacity",
+            "NVMe PCIe 4.0 or 5.0 SSD — delivers 5,000–14,000 MB/s read speeds required for uncompressed 8K playback",
+            "USB 3.0 external drive — convenient and portable for large files"
+          ],
+          "correctIndex": 2,
+          "explanation": "Uncompressed 8K RAW video has extremely high bitrates — NVMe PCIe 4.0/5.0 drives with 5,000–14,000 MB/s read speeds are the only storage class that can sustain real-time 8K playback without dropping frames. SATA SSDs max out at 550 MB/s which is insufficient. HDDs at 150–200 MB/s are completely inadequate. USB 3.0 external drives are also too slow."
+        }
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · SPARKY IS CHECKING YOUR WORK",
+        "text": "Before I sign off on the Bunbury Creative Studios quote:\n\n1. You've recommended an Apple Mac Pro (M2 Ultra) for the primary editing workstation. The post-production team says they need to run a Windows-only broadcast encoder that's required by Channel 7. How does this affect your recommendation, and what are the options?\n2. You've spec'd 64 GB of unified memory on an Apple M3 Max. The client asks: 'Can we upgrade the memory in 12 months when we have more budget?' What do you tell them, and what does this mean for their long-term upgrade path?\n3. The NAS currently runs RAID 1 (mirroring). The studio manager thinks this means they have a backup. Explain the difference between RAID and a backup, and why RAID alone is not a disaster recovery strategy."
+      }
+    ]
+  },
+  {
+    "id": "operating-systems",
+    "title": "Operating Systems",
+    "estimatedMinutes": 25,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #3002 · BUNBURY HARDWARE INTEGRATORS",
+        "text": "Client: Bunbury Shire Council. They're standardising their IT fleet. Currently they have a mix of Windows 10 (some approaching end-of-life), Windows 11, macOS, and a handful of Ubuntu Linux machines in the IT department. HR is asking which OS should be the standard, what the transition plan looks like, and whether they need Windows Server for their centralised file and print management. You need to advise them on OS types, feature comparison, and licensing implications."
+      },
+      {
+        "type": "heading",
+        "text": "Operating Systems: Year 12 Depth",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "An operating system manages all hardware resources and provides a platform for application software. In a business context, OS choice affects software compatibility, licensing cost, security patch frequency, and the skills required from IT staff to support the fleet."
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · JAXEN 'SPARKY' MILLER, BUNBURY HARDWARE INTEGRATORS",
+        "text": "The OS is the foundation. Get it wrong and everything on top is compromised. A government client on Windows 10 after end-of-support is a compliance nightmare — no security patches means no insurance coverage for a data breach in most policies. OS decisions are not IT decisions; they're risk decisions."
+      },
+      {
+        "type": "heading",
+        "text": "Types of Operating Systems",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["OS Category", "Examples", "Primary Use", "Key Characteristics"],
+        "rows": [
+          ["Desktop OS", "Windows 11, macOS Sequoia, Ubuntu 24.04", "Personal and business workstations", "GUI-first, application support, user account management"],
+          ["Server OS", "Windows Server 2022, Ubuntu Server 22.04 LTS, RHEL 9", "Network servers, domain controllers, web hosting", "Headless operation (no GUI needed), remote management, high stability"],
+          ["Mobile OS", "iOS 18, Android 15", "Smartphones and tablets", "Touch-optimised, app store distribution, sandboxed apps"],
+          ["Embedded OS", "RTOS (FreeRTOS, VxWorks), Linux (custom)", "IoT devices, industrial controllers, routers", "Minimal footprint, deterministic timing, single-purpose"],
+          ["Hypervisor / Virtualisation", "VMware ESXi, Microsoft Hyper-V, Proxmox", "Runs multiple OS instances on one physical server", "Hosts virtual machines (VMs) — critical for modern enterprise IT"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Desktop OS Comparison: Windows, macOS, Linux",
+        "level": 2
+      },
+      {
+        "type": "comparison",
+        "title": "Windows 11 vs macOS vs Linux (Ubuntu)",
+        "items": [
+          {
+            "label": "Windows 11",
+            "points": [
+              "Dominant in business — 70%+ enterprise market share",
+              "Compatible with the widest range of business software",
+              "Active Directory / Group Policy for centralised IT management",
+              "Microsoft 365 deeply integrated",
+              "Licensing cost: Windows 11 Pro ~$220/device or via Microsoft 365 Business",
+              "End-of-support dates matter: Windows 10 EOL October 2025",
+              "Patch Tuesday — monthly security updates, critical patches urgent"
+            ]
+          },
+          {
+            "label": "macOS Sequoia",
+            "points": [
+              "Exclusive to Apple hardware — higher hardware cost",
+              "Strong for creative industries (Final Cut Pro, Logic Pro, Adobe Creative Cloud)",
+              "Unix-based — developers prefer it for web/app development",
+              "Annual free OS updates (no Windows-style licensing model)",
+              "Limited enterprise management without third-party MDM (Jamf, Mosyle)",
+              "Cannot run on non-Apple hardware (except in virtual machines, which is against Apple EULA)",
+              "Less software compatibility for specialised business/government software"
+            ]
+          },
+          {
+            "label": "Linux (Ubuntu/RHEL)",
+            "points": [
+              "Free and open source (desktop), paid support tiers available (RHEL, Ubuntu Pro)",
+              "Highly customisable — from minimal CLI-only to full desktop environment",
+              "Most web servers and cloud infrastructure run Linux",
+              "Limited compatibility with mainstream Windows business software (Office, Teams — web versions available)",
+              "Requires Linux-proficient staff for support",
+              "Used by: developers, IT departments, HPC environments, embedded systems",
+              "Ubuntu 24.04 LTS: 5 years standard support, 10 years with Ubuntu Pro"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Windows Server: Why a Separate Server OS?",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Windows Server provides services that a business network depends on — Active Directory (centralised user accounts), Group Policy (enforcing security settings across all devices), DNS, DHCP, file sharing, and print management. A standard Windows 11 workstation cannot fulfil these roles at scale."
+      },
+      {
+        "type": "table",
+        "headers": ["Windows Server Role", "What It Does", "Business Value"],
+        "rows": [
+          ["Active Directory Domain Services (AD DS)", "Centralised directory of all user accounts, computers, and groups", "One login works on any PC in the organisation; easy provisioning and deprovisioning"],
+          ["Group Policy (GPO)", "Push configuration settings and security rules to all domain-joined devices", "Enforce password policies, restrict USB ports, deploy software — all from one console"],
+          ["File Server / DFS", "Centralised shared file storage with permissions", "Control who can read/write/delete files; audit access logs"],
+          ["DHCP Server", "Assign IP addresses automatically to all network devices", "Consistent, managed IP addressing — no conflicts"],
+          ["DNS Server", "Resolve internal hostnames (\\\\fileserver1 → 192.168.1.10)", "Internal network name resolution for all services"],
+          ["Windows Server Update Services (WSUS)", "Control and approve Windows updates for all devices centrally", "Patch management — prevent untested updates breaking production machines"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "OS Lifecycle and End-of-Life (EOL)",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Every operating system has a support lifecycle — a period during which the vendor releases security patches. After End-of-Life (EOL), no more patches are issued. Running EOL software in a business environment is a compliance and security risk — cyber insurance policies often exclude incidents on EOL systems."
+      },
+      {
+        "type": "table",
+        "headers": ["Operating System", "End-of-Support Date", "Action Required"],
+        "rows": [
+          ["Windows 10 (all versions)", "October 14, 2025", "Upgrade to Windows 11 or replace hardware if not compatible"],
+          ["Windows 11 (current)", "October 2031 (estimated)", "Plan regular upgrade cycles"],
+          ["Windows Server 2012 R2", "October 2023 — ALREADY EOL", "Immediate action: migrate to Server 2022 or move to Azure"],
+          ["Windows Server 2022", "October 2031", "Current recommended version"],
+          ["Ubuntu 22.04 LTS", "April 2027 (standard support)", "Ubuntu Pro extends to 2032"],
+          ["Ubuntu 24.04 LTS", "April 2029 (standard support)", "Current LTS release — recommended"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · OS STANDARDISATION PLAN FOR BUNBURY SHIRE COUNCIL",
+        "text": "Using Ticket #3002 (mixed Windows 10/11/macOS/Linux fleet, government context):\n\n1. Write an OS recommendation for the Council's desktop fleet. Choose one primary OS and justify the choice with at least four business-specific reasons.\n2. The Council's IT manager wants to know whether they need Windows Server or if Windows 11 Pro workstations can handle their file sharing and user account management. Write a recommendation with specific Windows Server roles that the Council would need.\n3. Windows 10 is approaching EOL. Three PCs in the finance team are too old to run Windows 11 (they don't have TPM 2.0). What are the three options for handling these machines, and what do you recommend?\n4. The IT manager asks about Linux: 'Could we save money by switching to Ubuntu?' Write a cost-benefit analysis covering licensing, software compatibility, support, and training costs."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Operating System (OS)", "definition": "System software that manages hardware resources and provides a platform for application software. Examples: Windows 11, macOS, Ubuntu Linux." },
+          { "term": "Active Directory (AD)", "definition": "Microsoft's centralised directory service. Manages user accounts, computer accounts, and security policies for Windows domain networks." },
+          { "term": "Group Policy (GPO)", "definition": "A Windows Server feature that pushes configuration settings and security rules to all domain-joined devices simultaneously." },
+          { "term": "End-of-Life (EOL)", "definition": "The date after which a software vendor stops issuing security patches. Running EOL software creates compliance and security risks." },
+          { "term": "Hypervisor", "definition": "Software (or firmware) that creates and manages virtual machines. Type 1 (bare metal): VMware ESXi, Hyper-V. Type 2 (hosted): VirtualBox, VMware Workstation." },
+          { "term": "LTS (Long-Term Support)", "definition": "A software release with an extended support and patch lifecycle. Ubuntu LTS versions receive 5–10 years of updates vs 9 months for standard releases." }
+        ]
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "os12-q1",
+          "questionType": "mcq",
+          "text": "A local government organisation needs to manage 200 Windows workstations — enforcing password policies, restricting USB ports, and deploying software remotely. Which Microsoft technology enables centralised management of all these settings?",
+          "options": [
+            "Windows Defender — the security suite that manages all device policies",
+            "Microsoft 365 — the cloud productivity suite handles device settings",
+            "Active Directory with Group Policy (GPO) — centralised directory and policy management for domain-joined devices",
+            "Windows Update — automatically applies settings and security configurations"
+          ],
+          "correctIndex": 2,
+          "explanation": "Active Directory Domain Services combined with Group Policy Objects (GPOs) is the standard Microsoft solution for centralised IT management at scale. GPOs can enforce password complexity rules, block USB ports, deploy software packages, and configure hundreds of security settings across all domain-joined devices simultaneously — from a single Windows Server."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "os12-q2",
+          "questionType": "true_false",
+          "text": "A business running Windows 10 after its October 2025 End-of-Life date will immediately lose access to all their applications and files.",
+          "correctAnswer": false,
+          "explanation": "False. EOL does not break the OS or applications — Windows 10 will continue to run after October 2025. The risk is that Microsoft will no longer issue security patches. This means any new vulnerabilities discovered after that date will remain unpatched permanently, exposing the system to cyberattacks. Cyber insurance policies often exclude claims on EOL systems."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "os12-q3",
+          "questionType": "short_answer",
+          "text": "A small business is considering switching from Windows to Ubuntu Linux to reduce licensing costs. Identify two potential cost savings AND two hidden costs or risks this switch might introduce.",
+          "marks": 4,
+          "explanation": "Cost savings: (1) No Windows licensing fees — Ubuntu desktop is free, saving ~$220 per device. (2) No Windows Server licensing — Ubuntu Server is free, compared to Windows Server Standard at ~$1,200+ AUD. Hidden costs/risks: (1) Staff retraining — employees familiar with Windows will need time to learn Linux, reducing productivity and requiring training investment. (2) Software incompatibility — many business applications (MYOB, Xero desktop, industry-specific tools) may not have Linux versions, requiring expensive workarounds or alternatives. (3) In-house Linux support skills — IT staff with Windows experience may need retraining or replacement with Linux-proficient staff, whose salaries may be higher."
+        }
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · SPARKY IS CHECKING YOUR WORK",
+        "text": "Before I submit the Council's OS recommendation:\n\n1. You've recommended Windows 11 Pro for all desktops and Windows Server 2022 for the server. The Council's IT manager asks: 'What's the difference between Windows 11 Home, Pro, and Enterprise — and does it matter which edition we buy?' Walk through the key differences and why the Council needs Pro or Enterprise, not Home.\n2. The three Finance PCs don't support Windows 11. You've recommended replacing them. The Finance manager says the machines 'work fine.' Write your risk-based justification for why continuing to run Windows 10 past EOL is unacceptable for a government finance office.\n3. The Council uses cloud file storage (SharePoint). An IT staffer suggests 'We don't need Windows Server if everything's in the cloud.' What on-premises services would still require Windows Server even if file storage moves to SharePoint?"
+      }
+    ]
+  },
+  {
+    "id": "software-compatibility",
+    "title": "Software Compatibility",
+    "estimatedMinutes": 22,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #3003 · BUNBURY HARDWARE INTEGRATORS",
+        "text": "Client: Bunbury Dental Group. They've just upgraded all 12 PCs from Windows 10 to Windows 11. Now their practice management software — Dental4Windows — won't launch on three of the upgraded machines. Additionally, two older printers no longer work since the upgrade, and a specialist X-ray imaging device is throwing 'driver not found' errors. You need to diagnose each compatibility fault, find a resolution, and provide a compatibility checklist the practice manager can use before any future OS upgrades."
+      },
+      {
+        "type": "heading",
+        "text": "What Is Software Compatibility?",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Software compatibility means an application can run correctly on a specific hardware and OS combination. Compatibility breaks when an OS upgrade changes system calls, removes old APIs, changes driver models, or requires newer hardware features that older peripherals don't support."
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · JAXEN 'SPARKY' MILLER, BUNBURY HARDWARE INTEGRATORS",
+        "text": "Never upgrade the OS on a production system without testing every critical application on a test machine first. I've had to roll back entire clinic deployments because a $40,000 piece of specialist software had a Windows 11 compatibility issue that the vendor hadn't patched yet. Test before you touch production."
+      },
+      {
+        "type": "heading",
+        "text": "Types of Compatibility Issues",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Compatibility Issue", "Cause", "Real Example", "Solution"],
+        "rows": [
+          ["Driver incompatibility", "Hardware driver not updated for new OS version", "Older HP printer with Windows XP drivers — no Windows 11 support", "Download updated driver from manufacturer, or replace hardware"],
+          ["32-bit vs 64-bit application", "64-bit Windows 11 cannot run 16-bit apps; can run 32-bit via WoW64 layer", "Old MS-DOS or Windows 3.1 era software on Windows 11", "Replace with 64-bit version, use virtual machine for legacy software"],
+          ["Deprecated API", "New OS removed APIs that old software relied on", "Software calling DirectX 7 functions removed in modern Windows", "Software vendor must update the software; no client-side workaround"],
+          ["Software activation / licensing", "OS fingerprint changes after upgrade trigger re-activation", "Adobe CS5 licence server offline; volume licence not transferred", "Reactivate via vendor, migrate to subscription model"],
+          ["Hardware minimum requirements", "New OS requires features older hardware lacks", "Windows 11 requires TPM 2.0 and Secure Boot", "Enable in BIOS if supported, or replace hardware"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Device Drivers: How Hardware and OS Communicate",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "A device driver is software that acts as a translator between a hardware device and the operating system. Every printer, scanner, GPU, NIC, and USB device needs a driver. When the OS changes, driver models can change — meaning old drivers may not function on a new OS version."
+      },
+      {
+        "type": "grid",
+        "title": "Driver Troubleshooting Toolkit (Windows)",
+        "items": [
+          {
+            "icon": "⚙️",
+            "label": "Device Manager",
+            "description": "Lists all hardware. Yellow exclamation mark = missing or failed driver. Right-click > Update Driver or Roll Back Driver."
+          },
+          {
+            "icon": "🔍",
+            "label": "Manufacturer Website",
+            "description": "Always check the manufacturer's website for the latest driver. Example: HP.com/support, Epson.com.au/support. Search by model number."
+          },
+          {
+            "icon": "🪟",
+            "label": "Windows Update (Optional Drivers)",
+            "description": "Windows Update > Advanced Options > Optional Updates sometimes includes OEM driver updates not in the main update catalog."
+          },
+          {
+            "icon": "📦",
+            "label": "Compatibility Mode",
+            "description": "Right-click an .exe > Properties > Compatibility tab. Run the app as if it were an earlier Windows version. Not guaranteed to fix deep API issues."
+          },
+          {
+            "icon": "💻",
+            "label": "Virtual Machine",
+            "description": "Run the incompatible software inside a Windows 10 VM on the Windows 11 host. VMware Workstation or Microsoft Hyper-V. CPU virtualisation must be enabled in BIOS."
+          },
+          {
+            "icon": "📞",
+            "label": "Vendor Support",
+            "description": "Contact the software vendor's support line. Check their compatibility matrix — some vendors publish supported OS versions in their knowledge base."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "OS Upgrade Compatibility Checklist",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Check", "Action", "Tool / Resource"],
+        "rows": [
+          ["Application compatibility", "List all installed applications; check each against vendor's compatibility matrix", "Vendor support pages, Windows PC Health Check app"],
+          ["Hardware driver availability", "List all hardware; check manufacturer site for Windows 11 drivers", "Device Manager, manufacturer support pages"],
+          ["System requirements", "Verify CPU, TPM 2.0, Secure Boot, RAM, storage meet Windows 11 minimum", "PC Health Check, BIOS settings"],
+          ["Licencing", "Check if software licences are tied to a specific OS version or will re-activate", "Software vendor support, licence key documentation"],
+          ["Test environment", "Deploy Windows 11 on one non-production test machine and run all critical apps", "Spare PC or VM"],
+          ["Rollback plan", "Create a full system image before upgrading each machine", "Windows System Image, Acronis, Macrium Reflect"],
+          ["Backup all user data", "Verify and test backup of user files before any upgrade", "Windows Backup, Veeam, OneDrive"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · RESOLVE BUNBURY DENTAL'S COMPATIBILITY FAULTS",
+        "text": "Working through Ticket #3003 (Dental4Windows won't launch, 2 printers broken, X-ray device showing 'driver not found'):\n\n1. For each of the three issues, identify the most likely compatibility fault type (from the table above) and propose a resolution path in order of steps.\n2. Dental4Windows is critical — the practice cannot operate without it. What is the immediate workaround if you cannot resolve the compatibility issue in the same day? (The practice has one machine still on Windows 10.)\n3. The X-ray imaging device is a Planmeca ProSensor HD, manufactured in 2014. The vendor's website shows 'Windows 10 supported — Windows 11: contact vendor.' What does this tell you, and what are the client's options if the vendor says Windows 11 will never be supported?\n4. Create the compatibility checklist (from the table above) formatted as a one-page document the dental practice manager can use for all future upgrades."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Device driver", "definition": "Software that allows an OS to communicate with a hardware device. OS version changes can break drivers if the driver model changes." },
+          { "term": "API (Application Programming Interface)", "definition": "A set of functions an OS provides for software to use. When an OS removes or changes an API, software that relied on it breaks." },
+          { "term": "Compatibility mode", "definition": "A Windows feature that runs an application as if it's on an older OS version — useful for minor compatibility issues but not deep API-level breaks." },
+          { "term": "WoW64", "definition": "Windows on Windows 64-bit — a layer that allows 32-bit applications to run on 64-bit Windows. 16-bit apps are not supported." },
+          { "term": "Virtual machine (VM)", "definition": "A software-emulated computer running inside a host OS. Used to run legacy software or incompatible OS versions without separate hardware." },
+          { "term": "System image", "definition": "A complete snapshot of an OS installation including all apps, drivers, and settings. Used to restore a machine to a known good state after a failed upgrade." }
+        ]
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sc12-q1",
+          "questionType": "mcq",
+          "text": "After upgrading to Windows 11, a user's scanner (purchased in 2012) no longer works. Device Manager shows a yellow exclamation mark next to the scanner. What is the MOST likely cause and first resolution step?",
+          "options": [
+            "The scanner is physically broken by the OS upgrade and needs replacement",
+            "Windows 11 has blocked the scanner for security reasons — disable Windows Defender",
+            "The scanner's driver is incompatible with Windows 11 — check the manufacturer's website for an updated Windows 11 driver",
+            "The USB port has failed — try a different port"
+          ],
+          "correctIndex": 2,
+          "explanation": "A yellow exclamation mark in Device Manager indicates a missing, corrupted, or incompatible driver — not physical hardware failure. A 2012 scanner may not have received Windows 11 driver updates from the manufacturer. The first step is visiting the manufacturer's support website, finding the Windows 11 driver for that specific model, and installing it. If none exists, options include running the scanner from a Windows 10 VM or replacing the device."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sc12-q2",
+          "questionType": "true_false",
+          "text": "Running a 32-bit application on 64-bit Windows 11 will always cause the application to fail.",
+          "correctAnswer": false,
+          "explanation": "False. 64-bit Windows 11 includes WoW64 (Windows on Windows 64-bit) — a compatibility layer that allows 32-bit applications to run on 64-bit Windows. Most 32-bit applications run fine. The exception is very old 16-bit applications (Windows 3.x era), which are not supported on 64-bit Windows at all. 32-bit applications may also have performance limitations but typically run correctly."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sc12-q3",
+          "questionType": "short_answer",
+          "text": "A dental practice relies on specialist X-ray software that the vendor has confirmed will never support Windows 11. The practice's lease on new computers requires Windows 11. Describe two technical solutions that would allow the practice to continue using the software.",
+          "marks": 4,
+          "explanation": "Option 1: Virtual Machine — install Windows 10 in a VM (using Hyper-V or VMware Workstation) on the Windows 11 host. Run the X-ray software inside the Windows 10 VM. This requires verifying that the X-ray device driver can be passed through to the VM, and that the VM has sufficient hardware resources. Option 2: Dedicated legacy workstation — keep one physical machine running Windows 10 solely for the X-ray software. Isolate it from the internet (air-gapped or on a separate VLAN) to reduce security risk from the EOL OS. This machine does not need to be used for anything else. Both options involve ongoing security and maintenance trade-offs."
+        }
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · SPARKY IS CHECKING YOUR WORK",
+        "text": "You've submitted the compatibility resolution plan for Bunbury Dental. Three questions:\n\n1. You've suggested running the X-ray software in a Windows 10 VM on Windows 11. The dental practice manager asks whether the X-ray USB device will work inside the VM. What technical requirement does this introduce, and how would you verify it's possible before committing to this solution?\n2. You've recommended creating a system image backup before upgrading each PC. The practice manager says 'We already back up to OneDrive — why do we need a system image too?' Explain the difference between file backups (OneDrive) and a system image, and why both are needed.\n3. One of the PCs was upgraded and the software now works, but it's noticeably slower than before. Task Manager shows CPU at 30% and RAM at 45% — nothing is saturated. What else could explain the performance drop after an OS upgrade?"
+      }
+    ]
+  },
+  {
+    "id": "selecting-and-purchasing-hardware",
+    "title": "Selecting and Purchasing Hardware",
+    "estimatedMinutes": 25,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #3004 · BUNBURY HARDWARE INTEGRATORS",
+        "text": "Client: Bunbury Independent Schools Cooperative — they manage IT procurement for 5 schools. They need to refresh 180 student workstations across all schools. Requirements vary: primary school needs basic internet and Office apps; senior secondary students do design, coding, and video editing; the admin offices need reliable long-life workstations. They want a formal procurement recommendation including hardware selection criteria, a comparison of vendors, and a total cost of ownership analysis. Budget: $270,000 across all schools."
+      },
+      {
+        "type": "heading",
+        "text": "Hardware Procurement: More Than Just Specs",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Buying hardware for a business or institution is not the same as buying for yourself. Total Cost of Ownership (TCO) considers not just the purchase price but maintenance, warranties, support contracts, energy consumption, and end-of-life disposal. A cheap workstation with high failure rates costs more than a slightly more expensive one with a 5-year warranty."
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · JAXEN 'SPARKY' MILLER, BUNBURY HARDWARE INTEGRATORS",
+        "text": "Price is not cost. I've seen schools buy the cheapest laptops they could find and spend three times the savings on repairs in the first two years. Add up warranty length, support availability, standardised models (easier to replace parts), and energy costs over 5 years before you make the call. Always buy on TCO, not sticker price."
+      },
+      {
+        "type": "heading",
+        "text": "Hardware Selection Criteria",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Criterion", "What to Consider", "Example Decision"],
+        "rows": [
+          ["Workload requirements", "CPU cores, RAM, GPU, storage speed — matched to the actual tasks", "Video editing students need 32 GB RAM + NVMe SSD; primary students need 8 GB + SATA SSD"],
+          ["Warranty and support", "Length of warranty, on-site vs mail-in repair, next business day vs 5-day", "Business: Dell ProSupport Next Business Day 5yr; Consumer: standard 1yr warranty"],
+          ["Vendor reliability and support", "Local support availability, driver update history, enterprise reputation", "Lenovo ThinkPad, Dell Latitude, HP EliteBook have proven enterprise track records"],
+          ["Standardisation", "Using the same model across a fleet reduces spare parts and simplifies support", "Buy 180 of the same model — one driver image, shared spare parts"],
+          ["Energy efficiency", "Power consumption × hours in use × electricity cost × 5 years", "A 15W difference per PC × 180 units × 8 hrs/day × 250 days × $0.30/kWh = significant savings"],
+          ["Future-proofing", "Will the hardware support the next OS version? Expandable RAM/storage?", "Windows 11 requires TPM 2.0 — verify all units meet this before ordering"],
+          ["Disposal and sustainability", "E-waste recycling, manufacturer take-back programs, refurbishment options", "Dell Asset Recovery, Apple GiveBack, Officeworks e-cycling"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Total Cost of Ownership (TCO) Framework",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Cost Category", "What's Included", "Over 5 Years (per unit example)"],
+        "rows": [
+          ["Acquisition cost", "Purchase price, delivery, installation", "$800 laptop purchase"],
+          ["Software licensing", "OS, productivity suite (Microsoft 365), security software", "$180 (Microsoft 365 Business Basic × 5 years)"],
+          ["Support and warranty", "Extended warranty, IT support labour per device per year", "$200 extended warranty + $150 IT labour × 5 yrs = $950"],
+          ["Downtime cost", "Productivity lost when device fails — multiply by hourly staff cost", "2 failures × 4hrs downtime × $45/hr = $360"],
+          ["Energy cost", "Watts consumed × usage hours × electricity rate × years", "65W × 8hrs × 250days × $0.30/kWh × 5yrs = $195"],
+          ["Disposal cost", "E-waste recycling, secure data destruction", "$20–$50 per device"],
+          ["TOTAL 5-year TCO", "", "~$2,500–$3,500 per device depending on spec and support"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Desktop vs Laptop vs Thin Client: The Three Options",
+        "level": 2
+      },
+      {
+        "type": "comparison",
+        "title": "Form Factor Comparison for School Fleet",
+        "items": [
+          {
+            "label": "Desktop PC",
+            "points": [
+              "Lower purchase cost for equivalent performance",
+              "Easier and cheaper to upgrade/repair (RAM, storage, GPU)",
+              "Fixed location — no portability",
+              "Higher energy consumption than laptops",
+              "Best for: senior secondary design/video labs, admin offices",
+              "Example: Lenovo ThinkCentre M90s, Dell OptiPlex 7010"
+            ]
+          },
+          {
+            "label": "Laptop / Notebook",
+            "points": [
+              "Portable — students can take to different rooms or home",
+              "Higher cost for equivalent performance vs desktop",
+              "Battery adds failure risk and replacement cost",
+              "Limited upgradeability — often RAM/storage is soldered",
+              "Best for: primary school general use, mobile learning programmes",
+              "Example: Lenovo ThinkPad L14, Dell Latitude 5440"
+            ]
+          },
+          {
+            "label": "Thin Client",
+            "points": [
+              "Very low purchase price ($200–$400)",
+              "No local processing — runs apps from a server or cloud",
+              "Near-zero maintenance — no moving parts, no local storage",
+              "Completely dependent on network reliability and server performance",
+              "High server infrastructure cost offsets device savings at scale",
+              "Best for: environments with existing server infrastructure and stable network",
+              "Example: HP t640 Thin Client connecting to Windows Server Remote Desktop"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · PROCUREMENT PLAN FOR BUNBURY INDEPENDENT SCHOOLS",
+        "text": "Using Ticket #3004 ($270,000 budget, 180 workstations, three school types):\n\n1. Define three workstation tiers: Primary (basic), Senior Secondary (design/coding/video), Admin (reliable, long-life). For each tier, specify: form factor, minimum specs (CPU, RAM, storage, display), warranty, and a real product recommendation with price.\n2. Allocate the 180 units across the three tiers. Show your reasoning.\n3. Calculate a 5-year TCO per unit for your Senior Secondary specification. Include acquisition, software (Microsoft 365 EDU A1 is free for eligible schools — check this), energy, warranty, and support.\n4. The schools' IT coordinator asks whether thin clients would save money. Do the TCO analysis for thin clients vs your chosen desktop/laptop recommendation and give a final recommendation with justification.\n5. Identify three sustainability considerations the cooperative should address when disposing of the current fleet being replaced."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "TCO (Total Cost of Ownership)", "definition": "The complete cost of an asset over its entire lifecycle — including acquisition, operation, maintenance, and disposal. Always greater than the purchase price alone." },
+          { "term": "Warranty", "definition": "A manufacturer's guarantee to repair or replace a faulty product within a specified period. Business-grade warranties (on-site next business day) differ significantly from consumer warranties." },
+          { "term": "Thin client", "definition": "A low-cost, low-power terminal that depends on a central server for all processing. Minimal local hardware — displays remotely hosted applications." },
+          { "term": "Standardisation", "definition": "Using identical hardware models across a fleet to simplify driver management, spare parts, IT support, and software imaging." },
+          { "term": "E-waste", "definition": "Electronic waste — discarded computing equipment. Regulated in most Australian states — must be disposed of through certified e-waste recyclers, not general landfill." },
+          { "term": "Fleet management", "definition": "Centrally managing all devices in an organisation — deploying software, applying security updates, monitoring health, and handling replacements at scale." }
+        ]
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sph-q1",
+          "questionType": "mcq",
+          "text": "A school is comparing two laptops: Laptop A costs $600 with a 1-year warranty, and Laptop B costs $900 with a 5-year on-site next-business-day warranty. Which statement BEST supports buying Laptop B for a school fleet?",
+          "options": [
+            "Laptop B is always better because it costs more — higher price indicates higher quality",
+            "Laptop A — the school should always buy the cheapest option to save the IT budget",
+            "Laptop B — the extended warranty and on-site support may result in lower TCO over 5 years compared to repair costs and productivity loss with Laptop A's 1-year warranty",
+            "Laptop A — warranties don't matter because faults can be fixed by the IT department"
+          ],
+          "correctIndex": 2,
+          "explanation": "TCO thinking means looking beyond purchase price. After year 1, Laptop A provides no warranty coverage — any faults are out-of-pocket repair costs plus IT labour. Laptop B's 5-year on-site warranty covers parts and labour for the entire lifecycle. For a school fleet of 180 devices, a statistical number of units will fail — predictable warranty coverage beats unpredictable repair costs."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sph-q2",
+          "questionType": "true_false",
+          "text": "Thin clients are always a cheaper option than desktop PCs for schools because they have a lower purchase price.",
+          "correctAnswer": false,
+          "explanation": "False. While thin clients have a low per-unit purchase price ($200–$400 vs $600–$1,200 for a desktop), they require robust server infrastructure to run applications. A Windows Server Remote Desktop Services deployment, adequate network bandwidth to every classroom, and server hardware costs must be factored in. At small scale, the server infrastructure cost can easily exceed the device savings — making thin clients cost-effective only above a certain fleet size with existing server infrastructure."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "sph-q3",
+          "questionType": "short_answer",
+          "text": "Explain why standardising on one hardware model across a school's 180-device fleet is advantageous for IT management. Identify three specific benefits.",
+          "marks": 3,
+          "explanation": "(1) Simplified imaging — one Windows OS image with all drivers and software can be deployed to every device. With different models, each requires its own driver set, multiplying imaging complexity. (2) Shared spare parts — keeping stock of one RAM type, one battery model, one AC adaptor, and one common replacement screen covers all 180 devices. With multiple models, spare part inventory multiplies. (3) Consistent support and troubleshooting — IT staff become expert in one hardware platform; faults are familiar and quicker to resolve. Training needs are reduced. Also possible: unified warranty management with one vendor contact."
+        }
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · SPARKY IS CHECKING YOUR WORK",
+        "text": "Before I present the procurement plan to the Schools Cooperative:\n\n1. You've recommended desktops for the senior secondary design labs and laptops for primary. An IT coordinator argues 'Laptops are better for senior secondary too — students can use them at home for assignments.' What's your counter-argument based on workload and TCO?\n2. The cooperative's finance team asks 'Why can't we just buy gaming laptops from JB Hi-Fi? They have better specs for the same price.' Give three specific reasons why consumer gaming hardware may not be appropriate for a school fleet deployment.\n3. The current fleet being replaced includes 180 PCs from 2018. You've been asked to handle disposal. What legal and ethical obligations apply to e-waste disposal in Western Australia, and name a certified disposal pathway?"
+      }
+    ]
+  },
+  {
+    "id": "maintenance-and-troubleshooting",
+    "title": "Maintenance and Troubleshooting",
+    "estimatedMinutes": 25,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #3005 · BUNBURY HARDWARE INTEGRATORS",
+        "text": "This is your Year 12 capstone maintenance callout. Client: Bunbury Regional Hospital IT Department. Three situations have escalated to us simultaneously. (1) The hospital's radiology server has been running 24/7 for 4 years without maintenance — it's now showing SMART errors on two drives. (2) A power outage last night caused an unprotected server to shut down ungracefully — it won't boot and the event logs show filesystem corruption. (3) The hospital wants a preventative maintenance schedule for all 12 servers in the server room. This is a clinical environment — uptime and data integrity are non-negotiable."
+      },
+      {
+        "type": "heading",
+        "text": "Preventative Maintenance: Scheduled, Not Reactive",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Reactive maintenance — fixing things after they break — is expensive and risky. In a hospital environment, a server failure is a patient safety issue. Preventative maintenance is a structured programme to catch problems before they cause failures. It costs less, loses less data, and maintains uptime."
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · JAXEN 'SPARKY' MILLER, BUNBURY HARDWARE INTEGRATORS",
+        "text": "SMART errors on a drive are the drive telling you it's about to die. Don't ignore them hoping they go away — they won't. The moment SMART shows reallocated sectors climbing, you initiate a controlled replacement during a scheduled maintenance window. If you wait until it fails completely, you're doing an emergency recovery with patients waiting. Respect the warnings."
+      },
+      {
+        "type": "heading",
+        "text": "Server Preventative Maintenance Programme",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Frequency", "Maintenance Task", "Tool / Method"],
+        "rows": [
+          ["Daily (automated)", "Backup verification — confirm last backup completed and is restorable", "Veeam Backup, Windows Server Backup, cloud backup console"],
+          ["Daily (automated)", "SMART monitoring — check drive health status on all servers", "Paessler PRTG, Zabbix, Windows Server event logs"],
+          ["Weekly (automated)", "Windows Server Updates — test and approve pending patches", "WSUS (Windows Server Update Services)"],
+          ["Monthly (manual)", "Physical inspection — dust filter cleaning, cable checks, fan operation", "Compressed air, visual inspection, thermal camera"],
+          ["Monthly (manual)", "Temperature and airflow check — verify server room HVAC operating in range", "Environmental monitoring (temperature/humidity sensors), BIOS logs"],
+          ["Quarterly (manual)", "UPS battery test — verify runtime and replace batteries as needed", "UPS management software (APC PowerChute), manual test"],
+          ["Annually (manual)", "Full hardware audit — check all components, firmware versions, drive health", "Hardware inventory tool, manufacturer diagnostic utilities"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "UPS: Uninterruptible Power Supply",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "A UPS is a battery-backed power device that sits between the mains power and the server. When mains power fails, the UPS immediately switches to battery — providing time for a graceful server shutdown or waiting for a generator to start. The hospital's server filesystem corruption came directly from an unexpected power loss without UPS protection."
+      },
+      {
+        "type": "table",
+        "headers": ["UPS Feature", "What It Does", "Why It Matters for Servers"],
+        "rows": [
+          ["Battery runtime", "How long the UPS can run connected equipment on battery (minutes)", "Enough time for automated graceful shutdown if power doesn't return"],
+          ["VA/Watt rating", "Capacity — higher VA/W supports more equipment", "Must be rated above total connected load — typically 1.2× safety margin"],
+          ["Automatic shutdown software", "Tells server to shut down gracefully when battery reaches critical level", "APC PowerChute, Eaton Intelligent Power Manager — OS integration"],
+          ["Surge protection", "Protects connected equipment from voltage spikes", "Power surges cause component damage — all servers should have surge protection"],
+          ["Line conditioning", "Corrects voltage sags and swells before reaching equipment", "Dirty power (fluctuating voltage) causes premature hardware failure"],
+          ["Hot-swap batteries", "Replace batteries without powering down the UPS", "Critical for 24/7 environments — zero downtime battery replacement"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "SMART Drive Monitoring and RAID",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "SMART (Self-Monitoring, Analysis and Reporting Technology) is built into every modern hard drive and SSD. It tracks hundreds of parameters — reallocated sectors, spin retry count, uncorrectable errors, temperature — and reports them to the OS. Rising SMART error counts are a reliable early warning of imminent drive failure."
+      },
+      {
+        "type": "table",
+        "headers": ["RAID Level", "How It Works", "Min Drives", "Can Survive Failure Of", "Use Case"],
+        "rows": [
+          ["RAID 0 (Striping)", "Data split across drives for speed — no redundancy", "2", "0 drives — any failure = total loss", "NOT for production servers — performance only"],
+          ["RAID 1 (Mirroring)", "Identical copy on 2 drives simultaneously", "2", "1 drive", "OS drives, small servers — simple protection"],
+          ["RAID 5 (Striping + Parity)", "Data + parity spread across 3+ drives", "3", "1 drive", "General-purpose file servers — good balance"],
+          ["RAID 6 (Dual Parity)", "Like RAID 5 with an extra parity block", "4", "2 drives simultaneously", "High-importance data where 2 simultaneous failures are possible"],
+          ["RAID 10 (Mirror + Stripe)", "Mirrored pairs, then striped for speed", "4", "1 drive per mirrored pair", "High-performance + high-redundancy databases, critical servers"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Disaster Recovery and Business Continuity",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Disaster recovery (DR) is the plan for restoring systems after a major failure. Business continuity (BC) is the broader plan for maintaining operations while the recovery happens. In a hospital context, both are mandated by healthcare regulations. The key metrics are RTO (Recovery Time Objective — how long can you be down?) and RPO (Recovery Point Objective — how much data can you afford to lose?)."
+      },
+      {
+        "type": "table",
+        "headers": ["Metric", "Definition", "Hospital Example"],
+        "rows": [
+          ["RTO (Recovery Time Objective)", "Maximum tolerable downtime before the system must be restored", "Radiology server: RTO = 2 hours (patients can't wait longer for scans)"],
+          ["RPO (Recovery Point Objective)", "Maximum tolerable data loss — how old can a restored backup be?", "Patient records: RPO = 15 minutes (must not lose more than 15 min of records)"],
+          ["Backup frequency", "How often backups run — must be more frequent than the RPO", "RPO = 15 min → continuous replication or backups every 10 minutes"],
+          ["Offsite backup", "A copy of data stored physically or logically separate from primary location", "Replication to a second data centre or Azure Backup"],
+          ["DR site", "A secondary location that can run critical systems if the primary fails", "A hot standby server in a different building or cloud region"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · HOSPITAL SERVER ROOM — THREE SITUATIONS",
+        "text": "Working through Ticket #3005 (radiology server SMART errors, post-outage filesystem corruption, maintenance schedule):\n\nSituation 1 — Radiology server SMART errors:\n1. The SMART report shows 'Reallocated Sectors: 47' and climbing on drive 2 of a 4-drive RAID 5 array. Walk through your exact response — what do you do right now, in what order?\n2. Can you replace the failing drive while the server stays online? Explain what RAID feature enables this and what the risk is during the rebuild.\n\nSituation 2 — Post-outage filesystem corruption:\n3. The server shows 'CHKDSK found errors' and the filesystem is partially inaccessible. List your recovery steps in order. At what point would you declare data loss and initiate a backup restore?\n4. What UPS specification should the hospital have had in place to prevent this? Calculate the minimum VA rating if the server draws 800W and the hospital needs 20 minutes of battery runtime.\n\nSituation 3 — Maintenance schedule:\n5. Create a 12-month preventative maintenance calendar for the hospital's 12 servers. Include quarterly, monthly, and annual tasks. Format as a table.\n6. The hospital's IT manager asks: 'Should we replace all 12 servers now or one at a time over 3 years?' Give Sparky's recommendation with a specific rationale."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "UPS (Uninterruptible Power Supply)", "definition": "A battery-backed power device that provides continuous power during mains failure, allowing graceful server shutdown or generator startup." },
+          { "term": "SMART (Self-Monitoring, Analysis and Reporting Technology)", "definition": "Built-in drive diagnostic system that tracks health parameters and warns of impending failure. Monitored by tools like CrystalDiskInfo, PRTG, or server management consoles." },
+          { "term": "RAID (Redundant Array of Independent Disks)", "definition": "Combines multiple drives for performance and/or redundancy. RAID is not a backup — it protects against drive failure only, not against deletion, corruption, or ransomware." },
+          { "term": "RTO (Recovery Time Objective)", "definition": "The maximum acceptable downtime after a system failure. Defines how quickly a system must be restored." },
+          { "term": "RPO (Recovery Point Objective)", "definition": "The maximum acceptable data loss after a failure. Defines how frequently data must be backed up." },
+          { "term": "Hot-swap", "definition": "The ability to replace a component (drive, power supply) while the system continues running without downtime." }
+        ]
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "mt12-q1",
+          "questionType": "mcq",
+          "text": "A server's SMART report shows 'Reallocated Sectors Count: 250 (threshold: 5)' — far above the alert threshold. What does this indicate and what is the correct response?",
+          "options": [
+            "The drive is performing well — higher numbers in SMART are always better",
+            "The drive is at risk of imminent failure; initiate a controlled replacement during a scheduled maintenance window immediately",
+            "Run chkdsk to repair the sectors and the drive will return to normal operation",
+            "The SMART report is inaccurate for SSDs — ignore it and monitor performance instead"
+          ],
+          "correctIndex": 1,
+          "explanation": "Reallocated sectors means the drive has detected bad sectors and remapped data to spare space. When this count significantly exceeds the threshold and is rising, the drive is signalling imminent failure. The correct response is immediate controlled replacement: procure a replacement drive, verify backup is current, replace the failing drive, allow the RAID array to rebuild, then monitor. Do not wait for the drive to fail completely."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "mt12-q2",
+          "questionType": "true_false",
+          "text": "A RAID 5 array provides a complete backup solution — if any drive fails, all data can be recovered with no data loss, eliminating the need for separate backups.",
+          "correctAnswer": false,
+          "explanation": "False. RAID 5 provides protection against a single drive failure — not a backup. RAID does not protect against: (1) accidental file deletion, (2) ransomware encrypting all data on the array simultaneously, (3) a second drive failing during RAID rebuild (very common — rebuild stress causes latent faults to surface), (4) theft or physical destruction of the server. Separate backups are always required in addition to RAID."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "mt12-q3",
+          "questionType": "short_answer",
+          "text": "Explain the difference between RTO and RPO, and describe a scenario where a hospital might have a very low RPO but a relatively higher RTO tolerable for a specific system.",
+          "marks": 4,
+          "explanation": "RTO (Recovery Time Objective) is the maximum acceptable downtime — how long the system can be offline after a failure. RPO (Recovery Point Objective) is the maximum acceptable data loss — how old the restored data can be. Example scenario: A hospital's appointment booking system might have an RPO of 1 hour (losing an hour of appointment data is inconvenient but manageable — staff can call patients to rebook) but a relatively higher RTO of 8 hours (the system can be down overnight while IT restores it, as bookings are paused rather than lost). Contrast with the patient records system which might have RPO of 5 minutes and RTO of 30 minutes — data loss or extended downtime there is a direct clinical safety risk."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "id": "mt12-q4",
+          "questionType": "mcq",
+          "text": "A hospital server room had a power outage last night. The server suffered filesystem corruption and won't boot. What hardware would have PREVENTED this outcome?",
+          "options": [
+            "Additional RAM — more memory reduces the risk of data corruption on shutdown",
+            "A RAID 1 mirror — identical data on a second drive would survive the outage",
+            "A UPS (Uninterruptible Power Supply) with automatic graceful shutdown software configured",
+            "An NVMe SSD — flash storage is more resistant to sudden power loss than HDDs"
+          ],
+          "correctIndex": 2,
+          "explanation": "A UPS provides battery power during mains failure, giving the server time to perform a graceful shutdown (properly closing all files and flushing the filesystem cache). Without a UPS, an unexpected power cut leaves the filesystem in a partially written state — causing corruption. RAID protects against drive failure, not power loss. Additional RAM and SSD type do not prevent graceful shutdown from occurring."
+        }
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · SPARKY IS CHECKING YOUR WORK",
+        "text": "Final sign-off for your Year 12 Hardware rotation. Three capstone questions:\n\n1. The hospital's IT manager says 'We have RAID 6 on all drives, so we don't need offsite backups — two drives can fail and we're fine.' Write Sparky's 3-point response covering scenarios RAID 6 cannot protect against.\n2. During the RAID 5 rebuild after replacing the failing radiology drive, a second drive in the array shows a SMART uncorrectable read error and the RAID controller reports degraded status. What has happened, what data risk does this create, and what do you do next?\n3. Looking back across all five Year 12 Hardware lessons — systems/components, OS, software compatibility, procurement, and maintenance — if you had to name the single skill that separates a competent junior tech from a senior engineer, what would it be and why?"
+      }
+    ]
+  }
+]
