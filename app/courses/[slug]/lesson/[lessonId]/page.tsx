@@ -32,6 +32,7 @@ export default async function LessonPage({
         courseTitle={course.title}
         unitTitle={unit.title}
         topicTitle={topic.title}
+        topicId={topic.id}
         lessonTitle={lesson.title}
         estimatedMinutes={lesson.estimatedMinutes}
         blocks={lesson.blocks}

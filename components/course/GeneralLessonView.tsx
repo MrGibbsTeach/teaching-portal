@@ -2,6 +2,8 @@ import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { BlockRenderer } from "@/components/course/BlockRenderer";
 import { GeneralQuizBlock } from "@/components/course/GeneralQuizBlock";
+import { AgentCard } from "@/components/course/AgentCard";
+import { getAgentForTopic } from "@/lib/agents";
 import type { Block } from "@/lib/content/types";
 
 function RenderBlock({ block }: { block: Block }) {
@@ -16,6 +18,7 @@ export function GeneralLessonView({
   courseTitle,
   unitTitle,
   topicTitle,
+  topicId,
   lessonTitle,
   estimatedMinutes,
   blocks,
@@ -25,6 +28,7 @@ export function GeneralLessonView({
   courseTitle: string;
   unitTitle: string;
   topicTitle: string;
+  topicId: string;
   lessonTitle: string;
   estimatedMinutes?: number;
   blocks: Block[];
@@ -32,6 +36,7 @@ export function GeneralLessonView({
 }) {
   const quizCount = blocks.filter(b => b.type === "quizQuestion").length;
   const taskCount = blocks.filter(b => b.type === "task" || b.type === "scenarioChallenge").length;
+  const agent = getAgentForTopic(topicId);
 
   return (
     <div className="mx-auto max-w-3xl px-6 py-10">
@@ -58,6 +63,12 @@ export function GeneralLessonView({
           <Badge variant="outline">{taskCount} task{taskCount !== 1 ? "s" : ""}</Badge>
         )}
       </div>
+
+      {agent && (
+        <div className="mt-6">
+          <AgentCard agent={agent} />
+        </div>
+      )}
 
       <div className="mt-8 space-y-1">
         {blocks.map((block, i) => (
