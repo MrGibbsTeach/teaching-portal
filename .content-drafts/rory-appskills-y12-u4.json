@@ -1,0 +1,1080 @@
+[
+  {
+    "id": "animation-fundamentals",
+    "title": "Animation Fundamentals",
+    "estimatedMinutes": 55,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #5001 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟡 IN PROGRESS | Sprint 1 | Assigned to: Junior Developer\n\nThe Bunbury Arts Council wants a 30-second animated explainer sequence for their new community grants portal. Leo's design is locked — style guide approved, character assets created. Sloane's data on grant categories is approved and ready to use as script content. Sparky's network is ready — the export pipeline is set up.\n\nWhat we need now is the animation. You're building it. I need you to understand the difference between frame-by-frame and tween-based approaches BEFORE you touch the timeline, because choosing the wrong technique for this content will double your production time. Read the brief, make the decision, then build. We ship to the client by end of sprint."
+      },
+      {
+        "type": "heading",
+        "text": "Animation Techniques: Choosing the Right Tool",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Animation in digital production is not about creating art for art's sake — it is a communication technique that guides attention, explains processes, and creates engagement. At Year 12 level, you need to understand the fundamental techniques, know when each is appropriate, and be able to execute both in software."
+      },
+      {
+        "type": "paragraph",
+        "text": "The two core animation approaches are frame-by-frame animation and tween (interpolated) animation. They have completely different workflows, file sizes, and appropriate use cases. Using frame-by-frame animation for a simple logo reveal is like driving to the shop in a lorry — the tool doesn't match the task. Choosing correctly is a technical skill."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Frame-by-frame animation",
+            "definition": "An animation technique where each frame is drawn or placed individually. Creates smooth, organic movement with full control. Time-intensive — typically used for character animation, fluid motion, and expressive movement."
+          },
+          {
+            "term": "Tween (tweening)",
+            "definition": "Short for 'in-between.' The software automatically calculates and generates the intermediate frames between two defined keyframes. Used for position, scale, rotation, opacity, and colour changes."
+          },
+          {
+            "term": "Keyframe",
+            "definition": "A frame that defines the start or end state of an animated property (position, size, colour, opacity). The software generates all frames between keyframes automatically in tween animation."
+          },
+          {
+            "term": "Timeline",
+            "definition": "The interface in animation software showing all layers and their animation data across time (frames or seconds). Every animation is managed through the timeline."
+          },
+          {
+            "term": "Frame rate (fps)",
+            "definition": "The number of frames displayed per second. Common rates: 12fps (traditional animation), 24fps (film standard), 30fps (broadcast), 60fps (smooth web/game). Higher rates create smoother motion but increase file size."
+          },
+          {
+            "term": "Easing",
+            "definition": "The acceleration and deceleration applied to a tween animation to create natural-looking movement. 'Ease In' starts slow and accelerates; 'Ease Out' decelerates before stopping. Linear easing feels robotic."
+          },
+          {
+            "term": "Interactive button (animation)",
+            "definition": "A button created in animation software with defined states: Up (idle), Over (hover), Down (click), and Hit (clickable area). Used for interactive animations embedded in web pages or presentations."
+          }
+        ]
+      },
+      {
+        "type": "comparison",
+        "title": "Frame-by-Frame vs Tween Animation",
+        "items": [
+          {
+            "label": "Frame-by-Frame",
+            "points": [
+              "Every frame drawn or composed individually",
+              "Full creative control over every moment of motion",
+              "Time-intensive — suitable for character animation, organic motion",
+              "File size: larger (each frame stored separately or as image sequence)",
+              "Best for: character movement, hand-drawn style, expressive gestures",
+              "Example: animated character explaining grant categories for the Arts Council"
+            ]
+          },
+          {
+            "label": "Tween / Keyframe",
+            "points": [
+              "Define start and end states; software generates in-between frames",
+              "Fast to produce — ideal for property changes (position, scale, opacity)",
+              "Less flexible for organic motion — best for clean, structured movement",
+              "File size: smaller — only keyframes are stored",
+              "Best for: logo animations, UI transitions, text reveals, infographic animations",
+              "Example: animated grant category icons sliding into position on the portal page"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Working with the Timeline",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "The timeline is the core workspace in animation software. Every element on stage exists on a layer, and every layer has a timeline where you place keyframes and define motion. Understanding layer order, frame spans, and keyframe placement is fundamental before attempting any animation."
+      },
+      {
+        "type": "table",
+        "headers": ["Timeline Element", "What It Does", "Practical Rule"],
+        "rows": [
+          ["Layer", "Contains one animation element (image, text, shape)", "One element per layer — mixing elements causes editing nightmares"],
+          ["Frame span", "The duration an element appears on stage", "Extend frame spans with F5; place keyframes only where change occurs"],
+          ["Keyframe (hollow)", "Frame with no content change — inherited from previous keyframe", "Used to 'hold' a position for a duration before next change"],
+          ["Keyframe (filled)", "Frame with specific content placed or modified", "Required at the start and end of every tween"],
+          ["Motion tween", "Interpolates position, scale, rotation, opacity between keyframes", "Right-click between two keyframes → Create Motion Tween"],
+          ["Classic tween", "Older tween method; symbol-based", "Use motion tween for new projects unless classic required by brief"],
+          ["Layer folder", "Groups related layers for organisation", "Use for complex animations — group character, background, UI layers"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Building Interactive Buttons",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Interactive buttons in animation software have four states stored as frames in a special button symbol timeline: Up (default appearance), Over (cursor hovering), Down (click/press), and Hit (defines the clickable area). Each state can look different, allowing for hover effects, click animations, and visual feedback."
+      },
+      {
+        "type": "paragraph",
+        "text": "Buttons are converted to symbols before their states are defined. The Hit frame defines the active clickable area — it does not need to be visible to the user. If the Hit frame is smaller than the visual button, parts of the button will not be clickable. This is a common production error that always gets flagged in QA."
+      },
+      {
+        "type": "task",
+        "title": "Create an Animated Explainer Sequence",
+        "software": "Adobe Animate",
+        "intro": "You're building the 30-second animated explainer for the Bunbury Arts Council grants portal. Follow these steps to produce a tween-based animation with at least one interactive button.",
+        "steps": [
+          "Open Adobe Animate and create a new ActionScript 3 document at 1280×720px, 24fps.",
+          "Set up four layers: Background, Title Text, Icon 1, Icon 2.",
+          "On the Background layer, place a solid rectangle in the Arts Council brand colour across the full stage. Extend to frame 720 (30 seconds at 24fps).",
+          "On the Title Text layer, place the text 'Community Grants Portal' in a sans-serif font. Set a keyframe at frame 1 with the text at 0% opacity. Set a keyframe at frame 24 with the text at 100% opacity. Right-click between the keyframes and select Create Motion Tween.",
+          "Open the Properties panel for the tween and apply Ease Out to the opacity change.",
+          "On the Icon 1 layer, place a simple icon shape at frame 25. Create a motion tween that moves the icon from off-stage left to its final position by frame 48. Apply Ease Out.",
+          "Repeat for Icon 2, staggering the start by 8 frames.",
+          "Create a 'Learn More' button: draw a rectangle with text, select both, right-click → Convert to Symbol → Button.",
+          "Double-click the button symbol to enter edit mode. Add content to the Over frame (change fill colour), Down frame (darken further), and Hit frame (same shape as Up).",
+          "Return to the main timeline and place the button on a new Button layer at frame 600 (25 seconds).",
+          "Export as MP4 using File → Export → Export Video."
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "Every frame-by-frame vs tween decision comes down to one question: is this movement mechanical or organic? A logo sliding in from the left is mechanical — tween it, apply ease out, done in 10 minutes. A character walking is organic — frame-by-frame, because a walking cycle needs foot placement, weight shift, and arm swing that no algorithm will generate correctly. Make that decision in your planning notes before you open the software. Changing approach halfway through a timeline is painful."
+      },
+      {
+        "type": "scenarioChallenge",
+        "title": "Scenario: Animation Brief Interpretation",
+        "scenario": "The Bunbury Arts Council brief describes their 30-second animation as needing: (1) a hand-drawn style character who 'walks through' the grant application process, (2) text labels that 'pop in' when each step is mentioned, (3) a 'heart beat' pulsing logo at the end, (4) clickable buttons for a web-embedded version. The junior animator has decided to build the entire animation using frame-by-frame techniques for everything.",
+        "questions": [
+          {
+            "question": "Evaluate the animator's decision to use frame-by-frame for all four elements. For each element, identify whether frame-by-frame or tween would be more appropriate, and explain why.",
+            "marks": 8
+          },
+          {
+            "question": "Describe the specific steps required to create a button with a hover state change in animation software. Reference the four button states in your answer.",
+            "marks": 4
+          },
+          {
+            "question": "The animation will be exported as an MP4 for web embedding. Identify ONE technical export setting (beyond file format) that must be confirmed before export, and explain its impact on the final delivery.",
+            "marks": 2
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · TWEEN SPRINT",
+        "text": "Rory needs a 10-second animated logo reveal for the Launchpad. Requirements: logo fades in using an opacity tween (0% to 100%), scales up from 50% to 100% simultaneously, and the tagline slides up from below with a 12-frame delay after the logo appears. Apply appropriate easing to each tween. Export as both GIF (for email) and MP4 (for web). Document your frame rate choice and explain why you chose it. Time limit: 30 minutes."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "Your animation sprint is approved only when:\n\n✅ Animation uses both frame-by-frame AND tween techniques (or a documented justification for using only one)\n✅ Easing is applied to motion tweens — linear tweens only acceptable for mechanical/robotic motion\n✅ Interactive button has all four states defined (Up, Over, Down, Hit)\n✅ Timeline is organised with labelled layers — one element per layer\n✅ Export format and frame rate are documented in sprint notes\n✅ Final animation runs at the correct duration (30 seconds at specified fps)\n\nAn animation that plays once and has a single speed change is not an animation — it is a slideshow. Rory will not approve this."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "Which animation technique would be MOST efficient for animating a company logo that slides in from the left and fades to full opacity over 1 second?",
+          "options": [
+            "Frame-by-frame, because logo animations require precise control over every frame",
+            "Motion tween, because position and opacity changes between two keyframes are exactly what tweening is designed for",
+            "Classic tween with shape tweening, because logos are vector shapes",
+            "Stop-motion using imported image sequences"
+          ],
+          "correctIndex": 1,
+          "explanation": "Motion tweening is ideal for property changes like position and opacity. Define a keyframe with the logo off-stage at 0% opacity, define a second keyframe with it in position at 100% opacity, and the software generates all frames between. Frame-by-frame would require drawing every intermediate position manually — technically possible but completely inefficient for this type of motion."
+        }
+      }
+    ]
+  },
+  {
+    "id": "audio-editing-for-digital-products",
+    "title": "Audio Editing for Digital Products",
+    "estimatedMinutes": 55,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #5002 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟡 IN PROGRESS | Sprint 2 | Assigned to: Junior Developer\n\nThe voiceover for the Arts Council animation has been recorded — but whoever set up the recording session clearly didn't check their gain structure. The WAV file has: a 4-second count-in at the start, background hiss throughout, a noticeable clipping distortion at the 0:18 mark where the narrator spoke too close to the mic, and silence at the end that makes the total file 47 seconds instead of 30.\n\nI need this file cleaned up, normalised, and exported in two formats: WAV for the master archive, and MP3 at 192kbps for web delivery. Audacity is in the toolchain. Document every edit you make — we track all changes in the sprint notes. Fix it."
+      },
+      {
+        "type": "heading",
+        "text": "Audio Editing Is a Production Skill",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Audio editing is not reserved for music producers or sound engineers. Every digital product with a video component, podcast, presentation, or narrated explainer requires audio that has been properly cleaned, levelled, and exported. A professional-sounding voiceover delivers credibility. A noisy, clipped, poorly mixed audio track undermines even Leo's best visual design."
+      },
+      {
+        "type": "paragraph",
+        "text": "Audacity is the industry-standard free audio editor. It is not simplified student software — it is used in professional podcast studios, university audio labs, and broadcast facilities worldwide. Learning Audacity properly means learning the concepts that apply to every audio editor: tracks, clips, effects, normalisation, noise reduction, and export codecs."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Waveform",
+            "definition": "The visual representation of audio amplitude over time. Taller waveforms are louder. Flat sections are silence. Clipped sections appear as flat-topped peaks where the audio has exceeded the maximum level."
+          },
+          {
+            "term": "Clipping",
+            "definition": "Distortion that occurs when audio amplitude exceeds 0dBFS (digital maximum). Creates a harsh, crackling sound. Visible in the waveform as flat-topped peaks. Cannot be fully repaired — prevention is essential."
+          },
+          {
+            "term": "Noise floor",
+            "definition": "The background level of unwanted sound in a recording — hiss, hum, air conditioning, electrical interference. Should be at least 60dB below the signal level for professional quality."
+          },
+          {
+            "term": "Normalisation",
+            "definition": "An automated process that raises the overall volume of a file so the loudest peak reaches a specified level (typically -1dBFS or -3dBFS). Does not change dynamics — only shifts overall level."
+          },
+          {
+            "term": "Noise reduction",
+            "definition": "An Audacity effect that analyses a sample of background noise (noise profile) and then removes that noise pattern from the entire recording."
+          },
+          {
+            "term": "Fade in / Fade out",
+            "definition": "Gradual increase or decrease in audio volume over a defined section. Prevents abrupt starts and endings. Applied by selecting a region and using the Fade In/Out effect."
+          },
+          {
+            "term": "Export codec",
+            "definition": "The encoding algorithm used when exporting audio to a specific format. MP3 uses LAME codec (lossy); WAV uses PCM (uncompressed); AAC uses different encoding. Codec choice determines file size and quality."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "The Audacity Editing Workflow",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Professional audio editing follows a consistent workflow regardless of the software: import, inspect, clean, level, trim, effect, export. Jumping straight to effects without inspecting and cleaning the file first is the mistake every beginner makes. Fix the fundamentals before you try to polish."
+      },
+      {
+        "type": "table",
+        "headers": ["Step", "Action in Audacity", "What to Look / Listen For"],
+        "rows": [
+          ["1. Import", "File → Import → Audio", "Check sample rate and bit depth in the track information bar"],
+          ["2. Inspect", "Zoom in on waveform; play through at normal speed", "Identify clipping (flat peaks), noise floor, unwanted sections"],
+          ["3. Remove noise", "Select 2 seconds of silence → Effect → Noise Reduction → Get Noise Profile, then select all → Effect → Noise Reduction → OK", "Compare before/after — noise floor should drop without affecting voice quality"],
+          ["4. Remove clipping", "Select clipped region → Effect → Clip Fix", "Check waveform — peaks should no longer be flat. If distortion remains, consider a retake"],
+          ["5. Trim unwanted sections", "Select region with selection tool → Delete", "Count-ins, coughs, trailing silence — cut cleanly at zero crossings to avoid pops"],
+          ["6. Fade in / out", "Select first 0.5s → Effect → Fade In; select last 0.5s → Effect → Fade Out", "Smooth entry and exit — essential for any audio that starts/ends abruptly"],
+          ["7. Normalise", "Select all (Ctrl+A) → Effect → Normalize → set to -1.0 dBFS", "Waveform height increases to fill available headroom"],
+          ["8. Export", "File → Export → Export as MP3 / WAV", "Set bit rate (192kbps for MP3); confirm sample rate and metadata"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Exporting: Format Decisions for Different Contexts",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "The export format is a delivery decision, not a creative one. The master archive always stays as WAV (or FLAC). Every format you distribute is a derivative of that master. Never overwrite the master — keep it unmodified and export copies for each delivery context."
+      },
+      {
+        "type": "comparison",
+        "title": "Audio Export: Which Format for Which Context",
+        "items": [
+          {
+            "label": "WAV (Master Archive)",
+            "points": [
+              "Uncompressed PCM — no quality loss whatsoever",
+              "Use as the master file you edit from; never distribute as WAV",
+              "Export settings: 44.1kHz / 16-bit for standard; 48kHz / 24-bit for broadcast/video",
+              "File size: approximately 10MB per minute at 44.1kHz/16-bit"
+            ]
+          },
+          {
+            "label": "MP3 (Web / Podcast Delivery)",
+            "points": [
+              "Lossy compression — quality degrades but file size is dramatically smaller",
+              "192kbps = high quality, suitable for music; 128kbps = acceptable for speech",
+              "Never re-edit an MP3 and save — each save cycle degrades quality further",
+              "File size: approximately 1.5MB per minute at 192kbps"
+            ]
+          },
+          {
+            "label": "AAC (Streaming / Mobile)",
+            "points": [
+              "Better quality than MP3 at the same bitrate — preferred by Apple ecosystem and streaming platforms",
+              "Used by YouTube, Spotify, Apple Music as primary delivery format",
+              "Export from Audacity via FFmpeg library; 192kbps AAC outperforms 192kbps MP3",
+              "File size: similar to MP3 but higher perceived quality"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "task",
+        "title": "Audio Clean and Export in Audacity",
+        "software": "Audacity",
+        "intro": "You've received the raw voiceover file for the Arts Council animation. Work through the full cleaning and export workflow to produce production-ready audio files.",
+        "steps": [
+          "Open Audacity and import the raw voiceover WAV file provided by your teacher.",
+          "Play through the entire file once with your eyes on the waveform. Note the timestamp of: (a) the count-in section, (b) the clipping distortion, (c) where trailing silence begins.",
+          "Select the count-in section from the beginning to where the voiceover starts, and delete it.",
+          "Find the noise floor: select 1–2 seconds of silence (before the voice starts). Go to Effect → Noise Reduction → Get Noise Profile.",
+          "Select the entire track (Ctrl+A). Go to Effect → Noise Reduction. Set Noise Reduction to 12dB, Sensitivity to 6, Frequency Smoothing to 3. Click OK.",
+          "Zoom in on the clipped section. Select it and apply Effect → Clip Fix with a default setting. Listen to the result — note in your sprint log whether the distortion is reduced.",
+          "Select the trailing silence from the end of the final word to the end of the file and delete it.",
+          "Select the first 0.3 seconds and apply Effect → Fade In. Select the last 0.3 seconds and apply Effect → Fade Out.",
+          "Select all (Ctrl+A) and apply Effect → Normalize → Peak amplitude -1.0 dBFS.",
+          "Export as WAV: File → Export → Export as WAV → 44100 Hz, 16-bit PCM. Name: 'ArtsCouncil_VO_master.wav'.",
+          "Export as MP3: File → Export → Export as MP3 → 192kbps. Name: 'ArtsCouncil_VO_web.mp3'.",
+          "In your sprint notes, record the original and final file durations, the original and post-normalisation peak levels, and the file sizes of both exports."
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "Never delete a project's WAV master. I have had clients come back two years after a project asking for the audio in a new format for a platform that didn't exist when we built the product. If you kept the WAV, you export to the new format in five minutes. If you only kept the MP3, you're re-encoding a compressed file and the quality compounds into something unusable. Storage is cheap. Reshooting or re-recording is expensive. Keep the master. Always."
+      },
+      {
+        "type": "scenarioChallenge",
+        "title": "Scenario: The Clipped Voiceover",
+        "scenario": "A student is editing a voiceover for a school promotional video. The recording has: significant background hiss from an air conditioning unit, three sections where the narrator spoke too close to the microphone causing clipping, and an overall volume that is too low — the waveform peaks at about 40% of the available amplitude. The student applies normalisation first, then attempts noise reduction, then tries to fix clipping.",
+        "questions": [
+          {
+            "question": "Explain why the student's processing order (normalise → noise reduce → fix clipping) is incorrect. Describe the correct processing order and explain why each step must happen in that sequence.",
+            "marks": 6
+          },
+          {
+            "question": "The student exports the final file as MP3 at 64kbps to keep the file small for the school website. Evaluate this decision — consider both the quality impact and whether there is a better solution that achieves the file size goal without the quality penalty.",
+            "marks": 4
+          },
+          {
+            "question": "Identify ONE additional editing technique (beyond the steps already mentioned) the student could apply to improve the professionalism of the final voiceover. Describe specifically how it would be applied in Audacity.",
+            "marks": 2
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · AUDIO CLEAN SPRINT",
+        "text": "Rory has provided two intentionally flawed audio files in the shared drive: one with clipping and low volume, one with heavy background noise and an abrupt ending. Your challenge: clean both files using the correct workflow order, export each as both WAV and MP3 at 192kbps, and write a 4-sentence quality report for each file noting what problems existed, what you did, and what the final quality outcome was. Compare file sizes across all four exports and explain the size differences."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "Your audio editing sprint is approved only when:\n\n✅ Noise reduction applied BEFORE normalisation — processing order documented in sprint notes\n✅ All trailing silence removed; fade in/out applied at file boundaries\n✅ Normalisation applied to -1.0 dBFS — not -3, not 0\n✅ WAV master exported at correct sample rate and bit depth\n✅ MP3 exported at 192kbps minimum — not 128, not 64\n✅ File sizes and durations documented for both exports\n✅ Sprint log includes timestamp of every edit made (not just 'I fixed the noise')\n\nAudio that still sounds noisy or clipped does not ship. Rory listens to every file before approval."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A recording engineer is producing a podcast episode. They need to archive the master file and create a version for web streaming. Which combination of export formats is MOST appropriate?",
+          "options": [
+            "MP3 master at 320kbps; MP3 web version at 128kbps",
+            "WAV master at 44.1kHz/16-bit; MP3 web version at 192kbps",
+            "WAV master at 44.1kHz/16-bit; WAV web version at 22kHz/8-bit",
+            "FLAC master; MP3 web version at 64kbps"
+          ],
+          "correctIndex": 1,
+          "explanation": "WAV (uncompressed PCM) is the correct master format — no quality loss, suitable for future re-encoding to any format. MP3 at 192kbps is appropriate for web delivery: good speech quality at a reasonable file size. An MP3 master is incorrect because re-encoding compressed audio compounds quality loss. 64kbps is too low for professional web delivery."
+        }
+      }
+    ]
+  },
+  {
+    "id": "web-authoring-basics",
+    "title": "Web Authoring Basics",
+    "estimatedMinutes": 55,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #5003 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟡 IN PROGRESS | Sprint 3 | Assigned to: Junior Developer\n\nThe Arts Council grants portal needs a static information page — nothing complex, just HTML and CSS. Leo's design is locked with the brand colours and font stack. Sloane's content is finalised. The page needs: a navigation bar with working hyperlinks to three sections, a consistent page template structure, and a colour scheme that matches the approved brand palette.\n\nI know some of you are thinking 'why not just use a website builder?' Because understanding the underlying HTML and CSS is what separates a developer who can fix things from a developer who is helpless the moment the drag-and-drop interface breaks. You are learning the fundamentals. Build it from scratch."
+      },
+      {
+        "type": "heading",
+        "text": "HTML: Structure. CSS: Style.",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Every webpage is built from two languages working together: HTML provides the structure and content, CSS provides the visual presentation. Think of HTML as the building's steel frame — it defines what exists and in what order. CSS is the paint, the furniture, and the lighting — it controls how everything looks."
+      },
+      {
+        "type": "paragraph",
+        "text": "HTML and CSS are not programming languages — they are markup and style languages. They do not make decisions or perform calculations. They describe content and appearance. Understanding this distinction helps you know when to use HTML/CSS versus when a project requires JavaScript or a back-end language."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "HTML (HyperText Markup Language)",
+            "definition": "The standard language for creating web pages. Uses tags enclosed in angle brackets to structure content — headings, paragraphs, lists, images, links, and page sections."
+          },
+          {
+            "term": "CSS (Cascading Style Sheets)",
+            "definition": "The language that controls the visual presentation of HTML elements — colours, fonts, spacing, layout, borders, and responsiveness."
+          },
+          {
+            "term": "HTML element",
+            "definition": "A complete HTML component consisting of an opening tag, content, and a closing tag. Example: <p>This is a paragraph.</p>"
+          },
+          {
+            "term": "HTML attribute",
+            "definition": "Additional information provided inside an opening tag to modify the element's behaviour. Example: href in <a href=\"url\"> defines the link destination."
+          },
+          {
+            "term": "CSS selector",
+            "definition": "The part of a CSS rule that identifies which HTML elements the style applies to. Examples: element selector (p), class selector (.nav), ID selector (#header)."
+          },
+          {
+            "term": "Hyperlink",
+            "definition": "An HTML element (<a>) that creates a clickable connection to another page, another section of the same page (anchor link), or an external resource."
+          },
+          {
+            "term": "Page template",
+            "definition": "A consistent HTML/CSS structure reused across multiple pages of a website, ensuring uniform navigation, header, footer, and layout."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "HTML Document Structure",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Every HTML page follows the same fundamental structure. The DOCTYPE declaration, html, head, and body elements are not optional — they are the foundation that browsers require to render the page correctly. Missing any of these causes rendering inconsistencies across different browsers and devices."
+      },
+      {
+        "type": "codePreview",
+        "title": "Basic HTML Page Structure",
+        "defaultCode": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Bunbury Arts Council — Grants Portal</title>\n  <link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n<body>\n\n  <header>\n    <nav>\n      <a href=\"index.html\">Home</a>\n      <a href=\"grants.html\">Grants</a>\n      <a href=\"contact.html\">Contact</a>\n    </nav>\n  </header>\n\n  <main>\n    <h1>Community Grants Portal</h1>\n    <p>Funding opportunities for Bunbury arts and community organisations.</p>\n  </main>\n\n  <footer>\n    <p>&copy; 2026 Bunbury Arts Council. All rights reserved.</p>\n  </footer>\n\n</body>\n</html>",
+        "challenge": "Add a second paragraph below the existing one that describes one grant category. Add an anchor link in the navigation that jumps to a section on the same page using an id attribute."
+      },
+      {
+        "type": "heading",
+        "text": "Common HTML Elements",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Element", "Purpose", "Example"],
+        "rows": [
+          ["<h1> to <h6>", "Headings — h1 is the most important, h6 is least", "<h1>Main Page Title</h1>"],
+          ["<p>", "Paragraph of text", "<p>Grant applications open in March.</p>"],
+          ["<a href=\"\">", "Hyperlink to another page or section", "<a href=\"grants.html\">View Grants</a>"],
+          ["<img src=\"\" alt=\"\">", "Embed an image — alt text is mandatory", "<img src=\"logo.png\" alt=\"Arts Council logo\">"],
+          ["<ul> and <li>", "Unordered (bullet) list and list items", "<ul><li>Visual Arts</li><li>Music</li></ul>"],
+          ["<ol> and <li>", "Ordered (numbered) list and list items", "<ol><li>Register</li><li>Apply</li></ol>"],
+          ["<div>", "Generic block-level container for grouping elements", "<div class=\"card\">...</div>"],
+          ["<span>", "Generic inline container for styling text within a paragraph", "<span class=\"highlight\">deadline</span>"],
+          ["<header>, <main>, <footer>, <nav>, <section>", "Semantic structural elements — describe page structure to browsers and screen readers", "<nav>navigation links here</nav>"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Hyperlinks: Internal, External, and Anchor",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Hyperlinks are the defining feature of the web. HTML provides three types of links: internal links connect to other pages within the same site, external links connect to other websites, and anchor links jump to a specific section within the same page using an id attribute. All three are created with the same <a> element — the href value determines the type."
+      },
+      {
+        "type": "codePreview",
+        "title": "Three Types of Hyperlinks",
+        "defaultCode": "<!-- Internal link — goes to another page in the same website -->\n<a href=\"grants.html\">View Available Grants</a>\n\n<!-- External link — goes to a different website, opens in new tab -->\n<a href=\"https://www.artswa.com.au\" target=\"_blank\" rel=\"noopener\">Arts WA Website</a>\n\n<!-- Anchor link — jumps to a section with id=\"visual-arts\" on the same page -->\n<a href=\"#visual-arts\">Jump to Visual Arts Grants</a>\n\n<!-- The target section — must have matching id attribute -->\n<section id=\"visual-arts\">\n  <h2>Visual Arts Grants</h2>\n  <p>Funding for visual arts projects in the South West region.</p>\n</section>",
+        "challenge": "Add a 'Back to top' anchor link at the bottom of the page that jumps back to a section with id=\"page-top\" at the very top. Add the matching id to the header element."
+      },
+      {
+        "type": "task",
+        "title": "Build a Multi-page Website in VS Code",
+        "software": "VS Code",
+        "intro": "You're building the static grants portal for the Bunbury Arts Council. Create three linked HTML pages with consistent navigation and a shared stylesheet.",
+        "steps": [
+          "Open VS Code and create a new folder called 'arts-council-portal'. Inside it, create three files: index.html, grants.html, contact.html, and one file: styles.css.",
+          "In index.html, add the full HTML document structure (DOCTYPE, html, head, body). Link styles.css in the head section.",
+          "Add a <header> with a <nav> containing three <a> links: Home (index.html), Grants (grants.html), Contact (contact.html).",
+          "Add a <main> section with an h1, two paragraphs about the Arts Council, and a list of three grant categories.",
+          "Copy the same header and nav structure to grants.html and contact.html (this creates your page template).",
+          "In grants.html, add three <section> elements — one for each grant category — each with an id attribute, an h2 heading, and a paragraph of description.",
+          "Add anchor links in a 'Quick Navigation' list at the top of grants.html that jump to each section.",
+          "In styles.css, write rules to: set a background colour on body, set a font-family, style the nav links (colour, no underline, spacing), and add a border-bottom to the header.",
+          "Open index.html in a browser and click every link. Every link must navigate to the correct page or section.",
+          "Validate your HTML using the W3C validator (validator.w3.org). Screenshot and log any errors, fix them, and re-validate."
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "Semantic HTML is not optional — it is how screen readers, search engines, and AI assistants understand your page. Using a <div> for everything instead of <header>, <nav>, <main>, <section>, and <footer> is the equivalent of writing an entire document in one giant paragraph. It looks the same visually but fails every machine that tries to parse it. The WCAG accessibility standards that government-funded organisations like the Arts Council are legally required to meet depend on correct semantic markup. Write it right the first time."
+      },
+      {
+        "type": "scenarioChallenge",
+        "title": "Scenario: The Broken Navigation",
+        "scenario": "A student has built a three-page website. The navigation links on index.html work correctly. On grants.html, all navigation links are broken — clicking 'Home' goes to a 404 error page. On contact.html, the 'View Grants' anchor link navigates to a different section than intended. The student used <div class=\"nav\"> instead of <nav> for the navigation element throughout.",
+        "questions": [
+          {
+            "question": "Identify the most likely cause of the broken links on grants.html. Explain the specific HTML attribute that is incorrect and describe how to fix it.",
+            "marks": 3
+          },
+          {
+            "question": "Explain why the anchor link navigation error is occurring. What must match between the <a href> value and the target element for an anchor link to work?",
+            "marks": 3
+          },
+          {
+            "question": "Explain the consequence of using <div class=\"nav\"> instead of <nav> for the navigation element. Reference at least two specific contexts where this difference matters.",
+            "marks": 4
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · PAGE TEMPLATE SPRINT",
+        "text": "Rory needs a page template for the Launchpad website. Requirements: consistent header with logo placeholder and navigation (Home, Projects, Team, Contact), a main content area, and a footer with copyright text. Build the template HTML file, then 'instantiate' it into two different pages by changing only the main content section. Style the navigation so active links look different from inactive links using a CSS class. Time: 30 minutes."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "Your web authoring sprint is approved only when:\n\n✅ All three pages share the same navigation structure — template consistency confirmed\n✅ Every link tested: internal pages load, external links open in new tab, anchor links scroll to correct section\n✅ All images have alt text attributes — zero exceptions\n✅ Semantic HTML used: <header>, <nav>, <main>, <footer>, <section> — not just <div> everywhere\n✅ CSS is in an external .css file — no inline styles\n✅ W3C validation screenshot included — zero errors\n\nA website with broken links does not ship. Test every link before submitting. Every single one."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "Which HTML code correctly creates a link that opens an external website in a new browser tab?",
+          "options": [
+            "<a href=\"https://www.artswa.com.au\">Arts WA</a>",
+            "<a href=\"https://www.artswa.com.au\" target=\"_blank\" rel=\"noopener\">Arts WA</a>",
+            "<a href=\"_blank\" src=\"https://www.artswa.com.au\">Arts WA</a>",
+            "<link href=\"https://www.artswa.com.au\" target=\"new\">Arts WA</link>"
+          ],
+          "correctIndex": 1,
+          "explanation": "target=\"_blank\" opens the link in a new tab. rel=\"noopener\" is a security attribute that prevents the new page from accessing the original page via JavaScript. The <link> element is used in the <head> for stylesheets, not for navigation. The src attribute is for images, not hyperlinks."
+        }
+      }
+    ]
+  },
+  {
+    "id": "html-and-css-fundamentals",
+    "title": "HTML and CSS Fundamentals",
+    "estimatedMinutes": 60,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #5004 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟡 IN PROGRESS | Sprint 4 | Assigned to: Junior Developer\n\nThe HTML structure is in place but the Arts Council portal looks like a 1995 website. Leo's brand guide specifies: Inter font from Google Fonts, a two-colour palette (#1A2E5A navy, #F4B942 amber), minimum 1.5 line spacing, card-based layout for grant categories, and a hover effect on all navigation links.\n\nYour job this sprint: write the CSS that turns the structural HTML into something that matches Leo's approved mockup. I've pinned the mockup in the design channel. Box model, selectors, the cascade, Google Fonts — you need all of it. This is where HTML structure gets a visual identity. Let's see it."
+      },
+      {
+        "type": "heading",
+        "text": "The CSS Box Model",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Every HTML element is a rectangular box. The CSS box model describes the layers of that box: content (the actual text or image), padding (space between content and border), border (the line around the element), and margin (space outside the border, separating the element from its neighbours). Mastering the box model is the key to controlling layout in CSS."
+      },
+      {
+        "type": "paragraph",
+        "text": "The box-sizing property changes how width and height calculations work. By default (content-box), width refers to the content area only — padding and border add to it, making elements wider than expected. Setting box-sizing to border-box makes width include padding and border, which is the behaviour almost all modern CSS frameworks use and the approach Rory uses at the Launchpad."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "CSS box model",
+            "definition": "The model that describes every HTML element as a box with four layers: content, padding, border, and margin."
+          },
+          {
+            "term": "Padding",
+            "definition": "Space between an element's content and its border. Adds to the element's visual size. Controlled with padding, padding-top, padding-right, padding-bottom, padding-left."
+          },
+          {
+            "term": "Margin",
+            "definition": "Space outside an element's border, creating distance between the element and adjacent elements. Margins can collapse (adjacent vertical margins merge to the larger value)."
+          },
+          {
+            "term": "CSS specificity",
+            "definition": "The system CSS uses to determine which rule wins when multiple rules target the same element. IDs beat classes; classes beat element selectors. Inline styles beat all."
+          },
+          {
+            "term": "Cascade",
+            "definition": "The process by which CSS determines which rule applies to an element when multiple rules conflict. Rules are evaluated by specificity, then source order (later rules win at equal specificity)."
+          },
+          {
+            "term": "CSS class",
+            "definition": "A reusable style definition applied to HTML elements using class=\"name\" in HTML and .name in CSS. Multiple elements can share a class; one element can have multiple classes."
+          },
+          {
+            "term": "Pseudo-class",
+            "definition": "A CSS selector that applies styles based on an element's state. :hover applies when the cursor is over the element. :focus applies when a form field is selected."
+          }
+        ]
+      },
+      {
+        "type": "codePreview",
+        "title": "CSS Box Model and Core Properties",
+        "defaultCode": "/* Reset — prevent browser default inconsistencies */\n*, *::before, *::after {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}\n\n/* Body — font, background, line height */\nbody {\n  font-family: 'Inter', sans-serif;\n  background-color: #f8f9fa;\n  color: #1A2E5A;\n  line-height: 1.6;\n}\n\n/* Navigation bar */\nnav {\n  background-color: #1A2E5A;\n  padding: 1rem 2rem;\n  display: flex;\n  gap: 2rem;\n}\n\n/* Navigation links */\nnav a {\n  color: #ffffff;\n  text-decoration: none;\n  font-weight: 600;\n  padding: 0.5rem 1rem;\n  border-radius: 4px;\n}\n\n/* Hover state — pseudo-class */\nnav a:hover {\n  background-color: #F4B942;\n  color: #1A2E5A;\n}",
+        "challenge": "Add CSS for a .card class with a white background, padding of 1.5rem, a border-radius of 8px, and a box-shadow. Then add a :hover pseudo-class on .card that lifts it slightly with a stronger box-shadow."
+      },
+      {
+        "type": "heading",
+        "text": "Linking Google Fonts",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Google Fonts provides free web fonts that are loaded from Google's CDN. To use a Google Font, you add a <link> tag in the HTML <head> that imports the font, then reference it in CSS using font-family. Always specify a fallback font stack — if Google's servers are unreachable, the browser uses the next font in the list."
+      },
+      {
+        "type": "codePreview",
+        "title": "Google Fonts Integration",
+        "defaultCode": "<!-- In the HTML <head>, BEFORE your stylesheet link -->\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n<link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap\" rel=\"stylesheet\">\n\n<!-- In your CSS file -->\nbody {\n  /* Inter first, then system sans-serif fallbacks */\n  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;\n}\n\nh1, h2, h3 {\n  font-weight: 700;\n}\n\np, li, a {\n  font-weight: 400;\n}",
+        "challenge": "Add a second Google Font — 'Playfair Display' for headings only. Update the h1, h2, h3 rule to use Playfair Display with a serif fallback. Keep Inter on the body."
+      },
+      {
+        "type": "heading",
+        "text": "CSS Selectors: Targeting the Right Elements",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Selector Type", "Syntax", "Targets", "Example"],
+        "rows": [
+          ["Element", "p", "All <p> elements on the page", "p { color: #333; }"],
+          ["Class", ".card", "All elements with class=\"card\"", ".card { background: white; }"],
+          ["ID", "#hero", "The single element with id=\"hero\"", "#hero { height: 400px; }"],
+          ["Descendant", "nav a", "All <a> elements inside any <nav>", "nav a { color: white; }"],
+          ["Pseudo-class", "a:hover", "<a> elements when cursor is over them", "a:hover { color: amber; }"],
+          ["Multiple", ".card, .panel", "All elements with class card OR panel", ".card, .panel { border-radius: 8px; }"],
+          ["Child combinator", "nav > a", "Direct child <a> of <nav> only (not nested)", "nav > a { font-weight: 600; }"]
+        ]
+      },
+      {
+        "type": "task",
+        "title": "Style the Grants Portal in VS Code",
+        "software": "VS Code",
+        "intro": "Apply Leo's design specifications to the Arts Council grants portal using CSS. Work from the approved brand guide: #1A2E5A (navy) as primary, #F4B942 (amber) as accent, Inter font, 1.5 line height, card-based layout.",
+        "steps": [
+          "Open styles.css in VS Code. Add the box-sizing reset at the top.",
+          "Link the Inter font from Google Fonts in the HTML head of all three pages (before your stylesheet link).",
+          "Set font-family on body to Inter with system fallbacks. Set background-color to #f8f9fa, color to #1A2E5A, and line-height to 1.5.",
+          "Style the nav with background-color #1A2E5A, padding 1rem 2rem, and display flex with gap 2rem.",
+          "Style nav a: color white, text-decoration none, padding 0.5rem 1rem, border-radius 4px.",
+          "Add a nav a:hover rule that changes background to #F4B942 and color to #1A2E5A.",
+          "Create a .card class: background-color white, padding 1.5rem, border-radius 8px, box-shadow 0 2px 8px rgba(0,0,0,0.1).",
+          "Apply class=\"card\" to each grant category section in grants.html.",
+          "Add a .card:hover rule with a slightly stronger box-shadow and a 0.2s ease transition.",
+          "Style h1 with font-size 2rem, font-weight 700, margin-bottom 1rem. Style h2 with font-size 1.4rem and color #1A2E5A.",
+          "Validate your CSS at jigsaw.w3.org/css-validator/ and fix any errors.",
+          "Take a browser screenshot of each page and compare against Leo's mockup."
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "The cascade in CSS is not a bug — it is a feature, and it is your friend once you understand it. The most common mistake I see is juniors writing increasingly specific selectors to 'override' rules they themselves wrote earlier, until the stylesheet is a tangle of specificity warfare. Write clear, low-specificity rules. Use classes for reusable styles. Use IDs only for anchor links, never for styling. If you find yourself writing !important to force a style, you've lost control of your stylesheet — stop and refactor."
+      },
+      {
+        "type": "scenarioChallenge",
+        "title": "Scenario: The Cascading Conflict",
+        "scenario": "A student's stylesheet has the following rules in this order: (1) a { color: blue; } — (2) nav a { color: white; } — (3) .active { color: #F4B942; } — (4) #main-nav a { color: green; }. The student expects the active navigation link to appear amber (#F4B942) but it appears green instead.",
+        "questions": [
+          {
+            "question": "Explain why the link appears green instead of amber. Use the concept of CSS specificity in your answer, calculating the specificity score for the relevant rules.",
+            "marks": 4
+          },
+          {
+            "question": "Without using !important, propose ONE change to the CSS that would make the .active class win over rule (4). Explain why your change works.",
+            "marks": 3
+          },
+          {
+            "question": "Describe the general principle for managing CSS specificity in a professional codebase to prevent conflicts like this from occurring in the first place.",
+            "marks": 3
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · BRAND IMPLEMENTATION SPRINT",
+        "text": "Rory's client has sent a brand guide: primary colour #2C5F2E (forest green), accent #FFE77A (yellow), font Lato from Google Fonts, 16px base font size, all headings in forest green, all buttons with yellow background and green text. Your challenge: implement this brand guide entirely in CSS on the provided HTML template. No inline styles. Every element must reflect the brand correctly. Document which CSS rules you wrote and why. Rory will load the page and compare it against the brand guide — any mismatch is a failure."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "Your CSS sprint is approved only when:\n\n✅ Google Font linked in HTML head — before your stylesheet link\n✅ Box-sizing reset applied — no elements expanding beyond expected widths\n✅ Nav hover states implemented with :hover pseudo-class\n✅ Card class applied to grant sections — visible shadow and border-radius\n✅ Colour values use the exact hex codes from Leo's brand guide — no approximations\n✅ CSS validated — zero errors at W3C validator\n✅ No !important anywhere in the stylesheet\n\nLeo will compare your implementation against his mockup pixel-by-pixel. If the colours are wrong, the sprint is rejected. Match the brand guide exactly."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A CSS rule .card { background: white; } and a rule #featured { background: blue; } are both targeting the same element, which has both class=\"card\" and id=\"featured\". What colour will the element's background be?",
+          "options": [
+            "White — because the class rule comes first in the stylesheet",
+            "Blue — because ID selectors have higher specificity than class selectors",
+            "White — because class selectors always override ID selectors",
+            "Blue — because the ID rule comes after the class rule in the stylesheet"
+          ],
+          "correctIndex": 1,
+          "explanation": "ID selectors have a specificity of (0,1,0,0) — 100 points. Class selectors have a specificity of (0,0,1,0) — 10 points. Regardless of source order, the ID rule wins because it has higher specificity. This is why using IDs for styling can create hard-to-override conflicts — classes are almost always preferable for reusable styles."
+        }
+      }
+    ]
+  },
+  {
+    "id": "responsive-design-and-online-collaboration",
+    "title": "Responsive Design and Online Collaboration",
+    "estimatedMinutes": 55,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #5005 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟡 IN PROGRESS | Sprint 5 | Assigned to: Junior Developer\n\nThe Arts Council portal looks great on desktop. I tested it on mobile and it is broken. Text is too small to read, the navigation overflows horizontally, and the card grid is a single narrow column that requires horizontal scrolling. Unacceptable.\n\nAlso, we have a new team member joining the project. From now on, all code changes go through GitHub. Leo is managing design files in Figma with shared edit access. Sloane is coordinating on Google Workspace. You need to know how to collaborate on digital projects using professional tools without overwriting each other's work. Fix the mobile layout and set up your collaboration workflow — both by end of sprint."
+      },
+      {
+        "type": "heading",
+        "text": "Responsive Design: One Product, Every Screen",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Responsive design means building digital products that adapt their layout and presentation to the screen size, resolution, and input method of the device being used. It is not optional — over 60% of web traffic globally comes from mobile devices. A website that does not work on mobile is a website that has failed most of its audience."
+      },
+      {
+        "type": "paragraph",
+        "text": "Responsive design is achieved through three CSS techniques working together: a flexible grid layout (using CSS flexbox or grid), relative units for sizing (percentages, em, rem instead of fixed pixels), and media queries that apply different CSS rules at different screen widths. These three techniques together make a product that looks correct on a 320px phone screen and a 2560px desktop monitor."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Responsive design",
+            "definition": "A design approach where a digital product adapts its layout, typography, and content presentation to the screen size and capabilities of the device being used."
+          },
+          {
+            "term": "Media query",
+            "definition": "A CSS conditional rule that applies styles only when specific conditions are met — most commonly when the screen width is above or below a defined breakpoint."
+          },
+          {
+            "term": "Breakpoint",
+            "definition": "A screen width value at which a layout change is triggered by a media query. Common breakpoints: 480px (small mobile), 768px (tablet), 1024px (desktop)."
+          },
+          {
+            "term": "Viewport meta tag",
+            "definition": "An HTML <meta> tag that tells mobile browsers to use the device's actual screen width rather than a simulated desktop width. Essential for responsive design to function."
+          },
+          {
+            "term": "Flexbox",
+            "definition": "A CSS layout model that distributes space and aligns elements in a row or column. Controlled with display: flex on the parent element."
+          },
+          {
+            "term": "Mobile-first design",
+            "definition": "A responsive design strategy where the base CSS styles are written for mobile screens, and media queries add styles for larger screens. Generally produces cleaner, more accessible CSS."
+          }
+        ]
+      },
+      {
+        "type": "codePreview",
+        "title": "CSS Media Queries for Responsive Layout",
+        "defaultCode": "/* Mobile first — base styles apply to all screens */\n.card-grid {\n  display: flex;\n  flex-direction: column;\n  gap: 1rem;\n  padding: 1rem;\n}\n\n.card {\n  background: white;\n  padding: 1.5rem;\n  border-radius: 8px;\n  box-shadow: 0 2px 8px rgba(0,0,0,0.1);\n  width: 100%; /* Full width on mobile */\n}\n\n/* Tablet — 768px and above */\n@media (min-width: 768px) {\n  .card-grid {\n    flex-direction: row;\n    flex-wrap: wrap;\n  }\n  .card {\n    width: calc(50% - 0.5rem); /* Two columns */\n  }\n}\n\n/* Desktop — 1024px and above */\n@media (min-width: 1024px) {\n  .card {\n    width: calc(33.333% - 0.67rem); /* Three columns */\n  }\n}",
+        "challenge": "Add a media query for screens below 480px that reduces the card padding to 1rem and the font-size of card headings to 1.1rem. Test in browser DevTools by resizing the viewport."
+      },
+      {
+        "type": "heading",
+        "text": "Online Collaboration Tools",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Professional digital production is a team sport. At Bunbury Tech Launchpad, every project involves multiple specialists — Leo on design, Sloane on data, Sparky on infrastructure, and you on development. Without collaboration tools, these specialists collide: overwriting each other's files, working from outdated versions, and missing critical feedback."
+      },
+      {
+        "type": "paragraph",
+        "text": "The right tool for each collaboration need matters. Version control (GitHub) is for code. Real-time document collaboration (Google Workspace) is for written content and planning. Design handoff and review (Figma) is for visual assets and specifications. Team communication (Slack or Teams) is for coordination. Using email for code review or a shared folder for version control is a red flag at any professional organisation."
+      },
+      {
+        "type": "table",
+        "headers": ["Tool", "Primary Use", "Key Feature for Collaboration", "Launchpad Use Case"],
+        "rows": [
+          ["GitHub", "Code version control and sharing", "Branches, pull requests, commit history — no file overwrites, full change history", "All HTML/CSS/JS code for the portal"],
+          ["Figma", "Design collaboration and handoff", "Real-time multi-user editing; developer inspect panel shows CSS values", "Leo's mockups shared with devs for implementation reference"],
+          ["Google Docs/Sheets/Slides", "Document and content collaboration", "Real-time co-editing, comment threads, version history", "Project briefs, copy documents, sprint planning"],
+          ["Slack", "Team communication", "Channels per project/topic, file sharing, integrations with GitHub/Trello", "Daily team updates, quick questions, sprint alerts"],
+          ["Microsoft Teams", "Communication and video meetings", "Deep Microsoft 365 integration, video calls, shared SharePoint files", "Client meeting recordings, enterprise environment collaboration"],
+          ["Trello / Asana", "Task and sprint management", "Visual boards, assignments, deadlines, progress tracking", "Sprint backlog, task assignments, deadline tracking"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "GitHub Basics: Why Version Control Matters",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "GitHub is a platform for hosting code repositories and collaborating on software projects. A repository (repo) is a folder that tracks every change ever made to every file in the project. Every change is recorded as a commit — a snapshot of the project at that point in time, with a message explaining what changed and why."
+      },
+      {
+        "type": "paragraph",
+        "text": "For a junior developer at the Launchpad, the critical GitHub workflow is: pull the latest version before making changes, make your changes, commit with a descriptive message, and push back to the repository. Never commit directly to main without review on a professional project — branches and pull requests exist so that code is reviewed before it affects the live product."
+      },
+      {
+        "type": "comparison",
+        "title": "Without Version Control vs With GitHub",
+        "items": [
+          {
+            "label": "Without Version Control",
+            "points": [
+              "Files named: website_final.html, website_final_v2.html, website_FINAL_USE_THIS.html",
+              "Two developers edit the same file and one overwrites the other's changes",
+              "A bug is introduced — no way to identify when or by whom",
+              "Rollback means digging through email attachments for 'the version before the change'",
+              "Client deliverable accidentally uses a draft file instead of the approved version"
+            ]
+          },
+          {
+            "label": "With GitHub",
+            "points": [
+              "One file — grants.html — with a complete history of every change ever made",
+              "Two developers work on branches; changes are merged with conflict resolution",
+              "A bug is introduced — git blame shows exactly which commit introduced it and who wrote it",
+              "Rollback to any previous version in 30 seconds with git revert",
+              "Every release is tagged — client deliverable is always traceable to an exact commit"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "task",
+        "title": "Responsive CSS and GitHub Setup",
+        "software": "VS Code, GitHub",
+        "intro": "This sprint has two parts: fix the portal's mobile layout with media queries, then push the project to GitHub.",
+        "steps": [
+          "Open styles.css and add the viewport meta tag to all HTML files if not already present: <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">.",
+          "Open Chrome DevTools (F12) and toggle device emulation (Ctrl+Shift+M). Set to iPhone SE (375px wide).",
+          "Identify at least three layout problems visible on mobile: overflowing navigation, text size issues, or columns too wide.",
+          "In styles.css, write mobile-first base styles: stack the nav links vertically, set cards to full width (100%), set a maximum content width of 100%.",
+          "Add a @media (min-width: 768px) block that restores the horizontal navigation and introduces a two-column card grid.",
+          "Add a @media (min-width: 1024px) block for a three-column grid on desktop.",
+          "Test all three breakpoints in DevTools. Every layout must work at each breakpoint.",
+          "Create a free GitHub account at github.com if you don't already have one.",
+          "Create a new repository named 'arts-council-portal'. Initialise with a README.",
+          "Use GitHub Desktop (or VS Code's Source Control panel) to push your project files to the repository.",
+          "Write a commit message: 'Add responsive CSS breakpoints for mobile and tablet layouts'.",
+          "Share your repository URL in your sprint notes."
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "Write mobile first, then scale up. The mistake everyone makes is building for desktop and adding media queries to 'fix' mobile as an afterthought. Mobile-first forces you to prioritise the most important content and interactions — because you cannot fit everything on a 375px screen and that constraint is good discipline. When you then scale up to desktop, you're adding complexity to a simple foundation rather than trying to simplify a complex one. Mobile first is not a constraint. It is a design philosophy."
+      },
+      {
+        "type": "scenarioChallenge",
+        "title": "Scenario: The Collaboration Breakdown",
+        "scenario": "A three-person development team is working on a website. They share files via a USB drive that gets passed around. On Thursday, Developer A makes significant changes to styles.css and passes the USB to Developer B. Developer B doesn't realise there's a newer version on the USB and continues working from their own local copy, making different changes. On Friday, Developer C tries to merge both sets of changes manually by copy-pasting code sections. The resulting stylesheet has duplicate rules, broken selectors, and the site is now visually broken two days before delivery.",
+        "questions": [
+          {
+            "question": "Identify THREE specific professional collaboration failures in this scenario. For each failure, state which tool or practice would have prevented it.",
+            "marks": 6
+          },
+          {
+            "question": "Describe how a GitHub branching workflow would have managed Developer A and Developer B's simultaneous changes without conflict. Include the terms 'branch', 'commit', 'pull request', and 'merge' in your answer.",
+            "marks": 6
+          },
+          {
+            "question": "The team used a USB drive as their file-sharing method. Evaluate this choice against TWO alternatives and explain the specific risks that each alternative eliminates.",
+            "marks": 4
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · RESPONSIVE AUDIT SPRINT",
+        "text": "Rory has given you a URL to a student-built website (provided by your teacher). Open it in Chrome DevTools and test it at three breakpoints: 375px, 768px, and 1440px. Document every responsive failure you find — broken layouts, overflowing text, images wider than viewport, navigation issues. For each failure, write the CSS fix. Present your audit as a table: Breakpoint | Issue | CSS Fix. Rory will verify your fixes work before approving the sprint."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "Your responsive design and collaboration sprint is approved only when:\n\n✅ Viewport meta tag present in all HTML files\n✅ Mobile layout tested at 375px — no horizontal scrolling, readable text, stacked navigation\n✅ Tablet layout tested at 768px — two-column card grid visible\n✅ Desktop layout tested at 1024px+ — three-column grid, horizontal navigation\n✅ Project pushed to GitHub with at least two commits and descriptive commit messages\n✅ GitHub repository URL included in sprint submission\n\nA responsive layout that only works on desktop is not responsive — it is a desktop website. Test every breakpoint before submitting."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A developer wants card elements to display in a single column on mobile and switch to three columns on screens 1024px or wider. Which CSS approach correctly achieves this?",
+          "options": [
+            "Set card width to 33% by default; add a media query at max-width: 1024px to set width to 100%",
+            "Set card width to 100% by default; add a media query at min-width: 1024px to set width to calc(33.333% - 1rem)",
+            "Set card width to 33% and use JavaScript to detect screen width and toggle a class",
+            "Use three separate HTML files — one for mobile, one for tablet, one for desktop"
+          ],
+          "correctIndex": 1,
+          "explanation": "Mobile-first approach: start with 100% width (single column) as the base style, then use min-width: 1024px media query to override to a three-column width. Using max-width media queries (option A) is a desktop-first approach that works but is harder to maintain. JavaScript is unnecessary for layout changes. Three HTML files is never the right answer."
+        }
+      }
+    ]
+  },
+  {
+    "id": "integrated-digital-production-project",
+    "title": "Integrated Digital Production Project",
+    "estimatedMinutes": 60,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #5006 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🔴 SPRINT FINAL | Sprint 6 | Assigned to: Junior Developer\n\nThis is it. Leo's design is locked. Sloane's content is written and approved. Sparky's network is live. The animation is built. The audio is edited and exported. The responsive website is coded and validated.\n\nThis final sprint is about bringing it all together into one coherent, deliverable product. The Arts Council portal needs: the animation embedded in the homepage, the voiceover synced to the animation, the website linked and functional across all pages, and all assets at the correct specifications for web delivery. Document every integration decision. Then evaluate the product against the criteria from the project brief. This is the sprint where we prove we can ship. Let's go."
+      },
+      {
+        "type": "heading",
+        "text": "Integration: Where All Skills Converge",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "An integrated digital production project requires you to apply all the technical skills from this unit in a single, cohesive product. The challenge is not the individual skills — by now you can animate, edit audio, write HTML/CSS, and collaborate in GitHub. The challenge is making all the pieces fit together correctly for web delivery."
+      },
+      {
+        "type": "paragraph",
+        "text": "Integration decisions are delivery decisions. Embedding a 200MB video file directly in a webpage kills load time. Exporting an animation as a GIF when it needs transparent background breaks the visual design. Linking to the wrong audio file path means silence on the live site. Each of these is a technical decision that requires you to apply your knowledge, not just your tools."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Asset pipeline",
+            "definition": "The workflow and file structure that moves production assets (images, audio, video, animation) from their source format through optimisation into their final web-ready format."
+          },
+          {
+            "term": "Web-optimised",
+            "definition": "An asset that has been compressed, resized, or converted to a format appropriate for web delivery — balancing visual/audio quality against file size for fast loading."
+          },
+          {
+            "term": "Relative file path",
+            "definition": "A file path that is relative to the current HTML file's location. Example: ../assets/logo.png navigates up one folder and into an assets folder. Relative paths work on any server."
+          },
+          {
+            "term": "Absolute file path",
+            "definition": "A file path from the root of the file system or domain. Example: C:\\Users\\student\\project\\logo.png. Absolute paths break when the project moves to a server."
+          },
+          {
+            "term": "HTML5 video and audio elements",
+            "definition": "Native HTML elements for embedding video (<video>) and audio (<audio>) without requiring plugins. Support multiple source formats for cross-browser compatibility."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Embedding Media in HTML",
+        "level": 2
+      },
+      {
+        "type": "codePreview",
+        "title": "Embedding Video and Audio in HTML5",
+        "defaultCode": "<!-- Video embed — MP4 required; WebM optional for broader support -->\n<video controls width=\"100%\" poster=\"thumbnail.jpg\">\n  <source src=\"assets/arts-council-animation.mp4\" type=\"video/mp4\">\n  <p>Your browser does not support HTML5 video. \n     <a href=\"assets/arts-council-animation.mp4\">Download the video</a>.</p>\n</video>\n\n<!-- Audio embed — MP3 required; OGG optional -->\n<audio controls>\n  <source src=\"assets/ArtsCouncil_VO_web.mp3\" type=\"audio/mpeg\">\n  <p>Your browser does not support HTML5 audio.</p>\n</audio>\n\n<!-- Image with correct relative path and mandatory alt text -->\n<img \n  src=\"assets/images/grants-hero.jpg\" \n  alt=\"Bunbury Arts Council community members at a visual arts event\"\n  width=\"1200\"\n  height=\"600\"\n  loading=\"lazy\"\n>",
+        "challenge": "Add a <figure> wrapper around the video with a <figcaption> that describes the animation content. Add autoplay and muted attributes to the video — then explain in a comment why muted is required for autoplay to work in modern browsers."
+      },
+      {
+        "type": "table",
+        "headers": ["Asset Type", "Source Format (Master)", "Web Delivery Format", "Optimisation Target"],
+        "rows": [
+          ["Animation / Video", "Adobe Animate project or MP4 master", "MP4 (H.264)", "Under 10MB for short clips; use HandBrake to compress if needed"],
+          ["Voiceover / Audio", "WAV 44.1kHz/16-bit", "MP3 192kbps", "Under 2MB per minute; trim all silence; normalise to -1dBFS"],
+          ["Photography", "RAW or high-res JPG", "JPEG at 80% quality, max 1200px wide", "Under 200KB per image; use Squoosh or ImageOptim"],
+          ["Logo / Icons", "AI or SVG source", "SVG for web; PNG fallback if SVG not supported", "SVG: under 10KB after minification"],
+          ["Animated GIF", "GIF source", "MP4 with autoplay muted loop (better quality, smaller size)", "GIF over 1MB should always be converted to video"]
+        ]
+      },
+      {
+        "type": "task",
+        "title": "Integrated Product Delivery",
+        "software": "VS Code, Audacity, Adobe Animate",
+        "intro": "Bring all the project components together into the final deliverable Arts Council portal. This task integrates every skill from the unit.",
+        "steps": [
+          "Create an assets folder inside your project with subfolders: /assets/video, /assets/audio, /assets/images, /assets/css.",
+          "Copy your exported MP4 animation, MP3 voiceover, and all images into the appropriate subfolders.",
+          "Open index.html and embed the MP4 video using the HTML5 <video> element with controls and a poster thumbnail.",
+          "Below the video, embed the MP3 voiceover using the HTML5 <audio> element with controls.",
+          "Verify all file paths are relative (not absolute C:\\Users\\... paths) — the site must work when moved to any computer.",
+          "Open every HTML page in the browser and check: all images load, video plays, audio plays, all navigation links work, all anchor links jump to the correct sections.",
+          "Run the site in Chrome DevTools at 375px — confirm the video does not overflow its container on mobile.",
+          "Run a final W3C HTML validation and CSS validation. Record and fix all errors.",
+          "Commit all final changes to GitHub with message: 'Final integration — all assets embedded and validated'.",
+          "Write a 6-point evaluation checklist from the original project brief. Test the final product against each point and record pass/fail with evidence."
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "The last 10% of a project takes 30% of the time. Integration always reveals problems that weren't visible in isolation — a video that looks great in Premiere doesn't embed cleanly, a path that works on your machine breaks on the server, a layout that looked fine on desktop breaks on the iPad the client uses to demo it. Budget time for integration. Test on real devices, not just browser emulation. Ship nothing you haven't personally tested start to finish on a fresh browser session."
+      },
+      {
+        "type": "scenarioChallenge",
+        "title": "Scenario: The Broken Delivery",
+        "scenario": "A student submits their integrated digital product. The teacher opens it on a different computer. The images don't load (paths contain C:\\Users\\student\\Desktop\\...). The video shows a 'file not found' error. The audio plays but is extremely quiet — later found to be normalised to -20dBFS instead of -1dBFS. The navigation works on two pages but the Contact page has a broken link because it was named Contact.html (capital C) but linked as contact.html (lowercase c) — which works on Windows but fails on the Linux web server.",
+        "questions": [
+          {
+            "question": "Identify FOUR distinct technical errors in this scenario. For each error, explain the correct practice that would have prevented it.",
+            "marks": 8
+          },
+          {
+            "question": "Explain why the capitalisation difference in the filename causes a problem on a Linux server but not on a Windows computer. What general file naming convention prevents this type of error?",
+            "marks": 3
+          },
+          {
+            "question": "Describe a pre-submission testing checklist (minimum 5 items) that would have caught all four errors before the product was handed over.",
+            "marks": 5
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · INTEGRATION AUDIT",
+        "text": "Rory has given you a nearly-complete student project folder to audit (provided by your teacher). Your task: open the project, test every link, every media element, and every path. Test on both desktop and mobile viewport in DevTools. Document every issue as a table: Issue | File | Line | Fix. Then fix as many issues as you can in 30 minutes and push the fixed version to a new GitHub branch named 'integration-fixes'. Write one commit message per fix."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "The integrated product is only approved when:\n\n✅ All file paths are relative — not absolute. Site opens correctly on a different computer.\n✅ Video embeds correctly with <video> element, controls, and poster thumbnail\n✅ Audio embeds correctly with <audio> element and controls\n✅ All file names are lowercase with hyphens — no spaces, no capitals\n✅ W3C HTML and CSS validation: zero errors\n✅ Mobile layout tested at 375px — no overflowing media\n✅ GitHub shows at least 3 commits with descriptive messages\n✅ Evaluation checklist: 6 criteria, all tested, evidence recorded for each\n\nThis is the final sprint for the unit. If it ships broken, it did not ship at all."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A developer has embedded a video using the path <video src=\"C:\\Users\\Dev\\Desktop\\project\\video.mp4\">. What will happen when this project is uploaded to a web server?",
+          "options": [
+            "The video will play correctly on all browsers",
+            "The video will only play on computers running Windows",
+            "The video will fail to load because the path is an absolute local file path that doesn't exist on the server",
+            "The video will load but play without audio"
+          ],
+          "correctIndex": 2,
+          "explanation": "Absolute local file paths (C:\\...) only work on the exact computer where the file was created. When deployed to a web server, there is no C:\\Users\\Dev\\Desktop\\project folder — the server has its own file structure. Relative paths (e.g., assets/video.mp4) are always required for web projects so the paths resolve correctly regardless of where the project is hosted."
+        }
+      }
+    ]
+  }
+]

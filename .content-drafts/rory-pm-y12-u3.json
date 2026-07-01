@@ -1,0 +1,937 @@
+[
+  {
+    "id": "understanding-the-client-brief",
+    "title": "Understanding the Client Brief",
+    "estimatedMinutes": 50,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #4001 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🔴 BLOCKED | Sprint 1 | Assigned to: Junior Project Coordinator\n\nNew client landed yesterday — Bunbury Youth Theatre wants a full digital rebrand: new website, promotional video, and a social media content calendar. Leo's standing by with Figma open. Sloane's data schema is drafted. Sparky's network infrastructure is ready.\n\nProblem: nobody has actually READ the client brief yet. I called a meeting and half the team couldn't tell me what the client's actual deadline was or who their target audience is. That is not acceptable. Your job right now is to pull the brief apart, identify every constraint, and give the team a clear picture of what we're building and for whom. Nothing moves until this ticket is closed."
+      },
+      {
+        "type": "heading",
+        "text": "The Brief Is Your Blueprint",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "A client brief is the single most important document in a digital project. It captures what the client wants, why they want it, who the audience is, what constraints exist, and what success looks like. If you misread the brief — or skip reading it — you are building the wrong thing with the right skills, and that is a complete waste of everyone's time."
+      },
+      {
+        "type": "paragraph",
+        "text": "At Year 12 level, reading a brief means more than skimming for key words. It means interrogating every claim, flagging ambiguities, and translating vague requests into specific, measurable requirements. The client saying 'we want it to look professional' is not a requirement — it is a starting point for a conversation."
+      },
+      {
+        "type": "paragraph",
+        "text": "At Bunbury Tech Launchpad we use a structured brief analysis process. Every brief gets broken into six categories before a single task is created: purpose, audience, requirements, constraints, deliverables, and success criteria. If any category is missing from the brief, you go back to the client and ask."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Client brief",
+            "definition": "A document provided by the client that outlines the purpose, goals, audience, constraints, and expected deliverables for a digital project. It forms the basis of the project scope."
+          },
+          {
+            "term": "Requirements",
+            "definition": "Specific, concrete needs that the final product must meet. Functional requirements describe what the product does; non-functional requirements describe how it performs (speed, accessibility, compatibility)."
+          },
+          {
+            "term": "Constraints",
+            "definition": "Limitations that restrict what the project team can do — including budget, timeline, technology platforms, skill levels, and legal obligations."
+          },
+          {
+            "term": "Deliverable",
+            "definition": "A tangible output the project must produce — for example, a 60-second promotional video, a five-page website, or an annotated wireframe set."
+          },
+          {
+            "term": "Success criteria",
+            "definition": "Measurable standards used to evaluate whether the final product meets the client's goals. For example: 'Website loads in under 3 seconds on mobile' or 'Video achieves 500 views within 30 days of launch'."
+          },
+          {
+            "term": "Ambiguity",
+            "definition": "A vague or unclear requirement that could be interpreted in multiple ways. Ambiguities must be resolved through client communication before design or development begins."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Anatomy of a Client Brief",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Brief Section", "What It Tells You", "Questions to Ask If It's Missing"],
+        "rows": [
+          ["Purpose / Problem", "Why the client needs this digital product", "What problem is this product solving? Why now?"],
+          ["Target Audience", "Who will use or view the product", "Age range? Digital literacy? Device preferences? Location?"],
+          ["Functional Requirements", "What the product must do (features, interactions)", "What tasks must users be able to complete?"],
+          ["Non-Functional Requirements", "How well it must perform (speed, accessibility, compatibility)", "What browsers/devices? Any accessibility standards?"],
+          ["Constraints", "Budget, timeline, technology, legal restrictions", "Is there a fixed deadline? An approved toolchain? A budget cap?"],
+          ["Deliverables", "Exactly what files or products must be handed over", "Final file formats? Resolution specs? Editable source files needed?"],
+          ["Success Criteria", "How the client will judge if the project succeeded", "How will we know it worked? Any metrics to track post-launch?"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "Every client brief contains at least one time bomb. It might be a legally required accessibility standard they forgot to mention, a platform they assumed you'd use, or a deadline tied to an external event they never told you about. Read the brief three times: once for what's there, once for what's missing, and once for what doesn't make sense. The questions you ask in week one cost nothing. The rework you do in week five costs everything."
+      },
+      {
+        "type": "heading",
+        "text": "Translating Vague Requests Into Measurable Requirements",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Clients describe what they want in emotional, subjective language. 'Modern,' 'clean,' 'easy to use,' 'professional' — none of these are requirements. Your job is to translate them into something the team can actually build and test against. This is one of the most valuable skills in project delivery."
+      },
+      {
+        "type": "comparison",
+        "title": "Vague Client Language vs Measurable Requirements",
+        "items": [
+          {
+            "label": "What the Client Said",
+            "points": [
+              "\"We want it to look modern and professional\"",
+              "\"It should be easy to use\"",
+              "\"We want it to reach young people\"",
+              "\"The video should be high quality\"",
+              "\"We need it done soon\""
+            ]
+          },
+          {
+            "label": "What You Write in the Requirements Doc",
+            "points": [
+              "Design must use sans-serif typography, a two-colour brand palette, and align with provided brand style guide",
+              "All primary user tasks completable in 3 steps or fewer; usability tested with 3 representative users",
+              "Content optimised for Instagram and TikTok; target audience aged 15–25 in Bunbury region",
+              "Exported at 1080p (1920×1080) minimum; colour-graded with consistent white balance",
+              "Website live and tested by 15 August; video delivered for review by 1 August"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "task",
+        "title": "Brief Analysis: Bunbury Youth Theatre",
+        "software": "Google Docs",
+        "intro": "You've received the Bunbury Youth Theatre client brief. Work through the six-category analysis framework to pull the brief apart before any design or development work starts.",
+        "steps": [
+          "Open a new Google Doc titled 'Brief Analysis — Bunbury Youth Theatre'.",
+          "Create a table with the six categories: Purpose, Audience, Requirements, Constraints, Deliverables, Success Criteria.",
+          "Read the brief provided by your teacher and extract at least two points for each category into your table.",
+          "Highlight in yellow any information that is vague or ambiguous — things that need clarification from the client.",
+          "For each highlighted item, write a specific clarifying question in a 'Questions for Client' column.",
+          "Identify the single most critical constraint (e.g. fixed deadline, platform requirement) and explain in two sentences why missing this constraint would cause project failure.",
+          "Share your analysis with a partner — compare what each of you flagged as ambiguous. Discuss any disagreements."
+        ]
+      },
+      {
+        "type": "scenarioChallenge",
+        "title": "Scenario: The Missing Constraint",
+        "scenario": "The Bunbury Youth Theatre brief states they want 'a new website with information about upcoming shows.' Midway through development, the client reveals that the site must be managed entirely by a 70-year-old volunteer with no technical skills, must work on a server they already own running an outdated CMS, and must meet WCAG 2.1 AA accessibility standards because they receive government arts funding with accessibility obligations. None of this was in the original brief.",
+        "questions": [
+          {
+            "question": "Identify THREE constraints that were missing from the original brief. For each constraint, explain specifically how it changes the technical or design approach the team would take.",
+            "marks": 6
+          },
+          {
+            "question": "Describe TWO questions a project coordinator should have asked the client during the brief review stage that would have uncovered these missing constraints.",
+            "marks": 4
+          },
+          {
+            "question": "Evaluate the impact of discovering these constraints mid-development rather than at the start. Use project management terminology in your answer.",
+            "marks": 4
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · BRIEF AUDIT SPRINT",
+        "text": "Rory has dropped three real-world client brief excerpts in the shared drive. Each one has at least two problems — a missing section, an ambiguous requirement, or an unrealistic constraint. Your task: identify every problem in each brief, write a one-sentence fix or clarifying question for each issue, and rank the briefs from 'most ready to proceed' to 'needs full client meeting.' Present your findings in a table. Time limit: 20 minutes. Rory will review your table before the end of the lesson."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "Before you submit your brief analysis, check each item:\n\n✅ Every section of the brief has been addressed (no blank rows in your analysis table)\n✅ At least three ambiguities have been identified and turned into specific clarifying questions\n✅ You have identified the single most critical constraint and explained the consequence of missing it\n✅ Your requirements are measurable — no vague language like 'modern' or 'easy to use' without a definition\n✅ You've noted which team members (Leo, Sloane, Sparky) are affected by each requirement\n\nIf any of these are missing, the brief is not approved and the sprint does not start. Fix it now."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A client brief states the website should be 'easy for everyone to use.' What is the BEST next step for the project coordinator?",
+          "options": [
+            "Accept the requirement and start designing",
+            "Ask the client to define their specific user groups and what tasks they need to complete",
+            "Assume 'everyone' means adults aged 18–60 with average digital literacy",
+            "Write a non-functional requirement about load speed"
+          ],
+          "correctIndex": 1,
+          "explanation": "Vague requirements must be made measurable before work begins. The phrase 'easy for everyone to use' is too broad — the team needs to know who 'everyone' is and what specific tasks must be achievable to design and test against this requirement."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "true_false",
+          "text": "A non-functional requirement describes a specific feature or function the digital product must include (e.g. 'the site must have a contact form').",
+          "correctAnswer": false,
+          "explanation": "Non-functional requirements describe how the product performs, not what it does. Examples include load time, accessibility compliance, browser compatibility, and uptime. Features like a contact form are functional requirements."
+        }
+      }
+    ]
+  },
+  {
+    "id": "planning-your-project",
+    "title": "Planning Your Project",
+    "estimatedMinutes": 55,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #4002 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟡 IN PROGRESS | Sprint 2 | Assigned to: Junior Project Coordinator\n\nBrief analysis is approved — nice work. Now the real planning begins. Leo's design is locked to the colour palette in the brief. Sloane's data schema is approved and ready to build against. Sparky's network is ready — the dev environment is live.\n\nWhat we don't have yet is a project plan. I need a Gantt chart in Trello showing every task from now to delivery, with owners, durations, and dependencies mapped out. If two tasks share a dependency and you haven't shown it, the chart is wrong. I also need a risk register — because this client is launching at the Winter Arts Festival and the date is immovable. Get planning."
+      },
+      {
+        "type": "heading",
+        "text": "From Brief to Plan: Breaking Down the Work",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "A brief tells you what to build. A project plan tells you how you're going to build it, who will do each piece, and in what order. The planning phase is where you catch impossible timelines, identify who is blocking whom, and decide in what sequence tasks must happen."
+      },
+      {
+        "type": "paragraph",
+        "text": "The first step in project planning is Work Breakdown Structure — splitting the project into phases, then splitting each phase into individual tasks. A task should be specific enough that one person can own it and it has a clear 'done' state. 'Build the website' is not a task. 'Create and test the Contact page in WordPress with form submission confirmation' is a task."
+      },
+      {
+        "type": "paragraph",
+        "text": "Once tasks are broken down, you assign durations, owners, and dependencies. A dependency means Task B cannot start until Task A is finished. Mapping dependencies reveals your critical path — the sequence of tasks that determines the absolute minimum time the project can take. Any delay on the critical path delays the whole project."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Work Breakdown Structure (WBS)",
+            "definition": "A hierarchical decomposition of the project into phases, tasks, and sub-tasks. Every deliverable in the project should trace back to a WBS item."
+          },
+          {
+            "term": "Gantt chart",
+            "definition": "A bar chart that maps project tasks against time. Each bar shows a task's start date, duration, and end date. Dependencies between tasks are shown with arrows."
+          },
+          {
+            "term": "Dependency",
+            "definition": "A relationship between tasks where one task cannot begin until another is complete. For example: wireframes must be approved before development can start."
+          },
+          {
+            "term": "Critical path",
+            "definition": "The longest sequence of dependent tasks in a project. Any delay to a task on the critical path delays the project completion date by the same amount."
+          },
+          {
+            "term": "Milestone",
+            "definition": "A zero-duration checkpoint marking the completion of a significant phase or deliverable — for example, 'Client approves final wireframes' or 'Website goes live'."
+          },
+          {
+            "term": "Risk register",
+            "definition": "A document listing identified project risks, their likelihood, potential impact, and the mitigation strategy the team will use if they occur."
+          },
+          {
+            "term": "Buffer time",
+            "definition": "Deliberately unallocated time built into a schedule to absorb unexpected delays. Also called 'contingency.' Rory's rule: 20% of estimated task duration, minimum."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Building a Gantt Chart",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Gantt charts are the universal language of project delivery. Every project manager, every client, and every team lead can read one. They show at a glance whether the project is on track, who is overloaded, and which tasks are blocking everything else."
+      },
+      {
+        "type": "table",
+        "headers": ["Gantt Chart Element", "What It Shows", "Why It Matters"],
+        "rows": [
+          ["Task bars", "Duration of each task as a horizontal bar across dates", "Instantly shows how long each piece of work takes"],
+          ["Task dependencies (arrows)", "Which tasks must finish before others can begin", "Reveals the critical path and sequencing risks"],
+          ["Milestones (diamonds)", "Key checkpoints with no duration — just a date", "Keeps the client and team aligned on major moments"],
+          ["Resource column", "Who owns each task", "Prevents double-booking and shows team workload balance"],
+          ["Today line", "A vertical line showing the current date", "Makes slippage immediately visible to everyone"],
+          ["Colour coding", "Status or phase groupings", "Enables quick visual scanning of project health"]
+        ]
+      },
+      {
+        "type": "task",
+        "title": "Build a Gantt Chart in Trello",
+        "software": "Trello",
+        "intro": "You're building the project plan for the Bunbury Youth Theatre project. Use Trello's Timeline view to create a Gantt chart covering the full project from brief to delivery.",
+        "steps": [
+          "Open Trello and create a new board titled 'Bunbury Youth Theatre — Digital Project'.",
+          "Create four lists: Backlog, In Progress, In Review, Done.",
+          "Add cards for at least 12 tasks covering: brief analysis, wireframes, design mockup, content writing, website development (split into at least 3 pages), video script, video shoot, video edit, final review, client approval, and launch.",
+          "For each card, add a start date and due date using Trello's date feature.",
+          "Assign each card to a team member (use yourself, Leo, Sparky, or Sloane).",
+          "Switch to Timeline view and check that the bars display correctly across your project dates.",
+          "Add a dependency between the wireframes card and the development cards — development cannot start until wireframes are approved.",
+          "Identify and add a label 'Critical Path' to the tasks that form your project's critical path.",
+          "Take a screenshot of your completed Timeline view and paste it into your project documentation."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Managing Risk Before It Becomes a Problem",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Every project has risks. The question is whether you've identified them before they hit or whether you're scrambling to fix them mid-sprint. A risk register is not a pessimism exercise — it is a professional habit that separates teams that ship from teams that apologise."
+      },
+      {
+        "type": "table",
+        "headers": ["Risk", "Likelihood (L/M/H)", "Impact (L/M/H)", "Mitigation Strategy"],
+        "rows": [
+          ["Client delays approving wireframes", "High", "High", "Build 3-day review window into schedule; chase 48hrs before deadline"],
+          ["Video shoot cancelled due to weather", "Medium", "High", "Schedule indoor backup location; build 1-week float into post-production"],
+          ["Leo is sick during design sprint", "Low", "Medium", "Maintain shared Figma file with documented design decisions"],
+          ["WordPress plugin breaks on update", "Low", "High", "Test on staging server before pushing to live; keep backup of last stable version"],
+          ["Client requests out-of-scope features", "High", "Medium", "Reference scope statement; log requests in backlog for Phase 2 quote"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "I never start a project without a risk register, and the first item is always 'client communication breakdown.' Ninety percent of project failures I've seen come down to one thing: the team assumed the client understood something they didn't, or the client assumed the team would do something they weren't planning to. Document everything. If it isn't written down, it didn't happen. That's not cynicism — that's professional self-protection."
+      },
+      {
+        "type": "scenarioChallenge",
+        "title": "Scenario: The Immovable Deadline",
+        "scenario": "The Bunbury Youth Theatre project must launch at the Winter Arts Festival on 20 July — that date cannot move. It is currently 1 June. Leo estimates design will take 2 weeks. Development will take 3 weeks. Video production needs 2 weeks for shooting and editing. Client review and revisions typically take 1 week per round and the client wants two rounds of review. There is also 1 week needed for final testing and deployment. Each phase has a dependency on the one before it.",
+        "questions": [
+          {
+            "question": "Calculate the total weeks required if all phases run sequentially. Does the project fit within the available time? Show your working.",
+            "marks": 4
+          },
+          {
+            "question": "Identify TWO phases that could potentially run in parallel (concurrently) to reduce the total timeline. Explain any risks created by running them at the same time.",
+            "marks": 4
+          },
+          {
+            "question": "Propose a revised project schedule that fits within the 20 July deadline. Present it as a table with phase, duration, start date, and end date. Explain any compromises you made.",
+            "marks": 6
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · CRITICAL PATH SPRINT",
+        "text": "Rory has given you a project with 10 tasks and their dependencies listed on a worksheet. Your challenge: draw the network diagram by hand (or use a diagramming tool), identify the critical path, and calculate the earliest completion date. Then answer: if Task 6 is delayed by 3 days, does it affect the final delivery date? Show your reasoning. Bring your answer to the next lesson."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "Your project plan is only approved if:\n\n✅ Gantt chart covers the full project from brief to delivery — no phases are missing\n✅ Every task has an owner, a start date, and an end date\n✅ At least three dependencies are mapped and visible\n✅ The critical path is identified and labelled\n✅ Risk register has at least five risks with likelihood, impact, and mitigation for each\n✅ Buffer time (minimum 20% of total duration) is built into the schedule\n\nSubmit your Trello board link and risk register doc together. One without the other is an incomplete submission."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "Which of the following BEST describes the critical path in a project?",
+          "options": [
+            "The list of all tasks assigned to the most experienced team member",
+            "The shortest possible route through the project network diagram",
+            "The longest sequence of dependent tasks that determines minimum project duration",
+            "The tasks that have the highest risk rating in the risk register"
+          ],
+          "correctIndex": 2,
+          "explanation": "The critical path is the longest chain of dependent tasks. Any delay to a task on this path directly extends the project end date. Tasks NOT on the critical path have 'float' — they can be delayed slightly without affecting the overall deadline."
+        }
+      }
+    ]
+  },
+  {
+    "id": "design-representation-techniques",
+    "title": "Design Representation Techniques",
+    "estimatedMinutes": 55,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #4003 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟡 IN PROGRESS | Sprint 3 | Assigned to: Junior Project Coordinator\n\nLeo needs sign-off on the design direction before a single pixel is placed in Figma. The client cannot read a colour palette and font sheet and tell you if they like it — they need to SEE the product. Your job this sprint: produce the design documentation. We need a set of wireframes for the website, a storyboard for the promo video, and an annotated mockup for the key landing page.\n\nThese documents are communication tools. They are how the client approves the direction before we invest weeks in development. A wireframe is not art — it is a contract. Produce them correctly, or Leo builds the wrong thing."
+      },
+      {
+        "type": "heading",
+        "text": "Why We Represent Designs Before We Build Them",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Design representation techniques are tools for communicating ideas before committing to the full build. They let the team, the client, and stakeholders align on structure, content, and layout without spending time on details that might change. Getting approval on a wireframe takes an hour. Rebuilding a completed webpage takes a week."
+      },
+      {
+        "type": "paragraph",
+        "text": "There are three main levels of design fidelity: low fidelity (quick sketches and basic wireframes), medium fidelity (more detailed wireframes with real content), and high fidelity (polished mockups that closely resemble the final product). At Year 12 level, you must understand when each level is appropriate and be able to produce each type."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Wireframe",
+            "definition": "A low-to-medium fidelity layout diagram showing the structure and content hierarchy of a screen or page. Uses boxes, lines, and placeholder text — no colour or final styling."
+          },
+          {
+            "term": "Mockup",
+            "definition": "A high-fidelity static representation of a design showing the final visual appearance, including colour, typography, imagery, and spacing. Not interactive."
+          },
+          {
+            "term": "Prototype",
+            "definition": "An interactive version of a design that simulates user interactions (clicks, navigation). Used for usability testing. Built in tools like Figma's prototype mode."
+          },
+          {
+            "term": "Storyboard",
+            "definition": "A sequence of illustrated frames showing the visual content, transitions, and audio/text elements of a video or animation in chronological order."
+          },
+          {
+            "term": "Annotated diagram",
+            "definition": "A design mockup or technical diagram with written notes (annotations) explaining design decisions, measurements, colours, fonts, or technical specifications."
+          },
+          {
+            "term": "Design fidelity",
+            "definition": "The level of detail and polish in a design representation. Low fidelity = rough sketches; high fidelity = polished mockups that closely resemble the final product."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Wireframes: Structure Before Style",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "A wireframe answers one question: where does everything go? It shows navigation, content zones, headings, calls to action, and media placement — all without worrying about colour, fonts, or imagery. Wireframes force the conversation about structure and hierarchy before anyone gets attached to visual style."
+      },
+      {
+        "type": "paragraph",
+        "text": "Good wireframes are fast and functional. Use a grid, use real labels (not Lorem Ipsum for navigation items), and mark interactive elements clearly. Annotate anything that needs explanation — a 'search bar' box needs a note if it has autocomplete behaviour, for example. The wireframe should be readable by someone who has never seen the brief."
+      },
+      {
+        "type": "comparison",
+        "title": "Wireframe Do's vs Don'ts",
+        "items": [
+          {
+            "label": "Do",
+            "points": [
+              "Use real navigation labels — not 'Nav Item 1'",
+              "Show content hierarchy with clear heading levels",
+              "Label interactive elements (buttons, forms, dropdowns)",
+              "Annotate non-obvious interactions and behaviours",
+              "Include multiple screen sizes if responsive design is required",
+              "Number your frames and give each a clear page/screen name"
+            ]
+          },
+          {
+            "label": "Don't",
+            "points": [
+              "Add colour — it distracts from structural feedback",
+              "Use 'Lorem Ipsum' for navigation or headings",
+              "Leave interactive elements unlabelled",
+              "Assume the client knows what a hamburger menu icon means",
+              "Create only one viewport (desktop only, ignoring mobile)",
+              "Skip annotations — unannotated wireframes create scope disputes later"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "task",
+        "title": "Create Wireframes in Figma",
+        "software": "Figma",
+        "intro": "Leo has handed over the content outline for the Bunbury Youth Theatre website. Your job is to wireframe the Home page and the Shows page in Figma before any visual design begins.",
+        "steps": [
+          "Open Figma and create a new file titled 'Bunbury Youth Theatre — Wireframes'.",
+          "Set up a frame at 1440px wide (desktop) for the Home page.",
+          "Add a navigation bar with the actual menu items from the brief: Home, Shows, About, Contact.",
+          "Add a hero section with a placeholder image box and a heading — use the actual heading text from the brief.",
+          "Add a 'Upcoming Shows' section with three show cards — each containing a title, date, and 'Book Now' button placeholder.",
+          "Add a footer with contact information and social media links.",
+          "Duplicate the frame and resize to 375px (mobile). Rearrange elements for a vertical mobile layout.",
+          "Add annotations using text notes to explain at least four design decisions (e.g. 'Hero image should be high-contrast for accessibility', 'Cards stack vertically on mobile').",
+          "Create a second frame for the Shows page with a list/grid of productions.",
+          "Export both frames as PNG files at 2x resolution."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Storyboards: Mapping Video and Animation",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Storyboards are the wireframes of video and animation production. Before a camera is touched or a timeline is opened, a storyboard maps out every shot: what is visible, what the camera is doing, what audio plays, and what text appears on screen. A good storyboard eliminates surprises on shoot day and prevents expensive re-edits."
+      },
+      {
+        "type": "paragraph",
+        "text": "Each frame in a storyboard represents a shot or a scene transition. Frames include a rough illustration of the visual content, a shot description (wide shot, close-up, etc.), the dialogue or voiceover script, and the duration. You do not need to be an artist — stick figures and boxes communicate shot composition perfectly well."
+      },
+      {
+        "type": "table",
+        "headers": ["Storyboard Element", "What to Include"],
+        "rows": [
+          ["Frame illustration", "Rough sketch or diagram of the shot — show camera angle and subject position"],
+          ["Shot type label", "Wide shot (WS), Medium shot (MS), Close-up (CU), Extreme close-up (ECU), Point of view (POV)"],
+          ["Camera movement", "Static, pan left/right, tilt up/down, zoom in/out, tracking shot"],
+          ["Voiceover / Dialogue", "Exact script text that plays during this frame"],
+          ["On-screen text", "Any title cards, captions, or callouts that appear"],
+          ["Duration", "Approximate length of this shot in seconds"],
+          ["Transition", "Cut, dissolve, fade to black, wipe — how this shot ends"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Annotated Diagrams: Explaining Design Decisions",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "An annotated diagram is a design mockup or technical diagram with written notes that explain the decisions behind each element. Annotations are not decorative — they provide the rationale, specifications, and implementation notes that a developer or content creator needs to build the design correctly."
+      },
+      {
+        "type": "paragraph",
+        "text": "Strong annotations reference design principles, client requirements, or accessibility standards. Weak annotations just name elements ('this is the logo'). Compare: 'Logo is placed top-left per F-pattern reading behaviour — maintains visual hierarchy' versus 'logo here.' One is professional documentation; the other is a label."
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "I judge every intern's design documentation by one test: could a completely different developer pick up these wireframes and annotated mockups and build the right product without talking to anyone? If the answer is no, the documentation has failed its purpose. Design documentation is not for you — it is for the person who builds after you, reviews after you, or maintains the product in three years when you've moved on. Write for that person."
+      },
+      {
+        "type": "scenarioChallenge",
+        "title": "Scenario: The Unapproved Redesign",
+        "scenario": "Leo produced wireframes for the Bunbury Youth Theatre website but skipped the annotation step because he was running behind schedule. The wireframes were approved by the client in a 15-minute meeting. During development, the developer interpreted the hero image placeholder as a static photograph. The client expected a video background with autoplay. The 'Book Now' button was built as a simple mailto: link; the client expected it to connect to their existing ticketing system API. Both issues required significant rework in the final week before launch.",
+        "questions": [
+          {
+            "question": "Explain how annotations on the wireframes would have prevented each of the two misunderstandings described. Be specific about what the annotations should have stated.",
+            "marks": 4
+          },
+          {
+            "question": "Describe what a client approval process for wireframes should include — beyond just showing the client the frames in a meeting — to ensure both parties have the same understanding of what will be built.",
+            "marks": 4
+          },
+          {
+            "question": "Identify the project management failure that allowed both issues to reach the development phase undetected. Suggest a process change that would catch similar issues earlier.",
+            "marks": 4
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · STORYBOARD SPRINT",
+        "text": "Rory needs a storyboard for a 60-second promotional video for the Bunbury Youth Theatre. The video should open with a teaser of a performance, introduce the theatre's story, show three upcoming productions, and close with the website URL and a call to action. Create a 10-frame storyboard using the template provided. Include shot types, camera movements, script text, and duration for every frame. You have 25 minutes. Rory is reviewing at the end of the lesson."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "Your design documentation sprint is only approved if:\n\n✅ Wireframes show both desktop and mobile layouts\n✅ All navigation items use real labels from the brief — not placeholders\n✅ Interactive elements (buttons, forms, links) are clearly labelled\n✅ Annotations reference design decisions, not just element names\n✅ Storyboard includes shot type, camera movement, script, and duration for every frame\n✅ Annotated mockup shows at least five annotations with design rationale\n\nLeo cannot start building from undocumented wireframes. Fix and resubmit."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "Which type of design representation would be MOST appropriate for getting initial client approval of a website's page structure and navigation before any visual design work begins?",
+          "options": [
+            "High-fidelity mockup with colour and typography",
+            "Interactive prototype with working navigation",
+            "Low-fidelity wireframe with annotations",
+            "Annotated screenshot of a competitor's website"
+          ],
+          "correctIndex": 2,
+          "explanation": "Low-fidelity wireframes are ideal for early structural approval because they communicate layout and hierarchy without the distraction of visual style. Clients focus on structure rather than colour preferences, which is exactly what the team needs to agree on at this stage."
+        }
+      }
+    ]
+  },
+  {
+    "id": "target-audience-and-presentation-medium",
+    "title": "Target Audience and Presentation Medium",
+    "estimatedMinutes": 50,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #4004 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟡 IN PROGRESS | Sprint 4 | Assigned to: Junior Project Coordinator\n\nWe just had a near disaster. The social media content Leo designed for the Bunbury Youth Theatre was built for a Facebook audience — structured, information-heavy posts with long captions. The client's analytics show 78% of their audience is under 25 and predominantly on Instagram and TikTok. Leo's format would have bombed completely.\n\nThis is a reminder that who you are building for determines everything: format, tone, platform, file size, colour palette, typography, accessibility requirements. Your task this sprint: produce a target audience profile and a presentation medium recommendation report. These documents prevent us from building the right product for the wrong platform ever again."
+      },
+      {
+        "type": "heading",
+        "text": "Audience First, Medium Second",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Every design decision in a digital product — from font size to file format to navigation structure — is determined by who the audience is and how they will access the product. Building without an audience profile is like Leo designing a poster without knowing if it will be printed on A4 paper or a 10-metre billboard."
+      },
+      {
+        "type": "paragraph",
+        "text": "At Year 12 level, understanding your audience means going beyond basic demographics. Age and location are a starting point. You also need to understand digital literacy, device preferences, connection speed, accessibility needs, cultural context, and the emotional state the user will be in when they encounter your product. Someone booking emergency flood assistance has very different needs from someone browsing tickets for a theatre show."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Target audience",
+            "definition": "The specific group of people a digital product is designed for, defined by characteristics including demographics, behaviours, needs, digital literacy, and access methods."
+          },
+          {
+            "term": "Demographics",
+            "definition": "Measurable characteristics of an audience: age, gender, location, occupation, income, education level. Necessary but insufficient alone for audience analysis."
+          },
+          {
+            "term": "Psychographics",
+            "definition": "The values, interests, attitudes, and lifestyle characteristics of an audience. Answers 'what does this person care about?' rather than 'who are they statistically?'"
+          },
+          {
+            "term": "Presentation medium",
+            "definition": "The platform or format through which a digital product is delivered — for example, a website, printed flyer, social media post, kiosk screen, or email newsletter."
+          },
+          {
+            "term": "Digital literacy",
+            "definition": "An audience member's ability to use and understand digital technology. Influences navigation complexity, vocabulary used in interface copy, and the level of instructional guidance needed."
+          },
+          {
+            "term": "Accessibility requirement",
+            "definition": "A design constraint arising from an audience member's disability or limitation — for example, vision impairment requiring high contrast and large text, or motor impairment requiring keyboard navigation."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Audience Profiles: Beyond Demographics",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "An audience profile (sometimes called a persona) is a structured description of a representative member of your target audience. It goes beyond age and location to capture how this person uses technology, what they are trying to achieve, what frustrations they have, and what a successful experience looks like for them."
+      },
+      {
+        "type": "table",
+        "headers": ["Profile Component", "Questions to Answer", "Example (Youth Theatre)"],
+        "rows": [
+          ["Name & demographics", "Age, location, occupation, education", "Mia, 17, student, Bunbury SHS"],
+          ["Technology behaviour", "Primary device, daily apps, online habits", "Uses iPhone, Instagram daily, books everything via app"],
+          ["Goals", "What are they trying to accomplish with this product?", "Find show times and book tickets quickly — under 2 minutes"],
+          ["Pain points", "What frustrates them in similar products?", "Hates websites that don't work on mobile; hates long forms"],
+          ["Digital literacy", "Confident, moderate, or low — and in what areas?", "High on social/mobile apps; low on desktop form-based systems"],
+          ["Accessibility needs", "Any visual, auditory, motor, or cognitive requirements?", "None identified — but friend uses screen reader"],
+          ["Context of use", "When, where, and on what device will they use this?", "On the bus, on her phone, in low-light conditions"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Choosing the Right Presentation Medium",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "The presentation medium is where your audience encounters your product. The same content communicated through different mediums requires completely different design decisions. A promotional campaign targeting 16-year-olds in Bunbury should look nothing like one targeting 55-year-old corporate sponsors — even if the message is the same."
+      },
+      {
+        "type": "comparison",
+        "title": "Medium Comparison: How Audience Determines Format",
+        "items": [
+          {
+            "label": "Website (Desktop-first)",
+            "points": [
+              "Audience: professional adults researching organisations or making decisions",
+              "Navigation: multi-level menus acceptable; users expect to search and browse",
+              "Typography: body text 16–18px; longer reading time expected",
+              "File size tolerance: moderate — users on broadband at desk",
+              "Example: corporate sponsor information, grant applications"
+            ]
+          },
+          {
+            "label": "Mobile Website / PWA",
+            "points": [
+              "Audience: younger users, casual interaction, on the move",
+              "Navigation: hamburger menu; maximum 3 taps to complete core task",
+              "Typography: body text 16px minimum; short paragraphs only",
+              "File size: strict — compress all images; avoid large video autoplay",
+              "Example: ticket booking, show times, social sharing"
+            ]
+          },
+          {
+            "label": "Social Media (Instagram/TikTok)",
+            "points": [
+              "Audience: 15–30 predominantly; scrolling passively; low commitment",
+              "Format: vertical video (9:16), image carousels, short-form text",
+              "Content: hook in first 2 seconds; emotion-led; authentic tone",
+              "File size: platform-compressed — original export quality matters",
+              "Example: behind-the-scenes content, show highlights, cast announcements"
+            ]
+          },
+          {
+            "label": "Email Newsletter",
+            "points": [
+              "Audience: opted-in subscribers — higher trust, willing to read more",
+              "Format: max 600px wide; inline CSS only; single-column recommended",
+              "Content: clear subject line; one primary CTA; plain text fallback",
+              "File size: email clients clip messages over 102KB (Gmail)",
+              "Example: season announcements, member updates, exclusive offers"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "The worst question you can ask about a presentation medium is 'what do we like?' The right question is 'where is our audience, what are they doing when they encounter us, and what do they need to be able to do in under 30 seconds?' Build for their context, not for your aesthetic preference. I've seen beautiful desktop websites built for audiences who are entirely on their phones. Beautiful — and completely useless."
+      },
+      {
+        "type": "task",
+        "title": "Audience Profile and Medium Recommendation Report",
+        "software": "Google Docs",
+        "intro": "You're writing the audience analysis document for the Bunbury Youth Theatre project. This report will inform Leo's design decisions, the platforms we target, and the accessibility features we must include.",
+        "steps": [
+          "Open Google Docs and create a document titled 'Audience Profile & Medium Recommendation — Bunbury Youth Theatre'.",
+          "Create two audience profiles: one for a 17-year-old student ticket buyer, one for a 50-year-old community sponsor/parent. Use the profile template structure from this lesson.",
+          "For each profile, identify THREE design implications — how this person's characteristics should influence specific design decisions.",
+          "Write a Medium Recommendation section with a table: Platform, Target Audience Segment, Content Format, Key Technical Constraints.",
+          "Include at least four recommended platforms with justification for each.",
+          "Add an Accessibility Considerations section listing at least three accessibility requirements and how each will be addressed in the design.",
+          "Write a short summary paragraph (max 4 sentences) explaining how the two audience profiles lead to different design priorities for the same project."
+        ]
+      },
+      {
+        "type": "scenarioChallenge",
+        "title": "Scenario: Platform Mismatch",
+        "scenario": "A Bunbury Youth Theatre grant application requires the organisation to demonstrate digital community engagement. The marketing intern has proposed: (a) a Facebook page updated twice weekly, (b) a monthly printed newsletter mailed to 200 addresses, (c) a static website with text-only content. The theatre's audience data shows 73% under 30, 89% access via mobile, and average session time under 90 seconds.",
+        "questions": [
+          {
+            "question": "Evaluate each of the three proposed platforms against the audience data provided. For each platform, explain whether it is appropriate, partially appropriate, or inappropriate — and why.",
+            "marks": 6
+          },
+          {
+            "question": "Propose an alternative or modified digital engagement strategy that better matches the audience profile. Include at least two specific platforms and justify each choice with reference to the audience data.",
+            "marks": 4
+          },
+          {
+            "question": "The printed newsletter targets a different audience segment (older community members and donors). Identify ONE specific design constraint created by the printed medium that would not apply to the digital platforms, and explain its impact.",
+            "marks": 2
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · PERSONA SPRINT",
+        "text": "Rory's new client is a regional community health service with two very different user groups: elderly residents (65+) managing medication schedules, and young parents (25–35) booking appointments. Your challenge: build one audience profile for each group in 15 minutes, then answer — should these two groups share the same website, or does the health service need two separate digital products? Present your recommendation with three reasons. Rory wants this on his desk in 20 minutes."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "Your audience analysis is only approved if:\n\n✅ Two distinct audience profiles are created — not just demographic tables, full profiles with goals, pain points, and digital literacy\n✅ Each profile includes at least THREE specific design implications\n✅ Medium recommendation table covers at least four platforms with technical constraints for each\n✅ Accessibility requirements are addressed — not just mentioned\n✅ Your summary paragraph connects audience profiles to specific design decisions\n\nIf Leo receives this document and can't tell what design decisions to make, the document has failed. Revise and resubmit."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "short_answer",
+          "text": "A digital product for elderly community members (70+) requires different design decisions than one for teenagers. Identify TWO specific design decisions that would differ and explain why the audience characteristic drives each decision.",
+          "marks": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "evaluation-and-iteration",
+    "title": "Evaluation and Iteration",
+    "estimatedMinutes": 55,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #4005 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟠 IN REVIEW | Sprint 5 | Assigned to: Junior Project Coordinator\n\nThe Bunbury Youth Theatre website is built. The video is edited. Leo is happy with the design. Sparky says the server is stable. Sloane's content is loaded.\n\nBut we do not ship until it's been evaluated against the success criteria from the brief. Evaluation is not a formality — it is the step where we prove the product does what it was supposed to do, or we identify what to fix before the client sees it. I also need an iteration log: every change made after testing, with the reason recorded. This is how we demonstrate professional quality to the client — and it is how you demonstrate it in your assessment. Evaluation without evidence is just opinion."
+      },
+      {
+        "type": "heading",
+        "text": "Evaluation Is Not Proofreading",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Evaluation is the systematic process of testing a digital product against defined criteria to determine whether it meets its purpose, audience needs, and technical requirements. It is not the same as checking for typos or making sure images load. It requires pre-defined criteria, structured testing methods, documented results, and evidence-based recommendations."
+      },
+      {
+        "type": "paragraph",
+        "text": "In professional practice, evaluation happens at multiple points in a project — not just at the end. Formative evaluation during development catches problems while they're cheap to fix. Summative evaluation at completion confirms the product meets all requirements before delivery. At Year 12, you must demonstrate both: evidence of feedback during the project AND a formal end-state evaluation."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Evaluation criteria",
+            "definition": "The specific, measurable standards against which a digital product is judged. Derived directly from the client brief and functional/non-functional requirements."
+          },
+          {
+            "term": "Formative evaluation",
+            "definition": "Evaluation conducted during the development process to gather feedback and improve the product before completion. Examples: peer review of wireframes, client review of prototype."
+          },
+          {
+            "term": "Summative evaluation",
+            "definition": "Evaluation conducted at the end of the project to assess the completed product against all requirements. Determines whether the project has met its goals."
+          },
+          {
+            "term": "Usability testing",
+            "definition": "A method of evaluation where representative users attempt to complete specific tasks with the product. Identifies navigation, interface, and comprehension problems that the design team overlooks."
+          },
+          {
+            "term": "Iteration",
+            "definition": "The process of making improvements to a product based on evaluation results. Each cycle of test–evaluate–improve is called an iteration."
+          },
+          {
+            "term": "Evaluation evidence",
+            "definition": "Documentation that proves an evaluation was conducted — including test checklists, annotated screenshots, user testing notes, and feedback records with dates and sources."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Defining Evaluation Criteria",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Evaluation criteria must be defined before the product is built — not after. Writing criteria at the end is working backwards: you end up writing criteria that match what you built rather than criteria that measure what the client needed. Good criteria are Specific, Measurable, and traceable back to the brief."
+      },
+      {
+        "type": "table",
+        "headers": ["Criteria Category", "Example Criterion", "How to Test", "Evidence Required"],
+        "rows": [
+          ["Functional", "All navigation links go to the correct pages", "Manual click-test on all links across three browsers", "Screenshots of each page loaded; checklist with pass/fail"],
+          ["Aesthetic / Design", "Colour palette matches the approved brand guide exactly", "Visual comparison against brand guide using eyedropper tool", "Annotated screenshot with hex codes verified"],
+          ["Usability", "Users complete ticket booking in 3 steps or fewer", "Usability test with 3 users timing task completion", "Timed test notes; screen recording if available"],
+          ["Accessibility", "All images have descriptive alt text", "Automated scan using WAVE or axe browser extension", "Exported accessibility report with zero critical errors"],
+          ["Technical", "Page loads in under 3 seconds on 4G connection", "PageSpeed Insights test at mobile throttling", "Screenshot of PageSpeed score with metric values"],
+          ["Content", "All content reflects the approved brief copy exactly", "Line-by-line comparison with approved copy document", "Marked-up printout with any discrepancies noted"],
+          ["Purpose", "Product communicates the theatre's values and voice", "Client review meeting with structured feedback form", "Completed feedback form signed by client representative"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Documenting the Iteration Process",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Iteration documentation proves that you responded to feedback and made evidence-based improvements. In assessment contexts, this is where many students lose marks — they make changes but never record them. An iteration log shows the evaluator that you identified an issue, understood why it was an issue, made a specific change, and re-tested to confirm the fix."
+      },
+      {
+        "type": "table",
+        "headers": ["Iteration Log Column", "What to Record"],
+        "rows": [
+          ["Issue ID", "A reference number for tracking (e.g. IT-001)"],
+          ["Source", "How was the issue identified? (Peer review, usability test, self-review, client feedback)"],
+          ["Issue Description", "What specifically is wrong? Be precise — 'the layout looks off' is not an issue description"],
+          ["Relevant Criterion", "Which evaluation criterion does this relate to?"],
+          ["Change Made", "What did you actually do to fix it? What file, what element, what was changed?"],
+          ["Re-test Result", "Did the change fix the problem? What evidence confirms this?"],
+          ["Date", "When was the change made? Timestamps create a credible record"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "Clients can tell the difference between a team that evaluated against criteria and a team that just looked it over and said 'looks good.' The first team brings a documented checklist with pass/fail results and screenshots. The second team says 'yeah it all works.' I know which team I'm hiring for the next project. Evidence is the difference between a portfolio piece and a story you tell at a job interview that no one can verify."
+      },
+      {
+        "type": "task",
+        "title": "Evaluation Report and Iteration Log",
+        "software": "Google Docs",
+        "intro": "You're completing the formal evaluation for the Bunbury Youth Theatre project. Follow this process to produce a professional evaluation report with iteration evidence.",
+        "steps": [
+          "Open a Google Doc titled 'Evaluation Report — Bunbury Youth Theatre'.",
+          "Create an Evaluation Criteria table with at least six criteria drawn from the project brief. Include the category, criterion, test method, and pass/fail column.",
+          "For each criterion, conduct the test, record the result (Pass / Partial / Fail), and note your evidence (screenshot filename, page URL, tool used).",
+          "Identify at least two criteria that received a Partial or Fail result.",
+          "Create an Iteration Log table for each failed/partial criterion: Issue ID, Source, Issue Description, Relevant Criterion, Change Made, Re-test Result, Date.",
+          "Make the actual changes to the product described in your iteration log.",
+          "Re-test each changed item and update the iteration log with the re-test result.",
+          "Write a 4–6 sentence Evaluation Summary addressing: did the product meet its purpose, what were the key strengths, what are the remaining limitations, and what would be improved in a future iteration.",
+          "Attach or link all evidence (screenshots, accessibility report, PageSpeed results) at the end of the document."
+        ]
+      },
+      {
+        "type": "scenarioChallenge",
+        "title": "Scenario: No Criteria, No Evidence",
+        "scenario": "A student has completed their Year 12 digital product — a website for a local gym. Their evaluation section states: 'I showed the website to my friend and they said it looked good. I also checked it myself and everything works. The colours look right and the images load. I'm happy with how it turned out.' They score 4/20 for evaluation. The teacher's feedback is: 'No defined criteria. No structured testing. No evidence. No iteration documented. This is a personal opinion, not an evaluation.'",
+        "questions": [
+          {
+            "question": "The student's approach contains four distinct evaluation errors. Identify each error and explain what should have been done instead, using correct project management and evaluation terminology.",
+            "marks": 8
+          },
+          {
+            "question": "Write three specific, measurable evaluation criteria that would have been appropriate for this gym website project. For each criterion, specify the test method and the evidence that would need to be collected.",
+            "marks": 6
+          },
+          {
+            "question": "The student made several design changes during development but did not record them. Explain the specific impact of missing iteration documentation on the credibility and completeness of the evaluation.",
+            "marks": 4
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · EVALUATION SPRINT",
+        "text": "Rory has given you access to a nearly-complete student website (link provided by your teacher). Your task: write five evaluation criteria for it, then test it against each criterion, record pass/fail results with evidence (screenshots), and write an iteration recommendation for any failures. You have 30 minutes. This is real evaluation practice — same format you'll use in your own project assessment. Document everything."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "The evaluation sprint is only approved if:\n\n✅ Evaluation criteria are measurable — at least six, drawn from the brief\n✅ Every criterion has a documented test method and evidence type specified\n✅ Results are recorded as Pass / Partial / Fail — not 'looks good'\n✅ At least two items in the iteration log with full change descriptions and re-test results\n✅ Evaluation Summary is 4–6 sentences and references specific criteria, not general opinions\n✅ Evidence is attached — screenshots, reports, or test notes. No evidence = no evaluation.\n\nThis is the final sprint for Unit 3. Make it count — this is the format your capstone project evaluation must follow."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A student writes the following evaluation criterion: 'The website should look good.' What is the MAIN problem with this criterion?",
+          "options": [
+            "It is too long and should be shortened",
+            "It is not measurable — there is no way to objectively test whether it has been met",
+            "It should refer to a specific design principle",
+            "It is a functional requirement, not an evaluation criterion"
+          ],
+          "correctIndex": 1,
+          "explanation": "Evaluation criteria must be measurable. 'Looks good' is subjective — different people will reach different conclusions when testing against it. A better criterion would be: 'Colour palette uses the approved brand guide hex codes and achieves a contrast ratio of at least 4.5:1 for all body text (WCAG AA standard).'"
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "true_false",
+          "text": "Formative evaluation is conducted at the end of a project to provide a final assessment of the completed product.",
+          "correctAnswer": false,
+          "explanation": "Formative evaluation is conducted DURING the project — at key checkpoints such as wireframe review, prototype testing, or draft content review. It helps identify and fix problems while they are still cheap to resolve. Summative evaluation is the final assessment of the completed product."
+        }
+      }
+    ]
+  }
+]

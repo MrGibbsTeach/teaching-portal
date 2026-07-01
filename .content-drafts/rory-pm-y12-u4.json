@@ -1,0 +1,893 @@
+[
+  {
+    "id": "advanced-project-planning",
+    "title": "Advanced Project Planning",
+    "estimatedMinutes": 60,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #6001 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🔴 NEW | Sprint 1 | Assigned to: Project Lead — Intern\n\nCongratulations. You've been promoted. The client this sprint is Bunbury Regional Hospital — they need a complete digital communications package: a public-facing website update, an internal staff newsletter (PDF/web), a 2-minute video introduction for new patients, and a digital wayfinding kiosk interface. Leo is leading design. Sloane is handling content. Sparky owns the kiosk hardware. You are the Project Lead.\n\nThis is not Year 11 planning with a single deliverable and a 3-week sprint. This is a multi-stream project with four parallel workstreams, a client with legal compliance requirements, a fixed external deadline (hospital board presentation on 1 October), and a budget. I need a Plan of Action on my desk before anyone starts any other work. You have 48 hours. Start planning."
+      },
+      {
+        "type": "heading",
+        "text": "Moving from Coordinator to Lead: What Changes",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "In Unit 3, you were managing your own project work within someone else's plan. In Unit 4, you own the plan. That means you are accountable for the entire project — not just your tasks, but Leo's design timeline, Sloane's content calendar, Sparky's hardware integration, and the client relationship. If any of those streams slip and you didn't catch it, that is a leadership failure."
+      },
+      {
+        "type": "paragraph",
+        "text": "Advanced project planning means planning for a project with multiple workstreams, dependencies between teams, external stakeholders with approval authority, compliance requirements, and a real budget. The skills are the same as Unit 3 — scoping, Gantt charts, risk registers — but the complexity and accountability are different. You are no longer asking for approval; you are giving it."
+      },
+      {
+        "type": "paragraph",
+        "text": "A Plan of Action is the master planning document that governs a project from kickoff to delivery. It combines the project brief analysis, scope statement, work breakdown structure, timeline, resource plan, risk register, and communication plan into one authoritative document. When the client, the team, or the sponsor has a question — the answer is in the Plan of Action."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Plan of Action",
+            "definition": "The master project document that defines scope, objectives, timeline, resources, risks, responsibilities, and communication protocols. Agreed by all stakeholders before work begins."
+          },
+          {
+            "term": "Workstream",
+            "definition": "A distinct, parallel area of work within a project that can be planned and tracked semi-independently. Each workstream has its own tasks, owner, and timeline — but shares dependencies with other streams."
+          },
+          {
+            "term": "Project sponsor",
+            "definition": "The senior stakeholder who authorises the project, approves the budget, and has final sign-off on deliverables. Not the day-to-day client contact — the person with ultimate authority."
+          },
+          {
+            "term": "Scope statement",
+            "definition": "A formal, signed document defining what is included in and explicitly excluded from the project. Used to manage scope creep and resolve disputes about project boundaries."
+          },
+          {
+            "term": "Assumptions log",
+            "definition": "A record of assumptions the project plan is built on — for example, 'client will provide all photography assets by Week 3.' If an assumption proves false, the plan must be updated."
+          },
+          {
+            "term": "Change control",
+            "definition": "A formal process for requesting, evaluating, approving, and implementing changes to the agreed project scope, timeline, or budget. Prevents uncontrolled scope creep."
+          },
+          {
+            "term": "Stakeholder register",
+            "definition": "A document listing all project stakeholders, their role, interest level, influence level, and preferred communication method."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "The Plan of Action: What It Must Contain",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Plan of Action Section", "Contents", "Who Uses It"],
+        "rows": [
+          ["Executive Summary", "1-page overview: what the project is, why it exists, what success looks like, and when it ends", "Project sponsor, client — people who need the overview without the detail"],
+          ["Project Objectives", "3–5 specific, measurable outcomes the project must achieve", "All stakeholders — defines what 'done' means"],
+          ["Scope Statement", "Full list of deliverables IN scope; explicit list of exclusions OUT of scope", "Project lead, client, team — prevents scope creep disputes"],
+          ["Work Breakdown Structure", "All tasks organised by workstream and phase; every task has an owner", "All team members — their daily work plan"],
+          ["Timeline / Gantt Chart", "All tasks mapped to calendar dates with dependencies and milestones", "Project lead, team — tracks progress and flags slippage"],
+          ["Resource Plan", "Who is working on what, when, and at what capacity; all tools and assets required", "Project lead — prevents resource conflicts"],
+          ["Risk Register", "All identified risks with likelihood, impact, and mitigation strategy", "Project lead — proactive issue management"],
+          ["Communication Plan", "Who gets updates, how frequently, in what format, and through which channel", "Project lead, client — ensures no-one is surprised"],
+          ["Assumptions Log", "Every assumption the plan is built on, with the consequence if it proves false", "Project lead — triggers plan revision if assumptions fail"],
+          ["Change Control Process", "How scope changes are requested, evaluated, priced, and approved", "Client, project lead — manages expectations and revenue"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Planning Multi-Stream Projects",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "The Hospital project has four workstreams: website, newsletter, video, and kiosk interface. Each workstream has its own tasks and internal dependencies. But they also share cross-stream dependencies — the video needs approved scripts from Sloane's content stream before Leo can start motion graphics. The kiosk interface needs design sign-off from Leo before Sparky can install anything."
+      },
+      {
+        "type": "paragraph",
+        "text": "Cross-stream dependencies are the most dangerous dependencies in a project — they require two different team leads to coordinate. If Leo is waiting on Sloane and Sloane doesn't know she is blocking Leo, the project slips without anyone flagging it. Your job as project lead is to know every cross-stream dependency by heart and actively monitor them."
+      },
+      {
+        "type": "comparison",
+        "title": "Single-Stream vs Multi-Stream Project Planning",
+        "items": [
+          {
+            "label": "Single-Stream (Unit 3 level)",
+            "points": [
+              "One set of tasks with linear or simple parallel steps",
+              "One owner per task; one stream of progress to track",
+              "Dependencies mostly within the same workstream",
+              "Timeline slippage affects only one delivery thread",
+              "Risk register covers one set of technical and client risks"
+            ]
+          },
+          {
+            "label": "Multi-Stream (Unit 4 / Capstone level)",
+            "points": [
+              "Four parallel workstreams with separate tasks and owners",
+              "Cross-stream dependencies — one stream blocks another",
+              "Resources (Leo, Sloane, Sparky) shared across streams",
+              "Timeline slippage in one stream can cascade across the whole project",
+              "Risk register must cover each stream AND cross-stream integration risks"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "task",
+        "title": "Plan of Action: Bunbury Regional Hospital Project",
+        "software": "Google Docs, Trello, Google Sheets",
+        "intro": "You are the Project Lead for the Bunbury Regional Hospital digital communications package. Produce a complete Plan of Action before any team member starts their work.",
+        "steps": [
+          "Open Google Docs and create a document titled 'Plan of Action — Bunbury Regional Hospital Digital Package'.",
+          "Write an Executive Summary (max 200 words): project overview, key deliverables, delivery date, project lead name.",
+          "Write a Project Objectives section with exactly 4 measurable objectives. Each objective must be specific enough to test at evaluation.",
+          "Write a Scope Statement: list all four deliverables as IN scope; list at least three items as explicitly OUT of scope (use the brief to identify what the client might assume is included but isn't).",
+          "Create a Work Breakdown Structure table: Workstream | Phase | Task | Owner | Duration | Dependencies.",
+          "Populate the WBS with at least 20 tasks across all four workstreams (website, newsletter, video, kiosk).",
+          "Identify and highlight all cross-stream dependencies in a different colour.",
+          "Transfer the WBS to Trello Timeline view as a Gantt chart with all tasks assigned to the correct team members.",
+          "Create a Risk Register in Google Sheets with 8 risks: at least 2 from each workstream, plus 2 cross-stream integration risks.",
+          "Write a Communication Plan table: Stakeholder | Update frequency | Format | Channel | Owner.",
+          "Write an Assumptions Log with at least 5 assumptions and the consequence for the project timeline if each assumption proves false.",
+          "Get your Plan of Action reviewed by a peer who acts as the 'client' — they should be able to answer: what will be built, when will it be done, and what is NOT included."
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "The best Plan of Action I ever wrote was for a project that then changed completely in week two when the client got new funding and doubled the scope. But because I had a plan, I could show exactly what the original scope was, what the new requests cost in time and money, and what we'd have to drop or delay to accommodate them. The plan didn't make the project go smoothly — the plan gave me the authority to manage when it didn't. Write the plan not for the good days, but for the day everything changes."
+      },
+      {
+        "type": "scenarioChallenge",
+        "title": "Scenario: The Missing Cross-Stream Dependency",
+        "scenario": "The Hospital project is three weeks in. The video workstream is on track — script is written, filming is scheduled. The kiosk workstream is on track — Sparky has the hardware set up and is waiting for design files. However, Leo just flagged that the kiosk interface design cannot be finalised until the hospital provides their approved accessibility colour palette, which must meet WCAG 2.1 AA standards and comply with the hospital's branding policy. Nobody put this in the Plan of Action as a dependency. The client's brand team has a 10-business-day turnaround on brand approvals. The project delivery date is 20 business days away.",
+        "questions": [
+          {
+            "question": "Identify the specific type of dependency that was missed and explain at what stage of project planning it should have been captured. Which Plan of Action section would have contained this dependency?",
+            "marks": 4
+          },
+          {
+            "question": "Calculate the minimum risk to the project delivery date given the 10-day approval turnaround and 20-day remaining timeline. Explain what must happen in parallel to have any chance of meeting the delivery date.",
+            "marks": 4
+          },
+          {
+            "question": "Describe the change control process the project lead should follow to formally document this discovery and propose a revised delivery date to the client. What documentation should be produced?",
+            "marks": 4
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · CROSS-STREAM MAPPING SPRINT",
+        "text": "Rory has given you a project with six workstreams and 30 tasks listed in a spreadsheet (provided by your teacher). Your challenge: identify every cross-stream dependency in the task list, map them in a dependency diagram (hand-drawn or digital), identify the critical path, and flag the three highest-risk dependencies — the ones where a delay would have the greatest impact on delivery. Present your findings in a one-page brief. Rory is making resource allocation decisions based on your analysis. Make it accurate."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "Your Plan of Action is approved only when:\n\n✅ All ten Plan of Action sections are present and complete\n✅ Project Objectives are measurable — they can be tested at evaluation\n✅ Scope Statement explicitly names OUT-of-scope items — 'what's not included' must be stated\n✅ WBS has at least 20 tasks with owners, durations, and dependencies\n✅ Cross-stream dependencies are identified and highlighted\n✅ Risk Register has 8 risks minimum — including at least 2 cross-stream integration risks\n✅ Assumptions Log has at least 5 assumptions with consequence statements\n\nThis is the document that governs everything that follows. If it is incomplete, nothing that comes after it is trustworthy. Get it right."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A project manager discovers that the video production workstream is blocked because the content workstream has not delivered the approved script. This is an example of which type of project planning element?",
+          "options": [
+            "A risk — it was unexpected and should be in the risk register",
+            "A cross-stream dependency — one workstream cannot proceed until another workstream completes a task",
+            "Scope creep — the content workstream has exceeded its original scope",
+            "A milestone — the script delivery marks a significant project checkpoint"
+          ],
+          "correctIndex": 1,
+          "explanation": "This is a cross-stream dependency: a task in one workstream (video production) cannot begin until a task in a different workstream (content — script approval) is complete. Cross-stream dependencies must be explicitly mapped in the WBS and Gantt chart so that both workstream leads know about the dependency and can manage their timelines accordingly."
+        }
+      }
+    ]
+  },
+  {
+    "id": "working-with-a-client-brief",
+    "title": "Working with a Client Brief",
+    "estimatedMinutes": 55,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #6002 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟡 IN PROGRESS | Sprint 2 | Assigned to: Project Lead — Intern\n\nThe hospital board has approved the project and sent through their formal brief. It is 14 pages long, contains three contradictory requirements, references a style guide that does not yet exist, and specifies a 'mobile-first kiosk interface' — which is technically contradictory since kiosks are fixed touchscreen hardware, not mobile devices.\n\nThis is what a real client brief looks like. Your job is to parse it, resolve the contradictions, flag every ambiguity, negotiate the unclear requirements with the client, and produce a finalised scope document that both the hospital board and the Launchpad team sign. Until that document is signed, the project does not enter development. Get it done."
+      },
+      {
+        "type": "heading",
+        "text": "Advanced Brief Analysis: Resolving Contradictions",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "At Year 12 capstone level, client briefs are not clean, clearly written documents that you simply follow. They are the product of multiple stakeholders with different priorities — the hospital's IT department wants security and compliance, the marketing team wants a modern visual identity, the patient services team wants simplicity and accessibility. These priorities frequently contradict each other."
+      },
+      {
+        "type": "paragraph",
+        "text": "Your job is not to choose between contradicting requirements — it is to surface the contradiction to the client, present the options with their trade-offs, and get a formal decision in writing. A requirement that says 'fully animated, visually rich homepage' and another that says 'loads in under 2 seconds on 4G mobile' are contradictory. The client must choose which constraint takes priority. You document the decision and its implication."
+      },
+      {
+        "type": "paragraph",
+        "text": "Scope negotiation is a professional skill. You are not simply accepting or rejecting client requirements — you are having a conversation about feasibility, cost, and trade-offs within the available time and budget. The client trusts your expertise to identify constraints they did not consider. This is where the project lead earns their role."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Contradictory requirement",
+            "definition": "Two or more requirements in a brief that cannot both be fully satisfied simultaneously. Must be escalated to the client for a prioritisation decision before the project plan is locked."
+          },
+          {
+            "term": "Scope negotiation",
+            "definition": "The process of working with a client to define the final, agreed scope — including discussing trade-offs between features, timeline, quality, and budget."
+          },
+          {
+            "term": "Sign-off",
+            "definition": "Formal written approval from the authorised stakeholder(s) confirming agreement with a document, deliverable, or decision. Protects both the team and the client."
+          },
+          {
+            "term": "Minimum Viable Product (MVP)",
+            "definition": "The smallest version of a product that delivers the core value to users and meets the client's essential requirements. Used when timeline or budget constraints prevent full feature delivery."
+          },
+          {
+            "term": "Feature prioritisation",
+            "definition": "The process of ranking features by importance, urgency, and feasibility so that the most critical elements are built first and optional elements can be deferred if needed."
+          },
+          {
+            "term": "Functional specification",
+            "definition": "A detailed technical description of exactly how each feature in the scope will work — inputs, outputs, behaviour, error states. Derived from the client brief and agreed by the client."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "The MoSCoW Prioritisation Framework",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "When a brief contains more requirements than the timeline allows, you need a structured way to prioritise. MoSCoW is the standard professional prioritisation framework: Must Have (project fails without it), Should Have (high value, not critical path), Could Have (desirable but easily deferred), Won't Have this time (explicitly excluded from current scope, potentially Phase 2)."
+      },
+      {
+        "type": "table",
+        "headers": ["MoSCoW Category", "Definition", "Hospital Project Example", "Impact if Cut"],
+        "rows": [
+          ["Must Have", "Non-negotiable — project fails without this requirement", "WCAG AA accessibility compliance (legal requirement)", "Legal liability; project cannot be delivered"],
+          ["Should Have", "High-value feature; workaround possible without it", "Live patient appointment status feed on website", "Reduced functionality; workaround via static page"],
+          ["Could Have", "Desirable but not business-critical", "Animated section transitions on website", "No functional impact; visual experience reduced"],
+          ["Won't Have (this sprint)", "Explicitly excluded from current scope", "Patient feedback survey module", "Zero impact on current delivery; deferred to Phase 2"]
+        ]
+      },
+      {
+        "type": "task",
+        "title": "Brief Negotiation and Scope Sign-Off",
+        "software": "Google Docs",
+        "intro": "You have the hospital's 14-page brief. Work through the advanced brief analysis process to produce a finalised, signed scope document.",
+        "steps": [
+          "Read the brief provided by your teacher. As you read, highlight every ambiguity in yellow and every potential contradiction in red.",
+          "Create a 'Brief Issues Log' table: Issue | Type (Ambiguity/Contradiction) | Relevant Brief Section | Question for Client | Priority (High/Medium/Low).",
+          "Apply the MoSCoW framework to all identified requirements: create a four-column table categorising every requirement.",
+          "For each contradiction, write a short brief (2–3 sentences) presenting the trade-off to the client — what it means to prioritise option A vs option B.",
+          "Write a Scope Statement incorporating the MoSCoW decisions: Must Haves and Should Haves in scope; Could Haves and Won't Haves explicitly excluded.",
+          "Identify the MVP: what is the minimum that must be delivered to fulfil the client's core purpose, even if full scope cannot be achieved?",
+          "Write a Functional Specification for two of the Must Have features: describe exactly how each feature will work, what inputs it accepts, what it outputs, and how errors are handled.",
+          "Present your finalised scope document to a peer acting as the 'hospital board.' They ask three questions — you must answer from the document. If you can't answer, the scope has gaps.",
+          "Record your partner's questions and your answers. Update the scope document to address any gaps revealed."
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "Every time a client says 'can you just add...' without a formal change request, the answer is 'I can explore that — let me assess the timeline and budget impact and come back to you by end of day.' That pause — that one sentence — has saved us from scope creep on every significant project we've run. It is not bureaucracy. It is professionalism. It tells the client you take their project seriously enough to assess changes properly rather than saying yes impulsively and then failing to deliver everything. The pause is the skill."
+      },
+      {
+        "type": "scenarioChallenge",
+        "title": "Scenario: Three Contradictions",
+        "scenario": "The hospital brief contains these three requirement statements: (1) 'The website must load in under 2 seconds on mobile.' (2) 'Every page must feature a full-screen background video that autoplays.' (3) 'The kiosk interface must use an existing third-party booking system via iframe embed.' The booking system's terms of service prohibit iframe embedding on public-facing pages. The video brief also states 'all visual content must comply with WCAG 2.1 AA accessibility guidelines' — which prohibits auto-playing video with sound unless a visible pause control is provided.",
+        "questions": [
+          {
+            "question": "Identify TWO technical contradictions in these requirements. For each contradiction, explain specifically why the two requirements cannot both be fully satisfied, and propose a resolution that preserves as much value as possible.",
+            "marks": 8
+          },
+          {
+            "question": "Using the MoSCoW framework, prioritise the three technical requirements identified in the scenario. Justify your categorisation of each with reference to legal, functional, and user experience considerations.",
+            "marks": 6
+          },
+          {
+            "question": "Describe the formal change control process the project team should follow when the third-party booking system restriction is discovered. What documentation must be produced and who must sign off on the resolution?",
+            "marks": 4
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · SCOPE NEGOTIATION SPRINT",
+        "text": "Rory has provided a client brief with eight requirements and a timeline of four weeks. You have estimated the total work at six weeks for full scope. Your challenge: apply MoSCoW to the eight requirements, define an MVP that fits four weeks, and write a one-page Scope Negotiation Brief that presents three options to the client: (A) full scope at six weeks, (B) MVP at four weeks, (C) four weeks with the three lowest-priority requirements deferred to Phase 2. Present trade-offs clearly and professionally. Rory is sending this to the client — it must be polished."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "Your brief analysis and scope sign-off is approved only when:\n\n✅ Brief Issues Log captures all ambiguities and contradictions — not just the obvious ones\n✅ MoSCoW table covers every requirement from the brief\n✅ MVP is defined — the minimum that fulfils the core project purpose\n✅ Each contradiction includes a clear trade-off statement for the client\n✅ Functional Specifications written for both Must Have features — detailed enough to build from\n✅ Scope document reviewed by a peer and gaps addressed\n✅ All client questions answerable from within the scope document\n\nA scope document that raises more questions than it answers is not a scope document. Revise until it is definitive."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A project team is applying the MoSCoW prioritisation framework. Which description BEST matches a 'Should Have' requirement?",
+          "options": [
+            "A feature that is legally required and the project cannot be delivered without it",
+            "A feature with significant value that would normally be included, but the project can launch without it if time pressure requires",
+            "A feature the client mentioned as optional that could be included if there is time",
+            "A feature that is out of scope for this project and will be considered in a future phase"
+          ],
+          "correctIndex": 1,
+          "explanation": "Should Have features are high-value and expected, but there is a viable workaround if they cannot be delivered in the current sprint. They are not on the critical path. Must Have features are non-negotiable. Could Have features are genuinely optional. Won't Have features are explicitly excluded from the current scope."
+        }
+      }
+    ]
+  },
+  {
+    "id": "time-management-and-scheduling",
+    "title": "Time Management and Scheduling",
+    "estimatedMinutes": 55,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #6003 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟡 IN PROGRESS | Sprint 3 | Assigned to: Project Lead — Intern\n\nThe scope is signed. The Plan of Action is approved. Now we build the master schedule.\n\nHere is what I know: the hospital board presentation is 1 October. It is currently 25 July. We have 10 weeks. Four workstreams. Leo has existing client work on three Mondays. Sloane is on leave for 5 days in week 6. Sparky needs 2 weeks to complete kiosk hardware testing before he can hand over to the interface team. The client has requested two review checkpoints: at 4 weeks and at 8 weeks.\n\nBuild me a schedule that fits. Show me the critical path. Show me the float on each task. Show me where we are most at risk. I am not looking for optimism — I am looking for accuracy."
+      },
+      {
+        "type": "heading",
+        "text": "Scheduling Under Real Constraints",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Building a schedule for a real project is not simply dividing the total work by the number of weeks available. Real schedules account for resource availability (Leo's existing commitments, Sloane's leave), hard external deadlines (board presentation, client review checkpoints), and dependencies between tasks that prevent parallel execution."
+      },
+      {
+        "type": "paragraph",
+        "text": "A schedule that ignores constraints is not a schedule — it is a wish list. Every constraint you identify and accommodate in the plan is a risk you have mitigated before the project starts. Every constraint you ignore is a problem that will surface mid-sprint when the damage is hardest to repair."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Float (slack)",
+            "definition": "The amount of time a task can be delayed without affecting the project's end date (total float) or the start of the next task (free float). Tasks on the critical path have zero float."
+          },
+          {
+            "term": "Resource levelling",
+            "definition": "The process of adjusting the project schedule to eliminate overallocation — situations where a team member is assigned to more work than they can complete in the available time."
+          },
+          {
+            "term": "Resource calendar",
+            "definition": "A schedule showing each team member's availability, accounting for leave, part-time work, public holidays, and prior commitments on other projects."
+          },
+          {
+            "term": "Sprint review",
+            "definition": "A scheduled checkpoint at the end of a sprint where the team presents completed work to the client or sponsor for feedback and approval. Mandatory — cannot be skipped without client agreement."
+          },
+          {
+            "term": "Baseline schedule",
+            "definition": "The approved, original project schedule used as a reference point to measure actual progress. Once baseline is set, changes are tracked as variances against this reference."
+          },
+          {
+            "term": "Schedule variance",
+            "definition": "The difference between the planned progress and the actual progress at a given point in time. Positive variance = ahead of schedule; negative variance = behind schedule."
+          },
+          {
+            "term": "Fast tracking",
+            "definition": "A schedule compression technique where tasks that would normally run sequentially are run in parallel to reduce overall project duration. Increases risk of rework if earlier tasks change."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Building a Constraint-Aware Schedule",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Before placing a single task bar in the Gantt chart, build a resource calendar. This is a simple document or spreadsheet showing every team member's availability week by week — noting leave, prior commitments, and capacity percentages. Without this, the Gantt chart will schedule work into time that doesn't exist."
+      },
+      {
+        "type": "table",
+        "headers": ["Week", "Leo (Design)", "Sloane (Content)", "Sparky (Hardware/Kiosk)", "You (Project Lead)"],
+        "rows": [
+          ["Week 1", "100% available", "100% available", "100% available — kiosk hardware setup", "100% — plan and kickoff"],
+          ["Week 2", "80% — Monday committed", "100% available", "100% — hardware setup continues", "80% — coordination"],
+          ["Week 3", "80% — Monday committed", "100% available", "100% — hardware testing", "80%"],
+          ["Week 4", "80% — Monday committed", "100% available", "100% — hardware testing | Client Review 1 end of week", "100% — review prep"],
+          ["Week 5", "100% available", "100% available", "Waiting for interface design sign-off", "80%"],
+          ["Week 6", "100% available", "60% — on leave 5 days", "100% — kiosk interface integration", "80%"],
+          ["Week 7", "100% available", "100% available", "100% — kiosk testing", "80%"],
+          ["Week 8", "100% available", "100% available", "100% | Client Review 2 end of week", "100% — review prep"],
+          ["Week 9", "100% — revisions", "100% — final copy", "100% — final kiosk testing", "100% — QA"],
+          ["Week 10", "Final assets", "Final assets", "Final deployment", "100% — delivery prep, board presentation"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Schedule Compression: When the Timeline Is Too Long",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Sometimes the honest schedule comes out longer than the available time. This is not a failure — it is valuable information that the project lead must communicate to the client before work begins. When the schedule is too long, there are only three legitimate responses: reduce scope, add resources, or accept a later delivery date. Everything else is optimism without a plan."
+      },
+      {
+        "type": "comparison",
+        "title": "Schedule Compression Techniques",
+        "items": [
+          {
+            "label": "Fast Tracking",
+            "points": [
+              "Run tasks in parallel that would normally be sequential",
+              "Example: start development while design is still in review (with risk of rework)",
+              "Advantage: can reduce timeline by weeks without adding cost",
+              "Risk: if the earlier task changes, the parallel work may need to be redone",
+              "Best for: tasks with low interdependence or short review cycles"
+            ]
+          },
+          {
+            "label": "Crashing (Adding Resources)",
+            "points": [
+              "Add more people or hours to tasks on the critical path",
+              "Example: bring in a freelance designer to support Leo for two weeks",
+              "Advantage: directly reduces duration on targeted critical path tasks",
+              "Risk: adding people increases coordination overhead; may slow down initially",
+              "Best for: well-defined tasks that can be split across multiple people"
+            ]
+          },
+          {
+            "label": "Scope Reduction",
+            "points": [
+              "Remove low-priority features (Won't Have / Could Have from MoSCoW)",
+              "Example: defer the animated transitions to Phase 2; deliver static design",
+              "Advantage: reduces work without risk of rework or coordination cost",
+              "Risk: client may be disappointed; requires formal change to signed scope",
+              "Best for: when timeline is fixed and neither fast tracking nor crashing is viable"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "task",
+        "title": "Build the Master Schedule in Trello and Google Sheets",
+        "software": "Trello, Google Sheets",
+        "intro": "Build the 10-week master schedule for the Hospital project, incorporating all team constraints, dependencies, and client review checkpoints.",
+        "steps": [
+          "Open Google Sheets and create a Resource Calendar: rows = team members, columns = weeks 1–10. Mark Leo's Monday unavailability, Sloane's week 6 leave, and both client review checkpoints.",
+          "List every task from your Plan of Action WBS in a Google Sheets Gantt template (download one from Google Sheets template gallery).",
+          "For each task, enter: task name, workstream, owner, start week, duration (in days), dependent task.",
+          "Calculate the end week for every task. Check against the resource calendar — any task assigned to a team member during their unavailable time must be moved.",
+          "Identify the critical path: trace the longest chain of dependent tasks from project start to delivery. Highlight in red.",
+          "Calculate float for three non-critical tasks: (End date of project) minus (Latest completion date for this task without delaying the project).",
+          "Transfer to Trello Timeline view: create all tasks as cards with start/due dates, assigned to the correct team members.",
+          "Add two milestone cards: 'Client Review 1 — Week 4' and 'Client Review 2 — Week 8'.",
+          "Review the schedule: are there any weeks where any team member is over 100% capacity? If yes, apply resource levelling.",
+          "Take a screenshot of the completed Timeline view and paste it into your Plan of Action document."
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "Float is your friend — until you waste it on things that don't matter. Every non-critical task has float. That float is the buffer between an ordinary delay and a project crisis. The mistake I see leads make is treating float as 'extra time' to start tasks later, rather than keeping it as emergency capacity. Protect your float. When a non-critical task starts slipping into its float, that is an early warning signal, not permission to relax. Address it while you still have options."
+      },
+      {
+        "type": "scenarioChallenge",
+        "title": "Scenario: The Collapsed Schedule",
+        "scenario": "At the Week 4 client review, the hospital board requests significant changes to the website design — they want to add a patient portal login (not in scope) and change the colour scheme entirely (was approved in Week 1). Leo estimates the redesign will take 10 business days. The patient portal is a 3-week development task. The board presentation remains fixed at 1 October. It is currently end of Week 4 (6 weeks remaining).",
+        "questions": [
+          {
+            "question": "Analyse the impact of both requested changes on the remaining schedule. Using your understanding of critical path and float, identify which change is more threatening to the delivery date and explain why.",
+            "marks": 4
+          },
+          {
+            "question": "The colour scheme change was approved in Week 1 and is now being reverted. Explain what documentation from the Plan of Action process protects the project team in this situation — and what cost the client should expect to bear for the redesign.",
+            "marks": 4
+          },
+          {
+            "question": "Propose a revised schedule approach using at least ONE of the three compression techniques (fast tracking, crashing, scope reduction) that allows the project to meet the 1 October deadline. Explain the specific risks your approach introduces.",
+            "marks": 6
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · SCHEDULE COMPRESSION SPRINT",
+        "text": "Rory has given you a project that is currently scheduled to complete in 14 weeks, but the client needs it in 10. The task list and resource calendar are in the shared drive. Your challenge: without adding resources and without reducing Must Have scope, identify every opportunity to fast track tasks. Show your before and after Gantt charts. Calculate the new completion date. List every risk created by your compression decisions. Report back to Rory in a half-page brief."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "Your master schedule is approved only when:\n\n✅ Resource calendar completed — all absences and prior commitments accounted for\n✅ Gantt chart has all 20+ tasks with owners, durations, start dates, and end dates\n✅ Critical path identified and highlighted in the schedule\n✅ Float calculated for at least three non-critical tasks\n✅ Both client review milestones at Weeks 4 and 8 are in the schedule\n✅ No team member is over-allocated — resource levelling applied where needed\n✅ Schedule screenshot added to Plan of Action document\n\nA schedule that doesn't account for Sloane's leave or Leo's Monday commitments is not a schedule — it is a fantasy. Build the real one."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "true_false",
+          "text": "Fast tracking a project schedule always eliminates schedule risk because it gets tasks done faster.",
+          "correctAnswer": false,
+          "explanation": "Fast tracking reduces total duration by running sequential tasks in parallel, but it increases risk. If an earlier task changes after the parallel task has started, the parallel work may need to be redone entirely. Fast tracking trades schedule risk (less total time) for quality/rework risk (more potential for rework if upstream tasks change). It does not eliminate risk — it exchanges one type for another."
+        }
+      }
+    ]
+  },
+  {
+    "id": "managing-resources-and-team-collaboration",
+    "title": "Managing Resources and Team Collaboration",
+    "estimatedMinutes": 55,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #6004 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟡 IN PROGRESS | Sprint 4 | Assigned to: Project Lead — Intern\n\nWe have a resource conflict. Leo is currently assigned to 120% capacity in week 5 — he has the hospital kiosk design, two website page designs still in revision, AND the newsletter layout all due in the same week. Sloane has flagged that she needs the video script reviewed before she can finalise the patient information copy, but nobody has scheduled that review. Sparky's kiosk hardware integration is blocked because Leo hasn't signed off on the interface design.\n\nThree people blocked. One person over-allocated. The critical path is at risk. This is what resource management looks like in practice. Fix the allocation, unblock the team, and document every decision you make. This is project leadership."
+      },
+      {
+        "type": "heading",
+        "text": "Resources in a Digital Project",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "In a digital project, resources are everything the team needs to complete the work: human resources (team members and their time), tools and software (licences, hardware, platforms), digital assets (photography, audio, brand files), and budget. Managing resources means ensuring the right resources are available at the right time, in the right quantity."
+      },
+      {
+        "type": "paragraph",
+        "text": "Human resources are the most complex to manage because they are shared, limited, and have context-switching costs. When you pull Leo from the newsletter to fix an urgent website problem, he doesn't just lose the task time — he loses the mental context he had on the newsletter, and restarting costs additional time. Frequent context-switching destroys productivity. A resource plan that minimises switches and groups related work is worth real time savings."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Resource allocation",
+            "definition": "The assignment of specific resources (team members, tools, budget) to specific tasks for a defined period. Expressed as capacity percentage — e.g. 'Leo at 80% on website design for weeks 3–5'."
+          },
+          {
+            "term": "Resource conflict",
+            "definition": "A situation where a resource (typically a team member) is required by two or more tasks simultaneously, exceeding their available capacity."
+          },
+          {
+            "term": "Over-allocation",
+            "definition": "When a team member is assigned more work than they can complete in the available time. Typically shown in project management software as a red flag or capacity alert."
+          },
+          {
+            "term": "Blocking issue",
+            "definition": "A task or situation that prevents a team member from making progress on their work. Must be escalated and resolved by the project lead — not left for the blocked person to solve alone."
+          },
+          {
+            "term": "Context switching",
+            "definition": "The productivity cost of switching between different types of work. Every switch requires time to re-orient, recall context, and re-enter a productive state. Estimated cost: 20–40% productivity loss."
+          },
+          {
+            "term": "RACI chart",
+            "definition": "A responsibility matrix: Responsible (does the work), Accountable (owns the outcome and signs off), Consulted (provides input), Informed (receives updates). Clarifies roles on every deliverable."
+          },
+          {
+            "term": "Burndown chart",
+            "definition": "A graph used in Agile projects showing the amount of work remaining versus time. A healthy burndown slopes steadily downward; a flat or rising line indicates the sprint is in trouble."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "RACI: Who Does What and Who Signs Off",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "RACI charts prevent the two most common team coordination failures: nobody doing a task because everyone assumed someone else would (missing Responsible), and changes being made without proper authorisation because nobody was designated Accountable. Every deliverable in a professional project has exactly one Accountable person — the person who ultimately owns the outcome and provides sign-off."
+      },
+      {
+        "type": "table",
+        "headers": ["Deliverable", "Responsible", "Accountable", "Consulted", "Informed"],
+        "rows": [
+          ["Website design mockups", "Leo", "You (Project Lead)", "Client Marketing Team", "Hospital IT"],
+          ["Patient information copy", "Sloane", "You (Project Lead)", "Hospital Communications, Legal", "Leo, Sparky"],
+          ["Video script", "Sloane", "You (Project Lead)", "Patient Services, Leo", "Hospital Board"],
+          ["Kiosk hardware setup", "Sparky", "You (Project Lead)", "Hospital IT", "Leo, Sloane"],
+          ["Kiosk interface design", "Leo", "You (Project Lead)", "Sparky (hardware constraints)", "Hospital Board"],
+          ["Final client sign-off", "You (Project Lead)", "Hospital Board", "All team members", "Hospital IT"],
+          ["Accessibility compliance review", "You (Project Lead)", "You (Project Lead)", "Leo, Sloane, Sparky", "Hospital Legal Team"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Resolving Resource Conflicts",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "When a resource conflict is identified, the project lead has four options: reschedule one of the conflicting tasks, reduce the scope of one task to free capacity, bring in additional resources, or negotiate a temporary priority with the affected team member. Each option has costs and implications — the lead must assess all four before recommending a solution."
+      },
+      {
+        "type": "task",
+        "title": "Resource Conflict Resolution and RACI Chart",
+        "software": "Trello, Google Docs",
+        "intro": "Leo is over-allocated in week 5 and three team members are blocked. Resolve the conflicts and document your decisions in a resource management log.",
+        "steps": [
+          "Open your Trello board and review Leo's assignments in weeks 4 and 5. List every task he owns in those two weeks.",
+          "For each Leo task in week 5: calculate the estimated hours required (use 8-hour days × duration). Total Leo's week 5 hours — confirm he is over 100% capacity.",
+          "For each over-allocated task, assess: can it be moved to week 4 (is there capacity)? Can it be moved to week 6 (is there float)? Can it be given to another resource?",
+          "Apply at least one rescheduling decision and one task redistribution decision. Update the Trello board to reflect the changes.",
+          "Create a Resource Management Log in Google Docs: Conflict ID | Resource | Issue | Decision Made | Reason | New Schedule | Impact.",
+          "Identify Sloane's blocking issue (video script review needed before she can proceed). Create a task in Trello for 'Video Script Review' with yourself as owner, due within 24 hours.",
+          "Identify Sparky's blocking issue (waiting for Leo's interface sign-off). Add a dependency in Trello between Leo's interface design task and Sparky's integration task. Email (or document) a message to Leo with a specific sign-off deadline.",
+          "Create a RACI chart for the hospital project covering all six major deliverables. Ensure every deliverable has exactly one Accountable person.",
+          "Review the updated schedule — is Leo's week 5 capacity now under 100%? Are all blocking issues assigned to owners? Document your findings."
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "People do not tell you they are blocked because they feel like they should be able to fix it themselves. It is your job as project lead to ask, every day if necessary: 'What's blocking you right now?' Not 'how is everything going' — that gets you 'fine.' Specific questions get specific answers. 'Leo, what's the earliest you can sign off on the kiosk interface?' gets you a date. 'Is everything okay?' gets you nothing useful. The daily standup exists precisely to surface blockers before they become delays. Use it."
+      },
+      {
+        "type": "scenarioChallenge",
+        "title": "Scenario: The Unavailable Expert",
+        "scenario": "In week 7, Sparky — the only team member with hardware expertise for the kiosk system — is involved in a car accident and will be unable to work for at least two weeks. The kiosk hardware testing, which only Sparky can perform, is scheduled for weeks 7 and 8. The client review is at the end of week 8. The board presentation is week 10. There is no other kiosk hardware specialist at Bunbury Tech Launchpad.",
+        "questions": [
+          {
+            "question": "Identify the immediate impact on the project schedule. Calculate the minimum delay to the project delivery date, assuming no mitigation actions are taken.",
+            "marks": 3
+          },
+          {
+            "question": "Propose THREE specific mitigation options for this resource failure. For each option, describe what would need to happen, what it would cost (in time, money, or scope), and what risks it introduces.",
+            "marks": 9
+          },
+          {
+            "question": "Explain what documentation Rory should review to understand the full project impact — which Plan of Action sections are relevant and what information they contain that would help assess options?",
+            "marks": 4
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · RESOURCE LEVELLING SPRINT",
+        "text": "Rory has given you a project with 5 team members and a 6-week schedule. The task list and current assignments are in the shared spreadsheet. When you load it into a Gantt tool, two team members are over-allocated (>100%) in weeks 3 and 4. Your challenge: level the resource allocation without changing the project end date — use rescheduling, task splitting, and reallocation. Document every change in a decision log. Show before and after capacity charts. Bring the solution to the next lesson."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "Your resource management sprint is approved only when:\n\n✅ Over-allocation identified and resolved — Leo's week 5 capacity confirmed under 100%\n✅ All blocking issues have an owner and a resolution date\n✅ Resource Management Log documents every conflict, decision, and schedule change\n✅ RACI chart covers all six deliverables with exactly one Accountable per row\n✅ Trello board updated to reflect all scheduling changes\n✅ Dependency between Leo's interface design and Sparky's integration is visible in Trello\n\nA project lead who knows there are blocks and doesn't act on them is not a project lead — they are an observer. Act on every block within 24 hours."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "In a RACI chart, which role is responsible for making the final decision and signing off on a deliverable — even if they did not personally create it?",
+          "options": [
+            "Responsible — the person who did the work",
+            "Accountable — the single owner of the outcome",
+            "Consulted — the subject-matter experts who provided input",
+            "Informed — the stakeholders who received updates"
+          ],
+          "correctIndex": 1,
+          "explanation": "Accountable is the single person who owns the outcome and provides final sign-off. There must be exactly one Accountable per deliverable — if there are two, neither feels ultimate ownership and sign-off can be delayed indefinitely. The Responsible person does the work; the Accountable person owns the result and is answerable for it."
+        }
+      }
+    ]
+  },
+  {
+    "id": "evaluation-and-professional-delivery",
+    "title": "Evaluation and Professional Delivery",
+    "estimatedMinutes": 60,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #6005 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🔴 FINAL SPRINT | Sprint 5 | Assigned to: Project Lead — Intern\n\nThis is the last ticket of your internship. The Bunbury Regional Hospital digital package is built. Every workstream has delivered. Leo's design is in, Sloane's content is approved, Sparky's kiosk is installed. The board presentation is one week away.\n\nWhat I need from you now is the formal evaluation — not a feelings check, a professional evaluation. Six criteria drawn from the original brief, tested with evidence, iteration log for every fix made post-testing, and a delivery summary that tells the board exactly what was built, how it was tested, and what the limitations are. Then we hand over the deliverables professionally: file structure, handover documentation, access credentials, and a maintenance guide so the hospital can actually use what we built after we leave. This is how professionals ship. Deliver it perfectly."
+      },
+      {
+        "type": "heading",
+        "text": "Capstone Evaluation: The Professional Standard",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "A capstone evaluation is more comprehensive than a single-product evaluation. It covers every workstream, every deliverable, and the overall project against the original Plan of Action objectives. It requires you to evaluate not just whether the product works, but whether the project was managed well — whether the scope was delivered on time, within budget, and meeting the client's defined success criteria."
+      },
+      {
+        "type": "paragraph",
+        "text": "Strengths and limitations must both be present in a professional evaluation. A document that only identifies successes is marketing, not evaluation. Honest identification of limitations — and specific, actionable recommendations for improvement — is what demonstrates genuine professional judgment and earns repeat client relationships."
+      },
+      {
+        "type": "paragraph",
+        "text": "At Year 12 capstone level, your evaluation must include evidence from testing each major deliverable, an iteration log for every change made after testing, a reflection on project management decisions (what you would do differently), and forward-looking recommendations for the client's Phase 2. This is a portfolio document, not a checklist."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          {
+            "term": "Summative evaluation",
+            "definition": "The formal final evaluation of a completed project against all defined criteria. Covers every deliverable, success criteria, and project management outcomes."
+          },
+          {
+            "term": "Technical testing",
+            "definition": "Structured testing of a digital product's technical performance — load time, cross-browser compatibility, mobile responsiveness, accessibility compliance, broken links."
+          },
+          {
+            "term": "User acceptance testing (UAT)",
+            "definition": "Testing conducted by real users (or representative users) to confirm the product meets their needs and can be used without assistance for its core tasks."
+          },
+          {
+            "term": "Handover documentation",
+            "definition": "A package of documents provided to the client at project completion: file structure guide, login credentials, content management instructions, and maintenance recommendations."
+          },
+          {
+            "term": "Lessons learned",
+            "definition": "A structured retrospective on what went well and what should change in future projects. Not about blame — about improving the organisation's project delivery capability."
+          },
+          {
+            "term": "Warranty period",
+            "definition": "A defined period after delivery during which the project team will fix any defects identified in the delivered product without additional charge. Typically 30–90 days for digital projects."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Evaluation Criteria for the Hospital Project",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Criterion", "Source", "Test Method", "Evidence Required", "Pass Standard"],
+        "rows": [
+          ["Website loads in under 3 seconds on mobile", "Brief — technical requirement", "Google PageSpeed Insights, mobile throttling", "Screenshot of score; Core Web Vitals metrics", "PageSpeed score ≥ 85; LCP < 2.5s"],
+          ["WCAG 2.1 AA accessibility compliance", "Brief — legal compliance requirement", "WAVE browser extension + manual keyboard navigation test", "WAVE report (zero critical errors); keyboard navigation test notes", "Zero critical or serious WAVE errors"],
+          ["All navigation links resolve correctly on all three browsers", "Brief — functional requirement", "Manual test: Chrome, Firefox, Edge — all links clicked", "Browser screenshots; link test checklist", "100% link success rate across all three browsers"],
+          ["Video plays on mobile and desktop without buffering", "Brief — functional requirement", "Device testing: play video on mobile device on 4G; on desktop on WiFi", "Screen recording or timed play notes; both device types documented", "Plays without buffering within 5 seconds of load on both"],
+          ["Kiosk interface usable by new patients without staff assistance", "Brief — usability requirement", "UAT: 3 representative test users complete booking task independently", "Timed task completion notes; failure points recorded", "All 3 users complete booking in < 3 minutes"],
+          ["All deliverables match the approved scope statement", "Plan of Action — scope", "Line-by-line comparison of scope statement vs delivered items", "Annotated scope document; check against each in-scope item", "100% of Must Have items delivered; documented reason for any shortfall"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Professional Handover",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Delivering the product is not the same as completing the project. Professional delivery means the client can actually use, maintain, and update what you built — without calling the Launchpad every time they need to change a page heading. Handover documentation is not optional padding; it is part of the deliverable."
+      },
+      {
+        "type": "paragraph",
+        "text": "A professional handover package includes: all deliverable files in the agreed formats and folder structure, login credentials for all platforms (CMS, hosting, social accounts), user guides for any functionality the client must maintain, maintenance recommendations, and a warranty statement. Each component must be named, version-controlled, and transferred securely."
+      },
+      {
+        "type": "comparison",
+        "title": "Poor Handover vs Professional Handover",
+        "items": [
+          {
+            "label": "Poor Handover",
+            "points": [
+              "Zip file emailed with filenames like 'final_v3_REAL_USE_THIS.zip'",
+              "No documentation — client must call to find out how to update content",
+              "Login credentials sent in plain text email",
+              "No maintenance guide — client doesn't know when to update software",
+              "No file structure explanation — client cannot find source files",
+              "No warranty period defined — disputes about who fixes post-launch bugs"
+            ]
+          },
+          {
+            "label": "Professional Handover",
+            "points": [
+              "Structured folder hierarchy with named, versioned files following agreed convention",
+              "Written CMS guide with screenshots showing every update process",
+              "Credentials transferred via secure password manager (LastPass, 1Password)",
+              "Maintenance calendar: plugin updates monthly, full backup weekly, security scan quarterly",
+              "File structure document: what each file is, where it lives, what you must never delete",
+              "Written warranty: 30-day defect fix period; scope of warranty defined; process for raising issues"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "task",
+        "title": "Evaluation Report and Professional Handover Package",
+        "software": "Google Docs, Google Sheets",
+        "intro": "Complete the formal evaluation of the hospital project and produce the professional handover package for the client.",
+        "steps": [
+          "Open a new Google Doc: 'Final Evaluation Report — Bunbury Regional Hospital Digital Package'.",
+          "Create an Evaluation Criteria table using the six criteria defined in this lesson. Add columns: Criterion | Source | Test Method | Evidence | Result (Pass/Partial/Fail).",
+          "Conduct each test. For each test, collect evidence: screenshot, tool report, or test notes. Save evidence files with descriptive names.",
+          "For any Partial or Fail result, create an Iteration Log entry: Issue ID | Description | Change Made | Re-test Result | Date.",
+          "Make the required fixes and re-test. Update the iteration log with results.",
+          "Write a Strengths section (min 3 points) identifying what the project delivered particularly well, with specific reference to criteria results.",
+          "Write a Limitations section (min 2 points) honestly identifying what fell short, why, and what specifically should be improved in Phase 2.",
+          "Write a Project Management Reflection (min 4 sentences): what planning decisions made the project run well, what you would change about the schedule or resource management if you did it again.",
+          "Write a Phase 2 Recommendations section with 3 specific feature recommendations for the next phase, each with a one-sentence justification.",
+          "Create the Handover Package folder: /Hospital-Handover / Deliverables / Documentation / Credentials-Template / Maintenance-Guide.",
+          "Write a 1-page Maintenance Guide: what the client must do monthly (content updates, backups), what the team should be called for (technical issues), and the warranty statement.",
+          "Write a File Structure Guide: a table listing every file in the deliverables folder, what it is, and when it should be updated."
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "The moment you hand over a product is the moment you start building your reputation with that client for the next project. A flawless delivery — clean files, clear documentation, a professional handover meeting, and a 30-day warranty — is worth more in repeat business than any feature you could have added. The Launchpad has clients who have been with us for 8 years because they trust that when we ship, we actually ship. That trust is built in the handover, one professional interaction at a time."
+      },
+      {
+        "type": "scenarioChallenge",
+        "title": "Scenario: The Post-Launch Problem",
+        "scenario": "Two weeks after the hospital project goes live, the client contacts Rory with three issues: (1) The website's appointment booking button stopped working after the hospital's IT team applied a CMS plugin update. (2) The kiosk wayfinding system is showing an error on the touchscreen because the hospital changed their room numbering system and nobody updated the kiosk content. (3) The client cannot find the source Figma files for the website because they were not included in the handover package.",
+        "questions": [
+          {
+            "question": "Categorise each of the three issues: which are defects covered under warranty, which are outside the warranty scope, and which are handover failures? Justify each categorisation.",
+            "marks": 6
+          },
+          {
+            "question": "Issue (2) was caused by a client-side content change, not a project team failure. However, the client believes it is the team's responsibility to fix. Write a professional, clear response (4–6 sentences) that acknowledges the issue, explains why it is outside warranty, and proposes a resolution.",
+            "marks": 4
+          },
+          {
+            "question": "Describe TWO specific items that should have been included in the handover package that would have prevented issues (2) and (3) from becoming problems. For each, state what the document should have contained.",
+            "marks": 4
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · CAPSTONE EVALUATION SPRINT",
+        "text": "This is your final sandbox challenge at Bunbury Tech Launchpad. Rory is handing you a completed student project (provided by your teacher) and asking you to conduct a full professional evaluation — six criteria, all tested with evidence, iteration log for any failures, and a brief handover assessment noting any gaps in the handover package. Present your evaluation report in the format used throughout this unit. This is the evaluation standard your own capstone project will be assessed against. Make it your best work."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR FINAL SPRINT",
+        "text": "The final evaluation and handover package is approved only when:\n\n✅ Six evaluation criteria drawn directly from the original brief and Plan of Action\n✅ Every criterion tested with documented evidence — not opinion\n✅ Iteration log: every Partial/Fail has a change made and a re-test result\n✅ Strengths section: 3 specific, evidence-based points\n✅ Limitations section: 2 honest, specific gaps with improvement recommendations\n✅ Project Management Reflection: 4+ sentences on planning and scheduling decisions\n✅ Handover package: structured folder, maintenance guide, file structure guide\n✅ Phase 2 Recommendations: 3 features with justifications\n\nThis is the document that represents you as a professional. It goes in your portfolio. Make it as good as the product it evaluates. Rory is proud of what you've built this year — now prove it in writing."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "extended",
+          "text": "Evaluate the importance of professional handover documentation in digital project delivery. In your response, address: what handover documentation should include, why it matters to the client after the project team leaves, and the potential consequences of poor handover practices. Use examples relevant to a multi-deliverable project.",
+          "marks": 8
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A digital product's evaluation states: 'The website looks great and the client is happy with it. All the links seem to work and the images look good.' What is the PRIMARY weakness of this evaluation?",
+          "options": [
+            "It is too long and should be summarised more briefly",
+            "It lacks measurable criteria, structured testing methods, and documented evidence",
+            "It should be written by the client, not the project team",
+            "It focuses too much on visual design and not enough on technical performance"
+          ],
+          "correctIndex": 1,
+          "explanation": "Professional evaluation requires: (1) pre-defined, measurable criteria derived from the brief, (2) a documented test method for each criterion, and (3) recorded evidence of the test results. 'Looks great' and 'the client is happy' are opinions, not evaluation outcomes. 'Links seem to work' is not a tested result — it is an assumption. Every criterion must be objectively testable and the results must be evidence-based."
+        }
+      }
+    ]
+  }
+]
