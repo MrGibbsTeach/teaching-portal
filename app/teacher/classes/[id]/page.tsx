@@ -2,11 +2,9 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getClass } from "@/lib/db";
 import { getCourseContent } from "@/lib/content";
-import type { CourseContent } from "@/lib/content/types";
 import { getCourseBySlug } from "@/lib/courses";
-import type { Course } from "@/lib/courses";
 import { updateAccess, addStudent, removeStudent, removeClass } from "@/app/actions/classes";
-import type { ClassConfig } from "@/lib/auth-types";
+import DeleteClassButton from "@/components/teacher/DeleteClassButton";
 
 export const dynamic = "force-dynamic";
 
@@ -15,44 +13,16 @@ export default async function ClassManagePage({
 }: {
   params: Promise<{ id: string }>;
 }) {
-  let diagStep = "params";
-  try {
-    const { id } = await params;
-    diagStep = `getClass(${id})`;
-    const cls = await getClass(id);
-    diagStep = "notFound check";
-    if (!cls) return notFound();
-    diagStep = "getCourseBySlug";
-    const course = getCourseBySlug(cls.courseSlug);
-    diagStep = "getCourseContent";
-    const content = getCourseContent(cls.courseSlug);
-    diagStep = "render";
-    return <ClassManagePageInner cls={cls} course={course} content={content} />;
-  } catch (e) {
-    return (
-      <div className="mx-auto max-w-xl px-6 py-16 space-y-4">
-        <h1 className="text-xl font-semibold text-destructive">Debug: crashed at step &quot;{diagStep}&quot;</h1>
-        <p className="font-mono text-sm bg-muted p-4 rounded-lg break-all whitespace-pre-wrap">{String(e)}</p>
-        {e instanceof Error && e.stack && (
-          <p className="font-mono text-xs bg-muted p-4 rounded-lg break-all whitespace-pre-wrap">{e.stack}</p>
-        )}
-      </div>
-    );
-  }
-}
+  const { id } = await params;
+  const cls = await getClass(id);
+  if (!cls) notFound();
 
-function ClassManagePageInner({
-  cls,
-  course,
-  content,
-}: {
-  cls: ClassConfig;
-  course: Course | undefined;
-  content: CourseContent | undefined;
-}) {
-  const updateAccessForClass = updateAccess.bind(null, cls.id);
-  const addStudentToClass = addStudent.bind(null, cls.id);
-  const deleteClass = removeClass.bind(null, cls.id);
+  const course = getCourseBySlug(cls!.courseSlug);
+  const content = getCourseContent(cls!.courseSlug);
+
+  const updateAccessForClass = updateAccess.bind(null, cls!.id);
+  const addStudentToClass = addStudent.bind(null, cls!.id);
+  const deleteClass = removeClass.bind(null, cls!.id);
 
   return (
     <div className="mx-auto max-w-3xl px-6 py-12 space-y-12">
@@ -61,9 +31,9 @@ function ClassManagePageInner({
         <Link href="/teacher" className="text-sm text-muted-foreground hover:underline">
           ← All classes
         </Link>
-        <h1 className="mt-3 text-2xl font-semibold tracking-tight">{cls.name}</h1>
+        <h1 className="mt-3 text-2xl font-semibold tracking-tight">{cls!.name}</h1>
         <p className="mt-1 text-sm text-muted-foreground">
-          {course?.title ?? cls.courseSlug} · {course?.yearLevel}
+          {course?.title ?? cls!.courseSlug} · {course?.yearLevel}
         </p>
       </div>
 
@@ -90,7 +60,7 @@ function ClassManagePageInner({
                 <p className="font-semibold mb-3">{unit.title}</p>
                 <div className="space-y-2">
                   {unit.topics.map((topic) => {
-                    const checked = cls.topicIds.includes(topic.id);
+                    const checked = cls!.topicIds.includes(topic.id);
                     return (
                       <label
                         key={topic.id}
@@ -168,7 +138,7 @@ function ClassManagePageInner({
           </button>
         </form>
 
-        {cls.students.length === 0 ? (
+        {cls!.students.length === 0 ? (
           <p className="mt-6 text-sm text-muted-foreground italic">
             No students yet. Add them above.
           </p>
@@ -184,8 +154,8 @@ function ClassManagePageInner({
                 </tr>
               </thead>
               <tbody className="divide-y">
-                {cls.students.map((s) => {
-                  const removeAction = removeStudent.bind(null, cls.id, s.username);
+                {cls!.students.map((s) => {
+                  const removeAction = removeStudent.bind(null, cls!.id, s.username);
                   return (
                     <tr key={s.username} className="hover:bg-muted/20">
                       <td className="px-4 py-3">{s.displayName}</td>
@@ -209,7 +179,7 @@ function ClassManagePageInner({
           </div>
         )}
 
-        {cls.students.length > 0 && (
+        {cls!.students.length > 0 && (
           <p className="mt-3 text-xs text-muted-foreground">
             Students log in at <strong>/login/student</strong> with their username and passcode above.
           </p>
@@ -220,15 +190,9 @@ function ClassManagePageInner({
       <section className="border-t pt-8">
         <h2 className="text-sm font-semibold text-destructive">Danger Zone</h2>
         <form action={deleteClass} className="mt-3">
-          <button
-            type="submit"
-            className="rounded-lg border border-destructive px-4 py-2 text-sm font-medium text-destructive hover:bg-destructive hover:text-white transition-colors"
-            onClick={(e) => {
-              if (!confirm(`Delete "${cls.name}"? This cannot be undone.`)) e.preventDefault();
-            }}
-          >
+          <DeleteClassButton className="rounded-lg border border-destructive px-4 py-2 text-sm font-medium text-destructive hover:bg-destructive hover:text-white transition-colors">
             Delete this class
-          </button>
+          </DeleteClassButton>
         </form>
       </section>
     </div>
