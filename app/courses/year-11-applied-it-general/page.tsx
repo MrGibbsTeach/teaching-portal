@@ -2,10 +2,20 @@ import { notFound } from "next/navigation";
 import { CourseOverview } from "@/components/course/CourseOverview";
 import { getCourseBySlug } from "@/lib/courses";
 import { getCourseContent } from "@/lib/content";
+import { getSession } from "@/lib/session";
+import { getClass } from "@/lib/db";
 
-export default function Page() {
+export default async function Page() {
+  const session = await getSession();
   const course = getCourseBySlug("year-11-applied-it-general");
   const content = getCourseContent("year-11-applied-it-general");
   if (!course || !content) notFound();
-  return <CourseOverview course={course} content={content} />;
+
+  let allowedUnitIds: string[] | undefined;
+  if (session?.role === "student") {
+    const cls = await getClass(session.classId!);
+    allowedUnitIds = cls?.unitIds ?? [];
+  }
+
+  return <CourseOverview course={course} content={content} allowedUnitIds={allowedUnitIds} />;
 }

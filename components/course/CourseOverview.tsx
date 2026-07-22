@@ -6,18 +6,30 @@ import type { CourseContent } from "@/lib/content/types";
 export function CourseOverview({
   course,
   content,
+  allowedUnitIds,
 }: {
   course: Course;
   content: CourseContent;
+  allowedUnitIds?: string[];
 }) {
+  const visibleUnits = allowedUnitIds
+    ? content.units.filter((u) => allowedUnitIds.includes(u.id))
+    : content.units;
+
   return (
     <div className="mx-auto max-w-3xl px-6 py-16">
       <Badge variant="secondary">{course.yearLevel}</Badge>
       <h1 className="mt-4 text-3xl font-semibold tracking-tight">{course.title}</h1>
       <p className="mt-3 text-muted-foreground">{course.description}</p>
 
+      {visibleUnits.length === 0 && allowedUnitIds !== undefined && (
+        <div className="mt-10 rounded-xl border border-dashed p-10 text-center text-sm text-muted-foreground">
+          No units have been unlocked for you yet. Check back after your teacher sets up your class.
+        </div>
+      )}
+
       <div className="mt-10 space-y-8">
-        {content.units.map((unit) => (
+        {visibleUnits.map((unit) => (
           <section key={unit.id}>
             {unit.subtitle && (
               <p className="mb-1 text-xs font-bold uppercase tracking-widest text-primary">

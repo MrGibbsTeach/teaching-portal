@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { Badge } from "@/components/ui/badge";
 import { BlockRenderer } from "@/components/course/BlockRenderer";
 import { FoundationsLessonView } from "@/components/course/foundations/FoundationsLessonView";
@@ -8,6 +8,8 @@ import { atkinson } from "@/components/course/foundations/font";
 import { getCourseBySlug } from "@/lib/courses";
 import { GeneralLessonView } from "@/components/course/GeneralLessonView";
 import { getCourseContent, findLesson, findNextLesson } from "@/lib/content";
+import { getSession } from "@/lib/session";
+import { getClass } from "@/lib/db";
 
 export default async function LessonPage({
   params,
@@ -22,6 +24,15 @@ export default async function LessonPage({
   const found = findLesson(content, lessonId);
   if (!found) notFound();
   const { unit, topic, lesson } = found;
+
+  // Student access check: only show lessons in unlocked units
+  const session = await getSession();
+  if (session?.role === "student") {
+    const cls = await getClass(session.classId!);
+    if (!cls || !cls.unitIds.includes(unit.id)) {
+      redirect(`/courses/${slug}`);
+    }
+  }
 
   const isGeneral = slug === "year-11-applied-it-general" || slug === "year-12-applied-it-general";
   if (isGeneral) {
