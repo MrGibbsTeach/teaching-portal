@@ -39,7 +39,7 @@ export default async function TeacherDashboard() {
                 <p className="mt-0.5 text-sm text-muted-foreground">
                   {cls.courseSlug.replace(/-/g, " ")} ·{" "}
                   {cls.students.length} student{cls.students.length !== 1 ? "s" : ""} ·{" "}
-                  {cls.unitIds.length} unit{cls.unitIds.length !== 1 ? "s" : ""} unlocked
+                  {cls.topicIds.length} topic{cls.topicIds.length !== 1 ? "s" : ""} unlocked
                 </p>
               </div>
               <span className="text-muted-foreground">→</span>
