@@ -26,7 +26,7 @@ export async function createClass(formData: FormData) {
     id,
     name,
     courseSlug,
-    unitIds: [],
+    topicIds: [],
     students: [],
     createdAt: new Date().toISOString(),
   };
@@ -38,7 +38,7 @@ export async function updateAccess(classId: string, formData: FormData) {
   await requireTeacher();
   const cls = await getClass(classId);
   if (!cls) return;
-  cls.unitIds = formData.getAll("unitId") as string[];
+  cls.topicIds = formData.getAll("topicId") as string[];
   await saveClass(cls);
   revalidatePath("/teacher/classes/" + classId);
 }

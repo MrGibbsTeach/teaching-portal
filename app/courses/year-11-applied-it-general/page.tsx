@@ -11,11 +11,11 @@ export default async function Page() {
   const content = getCourseContent("year-11-applied-it-general");
   if (!course || !content) notFound();
 
-  let allowedUnitIds: string[] | undefined;
+  let allowedTopicIds: string[] | undefined;
   if (session?.role === "student") {
     const cls = await getClass(session.classId!);
-    allowedUnitIds = cls?.unitIds ?? [];
+    allowedTopicIds = cls?.topicIds ?? [];
   }
 
-  return <CourseOverview course={course} content={content} allowedUnitIds={allowedUnitIds} />;
+  return <CourseOverview course={course} content={content} allowedTopicIds={allowedTopicIds} />;
 }

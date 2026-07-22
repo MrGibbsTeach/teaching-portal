@@ -25,11 +25,11 @@ export default async function LessonPage({
   if (!found) notFound();
   const { unit, topic, lesson } = found;
 
-  // Student access check: only show lessons in unlocked units
+  // Student access check: only show lessons in unlocked topics
   const session = await getSession();
   if (session?.role === "student") {
     const cls = await getClass(session.classId!);
-    if (!cls || !cls.unitIds.includes(unit.id)) {
+    if (!cls || !cls.topicIds.includes(topic.id)) {
       redirect(`/courses/${slug}`);
     }
   }

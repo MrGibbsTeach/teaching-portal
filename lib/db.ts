@@ -2,33 +2,48 @@ import "server-only";
 import type { ClassConfig } from "./auth-types";
 
 const KV_KEY = "mg_classes";
-
-// In-memory fallback when KV not configured (local dev only — not shared between requests in prod)
 const _mem: ClassConfig[] = [];
 
+function kvConfig() {
+  const url = process.env.KV_REST_API_URL;
+  const token = process.env.KV_REST_API_TOKEN;
+  return url && token ? { url, token } : null;
+}
+
 async function kvGet<T>(key: string): Promise<T | null> {
-  if (!process.env.KV_REST_API_URL) {
-    if (key === KV_KEY) return _mem as unknown as T;
-    return null;
+  const kv = kvConfig();
+  if (!kv) {
+    return key === KV_KEY ? (_mem as unknown as T) : null;
   }
   try {
-    const { kv } = await import("@vercel/kv");
-    return await kv.get<T>(key);
+    const res = await fetch(`${kv.url}/get/${encodeURIComponent(key)}`, {
+      headers: { Authorization: `Bearer ${kv.token}` },
+      cache: "no-store",
+    });
+    const json = (await res.json()) as { result: string | null };
+    if (json.result == null) return null;
+    return JSON.parse(json.result) as T;
   } catch {
     return null;
   }
 }
 
 async function kvSet(key: string, value: unknown): Promise<void> {
-  if (!process.env.KV_REST_API_URL) {
-    if (key === KV_KEY) {
-      _mem.splice(0, _mem.length, ...(value as ClassConfig[]));
-    }
+  const kv = kvConfig();
+  if (!kv) {
+    if (key === KV_KEY) _mem.splice(0, _mem.length, ...(value as ClassConfig[]));
     return;
   }
   try {
-    const { kv } = await import("@vercel/kv");
-    await kv.set(key, value);
+    await fetch(`${kv.url}/pipeline`, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${kv.token}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify([["SET", key, JSON.stringify(value)]]),
+      cache: "no-store",
+    });
   } catch (e) {
     console.error("KV write failed:", e);
   }

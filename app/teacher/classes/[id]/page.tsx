@@ -34,11 +34,11 @@ export default async function ClassManagePage({
         </p>
       </div>
 
-      {/* Unit Access */}
+      {/* Topic Access */}
       <section>
-        <h2 className="text-lg font-semibold">Unit Access</h2>
+        <h2 className="text-lg font-semibold">Topic Access</h2>
         <p className="mt-1 text-sm text-muted-foreground">
-          Toggle which units students in this class can see.
+          Choose exactly which topics students can see. Release them one at a time as you cover them.
         </p>
 
         {!content ? (
@@ -46,38 +46,44 @@ export default async function ClassManagePage({
             Course content not yet available.
           </p>
         ) : (
-          <form action={updateAccessForClass} className="mt-4 space-y-3">
-            {content.units.map((unit) => {
-              const checked = cls.unitIds.includes(unit.id);
-              return (
-                <label
-                  key={unit.id}
-                  className={`flex cursor-pointer items-center gap-4 rounded-xl border p-4 transition-colors ${
-                    checked ? "border-primary bg-primary/5" : "hover:bg-accent"
-                  }`}
-                >
-                  <input
-                    type="checkbox"
-                    name="unitId"
-                    value={unit.id}
-                    defaultChecked={checked}
-                    className="h-4 w-4 accent-primary"
-                  />
-                  <div>
-                    {unit.subtitle && (
-                      <p className="text-xs font-bold uppercase tracking-widest text-primary">
-                        {unit.subtitle}
-                      </p>
-                    )}
-                    <p className="font-medium">{unit.title}</p>
-                    <p className="text-xs text-muted-foreground">
-                      {unit.topics.length} topics ·{" "}
-                      {unit.topics.reduce((n, t) => n + t.lessons.length, 0)} lessons
-                    </p>
-                  </div>
-                </label>
-              );
-            })}
+          <form action={updateAccessForClass} className="mt-4 space-y-4">
+            {content.units.map((unit) => (
+              <div key={unit.id} className="rounded-xl border p-4">
+                {unit.subtitle && (
+                  <p className="text-xs font-bold uppercase tracking-widest text-primary mb-0.5">
+                    {unit.subtitle}
+                  </p>
+                )}
+                <p className="font-semibold mb-3">{unit.title}</p>
+                <div className="space-y-2">
+                  {unit.topics.map((topic) => {
+                    const checked = cls.topicIds.includes(topic.id);
+                    return (
+                      <label
+                        key={topic.id}
+                        className={`flex cursor-pointer items-center gap-3 rounded-lg border p-3 transition-colors ${
+                          checked ? "border-primary bg-primary/5" : "hover:bg-accent"
+                        }`}
+                      >
+                        <input
+                          type="checkbox"
+                          name="topicId"
+                          value={topic.id}
+                          defaultChecked={checked}
+                          className="h-4 w-4 accent-primary shrink-0"
+                        />
+                        <div>
+                          <p className="text-sm font-medium">{topic.title}</p>
+                          <p className="text-xs text-muted-foreground">
+                            {topic.lessons.length} lessons
+                          </p>
+                        </div>
+                      </label>
+                    );
+                  })}
+                </div>
+              </div>
+            ))}
             <button
               type="submit"
               className="rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"

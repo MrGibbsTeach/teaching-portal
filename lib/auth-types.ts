@@ -17,7 +17,7 @@ export interface ClassConfig {
   id: string;
   name: string;
   courseSlug: string;
-  unitIds: string[];
+  topicIds: string[];
   students: Student[];
   createdAt: string;
 }

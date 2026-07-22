@@ -6,14 +6,19 @@ import type { CourseContent } from "@/lib/content/types";
 export function CourseOverview({
   course,
   content,
-  allowedUnitIds,
+  allowedTopicIds,
 }: {
   course: Course;
   content: CourseContent;
-  allowedUnitIds?: string[];
+  allowedTopicIds?: string[];
 }) {
-  const visibleUnits = allowedUnitIds
-    ? content.units.filter((u) => allowedUnitIds.includes(u.id))
+  const visibleUnits = allowedTopicIds
+    ? content.units
+        .map((u) => ({
+          ...u,
+          topics: u.topics.filter((t) => allowedTopicIds.includes(t.id)),
+        }))
+        .filter((u) => u.topics.length > 0)
     : content.units;
 
   return (
@@ -22,9 +27,9 @@ export function CourseOverview({
       <h1 className="mt-4 text-3xl font-semibold tracking-tight">{course.title}</h1>
       <p className="mt-3 text-muted-foreground">{course.description}</p>
 
-      {visibleUnits.length === 0 && allowedUnitIds !== undefined && (
+      {visibleUnits.length === 0 && allowedTopicIds !== undefined && (
         <div className="mt-10 rounded-xl border border-dashed p-10 text-center text-sm text-muted-foreground">
-          No units have been unlocked for you yet. Check back after your teacher sets up your class.
+          No topics have been unlocked for you yet. Check back after your teacher sets up your class.
         </div>
       )}
 
