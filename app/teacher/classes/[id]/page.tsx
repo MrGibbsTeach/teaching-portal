@@ -1,24 +1,55 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getClass } from "@/lib/db";
+import { getCourseContent } from "@/lib/content";
+import type { CourseContent } from "@/lib/content/types";
+import { getCourseBySlug } from "@/lib/courses";
+import type { Course } from "@/lib/courses";
+import { updateAccess, addStudent, removeStudent, removeClass } from "@/app/actions/classes";
+import type { ClassConfig } from "@/lib/auth-types";
 
 export const dynamic = "force-dynamic";
-import { getCourseContent } from "@/lib/content";
-import { getCourseBySlug } from "@/lib/courses";
-import { updateAccess, addStudent, removeStudent, removeClass } from "@/app/actions/classes";
 
 export default async function ClassManagePage({
   params,
 }: {
   params: Promise<{ id: string }>;
 }) {
-  const { id } = await params;
-  const cls = await getClass(id);
-  if (!cls) return notFound();
+  let diagStep = "params";
+  try {
+    const { id } = await params;
+    diagStep = `getClass(${id})`;
+    const cls = await getClass(id);
+    diagStep = "notFound check";
+    if (!cls) return notFound();
+    diagStep = "getCourseBySlug";
+    const course = getCourseBySlug(cls.courseSlug);
+    diagStep = "getCourseContent";
+    const content = getCourseContent(cls.courseSlug);
+    diagStep = "render";
+    return <ClassManagePageInner cls={cls} course={course} content={content} />;
+  } catch (e) {
+    return (
+      <div className="mx-auto max-w-xl px-6 py-16 space-y-4">
+        <h1 className="text-xl font-semibold text-destructive">Debug: crashed at step &quot;{diagStep}&quot;</h1>
+        <p className="font-mono text-sm bg-muted p-4 rounded-lg break-all whitespace-pre-wrap">{String(e)}</p>
+        {e instanceof Error && e.stack && (
+          <p className="font-mono text-xs bg-muted p-4 rounded-lg break-all whitespace-pre-wrap">{e.stack}</p>
+        )}
+      </div>
+    );
+  }
+}
 
-  const course = getCourseBySlug(cls.courseSlug);
-  const content = getCourseContent(cls.courseSlug);
-
+function ClassManagePageInner({
+  cls,
+  course,
+  content,
+}: {
+  cls: ClassConfig;
+  course: Course | undefined;
+  content: CourseContent | undefined;
+}) {
   const updateAccessForClass = updateAccess.bind(null, cls.id);
   const addStudentToClass = addStudent.bind(null, cls.id);
   const deleteClass = removeClass.bind(null, cls.id);
