@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getClass } from "@/lib/db";
+
+export const dynamic = "force-dynamic";
 import { getCourseContent } from "@/lib/content";
 import { getCourseBySlug } from "@/lib/courses";
 import { updateAccess, addStudent, removeStudent, removeClass } from "@/app/actions/classes";

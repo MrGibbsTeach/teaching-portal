@@ -1,6 +1,8 @@
 import { getClasses } from "@/lib/db";
 import { studentLogin } from "@/app/actions/auth";
 
+export const dynamic = "force-dynamic";
+
 export default async function StudentLoginPage({
   searchParams,
 }: {
