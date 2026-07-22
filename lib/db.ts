@@ -19,7 +19,10 @@ export async function getClasses(): Promise<ClassConfig[]> {
   const redis = getRedis();
   if (!redis) return [..._mem];
   try {
-    return (await redis.get<ClassConfig[]>(KV_KEY)) ?? [];
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const raw = (await redis.get<any[]>(KV_KEY)) ?? [];
+    // Migrate records that were saved with the old `unitIds` field name
+    return raw.map((c) => ({ ...c, topicIds: c.topicIds ?? c.unitIds ?? [] })) as ClassConfig[];
   } catch (e) {
     console.error("KV read failed:", e);
     return [];
