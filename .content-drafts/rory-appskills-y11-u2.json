@@ -1,0 +1,903 @@
+[
+  {
+    "id": "presentation-software-features",
+    "title": "Presentation Software — Features",
+    "estimatedMinutes": 30,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #4201 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟡 IN PROGRESS | Sprint 7 | Assigned to: Junior Analyst\n\nThe Launchpad is pitching to Bunbury City Council next Tuesday. 10 slides, 8 minutes, decision-makers who have seen a thousand boring PowerPoints. Leo's done the visual design, Sloane's prepared the data — now we need someone who actually knows how to USE the tools. Before you open a single blank slide, you need to know what every feature does and when to reach for it."
+      },
+      {
+        "type": "paragraph",
+        "text": "Presentation software is not just about putting bullet points on a screen — it is about controlling how information lands in the room. PowerPoint and Google Slides share a core feature set, but knowing which features actually matter in a professional context separates the interns who slow the team down from the ones who speed it up."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Slide Master", "definition": "A template that controls the default fonts, colours, layouts, and logo placement across every slide in a presentation. Editing the master changes all slides simultaneously." },
+          { "term": "Transition", "definition": "The animation that plays between slides. In professional contexts, these should be minimal — a simple fade or cut. Spinning cubes and dissolve effects are the mark of an amateur." },
+          { "term": "Animation", "definition": "Movement applied to individual elements on a slide — text that fades in, charts that build bar by bar. Used sparingly, they guide the audience's attention. Overused, they destroy credibility." },
+          { "term": "Presenter View", "definition": "A dual-screen mode where the speaker sees their speaker notes and the next slide on their laptop, while the audience sees only the current slide on the projector." },
+          { "term": "Speaker Notes", "definition": "A text field below each slide where the presenter stores their script, talking points, and reminders. These are invisible to the audience during presentation." }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "The Feature Set That Actually Matters",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Feature", "What It Does", "Professional Use"],
+        "rows": [
+          ["Slide Master / Theme", "Sets global design: fonts, colours, backgrounds, logos", "Apply once at the start — never format slides individually"],
+          ["Layouts", "Pre-built arrangements of placeholders (title, content, two-column)", "Choose the right layout per slide — don't manually position everything"],
+          ["Transitions", "Animation between slides", "One consistent transition max (Fade or None). Avoid Fly, Zoom, Cube."],
+          ["Animations", "Movement of individual elements on a slide", "Use Appear or Fade to reveal data points one at a time during Q&A"],
+          ["Presenter View", "Speaker sees notes + next slide; audience sees current slide only", "Essential for any live presentation — prevents turning your back on the room"],
+          ["Speaker Notes", "Your script, invisible to audience", "Write full sentences, not dot points — you will forget the dot points under pressure"],
+          ["Embedded Charts", "Live charts linked to Excel/Sheets data", "Insert → Chart from Sheets; updates automatically when data changes"],
+          ["Hyperlinks", "Clickable links to external resources or other slides", "Link to live demos, reports, or jump to an appendix slide during Q&A"],
+          ["Export Formats", "PDF, video, PNG per slide", "Always export to PDF before a presentation — PowerPoint fonts break on unfamiliar machines"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "I have watched animated text, spinning logos, and comic sans fonts cost clients the contract. Animations are not features — they are a distraction tax your audience pays while waiting for the actual information. One font. One consistent colour. Minimal transitions. The content wins the room, not the pyrotechnics."
+      },
+      {
+        "type": "heading",
+        "text": "PowerPoint vs Google Slides",
+        "level": 2
+      },
+      {
+        "type": "comparison",
+        "title": "Choosing Your Tool",
+        "items": [
+          {
+            "label": "Microsoft PowerPoint",
+            "points": [
+              "Industry standard for formal client and government presentations",
+              "Superior animation control and Morph transition for smooth data reveals",
+              "Offline — works without internet during the presentation",
+              "Better for complex designs and precise positioning",
+              "Export to .pptx — universally accepted by clients"
+            ]
+          },
+          {
+            "label": "Google Slides",
+            "points": [
+              "Real-time collaboration — multiple team members edit simultaneously",
+              "Auto-saved in Drive, accessible from any device",
+              "Easy to share with clients for review without file attachments",
+              "Ideal for team-built decks in agile sprints",
+              "Fewer animation options but sufficient for most business decks"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · BUILD YOUR PITCH STRUCTURE",
+        "text": "Open PowerPoint or Google Slides. Apply the built-in 'Wisp' or 'Ion' theme (or any professional theme). Create 5 slides with these layouts:\n1. Title slide — presentation title + your name + date\n2. Problem slide — one sentence, one supporting stat\n3. Solution slide — three bullet points, one per click (add Appear animations)\n4. Data slide — insert a table with 3 rows and 3 columns of made-up project metrics\n5. Next steps slide — numbered list, 3 items\n\nExport to PDF when done. The PDF must look identical to the slides."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS REVIEWING YOUR SPRINT",
+        "text": "1. Your colleague has used 6 different fonts, 4 transitions (Cube, Fly, Ripple, Zoom), and 12 animations per slide on the council pitch deck. You are the only one who can save this. What specific changes do you make, and why does each matter?\n2. You are presenting from your own laptop, but the projector only shows one screen. You cannot see your speaker notes. What feature were you supposed to set up, and how do you fix this without restarting?\n3. You finish a presentation and the Council asks for a copy 'in case the projector fails next time.' Do you send the .pptx file or a PDF? Explain the risk you are managing."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A designer changes the company logo on the Slide Master of a 40-slide PowerPoint. How many slides need to be manually updated?",
+          "options": ["All 40 slides", "Only slides that use the default layout", "None — the change propagates to all slides automatically", "Only the title slide"],
+          "correctIndex": 2,
+          "explanation": "Changes to the Slide Master apply automatically to every slide that uses the master's layout. This is the primary purpose of the Slide Master — global consistency without manual repetition."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "true_false",
+          "text": "Exporting a presentation to PDF before delivery is a professional best practice because it eliminates font substitution issues on unfamiliar computers.",
+          "correctAnswer": true,
+          "explanation": "True. PowerPoint files rely on fonts being installed on the presenting computer. If the target machine lacks your fonts, PowerPoint substitutes defaults, breaking the design. A PDF embeds all fonts and renders identically on any device."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "short_answer",
+          "text": "A junior analyst builds a 20-slide deck for a client pitch without using the Slide Master, formatting each slide individually. On the day of the pitch, the client asks for the company logo to be replaced with the new version and the colour scheme changed from blue to green. Explain (a) why this is a significant problem given how the deck was built, and (b) how using the Slide Master from the start would have prevented this.",
+          "marks": 4,
+          "explanation": "Award 2 marks: Without a Slide Master, the logo and colour must be manually updated on all 20 slides — tedious, error-prone, and time-consuming immediately before a high-stakes presentation. Award 2 marks: With a Slide Master, the logo appears in one place (the master) and the colour scheme is part of the theme — changing either updates all slides instantly, with no risk of missing a slide."
+        }
+      }
+    ]
+  },
+  {
+    "id": "presentation-software-create-and-present",
+    "title": "Presentation Software — Create and Present",
+    "estimatedMinutes": 45,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #4202 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟡 IN PROGRESS | Sprint 7 | Assigned to: Junior Analyst\n\nToday you present your first mini-report to the full Launchpad team. 8 slides, 5 minutes, then 3 minutes of questions. This is not a class — Sloane will interrupt if the data is wrong, Leo will notice if the design is off, and I will stop you if you are reading off the screen. Prepare the deck, know the content, and deliver like you have done this before."
+      },
+      {
+        "type": "heading",
+        "text": "Slide Design Principles That Actually Work",
+        "level": 2
+      },
+      {
+        "type": "list",
+        "style": "bullet",
+        "items": [
+          "6×6 rule: No more than 6 bullet points per slide, no more than 6 words per bullet. Your slides are visual cues, not a script for the audience to read instead of listening to you.",
+          "One idea per slide: If you need to scroll text or use a tiny font to fit everything, you have two slides masquerading as one.",
+          "High contrast: White or light text on dark backgrounds, or dark text on light backgrounds. Grey on grey is invisible under projector lighting.",
+          "Font hierarchy: Two fonts maximum — one for headings (bold, larger), one for body (lighter, smaller). Never mix decorative and formal fonts in a business deck.",
+          "White space is not wasted space: Overcrowded slides make the audience feel trapped. Leave breathing room — it makes each element feel more important, not less.",
+          "Visuals over bullet points: A well-chosen image or chart communicates faster than five dot points. If you can show it, show it."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Embedding Charts from Data Sources",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "A chart in a presentation should always be linked to its data source when possible. In Google Slides, charts inserted from Google Sheets maintain a live link — when Sloane updates the data, a click of 'Update' refreshes the chart in your slides. In PowerPoint, you can embed an Excel chart that updates when the Excel file is edited. This eliminates the risk of showing stale data to a client."
+      },
+      {
+        "type": "task",
+        "title": "Build an 8-Slide Report Deck",
+        "software": "Google Slides or Microsoft PowerPoint",
+        "intro": "Follow these steps to build a professionally structured presentation with embedded data and proper speaker notes.",
+        "steps": [
+          "Open Google Slides or PowerPoint and select a professional theme (avoid templates with heavy decorative borders or cartoon elements).",
+          "Set up the Slide Master first: Ensure the company name appears in the footer and the colour palette matches the theme.",
+          "Slide 1 (Title): Presentation title, your name, date. Use the title layout — do not manually type in the body area.",
+          "Slide 2 (Problem / Context): One sentence describing the issue. One statistic to support it. No more.",
+          "Slide 3 (Key Finding 1): A heading and one chart. In Google Slides: Insert → Chart → from Sheets (link to a Google Sheet you've created with 3 rows of data).",
+          "Slide 4 (Key Finding 2): A heading and one table with 3 columns and 4 rows.",
+          "Slides 5–6 (Analysis): Two slides with one key point each. Apply bullet-point animations using Appear — so points reveal one at a time during your presentation.",
+          "Slide 7 (Recommendation): Three numbered actions. Keep each to one line.",
+          "Slide 8 (Thank You / Questions): Your name and contact. Nothing else.",
+          "Add speaker notes to every slide — write full sentences, not shorthand.",
+          "Export to PDF and verify it looks identical to the slides view."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Delivering Effectively",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Skill", "What Good Looks Like", "Common Mistake"],
+        "rows": [
+          ["Eye contact", "Spend 70% of time looking at the audience, 30% at the screen", "Reading word-for-word from slides — the audience can read faster than you speak"],
+          ["Pacing", "Aim for 120–140 words per minute; pause between key points", "Rushing through slides when nervous; skipping pauses"],
+          ["Pointer use", "Use sparingly to highlight a specific data point; put it down", "Waving the laser pointer constantly or drawing circles"],
+          ["Screen sharing (remote)", "Share the specific window, not your whole desktop", "Audience sees your taskbar, notifications, and private files"],
+          ["Handling questions", "Repeat the question for the room, then answer directly", "Guessing or over-explaining when you don't know the answer"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "The number one mistake I see from junior presenters: they turn their back on the room to look at the screen. Your audience is in front of you. The screen is a prop. Know your content well enough that the slides are a reminder, not a teleprompter."
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · PEER PRESENT",
+        "text": "Once your 8-slide deck is complete, present slides 2–4 to a partner (2 minutes). Your partner's job: count how many times you look at the screen instead of at them, and note one specific thing you did well. Swap and repeat. The feedback is not optional — write down what your partner said and what you will change for the real presentation."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "According to the 6×6 rule, a slide should contain no more than:",
+          "options": ["6 slides per presentation and 6 words per title", "6 bullet points per slide and 6 words per bullet", "6 images per slide and 6 colour choices", "6 fonts per slide and 6 animations per transition"],
+          "correctIndex": 1,
+          "explanation": "The 6×6 rule limits slides to 6 bullet points maximum, with no more than 6 words per bullet. This keeps slides as visual cues rather than scripts, forcing the presenter to deliver the detail verbally."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A presenter is showing a 15-slide deck via screen share in Microsoft Teams. The best practice is to share:",
+          "options": ["The entire desktop so the audience can see everything", "Only the PowerPoint window to avoid exposing private files", "A PDF version because Teams does not support PowerPoint", "The slideshow in a separate browser tab"],
+          "correctIndex": 1,
+          "explanation": "When screen sharing, always share only the specific application window — not your entire desktop. Sharing the desktop risks exposing private files, notifications, taskbar items, and other applications."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "short_answer",
+          "text": "During a client presentation, an audience member asks a question that you are not sure how to answer. Describe the professional approach to handling this situation, and explain why making up an answer is a risk to more than just your personal credibility.",
+          "marks": 3,
+          "explanation": "Award 1 mark: the professional response is to acknowledge the question honestly — 'That's a great question and I want to make sure I give you accurate information. I'll follow up with a written response by end of week.' Award 2 marks: fabricating an answer risks providing incorrect information to a decision-maker who may act on it; damages the organisation's reputation if the error is discovered; and destroys personal credibility in a professional context where trust is the foundation of every relationship."
+        }
+      }
+    ]
+  },
+  {
+    "id": "audio-software-features",
+    "title": "Audio Software — Features",
+    "estimatedMinutes": 30,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #4203 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟡 IN PROGRESS | Sprint 8 | Assigned to: Junior Analyst\n\nThe client needs a 60-second voiceover for their product explainer video. They have sent us the script. We have the microphone. What we do not have yet is someone who knows how to record, clean up, and export a professional-sounding audio file. You are that person now. Audacity is installed on your machine. Learn it. Deliver it."
+      },
+      {
+        "type": "paragraph",
+        "text": "Audio software is used across professional IT contexts — voiceovers for client videos, podcast content, accessibility features (text-to-speech alternatives), and screen recordings with narration. Audacity is the industry-standard free tool. Understanding how it works — and how audio itself works — is the difference between delivering a professional clip and submitting a file that sounds like it was recorded in a bathroom."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Sample Rate", "definition": "How many times per second audio is captured (measured in Hz). 44,100 Hz (44.1 kHz) is CD quality and the standard for voiceovers and music. Higher rates use more storage." },
+          { "term": "Bit Depth", "definition": "The number of bits used to encode each audio sample — determines dynamic range. 16-bit is CD standard; 24-bit is used in professional recording for extra headroom." },
+          { "term": "Noise Floor", "definition": "The level of background noise present even when nothing is being recorded — hum, hiss, fan noise. A low noise floor is essential for professional audio." },
+          { "term": "Gain", "definition": "The amplification applied to an audio signal. Setting gain too high causes clipping (distortion); too low results in a quiet recording buried in noise." },
+          { "term": "Normalisation", "definition": "A process that automatically raises or lowers the peak level of a recording to a target volume without distorting the waveform." }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Core Audacity Workflow",
+        "level": 2
+      },
+      {
+        "type": "list",
+        "style": "numbered",
+        "items": [
+          "Set your input device: Select the correct microphone from the device dropdown before recording.",
+          "Set sample rate to 44,100 Hz and bit depth to 16-bit for standard voiceover work.",
+          "Do a test recording — speak at normal volume and check the waveform stays between -12 dB and -6 dB. If it regularly hits 0 dB (red), reduce your gain.",
+          "Record your take. If you stumble, pause and repeat the sentence — do not stop the recording.",
+          "Apply Noise Reduction: Effect → Noise Reduction. First, select 2 seconds of silence to capture the noise profile, then apply to the whole track.",
+          "Trim silence from the start and end using the Selection tool and Edit → Delete.",
+          "Apply Fade In (0.5 sec) at the start and Fade Out (0.5 sec) at the end using Effect → Fading.",
+          "Normalise to -1 dB: Effect → Normalize. This brings volume to a consistent level.",
+          "Export: File → Export Audio. Choose MP3 for web/video delivery (128 kbps minimum), WAV for archival."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Audio File Formats Compared",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Format", "Type", "Quality", "File Size", "Best For"],
+        "rows": [
+          ["WAV", "Lossless", "Highest (no compression artefacts)", "Large (~10 MB/min)", "Archival masters, professional editing"],
+          ["MP3", "Lossy", "Good at 192 kbps+, audible artefacts at low bitrates", "Small (~1.4 MB/min at 192 kbps)", "Web delivery, podcasts, video voiceovers"],
+          ["OGG Vorbis", "Lossy", "Better than MP3 at same file size", "Small", "Open-source web projects, games"],
+          ["FLAC", "Lossless", "Identical to WAV, compressed", "Medium (~5 MB/min)", "High-quality distribution without WAV size"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "Always record in WAV, export in MP3. Never edit an MP3 file — every time you export a lossy file it degrades further. Your master is WAV. Your delivery is MP3. The distinction matters when the client comes back six months later needing a re-edit."
+      },
+      {
+        "type": "task",
+        "title": "Record, Clean, and Export a 30-Second Voiceover",
+        "software": "Audacity",
+        "intro": "Complete this workflow to produce a broadcast-quality 30-second voiceover clip.",
+        "steps": [
+          "Open Audacity. Set sample rate (bottom left) to 44100 Hz.",
+          "Select your USB or headset microphone from the input device dropdown.",
+          "Press Record (R) and speak the following 30-second script at a measured pace: 'Welcome to the Bunbury Tech Launchpad. We help local businesses solve real problems with smart, practical technology solutions. Whether you need a website, a data system, or a digital strategy, our team delivers on time and on brief. Contact us today to book a free consultation.'",
+          "Stop the recording. Check that the waveform peaks sit between -12 dB and -6 dB consistently.",
+          "Select 1–2 seconds of silence at the start of the recording (before you spoke). Go to Effect → Noise Reduction → Get Noise Profile.",
+          "Select All (Ctrl+A). Return to Effect → Noise Reduction and click OK to apply.",
+          "Trim the silence from the beginning and end of the track.",
+          "Apply Effect → Normalize, set peak to -1.0 dB, click OK.",
+          "Go to File → Export Audio → Export as MP3 at 192 kbps. Name the file launchpad-voiceover.mp3.",
+          "Play back the exported file in a media player and compare to the raw recording. Note the difference in background noise."
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · CLEAN VS DIRTY AUDIO",
+        "text": "Record two versions of the same 10-second script:\n- Version A: Recorded normally, no post-processing\n- Version B: Recorded with laptop fan running loudly nearby, then cleaned with Noise Reduction\n\nCompare the two exported MP3 files. Can you hear the difference? Write 2 sentences describing what changed between the raw and cleaned version, and one scenario where noise reduction would NOT be enough to save the recording."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A voiceover is recorded in WAV format and will be delivered as part of a web video. What is the correct export format and minimum recommended bitrate?",
+          "options": ["WAV at 44,100 Hz", "MP3 at 64 kbps", "MP3 at 128–192 kbps", "OGG at 320 kbps"],
+          "correctIndex": 2,
+          "explanation": "MP3 at 128–192 kbps is the standard for web delivery voiceovers — small enough for streaming, with acceptable quality. 64 kbps produces audible compression artefacts. WAV files are too large for web delivery. OGG is less universally supported by video editors."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "true_false",
+          "text": "Editing an MP3 file and exporting it as another MP3 degrades the audio quality because lossy compression is applied a second time.",
+          "correctAnswer": true,
+          "explanation": "True. Every time a lossy format like MP3 is compressed, information is discarded. Editing an MP3 and re-exporting as MP3 applies a second round of compression on top of the first, introducing additional artefacts. Always work from WAV masters."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "short_answer",
+          "text": "A client receives their voiceover and complains that there is a constant low hum throughout the clip, and the voice sounds too quiet. (a) Identify the two issues by their correct technical terms. (b) Describe the specific Audacity steps you would take to fix each issue on the WAV master file.",
+          "marks": 4,
+          "explanation": "Award 2 marks: (1) High noise floor / background noise — fixed with Effect → Noise Reduction (capture profile from silence, apply to track). (2) Low gain / quiet recording — fixed with Effect → Normalise (set peak to -1 dB) or Effect → Amplify. Award 2 marks for correct sequencing: apply noise reduction BEFORE normalising — normalising amplifies the noise floor along with the signal if done first."
+        }
+      }
+    ]
+  },
+  {
+    "id": "image-manipulation-software",
+    "title": "Image Manipulation Software",
+    "estimatedMinutes": 45,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #4204 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟡 IN PROGRESS | Sprint 9 | Assigned to: Junior Analyst\n\nThe client is launching their website Friday. Leo has approved the product design but we need three product images prepared: background removed, resized to 800×800px, exported as WebP for the web and PNG for print. The client sent us JPEGs shot on a phone with cluttered backgrounds. Photopea is installed — go."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Raster Image", "definition": "An image made of a fixed grid of pixels. Zooming in shows individual pixels — the image becomes 'pixelated'. Formats: JPEG, PNG, WebP, GIF." },
+          { "term": "Vector Image", "definition": "An image defined by mathematical paths and shapes, not pixels. Scales to any size without quality loss. Formats: SVG, AI, EPS. Used for logos and icons." },
+          { "term": "Layer", "definition": "A transparent sheet stacked on top of other sheets in image editing software. Editing one layer does not affect others — essential for non-destructive editing." },
+          { "term": "PPI (Pixels Per Inch)", "definition": "The resolution of a digital image. 72 PPI is standard for screen display; 300 PPI is the minimum for professional print quality." },
+          { "term": "Lossless vs Lossy", "definition": "Lossless compression (PNG, WebP lossless) preserves every pixel of data. Lossy compression (JPEG, WebP lossy) discards some data to achieve smaller file sizes — quality degrades with each save." }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Image File Formats — When to Use Each",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Format", "Compression", "Transparency", "Best For", "Avoid For"],
+        "rows": [
+          ["JPEG / JPG", "Lossy", "None", "Photos, hero images, backgrounds", "Logos, text overlays, images that need re-editing"],
+          ["PNG", "Lossless", "Yes (alpha channel)", "Logos, product images on transparent backgrounds, screenshots", "Large photos where file size matters"],
+          ["WebP", "Both lossless and lossy options", "Yes", "Web delivery — 25–35% smaller than JPEG/PNG with similar quality", "Print — not all print services accept WebP"],
+          ["SVG", "Vector (not raster)", "Yes", "Logos, icons, illustrations that must scale", "Photographs — SVG cannot represent photographic detail"],
+          ["GIF", "Lossless (limited palette)", "Yes (1-bit, no partial)", "Simple animated icons, 256 colour limit", "Photographs, complex images with gradients"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "I have received logos as JPEGs from clients and the results are always the same: white box around the logo that looks terrible on anything other than a white background. Always ask for PNG or SVG. If the client only has a JPEG, rebuild it. A logo is the client's brand — delivering a white-box JPEG version is not acceptable work."
+      },
+      {
+        "type": "heading",
+        "text": "Essential Photopea Skills",
+        "level": 2
+      },
+      {
+        "type": "list",
+        "style": "bullet",
+        "items": [
+          "Selection tools: Quick Selection, Magic Wand (select by colour), Lasso (freehand) — used to isolate parts of an image before editing",
+          "Remove background: Select subject → Select → Inverse → Delete. Or use Edit → Free Transform after isolating the subject on its own layer.",
+          "Crop and resize: Image → Image Size (for resolution changes), Image → Canvas Size (for cropping to a specific ratio), Crop tool (C) for manual cropping",
+          "Adjust brightness/contrast: Image → Adjustments → Brightness/Contrast (destructive) or use a Levels adjustment layer (non-destructive)",
+          "Export: File → Export As → choose format, set quality slider for JPEG/WebP lossy, confirm dimensions before saving"
+        ]
+      },
+      {
+        "type": "task",
+        "title": "Prepare Three Product Images",
+        "software": "Photopea (photopea.com — free, browser-based)",
+        "intro": "Complete this image preparation workflow for a web product launch.",
+        "steps": [
+          "Open photopea.com in your browser. File → Open and load a product image (or use any photograph of an object).",
+          "Duplicate the background layer (right-click layer → Duplicate). This preserves the original.",
+          "Use the Quick Selection tool to select the product/subject area by clicking and dragging over it.",
+          "Go to Select → Inverse to select the background instead of the product.",
+          "Press Delete to remove the background. You should see a grey checkerboard pattern — this represents transparency.",
+          "Go to Image → Image Size. Set Width to 800px and Height to 800px. Make sure 'Constrain Proportions' is unchecked only if you need a square — otherwise let it scale proportionally then add canvas.",
+          "File → Export As → PNG. Save as product-1-web.png (for web with transparency).",
+          "Now File → Export As → WebP. Set Quality to 85. Save as product-1-web.webp.",
+          "Repeat for a second image. Compare file sizes between PNG and WebP versions."
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · SPOT THE QUALITY ISSUE",
+        "text": "You have been sent two versions of the same product photo:\n- Version A: Original JPEG, 2 MB, sharp with no visible artefacts\n- Version B: The same JPEG opened and re-saved 10 times at 60% quality, 180 KB\n\nWithout seeing the images, predict: Where would you expect to see quality degradation in Version B? Describe specifically what JPEG compression artefacts look like, where they appear first in a typical product photo, and what minimum quality setting you would use for a client's product images."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A client provides their logo as a JPEG with a white background. You need to place it on a dark blue website banner. The best solution is to:",
+          "options": ["Use the JPEG as-is — it will look fine on dark backgrounds", "Export a WebP version of the JPEG for better compression", "Obtain a PNG or SVG version with a transparent background", "Add a dark blue border to the JPEG to blend it in"],
+          "correctIndex": 2,
+          "explanation": "JPEG does not support transparency — placing it on a dark background shows the white rectangle around the logo. A PNG with an alpha channel (transparent background) or an SVG file will allow the logo to sit cleanly on any background colour."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A product image for a website needs to be high visual quality but load quickly. Which format and approach is most appropriate?",
+          "options": ["PNG at maximum quality — always use lossless", "JPEG at 30% quality — smallest file size", "WebP at 80–85% quality — balances quality and file size for web delivery", "GIF — universally supported and small"],
+          "correctIndex": 2,
+          "explanation": "WebP at 80–85% quality delivers file sizes 25–35% smaller than equivalent JPEG while maintaining visually indistinguishable quality. GIF has a 256-colour limit unsuitable for photos. PNG is lossless but produces large files for photos. JPEG at 30% shows significant artefacts."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "short_answer",
+          "text": "A graphic designer creates a brochure for print at 72 PPI and the result looks blurry when the printer outputs it at A4 size. (a) Explain why this happened using the term PPI. (b) What resolution should have been used for print, and how would this affect the file size?",
+          "marks": 4,
+          "explanation": "Award 2 marks: 72 PPI is the screen standard — when printed, the limited pixel count spreads across a larger physical area, resulting in visible pixelation and blur. PPI determines how many pixels are mapped per inch of physical output. Award 2 marks: Print requires a minimum of 300 PPI for sharp results. A 300 PPI image at A4 size (approximately 2480×3508 pixels) will have a significantly larger file size than a 72 PPI version of the same dimensions — approximately 17 times more pixel data."
+        }
+      }
+    ]
+  },
+  {
+    "id": "online-database-tools",
+    "title": "Online Database Tools",
+    "estimatedMinutes": 30,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #4205 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟡 IN PROGRESS | Sprint 10 | Assigned to: Junior Analyst\n\nOur client tracker is a disaster. Client contact details live in three different email threads, Sloane's data sheet, and someone's notebook. We have lost two follow-up opportunities this month. Your task: build a shared client tracker in Google Sheets that any team member can update, search, and filter in under 10 seconds. This is a data problem and you are solving it."
+      },
+      {
+        "type": "paragraph",
+        "text": "A spreadsheet is not a database — but for small teams with hundreds of records, it often works well enough. Google Sheets gives IT teams a live, shareable, queryable data store that requires no server setup and integrates with Google Forms for data collection. Knowing when to use Sheets, when to upgrade to Airtable, and when to escalate to a proper SQL database is a skill that will save you and your client time and money."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Record", "definition": "A single row in a database or spreadsheet — containing all the data about one entity (one client, one product, one order)." },
+          { "term": "Field", "definition": "A single column in a database — representing one type of data for every record (client name, phone number, last contact date)." },
+          { "term": "Primary Key", "definition": "A unique identifier for each record that never changes and is never blank — ensures no two records are confused. Examples: client ID number, order number." },
+          { "term": "VLOOKUP", "definition": "A Google Sheets / Excel formula that searches the first column of a table for a value and returns data from another column in the same row — used to pull related data from separate sheets." },
+          { "term": "Data Validation", "definition": "A rule applied to a cell or column that restricts what values can be entered — e.g., a dropdown list, a date range, or a number-only field. Prevents incorrect data entry at the source." }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Spreadsheet vs Database vs Airtable",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Tool", "Best For", "Limit", "When to Escalate"],
+        "rows": [
+          ["Google Sheets", "Small teams (<5), up to a few thousand records, shared live access", "Slow with 10,000+ rows; no relational tables; limited access control", "When records relate to each other (orders and clients) or multiple users need different permissions"],
+          ["Airtable", "Medium-sized operations needing relational views without SQL", "Free tier limited; expensive at scale; not a true relational database", "When you need SQL power with a spreadsheet interface and budget allows"],
+          ["SQL Database (MySQL, PostgreSQL)", "Applications, large data volumes, complex relational queries", "Requires technical setup and ongoing management", "Any production application with real users"]
+        ]
+      },
+      {
+        "type": "task",
+        "title": "Build a Client Tracker in Google Sheets",
+        "software": "Google Sheets",
+        "intro": "Build a functional client contact database with data validation, filtering, and a VLOOKUP formula.",
+        "steps": [
+          "Open a new Google Sheet. Name the file 'Launchpad Client Tracker'.",
+          "In Row 1, create these column headers: Client ID | Company Name | Contact Name | Email | Phone | Industry | Last Contact Date | Status | Notes",
+          "Freeze Row 1: View → Freeze → 1 row. This keeps headers visible when scrolling.",
+          "Add data validation to the 'Status' column: select the whole column (click column letter), Data → Data Validation → Dropdown list: Active, Inactive, Lead, Proposal Sent",
+          "Add data validation to 'Last Contact Date': Data → Data Validation → Date is a valid date.",
+          "Enter 5 sample client records. Give each a unique Client ID (C001, C002, etc.).",
+          "Create a second sheet called 'Industries'. In column A, list: Technology, Healthcare, Education, Retail, Hospitality.",
+          "Return to the Client Tracker sheet. Add a VLOOKUP formula: in a new column 'Industry Code', enter =VLOOKUP(G2,Industries!A:A,1,FALSE) — this confirms the industry exists in your lookup table.",
+          "Enable filters: click anywhere in your data, Data → Create a Filter. Test by filtering to show only 'Active' clients."
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "The most expensive database is the one that lives in someone's inbox. Every business that says 'we manage it in email' has lost data, missed follow-ups, and frustrated clients they could not afford to lose. A shared Sheets tracker built in an afternoon is worth more than six months of email chaos."
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · SCHEMA FIRST",
+        "text": "Before building any database, a professional designs the schema — the structure of the data. You have been asked to build a tracker for a local surf school that needs to manage: student enrolments, instructor assignments, and lesson schedules.\n\nOn paper or in a doc, design the schema: (1) List the 3 tables/sheets you would create. (2) For each table, list the fields (columns) it would contain. (3) Identify the primary key for each table. (4) Identify which fields would link the tables together (foreign keys). Present as a simple diagram or table."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A VLOOKUP formula in Google Sheets is used to:",
+          "options": ["Create a dropdown validation list", "Search a table for a matching value and return data from a specified column", "Sort data alphabetically by column", "Filter rows based on a condition"],
+          "correctIndex": 1,
+          "explanation": "VLOOKUP (Vertical Lookup) searches the first column of a range for a matching value and returns data from a specified column in the same row. It is used to connect related data across different sheets or tables."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A business has 50,000 customer records with complex relationships between orders, products, and customer accounts. The most appropriate data storage solution would be:",
+          "options": ["Google Sheets with multiple tabs", "A CSV file updated manually", "An Airtable free tier account", "A relational SQL database"],
+          "correctIndex": 3,
+          "explanation": "At 50,000 records with complex relational needs, a relational SQL database (MySQL, PostgreSQL) is appropriate. Google Sheets performs poorly above ~10,000 rows; Airtable's free tier has record limits and pricing becomes prohibitive at scale; a CSV has no query capabilities."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "short_answer",
+          "text": "A small business enters customer data into Google Sheets without any validation. After 6 months, the sheet contains: phone numbers in 5 different formats, 'N/A' in date fields, and company names spelled differently (e.g., 'City Café', 'City Cafe', 'city cafe'). (a) Identify the data quality problem this represents. (b) Describe two specific data validation rules that would have prevented these issues from the start.",
+          "marks": 4,
+          "explanation": "Award 2 marks: This represents dirty/inconsistent data — a data integrity problem caused by the absence of input constraints. Without validation, each person enters data in their own format, making the data unsearchable and unreliable for analysis or communication. Award 1 mark each for two valid validation solutions: (1) Phone number format — use Data Validation with a regex pattern or a custom formula to enforce a consistent format (e.g., 04XX XXX XXX); (2) Date fields — validate as 'date is a valid date' to prevent text entries like 'N/A'; (3) Company name — use a dropdown list of approved clients to prevent spelling variations."
+        }
+      }
+    ]
+  },
+  {
+    "id": "software-troubleshooting",
+    "title": "Software Troubleshooting",
+    "estimatedMinutes": 20,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #4206 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🔴 URGENT | Sprint 11 | Assigned to: Junior Analyst\n\nThe client's pitch is in 10 minutes. They called. PowerPoint is crashing every time they try to open the presentation file. The projector is connected. The client is panicking. You are the IT person. Fix it."
+      },
+      {
+        "type": "paragraph",
+        "text": "Software troubleshooting is not magic — it is a systematic process. The person who panics and randomly clicks things makes the problem worse. The person who breathes, identifies the symptoms, isolates the likely cause, and tests one fix at a time looks like a professional. The difference between those two people is knowing the process before you need it."
+      },
+      {
+        "type": "heading",
+        "text": "The Troubleshooting Process",
+        "level": 2
+      },
+      {
+        "type": "list",
+        "style": "numbered",
+        "items": [
+          "IDENTIFY: What exactly is happening? Get the error message word for word. What were they doing when it happened? Is it reproducible?",
+          "ISOLATE: Is it this file or all files? This machine or all machines? This user or all users? Each answer narrows the cause.",
+          "RESEARCH: Google the exact error message. Check if there is a known issue, update, or forum thread. Do not spend more than 3 minutes on this before testing.",
+          "TEST ONE FIX: Apply one change and test. If you apply three fixes at once and it works, you will not know which one solved it.",
+          "DOCUMENT: Write down what the problem was, what you tried, and what fixed it. This becomes your knowledge base for next time."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Common Software Problems and First Fixes",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Problem", "Likely Cause", "First Fix to Try"],
+        "rows": [
+          ["Application crashes on open", "Corrupted file, missing update, or conflicting extension", "Open a different file; run as administrator; check for pending updates"],
+          ["Computer running very slowly", "Too many processes, low RAM, malware, or storage nearly full", "Task Manager → sort by CPU/RAM → close non-essential processes; check storage"],
+          ["Browser not loading websites", "DNS issue, cache problem, or browser extension conflict", "Clear browser cache; try incognito mode; disable extensions; try a different browser"],
+          ["File will not open / shows wrong icon", "Missing associated application or corrupted file", "Check the file extension; try opening with a different application; verify the file is not corrupt"],
+          ["Printer or peripheral not recognised", "Driver issue, USB connection, or Windows update conflict", "Unplug and replug USB; check Device Manager for errors; reinstall driver"],
+          ["Saved file cannot be found", "Saved to wrong location, or OneDrive sync issue", "Search file name in Windows search; check Recent Files in the application; check OneDrive"],
+          ["Permission denied error", "No admin rights, or file locked by another process", "Run as administrator; check if the file is open in another program; log out and back in"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "'Have you tried turning it off and on again' is a joke that is also genuinely true. A restart clears RAM, terminates stuck processes, applies pending updates, and re-establishes network connections. It fixes roughly 30% of all software problems. Do it first — before you spend 45 minutes diagnosing a problem that a reboot would have solved in 90 seconds."
+      },
+      {
+        "type": "heading",
+        "text": "Browser Troubleshooting",
+        "level": 2
+      },
+      {
+        "type": "list",
+        "style": "bullet",
+        "items": [
+          "Clear cache and cookies: Settings → Clear browsing data → select cache and cookies → Last 24 hours or All time",
+          "Try incognito/private mode: Opens without extensions or cached data — if the problem disappears in incognito, an extension is the likely cause",
+          "Disable extensions: Settings → Extensions → disable all, then re-enable one at a time to identify the problem extension",
+          "Try a different browser: If Chrome fails, try Edge or Firefox. If the problem follows you across browsers, it is not a browser issue — it is a network or server issue",
+          "Check the URL: Is it HTTP when HTTPS is required? Is there a typo?"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · WORK THE SCENARIOS",
+        "text": "For each scenario, write: (1) the troubleshooting step you take first, (2) what information you gather to isolate the cause, (3) the most likely fix:\n\nScenario A: A student's Google Slides presentation was working yesterday. Today, every image shows a broken link icon.\n\nScenario B: A teacher clicks 'Print' but the printer is not listed in the print dialog, even though it was working last week.\n\nScenario C: A Google Form the class has been using starts returning a 'This form is no longer accepting responses' error message mid-session.\n\nDocument each as: Problem → Likely Cause → First Fix → How to verify it worked."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A user reports their browser loads YouTube but not their company's internal website. The most useful next troubleshooting step is:",
+          "options": ["Reinstall the browser", "Try the internal website in incognito mode", "Try the internal website in a different browser", "Check whether the internal website loads on a different device on the same network"],
+          "correctIndex": 3,
+          "explanation": "Checking a different device on the same network isolates whether the problem is the website/server, the network, or the specific machine/browser. If it works on another device, the problem is local to the original machine. If it fails everywhere, the problem is the server or network."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "true_false",
+          "text": "When troubleshooting a software issue, applying multiple fixes simultaneously is the fastest way to resolve the problem.",
+          "correctAnswer": false,
+          "explanation": "False. Applying multiple fixes at once means you cannot identify which fix solved the problem. This creates a knowledge gap that will slow you down the next time the same issue occurs. Test one change at a time, then document what worked."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "short_answer",
+          "text": "A colleague says their Excel file 'just disappeared' — they cannot find it anywhere on their computer. Describe a structured three-step troubleshooting process to help them locate or recover the file, identifying what you would check at each step and why.",
+          "marks": 3,
+          "explanation": "Award 1 mark each for three logical steps: (1) Search using Windows Search — type the filename; check Recent Files in Excel (File → Recent) which lists the last 25 files regardless of where they were saved. (2) Check the default save location — Documents, Desktop, OneDrive — and sort by date modified to find recently changed files. (3) Check OneDrive Version History or Windows Previous Versions (right-click folder → Properties → Previous Versions) in case the file was overwritten or deleted from a synced folder. Also check the Recycle Bin."
+        }
+      }
+    ]
+  },
+  {
+    "id": "planning-an-interactive-project",
+    "title": "Planning an Interactive Project",
+    "estimatedMinutes": 45,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #4207 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟡 IN PROGRESS | Sprint 12 | Project Milestone\n\nCongratulations — you have just been given your first project ownership. A local community group wants a simple interactive quiz embedded on their website: users answer 5 questions and get a personalised result. You have 4 weeks and a small team. You have worked across enough deliverables this sprint to know the tools. Now you need to plan before you build. Nobody ships without a brief and a timeline."
+      },
+      {
+        "type": "paragraph",
+        "text": "An interactive project is any digital product where user input changes what happens next — a quiz with personalised results, a survey that branches based on answers, a calculator, a booking form. Planning these projects follows the same professional process regardless of the size: brief, scope, wireframe, task list, timeline. Skipping any step always costs more time than it saves."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Project Brief", "definition": "A short document that defines the problem, the target audience, the required features, the constraints (budget, deadline, technology), and the success criteria. Every project starts here." },
+          { "term": "Scope", "definition": "The defined boundary of what the project will and will not include. Scope creep — features added without adjusting the timeline — is the most common reason projects run late." },
+          { "term": "Wireframe", "definition": "A low-fidelity visual layout showing the structure and placement of elements on each screen, without colour, fonts, or final content. Used to agree on structure before committing to design." },
+          { "term": "MVP (Minimum Viable Product)", "definition": "The smallest version of a product that still fulfils its core purpose and can be tested with users. Building MVP first prevents wasted effort on features no one needs." },
+          { "term": "Gantt Chart", "definition": "A bar chart showing project tasks on the vertical axis and time on the horizontal axis. Each bar shows when a task starts and ends, making overlaps and dependencies visible." }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Step 1: Write the Project Brief",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "A project brief answers six questions before any code or design begins. For the community quiz project, the brief might read: 'Problem: The group lacks a way to engage new visitors on their website. Audience: Adults 18–50 in Bunbury, not necessarily tech-savvy. Features: 5-question multiple-choice quiz, personalised result message (3 possible outcomes). Constraints: Must work on mobile, use free tools only, ready in 4 weeks. Success criteria: At least 60% of quiz takers reach the results screen. Out of scope: User accounts, leaderboards, email collection.'"
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "The brief is the only document where the client cannot change their mind for free. Every feature added after the brief is signed costs time and usually money. I have never had a client who did not want to add something halfway through — that is human nature. But if the brief is solid and both parties signed off, that conversation becomes 'we can do that in the next sprint' instead of 'we are now 2 weeks late.'"
+      },
+      {
+        "type": "heading",
+        "text": "Step 2: Wireframe Before You Build",
+        "level": 2
+      },
+      {
+        "type": "list",
+        "style": "bullet",
+        "items": [
+          "Wireframes are quick: A 3-screen wireframe can be sketched in 15 minutes. That 15 minutes saves hours of rebuilding screens after the client sees something they did not expect.",
+          "Lo-fi is fine at this stage: Boxes, lines, and labels. No colour, no final fonts. The goal is agreement on structure, not approval of aesthetics.",
+          "Tools: Paper and pencil, Google Slides, draw.io (free), or Figma (free for students). The tool does not matter — the thinking does.",
+          "Label interactions: Show what happens when the user clicks a button. An arrow from 'Submit' to 'Results Screen' makes the flow clear without writing a line of code.",
+          "Get sign-off before designing: Show the wireframe to the client (or teacher) and confirm the structure before investing design time."
+        ]
+      },
+      {
+        "type": "task",
+        "title": "Write a Brief and Wireframe for Your Interactive Project",
+        "software": "Google Docs (brief) + draw.io or paper (wireframe)",
+        "intro": "Complete this planning sequence for a simple 5-question quiz for a community group.",
+        "steps": [
+          "Open Google Docs. Create a document titled 'Project Brief — Community Quiz'.",
+          "Write the six sections: Problem, Target Audience, Features (list 3–5), Constraints, Success Criteria, Out of Scope.",
+          "For Features, distinguish between MVP (what must be there) and Nice to Have (what could be added in a future sprint).",
+          "On a new page or in draw.io, sketch three screens: (1) Welcome screen with a Start button, (2) Question screen with question text, 4 answer options, and a Next button, (3) Results screen with a personalised message based on the score.",
+          "On the wireframe, add arrows showing navigation flow: Welcome → Question 1 → ... → Question 5 → Results.",
+          "Share the brief and wireframe with a classmate. Ask: 'Would you know what to build from this?' Revise based on their response."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Step 3: Build a Timeline",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Week", "Tasks", "Deliverable"],
+        "rows": [
+          ["Week 1", "Brief finalised, wireframes approved, tool selected (e.g. Google Forms + logic, or Genially)", "Signed brief + wireframe"],
+          ["Week 2", "Build quiz structure, write all 5 questions and 3 result messages", "Working quiz prototype (no styling)"],
+          ["Week 3", "Apply design (colours, fonts, images), test on mobile, fix bugs", "Styled quiz, passing mobile test"],
+          ["Week 4", "User testing with 3 people outside the team, final fixes, embed on test page", "Delivered interactive quiz"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · BUILD YOUR GANTT",
+        "text": "Using Google Sheets or draw.io, create a Gantt chart for your 4-week quiz project. It must show:\n- All tasks from the timeline above, broken into daily or every-2-day blocks\n- Which tasks can run in parallel (e.g., design and writing questions) and which must wait (e.g., testing can only happen after building)\n- Who is responsible for each task (use your group member names)\n- One buffer day per week — because things always take longer than expected\n\nColour code: Planning (blue), Building (orange), Design (green), Testing (red)"
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS IN THE REVIEW",
+        "text": "1. Halfway through Week 2, the client emails asking if you can add a leaderboard that saves high scores. You said yes. Explain exactly what went wrong in this conversation and what you should have said instead.\n2. Your wireframe shows a 'Previous' button on the question screen, but you forgot to show what happens if the user clicks it on Question 1. What document should capture this edge case, and why is it a risk to leave it unresolved before building?\n3. Your MVP is a working 5-question quiz. Your teammate suggests 'while we're at it' adding animations, a countdown timer, and social media sharing before the deadline. Apply the MoSCoW method to these three features and explain your reasoning."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "In project management, 'scope creep' refers to:",
+          "options": ["The gradual increase in project team size over time", "Features or requirements being added after the project brief is finalised without adjusting the timeline", "The project delivery date being moved earlier than planned", "The client reducing the features requested mid-project"],
+          "correctIndex": 1,
+          "explanation": "Scope creep is the gradual addition of features, changes, or requirements beyond the original agreed scope — without corresponding adjustments to timeline, budget, or resources. It is one of the most common causes of project delays and overruns."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "What is the primary purpose of a low-fidelity wireframe in the planning phase?",
+          "options": ["To show the client the final colour scheme and font choices", "To agree on screen structure and user flow before investing in design", "To replace the project brief with a visual document", "To test whether the code runs correctly"],
+          "correctIndex": 1,
+          "explanation": "Low-fidelity wireframes show structure — what appears on each screen and how screens connect — not aesthetics. They allow all stakeholders to agree on layout and flow cheaply, before design or development time is invested."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "short_answer",
+          "text": "A team is building a booking system for a local gym. They jump straight into coding without a project brief or wireframes. Two weeks later, the client says 'I thought there would be a way for members to cancel their own bookings' — a feature not discussed. (a) What planning step would have captured this requirement before development started? (b) What is the professional way to respond to the client's request given it was not in the original scope?",
+          "marks": 4,
+          "explanation": "Award 2 marks: A project brief with a complete features list AND wireframes showing the user's full journey through the booking process would have prompted the client to review and approve each screen — making the absence of a cancellation feature visible and resolvable before coding. Award 2 marks: The professional response acknowledges the request without agreeing to absorb the work for free: 'That's a great feature and we can absolutely add it. As it's outside the original scope, we'll need to discuss extending the timeline by [X days] and adjusting the project cost. I'll send you a revised brief for your approval.'"
+        }
+      }
+    ]
+  },
+  {
+    "id": "application-skills-review-quiz",
+    "title": "Application Skills Review Quiz — Unit 2",
+    "estimatedMinutes": 15,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #4208 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟢 SPRINT REVIEW | Sprint 12 | Assessment\n\nThis is your end-of-sprint assessment. Rory reviews every intern on how well they can apply what they have learned — not just recall it. These questions reflect the kind of decisions you will make on the job. No notes, no Googling. Show your thinking."
+      },
+      {
+        "type": "callout",
+        "variant": "info",
+        "heading": "📋 Unit 2 Application Skills — What You've Covered",
+        "text": "This topic covered seven professional tool sets:\n1. Presentation Software Features — Slide Masters, transitions, Presenter View\n2. Creating and Presenting — 6×6 rule, embedded charts, delivery skills\n3. Audio Software — Audacity workflow, file formats, WAV vs MP3\n4. Image Manipulation — Photopea, raster vs vector, format selection, background removal\n5. Online Database Tools — Google Sheets, VLOOKUP, data validation, when to use SQL\n6. Software Troubleshooting — systematic process, common fixes, documentation\n7. Planning an Interactive Project — brief, wireframe, MVP, Gantt chart"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "Editing the Slide Master in a 30-slide PowerPoint affects:",
+          "options": ["Only the currently selected slide", "All slides that use the default layout", "Only title slides", "No slides — the Slide Master is for reference only"],
+          "correctIndex": 1,
+          "explanation": "The Slide Master is a global template — changes to it (fonts, colours, logos) propagate automatically to all slides using that layout, eliminating the need for manual updates."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "true_false",
+          "text": "A WAV file and an MP3 file of the same recording will have identical file sizes.",
+          "correctAnswer": false,
+          "explanation": "False. WAV is an uncompressed, lossless format and is significantly larger than MP3. A 3-minute WAV at 44.1 kHz / 16-bit is approximately 30 MB; the same recording as MP3 at 192 kbps is approximately 4.3 MB."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A client provides a logo as a JPEG for use on a dark website background. The main problem with using a JPEG logo is:",
+          "options": ["JPEG files are too large for web use", "JPEG does not support transparency", "JPEG cannot be displayed in a browser", "JPEG logos always appear blurry"],
+          "correctIndex": 1,
+          "explanation": "JPEG does not support an alpha channel (transparency). A JPEG logo on a dark background displays with a white rectangle around it. PNG or SVG formats with transparent backgrounds are required."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "true_false",
+          "text": "In software troubleshooting, applying multiple fixes at the same time is the most efficient approach when the issue is urgent.",
+          "correctAnswer": false,
+          "explanation": "False. Applying multiple fixes simultaneously makes it impossible to identify what actually solved the problem, preventing you from building a reliable knowledge base. Even under time pressure, test changes one at a time."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "VLOOKUP in Google Sheets is primarily used to:",
+          "options": ["Sort data alphabetically", "Pull related data from another table using a matching value", "Validate that data entries are in the correct format", "Create pivot table summaries"],
+          "correctIndex": 1,
+          "explanation": "VLOOKUP searches the first column of a range for a specified value and returns data from a specified column in the same row — used to connect related data across sheets without manually copying it."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "true_false",
+          "text": "The purpose of a project brief is to agree on the scope of work before development begins, protecting both the client and the team from later disagreements about what was promised.",
+          "correctAnswer": true,
+          "explanation": "True. A project brief defines the problem, features, constraints, and success criteria. It protects the client from receiving something different from what they expected, and protects the team from scope creep and unpaid additional work."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "The 6×6 rule in presentation design states that slides should have:",
+          "options": ["6 slides per presentation and 6 minutes of speaking time", "6 bullet points maximum per slide and 6 words maximum per bullet", "6 images per slide and 6 colours in the palette", "6 fonts maximum and 6 animation effects per slide"],
+          "correctIndex": 1,
+          "explanation": "The 6×6 rule: no more than 6 bullet points per slide, no more than 6 words per bullet. This prevents slides from becoming text walls and forces the presenter to communicate detail verbally rather than reading from the screen."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "true_false",
+          "text": "A low-fidelity wireframe should show the final colours, fonts, and imagery of the finished product.",
+          "correctAnswer": false,
+          "explanation": "False. A low-fidelity wireframe shows structure and layout only — boxes, labels, and arrows — without final design elements. The purpose is to agree on structure cheaply before committing time to visual design."
+        }
+      }
+    ]
+  }
+]

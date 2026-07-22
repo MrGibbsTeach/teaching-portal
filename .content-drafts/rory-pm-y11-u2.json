@@ -1,0 +1,623 @@
+[
+  {
+    "id": "the-design-process",
+    "title": "The Design Process",
+    "estimatedMinutes": 20,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #4301 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟡 IN PROGRESS | Sprint 1 — Team Onboarding\n\nWelcome to your first team project. You are not working solo anymore — this is a 4-person sprint. Before a single line gets written or a pixel gets pushed, every person on this team needs to understand how the Launchpad takes a client brief from a napkin sketch to a shipped product. This is that briefing."
+      },
+      {
+        "type": "paragraph",
+        "text": "The design process is a structured, iterative method for solving problems through digital products. Every professional IT team follows some version of it — whether they call it Agile, Design Thinking, or the SDLC. The specific names vary; the underlying logic does not. You discover the problem, define the solution, design it, build it, deliver it, and evaluate it. Then you do it again, better."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Design Process", "definition": "A structured, repeatable sequence of phases used to move from a client's problem to a tested digital solution: Discover → Define → Design → Develop → Deliver → Evaluate." },
+          { "term": "Iteration", "definition": "Repeating a phase of the design process based on feedback or testing results. Professional products go through multiple iterations — version 1.0 is never the final answer." },
+          { "term": "Prototype", "definition": "An early, simplified version of a product built to test an idea before full development. Can be a paper sketch, a clickable wireframe, or partial working code." },
+          { "term": "Deliverable", "definition": "A concrete output produced at the end of each phase — a brief, a wireframe, a tested prototype, a deployed product. Deliverables prove that each phase was completed." },
+          { "term": "Feedback Loop", "definition": "The structured process of gathering user or client reactions to a prototype or product and using those reactions to inform the next iteration." }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "The Six Phases and Their Deliverables",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Phase", "What Happens", "Who Is Involved", "Deliverable"],
+        "rows": [
+          ["Discover", "Research the problem — interview users, review existing solutions, identify pain points", "Client, users, whole team", "Research summary, user insights, problem statement"],
+          ["Define", "Agree on exactly what you are solving and for whom. Write the project brief.", "Team + client sign-off", "Signed project brief, scope document, success criteria"],
+          ["Design", "Wireframe screens, choose tools, agree on visual direction", "Designer (Leo), PM (Rory), client review", "Approved wireframes, style guide, feature list"],
+          ["Develop", "Build the product — code, configure, populate with content", "Developer, data lead (Sloane)", "Working prototype, then testable product"],
+          ["Deliver", "Test with real users, fix bugs, hand over to client", "Whole team + users", "Tested product, user testing report, handover notes"],
+          ["Evaluate", "Review: did it meet the brief? What would you do differently?", "Whole team", "Evaluation report, lessons learned, next-sprint recommendation"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "The phase most teams skip is Discover. They think they already know the problem. They are wrong. I have watched teams build technically excellent solutions to the wrong problem. Spending two hours talking to actual users before you write a line of code is the most valuable two hours in the project. Do not negotiate it away."
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · MAP YOUR PROCESS",
+        "text": "You have been asked to build a simple interactive quiz for a local community group (sound familiar?). Map out what you would do in each of the six phases for this specific project:\n\nFor each phase: (1) List one specific action you would take. (2) Name the deliverable you would produce. (3) Estimate how long it would take in hours or days.\n\nPresent as a table. When you are done, identify which phase will be most challenging for your team and why."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS IN THE REVIEW",
+        "text": "1. A team skips the Define phase and goes straight from Discover to Design. Three weeks later, the client says the product does not match what they asked for. What specifically went wrong, and which deliverable from the Define phase would have prevented this?\n2. After delivering the product, the client reports that one core feature is difficult to use. Under the design process, which phase deals with this, and what should the team produce in response?\n3. What is the difference between a prototype and the final delivered product? Give a specific example of each for the community quiz project."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "Which phase of the design process involves gathering information about the problem from users and clients before proposing any solutions?",
+          "options": ["Define", "Develop", "Discover", "Deliver"],
+          "correctIndex": 2,
+          "explanation": "The Discover phase focuses on research — understanding the problem from the user's perspective, identifying pain points, and gathering evidence before any solutions are proposed. Jumping to solutions without this phase is one of the most common causes of building the wrong product."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A team releases a product, collects user feedback, makes improvements, and releases a second version. This process is best described as:",
+          "options": ["Scope creep", "Iteration", "The Define phase", "A Gantt chart"],
+          "correctIndex": 1,
+          "explanation": "Iteration is the process of repeating a cycle — building, testing, learning, improving — based on feedback. Professional software products are never 'finished' in a single pass; they improve through repeated iterations."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "short_answer",
+          "text": "A client tells a student team: 'Just build me something — I'll know what I want when I see it.' (a) What risk does this approach create for the team? (b) Which phase of the design process exists specifically to prevent this situation, and what document does that phase produce? (c) Describe what that document should include.",
+          "marks": 5,
+          "explanation": "Award 2 marks: Without clear requirements upfront, the team has no definition of success — the client can always say 'this isn't what I meant' regardless of what is built. Award 1 mark: The Define phase. Award 2 marks: The project brief/scope document should include the problem being solved, target audience, specific features (in scope), what will NOT be included (out of scope), constraints (timeline, tools, budget), and measurable success criteria."
+        }
+      }
+    ]
+  },
+  {
+    "id": "time-management-skills",
+    "title": "Time Management Skills",
+    "estimatedMinutes": 20,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #4302 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟡 IN PROGRESS | Sprint 1 — Day 3\n\nThe feature list for the community quiz project is now confirmed. You have 4 weeks and 4 team members. The client brief has 11 tasks. Nobody on the team has done this before. Your job today: plan the sprint before the chaos starts. I need a Trello board with every task assigned and due by end of today."
+      },
+      {
+        "type": "paragraph",
+        "text": "Time is the only resource in a project that cannot be recovered when it is wasted. Money can be reallocated; scope can be reduced; deadlines rarely move. Professionals who manage their time well do not work harder than those who do not — they work with a clearer picture of what matters most, what can wait, and what has to be cut."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Eisenhower Matrix", "definition": "A prioritisation tool that sorts tasks by urgency (time-sensitive) and importance (high impact). Four quadrants: Do Now (urgent+important), Schedule (important, not urgent), Delegate (urgent, not important), Eliminate (neither)." },
+          { "term": "MoSCoW Method", "definition": "A project prioritisation framework: Must Have (essential for launch), Should Have (important but not critical), Could Have (nice-to-have if time permits), Won't Have (excluded from this version)." },
+          { "term": "Sprint", "definition": "A fixed time period (typically 1–2 weeks) in which a team commits to completing a defined set of tasks. At the end of the sprint, work is reviewed and the next sprint is planned." },
+          { "term": "Gantt Chart", "definition": "A visual project timeline: tasks on the vertical axis, time on the horizontal axis. Bars show each task's start and end date. Dependencies between tasks are shown with arrows." }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "The Eisenhower Matrix in Practice",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Quadrant", "Urgent?", "Important?", "Action", "Project Example"],
+        "rows": [
+          ["Do Now", "Yes", "Yes", "Complete immediately", "Client meeting today, site is down, deadline is tomorrow"],
+          ["Schedule", "No", "Yes", "Block time for it this week", "Writing quiz questions, designing the results screen"],
+          ["Delegate", "Yes", "No", "Assign to a team member", "Replying to a client CC email, attending a non-essential meeting"],
+          ["Eliminate", "No", "No", "Remove from the list", "Adding social media sharing before the MVP is even working"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "MoSCoW for the Quiz Project",
+        "level": 2
+      },
+      {
+        "type": "list",
+        "style": "bullet",
+        "items": [
+          "Must Have: 5 working questions, 3 personalised result messages, mobile-responsive layout, works without logging in",
+          "Should Have: Progress indicator (Question 2 of 5), restart quiz button, readable on both light and dark screens",
+          "Could Have: Animated transitions between questions, share result on social media",
+          "Won't Have (this sprint): User accounts, leaderboard, result email capture"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "Your first estimate will be wrong. Your second estimate will be less wrong. After ten projects, you will still underestimate by 20%. Build buffer into your schedule — not as a sign of poor planning, but as a sign of experience. A schedule with no slack is not a plan; it is a wish."
+      },
+      {
+        "type": "task",
+        "title": "Set Up a Project Trello Board",
+        "software": "Trello (trello.com — free account)",
+        "intro": "Create a digital task board for the community quiz project using Trello's Kanban structure.",
+        "steps": [
+          "Go to trello.com and create a free account if you do not have one.",
+          "Create a new board called 'Community Quiz — Bunbury Tech Launchpad'.",
+          "Create four lists: Backlog | In Progress | Review | Done",
+          "Add one card (task) per feature from the project's Must Have list. Give each card a descriptive title.",
+          "Open each card and add: a due date, the name of the person responsible, and a checklist of 2–3 sub-steps.",
+          "Drag your top-priority task to 'In Progress'.",
+          "Add two cards from the Should Have list to the Backlog.",
+          "Take a screenshot of the board to attach to your project brief as evidence of sprint planning."
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · EISENHOWER YOUR LIST",
+        "text": "Apply the Eisenhower Matrix to the following 8 tasks for the quiz project. Assign each to one of the four quadrants and give one sentence of reasoning:\n\n1. Fix the bug where Question 3 always shows the wrong answer\n2. Design a beautiful animated loading screen\n3. Reply to the client's email about the launch date (she needs confirmation today)\n4. Write the five quiz questions and answer options\n5. Set up the shared Trello board before the team meeting\n6. Research whether social media sharing buttons would increase engagement\n7. Build the quiz's results screen logic\n8. Check that the quiz works on an iPhone (client specifically mentioned mobile)"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "In the MoSCoW method, a 'Could Have' feature is best described as:",
+          "options": ["A feature that must be present for the product to function", "A feature that is desirable but will be excluded if time runs short", "A feature that will definitely be delivered in the next version", "A feature that has been permanently removed from the project"],
+          "correctIndex": 1,
+          "explanation": "A 'Could Have' feature is a nice-to-have that the team would like to include but will cut if necessary to meet the deadline with the 'Must Have' and 'Should Have' features intact. It is not a promise — it is conditional on available time."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "true_false",
+          "text": "A task that is urgent but not important should be completed by the team leader personally, as urgency indicates high priority.",
+          "correctAnswer": false,
+          "explanation": "False. In the Eisenhower Matrix, tasks that are urgent but not important should be delegated to another team member — not necessarily the leader. The leader's time should be protected for important tasks. Urgency alone is not a measure of importance."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "short_answer",
+          "text": "A 4-week project team has 3 Must Have features and 5 Should Have features. At the end of Week 3, the Must Haves are complete but 4 of the 5 Should Haves remain unfinished. (a) Using the MoSCoW method, what decision should the team make? (b) How should the team communicate this to the client, and what evidence from their planning process helps support the conversation?",
+          "marks": 4,
+          "explanation": "Award 2 marks: The MoSCoW method exists precisely for this scenario — Should Haves are deliberately deprioritised relative to Must Haves. The team should deliver the 3 Must Haves on deadline and formally note the 4 remaining Should Haves as candidates for the next sprint, not failures. Award 2 marks: The team should communicate proactively (not wait for the client to ask), reference the original brief where Should Haves were explicitly categorised as 'important but not critical,' and propose a next sprint to address the remaining items. The brief and sprint plan are the evidence."
+        }
+      }
+    ]
+  },
+  {
+    "id": "representing-a-design",
+    "title": "Representing a Design",
+    "estimatedMinutes": 25,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #4303 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟡 IN PROGRESS | Sprint 2 — Design Phase\n\nThe client has approved the project brief. Now they want to see what it will look like before we build it. Your job: produce a design representation clear enough that the client — who is not technical — can understand exactly what they are getting, screen by screen. No guessing. No 'trust me, it'll look good.' Show them."
+      },
+      {
+        "type": "paragraph",
+        "text": "Design representations are the visual language of IT projects. They let a team show, rather than describe, what a product will look like and how it will behave — before any code is written. The right representation at the right fidelity level saves enormous amounts of rework. The wrong representation (too detailed too early, or too vague too late) creates confusion and missed expectations."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Wireframe", "definition": "A low-fidelity layout showing the structure and content placement on each screen without colour, fonts, or imagery. The skeleton of a digital product." },
+          { "term": "Mockup", "definition": "A high-fidelity static visual showing the final appearance of each screen — colours, fonts, imagery, spacing — without interactive behaviour." },
+          { "term": "Prototype", "definition": "A clickable or interactive model that simulates how the product will behave, allowing users to test flows without working code." },
+          { "term": "Fidelity", "definition": "The level of visual and functional detail in a design representation. Low-fidelity = rough sketches; high-fidelity = near-final appearance and interaction." },
+          { "term": "Flowchart", "definition": "A diagram using standard symbols (rectangles for processes, diamonds for decisions, arrows for flow) to map out the steps and logic of a system or user journey." }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Types of Design Representation",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Type", "Fidelity", "Tool", "Best Used When"],
+        "rows": [
+          ["Sketch / Paper wireframe", "Very low", "Pencil + paper", "First 10 minutes of the Design phase — rapid idea generation"],
+          ["Digital wireframe", "Low", "draw.io, Google Slides, Figma", "Getting client agreement on screen structure before visual design"],
+          ["Mockup", "High", "Figma, Canva, Adobe XD", "Client approval of visual design before development begins"],
+          ["Clickable prototype", "High", "Figma, Marvel, Protopie", "User testing — simulating the real product experience without code"],
+          ["Flowchart", "N/A (logic, not visual)", "draw.io, Lucidchart", "Mapping user journeys, decision logic, or system data flow"],
+          ["Storyboard", "Medium", "Draw.io, slides, paper", "Planning video, animation, or multi-screen interaction sequences"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "Draw it before you build it, or you will build it twice. I have never seen a team spend too long on wireframes. I have watched teams spend six weeks rebuilding a product because the client saw the first version and said 'that is not what I imagined.' A wireframe costs 30 minutes. A rebuild costs 3 weeks."
+      },
+      {
+        "type": "task",
+        "title": "Create a Three-Screen Wireframe",
+        "software": "draw.io (diagrams.net — free, browser-based) or paper",
+        "intro": "Produce a wireframe for a simple event RSVP application using boxes, labels, and arrows.",
+        "steps": [
+          "Open diagrams.net in your browser (free, no login required). Choose 'Blank Diagram'.",
+          "Draw Screen 1 — Welcome: A title ('Community Event RSVP'), one sentence of intro text, and a large 'Register Now' button. Use rectangles for text blocks and a filled rectangle for the button.",
+          "Draw Screen 2 — Registration Form: Fields for First Name, Last Name, Email, Number of guests (dropdown). A 'Submit' button at the bottom.",
+          "Draw Screen 3 — Confirmation: 'Thank you!' heading, a summary of the registration details, and a 'Add to Calendar' button.",
+          "Connect the screens with arrows: 'Register Now' → Screen 2; 'Submit' → Screen 3.",
+          "Add a label on the Submit arrow: '→ Validates form; shows error if fields are empty'.",
+          "Label each screen with its name at the top (e.g., '1. Welcome Screen').",
+          "Export as PNG and paste into your project documentation."
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · FLOWCHART THE LOGIC",
+        "text": "The community quiz has this logic: Users answer 5 questions. If they score 0–2 correct: show Result A. If they score 3–4: show Result B. If they score 5: show Result C. All users see a 'Try Again' button.\n\nUsing draw.io or paper, create a flowchart that maps this complete logic. Use:\n- Rectangles for processes ('Show Question 1', 'Add 1 to score', 'Show Result A')\n- Diamonds for decisions ('Is answer correct?', 'Is this the last question?', 'What is the final score?')\n- Arrows with Yes/No labels on decisions\n\nYour flowchart must be complete enough that a developer could build the quiz from it without asking you any clarifying questions."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A team is in the first day of the Design phase and needs to get client agreement on screen structure quickly. The most appropriate design representation is:",
+          "options": ["A high-fidelity Figma mockup with final colours and fonts", "A clickable prototype built in Marvel", "A low-fidelity digital wireframe using boxes and labels", "The final coded product deployed to a test server"],
+          "correctIndex": 2,
+          "explanation": "A low-fidelity wireframe is the most appropriate at this stage — it communicates structure quickly and cheaply without investing design time that may be wasted if the client requests changes to the layout."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "Which design representation would be most appropriate for user testing — allowing users to experience the app's navigation without working code?",
+          "options": ["A paper sketch", "A system flowchart", "A clickable prototype", "A data-flow diagram"],
+          "correctIndex": 2,
+          "explanation": "A clickable prototype (built in Figma, Marvel, or similar tools) allows users to tap/click through screens and experience the navigation flow without any real code behind it. This is the standard tool for usability testing before development."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "short_answer",
+          "text": "A development team shows the client a finished, fully coded product for the first time. The client says the layout is completely wrong — buttons are in the wrong places and the signup form should come before the feature overview, not after. (a) At which point in the design process should this feedback have been gathered? (b) Which design representation, if used correctly, would have prevented this outcome? Explain how.",
+          "marks": 4,
+          "explanation": "Award 2 marks: This feedback should have been gathered during the Design phase, after producing wireframes and before any development began. Wireframes exist precisely to validate screen layout and navigation structure at a stage where changes are cheap. Award 2 marks: A low-fidelity wireframe showing all screens and the navigation flow between them would have made the button placement and screen order visible to the client. Client sign-off on the wireframe is agreement on structure — any layout complaint after that point is a scope change, not a free fix."
+        }
+      }
+    ]
+  },
+  {
+    "id": "applying-design-elements-and-principles",
+    "title": "Applying Design Elements and Principles",
+    "estimatedMinutes": 25,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #4304 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟡 IN PROGRESS | Sprint 2 — Design Review\n\nLeo has handed you the visual design draft for the community quiz. Before it goes to the client, it goes through a design review. Your task: evaluate the design against the principles of balance, contrast, emphasis, unity, and proportion — and against accessibility standards. If it fails any of these checks, the design does not leave this room."
+      },
+      {
+        "type": "paragraph",
+        "text": "Design elements and principles are not just for graphic designers — they are the shared vocabulary IT teams use when reviewing digital products. When Rory says 'the call-to-action button is not getting enough emphasis' or 'the colour contrast is going to fail WCAG,' everyone on the team needs to know what that means and what to do about it."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Visual Hierarchy", "definition": "The arrangement of elements so that the most important content is seen first — achieved through size, colour, contrast, and position." },
+          { "term": "Whitespace", "definition": "Empty space around and between elements. Whitespace is not wasted — it gives elements room to breathe, improves readability, and draws attention to what remains." },
+          { "term": "WCAG 2.1 AA", "definition": "Web Content Accessibility Guidelines — the international standard for accessible digital content. AA level requires a minimum contrast ratio of 4.5:1 for normal text and 3:1 for large text." },
+          { "term": "Contrast Ratio", "definition": "A numerical measure of the difference in luminance between two colours — foreground text and its background. A higher ratio means more readable text for users with vision impairments." }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Applying the Principles to Digital Products",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Principle", "Definition", "Digital Application", "Common Mistake"],
+        "rows": [
+          ["Balance", "Visual weight distributed evenly across the screen", "Centre-align key content; use grid layouts so elements don't cluster on one side", "Every element left-aligned, creating heavy left side and empty right"],
+          ["Emphasis", "One element visually stands out as the most important", "The primary call-to-action button is larger, brighter, or higher contrast than surrounding elements", "Making everything bold — nothing stands out when everything competes"],
+          ["Contrast", "Differences between elements to create visual interest and ensure readability", "Dark text on light background (or vice versa); WCAG AA contrast ratio minimum 4.5:1", "Grey text on white background — fails contrast check and is unreadable in sunlight"],
+          ["Unity", "All elements feel like they belong to the same system", "Consistent font, colour palette (2–3 colours), spacing, and button styles throughout", "Different button styles on every screen — looks like multiple products stitched together"],
+          ["Proportion", "Relative sizes of elements reflect their relative importance", "Heading larger than body text; call-to-action button larger than secondary links", "Decorative elements as large as or larger than functional content"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Accessibility: WCAG 2.1 AA",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Accessibility is not optional — in many government and institutional contexts it is a legal requirement, and in all professional contexts it is an ethical one. Approximately 4.4% of the population has some degree of colour vision deficiency; many more struggle with low-contrast text on mobile screens in sunlight. WCAG 2.1 AA defines measurable, testable standards that ensure digital products work for users with vision, hearing, cognitive, or motor impairments."
+      },
+      {
+        "type": "list",
+        "style": "bullet",
+        "items": [
+          "Contrast ratio 4.5:1 minimum for normal text (check with WebAIM Contrast Checker — free, browser-based)",
+          "Contrast ratio 3:1 minimum for large text (18px+ or 14px+ bold)",
+          "All images must have descriptive alt text — screen readers read this aloud to visually impaired users",
+          "Interactive elements (buttons, links) must be reachable by keyboard (Tab key) — not just by mouse",
+          "Error messages must explain what went wrong, not just show a red border",
+          "Do not convey information through colour alone — colourblind users will miss it"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "Accessibility is the only design standard where getting it wrong hurts a real person. When light grey text on a white background is unreadable, a person with low vision cannot access your product. That is not an aesthetic preference — it is a barrier. And in government or education contexts, it may be a legal violation under the Disability Discrimination Act 1992."
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · DESIGN CRITIQUE",
+        "text": "You are reviewing two design options for the community quiz results screen:\n\nOption A: White background, light grey text (#AAAAAA), a small 'Try Again' button in the corner, no consistent spacing, question text and result text are the same size.\n\nOption B: Off-white background (#FAFAFA), dark charcoal text (#2D2D2D), large centred result heading with the personalised message, a prominent orange 'Try Again' button below, consistent 24px padding on all sides.\n\nFor each option: (a) Identify which design principles it applies well and which it violates. (b) Check the contrast ratios for the text using the descriptions — does either option risk failing WCAG AA? (c) Which option would you approve for the client? Justify with specific principle references."
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "According to WCAG 2.1 AA guidelines, the minimum contrast ratio for normal-sized body text is:",
+          "options": ["2:1", "3:1", "4.5:1", "7:1"],
+          "correctIndex": 2,
+          "explanation": "WCAG 2.1 AA requires a minimum contrast ratio of 4.5:1 for normal-sized text. Large text (18px+ or 14px+ bold) requires 3:1. The enhanced AAA standard requires 7:1 for normal text — but AA is the widely adopted professional standard."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A website uses red colour to indicate an error and green to indicate success, but uses no other visual indicator (such as an icon or text label). This design fails which accessibility consideration?",
+          "options": ["Contrast ratio requirement", "Font size minimum", "Colour-only information encoding", "Alt text requirement"],
+          "correctIndex": 2,
+          "explanation": "Using colour as the only indicator of meaning fails users with colour vision deficiency (colour blindness). WCAG requires that information conveyed through colour is also conveyed through another means — such as an icon (✓/✗) or a text label ('Success' / 'Error')."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "short_answer",
+          "text": "A junior designer presents a quiz interface with these characteristics: five different font styles used across the screens, the 'Submit' button is the same size as all other text, all answer options are in 11px light grey on a white background. (a) Identify three design principle violations. (b) Suggest a specific fix for each.",
+          "marks": 5,
+          "explanation": "Award 5 marks (1 for violation + 1 for fix per pair, 1 bonus for WCAG reference): (1) Unity violation — 5 fonts creates visual chaos; fix: use 2 fonts maximum (heading + body) applied consistently across all screens. (2) Emphasis violation — Submit button the same size as body text; fix: make the Submit button larger, bolder, and higher contrast than surrounding content — it should be the most visually prominent element. (3) Contrast violation (and WCAG AA failure) — 11px light grey on white will almost certainly fail the 4.5:1 contrast requirement and is difficult to read; fix: use dark text (#2D2D2D or similar) on the white background and verify with WebAIM Contrast Checker."
+        }
+      }
+    ]
+  },
+  {
+    "id": "evaluating-a-digital-solution",
+    "title": "Evaluating a Digital Solution",
+    "estimatedMinutes": 25,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #4305 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟡 IN PROGRESS | Sprint 4 — Project Closeout\n\nThe community quiz is built, tested, and live. The client is happy. Now comes the hardest part: evaluating it honestly. Not 'we think it went well' — a structured review against the original brief, user testing observations, and a written evaluation report. This report goes into the Launchpad's project portfolio. Make it professional."
+      },
+      {
+        "type": "paragraph",
+        "text": "Evaluation is the discipline of answering 'did this product actually solve the problem?' — not 'does the team like how it turned out?' The difference between those two questions is the difference between self-congratulation and professional accountability. Evaluation uses evidence: user testing results, success criteria checklists, and honest analysis of what worked and what did not."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Success Criteria", "definition": "The measurable conditions defined in the project brief that the product must meet to be considered complete. 'At least 60% of users reach the results screen' is a success criterion. 'It looks good' is not." },
+          { "term": "Usability", "definition": "How easily a target user can accomplish their goal using the product without assistance, confusion, or error. Measured through observation — not by asking 'was that easy?'" },
+          { "term": "Heuristic Evaluation", "definition": "An expert review of a product against a set of established usability principles (heuristics) to identify problems without formal user testing." },
+          { "term": "Evaluation Report", "definition": "A formal document summarising how the product was evaluated, what was found, and what recommendations follow. The basis for future improvements." }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Evaluation Methods",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Method", "What It Involves", "Best For", "Limitation"],
+        "rows": [
+          ["Success criteria checklist", "Compare product features against the original brief requirements one by one", "Confirming functional completeness", "Does not measure how well features work for users"],
+          ["Peer testing", "Team members test each other's work using a structured task list", "Finding obvious bugs and usability issues quickly", "Team members know the product — they may skip steps a real user would try"],
+          ["User testing (observation)", "Real target users complete tasks while you observe — do not help, do not explain", "Identifying genuine usability problems", "Takes time to recruit and run properly"],
+          ["Heuristic evaluation", "Expert reviews product against Nielsen's 10 usability heuristics", "Identifying systematic design problems without users", "Requires experience to apply correctly; expert opinions may vary"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Nielsen's 10 Usability Heuristics (Simplified)",
+        "level": 2
+      },
+      {
+        "type": "list",
+        "style": "numbered",
+        "items": [
+          "Visibility of system status: Users should always know what is happening (loading indicators, progress bars, confirmation messages)",
+          "Match with the real world: Use language and concepts the user knows — not system jargon",
+          "User control and freedom: Allow users to undo actions and exit processes they entered by accident",
+          "Consistency and standards: Same words, icons, and actions mean the same thing throughout the product",
+          "Error prevention: Design the system so mistakes are hard to make — confirmation dialogs, disabled submit buttons until required fields are complete",
+          "Recognition over recall: Make options visible — do not require users to remember information from previous steps",
+          "Flexibility and efficiency: Shortcuts for expert users without confusing beginners",
+          "Aesthetic and minimalist design: Show only necessary information — every extra element competes for attention",
+          "Help users recover from errors: Error messages explain what went wrong in plain language and suggest a fix",
+          "Help and documentation: If a user needs help, it should be easy to find and written in clear language"
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · RORY QUINN, BUNBURY TECH LAUNCHPAD",
+        "text": "The single hardest part of evaluation is ego. You built this product. You tested it yourself a hundred times. You cannot see its problems anymore. The first user who gets confused for 30 seconds trying to find the 'Start' button is not a bad user — they are proof that you are too close to your own work. Watch them. Don't explain. Write down everything."
+      },
+      {
+        "type": "task",
+        "title": "Run a Peer Test and Write an Evaluation Report",
+        "software": "Any browser (for testing the quiz); Google Docs (for the report)",
+        "intro": "Conduct a structured peer test of your quiz project and document your findings professionally.",
+        "steps": [
+          "Prepare a task list for your tester: 'Start the quiz. Answer all questions. Note any moment where you are unsure what to do. Reach the results screen.'",
+          "Open the quiz on a device your tester has not seen before. Hand them the device. Do not explain anything.",
+          "Observe silently. Note every moment of hesitation, every wrong click, every confused expression. Do not intervene.",
+          "After the test, ask three questions: (1) Was there any point where you did not know what to do? (2) Was any text hard to read? (3) What would you change?",
+          "Open Google Docs. Create a document titled 'Community Quiz — Evaluation Report'.",
+          "Write four sections: Purpose, Method (what you did), Findings (3 specific observations), Recommendations (1 actionable change per finding).",
+          "Compare your findings to the original success criteria from your brief — did the product meet them? State yes/no for each criterion with evidence."
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · RORY IS IN THE REVIEW",
+        "text": "1. Your evaluation report says 'overall the product worked well and the client seemed happy.' Explain why this statement does not constitute an evaluation and what specific evidence you would need instead to make it useful.\n2. During user testing, your tester completed all 5 questions successfully but could not find the 'Try Again' button on the results screen for 45 seconds. According to Nielsen's heuristics, which specific heuristic does this violate? What is the fix?\n3. Your success criteria included 'at least 60% of quiz takers reach the results screen.' After launch, you check the analytics and find only 38% of users who start the quiz complete it. What does this tell you, and what is your recommended next action?"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "During user testing, the evaluator notices the tester is hesitating and looking confused on the payment screen. The correct action for the evaluator is to:",
+          "options": ["Immediately explain how the payment screen works", "Ask 'are you finding this difficult?' and offer help", "Silently observe and note the hesitation as a finding", "Stop the test and rebuild the payment screen before continuing"],
+          "correctIndex": 2,
+          "explanation": "The evaluator's job during user testing is to observe silently and record what the user does — including confusion, hesitation, and errors. Explaining the interface invalidates the test because you are giving information that a real user would not receive."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "An evaluation finding states that 'the product looks professional.' This is best categorised as:",
+          "options": ["A usability finding supported by evidence", "A success criterion that has been met", "A subjective observation that lacks evidential value", "A Nielsen heuristic violation"],
+          "correctIndex": 2,
+          "explanation": "'Looks professional' is a subjective opinion with no measurable basis. A useful evaluation finding is specific and evidence-based: 'During testing, 3 of 5 users were unable to locate the Submit button within 10 seconds' is a finding. 'The design looks professional' is an opinion."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "short_answer",
+          "text": "A student's evaluation report for their quiz project consists entirely of: 'The quiz looked good. All 5 questions worked. We fixed one bug. The client was happy.' Your task: rewrite this evaluation as a professional section that includes (a) one piece of evidence about usability, (b) one success criterion assessment with evidence, (c) one specific recommendation for the next iteration.",
+          "marks": 5,
+          "explanation": "Award 5 marks for a rewrite that demonstrates: (a) 1–2 marks for a usability observation with evidence — e.g., 'During peer testing, 2 of 3 testers hesitated for more than 15 seconds on Question 3, suggesting the answer options may be ambiguous' — specific, observable, quantified. (b) 1–2 marks for a criteria-based assessment — e.g., 'The success criterion of 60% of users reaching the results screen was met: in peer testing, all 3 users completed the quiz successfully. Analytics data from the first week of live deployment would be needed to confirm at scale.' (c) 1 mark for a specific, actionable recommendation — e.g., 'Recommendation: Revise the phrasing of Question 3 to eliminate ambiguity between options B and C, and re-test with 2 new users before next sprint.'"
+        }
+      }
+    ]
+  },
+  {
+    "id": "project-management-review-quiz",
+    "title": "Project Management Review Quiz — Unit 2",
+    "estimatedMinutes": 15,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #4306 · BUNBURY TECH LAUNCHPAD",
+        "text": "Status: 🟢 SPRINT RETROSPECTIVE | Final Assessment\n\nSprint complete. Project shipped. Now the retrospective: what do you actually know? Rory assesses every intern at the end of a project cycle. These questions are the kind of thing you get asked in a job interview or on day one at a new placement. Show your thinking."
+      },
+      {
+        "type": "callout",
+        "variant": "info",
+        "heading": "📋 Unit 2 Project Management — What You've Covered",
+        "text": "This topic covered five core PM skills:\n1. The Design Process — 6 phases, deliverables, the cost of skipping Discovery\n2. Time Management — Eisenhower Matrix, MoSCoW method, Gantt charts, sprint planning\n3. Representing a Design — wireframes, mockups, prototypes, flowcharts\n4. Design Elements and Principles — applied to digital products, WCAG accessibility standards\n5. Evaluating a Digital Solution — success criteria, user testing, heuristics, evaluation reports"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "In the design process, which phase involves research — interviewing users and identifying the real problem — before any solution is proposed?",
+          "options": ["Define", "Design", "Discover", "Develop"],
+          "correctIndex": 2,
+          "explanation": "The Discover phase focuses entirely on research and understanding the problem from the user's perspective — before any solutions are proposed or designed. Skipping it is one of the leading causes of building the wrong product."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "true_false",
+          "text": "A MoSCoW 'Could Have' feature must be delivered in the current project sprint.",
+          "correctAnswer": false,
+          "explanation": "False. 'Could Have' features are desirable but are deliberately cut if the team runs short of time. They are candidates for a future sprint, not commitments for the current one."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A low-fidelity wireframe is most useful for:",
+          "options": ["Demonstrating the final visual appearance to the client", "Agreeing on screen structure and user flow before design begins", "Testing the product with real users", "Writing the project evaluation report"],
+          "correctIndex": 1,
+          "explanation": "Low-fidelity wireframes show layout and structure — not aesthetics. Their purpose is to get agreement on what goes where before any design or development time is invested."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "true_false",
+          "text": "During user testing, the evaluator should explain the interface to the tester when they appear confused.",
+          "correctAnswer": false,
+          "explanation": "False. Explaining the interface to the tester invalidates the test. The tester's confusion is the finding — it is evidence that the design needs to be improved. Intervening removes that evidence."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "WCAG 2.1 AA requires a minimum contrast ratio for normal body text of:",
+          "options": ["2:1", "3:1", "4.5:1", "7:1"],
+          "correctIndex": 2,
+          "explanation": "WCAG 2.1 AA requires a 4.5:1 contrast ratio for normal text. This ensures text is readable for users with low vision or colour vision deficiency. Tools like WebAIM Contrast Checker verify compliance."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "true_false",
+          "text": "A project evaluation is complete when the team agrees the product 'looks good and worked well.'",
+          "correctAnswer": false,
+          "explanation": "False. A professional evaluation requires evidence — comparison against measurable success criteria, specific usability findings from testing, and actionable recommendations. Subjective opinions are not evidence."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "In the Eisenhower Matrix, a task that is urgent but not important should be:",
+          "options": ["Completed immediately by the team leader", "Scheduled for later in the week", "Delegated to another team member", "Eliminated from the project"],
+          "correctIndex": 2,
+          "explanation": "Urgent but not important tasks should be delegated — they need to happen now, but they do not require the team leader's attention or highest-skill resources. The leader should protect their time for important tasks."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "true_false",
+          "text": "An evaluation report recommendation should be specific enough that the next team member could implement it without further clarification.",
+          "correctAnswer": true,
+          "explanation": "True. A recommendation like 'improve the button' is not actionable. 'Increase the Submit button size to at least 44×44px and change background colour to #E8650A to improve contrast and tap target size on mobile' is actionable — specific enough to implement without asking questions."
+        }
+      }
+    ]
+  }
+]

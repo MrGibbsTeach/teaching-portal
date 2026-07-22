@@ -1,0 +1,621 @@
+[
+  {
+    "id": "types-of-computer-crime",
+    "title": "Types of Computer Crime",
+    "estimatedMinutes": 20,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #3001 · REGIONAL ETHICS TECH GROUP",
+        "text": "INTERN BRIEFING: A Bunbury SME has contacted the Ethics Tech Group after two of their staff clicked a suspicious email link. They want us to deliver a 30-minute staff briefing on the types of cybercrime targeting Australian businesses right now and what staff should watch for. Your job this week: research the five most common attack types, gather Australian statistics, and prepare the briefing materials."
+      },
+      {
+        "type": "paragraph",
+        "text": "Computer crime — also called cybercrime — is any criminal offence that involves a computer, network, or digital data. In Australia, the Australian Cyber Security Centre (ACSC) received over 94,000 cybercrime reports in 2022–23, equivalent to one report every six minutes. As IT professionals, we are often the first line of defence and the first people colleagues call when something goes wrong."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Cybercrime", "definition": "Any criminal activity conducted using a computer, network, or digital device — including unauthorised access, fraud, identity theft, and harassment." },
+          { "term": "Hacking", "definition": "Gaining unauthorised access to a computer system or network, typically by exploiting software vulnerabilities or stolen credentials." },
+          { "term": "Phishing", "definition": "A social engineering attack where fraudulent emails, messages, or websites impersonate legitimate organisations to trick users into revealing passwords, payment details, or clicking malicious links." },
+          { "term": "Ransomware", "definition": "Malicious software that encrypts a victim's files and demands payment (a ransom) for the decryption key. Increasingly used to extort Australian businesses and government agencies." },
+          { "term": "Identity Theft", "definition": "Illegally obtaining and using another person's personal information — name, address, Tax File Number, bank details — to commit fraud or other crimes." }
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · DR. ELARA FINCH, REGIONAL ETHICS TECH GROUP",
+        "text": "The biggest myth I encounter is that cybercrime only targets large corporations. The reality is that small businesses are often the preferred target precisely because their defences are weaker and they are less likely to have a dedicated security team. Every person in that briefing room is a potential entry point."
+      },
+      {
+        "type": "heading",
+        "text": "Common Types of Cybercrime",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Crime Type", "How It Works", "Australian Example / Legislation"],
+        "rows": [
+          ["Hacking / Unauthorised Access", "Exploiting software flaws or stolen passwords to enter systems without permission", "Criminal Code Act 1995 (Cth) s 477.1 — up to 10 years imprisonment"],
+          ["Phishing", "Fake emails or websites that mimic banks, myGov, or ATO to steal credentials", "Criminal Code Act 1995 (Cth) s 477.3 — up to 3 years imprisonment"],
+          ["Ransomware", "Malware encrypts all files; attacker demands crypto payment for the key", "Affects WA Health, Medibank (2022 data breach affecting 9.7M Australians)"],
+          ["Identity Theft", "Using stolen personal data to open accounts, obtain loans, or file false tax returns", "Criminal Code Act 1995 (Cth) s 372 — up to 5 years imprisonment"],
+          ["Cyberstalking / Harassment", "Using technology to repeatedly intimidate, monitor, or harass a person", "Criminal Code WA s 338D — up to 3 years imprisonment"],
+          ["Online Fraud / Scams", "Investment scams, romance fraud, fake marketplace listings designed to extract money", "ACCC reports Australians lost $3.1 billion to scams in 2022"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Anatomy of a Phishing Attack",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Phishing is responsible for over 80% of reported cyber incidents in Australian businesses. The attack relies entirely on the victim's trust, urgency, or fear — not on sophisticated technical exploitation. Understanding its structure is essential for staff training."
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · SPOT THE PHISH",
+        "text": "Analyse the following email and identify every red flag present:\n\n---\nFROM: noreply-security@ato-gov-alerts.com.au\nSUBJECT: ⚠️ URGENT: Your tax refund of $2,847.00 requires immediate verification\n\nDear Valued Taxpayer,\n\nThe Australian Taxation Office has processed a refund in your name. To receive your payment within 24 hours, you must verify your identity immediately via the secure portal below.\n\nFailure to verify within 24 hours will result in the refund being cancelled and a compliance audit initiated.\n\n[CLICK HERE TO VERIFY NOW]\n\nAustralian Taxation Office | ato.gov.au\n---\n\nList: (1) the suspicious elements in the sender address, (2) the psychological tactics used to create urgency, (3) what would happen if you clicked the link, and (4) what a legitimate ATO communication looks like instead."
+      },
+      {
+        "type": "heading",
+        "text": "Legislation: The Criminal Code Act 1995 (Cth)",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "The primary federal legislation governing cybercrime in Australia is the Criminal Code Act 1995 (Cth), specifically Part 10.7 — Computer Offences. This legislation applies across all Australian states and territories and provides the basis for federal prosecution of cybercrime. Key offences include: unauthorised access (s 477.1), unauthorised modification of data (s 477.2), and unauthorised impairment of electronic communication (s 477.3)."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · DR. FINCH IS IN THE REVIEW",
+        "text": "Before your briefing materials leave this office, answer these:\n1. A company director says 'we're too small to be a target.' Using the ACSC statistics and what you know about how attackers select victims, how do you respond?\n2. A staff member receives a phone call from someone claiming to be from Microsoft saying their computer has a virus. Is this a crime? Which type? What should they do?\n3. Under the Criminal Code Act 1995 (Cth), what is the difference between s 477.1 (unauthorised access) and s 477.2 (unauthorised modification)? Why does the distinction matter for prosecutions?"
+      },
+      {
+        "type": "heading",
+        "text": "Check Your Understanding",
+        "level": 2
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A staff member receives an email appearing to be from their bank asking them to click a link and confirm their password. This is most accurately described as:",
+          "options": ["Ransomware", "Hacking", "Phishing", "Identity theft"],
+          "correctIndex": 2,
+          "explanation": "This is phishing — a social engineering attack using a fake email to trick the recipient into revealing credentials. Ransomware encrypts files; hacking involves direct system intrusion; identity theft may occur as a consequence but the attack method itself is phishing."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "Under which Australian legislation are most federal cybercrime offences prosecuted?",
+          "options": ["Privacy Act 1988 (Cth)", "Spam Act 2003 (Cth)", "Criminal Code Act 1995 (Cth)", "Copyright Act 1968 (Cth)"],
+          "correctIndex": 2,
+          "explanation": "The Criminal Code Act 1995 (Cth) Part 10.7 contains the primary federal computer offence provisions. The Privacy Act covers data handling; the Spam Act governs commercial email; the Copyright Act protects creative works."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "short_answer",
+          "text": "A small business owner receives a pop-up message stating that all their files have been encrypted and they must pay $5,000 in Bitcoin within 48 hours to regain access. (a) Identify the type of cybercrime. (b) Describe two immediate steps the business owner should take. (c) Identify which section of the Criminal Code Act 1995 (Cth) the attacker has most likely violated.",
+          "marks": 5,
+          "explanation": "Award 1 mark for correctly identifying ransomware. Award 1 mark each for two valid immediate steps (disconnect from the network, do not pay the ransom, contact ACSC/police, restore from backup). Award 1 mark for s 477.2 (unauthorised modification of data). Award 1 bonus mark for mentioning the ACSC ReportCyber portal (cyber.gov.au)."
+        }
+      }
+    ]
+  },
+  {
+    "id": "copyright-and-intellectual-property",
+    "title": "Copyright and Intellectual Property",
+    "estimatedMinutes": 20,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #3002 · REGIONAL ETHICS TECH GROUP",
+        "text": "INTERN BRIEFING: A client has sent us a draft marketing brochure with four images sourced from a Google Image search. They've asked us to review it before it goes to print. Your task: determine whether each image can be legally used, identify what licence or permission is required for each, and advise the client on how to find compliant alternatives. This happens in every project — you need to know copyright law cold."
+      },
+      {
+        "type": "paragraph",
+        "text": "Intellectual property (IP) law protects the creations of the human mind — including written works, images, music, software code, and digital designs. Copyright is the most relevant form of IP for IT professionals because it applies automatically to almost everything digital the moment it is created, without any registration required. Ignoring copyright is not a grey area: it is a civil and potentially criminal offence."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Intellectual Property (IP)", "definition": "Legal rights that protect creations of the mind, including copyright, patents, trademarks, and trade secrets." },
+          { "term": "Copyright", "definition": "Automatic legal protection granted to original creative works (text, images, music, code, video) that gives the creator exclusive rights to copy, distribute, and adapt the work." },
+          { "term": "Fair Dealing", "definition": "Exceptions under the Copyright Act 1968 (Cth) that permit limited use of copyrighted material without permission, specifically for research, criticism, news reporting, or education." },
+          { "term": "Creative Commons (CC)", "definition": "A set of standardised licences that allow creators to grant the public specific permissions to use their work, while retaining copyright." },
+          { "term": "Moral Rights", "definition": "Non-economic rights under the Copyright Act 1968 (Cth) that protect the creator's right to be attributed as the author and to have their work treated with integrity — these cannot be sold or transferred." }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Copyright Act 1968 (Cth) — What You Must Know",
+        "level": 2
+      },
+      {
+        "type": "list",
+        "style": "bullet",
+        "items": [
+          "Copyright is automatic — no registration, no © symbol needed. The moment an original work is created and recorded, it is protected.",
+          "Duration: For most works, copyright lasts for the life of the creator plus 70 years. After that, the work enters the public domain.",
+          "What is protected: Literary works (including code), artistic works (images, illustrations), musical works, films, sound recordings, and broadcasts.",
+          "What is NOT protected: Ideas, facts, titles, names, slogans, or styles. You can write about the same idea as a copyrighted work — you cannot copy the expression.",
+          "Fair Dealing exceptions allow limited use without permission for: research or study, criticism or review, news reporting, parody or satire, and disability-related access.",
+          "Moral rights mean that even if you buy all rights to a photo, you must still credit the original photographer — and you cannot modify it in a way that damages their reputation."
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · DR. ELARA FINCH, REGIONAL ETHICS TECH GROUP",
+        "text": "I have seen projects delayed by weeks and invoices disputed over images sourced from Google. 'It came up in search results' is not a licence. Google Images is an index of the internet, not a free image library. If you did not pay for it or find it under a clear Creative Commons licence, assume you do not have permission to use it."
+      },
+      {
+        "type": "heading",
+        "text": "Creative Commons Licences",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Licence", "Symbol", "What You Can Do", "Restriction"],
+        "rows": [
+          ["CC BY", "BY", "Use, adapt, and redistribute for any purpose", "Must credit the creator"],
+          ["CC BY-SA", "BY-SA", "Use and adapt, including commercially", "Must credit + share under same licence"],
+          ["CC BY-NC", "BY-NC", "Use and adapt freely", "Non-commercial use only; must credit"],
+          ["CC BY-ND", "BY-ND", "Use and redistribute as-is", "No adaptations or modifications allowed"],
+          ["CC0 (Public Domain)", "CC0", "Use for any purpose with no restrictions", "No attribution required"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · IMAGE LICENCE AUDIT",
+        "text": "The client's brochure contains these four image sources. For each, determine: (a) whether it can be used as-is, (b) what conditions apply, and (c) what you would recommend to the client:\n\n1. A photo found via Google Images with no licence information visible on the source website.\n2. An image from Unsplash.com (which uses a licence allowing free commercial use with optional attribution).\n3. A photo from Flickr labelled 'CC BY-NC 2.0' — the brochure is for a commercial client.\n4. An original photo taken by the client's staff member using a company camera.\n\nWrite your recommendations as a short licence clearance report addressed to the client."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · DR. FINCH IS IN THE REVIEW",
+        "text": "1. A developer copies 40 lines of code from Stack Overflow into a commercial application without checking the licence. The code was posted by a user without specifying a licence. What are the copyright implications, and what should the developer have done?\n2. A student uses a famous photograph in a school assignment about media ethics, writing a critical analysis of the image. They do not seek permission from the photographer. Is this copyright infringement? Justify your answer with reference to the Copyright Act 1968 (Cth).\n3. A company rebrands and removes the photographer's name from all images on their website. The images were purchased under a standard commercial licence. Have they violated copyright law? Which specific right has been breached?"
+      },
+      {
+        "type": "heading",
+        "text": "Check Your Understanding",
+        "level": 2
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "Under Australian copyright law, when does copyright protection begin for an original digital image?",
+          "options": ["When the creator registers it with the Copyright Office", "When the creator adds the © symbol", "The moment the image is created and recorded", "After the creator publishes it publicly"],
+          "correctIndex": 2,
+          "explanation": "Copyright is automatic under the Copyright Act 1968 (Cth) — it applies the moment an original work is created and fixed in a material form (including digital). No registration, publication, or © symbol is required."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A teacher wants to use a short clip from a documentary in a classroom lesson to illustrate a point for students. Under the Copyright Act 1968 (Cth), this use is most likely permitted under:",
+          "options": ["Moral rights", "The CC BY licence", "The fair dealing exception for education", "Public domain provisions"],
+          "correctIndex": 2,
+          "explanation": "The Copyright Act 1968 (Cth) includes fair dealing exceptions that permit limited use of copyrighted material for educational purposes without permission. The use must be a genuine educational purpose, not a substitute for purchasing the work."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "short_answer",
+          "text": "A graphic designer creates a logo for a client and transfers 'all copyright' to the client. Six months later, the client significantly alters the logo in a way the designer believes is artistically degrading. (a) Can the designer prevent this alteration? Refer to a specific right. (b) If the redesigned logo is used publicly without acknowledging the original designer, has a second right been violated? Name it.",
+          "marks": 4,
+          "explanation": "Award 2 marks: the designer can potentially claim breach of their right of integrity (part of moral rights under Copyright Act 1968 (Cth) s 195AI) if the treatment of the work is prejudicial to the author's honour or reputation. Award 2 marks: removing attribution violates the right of attribution (s 193), which requires the author to be identified whenever the work is used. Moral rights cannot be transferred and survive the sale of copyright."
+        }
+      }
+    ]
+  },
+  {
+    "id": "the-spam-act-2003",
+    "title": "The Spam Act 2003",
+    "estimatedMinutes": 15,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #3003 · REGIONAL ETHICS TECH GROUP",
+        "text": "INTERN BRIEFING: A new client runs a small e-commerce business and wants to send a promotional email to 1,500 people — including former customers, people who signed up on their website three years ago, and about 200 email addresses purchased from a marketing list company. Before they send anything, our team needs to advise whether their plan is legally compliant. If they get this wrong, the ACMA can fine them up to $2.2 million per day. Your task: audit their approach and advise."
+      },
+      {
+        "type": "paragraph",
+        "text": "The Spam Act 2003 (Cth) is Australia's primary legislation governing commercial electronic messages. It applies to emails, SMS messages, and instant messages sent for commercial purposes. The Act is enforced by the Australian Communications and Media Authority (ACMA), which has the power to investigate complaints, issue fines, and pursue court action against repeat offenders. In 2022, ACMA fined an Australian company $2.5 million for sending over 121 million spam messages."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Commercial Electronic Message (CEM)", "definition": "Any electronic message (email, SMS, instant message) sent with a commercial purpose — promoting goods, services, or business opportunities." },
+          { "term": "Consent", "definition": "Under the Spam Act 2003 (Cth), permission from the recipient to receive commercial messages — either express (directly given) or inferred (implied from a business relationship)." },
+          { "term": "Unsubscribe Mechanism", "definition": "A clearly visible, functional option in every commercial message that allows the recipient to opt out. The sender must process unsubscribe requests within 5 business days." },
+          { "term": "ACMA", "definition": "Australian Communications and Media Authority — the federal regulator responsible for enforcing the Spam Act 2003 (Cth) and the Do Not Call Register Act 2006 (Cth)." }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "The Three Rules of the Spam Act",
+        "level": 2
+      },
+      {
+        "type": "list",
+        "style": "numbered",
+        "items": [
+          "CONSENT: You must have the recipient's consent — either express (they ticked a box or signed up) or inferred (they are an existing customer within the last 2 years). Purchased email lists do NOT provide consent.",
+          "IDENTIFY: Every commercial message must clearly identify the individual or organisation that sent it, including contact details. 'noreply@newsletter.com' without a business name and address is non-compliant.",
+          "UNSUBSCRIBE: Every commercial message must include a working unsubscribe option that is easy to find and use. Unsubscribe requests must be honoured within 5 business days."
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · COMPLIANCE AUDIT",
+        "text": "Review the client's email campaign plan and identify each violation:\n\nPlan: Send a promotional email to 1,500 recipients. The list includes: (A) 800 customers who purchased in the last 12 months, (B) 500 people who subscribed on the website 3 years ago — the subscription form said 'sign up for our newsletter', (C) 200 addresses from a purchased marketing list. The email includes: the business name and phone number, a promotional offer, and a small 'unsubscribe' link in light grey 6pt font at the very bottom.\n\nFor each segment (A, B, C) and each email element: state whether it complies with the Spam Act and why. Recommend exactly what the client must change before sending."
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · DR. ELARA FINCH, REGIONAL ETHICS TECH GROUP",
+        "text": "The most expensive sentence in digital marketing is 'but I thought they consented when they gave us their business card.' Consent under the Spam Act must be verifiable and specific. If you cannot show ACMA exactly when, where, and how a recipient agreed to receive commercial messages, you do not have consent."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · DR. FINCH IS IN THE REVIEW",
+        "text": "1. A business sends a single transactional email — an order confirmation — that also includes a promotional offer for 10% off the customer's next purchase. Does the Spam Act apply to this email? Why or why not?\n2. A recipient clicks 'unsubscribe' on 15 March. The business processes the request on 25 March (8 business days later). Have they violated the Spam Act? What are the potential consequences?\n3. The Spam Act covers 'commercial electronic messages.' Does it apply to an SMS from a political party during an election campaign? Explain why or why not — check the Act's exemptions."
+      },
+      {
+        "type": "heading",
+        "text": "Check Your Understanding",
+        "level": 2
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "Under the Spam Act 2003 (Cth), how many business days does a sender have to process an unsubscribe request?",
+          "options": ["2 business days", "5 business days", "7 business days", "10 business days"],
+          "correctIndex": 1,
+          "explanation": "The Spam Act 2003 (Cth) requires senders to process unsubscribe requests within 5 business days. Failure to do so is a violation that can be reported to and investigated by the ACMA."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A business purchases an email list of 5,000 addresses from a marketing company and sends a promotional email to all of them. Under the Spam Act 2003 (Cth), this is:",
+          "options": ["Permitted if the business includes an unsubscribe link", "Permitted if the email clearly identifies the sender", "A violation because the recipients have not consented", "Permitted if fewer than half of the addresses are Australian"],
+          "correctIndex": 2,
+          "explanation": "Purchasing an email list does not provide consent. The Spam Act 2003 (Cth) requires the sender to have either express consent (the recipient directly agreed to receive messages) or inferred consent (existing customer relationship). A purchased list provides neither."
+        }
+      }
+    ]
+  },
+  {
+    "id": "digital-citizenship-and-cyberbullying",
+    "title": "Digital Citizenship and Cyberbullying",
+    "estimatedMinutes": 20,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #3004 · REGIONAL ETHICS TECH GROUP",
+        "text": "INTERN BRIEFING: A local school has contracted the Ethics Tech Group to help develop a 'Digital Citizenship Charter' for their students and staff. They want a document that is practical, grounded in law, and actually changes behaviour — not just a list of rules nobody reads. Your task this week: research the legal framework around digital citizenship and cyberbullying in WA, then draft three meaningful charter clauses that address online conduct, digital footprints, and bystander responsibility."
+      },
+      {
+        "type": "paragraph",
+        "text": "Digital citizenship is the responsible, ethical, and legal use of technology to participate in society. As digital tools become integral to education, work, and relationships, the standards we hold ourselves to online carry the same moral and legal weight as our offline behaviour. For IT professionals, understanding these standards is not just personal — it shapes the advice we give clients and the systems we build."
+      },
+      {
+        "type": "keyTerms",
+        "items": [
+          { "term": "Digital Footprint", "definition": "The permanent, searchable trail of data left by online activity — including posts, comments, likes, purchases, and login records. Unlike spoken words, digital content can persist indefinitely." },
+          { "term": "Cyberbullying", "definition": "The use of digital technology to repeatedly harass, threaten, humiliate, or intimidate another person. This includes social media posts, messages, images, and exclusion from online groups." },
+          { "term": "eSafety Commissioner", "definition": "An independent statutory office established by the Online Safety Act 2021 (Cth) to investigate cyberbullying, non-consensual sharing of intimate images, and harmful online content in Australia." },
+          { "term": "Bystander", "definition": "A person who witnesses harmful online behaviour but is not directly involved as either the target or the perpetrator. Bystanders have the power to intervene, report, or escalate." }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Forms of Cyberbullying",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Type", "Description", "Example"],
+        "rows": [
+          ["Harassment", "Sending repeated threatening or insulting messages", "Sending daily abusive DMs to a classmate"],
+          ["Cyberstalking", "Using technology to monitor, track, or intimidate a person", "Tracking someone's location via social media check-ins and showing up"],
+          ["Exclusion", "Deliberately excluding someone from online groups or activities", "Removing a person from a group chat and creating a new one without them"],
+          ["Outing / Doxxing", "Sharing someone's private information publicly without consent", "Posting a person's home address or private photos online"],
+          ["Impersonation", "Creating fake profiles or accounts to deceive others or damage reputation", "Setting up a fake Instagram account using someone's photos"],
+          ["Denigration / Flaming", "Posting false, damaging, or humiliating content about someone", "Starting a poll asking 'who is the most annoying person in Year 11'"]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · DR. ELARA FINCH, REGIONAL ETHICS TECH GROUP",
+        "text": "A digital footprint is not a metaphor — it is a legal record. Every post, comment, and message is timestamped, logged by the platform, and in many cases legally discoverable in court proceedings. I have seen university offers rescinded over social media posts made at age 15. The internet does not forget, and it rarely forgives."
+      },
+      {
+        "type": "heading",
+        "text": "Legal Framework in Western Australia",
+        "level": 2
+      },
+      {
+        "type": "list",
+        "style": "bullet",
+        "items": [
+          "Online Safety Act 2021 (Cth): Established the eSafety Commissioner with powers to order platforms to remove cyberbullying content targeting Australians. Applies to all major social media platforms.",
+          "Criminal Code WA s 338D: Stalking — includes using digital technology to repeatedly monitor or intimidate a person. Penalty: up to 3 years imprisonment.",
+          "Criminal Code Act 1995 (Cth) s 474.17: Using a carriage service to menace, harass, or offend. Penalty: up to 3 years imprisonment.",
+          "Defamation law: Publishing false statements that damage someone's reputation — including online — is actionable in civil courts regardless of the author's age.",
+          "Reporting: In WA, cyberbullying can be reported to the eSafety Commissioner (esafety.gov.au), WA Police, and the relevant platform."
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · DRAFT THE CHARTER",
+        "text": "Write three clauses for the school's Digital Citizenship Charter. Each clause must:\n- Address one of these areas: (1) online conduct and language, (2) managing your digital footprint, or (3) bystander responsibility\n- Be written in plain language a Year 7 student can understand\n- Reference at least one specific legal consequence or reporting avenue\n- Include one practical, positive action students can take (not just a 'don't')\n\nPresent as: Clause 1, Clause 2, Clause 3, each 2-3 sentences."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · DR. FINCH IS IN THE REVIEW",
+        "text": "1. A student screenshots a private message sent to them and posts it publicly to embarrass the sender. The original message was unkind. Does the fact that the original message was unkind affect whether the student who shared it has done anything legally or ethically wrong? Explain.\n2. A bystander sees cyberbullying happening in a group chat but stays silent because 'it's not my business.' Under the Online Safety Act 2021 (Cth), does a bystander have any legal obligations? What are the practical actions available to them?\n3. Your charter clause on digital footprints says 'think before you post.' Your manager says this is too vague to change behaviour. Write a revised clause that is specific enough to actually guide a student's decision-making in the moment."
+      },
+      {
+        "type": "heading",
+        "text": "Check Your Understanding",
+        "level": 2
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "Which Australian government body has the power to order social media platforms to remove cyberbullying content targeting Australian children?",
+          "options": ["Australian Federal Police", "eSafety Commissioner", "ACMA", "ACCC"],
+          "correctIndex": 1,
+          "explanation": "The eSafety Commissioner, established under the Online Safety Act 2021 (Cth), has the power to investigate cyberbullying and order platforms to remove harmful content targeting Australian users, particularly children."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "Creating a fake social media profile using another person's photos and name to damage their reputation is best described as:",
+          "options": ["Harassment", "Flaming", "Impersonation", "Exclusion"],
+          "correctIndex": 2,
+          "explanation": "Impersonation involves creating fake accounts or profiles to deceive others or damage the real person's reputation. It can also constitute fraud and defamation depending on what is posted via the fake account."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "short_answer",
+          "text": "Two students are involved in an ongoing social media argument. Student A posts a fake rumour about Student B on a public page. Student B screenshots private messages from Student A and posts them publicly in retaliation. (a) Identify one potential legal issue with Student A's action. (b) Identify one potential legal issue with Student B's action. (c) Describe the role a bystander in their friend group could play in de-escalating the situation.",
+          "marks": 5,
+          "explanation": "Award 2 marks: Student A may have committed defamation by publishing false statements damaging to reputation, or harassment under the Criminal Code Act 1995 (Cth) s 474.17. Award 2 marks: Student B's action of sharing private messages may constitute an invasion of privacy or harassment — 'two wrongs' is not a legal defence. Award 1 mark for a practical bystander action: privately messaging both parties, reporting the posts to the platform/eSafety Commissioner, or alerting a trusted adult."
+        }
+      }
+    ]
+  },
+  {
+    "id": "health-impacts-of-technology",
+    "title": "Health Impacts of Technology",
+    "estimatedMinutes": 20,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #3005 · REGIONAL ETHICS TECH GROUP",
+        "text": "INTERN BRIEFING: A regional employer has asked our team to contribute to their Workplace Wellness Program — specifically a module on the health impacts of digital work. They need evidence-based content covering both physical and mental health risks, plus practical strategies staff can implement immediately. Your job: research the evidence, identify the risks, and help design the 'Digital Wellbeing Policy' section of their program."
+      },
+      {
+        "type": "paragraph",
+        "text": "Technology has transformed how we work, communicate, and relax — but prolonged, unmanaged use carries measurable physical and mental health risks. For IT professionals, who typically spend 6–10 hours per day at a screen, understanding and managing these risks is a professional responsibility as much as a personal one. The Work Health and Safety Act 2011 (WA) requires employers to address these risks in their workplace policies."
+      },
+      {
+        "type": "heading",
+        "text": "Physical Health Risks",
+        "level": 2
+      },
+      {
+        "type": "table",
+        "headers": ["Health Risk", "Primary Cause", "Symptoms", "Evidence-Based Prevention"],
+        "rows": [
+          ["Repetitive Strain Injury (RSI)", "Repetitive keyboard/mouse use, poor wrist position", "Wrist pain, numbness, tingling, reduced grip strength", "Ergonomic peripherals, micro-breaks every 30 min, proper wrist alignment"],
+          ["Digital Eye Strain", "Prolonged screen use, blue light, poor contrast, glare", "Dry eyes, blurred vision, headaches, difficulty focusing", "20-20-20 rule, screen brightness calibration, anti-glare filter, blink consciously"],
+          ["Neck and Back Pain", "Poor posture, non-adjustable chair, monitor height wrong", "Stiffness, aching shoulders, lower back pain", "Monitor at eye level, lumbar support, regular movement breaks"],
+          ["Tension Headaches", "Screen glare, dehydration, eye strain, stress", "Frontal or temple pain after screen sessions", "Correct lighting, hydration (2L/day), scheduled breaks"],
+          ["Sedentary Behaviour", "Long unbroken periods of sitting", "Increased risk of cardiovascular disease, weight gain", "Sit-stand desk, 5 minutes of movement per hour, walking meetings"]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Mental Health Risks",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "The mental health impact of excessive digital use is a growing area of research. While technology enables connection and productivity, the evidence shows that unmanaged use — particularly of social media — is associated with increased anxiety, disrupted sleep, and reduced wellbeing, especially in young people."
+      },
+      {
+        "type": "list",
+        "style": "bullet",
+        "items": [
+          "Social media anxiety and comparison: Curated feeds create unrealistic standards. Constant comparison to others' highlights reels is associated with lower self-esteem and increased anxiety.",
+          "Fear of Missing Out (FOMO): The compulsive need to check devices to avoid missing social updates disrupts concentration and creates a constant low-level stress response.",
+          "Sleep disruption: Blue light from screens suppresses melatonin production — the hormone that signals sleep. Using devices within 1 hour of bed delays the onset of sleep and reduces sleep quality.",
+          "Digital addiction patterns: Variable reward schedules (likes, notifications) activate the brain's dopamine system in ways similar to gambling, making it difficult to disengage voluntarily.",
+          "Cognitive overload: Constant notifications fragment attention and reduce the ability to sustain deep, focused work — a skill that is highly valued in professional IT roles."
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "senior-wisdom",
+        "heading": "💡 SENIOR WISDOM · DR. ELARA FINCH, REGIONAL ETHICS TECH GROUP",
+        "text": "The most productive people I know in tech are not the ones who work the most hours — they are the ones who manage their attention deliberately. They schedule deep work, they protect their sleep, and they close their email. The ability to focus is a professional skill, and like all skills, it erodes if you let the notification economy eat it alive."
+      },
+      {
+        "type": "callout",
+        "variant": "sandbox",
+        "heading": "💻 SANDBOX CHALLENGE · DESIGN A DIGITAL WELLBEING POLICY",
+        "text": "You have been assigned to write the 'Digital Wellbeing' section of the workplace wellness program for a small graphic design studio where staff work 8-hour days on computers.\n\nYour policy section must include:\n1. Three physical health risks specific to their work environment — and one prevention strategy per risk.\n2. Two mental health risks that apply to a creative studio context (hint: social media use is part of their job).\n3. Two practical technology policies the employer could implement (e.g., no-screen lunch breaks, notification-free mornings).\n4. A reference to the relevant WA legislation that creates the employer's legal obligation to act.\n\nWrite it as a policy section: 200-250 words, formal tone, with subheadings."
+      },
+      {
+        "type": "callout",
+        "variant": "pr-review",
+        "heading": "🛑 PR REVIEW · DR. FINCH IS IN THE REVIEW",
+        "text": "1. An employer says 'managing your screen time is your own responsibility — we just supply the equipment.' Under the Work Health and Safety Act 2011 (WA), is this a legally defensible position? What specific obligation does the employer have?\n2. A developer works from home and reports developing RSI. Does the employer's WHS duty of care extend to the home office? What does the legislation say?\n3. A student argues that blue light glasses will solve all their sleep issues caused by late-night phone use. Based on the evidence, is this accurate? What additional changes would the evidence actually support?"
+      },
+      {
+        "type": "heading",
+        "text": "Check Your Understanding",
+        "level": 2
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "According to the 20-20-20 rule for reducing digital eye strain, what should you do every 20 minutes?",
+          "options": ["Close your eyes for 20 seconds", "Look at something 20 metres away for 20 seconds", "Take a 20-minute screen break", "Reduce screen brightness by 20%"],
+          "correctIndex": 1,
+          "explanation": "The 20-20-20 rule: every 20 minutes, look at something at least 20 feet (approximately 6 metres) away for at least 20 seconds. This allows the ciliary muscles that control eye focus to relax after prolonged near-focus work."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "true_false",
+          "text": "Blue light emitted by digital screens can disrupt sleep by suppressing melatonin production.",
+          "correctAnswer": true,
+          "explanation": "True. Research shows that blue-wavelength light emitted by screens suppresses melatonin — the hormone that signals the brain to initiate sleep — making it harder to fall asleep and reducing sleep quality. This is why reducing screen use 1 hour before bed is widely recommended."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "short_answer",
+          "text": "A Year 11 student reports that after a full school day on computers, they experience headaches, difficulty focusing on homework, and often scroll social media until midnight. (a) Identify two physical health risks they are experiencing and name one specific prevention strategy for each. (b) Identify one mental health risk their behaviour pattern suggests. (c) What change would have the greatest impact on their sleep quality? Explain using evidence.",
+          "marks": 5,
+          "explanation": "Award 2 marks (1 each) for two physical risks with prevention: e.g., digital eye strain → 20-20-20 rule / headaches → scheduled breaks and hydration / RSI → ergonomic setup. Award 1 mark for identifying a mental health risk: FOMO, social media anxiety, or sleep disruption from digital addiction patterns. Award 2 marks: stopping screen use at least 1 hour before sleep (not just switching to phone) is the highest-impact change — blue light suppresses melatonin, and the variable reward schedule of social media creates cognitive arousal that delays sleep onset."
+        }
+      }
+    ]
+  },
+  {
+    "id": "impacts-of-technology-review-quiz",
+    "title": "Impacts of Technology — Unit 2 Review",
+    "estimatedMinutes": 15,
+    "blocks": [
+      {
+        "type": "callout",
+        "variant": "ticket",
+        "heading": "🎟️ TICKET #3006 · REGIONAL ETHICS TECH GROUP",
+        "text": "INTERN ASSESSMENT: This is your end-of-topic review. The Regional Ethics Tech Group evaluates every intern on their ability to apply legal and ethical knowledge to real scenarios — not just recall definitions. Work through these questions carefully. Dr. Finch will review your responses before you progress to the next assignment."
+      },
+      {
+        "type": "callout",
+        "variant": "info",
+        "heading": "📋 Unit 2 — Impacts of Technology: What You've Covered",
+        "text": "This topic covered five key areas:\n1. Types of Computer Crime — cybercrime categories, Criminal Code Act 1995 (Cth)\n2. Copyright and IP — Copyright Act 1968 (Cth), Creative Commons, moral rights\n3. The Spam Act 2003 — consent, identify, unsubscribe rules, ACMA enforcement\n4. Digital Citizenship — cyberbullying types, eSafety Commissioner, online conduct\n5. Health Impacts — physical risks (RSI, eye strain, posture) and mental health risks (anxiety, sleep disruption, FOMO)"
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "Which Australian legislation primarily governs commercial email and SMS messages sent for business purposes?",
+          "options": ["Privacy Act 1988 (Cth)", "Spam Act 2003 (Cth)", "Criminal Code Act 1995 (Cth)", "Online Safety Act 2021 (Cth)"],
+          "correctIndex": 1,
+          "explanation": "The Spam Act 2003 (Cth) governs commercial electronic messages including email and SMS. It requires senders to have consent, identify themselves, and provide an unsubscribe mechanism."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "true_false",
+          "text": "Under the Copyright Act 1968 (Cth), a creator must register their work with a government office for copyright protection to apply.",
+          "correctAnswer": false,
+          "explanation": "False. Copyright protection is automatic under Australian law — it applies the moment an original work is created and recorded, with no registration required."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A business receives 300 unsubscribe requests on a Monday. Under the Spam Act 2003 (Cth), by when must these be processed?",
+          "options": ["The same day", "Within 2 business days", "Within 5 business days", "Within 10 business days"],
+          "correctIndex": 2,
+          "explanation": "The Spam Act 2003 (Cth) requires unsubscribe requests to be processed within 5 business days. Failure to do so is a violation that ACMA can investigate and fine."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "true_false",
+          "text": "Malicious software that encrypts a victim's files and demands payment for the decryption key is called ransomware.",
+          "correctAnswer": true,
+          "explanation": "True. Ransomware is a type of malware that encrypts files on the victim's system, then demands payment (typically in cryptocurrency) in exchange for the decryption key."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "Which Creative Commons licence allows free commercial use but requires the user to release any adaptations under the same licence?",
+          "options": ["CC BY", "CC BY-SA", "CC BY-NC", "CC BY-ND"],
+          "correctIndex": 1,
+          "explanation": "CC BY-SA (Attribution ShareAlike) allows commercial use and adaptations but requires any derivative works to be released under the same CC BY-SA licence — this is the 'ShareAlike' condition."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "true_false",
+          "text": "The eSafety Commissioner has the power to order social media platforms to remove cyberbullying content targeting Australians.",
+          "correctAnswer": true,
+          "explanation": "True. The Online Safety Act 2021 (Cth) established the eSafety Commissioner with powers to investigate complaints and issue removal notices to platforms for cyberbullying material, CSAM, and other harmful content."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "mcq",
+          "text": "A developer suffers from wrist pain after years of keyboard use. This condition is most accurately described as:",
+          "options": ["Digital eye strain", "Repetitive Strain Injury (RSI)", "Sedentary behaviour", "Tension headache"],
+          "correctIndex": 1,
+          "explanation": "Repetitive Strain Injury (RSI) refers to damage to muscles, tendons, or nerves caused by repetitive movements — extremely common in keyboard and mouse users. Ergonomic equipment and regular breaks are the primary preventions."
+        }
+      },
+      {
+        "type": "quizQuestion",
+        "question": {
+          "questionType": "true_false",
+          "text": "Moral rights under the Copyright Act 1968 (Cth) can be sold or transferred to another person.",
+          "correctAnswer": false,
+          "explanation": "False. Moral rights — including the right of attribution and the right of integrity — cannot be transferred or waived under the Copyright Act 1968 (Cth). They remain with the creator permanently, even if economic copyright is sold."
+        }
+      }
+    ]
+  }
+]
