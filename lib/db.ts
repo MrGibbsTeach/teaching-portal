@@ -1,16 +1,18 @@
 import "server-only";
+import { Redis } from "@upstash/redis";
 import type { ClassConfig } from "./auth-types";
 
 const KV_KEY = "mg_classes";
 const _mem: ClassConfig[] = [];
 
-function getRedis() {
+let _redis: Redis | null = null;
+
+function getRedis(): Redis | null {
   const url = process.env.KV_REST_API_URL ?? process.env.UPSTASH_REDIS_REST_URL;
   const token = process.env.KV_REST_API_TOKEN ?? process.env.UPSTASH_REDIS_REST_TOKEN;
   if (!url || !token) return null;
-  // Lazy import so local dev without KV vars doesn't crash at module load time
-  const { Redis } = require("@upstash/redis");
-  return new Redis({ url, token }) as import("@upstash/redis").Redis;
+  if (!_redis) _redis = new Redis({ url, token });
+  return _redis;
 }
 
 export async function getClasses(): Promise<ClassConfig[]> {
@@ -18,7 +20,8 @@ export async function getClasses(): Promise<ClassConfig[]> {
   if (!redis) return [..._mem];
   try {
     return (await redis.get<ClassConfig[]>(KV_KEY)) ?? [];
-  } catch {
+  } catch (e) {
+    console.error("KV read failed:", e);
     return [];
   }
 }
