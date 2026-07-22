@@ -4,58 +4,23 @@ import type { ClassConfig } from "./auth-types";
 const KV_KEY = "mg_classes";
 const _mem: ClassConfig[] = [];
 
-function kvConfig() {
-  // Support both Vercel KV (legacy) and direct Upstash Redis naming conventions
-  const url =
-    process.env.KV_REST_API_URL ??
-    process.env.UPSTASH_REDIS_REST_URL;
-  const token =
-    process.env.KV_REST_API_TOKEN ??
-    process.env.UPSTASH_REDIS_REST_TOKEN;
-  return url && token ? { url, token } : null;
-}
-
-async function kvGet<T>(key: string): Promise<T | null> {
-  const kv = kvConfig();
-  if (!kv) {
-    return key === KV_KEY ? (_mem as unknown as T) : null;
-  }
-  try {
-    const res = await fetch(`${kv.url}/get/${encodeURIComponent(key)}`, {
-      headers: { Authorization: `Bearer ${kv.token}` },
-      cache: "no-store",
-    });
-    const json = (await res.json()) as { result: string | null };
-    if (json.result == null) return null;
-    return JSON.parse(json.result) as T;
-  } catch {
-    return null;
-  }
-}
-
-async function kvSet(key: string, value: unknown): Promise<void> {
-  const kv = kvConfig();
-  if (!kv) {
-    if (key === KV_KEY) _mem.splice(0, _mem.length, ...(value as ClassConfig[]));
-    return;
-  }
-  try {
-    await fetch(`${kv.url}/pipeline`, {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${kv.token}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify([["SET", key, JSON.stringify(value)]]),
-      cache: "no-store",
-    });
-  } catch (e) {
-    console.error("KV write failed:", e);
-  }
+function getRedis() {
+  const url = process.env.KV_REST_API_URL ?? process.env.UPSTASH_REDIS_REST_URL;
+  const token = process.env.KV_REST_API_TOKEN ?? process.env.UPSTASH_REDIS_REST_TOKEN;
+  if (!url || !token) return null;
+  // Lazy import so local dev without KV vars doesn't crash at module load time
+  const { Redis } = require("@upstash/redis");
+  return new Redis({ url, token }) as import("@upstash/redis").Redis;
 }
 
 export async function getClasses(): Promise<ClassConfig[]> {
-  return (await kvGet<ClassConfig[]>(KV_KEY)) ?? [];
+  const redis = getRedis();
+  if (!redis) return [..._mem];
+  try {
+    return (await redis.get<ClassConfig[]>(KV_KEY)) ?? [];
+  } catch {
+    return [];
+  }
 }
 
 export async function getClass(id: string): Promise<ClassConfig | null> {
@@ -68,10 +33,29 @@ export async function saveClass(cls: ClassConfig): Promise<void> {
   const idx = all.findIndex((c) => c.id === cls.id);
   if (idx >= 0) all[idx] = cls;
   else all.push(cls);
-  await kvSet(KV_KEY, all);
+
+  const redis = getRedis();
+  if (!redis) {
+    _mem.splice(0, _mem.length, ...all);
+    return;
+  }
+  try {
+    await redis.set(KV_KEY, all);
+  } catch (e) {
+    console.error("KV write failed:", e);
+  }
 }
 
 export async function deleteClass(id: string): Promise<void> {
-  const all = await getClasses();
-  await kvSet(KV_KEY, all.filter((c) => c.id !== id));
+  const all = (await getClasses()).filter((c) => c.id !== id);
+  const redis = getRedis();
+  if (!redis) {
+    _mem.splice(0, _mem.length, ...all);
+    return;
+  }
+  try {
+    await redis.set(KV_KEY, all);
+  } catch (e) {
+    console.error("KV write failed:", e);
+  }
 }
