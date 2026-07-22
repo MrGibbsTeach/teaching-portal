@@ -5,8 +5,13 @@ const KV_KEY = "mg_classes";
 const _mem: ClassConfig[] = [];
 
 function kvConfig() {
-  const url = process.env.KV_REST_API_URL;
-  const token = process.env.KV_REST_API_TOKEN;
+  // Support both Vercel KV (legacy) and direct Upstash Redis naming conventions
+  const url =
+    process.env.KV_REST_API_URL ??
+    process.env.UPSTASH_REDIS_REST_URL;
+  const token =
+    process.env.KV_REST_API_TOKEN ??
+    process.env.UPSTASH_REDIS_REST_TOKEN;
   return url && token ? { url, token } : null;
 }
 

@@ -12,7 +12,7 @@ export default async function ClassManagePage({
 }) {
   const { id } = await params;
   const cls = await getClass(id);
-  if (!cls) notFound();
+  if (!cls) return notFound();
 
   const course = getCourseBySlug(cls.courseSlug);
   const content = getCourseContent(cls.courseSlug);
