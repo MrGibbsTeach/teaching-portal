@@ -5,6 +5,8 @@ import { getCourseContent } from "@/lib/content";
 import { getSession } from "@/lib/session";
 import { getClass } from "@/lib/db";
 
+export const dynamic = "force-dynamic";
+
 export default async function Page() {
   const session = await getSession();
   const course = getCourseBySlug("year-11-applied-it-general");

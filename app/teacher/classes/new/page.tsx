@@ -39,7 +39,7 @@ export default function NewClassPage() {
           >
             {activeCourses.map((c) => (
               <option key={c.slug} value={c.slug}>
-                {c.title}
+                {c.yearLevel} — {c.title}
               </option>
             ))}
           </select>

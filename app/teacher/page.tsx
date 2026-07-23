@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getClasses } from "@/lib/db";
+import { getCourseBySlug } from "@/lib/courses";
 
 export const dynamic = "force-dynamic";
 
@@ -30,23 +31,29 @@ export default async function TeacherDashboard() {
         </div>
       ) : (
         <div className="mt-8 space-y-3">
-          {classes.map((cls) => (
-            <Link
-              key={cls.id}
-              href={`/teacher/classes/${cls.id}`}
-              className="flex items-center justify-between rounded-xl border bg-card p-5 hover:bg-accent transition-colors"
-            >
-              <div>
-                <p className="font-semibold">{cls.name}</p>
-                <p className="mt-0.5 text-sm text-muted-foreground">
-                  {cls.courseSlug.replace(/-/g, " ")} ·{" "}
-                  {cls.students.length} student{cls.students.length !== 1 ? "s" : ""} ·{" "}
-                  {cls.topicIds.length} topic{cls.topicIds.length !== 1 ? "s" : ""} unlocked
-                </p>
-              </div>
-              <span className="text-muted-foreground">→</span>
-            </Link>
-          ))}
+          {classes.map((cls) => {
+            const course = getCourseBySlug(cls.courseSlug);
+            const courseLabel = course
+              ? `${course.yearLevel} — ${course.title}`
+              : cls.courseSlug.replace(/-/g, " ");
+            return (
+              <Link
+                key={cls.id}
+                href={`/teacher/classes/${cls.id}`}
+                className="flex items-center justify-between rounded-xl border bg-card p-5 hover:bg-accent transition-colors"
+              >
+                <div>
+                  <p className="font-semibold">{cls.name}</p>
+                  <p className="mt-0.5 text-sm text-muted-foreground">
+                    {courseLabel} ·{" "}
+                    {cls.students.length} student{cls.students.length !== 1 ? "s" : ""} ·{" "}
+                    {cls.topicIds.length} topic{cls.topicIds.length !== 1 ? "s" : ""} unlocked
+                  </p>
+                </div>
+                <span className="text-muted-foreground">→</span>
+              </Link>
+            );
+          })}
         </div>
       )}
     </div>
