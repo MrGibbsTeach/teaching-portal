@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getClass } from "@/lib/db";
+import { getClass, getStudentProgress } from "@/lib/db";
 import { getCourseContent } from "@/lib/content";
 import { getCourseBySlug } from "@/lib/courses";
 import { updateAccess, addStudent, removeStudent, removeClass } from "@/app/actions/classes";
@@ -23,6 +23,25 @@ export default async function ClassManagePage({
   const updateAccessForClass = updateAccess.bind(null, cls!.id);
   const addStudentToClass = addStudent.bind(null, cls!.id);
   const deleteClass = removeClass.bind(null, cls!.id);
+
+  // Count total lessons in unlocked topics
+  const totalUnlockedLessons = content
+    ? content.units
+        .flatMap((u) => u.topics)
+        .filter((t) => cls!.topicIds.includes(t.id))
+        .reduce((sum, t) => sum + t.lessons.length, 0)
+    : 0;
+
+  // Load progress for every student in parallel
+  const studentProgressList = await Promise.all(
+    cls!.students.map(async (s) => {
+      const completedIds = await getStudentProgress(cls!.id, s.username);
+      return { username: s.username, completedCount: completedIds.length };
+    })
+  );
+  const progressByUsername = Object.fromEntries(
+    studentProgressList.map(({ username, completedCount }) => [username, completedCount])
+  );
 
   return (
     <div className="mx-auto max-w-3xl px-6 py-12 space-y-12">
@@ -150,17 +169,39 @@ export default async function ClassManagePage({
                   <th className="px-4 py-2.5 text-left font-medium text-muted-foreground">Name</th>
                   <th className="px-4 py-2.5 text-left font-medium text-muted-foreground">Username</th>
                   <th className="px-4 py-2.5 text-left font-medium text-muted-foreground">Passcode</th>
+                  <th className="px-4 py-2.5 text-left font-medium text-muted-foreground">Progress</th>
                   <th className="px-4 py-2.5"></th>
                 </tr>
               </thead>
               <tbody className="divide-y">
                 {cls!.students.map((s) => {
                   const removeAction = removeStudent.bind(null, cls!.id, s.username);
+                  const completedCount = progressByUsername[s.username] ?? 0;
+                  const pct = totalUnlockedLessons > 0
+                    ? Math.round((completedCount / totalUnlockedLessons) * 100)
+                    : 0;
                   return (
                     <tr key={s.username} className="hover:bg-muted/20">
                       <td className="px-4 py-3">{s.displayName}</td>
                       <td className="px-4 py-3 font-mono text-xs">{s.username}</td>
                       <td className="px-4 py-3 font-mono text-xs">{s.passcode}</td>
+                      <td className="px-4 py-3">
+                        {totalUnlockedLessons > 0 ? (
+                          <div className="flex items-center gap-2 min-w-[120px]">
+                            <div className="relative h-1.5 flex-1 overflow-hidden rounded-full bg-muted">
+                              <div
+                                className="absolute inset-y-0 left-0 rounded-full bg-green-500 transition-all"
+                                style={{ width: `${pct}%` }}
+                              />
+                            </div>
+                            <span className="shrink-0 text-xs text-muted-foreground tabular-nums">
+                              {completedCount}/{totalUnlockedLessons}
+                            </span>
+                          </div>
+                        ) : (
+                          <span className="text-xs text-muted-foreground">No topics unlocked</span>
+                        )}
+                      </td>
                       <td className="px-4 py-3 text-right">
                         <form action={removeAction}>
                           <button

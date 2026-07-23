@@ -15,10 +15,26 @@ type View =
 export function FoundationsOverview({
   course,
   content,
+  allowedTopicIds,
 }: {
   course: Course;
   content: CourseContent;
+  allowedTopicIds?: string[];
 }) {
+  // Filter units/topics for student access control
+  const visibleUnits = allowedTopicIds
+    ? content.units
+        .map((u) => ({
+          ...u,
+          topics: u.status === "coming_soon"
+            ? u.topics
+            : u.topics.filter((t) => allowedTopicIds.includes(t.id)),
+        }))
+        .filter((u) => u.status === "coming_soon" || u.topics.length > 0)
+    : content.units;
+
+  const hasUnlockedContent = visibleUnits.some((u) => u.status !== "coming_soon");
+
   const [view, setView] = useState<View>({ step: "units" });
 
   return (
@@ -43,8 +59,14 @@ export function FoundationsOverview({
       )}
 
       {view.step === "units" && (
-        <div className="mt-8 grid gap-4 sm:grid-cols-2">
-          {content.units.map((unit) => {
+        <>
+          {allowedTopicIds !== undefined && !hasUnlockedContent && (
+            <div className="mt-10 rounded-xl border border-dashed p-10 text-center text-sm text-muted-foreground">
+              No topics have been unlocked for you yet. Check back after your teacher sets up your class.
+            </div>
+          )}
+          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+            {visibleUnits.map((unit) => {
             const Icon = unitIcon(unit.title);
             const locked = unit.status === "coming_soon";
             const tile = (
@@ -78,7 +100,8 @@ export function FoundationsOverview({
               </button>
             );
           })}
-        </div>
+          </div>
+        </>
       )}
 
       {view.step === "topics" && (

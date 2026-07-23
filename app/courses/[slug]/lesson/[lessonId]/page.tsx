@@ -9,7 +9,10 @@ import { getCourseBySlug } from "@/lib/courses";
 import { GeneralLessonView } from "@/components/course/GeneralLessonView";
 import { getCourseContent, findLesson, findNextLesson } from "@/lib/content";
 import { getSession } from "@/lib/session";
-import { getClass } from "@/lib/db";
+import { getClass, getStudentProgress } from "@/lib/db";
+import { LessonCompleteButton } from "@/components/course/LessonCompleteButton";
+
+export const dynamic = "force-dynamic";
 
 export default async function LessonPage({
   params,
@@ -34,35 +37,58 @@ export default async function LessonPage({
     }
   }
 
+  // Load student progress (only for students)
+  let completedLessonIds: string[] = [];
+  if (session?.role === "student" && session.classId && session.username) {
+    completedLessonIds = await getStudentProgress(session.classId, session.username);
+  }
+
+  const isCompleted = completedLessonIds.includes(lessonId);
+  const isStudent = session?.role === "student" && !!session.classId && !!session.username;
+
+  const completeButton = isStudent ? (
+    <LessonCompleteButton
+      lessonId={lessonId}
+      courseSlug={slug}
+      initialCompleted={isCompleted}
+    />
+  ) : null;
+
   const isGeneral = slug === "year-11-applied-it-general" || slug === "year-12-applied-it-general";
   if (isGeneral) {
     const nextLesson = findNextLesson(content, lessonId);
     return (
-      <GeneralLessonView
-        courseSlug={course.slug}
-        courseTitle={course.title}
-        unitTitle={unit.title}
-        topicTitle={topic.title}
-        topicId={topic.id}
-        lessonTitle={lesson.title}
-        estimatedMinutes={lesson.estimatedMinutes}
-        blocks={lesson.blocks}
-        nextLesson={nextLesson}
-      />
+      <>
+        <GeneralLessonView
+          courseSlug={course.slug}
+          courseTitle={course.title}
+          unitTitle={unit.title}
+          topicTitle={topic.title}
+          topicId={topic.id}
+          lessonTitle={lesson.title}
+          estimatedMinutes={lesson.estimatedMinutes}
+          blocks={lesson.blocks}
+          nextLesson={nextLesson}
+        />
+        {completeButton}
+      </>
     );
   }
 
   if (slug === "ait-foundations") {
     const nextLesson = findNextLesson(content, lessonId);
     return (
-      <FoundationsThemeRoot fontVariable={atkinson.variable}>
-        <FoundationsLessonView
-          courseSlug={course.slug}
-          courseTitle={course.title}
-          lesson={lesson}
-          nextLesson={nextLesson}
-        />
-      </FoundationsThemeRoot>
+      <>
+        <FoundationsThemeRoot fontVariable={atkinson.variable}>
+          <FoundationsLessonView
+            courseSlug={course.slug}
+            courseTitle={course.title}
+            lesson={lesson}
+            nextLesson={nextLesson}
+          />
+        </FoundationsThemeRoot>
+        {completeButton}
+      </>
     );
   }
 
@@ -89,6 +115,7 @@ export default async function LessonPage({
           <BlockRenderer key={i} block={block} />
         ))}
       </div>
+      {completeButton}
     </div>
   );
 }

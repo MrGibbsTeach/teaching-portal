@@ -7,10 +7,12 @@ export function CourseOverview({
   course,
   content,
   allowedTopicIds,
+  completedLessonIds,
 }: {
   course: Course;
   content: CourseContent;
   allowedTopicIds?: string[];
+  completedLessonIds?: string[];
 }) {
   const visibleUnits = allowedTopicIds
     ? content.units
@@ -65,21 +67,49 @@ export function CourseOverview({
                       )}
                     </summary>
                     <ul className="mt-3 space-y-1">
-                      {topic.lessons.map((lesson) => (
-                        <li key={lesson.id}>
-                          <Link
-                            href={`/courses/${course.slug}/lesson/${lesson.id}`}
-                            className="flex items-center justify-between rounded px-2 py-1.5 text-sm hover:bg-accent"
-                          >
-                            <span>{lesson.title}</span>
-                            {lesson.estimatedMinutes && (
-                              <span className="text-xs text-muted-foreground">
-                                {lesson.estimatedMinutes} min
+                      {topic.lessons.map((lesson) => {
+                        const isComplete = completedLessonIds?.includes(lesson.id) ?? false;
+                        return (
+                          <li key={lesson.id}>
+                            <Link
+                              href={`/courses/${course.slug}/lesson/${lesson.id}`}
+                              className="flex items-center justify-between rounded px-2 py-1.5 text-sm hover:bg-accent"
+                            >
+                              <span className="flex items-center gap-2">
+                                {isComplete ? (
+                                  <span
+                                    title="Completed"
+                                    className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-green-500 text-white"
+                                  >
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      viewBox="0 0 20 20"
+                                      fill="currentColor"
+                                      className="h-2.5 w-2.5"
+                                    >
+                                      <path
+                                        fillRule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clipRule="evenodd"
+                                      />
+                                    </svg>
+                                  </span>
+                                ) : completedLessonIds !== undefined ? (
+                                  <span className="h-4 w-4 shrink-0 rounded-full border border-muted-foreground/30" />
+                                ) : null}
+                                <span className={isComplete ? "text-muted-foreground" : ""}>
+                                  {lesson.title}
+                                </span>
                               </span>
-                            )}
-                          </Link>
-                        </li>
-                      ))}
+                              {lesson.estimatedMinutes && (
+                                <span className="text-xs text-muted-foreground">
+                                  {lesson.estimatedMinutes} min
+                                </span>
+                              )}
+                            </Link>
+                          </li>
+                        );
+                      })}
                     </ul>
                   </details>
                 ))}

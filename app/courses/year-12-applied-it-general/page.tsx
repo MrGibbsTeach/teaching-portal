@@ -3,7 +3,7 @@ import { CourseOverview } from "@/components/course/CourseOverview";
 import { getCourseBySlug } from "@/lib/courses";
 import { getCourseContent } from "@/lib/content";
 import { getSession } from "@/lib/session";
-import { getClass } from "@/lib/db";
+import { getClass, getStudentProgress } from "@/lib/db";
 
 export const dynamic = "force-dynamic";
 
@@ -14,10 +14,20 @@ export default async function Page() {
   if (!course || !content) notFound();
 
   let allowedTopicIds: string[] | undefined;
-  if (session?.role === "student") {
-    const cls = await getClass(session.classId!);
+  let completedLessonIds: string[] | undefined;
+
+  if (session?.role === "student" && session.classId && session.username) {
+    const cls = await getClass(session.classId);
     allowedTopicIds = cls?.topicIds ?? [];
+    completedLessonIds = await getStudentProgress(session.classId, session.username);
   }
 
-  return <CourseOverview course={course} content={content} allowedTopicIds={allowedTopicIds} />;
+  return (
+    <CourseOverview
+      course={course}
+      content={content}
+      allowedTopicIds={allowedTopicIds}
+      completedLessonIds={completedLessonIds}
+    />
+  );
 }

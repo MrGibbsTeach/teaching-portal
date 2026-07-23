@@ -65,3 +65,57 @@ export async function deleteClass(id: string): Promise<void> {
     console.error("KV write failed:", e);
   }
 }
+
+// ── Progress tracking ─────────────────────────────────────────────────────────
+
+function progressKey(classId: string, username: string) {
+  return `mg_progress:${classId}:${username}`;
+}
+
+export async function getStudentProgress(
+  classId: string,
+  username: string
+): Promise<string[]> {
+  const redis = getRedis();
+  if (!redis) return [];
+  try {
+    return (await redis.get<string[]>(progressKey(classId, username))) ?? [];
+  } catch (e) {
+    console.error("KV progress read failed:", e);
+    return [];
+  }
+}
+
+export async function markLessonComplete(
+  classId: string,
+  username: string,
+  lessonId: string
+): Promise<void> {
+  const redis = getRedis();
+  if (!redis) return;
+  try {
+    const key = progressKey(classId, username);
+    const current = (await redis.get<string[]>(key)) ?? [];
+    if (!current.includes(lessonId)) {
+      await redis.set(key, [...current, lessonId]);
+    }
+  } catch (e) {
+    console.error("KV progress write failed:", e);
+  }
+}
+
+export async function markLessonIncomplete(
+  classId: string,
+  username: string,
+  lessonId: string
+): Promise<void> {
+  const redis = getRedis();
+  if (!redis) return;
+  try {
+    const key = progressKey(classId, username);
+    const current = (await redis.get<string[]>(key)) ?? [];
+    await redis.set(key, current.filter((id) => id !== lessonId));
+  } catch (e) {
+    console.error("KV progress write failed:", e);
+  }
+}
