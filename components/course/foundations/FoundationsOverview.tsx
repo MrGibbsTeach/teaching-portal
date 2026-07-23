@@ -28,7 +28,13 @@ export function FoundationsOverview({
           ...u,
           topics: u.status === "coming_soon"
             ? u.topics
-            : u.topics.filter((t) => allowedTopicIds.includes(t.id)),
+            : u.topics.filter(
+                (t) =>
+                  // New compound format: "unitId:topicId"
+                  allowedTopicIds.includes(`${u.id}:${t.id}`) ||
+                  // Legacy format: bare "topicId" (kept for backward-compat)
+                  allowedTopicIds.includes(t.id)
+              ),
         }))
         .filter((u) => u.status === "coming_soon" || u.topics.length > 0)
     : content.units;
