@@ -45,6 +45,22 @@ export default async function RootLayout({
                       ? "Teacher"
                       : session.displayName ?? session.username}
                   </span>
+                  {session.role === "student" && session.courseSlug && (
+                    <Link
+                      href={`/courses/${session.courseSlug}`}
+                      className="text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      My Course
+                    </Link>
+                  )}
+                  {session.role === "teacher" && (
+                    <Link
+                      href="/teacher"
+                      className="text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      Dashboard
+                    </Link>
+                  )}
                   <form action={logout}>
                     <button
                       type="submit"

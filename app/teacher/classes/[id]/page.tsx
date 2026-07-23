@@ -25,11 +25,16 @@ export default async function ClassManagePage({
   const deleteClass = removeClass.bind(null, cls!.id);
 
   // Count total lessons in unlocked topics
+  // Accepts both compound IDs (new: "unitId:topicId") and bare IDs (legacy)
   const totalUnlockedLessons = content
-    ? content.units
-        .flatMap((u) => u.topics)
-        .filter((t) => cls!.topicIds.includes(t.id))
-        .reduce((sum, t) => sum + t.lessons.length, 0)
+    ? content.units.reduce((unitSum, u) => {
+        const unlocked = u.topics.filter(
+          (t) =>
+            cls!.topicIds.includes(`${u.id}:${t.id}`) ||
+            cls!.topicIds.includes(t.id)
+        );
+        return unitSum + unlocked.reduce((s, t) => s + t.lessons.length, 0);
+      }, 0)
     : 0;
 
   // Load progress for every student in parallel
@@ -79,7 +84,11 @@ export default async function ClassManagePage({
                 <p className="font-semibold mb-3">{unit.title}</p>
                 <div className="space-y-2">
                   {unit.topics.map((topic) => {
-                    const checked = cls!.topicIds.includes(topic.id);
+                    const compoundId = `${unit.id}:${topic.id}`;
+                    // Accept both compound IDs (new format) and bare topic IDs (legacy format)
+                    const checked =
+                      cls!.topicIds.includes(compoundId) ||
+                      cls!.topicIds.includes(topic.id);
                     return (
                       <label
                         key={topic.id}
@@ -90,7 +99,7 @@ export default async function ClassManagePage({
                         <input
                           type="checkbox"
                           name="topicId"
-                          value={topic.id}
+                          value={compoundId}
                           defaultChecked={checked}
                           className="h-4 w-4 accent-primary shrink-0"
                         />

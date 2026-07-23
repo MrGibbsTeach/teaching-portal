@@ -32,7 +32,11 @@ export default async function LessonPage({
   const session = await getSession();
   if (session?.role === "student") {
     const cls = await getClass(session.classId!);
-    if (!cls || !cls.topicIds.includes(topic.id)) {
+    const compoundId = `${unit.id}:${topic.id}`;
+    // Accept both compound IDs (new format) and bare topic IDs (legacy format)
+    const hasAccess =
+      cls?.topicIds.includes(compoundId) || cls?.topicIds.includes(topic.id);
+    if (!cls || !hasAccess) {
       redirect(`/courses/${slug}`);
     }
   }
