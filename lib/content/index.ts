@@ -29,13 +29,17 @@ export function findNextLesson(
   course: CourseContent,
   lessonId: string
 ): { lessonId: string; lessonTitle: string } | null {
+  // Flatten all lessons across units and topics (skip coming-soon units)
+  const allLessons: Array<{ lessonId: string; lessonTitle: string }> = [];
   for (const unit of course.units) {
+    if (unit.status === "coming_soon") continue;
     for (const topic of unit.topics) {
-      const idx = topic.lessons.findIndex((l) => l.id === lessonId);
-      if (idx === -1) continue;
-      const next = topic.lessons[idx + 1];
-      return next ? { lessonId: next.id, lessonTitle: next.title } : null;
+      for (const lesson of topic.lessons) {
+        allLessons.push({ lessonId: lesson.id, lessonTitle: lesson.title });
+      }
     }
   }
-  return null;
+  const idx = allLessons.findIndex((l) => l.lessonId === lessonId);
+  if (idx === -1 || idx === allLessons.length - 1) return null;
+  return allLessons[idx + 1];
 }

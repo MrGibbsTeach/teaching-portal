@@ -3,7 +3,7 @@ import { FoundationsOverview } from "@/components/course/foundations/Foundations
 import { getCourseBySlug } from "@/lib/courses";
 import { getCourseContent } from "@/lib/content";
 import { getSession } from "@/lib/session";
-import { getClass } from "@/lib/db";
+import { getClass, getStudentProgress } from "@/lib/db";
 
 export const dynamic = "force-dynamic";
 
@@ -14,10 +14,21 @@ export default async function Page() {
   if (!course || !content) notFound();
 
   let allowedTopicIds: string[] | undefined;
+  let completedLessonIds: string[] | undefined;
   if (session?.role === "student") {
     const cls = await getClass(session.classId!);
     allowedTopicIds = cls?.topicIds ?? [];
+    if (cls && session.username) {
+      completedLessonIds = await getStudentProgress(cls.id, session.username);
+    }
   }
 
-  return <FoundationsOverview course={course} content={content} allowedTopicIds={allowedTopicIds} />;
+  return (
+    <FoundationsOverview
+      course={course}
+      content={content}
+      allowedTopicIds={allowedTopicIds}
+      completedLessonIds={completedLessonIds}
+    />
+  );
 }

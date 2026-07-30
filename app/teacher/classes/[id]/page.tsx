@@ -5,6 +5,7 @@ import { getCourseContent } from "@/lib/content";
 import { getCourseBySlug } from "@/lib/courses";
 import { updateAccess, addStudent, removeStudent, removeClass } from "@/app/actions/classes";
 import DeleteClassButton from "@/components/teacher/DeleteClassButton";
+import { AddStudentForm } from "@/components/teacher/AddStudentForm";
 
 export const dynamic = "force-dynamic";
 
@@ -133,38 +134,7 @@ export default async function ClassManagePage({
         </p>
 
         {/* Add Student */}
-        <form action={addStudentToClass} className="mt-4 flex flex-wrap gap-2 items-end">
-          <div>
-            <label className="block text-xs font-medium mb-1 text-muted-foreground">
-              Full name
-            </label>
-            <input
-              name="displayName"
-              type="text"
-              required
-              placeholder="Alex Johnson"
-              className="rounded-lg border bg-background px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-primary"
-            />
-          </div>
-          <div>
-            <label className="block text-xs font-medium mb-1 text-muted-foreground">
-              Passcode
-            </label>
-            <input
-              name="passcode"
-              type="text"
-              required
-              placeholder="dog42"
-              className="rounded-lg border bg-background px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-primary w-28"
-            />
-          </div>
-          <button
-            type="submit"
-            className="rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
-          >
-            Add Student
-          </button>
-        </form>
+        <AddStudentForm action={addStudentToClass} />
 
         {cls!.students.length === 0 ? (
           <p className="mt-6 text-sm text-muted-foreground italic">

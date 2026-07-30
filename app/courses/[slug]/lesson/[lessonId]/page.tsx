@@ -30,6 +30,7 @@ export default async function LessonPage({
 
   // Student access check: only show lessons in unlocked topics
   const session = await getSession();
+  let studentTopicIds: string[] | undefined;
   if (session?.role === "student") {
     const cls = await getClass(session.classId!);
     const compoundId = `${unit.id}:${topic.id}`;
@@ -39,6 +40,7 @@ export default async function LessonPage({
     if (!cls || !hasAccess) {
       redirect(`/courses/${slug}`);
     }
+    studentTopicIds = cls.topicIds;
   }
 
   // Load student progress (only for students)
@@ -58,9 +60,20 @@ export default async function LessonPage({
     />
   ) : null;
 
+  // Find the next lesson, then hide it for students if the next lesson's topic is locked
+  let nextLesson = findNextLesson(content, lessonId);
+  if (nextLesson && studentTopicIds !== undefined) {
+    const nextFound = findLesson(content, nextLesson.lessonId);
+    if (nextFound) {
+      const accessible =
+        studentTopicIds.includes(`${nextFound.unit.id}:${nextFound.topic.id}`) ||
+        studentTopicIds.includes(nextFound.topic.id);
+      if (!accessible) nextLesson = null;
+    }
+  }
+
   const isGeneral = slug === "year-11-applied-it-general" || slug === "year-12-applied-it-general";
   if (isGeneral) {
-    const nextLesson = findNextLesson(content, lessonId);
     return (
       <>
         <GeneralLessonView
@@ -80,7 +93,6 @@ export default async function LessonPage({
   }
 
   if (slug === "ait-foundations") {
-    const nextLesson = findNextLesson(content, lessonId);
     return (
       <>
         <FoundationsThemeRoot fontVariable={atkinson.variable}>

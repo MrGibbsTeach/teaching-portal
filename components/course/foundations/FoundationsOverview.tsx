@@ -16,10 +16,12 @@ export function FoundationsOverview({
   course,
   content,
   allowedTopicIds,
+  completedLessonIds,
 }: {
   course: Course;
   content: CourseContent;
   allowedTopicIds?: string[];
+  completedLessonIds?: string[];
 }) {
   // Filter units/topics for student access control
   const visibleUnits = allowedTopicIds
@@ -142,24 +144,40 @@ export function FoundationsOverview({
         <div className="mt-6">
           <h2 className="text-2xl font-bold">{view.topic.title}</h2>
           <div className="mt-6 space-y-4">
-            {view.topic.lessons.map((lesson) => (
-              <Link
-                key={lesson.id}
-                href={`/courses/${course.slug}/lesson/${lesson.id}`}
-                className="flex items-center justify-between gap-4 rounded-3xl border-2 p-6 hover:bg-accent hover:border-primary"
-              >
-                <span className="text-xl font-bold">{lesson.title}</span>
-                <span className="flex items-center gap-3 text-muted-foreground">
-                  {lesson.estimatedMinutes && (
-                    <span className="flex items-center gap-1.5 text-base">
-                      <Clock className="h-5 w-5" />
-                      {lesson.estimatedMinutes} min
+            {view.topic.lessons.map((lesson) => {
+              const isComplete = completedLessonIds?.includes(lesson.id) ?? false;
+              return (
+                <Link
+                  key={lesson.id}
+                  href={`/courses/${course.slug}/lesson/${lesson.id}`}
+                  className="flex items-center justify-between gap-4 rounded-3xl border-2 p-6 hover:bg-accent hover:border-primary"
+                >
+                  <span className="flex items-center gap-3">
+                    {isComplete ? (
+                      <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-green-500 text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-3.5 w-3.5">
+                          <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clipRule="evenodd" />
+                        </svg>
+                      </span>
+                    ) : completedLessonIds !== undefined ? (
+                      <span className="h-6 w-6 shrink-0 rounded-full border-2 border-muted-foreground/30" />
+                    ) : null}
+                    <span className={`text-xl font-bold${isComplete ? " text-muted-foreground" : ""}`}>
+                      {lesson.title}
                     </span>
-                  )}
-                  <ChevronRight className="h-6 w-6" />
-                </span>
-              </Link>
-            ))}
+                  </span>
+                  <span className="flex items-center gap-3 text-muted-foreground">
+                    {lesson.estimatedMinutes && (
+                      <span className="flex items-center gap-1.5 text-base">
+                        <Clock className="h-5 w-5" />
+                        {lesson.estimatedMinutes} min
+                      </span>
+                    )}
+                    <ChevronRight className="h-6 w-6" />
+                  </span>
+                </Link>
+              );
+            })}
           </div>
         </div>
       )}
