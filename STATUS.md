@@ -50,28 +50,31 @@ Each course should feel distinctly different — not one visual template stretch
 
 This should inform any visual/UX pass — apply per-course treatment, not a uniform style.
 
-## Planned future architecture — teacher/student portal (NOT being built yet)
+## Auth, teacher portal & progress tracking — built (2026-07-23 to 2026-07-31)
 
-Explicitly deferred until the 9 courses are visually polished. When the time comes:
+The portal work originally deferred below (see old architecture notes) has since shipped:
 
-- Teacher portal for onboarding students: student names + access codes
-- Teacher controls content release **per student**, granularly — not whole-course access by default. E.g. a Y11 ATAR student might start with access to just the Hardware topic, or even one part of it, with the teacher progressively releasing more as they go
-- This is a deliberate sequencing call — don't start auth/portal work until explicitly asked, even though it's the natural next big feature after visual polish
+- **Teacher + student auth**, class-based content access (`3fc8fb4`, `f78e910`)
+- **Topic-level access control** using compound `unitId:topicId` keys (not whole-course) — fixed a bug where two units sharing a bare topic ID (`impacts-of-technology`, `application-skills`, `project-management`) unlocked together; bare-ID fallback kept for pre-fix data (`107c734`)
+- **Student lesson progress tracking end-to-end** — Redis-backed (`@upstash/redis`), `LessonCompleteButton` component, green-dot/hollow-ring indicators on course overviews and Foundations, teacher class view shows a progress bar + "X / Y lessons complete" per student (`c4e5415`)
+- **Teacher tooling**: class creation, student roster management, 🎲 fun-passcode generator (color+animal+number) for onboarding (`29f5ec0`)
+- **Nav**: persistent "My Course" (students) / "Dashboard" (teachers) header links; "next lesson" navigation now traverses across topic/unit boundaries and skips coming-soon units
+- Storage backend moved to `@upstash/redis` after earlier KV reliability issues (env var naming, dynamic-require bugs, missing `force-dynamic`)
 
 ## Deliberately not done yet
 
-- **No auth, teacher portal, or progress-tracking** — the old General course had all three (NextAuth, teacher dashboard, student progress DB); none of it was carried over. Site is currently read-only published content. Supabase client is wired (`lib/supabase.ts`) but nothing uses it yet.
+- **No visual/brand polish beyond Foundations** — Y7/8, Y9/10, ATAR, and General still render through the generic `CourseOverview` layout with brand colours only, no bespoke per-tier design yet.
+- **Foundations theme still not manually browser-checked** — verified via build + server-rendered HTML only (see note above); do a real visual pass before calling it done.
 - **Some Foundations interactive activity types render as static summaries**, not interactive widgets: drag-and-drop, hotspot, sort-buckets. (Matching, multiple-choice, fill-blank, ordering all render properly as static content.)
-- **No visual/brand polish** — pages are functional shadcn/ui defaults, no custom theme, logo, or styling pass yet.
 - **The 6 placeholder courses have zero content** — Years 7–10 and Year 12 General/ATAR never had prior material to migrate; this is genuinely new content that needs to be written.
+- **AIT Foundations not yet split into Year 11 / Year 12** — still one course showing all 4 units together.
 
 ## Next steps (priority order, per Clayton)
 
-1. **Visual/brand polish, per-course** — apply the distinct design direction above to each course. This is the current priority.
+1. **Visual/brand polish, per-course** — apply the distinct design direction above to each remaining tier. Y7/8 is the suggested next tier (largest cohort, can reuse the Foundations scoped-theme pattern).
 2. **Split AIT Foundations into Year 11 and Year 12** — currently a single course showing all 4 units together. Split into two separate courses (Year 11 Foundations = Units 1–2, Year 12 Foundations = Units 3–4), each with its own card on the home page, matching the pattern of General and ATAR.
-3. **Design the teacher/student portal** (talk through design before building — see architecture notes above). Don't start building until explicitly asked.
-4. **Write new content for placeholder courses** — Years 7–10 and Year 12 ATAR have no curriculum content yet; this is authoring work, not migration
-5. **Interactive activities** — upgrade the static drag-and-drop/hotspot/sort-bucket summaries into real interactive components
+3. **Write new content for placeholder courses** — Years 7–10 and Year 12 ATAR have no curriculum content yet; this is authoring work, not migration
+4. **Interactive activities** — upgrade the static drag-and-drop/hotspot/sort-bucket summaries into real interactive components
 
 ## How to resume
 
@@ -83,3 +86,6 @@ Read this file, then check `git log` in `mrgibbs-teach` to confirm nothing's cha
 | 2026-06-18 | Content migrated for Foundations/General/ATAR (first pass); placeholder courses greyed out on home page |
 | 2026-06-19 | Closed remaining content gaps: General Unit 1, ATAR practice exam, ATAR glossary |
 | 2026-06-19 | Captured design direction (each course should feel distinct) and future portal architecture (per-student, per-topic content release) — both deferred/recorded, not built |
+| 2026-07-23 | Shipped teacher/student auth, topic-level access control, and end-to-end student progress tracking (Redis-backed) |
+| 2026-07-31 | Added passcode generator, Foundations completion dots, cross-topic next-lesson navigation |
+| 2026-08-28 | Reconciled this file with actual shipped state; removed stray `weekly-review.html` and unused duplicate `components/assets/` (agent photos already live in `public/agents/`) |
