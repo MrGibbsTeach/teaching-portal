@@ -119,3 +119,42 @@ export async function markLessonIncomplete(
     console.error("KV progress write failed:", e);
   }
 }
+
+// ── Skill mastery (0..1 per skill; used by the mastery tree and practice results) ──
+
+function masteryKey(classId: string, username: string) {
+  return `mg_mastery:${classId}:${username}`;
+}
+
+export async function getStudentMastery(
+  classId: string,
+  username: string
+): Promise<Record<string, number>> {
+  const redis = getRedis();
+  if (!redis) return {};
+  try {
+    return (await redis.hgetall<Record<string, number>>(masteryKey(classId, username))) ?? {};
+  } catch (e) {
+    console.error("KV mastery read failed:", e);
+    return {};
+  }
+}
+
+/** Records a score for a skill. Keeps the best score so a bad retry never lowers mastery. */
+export async function recordSkillScore(
+  classId: string,
+  username: string,
+  skillId: string,
+  score: number
+): Promise<void> {
+  const redis = getRedis();
+  if (!redis) return;
+  try {
+    const clamped = Math.min(1, Math.max(0, score));
+    const key = masteryKey(classId, username);
+    const current = Number((await redis.hget<number>(key, skillId)) ?? 0);
+    if (clamped > current) await redis.hset(key, { [skillId]: clamped });
+  } catch (e) {
+    console.error("KV mastery write failed:", e);
+  }
+}

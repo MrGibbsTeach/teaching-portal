@@ -82,3 +82,31 @@ describe("activity checks", () => {
     expect(shuffleUnsolved(["x"])).toEqual(["x"]);
   });
 });
+
+import { checkDiagram } from "./diagram-check";
+
+describe("checkDiagram", () => {
+  it("toggle-state flags toggles in the wrong position", () => {
+    const r = checkDiagram("toggle-state", {}, { wifi: true, vpn: false }, { wifi: true, vpn: true });
+    expect(r).toEqual({ solved: false, wrong: ["vpn"] });
+  });
+
+  it("slider honours tolerance", () => {
+    expect(checkDiagram("slider", { tolerance: 2 }, { a: 10 }, { a: 12 }).solved).toBe(true);
+    expect(checkDiagram("slider", { tolerance: 2 }, { a: 10 }, { a: 13 }).solved).toBe(false);
+    expect(checkDiagram("slider", {}, { a: 10 }, {}).solved).toBe(false);
+  });
+
+  it("drag-arrange compares order positions", () => {
+    const goal = { order: ["a", "b", "c"] };
+    expect(checkDiagram("drag-arrange", {}, goal, { order: ["a", "b", "c"] }).solved).toBe(true);
+    expect(checkDiagram("drag-arrange", {}, goal, { order: ["a", "c", "b"] }).wrong).toEqual(["1", "2"]);
+  });
+
+  it("connect reports missing and extra links", () => {
+    const goal = { links: [["pc", "router"]] };
+    const r = checkDiagram("connect", {}, goal, { links: [["pc", "printer"]] });
+    expect(r.solved).toBe(false);
+    expect(r.wrong.sort()).toEqual(["pc→printer", "pc→router"]);
+  });
+});

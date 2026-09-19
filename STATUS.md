@@ -65,7 +65,7 @@ The portal work originally deferred below (see old architecture notes) has since
 
 Plan file: `C:\Users\clayt\.claude\plans\federated-tumbling-meteor.md`. Phases: 0 shared foundations → 1 split Foundations into Y11/Y12 → 2 Foundations Edpuzzle/Brilliant shell → 3 General mastery tree + polish → 4 ATAR live layer (Redis polling) + code practice. Y7/8 deferred. Y12 ATAR has no content yet (placeholder).
 
-**Phase 0 progress:** new block types in `lib/content/types.ts` (`checkpointVideo`, `interactiveDiagram`, topic `skillId`/`prerequisites`, lesson `mode`); pure logic + Vitest tests in `lib/logic/` (`npm test`). Still to do: shared components (`CheckpointVideoPlayer`, `DiagramRunner`, `MasteryTree`, interactive sort/order), DB mastery helpers.
+**Phase 0 progress:** new block types in `lib/content/types.ts` (`checkpointVideo`, `interactiveDiagram`, topic `skillId`/`prerequisites`, lesson `mode`); pure logic + Vitest tests in `lib/logic/` (`npm test`). Shared components in `components/course/shared/` (`CheckpointVideoPlayer`, `DiagramRunner`, `MasteryTree`, `BucketSort`/`OrderSteps`) and Redis mastery helpers in `lib/db.ts` built — **not yet wired into any page or visually checked in a browser**. Phase 0 complete; next is Phase 1 (Foundations split).
 
 ## Deliberately not done yet
 
