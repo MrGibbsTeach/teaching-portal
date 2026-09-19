@@ -14,8 +14,8 @@ Living tracker for where MrGibbs Teach is at. Update this whenever a session wra
 - Home page groups courses into Years 7–10 / AIT Foundations / Year 11 & 12 Applied IT
 - Placeholder courses (Y7/Y8 Digital Technologies, Y9 Digital Innovations, Y10 Digital Enterprise, Y12 Applied IT General, Y12 Applied IT ATAR) render greyed out with a "Coming soon" badge and aren't clickable — no real content exists for these yet
 - **Content migration complete** for the 3 courses that had prior content:
-  - AIT Foundations — Unit 2 "Applications in Practice" (Spreadsheets, Social Collaboration, Desktop Publishing, Digital Photography); Units 1/3/4 still genuinely empty (were empty in the original too)
-  - Year 11 Applied IT General — both units (Personal Communication + Working with Others), full lesson content, quizzes, tasks
+  - AIT Foundations — all 4 units populated (71 lessons: Computer Foundations, Applications in Practice, Applied Digital Skills, Online Ethics & Multimedia); only 6 videos so far
+  - Year 11 and Year 12 Applied IT General — 2 units each (10 topics per year), full lesson content, quizzes, tasks; Apprenticeship Framework topics deployed
   - Year 11 Applied IT ATAR — both units (10 modules), lessons + quiz + practice questions + exam practice, plus a "Unit 1 Practice Exam" topic (full 100-mark mock exam) and a "Glossary" section
   - Migration was done programmatically via `scripts/transform-{general,atar,foundations}.mjs` — these read the archived projects' source files directly and convert to the unified schema (`lib/content/types.ts`). Re-run them if archived sources ever change.
 
@@ -60,6 +60,12 @@ The portal work originally deferred below (see old architecture notes) has since
 - **Teacher tooling**: class creation, student roster management, 🎲 fun-passcode generator (color+animal+number) for onboarding (`29f5ec0`)
 - **Nav**: persistent "My Course" (students) / "Dashboard" (teachers) header links; "next lesson" navigation now traverses across topic/unit boundaries and skips coming-soon units
 - Storage backend moved to `@upstash/redis` after earlier KV reliability issues (env var naming, dynamic-require bugs, missing `force-dynamic`)
+
+## Active plan (2026-09-20)
+
+Plan file: `C:\Users\clayt\.claude\plans\federated-tumbling-meteor.md`. Phases: 0 shared foundations → 1 split Foundations into Y11/Y12 → 2 Foundations Edpuzzle/Brilliant shell → 3 General mastery tree + polish → 4 ATAR live layer (Redis polling) + code practice. Y7/8 deferred. Y12 ATAR has no content yet (placeholder).
+
+**Phase 0 progress:** new block types in `lib/content/types.ts` (`checkpointVideo`, `interactiveDiagram`, topic `skillId`/`prerequisites`, lesson `mode`); pure logic + Vitest tests in `lib/logic/` (`npm test`). Still to do: shared components (`CheckpointVideoPlayer`, `DiagramRunner`, `MasteryTree`, interactive sort/order), DB mastery helpers.
 
 ## Deliberately not done yet
 
