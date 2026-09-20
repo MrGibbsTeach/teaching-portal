@@ -95,3 +95,11 @@ Read this file, then check `git log` in `mrgibbs-teach` to confirm nothing's cha
 | 2026-07-23 | Shipped teacher/student auth, topic-level access control, and end-to-end student progress tracking (Redis-backed) |
 | 2026-07-31 | Added passcode generator, Foundations completion dots, cross-topic next-lesson navigation |
 | 2026-08-28 | Reconciled this file with actual shipped state; removed stray `weekly-review.html` and unused duplicate `components/assets/` (agent photos already live in `public/agents/`) |
+
+## General audit (2026-09-20, `node scripts/audit-general.mjs`)
+
+All 20 General topics (Y11 + Y12) have lessons and quizzes; nothing is empty or thin. Gaps are in interactivity and media:
+- **No interactive block at all:** Y11 design-concepts, hardware, managing-data, networks, and all of working-with-others except none-else; Y12 hardware, unit4 networks.
+- **No task:** hardware (both years), impacts-of-technology (both), managing-data (Y11), networks (both).
+- **No video:** 14 of 20 topics.
+Next for Phase 3: build the `MasteryTree` map for General, then add diagram/video nodes to the topics above (hardware, networks, managing-data first).
