@@ -99,7 +99,7 @@ Read this file, then check `git log` in `mrgibbs-teach` to confirm nothing's cha
 ## General audit (2026-09-20, `node scripts/audit-general.mjs`)
 
 All 20 General topics (Y11 + Y12) have lessons and quizzes; nothing is empty or thin. Gaps are in interactivity and media:
-- **No interactive block at all:** Y11 design-concepts, hardware, managing-data, networks, and all of working-with-others except none-else; Y12 hardware, unit4 networks.
+- **No interactive block at all:** Y11 design-concepts, hardware, and all 5 working-with-others topics; Y12 unit3 hardware and unit4 networks.
 - **No task:** hardware (both years), impacts-of-technology (both), managing-data (Y11), networks (both).
 - **No video:** 14 of 20 topics.
 Next for Phase 3: build the `MasteryTree` map for General, then add diagram/video nodes to the topics above (hardware, networks, managing-data first).
