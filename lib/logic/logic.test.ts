@@ -130,3 +130,25 @@ describe("legacyFoundationsTarget", () => {
     expect(isFoundationsSlug("year-11-applied-it-general")).toBe(false);
   });
 });
+
+import { withGeneralPrerequisites } from "./general-tree";
+
+describe("withGeneralPrerequisites", () => {
+  const unit = ["design-concepts", "hardware", "impacts-of-technology-u3", "application-skills-u3", "project-management-u3"].map((id) =>
+    topic(id, [id + "1"]),
+  );
+
+  it("chains application-skills after the foundations and project-management after that", () => {
+    const t = withGeneralPrerequisites(unit);
+    expect(t[0].prerequisites).toBeUndefined();
+    expect(t[2].prerequisites).toBeUndefined();
+    expect(t[3].prerequisites).toEqual(["design-concepts", "hardware"]);
+    expect(t[4].prerequisites).toEqual(["application-skills-u3"]);
+  });
+
+  it("does not block dependants when a prerequisite topic is hidden from the student", () => {
+    const visible = withGeneralPrerequisites(unit).filter((t) => t.id !== "hardware");
+    const nodes = computeMastery(visible, new Set(["design-concepts1"]));
+    expect(nodes.find((n) => n.topicId === "application-skills-u3")?.state).toBe("available");
+  });
+});

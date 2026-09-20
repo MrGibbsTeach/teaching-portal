@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { Topic } from "@/lib/content/types";
+import type { Lesson, Topic } from "@/lib/content/types";
 import { computeMastery, nextUp, skillIdOf, type NodeState } from "@/lib/logic/mastery";
 
 const STYLE: Record<NodeState, string> = {
@@ -28,21 +28,26 @@ function depths(topics: Topic[]): Map<string, number> {
 }
 
 /**
- * Khan-style mastery map. Topics sit in tiers by prerequisite depth; each node
- * shows locked / available / in-progress / mastered and links to its first lesson.
- * `hrefFor` returns null for topics the learner cannot open (e.g. class access lock).
+ * Khan-style mastery map. Topics sit in tiers by prerequisite depth. Each node shows
+ * locked / available / in-progress / mastered, continues at the first unfinished lesson,
+ * and lists all its lessons. Set `unlockAll` for teachers/previews so nothing is locked.
  */
 export function MasteryTree({
   topics,
   completed,
-  hrefFor,
+  lessonHref,
+  unlockAll = false,
+  showProgress = true,
 }: {
   topics: Topic[];
   completed: ReadonlySet<string>;
-  hrefFor: (topic: Topic) => string | null;
+  lessonHref: (lesson: Lesson) => string;
+  unlockAll?: boolean;
+  /** False when there is no student progress to show (teacher preview). */
+  showProgress?: boolean;
 }) {
   const nodes = computeMastery(topics, completed);
-  const next = nextUp(nodes);
+  const next = showProgress ? nextUp(nodes) : undefined;
   const depth = depths(topics);
   const titleOf = new Map(topics.map((t) => [skillIdOf(t), t.title]));
   const maxDepth = Math.max(0, ...depth.values());
@@ -55,39 +60,63 @@ export function MasteryTree({
       {tiers.map((tier, d) => (
         <li key={d}>
           <p className="mb-2 text-xs font-bold uppercase tracking-wide text-muted-foreground">
-            {d === 0 ? "Start here" : `Level ${d + 1}`}
+            {d === 0 ? "Start here" : `Then · level ${d + 1}`}
           </p>
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-3 sm:grid-cols-2">
             {tier.map((t) => {
-              const node = nodes.find((n) => n.topicId === t.id && n.skillId === skillIdOf(t))!;
-              const href = node.state === "locked" ? null : hrefFor(t);
+              const node = nodes.find((n) => skillIdOf(t) === n.skillId)!;
+              const open = unlockAll || node.state !== "locked";
               const isNext = next?.skillId === node.skillId;
               const prereqNames = (t.prerequisites ?? []).map((p) => titleOf.get(p)).filter(Boolean);
-              const body = (
-                <>
-                  <span className="flex items-start justify-between gap-2">
-                    <span className="font-semibold">{t.title}</span>
-                    <span aria-hidden>{ICON[node.state]}</span>
-                  </span>
-                  <span className="mt-2 block h-1.5 overflow-hidden rounded-full bg-muted">
-                    <span className="block h-full bg-emerald-500" style={{ width: `${Math.round(node.progress * 100)}%` }} />
-                  </span>
-                  <span className="mt-1 block text-xs">
-                    {node.state === "locked" && prereqNames.length > 0
+              const cont = t.lessons.find((l) => !completed.has(l.id)) ?? t.lessons[0];
+              const state: NodeState = showProgress ? node.state : "available";
+              return (
+                <div
+                  key={skillIdOf(t)}
+                  className={`rounded-xl border-2 p-4 ${STYLE[open ? state : "locked"]} ${isNext ? "ring-2 ring-primary ring-offset-2" : ""}`}
+                >
+                  <div className="flex items-start justify-between gap-2">
+                    {open && cont ? (
+                      <Link href={lessonHref(cont)} className="font-semibold hover:underline">
+                        {t.title}
+                      </Link>
+                    ) : (
+                      <span className="font-semibold">{t.title}</span>
+                    )}
+                    <span aria-hidden>{showProgress ? ICON[open ? state : "locked"] : ""}</span>
+                  </div>
+                  {showProgress && (
+                    <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-muted">
+                      <div className="h-full bg-emerald-500" style={{ width: `${Math.round(node.progress * 100)}%` }} />
+                    </div>
+                  )}
+                  <p className="mt-1 text-xs">
+                    {!open && prereqNames.length > 0
                       ? `Unlock by finishing: ${prereqNames.join(", ")}`
                       : `${t.lessons.length} lessons`}
                     {isNext && <strong className="ml-2 text-primary">Next up</strong>}
-                  </span>
-                </>
-              );
-              const cls = `block rounded-xl border-2 p-4 ${STYLE[node.state]} ${isNext ? "ring-2 ring-primary ring-offset-2" : ""}`;
-              return href ? (
-                <Link key={t.id} href={href} className={`${cls} transition-shadow hover:shadow-md`}>
-                  {body}
-                </Link>
-              ) : (
-                <div key={t.id} className={cls} aria-disabled="true">
-                  {body}
+                  </p>
+                  {open && (
+                    <details className="mt-2 text-sm">
+                      <summary className="cursor-pointer text-xs font-medium text-muted-foreground">Lessons</summary>
+                      <ul className="mt-1 space-y-0.5">
+                        {t.lessons.map((l) => (
+                          <li key={l.id}>
+                            <Link href={lessonHref(l)} className="flex items-center gap-2 rounded px-1 py-1 hover:bg-accent">
+                              {showProgress && (
+                                <span
+                                  aria-hidden
+                                  className={`h-3 w-3 shrink-0 rounded-full border ${completed.has(l.id) ? "border-emerald-600 bg-emerald-500" : "border-muted-foreground/40"}`}
+                                />
+                              )}
+                              <span className={completed.has(l.id) ? "text-muted-foreground" : ""}>{l.title}</span>
+                              {completed.has(l.id) && <span className="sr-only">(completed)</span>}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </details>
+                  )}
                 </div>
               );
             })}

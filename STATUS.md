@@ -102,4 +102,5 @@ All 20 General topics (Y11 + Y12) have lessons and quizzes; nothing is empty or 
 - **No interactive block at all:** Y11 design-concepts, hardware, and all 5 working-with-others topics; Y12 unit3 hardware and unit4 networks.
 - **No task:** hardware (both years), impacts-of-technology (both), managing-data (Y11), networks (both).
 - **No video:** 14 of 20 topics.
-Next for Phase 3: build the `MasteryTree` map for General, then add diagram/video nodes to the topics above (hardware, networks, managing-data first).
+**Done:** General overviews (Y11 + Y12) now render a per-unit `MasteryTree` (`components/course/GeneralCoursePage.tsx`; prerequisite rules in `lib/logic/general-tree.ts` — application-skills needs the first two topics, project-management needs application-skills; teachers see everything unlocked; students only see topics their class unlocked). Verified server-rendered as teacher only; student view not browser-checked.
+Next for Phase 3: add diagram/video nodes to the topics above (hardware, networks, managing-data first).
