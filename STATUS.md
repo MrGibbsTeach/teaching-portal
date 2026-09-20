@@ -118,3 +118,15 @@ Next for Phase 3: add diagram/video nodes to the topics above (hardware, network
 Recorded review notes and feedback that are **not yet implemented** live in `CHECKPOINTS.md`: (1) General course mentors/"professionals" review — the voice is fenced into four callouts, the card is generic, and 4 of 6 Y11 Design lessons lost their mentor voice; (2) Y11/Y12 ATAR lessons have no "Next" link after completing. More feedback is being collected there.
 
 **Feedback + quiz tracking (2026-09-20):** every lesson (General, Foundations, ATAR) has a floating "Something wrong?" button (category chips + optional note) saved to Redis (`mg_feedback`); General and Foundations quiz answers (mcq / true-false, first pick) are counted per class (`mg_qstats:{classId}`, keyed by a hash of the question text so reordering lessons does not scramble results; right/wrong is decided on the server). Teacher page: `/teacher/insights` (nav "Insights") lists notes with "Mark as done" and the hardest questions with the most common wrong answer, filterable by class. Not counted: teachers previewing, ATAR quizzes (they show answers, no answering), video-checkpoint questions. Integration-tested; not yet tried by real students.
+
+## Next session — domain + pre-student checklist (2026-09-20)
+
+**Domain:** `mrgibbsteach.com` is purchased and its nameservers are **Cloudflare** (`darwin.ns.cloudflare.com`, `opal.ns.cloudflare.com`), so DNS is managed in the Cloudflare dashboard. Nothing in the code hardcodes the old `teaching-portal-eta.vercel.app` address, so no code change is needed. **Not connected yet.** To connect: Vercel project → Settings → Domains → add `mrgibbsteach.com` (and `www`, redirected to the apex); Vercel then shows the exact DNS records → add them in Cloudflare with the proxy switched off (grey cloud / "DNS only") so Vercel can issue the certificate; wait for Vercel to show the domain as valid. Students then log in at `mrgibbsteach.com/login/student`.
+
+**Before real students (still to do):**
+- Database keep-alive job (free Upstash DBs are archived after inactivity — this already caused an outage).
+- Slow live-session polling from 2 s to about 5 s (30 students at 2 s is ~200k Redis commands/hour vs a 500k/month free limit).
+- Export button for classes and progress (a backup).
+- Separate Redis database for Preview deployments and a `staging` branch, so testing does not mix with student data.
+- Check the site loads from a student device on the school network; check the school's policy on student data.
+- Open checkpoints in `CHECKPOINTS.md` (General mentors review, ATAR missing "Next" link) plus feedback still to come from the other courses.
