@@ -47,10 +47,18 @@ export const courseGroups: { heading: string; courses: Course[] }[] = [
     heading: "AIT Foundations",
     courses: [
       {
-        slug: "ait-foundations",
+        slug: "year-11-ait-foundations",
         title: "AIT Foundations",
-        yearLevel: "Year 11 & 12",
-        description: "Foundation course in Applied Information Technology.",
+        yearLevel: "Year 11",
+        description: "Foundation course in Applied Information Technology: computer basics and everyday applications.",
+        status: "active",
+        sourceProject: "ait-foundations-course",
+      },
+      {
+        slug: "year-12-ait-foundations",
+        title: "AIT Foundations",
+        yearLevel: "Year 12",
+        description: "Foundation course in Applied Information Technology: applied digital skills, online ethics and multimedia.",
         status: "active",
         sourceProject: "ait-foundations-course",
       },

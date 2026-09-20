@@ -110,3 +110,23 @@ describe("checkDiagram", () => {
     expect(r.wrong.sort()).toEqual(["pc→printer", "pc→router"]);
   });
 });
+
+import { legacyFoundationsTarget, isFoundationsSlug } from "./foundations-migration";
+
+describe("legacyFoundationsTarget", () => {
+  const y12Bare = new Set(["c12_1", "e12_4"]);
+  it("sends all-Y12 classes to Year 12", () => {
+    expect(legacyFoundationsTarget(["unit3:c12_1", "unit4:e12_1"], y12Bare)).toBe("year-12-ait-foundations");
+    expect(legacyFoundationsTarget(["c12_1", "e12_4"], y12Bare)).toBe("year-12-ait-foundations");
+  });
+  it("keeps mixed, Y11 and empty classes in Year 11", () => {
+    expect(legacyFoundationsTarget(["unit1:c11_1", "unit3:c12_1"], y12Bare)).toBe("year-11-ait-foundations");
+    expect(legacyFoundationsTarget(["unit2:c11_6"], y12Bare)).toBe("year-11-ait-foundations");
+    expect(legacyFoundationsTarget([], y12Bare)).toBe("year-11-ait-foundations");
+  });
+  it("recognises all foundations slugs", () => {
+    expect(isFoundationsSlug("ait-foundations")).toBe(true);
+    expect(isFoundationsSlug("year-12-ait-foundations")).toBe(true);
+    expect(isFoundationsSlug("year-11-applied-it-general")).toBe(false);
+  });
+});

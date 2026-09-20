@@ -65,7 +65,7 @@ The portal work originally deferred below (see old architecture notes) has since
 
 Plan file: `C:\Users\clayt\.claude\plans\federated-tumbling-meteor.md`. Phases: 0 shared foundations → 1 split Foundations into Y11/Y12 → 2 Foundations Edpuzzle/Brilliant shell → 3 General mastery tree + polish → 4 ATAR live layer (Redis polling) + code practice. Y7/8 deferred. Y12 ATAR has no content yet (placeholder).
 
-**Phase 0 progress:** new block types in `lib/content/types.ts` (`checkpointVideo`, `interactiveDiagram`, topic `skillId`/`prerequisites`, lesson `mode`); pure logic + Vitest tests in `lib/logic/` (`npm test`). Shared components in `components/course/shared/` (`CheckpointVideoPlayer`, `DiagramRunner`, `MasteryTree`, `BucketSort`/`OrderSteps`) and Redis mastery helpers in `lib/db.ts` built — **not yet wired into any page or visually checked in a browser**. Phase 0 complete; next is Phase 1 (Foundations split).
+**Phase 0 progress:** new block types in `lib/content/types.ts` (`checkpointVideo`, `interactiveDiagram`, topic `skillId`/`prerequisites`, lesson `mode`); pure logic + Vitest tests in `lib/logic/` (`npm test`). Shared components in `components/course/shared/` (`CheckpointVideoPlayer`, `DiagramRunner`, `MasteryTree`, `BucketSort`/`OrderSteps`) and Redis mastery helpers in `lib/db.ts` built — **not yet wired into any page or visually checked in a browser**. Phase 0 complete. **Phase 1 (Foundations split) done** — old classes migrate on read (all-Y12 topics → Y12, mixed → Y11), so a class that spanned both years now only sees Y11 and needs re-pointing by the teacher; next is Phase 2 (Foundations lesson shell).
 
 ## Deliberately not done yet
 
@@ -73,7 +73,7 @@ Plan file: `C:\Users\clayt\.claude\plans\federated-tumbling-meteor.md`. Phases: 
 - **Foundations theme still not manually browser-checked** — verified via build + server-rendered HTML only (see note above); do a real visual pass before calling it done.
 - **Some Foundations interactive activity types render as static summaries**, not interactive widgets: drag-and-drop, hotspot, sort-buckets. (Matching, multiple-choice, fill-blank, ordering all render properly as static content.)
 - **The 6 placeholder courses have zero content** — Years 7–10 and Year 12 General/ATAR never had prior material to migrate; this is genuinely new content that needs to be written.
-- **AIT Foundations not yet split into Year 11 / Year 12** — still one course showing all 4 units together.
+- (Done 2026-09-20) AIT Foundations is now split into `year-11-ait-foundations` (units 1–2) and `year-12-ait-foundations` (units 3–4); `ait-foundations.json` remains the single authoring source and is split in `lib/content/index.ts`. Legacy `ait-foundations` URLs and old classes are redirected/migrated.
 
 ## Next steps (priority order, per Clayton)
 

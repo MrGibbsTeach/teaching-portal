@@ -3,12 +3,37 @@ import generalData from "./data/year-11-applied-it-general.json";
 import general12Data from "./data/year-12-applied-it-general.json";
 import atarData from "./data/year-11-applied-it-atar.json";
 import foundationsData from "./data/ait-foundations.json";
+import {
+  FOUNDATIONS_Y11_SLUG,
+  FOUNDATIONS_Y12_SLUG,
+  FOUNDATIONS_Y12_UNIT_IDS,
+} from "@/lib/logic/foundations-migration";
+
+// `ait-foundations.json` stays the single authoring source (the enhance/merge scripts
+// write to it); it is split into the Year 11 and Year 12 courses here.
+const foundationsAll = foundationsData as CourseContent;
+const foundationsY11: CourseContent = {
+  ...foundationsAll,
+  slug: FOUNDATIONS_Y11_SLUG,
+  units: foundationsAll.units.filter((u) => !FOUNDATIONS_Y12_UNIT_IDS.includes(u.id)),
+};
+const foundationsY12: CourseContent = {
+  ...foundationsAll,
+  slug: FOUNDATIONS_Y12_SLUG,
+  units: foundationsAll.units.filter((u) => FOUNDATIONS_Y12_UNIT_IDS.includes(u.id)),
+};
+
+/** Bare topic ids of the Year 12 units (to recognise legacy access keys). */
+export const foundationsY12BareTopicIds: ReadonlySet<string> = new Set(
+  foundationsY12.units.flatMap((u) => u.topics.map((t) => t.id)),
+);
 
 const registry: Record<string, CourseContent> = {
   "year-11-applied-it-general": generalData as CourseContent,
   "year-12-applied-it-general": general12Data as CourseContent,
   "year-11-applied-it-atar": atarData as CourseContent,
-  "ait-foundations": foundationsData as CourseContent,
+  [FOUNDATIONS_Y11_SLUG]: foundationsY11,
+  [FOUNDATIONS_Y12_SLUG]: foundationsY12,
 };
 
 export function getCourseContent(slug: string): CourseContent | undefined {

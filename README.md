@@ -8,7 +8,7 @@ This consolidates three previously separate projects, archived for reference at 
 
 - `11-ait-general-course` — Year 11 Applied IT, General (Next.js LMS: auth, teacher portal, DB-backed lessons)
 - `11-ait-atar-course` — Year 11 Applied IT, ATAR (Vite + React + Supabase)
-- `ait-foundations-course` — AIT Foundations, Year 11 & 12 (single-file static app)
+- `ait-foundations-course` — AIT Foundations, Year 11 & 12 (single-file static app; now the two courses `year-11-ait-foundations` and `year-12-ait-foundations`)
 
 The real lesson content from all three has been migrated into this site's unified content format (`lib/content/types.ts`, `lib/content/data/*.json`). The `scripts/transform-*.mjs` scripts perform that migration programmatically by reading the archived source files directly — re-run them if the archived content ever changes upstream. The six remaining courses (Years 7–10, and Year 12 General/ATAR) have no prior content and are placeholder-only.
 

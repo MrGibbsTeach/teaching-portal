@@ -9,7 +9,9 @@ import { Badge } from "@/components/ui/badge";
 import { courseGroups } from "@/lib/courses";
 
 const COURSE_COLORS: Record<string, string> = {
-  "ait-foundations":
+  "year-11-ait-foundations":
+    "border-l-4 border-l-teal-500 bg-teal-50/70 hover:bg-teal-50",
+  "year-12-ait-foundations":
     "border-l-4 border-l-teal-500 bg-teal-50/70 hover:bg-teal-50",
   "year-11-applied-it-general":
     "border-l-4 border-l-amber-500 bg-amber-50/70 hover:bg-amber-50",

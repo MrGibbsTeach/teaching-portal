@@ -1,34 +1,19 @@
-import { notFound } from "next/navigation";
-import { FoundationsOverview } from "@/components/course/foundations/FoundationsOverview";
-import { getCourseBySlug } from "@/lib/courses";
-import { getCourseContent } from "@/lib/content";
+import { redirect } from "next/navigation";
 import { getSession } from "@/lib/session";
-import { getClass, getStudentProgress } from "@/lib/db";
+import { getClass } from "@/lib/db";
+import { FOUNDATIONS_SLUGS, FOUNDATIONS_Y11_SLUG } from "@/lib/logic/foundations-migration";
 
 export const dynamic = "force-dynamic";
 
-export default async function Page() {
+/**
+ * Legacy URL from before Foundations was split into Year 11 and Year 12.
+ * Old sessions and bookmarks land here; send students to their class's course.
+ */
+export default async function LegacyFoundationsPage() {
   const session = await getSession();
-  const course = getCourseBySlug("ait-foundations");
-  const content = getCourseContent("ait-foundations");
-  if (!course || !content) notFound();
-
-  let allowedTopicIds: string[] | undefined;
-  let completedLessonIds: string[] | undefined;
-  if (session?.role === "student") {
-    const cls = await getClass(session.classId!);
-    allowedTopicIds = cls?.topicIds ?? [];
-    if (cls && session.username) {
-      completedLessonIds = await getStudentProgress(cls.id, session.username);
-    }
+  if (session?.role === "student" && session.classId) {
+    const cls = await getClass(session.classId);
+    if (cls && FOUNDATIONS_SLUGS.includes(cls.courseSlug)) redirect(`/courses/${cls.courseSlug}`);
   }
-
-  return (
-    <FoundationsOverview
-      course={course}
-      content={content}
-      allowedTopicIds={allowedTopicIds}
-      completedLessonIds={completedLessonIds}
-    />
-  );
+  redirect(`/courses/${FOUNDATIONS_Y11_SLUG}`);
 }

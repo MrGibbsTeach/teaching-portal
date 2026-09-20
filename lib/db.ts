@@ -1,6 +1,8 @@
 import "server-only";
 import { Redis } from "@upstash/redis";
 import type { ClassConfig } from "./auth-types";
+import { foundationsY12BareTopicIds } from "./content";
+import { LEGACY_FOUNDATIONS_SLUG, legacyFoundationsTarget } from "./logic/foundations-migration";
 
 const KV_KEY = "mg_classes";
 const _mem: ClassConfig[] = [];
@@ -22,7 +24,15 @@ export async function getClasses(): Promise<ClassConfig[]> {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const raw = (await redis.get<any[]>(KV_KEY)) ?? [];
     // Migrate records that were saved with the old `unitIds` field name
-    return raw.map((c) => ({ ...c, topicIds: c.topicIds ?? c.unitIds ?? [] })) as ClassConfig[];
+    return raw.map((c) => {
+      const topicIds: string[] = c.topicIds ?? c.unitIds ?? [];
+      // Foundations was split into Year 11 / Year 12 courses; re-point old classes.
+      const courseSlug =
+        c.courseSlug === LEGACY_FOUNDATIONS_SLUG
+          ? legacyFoundationsTarget(topicIds, foundationsY12BareTopicIds)
+          : c.courseSlug;
+      return { ...c, courseSlug, topicIds };
+    }) as ClassConfig[];
   } catch (e) {
     console.error("KV read failed:", e);
     return [];
