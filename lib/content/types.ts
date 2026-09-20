@@ -27,7 +27,8 @@ export interface InteractiveDiagramBlock {
 
 /** A pause point in a video. Playback cannot continue until `block` is answered. */
 export interface VideoCheckpoint {
-  atSeconds: number;
+  /** Seconds into the video, or "end" to require the whole video to be watched first. */
+  atSeconds: number | "end";
   block: Extract<Block, { type: "quizQuestion" | "activity" | "interactiveDiagram" }>;
 }
 

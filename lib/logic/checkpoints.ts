@@ -30,3 +30,16 @@ export function maxSeekTime(
   const pending = checkpoints.filter((_, i) => !answered.has(i)).map((c) => c.atSeconds);
   return pending.length === 0 ? Infinity : Math.min(...pending);
 }
+
+/**
+ * Turn authored checkpoints into concrete times. "end" checkpoints sit just before the
+ * final frame; until the duration is known (0) they are unreachable (Infinity).
+ */
+export function resolveCheckpointTimes(
+  checkpoints: readonly { atSeconds: number | "end" }[],
+  duration: number,
+): { atSeconds: number }[] {
+  return checkpoints.map((c) => ({
+    atSeconds: c.atSeconds === "end" ? (duration > 1 ? duration - 1 : Infinity) : c.atSeconds,
+  }));
+}

@@ -2,12 +2,13 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Block, QuizQuestion, VideoCheckpoint } from "@/lib/content/types";
-import { blockingCheckpoint, maxSeekTime } from "@/lib/logic/checkpoints";
+import { blockingCheckpoint, maxSeekTime, resolveCheckpointTimes } from "@/lib/logic/checkpoints";
 import { BucketSort, OrderSteps } from "./InteractiveActivities";
 import { DiagramRunner } from "./DiagramRunner";
 
 interface YTPlayer {
   getCurrentTime(): number;
+  getDuration(): number;
   pauseVideo(): void;
   playVideo(): void;
   seekTo(seconds: number, allowSeekAhead: boolean): void;
@@ -29,6 +30,8 @@ declare global {
     onYouTubeIframeAPIReady?: () => void;
   }
 }
+
+const rank = (at: number | "end") => (at === "end" ? Infinity : at);
 
 let apiPromise: Promise<YTApi> | null = null;
 function loadYouTubeApi(): Promise<YTApi> {
@@ -64,13 +67,13 @@ export function CheckpointVideoPlayer({
   const hostRef = useRef<HTMLDivElement>(null);
   const playerRef = useRef<YTPlayer | null>(null);
   const answeredRef = useRef<Set<number>>(new Set());
+  const maxWatchedRef = useRef(0);
   const [answered, setAnswered] = useState<Set<number>>(new Set());
   const [active, setActive] = useState<number>(-1);
   const sorted = useMemo(
-    () => checkpoints.map((c, i) => ({ ...c, i })).sort((a, b) => a.atSeconds - b.atSeconds),
+    () => checkpoints.map((c, i) => ({ ...c, i })).sort((a, b) => rank(a.atSeconds) - rank(b.atSeconds)),
     [checkpoints],
   );
-  const times = useMemo(() => checkpoints.map((c) => ({ atSeconds: c.atSeconds })), [checkpoints]);
 
   useEffect(() => {
     let cancelled = false;
@@ -90,6 +93,13 @@ export function CheckpointVideoPlayer({
         const p = playerRef.current;
         if (!p || typeof p.getCurrentTime !== "function") return;
         const t = p.getCurrentTime();
+        // Anti-skip: jumping ahead of what has been watched snaps back.
+        if (t > maxWatchedRef.current + 2) {
+          p.seekTo(maxWatchedRef.current, true);
+          return;
+        }
+        maxWatchedRef.current = Math.max(maxWatchedRef.current, t);
+        const times = resolveCheckpointTimes(checkpoints, p.getDuration?.() ?? 0);
         const limit = maxSeekTime(times, answeredRef.current);
         // Stop skipping past an unanswered checkpoint.
         const target = t > limit + 1 ? limit : t;
@@ -108,7 +118,7 @@ export function CheckpointVideoPlayer({
       playerRef.current?.destroy?.();
       playerRef.current = null;
     };
-  }, [youtubeId, times]);
+  }, [youtubeId, checkpoints]);
 
   function resolveActive() {
     if (active === -1) return;

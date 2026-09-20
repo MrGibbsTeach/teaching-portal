@@ -152,3 +152,24 @@ describe("withGeneralPrerequisites", () => {
     expect(nodes.find((n) => n.topicId === "application-skills-u3")?.state).toBe("available");
   });
 });
+
+import { resolveCheckpointTimes } from "./checkpoints";
+
+describe("resolveCheckpointTimes", () => {
+  it("places end checkpoints just before the end once duration is known", () => {
+    expect(resolveCheckpointTimes([{ atSeconds: 5 }, { atSeconds: "end" }], 120)).toEqual([
+      { atSeconds: 5 },
+      { atSeconds: 119 },
+    ]);
+  });
+  it("keeps end checkpoints unreachable until the duration is known", () => {
+    const r = resolveCheckpointTimes([{ atSeconds: "end" }], 0);
+    expect(r[0].atSeconds).toBe(Infinity);
+    expect(blockingCheckpoint(r, new Set(), 9999)).toBe(-1);
+  });
+  it("blocks same-time end checkpoints one after another", () => {
+    const r = resolveCheckpointTimes([{ atSeconds: "end" }, { atSeconds: "end" }], 60);
+    expect(blockingCheckpoint(r, new Set(), 59)).toBe(0);
+    expect(blockingCheckpoint(r, new Set([0]), 59)).toBe(1);
+  });
+});
