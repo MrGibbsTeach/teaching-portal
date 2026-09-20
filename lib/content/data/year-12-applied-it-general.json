@@ -1932,6 +1932,39 @@
          ]
         },
         {
+         "type": "interactiveDiagram",
+         "title": "Maintenance checklist",
+         "instruction": "Turn on the good habits and turn off the risky ones.",
+         "kind": "toggle-state",
+         "config": {
+          "toggles": [
+           {
+            "id": "updates",
+            "label": "Install system updates"
+           },
+           {
+            "id": "scan",
+            "label": "Run regular antivirus scans"
+           },
+           {
+            "id": "backup",
+            "label": "Back up important files"
+           },
+           {
+            "id": "attachments",
+            "label": "Open every email attachment"
+           }
+          ]
+         },
+         "goalState": {
+          "updates": true,
+          "scan": true,
+          "backup": true,
+          "attachments": false
+         },
+         "explanation": "Regular updates, scans and backups keep a computer healthy and your files safe."
+        },
+        {
          "type": "quizQuestion",
          "question": {
           "id": "mt12-q1",
@@ -7577,6 +7610,47 @@
          "variant": "pr-review",
          "heading": "🛑 PR REVIEW · SPARKY IS PUSHING BACK",
          "text": "Sparky reviewed your recommendation. Comments before it goes to the ICT coordinator:\n\nComment 1: 'You recommended client-server. Correct. But you didn't mention who manages the server. The school doesn't have an IT admin on staff. Does this affect your recommendation? What are the options — on-premises server, cloud services, or managed IT service provider? Should this be in the recommendation?'\n\nComment 2: 'You wrote that the wireless topology \"supports student tablets.\" The school has 60 tablets across 4 classrooms. If all 60 are active simultaneously in the same lesson and sharing one WAP, what actually happens? Is your WAP specification in your diagram sufficient? Recalculate.'\n\nComment 3: 'The Principal's plain-language summary — it's good, but you used the word \"server\" twice. The Principal doesn't know what that means. Replace it with a phrase that describes what it does without naming what it is. Read your summary aloud and ask: would a non-technical person who has never worked in IT understand every sentence?'"
+        },
+        {
+         "type": "interactiveDiagram",
+         "title": "Match the topology",
+         "instruction": "Tap a topology on the left, then tap how it is laid out.",
+         "kind": "connect",
+         "config": {
+          "left": [
+           "Star",
+           "Bus",
+           "Ring",
+           "Mesh"
+          ],
+          "right": [
+           "All devices connect to a central switch",
+           "All devices share one main cable",
+           "Each device connects to two neighbours in a loop",
+           "Devices connect to many other devices"
+          ]
+         },
+         "goalState": {
+          "links": [
+           [
+            "Star",
+            "All devices connect to a central switch"
+           ],
+           [
+            "Bus",
+            "All devices share one main cable"
+           ],
+           [
+            "Ring",
+            "Each device connects to two neighbours in a loop"
+           ],
+           [
+            "Mesh",
+            "Devices connect to many other devices"
+           ]
+          ]
+         },
+         "explanation": "The layout of a network is called its topology."
         },
         {
          "type": "quizQuestion",
