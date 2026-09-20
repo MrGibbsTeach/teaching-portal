@@ -13,7 +13,16 @@ const area =
  * other. The preview iframe has `sandbox` without `allow-scripts`, so learner code cannot
  * run JavaScript; `allow-same-origin` lets us read the rendered DOM to grade it.
  */
-export function CodeExercise({ block, onSolved }: { block: CodeExerciseBlock; onSolved?: () => void }) {
+export function CodeExercise({
+  block,
+  onSolved,
+  onResult,
+}: {
+  block: CodeExerciseBlock;
+  onSolved?: () => void;
+  /** Called after every check with the fraction of tests passed (0..1). */
+  onResult?: (score: number) => void;
+}) {
   const [tab, setTab] = useState<"html" | "css">("html");
   const [html, setHtml] = useState(block.starterHtml);
   const [css, setCss] = useState(block.starterCss);
@@ -40,6 +49,7 @@ export function CodeExercise({ block, onSolved }: { block: CodeExerciseBlock; on
       setResults(r);
       const score = scoreOf(r);
       if (block.skillId) void recordExerciseScore(block.skillId, score);
+      onResult?.(score);
       if (score === 1) onSolved?.();
     });
   }

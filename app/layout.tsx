@@ -53,6 +53,14 @@ export default async function RootLayout({
                       My Course
                     </Link>
                   )}
+                  {session.role === "student" && session.courseSlug && (
+                    <Link
+                      href={`/courses/${session.courseSlug}/live`}
+                      className="text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      Live session
+                    </Link>
+                  )}
                   {session.role === "teacher" && (
                     <Link
                       href="/teacher"

@@ -2,6 +2,7 @@ import "server-only";
 import { Redis } from "@upstash/redis";
 import type { ClassConfig } from "./auth-types";
 import { foundationsY12BareTopicIds } from "./content";
+import type { LiveAnswer, LiveState } from "./logic/live";
 import { LEGACY_FOUNDATIONS_SLUG, legacyFoundationsTarget } from "./logic/foundations-migration";
 
 const KV_KEY = "mg_classes";
@@ -166,5 +167,96 @@ export async function recordSkillScore(
     if (clamped > current) await redis.hset(key, { [skillId]: clamped });
   } catch (e) {
     console.error("KV mastery write failed:", e);
+  }
+}
+
+// ── Live (teacher-paced) sessions ────────────────────────────────────────────
+// One session per class. Keys expire after 6 hours so an abandoned session cleans itself up.
+
+const LIVE_TTL_SECONDS = 6 * 60 * 60;
+const liveKey = (classId: string) => `mg_live:${classId}`;
+// Keyed by session (its start time), so restarting a lesson never shows a previous session's answers.
+const liveRespKey = (classId: string, sessionId: string, slide: number) =>
+  `mg_live_resp:${classId}:${sessionId}:${slide}`;
+const _memLive = new Map<string, LiveState>();
+const _memLiveResp = new Map<string, Record<string, LiveAnswer>>();
+
+export async function getLiveState(classId: string): Promise<LiveState | null> {
+  const redis = getRedis();
+  if (!redis) return _memLive.get(classId) ?? null;
+  try {
+    return (await redis.get<LiveState>(liveKey(classId))) ?? null;
+  } catch (e) {
+    console.error("KV live read failed:", e);
+    return null;
+  }
+}
+
+export async function setLiveState(classId: string, state: LiveState): Promise<void> {
+  const redis = getRedis();
+  if (!redis) {
+    _memLive.set(classId, state);
+    return;
+  }
+  try {
+    await redis.set(liveKey(classId), state, { ex: LIVE_TTL_SECONDS });
+  } catch (e) {
+    console.error("KV live write failed:", e);
+  }
+}
+
+export async function clearLiveState(classId: string): Promise<void> {
+  const redis = getRedis();
+  if (!redis) {
+    _memLive.delete(classId);
+    return;
+  }
+  try {
+    await redis.del(liveKey(classId));
+  } catch (e) {
+    console.error("KV live clear failed:", e);
+  }
+}
+
+export async function submitLiveResponse(
+  classId: string,
+  sessionId: string,
+  slide: number,
+  username: string,
+  answer: LiveAnswer
+): Promise<void> {
+  const redis = getRedis();
+  const key = liveRespKey(classId, sessionId, slide);
+  if (!redis) {
+    _memLiveResp.set(key, { ...(_memLiveResp.get(key) ?? {}), [username]: answer });
+    return;
+  }
+  try {
+    await redis.hset(key, { [username]: JSON.stringify(answer) });
+    await redis.expire(key, LIVE_TTL_SECONDS);
+  } catch (e) {
+    console.error("KV live response write failed:", e);
+  }
+}
+
+export async function getLiveResponses(
+  classId: string,
+  sessionId: string,
+  slide: number
+): Promise<Record<string, LiveAnswer>> {
+  const redis = getRedis();
+  const key = liveRespKey(classId, sessionId, slide);
+  if (!redis) return { ..._memLiveResp.get(key) };
+  try {
+    const raw = (await redis.hgetall<Record<string, unknown>>(key)) ?? {};
+    const out: Record<string, LiveAnswer> = {};
+    for (const [user, v] of Object.entries(raw)) {
+      // Upstash may auto-parse JSON values; accept either form.
+      out[user] = (typeof v === "string" ? JSON.parse(v) : v) as LiveAnswer;
+    }
+    return out;
+  } catch (e) {
+    console.error("KV live responses read failed:", e);
+    return {};
   }
 }
