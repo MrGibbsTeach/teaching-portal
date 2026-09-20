@@ -5762,6 +5762,78 @@
                   "challenge": "Change the card's border colour to #6366f1 (indigo), increase the border-radius to 20px, and change the tag background to #fef3c7 and tag text colour to #92400e. Click Run."
                 },
                 {
+                  "type": "codeExercise",
+                  "skillId": "application-skills-9",
+                  "title": "Practice: build and style a page",
+                  "brief": "Add a second paragraph, make the heading pink (#be185d), and add an unordered list with three dot points. Press “Check my work” to see if you have it.",
+                  "starterHtml": "<!DOCTYPE html>\n<html>\n<head>\n  <title>My First Webpage</title>\n</head>\n<body>\n  <h1>My First Webpage</h1>\n  <p>HTML defines the <strong>structure</strong>.</p>\n</body>\n</html>",
+                  "starterCss": "body {\n  font-family: sans-serif;\n  padding: 20px;\n}\nh1 {\n  color: #3730a3;\n}",
+                  "tests": [
+                    {
+                      "type": "count",
+                      "selector": "p",
+                      "min": 2,
+                      "description": "The page has at least two paragraphs (<p>)"
+                    },
+                    {
+                      "type": "style",
+                      "selector": "h1",
+                      "property": "color",
+                      "value": "#be185d",
+                      "description": "The heading (h1) colour is #be185d"
+                    },
+                    {
+                      "type": "exists",
+                      "selector": "ul",
+                      "description": "The page has an unordered list (<ul>)"
+                    },
+                    {
+                      "type": "count",
+                      "selector": "ul li",
+                      "min": 3,
+                      "description": "The list has three items (<li>)"
+                    }
+                  ]
+                },
+                {
+                  "type": "codeExercise",
+                  "skillId": "application-skills-9",
+                  "title": "Practice: style the card",
+                  "brief": "Change the card's border colour to #6366f1, make its corners rounder with a border-radius of 20px, and set the tag's background to #fef3c7 and its text colour to #92400e.",
+                  "starterHtml": "<!DOCTYPE html>\n<html>\n<head>\n  <title>Card</title>\n</head>\n<body>\n  <div class=\"card\">\n    <span class=\"tag\">Module 9</span>\n    <h2>Application Skills</h2>\n    <p>Edit the CSS to restyle this card.</p>\n  </div>\n</body>\n</html>",
+                  "starterCss": "body { font-family: sans-serif; padding: 20px; background: #f9fafb; }\n.card {\n  background: white;\n  border: 2px solid #e5e7eb;\n  border-radius: 12px;\n  padding: 20px;\n  max-width: 320px;\n}\n.tag {\n  display: inline-block;\n  background: #ede9fe;\n  color: #5b21b6;\n  padding: 3px 10px;\n  border-radius: 999px;\n}",
+                  "tests": [
+                    {
+                      "type": "style",
+                      "selector": ".card",
+                      "property": "border-top-color",
+                      "value": "#6366f1",
+                      "description": "The card border colour is #6366f1"
+                    },
+                    {
+                      "type": "style",
+                      "selector": ".card",
+                      "property": "border-top-left-radius",
+                      "value": "20px",
+                      "description": "The card border-radius is 20px"
+                    },
+                    {
+                      "type": "style",
+                      "selector": ".tag",
+                      "property": "background-color",
+                      "value": "#fef3c7",
+                      "description": "The tag background is #fef3c7"
+                    },
+                    {
+                      "type": "style",
+                      "selector": ".tag",
+                      "property": "color",
+                      "value": "#92400e",
+                      "description": "The tag text colour is #92400e"
+                    }
+                  ]
+                },
+                {
                   "type": "richText",
                   "heading": "Web Authoring Features",
                   "html": "<p>Web authoring tools (from code editors to visual builders like WordPress) provide features for building complete websites:</p><p>Hyperlinks: anchor tags link pages together and to external websites. Good navigation relies on well-organised, descriptive hyperlinks.</p><p>Graphics: images must be optimised for web (72 PPI, appropriate format — JPEG for photos, PNG for transparency, SVG for icons). Alt text provides accessibility descriptions for screen readers.</p><p>Templates: pre-built page layouts and CSS style files apply consistent design across an entire website. Changing the template file updates all pages simultaneously.</p>"

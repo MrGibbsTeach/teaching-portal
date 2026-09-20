@@ -1,5 +1,6 @@
 import type { Block, QuizQuestion } from "@/lib/content/types";
 import { Badge } from "@/components/ui/badge";
+import { CodeExercise } from "@/components/course/shared/CodeExercise";
 import { DiagramRunner } from "@/components/course/shared/DiagramRunner";
 import { CheckpointVideoPlayer } from "@/components/course/shared/CheckpointVideoPlayer";
 
@@ -203,6 +204,12 @@ export function BlockRenderer({ block }: { block: Block }) {
       return (
         <div className="mt-3 rounded-xl border-2 p-4">
           <DiagramRunner block={block} />
+        </div>
+      );
+    case "codeExercise":
+      return (
+        <div className="mt-3">
+          <CodeExercise block={block} />
         </div>
       );
     case "grid":
