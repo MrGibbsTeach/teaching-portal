@@ -3,6 +3,7 @@ import { Redis } from "@upstash/redis";
 import type { ClassConfig } from "./auth-types";
 import { foundationsY12BareTopicIds } from "./content";
 import type { LiveAnswer, LiveState } from "./logic/live";
+import type { FeedbackItem } from "./logic/insights";
 import { LEGACY_FOUNDATIONS_SLUG, legacyFoundationsTarget } from "./logic/foundations-migration";
 
 const KV_KEY = "mg_classes";
@@ -258,5 +259,88 @@ export async function getLiveResponses(
   } catch (e) {
     console.error("KV live responses read failed:", e);
     return {};
+  }
+}
+
+// ── Quiz results (which questions students get wrong) ─────────────────────────
+// One hash per class; each answer bumps counters (see lib/logic/insights.ts for the field names).
+
+const quizStatsKey = (classId: string) => `mg_qstats:${classId}`;
+const _memQuizStats = new Map<string, Record<string, number>>();
+
+export async function recordQuizStats(classId: string, fields: string[]): Promise<void> {
+  const redis = getRedis();
+  if (!redis) {
+    const h = _memQuizStats.get(classId) ?? {};
+    for (const f of fields) h[f] = (h[f] ?? 0) + 1;
+    _memQuizStats.set(classId, h);
+    return;
+  }
+  try {
+    const key = quizStatsKey(classId);
+    await Promise.all(fields.map((f) => redis.hincrby(key, f, 1)));
+  } catch (e) {
+    console.error("KV quiz stats write failed:", e);
+  }
+}
+
+export async function getQuizStats(classId: string): Promise<Record<string, number>> {
+  const redis = getRedis();
+  if (!redis) return { ...(_memQuizStats.get(classId) ?? {}) };
+  try {
+    return (await redis.hgetall<Record<string, number>>(quizStatsKey(classId))) ?? {};
+  } catch (e) {
+    console.error("KV quiz stats read failed:", e);
+    return {};
+  }
+}
+
+// ── "Something wrong?" feedback notes ─────────────────────────────────────────
+// A single hash of id -> note, so individual notes can be resolved (deleted).
+
+const FEEDBACK_KEY = "mg_feedback";
+const _memFeedback = new Map<string, FeedbackItem>();
+
+export async function saveFeedback(item: FeedbackItem): Promise<void> {
+  const redis = getRedis();
+  if (!redis) {
+    _memFeedback.set(item.id, item);
+    return;
+  }
+  try {
+    await redis.hset(FEEDBACK_KEY, { [item.id]: JSON.stringify(item) });
+  } catch (e) {
+    console.error("KV feedback write failed:", e);
+  }
+}
+
+export async function getFeedback(): Promise<FeedbackItem[]> {
+  const redis = getRedis();
+  let items: FeedbackItem[];
+  if (!redis) {
+    items = [..._memFeedback.values()];
+  } else {
+    try {
+      const raw = (await redis.hgetall<Record<string, unknown>>(FEEDBACK_KEY)) ?? {};
+      // Upstash may auto-parse JSON values; accept either form.
+      items = Object.values(raw).map((v) => (typeof v === "string" ? JSON.parse(v) : v) as FeedbackItem);
+    } catch (e) {
+      console.error("KV feedback read failed:", e);
+      items = [];
+    }
+  }
+  return items.sort((a, b) => b.ts.localeCompare(a.ts));
+}
+
+export async function deleteFeedback(id: string): Promise<void> {
+  const redis = getRedis();
+  if (!redis) {
+    _memFeedback.delete(id);
+    return;
+  }
+  try {
+    await redis.hdel(FEEDBACK_KEY, id);
+  } catch (e) {
+    console.error("KV feedback delete failed:", e);
   }
 }

@@ -6,6 +6,7 @@ import { BlockRenderer } from "@/components/course/BlockRenderer";
 import { BucketSort } from "@/components/course/shared/InteractiveActivities";
 import { DiagramRunner } from "@/components/course/shared/DiagramRunner";
 import { CheckpointVideoPlayer } from "@/components/course/shared/CheckpointVideoPlayer";
+import { useQuizLogger } from "@/components/course/shared/LessonShell";
 import type { Block, QuizQuestion } from "@/lib/content/types";
 
 function shuffled<T>(items: T[]): T[] {
@@ -46,10 +47,12 @@ function TrueFalseCheck({
   onVerified: () => void;
 }) {
   const [selected, setSelected] = useState<boolean | null>(null);
+  const logAnswer = useQuizLogger();
 
   function pick(val: boolean) {
     if (selected !== null) return;
     setSelected(val);
+    logAnswer(question, val ? 0 : 1, val === question.correctAnswer);
     onVerified();
   }
 
@@ -97,6 +100,7 @@ function McqCheck({
   onVerified: () => void;
 }) {
   const [selected, setSelected] = useState<number | null>(null);
+  const logAnswer = useQuizLogger();
 
   return (
     <div>
@@ -112,6 +116,7 @@ function McqCheck({
               onClick={() => {
                 if (selected === null) {
                   setSelected(i);
+                  logAnswer(question, i, i === question.correctIndex);
                   onVerified();
                 }
               }}
