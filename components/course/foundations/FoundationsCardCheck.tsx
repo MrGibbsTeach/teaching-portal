@@ -3,6 +3,9 @@
 import { useMemo, useState } from "react";
 import { Check, X, RotateCcw } from "lucide-react";
 import { BlockRenderer } from "@/components/course/BlockRenderer";
+import { BucketSort } from "@/components/course/shared/InteractiveActivities";
+import { DiagramRunner } from "@/components/course/shared/DiagramRunner";
+import { CheckpointVideoPlayer } from "@/components/course/shared/CheckpointVideoPlayer";
 import type { Block, QuizQuestion } from "@/lib/content/types";
 
 function shuffled<T>(items: T[]): T[] {
@@ -494,6 +497,31 @@ export function FoundationsCardCheck({
         title={block.title}
         items={block.orderedItems}
         onVerified={onVerified}
+      />
+    );
+  }
+
+  if (block.type === "activity" && block.categories) {
+    return (
+      <div className="space-y-3">
+        {block.title && <p className="text-2xl font-bold">{block.title}</p>}
+        {block.instruction && <p className="text-lg">{block.instruction}</p>}
+        <BucketSort categories={block.categories} onSolved={onVerified} />
+      </div>
+    );
+  }
+
+  if (block.type === "interactiveDiagram") {
+    return <DiagramRunner block={block} onSolved={onVerified} />;
+  }
+
+  if (block.type === "checkpointVideo") {
+    return (
+      <CheckpointVideoPlayer
+        youtubeId={block.youtubeId}
+        title={block.title}
+        checkpoints={block.checkpoints}
+        onComplete={onVerified}
       />
     );
   }
