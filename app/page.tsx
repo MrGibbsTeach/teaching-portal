@@ -15,7 +15,10 @@ export default function Home() {
       </p>
 
       {courseGroups.map((group) => (
-        <section key={group.heading} className="mt-14 first:mt-16">
+        <section
+          key={group.heading}
+          className={`mt-14 first:mt-16 theme-${group.courses[0]?.tier}`}
+        >
           <h2 className="font-heading text-xl italic text-primary">
             {group.heading}
           </h2>

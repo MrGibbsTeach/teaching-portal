@@ -42,11 +42,11 @@ export function useQuizLogger() {
 }
 
 const LABELS: Record<FeedbackCategory, string> = {
-  confusing: "😕 Confusing",
-  mistake: "❌ A mistake",
-  broken: "🛠️ Not working",
-  "too-hard": "😓 Too hard",
-  other: "💬 Something else",
+  confusing: "Confusing",
+  mistake: "A mistake",
+  broken: "Not working",
+  "too-hard": "Too hard",
+  other: "Something else",
 };
 
 function FeedbackButton({ courseSlug, lessonId }: LessonInfo) {
@@ -80,10 +80,10 @@ function FeedbackButton({ courseSlug, lessonId }: LessonInfo) {
         <div
           role="dialog"
           aria-label="Report a problem with this lesson"
-          className="w-80 max-w-[calc(100vw-2rem)] space-y-3 rounded-2xl border-2 bg-background p-4 shadow-xl"
+          className="w-80 max-w-[calc(100vw-2rem)] space-y-3 border border-border bg-background p-4"
         >
           {state === "sent" ? (
-            <p className="py-6 text-center text-lg font-semibold">Thanks! 🙌 Your teacher will see this.</p>
+            <p className="py-6 text-center text-lg font-semibold">Thanks! Your teacher will see this.</p>
           ) : (
             <>
               <p className="font-semibold">What is wrong?</p>
@@ -94,8 +94,8 @@ function FeedbackButton({ courseSlug, lessonId }: LessonInfo) {
                     type="button"
                     aria-pressed={category === c}
                     onClick={() => setCategory(c)}
-                    className={`rounded-full border-2 px-3 py-1.5 text-sm font-medium ${
-                      category === c ? "border-primary bg-primary/10" : "bg-card"
+                    className={`border px-3 py-1.5 text-sm font-medium ${
+                      category === c ? "border-primary bg-primary/10 text-primary" : "border-border bg-card"
                     }`}
                   >
                     {LABELS[c]}
@@ -109,18 +109,18 @@ function FeedbackButton({ courseSlug, lessonId }: LessonInfo) {
                 rows={3}
                 placeholder="Tell us more (you can leave this empty)"
                 aria-label="Tell us more"
-                className="w-full resize-none rounded-lg border bg-background p-2 text-sm"
+                className="w-full resize-none border border-border bg-background p-2 text-sm"
               />
               <div className="flex items-center justify-between gap-2">
                 <button
                   type="button"
                   disabled={!category || state === "sending"}
                   onClick={send}
-                  className="rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground disabled:opacity-40"
+                  className="bg-primary px-4 py-2 text-sm font-medium text-primary-foreground disabled:opacity-40"
                 >
                   {state === "sending" ? "Sending…" : "Send"}
                 </button>
-                {state === "failed" && <span className="text-xs text-red-600">Did not send. Try again.</span>}
+                {state === "failed" && <span className="text-xs text-destructive">Did not send. Try again.</span>}
               </div>
             </>
           )}
@@ -130,7 +130,7 @@ function FeedbackButton({ courseSlug, lessonId }: LessonInfo) {
         type="button"
         aria-expanded={open}
         onClick={() => setOpen((o) => !o)}
-        className="rounded-full border-2 bg-background px-4 py-2 text-sm font-semibold shadow-lg hover:bg-accent"
+        className="border border-border bg-background px-4 py-2 text-sm font-medium hover:bg-accent/50"
       >
         {open ? "Close" : "Something wrong?"}
       </button>

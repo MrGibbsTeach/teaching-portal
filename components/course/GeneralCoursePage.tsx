@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
-import { Badge } from "@/components/ui/badge";
 import { MasteryTree } from "@/components/course/shared/MasteryTree";
+import { TierTheme } from "@/components/course/shared/TierTheme";
 import { getCourseBySlug } from "@/lib/courses";
 import { getCourseContent } from "@/lib/content";
 import { getSession } from "@/lib/session";
@@ -35,43 +35,53 @@ export async function GeneralCoursePage({ slug }: { slug: string }) {
     .filter((u) => u.topics.length > 0);
 
   return (
-    <div className="mx-auto max-w-3xl px-6 py-16">
-      <Badge variant="secondary">{course.yearLevel}</Badge>
-      <h1 className="mt-4 text-3xl font-semibold tracking-tight">{course.title}</h1>
-      <p className="mt-3 text-muted-foreground">{course.description}</p>
+    <TierTheme tier="general">
+      <div className="mx-auto max-w-3xl px-6 py-16">
+        <p className="text-sm font-medium uppercase tracking-widest text-primary">
+          {course.yearLevel}
+        </p>
+        <h1 className="mt-3 font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+          {course.title}
+        </h1>
+        <p className="mt-3 max-w-prose text-muted-foreground">{course.description}</p>
 
-      {units.length === 0 && isStudent && (
-        <div className="mt-10 rounded-xl border border-dashed p-10 text-center text-sm text-muted-foreground">
-          No topics have been unlocked for you yet. Check back after your teacher sets up your class.
-        </div>
-      )}
+        {units.length === 0 && isStudent && (
+          <div className="mt-10 border-t border-b border-dashed border-border py-10 text-center text-sm text-muted-foreground">
+            No topics have been unlocked for you yet. Check back after your teacher sets up your class.
+          </div>
+        )}
 
-      <div className="mt-10 space-y-12">
-        {units.map((unit) => (
-          <section key={unit.id}>
-            {unit.subtitle && (
-              <p className="mb-1 text-xs font-bold uppercase tracking-widest text-primary">{unit.subtitle}</p>
-            )}
-            <div className="mb-4 flex items-center justify-between">
-              <h2 className="text-xl font-medium tracking-tight">{unit.title}</h2>
-              {unit.status === "coming_soon" && <Badge variant="outline">Coming soon</Badge>}
-            </div>
-            {unit.status === "coming_soon" ? (
-              <div className="rounded-lg border border-dashed p-6 text-center text-sm text-muted-foreground">
-                Content coming soon.
+        <div className="mt-12 space-y-12">
+          {units.map((unit) => (
+            <section key={unit.id}>
+              <div className="border-b border-border pb-2">
+                {unit.subtitle && (
+                  <p className="text-xs font-semibold uppercase tracking-widest text-primary">{unit.subtitle}</p>
+                )}
+                <div className="flex items-baseline justify-between gap-3">
+                  <h2 className="font-heading text-2xl tracking-tight">{unit.title}</h2>
+                  {unit.status === "coming_soon" && (
+                    <span className="text-sm text-muted-foreground">Coming soon</span>
+                  )}
+                </div>
               </div>
-            ) : (
-              <MasteryTree
-                topics={unit.topics}
-                completed={completedSet}
-                unlockAll={!isStudent}
-                showProgress={isStudent}
-                lessonHref={(l) => `/courses/${course.slug}/lesson/${l.id}`}
-              />
-            )}
-          </section>
-        ))}
+              {unit.status === "coming_soon" ? (
+                <p className="py-6 text-sm text-muted-foreground">Content coming soon.</p>
+              ) : (
+                <div className="mt-5">
+                  <MasteryTree
+                    topics={unit.topics}
+                    completed={completedSet}
+                    unlockAll={!isStudent}
+                    showProgress={isStudent}
+                    lessonHref={(l) => `/courses/${course.slug}/lesson/${l.id}`}
+                  />
+                </div>
+              )}
+            </section>
+          ))}
+        </div>
       </div>
-    </div>
+    </TierTheme>
   );
 }

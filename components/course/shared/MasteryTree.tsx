@@ -3,12 +3,12 @@ import type { Lesson, Topic } from "@/lib/content/types";
 import { computeMastery, nextUp, skillIdOf, type NodeState } from "@/lib/logic/mastery";
 
 const STYLE: Record<NodeState, string> = {
-  locked: "border-dashed bg-muted/40 text-muted-foreground",
+  locked: "border-dashed border-border bg-muted/40 text-muted-foreground",
   available: "border-primary/50 bg-card",
   "in-progress": "border-primary bg-primary/10",
-  mastered: "border-emerald-500 bg-emerald-50 text-emerald-950",
+  mastered: "border-primary bg-primary text-primary-foreground",
 };
-const ICON: Record<NodeState, string> = { locked: "🔒", available: "○", "in-progress": "◐", mastered: "✅" };
+const LABEL: Record<NodeState, string> = { locked: "Locked", available: "", "in-progress": "In progress", mastered: "Mastered" };
 
 /** Depth of each skill = longest prerequisite chain to it (cycle-safe). */
 function depths(topics: Topic[]): Map<string, number> {
@@ -73,7 +73,7 @@ export function MasteryTree({
               return (
                 <div
                   key={skillIdOf(t)}
-                  className={`rounded-xl border-2 p-4 ${STYLE[open ? state : "locked"]} ${isNext ? "ring-2 ring-primary ring-offset-2" : ""}`}
+                  className={`border-2 p-4 ${STYLE[open ? state : "locked"]} ${isNext ? "outline outline-2 outline-offset-2 outline-primary" : ""}`}
                 >
                   <div className="flex items-start justify-between gap-2">
                     {open && cont ? (
@@ -83,11 +83,15 @@ export function MasteryTree({
                     ) : (
                       <span className="font-semibold">{t.title}</span>
                     )}
-                    <span aria-hidden>{showProgress ? ICON[open ? state : "locked"] : ""}</span>
+                    {showProgress && LABEL[open ? state : "locked"] && (
+                      <span className="shrink-0 text-xs font-medium uppercase tracking-wide">
+                        {LABEL[open ? state : "locked"]}
+                      </span>
+                    )}
                   </div>
                   {showProgress && (
-                    <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-muted">
-                      <div className="h-full bg-emerald-500" style={{ width: `${Math.round(node.progress * 100)}%` }} />
+                    <div className="mt-2 h-1.5 overflow-hidden bg-muted">
+                      <div className="h-full bg-primary" style={{ width: `${Math.round(node.progress * 100)}%` }} />
                     </div>
                   )}
                   <p className="mt-1 text-xs">
@@ -106,7 +110,7 @@ export function MasteryTree({
                               {showProgress && (
                                 <span
                                   aria-hidden
-                                  className={`h-3 w-3 shrink-0 rounded-full border ${completed.has(l.id) ? "border-emerald-600 bg-emerald-500" : "border-muted-foreground/40"}`}
+                                  className={`h-3 w-3 shrink-0 rounded-full border ${completed.has(l.id) ? "border-primary bg-primary" : "border-muted-foreground/40"}`}
                                 />
                               )}
                               <span className={completed.has(l.id) ? "text-muted-foreground" : ""}>{l.title}</span>

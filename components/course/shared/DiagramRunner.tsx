@@ -59,9 +59,9 @@ export function DiagramRunner({
   }
 
   const tone = solved
-    ? "border-emerald-500 bg-emerald-50 text-emerald-900"
+    ? "border-primary bg-primary/10 text-primary"
     : attempted || kind === "toggle-state" || kind === "slider"
-      ? "border-red-400 bg-red-50 text-red-900"
+      ? "border-destructive bg-destructive/10 text-destructive"
       : "border-muted bg-muted/40";
 
   return (
@@ -69,7 +69,7 @@ export function DiagramRunner({
       {block.title && <p className="text-lg font-semibold">{block.title}</p>}
       {block.instruction && <p className="text-sm">{block.instruction}</p>}
 
-      <div className={`rounded-xl border-2 p-4 transition-colors ${tone}`}>
+      <div className={`border-2 p-4 transition-colors ${tone}`}>
         {kind === "toggle-state" && (
           <Toggles defs={(config.toggles as ToggleDef[]) ?? []} state={state} onChange={update} disabled={solved} />
         )}
@@ -102,7 +102,7 @@ export function DiagramRunner({
 
       <p role="status" className="text-sm font-medium">
         {solved
-          ? `✅ Working! ${block.explanation ?? ""}`
+          ? `Working! ${block.explanation ?? ""}`
           : attempted
             ? "Still broken. Adjust it and try again."
             : ""}
@@ -161,7 +161,7 @@ function Toggles({
             className="flex items-center justify-between rounded-lg border bg-card px-4 py-3 text-left text-foreground"
           >
             <span className="font-medium">{d.label}</span>
-            <span className={`rounded-full px-3 py-1 text-xs font-bold ${on ? "bg-emerald-600 text-white" : "bg-zinc-300 text-zinc-800"}`}>
+            <span className={`rounded-full px-3 py-1 text-xs font-bold ${on ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground"}`}>
               {on ? (d.onLabel ?? "ON") : (d.offLabel ?? "OFF")}
             </span>
           </button>
@@ -233,7 +233,7 @@ function Arrange({
       {order.map((item, i) => (
         <li
           key={item}
-          className={`flex items-center gap-2 rounded-lg border bg-card p-2 ${wrong.includes(String(i)) ? "border-red-500" : ""}`}
+          className={`flex items-center gap-2 rounded-lg border bg-card p-2 ${wrong.includes(String(i)) ? "border-destructive" : ""}`}
         >
           <span className="w-6 text-center text-sm font-bold">{i + 1}</span>
           <span className="flex-1 text-sm">{item}</span>

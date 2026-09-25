@@ -70,7 +70,7 @@ export function BucketSort({
 
       <div className="grid gap-3 sm:grid-cols-2">
         {categories.map((c) => (
-          <div key={c.label} className="rounded-xl border-2 border-dashed p-3">
+          <div key={c.label} className="border-2 border-dashed border-border p-3">
             <button
               type="button"
               onClick={() => place(c.label)}
@@ -90,10 +90,10 @@ export function BucketSort({
                     onClick={() => unplace(item)}
                     className={`${btn} ${
                       wrong.includes(item)
-                        ? "border-red-500 bg-red-50 text-red-900"
+                        ? "border-destructive bg-destructive/10 text-destructive"
                         : solved
-                          ? "border-emerald-500 bg-emerald-50 text-emerald-900"
-                          : "bg-card"
+                          ? "border-primary bg-primary/10 text-primary"
+                          : "border-border bg-card"
                     }`}
                   >
                     {item}
@@ -115,7 +115,7 @@ export function BucketSort({
         </button>
       )}
       <p role="status" className="text-sm font-medium">
-        {solved ? "✅ All sorted!" : wrong.length > 0 ? "Not quite. The red ones are in the wrong place." : ""}
+        {solved ? "All sorted!" : wrong.length > 0 ? "Not quite. The marked ones are in the wrong place." : ""}
       </p>
     </div>
   );
@@ -161,10 +161,10 @@ export function OrderSteps({
             key={item}
             className={`flex items-center gap-2 rounded-lg border p-2 ${
               misplaced.includes(i)
-                ? "border-red-500 bg-red-50"
+                ? "border-destructive bg-destructive/10"
                 : solved
-                  ? "border-emerald-500 bg-emerald-50"
-                  : "bg-card"
+                  ? "border-primary bg-primary/10"
+                  : "border-border bg-card"
             }`}
           >
             <span className="w-6 text-center text-sm font-bold">{i + 1}</span>
@@ -200,7 +200,7 @@ export function OrderSteps({
         </button>
       )}
       <p role="status" className="text-sm font-medium">
-        {solved ? "✅ Right order!" : misplaced.length > 0 ? "Not quite. The red ones are in the wrong place." : ""}
+        {solved ? "Right order!" : misplaced.length > 0 ? "Not quite. The marked ones are in the wrong place." : ""}
       </p>
     </div>
   );

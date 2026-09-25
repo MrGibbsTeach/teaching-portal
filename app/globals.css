@@ -99,6 +99,48 @@
   --sidebar-ring: oklch(0.4 0.08 195);
 }
 
+/* Five course tiers, one master system: background, radius and type stay
+   constant (that's what reads as "one site"); only the accent — primary,
+   ring, accent, accent-foreground — shifts per tier, at the same restrained
+   chroma as the brand teal so no tier looks louder than another. No `:root`
+   prefix (unlike Foundations below): these scope to whatever element carries
+   the class, so TierTheme (components/course/shared/TierTheme.tsx) can put
+   it on <html> for a whole course/lesson page, while the home page scopes
+   it locally per course-group section so five tiers can preview at once.
+   Keyed off Course.tier in lib/courses.ts. */
+.theme-y7-8 {
+  /* Years 7–8 Digital Technologies — approachable, intro. Warm amber. */
+  --primary: oklch(0.5 0.14 70);
+  --primary-foreground: oklch(0.99 0 0);
+  --ring: oklch(0.5 0.14 70);
+  --accent: oklch(0.93 0.05 70);
+  --accent-foreground: oklch(0.32 0.07 70);
+}
+.theme-y9-10 {
+  /* Years 9–10 electives — confident, independent. Plum. */
+  --primary: oklch(0.42 0.13 320);
+  --primary-foreground: oklch(0.98 0.005 320);
+  --ring: oklch(0.42 0.13 320);
+  --accent: oklch(0.92 0.03 320);
+  --accent-foreground: oklch(0.3 0.08 320);
+}
+.theme-general {
+  /* AIT General — practical, hands-on, built for independence. Terracotta. */
+  --primary: oklch(0.48 0.13 40);
+  --primary-foreground: oklch(0.99 0 0);
+  --ring: oklch(0.48 0.13 40);
+  --accent: oklch(0.92 0.04 40);
+  --accent-foreground: oklch(0.32 0.08 40);
+}
+.theme-atar {
+  /* AIT ATAR — serious, exam-prep, academic. Ink-indigo. */
+  --primary: oklch(0.38 0.09 265);
+  --primary-foreground: oklch(0.98 0.005 265);
+  --ring: oklch(0.38 0.09 265);
+  --accent: oklch(0.91 0.025 265);
+  --accent-foreground: oklch(0.28 0.06 265);
+}
+
 /* AIT Foundations tier — high-contrast, large-type, dyslexia-friendly theme.
    Toggled on <html> only while viewing /courses/ait-foundations routes;
    bumping root font-size scales every rem-based Tailwind utility with it.

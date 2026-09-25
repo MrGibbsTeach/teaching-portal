@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
-import { Badge } from "@/components/ui/badge";
 import { BlockRenderer } from "@/components/course/BlockRenderer";
 import { FoundationsLessonView } from "@/components/course/foundations/FoundationsLessonView";
 import { FoundationsThemeRoot } from "@/components/course/foundations/FoundationsThemeRoot";
@@ -11,6 +10,7 @@ import { getCourseContent, findLesson, findNextLesson } from "@/lib/content";
 import { getSession } from "@/lib/session";
 import { getClass, getStudentProgress } from "@/lib/db";
 import { LessonShell } from "@/components/course/shared/LessonShell";
+import { TierTheme } from "@/components/course/shared/TierTheme";
 import { LessonCompleteButton } from "@/components/course/LessonCompleteButton";
 import {
   FOUNDATIONS_SLUGS,
@@ -89,21 +89,22 @@ export default async function LessonPage({
     }
   }
 
-  const isGeneral = slug === "year-11-applied-it-general" || slug === "year-12-applied-it-general";
-  if (isGeneral) {
+  if (course.tier === "general") {
     return (
       <LessonShell courseSlug={course.slug} lessonId={lessonId}>
-        <GeneralLessonView
-          courseSlug={course.slug}
-          courseTitle={course.title}
-          unitTitle={unit.title}
-          topicTitle={topic.title}
-          topicId={topic.id}
-          lessonTitle={lesson.title}
-          estimatedMinutes={lesson.estimatedMinutes}
-          blocks={lesson.blocks}
-          nextLesson={nextLesson}
-        />
+        <TierTheme tier="general">
+          <GeneralLessonView
+            courseSlug={course.slug}
+            courseTitle={course.title}
+            unitTitle={unit.title}
+            topicTitle={topic.title}
+            topicId={topic.id}
+            lessonTitle={lesson.title}
+            estimatedMinutes={lesson.estimatedMinutes}
+            blocks={lesson.blocks}
+            nextLesson={nextLesson}
+          />
+        </TierTheme>
         {completeButton}
       </LessonShell>
     );
@@ -127,30 +128,32 @@ export default async function LessonPage({
 
   return (
     <LessonShell courseSlug={course.slug} lessonId={lessonId}>
-    <div className="mx-auto max-w-3xl px-6 py-16">
-      <Link
-        href={`/courses/${slug}`}
-        className="text-sm text-muted-foreground hover:underline"
-      >
-        ← {course.title}
-      </Link>
-      <p className="mt-4 text-sm text-muted-foreground">
-        {unit.title} / {topic.title}
-      </p>
-      <div className="mt-1 flex items-center gap-2">
-        <h1 className="text-2xl font-semibold tracking-tight">{lesson.title}</h1>
-        {lesson.estimatedMinutes && (
-          <Badge variant="secondary">{lesson.estimatedMinutes} min</Badge>
-        )}
-      </div>
+      <TierTheme tier={course.tier}>
+        <div className="mx-auto max-w-3xl px-6 py-10">
+          <Link
+            href={`/courses/${slug}`}
+            className="text-sm text-muted-foreground hover:text-primary"
+          >
+            ← {course.title}
+          </Link>
+          <p className="mt-6 text-sm text-muted-foreground">
+            {unit.title} / {topic.title}
+          </p>
+          <h1 className="mt-1 font-heading text-3xl font-semibold tracking-tight">
+            {lesson.title}
+          </h1>
+          {lesson.estimatedMinutes && (
+            <p className="mt-1.5 text-sm text-muted-foreground">{lesson.estimatedMinutes} min</p>
+          )}
 
-      <div className="mt-6">
-        {lesson.blocks.map((block, i) => (
-          <BlockRenderer key={i} block={block} />
-        ))}
-      </div>
-      {completeButton}
-    </div>
+          <div className="mt-8">
+            {lesson.blocks.map((block, i) => (
+              <BlockRenderer key={i} block={block} />
+            ))}
+          </div>
+          {completeButton}
+        </div>
+      </TierTheme>
     </LessonShell>
   );
 }

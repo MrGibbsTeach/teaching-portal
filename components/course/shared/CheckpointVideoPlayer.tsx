@@ -134,7 +134,7 @@ export function CheckpointVideoPlayer({
 
   return (
     <div className="space-y-3">
-      <div className="relative aspect-video w-full overflow-hidden rounded-xl border bg-black">
+      <div className="relative aspect-video w-full overflow-hidden border border-border bg-black">
         <div ref={hostRef} className="absolute inset-0 [&_iframe]:h-full [&_iframe]:w-full" aria-label={title ?? "video"} />
         {activeCp && (
           <div className="absolute inset-0 overflow-y-auto bg-background p-4 sm:p-6">
@@ -149,7 +149,7 @@ export function CheckpointVideoPlayer({
         {sorted.map((c) => (
           <span
             key={c.i}
-            className={`h-2.5 flex-1 rounded-full ${answered.has(c.i) ? "bg-emerald-500" : "bg-muted"}`}
+            className={`h-2 flex-1 ${answered.has(c.i) ? "bg-primary" : "bg-muted"}`}
           />
         ))}
       </div>
@@ -219,8 +219,8 @@ function QuickQuestion({ q, onSolved }: { q: QuizQuestion; onSolved: () => void 
             key={i}
             type="button"
             onClick={() => choose(i)}
-            className={`rounded-lg border-2 px-4 py-3 text-left font-medium ${
-              picked === i ? (i === correct ? "border-emerald-500 bg-emerald-50 text-emerald-900" : "border-red-500 bg-red-50 text-red-900") : "bg-card"
+            className={`border px-4 py-3 text-left font-medium ${
+              picked === i ? (i === correct ? "border-primary bg-primary/10 text-primary" : "border-destructive bg-destructive/10 text-destructive") : "border-border bg-card"
             }`}
           >
             {o}
@@ -228,7 +228,7 @@ function QuickQuestion({ q, onSolved }: { q: QuizQuestion; onSolved: () => void 
         ))}
       </div>
       <p role="status" className="text-sm font-medium">
-        {done ? "✅ Correct!" : picked !== null ? "Not quite. Try another answer." : ""}
+        {done ? "Correct!" : picked !== null ? "Not quite. Try another answer." : ""}
       </p>
     </div>
   );

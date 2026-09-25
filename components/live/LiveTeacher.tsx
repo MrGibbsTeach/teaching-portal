@@ -26,9 +26,9 @@ interface TeacherPayload {
 
 const POLL_MS = 2000;
 const CHIP: Record<StudentStatus, string> = {
-  correct: "bg-emerald-500 text-white",
-  wrong: "bg-red-500 text-white",
-  answered: "bg-primary text-primary-foreground",
+  correct: "bg-primary text-primary-foreground",
+  wrong: "bg-destructive text-white",
+  answered: "border border-primary text-primary",
   none: "bg-muted text-muted-foreground",
 };
 
@@ -74,7 +74,7 @@ export function LiveTeacher({ classId, lessons }: { classId: string; lessons: Le
 
   if (!data?.active || data.slideIndex === undefined || !data.block) {
     return (
-      <div className="space-y-4 rounded-xl border p-5">
+      <div className="space-y-4 border border-border p-5">
         <p className="font-medium">Choose a lesson to teach live</p>
         <p className="text-sm text-muted-foreground">
           Each block of the lesson becomes a slide. Students follow along on their own screens.
@@ -82,7 +82,7 @@ export function LiveTeacher({ classId, lessons }: { classId: string; lessons: Le
         <select
           value={lessonId}
           onChange={(e) => setLessonId(e.target.value)}
-          className="w-full rounded-lg border bg-background p-2 text-sm"
+          className="w-full border border-border bg-background p-2 text-sm"
           aria-label="Lesson"
         >
           {groups.map((g) => (
@@ -101,11 +101,11 @@ export function LiveTeacher({ classId, lessons }: { classId: string; lessons: Le
           type="button"
           disabled={pending || !lessonId}
           onClick={() => act(() => startLiveSession(classId, lessonId))}
-          className="rounded-lg bg-primary px-5 py-2 font-semibold text-primary-foreground disabled:opacity-50"
+          className="bg-primary px-5 py-2 font-medium text-primary-foreground disabled:opacity-50"
         >
           Start live session
         </button>
-        {error && <p className="text-sm text-red-600">Could not reach the server. Retrying…</p>}
+        {error && <p className="text-sm text-destructive">Could not reach the server. Retrying…</p>}
       </div>
     );
   }
@@ -122,14 +122,14 @@ export function LiveTeacher({ classId, lessons }: { classId: string; lessons: Le
           <p className="font-semibold">{data.lessonTitle}</p>
           <p className="text-sm text-muted-foreground">
             Slide {slideIndex + 1} of {slideCount}
-            {error && <strong className="ml-2 text-red-600">Reconnecting…</strong>}
+            {error && <strong className="ml-2 text-destructive">Reconnecting…</strong>}
           </p>
         </div>
         <button
           type="button"
           disabled={pending}
           onClick={() => act(() => endLiveSession(classId))}
-          className="rounded-lg border border-destructive px-4 py-2 text-sm font-medium text-destructive"
+          className="border border-destructive px-4 py-2 text-sm font-medium text-destructive"
         >
           End session
         </button>
@@ -140,7 +140,7 @@ export function LiveTeacher({ classId, lessons }: { classId: string; lessons: Le
           type="button"
           disabled={pending || slideIndex === 0}
           onClick={() => act(() => setLiveSlide(classId, slideIndex - 1))}
-          className="rounded-lg border px-4 py-2 font-medium disabled:opacity-40"
+          className="border border-border px-4 py-2 font-medium disabled:opacity-40"
         >
           ← Previous
         </button>
@@ -148,7 +148,7 @@ export function LiveTeacher({ classId, lessons }: { classId: string; lessons: Le
           type="button"
           disabled={pending || slideIndex >= slideCount - 1}
           onClick={() => act(() => setLiveSlide(classId, slideIndex + 1))}
-          className="rounded-lg bg-primary px-4 py-2 font-medium text-primary-foreground disabled:opacity-40"
+          className="bg-primary px-4 py-2 font-medium text-primary-foreground disabled:opacity-40"
         >
           Next →
         </button>
@@ -157,20 +157,20 @@ export function LiveTeacher({ classId, lessons }: { classId: string; lessons: Le
             type="button"
             disabled={pending}
             onClick={() => act(() => setLiveRevealed(classId, !data.revealed))}
-            className="rounded-lg border px-4 py-2 font-medium"
+            className="border border-border px-4 py-2 font-medium"
           >
             {data.revealed ? "Hide answer" : "Show answer to students"}
           </button>
         )}
       </div>
 
-      <div className="rounded-xl border p-4">
+      <div className="border border-border p-4">
         <p className="mb-2 text-xs font-bold uppercase tracking-wide text-muted-foreground">What students see</p>
         <BlockRenderer block={block} />
       </div>
 
       {summary && totalStudents > 0 && (
-        <section aria-label="Responses" className="space-y-4 rounded-xl border p-4">
+        <section aria-label="Responses" className="space-y-4 border border-border p-4">
           <p className="font-semibold">
             Responses: {summary.answered} of {totalStudents}
             {right !== undefined && summary.answered > 0 && (
@@ -192,9 +192,9 @@ export function LiveTeacher({ classId, lessons }: { classId: string; lessons: Le
                       </span>
                       <span className="tabular-nums text-muted-foreground">{n}</span>
                     </div>
-                    <div className="h-2 overflow-hidden rounded-full bg-muted">
+                    <div className="h-2 overflow-hidden bg-muted">
                       <div
-                        className={`h-full ${right === i ? "bg-emerald-500" : "bg-primary/60"}`}
+                        className={`h-full ${right === i ? "bg-primary" : "bg-primary/40"}`}
                         style={{ width: `${pct}%` }}
                       />
                     </div>
@@ -208,17 +208,17 @@ export function LiveTeacher({ classId, lessons }: { classId: string; lessons: Le
             {roster.map((s) => {
               const status = summary.byStudent[s.username] ?? "none";
               return (
-                <span key={s.username} title={status} className={`rounded-full px-3 py-1 text-xs font-medium ${CHIP[status]}`}>
+                <span key={s.username} title={status} className={`px-3 py-1 text-xs font-medium ${CHIP[status]}`}>
                   {s.displayName}
                 </span>
               );
             })}
           </div>
-          <p className="text-xs text-muted-foreground">Green = correct, red = wrong, blue = answered, grey = not yet.</p>
+          <p className="text-xs text-muted-foreground">Filled = correct, red = wrong, outline = answered, grey = not yet.</p>
         </section>
       )}
 
-      <details className="rounded-xl border p-4">
+      <details className="border border-border p-4">
         <summary className="cursor-pointer text-sm font-medium">All slides</summary>
         <ol className="mt-2 space-y-1">
           {slides.map((s) => (
@@ -227,7 +227,7 @@ export function LiveTeacher({ classId, lessons }: { classId: string; lessons: Le
                 type="button"
                 disabled={pending}
                 onClick={() => act(() => setLiveSlide(classId, s.index))}
-                className={`w-full rounded px-2 py-1 text-left text-sm hover:bg-accent ${s.index === slideIndex ? "bg-primary/10 font-semibold" : ""}`}
+                className={`w-full px-2 py-1 text-left text-sm hover:bg-accent/40 ${s.index === slideIndex ? "bg-primary/10 font-semibold" : ""}`}
               >
                 {s.index + 1}. {s.label}
               </button>
