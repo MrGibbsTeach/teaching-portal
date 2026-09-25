@@ -1,6 +1,10 @@
 import "server-only";
 import { Redis } from "@upstash/redis";
 import type { ClassConfig } from "./auth-types";
+import { foundationsY12BareTopicIds } from "./content";
+import type { LiveAnswer, LiveState } from "./logic/live";
+import type { FeedbackItem } from "./logic/insights";
+import { LEGACY_FOUNDATIONS_SLUG, legacyFoundationsTarget } from "./logic/foundations-migration";
 
 const KV_KEY = "mg_classes";
 const _mem: ClassConfig[] = [];
@@ -22,7 +26,15 @@ export async function getClasses(): Promise<ClassConfig[]> {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const raw = (await redis.get<any[]>(KV_KEY)) ?? [];
     // Migrate records that were saved with the old `unitIds` field name
-    return raw.map((c) => ({ ...c, topicIds: c.topicIds ?? c.unitIds ?? [] })) as ClassConfig[];
+    return raw.map((c) => {
+      const topicIds: string[] = c.topicIds ?? c.unitIds ?? [];
+      // Foundations was split into Year 11 / Year 12 courses; re-point old classes.
+      const courseSlug =
+        c.courseSlug === LEGACY_FOUNDATIONS_SLUG
+          ? legacyFoundationsTarget(topicIds, foundationsY12BareTopicIds)
+          : c.courseSlug;
+      return { ...c, courseSlug, topicIds };
+    }) as ClassConfig[];
   } catch (e) {
     console.error("KV read failed:", e);
     return [];
@@ -117,5 +129,218 @@ export async function markLessonIncomplete(
     await redis.set(key, current.filter((id) => id !== lessonId));
   } catch (e) {
     console.error("KV progress write failed:", e);
+  }
+}
+
+// ── Skill mastery (0..1 per skill; used by the mastery tree and practice results) ──
+
+function masteryKey(classId: string, username: string) {
+  return `mg_mastery:${classId}:${username}`;
+}
+
+export async function getStudentMastery(
+  classId: string,
+  username: string
+): Promise<Record<string, number>> {
+  const redis = getRedis();
+  if (!redis) return {};
+  try {
+    return (await redis.hgetall<Record<string, number>>(masteryKey(classId, username))) ?? {};
+  } catch (e) {
+    console.error("KV mastery read failed:", e);
+    return {};
+  }
+}
+
+/** Records a score for a skill. Keeps the best score so a bad retry never lowers mastery. */
+export async function recordSkillScore(
+  classId: string,
+  username: string,
+  skillId: string,
+  score: number
+): Promise<void> {
+  const redis = getRedis();
+  if (!redis) return;
+  try {
+    const clamped = Math.min(1, Math.max(0, score));
+    const key = masteryKey(classId, username);
+    const current = Number((await redis.hget<number>(key, skillId)) ?? 0);
+    if (clamped > current) await redis.hset(key, { [skillId]: clamped });
+  } catch (e) {
+    console.error("KV mastery write failed:", e);
+  }
+}
+
+// ── Live (teacher-paced) sessions ────────────────────────────────────────────
+// One session per class. Keys expire after 6 hours so an abandoned session cleans itself up.
+
+const LIVE_TTL_SECONDS = 6 * 60 * 60;
+const liveKey = (classId: string) => `mg_live:${classId}`;
+// Keyed by session (its start time), so restarting a lesson never shows a previous session's answers.
+const liveRespKey = (classId: string, sessionId: string, slide: number) =>
+  `mg_live_resp:${classId}:${sessionId}:${slide}`;
+const _memLive = new Map<string, LiveState>();
+const _memLiveResp = new Map<string, Record<string, LiveAnswer>>();
+
+export async function getLiveState(classId: string): Promise<LiveState | null> {
+  const redis = getRedis();
+  if (!redis) return _memLive.get(classId) ?? null;
+  try {
+    return (await redis.get<LiveState>(liveKey(classId))) ?? null;
+  } catch (e) {
+    console.error("KV live read failed:", e);
+    return null;
+  }
+}
+
+export async function setLiveState(classId: string, state: LiveState): Promise<void> {
+  const redis = getRedis();
+  if (!redis) {
+    _memLive.set(classId, state);
+    return;
+  }
+  try {
+    await redis.set(liveKey(classId), state, { ex: LIVE_TTL_SECONDS });
+  } catch (e) {
+    console.error("KV live write failed:", e);
+  }
+}
+
+export async function clearLiveState(classId: string): Promise<void> {
+  const redis = getRedis();
+  if (!redis) {
+    _memLive.delete(classId);
+    return;
+  }
+  try {
+    await redis.del(liveKey(classId));
+  } catch (e) {
+    console.error("KV live clear failed:", e);
+  }
+}
+
+export async function submitLiveResponse(
+  classId: string,
+  sessionId: string,
+  slide: number,
+  username: string,
+  answer: LiveAnswer
+): Promise<void> {
+  const redis = getRedis();
+  const key = liveRespKey(classId, sessionId, slide);
+  if (!redis) {
+    _memLiveResp.set(key, { ...(_memLiveResp.get(key) ?? {}), [username]: answer });
+    return;
+  }
+  try {
+    await redis.hset(key, { [username]: JSON.stringify(answer) });
+    await redis.expire(key, LIVE_TTL_SECONDS);
+  } catch (e) {
+    console.error("KV live response write failed:", e);
+  }
+}
+
+export async function getLiveResponses(
+  classId: string,
+  sessionId: string,
+  slide: number
+): Promise<Record<string, LiveAnswer>> {
+  const redis = getRedis();
+  const key = liveRespKey(classId, sessionId, slide);
+  if (!redis) return { ..._memLiveResp.get(key) };
+  try {
+    const raw = (await redis.hgetall<Record<string, unknown>>(key)) ?? {};
+    const out: Record<string, LiveAnswer> = {};
+    for (const [user, v] of Object.entries(raw)) {
+      // Upstash may auto-parse JSON values; accept either form.
+      out[user] = (typeof v === "string" ? JSON.parse(v) : v) as LiveAnswer;
+    }
+    return out;
+  } catch (e) {
+    console.error("KV live responses read failed:", e);
+    return {};
+  }
+}
+
+// ── Quiz results (which questions students get wrong) ─────────────────────────
+// One hash per class; each answer bumps counters (see lib/logic/insights.ts for the field names).
+
+const quizStatsKey = (classId: string) => `mg_qstats:${classId}`;
+const _memQuizStats = new Map<string, Record<string, number>>();
+
+export async function recordQuizStats(classId: string, fields: string[]): Promise<void> {
+  const redis = getRedis();
+  if (!redis) {
+    const h = _memQuizStats.get(classId) ?? {};
+    for (const f of fields) h[f] = (h[f] ?? 0) + 1;
+    _memQuizStats.set(classId, h);
+    return;
+  }
+  try {
+    const key = quizStatsKey(classId);
+    await Promise.all(fields.map((f) => redis.hincrby(key, f, 1)));
+  } catch (e) {
+    console.error("KV quiz stats write failed:", e);
+  }
+}
+
+export async function getQuizStats(classId: string): Promise<Record<string, number>> {
+  const redis = getRedis();
+  if (!redis) return { ...(_memQuizStats.get(classId) ?? {}) };
+  try {
+    return (await redis.hgetall<Record<string, number>>(quizStatsKey(classId))) ?? {};
+  } catch (e) {
+    console.error("KV quiz stats read failed:", e);
+    return {};
+  }
+}
+
+// ── "Something wrong?" feedback notes ─────────────────────────────────────────
+// A single hash of id -> note, so individual notes can be resolved (deleted).
+
+const FEEDBACK_KEY = "mg_feedback";
+const _memFeedback = new Map<string, FeedbackItem>();
+
+export async function saveFeedback(item: FeedbackItem): Promise<void> {
+  const redis = getRedis();
+  if (!redis) {
+    _memFeedback.set(item.id, item);
+    return;
+  }
+  try {
+    await redis.hset(FEEDBACK_KEY, { [item.id]: JSON.stringify(item) });
+  } catch (e) {
+    console.error("KV feedback write failed:", e);
+  }
+}
+
+export async function getFeedback(): Promise<FeedbackItem[]> {
+  const redis = getRedis();
+  let items: FeedbackItem[];
+  if (!redis) {
+    items = [..._memFeedback.values()];
+  } else {
+    try {
+      const raw = (await redis.hgetall<Record<string, unknown>>(FEEDBACK_KEY)) ?? {};
+      // Upstash may auto-parse JSON values; accept either form.
+      items = Object.values(raw).map((v) => (typeof v === "string" ? JSON.parse(v) : v) as FeedbackItem);
+    } catch (e) {
+      console.error("KV feedback read failed:", e);
+      items = [];
+    }
+  }
+  return items.sort((a, b) => b.ts.localeCompare(a.ts));
+}
+
+export async function deleteFeedback(id: string): Promise<void> {
+  const redis = getRedis();
+  if (!redis) {
+    _memFeedback.delete(id);
+    return;
+  }
+  try {
+    await redis.hdel(FEEDBACK_KEY, id);
+  } catch (e) {
+    console.error("KV feedback delete failed:", e);
   }
 }

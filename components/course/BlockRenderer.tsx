@@ -1,4 +1,7 @@
 import type { Block, QuizQuestion } from "@/lib/content/types";
+import { CodeExercise } from "@/components/course/shared/CodeExercise";
+import { DiagramRunner } from "@/components/course/shared/DiagramRunner";
+import { CheckpointVideoPlayer } from "@/components/course/shared/CheckpointVideoPlayer";
 
 function QuizQuestionView({ question }: { question: QuizQuestion }) {
   return (
@@ -174,6 +177,24 @@ export function BlockRenderer({ block }: { block: Block }) {
           {block.caption && (
             <p className="mt-1 text-xs text-muted-foreground">{block.caption}</p>
           )}
+        </div>
+      );
+    case "checkpointVideo":
+      return (
+        <div className="mt-3">
+          <CheckpointVideoPlayer youtubeId={block.youtubeId} title={block.title} checkpoints={block.checkpoints} />
+        </div>
+      );
+    case "interactiveDiagram":
+      return (
+        <div className="mt-3 border border-border p-4">
+          <DiagramRunner block={block} />
+        </div>
+      );
+    case "codeExercise":
+      return (
+        <div className="mt-3">
+          <CodeExercise block={block} />
         </div>
       );
     case "grid":

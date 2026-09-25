@@ -3,10 +3,12 @@
 import { useState } from "react";
 import { Check, X } from "lucide-react";
 import type { QuizQuestion } from "@/lib/content/types";
+import { useQuizLogger } from "@/components/course/shared/LessonShell";
 
 export function GeneralQuizBlock({ question }: { question: QuizQuestion }) {
   const [selected, setSelected] = useState<number | string | boolean | null>(null);
   const [revealed, setRevealed] = useState(false);
+  const logAnswer = useQuizLogger();
 
   if (question.questionType === "mcq" && question.options) {
     return (
@@ -23,7 +25,12 @@ export function GeneralQuizBlock({ question }: { question: QuizQuestion }) {
             return (
               <button
                 key={i}
-                onClick={() => { if (selected === null) setSelected(i); }}
+                onClick={() => {
+                  if (selected === null) {
+                    setSelected(i);
+                    logAnswer(question, i, i === question.correctIndex);
+                  }
+                }}
                 disabled={selected !== null}
                 className={`flex w-full items-center justify-between border px-4 py-2.5 text-left text-sm transition-colors ${
                   showResult && isCorrect
@@ -60,7 +67,12 @@ export function GeneralQuizBlock({ question }: { question: QuizQuestion }) {
             return (
               <button
                 key={label}
-                onClick={() => { if (selected === null) setSelected(val); }}
+                onClick={() => {
+                  if (selected === null) {
+                    setSelected(val);
+                    logAnswer(question, val ? 0 : 1, val === question.correctAnswer);
+                  }
+                }}
                 disabled={showResult}
                 className={`border py-3 font-medium transition-colors ${
                   showResult && isCorrect

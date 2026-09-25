@@ -46,3 +46,6 @@ next-env.d.ts
 !/course-reference/**/
 !/course-reference/**/.gitkeep
 !/course-reference/README.md
+
+# scratch review pages
+weekly-review*.html

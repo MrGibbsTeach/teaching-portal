@@ -13,6 +13,9 @@ export default function TeacherLayout({ children }: { children: React.ReactNode 
             <Link href="/teacher/classes/new" className="text-muted-foreground hover:text-foreground">
               + New Class
             </Link>
+            <Link href="/teacher/insights" className="text-muted-foreground hover:text-foreground">
+              Insights
+            </Link>
           </div>
           <form action={logout}>
             <button type="submit" className="text-muted-foreground hover:text-foreground">

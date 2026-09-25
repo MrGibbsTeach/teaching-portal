@@ -59,10 +59,45 @@
          "html": "It might help you write, draw, or play a game.<br><br>The system is built around what the user needs."
         },
         {
-         "type": "video",
+         "type": "checkpointVideo",
          "youtubeId": "OAx_6-wdslM",
          "title": "Introducing How Computers Work",
-         "caption": "Code.org — a great overview of what computers actually do."
+         "checkpoints": [
+          {
+           "atSeconds": "end",
+           "block": {
+            "type": "quizQuestion",
+            "question": {
+             "questionType": "mcq",
+             "text": "The software is… 🧩",
+             "options": [
+              "The mouse and the screen",
+              "The programs that tell the computer what to do",
+              "The power cable"
+             ],
+             "correctIndex": 1,
+             "explanation": "Software is the programs. You cannot touch it."
+            }
+           }
+          },
+          {
+           "atSeconds": "end",
+           "block": {
+            "type": "quizQuestion",
+            "question": {
+             "questionType": "mcq",
+             "text": "What does a computer do with the information you give it? 🖥️",
+             "options": [
+              "Ignores it",
+              "Works with it and shows a result",
+              "Deletes it"
+             ],
+             "correctIndex": 1,
+             "explanation": "Input goes in, the computer works on it, and output comes out."
+            }
+           }
+          }
+         ]
         },
         {
          "type": "activity",
@@ -186,10 +221,45 @@
          "html": "A hard drive and a USB stick are storage devices.<br><br>Your files stay saved even when the power is off."
         },
         {
-         "type": "video",
+         "type": "checkpointVideo",
          "youtubeId": "AkFi90lZmXA",
          "title": "Inside Your Computer",
-         "caption": "TED-Ed — see exactly what's happening inside a computer."
+         "checkpoints": [
+          {
+           "atSeconds": "end",
+           "block": {
+            "type": "quizQuestion",
+            "question": {
+             "questionType": "mcq",
+             "text": "Which part is the “brain” of the computer? 🧠",
+             "options": [
+              "The CPU",
+              "The mouse",
+              "The speaker"
+             ],
+             "correctIndex": 0,
+             "explanation": "The CPU (processor) does the thinking."
+            }
+           }
+          },
+          {
+           "atSeconds": "end",
+           "block": {
+            "type": "quizQuestion",
+            "question": {
+             "questionType": "mcq",
+             "text": "Where does a computer save your files? 💾",
+             "options": [
+              "Storage, like a hard drive",
+              "The keyboard",
+              "The screen"
+             ],
+             "correctIndex": 0,
+             "explanation": "Storage devices keep your files, even when the power is off."
+            }
+           }
+          }
+         ]
         },
         {
          "type": "richText",
@@ -1554,10 +1624,28 @@
          "html": "<strong>Message</strong> — the words you write.<br><strong>Attachments</strong> — files you add, like photos or documents. 📎"
         },
         {
-         "type": "video",
+         "type": "checkpointVideo",
          "youtubeId": "7_LPdttKXPc",
          "title": "How the Internet Works in 5 Minutes",
-         "caption": "A clear, simple explanation of how data travels online."
+         "checkpoints": [
+          {
+           "atSeconds": "end",
+           "block": {
+            "type": "quizQuestion",
+            "question": {
+             "questionType": "mcq",
+             "text": "What does the internet let computers do? 🌐",
+             "options": [
+              "Share information with each other",
+              "Turn themselves off",
+              "Print by themselves"
+             ],
+             "correctIndex": 0,
+             "explanation": "The internet connects computers so they can share information."
+            }
+           }
+          }
+         ]
         },
         {
          "type": "richText",
@@ -1822,10 +1910,28 @@
          "html": "<strong>Cyberbullying</strong> — being mean to someone online. 😢<br><strong>Identity theft</strong> — someone steals your details. 🆔<br><strong>Cyber stalking</strong> — someone watches you online without asking. 👀<br><strong>SPAM</strong> — unwanted junk emails. 🗑️<br><strong>Viruses</strong> — programs that damage your device. 🦠"
         },
         {
-         "type": "video",
+         "type": "checkpointVideo",
          "youtubeId": "eHp1l73ztB8",
          "title": "How Does The Internet Work? — BBC Click",
-         "caption": "BBC Click explains the internet in an easy-to-follow way."
+         "checkpoints": [
+          {
+           "atSeconds": "end",
+           "block": {
+            "type": "quizQuestion",
+            "question": {
+             "questionType": "mcq",
+             "text": "The internet is many computers… 🌐",
+             "options": [
+              "Connected together",
+              "Locked in one room",
+              "Turned off"
+             ],
+             "correctIndex": 0,
+             "explanation": "Computers all over the world are connected to each other."
+            }
+           }
+          }
+         ]
         },
         {
          "type": "spotTheThreat",
@@ -4441,10 +4547,45 @@
          "html": "A Wi-Fi card or network cable lets a computer go online.<br><br>This lets it send and receive data."
         },
         {
-         "type": "video",
+         "type": "checkpointVideo",
          "youtubeId": "6mbFO0ZLMW8",
          "title": "Hardware — CS50's Understanding Technology",
-         "caption": "Harvard's CS50 breaks down computer hardware clearly."
+         "checkpoints": [
+          {
+           "atSeconds": "end",
+           "block": {
+            "type": "quizQuestion",
+            "question": {
+             "questionType": "mcq",
+             "text": "A printer shows the result on paper. Which hardware job is that? 🖨️",
+             "options": [
+              "Input",
+              "Output",
+              "Storage"
+             ],
+             "correctIndex": 1,
+             "explanation": "Output shows the result to the user."
+            }
+           }
+          },
+          {
+           "atSeconds": "end",
+           "block": {
+            "type": "quizQuestion",
+            "question": {
+             "questionType": "mcq",
+             "text": "Hardware is… ⚙️",
+             "options": [
+              "The parts you can touch",
+              "The programs inside the computer",
+              "The internet"
+             ],
+             "correctIndex": 0,
+             "explanation": "If you can pick it up, it is hardware."
+            }
+           }
+          }
+         ]
         },
         {
          "type": "richText",
@@ -6568,10 +6709,28 @@
          "html": "Social media connects you to friends and family.<br><br>You can talk to people anywhere in the world."
         },
         {
-         "type": "video",
+         "type": "checkpointVideo",
          "youtubeId": "guvsH5OFizE",
          "title": "The World Wide Web: Crash Course Computer Science #30",
-         "caption": "How the web, social media, and online services connect us all."
+         "checkpoints": [
+          {
+           "atSeconds": "end",
+           "block": {
+            "type": "quizQuestion",
+            "question": {
+             "questionType": "mcq",
+             "text": "Which program do you use to look at websites? 🌐",
+             "options": [
+              "A web browser",
+              "A calculator",
+              "A printer"
+             ],
+             "correctIndex": 0,
+             "explanation": "A web browser (like Chrome or Edge) opens websites."
+            }
+           }
+          }
+         ]
         },
         {
          "type": "activity",

@@ -1329,6 +1329,56 @@
          ]
         },
         {
+         "type": "interactiveDiagram",
+         "title": "Sort the devices",
+         "instruction": "Tap a device on the left, then tap what kind of device it is.",
+         "kind": "connect",
+         "config": {
+          "left": [
+           "Keyboard",
+           "Webcam",
+           "Monitor",
+           "Speakers",
+           "Printer",
+           "Touchscreen"
+          ],
+          "right": [
+           "Input",
+           "Output",
+           "Input and output"
+          ]
+         },
+         "goalState": {
+          "links": [
+           [
+            "Keyboard",
+            "Input"
+           ],
+           [
+            "Webcam",
+            "Input"
+           ],
+           [
+            "Monitor",
+            "Output"
+           ],
+           [
+            "Speakers",
+            "Output"
+           ],
+           [
+            "Printer",
+            "Output"
+           ],
+           [
+            "Touchscreen",
+            "Input and output"
+           ]
+          ]
+         },
+         "explanation": "A touchscreen is both: you touch it to send information in, and it shows information back."
+        },
+        {
          "type": "quizQuestion",
          "question": {
           "id": "iopd-q1",
@@ -1572,6 +1622,39 @@
            "definition": "Converts mains AC power to DC voltages the computer components require. A failing PSU causes random shutdowns and boot failures."
           }
          ]
+        },
+        {
+         "type": "interactiveDiagram",
+         "title": "Fix the computer that will not start",
+         "instruction": "The computer shows a black screen. Switch each setting to the right position until it works.",
+         "kind": "toggle-state",
+         "config": {
+          "toggles": [
+           {
+            "id": "power",
+            "label": "Power cable plugged in"
+           },
+           {
+            "id": "socket",
+            "label": "Wall socket switched on"
+           },
+           {
+            "id": "video",
+            "label": "Monitor cable connected to the computer"
+           },
+           {
+            "id": "sleep",
+            "label": "Computer asleep"
+           }
+          ]
+         },
+         "goalState": {
+          "power": true,
+          "socket": true,
+          "video": true,
+          "sleep": false
+         },
+         "explanation": "Always check the simple things first: power, cables, then settings."
         },
         {
          "type": "quizQuestion",
@@ -7157,6 +7240,44 @@
          ]
         },
         {
+         "type": "interactiveDiagram",
+         "title": "Secure the home network",
+         "instruction": "Set up the router so the network is safe.",
+         "kind": "toggle-state",
+         "config": {
+          "toggles": [
+           {
+            "id": "password",
+            "label": "Default router password changed"
+           },
+           {
+            "id": "encryption",
+            "label": "WPA2 or WPA3 encryption on"
+           },
+           {
+            "id": "firewall",
+            "label": "Firewall turned on"
+           },
+           {
+            "id": "updates",
+            "label": "Router firmware kept up to date"
+           },
+           {
+            "id": "shared",
+            "label": "Wi-Fi password shared publicly"
+           }
+          ]
+         },
+         "goalState": {
+          "password": true,
+          "encryption": true,
+          "firewall": true,
+          "updates": true,
+          "shared": false
+         },
+         "explanation": "Strong passwords, encryption, a firewall and updates all help keep intruders out."
+        },
+        {
          "type": "quizQuestion",
          "question": {
           "id": "ns-q1",
@@ -7442,6 +7563,44 @@
            "definition": "A network diagnostic command that sends ICMP echo packets to a target IP address and measures round-trip time. Used to test basic connectivity."
           }
          ]
+        },
+        {
+         "type": "interactiveDiagram",
+         "title": "Fix the office Wi-Fi",
+         "instruction": "A laptop cannot get online. Switch each setting to the right position until it connects.",
+         "kind": "toggle-state",
+         "config": {
+          "toggles": [
+           {
+            "id": "router",
+            "label": "Router switched on"
+           },
+           {
+            "id": "modem",
+            "label": "Cable from router to modem connected"
+           },
+           {
+            "id": "wifi",
+            "label": "Wi-Fi turned on (laptop)"
+           },
+           {
+            "id": "airplane",
+            "label": "Airplane mode"
+           },
+           {
+            "id": "password",
+            "label": "Correct Wi-Fi password entered"
+           }
+          ]
+         },
+         "goalState": {
+          "router": true,
+          "modem": true,
+          "wifi": true,
+          "airplane": false,
+          "password": true
+         },
+         "explanation": "Work through the network one step at a time: power, cables, laptop settings, then the password."
         },
         {
          "type": "quizQuestion",

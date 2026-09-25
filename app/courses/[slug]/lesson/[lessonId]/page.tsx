@@ -10,7 +10,14 @@ import { GeneralLessonView } from "@/components/course/GeneralLessonView";
 import { getCourseContent, findLesson, findNextLesson } from "@/lib/content";
 import { getSession } from "@/lib/session";
 import { getClass, getStudentProgress } from "@/lib/db";
+import { LessonShell } from "@/components/course/shared/LessonShell";
 import { LessonCompleteButton } from "@/components/course/LessonCompleteButton";
+import {
+  FOUNDATIONS_SLUGS,
+  FOUNDATIONS_Y11_SLUG,
+  LEGACY_FOUNDATIONS_SLUG,
+  isFoundationsSlug,
+} from "@/lib/logic/foundations-migration";
 
 export const dynamic = "force-dynamic";
 
@@ -20,6 +27,16 @@ export default async function LessonPage({
   params: Promise<{ slug: string; lessonId: string }>;
 }) {
   const { slug, lessonId } = await params;
+
+  // Legacy bookmarks: Foundations was split into Year 11 / Year 12 courses.
+  if (slug === LEGACY_FOUNDATIONS_SLUG) {
+    const target = FOUNDATIONS_SLUGS.find((s) => {
+      const c = getCourseContent(s);
+      return c && findLesson(c, lessonId);
+    });
+    redirect(target ? `/courses/${target}/lesson/${lessonId}` : `/courses/${FOUNDATIONS_Y11_SLUG}`);
+  }
+
   const course = getCourseBySlug(slug);
   const content = getCourseContent(slug);
   if (!course || !content) notFound();
@@ -75,7 +92,7 @@ export default async function LessonPage({
   const isGeneral = slug === "year-11-applied-it-general" || slug === "year-12-applied-it-general";
   if (isGeneral) {
     return (
-      <>
+      <LessonShell courseSlug={course.slug} lessonId={lessonId}>
         <GeneralLessonView
           courseSlug={course.slug}
           courseTitle={course.title}
@@ -88,13 +105,13 @@ export default async function LessonPage({
           nextLesson={nextLesson}
         />
         {completeButton}
-      </>
+      </LessonShell>
     );
   }
 
-  if (slug === "ait-foundations") {
+  if (isFoundationsSlug(slug)) {
     return (
-      <>
+      <LessonShell courseSlug={course.slug} lessonId={lessonId}>
         <FoundationsThemeRoot fontVariable={atkinson.variable}>
           <FoundationsLessonView
             courseSlug={course.slug}
@@ -104,11 +121,12 @@ export default async function LessonPage({
           />
         </FoundationsThemeRoot>
         {completeButton}
-      </>
+      </LessonShell>
     );
   }
 
   return (
+    <LessonShell courseSlug={course.slug} lessonId={lessonId}>
     <div className="mx-auto max-w-3xl px-6 py-16">
       <Link
         href={`/courses/${slug}`}
@@ -133,5 +151,6 @@ export default async function LessonPage({
       </div>
       {completeButton}
     </div>
+    </LessonShell>
   );
 }

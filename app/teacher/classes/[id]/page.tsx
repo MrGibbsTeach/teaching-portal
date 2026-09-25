@@ -62,6 +62,20 @@ export default async function ClassManagePage({
         </p>
       </div>
 
+      {/* Live session */}
+      <section>
+        <h2 className="text-lg font-semibold">Live session</h2>
+        <p className="mt-1 text-sm text-muted-foreground">
+          Teach a lesson slide by slide. Students follow on their own screens and you see their answers as they come in.
+        </p>
+        <Link
+          href={`/teacher/classes/${cls!.id}/live`}
+          className="mt-3 inline-block rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:opacity-90"
+        >
+          Start or resume live session
+        </Link>
+      </section>
+
       {/* Topic Access */}
       <section>
         <h2 className="text-lg font-semibold">Topic Access</h2>
