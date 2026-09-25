@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Badge } from "@/components/ui/badge";
 import { BlockRenderer } from "@/components/course/BlockRenderer";
 import { GeneralQuizBlock } from "@/components/course/GeneralQuizBlock";
 import { AgentCard } from "@/components/course/AgentCard";
@@ -38,31 +37,31 @@ export function GeneralLessonView({
   const taskCount = blocks.filter(b => b.type === "task" || b.type === "scenarioChallenge").length;
   const agent = getAgentForTopic(topicId);
 
+  const meta = [
+    estimatedMinutes ? `${estimatedMinutes} min` : null,
+    quizCount > 0 ? `${quizCount} quiz${quizCount !== 1 ? "zes" : ""}` : null,
+    taskCount > 0 ? `${taskCount} task${taskCount !== 1 ? "s" : ""}` : null,
+  ].filter(Boolean);
+
   return (
     <div className="mx-auto max-w-3xl px-6 py-10">
       <Link
         href={`/courses/${courseSlug}`}
-        className="text-sm text-muted-foreground hover:underline"
+        className="text-sm text-muted-foreground hover:text-primary"
       >
         ← {courseTitle}
       </Link>
 
-      <p className="mt-4 text-sm text-muted-foreground">
+      <p className="mt-6 text-sm text-muted-foreground">
         {unitTitle} / {topicTitle}
       </p>
 
-      <div className="mt-1 flex flex-wrap items-center gap-2">
-        <h1 className="text-2xl font-semibold tracking-tight">{lessonTitle}</h1>
-        {estimatedMinutes && (
-          <Badge variant="secondary">{estimatedMinutes} min</Badge>
-        )}
-        {quizCount > 0 && (
-          <Badge variant="outline">{quizCount} quiz{quizCount !== 1 ? "zes" : ""}</Badge>
-        )}
-        {taskCount > 0 && (
-          <Badge variant="outline">{taskCount} task{taskCount !== 1 ? "s" : ""}</Badge>
-        )}
-      </div>
+      <h1 className="mt-1 font-heading text-3xl font-semibold tracking-tight">
+        {lessonTitle}
+      </h1>
+      {meta.length > 0 && (
+        <p className="mt-1.5 text-sm text-muted-foreground">{meta.join(" · ")}</p>
+      )}
 
       {agent && (
         <div className="mt-6">
@@ -70,18 +69,18 @@ export function GeneralLessonView({
         </div>
       )}
 
-      <div className="mt-8 space-y-1">
+      <div className="mt-8">
         {blocks.map((block, i) => (
           <RenderBlock key={i} block={block} />
         ))}
       </div>
 
       {nextLesson && (
-        <div className="mt-10 flex items-center justify-between border-t pt-6">
+        <div className="mt-12 flex items-center justify-between border-t border-border pt-6">
           <span className="text-sm text-muted-foreground">Up next</span>
           <Link
             href={`/courses/${courseSlug}/lesson/${nextLesson.lessonId}`}
-            className="flex items-center gap-2 rounded-xl border-2 border-primary bg-primary/5 px-5 py-3 font-semibold text-primary hover:bg-primary/10"
+            className="flex items-center gap-1.5 font-medium text-primary hover:underline"
           >
             {nextLesson.lessonTitle} →
           </Link>

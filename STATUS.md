@@ -61,10 +61,19 @@ The portal work originally deferred below (see old architecture notes) has since
 - **Nav**: persistent "My Course" (students) / "Dashboard" (teachers) header links; "next lesson" navigation now traverses across topic/unit boundaries and skips coming-soon units
 - Storage backend moved to `@upstash/redis` after earlier KV reliability issues (env var naming, dynamic-require bugs, missing `force-dynamic`)
 
+## Site-wide design overhaul (Clayton, 2026-09-25)
+
+Ran a full critical design review and redesign to fix the site reading as generic/AI-generated (Geist font, default shadcn purple, everything wrapped in a rounded/bordered card, round-robin pastel colour-coding, badge/pill overuse, emoji-as-iconography, six inconsistent corner radii). Plan and diagnosis: `C:\Users\clayt\.claude\plans\logical-questing-codd.md`.
+
+**What changed:** new typeface pair (Fraunces serif for display headings + Public Sans for body/UI, replacing Geist), a single restrained palette (warm paper background, ink foreground, one quiet teal `--primary` used only for emphasis/links — not tinted box fills), one collapsed radius scale (was 6 inconsistent values), and lesson/course content restyled to be typeset (headings, rules, whitespace) rather than boxed into cards. Touched: `app/globals.css`, `app/layout.tsx`, `app/page.tsx`, `components/ui/{card,badge}.tsx`, `components/brand/Logo.tsx`, `components/course/{CourseOverview,BlockRenderer,GeneralLessonView,GeneralQuizBlock,AgentCard,CoursePlaceholder,LessonCompleteButton}.tsx`, all of `components/course/foundations/*`, `app/not-found.tsx`, `app/login/*`. Verified via `npm run build` + `npm run lint` (clean) and a server-rendered fetch of the home/login pages; **not yet checked in an actual browser** — no browser tool was available in that session, so do a real visual pass (desktop/tablet/mobile) before calling this done.
+
+**Tension with the 2026-06-19 design direction below:** that note calls for each course tier to look *visually distinct* (different template per tier). This pass went the other way — one coherent typographic system used consistently everywhere, with tiers told apart by structure/type rather than a different colour identity each — because the presenting problem this time was the opposite one: pages/components looking independently generated rather than part of one product. Foundations keeps its accessibility-driven bespoke layout (large type, high contrast, one-screen-at-a-time), just restyled onto the same token system. Worth resolving explicitly before starting Y7/8 or ATAR-specific visual work: bespoke-per-tier and one-system-throughout pull in different directions.
+
 ## Deliberately not done yet
 
-- **No visual/brand polish beyond Foundations** — Y7/8, Y9/10, ATAR, and General still render through the generic `CourseOverview` layout with brand colours only, no bespoke per-tier design yet.
+- **Per-tier bespoke visual systems (Y7/8, Y9/10, ATAR, General)** — still on the generic `CourseOverview`/`BlockRenderer` path, now under the new sitewide design system rather than the old shadcn defaults. Whether these should still get fully distinct per-tier treatments (per the 2026-06-19 note above) or stay within the unified system is an open question — see the tension noted above.
 - **Foundations theme still not manually browser-checked** — verified via build + server-rendered HTML only (see note above); do a real visual pass before calling it done.
+- **Teacher portal pages (`app/teacher/*`) got only the token cascade**, not a dedicated rewrite — lower priority as an internal-only surface, but still shows the old spacing/structure patterns.
 - **Some Foundations interactive activity types render as static summaries**, not interactive widgets: drag-and-drop, hotspot, sort-buckets. (Matching, multiple-choice, fill-blank, ordering all render properly as static content.)
 - **The 6 placeholder courses have zero content** — Years 7–10 and Year 12 General/ATAR never had prior material to migrate; this is genuinely new content that needs to be written.
 - **AIT Foundations not yet split into Year 11 / Year 12** — still one course showing all 4 units together.
@@ -89,3 +98,4 @@ Read this file, then check `git log` in `mrgibbs-teach` to confirm nothing's cha
 | 2026-07-23 | Shipped teacher/student auth, topic-level access control, and end-to-end student progress tracking (Redis-backed) |
 | 2026-07-31 | Added passcode generator, Foundations completion dots, cross-topic next-lesson navigation |
 | 2026-08-28 | Reconciled this file with actual shipped state; removed stray `weekly-review.html` and unused duplicate `components/assets/` (agent photos already live in `public/agents/`) |
+| 2026-09-25 | Full sitewide design overhaul (new type/colour/shape system, de-carded lesson content, de-emoji'd copy) to fix the "AI-generated" look; build + lint clean, not yet browser-checked |

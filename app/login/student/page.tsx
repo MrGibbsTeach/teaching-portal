@@ -13,7 +13,7 @@ export default async function StudentLoginPage({
 
   return (
     <div className="mx-auto max-w-sm px-6 py-24">
-      <h1 className="text-2xl font-semibold tracking-tight">Student Login</h1>
+      <h1 className="font-heading text-2xl font-semibold tracking-tight">Student login</h1>
       <p className="mt-2 text-sm text-muted-foreground">
         Select your class and enter your username and passcode.
       </p>

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Badge } from "@/components/ui/badge";
 import type { Course } from "@/lib/courses";
 import type { CourseContent } from "@/lib/content/types";
 
@@ -31,84 +30,75 @@ export function CourseOverview({
 
   return (
     <div className="mx-auto max-w-3xl px-6 py-16">
-      <Badge variant="secondary">{course.yearLevel}</Badge>
-      <h1 className="mt-4 text-3xl font-semibold tracking-tight">{course.title}</h1>
-      <p className="mt-3 text-muted-foreground">{course.description}</p>
+      <p className="text-sm font-medium uppercase tracking-widest text-primary">
+        {course.yearLevel}
+      </p>
+      <h1 className="mt-3 font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+        {course.title}
+      </h1>
+      <p className="mt-3 max-w-prose text-muted-foreground">{course.description}</p>
 
       {visibleUnits.length === 0 && allowedTopicIds !== undefined && (
-        <div className="mt-10 rounded-xl border border-dashed p-10 text-center text-sm text-muted-foreground">
+        <div className="mt-10 border-t border-b border-dashed border-border py-10 text-center text-sm text-muted-foreground">
           No topics have been unlocked for you yet. Check back after your teacher sets up your class.
         </div>
       )}
 
-      <div className="mt-10 space-y-8">
+      <div className="mt-12 space-y-12">
         {visibleUnits.map((unit) => (
           <section key={unit.id}>
-            {unit.subtitle && (
-              <p className="mb-1 text-xs font-bold uppercase tracking-widest text-primary">
-                {unit.subtitle}
-              </p>
-            )}
-            <div className="flex items-center justify-between">
-              <h2 className="text-xl font-medium tracking-tight">{unit.title}</h2>
-              {unit.status === "coming_soon" && (
-                <Badge variant="outline">Coming soon</Badge>
+            <div className="border-b border-border pb-2">
+              {unit.subtitle && (
+                <p className="text-xs font-semibold uppercase tracking-widest text-primary">
+                  {unit.subtitle}
+                </p>
               )}
+              <div className="flex items-baseline justify-between gap-3">
+                <h2 className="font-heading text-2xl tracking-tight">{unit.title}</h2>
+                {unit.status === "coming_soon" && (
+                  <span className="text-sm text-muted-foreground">Coming soon</span>
+                )}
+              </div>
             </div>
 
             {unit.status === "coming_soon" ? (
-              <div className="mt-3 rounded-lg border border-dashed p-6 text-center text-sm text-muted-foreground">
-                Content coming soon.
-              </div>
+              <p className="py-6 text-sm text-muted-foreground">Content coming soon.</p>
             ) : (
-              <div className="mt-3 space-y-4">
+              <div className="mt-5 space-y-6">
                 {unit.topics.map((topic) => (
-                  <details key={topic.id} className="rounded-lg border p-4" open>
-                    <summary className="cursor-pointer font-medium">
+                  <div key={topic.id}>
+                    <h3 className="font-medium">
                       {topic.title}
                       {topic.description && (
-                        <span className="ml-2 text-sm font-normal text-muted-foreground">
-                          {topic.description}
+                        <span className="ml-2 font-normal text-muted-foreground">
+                          — {topic.description}
                         </span>
                       )}
-                    </summary>
-                    <ul className="mt-3 space-y-1">
+                    </h3>
+                    <ul className="mt-2">
                       {topic.lessons.map((lesson) => {
                         const isComplete = completedLessonIds?.includes(lesson.id) ?? false;
                         return (
-                          <li key={lesson.id}>
+                          <li key={lesson.id} className="border-t border-border first:border-t-0">
                             <Link
                               href={`/courses/${course.slug}/lesson/${lesson.id}`}
-                              className="flex items-center justify-between rounded px-2 py-1.5 text-sm hover:bg-accent"
+                              className="group flex items-center justify-between gap-4 py-2.5 text-sm hover:text-primary"
                             >
-                              <span className="flex items-center gap-2">
-                                {isComplete ? (
-                                  <span
-                                    title="Completed"
-                                    className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-green-500 text-white"
-                                  >
-                                    <svg
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      viewBox="0 0 20 20"
-                                      fill="currentColor"
-                                      className="h-2.5 w-2.5"
-                                    >
-                                      <path
-                                        fillRule="evenodd"
-                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                                        clipRule="evenodd"
-                                      />
-                                    </svg>
-                                  </span>
-                                ) : completedLessonIds !== undefined ? (
-                                  <span className="h-4 w-4 shrink-0 rounded-full border border-muted-foreground/30" />
-                                ) : null}
+                              <span className="flex items-center gap-2.5">
+                                <span
+                                  aria-hidden
+                                  className={`w-3 shrink-0 text-center ${
+                                    isComplete ? "text-primary" : "text-muted-foreground/50"
+                                  }`}
+                                >
+                                  {isComplete ? "✓" : completedLessonIds !== undefined ? "·" : ""}
+                                </span>
                                 <span className={isComplete ? "text-muted-foreground" : ""}>
                                   {lesson.title}
                                 </span>
                               </span>
                               {lesson.estimatedMinutes && (
-                                <span className="text-xs text-muted-foreground">
+                                <span className="shrink-0 text-xs text-muted-foreground">
                                   {lesson.estimatedMinutes} min
                                 </span>
                               )}
@@ -117,7 +107,7 @@ export function CourseOverview({
                         );
                       })}
                     </ul>
-                  </details>
+                  </div>
                 ))}
               </div>
             )}

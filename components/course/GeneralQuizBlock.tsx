@@ -10,12 +10,12 @@ export function GeneralQuizBlock({ question }: { question: QuizQuestion }) {
 
   if (question.questionType === "mcq" && question.options) {
     return (
-      <div className="mt-4 rounded-xl border-2 bg-card p-5">
-        <p className="font-semibold">{question.text}</p>
+      <div className="mt-4 border-y border-border py-4">
+        <p className="font-medium">{question.text}</p>
         {question.marks && (
           <p className="mt-0.5 text-xs text-muted-foreground">{question.marks} marks</p>
         )}
-        <div className="mt-3 space-y-2">
+        <div className="mt-3 space-y-1.5">
           {question.options.map((opt, i) => {
             const isSelected = selected === i;
             const showResult = selected !== null;
@@ -25,25 +25,23 @@ export function GeneralQuizBlock({ question }: { question: QuizQuestion }) {
                 key={i}
                 onClick={() => { if (selected === null) setSelected(i); }}
                 disabled={selected !== null}
-                className={`flex w-full items-center justify-between rounded-lg border px-4 py-2.5 text-left text-sm font-medium transition-colors ${
+                className={`flex w-full items-center justify-between border px-4 py-2.5 text-left text-sm transition-colors ${
                   showResult && isCorrect
-                    ? "border-emerald-400 bg-emerald-50 text-emerald-800"
+                    ? "border-primary font-medium text-primary"
                     : showResult && isSelected
-                      ? "border-red-400 bg-red-50 text-red-800"
-                      : "hover:bg-accent"
+                      ? "border-destructive text-destructive"
+                      : "border-border hover:bg-accent/40"
                 }`}
               >
                 <span>{opt}</span>
-                {showResult && isCorrect && <Check className="h-4 w-4 shrink-0 text-emerald-600" />}
-                {showResult && isSelected && !isCorrect && <X className="h-4 w-4 shrink-0 text-red-500" />}
+                {showResult && isCorrect && <Check className="h-4 w-4 shrink-0" />}
+                {showResult && isSelected && !isCorrect && <X className="h-4 w-4 shrink-0" />}
               </button>
             );
           })}
         </div>
         {selected !== null && question.explanation && (
-          <p className="mt-3 rounded-lg bg-muted px-3 py-2 text-sm text-muted-foreground">
-            {question.explanation}
-          </p>
+          <p className="mt-3 text-sm text-muted-foreground">{question.explanation}</p>
         )}
       </div>
     );
@@ -52,8 +50,8 @@ export function GeneralQuizBlock({ question }: { question: QuizQuestion }) {
   if (question.questionType === "true_false") {
     const showResult = selected !== null;
     return (
-      <div className="mt-4 rounded-xl border-2 bg-card p-5">
-        <p className="font-semibold">{question.text}</p>
+      <div className="mt-4 border-y border-border py-4">
+        <p className="font-medium">{question.text}</p>
         <div className="mt-3 grid grid-cols-2 gap-3">
           {[true, false].map((val) => {
             const label = val ? "True" : "False";
@@ -64,12 +62,12 @@ export function GeneralQuizBlock({ question }: { question: QuizQuestion }) {
                 key={label}
                 onClick={() => { if (selected === null) setSelected(val); }}
                 disabled={showResult}
-                className={`rounded-lg border-2 py-3 font-semibold transition-colors ${
+                className={`border py-3 font-medium transition-colors ${
                   showResult && isCorrect
-                    ? "border-emerald-400 bg-emerald-50 text-emerald-800"
+                    ? "border-primary text-primary"
                     : showResult && isSelected
-                      ? "border-red-400 bg-red-50 text-red-800"
-                      : "hover:bg-accent"
+                      ? "border-destructive text-destructive"
+                      : "border-border hover:bg-accent/40"
                 }`}
               >
                 {label}
@@ -78,9 +76,7 @@ export function GeneralQuizBlock({ question }: { question: QuizQuestion }) {
           })}
         </div>
         {showResult && question.explanation && (
-          <p className="mt-3 rounded-lg bg-muted px-3 py-2 text-sm text-muted-foreground">
-            {question.explanation}
-          </p>
+          <p className="mt-3 text-sm text-muted-foreground">{question.explanation}</p>
         )}
       </div>
     );
@@ -88,15 +84,15 @@ export function GeneralQuizBlock({ question }: { question: QuizQuestion }) {
 
   if (question.questionType === "matching" && question.pairs) {
     return (
-      <div className="mt-4 rounded-xl border bg-card p-5">
-        <p className="font-semibold">{question.text}</p>
+      <div className="mt-4 border-y border-border py-4">
+        <p className="font-medium">{question.text}</p>
         {question.marks && (
           <p className="mt-0.5 text-xs text-muted-foreground">{question.marks} marks</p>
         )}
-        <dl className="mt-3 space-y-2 text-sm">
+        <dl className="mt-3 divide-y divide-border">
           {question.pairs.map((p, i) => (
-            <div key={i} className="flex gap-2 rounded-lg bg-muted/50 px-3 py-2">
-              <dt className="font-semibold">{p.term}</dt>
+            <div key={i} className="flex gap-2 py-2 text-sm">
+              <dt className="font-medium">{p.term}</dt>
               <dd className="text-muted-foreground">→ {p.definition}</dd>
             </div>
           ))}
@@ -107,20 +103,20 @@ export function GeneralQuizBlock({ question }: { question: QuizQuestion }) {
 
   // short_answer / extended — reveal on demand
   return (
-    <div className="mt-4 rounded-xl border bg-card p-5">
-      <p className="font-semibold">{question.text}</p>
+    <div className="mt-4 border-y border-border py-4">
+      <p className="font-medium">{question.text}</p>
       {question.marks && (
         <p className="mt-0.5 text-xs text-muted-foreground">{question.marks} marks</p>
       )}
       {!revealed ? (
         <button
           onClick={() => setRevealed(true)}
-          className="mt-3 rounded-lg border px-4 py-2 text-sm font-medium hover:bg-accent"
+          className="mt-3 border border-border px-4 py-2 text-sm font-medium hover:bg-accent/40"
         >
           Show model answer
         </button>
       ) : (
-        <div className="mt-3 rounded-lg bg-muted px-3 py-2 text-sm text-muted-foreground whitespace-pre-line">
+        <div className="mt-3 whitespace-pre-line text-sm text-muted-foreground">
           {question.explanation}
         </div>
       )}

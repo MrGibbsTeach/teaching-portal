@@ -1,19 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Fraunces, Public_Sans } from "next/font/google";
 import Link from "next/link";
 import { Logo } from "@/components/brand/Logo";
 import { getSession } from "@/lib/session";
 import { logout } from "@/app/actions/auth";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const publicSans = Public_Sans({
+  variable: "--font-public-sans",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
   subsets: ["latin"],
+  weight: ["500", "600"],
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
@@ -31,16 +34,16 @@ export default async function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${publicSans.variable} ${fraunces.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <header className="border-b bg-background">
-          <div className="mx-auto max-w-5xl px-6 py-4 flex items-center justify-between">
+        <header className="bg-background">
+          <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-5">
             <Logo />
-            <div className="flex items-center gap-4 text-sm">
+            <nav className="flex items-center gap-5 text-[0.8rem] tracking-wide text-muted-foreground">
               {session ? (
                 <>
-                  <span className="text-muted-foreground">
+                  <span>
                     {session.role === "teacher"
                       ? "Teacher"
                       : session.displayName ?? session.username}
@@ -48,15 +51,15 @@ export default async function RootLayout({
                   {session.role === "student" && session.courseSlug && (
                     <Link
                       href={`/courses/${session.courseSlug}`}
-                      className="text-muted-foreground hover:text-foreground transition-colors"
+                      className="hover:text-foreground transition-colors"
                     >
-                      My Course
+                      My course
                     </Link>
                   )}
                   {session.role === "teacher" && (
                     <Link
                       href="/teacher"
-                      className="text-muted-foreground hover:text-foreground transition-colors"
+                      className="hover:text-foreground transition-colors"
                     >
                       Dashboard
                     </Link>
@@ -64,27 +67,25 @@ export default async function RootLayout({
                   <form action={logout}>
                     <button
                       type="submit"
-                      className="text-muted-foreground hover:text-foreground transition-colors"
+                      className="hover:text-foreground transition-colors"
                     >
                       Log out
                     </button>
                   </form>
                 </>
               ) : (
-                <Link
-                  href="/login"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                >
+                <Link href="/login" className="hover:text-foreground transition-colors">
                   Log in
                 </Link>
               )}
-            </div>
+            </nav>
           </div>
+          <div className="mx-auto max-w-5xl border-t border-border/70" />
         </header>
         <main className="flex-1">{children}</main>
-        <footer className="border-t">
-          <div className="mx-auto max-w-5xl px-6 py-6 text-sm text-muted-foreground">
-            MrGibbs Teach — Digital Technologies & Applied IT, Years 7–12.
+        <footer className="mt-16 border-t border-border/70">
+          <div className="mx-auto max-w-5xl px-6 py-8 text-[0.8rem] text-muted-foreground">
+            MrGibbs Teach — Digital Technologies &amp; Applied IT, Years 7–12.
           </div>
         </footer>
       </body>

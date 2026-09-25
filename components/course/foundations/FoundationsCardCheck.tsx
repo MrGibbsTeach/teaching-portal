@@ -23,14 +23,14 @@ function ConfirmGate({ onVerified }: { onVerified: () => void }) {
         onVerified();
       }}
       disabled={confirmed}
-      className={`mt-6 flex w-full items-center justify-center gap-2 rounded-2xl border-2 px-6 py-4 text-xl font-bold ${
+      className={`mt-6 flex w-full items-center justify-center gap-2 border-2 border-foreground px-6 py-4 text-xl font-bold ${
         confirmed
           ? "border-primary bg-primary text-primary-foreground"
-          : "hover:bg-accent"
+          : "hover:bg-accent/50"
       }`}
     >
       {confirmed && <Check className="h-6 w-6" />}
-      {confirmed ? "Got it" : "I understand 👍"}
+      {confirmed ? "Got it" : "I understand"}
     </button>
   );
 }
@@ -58,7 +58,7 @@ function TrueFalseCheck({
       <p className="text-2xl font-bold tracking-tight">{question.text}</p>
       <div className="mt-6 grid grid-cols-2 gap-4">
         {[true, false].map((val) => {
-          const label = val ? "True ✅" : "False ❌";
+          const label = val ? "True" : "False";
           const picked = selected === val;
           const correct = isCorrect(val);
           return (
@@ -66,12 +66,12 @@ function TrueFalseCheck({
               key={String(val)}
               onClick={() => pick(val)}
               disabled={showState}
-              className={`flex items-center justify-center rounded-3xl border-2 py-6 text-2xl font-bold ${
+              className={`flex items-center justify-center border-2 border-foreground py-6 text-2xl font-bold ${
                 showState && correct
                   ? "border-primary bg-primary text-primary-foreground"
                   : showState && picked && !correct
                     ? "border-destructive bg-destructive/10"
-                    : "hover:bg-accent"
+                    : "hover:bg-accent/50"
               }`}
             >
               {label}
@@ -80,7 +80,7 @@ function TrueFalseCheck({
         })}
       </div>
       {showState && question.explanation && (
-        <p className="mt-4 rounded-2xl bg-muted p-4 text-base">{question.explanation}</p>
+        <p className="mt-4 bg-muted p-4 text-base">{question.explanation}</p>
       )}
     </div>
   );
@@ -113,7 +113,7 @@ function McqCheck({
                 }
               }}
               disabled={selected !== null}
-              className={`flex w-full items-center justify-between rounded-2xl border-2 p-4 text-left text-lg font-semibold ${
+              className={`flex w-full items-center justify-between border-2 border-foreground p-4 text-left text-lg font-semibold ${
                 showState && isCorrect
                   ? "border-primary bg-primary/10"
                   : showState && isSelected
@@ -131,7 +131,7 @@ function McqCheck({
         })}
       </div>
       {selected !== null && question.explanation && (
-        <p className="mt-4 rounded-2xl bg-muted p-4 text-base">{question.explanation}</p>
+        <p className="mt-4 bg-muted p-4 text-base">{question.explanation}</p>
       )}
     </div>
   );
@@ -183,12 +183,12 @@ function MatchingCheck({
               key={p.term}
               onClick={() => pickTerm(p.term)}
               disabled={matched.has(p.term)}
-              className={`w-full rounded-2xl border-2 p-3 text-left font-semibold ${
+              className={`w-full border-2 border-foreground p-3 text-left font-semibold ${
                 matched.has(p.term)
                   ? "border-primary bg-primary/10 opacity-60"
                   : selectedTerm === p.term
-                    ? "border-primary bg-primary text-primary-foreground scale-[1.02] shadow-md"
-                    : "hover:bg-accent"
+                    ? "border-primary bg-primary text-primary-foreground"
+                    : "hover:bg-accent/50"
               }`}
             >
               {p.term}
@@ -205,12 +205,12 @@ function MatchingCheck({
                 key={def}
                 onClick={() => pickDefinition(def)}
                 disabled={isMatchedDef}
-                className={`w-full rounded-2xl border-2 p-3 text-left ${
+                className={`w-full border-2 border-foreground p-3 text-left ${
                   isMatchedDef
                     ? "border-primary bg-primary/10 opacity-60"
                     : wrongDef === def
                       ? "border-destructive bg-destructive/10"
-                      : "hover:bg-accent"
+                      : "hover:bg-accent/50"
                 }`}
               >
                 {def}
@@ -256,12 +256,12 @@ function SequenceCheck({
   return (
     <div>
       {title && <p className="text-xl font-bold tracking-tight">{title}</p>}
-      <div className="mt-4 min-h-[3.5rem] space-y-2 rounded-2xl border-2 border-dashed p-3">
+      <div className="mt-4 min-h-[3.5rem] space-y-2 border-2 border-dashed border-border p-3">
         {chosen.length === 0 && (
           <p className="text-base text-muted-foreground">Tap the steps in order below.</p>
         )}
         {chosen.map((it, i) => (
-          <div key={i} className="rounded-xl bg-primary/10 p-2 font-semibold">
+          <div key={i} className="bg-primary/10 p-2 font-semibold">
             {i + 1}. {it}
           </div>
         ))}
@@ -269,7 +269,7 @@ function SequenceCheck({
       {wrong ? (
         <button
           onClick={reset}
-          className="mt-4 flex items-center gap-2 rounded-2xl border-2 border-destructive px-4 py-3 font-bold text-destructive"
+          className="mt-4 flex items-center gap-2 border-2 border-destructive px-4 py-3 font-bold text-destructive"
         >
           <RotateCcw className="h-5 w-5" />
           Not quite — try again
@@ -282,7 +282,7 @@ function SequenceCheck({
               <button
                 key={it}
                 onClick={() => pick(it)}
-                className="rounded-2xl border-2 px-4 py-3 font-semibold hover:bg-accent"
+                className="border-2 border-foreground px-4 py-3 font-semibold hover:bg-accent/50"
               >
                 {it}
               </button>
@@ -353,7 +353,7 @@ function FillBlankChoiceCheck({
                 }
               }}
               disabled={selected !== null}
-              className={`flex w-full items-center justify-between rounded-2xl border-2 p-4 text-left font-mono text-lg font-semibold ${
+              className={`flex w-full items-center justify-between border-2 border-foreground p-4 text-left font-mono text-lg font-semibold ${
                 showState && isCorrect
                   ? "border-primary bg-primary/10"
                   : showState && isSelected
@@ -371,7 +371,7 @@ function FillBlankChoiceCheck({
         })}
       </div>
       {selected !== null && explanation && (
-        <p className="mt-4 rounded-2xl bg-muted p-4 text-base">{explanation}</p>
+        <p className="mt-4 bg-muted p-4 text-base">{explanation}</p>
       )}
     </div>
   );
@@ -408,19 +408,19 @@ function FillBlankTextCheck({
         value={value}
         onChange={(e) => setValue(e.target.value)}
         disabled={correct}
-        className="mt-4 w-full rounded-2xl border-2 p-4 text-lg font-semibold"
+        className="mt-4 w-full border-2 border-foreground p-4 text-lg font-semibold"
         placeholder="Type your answer"
       />
       {!correct && (
         <button
           onClick={submit}
-          className="mt-4 rounded-2xl bg-primary px-6 py-3 text-lg font-bold text-primary-foreground"
+          className="mt-4 bg-primary px-6 py-3 text-lg font-bold text-primary-foreground"
         >
           Check
         </button>
       )}
       {submitted && (
-        <div className="mt-4 rounded-2xl bg-muted p-4">
+        <div className="mt-4 bg-muted p-4">
           <p className={`font-bold ${correct ? "text-primary" : "text-destructive"}`}>
             {correct ? "Correct!" : `Not quite — the answer is: ${answer}`}
           </p>
@@ -428,7 +428,7 @@ function FillBlankTextCheck({
           {!correct && (
             <button
               onClick={onVerified}
-              className="mt-3 rounded-2xl border-2 px-5 py-2.5 font-bold hover:bg-accent"
+              className="mt-3 border-2 border-foreground px-5 py-2.5 font-bold hover:bg-accent/50"
             >
               Continue
             </button>
