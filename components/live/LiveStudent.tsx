@@ -53,7 +53,7 @@ export function LiveStudent({ courseHref }: { courseHref: string }) {
 
   if (!data.active || !data.block || data.slideIndex === undefined) {
     return (
-      <div className="rounded-xl border border-dashed p-10 text-center">
+      <div className="border border-dashed border-border p-10 text-center">
         <p className="text-lg font-medium">Waiting for your teacher to start…</p>
         <p className="mt-1 text-sm text-muted-foreground">This page updates by itself. Keep it open.</p>
         <Link href={courseHref} className="mt-4 inline-block text-sm underline">
@@ -69,7 +69,7 @@ export function LiveStudent({ courseHref }: { courseHref: string }) {
         <span>{data.lessonTitle}</span>
         <span>
           Slide {data.slideIndex + 1} of {data.slideCount}
-          {offline && <strong className="ml-2 text-red-600">Reconnecting…</strong>}
+          {offline && <strong className="ml-2 text-destructive">Reconnecting…</strong>}
         </span>
       </div>
       {/* Keyed by slide so local answer state resets when the teacher moves on. */}
@@ -118,7 +118,7 @@ function LiveQuestion({
   }
 
   return (
-    <div className="space-y-3 rounded-xl border-2 p-5">
+    <div className="space-y-3 border-2 border-border p-5">
       <p className="text-lg font-semibold">{q?.text}</p>
       <div className="grid gap-2">
         {labels.map((label, i) => {
@@ -131,14 +131,14 @@ function LiveQuestion({
               disabled={revealed}
               aria-pressed={picked === i}
               onClick={() => void choose(i)}
-              className={`rounded-lg border-2 px-4 py-3 text-left font-medium ${
+              className={`border px-4 py-3 text-left font-medium ${
                 showRight
-                  ? "border-emerald-500 bg-emerald-50 text-emerald-900"
+                  ? "border-primary bg-primary/10 text-primary"
                   : showWrong
-                    ? "border-red-500 bg-red-50 text-red-900"
+                    ? "border-destructive bg-destructive/10 text-destructive"
                     : picked === i
                       ? "border-primary bg-primary/10"
-                      : "bg-card"
+                      : "border-border bg-card"
               }`}
             >
               {label}
@@ -151,13 +151,13 @@ function LiveQuestion({
           ? "Your answer did not send. Tap it again."
           : revealed
             ? picked === right
-              ? "✅ Correct!"
+              ? "Correct!"
               : "The right answer is highlighted."
             : picked !== null
-              ? "✅ Answer sent. You can change it until your teacher shows the answer."
+              ? "Answer sent. You can change it until your teacher shows the answer."
               : ""}
       </p>
-      {revealed && q?.explanation && <p className="rounded-lg bg-muted p-3 text-sm">{q.explanation}</p>}
+      {revealed && q?.explanation && <p className="bg-muted p-3 text-sm">{q.explanation}</p>}
     </div>
   );
 }

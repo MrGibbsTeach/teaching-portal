@@ -54,7 +54,7 @@ export function FoundationsLessonView({
     <div className="mx-auto max-w-2xl px-6 py-12">
       <Link
         href={`/courses/${courseSlug}`}
-        className="flex items-center gap-2 text-lg font-bold text-muted-foreground hover:underline"
+        className="flex items-center gap-2 text-lg font-bold text-muted-foreground hover:text-primary"
       >
         <ArrowLeft className="h-5 w-5" />
         {courseTitle}
@@ -64,22 +64,18 @@ export function FoundationsLessonView({
         {lesson.title}
       </p>
 
-      <div className="mt-4 flex items-center gap-2">
+      <div className="mt-4 flex items-center gap-1.5">
         {screens.map((_, i) => (
           <span
             key={i}
-            className={`h-3 flex-1 rounded-full transition-colors ${
-              i < index
-                ? "bg-primary"
-                : i === index
-                ? "bg-primary"
-                : "bg-muted"
+            className={`h-2 flex-1 transition-colors ${
+              i <= index ? "bg-primary" : "bg-muted"
             }`}
           />
         ))}
       </div>
 
-      <div className="mt-8 flex min-h-[40vh] flex-col justify-center rounded-3xl border-2 p-6">
+      <div className="mt-8 flex min-h-[40vh] flex-col justify-center border-y-2 border-foreground py-8">
         {screen.sectionTitle && (
           <p className="text-sm font-bold uppercase tracking-wide text-primary">
             {screen.sectionTitle}
@@ -96,7 +92,7 @@ export function FoundationsLessonView({
         <button
           onClick={() => setIndex((i) => Math.max(0, i - 1))}
           disabled={isFirst}
-          className="flex items-center gap-2 rounded-2xl border-2 px-6 py-4 text-xl font-bold disabled:opacity-30"
+          className="flex items-center gap-2 border-2 border-foreground px-6 py-4 text-xl font-bold disabled:opacity-30"
         >
           <ArrowLeft className="h-6 w-6" />
           Back
@@ -106,7 +102,7 @@ export function FoundationsLessonView({
             {nextLesson && canAdvance && (
               <Link
                 href={`/courses/${courseSlug}/lesson/${nextLesson.lessonId}`}
-                className="flex items-center gap-2 rounded-2xl bg-primary px-6 py-4 text-xl font-bold text-primary-foreground"
+                className="flex items-center gap-2 bg-primary px-6 py-4 text-xl font-bold text-primary-foreground"
               >
                 Next: {nextLesson.lessonTitle}
                 <ChevronRight className="h-6 w-6" />
@@ -115,9 +111,9 @@ export function FoundationsLessonView({
             <Link
               href={`/courses/${courseSlug}`}
               aria-disabled={!canAdvance}
-              className={`flex items-center gap-2 rounded-2xl border-2 px-5 py-3 text-base font-bold ${
+              className={`flex items-center gap-2 border-2 border-foreground px-5 py-3 text-base font-bold ${
                 canAdvance
-                  ? "hover:bg-accent"
+                  ? "hover:bg-accent/50"
                   : "pointer-events-none opacity-30"
               }`}
             >
@@ -128,7 +124,7 @@ export function FoundationsLessonView({
           <button
             onClick={() => setIndex((i) => Math.min(screens.length - 1, i + 1))}
             disabled={!canAdvance}
-            className="flex items-center gap-2 rounded-2xl bg-primary px-6 py-4 text-xl font-bold text-primary-foreground disabled:opacity-30"
+            className="flex items-center gap-2 bg-primary px-6 py-4 text-xl font-bold text-primary-foreground disabled:opacity-30"
           >
             Next
             <ArrowRight className="h-6 w-6" />

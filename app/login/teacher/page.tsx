@@ -9,7 +9,7 @@ export default async function TeacherLoginPage({
 
   return (
     <div className="mx-auto max-w-sm px-6 py-24">
-      <h1 className="text-2xl font-semibold tracking-tight">Teacher Login</h1>
+      <h1 className="font-heading text-2xl font-semibold tracking-tight">Teacher login</h1>
       <p className="mt-2 text-sm text-muted-foreground">
         Enter the teacher access code.
       </p>

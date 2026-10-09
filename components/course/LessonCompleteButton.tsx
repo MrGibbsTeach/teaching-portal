@@ -22,14 +22,14 @@ export function LessonCompleteButton({ lessonId, courseSlug, initialCompleted }:
 
   return (
     <div className="mx-auto max-w-3xl px-6 pb-16 pt-4">
-      <div className="flex items-center justify-end border-t pt-6">
+      <div className="flex items-center justify-end border-t border-border pt-6">
         <button
           onClick={handleClick}
           disabled={pending}
-          className={`inline-flex items-center gap-2 rounded-lg px-5 py-2.5 text-sm font-semibold transition-colors disabled:opacity-60 ${
+          className={`inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium transition-colors disabled:opacity-60 ${
             completed
-              ? "bg-green-600 text-white hover:bg-green-700"
-              : "border border-primary bg-background text-primary hover:bg-primary hover:text-primary-foreground"
+              ? "border border-primary text-primary"
+              : "border border-primary bg-primary text-primary-foreground hover:opacity-90"
           }`}
         >
           {completed ? (

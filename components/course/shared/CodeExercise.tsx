@@ -57,7 +57,7 @@ export function CodeExercise({
   const passedAll = results !== null && results.every((r) => r.passed);
 
   return (
-    <div className="space-y-3 rounded-xl border-2 p-4">
+    <div className="space-y-3 border border-border p-4">
       <p className="font-semibold">{block.title}</p>
       <p className="text-sm">{block.brief}</p>
 
@@ -115,11 +115,11 @@ export function CodeExercise({
       {results && (
         <ul role="status" className="space-y-1 text-sm">
           {results.map((r, i) => (
-            <li key={i} className={r.passed ? "text-emerald-700" : "text-red-700"}>
-              {r.passed ? "✅" : "❌"} {r.description}
+            <li key={i} className={r.passed ? "text-primary" : "text-destructive"}>
+              {r.passed ? "✓" : "✗"} {r.description}
             </li>
           ))}
-          {passedAll && <li className="pt-1 font-semibold">🎉 All checks passed!</li>}
+          {passedAll && <li className="pt-1 font-semibold text-primary">All checks passed!</li>}
         </ul>
       )}
     </div>

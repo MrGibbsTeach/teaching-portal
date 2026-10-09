@@ -8,11 +8,11 @@ import { resolveFeedback } from "@/app/actions/insights";
 export const dynamic = "force-dynamic";
 
 const CATEGORY_LABEL: Record<string, string> = {
-  confusing: "😕 Confusing",
-  mistake: "❌ A mistake",
-  broken: "🛠️ Not working",
-  "too-hard": "😓 Too hard",
-  other: "💬 Something else",
+  confusing: "Confusing",
+  mistake: "A mistake",
+  broken: "Not working",
+  "too-hard": "Too hard",
+  other: "Something else",
 };
 
 export default async function InsightsPage({
@@ -71,7 +71,7 @@ export default async function InsightsPage({
                 await resolveFeedback(f.id);
               };
               return (
-                <li key={f.id} className="rounded-xl border p-4">
+                <li key={f.id} className="border border-border p-4">
                   <div className="flex flex-wrap items-center justify-between gap-2 text-sm">
                     <span className="font-semibold">{CATEGORY_LABEL[f.category] ?? f.category}</span>
                     <span className="text-xs text-muted-foreground">
@@ -106,7 +106,7 @@ export default async function InsightsPage({
         {hardest.length === 0 ? (
           <p className="mt-3 text-sm italic text-muted-foreground">Not enough answers yet.</p>
         ) : (
-          <div className="mt-3 overflow-hidden rounded-xl border">
+          <div className="mt-3 overflow-hidden border border-border">
             <table className="w-full text-sm">
               <thead className="bg-muted/50 text-left text-muted-foreground">
                 <tr>
@@ -125,7 +125,7 @@ export default async function InsightsPage({
                       </Link>
                     </td>
                     <td className="whitespace-nowrap px-3 py-2 tabular-nums">
-                      <span className={r.correctRate < 0.5 ? "font-semibold text-red-600" : ""}>
+                      <span className={r.correctRate < 0.5 ? "font-semibold text-destructive" : ""}>
                         {Math.round(r.correctRate * 100)}%
                       </span>{" "}
                       <span className="text-xs text-muted-foreground">

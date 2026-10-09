@@ -90,7 +90,7 @@ export default async function ClassManagePage({
         ) : (
           <form action={updateAccessForClass} className="mt-4 space-y-4">
             {content.units.map((unit) => (
-              <div key={unit.id} className="rounded-xl border p-4">
+              <div key={unit.id} className="border border-border p-4">
                 {unit.subtitle && (
                   <p className="text-xs font-bold uppercase tracking-widest text-primary mb-0.5">
                     {unit.subtitle}
@@ -155,7 +155,7 @@ export default async function ClassManagePage({
             No students yet. Add them above.
           </p>
         ) : (
-          <div className="mt-4 overflow-hidden rounded-xl border">
+          <div className="mt-4 overflow-hidden border border-border">
             <table className="w-full text-sm">
               <thead className="bg-muted/50">
                 <tr>
@@ -183,7 +183,7 @@ export default async function ClassManagePage({
                           <div className="flex items-center gap-2 min-w-[120px]">
                             <div className="relative h-1.5 flex-1 overflow-hidden rounded-full bg-muted">
                               <div
-                                className="absolute inset-y-0 left-0 rounded-full bg-green-500 transition-all"
+                                className="absolute inset-y-0 left-0 rounded-full bg-primary transition-all"
                                 style={{ width: `${pct}%` }}
                               />
                             </div>
