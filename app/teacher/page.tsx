@@ -11,12 +11,22 @@ export default async function TeacherDashboard() {
     <div className="mx-auto max-w-3xl px-6 py-12">
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-semibold tracking-tight">Your Classes</h1>
-        <Link
-          href="/teacher/classes/new"
-          className="rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
-        >
-          + New Class
-        </Link>
+        <div className="flex items-center gap-3">
+          {classes.length > 0 && (
+            <a
+              href="/api/export"
+              className="rounded-lg border px-4 py-2 text-sm font-semibold hover:bg-accent transition-colors"
+            >
+              Download backup (CSV)
+            </a>
+          )}
+          <Link
+            href="/teacher/classes/new"
+            className="rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
+          >
+            + New Class
+          </Link>
+        </div>
       </div>
 
       {classes.length === 0 ? (

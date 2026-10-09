@@ -344,3 +344,44 @@ export async function deleteFeedback(id: string): Promise<void> {
     console.error("KV feedback delete failed:", e);
   }
 }
+
+// ── Keep-alive ────────────────────────────────────────────────────────────────
+
+const KEEP_ALIVE_KEY = "mg_keep_alive";
+
+/**
+ * Touches the database so Upstash does not treat it as inactive. Free databases
+ * are archived after a stretch of no traffic, which has already caused one
+ * outage — and a school holiday is exactly long enough to trigger it, so the
+ * first login of a new term would fail. Called by the daily cron in
+ * `app/api/keep-alive/route.ts`.
+ *
+ * Writes as well as reads, so it counts as real traffic either way.
+ */
+export async function pingDatabase(): Promise<{ ok: boolean; configured: boolean; error?: string }> {
+  const redis = getRedis();
+  if (!redis) return { ok: false, configured: false };
+  try {
+    const now = new Date().toISOString();
+    await redis.set(KEEP_ALIVE_KEY, now);
+    const readBack = await redis.get<string>(KEEP_ALIVE_KEY);
+    if (readBack !== now) {
+      return { ok: false, configured: true, error: "read-back did not match the value written" };
+    }
+    return { ok: true, configured: true };
+  } catch (e) {
+    console.error("KV keep-alive failed:", e);
+    return { ok: false, configured: true, error: e instanceof Error ? e.message : String(e) };
+  }
+}
+
+/** When the keep-alive last ran, for the teacher dashboard. */
+export async function getLastKeepAlive(): Promise<string | null> {
+  const redis = getRedis();
+  if (!redis) return null;
+  try {
+    return (await redis.get<string>(KEEP_ALIVE_KEY)) ?? null;
+  } catch {
+    return null;
+  }
+}

@@ -1,10 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { BlockRenderer } from "@/components/course/BlockRenderer";
 import { CodeExercise } from "@/components/course/shared/CodeExercise";
 import { submitLiveAnswer } from "@/app/actions/live";
+import { useLivePoll } from "@/components/live/useLivePoll";
 import { choiceLabels, correctChoice, type LiveAnswer } from "@/lib/logic/live";
 import type { Block } from "@/lib/content/types";
 
@@ -19,35 +20,15 @@ interface StudentPayload {
   myAnswer?: LiveAnswer | null;
 }
 
-const POLL_MS = 2000;
+async function loadSlide(): Promise<StudentPayload> {
+  const r = await fetch("/api/live", { cache: "no-store" });
+  if (!r.ok) throw new Error(String(r.status));
+  return (await r.json()) as StudentPayload;
+}
 
 /** Follows the teacher's live session: polls for the current slide and sends answers back. */
 export function LiveStudent({ courseHref }: { courseHref: string }) {
-  const [data, setData] = useState<StudentPayload | null>(null);
-  const [offline, setOffline] = useState(false);
-
-  useEffect(() => {
-    let stop = false;
-    async function tick() {
-      try {
-        const r = await fetch("/api/live", { cache: "no-store" });
-        if (!r.ok) throw new Error(String(r.status));
-        const j = (await r.json()) as StudentPayload;
-        if (!stop) {
-          setData(j);
-          setOffline(false);
-        }
-      } catch {
-        if (!stop) setOffline(true);
-      }
-    }
-    tick();
-    const t = setInterval(tick, POLL_MS);
-    return () => {
-      stop = true;
-      clearInterval(t);
-    };
-  }, []);
+  const { data, offline } = useLivePoll(loadSlide, (d) => d.active);
 
   if (!data) return <p className="text-muted-foreground">Connecting…</p>;
 

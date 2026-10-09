@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useState, useTransition } from "react";
+import { useCallback, useState, useTransition } from "react";
 import { BlockRenderer } from "@/components/course/BlockRenderer";
 import { endLiveSession, setLiveRevealed, setLiveSlide, startLiveSession } from "@/app/actions/live";
+import { useLivePoll } from "@/components/live/useLivePoll";
 import { choiceLabels, correctChoice, type SlideSummary, type StudentStatus } from "@/lib/logic/live";
 import type { Block } from "@/lib/content/types";
 
@@ -24,7 +25,6 @@ interface TeacherPayload {
   summary?: SlideSummary;
 }
 
-const POLL_MS = 2000;
 const CHIP: Record<StudentStatus, string> = {
   correct: "bg-primary text-primary-foreground",
   wrong: "bg-destructive text-white",
@@ -33,35 +33,16 @@ const CHIP: Record<StudentStatus, string> = {
 };
 
 export function LiveTeacher({ classId, lessons }: { classId: string; lessons: LessonOption[] }) {
-  const [data, setData] = useState<TeacherPayload | null>(null);
   const [lessonId, setLessonId] = useState(lessons[0]?.id ?? "");
   const [pending, start] = useTransition();
-  const [error, setError] = useState(false);
 
-  async function refresh() {
-    try {
-      const r = await fetch(`/api/live?classId=${encodeURIComponent(classId)}`, { cache: "no-store" });
-      if (!r.ok) throw new Error(String(r.status));
-      setData((await r.json()) as TeacherPayload);
-      setError(false);
-    } catch {
-      setError(true);
-    }
-  }
-
-  useEffect(() => {
-    let stop = false;
-    const run = () => {
-      if (!stop) void refresh();
-    };
-    run();
-    const t = setInterval(run, POLL_MS);
-    return () => {
-      stop = true;
-      clearInterval(t);
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+  const load = useCallback(async (): Promise<TeacherPayload> => {
+    const r = await fetch(`/api/live?classId=${encodeURIComponent(classId)}`, { cache: "no-store" });
+    if (!r.ok) throw new Error(String(r.status));
+    return (await r.json()) as TeacherPayload;
   }, [classId]);
+
+  const { data, offline: error, refresh } = useLivePoll(load, (d) => d.active, classId);
 
   function act(fn: () => Promise<{ ok: boolean }>) {
     start(async () => {

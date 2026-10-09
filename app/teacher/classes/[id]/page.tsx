@@ -56,10 +56,20 @@ export default async function ClassManagePage({
         <Link href="/teacher" className="text-sm text-muted-foreground hover:underline">
           ← All classes
         </Link>
-        <h1 className="mt-3 text-2xl font-semibold tracking-tight">{cls!.name}</h1>
-        <p className="mt-1 text-sm text-muted-foreground">
-          {course?.title ?? cls!.courseSlug} · {course?.yearLevel}
-        </p>
+        <div className="mt-3 flex items-start justify-between gap-4">
+          <div>
+            <h1 className="text-2xl font-semibold tracking-tight">{cls!.name}</h1>
+            <p className="mt-1 text-sm text-muted-foreground">
+              {course?.title ?? cls!.courseSlug} · {course?.yearLevel}
+            </p>
+          </div>
+          <a
+            href={`/api/export?classId=${encodeURIComponent(cls!.id)}`}
+            className="shrink-0 rounded-lg border px-4 py-2 text-sm font-semibold hover:bg-accent transition-colors"
+          >
+            Download backup (CSV)
+          </a>
+        </div>
       </div>
 
       {/* Live session */}
