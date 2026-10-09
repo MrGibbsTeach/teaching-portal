@@ -100,7 +100,7 @@ export const courseGroups: { heading: string; courses: Course[] }[] = [
         title: "Applied IT — ATAR",
         yearLevel: "Year 12",
         description: "WACE Applied Information Technology, ATAR course.",
-        status: "placeholder",
+        status: "active",
       },
     ],
   },

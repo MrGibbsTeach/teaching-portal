@@ -1,9 +1,33 @@
 import { notFound } from "next/navigation";
-import { CoursePlaceholder } from "@/components/course/CoursePlaceholder";
+import { CourseOverview } from "@/components/course/CourseOverview";
 import { getCourseBySlug } from "@/lib/courses";
+import { getCourseContent } from "@/lib/content";
+import { getSession } from "@/lib/session";
+import { getClass, getStudentProgress } from "@/lib/db";
 
-export default function Page() {
+export const dynamic = "force-dynamic";
+
+export default async function Page() {
+  const session = await getSession();
   const course = getCourseBySlug("year-12-applied-it-atar");
-  if (!course) notFound();
-  return <CoursePlaceholder course={course} />;
+  const content = getCourseContent("year-12-applied-it-atar");
+  if (!course || !content) notFound();
+
+  let allowedTopicIds: string[] | undefined;
+  let completedLessonIds: string[] | undefined;
+
+  if (session?.role === "student" && session.classId && session.username) {
+    const cls = await getClass(session.classId);
+    allowedTopicIds = cls?.topicIds ?? [];
+    completedLessonIds = await getStudentProgress(session.classId, session.username);
+  }
+
+  return (
+    <CourseOverview
+      course={course}
+      content={content}
+      allowedTopicIds={allowedTopicIds}
+      completedLessonIds={completedLessonIds}
+    />
+  );
 }

@@ -2,6 +2,7 @@ import type { CourseContent } from "./types";
 import generalData from "./data/year-11-applied-it-general.json";
 import general12Data from "./data/year-12-applied-it-general.json";
 import atarData from "./data/year-11-applied-it-atar.json";
+import atar12Data from "./data/year-12-applied-it-atar.json";
 import foundationsData from "./data/ait-foundations.json";
 import {
   FOUNDATIONS_Y11_SLUG,
@@ -32,6 +33,7 @@ const registry: Record<string, CourseContent> = {
   "year-11-applied-it-general": generalData as CourseContent,
   "year-12-applied-it-general": general12Data as CourseContent,
   "year-11-applied-it-atar": atarData as CourseContent,
+  "year-12-applied-it-atar": atar12Data as CourseContent,
   [FOUNDATIONS_Y11_SLUG]: foundationsY11,
   [FOUNDATIONS_Y12_SLUG]: foundationsY12,
 };

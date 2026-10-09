@@ -150,6 +150,18 @@ export default async function LessonPage({
         ))}
       </div>
       {completeButton}
+
+      {nextLesson && (
+        <div className="mt-10 flex items-center justify-between border-t pt-6">
+          <span className="text-sm text-muted-foreground">Up next</span>
+          <Link
+            href={`/courses/${slug}/lesson/${nextLesson.lessonId}`}
+            className="flex items-center gap-2 rounded-xl border-2 border-primary bg-primary/5 px-5 py-3 font-semibold text-primary hover:bg-primary/10"
+          >
+            {nextLesson.lessonTitle} →
+          </Link>
+        </div>
+      )}
     </div>
     </LessonShell>
   );

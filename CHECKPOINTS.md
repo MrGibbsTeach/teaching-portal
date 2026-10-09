@@ -48,12 +48,11 @@ _(Clayton is reviewing the other courses and will send further feedback. Add it 
 
 ## Checkpoint 2 — Year 11 ATAR (and Year 12 ATAR): no "Next" after completing a lesson
 
-Recorded 2026-09-20 (reported by Clayton with screenshots of *Elements of Design*, Y11 ATAR).
+Recorded 2026-09-20 (reported by Clayton with screenshots of *Elements of Design*, Y11 ATAR). **Fixed 2026-09-27**, while building out Year 12 ATAR content.
 
 - **Symptom:** after pressing **Completed**, there is no "next lesson" link, so the student has to go back to the course page.
 - **Cause (verified in code):** in `app/courses/[slug]/lesson/[lessonId]/page.tsx` the next lesson is always worked out (respecting the class topic-access lock), but only the General and Foundations layouts render it. The generic layout used by ATAR renders the lesson blocks and the complete button and nothing else.
-- **Year 12 ATAR:** it uses the same layout, so it will have the same gap once it has content (it is currently a placeholder with no lessons, so this is by inspection, not observed).
-- **Likely fix (not started):** render the same "Up next" link as the General lesson view in the ATAR layout, keep the topic-lock behaviour, and consider showing it directly after the Completed button.
+- **Fix:** the generic layout now renders the same "Up next" link (topic-lock-respecting, from the existing `nextLesson` value) directly after the Completed button, matching the General lesson view.
 
 ### Feedback still to add
 -
