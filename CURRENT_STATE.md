@@ -7,7 +7,7 @@ Read this first — before `STATUS.md`. This file is the live handover: what's t
 **Live:**
 - Production: https://mrgibbsteach.com (custom domain, DNS live, cert issued) — also reachable at https://teaching-portal-eta.vercel.app
 - Repo: https://github.com/MrGibbsTeach/teaching-portal (private), branch `main`, auto-deploys on push
-- All 9 courses exist; 7 are `active` with real content (Y11+Y12 × Foundations/General/ATAR), Y7–10 are still `placeholder`
+- All 10 courses exist; 6 are `active` with real content (Y11+Y12 × Foundations/General/ATAR), Y7–10 (4 courses) are still `placeholder`
 
 **Right now:**
 - All pre-student infrastructure done: keep-alive cron, adaptive live-session polling, teacher CSV export, custom domain.

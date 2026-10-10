@@ -10,7 +10,7 @@ Living tracker for where MrGibbs Teach is at. Update this whenever a session wra
 ## Done
 
 - Site scaffolded: Next.js (TypeScript, App Router) + Tailwind + shadcn/ui + Supabase client
-- All 9 courses exist as routes; metadata in `lib/courses.ts`
+- All 10 courses exist as routes; metadata in `lib/courses.ts` (grew from 9 to 10 when AIT Foundations split into separate Year 11 and Year 12 courses, 2026-09-20 — see below)
 - Home page groups courses into Years 7–10 / AIT Foundations / Year 11 & 12 Applied IT
 - Placeholder courses (Y7/Y8 Digital Technologies, Y9 Digital Innovations, Y10 Digital Enterprise, Y12 Applied IT General, Y12 Applied IT ATAR) render greyed out with a "Coming soon" badge and aren't clickable — no real content exists for these yet
 - **Content migration complete** for the 3 courses that had prior content:
@@ -25,7 +25,7 @@ Living tracker for where MrGibbs Teach is at. Update this whenever a session wra
 
 ## Visual/brand polish — in progress (Clayton, 2026-06-29)
 
-Decided approach: **one overall brand** (logo, header/footer, shared across all 9 courses) + **fully bespoke per-tier visual systems** within each course's content area (not just a palette swap — distinct layouts/components per tier). Five tiers: Y7/8, Y9/10, ATAR (Y11→12), General (Y11→12), Foundations.
+Decided approach: **one overall brand** (logo, header/footer, shared across all courses) + **fully bespoke per-tier visual systems** within each course's content area (not just a palette swap — distinct layouts/components per tier). Five tiers: Y7/8, Y9/10, ATAR (Y11→12), General (Y11→12), Foundations.
 
 **Overall brand — built:**
 - `components/brand/Logo.tsx` — icon (mortarboard mark) + "MrGibbs Teach" wordmark, used in `app/layout.tsx` header
@@ -97,15 +97,17 @@ Resolved the tension above: **one master system, five tier identities** — matc
 - **Foundations theme still not manually browser-checked** — verified via build + server-rendered HTML only (see note above); do a real visual pass before calling it done.
 - **Teacher portal pages (`app/teacher/*`) got only the token cascade**, not a dedicated rewrite — lower priority as an internal-only surface, but still shows the old spacing/structure patterns.
 - **Some Foundations interactive activity types render as static summaries**, not interactive widgets: drag-and-drop, hotspot, sort-buckets. (Matching, multiple-choice, fill-blank, ordering all render properly as static content.)
-- **5 of the original 6 placeholder courses still have zero content** — Years 7–10 and Year 12 General never had prior material to migrate; this is genuinely new content that needs to be written. (Year 12 ATAR is no longer in this list — content shipped 2026-09-27, see above.)
+- **Years 7–10 (4 courses) still have zero content** — never had prior material to migrate; this is genuinely new content that needs to be written. (Year 12 General and Year 12 ATAR are no longer in this list — both shipped, see above; all 6 of the originally-placeholder Y11/Y12 courses now have real content.)
 - (Done 2026-09-20) AIT Foundations is now split into `year-11-ait-foundations` (units 1–2) and `year-12-ait-foundations` (units 3–4); `ait-foundations.json` remains the single authoring source and is split in `lib/content/index.ts`. Legacy `ait-foundations` URLs and old classes are redirected/migrated.
 
 ## Next steps (priority order, per Clayton)
 
-1. **Visual/brand polish, per-course** — apply the distinct design direction above to each remaining tier. Y7/8 is the suggested next tier (largest cohort, can reuse the Foundations scoped-theme pattern).
-2. **Split AIT Foundations into Year 11 and Year 12** — currently a single course showing all 4 units together. Split into two separate courses (Year 11 Foundations = Units 1–2, Year 12 Foundations = Units 3–4), each with its own card on the home page, matching the pattern of General and ATAR.
-3. **Write new content for placeholder courses** — Years 7–10 and Year 12 General have no curriculum content yet (Year 12 ATAR now shipped); this is authoring work, not migration
-4. **Interactive activities** — upgrade the static drag-and-drop/hotspot/sort-bucket summaries into real interactive components
+Stale as of 2026-10-10 — items 2 and 3 below are now done (Foundations split 2026-09-20; Y12 General and Y12 ATAR content both shipped). Current priority is `CURRENT_STATE.md`'s "Next step" list; keeping this numbered list only as the last record of Clayton's own ordering before this session's work, for comparison.
+
+1. **Visual/brand polish, per-course** — apply the distinct design direction above to each remaining tier. Y7/8 is the suggested next tier (largest cohort, can reuse the Foundations scoped-theme pattern). **Still open.**
+2. ~~Split AIT Foundations into Year 11 and Year 12~~ — done 2026-09-20.
+3. ~~Write new content for placeholder courses~~ — Y12 General and Y12 ATAR done; Years 7–10 still open, folded into the point above.
+4. **Interactive activities** — upgrade the static drag-and-drop/hotspot/sort-bucket summaries into real interactive components. **Still open.**
 
 ## How to resume
 
