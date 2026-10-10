@@ -167,16 +167,7 @@ Recorded review notes and feedback that are **not yet implemented** live in `CHE
 - **Keep-alive** — `pingDatabase()` in `lib/db.ts`, called by `/api/keep-alive`, run daily at 03:00 by the cron in `vercel.json`. Set a `CRON_SECRET` env var in Vercel to close the route to anyone else (the route enforces `Authorization: Bearer $CRON_SECRET` whenever that var exists; without it the route still works and leaks nothing beyond whether the DB is reachable).
 - **Polling** — the flat 2 s interval is gone. `components/live/useLivePoll.ts` makes **no request at all while the tab is hidden**, waits 15 s while no session is running and 5 s while one is, and catches up the instant the tab is shown. Used by both `LiveStudent` and `LiveTeacher`. That takes a 30-student double period from roughly 200k commands/hour to a small fraction of it, inside the 500k/month free tier.
 - **Export** — teacher-only `/api/export` returns CSV; "Download backup (CSV)" on the teacher dashboard (all classes) and on each class page (that class). Pure logic in `lib/logic/export.ts`, 17 tests. Includes passcodes so a backup is actually restorable, quotes every field, defuses leading `=`/`+`/`-`/`@` so a roster cannot execute when opened in Excel, and sends a BOM so names read correctly.
-- **Domain** — `mrgibbsteach.com` and `www.mrgibbsteach.com` (308 → apex) are **added to the Vercel project and ownership-verified**. **Still to do by hand:** the DNS records in Cloudflare — see below.
-
-**Domain: the one remaining manual step.** In the Cloudflare dashboard for `mrgibbsteach.com`, add:
-
-| Type | Name | Value | Proxy |
-|------|------|-------|-------|
-| A | `@` (apex) | `76.76.21.21` | **DNS only** (grey cloud) |
-| CNAME | `www` | `cname.vercel-dns.com` | **DNS only** (grey cloud) |
-
-The proxy must be off or Vercel cannot issue the TLS certificate. `get_domain_config` currently reports `misconfigured: true` with no A or CNAME records present, which is expected until those are added; it flips to configured once Cloudflare serves them. Students then log in at `mrgibbsteach.com/login/student`.
+- **Domain — fully live (2026-10-10).** `mrgibbsteach.com` and `www.mrgibbsteach.com` (308 → apex) are added to the Vercel project, ownership-verified, and Clayton added the A (`@` → `76.76.21.21`) and CNAME (`www` → `cname.vercel-dns.com`) records in Cloudflare, both set to **DNS only** (proxy off, required for Vercel to issue the certificate). Confirmed via `get_domain_config`: `misconfigured: false`. Students log in at `mrgibbsteach.com/login/student`.
 
 **Why the domain matters more than it looks:** the project has `ssoProtection` set to `all_except_custom_domains`, so every `*.vercel.app` URL is behind Vercel's own login. Students genuinely cannot use `teaching-portal-eta.vercel.app` — the custom domain is the only route in for them, not a cosmetic upgrade. That setting is correct as-is: it keeps the preview URLs private and the custom domain public.
 
