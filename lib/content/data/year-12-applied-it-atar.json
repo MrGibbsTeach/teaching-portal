@@ -8714,6 +8714,1034 @@
               ]
             }
           ]
+        },
+        {
+          "id": "unit-3-4-practice-exam",
+          "title": "Unit 3 & 4 Practice Exam",
+          "description": "Evolving Digital Technologies & Digital Technologies Within a Global Society — 100 marks, 2 hours 30 minutes",
+          "lessons": [
+            {
+              "id": "unit3-4-exam-mcq",
+              "title": "Section 1 — Multiple Choice (10 marks)",
+              "blocks": [
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": 1,
+                    "questionType": "mcq",
+                    "text": "Which of the following is a principle of design rather than an element of design?",
+                    "options": [
+                      "Texture",
+                      "Line",
+                      "Unity",
+                      "Colour"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "Unity is a principle (a rule for arranging elements, achieved through proximity and repetition). Texture, line and colour are all elements — the building blocks themselves, not the rules for arranging them."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": 2,
+                    "questionType": "mcq",
+                    "text": "A laptop loses everything stored in RAM the moment it loses power, but keeps everything on its SSD. This is because RAM is:",
+                    "options": [
+                      "Non-volatile",
+                      "Volatile",
+                      "Read-only",
+                      "Secondary storage"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "Volatile memory loses its contents when power is removed — this is RAM. Non-volatile memory and storage (like an SSD) keeps its contents without power."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": 3,
+                    "questionType": "mcq",
+                    "text": "A photographer's work is automatically protected in Australia the moment it is taken, with no registration required, for their lifetime plus 70 years. Which form of intellectual property protection is this?",
+                    "options": [
+                      "Patent",
+                      "Trade mark",
+                      "Copyright",
+                      "Registered design"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "Copyright under the Copyright Act 1968 protects the original expression of an idea automatically once it is recorded — no registration needed, lasting the creator's life plus 70 years. Patents, trade marks and registered designs all require formal registration."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": 4,
+                    "questionType": "mcq",
+                    "text": "A regional business lets staff attend meetings from home using live video calls. This is an example of which form of collaboration?",
+                    "options": [
+                      "Asynchronous collaboration",
+                      "Synchronous collaboration",
+                      "Outsourced collaboration",
+                      "Content management"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "Synchronous collaboration is real-time communication with immediate responses — live video meetings and voice calls. Asynchronous collaboration (email, discussion boards) has a time delay between responses."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": 5,
+                    "questionType": "mcq",
+                    "text": "A small business chooses Google Workspace over buying licensed desktop software, specifically so the team always has the latest version without installing anything. Which advantage of online software does this describe?",
+                    "options": [
+                      "Limited customisation",
+                      "Possible downtime",
+                      "Automatic updates",
+                      "Subscription fees"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "Automatic updates means online software updates itself, so users always have the latest features and security fixes without manually installing anything, and don't have to wait to install software upfront."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": 6,
+                    "questionType": "mcq",
+                    "text": "A UX designer organises a website so related content is grouped together and the most important content appears first. This is best described as:",
+                    "options": [
+                      "User interface (UI)",
+                      "Accessibility",
+                      "Logical and hierarchical structure",
+                      "Usability testing"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "Logical and hierarchical structure means related content is grouped together, with the most important content first — part of how a digital product's structure is organised so users can find information and move through it easily."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": 7,
+                    "questionType": "mcq",
+                    "text": "A business lets customers submit support requests through a web page, and the responses are stored centrally for the support team to review. The web page is best described as:",
+                    "options": [
+                      "A content management system",
+                      "An online form",
+                      "A data warehouse",
+                      "An audit trail"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "An online form is a web-based document that collects structured data from users and stores the responses in a central location for analysis — exactly this use case. A CMS is for publishing content, not collecting it."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": 8,
+                    "questionType": "mcq",
+                    "text": "Which protocol encrypts the data travelling between a browser and a web server, and uses a digital certificate to verify the server's identity?",
+                    "options": [
+                      "HTTP",
+                      "HTTPS",
+                      "TCP/IP",
+                      "NIC"
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "HTTPS is HTTP sent over an encrypted SSL/TLS connection — it encrypts the data in transit and uses a digital certificate to verify the server's identity. HTTP alone does not encrypt anything."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": 9,
+                    "questionType": "mcq",
+                    "text": "A streaming platform's recommendation engine personalises content for each user and runs partly on blockchain-based ownership of digital assets. This reflects a shift toward:",
+                    "options": [
+                      "Web 1.0",
+                      "Web 2.0",
+                      "Web 3.0",
+                      "A content management system"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "Web 3.0 is the intelligent, decentralised web — AI personalises content, and blockchain lets users own their data and digital assets. Web 2.0 is the earlier read-write social web (users create and share content, but without this AI/blockchain layer)."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": 10,
+                    "questionType": "mcq",
+                    "text": "A company contracts an external provider to manage its data backups and sets a written agreement specifying the provider's required uptime and what happens if it isn't met. This written agreement is a:",
+                    "options": [
+                      "Service level agreement (SLA)",
+                      "Code of conduct",
+                      "Disaster recovery plan",
+                      "Audit trail"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "A service level agreement (SLA) is a written agreement between a provider and a client setting out the services to be delivered, the standard each must meet, and the consequence if that standard isn't met."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "unit3-4-exam-short-answer",
+              "title": "Section 2 — Short Answer (30 marks)",
+              "blocks": [
+                {
+                  "type": "richText",
+                  "html": "<p>Answer each question in the space provided. Marks are shown in brackets.</p>"
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "11",
+                    "questionType": "extended",
+                    "text": "A mobile phone manufacturer's newest model has a foldable screen, is 20% thinner than last year's model, and ships with a significantly more power-efficient processor.\n\n(a) Define the term development trend. (1 mark)\n\n(b) Identify two development trends evident in this phone. (2 marks)",
+                    "marks": 3,
+                    "explanation": "**(a)** A development trend is a direction in which the features of devices are changing over time. (1 mark)\n\n**(b)** Any two of: thinner/smaller form factor, foldable/flexible displays, more power-efficient processors. (1 mark each, 2 marks)"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "12",
+                    "questionType": "extended",
+                    "text": "A design agency wants to register their new logo as a trade mark, and separately wants their invention of a novel folding mechanism protected.\n\n(a) Name the two forms of intellectual property protection they need. (2 marks)\n\n(b) Explain the purpose of the Paris Convention priority period for a business also planning to expand into the United States. (2 marks)",
+                    "marks": 4,
+                    "explanation": "**(a)** Trade mark (for the logo) and patent (for the invention/mechanism). (1 mark each, 2 marks)\n\n**(b)** After applying in Australia, the business has a priority period (6 months for trade marks, 12 months for patents) to apply in other member countries such as the US. Those later applications are treated as if filed on the original Australian date, so no one else can register it first in the meantime — it does not grant protection overseas, it only holds the business's place in the queue. (2 marks)"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "13",
+                    "questionType": "extended",
+                    "text": "A regional council introduces virtual meetings so staff in isolated towns can attend head-office discussions without travelling.\n\n(a) Identify one advantage of virtual collaboration for this council, other than cost savings. (1 mark)\n\n(b) Identify one disadvantage of virtual collaboration the council should plan for. (1 mark)",
+                    "marks": 2,
+                    "explanation": "**(a)** Any one of: opportunities for isolated communities to engage in meaningful work without travel, workforce inclusion for parents, convenient communication across time zones, increased productivity. (1 mark)\n\n**(b)** Any one of: misinterpretation/communication barriers (no body language or tone), security risks, internet dependence, technology reliance, training needs, social isolation, the digital divide excluding some staff. (1 mark)"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "14",
+                    "questionType": "extended",
+                    "text": "A retailer is deciding between storing all of its sales data in one central data warehouse, or giving its marketing team a smaller data mart of just their own data.\n\n(a) Describe the difference between a data warehouse and a data mart. (2 marks)\n\n(b) Explain the purpose of data mining on data held in the warehouse. (2 marks)",
+                    "marks": 4,
+                    "explanation": "**(a)** A data warehouse is a large, centralised database storing historical and current data from multiple sources across the whole organisation, typically updated in batches rather than real time. A data mart is a smaller, more focused version used by a single department (e.g. marketing), containing only the data relevant to that group, making it faster and easier to query. (2 marks)\n\n**(b)** Data mining analyses the large amount of data stored in the warehouse to discover hidden patterns, trends and relationships, which the retailer can use to make predictions and better business decisions. (2 marks)"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "15",
+                    "questionType": "extended",
+                    "text": "A small business's website needs to work correctly whether a customer visits on Chrome, Safari or an older version of Edge.\n\n(a) Name the concept being described. (1 mark)\n\n(b) Describe one method the business could use to confirm this before launch. (2 marks)",
+                    "marks": 3,
+                    "explanation": "**(a)** Browser compatibility — the website looking and working correctly in different web browsers, on different devices and screen sizes. (1 mark)\n\n**(b)** Testing the site in each major browser (and on a range of devices/screen sizes) before launch, checking layout, functionality and any broken features in each. (2 marks for a method that actually tests across browsers, not just one check)"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "16",
+                    "questionType": "extended",
+                    "text": "A home network has a modem, a router, a switch and three devices connected with Ethernet cable, plus two devices connected over Wi-Fi.\n\n(a) Describe the separate roles of the modem and the router in this network. (2 marks)\n\n(b) Explain why the two wireless devices need a wireless NIC specifically, rather than any NIC. (2 marks)\n\n(c) Explain the purpose of a firewall in this network, including where it typically sits. (2 marks)",
+                    "marks": 6,
+                    "explanation": "**(a)** The modem connects the home network to the internet service provider (ISP). The router connects the devices on the home network together and shares that one internet connection between them — they are not the same device, even though they're sometimes combined into one unit. (2 marks)\n\n**(b)** Every device needs a network interface card (NIC) to connect to a network at all, but a NIC built for a wired connection cannot communicate wirelessly — a device connecting over Wi-Fi specifically needs a wireless NIC to send and receive the radio signal. (2 marks)\n\n**(c)** A firewall monitors incoming and outgoing network traffic and allows or blocks each data packet based on a set of security rules, sitting between the router/modem and the rest of the network (the switch) to create a barrier between the trusted home network and the untrusted internet. (2 marks)"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "17",
+                    "questionType": "extended",
+                    "text": "An online education platform lets students repeat a module as many times as they like and shows an instant score after every quiz.\n\n(a) Name the two features of online learning tools being described. (2 marks)\n\n(b) Identify this delivery model, in which the platform is hosted and maintained entirely by the provider with nothing installed locally. (1 mark)",
+                    "marks": 3,
+                    "explanation": "**(a)** Self-paced learning (control over pace, repeat content) and feedback (immediate feedback such as self-marking quizzes). (1 mark each, 2 marks)\n\n**(b)** Software as a Service (SaaS) — software hosted on cloud servers and accessed through a browser, with no installation required. (1 mark)"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "18",
+                    "questionType": "extended",
+                    "text": "A government department is reviewing whether to outsource the management of its citizen records database to an external provider rather than continuing to manage it in-house.\n\n(a) Define outsourcing data management. (1 mark)\n\n(b) Describe one advantage and one disadvantage of outsourcing this compared to keeping it in-house. (2 marks)\n\n(c) Explain why the department would need a service level agreement (SLA) as part of this arrangement. (2 marks)",
+                    "marks": 5,
+                    "explanation": "**(a)** Outsourcing data management is contracting an external provider to store, back up, secure, maintain or process an organisation's data, instead of doing it in-house with its own staff and equipment. (1 mark)\n\n**(b)** Advantage: access to specialist expertise and infrastructure without the department building and staffing it itself. Disadvantage: reduced direct control over sensitive citizen data, and dependence on the provider's reliability. (1 mark each, 2 marks — any reasonable, justified pair)\n\n**(c)** An SLA sets out exactly what service the provider must deliver, the standard it must meet (e.g. uptime, response time, security requirements) and what happens if that standard is not met — essential for a department handling sensitive citizen data, so accountability is written down rather than assumed. (2 marks)"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "unit3-4-exam-extended",
+              "title": "Section 3 — Extended Answer (30 marks)",
+              "blocks": [
+                {
+                  "type": "richText",
+                  "html": "<p><strong>Southwest Freight Connect</strong> is a Bunbury-based logistics company that tracks deliveries for several regional retailers. Their current system is a single in-office server that staff log into directly, with no formal backup schedule and no written record of who accesses or changes delivery records.</p><p>After a near-miss where a staff laptop was lost with sensitive client data on it, the company director, Marcus, has asked you — as the business's digital technologies consultant — to review and improve their data management and network security before they take on two new major clients.</p>"
+                },
+                {
+                  "type": "heading",
+                  "text": "Current setup (as reported by staff)",
+                  "level": 3
+                },
+                {
+                  "type": "table",
+                  "headers": [
+                    "Component",
+                    "Current state"
+                  ],
+                  "rows": [
+                    [
+                      "Data storage",
+                      "One on-site server; all delivery and client records stored in a single folder"
+                    ],
+                    [
+                      "Backups",
+                      "None scheduled — staff \"sometimes\" copy files to a USB drive"
+                    ],
+                    [
+                      "Network",
+                      "A single router shared by the office and the warehouse Wi-Fi, no separate firewall device"
+                    ],
+                    [
+                      "Access",
+                      "Every staff account can view and edit every client's records"
+                    ],
+                    [
+                      "Records of changes",
+                      "None — no log of who edited or deleted a record"
+                    ]
+                  ]
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "Q19",
+                    "questionType": "extended",
+                    "text": "Explain the difference between a backup and an archive, and recommend which one Southwest Freight Connect needs most urgently given their current setup. Justify your answer. (6 marks)",
+                    "marks": 6,
+                    "explanation": "**Backup** — a copy of current data stored separately so it can be restored if the original is lost, damaged or corrupted. **Archive** — the long-term storage of data no longer in regular use, moved off the live system and kept for future reference or legal requirements. (3 marks: 1–2 for each definition, correctly distinguished)\n\n**Recommendation:** a proper backup schedule is the more urgent need — the company has no reliable copy of its *current, in-use* records at all (an ad-hoc USB copy is not a backup strategy), so a single server failure or ransomware incident would mean total data loss. Archiving is about managing old, inactive data — a lower priority than protecting data currently in daily use. (3 marks for a justified recommendation tied to the actual risk described)"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "Q20",
+                    "questionType": "extended",
+                    "text": "Southwest Freight Connect has no audit trail and every staff account can edit every record.\n\n(a) Explain what an audit trail is and how it would have helped investigate the lost laptop incident. (3 marks)\n\n(b) Recommend a change to staff access that would reduce the risk of a similar incident, and justify it. (3 marks)",
+                    "marks": 6,
+                    "explanation": "**(a)** An audit trail is a record that logs user activity related to data access and changes, used to support data integrity, accountability and security monitoring. With an audit trail, the company could see exactly which records the lost laptop's account had accessed or downloaded, scoping the actual exposure instead of having to assume the worst about every client's data. (3 marks)\n\n**(b)** Restrict access so each staff member can only view and edit the records relevant to their own role or assigned clients, rather than every account having full access to every client's data (the principle of least privilege). This limits how much data is exposed if any single account or device is compromised. (3 marks for a specific, justified access change)"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "Q21",
+                    "questionType": "extended",
+                    "text": "Marcus wants a diagram-ready network design with a firewall separating the office network from the internet, and the warehouse Wi-Fi kept on a separate network from the office.\n\n(a) Name four hardware components (other than cabling) this design would need, and state the purpose of each. (8 marks)\n\n(b) Explain why placing the firewall as described is better security practice than Southwest Freight Connect's current single shared router. (4 marks)",
+                    "marks": 12,
+                    "explanation": "**(a)** Any four of: **Modem** — connects the business to its ISP. **Router** — connects the office network (and/or the separate warehouse network) to the internet and to each other. **Firewall** — monitors and filters traffic between the internal network and the internet, blocking unauthorised access. **Switch** — connects multiple wired devices within the office network. **Wireless Access Point (WAP)** — lets wireless devices (including the warehouse Wi-Fi) connect to the network. **NIC** — required in every device to connect to the network at all. (2 marks each for component + correct purpose, up to 8 marks)\n\n**(b)** A dedicated firewall actively inspects and filters traffic against a set of security rules, creating a real barrier between the trusted internal network and the untrusted internet. Southwest Freight Connect's current single shared router likely has only basic, default filtering and puts the office and warehouse traffic on the same unsegmented network, meaning a compromised device in the warehouse has direct access to office systems and client records — a properly firewalled, segmented design limits exactly that kind of lateral exposure. (4 marks)"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "Q22",
+                    "questionType": "extended",
+                    "text": "Marcus is also considering outsourcing the company's entire data management — storage, backups and security monitoring — to an external provider instead of building this in-house.\n\nCompare outsourcing with building the in-house solution described in your previous answers, and recommend one, with justification, for a business of Southwest Freight Connect's size. (6 marks)",
+                    "marks": 6,
+                    "explanation": "**Outsourcing data management** means contracting an external provider to store, back up, secure, maintain or process the company's data instead of doing it in-house. Advantages for a smaller business: access to specialist security expertise and infrastructure (proper backups, monitoring, audit trails) without hiring specialist IT staff; a service level agreement (SLA) makes the provider's obligations and accountability explicit. Disadvantages: ongoing cost, dependence on the provider's reliability, and less direct control over sensitive client data. (4 marks for a two-sided comparison)\n\n**Recommendation:** for a business of this size — no dedicated IT staff, and the near-miss already shows internal practices aren't being followed consistently — outsourcing to a provider under a clear SLA is the more realistic way to get proper backups, access controls and audit logging quickly, rather than relying on the company to build and maintain all of this itself. (2 marks for a justified, size-appropriate recommendation)"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "unit3-4-exam-scenario",
+              "title": "Section 4 — Scenario (30 marks)",
+              "blocks": [
+                {
+                  "type": "richText",
+                  "html": "<p><strong>Capel Community Garden</strong> is a not-for-profit group that wants a website and a companion mobile app so members can book garden plots, log working-bee hours, and read seasonal growing tips. The committee — mostly volunteers aged 40–70, with members ranging from confident computer users to people who rarely use a smartphone — has hired you to plan the user experience before any visual design begins.</p><p>The committee has said the website and app must work well for everyone, including a committee member who is visually impaired and uses a screen reader.</p>"
+                },
+                {
+                  "type": "heading",
+                  "text": "What the committee has asked for",
+                  "level": 3
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "A home page that immediately shows upcoming working bees and any urgent notices",
+                    "A simple way to book a garden plot without needing an account for casual visitors just browsing",
+                    "Members should log their working-bee hours after every session",
+                    "All content must be usable by a committee member who relies on a screen reader"
+                  ]
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "Q23",
+                    "questionType": "extended",
+                    "text": "Explain the difference between usability and user experience (UX) for this website, giving one example of each specific to Capel Community Garden's volunteers. (4 marks)",
+                    "marks": 4,
+                    "explanation": "**Usability** is how easily, efficiently and accurately users can complete tasks with the product — e.g. whether a volunteer with limited computer confidence can book a plot in a few clicks without getting lost. **User experience (UX)** is the user's overall experience and feelings when using the product — whether it feels welcoming and satisfying to use, not just technically completable, e.g. whether an older volunteer feels confident and unintimidated using the site rather than just barely able to struggle through it. (2 marks each for a correctly distinguished, example-grounded definition)"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "Q24",
+                    "questionType": "extended",
+                    "text": "The committee member who uses a screen reader is an accessibility requirement, not just a usability one.\n\n(a) Define accessibility in the context of this project. (2 marks)\n\n(b) Describe two specific accessibility considerations this site should follow to support a screen reader user. (4 marks)",
+                    "marks": 6,
+                    "explanation": "**(a)** Accessibility is designing a digital product so it can be used by everyone, including people with vision, hearing, physical or cognitive disability. (2 marks)\n\n**(b)** Any two of: meaningful alt text on every image so a screen reader can describe it; a logical heading structure (h1/h2/h3) so a screen reader user can navigate by heading; sufficient colour contrast and not relying on colour alone to convey meaning; labelled form fields (e.g. the plot booking form) so a screen reader announces what each field is for; keyboard-navigable menus and buttons for anyone not using a mouse. (2 marks each for a specific, correctly justified consideration, up to 4 marks)"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "Q25",
+                    "questionType": "extended",
+                    "text": "Design a logical and hierarchical structure for the Capel Community Garden website's main navigation, based on the committee's requirements.\n\n(a) List the main navigation sections (menu items) you would include, in the order they should appear. (4 marks)\n\n(b) Justify why this structure puts the most important content first, referring to the committee's stated priorities. (4 marks)",
+                    "marks": 8,
+                    "explanation": "**(a)** A reasonable structure, e.g.: Home — Book a Plot — Working Bees — Growing Tips — Log Hours (members) — About/Contact. (4 marks: 1 per sensible, correctly ordered section reflecting the brief, up to 4)\n\n**(b)** Logical and hierarchical structure means grouping related content together with the most important content first. Home leads because the committee specifically asked for upcoming working bees and urgent notices to be immediately visible. Book a Plot sits early because casual visitors need to reach it without an account, matching the no-account requirement. Log Hours can sit lower/behind a member area since it's a task for existing members after a session, not a first-visit priority. (4 marks for justification tied specifically to the committee's stated requirements)"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "Q26",
+                    "questionType": "extended",
+                    "text": "The committee is unsure whether booking a plot and logging working-bee hours should be two separate features or combined into one. Using the concepts of usability and user interface (UI), recommend an approach and justify it. (6 marks)",
+                    "marks": 6,
+                    "explanation": "**User interface (UI)** is the parts of the product the user sees and interacts with — layout, buttons, menus, icons — the look and feel. A strong answer recommends keeping plot booking and hour-logging as two separate, clearly labelled actions/screens rather than one combined form, because they happen at different times for different purposes (booking happens once in advance; logging hours happens repeatedly, immediately after each working bee) — combining them into one UI would force a volunteer to navigate past booking information every time they just want to log hours, harming usability (how efficiently the task is completed) even if it technically reduces the number of pages. Either recommendation can score full marks if it correctly applies both usability and UI concepts and is justified against the actual two tasks described, rather than asserted without reasoning. (6 marks: 2 for correct UI/usability application each, 2 for a justified recommendation)"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "Q27",
+                    "questionType": "extended",
+                    "text": "Once the website is built, the committee wants to know if it actually worked for their volunteers. Describe two tools or methods you would use to evaluate the website's effectiveness against the committee's original requirements. (6 marks)",
+                    "marks": 6,
+                    "explanation": "Any two reasonable evaluation methods, each explained, e.g.: a user survey asking volunteers (including the screen-reader user specifically) to rate how easily they completed key tasks like booking a plot; direct observation of a small group of volunteers across the age range attempting the tasks live, noting where they got stuck; checking actual usage data (e.g. how many bookings or hour-logs were completed in the first month) against the requirement that casual visitors could book without an account; accessibility testing with an actual screen reader to confirm the considerations from Q24 work in practice, not just in theory. (3 marks each for a specific method tied back to the committee's stated requirements, up to 6 marks)"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "glossary",
+      "title": "Glossary",
+      "status": "available",
+      "topics": [
+        {
+          "id": "glossary",
+          "title": "Glossary",
+          "description": "129 key terms",
+          "lessons": [
+            {
+              "id": "glossary-a-z",
+              "title": "Glossary (A–Z by topic)",
+              "blocks": [
+                {
+                  "type": "heading",
+                  "text": "Application Skills",
+                  "level": 3
+                },
+                {
+                  "type": "keyTerms",
+                  "items": [
+                    {
+                      "term": "Accessibility",
+                      "definition": "Online software can be accessed from anywhere with an internet connection, making it easy to use and share across multiple devices. For example, think of your ability to access Google Docs on any device."
+                    },
+                    {
+                      "term": "Asana",
+                      "definition": "Project management tool for tracking tasks and assigning responsibilities"
+                    },
+                    {
+                      "term": "Automatic updates",
+                      "definition": "Online software is often updated automatically, meaning users always have access to the latest features and security updates without needing to manually install anything. You also don't need to wait to install any software upfront."
+                    },
+                    {
+                      "term": "Cloud storage",
+                      "definition": "Auto-saves work and provides access from any device with internet connection"
+                    },
+                    {
+                      "term": "Collaboration",
+                      "definition": "Online software can allow multiple users to work on the same document or project simultaneously, making it easier for teams to collaborate and work together. Think collaboration on Canva, Word 365 or Google Docs."
+                    },
+                    {
+                      "term": "Colour Schemes",
+                      "definition": "Carefully selected combinations of colours used to create a cohesive and visually appealing design. Application: Used to evoke emotions, enhance readability, and establish branding."
+                    },
+                    {
+                      "term": "Commenting",
+                      "definition": "Users leave feedback or suggest edits without changing original content"
+                    },
+                    {
+                      "term": "Cost-effectiveness",
+                      "definition": "Many online software options offer subscription-based pricing models, which can be more cost-effective for users than traditional software licenses."
+                    },
+                    {
+                      "term": "Dependence on Internet Connectivity",
+                      "definition": "Online software requires a stable internet connection to work effectively. Poor internet connection or service disruptions can result in lost work or inability to access the software. Imagine working in remote or regional areas with limited internet."
+                    },
+                    {
+                      "term": "Digital publication",
+                      "definition": "Content published electronically to be read on a computer, tablet or phone instead of on paper."
+                    },
+                    {
+                      "term": "Effect",
+                      "definition": "a sound other than speech or music for use in a play, film, broadcast or production"
+                    },
+                    {
+                      "term": "Engagement",
+                      "definition": "Does interactivity (video, quizzes, simulations) improve understanding compared to static content?"
+                    },
+                    {
+                      "term": "Feedback",
+                      "definition": "Does it provide immediate feedback (e.g. self-marking quizzes, real-time code testing)?"
+                    },
+                    {
+                      "term": "File sharing",
+                      "definition": "Uploads and shares resources, designs, and plans with a team instantly"
+                    },
+                    {
+                      "term": "Flexibility",
+                      "definition": "Online software is often compatible with a wide range of devices and operating systems, meaning users can use it on the devices they prefer without needing to worry about compatibility issues."
+                    },
+                    {
+                      "term": "Frames",
+                      "definition": "Containers used to organise and structure text and images in a layout. Application: Ensures consistent placement and easy content adjustments."
+                    },
+                    {
+                      "term": "Google Workspace",
+                      "definition": "Docs, Sheets, Drive, Gmail; real-time collaborative editing and file sharing"
+                    },
+                    {
+                      "term": "Layers",
+                      "definition": "Separate elements in design software that can be edited independently. Application: Allows for non-destructive editing and organised workflows."
+                    },
+                    {
+                      "term": "Limited Customization",
+                      "definition": "Online software typically has limited customization options, meaning users may not be able to tailor the software to their specific needs or preferences."
+                    },
+                    {
+                      "term": "Microsoft Teams",
+                      "definition": "Chat, video conferencing, and file sharing in one platform"
+                    },
+                    {
+                      "term": "No storage space required",
+                      "definition": "It's all stored on the web, reducing the amount of space needed on a device!"
+                    },
+                    {
+                      "term": "Online form",
+                      "definition": "A web-based document that collects structured data from users and stores the responses in a central location for analysis."
+                    },
+                    {
+                      "term": "Possible Downtime",
+                      "definition": "Online software relies on servers and infrastructure, which can experience downtime due to maintenance, updates, or unexpected issues, resulting in a lack of access to the software."
+                    },
+                    {
+                      "term": "Print/Display Options",
+                      "definition": "Definition: Settings for optimising designs for print (CMYK) or digital display (RGB). Application: Ensures correct resolution (300 dpi for print, 72 dpi for digital) and file format."
+                    },
+                    {
+                      "term": "Publishing features",
+                      "definition": "The tools and settings in application software (e.g. InDesign, Canva, Word, Publisher) used to build a publication."
+                    },
+                    {
+                      "term": "Real-time collaboration",
+                      "definition": "Multiple users edit the same document simultaneously; changes appear instantly"
+                    },
+                    {
+                      "term": "Security Risks",
+                      "definition": "Online software stores data on remote servers, which can raise security concerns. Data breaches can result in loss of sensitive data and compromise the privacy of users. With all data stored online, there is a risk a hacker can take all the sensitive information of a user or business. Think about the security risk Xero or MYOB has in protecting their users' data."
+                    },
+                    {
+                      "term": "Self-paced learning",
+                      "definition": "Does it allow the user to control pace and repeat content?"
+                    },
+                    {
+                      "term": "Sharing and permissions",
+                      "definition": "Controls who can view, comment, or edit a file"
+                    },
+                    {
+                      "term": "Slack",
+                      "definition": "Real-time messaging platform for team communication"
+                    },
+                    {
+                      "term": "Software as a Service (SaaS)",
+                      "definition": "Software hosted on cloud servers and accessed through a web browser, with no installation required. The provider manages updates, maintenance, and storage."
+                    },
+                    {
+                      "term": "Sound",
+                      "definition": "vibrations that travel through the air or another medium and can be heard when they reach a person's or animal's ear"
+                    },
+                    {
+                      "term": "Soundtrack",
+                      "definition": "a recording of music to accompany a film, broadcast or production"
+                    },
+                    {
+                      "term": "Subscription Fees",
+                      "definition": "While online software can be more cost-effective than traditional software licenses, subscription fees can add up over time and may not be sustainable for some users or businesses."
+                    },
+                    {
+                      "term": "Templates",
+                      "definition": "Definition: Pre-designed layouts that provide a consistent structure for content. Application: Speeds up workflow, ensures uniformity, and improves efficiency."
+                    },
+                    {
+                      "term": "Typography",
+                      "definition": "Definition: The art of arranging text to make it readable and visually engaging. Application: Includes font selection, spacing, size, and alignment to improve design."
+                    },
+                    {
+                      "term": "Version history",
+                      "definition": "Tracks changes over time; allows restoring previous versions"
+                    },
+                    {
+                      "term": "Video conferencing",
+                      "definition": "Enables real-time discussion, screen sharing, and group collaboration"
+                    },
+                    {
+                      "term": "Voice over",
+                      "definition": "a piece of recorded, spoken narration for use in film or broadcast; it is also not part of the visual narrative"
+                    },
+                    {
+                      "term": "Zoom",
+                      "definition": "Video conferencing for virtual meetings and screen sharing"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Design Concepts",
+                  "level": 3
+                },
+                {
+                  "type": "keyTerms",
+                  "items": [
+                    {
+                      "term": "3D Form",
+                      "definition": "Physical depth, volume, and structure (realistic or illustrated)."
+                    },
+                    {
+                      "term": "Balance",
+                      "definition": "Equal distribution of visual weight (symmetrical or asymmetrical)."
+                    },
+                    {
+                      "term": "Colour",
+                      "definition": "Used to attract attention, group elements, show hierarchy, and evoke emotions."
+                    },
+                    {
+                      "term": "Dominance",
+                      "definition": "One element stands out as most important."
+                    },
+                    {
+                      "term": "Elements",
+                      "definition": "The building blocks of all visual design."
+                    },
+                    {
+                      "term": "Emphasis",
+                      "definition": "Focuses attention on key points. Achieved through contrast (difference) and proportion (size relationships)."
+                    },
+                    {
+                      "term": "Line",
+                      "definition": "Directs the eye, creates emphasis and movement."
+                    },
+                    {
+                      "term": "Movement",
+                      "definition": "Guides the viewer's eye through a deliberate path."
+                    },
+                    {
+                      "term": "Pattern",
+                      "definition": "Repeated elements (e.g., shapes, colours, textures) to create rhythm or consistency."
+                    },
+                    {
+                      "term": "Principles",
+                      "definition": "The rules used to organise and arrange the elements."
+                    },
+                    {
+                      "term": "Shape",
+                      "definition": "2D areas formed by lines or colour changes (e.g., geometric, organic)."
+                    },
+                    {
+                      "term": "Space",
+                      "definition": "Positive (filled) and negative (empty) areas; creates depth and balance."
+                    },
+                    {
+                      "term": "Texture",
+                      "definition": "Visual or tactile surface quality (e.g., rough, smooth)."
+                    },
+                    {
+                      "term": "Tone",
+                      "definition": "Lightness or darkness of colour or greys; helps create depth and contrast."
+                    },
+                    {
+                      "term": "Unity",
+                      "definition": "Creates cohesion and belonging between elements. Achieved through proximity (grouping related items) and repetition (reusing similar elements)."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Hardware",
+                  "level": 3
+                },
+                {
+                  "type": "keyTerms",
+                  "items": [
+                    {
+                      "term": "Development trend",
+                      "definition": "A direction in which the features of devices are changing over time."
+                    },
+                    {
+                      "term": "Non-volatile memory and storage",
+                      "definition": "Keeps its contents without power (e.g. ROM, SSD, HDD)."
+                    },
+                    {
+                      "term": "Volatile memory",
+                      "definition": "Loses its contents when power is removed (e.g. RAM)."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Impacts of Technology",
+                  "level": 3
+                },
+                {
+                  "type": "keyTerms",
+                  "items": [
+                    {
+                      "term": "Asynchronous collaboration",
+                      "definition": "Communication with a time delay between responses. Examples: email, discussion boards, recorded video updates."
+                    },
+                    {
+                      "term": "Cloud computing",
+                      "definition": "Storing data and running applications on servers owned by a third-party provider and accessed over the internet, instead of on the organisation's own computers (e.g. Microsoft 365, Google Workspace, AWS)."
+                    },
+                    {
+                      "term": "Code of Conduct",
+                      "definition": "A formal written document that outlines expected standards of behaviour for employees. It establishes clear rules about workplace conduct, particularly around ICT system use. Breaches can result in disciplinary action, including suspension or termination."
+                    },
+                    {
+                      "term": "Colours",
+                      "definition": "Cadbury purple (they have not been overly successful trademarking the colour in Australia)"
+                    },
+                    {
+                      "term": "Convenient communication",
+                      "definition": "Conversations can be paused and resumed as needed, ideal for different time zones."
+                    },
+                    {
+                      "term": "Copyright (Copyright Act 1968)",
+                      "definition": "Automatically protects the original expression of an idea once it is written down or recorded. No registration is needed. Lasts for the life of the creator plus 70 years."
+                    },
+                    {
+                      "term": "Cost efficiency",
+                      "definition": "Eliminates the need to rent office space or meeting rooms."
+                    },
+                    {
+                      "term": "Digital convergence",
+                      "definition": "The combining of two or more technologies or functions into one device or platform."
+                    },
+                    {
+                      "term": "Digital divide",
+                      "definition": "Lack of access to technology excludes some people."
+                    },
+                    {
+                      "term": "Freedom of Information Act 1982 (Cth)",
+                      "definition": "Gives every person the legal right to access documents held by Australian Government ministers and agencies, unless the document is exempt. It is overseen by the Office of the Australian Information Commissioner (OAIC)."
+                    },
+                    {
+                      "term": "Increased productivity",
+                      "definition": "Saves commuting time; enables quicker task transitions."
+                    },
+                    {
+                      "term": "Intellectual property (IP)",
+                      "definition": "Legal rights that protect the creators of original works, inventions, brands and designs, giving them exclusive rights to use and profit from them."
+                    },
+                    {
+                      "term": "Internet dependence",
+                      "definition": "Poor connections can disrupt collaboration."
+                    },
+                    {
+                      "term": "Logos",
+                      "definition": "The golden arches of McDonald's"
+                    },
+                    {
+                      "term": "Misinterpretation / communication barriers",
+                      "definition": "Lack of body language and tone can cause misunderstandings."
+                    },
+                    {
+                      "term": "Moral rights",
+                      "definition": "Creators have the right to be credited and to have their work not changed in a way that harms their reputation."
+                    },
+                    {
+                      "term": "Online censorship",
+                      "definition": "The control of what can be accessed, published or viewed on the internet. It can be carried out by governments, regulators, private organisations (platforms, schools, workplaces) or by individuals themselves (self-censorship). It includes filtering and blocking content, removing it, and monitoring or penalising users who access or publish certain content."
+                    },
+                    {
+                      "term": "Online defamation",
+                      "definition": "Publishing false information about an identifiable person or business online (e.g. social media, reviews, forums, videos) that damages their reputation."
+                    },
+                    {
+                      "term": "Opportunities for isolated communities",
+                      "definition": "Enables people from rural areas or those with disabilities to engage in meaningful work without needing to travel."
+                    },
+                    {
+                      "term": "Outsourcing",
+                      "definition": "The practice of using third-party providers to perform services or create goods traditionally produced within the business."
+                    },
+                    {
+                      "term": "Paris Convention priority period",
+                      "definition": "After applying in Australia, you have 12 months (patents) or 6 months (trade marks and designs) to apply in other member countries. Those applications are treated as if they were filed on your Australian date, so no one can register it first. It is not protection. It only holds your place in the queue."
+                    },
+                    {
+                      "term": "Scents",
+                      "definition": "Unique fragrances associated with specific products"
+                    },
+                    {
+                      "term": "Security risks",
+                      "definition": "Communications can be hacked or recorded without permission."
+                    },
+                    {
+                      "term": "Social isolation",
+                      "definition": "Reduced face-to-face interaction can impact confidence."
+                    },
+                    {
+                      "term": "Sounds",
+                      "definition": "The Intel startup sound"
+                    },
+                    {
+                      "term": "Synchronous collaboration",
+                      "definition": "Real-time communication where responses are immediate. Examples: chatrooms, live video meetings, voice calls."
+                    },
+                    {
+                      "term": "Technology reliance",
+                      "definition": "If software, hardware, or internet fails, work stops."
+                    },
+                    {
+                      "term": "Training needs",
+                      "definition": "Staff may require extra training to use new tools."
+                    },
+                    {
+                      "term": "Web 2.0",
+                      "definition": "The read-write (social) web. Users create, share and interact with content."
+                    },
+                    {
+                      "term": "Web 3.0",
+                      "definition": "The intelligent, decentralised web. AI personalises content, and blockchain lets users own their data and digital assets."
+                    },
+                    {
+                      "term": "Words",
+                      "definition": "Company names, slogans, product names (e.g., \"Nike,\" \"Just Do It\")"
+                    },
+                    {
+                      "term": "Workforce inclusion for parents",
+                      "definition": "Provides flexible work-from-home opportunities, allowing parents (especially mothers) to remain active in the workforce after having children."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Managing Data",
+                  "level": 3
+                },
+                {
+                  "type": "keyTerms",
+                  "items": [
+                    {
+                      "term": "Archive",
+                      "definition": "The long-term storage of data that is no longer in regular use. The data is moved off the live system and kept for future reference or to meet legal requirements."
+                    },
+                    {
+                      "term": "Audit trail",
+                      "definition": "A record that logs user activity related to data access and changes. Commonly used to support data integrity, accountability, and security monitoring."
+                    },
+                    {
+                      "term": "Backup",
+                      "definition": "A copy of current data stored separately so it can be restored if the original is lost, damaged or corrupted."
+                    },
+                    {
+                      "term": "Browser compatibility",
+                      "definition": "A website or online application looks and works correctly in different web browsers, on different devices and screen sizes."
+                    },
+                    {
+                      "term": "Content Management System (CMS)",
+                      "definition": "A software platform that allows users to create, edit, organise, and publish digital content, without needing to write code or understand HTML. CMS platforms are widely used by individuals, small businesses, and large organisations to manage blogs, websites, and online stores."
+                    },
+                    {
+                      "term": "Data mart",
+                      "definition": "A smaller, more focused version of a data warehouse. Usually used by a single department or team within a company (e.g. the marketing team). Contains only the data relevant to that group, which makes it faster and easier to query. Still supports analysis and reporting, but on a smaller scale."
+                    },
+                    {
+                      "term": "Data mining",
+                      "definition": "The process of analysing large amounts of stored data (often in a data warehouse) to discover hidden patterns, trends and relationships. Organisations use these patterns to make predictions and better decisions."
+                    },
+                    {
+                      "term": "Data warehouse",
+                      "definition": "A large, centralised database used to store historical and current data from multiple sources. Typically used by large organisations (e.g. Spotify, Netflix, government agencies). Stores structured data that can be analysed for business decisions and reporting. Not updated in real time – data is often added in batches."
+                    },
+                    {
+                      "term": "Disaster recovery plan (DRP)",
+                      "definition": "A formal, written strategy that outlines the procedures an organisation must follow to restore critical ICT systems and data after a disruptive event. These events may include natural disasters, cyber-attacks, hardware failures, or power outages."
+                    },
+                    {
+                      "term": "HTML (hypertext markup language)",
+                      "definition": "The standard markup language used to structure the content of a web page. It uses tags to label content (headings, paragraphs, images, links) so a web browser knows how to display it. HTML files are plain text saved with a .html or .htm extension."
+                    },
+                    {
+                      "term": "User Generated Content (UGC)",
+                      "definition": "Any online content created and published voluntarily by users rather than the business or organisation itself."
+                    },
+                    {
+                      "term": "Validation",
+                      "definition": "Automatic checks that data entered into a form is complete, sensible and in the correct form before it is accepted. Validation cannot prove data is true: a correctly formatted but wrong phone number still passes."
+                    },
+                    {
+                      "term": "Verification",
+                      "definition": "Checks that data is accurate or matches its source, e.g. entering a password twice, or clicking a link sent to an email address."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Networks",
+                  "level": 3
+                },
+                {
+                  "type": "keyTerms",
+                  "items": [
+                    {
+                      "term": "Communication protocol",
+                      "definition": "A set of rules for how data is formatted, addressed and exchanged between devices (e.g. TCP/IP, HTTP)."
+                    },
+                    {
+                      "term": "Communication standard",
+                      "definition": "An agreed specification, set by the IEEE, for how network hardware transmits data (e.g. cables, radio frequencies, speeds). Standards let equipment from different manufacturers work together."
+                    },
+                    {
+                      "term": "Ethernet Cables",
+                      "definition": "Wired devices are connected with Ethernet cables. Show the cables with hard lines in a diagram."
+                    },
+                    {
+                      "term": "Firewall",
+                      "definition": "Hardware or software that monitors incoming and outgoing network traffic and allows or blocks each data packet based on a set of security rules. It creates a barrier between a trusted internal network (the LAN) and an untrusted external network (the internet)."
+                    },
+                    {
+                      "term": "HTTP (hypertext transfer protocol)",
+                      "definition": "The communication protocol that defines how a browser requests web pages and files from a web server, and how the server responds."
+                    },
+                    {
+                      "term": "HTTPS (hypertext transfer protocol secure)",
+                      "definition": "HTTP sent over an encrypted SSL/TLS connection. It encrypts data travelling between the browser and the web server, and uses a digital certificate to verify the server's identity."
+                    },
+                    {
+                      "term": "Internet",
+                      "definition": "Cloud symbol."
+                    },
+                    {
+                      "term": "Modem",
+                      "definition": "Connects to your ISP."
+                    },
+                    {
+                      "term": "Network security measures",
+                      "definition": "Hardware, software and physical controls that prevent unauthorised access to a network, its devices and its data, and keep the network available to authorised users."
+                    },
+                    {
+                      "term": "NIC (Network Interface Card)",
+                      "definition": "Every device needs a NIC shown or labelled. Every wireless device needs to show it has a wireless NIC."
+                    },
+                    {
+                      "term": "Password",
+                      "definition": "A secret string of characters that authenticates a user, so only authorised people can log in to the network, devices, Wi-Fi and online services, with access set by their user account."
+                    },
+                    {
+                      "term": "Physical security",
+                      "definition": "Physical controls that stop unauthorised people reaching, tampering with, damaging or stealing network hardware such as servers, switches, routers, WAPs and storage devices."
+                    },
+                    {
+                      "term": "Router",
+                      "definition": "Connects networks together (i.e. internet and your LAN)."
+                    },
+                    {
+                      "term": "Switch",
+                      "definition": "Connects devices on a network."
+                    },
+                    {
+                      "term": "TCP/IP (transmission control protocol/internet protocol)",
+                      "definition": "The suite of communication protocols (rules) the internet uses to address, route and reliably deliver data between devices on different networks."
+                    },
+                    {
+                      "term": "Wireless Access Point (WAP)",
+                      "definition": "Wireless devices connect to the network."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Project Management",
+                  "level": 3
+                },
+                {
+                  "type": "keyTerms",
+                  "items": [
+                    {
+                      "term": "Accessibility",
+                      "definition": "Designing a digital product so it can be used by everyone, including people with vision, hearing, physical or cognitive disability."
+                    },
+                    {
+                      "term": "Effectiveness",
+                      "definition": "How well a digital solution achieves the purpose and requirements set out in the design brief."
+                    },
+                    {
+                      "term": "Evaluation of software",
+                      "definition": "Judging how well a piece of software meets the needs of its users, using clear criteria, before it is bought or after it is built."
+                    },
+                    {
+                      "term": "Logical and hierarchical structure",
+                      "definition": "Related content is grouped together, and the most important content comes first."
+                    },
+                    {
+                      "term": "Outsourcing data management",
+                      "definition": "Contracting an external provider to store, back up, secure, maintain or process an organisation's data, instead of doing it in-house with its own staff and equipment."
+                    },
+                    {
+                      "term": "Service level agreement (SLA)",
+                      "definition": "A written agreement between a service provider and a client that sets out the services to be provided, the standard each must meet, and what happens if the standard is not met."
+                    },
+                    {
+                      "term": "Structure",
+                      "definition": "How the content and features of a digital product are organised and connected, so users can find information and move through the product easily."
+                    },
+                    {
+                      "term": "Usability",
+                      "definition": "How easily, efficiently and accurately users can complete tasks with a digital product."
+                    },
+                    {
+                      "term": "User experience (UX)",
+                      "definition": "The user's overall experience and feelings when using a product: whether it is easy, satisfying and worth returning to."
+                    },
+                    {
+                      "term": "User interface (UI)",
+                      "definition": "The parts of a digital product the user sees and interacts with: layout, buttons, menus, icons, typography, colour and input controls. UI is the look and feel of the product."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     }
