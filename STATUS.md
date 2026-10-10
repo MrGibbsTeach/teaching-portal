@@ -142,17 +142,30 @@ Recorded review notes and feedback that are **not yet implemented** live in `CHE
 
 **Feedback + quiz tracking (2026-09-20):** every lesson (General, Foundations, ATAR) has a floating "Something wrong?" button (category chips + optional note) saved to Redis (`mg_feedback`); General and Foundations quiz answers (mcq / true-false, first pick) are counted per class (`mg_qstats:{classId}`, keyed by a hash of the question text so reordering lessons does not scramble results; right/wrong is decided on the server). Teacher page: `/teacher/insights` (nav "Insights") lists notes with "Mark as done" and the hardest questions with the most common wrong answer, filterable by class. Not counted: teachers previewing, ATAR quizzes (they show answers, no answering), video-checkpoint questions. Integration-tested; not yet tried by real students.
 
-## Next session — domain + pre-student checklist (2026-09-20)
+## Pre-student infrastructure (2026-10-10)
 
-**Domain:** `mrgibbsteach.com` is purchased and its nameservers are **Cloudflare** (`darwin.ns.cloudflare.com`, `opal.ns.cloudflare.com`), so DNS is managed in the Cloudflare dashboard. Nothing in the code hardcodes the old `teaching-portal-eta.vercel.app` address, so no code change is needed. **Not connected yet.** To connect: Vercel project → Settings → Domains → add `mrgibbsteach.com` (and `www`, redirected to the apex); Vercel then shows the exact DNS records → add them in Cloudflare with the proxy switched off (grey cloud / "DNS only") so Vercel can issue the certificate; wait for Vercel to show the domain as valid. Students then log in at `mrgibbsteach.com/login/student`.
+**Done (commit `0c3791f`, domain changes made live via the Vercel API in this session):**
+- **Keep-alive** — `pingDatabase()` in `lib/db.ts`, called by `/api/keep-alive`, run daily at 03:00 by the cron in `vercel.json`. Set a `CRON_SECRET` env var in Vercel to close the route to anyone else (the route enforces `Authorization: Bearer $CRON_SECRET` whenever that var exists; without it the route still works and leaks nothing beyond whether the DB is reachable).
+- **Polling** — the flat 2 s interval is gone. `components/live/useLivePoll.ts` makes **no request at all while the tab is hidden**, waits 15 s while no session is running and 5 s while one is, and catches up the instant the tab is shown. Used by both `LiveStudent` and `LiveTeacher`. That takes a 30-student double period from roughly 200k commands/hour to a small fraction of it, inside the 500k/month free tier.
+- **Export** — teacher-only `/api/export` returns CSV; "Download backup (CSV)" on the teacher dashboard (all classes) and on each class page (that class). Pure logic in `lib/logic/export.ts`, 17 tests. Includes passcodes so a backup is actually restorable, quotes every field, defuses leading `=`/`+`/`-`/`@` so a roster cannot execute when opened in Excel, and sends a BOM so names read correctly.
+- **Domain** — `mrgibbsteach.com` and `www.mrgibbsteach.com` (308 → apex) are **added to the Vercel project and ownership-verified**. **Still to do by hand:** the DNS records in Cloudflare — see below.
+
+**Domain: the one remaining manual step.** In the Cloudflare dashboard for `mrgibbsteach.com`, add:
+
+| Type | Name | Value | Proxy |
+|------|------|-------|-------|
+| A | `@` (apex) | `76.76.21.21` | **DNS only** (grey cloud) |
+| CNAME | `www` | `cname.vercel-dns.com` | **DNS only** (grey cloud) |
+
+The proxy must be off or Vercel cannot issue the TLS certificate. `get_domain_config` currently reports `misconfigured: true` with no A or CNAME records present, which is expected until those are added; it flips to configured once Cloudflare serves them. Students then log in at `mrgibbsteach.com/login/student`.
+
+**Why the domain matters more than it looks:** the project has `ssoProtection` set to `all_except_custom_domains`, so every `*.vercel.app` URL is behind Vercel's own login. Students genuinely cannot use `teaching-portal-eta.vercel.app` — the custom domain is the only route in for them, not a cosmetic upgrade. That setting is correct as-is: it keeps the preview URLs private and the custom domain public.
 
 **Before real students (still to do):**
-- Database keep-alive job (free Upstash DBs are archived after inactivity — this already caused an outage).
-- Slow live-session polling from 2 s to about 5 s (30 students at 2 s is ~200k Redis commands/hour vs a 500k/month free limit).
-- Export button for classes and progress (a backup).
 - Separate Redis database for Preview deployments and a `staging` branch, so testing does not mix with student data.
 - Check the site loads from a student device on the school network; check the school's policy on student data.
 - Open checkpoints in `CHECKPOINTS.md` (General mentors review) plus feedback still to come from the other courses.
+- Nothing is browser-checked yet — see the repeated notes above.
 
 **(Done 2026-09-27) Year 12 AIT ATAR built and shipped** — see the "Content migration complete" section above for what's in it. `course-reference/year-12-applied-it-atar/` is still empty (the syllabus text came via chat, not a dropped file) — worth adding the actual SCASA syllabus PDF there if Clayton wants it for future reference. No practice exam or glossary yet for Y12 (Y11 has both) — could be added later the same way Y11's were.
 
