@@ -18,6 +18,12 @@
               "title": "Elements of Design",
               "blocks": [
                 {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎨 BRIEF",
+                  "text": "A streaming service wants their new home screen critiqued before it ships. The client keeps saying it 'feels off' but can't tell me why. That's the job today — before you can fix a design, you have to be able to name exactly what's in it: line, shape, colour, texture, space, form. Pin those down and you can finally talk about what's actually wrong."
+                },
+                {
                   "type": "paragraph",
                   "text": "The elements of design: line, shape, space, texture, colour"
                 },
@@ -117,9 +123,21 @@
                   ]
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · LEO THORNE",
+                  "text": "Clients almost never complain in the language of design elements — they say 'busy' or 'boring' or 'cheap-looking'. Your job is to translate that into 'too much colour contrast' or 'not enough negative space'. Learn the vocabulary and you can diagnose a screen in thirty seconds instead of guessing."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Elements are not principles",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🔍 DESIGN REVIEW · LEO IS CHECKING YOUR WORK",
+                  "text": "I mark these the same way every time: name the element, then prove you saw it in the actual image, not in general. 'They used colour' earns nothing. 'They used a bright orange CTA button against a dark background to pull the eye straight to it' earns the mark."
                 },
                 {
                   "type": "richText",
@@ -128,6 +146,12 @@
                 {
                   "type": "paragraph",
                   "text": "A cafe menu board uses a chalkboard-look background, white hand-drawn lines between sections, round price badges, and wide gaps between the drinks and food sections."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🖌️ STUDIO CHALLENGE",
+                  "text": "Before I show you how I'd answer it, go find the menu board question yourself. Name three elements and, for two of them, say exactly where you see them doing work on the screen."
                 },
                 {
                   "type": "quizQuestion",
@@ -174,6 +198,12 @@
               "id": "design-concepts-2-principles-of-design",
               "title": "Principles of Design",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎨 BRIEF",
+                  "text": "A concert poster landed on my desk with a note from the client: 'make the date pop more.' That's a principles problem, not an elements one — the elements were already fine. Today's about contrast, balance, emphasis, movement, unity, proportion: the rules for how elements are arranged, not what they are."
+                },
                 {
                   "type": "paragraph",
                   "text": "The principles of design: balance, emphasis, dominance, unity"
@@ -256,9 +286,21 @@
                   "html": "<p><strong>Emphasis includes</strong> — Contrast: difference in colour, size, shape or tone</p><p>Proportion: size of one item compared to another</p><p><strong>Unity includes</strong> — Proximity: grouping related items close together</p><p>Repetition: repeating colours, fonts, shapes or layout</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · LEO THORNE",
+                  "text": "Elements and principles get mixed up constantly in exam answers. Quick test I give juniors: if you can point at one thing on the page and name it, it's an element (a colour, a shape). If you're describing a relationship between things — size against size, light against dark — it's a principle. Say that test to yourself before you write the answer."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Use the syllabus names",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🔍 DESIGN REVIEW · LEO IS CHECKING YOUR WORK",
+                  "text": "The marker wants to see you connect the principle to the actual visual effect it causes. 'Emphasis' alone is a definition. 'Emphasis, because the designer made the date the largest text on the page so it's the first thing read' is an answer that scores."
                 },
                 {
                   "type": "richText",
@@ -267,6 +309,12 @@
                 {
                   "type": "paragraph",
                   "text": "A school sports carnival flyer has a huge orange \"CARNIVAL DAY\" heading, a small team logo repeated in each corner, and event times grouped in one box."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🖌️ STUDIO CHALLENGE",
+                  "text": "Try the poster questions cold first. Match each example to its principle, then write the emphasis answer for the date — convince me it's emphasis, not just big text."
                 },
                 {
                   "type": "quizQuestion",
@@ -313,6 +361,12 @@
               "id": "design-concepts-3-elements-and-principles-relationship",
               "title": "Elements and Principles Relationship",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎨 BRIEF",
+                  "text": "This is the one that trips up every junior designer I've trained: explaining how an element and a principle work together, not just naming them separately. Markers want the relationship spelled out — the answer pattern is non-negotiable, so we're drilling it until it's automatic."
+                },
                 {
                   "type": "paragraph",
                   "text": "Relationship between elements of design and principles of design"
@@ -413,9 +467,21 @@
                   ]
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · LEO THORNE",
+                  "text": "I make every junior memorise the pattern: name the element, name the principle, then one sentence on the effect that happens when they combine. Skip the effect and you've described two things sitting next to each other, not a relationship — and that's where marks get lost."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Link them, do not list them",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🔍 DESIGN REVIEW · LEO IS CHECKING YOUR WORK",
+                  "text": "I read these looking for the word 'because' or 'which creates'. If your sentence just lists the element and the principle with no causal link between them, I send it back. Show me the effect, every time."
                 },
                 {
                   "type": "richText",
@@ -424,6 +490,12 @@
                 {
                   "type": "paragraph",
                   "text": "A weather app shows today's temperature in very large white numbers at the top. The next five days are shown in a row of same-sized cards below, each with the same icon style."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🖌️ STUDIO CHALLENGE",
+                  "text": "Have a go at both relationship questions — dominance and unity — before you check the pattern. Write them as one flowing sentence, not three separate fragments."
                 },
                 {
                   "type": "quizQuestion",
@@ -470,6 +542,12 @@
               "id": "design-concepts-4-typography",
               "title": "Typography",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎨 BRIEF",
+                  "text": "A bus timetable app came in with white-on-pale-grey text and a client wondering why residents were complaining. Typography choices aren't decoration — on something people read standing at a bus stop in the rain, the wrong font or alignment makes the product unusable, not just unattractive."
+                },
                 {
                   "type": "paragraph",
                   "text": "Typography: typeface, size, alignment, format, spacing"
@@ -557,9 +635,21 @@
                   "html": "<p>Avoid</p><p>More than two typefaces</p><p><strong>Long passages in capitals</strong> — Centred body text (hard to read)</p><p>Script fonts for small text</p><p>Tight line spacing</p><p><strong>Do</strong> — One typeface for headings, one for body</p><p>A clear size hierarchy: heading, subheading, body</p><p><strong>Left-align body text</strong> — Bold for emphasis, not underline</p><p>Enough contrast between text and background</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · LEO THORNE",
+                  "text": "Justified text looks 'tidy' to a client's eye and I still have to talk them out of it on anything short — it creates ugly, uneven gaps in narrow columns, which is exactly the opposite of what they wanted. If a client pushes back, show them the gaps in their own copy."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Name the part and give a reason",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🔍 DESIGN REVIEW · LEO IS CHECKING YOUR WORK",
+                  "text": "Don't just name the typography choice — tie it to the audience. 'Larger font' is thin. 'A larger font size because residents reading the timetable outdoors, often at a distance or in bright sun, need it legible without squinting' is what I'd sign off."
                 },
                 {
                   "type": "richText",
@@ -568,6 +658,12 @@
                 {
                   "type": "paragraph",
                   "text": "A retirement village is designing a printed newsletter for its residents, many of whom have poor eyesight."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🖌️ STUDIO CHALLENGE",
+                  "text": "Work through the residential audience question and the justified-alignment one before you look at how I'd frame it. Say who's reading and why that changes your choice."
                 },
                 {
                   "type": "quizQuestion",
@@ -614,6 +710,12 @@
               "id": "design-concepts-5-compositional-rules",
               "title": "Compositional Rules",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎨 BRIEF",
+                  "text": "A photo for a website banner came in dead centre, flat, nothing drawing the eye anywhere. The fix wasn't a different photo — it was the rule of thirds, a grid, and real alignment. Compositional rules are what turn a snapshot into a banner someone actually looks at."
+                },
                 {
                   "type": "paragraph",
                   "text": "Compositional rules: rule of thirds, grid and alignment"
@@ -687,9 +789,21 @@
                   "html": "<p>1</p><p><strong>Set a grid</strong> — Choose columns and margins before you place anything.</p><p>2</p><p><strong>Place the focal point</strong> — Put the main image or heading on a thirds line.</p><p>3</p><p><strong>Align everything</strong> — Snap text and images to the grid lines.</p><p>4</p><p><strong>Check the space</strong> — Keep equal gaps between items of the same type.</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · LEO THORNE",
+                  "text": "Rule of thirds isn't 'put things slightly off-centre' — it's specific: divide the frame into a 3×3 grid and place the subject or focal point on one of those intersection lines. Vague answers lose marks here because the rule itself is precise."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Describe, then apply",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🔍 DESIGN REVIEW · LEO IS CHECKING YOUR WORK",
+                  "text": "I want the rule of thirds defined properly first, then applied to the actual photo — don't skip straight to 'move it left'. Tell me which line or intersection, and why that placement is stronger than centred."
                 },
                 {
                   "type": "richText",
@@ -698,6 +812,12 @@
                 {
                   "type": "paragraph",
                   "text": "A student's Instagram post for a school play has the title, date, a photo and the ticket link all centred and stacked down the middle, with different gaps between each."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🖌️ STUDIO CHALLENGE",
+                  "text": "Define the rule of thirds yourself, then explain how a grid and alignment would fix the post, before you check my version."
                 },
                 {
                   "type": "quizQuestion",
@@ -744,6 +864,12 @@
               "id": "design-concepts-6-analysing-existing-products",
               "title": "Analysing Existing Products",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎨 BRIEF",
+                  "text": "I had to walk a junior through a pizza delivery app screen this week because they kept writing 'the design is good' — zero marks, every time. Identify, describe, explain, evaluate are four different command words with four different standards, and mixing them up is the single most common way students lose marks on this course."
+                },
                 {
                   "type": "paragraph",
                   "text": "Identify and explain the elements and principles of design in existing digital products"
@@ -817,9 +943,21 @@
                   "html": "<p>1</p><p><strong>Scan</strong> — What do you see first, second, third?</p><p>2</p><p><strong>Name</strong> — Which elements and principles cause that order?</p><p>3</p><p><strong>Explain</strong> — Element + how + principle + effect.</p><p>4</p><p><strong>Judge</strong> — One strength, one weakness, one fix.</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · LEO THORNE",
+                  "text": "Identify names it. Describe adds detail about how it's used. Explain adds the effect or reason — the 'why it works'. Evaluate makes a judgement with justification. If the question says 'explain' and you only describe, you've capped your own mark before the marker even reads it."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Refer to the stimulus",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🔍 DESIGN REVIEW · LEO IS CHECKING YOUR WORK",
+                  "text": "Check your own command word before you write a single sentence. I've sent back more exam answers for ignoring the command word than for getting the content wrong — the content was often right, just pitched at the wrong level."
                 },
                 {
                   "type": "richText",
@@ -828,6 +966,12 @@
                 {
                   "type": "paragraph",
                   "text": "A council event website home page has a full-width photo of fireworks, the event name in large white text over the photo, and four equal buttons below: Map, Food, Parking, Tickets."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🖌️ STUDIO CHALLENGE",
+                  "text": "Try the pizza app questions — one 'identify and describe', one 'explain the relationship' — and check which command word you actually answered to."
                 },
                 {
                   "type": "quizQuestion",
@@ -874,6 +1018,12 @@
               "id": "design-concepts-7-modifying-and-annotating-designs",
               "title": "Modifying and Annotating Designs",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎨 BRIEF",
+                  "text": "A flyer redesign needs two things from you by Friday: the actual modifications, and annotations explaining them to the client who can't read a mockup without commentary. This is the skill that turns 'I changed it' into something a client — or a marker — can follow and agree with."
+                },
                 {
                   "type": "paragraph",
                   "text": "Modify digital products to meet design needs; develop detailed annotations for digital designs"
@@ -947,9 +1097,21 @@
                   "html": "<p>Weak</p><p>\"Nice colours\"</p><p>\"Logo\"</p><p>\"Big title\"</p><p>\"Picture here\"</p><p><strong>Strong</strong> — Names the element or principle</p><p>Says exactly what was done</p><p>Links it to the brief or audience</p><p>Placed next to the part it describes, with a line</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · LEO THORNE",
+                  "text": "A detailed annotation always has three parts: what you changed, which element or principle it uses, and why it serves the design brief. Drop any one of the three and the annotation reads like a caption, not a justification — and captions don't earn marks."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: A design with no annotations scores low",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🔍 DESIGN REVIEW · LEO IS CHECKING YOUR WORK",
+                  "text": "I'm checking every annotation against the brief, not just against good taste. A modification can look great and still score nothing if you never connect it back to what the client actually asked for."
                 },
                 {
                   "type": "richText",
@@ -958,6 +1120,12 @@
                 {
                   "type": "paragraph",
                   "text": "A bakery's draft Instagram post has the logo in the centre, the opening hours in tiny text at the bottom, and five different fonts. The owner wants people to notice the new Saturday hours."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🖌️ STUDIO CHALLENGE",
+                  "text": "Describe your two modifications to the post and write one full annotation using the formula, before you see how I'd write it."
                 },
                 {
                   "type": "quizQuestion",
@@ -1011,6 +1179,12 @@
               "id": "hardware-1-cpu-and-memory",
               "title": "CPU and Memory",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🔧 JOB TICKET",
+                  "text": "Call-out today: a client's laptop 'just feels slow' opening video files. Before I send a tech out, I want you to be able to explain what's actually happening inside the box — CPU, primary memory, secondary storage, volatile vs non-volatile — because half of 'it's slow' complaints are really 'you need more RAM', not a dying CPU."
+                },
                 {
                   "type": "paragraph",
                   "text": "Purpose of the CPU; purpose and types of memory and storage: primary, secondary"
@@ -1115,9 +1289,21 @@
                   ]
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · SPARKY MILLER",
+                  "text": "Volatile is the word that trips people up every year. It just means 'loses its contents when the power goes' — that's RAM. Secondary storage (your SSD or hard drive) keeps everything with the power off. If a student can't tell me which one is volatile, they can't yet explain why unsaved work disappears in a blackout."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: RAM is not storage space",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🧰 CALLBACK CHECK · SPARKY IS REVIEWING THE JOB",
+                  "text": "I grade the CPU question on function, not just the acronym — what does it actually do, in your own words, not 'it's the brain'. And for the storage comparison, I want capacity and speed both mentioned, not just one."
                 },
                 {
                   "type": "richText",
@@ -1126,6 +1312,12 @@
                 {
                   "type": "paragraph",
                   "text": "A student compares two laptops for school. Laptop A: 4-core 2.4 GHz CPU, 16 GB RAM, 256 GB SSD. Laptop B: 2-core 1.6 GHz CPU, 8 GB RAM, 1 TB HDD."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🛠️ WORKSHOP CHALLENGE",
+                  "text": "Describe the CPU's purpose and compare the two laptops' storage yourself first — then check what I'd flag as missing."
                 },
                 {
                   "type": "quizQuestion",
@@ -1172,6 +1364,12 @@
               "id": "hardware-2-peripherals-and-computer-systems",
               "title": "Peripherals and Computer Systems",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🔧 JOB TICKET",
+                  "text": "A physiotherapy clinic wants their whole setup reviewed — barcode scanners, printers, the lot — and they need every device sorted correctly as input, output or storage before I can even start on the network side. Get the classification wrong and the rest of the job plan is wrong too."
+                },
                 {
                   "type": "paragraph",
                   "text": "Types of peripheral devices; types of computer systems: desktop systems, mobile devices, server"
@@ -1300,9 +1498,21 @@
                   ]
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · SPARKY MILLER",
+                  "text": "The trick with tricky devices like touchscreens or multifunction printers: ask what direction the data is actually moving for the function you're thinking of. A touchscreen displays (output) and senses touch (input) — same device, two jobs. Don't force it into one box."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Link the system to the user",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🧰 CALLBACK CHECK · SPARKY IS REVIEWING THE JOB",
+                  "text": "Classification questions look easy and get rushed. I send back any answer that mislabels a scanner or a server — a server in a library isn't an input or output device at all, it's a different category of machine, and conflating them tells me the concept isn't solid yet."
                 },
                 {
                   "type": "richText",
@@ -1311,6 +1521,12 @@
                 {
                   "type": "paragraph",
                   "text": "A school library is upgrading its equipment."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🛠️ WORKSHOP CHALLENGE",
+                  "text": "Classify every device in the clinic list yourself — input, output or storage — and write the server's purpose in the library, before you check mine."
                 },
                 {
                   "type": "quizQuestion",
@@ -1357,6 +1573,12 @@
               "id": "hardware-3-operating-systems",
               "title": "Operating Systems",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🔧 JOB TICKET",
+                  "text": "A client's asking why their old software won't run and whether Linux would save them money. That's an operating-system question dressed up as a hardware complaint — purposes of an OS, open source versus proprietary — and I need a straight answer, not a sales pitch for whichever OS I personally like."
+                },
                 {
                   "type": "paragraph",
                   "text": "Purpose of an operating system (OS); types of operating systems: Windows, Mac OS, iOS, Android, Linux"
@@ -1467,9 +1689,21 @@
                   ]
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · SPARKY MILLER",
+                  "text": "Don't just say Linux is 'free' and proprietary is 'not free' — that's the shallow half of the answer. Free also usually means community-supported, which is an advantage for a hobbyist and a real disadvantage for a business that needs guaranteed support when something breaks at 2pm on a Tuesday."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Purpose, not brand",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🧰 CALLBACK CHECK · SPARKY IS REVIEWING THE JOB",
+                  "text": "For the Linux advantage/disadvantage question, I want one of each paired to this specific client, not generic textbook lines. A disadvantage that doesn't apply to their situation doesn't earn the mark even if it's true in general."
                 },
                 {
                   "type": "richText",
@@ -1478,6 +1712,12 @@
                 {
                   "type": "paragraph",
                   "text": "A small business is choosing between Windows laptops and Linux laptops for its five staff."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🛠️ WORKSHOP CHALLENGE",
+                  "text": "Describe two purposes of an OS, then give one real advantage and one real disadvantage of Linux for this business, before you check my version."
                 },
                 {
                   "type": "quizQuestion",
@@ -1524,6 +1764,12 @@
               "id": "hardware-4-software-compatibility-and-hardware-purchase",
               "title": "Software Compatibility and Hardware Purchase",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🔧 JOB TICKET",
+                  "text": "A practice wants new computers but is worried their current software won't run on them — or that their current software won't run on anything modern at all. Before I quote the job, I check minimum requirements both directions: can new hardware run their old software, and can an old machine run anything current."
+                },
                 {
                   "type": "paragraph",
                   "text": "Software compatibility issues; considerations for hardware purchase: cost, specifications, user needs; minimum hardware requirements"
@@ -1601,9 +1847,21 @@
                   "html": "<p>1</p><p><strong>User needs</strong> — What will they do? Where? How often?</p><p>2</p><p><strong>Software</strong> — List the software and its minimum requirements.</p><p>3</p><p><strong>Specifications</strong> — Choose specs above the minimum, with room to grow.</p><p>4</p><p><strong>Cost</strong> — Compare options within the budget.</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · SPARKY MILLER",
+                  "text": "Everyone checks 'will the new software run on the old machine' and forgets the other direction — will the old, specialised software still run on new hardware and a new OS. I've seen a clinic nearly buy new PCs that couldn't run their decade-old, business-critical records software. Always check both ways."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Compare the numbers",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🧰 CALLBACK CHECK · SPARKY IS REVIEWING THE JOB",
+                  "text": "I'm looking for you to actually name a compatibility issue specific to this practice's setup, not recite the general definition of compatibility. And for the purchase considerations, cost alone is never a full answer — what else matters to them?"
                 },
                 {
                   "type": "richText",
@@ -1612,6 +1870,12 @@
                 {
                   "type": "paragraph",
                   "text": "A dental practice still uses booking software made for Windows 7. It is buying new Windows 11 computers for $1200 each."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🛠️ WORKSHOP CHALLENGE",
+                  "text": "Describe the practice's likely compatibility issue and two things they should consider before buying, then compare it to what I'd flag."
                 },
                 {
                   "type": "quizQuestion",
@@ -1658,6 +1922,12 @@
               "id": "hardware-5-maintenance-and-troubleshooting",
               "title": "Maintenance and Troubleshooting",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🔧 JOB TICKET",
+                  "text": "3am call-out: a server shut itself down twice this week and the client lost power mid-task with no warning. This is exactly the job a UPS and proper environmental control exist to prevent — today's about recognising the fix before the client has to call me at 3am again."
+                },
                 {
                   "type": "paragraph",
                   "text": "Physical maintenance strategies (UPS, environmental temperature control) and solving simple computer problems"
@@ -1727,9 +1997,21 @@
                   "html": "<p><strong>UPS</strong> — Server stays on during a short blackout</p><p>Time to save work and shut down safely</p><p>Stops data loss and file damage</p><p>Protects against surges</p><p>Temperature control</p><p>Servers produce a lot of heat</p><p>Overheating slows or shuts down the CPU</p><p>Heat shortens the life of components</p><p>Keep vents clear of dust</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · SPARKY MILLER",
+                  "text": "A UPS doesn't keep the power on forever — it buys you minutes to save your work and shut down safely, or bridges a short outage. If an answer claims a UPS 'stops the computer losing power', that's not quite it; it manages the loss, it doesn't eliminate it."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Steps must be specific",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🧰 CALLBACK CHECK · SPARKY IS REVIEWING THE JOB",
+                  "text": "For the blackout question I want the UPS's actual function explained, not just 'it would have helped'. And the server shutting down on hot days is a temperature problem — if your answer doesn't mention heat or cooling, you've missed what's actually being tested."
                 },
                 {
                   "type": "richText",
@@ -1771,6 +2053,12 @@
                     "attachments": false
                   },
                   "explanation": "Regular updates, scans and backups keep a computer healthy and your files safe."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🛠️ WORKSHOP CHALLENGE",
+                  "text": "Explain how a UPS would have helped during the blackout, and describe two strategies to stop the server overheating, before checking mine."
                 },
                 {
                   "type": "quizQuestion",
@@ -1824,6 +2112,12 @@
               "id": "impacts-of-technology-u3-1-digital-citizenship",
               "title": "Digital Citizenship",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "📋 CASE FILE",
+                  "text": "A school's referred a student case to me: under the minimum social media age, oversharing, the usual. Before I write a single recommendation I need the terms locked down properly — digital citizenship, digital footprint, social networking, the actual minimum age — because sloppy definitions sink a case review fast."
+                },
                 {
                   "type": "paragraph",
                   "text": "Concept of digital citizenship: responsible use of social networking"
@@ -1897,9 +2191,21 @@
                   "html": "<p><strong>Do</strong> — Think before you post: would you be happy for a future employer to see it?</p><p>Ask before posting photos of others</p><p>Use strong privacy settings</p><p>Check if information is true before you share it</p><p>Report harmful content</p><p><strong>Avoid</strong> — Sharing your location, school or phone number publicly</p><p>Accepting requests from people you do not know</p><p><strong>Posting while angry</strong> — Sharing other people's work without credit</p><p>Using someone else's account</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · DR ELARA FINCH",
+                  "text": "Digital footprint is bigger than 'what you post' — it includes what others post about you, what's logged by services, even what you deleted but was already indexed somewhere. I correct this misunderstanding in almost every case file I review."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Explain the consequence",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "📝 CASE REVIEW · ELARA IS SIGNING OFF",
+                  "text": "Don't just define digital citizenship — the question asks for it, so give the definition cleanly, then move straight to the two behaviour changes. Vague 'be safer online' answers don't survive my sign-off; name specific, concrete changes."
                 },
                 {
                   "type": "richText",
@@ -1908,6 +2214,12 @@
                 {
                   "type": "paragraph",
                   "text": "A Year 10 student has a public TikTok account. Her profile shows her school uniform and her videos are often filmed at a local park."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "⚖️ POLICY CHALLENGE",
+                  "text": "Define digital citizenship and describe two changes this student could realistically make, before you check how I'd write the case note."
                 },
                 {
                   "type": "quizQuestion",
@@ -1954,6 +2266,12 @@
               "id": "impacts-of-technology-u3-2-cyberbullying-and-work-life-balance",
               "title": "Cyberbullying and Work Life Balance",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "📋 CASE FILE",
+                  "text": "Two unrelated cases on my desk that both come back to the same syllabus point: naming the exact form of cyberbullying — harassment, exclusion, impersonation, outing — and separately, a work group chat that's eaten someone's evenings. Precision matters in both; 'bullying' isn't specific enough for a case file."
+                },
                 {
                   "type": "paragraph",
                   "text": "Forms of cyberbullying, strategies to manage it, and the impact of digital technologies on work-life balance"
@@ -2035,9 +2353,21 @@
                   "html": "<p><strong>Positive impacts</strong> — Work from home saves travel time</p><p>Flexible hours around family</p><p>Stay in touch with family and friends while away</p><p>Online study at any time</p><p><strong>Negative impacts</strong> — Always contactable: emails and messages after hours</p><p>Blurred line between work and home</p><p>Screen time replaces sleep and exercise</p><p>Less face-to-face contact can lead to isolation</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · DR ELARA FINCH",
+                  "text": "Each form of cyberbullying has a distinct mechanism: harassment is repeated unwanted contact, exclusion is deliberately leaving someone out, impersonation is pretending to be them, outing is exposing private information without consent. Name the mechanism, not just the umbrella term, or the strategy you recommend won't actually fit the problem."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Answer the impact asked for",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "📝 CASE REVIEW · ELARA IS SIGNING OFF",
+                  "text": "I want the specific form identified before any strategy — a strategy for exclusion doesn't help someone being impersonated. And the work-life balance answer needs an actual impact named — lost sleep, missed family time — not just 'it's bad for her'."
                 },
                 {
                   "type": "richText",
@@ -2046,6 +2376,12 @@
                 {
                   "type": "paragraph",
                   "text": "A Year 11 student works part-time at a supermarket. The manager messages shifts in a group chat, often late at night. Two co-workers have started posting jokes about her in the chat."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "⚖️ POLICY CHALLENGE",
+                  "text": "Identify the form of cyberbullying and one strategy, then explain the group chat's impact on her work-life balance, before you check my notes."
                 },
                 {
                   "type": "quizQuestion",
@@ -2092,6 +2428,12 @@
               "id": "impacts-of-technology-u3-3-social-networking-impact",
               "title": "Social Networking Impact",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "📋 CASE FILE",
+                  "text": "A storm hit Bunbury and the local paper broke the story on social media before their own website updated. That's not a one-off — it's the whole shift from traditional publication to user-created, instantly distributed content, and it's exactly what reshaped how this industry works."
+                },
                 {
                   "type": "paragraph",
                   "text": "Social networking and its impact on traditional publication and distribution of information, including mobile devices"
@@ -2196,9 +2538,21 @@
                   ]
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · DR ELARA FINCH",
+                  "text": "The real shift isn't 'social media is faster' — it's that distribution used to be controlled by the publisher and now anyone with a phone is a distributor. That single change explains almost every follow-on impact: speed, reach, and the loss of editorial gatekeeping."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Compare means both sides",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "📝 CASE REVIEW · ELARA IS SIGNING OFF",
+                  "text": "I want the reason tied to distribution or user-created content specifically, not a generic 'because social media is popular'. And for the mobile devices question, name the actual impact on how people receive news, don't just restate that phones exist."
                 },
                 {
                   "type": "richText",
@@ -2207,6 +2561,12 @@
                 {
                   "type": "paragraph",
                   "text": "A regional newspaper has closed its printed edition and now publishes only on its website and Facebook page."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "⚖️ POLICY CHALLENGE",
+                  "text": "Explain why the newspaper changed its approach, and one impact of mobile devices on how people receive local news, before you check mine."
                 },
                 {
                   "type": "quizQuestion",
@@ -2253,6 +2613,12 @@
               "id": "impacts-of-technology-u3-4-copyright-act-1968",
               "title": "Copyright Act 1968",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "📋 CASE FILE",
+                  "text": "A student's in hot water for using copyrighted material and swears they thought 'private use' covered it. Half my case files are exactly this misunderstanding — the Copyright Act 1968, fair dealing, private use and moral rights don't mean what people assume they mean."
+                },
                 {
                   "type": "paragraph",
                   "text": "Purpose of the Copyright Act 1968 (Australia): fair dealing, private use, moral rights"
@@ -2326,9 +2692,21 @@
                   "html": "<p><strong>Myth</strong> — \"It is on the internet, so it is free.\"</p><p>\"If I credit the creator, I can use it.\"</p><p>\"Under 10 seconds is always fine.\"</p><p>\"I changed it a bit, so it is mine.\"</p><p><strong>Fact</strong> — Online works are still protected.</p><p>Credit is required, but it is not permission.</p><p>There is no safe number of seconds; it depends on purpose and portion.</p><p>A changed work can still infringe copyright.</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · DR ELARA FINCH",
+                  "text": "Private use is a much narrower exception than people think — it does not mean 'I didn't make money from it' or 'I only showed my friends'. Most student infringements fail because they assumed private use covered far more than it legally does."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Name the exception and the purpose",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "📝 CASE REVIEW · ELARA IS SIGNING OFF",
+                  "text": "Explain why this specific use infringes, don't just say 'copyright was broken'. And moral rights are a separate concept from copyright ownership — attribution and integrity of the work — so don't conflate the two in your answer."
                 },
                 {
                   "type": "richText",
@@ -2337,6 +2715,12 @@
                 {
                   "type": "paragraph",
                   "text": "A student designs a T-shirt for a school fundraiser using a cartoon character copied from a website. The shirts are sold to parents."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "⚖️ POLICY CHALLENGE",
+                  "text": "Explain why the student has infringed copyright and describe the cartoonist's moral rights, before you check my case note."
                 },
                 {
                   "type": "quizQuestion",
@@ -2383,6 +2767,12 @@
               "id": "impacts-of-technology-u3-5-referencing-and-acknowledging-ip",
               "title": "Referencing and Acknowledging IP",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "📋 CASE FILE",
+                  "text": "Every case file I close ends the same way — an intellectual property acknowledgement that has to be done properly or the whole report is worthless. APA 7, in-text citations, acknowledgement versus full referencing: get the technique right, because 'I mentioned where it came from' isn't the same as a correct citation."
+                },
                 {
                   "type": "paragraph",
                   "text": "Referencing techniques for digital publications and acknowledgement of the intellectual property (IP) owner"
@@ -2456,9 +2846,21 @@
                   "html": "<p>Where to credit</p><p><strong>Video: end credits</strong> — Website: caption under each image or a Credits page</p><p>Presentation: caption on the slide and a reference list</p><p>Podcast: read out and list in show notes</p><p><strong>Creative Commons</strong> — Many free images and music use a Creative Commons licence</p><p>CC BY means you must credit the creator</p><p>NC means no commercial use</p><p>Check the licence before you use it</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · DR ELARA FINCH",
+                  "text": "Acknowledgement and referencing are not interchangeable terms in a marking key. Acknowledgement can be informal — a credit line. Referencing follows a specific technique, like APA 7, with exact formatting. If the question names the technique, you must use that exact format."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: A URL is not a reference",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "📝 CASE REVIEW · ELARA IS SIGNING OFF",
+                  "text": "I check APA 7 references character by character — author, year, title, source, in that specific order and punctuation. A reference with the right information in the wrong format still loses marks."
                 },
                 {
                   "type": "richText",
@@ -2467,6 +2869,12 @@
                 {
                   "type": "paragraph",
                   "text": "A student's video uses a photo by Maya Lee called \"Busselton Jetty at dawn\" from Unsplash (2024) and a music track \"Morning Tide\" by Coastline Audio (2023) from Pixabay."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "⚖️ POLICY CHALLENGE",
+                  "text": "Write the APA 7 reference for the photograph and describe how the student should acknowledge the music, before you check my version."
                 },
                 {
                   "type": "quizQuestion",
@@ -2520,6 +2928,12 @@
               "id": "application-skills-u3-1-data-organisation",
               "title": "Data Organisation",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎟️ TICKET",
+                  "text": "Onboarded a wedding videographer this sprint and their files are a flat folder of 4,000 clips named IMG_0001 through IMG_3999. Before we can deliver anything on schedule, we need a folder structure and naming convention that a tired editor at 11pm can still navigate without guessing."
+                },
                 {
                   "type": "paragraph",
                   "text": "Purpose of data organisation"
@@ -2593,9 +3007,21 @@
                   "html": "<p><strong>Do</strong> — Start with the project or client name</p><p>Use underscores, not spaces</p><p>Add a version number (v01, v02)</p><p>Use dates as YYYY-MM-DD so they sort in order</p><p><strong>Avoid</strong> — \"final\", \"final2\", \"final_REAL\"</p><p>Special characters like / \\ : * ? \" < > |</p><p><strong>Very long names</strong> — Saving everything on the desktop</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · RORY QUINN",
+                  "text": "I judge a naming convention by one test: can someone who's never seen this project find the right file in under ten seconds, just from the name? If the answer's no, the convention has failed regardless of how 'organised' it looks."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Purpose means why",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🛑 STANDUP REVIEW · RORY IS CHECKING THE BOARD",
+                  "text": "I want a folder structure proposal that actually fits a videographer's workflow — by client, by date, by shoot type — not a generic 'Documents/Photos/Videos' template. And for the naming convention benefits, give me two that matter to a real deadline-driven business, not two restatements of 'it's tidier'."
                 },
                 {
                   "type": "richText",
@@ -2604,6 +3030,12 @@
                 {
                   "type": "paragraph",
                   "text": "A small real estate agency saves property photos, contracts and floor plans for 50 houses on one shared drive with no folders."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🚀 SPRINT CHALLENGE",
+                  "text": "Sketch a folder structure for the agency and list two real benefits of a consistent naming convention, before you check my sprint plan."
                 },
                 {
                   "type": "quizQuestion",
@@ -2650,6 +3082,12 @@
               "id": "application-skills-u3-2-graphic-and-audio-file-formats",
               "title": "Graphic and Audio File Formats",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎟️ TICKET",
+                  "text": "A food truck client needs a logo that scales from a tiny Instagram icon to a 3-metre van wrap, plus a podcast episode ready for upload. Picking the right graphic and audio formats upfront saves us from re-exporting everything twice when the client asks for 'just one more size'."
+                },
                 {
                   "type": "paragraph",
                   "text": "Common file formats for graphics and audio: vector graphics, raster graphics, audio files"
@@ -2775,9 +3213,21 @@
                   ]
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · RORY QUINN",
+                  "text": "Vector for the logo, every time, when it has to scale — it's maths, not pixels, so a van wrap and a favicon come from the exact same file with zero quality loss. Raster locks you into the resolution you exported at, and someone always asks for it bigger later."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Format plus reason",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🛑 STANDUP REVIEW · RORY IS CHECKING THE BOARD",
+                  "text": "Compare vector and raster on what actually matters for this client — scalability for the logo — not a generic textbook comparison. And the audio format pick needs to suit an upload platform's requirements, not just 'it's a common format'."
                 },
                 {
                   "type": "richText",
@@ -2786,6 +3236,12 @@
                 {
                   "type": "paragraph",
                   "text": "A school is producing a podcast and a website for its Year 12 graduation."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🚀 SPRINT CHALLENGE",
+                  "text": "Compare vector and raster graphics for the logo, and pick a suitable audio format for the podcast upload, before you check my recommendation."
                 },
                 {
                   "type": "quizQuestion",
@@ -2832,6 +3288,12 @@
               "id": "application-skills-u3-3-audio-software-features",
               "title": "Audio Software Features",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎟️ TICKET",
+                  "text": "A client recorded a voiceover with background hum, uneven volume and an awkward pause in the middle — standard first-draft audio. Before it goes anywhere near a client deliverable, it needs real editing, and then it needs exporting in a format that actually survives being sent."
+                },
                 {
                   "type": "paragraph",
                   "text": "Features of audio software: editing, converting, exporting"
@@ -2914,9 +3376,21 @@
                   "html": "<p>1</p><p>Import</p><p>Open or record the audio.</p><p>2</p><p><strong>Edit</strong> — Trim, cut, fade, adjust levels, reduce noise.</p><p>3</p><p><strong>Check</strong> — Listen through with headphones.</p><p>4</p><p><strong>Export</strong> — Choose format and quality for the purpose.</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · RORY QUINN",
+                  "text": "Clients almost never flag 'the file won't open' as an editing problem, but it usually is one — sending a huge, uncompressed master file instead of exporting or converting it for delivery is the single most common reason a finished job gets stuck in someone's inbox."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Converting is not editing",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🛑 STANDUP REVIEW · RORY IS CHECKING THE BOARD",
+                  "text": "Name two specific editing features she'd actually use — not 'she edited it', name the tools (noise reduction, normalising volume, trimming). And explain exporting or converting as a real step with a reason, not an afterthought."
                 },
                 {
                   "type": "richText",
@@ -2925,6 +3399,12 @@
                 {
                   "type": "paragraph",
                   "text": "A cafe owner records a 60-second radio ad on her phone. The radio station needs an MP3 file no longer than 30 seconds."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🚀 SPRINT CHALLENGE",
+                  "text": "Describe two editing features she should use, and explain why she must export or convert before sending, before you check my notes."
                 },
                 {
                   "type": "quizQuestion",
@@ -2971,6 +3451,12 @@
               "id": "application-skills-u3-4-software-management",
               "title": "Software Management",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎟️ TICKET",
+                  "text": "A school wants a new piece of software rolled out across the lab and I need the checklist done before anyone touches install. Installation, updates, patches, administrator rights — skip one check and you're the one fixing it at 7am before first period."
+                },
                 {
                   "type": "paragraph",
                   "text": "Management of software: installation of software, update of software"
@@ -3044,9 +3530,21 @@
                   "html": "<p><strong>Updates give you</strong> — Security fixes that stop malware using known weaknesses</p><p>Bug fixes so the software crashes less</p><p><strong>New features</strong> — Compatibility with new operating systems and files</p><p><strong>Not updating risks</strong> — Malware exploiting old security holes</p><p>Crashes and lost work</p><p>Files that will not open</p><p>No support from the developer</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · RORY QUINN",
+                  "text": "Ignoring updates isn't a convenience trade-off, it's a security decision whether people realise it or not — most patches exist specifically to close a vulnerability that's already being exploited somewhere. 'I'll do it later' on an update is a risk decision, say it plainly."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Security is the key reason",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🛑 STANDUP REVIEW · RORY IS CHECKING THE BOARD",
+                  "text": "Name two concrete things she should check before installing — compatibility, admin rights, licensing — not a vague 'be careful'. And the Windows updates risk question wants a specific consequence, not just 'it could be bad'."
                 },
                 {
                   "type": "richText",
@@ -3055,6 +3553,12 @@
                 {
                   "type": "paragraph",
                   "text": "A student finds a free video editor on a website she has not heard of. Her laptop also shows 12 pending Windows updates."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🚀 SPRINT CHALLENGE",
+                  "text": "Describe two things to check before installing the new software, and one risk of ignoring updates, before you check my checklist."
                 },
                 {
                   "type": "quizQuestion",
@@ -3101,6 +3605,12 @@
               "id": "application-skills-u3-5-software-licences",
               "title": "Software Licences",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎟️ TICKET",
+                  "text": "A community group's choosing between two software options on a shoestring budget and asked me to lay out exactly what proprietary actually costs them versus what it buys them. Licensing decisions aren't about which one is 'free' — they're about what each option actually commits the group to."
+                },
                 {
                   "type": "paragraph",
                   "text": "Types of software licences: open and closed source, proprietary, shareware, freeware"
@@ -3224,9 +3734,21 @@
                   ]
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · RORY QUINN",
+                  "text": "Proprietary software usually buys guaranteed support and regular updates for a price; the free or open alternative buys flexibility and zero licence cost but often means the group is on their own when something breaks. Neither is automatically the right call — it depends on whether this group has anyone technical enough to self-support."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Freeware is not open source",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🛑 STANDUP REVIEW · RORY IS CHECKING THE BOARD",
+                  "text": "Define proprietary software precisely first. Then the comparison for this school needs both options weighed against their actual situation — budget, technical skill available — not a generic pros-and-cons list."
                 },
                 {
                   "type": "richText",
@@ -3235,6 +3757,12 @@
                 {
                   "type": "paragraph",
                   "text": "A school is choosing an office suite for 800 student laptops: Microsoft 365 (proprietary, school licence) or LibreOffice (open source)."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🚀 SPRINT CHALLENGE",
+                  "text": "Define proprietary software, then compare the two options for this school's situation, before you check my recommendation."
                 },
                 {
                   "type": "quizQuestion",
@@ -3281,6 +3809,12 @@
               "id": "application-skills-u3-6-spreadsheet-design",
               "title": "Spreadsheet Design",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎟️ TICKET",
+                  "text": "A sports club's membership spreadsheet has prices stored as text in some rows and numbers in others — their totals formula is broken and nobody can see why. Spreadsheet design isn't decoration, it's the difference between a sheet that calculates correctly and one that silently gives wrong answers."
+                },
                 {
                   "type": "paragraph",
                   "text": "Composition, layout and design considerations for construction of spreadsheets"
@@ -3358,9 +3892,21 @@
                   "html": "<p><strong>Layout</strong> — Headings in row 1, data from row 2</p><p>No blank rows or columns inside the data</p><p>No merged cells inside the data</p><p>Totals below or beside the data, clearly labelled</p><p><strong>Formatting</strong> — Consistent number and date formats</p><p>Bold headings, frozen panes</p><p>Alternating row shading or borders for readability</p><p>Colour used for meaning, not decoration</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · RORY QUINN",
+                  "text": "A heading row, one data type per column, and a consistent number format aren't style preferences — they're what makes formulas and sorting actually work. Mixed text and numbers in one 'price' column is the single most common reason a club treasurer's totals don't add up."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Say how it helps the user",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🛑 STANDUP REVIEW · RORY IS CHECKING THE BOARD",
+                  "text": "Explain why consistent number formatting matters for this exact problem — calculations silently breaking — not formatting in general. And give two other layout improvements that would genuinely help this specific sheet, not a generic spreadsheet checklist."
                 },
                 {
                   "type": "richText",
@@ -3369,6 +3915,12 @@
                 {
                   "type": "paragraph",
                   "text": "A school canteen tracks stock in a spreadsheet. Some prices are typed as \"$2\", some as \"2.00\" and some as \"two dollars\". Blank rows separate each food type."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🚀 SPRINT CHALLENGE",
+                  "text": "Explain why the prices need one consistent format, and describe two other improvements, before you check my fix."
                 },
                 {
                   "type": "quizQuestion",
@@ -3415,6 +3967,12 @@
               "id": "application-skills-u3-7-sort-filters",
               "title": "Sort Filters",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎟️ TICKET",
+                  "text": "Same membership sheet, new request: the club wants beginners under 18 pulled out for a new program, fast, without touching the master list. That's a filter job, not a sort job — and knowing which tool solves which problem is exactly what separates a ten-second fix from a messy manual search."
+                },
                 {
                   "type": "paragraph",
                   "text": "Organisation and management of data using sort filters in spreadsheets"
@@ -3509,9 +4067,21 @@
                   ]
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · RORY QUINN",
+                  "text": "Sort rearranges everything permanently (until you sort again); filter temporarily hides rows that don't match, leaving the underlying data untouched. If the club needs to find a subgroup without disturbing the master list for everyone else, filter is always the right tool, not sort."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Filtering hides, it does not delete",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🛑 STANDUP REVIEW · RORY IS CHECKING THE BOARD",
+                  "text": "Describe a multi-level sort as an actual layered rule — sort by this, then by that — not just 'sort the data'. And the filter answer needs the specific condition that pulls beginners under 18, named precisely."
                 },
                 {
                   "type": "richText",
@@ -3520,6 +4090,12 @@
                 {
                   "type": "paragraph",
                   "text": "A surf school has a spreadsheet of 500 bookings with columns for Name, Lesson date, Level (Beginner, Intermediate, Advanced) and Paid (Yes/No)."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🚀 SPRINT CHALLENGE",
+                  "text": "Describe how a multi-level sort could organise the data, and how filters could find beginners under 18, before you check my approach."
                 },
                 {
                   "type": "quizQuestion",
@@ -3573,6 +4149,12 @@
               "id": "project-management-u3-1-project-management-considerations",
               "title": "Project Management Considerations",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎟️ TICKET",
+                  "text": "Bunbury Surf Club wants a Nippers sign-up reel and the deadline's tight — before I let anyone touch a camera, we run through the four project management considerations. Skip this step and the first thing that gets sacrificed under pressure is quality, every single time."
+                },
                 {
                   "type": "paragraph",
                   "text": "Project management considerations: scope, time, resources, client brief"
@@ -3655,9 +4237,21 @@
                   "html": "<p>Scope</p><p>Time</p><p>Resources</p><p><strong>Client brief</strong> — The client brief sits in the middle: every decision must still meet it.</p><p>Less time: reduce the scope (a 15-second reel) or add resources (another editor).</p><p>Bigger scope: add a poster and you need more time or more people.</p><p>Fewer resources: no budget means free software and your own footage, which can take longer.</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · RORY QUINN",
+                  "text": "The four considerations fight each other by design — more time or more budget buys better quality, but real projects rarely get more of either. Naming the trade-off honestly up front is worth more than pretending you can max out all four at once."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Link every answer to the scenario",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🛑 STANDUP REVIEW · RORY IS CHECKING THE BOARD",
+                  "text": "Outline all four considerations for this reel specifically, not a generic list. And for the 10-second ad add-on, I want you to say which consideration gets squeezed when scope increases but the deadline doesn't move."
                 },
                 {
                   "type": "richText",
@@ -3666,6 +4260,12 @@
                 {
                   "type": "paragraph",
                   "text": "The school canteen wants a digital menu board on a TV screen above the counter. It must show prices, daily specials and allergy symbols. The canteen manager needs it in two weeks. A Year 12 student will design it using Canva on a school laptop."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🚀 SPRINT CHALLENGE",
+                  "text": "Outline the four considerations for the Nippers reel, then work out what happens to them when the manager adds a 10-second ad, before you check my call."
                 },
                 {
                   "type": "quizQuestion",
@@ -3712,6 +4312,12 @@
               "id": "project-management-u3-2-design-process-components",
               "title": "Design Process Components",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎟️ TICKET",
+                  "text": "Bunbury Library's school holiday program needs a promo video and I need the target audience nailed down before anyone writes a single design criterion — because criteria written for the wrong audience get the whole project redone."
+                },
                 {
                   "type": "paragraph",
                   "text": "Components of the design process: purpose and design criteria, target audience, presentation medium"
@@ -3794,9 +4400,21 @@
                   "html": "<p>Vague (earns 0)</p><p>Looks good</p><p>Is colourful</p><p>Is easy to use</p><p>Appeals to kids</p><p><strong>Specific and checkable</strong> — Uses the three library brand colours only</p><p>Date and time are in the largest text after the heading</p><p>Readable on a 6-inch phone screen without zooming</p><p>Includes one photo of children at a workshop</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · RORY QUINN",
+                  "text": "Design criteria that aren't testable are useless to a project manager — 'make it fun' can't be checked off at the end. 'Under 90 seconds, features at least three activities, suitable for ages 6 to 12' can actually be verified against the finished product."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Criteria must be measurable",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🛑 STANDUP REVIEW · RORY IS CHECKING THE BOARD",
+                  "text": "Describe two real characteristics of this specific audience — age, what motivates holiday program sign-ups — not generic audience traits. And I want three design criteria that are genuinely measurable, not three vague wishes."
                 },
                 {
                   "type": "richText",
@@ -3805,6 +4423,12 @@
                 {
                   "type": "paragraph",
                   "text": "A local gym wants a 20-second video advertisement to show on screens inside the gym. It will promote a new beginners' boxing class for adults over 50."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🚀 SPRINT CHALLENGE",
+                  "text": "Describe two audience characteristics and write three design criteria for the video, before you check my brief."
                 },
                 {
                   "type": "quizQuestion",
@@ -3851,6 +4475,12 @@
               "id": "project-management-u3-3-representing-the-design",
               "title": "Representing the Design",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎟️ TICKET",
+                  "text": "An animated safety message needs planning before a single frame gets drawn — thumbnails, storyboards, proper annotation — because representing a design on paper first is what catches the expensive mistakes before they're expensive."
+                },
                 {
                   "type": "paragraph",
                   "text": "Techniques for representing a design plan: annotated diagrams and sketches, storyboards, annotated notes, thumbnails"
@@ -3933,9 +4563,21 @@
                   "html": "<p>A label (weak)</p><p>\"Blue\"</p><p>\"Big heading\"</p><p>\"Logo here\"</p><p><strong>An annotation (strong)</strong> — \"Blue matches the council brand and creates unity with other council posts\"</p><p>\"Heading is 3x the body size so it is dominant\"</p><p>\"Logo top-left, where other council posts put it\"</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · RORY QUINN",
+                  "text": "Thumbnails exist to let you fail fast and cheap — a bad sequence idea costs ten seconds to scrap on paper and hours to scrap once it's animated. Any team that skips straight to production because 'we know what we want' ends up redoing more work than they saved."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Match the technique to the product",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🛑 STANDUP REVIEW · RORY IS CHECKING THE BOARD",
+                  "text": "Describe thumbnails' actual role in this project — planning the sequence before production — not just 'they're sketches'. And the annotations need to be specific to an animated piece — timing, transitions — not generic design notes."
                 },
                 {
                   "type": "richText",
@@ -3944,6 +4586,12 @@
                 {
                   "type": "paragraph",
                   "text": "A student is designing a three-page website for a local bike repair shop."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🚀 SPRINT CHALLENGE",
+                  "text": "Describe how thumbnails could be used here, and two annotations you'd include on an animation storyboard, before you check my plan."
                 },
                 {
                   "type": "quizQuestion",
@@ -3990,6 +4638,12 @@
               "id": "project-management-u3-4-evaluating-digital-products",
               "title": "Evaluating Digital Products",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎟️ TICKET",
+                  "text": "The school canteen ordering page shipped and now it needs evaluating — properly, against criteria, with actual evidence, not just 'yeah it's fine'. Evaluation is the step every rushed project skips, and it's exactly the step that tells you whether to do it the same way next time."
+                },
                 {
                   "type": "paragraph",
                   "text": "Criteria required to evaluate digital products and solutions"
@@ -4084,9 +4738,21 @@
                   ]
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · RORY QUINN",
+                  "text": "Self-reflection without evidence is just an opinion with extra steps. 'I think it worked well' earns nothing from a marker or a client — a screenshot of actual usage, a user comment, a measured outcome is what turns an opinion into an evaluation."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Evaluate with evidence",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🛑 STANDUP REVIEW · RORY IS CHECKING THE BOARD",
+                  "text": "Name two real methods for gathering evidence on this page — a user survey, usage data, direct observation — not 'I would ask people'. And I want two more design criteria that are genuinely testable against the finished product, matching the standard from earlier in this topic."
                 },
                 {
                   "type": "richText",
@@ -4095,6 +4761,12 @@
                 {
                   "type": "paragraph",
                   "text": "A student made a 30-second promotional video for the school's music night. One design criterion was: \"The date and venue appear on screen for at least 5 seconds.\""
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🚀 SPRINT CHALLENGE",
+                  "text": "Describe two methods for gathering evidence, and write two more testable design criteria, before you check my evaluation."
                 },
                 {
                   "type": "quizQuestion",
@@ -4156,6 +4828,12 @@
               "id": "managing-data-1-file-optimisation",
               "title": "File Optimisation",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎟️ TICKET",
+                  "text": "A real estate agent's 24 MB house photo is killing their website's load time, and the same file needs to go to print, online and email — three completely different jobs from one source image. File optimisation isn't one setting, it's choosing the right resolution, colour mode and format for where the file actually ends up."
+                },
                 {
                   "type": "paragraph",
                   "text": "Purpose of file optimisation for use in print, digital and/or online environments"
@@ -4259,9 +4937,21 @@
                   ]
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · SLOANE VANE",
+                  "text": "Nobody ever gets marked down for knowing print needs 300 ppi — they get marked down for not explaining why online doesn't. Say it out loud: screens display pixels, not printed dots, so 'resolution' for online is about pixel dimensions fitting the screen, not ppi at all."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Purpose means why",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🛑 PR REVIEW · SLOANE IS AUDITING YOUR WORK",
+                  "text": "'To make it better' earns nothing from me, same as it earns nothing in the exam. I want file size, load time and the specific audience (mobile data, slow connections) all connected in one sentence before I sign off on an optimisation answer."
                 },
                 {
                   "type": "richText",
@@ -4270,6 +4960,12 @@
                 {
                   "type": "paragraph",
                   "text": "A school uses the same 18 MB photo of its sports team on its website home page and in a printed yearbook."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "💻 SANDBOX CHALLENGE",
+                  "text": "Explain why the school's photo slows the website, then compare how it should be optimised for the website versus the yearbook, before you check my version."
                 },
                 {
                   "type": "quizQuestion",
@@ -4316,6 +5012,12 @@
               "id": "managing-data-2-compression",
               "title": "Compression",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎟️ TICKET",
+                  "text": "Two files, two very different compression needs crossed my desk this week — and picking the wrong type for the wrong job either wrecks the quality or barely shrinks the file. Compression isn't a single technique; justifying lossy versus lossless for a specific use is exactly what gets tested."
+                },
                 {
                   "type": "paragraph",
                   "text": "Considerations for file compression for transfer and display of data: purpose, lossy compression, lossless compression, file sizes"
@@ -4424,9 +5126,21 @@
                   ]
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · SLOANE VANE",
+                  "text": "My rule of thumb: if the file needs to be restored byte-for-byte identical — a document, a database export — it's lossless, no exceptions. If it's a photo or audio where a human eye or ear won't notice the difference, lossy buys you a much smaller file for free."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Compare, with an example",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🛑 PR REVIEW · SLOANE IS AUDITING YOUR WORK",
+                  "text": "State the purpose of compression cleanly first. Then for each use, I want the type named and justified against what that specific use actually needs — quality-critical or size-critical — not just 'lossy is smaller'."
                 },
                 {
                   "type": "richText",
@@ -4435,6 +5149,12 @@
                 {
                   "type": "paragraph",
                   "text": "A band is sending 12 songs to a record label for mastering, and 12 songs to fans as a free download."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "💻 SANDBOX CHALLENGE",
+                  "text": "State compression's purpose, then justify a type for each of the two uses, before you check my call."
                 },
                 {
                   "type": "quizQuestion",
@@ -4481,6 +5201,12 @@
               "id": "managing-data-3-cropping-and-resampling",
               "title": "Cropping and Resampling",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎟️ TICKET",
+                  "text": "A website photo needs cropping to fit a banner, and a PDF is bloated because nobody resampled the images inside it before export. Cropping and resampling get confused constantly — one changes what's in the frame, the other changes how much data describes it."
+                },
                 {
                   "type": "paragraph",
                   "text": "Techniques for file size minimisation: cropping, resampling"
@@ -4554,9 +5280,21 @@
                   "html": "<p>1</p><p><strong>Keep the original</strong> — Work on a copy; resampling down cannot be undone.</p><p>2</p><p>Crop first</p><p>Remove what you do not need.</p><p>3</p><p><strong>Resample</strong> — Reduce to the size it will display at.</p><p>4</p><p>Export</p><p>Choose format and quality.</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · SLOANE VANE",
+                  "text": "Cropping removes part of the image — the pixel dimensions and framing both change. Resampling reduces the number of pixels describing the same framing — the content stays, the detail shrinks. Confuse the two in an answer and I know immediately the concept isn't understood, just the word."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Say why the file gets smaller",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🛑 PR REVIEW · SLOANE IS AUDITING YOUR WORK",
+                  "text": "Describe cropping's specific effect on this photo, not the definition in isolation. And for resampling reducing the PDF's size — I want 'fewer pixels, smaller file' explained, not just asserted."
                 },
                 {
                   "type": "richText",
@@ -4565,6 +5303,12 @@
                 {
                   "type": "paragraph",
                   "text": "A student places a 5 MB photo of a school building in an interactive PDF, where it only fills a small box 600 pixels wide. The PDF is now 80 MB."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "💻 SANDBOX CHALLENGE",
+                  "text": "Describe how cropping could be used on the photo, then explain how resampling reduces the PDF's size, before you check my notes."
                 },
                 {
                   "type": "quizQuestion",
@@ -4611,6 +5355,12 @@
               "id": "managing-data-4-online-data-management",
               "title": "Online Data Management",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎟️ TICKET",
+                  "text": "A netball club's shared files are a mess — someone's working copy got overwritten, nobody can find last season's roster. Shared folders, permissions, sync, search and tags — this is the unglamorous admin work that determines whether a volunteer-run club's data survives contact with real life."
+                },
                 {
                   "type": "paragraph",
                   "text": "Strategies for efficient online data management"
@@ -4688,9 +5438,21 @@
                   "html": "<p>Organise</p><p>Logical folder structure</p><p>Consistent file names</p><p>Archive old files</p><p>Delete duplicates</p><p><strong>Share and protect</strong> — Share links with the least permission needed</p><p>Remove access when people leave</p><p>Turn on two-step verification</p><p>Check sync before working offline</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · SLOANE VANE",
+                  "text": "Most 'someone deleted my file' disasters are actually a permissions failure, not malice — give everyone full edit access to everything and eventually someone will overwrite or delete work they didn't mean to touch. Tiered permissions aren't bureaucracy, they're damage control."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Strategy plus benefit",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🛑 PR REVIEW · SLOANE IS AUDITING YOUR WORK",
+                  "text": "I want two concrete strategies for this club — not a general list of good practice, strategies that fit a small volunteer team specifically. And the permissions answer needs to explain how restricting access would have actually stopped this specific deletion."
                 },
                 {
                   "type": "richText",
@@ -4699,6 +5461,12 @@
                 {
                   "type": "paragraph",
                   "text": "Four students share a Google Drive folder for a group project. Files are called \"doc1\", \"final\", \"final2\", and one student accidentally deleted another's work."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "💻 SANDBOX CHALLENGE",
+                  "text": "Describe two strategies to fix the club's online data mess, and how permissions could have prevented the deleted work, before you check my recommendations."
                 },
                 {
                   "type": "quizQuestion",
@@ -4745,6 +5513,12 @@
               "id": "managing-data-5-version-control",
               "title": "Version Control",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎟️ TICKET",
+                  "text": "A club newsletter went through six 'final' versions and nobody can find which one actually got sent. Version control — numbering, history, a master copy, checking files out — exists entirely to prevent this exact chaos, and it's cheap insurance most small teams skip until it bites them."
+                },
                 {
                   "type": "paragraph",
                   "text": "Strategies for efficient document version control"
@@ -4822,9 +5596,21 @@
                   "html": "<p>Bad</p><p>report_final.docx</p><p>report_final2.docx</p><p><strong>report_final_REAL.docx</strong> — Emailed copies with different edits</p><p><strong>Good</strong> — Report_v01.docx, Report_v02.docx</p><p>Dates in YYYY-MM-DD format</p><p>One shared master with version history</p><p>Change notes: \"v03: added budget table\"</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · SLOANE VANE",
+                  "text": "A file literally named 'final_FINAL_v2_useThisOne.docx' is the single clearest sign version control has already failed. If your naming convention needs an adjective to tell people which one's current, the system is broken, not the file."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Explain how it helps",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🛑 PR REVIEW · SLOANE IS AUDITING YOUR WORK",
+                  "text": "Define version control precisely — it's not just 'saving different copies', it's a deliberate system. Then for this student's strategies, I want something that would have actually prevented the newsletter confusion, not generic advice."
                 },
                 {
                   "type": "richText",
@@ -4833,6 +5619,12 @@
                 {
                   "type": "paragraph",
                   "text": "A student emails her draft essay to herself each night. She now has 14 copies called \"Essay\", \"Essay new\", \"Essay latest\" and cannot tell which has her teacher's feedback."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "💻 SANDBOX CHALLENGE",
+                  "text": "Define document version control, then describe two strategies the student should use, before you check my fix."
                 },
                 {
                   "type": "quizQuestion",
@@ -4879,6 +5671,12 @@
               "id": "managing-data-6-cloud-computing",
               "title": "Cloud Computing",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎟️ TICKET",
+                  "text": "A mobile hairdresser wants to ditch the laptop she drags between appointments and run everything from her phone instead. Cloud computing's real sell for someone like her isn't the buzzword — it's that her bookings and client notes follow her, with trade-offs she needs to understand before she commits."
+                },
                 {
                   "type": "paragraph",
                   "text": "Concept of cloud computing"
@@ -4961,9 +5759,21 @@
                   "html": "<p><strong>Advantages</strong> — Access from any device, anywhere</p><p>Automatic backup by the provider</p><p>No expensive servers to buy</p><p>Easy to share and collaborate</p><p>Storage can grow as needed</p><p><strong>Disadvantages</strong> — Needs a reliable internet connection</p><p><strong>Ongoing subscription cost</strong> — Data held by a third party, sometimes overseas</p><p>Provider outages stop work</p><p>Security depends on strong passwords</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · SLOANE VANE",
+                  "text": "I always make clients name one real advantage and one real disadvantage before signing off on a cloud move — not just the sales pitch. Access-anywhere is genuinely powerful for a mobile worker; losing it the moment her connection drops is the cost nobody mentions upfront."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Concept: remote + internet",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🛑 PR REVIEW · SLOANE IS AUDITING YOUR WORK",
+                  "text": "Explain the concept properly — remote storage and processing accessed over the internet — before you weigh advantage against disadvantage. A one-sided answer, all upside or all downside, isn't the full picture and won't get full marks."
                 },
                 {
                   "type": "richText",
@@ -4972,6 +5782,12 @@
                 {
                   "type": "paragraph",
                   "text": "A small accounting firm is deciding whether to replace its office server with cloud storage and cloud accounting software."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "💻 SANDBOX CHALLENGE",
+                  "text": "Explain cloud computing, then give one real advantage and one real disadvantage for this accounting firm, before you check my assessment."
                 },
                 {
                   "type": "quizQuestion",
@@ -5018,6 +5834,12 @@
               "id": "managing-data-7-maintenance-utilities",
               "title": "Maintenance Utilities",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎟️ TICKET",
+                  "text": "A family laptop's crawling and everyone assumes it needs replacing. Nine times out of ten it just needs the maintenance it's never had — disk clean-up, clearing the internet cache, checking temporary files — before anyone spends money on new hardware."
+                },
                 {
                   "type": "paragraph",
                   "text": "System utility tools for efficient operation: disk clean-up, deletion of temporary files and internet cache, disk fragmentation"
@@ -5116,9 +5938,21 @@
                   ]
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · SLOANE VANE",
+                  "text": "Defragmentation is the classic trap question — it's essential on an old spinning hard drive and actively unnecessary, even mildly harmful, on an SSD, which have no moving parts to benefit from it. If a laptop has an SSD, say so and explain why defrag doesn't apply."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Say how it improves performance",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🛑 PR REVIEW · SLOANE IS AUDITING YOUR WORK",
+                  "text": "Name two specific utility tools and what each actually fixes for this laptop, not a generic list of 'things that help'. And if it's an SSD, don't recommend defrag — explain why it's not needed, that's the actual mark."
                 },
                 {
                   "type": "richText",
@@ -5127,6 +5961,12 @@
                 {
                   "type": "paragraph",
                   "text": "A student's laptop has an SSD that is 95% full. Her browser has not been cleared for two years."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "💻 SANDBOX CHALLENGE",
+                  "text": "Describe how two utility tools could help this laptop, and explain why defragmentation isn't needed on her machine, before you check my diagnosis."
                 },
                 {
                   "type": "quizQuestion",
@@ -5173,6 +6013,12 @@
               "id": "managing-data-8-security-utilities",
               "title": "Security Utilities",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎟️ TICKET",
+                  "text": "A suspicious email just hit a family's inbox and something's already behaving strangely on their laptop. Malware, virus, spyware, anti-virus, spam filters — identifying exactly what kind of threat you're dealing with changes what protection actually stops it."
+                },
                 {
                   "type": "paragraph",
                   "text": "System utility tools: anti-malware, anti-virus, spam filter, spyware"
@@ -5250,9 +6096,21 @@
                   "html": "<p><strong>Tools</strong> — Anti-malware with real-time scanning (e.g. Microsoft Defender)</p><p>Spam filter in the email service</p><p>Firewall turned on</p><p>Automatic updates</p><p><strong>Habits</strong> — Do not open unexpected attachments</p><p>Hover over links to check the address</p><p>Download software only from official sites</p><p>Use strong, different passwords</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · SLOANE VANE",
+                  "text": "A virus and spyware aren't the same threat even though people lump them together — a virus spreads and disrupts, spyware quietly watches and steals information without the user noticing anything's wrong at all. Misname the malware type and your recommended fix won't match the actual problem."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Purpose of the tool, not the threat",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🛑 PR REVIEW · SLOANE IS AUDITING YOUR WORK",
+                  "text": "Identify the specific type of malware involved, don't just say 'a virus' by default — read the clues. And for protecting the family going forward, I want two distinct, concrete protections, not one idea restated twice."
                 },
                 {
                   "type": "richText",
@@ -5261,6 +6119,12 @@
                 {
                   "type": "paragraph",
                   "text": "A family laptop has become slow, shows pop-up ads, and a parent's bank password was used by someone else."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "💻 SANDBOX CHALLENGE",
+                  "text": "Identify the likely malware type and a strategy for it, then describe two ways to protect the laptop going forward, before you check my ruling."
                 },
                 {
                   "type": "quizQuestion",
@@ -5314,6 +6178,12 @@
               "id": "networks-1-networking-concepts",
               "title": "Networking Concepts",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🔧 JOB TICKET",
+                  "text": "A client's setting up a home office and asking why they'd bother networking two computers at all. Before you can design anything, you need the basics solid: what a network actually is, LAN versus WAN, and what 'shared resources' really buys someone."
+                },
                 {
                   "type": "paragraph",
                   "text": "Concept and purpose of computer networking; advantages and disadvantages of computer networking"
@@ -5387,9 +6257,21 @@
                   "html": "<p><strong>Advantages</strong> — Share one internet connection and printer, saving money</p><p>Share files without USB drives</p><p><strong>Central backup of files</strong> — Communication and collaboration</p><p><strong>Disadvantages</strong> — Malware can spread to every device</p><p>Security risks from unauthorised access</p><p>If the router fails, nobody has internet</p><p>Setup and maintenance cost and skill</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · SPARKY MILLER",
+                  "text": "When a client asks 'why network it', the honest answer is almost always one of: sharing a printer, sharing files, or sharing an internet connection. If your explanation doesn't land on one of those practical benefits, it's too abstract to convince anyone to pay for the job."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Advantage plus effect",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🧰 CALLBACK CHECK · SPARKY IS REVIEWING THE JOB",
+                  "text": "I want the office's actual networking purpose named, not a textbook definition of 'network'. And for advantage/disadvantage, a disadvantage like 'cost' needs to be specific to this setup, not a throwaway line."
                 },
                 {
                   "type": "richText",
@@ -5398,6 +6280,12 @@
                 {
                   "type": "paragraph",
                   "text": "A real estate office has four computers, each with its own printer and internet connection. Staff move files between computers on USB drives."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🛠️ WORKSHOP CHALLENGE",
+                  "text": "Explain the purpose of networking the office and give one real advantage and one real disadvantage, before you check my answer."
                 },
                 {
                   "type": "quizQuestion",
@@ -5444,6 +6332,12 @@
               "id": "networks-2-transmission-media",
               "title": "Transmission Media",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🔧 JOB TICKET",
+                  "text": "A client wants their shed connected to the house network and is asking whether wifi will just reach. Depends entirely on the medium — optic fibre, twisted pair, wireless — and each one has a job it's genuinely good at and a job it'll fail at. I've seen too many wireless-only sheds with constant dropouts."
+                },
                 {
                   "type": "paragraph",
                   "text": "Types of transmission media: optic fibre, wired, wireless"
@@ -5554,9 +6448,21 @@
                   ]
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · SPARKY MILLER",
+                  "text": "Distance and obstacles are the two things that kill wireless every time, and clients never think about either until it's already failed. For anything outdoors or through brick, I default to recommending a wired run even when it's a harder sell upfront — it saves me a callback."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Compare both sides",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🧰 CALLBACK CHECK · SPARKY IS REVIEWING THE JOB",
+                  "text": "A recommendation without a reason tied to distance, obstacles or cost isn't a recommendation, it's a guess that happened to be right. Justify the medium against this specific shed-to-house distance, not media in general."
                 },
                 {
                   "type": "richText",
@@ -5565,6 +6471,12 @@
                 {
                   "type": "paragraph",
                   "text": "A farm has a house and a machinery shed 400 m apart. The owner wants internet in the shed and on her phone around the house."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🛠️ WORKSHOP CHALLENGE",
+                  "text": "Recommend a medium for the shed and compare wired versus wireless for the devices inside the house, before you check mine."
                 },
                 {
                   "type": "quizQuestion",
@@ -5611,6 +6523,12 @@
               "id": "networks-3-transmission-rates",
               "title": "Transmission Rates",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🔧 JOB TICKET",
+                  "text": "A client on a 100/20 plan keeps asking why their evening live stream keeps freezing when their speed test says 100. Transmission rate, upload versus download, and bandwidth explain exactly why a fast-looking plan can still choke — and it's rarely the plan's fault alone."
+                },
                 {
                   "type": "paragraph",
                   "text": "Concept of transmission rates"
@@ -5688,9 +6606,21 @@
                   "html": "<p>1</p><p>Size in bytes</p><p>e.g. 2 GB = 2000 MB.</p><p>2</p><p>Convert to bits</p><p>x 8 = 16 000 megabits.</p><p>3</p><p>Divide by rate</p><p>16 000 / 20 Mbps = 800 s.</p><p>4</p><p>Convert</p><p>800 s is about 13 minutes.</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · SPARKY MILLER",
+                  "text": "Download and upload rates are almost never the same number, and a live stream depends on upload — the number everyone forgets to check. 100/20 means 100 down, 20 up; if you're uploading video, that 20 is your real ceiling, not the headline 100."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Bits are not bytes",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🧰 CALLBACK CHECK · SPARKY IS REVIEWING THE JOB",
+                  "text": "Explain transmission rate properly first — units, what's being measured — before you diagnose the freezing. And for 'why does it freeze in the evening', I want congestion or shared bandwidth mentioned, not just 'the internet is slow'."
                 },
                 {
                   "type": "richText",
@@ -5699,6 +6629,12 @@
                 {
                   "type": "paragraph",
                   "text": "A gamer in Bunbury has a 50/20 Mbps plan. He live-streams his games every evening while his family streams TV and videos."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🛠️ WORKSHOP CHALLENGE",
+                  "text": "Explain transmission rate and then work out why the evening stream keeps freezing, before you check how I'd answer it."
                 },
                 {
                   "type": "quizQuestion",
@@ -5745,6 +6681,12 @@
               "id": "networks-4-network-components",
               "title": "Network Components",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🔧 JOB TICKET",
+                  "text": "A client asked me, completely seriously, whether their router and their modem were the same box with two names. They're not, and knowing the difference — modem, router, switch, NIC, server — is the difference between diagnosing a fault in five minutes or an hour."
+                },
                 {
                   "type": "paragraph",
                   "text": "Network components for internet connection: server, router, network interface card (NIC), switch, modem"
@@ -5822,9 +6764,21 @@
                   "html": "<p>1</p><p>Device + NIC</p><p>Connects the device.</p><p>2</p><p>Switch</p><p>Links wired devices together.</p><p>3</p><p>Router</p><p>Directs traffic in and out.</p><p>4</p><p><strong>Modem</strong> — Connects to the provider's line.</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · SPARKY MILLER",
+                  "text": "Modem connects you to your ISP; router connects your devices to each other and shares that one internet connection. Mix those up in an answer and the marker reads it as not understanding either device, even if the rest of your answer is fine."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Router and switch are different",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🧰 CALLBACK CHECK · SPARKY IS REVIEWING THE JOB",
+                  "text": "I want the router and modem's roles separated clearly in your answer, not blended into one description. And for 'why does every computer need a NIC' — name what a NIC actually does, don't just say 'to connect to the network'."
                 },
                 {
                   "type": "richText",
@@ -5833,6 +6787,12 @@
                 {
                   "type": "paragraph",
                   "text": "A small design studio has three wired desktop computers, a network printer, a file server and staff laptops that use Wi-Fi."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🛠️ WORKSHOP CHALLENGE",
+                  "text": "Describe the router's and modem's purpose in sending that photo, and explain why every computer needs a NIC, before you check mine."
                 },
                 {
                   "type": "quizQuestion",
@@ -5879,6 +6839,12 @@
               "id": "networks-5-lan-topologies",
               "title": "LAN Topologies",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🔧 JOB TICKET",
+                  "text": "Two jobs on my desk this week, same question: wired star or peer-to-peer, client-server or not. The right topology depends entirely on the client's situation — a physio clinic's needs aren't a home network's needs — and that's exactly what the exam wants you to justify, not just define."
+                },
                 {
                   "type": "paragraph",
                   "text": "Network topologies for local area networks (LANs): wired star, wireless, client server, peer-to-peer"
@@ -5987,9 +6953,21 @@
                   ]
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · SPARKY MILLER",
+                  "text": "Client-server costs more upfront (you need an actual server) but centralises control and backups — worth it the moment multiple people need shared, managed access to the same data. Peer-to-peer is cheap and simple but falls apart past a handful of devices. Match the answer to the scale of the business, every time."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Justify with the scenario",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🧰 CALLBACK CHECK · SPARKY IS REVIEWING THE JOB",
+                  "text": "'Justify' means pick a side and defend it against the client's actual situation. An answer that just describes both options with no recommendation hasn't answered the question, no matter how accurate the description is."
                 },
                 {
                   "type": "richText",
@@ -6041,6 +7019,12 @@
                   "explanation": "The layout of a network is called its topology."
                 },
                 {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🛠️ WORKSHOP CHALLENGE",
+                  "text": "Describe a wired star topology, then justify client-server or peer-to-peer for the clinic, before you check my call."
+                },
+                {
                   "type": "quizQuestion",
                   "question": {
                     "id": "networks-5-lan-topologies-q1",
@@ -6085,6 +7069,12 @@
               "id": "networks-6-designing-a-home-lan",
               "title": "Designing a Home LAN",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🔧 JOB TICKET",
+                  "text": "The Nguyen family wants their whole house networked and I've got one shot to get the router placement and wiring right before the drywall goes back up. This is the practical end of everything we've covered — floor plan, wireless coverage, and where a wired connection genuinely beats wireless."
+                },
                 {
                   "type": "paragraph",
                   "text": "Design a suitable LAN topology for a home network"
@@ -6154,9 +7144,21 @@
                   "html": "<p>1</p><p><strong>Entry point</strong> — Start at the NBN point; place modem and router.</p><p>2</p><p><strong>Wired devices</strong> — Cable fixed, high-use devices; add a switch if needed.</p><p>3</p><p><strong>Wireless</strong> — Check every room is covered; add an access point or mesh unit.</p><p>4</p><p><strong>Annotate</strong> — Label every device, connection (wired/wireless) and medium.</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · SPARKY MILLER",
+                  "text": "I always put the router as close to centre-of-house as the internet entry point allows, not wherever's convenient to hide the box — coverage dies in corners. And anything that needs a rock-solid, uninterrupted connection — a home office desktop doing video calls — gets a wired run even in an otherwise wireless house."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Annotate everything",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🧰 CALLBACK CHECK · SPARKY IS REVIEWING THE JOB",
+                  "text": "Annotate the plan like you're handing it to a client who's never seen a floor plan before — placement has to be justified by coverage, not just marked with a dot. And the wired-office-desktop answer needs a reason, not just 'it's better'."
                 },
                 {
                   "type": "richText",
@@ -6165,6 +7167,12 @@
                 {
                   "type": "paragraph",
                   "text": "A two-storey home: NBN point in the downstairs garage; home office upstairs with a desktop and printer; teenagers' bedrooms upstairs with laptops; lounge downstairs with a smart TV."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🛠️ WORKSHOP CHALLENGE",
+                  "text": "Place the router and one other device on the Nguyen floor plan and justify a wired connection for the home office desktop, before you check my layout."
                 },
                 {
                   "type": "quizQuestion",
@@ -6218,6 +7226,12 @@
               "id": "impacts-of-technology-u4-1-privacy-act-collection-use-access",
               "title": "Privacy Act Collection Use Access",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "📋 CASE FILE",
+                  "text": "A ticket seller wants to collect a buyer's school as part of signup and asked me if that's even allowed. Under the Privacy Act 1988 — collection, use, access — the answer is almost never a flat yes or no, it's 'only if it's necessary for the purpose', and most businesses over-collect without realising it."
+                },
                 {
                   "type": "paragraph",
                   "text": "Role of the Privacy Act 1988 (Australia): collection, use and access of personal information"
@@ -6295,9 +7309,21 @@
                   "html": "<p>1</p><p>Collect</p><p>Only what is needed; say why.</p><p>2</p><p>Use</p><p>For the stated purpose.</p><p>3</p><p>Store</p><p>Keep it secure.</p><p>4</p><p><strong>Access</strong> — Let people see and correct it.</p><p>5</p><p><strong>Dispose</strong> — Destroy it when no longer needed.</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · DR ELARA FINCH",
+                  "text": "The test I apply to every collection question: is this piece of personal information actually necessary for what they're using it for? A gym app needs your name and payment details. It very rarely needs your school. If it's not necessary, collecting it is the problem, even if the person consented."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Use the correct Act",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "📝 CASE REVIEW · ELARA IS SIGNING OFF",
+                  "text": "Don't just say 'yes' or 'no' to whether they should collect it — explain it against the necessity test. And for the access right, name it specifically: customers have a right to access their own personal information, which most businesses have to honour on request."
                 },
                 {
                   "type": "richText",
@@ -6306,6 +7332,12 @@
                 {
                   "type": "paragraph",
                   "text": "A large online ticket seller asks for name, email, phone, date of birth and the name of the buyer's school when selling concert tickets."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "⚖️ POLICY CHALLENGE",
+                  "text": "Decide whether the ticket seller should collect the school, and describe the customer's access right, before you check my ruling."
                 },
                 {
                   "type": "quizQuestion",
@@ -6352,6 +7384,12 @@
               "id": "impacts-of-technology-u4-2-identity-theft-and-safe-disposal",
               "title": "Identity Theft and Safe Disposal",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "📋 CASE FILE",
+                  "text": "A clinic is replacing its computers and asked me whether they can just put the old ones out for e-waste collection. The answer involves identity theft risk, what counts as a notifiable data breach, and safe disposal — and getting this wrong isn't just an IT mistake, it's a legal one."
+                },
                 {
                   "type": "paragraph",
                   "text": "Role of the Privacy Act 1988 (Australia): identity theft, safe disposal of data"
@@ -6425,9 +7463,21 @@
                   "html": "<p>How it happens</p><p><strong>Data breach at a company</strong> — Phishing emails and fake websites</p><p>Oversharing online (birthday, address, pet names)</p><p>Stolen mail or recovered old drives</p><p>Reduce the risk</p><p><strong>Share only what is needed</strong> — Strong, unique passwords and two-step verification</p><p><strong>Check bank statements</strong> — Securely dispose of old devices and documents</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · DR ELARA FINCH",
+                  "text": "A data breach only becomes 'notifiable' under the Act when it's likely to cause serious harm — not every leak triggers the same obligations. Knowing that distinction is what separates a business that overreacts to every incident from one that correctly escalates the serious ones."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: \"Delete\" is not safe disposal",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "📝 CASE REVIEW · ELARA IS SIGNING OFF",
+                  "text": "I want stolen data connected to a real, specific identity theft use, not a vague 'they could use it for bad things'. And the retailer's Privacy Act responsibilities need to be named specifically, not summarised as 'they should be careful'."
                 },
                 {
                   "type": "richText",
@@ -6436,6 +7486,12 @@
                 {
                   "type": "paragraph",
                   "text": "A retail chain's customer database, including names, addresses, dates of birth and driver's licence numbers, was stolen by hackers."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "⚖️ POLICY CHALLENGE",
+                  "text": "Describe how the stolen data could enable identity theft and two of the retailer's Privacy Act responsibilities, before you check my case file."
                 },
                 {
                   "type": "quizQuestion",
@@ -6482,6 +7538,12 @@
               "id": "impacts-of-technology-u4-3-digital-divide",
               "title": "Digital Divide",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "📋 CASE FILE",
+                  "text": "A council report crossed my desk arguing a new online-only service would 'improve access for everyone' — it wouldn't, and naming exactly who ends up on the wrong side of the digital divide is the whole point of this case. Availability of resources, ability to use them, and dependency on electronic communication are three separate barriers, not one."
+                },
                 {
                   "type": "paragraph",
                   "text": "Concept of the digital divide and associated issues"
@@ -6559,9 +7621,21 @@
                   "html": "<p>Services now mainly online</p><p><strong>Banking and bill payment</strong> — Government services (myGov, Centrelink)</p><p>School work and reports</p><p><strong>Job applications</strong> — Health appointments (telehealth)</p><p><strong>Effects of being left out</strong> — Missed information and deadlines</p><p>Higher costs (paper bills, travel)</p><p>Falling behind at school or work</p><p><strong>Social isolation</strong> — Relying on others for private matters</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · DR ELARA FINCH",
+                  "text": "People conflate 'has internet access' with 'digital divide solved' — but someone can have a connection and still be excluded if they lack the skills, the right device, or the confidence to use a service. The divide is about capability as much as access."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Link the issue to the person",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "📝 CASE REVIEW · ELARA IS SIGNING OFF",
+                  "text": "I want the concept defined properly, then the specific groups named for this change — not 'some people will struggle', but which people and why. Elderly residents without a device is a different answer to rural residents with no reliable connection."
                 },
                 {
                   "type": "richText",
@@ -6570,6 +7644,12 @@
                 {
                   "type": "paragraph",
                   "text": "A bank closes its only branch in a small country town and tells customers to use its app."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "⚖️ POLICY CHALLENGE",
+                  "text": "Explain the digital divide and how this change affects two different groups, before you check my report."
                 },
                 {
                   "type": "quizQuestion",
@@ -6616,6 +7696,12 @@
               "id": "impacts-of-technology-u4-4-electronic-commerce",
               "title": "Electronic Commerce",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "📋 CASE FILE",
+                  "text": "A Bunbury surf shop went online this year and the owner's thrilled about 24/7 sales — and surprised by the 2am customer emails expecting instant replies. E-commerce, improved digital communication, round-the-clock trading: every benefit comes with a matched cost, and the exam wants both."
+                },
                 {
                   "type": "paragraph",
                   "text": "Concept of electronic commerce: implications of improved digital communications, 24/7 communications"
@@ -6689,9 +7775,21 @@
                   "html": "<p>For businesses</p><p><strong>More sales at any hour</strong> — Pressure to reply quickly (chatbots, extra staff)</p><p>Competing with global stores on price</p><p>Owners find it hard to switch off</p><p>For customers</p><p>Shop any time, from anywhere</p><p><strong>Compare prices easily</strong> — Cannot see or try products first</p><p>Risk of scams and data theft</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · DR ELARA FINCH",
+                  "text": "24/7 availability is the classic double-edged sword in this topic — it genuinely does grow sales outside normal hours, and it genuinely does create an expectation of round-the-clock responsiveness that small operators struggle to meet. Always give both sides unprompted."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Implication means a consequence",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "📝 CASE REVIEW · ELARA IS SIGNING OFF",
+                  "text": "Define e-commerce cleanly first. Then for the 24/7 question, I want one real positive and one real negative — not two positives dressed differently, which is the mistake I see most often."
                 },
                 {
                   "type": "richText",
@@ -6700,6 +7798,12 @@
                 {
                   "type": "paragraph",
                   "text": "A family-owned bakery starts taking online orders for birthday cakes through its website."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "⚖️ POLICY CHALLENGE",
+                  "text": "Explain e-commerce, then describe one positive and one negative of 24/7 online trading for the surf shop, before you check my notes."
                 },
                 {
                   "type": "quizQuestion",
@@ -6746,6 +7850,12 @@
               "id": "impacts-of-technology-u4-5-dependency-on-communication",
               "title": "Dependency on Communication",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "📋 CASE FILE",
+                  "text": "A school's systems went down for a day and it exposed exactly how dependent the staff and even the patients at the attached clinic had become on electronic communication. This case is about naming that dependency honestly, and the responsibilities that come with relying on it — including privacy."
+                },
                 {
                   "type": "paragraph",
                   "text": "Issues related to the dependency of society upon electronic and visual communication"
@@ -6819,9 +7929,21 @@
                   "html": "<p><strong>Technology skills</strong> — Jobs need new software skills every few years</p><p>Older workers may need retraining</p><p>Services assume users can use apps</p><p>Schools must teach digital skills</p><p><strong>Maintaining privacy</strong> — Screenshots can be shared without permission</p><p><strong>Location data in photos</strong> — Video calls can show private spaces</p><p>Users must set privacy and security settings</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · DR ELARA FINCH",
+                  "text": "Dependency isn't automatically a flaw to criticise — it's a fact to manage. The useful answer isn't 'people shouldn't rely on technology so much', it's identifying the specific skill gap or responsibility that the outage exposed, and what closes that gap."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Name the issue and explain it",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "📝 CASE REVIEW · ELARA IS SIGNING OFF",
+                  "text": "Name the actual skill staff and patients need to develop, not a generic 'get better with tech'. And the privacy responsibility question wants a specific duty — what they're responsible for maintaining, and why it's on them, not just the provider."
                 },
                 {
                   "type": "richText",
@@ -6830,6 +7952,12 @@
                 {
                   "type": "paragraph",
                   "text": "A medical centre moves all appointments, reminders and test results to an app. Staff now talk to patients mainly by video call."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "⚖️ POLICY CHALLENGE",
+                  "text": "Explain why staff and patients need better technology skills, and one privacy responsibility patients have, before you check my case summary."
                 },
                 {
                   "type": "quizQuestion",
@@ -6883,6 +8011,12 @@
               "id": "application-skills-u4-1-online-collaboration",
               "title": "Online Collaboration",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎟️ TICKET",
+                  "text": "Three students planning the Year 12 formal are scattered across different towns and need to actually get work done together, not just message about it. Choosing the right collaboration tools — and being honest about the real downside — is the difference between a project that moves and one stuck in a group chat forever."
+                },
                 {
                   "type": "paragraph",
                   "text": "Types of online collaboration"
@@ -6975,9 +8109,21 @@
                   "html": "<p>Advantages</p><p>Work from anywhere, any time</p><p>Everyone sees the latest version</p><p>Changes are tracked</p><p>Less travel and printing</p><p><strong>Disadvantages</strong> — Needs a reliable internet connection</p><p>Easy to overwrite others' work without version control</p><p>Messages can be misunderstood</p><p>Some members may not contribute</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · RORY QUINN",
+                  "text": "The disadvantage question is the one everyone skips, because collaboration tools feel like an unqualified good. They're not — version confusion, unequal contribution, or someone's patchy wifi dropping them from a call are all real costs, and naming one honestly is worth more than pretending collaboration has no downside."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Name the type, then the benefit",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🛑 STANDUP REVIEW · RORY IS CHECKING THE BOARD",
+                  "text": "Describe two distinct types of collaboration this group could actually use — not two tools that do the same job. And the disadvantage needs to be a genuine cost of collaborating remotely, not a generic complaint about technology."
                 },
                 {
                   "type": "richText",
@@ -6986,6 +8132,12 @@
                 {
                   "type": "paragraph",
                   "text": "Three students are making a group video. One edits, one writes the script, and one finds music. They live in different towns."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🚀 SPRINT CHALLENGE",
+                  "text": "Describe two types of online collaboration for the group, and one real disadvantage, before you check my plan."
                 },
                 {
                   "type": "quizQuestion",
@@ -7032,6 +8184,12 @@
               "id": "application-skills-u4-2-web-authoring-features",
               "title": "Web Authoring Features",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎟️ TICKET",
+                  "text": "A small club website needs a colour scheme change and what should've been a five-minute job turned into editing forty separate pages — because nobody used a .css file. Hyperlinks, templates, .htm versus .css — knowing what each piece is actually for would have saved this entire sprint."
+                },
                 {
                   "type": "paragraph",
                   "text": "Features of web authoring: hyperlinks, graphics, templates, types of files (.css, .htm/.html)"
@@ -7109,9 +8267,21 @@
                   "html": "<p>HTML: what is on the page</p><p>Headings and paragraphs</p><p>Images and alt text</p><p>Hyperlinks</p><p>Lists and tables</p><p><strong>CSS: how it looks</strong> — Change the brand colour once and every page updates</p><p>Consistent fonts and spacing (unity)</p><p>Different layouts for phones and laptops</p><p>Smaller files, faster loading</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · RORY QUINN",
+                  "text": "A .css file is the single highest-leverage thing in basic web authoring — one file controls the look of every page that links to it. Any site that doesn't use one is signing up for exactly the pain this club just went through, and it's completely avoidable."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Say what the file does",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🛑 STANDUP REVIEW · RORY IS CHECKING THE BOARD",
+                  "text": "Describe two distinct hyperlink types the club site could actually use — internal, external, email, download — not two examples of the same type. And explain the .css benefit against this exact colour-change problem, not css in the abstract."
                 },
                 {
                   "type": "richText",
@@ -7120,6 +8290,12 @@
                 {
                   "type": "paragraph",
                   "text": "A student builds a five-page website for a netball club. Each page has its colours and fonts set inside the HTML, and the club now wants to change its brand colour."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🚀 SPRINT CHALLENGE",
+                  "text": "Describe two hyperlink types for the club website, and how a .css file would have made the colour change easier, before you check my fix."
                 },
                 {
                   "type": "quizQuestion",
@@ -7166,6 +8342,12 @@
               "id": "application-skills-u4-3-navigation-maps",
               "title": "Navigation Maps",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎟️ TICKET",
+                  "text": "A camping app needs its navigation planned before a single screen gets built — hierarchical, linear, or networked structure, and the choice has to match how people actually use a camping app, not just what looks tidy on paper."
+                },
                 {
                   "type": "paragraph",
                   "text": "Create a navigation map"
@@ -7260,9 +8442,21 @@
                   ]
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · RORY QUINN",
+                  "text": "Linear structures suit a fixed sequence a user has to follow — a checkout flow, a tutorial. Hierarchical suits browsing categories, which is exactly what a camping app needs: parks, then sites, then details. Pick the structure the user's actual task demands, not the one that's easiest to diagram."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Every page, every link",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🛑 STANDUP REVIEW · RORY IS CHECKING THE BOARD",
+                  "text": "Identify the structure and justify it against how people actually browse camping sites, not against structure in the abstract. And the navigation map features need to be concrete — what's actually shown on each level — not a vague description."
                 },
                 {
                   "type": "richText",
@@ -7271,6 +8465,12 @@
                 {
                   "type": "paragraph",
                   "text": "A five-page interactive PDF for a local zoo has: Cover, Animals, Opening hours, Map, and Contact. Every page links back to the Cover. Animals links to Map."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🚀 SPRINT CHALLENGE",
+                  "text": "Identify the structure that suits the camping app and describe two features your navigation map would need, before you check my map."
                 },
                 {
                   "type": "quizQuestion",
@@ -7317,6 +8517,12 @@
               "id": "application-skills-u4-4-responsive-design",
               "title": "Responsive Design",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎟️ TICKET",
+                  "text": "A news site looks perfect on a desktop and falls apart on a phone — overlapping text, a menu that eats half the screen. Responsive design — fluid grids, flexible images, breakpoints, the hamburger menu — exists purely to stop exactly this from happening, and it's non-negotiable on any public-facing site in 2026."
+                },
                 {
                   "type": "paragraph",
                   "text": "Concept of responsive design"
@@ -7394,9 +8600,21 @@
                   "html": "<p>For users</p><p>No pinching and zooming</p><p>Buttons easy to tap</p><p>Faster loading on mobile data</p><p>Same content on every device</p><p>For the business</p><p>Most visitors now use phones</p><p>One site to maintain, not two</p><p>Search engines rank mobile-friendly sites higher</p><p>Fewer users leave the site</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · RORY QUINN",
+                  "text": "A breakpoint isn't a fixed rule you memorise once — it's wherever the current layout actually starts to break for a given screen width, and that's different for every design. Test on the real device, don't guess the number from a textbook."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Concept means explain the idea",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🛑 STANDUP REVIEW · RORY IS CHECKING THE BOARD",
+                  "text": "Explain the concept properly — layout adapting to screen size — before diagnosing this specific site's problems. And I want two concrete responsive fixes for this exact news site, not a generic list of responsive techniques."
                 },
                 {
                   "type": "richText",
@@ -7405,6 +8623,12 @@
                 {
                   "type": "paragraph",
                   "text": "A cafe website shows a wide menu table and small buttons. On a phone, customers have to zoom in and scroll sideways."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🚀 SPRINT CHALLENGE",
+                  "text": "Explain responsive design, then describe two fixes for the news site on a small screen, before you check my audit."
                 },
                 {
                   "type": "quizQuestion",
@@ -7451,6 +8675,12 @@
               "id": "application-skills-u4-5-animation-software-features",
               "title": "Animation Software Features",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎟️ TICKET",
+                  "text": "A bouncing ball animation and a logo that needs to move — frames, keyframes, tweening, buttons. Simple-sounding brief, but 'simple' animation is where most students lose marks explaining the mechanics instead of just describing what they saw happen."
+                },
                 {
                   "type": "paragraph",
                   "text": "Features of animation software: frame by frame, tweens, buttons"
@@ -7554,9 +8784,21 @@
                   ]
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · RORY QUINN",
+                  "text": "A tween isn't magic — it's the software calculating every frame between two keyframes you set manually. If you can't explain that a tween needs a start keyframe and an end keyframe to interpolate between, you don't yet understand why it works, you've just used the button."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Compare means both sides on each feature",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🛑 STANDUP REVIEW · RORY IS CHECKING THE BOARD",
+                  "text": "Describe the tween specifically for the logo movement — what moves, between which two states — not just 'a tween was used'. And the button question wants its purpose and its states (up, over, down) both covered, not just 'it's clickable'."
                 },
                 {
                   "type": "richText",
@@ -7565,6 +8807,12 @@
                 {
                   "type": "paragraph",
                   "text": "A student is making an animated title for a school video: the school logo slides in from the left and fades in, then a \"Watch now\" button appears."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🚀 SPRINT CHALLENGE",
+                  "text": "Describe how a tween could create the logo movement, and a button's purpose and states, before you check my breakdown."
                 },
                 {
                   "type": "quizQuestion",
@@ -7618,6 +8866,12 @@
               "id": "project-management-u4-1-plan-of-action",
               "title": "Plan of Action",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎟️ TICKET",
+                  "text": "A band wants a website and handed me a vague list of 'things to do' with no order and no dates — not a plan, just a wish list. A real plan of action needs every task, every milestone, every dependency laid out, or the project drifts the moment anything gets busy."
+                },
                 {
                   "type": "paragraph",
                   "text": "Project management techniques: plan of action"
@@ -7720,9 +8974,21 @@
                   ]
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · RORY QUINN",
+                  "text": "Dependencies are what separate a task list from a plan. If 'build the gallery page' depends on 'collect band photos' finishing first, and you don't mark that dependency, someone will start the gallery with no photos and waste the sprint. Always ask what has to happen before this."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Tasks must be specific",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🛑 STANDUP REVIEW · RORY IS CHECKING THE BOARD",
+                  "text": "I want all four parts in every row — task, time, who's responsible, and dependency — not three out of four. And the three tasks you write need a real time estimate each, not 'soon' or 'later'."
                 },
                 {
                   "type": "richText",
@@ -7731,6 +8997,12 @@
                 {
                   "type": "paragraph",
                   "text": "A student has three weeks to design and print a program for the school musical. The drama teacher must approve the design before printing."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🚀 SPRINT CHALLENGE",
+                  "text": "Identify the four parts of each plan row, then write three ordered tasks with time and dependency, before you check my plan."
                 },
                 {
                   "type": "quizQuestion",
@@ -7777,6 +9049,12 @@
               "id": "project-management-u4-2-time-management-strategies",
               "title": "Time Management Strategies",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎟️ TICKET",
+                  "text": "A project's running late and the team's panicking instead of triaging. Prioritising, milestones, a Gantt chart, buffer time, time blocking — this is the rescue kit, and knowing which tool actually fixes a late project versus which one just looks organised matters right now."
+                },
                 {
                   "type": "paragraph",
                   "text": "Project management techniques: time management strategies"
@@ -7854,9 +9132,21 @@
                   "html": "<p>Time wasters</p><p>Starting with the fun task</p><p>Waiting until the night before</p><p>Phone notifications while working</p><p>Redoing work because the brief was not checked</p><p><strong>Fixes</strong> — Prioritise by dependency and deadline</p><p><strong>Milestones with dates</strong> — Time blocks with notifications off</p><p>Check the brief and get approval early</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · RORY QUINN",
+                  "text": "Buffer time isn't slack for being lazy — it's the only thing standing between 'one task runs long' and 'the whole project misses its deadline'. A plan with zero buffer is a plan that was already late the moment anything went even slightly wrong."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Link the strategy to the project",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🛑 STANDUP REVIEW · RORY IS CHECKING THE BOARD",
+                  "text": "Describe two strategies that would actually rescue this specific late project, not two generic time management tips. And explain why buffer time matters here specifically — what it protects against — not 'it's good practice'."
                 },
                 {
                   "type": "richText",
@@ -7865,6 +9155,12 @@
                 {
                   "type": "paragraph",
                   "text": "Two students are making a five-minute documentary for a local museum in four weeks. They keep running out of class time and have not started editing."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🚀 SPRINT CHALLENGE",
+                  "text": "Describe two time management strategies for the late project, and why buffer time should be included, before you check my rescue plan."
                 },
                 {
                   "type": "quizQuestion",
@@ -7911,6 +9207,12 @@
               "id": "project-management-u4-3-resources",
               "title": "Resources",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎟️ TICKET",
+                  "text": "A school podcast needs resourcing properly before anyone records a word — hardware, software, people, and someone has to actually manage all three or the project stalls waiting on a microphone nobody booked."
+                },
                 {
                   "type": "paragraph",
                   "text": "Project management techniques: resource requirements and managing resources"
@@ -7988,9 +9290,21 @@
                   "html": "<p>Problem</p><p>Booked camera already taken</p><p>Software licence expired</p><p>Interviewee cancels</p><p>Laptop fails, no backup</p><p><strong>Management strategy</strong> — Book early and confirm the day before</p><p>Check licences at the start</p><p>Have a back-up interviewee</p><p>Save to the cloud after every session</p>"
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · RORY QUINN",
+                  "text": "People are the resource everyone forgets to plan for — hardware and software get listed, but who's editing, who's hosting, who's actually available this week rarely gets the same scrutiny, and it's usually the people resource that causes the delay."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Identify, then manage",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🛑 STANDUP REVIEW · RORY IS CHECKING THE BOARD",
+                  "text": "Identify one hardware, one software and one people resource specifically for this podcast, not a generic production checklist. And describe how two of those resources would actually be managed — booked, scheduled, assigned — not just listed."
                 },
                 {
                   "type": "richText",
@@ -7999,6 +9313,12 @@
                 {
                   "type": "paragraph",
                   "text": "A student is creating an interactive PDF guide to local walking trails. She needs photos of each trail, InDesign, and feedback from a park ranger."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🚀 SPRINT CHALLENGE",
+                  "text": "Identify one hardware, one software and one people resource, then describe how two could be managed, before you check my resourcing plan."
                 },
                 {
                   "type": "quizQuestion",
@@ -8045,6 +9365,12 @@
               "id": "project-management-u4-4-evaluation",
               "title": "Evaluation",
               "blocks": [
+                {
+                  "type": "callout",
+                  "variant": "ticket",
+                  "heading": "🎟️ TICKET",
+                  "text": "A community garden newsletter's done and now it needs evaluating properly — product, process, a user survey, client feedback — before anyone can honestly say whether it worked, or just assume it did because it got finished."
+                },
                 {
                   "type": "paragraph",
                   "text": "Project management techniques: evaluation"
@@ -8147,9 +9473,21 @@
                   ]
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · RORY QUINN",
+                  "text": "Product evaluation and process evaluation answer different questions — did the final newsletter actually meet the brief, versus did the way the team worked actually go smoothly. A project can nail one and fail the other, and a good evaluation checks both separately."
+                },
+                {
                   "type": "heading",
                   "text": "Test tip: Evidence, not opinion",
                   "level": 3
+                },
+                {
+                  "type": "callout",
+                  "variant": "pr-review",
+                  "heading": "🛑 STANDUP REVIEW · RORY IS CHECKING THE BOARD",
+                  "text": "Name two real tools for gathering evaluation evidence — a survey, direct feedback — not 'I would ask people how it went'. And the recommendation for next time needs to be specific and actionable, not 'do better next time'."
                 },
                 {
                   "type": "richText",
@@ -8158,6 +9496,12 @@
                 {
                   "type": "paragraph",
                   "text": "A student built an interactive PDF menu for a restaurant. The plan of action allowed one week for photos, but it took two weeks."
+                },
+                {
+                  "type": "callout",
+                  "variant": "sandbox",
+                  "heading": "🚀 SPRINT CHALLENGE",
+                  "text": "Describe two tools for gathering evaluation evidence, then recommend one change to the plan of action for next time, before you check my review."
                 },
                 {
                   "type": "quizQuestion",
