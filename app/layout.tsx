@@ -38,12 +38,12 @@ export default async function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <header className="bg-background">
-          <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-5">
-            <Logo />
-            <nav className="flex items-center gap-5 text-[0.8rem] tracking-wide text-muted-foreground">
+          <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-4 sm:px-6 sm:py-5">
+            <Logo className="shrink-0" />
+            <nav className="flex shrink-0 items-center gap-2 text-xs tracking-wide text-muted-foreground sm:gap-5 sm:text-[0.8rem]">
               {session ? (
                 <>
-                  <span>
+                  <span className="hidden sm:inline">
                     {session.role === "teacher"
                       ? "Teacher"
                       : session.displayName ?? session.username}

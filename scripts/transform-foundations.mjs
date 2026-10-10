@@ -40,13 +40,6 @@ function extractCourseData() {
 
 const data = extractCourseData();
 
-function slugify(s) {
-  return s
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/(^-|-$)/g, "");
-}
-
 function mapCheckQuestion(q) {
   return {
     type: "quizQuestion",
@@ -100,10 +93,18 @@ function mapTryIt(t) {
         categories: t.categories.map((c) => ({ label: c.label, items: c.accepts })),
       };
     case "hotspot":
+      if (!t.svgContent || !t.hotspots?.length) {
+        return {
+          type: "activity",
+          title: t.question,
+          instruction: "This hotspot activity has no saved diagram or targets yet.",
+        };
+      }
       return {
         type: "activity",
         title: t.question,
-        instruction: "Interactive hotspot activity (see archived Foundations app for the original visual version).",
+        svgContent: t.svgContent,
+        hotspots: t.hotspots.map(({ id, label, x, y }) => ({ id, label, x, y })),
       };
     default:
       return { type: "activity", title: t.question };

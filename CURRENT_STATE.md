@@ -10,12 +10,14 @@ Read this first — before `STATUS.md`. This file is the live handover: what's t
 - All 10 courses exist; 6 are `active` with real content (Y11+Y12 × Foundations/General/ATAR), Y7–10 (4 courses) are still `placeholder`
 
 **Right now:**
-- All pre-student infrastructure done: keep-alive cron, adaptive live-session polling, teacher CSV export, custom domain.
+- Production infrastructure changes are in place: keep-alive cron, adaptive live-session polling, teacher CSV export, and custom domain. Preview Redis separation, a school-device check, and the school data-policy review remain before student use.
 - Y12 ATAR and Y12 General content shipped (practice exam + glossary for ATAR; mentor voice + 19 hands-on tasks for General).
-- Nothing shipped this session has been **visually checked in a browser** — every content/infra change was verified by `npm run build` + `npm test` + `npm run lint` + structural validation only.
+- Two migrated Y11 Foundations hotspot activities now retain their original diagrams and targets, with numbered touch- and keyboard-accessible controls. The shared header also has improved spacing at mobile widths.
+- Verification: `npm test` (76 passed), `npm run build` (passed), and `npm run lint` (0 errors, 4 warnings). Chrome review checked both hotspot activities and the shared header on desktop and at 390px mobile width.
+- Y12 course pages and the infrastructure screens still need their own browser pass.
 
 **Next step:**
-1. Browser pass on everything shipped recently — Y12 ATAR, Y12 General, the infra changes (export buttons, live polling, keep-alive route).
+1. Browser pass on the remaining recent releases — Y12 ATAR, Y12 General, and the infrastructure changes (export buttons, live polling, keep-alive route). Y11 Foundations hotspots and the shared mobile header were checked 2026-10-10.
 2. Y12 Foundations videos — a researched shortlist is waiting on Clayton's confirmation; see `STATUS.md` → "Open item — Year 12 Foundations videos".
 3. After that: visual/brand polish for Y7/8, Y9/10 (still generic `CourseOverview`); see `STATUS.md` → "Next steps (priority order, per Clayton)".
 

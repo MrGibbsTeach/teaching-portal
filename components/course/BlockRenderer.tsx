@@ -2,6 +2,7 @@ import type { Block, QuizQuestion } from "@/lib/content/types";
 import { CodeExercise } from "@/components/course/shared/CodeExercise";
 import { DiagramRunner } from "@/components/course/shared/DiagramRunner";
 import { CheckpointVideoPlayer } from "@/components/course/shared/CheckpointVideoPlayer";
+import { HotspotActivity } from "@/components/course/shared/HotspotActivity";
 
 function QuizQuestionView({ question }: { question: QuizQuestion }) {
   return (
@@ -358,6 +359,19 @@ export function BlockRenderer({ block }: { block: Block }) {
     case "quizQuestion":
       return <QuizQuestionView question={block.question} />;
     case "activity":
+      if (block.hotspots && block.svgContent) {
+        return (
+          <div className="mt-4 border-l-2 border-foreground/25 py-0.5 pl-4">
+            {block.title && <p className="font-semibold">{block.title}</p>}
+            {block.instruction && (
+              <p className="mt-1 text-sm text-foreground/90">{block.instruction}</p>
+            )}
+            <div className="mt-3">
+              <HotspotActivity svgContent={block.svgContent} hotspots={block.hotspots} />
+            </div>
+          </div>
+        );
+      }
       return (
         <div className="mt-4 border-l-2 border-foreground/25 py-0.5 pl-4">
           {block.title && <p className="font-semibold">{block.title}</p>}

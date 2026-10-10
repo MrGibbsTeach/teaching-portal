@@ -117,6 +117,8 @@ export type Block =
       pairs?: { term: string; definition: string }[];
       orderedItems?: string[];
       categories?: { label: string; items: string[] }[];
+      svgContent?: string;
+      hotspots?: { id: string; label: string; x: number; y: number }[];
       answer?: string;
       explanation?: string;
     };
