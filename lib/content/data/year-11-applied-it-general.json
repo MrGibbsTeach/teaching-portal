@@ -93,6 +93,53 @@
          ]
         },
         {
+         "type": "interactiveDiagram",
+         "title": "Match the element to its tool",
+         "instruction": "Tap an element of design on the left, then tap the designer's tool that uses it.",
+         "kind": "connect",
+         "config": {
+          "left": [
+           "Line",
+           "Shape",
+           "Space",
+           "Colour",
+           "Tone"
+          ],
+          "right": [
+           "Borders, dividers, arrows, underlines",
+           "Cards, buttons, icons, illustrations",
+           "Padding, margins, negative space",
+           "Palettes, gradients, accessibility",
+           "Light/dark modes, greyscale test"
+          ]
+         },
+         "goalState": {
+          "links": [
+           [
+            "Line",
+            "Borders, dividers, arrows, underlines"
+           ],
+           [
+            "Shape",
+            "Cards, buttons, icons, illustrations"
+           ],
+           [
+            "Space",
+            "Padding, margins, negative space"
+           ],
+           [
+            "Colour",
+            "Palettes, gradients, accessibility"
+           ],
+           [
+            "Tone",
+            "Light/dark modes, greyscale test"
+           ]
+          ]
+         },
+         "explanation": "Each element of design has its own job — and its own toolkit a designer reaches for."
+        },
+        {
          "type": "quizQuestion",
          "question": {
           "questionType": "mcq",
@@ -5818,6 +5865,53 @@
          "level": 2
         },
         {
+         "type": "interactiveDiagram",
+         "title": "Match the format to its extension",
+         "instruction": "Tap a file format on the left, then tap its file extension.",
+         "kind": "connect",
+         "config": {
+          "left": [
+           "CSV (Comma-Separated Values)",
+           "JSON (JavaScript Object Notation)",
+           "PDF (Portable Document Format)",
+           "DOCX (Word Document)",
+           "TXT (Plain Text)"
+          ],
+          "right": [
+           ".csv",
+           ".json",
+           ".pdf",
+           ".docx",
+           ".txt"
+          ]
+         },
+         "goalState": {
+          "links": [
+           [
+            "CSV (Comma-Separated Values)",
+            ".csv"
+           ],
+           [
+            "JSON (JavaScript Object Notation)",
+            ".json"
+           ],
+           [
+            "PDF (Portable Document Format)",
+            ".pdf"
+           ],
+           [
+            "DOCX (Word Document)",
+            ".docx"
+           ],
+           [
+            "TXT (Plain Text)",
+            ".txt"
+           ]
+          ]
+         },
+         "explanation": "Recognising the extension tells you what the file is for before you even open it."
+        },
+        {
          "type": "quizQuestion",
          "question": {
           "id": "sv-cff-q1",
@@ -6033,6 +6127,21 @@
          "text": "A junior analyst left the project before completing a client handover. Their desktop contains these files:\n\n- report final.docx\n- report_FINAL2.docx  \n- Report Final v3 REAL.docx\n- client data.csv\n- logo.png\n- logo_small.png\n- new logo.png\n- delivery stats June.xlsx\n- BACKUP delivery stats June.xlsx\n\nYour tasks:\n1. Rename every file using the SW Logistical Analytics naming convention (invent a client code: SWL-Alpha). Use today's date (20250701) and assign appropriate version numbers.\n2. Design the folder structure (01–06) and state which folder each file belongs in.\n3. Identify which naming convention rules the original files violated (list at least four violations).\n4. Write a one-paragraph explanation of why the original file naming caused a risk to the client handover."
         },
         {
+         "type": "task",
+         "title": "Build a Real Client Folder Structure",
+         "software": "File Explorer or Finder (or your school's cloud drive)",
+         "intro": "Use the SW Logistical Analytics naming convention and folder structure from this lesson to build an actual, navigable folder tree — not a diagram of one.",
+         "steps": [
+          "In your course folder, create a top-level folder named for a client you invent, e.g. SWL-Alpha.",
+          "Inside it, create the six numbered subfolders from this lesson: 01_Briefs, 02_Working, 03_Review, 04_Approved, 05_Assets, 06_Delivery.",
+          "Create at least 6 dummy files (empty text files are fine) and name every one using the lesson's convention — Client/Project code, document type, version number, date (YYYYMMDD), and status — e.g. SWL-Alpha_DeliveryReport_v1.0_20260718_draft.docx.",
+          "Place each file in the folder it actually belongs in, not just 02_Working for everything.",
+          "Take one file through two versions: save v1.0 in 02_Working, then save an edited v1.1 alongside it — never overwrite the original.",
+          "Take a screenshot of the full expanded folder tree with file names visible.",
+          "Write two sentences explaining which two naming-convention rules the badly-named files in this lesson's sandbox challenge broke, using your own folder as the correct example."
+         ]
+        },
+        {
          "type": "callout",
          "variant": "pr-review",
          "heading": "🛑 PR REVIEW · SLOANE IS AUDITING YOUR WORK",
@@ -6234,6 +6343,21 @@
          "variant": "sandbox",
          "heading": "💻 SANDBOX CHALLENGE · VERSION CONTROL SIMULATION",
          "text": "You are working on SWL-CoastalFreight_DataSchema_v1.0_20250620.csv — a live file integrated into the client's warehouse system.\n\nThe client emails at 9am to say they need three changes:\n- Add a new column called 'TrackingID' (between columns B and C)\n- Rename 'Destination' to 'DestinationPort'\n- Remove the 'LegacyCode' column — it's no longer used\n\nYour tasks:\n1. Describe step-by-step how you would implement these changes using proper version control — what do you do before opening the file, what version number do you assign, and what do you do after making the changes?\n2. Write the filename for the new version.\n3. Write a short changelog entry (3–4 sentences) that documents what changed between v1.0 and the new version.\n4. Explain why Sparky Miller needs to be notified before the new version goes live."
+        },
+        {
+         "type": "task",
+         "title": "Version a Real Data File",
+         "software": "A spreadsheet or text editor and File Explorer/Finder",
+         "intro": "Create a real CSV, then version it properly through a change — the same major.minor discipline SW Logistical Analytics uses on live client data.",
+         "steps": [
+          "Create a simple CSV with at least 4 columns and 5 rows of sample data (any topic — e.g. a class roster or a product list).",
+          "Save it using this lesson's convention: SWL-Alpha_DataSchema_v1.0_<today's date as YYYYMMDD>.csv.",
+          "Make a minor change — add one new column of data to every row — and save it as a new file with the version bumped to v1.1, leaving v1.0 untouched.",
+          "Make a major change to your v1.1 file — remove a column and restructure the column order — and save that as v2.0, again leaving the earlier versions untouched.",
+          "Create a changelog.txt in the same folder listing all three versions, what changed in each, and the date.",
+          "Confirm all three CSVs still exist side by side and open correctly.",
+          "Write one sentence explaining why v1.0 was never edited in place, using this lesson's rule about shared or integrated files."
+         ]
         },
         {
          "type": "callout",
@@ -7957,6 +8081,47 @@
          "level": 2
         },
         {
+         "type": "interactiveDiagram",
+         "title": "Match the crime to how it works",
+         "instruction": "Tap a type of computer crime on the left, then tap how it actually works.",
+         "kind": "connect",
+         "config": {
+          "left": [
+           "Hacking / Unauthorised Access",
+           "Phishing",
+           "Ransomware",
+           "Identity Theft"
+          ],
+          "right": [
+           "Exploiting software flaws or stolen passwords to enter systems without permission",
+           "Fake emails or websites that mimic banks, myGov, or ATO to steal credentials",
+           "Malware encrypts all files; attacker demands crypto payment for the key",
+           "Using stolen personal data to open accounts, obtain loans, or file false tax returns"
+          ]
+         },
+         "goalState": {
+          "links": [
+           [
+            "Hacking / Unauthorised Access",
+            "Exploiting software flaws or stolen passwords to enter systems without permission"
+           ],
+           [
+            "Phishing",
+            "Fake emails or websites that mimic banks, myGov, or ATO to steal credentials"
+           ],
+           [
+            "Ransomware",
+            "Malware encrypts all files; attacker demands crypto payment for the key"
+           ],
+           [
+            "Identity Theft",
+            "Using stolen personal data to open accounts, obtain loans, or file false tax returns"
+           ]
+          ]
+         },
+         "explanation": "Different cybercrimes exploit different weaknesses — technical flaws, human trust, or stolen data."
+        },
+        {
          "type": "quizQuestion",
          "question": {
           "questionType": "mcq",
@@ -9621,6 +9786,47 @@
          "text": "For each scenario, write: (1) the troubleshooting step you take first, (2) what information you gather to isolate the cause, (3) the most likely fix:\n\nScenario A: A student's Google Slides presentation was working yesterday. Today, every image shows a broken link icon.\n\nScenario B: A teacher clicks 'Print' but the printer is not listed in the print dialog, even though it was working last week.\n\nScenario C: A Google Form the class has been using starts returning a 'This form is no longer accepting responses' error message mid-session.\n\nDocument each as: Problem → Likely Cause → First Fix → How to verify it worked."
         },
         {
+         "type": "interactiveDiagram",
+         "title": "Match the problem to the first fix",
+         "instruction": "Tap a problem on the left, then tap the first thing you should try.",
+         "kind": "connect",
+         "config": {
+          "left": [
+           "Application crashes on open",
+           "Computer running very slowly",
+           "Browser not loading websites",
+           "File will not open / shows wrong icon"
+          ],
+          "right": [
+           "Open a different file; run as administrator; check for pending updates",
+           "Task Manager → sort by CPU/RAM → close non-essential processes; check storage",
+           "Clear browser cache; try incognito mode; disable extensions; try a different browser",
+           "Check the file extension; try opening with a different application; verify the file is not corrupt"
+          ]
+         },
+         "goalState": {
+          "links": [
+           [
+            "Application crashes on open",
+            "Open a different file; run as administrator; check for pending updates"
+           ],
+           [
+            "Computer running very slowly",
+            "Task Manager → sort by CPU/RAM → close non-essential processes; check storage"
+           ],
+           [
+            "Browser not loading websites",
+            "Clear browser cache; try incognito mode; disable extensions; try a different browser"
+           ],
+           [
+            "File will not open / shows wrong icon",
+            "Check the file extension; try opening with a different application; verify the file is not corrupt"
+           ]
+          ]
+         },
+         "explanation": "The first fix to try depends on the symptom — that's why IDENTIFY comes before you touch anything."
+        },
+        {
          "type": "quizQuestion",
          "question": {
           "questionType": "mcq",
@@ -10058,6 +10264,59 @@
          "variant": "pr-review",
          "heading": "🛑 PR REVIEW · RORY IS IN THE REVIEW",
          "text": "1. A team skips the Define phase and goes straight from Discover to Design. Three weeks later, the client says the product does not match what they asked for. What specifically went wrong, and which deliverable from the Define phase would have prevented this?\n2. After delivering the product, the client reports that one core feature is difficult to use. Under the design process, which phase deals with this, and what should the team produce in response?\n3. What is the difference between a prototype and the final delivered product? Give a specific example of each for the community quiz project."
+        },
+        {
+         "type": "interactiveDiagram",
+         "title": "Match the phase to what happens",
+         "instruction": "Tap a phase of the design process on the left, then tap what happens during it.",
+         "kind": "connect",
+         "config": {
+          "left": [
+           "Discover",
+           "Define",
+           "Design",
+           "Develop",
+           "Deliver",
+           "Evaluate"
+          ],
+          "right": [
+           "Research the problem — interview users, review existing solutions, identify pain points",
+           "Agree on exactly what you are solving and for whom. Write the project brief.",
+           "Wireframe screens, choose tools, agree on visual direction",
+           "Build the product — code, configure, populate with content",
+           "Test with real users, fix bugs, hand over to client",
+           "Review: did it meet the brief? What would you do differently?"
+          ]
+         },
+         "goalState": {
+          "links": [
+           [
+            "Discover",
+            "Research the problem — interview users, review existing solutions, identify pain points"
+           ],
+           [
+            "Define",
+            "Agree on exactly what you are solving and for whom. Write the project brief."
+           ],
+           [
+            "Design",
+            "Wireframe screens, choose tools, agree on visual direction"
+           ],
+           [
+            "Develop",
+            "Build the product — code, configure, populate with content"
+           ],
+           [
+            "Deliver",
+            "Test with real users, fix bugs, hand over to client"
+           ],
+           [
+            "Evaluate",
+            "Review: did it meet the brief? What would you do differently?"
+           ]
+          ]
+         },
+         "explanation": "Every professional team runs some version of this six-phase cycle, whatever they call it."
         },
         {
          "type": "quizQuestion",
