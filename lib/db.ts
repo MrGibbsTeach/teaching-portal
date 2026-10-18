@@ -7,7 +7,32 @@ import type { FeedbackItem } from "./logic/insights";
 import { LEGACY_FOUNDATIONS_SLUG, legacyFoundationsTarget } from "./logic/foundations-migration";
 
 const KV_KEY = "mg_classes";
-const _mem: ClassConfig[] = [];
+
+// Next's App Router gives Server Actions, Route Handlers, and Server Components
+// separate module-evaluation layers in dev, so a plain module-level `const` is
+// NOT a reliable singleton across them (e.g. a class saved via a Server Action
+// could be invisible to a Route Handler reading the "same" array). `globalThis`
+// is the one thing actually shared across layers within a single Node process,
+// so every in-memory (no-Redis-configured) fallback below is anchored there.
+declare global {
+  var __mgDevStore:
+    | {
+        classes: ClassConfig[];
+        live: Map<string, LiveState>;
+        liveResp: Map<string, Record<string, LiveAnswer>>;
+        quizStats: Map<string, Record<string, number>>;
+        feedback: Map<string, FeedbackItem>;
+      }
+    | undefined;
+}
+
+const _mem = (globalThis.__mgDevStore ??= {
+  classes: [],
+  live: new Map(),
+  liveResp: new Map(),
+  quizStats: new Map(),
+  feedback: new Map(),
+});
 
 let _redis: Redis | null = null;
 
@@ -21,7 +46,7 @@ function getRedis(): Redis | null {
 
 export async function getClasses(): Promise<ClassConfig[]> {
   const redis = getRedis();
-  if (!redis) return [..._mem];
+  if (!redis) return [..._mem.classes];
   try {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const raw = (await redis.get<any[]>(KV_KEY)) ?? [];
@@ -54,7 +79,7 @@ export async function saveClass(cls: ClassConfig): Promise<void> {
 
   const redis = getRedis();
   if (!redis) {
-    _mem.splice(0, _mem.length, ...all);
+    _mem.classes.splice(0, _mem.classes.length, ...all);
     return;
   }
   try {
@@ -68,7 +93,7 @@ export async function deleteClass(id: string): Promise<void> {
   const all = (await getClasses()).filter((c) => c.id !== id);
   const redis = getRedis();
   if (!redis) {
-    _mem.splice(0, _mem.length, ...all);
+    _mem.classes.splice(0, _mem.classes.length, ...all);
     return;
   }
   try {
@@ -179,12 +204,10 @@ const liveKey = (classId: string) => `mg_live:${classId}`;
 // Keyed by session (its start time), so restarting a lesson never shows a previous session's answers.
 const liveRespKey = (classId: string, sessionId: string, slide: number) =>
   `mg_live_resp:${classId}:${sessionId}:${slide}`;
-const _memLive = new Map<string, LiveState>();
-const _memLiveResp = new Map<string, Record<string, LiveAnswer>>();
 
 export async function getLiveState(classId: string): Promise<LiveState | null> {
   const redis = getRedis();
-  if (!redis) return _memLive.get(classId) ?? null;
+  if (!redis) return _mem.live.get(classId) ?? null;
   try {
     return (await redis.get<LiveState>(liveKey(classId))) ?? null;
   } catch (e) {
@@ -196,7 +219,7 @@ export async function getLiveState(classId: string): Promise<LiveState | null> {
 export async function setLiveState(classId: string, state: LiveState): Promise<void> {
   const redis = getRedis();
   if (!redis) {
-    _memLive.set(classId, state);
+    _mem.live.set(classId, state);
     return;
   }
   try {
@@ -209,7 +232,7 @@ export async function setLiveState(classId: string, state: LiveState): Promise<v
 export async function clearLiveState(classId: string): Promise<void> {
   const redis = getRedis();
   if (!redis) {
-    _memLive.delete(classId);
+    _mem.live.delete(classId);
     return;
   }
   try {
@@ -229,7 +252,7 @@ export async function submitLiveResponse(
   const redis = getRedis();
   const key = liveRespKey(classId, sessionId, slide);
   if (!redis) {
-    _memLiveResp.set(key, { ...(_memLiveResp.get(key) ?? {}), [username]: answer });
+    _mem.liveResp.set(key, { ...(_mem.liveResp.get(key) ?? {}), [username]: answer });
     return;
   }
   try {
@@ -247,7 +270,7 @@ export async function getLiveResponses(
 ): Promise<Record<string, LiveAnswer>> {
   const redis = getRedis();
   const key = liveRespKey(classId, sessionId, slide);
-  if (!redis) return { ..._memLiveResp.get(key) };
+  if (!redis) return { ..._mem.liveResp.get(key) };
   try {
     const raw = (await redis.hgetall<Record<string, unknown>>(key)) ?? {};
     const out: Record<string, LiveAnswer> = {};
@@ -266,14 +289,13 @@ export async function getLiveResponses(
 // One hash per class; each answer bumps counters (see lib/logic/insights.ts for the field names).
 
 const quizStatsKey = (classId: string) => `mg_qstats:${classId}`;
-const _memQuizStats = new Map<string, Record<string, number>>();
 
 export async function recordQuizStats(classId: string, fields: string[]): Promise<void> {
   const redis = getRedis();
   if (!redis) {
-    const h = _memQuizStats.get(classId) ?? {};
+    const h = _mem.quizStats.get(classId) ?? {};
     for (const f of fields) h[f] = (h[f] ?? 0) + 1;
-    _memQuizStats.set(classId, h);
+    _mem.quizStats.set(classId, h);
     return;
   }
   try {
@@ -286,7 +308,7 @@ export async function recordQuizStats(classId: string, fields: string[]): Promis
 
 export async function getQuizStats(classId: string): Promise<Record<string, number>> {
   const redis = getRedis();
-  if (!redis) return { ...(_memQuizStats.get(classId) ?? {}) };
+  if (!redis) return { ...(_mem.quizStats.get(classId) ?? {}) };
   try {
     return (await redis.hgetall<Record<string, number>>(quizStatsKey(classId))) ?? {};
   } catch (e) {
@@ -299,12 +321,11 @@ export async function getQuizStats(classId: string): Promise<Record<string, numb
 // A single hash of id -> note, so individual notes can be resolved (deleted).
 
 const FEEDBACK_KEY = "mg_feedback";
-const _memFeedback = new Map<string, FeedbackItem>();
 
 export async function saveFeedback(item: FeedbackItem): Promise<void> {
   const redis = getRedis();
   if (!redis) {
-    _memFeedback.set(item.id, item);
+    _mem.feedback.set(item.id, item);
     return;
   }
   try {
@@ -318,7 +339,7 @@ export async function getFeedback(): Promise<FeedbackItem[]> {
   const redis = getRedis();
   let items: FeedbackItem[];
   if (!redis) {
-    items = [..._memFeedback.values()];
+    items = [..._mem.feedback.values()];
   } else {
     try {
       const raw = (await redis.hgetall<Record<string, unknown>>(FEEDBACK_KEY)) ?? {};
@@ -335,7 +356,7 @@ export async function getFeedback(): Promise<FeedbackItem[]> {
 export async function deleteFeedback(id: string): Promise<void> {
   const redis = getRedis();
   if (!redis) {
-    _memFeedback.delete(id);
+    _mem.feedback.delete(id);
     return;
   }
   try {
