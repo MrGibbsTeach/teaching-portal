@@ -10,7 +10,7 @@ Read this first — before `STATUS.md`. This file is the live handover: what's t
 - All 10 courses exist; 6 are `active` with real content (Y11+Y12 × Foundations/General/ATAR), Y7–10 (4 courses) are still `placeholder`
 
 **Right now:**
-- 3D animations added to 12 Y11/Y12 lessons on branch `add-3d-animations` (new `animation3d` block; see `STATUS.md` → "3D animations in lessons"). Waiting on Clayton to review the Vercel preview before merging to `main`.
+- 3D animations live in 12 Y11/Y12 lessons (new `animation3d` block; see `STATUS.md` → "3D animations in lessons"). Clayton reviewed the preview and approved; merged to `main` 2026-10-19.
 - Production infrastructure changes are in place: keep-alive cron, adaptive live-session polling, teacher CSV export, and custom domain. Preview Redis separation, a school-device check, and the school data-policy review remain before student use.
 - Y12 ATAR and Y12 General content shipped (practice exam + glossary for ATAR; mentor voice + 19 hands-on tasks for General).
 - Two migrated Y11 Foundations hotspot activities now retain their original diagrams and targets, with numbered touch- and keyboard-accessible controls. The shared header also has improved spacing at mobile widths.
@@ -18,7 +18,6 @@ Read this first — before `STATUS.md`. This file is the live handover: what's t
 - Y12 course pages and the infrastructure screens still need their own browser pass.
 
 **Next step:**
-0. Clayton reviews the 3D animation preview (branch `add-3d-animations`), then merge to `main`.
 1. Browser pass on the remaining recent releases — Y12 ATAR, Y12 General, and the infrastructure changes (export buttons, live polling, keep-alive route). Y11 Foundations hotspots and the shared mobile header were checked 2026-10-10.
 2. Y12 Foundations videos — a researched shortlist is waiting on Clayton's confirmation; see `STATUS.md` → "Open item — Year 12 Foundations videos".
 3. After that: visual/brand polish for Y7/8, Y9/10 (still generic `CourseOverview`); see `STATUS.md` → "Next steps (priority order, per Clayton)".
