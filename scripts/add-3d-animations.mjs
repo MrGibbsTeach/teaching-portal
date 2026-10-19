@@ -12,6 +12,7 @@ const DATA = path.join(process.cwd(), "lib/content/data");
 const PC = "/animations/inside-the-computer.html";
 const NET = "/animations/packet-journey.html";
 const BIN = "/animations/binary-lights.html";
+const FDE = "/animations/fetch-decode-execute.html";
 
 /* ---------------- Question sets ---------------- */
 
@@ -71,12 +72,30 @@ const binFileLink = {
   answer: "12 million pixels × 3 bytes = 36 million bytes, about 36 MB. That is why formats like JPEG and PNG compress images.",
 };
 
+const fdeCore = [
+  { stage: "Fetch", question: "Which register holds the address of the next instruction?", answer: "The Program Counter (PC). After each fetch it goes up by 1, so it points to the next instruction." },
+  { stage: "Decode", question: "Which part of the CPU works out what an instruction means?", answer: "The Control Unit." },
+  { stage: "Execute", question: "Where did the value 7 come from, and where did it end up?", answer: "It came from RAM at address 4 and ended up in the accumulator (ACC)." },
+  { stage: "Repeat", question: "Which part of the CPU did the maths for ADD 5?", answer: "The ALU (Arithmetic Logic Unit). It added 7 + 5 to get 12." },
+  { stage: "Store", question: "A CPU is rated at 3.5 GHz. What does that tell you?", answer: "Its clock ticks 3.5 billion times a second. Each tick moves the fetch-decode-execute cycle on, so a higher clock speed processes instructions faster." },
+];
+
+const fdeAtar = [
+  { stage: "Fetch", question: "Name the three buses used during the fetch and what each one carries.", answer: "The address bus carries the address from the MAR to RAM. The control bus carries the READ signal. The data bus carries the instruction back from RAM to the MDR." },
+  { stage: "Decode", question: "Why is the instruction copied from the MDR into the CIR before it is decoded?", answer: "The CIR holds the current instruction while the Control Unit decodes and runs it. That frees the MDR to carry the next piece of data, such as the value from address 4." },
+  { stage: "Execute", question: "Trace the value 7 from RAM into the accumulator, naming each register it passes through.", answer: "The address 4 goes into the MAR and out on the address bus. RAM sends 7 back on the data bus into the MDR, and the MDR copies it into the ACC." },
+  { stage: "Repeat", question: "What do the Control Unit and the ALU each do during ADD 5?", answer: "The Control Unit decodes ADD 5 and directs the data between registers. The ALU performs 7 + 5, and the result, 12, goes back into the accumulator." },
+  { stage: "Store", question: "During STORE 6 the address bus and data bus are used together. What does each carry, and which way does the data move?", answer: "The address bus carries 6 from the MAR to RAM. The data bus carries 12 from the MDR to RAM. The control bus sends WRITE, so this time data moves from the CPU into memory." },
+  { stage: "Exam link", question: "Explain how a quad-core CPU can process more instructions than a single-core CPU at the same clock speed.", answer: "Each core has its own control unit, ALU and registers and runs its own fetch-decode-execute cycle, so four instruction streams can run at once. This only helps when the software is multi-threaded and can share its work across cores." },
+];
+
 /* ---------------- Placements ---------------- */
 
 const block = (src, title, caption, pauseQuestions) => ({ type: "animation3d", src, title, caption, pauseQuestions });
 const PC_T = "Inside the Computer";
 const NET_T = "Packet Journey";
 const BIN_T = "Binary Lights";
+const FDE_T = "Fetch, Decode, Execute";
 const heading = (text) => (b) => b.type === "heading" && b.text === text;
 const headingStarts = (text) => (b) => b.type === "heading" && b.text.startsWith(text);
 const titled = (type, title) => (b) => b.type === type && b.title === title;
@@ -115,6 +134,16 @@ const PLACEMENTS = [
     block: block(PC, PC_T, "Watch each component do its job. Exam answers need to link a component's specification to what the user experiences.", pcAtar) },
   { file: "year-12-applied-it-atar.json", lesson: "networks-7-2-tcp-ip", before: heading("Roles of TCP and IP"),
     block: block(NET, NET_T, "This is TCP/IP working end to end. IP gets each packet to the right address. TCP numbers the packets, puts them back in order and confirms they arrived.", netAtar) },
+
+  // Fetch, Decode, Execute (added 2026-10-19)
+  { file: "year-11-applied-it-atar.json", lesson: "hardware-1-computer-systems-the-cpu", before: titled("video", "How a CPU Works"),
+    block: block(FDE, FDE_T, "Watch the Control Unit, ALU and registers run a three-line program. Use the stage buttons to step through each part of the cycle.", fdeAtar) },
+  { file: "year-11-applied-it-general.json", lesson: "cpu-and-memory", before: (b) => b.type === "table",
+    block: block(FDE, FDE_T, "This is the fetch-decode-execute cycle the paragraph above describes, slowed right down so you can follow each step.", fdeCore) },
+  { file: "year-12-applied-it-general.json", lesson: "hardware-1-cpu-and-memory", before: (b) => b.type === "callout" && b.text.startsWith("I grade the CPU question"),
+    block: block(FDE, FDE_T, "The CPU's job is to fetch, decode and execute instructions. Watch it happen before you answer the CPU question below.", fdeCore) },
+  { file: "year-12-applied-it-atar.json", lesson: "hardware-2-1-components-of-a-computer", before: (b) => b.type === "callout" && b.text.startsWith("Marks come from linking"),
+    block: block(FDE, FDE_T, "Inside the CPU: how the Control Unit, ALU, registers and buses work together on every instruction.", fdeAtar) },
 ];
 
 /* ---------------- Apply ---------------- */

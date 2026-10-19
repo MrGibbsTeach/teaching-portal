@@ -924,6 +924,39 @@
          "text": "The CPU (Central Processing Unit) executes every instruction your software sends. It runs the fetch-decode-execute cycle billions of times per second. Modern CPUs from Intel (Core i5/i7/i9) and AMD (Ryzen 5/7/9) contain multiple cores, allowing true parallel processing."
         },
         {
+         "type": "animation3d",
+         "src": "/animations/fetch-decode-execute.html",
+         "title": "Fetch, Decode, Execute",
+         "caption": "This is the fetch-decode-execute cycle the paragraph above describes, slowed right down so you can follow each step.",
+         "pauseQuestions": [
+          {
+           "stage": "Fetch",
+           "question": "Which register holds the address of the next instruction?",
+           "answer": "The Program Counter (PC). After each fetch it goes up by 1, so it points to the next instruction."
+          },
+          {
+           "stage": "Decode",
+           "question": "Which part of the CPU works out what an instruction means?",
+           "answer": "The Control Unit."
+          },
+          {
+           "stage": "Execute",
+           "question": "Where did the value 7 come from, and where did it end up?",
+           "answer": "It came from RAM at address 4 and ended up in the accumulator (ACC)."
+          },
+          {
+           "stage": "Repeat",
+           "question": "Which part of the CPU did the maths for ADD 5?",
+           "answer": "The ALU (Arithmetic Logic Unit). It added 7 + 5 to get 12."
+          },
+          {
+           "stage": "Store",
+           "question": "A CPU is rated at 3.5 GHz. What does that tell you?",
+           "answer": "Its clock ticks 3.5 billion times a second. Each tick moves the fetch-decode-execute cycle on, so a higher clock speed processes instructions faster."
+          }
+         ]
+        },
+        {
          "type": "table",
          "headers": [
           "CPU Spec",

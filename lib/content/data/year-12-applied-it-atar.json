@@ -738,6 +738,44 @@
                   ]
                 },
                 {
+                  "type": "animation3d",
+                  "src": "/animations/fetch-decode-execute.html",
+                  "title": "Fetch, Decode, Execute",
+                  "caption": "Inside the CPU: how the Control Unit, ALU, registers and buses work together on every instruction.",
+                  "pauseQuestions": [
+                    {
+                      "stage": "Fetch",
+                      "question": "Name the three buses used during the fetch and what each one carries.",
+                      "answer": "The address bus carries the address from the MAR to RAM. The control bus carries the READ signal. The data bus carries the instruction back from RAM to the MDR."
+                    },
+                    {
+                      "stage": "Decode",
+                      "question": "Why is the instruction copied from the MDR into the CIR before it is decoded?",
+                      "answer": "The CIR holds the current instruction while the Control Unit decodes and runs it. That frees the MDR to carry the next piece of data, such as the value from address 4."
+                    },
+                    {
+                      "stage": "Execute",
+                      "question": "Trace the value 7 from RAM into the accumulator, naming each register it passes through.",
+                      "answer": "The address 4 goes into the MAR and out on the address bus. RAM sends 7 back on the data bus into the MDR, and the MDR copies it into the ACC."
+                    },
+                    {
+                      "stage": "Repeat",
+                      "question": "What do the Control Unit and the ALU each do during ADD 5?",
+                      "answer": "The Control Unit decodes ADD 5 and directs the data between registers. The ALU performs 7 + 5, and the result, 12, goes back into the accumulator."
+                    },
+                    {
+                      "stage": "Store",
+                      "question": "During STORE 6 the address bus and data bus are used together. What does each carry, and which way does the data move?",
+                      "answer": "The address bus carries 6 from the MAR to RAM. The data bus carries 12 from the MDR to RAM. The control bus sends WRITE, so this time data moves from the CPU into memory."
+                    },
+                    {
+                      "stage": "Exam link",
+                      "question": "Explain how a quad-core CPU can process more instructions than a single-core CPU at the same clock speed.",
+                      "answer": "Each core has its own control unit, ALU and registers and runs its own fetch-decode-execute cycle, so four instruction streams can run at once. This only helps when the software is multi-threaded and can share its work across cores."
+                    }
+                  ]
+                },
+                {
                   "type": "callout",
                   "heading": "Exam tip",
                   "text": "Marks come from linking the specification to usability for the user in the scenario.\nWeak: \"16 GB of RAM is good.\"\nStrong: \"16 GB of RAM lets the designer keep Photoshop and Illustrator open with large image files without the system slowing, so she can move between tasks efficiently.\""

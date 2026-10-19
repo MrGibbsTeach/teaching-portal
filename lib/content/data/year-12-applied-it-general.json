@@ -1348,6 +1348,39 @@
                   "level": 3
                 },
                 {
+                  "type": "animation3d",
+                  "src": "/animations/fetch-decode-execute.html",
+                  "title": "Fetch, Decode, Execute",
+                  "caption": "The CPU's job is to fetch, decode and execute instructions. Watch it happen before you answer the CPU question below.",
+                  "pauseQuestions": [
+                    {
+                      "stage": "Fetch",
+                      "question": "Which register holds the address of the next instruction?",
+                      "answer": "The Program Counter (PC). After each fetch it goes up by 1, so it points to the next instruction."
+                    },
+                    {
+                      "stage": "Decode",
+                      "question": "Which part of the CPU works out what an instruction means?",
+                      "answer": "The Control Unit."
+                    },
+                    {
+                      "stage": "Execute",
+                      "question": "Where did the value 7 come from, and where did it end up?",
+                      "answer": "It came from RAM at address 4 and ended up in the accumulator (ACC)."
+                    },
+                    {
+                      "stage": "Repeat",
+                      "question": "Which part of the CPU did the maths for ADD 5?",
+                      "answer": "The ALU (Arithmetic Logic Unit). It added 7 + 5 to get 12."
+                    },
+                    {
+                      "stage": "Store",
+                      "question": "A CPU is rated at 3.5 GHz. What does that tell you?",
+                      "answer": "Its clock ticks 3.5 billion times a second. Each tick moves the fetch-decode-execute cycle on, so a higher clock speed processes instructions faster."
+                    }
+                  ]
+                },
+                {
                   "type": "callout",
                   "variant": "pr-review",
                   "heading": "🧰 CALLBACK CHECK · SPARKY IS REVIEWING THE JOB",
