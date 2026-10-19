@@ -3,6 +3,7 @@ import { CodeExercise } from "@/components/course/shared/CodeExercise";
 import { DiagramRunner } from "@/components/course/shared/DiagramRunner";
 import { CheckpointVideoPlayer } from "@/components/course/shared/CheckpointVideoPlayer";
 import { HotspotActivity } from "@/components/course/shared/HotspotActivity";
+import { Animation3D } from "@/components/course/shared/Animation3D";
 
 function QuizQuestionView({ question }: { question: QuizQuestion }) {
   return (
@@ -178,6 +179,12 @@ export function BlockRenderer({ block }: { block: Block }) {
           {block.caption && (
             <p className="mt-1 text-xs text-muted-foreground">{block.caption}</p>
           )}
+        </div>
+      );
+    case "animation3d":
+      return (
+        <div className="mt-3">
+          <Animation3D block={block} />
         </div>
       );
     case "checkpointVideo":

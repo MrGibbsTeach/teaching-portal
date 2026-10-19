@@ -1255,6 +1255,39 @@
                   ]
                 },
                 {
+                  "type": "animation3d",
+                  "src": "/animations/inside-the-computer.html",
+                  "title": "Inside the Computer",
+                  "caption": "Before the worked example, watch a file move from storage into RAM and through the CPU.",
+                  "pauseQuestions": [
+                    {
+                      "stage": "Input",
+                      "question": "Name the two input devices shown, and one more input device that is not shown.",
+                      "answer": "Keyboard and mouse. Others include a microphone, webcam, touchscreen, scanner or game controller."
+                    },
+                    {
+                      "stage": "Storage",
+                      "question": "Why do the SSD's packets reach the RAM before the HDD's?",
+                      "answer": "An SSD stores data on flash memory chips with no moving parts. An HDD has to spin a disk and move a read arm to find the data, so it is much slower."
+                    },
+                    {
+                      "stage": "Memory",
+                      "question": "What happens to the data in RAM when the computer is switched off?",
+                      "answer": "It is lost. RAM is volatile, so it only holds data while it has power. That is why work has to be saved to storage."
+                    },
+                    {
+                      "stage": "Processing",
+                      "question": "Why do packets keep moving back and forth between the CPU and the RAM?",
+                      "answer": "The CPU fetches instructions and data from RAM, processes them, then writes the results back to RAM."
+                    },
+                    {
+                      "stage": "Output",
+                      "question": "Which component turns the result into a picture? Name the two output devices shown.",
+                      "answer": "The graphics card (GPU) makes the picture. The output devices are the monitor and the speakers."
+                    }
+                  ]
+                },
+                {
                   "type": "heading",
                   "text": "Worked example: What happens when you open a video file",
                   "level": 3
@@ -3179,6 +3212,44 @@
                       "Parts of an image with no background, so it sits over other content.",
                       "PNG, SVG, GIF"
                     ]
+                  ]
+                },
+                {
+                  "type": "animation3d",
+                  "src": "/animations/binary-lights.html",
+                  "title": "Binary Lights",
+                  "caption": "Raster graphics are grids of pixels stored as bytes. The last stage of this animation shows exactly that.",
+                  "pauseQuestions": [
+                    {
+                      "stage": "Bit",
+                      "question": "What two values can one bit hold?",
+                      "answer": "0 (off) or 1 (on)."
+                    },
+                    {
+                      "stage": "Byte",
+                      "question": "How many bits are in a byte, and what is the biggest number one byte can store?",
+                      "answer": "8 bits. The biggest is 11111111, which is 255."
+                    },
+                    {
+                      "stage": "Number",
+                      "question": "Which switches would be on to show 6?",
+                      "answer": "The 4 and the 2, so 00000110."
+                    },
+                    {
+                      "stage": "Letter",
+                      "question": "The code for B is 66. Write 66 in binary.",
+                      "answer": "01000010 (64 + 2)."
+                    },
+                    {
+                      "stage": "Pixel",
+                      "question": "How many bytes does one pixel need, and what colour is 255, 0, 0?",
+                      "answer": "3 bytes, one each for red, green and blue. 255, 0, 0 is pure red."
+                    },
+                    {
+                      "stage": "Link it",
+                      "question": "A photo is 4000 × 3000 pixels. Roughly how many bytes is it before compression?",
+                      "answer": "12 million pixels × 3 bytes = 36 million bytes, about 36 MB. That is why formats like JPEG and PNG compress images."
+                    }
                   ]
                 },
                 {
@@ -6408,6 +6479,44 @@
                     {
                       "term": "Shared resources",
                       "definition": "Hardware, software, files and an internet connection used by many devices on the network."
+                    }
+                  ]
+                },
+                {
+                  "type": "animation3d",
+                  "src": "/animations/packet-journey.html",
+                  "title": "Packet Journey",
+                  "caption": "See a network in action before you work through the home network example.",
+                  "pauseQuestions": [
+                    {
+                      "stage": "Split",
+                      "question": "Why is the message split into packets instead of being sent in one piece?",
+                      "answer": "Small packets share the network fairly, can take different routes, and if one is lost only that packet has to be sent again."
+                    },
+                    {
+                      "stage": "Switch",
+                      "question": "What is the job of the switch?",
+                      "answer": "It connects the devices inside one local network (LAN) and sends each packet to the right device."
+                    },
+                    {
+                      "stage": "Router",
+                      "question": "What does the router do that the switch does not?",
+                      "answer": "It connects different networks, such as the school network and the internet. It reads each packet's destination address to decide where to send it."
+                    },
+                    {
+                      "stage": "Internet",
+                      "question": "Why do the packets arrive in the order 3, 1, 4, 2?",
+                      "answer": "Each packet can take a different route. Some routes are shorter or less busy, so the packets arrive out of order."
+                    },
+                    {
+                      "stage": "Reassemble",
+                      "question": "How does Sam's laptop rebuild the message in the right order?",
+                      "answer": "Every packet is numbered, so the laptop puts them back in number order."
+                    },
+                    {
+                      "stage": "Reply",
+                      "question": "What happens if one packet never arrives?",
+                      "answer": "Sam's laptop never confirms it, so your laptop sends that packet again."
                     }
                   ]
                 },

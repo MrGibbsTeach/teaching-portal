@@ -51,8 +51,21 @@ export interface VideoCheckpoint {
   block: Extract<Block, { type: "quizQuestion" | "activity" | "interactiveDiagram" }>;
 }
 
+/** A self-contained 3D animation (an HTML file in /public/animations) shown in an iframe. */
+export interface Animation3DBlock {
+  type: "animation3d";
+  /** Path to the animation file, e.g. "/animations/packet-journey.html". */
+  src: string;
+  title: string;
+  /** Why this animation is here, tied to the lesson. */
+  caption?: string;
+  /** Pause-and-check questions, one per stage of the animation, with model answers. */
+  pauseQuestions?: { stage: string; question: string; answer: string }[];
+}
+
 export type Block =
   | { type: "heading"; text: string; level?: number }
+  | Animation3DBlock
   | { type: "checkpointVideo"; youtubeId: string; title?: string; checkpoints: VideoCheckpoint[] }
   | InteractiveDiagramBlock
   | CodeExerciseBlock
