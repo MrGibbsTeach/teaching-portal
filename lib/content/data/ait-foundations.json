@@ -221,6 +221,39 @@
          "html": "A hard drive and a USB stick are storage devices.<br><br>Your files stay saved even when the power is off."
         },
         {
+         "type": "animation3d",
+         "src": "/animations/inside-the-computer.html",
+         "title": "Inside the Computer",
+         "caption": "See all of these parts working together. Watch where the orange data goes.",
+         "pauseQuestions": [
+          {
+           "stage": "Input",
+           "question": "What does the keyboard do?",
+           "answer": "It sends information into the computer. That makes it an input device."
+          },
+          {
+           "stage": "Storage",
+           "question": "Where are your files kept when the computer is turned off?",
+           "answer": "In storage, like the SSD or the hard drive (HDD)."
+          },
+          {
+           "stage": "Memory",
+           "question": "What happens to what is in RAM when you turn the computer off?",
+           "answer": "It is wiped. RAM only remembers things while the power is on."
+          },
+          {
+           "stage": "Processing",
+           "question": "Which part is the brain of the computer?",
+           "answer": "The CPU, also called the processor."
+          },
+          {
+           "stage": "Output",
+           "question": "Name the two output devices you can see.",
+           "answer": "The monitor and the speakers."
+          }
+         ]
+        },
+        {
          "type": "checkpointVideo",
          "youtubeId": "AkFi90lZmXA",
          "title": "Inside Your Computer",

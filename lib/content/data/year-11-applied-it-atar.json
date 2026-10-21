@@ -53,6 +53,44 @@
                   "text": "Every computer follows the same four-step cycle: Input → Process → Store → Output. Input devices (keyboard, mouse) send data in. The CPU processes it. Storage holds results. Output devices (monitor, speakers) present them. Every task — from loading a webpage to editing a photo — follows this pattern."
                 },
                 {
+                  "type": "animation3d",
+                  "src": "/animations/inside-the-computer.html",
+                  "title": "Inside the Computer",
+                  "caption": "This is the Input, Process, Store, Output cycle with real components. Tap a part to meet it, slide to Exploded, or press Flyover for a guided tour.",
+                  "pauseQuestions": [
+                    {
+                      "stage": "Input",
+                      "question": "Name the two input devices shown, and one more input device that is not shown.",
+                      "answer": "Keyboard and mouse. Others include a microphone, webcam, touchscreen, scanner or game controller."
+                    },
+                    {
+                      "stage": "Storage",
+                      "question": "Explain why the SSD's packets arrive first, using the term access time.",
+                      "answer": "An SSD uses flash memory with no moving parts, so its access time is almost instant. An HDD must spin the platter and move the read/write head to the right track, which adds delay and lowers read speed."
+                    },
+                    {
+                      "stage": "Memory",
+                      "question": "Programs are copied from storage into RAM before they run. Why not run them straight from storage?",
+                      "answer": "RAM is far faster than storage, so the CPU can fetch instructions quickly. Running from storage would leave the CPU waiting. The trade-off is that RAM is volatile and more expensive per GB."
+                    },
+                    {
+                      "stage": "Processing",
+                      "question": "Describe what the CPU is doing with each packet it fetches from RAM.",
+                      "answer": "It runs the fetch-decode-execute cycle: fetch the instruction from memory, decode it in the control unit, execute it in the ALU, then store the result back in RAM (or a register)."
+                    },
+                    {
+                      "stage": "Output",
+                      "question": "Which component turns the result into a picture? Name the two output devices shown.",
+                      "answer": "The graphics card (GPU) makes the picture. The output devices are the monitor and the speakers."
+                    },
+                    {
+                      "stage": "Exam link",
+                      "question": "A user says their computer is slow when several programs are open. Using this animation, which component would you upgrade first and why?",
+                      "answer": "RAM. When RAM is full, data has to be swapped out to storage, which is much slower. More RAM keeps more programs in fast memory. A strong answer links the specification (for example 8 GB to 16 GB) to what the user notices."
+                    }
+                  ]
+                },
+                {
                   "type": "video",
                   "youtubeId": "d86ws7mQYIg",
                   "title": "How does Computer Hardware Work?",
@@ -2478,6 +2516,44 @@
                   ]
                 },
                 {
+                  "type": "animation3d",
+                  "src": "/animations/binary-lights.html",
+                  "title": "Binary Lights",
+                  "caption": "A raster image is a grid of pixels, and every pixel is stored as bytes. The last stage shows how.",
+                  "pauseQuestions": [
+                    {
+                      "stage": "Bit",
+                      "question": "What two values can one bit hold?",
+                      "answer": "0 (off) or 1 (on)."
+                    },
+                    {
+                      "stage": "Byte",
+                      "question": "How many bits are in a byte, and what is the biggest number one byte can store?",
+                      "answer": "8 bits. The biggest is 11111111, which is 255."
+                    },
+                    {
+                      "stage": "Number",
+                      "question": "Which switches would be on to show 6?",
+                      "answer": "The 4 and the 2, so 00000110."
+                    },
+                    {
+                      "stage": "Letter",
+                      "question": "The code for B is 66. Write 66 in binary.",
+                      "answer": "01000010 (64 + 2)."
+                    },
+                    {
+                      "stage": "Pixel",
+                      "question": "How many bytes does one pixel need, and what colour is 255, 0, 0?",
+                      "answer": "3 bytes, one each for red, green and blue. 255, 0, 0 is pure red."
+                    },
+                    {
+                      "stage": "Link it",
+                      "question": "A photo is 4000 × 3000 pixels. Roughly how many bytes is it before compression?",
+                      "answer": "12 million pixels × 3 bytes = 36 million bytes, about 36 MB. That is why formats like JPEG and PNG compress images."
+                    }
+                  ]
+                },
+                {
                   "type": "grid",
                   "title": "Raster Image Formats",
                   "items": [
@@ -4323,6 +4399,44 @@
                 {
                   "type": "paragraph",
                   "text": "Networks don't run on software alone — physical hardware devices move data between devices, connect networks, and extend wireless coverage. Knowing what each device does is essential."
+                },
+                {
+                  "type": "animation3d",
+                  "src": "/animations/packet-journey.html",
+                  "title": "Packet Journey",
+                  "caption": "Watch the job each device does: the switch inside the network, the router between networks, and Wi-Fi at the end.",
+                  "pauseQuestions": [
+                    {
+                      "stage": "Split",
+                      "question": "What does each packet's header contain, and what is the rest of the packet called?",
+                      "answer": "The header holds the source and destination IP addresses, a sequence number and error-checking data. The rest is the payload, the piece of the message."
+                    },
+                    {
+                      "stage": "Switch",
+                      "question": "How does a switch decide which port to send data out of?",
+                      "answer": "It reads the destination MAC address and looks it up in its MAC address table, so data only goes to the device it is meant for (unlike a hub, which sends it to every port)."
+                    },
+                    {
+                      "stage": "Router",
+                      "question": "What does the router read, and how does it choose where to send each packet next?",
+                      "answer": "It reads the destination IP address and checks its routing table to choose the next hop towards that network."
+                    },
+                    {
+                      "stage": "Internet",
+                      "question": "Which protocol gets each packet to the right address, and why can packets arrive out of order?",
+                      "answer": "IP. It routes every packet independently, so packets can take different paths with different delays."
+                    },
+                    {
+                      "stage": "Reassemble",
+                      "question": "Which protocol puts the packets back in order, and what does it use to do it?",
+                      "answer": "TCP, using the sequence number in each packet's header."
+                    },
+                    {
+                      "stage": "Reply",
+                      "question": "What is the green packet called, and how does it make TCP reliable?",
+                      "answer": "An acknowledgement (ACK). If the sender gets no ACK for a packet within a set time, it retransmits that packet, so no data is lost."
+                    }
+                  ]
                 },
                 {
                   "type": "grid",
