@@ -11,8 +11,8 @@ Updated 21 Oct 2026. The owner approved all of this to be built now, not parked.
 | Rank | Feature | What it means | Effort | Source |
 |---|---|---|---|---|
 | 1 | **Course experience redesign (engagement, UX and UI)** | Replace the read, approve, next pattern with a lesson flow that has variety and a reason to continue: a hook, an interactive moment, a try-it task, a check, a visible win. Cover layout, typography, motion, navigation, pacing and mobile. Keep it student-led and teacher-free. | L, in stages | All competitors, `claude/design-references.md` |
-| 2 | Per-student progress and check-question results, visible to the teacher | Pilot evidence and a selling point. Check what the portal already records first. | M | Atomi, Education Perfect, Khan |
-| 3 | Instant feedback on check questions | Answer, then model answer and a short note straight away. Replaces tick-to-approve. | S | Mathspace, Education Perfect, Atomi |
+| 2 | Per-student progress and check-question results, visible to the teacher | Pilot evidence and a selling point. Audit finding: the portal stores per-student lesson completion and skill scores, but quiz answers only as class-level counts, so storing each student's answers is a real build. | M | Atomi, Education Perfect, Khan |
+| 3 | Feedback on written answers and earned completion | Multiple choice and true/false already give instant feedback. The gap is short answer and extended questions (reveal only) and the self-pressed "Mark as complete" and "I understand" gates. Add self-marking with a rubric and make completion depend on doing the checks. | S to M | Mathspace, Education Perfect, Atomi |
 | 4 | Rewards, streaks and milestones | Visible progress, completion badges, small wins. Supports rank 1. Keep it tasteful for Y11 and Y12. | S to M | Reading Eggs, Grok, Code.org |
 | 5 | Interactive animations across the whole course | Roll out the interactive 3D standard to every lesson that has a system or process. Rebuild Fetch, Decode, Execute and The Computer Canteen. See `claude/3d-animation-register.md`. | M each | Own advantage |
 | 6 | Revision and exam practice mode for Y11 and Y12 | Mixed questions by topic, timed practice, using existing check questions and the ATAR practice exam. | M | Atomi |
@@ -22,7 +22,7 @@ Updated 21 Oct 2026. The owner approved all of this to be built now, not parked.
 
 ## How to run rank 1
 
-1. Audit two current lessons (one Foundations, one ATAR). List what is static, repetitive or unclear. Show the owner screenshots.
+1. The code and content audit is done: see `claude/course-audit.md`. Still to do: a screenshot pass of one Foundations and one ATAR lesson at laptop and phone width, added to that file, then show the owner.
 2. Study the education reference sites and design galleries (`claude/design-references.md`) for lesson flow, navigation and progress patterns. State which ones you used.
 3. Propose 2 or 3 lesson templates with a one-line tradeoff each and a recommendation. The owner picks.
 4. Build the chosen template once on one lesson. Get the owner's view before applying it course-wide. Reuse the same template across courses (see the build rules in `claude/commercial-strategy.md`).
