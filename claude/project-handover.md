@@ -40,7 +40,7 @@ The pilot is decided: the owner's own Y11 and Y12 AIT classes (ATAR, General, Fo
 
 1. Ship what is already built: A2, A3, then A1.
 2. Audit and complete the AIT Y11 and Y12 lessons (C), and check that lesson progress and check-question results can be seen per student. This is the pilot evidence.
-3. Turn the "features worth adopting" in `claude/competitive-advantage.md` into a ranked feature backlog (E) and get the owner's yes before building any.
+3. The ranked feature backlog is in `claude/feature-backlog.md` (drafted 21 Oct 2026). Get the owner's yes before building any item.
 4. Build planned animations (B) only if an AIT Y11 or Y12 lesson needs them, in the priority order shown.
 5. Work through the commercial strategy's 90 day plan (`claude/commercial-strategy.md`, section 9).
 
@@ -57,6 +57,7 @@ Mr Gibbs Teach is the owner's personal teaching platform (lessons, assessments, 
 - `claude/3d-animation-register.md`: animations built and planned, the locked interactive style standard, lesson placements, check questions, and where each is live in the portal. Always read the style standard before building any animation.
 - `claude/design-references.md`: design galleries to study before making any customer-facing asset.
 - `claude/competitive-advantage.md`: saved research on each competitor (Atomi, Education Perfect, Mathspace, Reading Eggs, Khan Academy, Grok Academy, Code.org and others), where we are better, how it carries beyond Digital Technologies, and the feature backlog seed. Read it instead of re-fetching the sites, and keep all marketing claims consistent with it.
+- `claude/feature-backlog.md`: ranked features to adopt, with effort guesses. Owner approves before any build.
 - `claude/commercial-strategy.md`: phases and gates, competitor benchmark (Atomi), where we can be better, pricing options, risks, next 90 days. Read it before any commercial decision.
 
 ## Where these docs live and tool notes
@@ -169,7 +170,7 @@ For each new animation: write the lesson placement and one check question per st
 
 ## Open questions for the owner
 
-1. Swap the interactive rebuilds into the portal now, or wait for more of the set (A1)?
+1. (Answered 21 Oct 2026: swap in. Interactive 3D-01, 3D-02 and 3D-03 are in PR #2 on teaching-portal, pending the owner's preview check and merge.)
 2. Rebuild 3D-00 and 3D-04 in the interactive style (A4)?
 3. Is a Y9 or Y10 group joining the pilot, and which?
 4. Has selling the content been cleared with the school and CEWA (IP, secondary work, student data and privacy)? See the strategy risks.
