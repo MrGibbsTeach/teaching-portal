@@ -56,7 +56,7 @@
                   "type": "animation3d",
                   "src": "/animations/inside-the-computer.html",
                   "title": "Inside the Computer",
-                  "caption": "This is the Input, Process, Store, Output cycle with real components. Use the stage buttons to step through it.",
+                  "caption": "This is the Input, Process, Store, Output cycle with real components. Tap a part to meet it, slide to Exploded, or press Flyover for a guided tour.",
                   "pauseQuestions": [
                     {
                       "stage": "Input",

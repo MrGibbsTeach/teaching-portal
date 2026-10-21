@@ -96,7 +96,7 @@ const PLACEMENTS = [
 
   // Year 11 AIT ATAR
   { file: "year-11-applied-it-atar.json", lesson: "hardware-1-computer-systems-the-cpu", before: titled("video", "How does Computer Hardware Work?"),
-    block: block(PC, PC_T, "This is the Input, Process, Store, Output cycle with real components. Use the stage buttons to step through it.", pcAtar) },
+    block: block(PC, PC_T, "This is the Input, Process, Store, Output cycle with real components. Tap a part to meet it, slide to Exploded, or press Flyover for a guided tour.", pcAtar) },
   { file: "year-11-applied-it-atar.json", lesson: "networks-2-network-hardware", before: titled("grid", "Network Hardware Devices"),
     block: block(NET, NET_T, "Watch the job each device does: the switch inside the network, the router between networks, and Wi-Fi at the end.", netAtar) },
   { file: "year-11-applied-it-atar.json", lesson: "application-skills-1-image-editing", before: titled("grid", "Raster Image Formats"),

@@ -10,6 +10,7 @@ Read this first — before `STATUS.md`. This file is the live handover: what's t
 - All 10 courses exist; 6 are `active` with real content (Y11+Y12 × Foundations/General/ATAR), Y7–10 (4 courses) are still `placeholder`
 
 **Right now:**
+- 2026-10-21: the interactive rebuilds of Inside the Computer, Packet Journey and Binary Lights replaced the old looping animations in `public/animations/` (tap-to-select, Name it quiz, Flyover). Same filenames, so all 12 lesson placements picked them up. Not yet checked in a real lesson page on the preview deploy. Fetch, Decode, Execute and Colour Mixing are still old-style or unplaced.
 - 3D animations live in 12 Y11/Y12 lessons (new `animation3d` block; see `STATUS.md` → "3D animations in lessons"). Clayton reviewed the preview and approved; merged to `main` 2026-10-19.
 - Production infrastructure changes are in place: keep-alive cron, adaptive live-session polling, teacher CSV export, and custom domain. Preview Redis separation, a school-device check, and the school data-policy review remain before student use.
 - Y12 ATAR and Y12 General content shipped (practice exam + glossary for ATAR; mentor voice + 19 hands-on tasks for General).
