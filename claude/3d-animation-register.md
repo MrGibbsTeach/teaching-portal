@@ -40,7 +40,7 @@ Decided after building and reviewing five styles of 3D-01: an interactive comput
 
 ## Built
 
-Style reference: Toybox Teardown, an interactive rebuild of 3D-01 in the new standard style above, is live at https://claude.ai/artifact/QNWxQEfQajwNh5Fq7PiZpK with tap-to-select, a Name It quiz, assembled/exploded, and a Flyover tour. Packet Journey (3D-02) and Binary Lights (3D-03) have also now been rebuilt in this style - see their rows below. Colour Mixing (3D-06) is a new build, not a rebuild of an existing animation. None of the four is yet swapped in as the portal's live link for its slot - decide once more of the set is rebuilt.
+Style reference: Toybox Teardown, an interactive rebuild of 3D-01 in the new standard style above, is live at https://claude.ai/artifact/QNWxQEfQajwNh5Fq7PiZpK with tap-to-select, a Name It quiz, assembled/exploded, and a Flyover tour. Packet Journey (3D-02) and Binary Lights (3D-03) have also now been rebuilt in this style - see their rows below. Colour Mixing (3D-06) is a new build, not a rebuild of an existing animation. The interactive versions of 3D-01, 3D-02 and 3D-03 were swapped into the portal on 21 Oct 2026 (files in `public/animations/` of the teaching-portal repo, Three.js r128 inlined so they work offline, `?embed=1` compacts the UI for the lesson frame). The Built table links below still show the older artifact links for reference. 3D-06 is not yet placed.
 
 | ID | Animation | Courses | Where it goes | Link |
 |---|---|---|---|---|

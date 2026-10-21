@@ -2,8 +2,8 @@ import type { Animation3DBlock } from "@/lib/content/types";
 
 /**
  * A 3D animation from /public/animations, shown in a frame with its
- * pause-and-check questions underneath. The animation has its own stage
- * buttons, pause and speed controls, so students can jump back to a stage
+ * pause-and-check questions underneath. The animations are interactive
+ * (tap a part, quiz mode, Flyover tour), so students can go back and explore
  * while they answer.
  */
 export function Animation3D({ block }: { block: Animation3DBlock }) {
