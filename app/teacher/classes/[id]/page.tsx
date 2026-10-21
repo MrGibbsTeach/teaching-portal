@@ -1,11 +1,12 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getClass, getStudentProgress } from "@/lib/db";
+import { getClass, getStudentProgress, getStudentQuizStats } from "@/lib/db";
 import { getCourseContent } from "@/lib/content";
 import { getCourseBySlug } from "@/lib/courses";
 import { updateAccess, addStudent, removeStudent, removeClass } from "@/app/actions/classes";
 import DeleteClassButton from "@/components/teacher/DeleteClassButton";
 import { AddStudentForm } from "@/components/teacher/AddStudentForm";
+import { mergeStats, studentQuizTotals } from "@/lib/logic/insights";
 
 export const dynamic = "force-dynamic";
 
@@ -38,15 +39,22 @@ export default async function ClassManagePage({
       }, 0)
     : 0;
 
-  // Load progress for every student in parallel
+  // Load progress and quiz results for every student in parallel
   const studentProgressList = await Promise.all(
     cls!.students.map(async (s) => {
-      const completedIds = await getStudentProgress(cls!.id, s.username);
-      return { username: s.username, completedCount: completedIds.length };
+      const [completedIds, quizStats] = await Promise.all([
+        getStudentProgress(cls!.id, s.username),
+        getStudentQuizStats(cls!.id, s.username),
+      ]);
+      const { attempts, right } = studentQuizTotals(mergeStats([quizStats]));
+      return { username: s.username, completedCount: completedIds.length, quizAttempts: attempts, quizRight: right };
     })
   );
   const progressByUsername = Object.fromEntries(
     studentProgressList.map(({ username, completedCount }) => [username, completedCount])
+  );
+  const quizByUsername = Object.fromEntries(
+    studentProgressList.map(({ username, quizAttempts, quizRight }) => [username, { quizAttempts, quizRight }])
   );
 
   return (
@@ -173,6 +181,7 @@ export default async function ClassManagePage({
                   <th className="px-4 py-2.5 text-left font-medium text-muted-foreground">Username</th>
                   <th className="px-4 py-2.5 text-left font-medium text-muted-foreground">Passcode</th>
                   <th className="px-4 py-2.5 text-left font-medium text-muted-foreground">Progress</th>
+                  <th className="px-4 py-2.5 text-left font-medium text-muted-foreground">Quiz results</th>
                   <th className="px-4 py-2.5"></th>
                 </tr>
               </thead>
@@ -183,6 +192,7 @@ export default async function ClassManagePage({
                   const pct = totalUnlockedLessons > 0
                     ? Math.round((completedCount / totalUnlockedLessons) * 100)
                     : 0;
+                  const { quizAttempts, quizRight } = quizByUsername[s.username] ?? { quizAttempts: 0, quizRight: 0 };
                   return (
                     <tr key={s.username} className="hover:bg-muted/20">
                       <td className="px-4 py-3">{s.displayName}</td>
@@ -203,6 +213,18 @@ export default async function ClassManagePage({
                           </div>
                         ) : (
                           <span className="text-xs text-muted-foreground">No topics unlocked</span>
+                        )}
+                      </td>
+                      <td className="px-4 py-3">
+                        {quizAttempts > 0 ? (
+                          <Link
+                            href={`/teacher/classes/${cls!.id}/students/${encodeURIComponent(s.username)}`}
+                            className="text-primary hover:underline"
+                          >
+                            {quizRight}/{quizAttempts} correct
+                          </Link>
+                        ) : (
+                          <span className="text-xs text-muted-foreground">No attempts yet</span>
                         )}
                       </td>
                       <td className="px-4 py-3 text-right">

@@ -1,7 +1,7 @@
 "use server";
 import { revalidatePath } from "next/cache";
 import { getSession } from "@/lib/session";
-import { deleteFeedback, recordQuizStats, saveFeedback } from "@/lib/db";
+import { deleteFeedback, recordQuizStats, recordStudentQuizStats, saveFeedback } from "@/lib/db";
 import { getCourseBySlug } from "@/lib/courses";
 import { findLesson, getCourseContent } from "@/lib/content";
 import { parseFeedback, questionKey, statFields, type FeedbackItem } from "@/lib/logic/insights";
@@ -18,7 +18,7 @@ export async function recordQuizAnswer(
   correct: boolean
 ): Promise<{ ok: boolean }> {
   const session = await getSession();
-  if (session?.role !== "student" || !session.classId) return { ok: false };
+  if (session?.role !== "student" || !session.classId || !session.username) return { ok: false };
   if (!Number.isInteger(chosen) || chosen < 0 || chosen > 49) return { ok: false };
 
   // Only record questions that really exist in that lesson, so the counters cannot be spammed
@@ -32,7 +32,11 @@ export async function recordQuizAnswer(
   if (right === undefined) return { ok: false };
   void correct; // untrusted: derive it from the real answer instead
 
-  await recordQuizStats(session.classId, statFields(questionKey(lessonId, questionText), chosen, chosen === right));
+  const fields = statFields(questionKey(lessonId, questionText), chosen, chosen === right);
+  await Promise.all([
+    recordQuizStats(session.classId, fields),
+    recordStudentQuizStats(session.classId, session.username, fields),
+  ]);
   return { ok: true };
 }
 

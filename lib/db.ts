@@ -21,6 +21,7 @@ declare global {
         live: Map<string, LiveState>;
         liveResp: Map<string, Record<string, LiveAnswer>>;
         quizStats: Map<string, Record<string, number>>;
+        studentQuizStats: Map<string, Record<string, number>>;
         feedback: Map<string, FeedbackItem>;
       }
     | undefined;
@@ -31,6 +32,7 @@ const _mem = (globalThis.__mgDevStore ??= {
   live: new Map(),
   liveResp: new Map(),
   quizStats: new Map(),
+  studentQuizStats: new Map(),
   feedback: new Map(),
 });
 
@@ -313,6 +315,41 @@ export async function getQuizStats(classId: string): Promise<Record<string, numb
     return (await redis.hgetall<Record<string, number>>(quizStatsKey(classId))) ?? {};
   } catch (e) {
     console.error("KV quiz stats read failed:", e);
+    return {};
+  }
+}
+
+// Same hash shape as above (`<key>:r`/`<key>:w`/`<key>:o<i>`, parsed by the same
+// `mergeStats`), but one hash per student so a teacher can see one student's own
+// results, not just the class-wide aggregate.
+
+const studentQuizStatsKey = (classId: string, username: string) => `mg_qstats:${classId}:${username}`;
+const studentQuizStatsMemKey = (classId: string, username: string) => `${classId}:${username}`;
+
+export async function recordStudentQuizStats(classId: string, username: string, fields: string[]): Promise<void> {
+  const redis = getRedis();
+  if (!redis) {
+    const memKey = studentQuizStatsMemKey(classId, username);
+    const h = _mem.studentQuizStats.get(memKey) ?? {};
+    for (const f of fields) h[f] = (h[f] ?? 0) + 1;
+    _mem.studentQuizStats.set(memKey, h);
+    return;
+  }
+  try {
+    const key = studentQuizStatsKey(classId, username);
+    await Promise.all(fields.map((f) => redis.hincrby(key, f, 1)));
+  } catch (e) {
+    console.error("KV student quiz stats write failed:", e);
+  }
+}
+
+export async function getStudentQuizStats(classId: string, username: string): Promise<Record<string, number>> {
+  const redis = getRedis();
+  if (!redis) return { ...(_mem.studentQuizStats.get(studentQuizStatsMemKey(classId, username)) ?? {}) };
+  try {
+    return (await redis.hgetall<Record<string, number>>(studentQuizStatsKey(classId, username))) ?? {};
+  } catch (e) {
+    console.error("KV student quiz stats read failed:", e);
     return {};
   }
 }

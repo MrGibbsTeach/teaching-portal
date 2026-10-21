@@ -52,6 +52,17 @@ export function mergeStats(hashes: readonly Record<string, unknown>[]): Map<stri
   return out;
 }
 
+/** Totals across every question a single student has answered, for a quick summary. */
+export function studentQuizTotals(stats: Map<string, QuestionStat>): { attempts: number; right: number } {
+  let attempts = 0;
+  let right = 0;
+  for (const s of stats.values()) {
+    attempts += s.attempts;
+    right += s.right;
+  }
+  return { attempts, right };
+}
+
 export interface QuestionInsight {
   key: string;
   courseSlug: string;
