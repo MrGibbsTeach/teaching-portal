@@ -8,7 +8,7 @@ import { readFileSync, writeFileSync } from "node:fs";
 const file = "lib/content/data/ait-foundations.json";
 const raw = readFileSync(file, "utf8");
 const data = JSON.parse(raw);
-const indent = raw.startsWith('{\n "') ? 1 : 2;
+const indent = raw.replace(/\r\n/g, "\n").startsWith('{\n "') ? 1 : 2;
 
 const activity = {
   type: "activity",
@@ -34,5 +34,5 @@ for (const u of data.units) {
     }
   }
 }
-writeFileSync(file, JSON.stringify(data, null, indent));
+writeFileSync(file, JSON.stringify(data, null, indent) + "\n");
 console.log(`Added ${added} activity block(s).`);
