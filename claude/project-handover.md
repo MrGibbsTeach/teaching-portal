@@ -4,6 +4,19 @@ This file is the single source of truth for any AI working on this project. Read
 
 Last updated: 21 Oct 2026
 
+## If the owner just types "continue"
+
+That means: take over and work through "Next actions" below without asking what to do. Do this:
+
+1. Read `CURRENT_STATE.md` (repo root) and this file in full. Skim `claude/course-audit.md` and `claude/feature-backlog.md`.
+2. Run `git pull` on `main`. If any file in `claude/` is missing, the docs are still in an unmerged pull request: tell the owner to merge PR #4 on MrGibbsTeach/teaching-portal (it includes #3), and read the docs from the Claude Project copy or the PR branch `course-audit` meanwhile.
+3. Tell the owner in two lines what you are about to do, then do Next action 2: the course experience redesign. Start with the screenshot pass listed in `claude/course-audit.md` (one Foundations and one ATAR lesson, laptop and 390px mobile, `npm run dev` or a Vercel preview), add the findings to that file, study the reference sites, then propose 2 or 3 lesson templates with a recommendation.
+4. Stop there and ask the owner to pick a template. Everything before that point needs no questions. After they pick, build it on one lesson per tier (Foundations, General, ATAR), show them, then continue down `claude/feature-backlog.md` in order.
+5. Never merge pull requests, never push to `main`, never change student data or production settings. Open a pull request and tell the owner what to merge.
+6. At the end of the session update `CURRENT_STATE.md` and this file, and tell the owner which files changed.
+
+Tools: Claude Code and Codex both read `AGENTS.md` first, which points here. Follow the owner's response style and the cost rules below.
+
 ## Start here (60 second version)
 
 - Goal: an online educational website that students use on their own, that keeps improving, and that can later be sold as a subscription homeschool curriculum for Australian families.
