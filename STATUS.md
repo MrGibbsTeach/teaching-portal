@@ -196,6 +196,14 @@ This local dev environment has no Redis/Supabase credentials in `.env.local` (on
 
 **One inconsistency found (dev-only, not a production bug):** `GET /api/export?classId=...` reliably returned `404 "No such class"` for a class that the class-management page itself (same class ID, same in-memory store) rendered fine moments earlier — reproduced 3/3 tries. Looks like the Turbopack dev server isn't sharing the single `_mem` module-level array as a true singleton between the page's Server Component and the `/api/export` Route Handler. Production is unaffected (real Upstash Redis is configured there, so `_mem` is never used), and this only bit the no-DB local-dev fallback. Fixed the same night — see below.
 
+## Y12 General audit gaps closed (2026-10-21)
+
+Picked up `CURRENT_STATE.md`'s next step 3 — Y12 General had 8 topics with zero `interactiveDiagram` (design-concepts, both impacts-of-technology, both application-skills, both project-management, managing-data), the same audit gap Y11 General had closed on 2026-10-18.
+
+- `scripts/add-y12-general-diagrams.mjs`, same pattern as `add-general-diagrams-2.mjs`: one `connect`-kind match pair-set per topic, each lifted directly from a table or `keyTerms` block already in that lesson (e.g. Elements of Design's own element→example table, the file-formats "best for" table, two keyTerms blocks for the topics with no table). Idempotent (second run adds 0); inserted before each lesson's first `quizQuestion`, same as the Y11 script.
+- Re-ran `scripts/audit-general.mjs` after: all 10 Y12 General topics now show `no-interactive` cleared. Remaining flags (`no-task` on hardware/networks/impacts-of-technology, `no-video` everywhere) are the already-documented intentional patterns, not new gaps — `no-task` for those three topics is deliberate (assessed by explanation, not a produced file, per `y12-general-tasks-data.mjs`), and video is Clayton's separate, confirmation-gated item (see "Next step" below).
+- Verified: `npm test` (76 passed), `npm run build` (passed), `npm run lint` (0 errors, 1 pre-existing warning). **Not browser-checked** — no Playwright browsers installed in this environment this session (only `@playwright/test` in the lockfile, not actually installed) and the built-in browser can't reach localhost; didn't install Playwright unprompted for a change this mechanical. Worth a quick teacher-preview pass next session before calling this fully done, same as the Y11 equivalent got.
+
 ## Autonomous follow-up session (2026-10-18)
 
 Clayton asked for a list of things workable unsupervised overnight, picked all of them, and left it running. Scope: fix the `_mem` bug just found, clear lint warnings, close Y11 General's remaining audit gaps, and browser-verify everything including the student-facing and live-session paths the teacher pass hadn't covered yet.

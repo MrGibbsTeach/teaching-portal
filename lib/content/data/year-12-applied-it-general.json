@@ -154,6 +154,53 @@
                   "text": "Before I show you how I'd answer it, go find the menu board question yourself. Name three elements and, for two of them, say exactly where you see them doing work on the screen."
                 },
                 {
+                  "type": "interactiveDiagram",
+                  "title": "Match the element to an example",
+                  "instruction": "Tap an element of design on the left, then tap an example of it in use.",
+                  "kind": "connect",
+                  "config": {
+                    "left": [
+                      "Line",
+                      "Shape",
+                      "Space",
+                      "Texture",
+                      "Colour"
+                    ],
+                    "right": [
+                      "Divider under a heading",
+                      "Round buttons on an app",
+                      "Margins around text",
+                      "Paper-grain background",
+                      "Brand colour on all buttons"
+                    ]
+                  },
+                  "goalState": {
+                    "links": [
+                      [
+                        "Line",
+                        "Divider under a heading"
+                      ],
+                      [
+                        "Shape",
+                        "Round buttons on an app"
+                      ],
+                      [
+                        "Space",
+                        "Margins around text"
+                      ],
+                      [
+                        "Texture",
+                        "Paper-grain background"
+                      ],
+                      [
+                        "Colour",
+                        "Brand colour on all buttons"
+                      ]
+                    ]
+                  },
+                  "explanation": "Each element of design shows up in a real product in its own characteristic way."
+                },
+                {
                   "type": "quizQuestion",
                   "question": {
                     "id": "design-concepts-1-elements-of-design-q1",
@@ -2584,6 +2631,53 @@
                   "text": "Explain why the newspaper changed its approach, and one impact of mobile devices on how people receive local news, before you check mine."
                 },
                 {
+                  "type": "interactiveDiagram",
+                  "title": "Match the feature to social networking",
+                  "instruction": "Tap a feature on the left, then tap how social networking handles it.",
+                  "kind": "connect",
+                  "config": {
+                    "left": [
+                      "Speed",
+                      "Who publishes",
+                      "Checking",
+                      "Cost to audience",
+                      "Audience role"
+                    ],
+                    "right": [
+                      "Instant",
+                      "Anyone with a phone",
+                      "Often not checked",
+                      "Free, paid for by advertising",
+                      "Comments, shares and creates"
+                    ]
+                  },
+                  "goalState": {
+                    "links": [
+                      [
+                        "Speed",
+                        "Instant"
+                      ],
+                      [
+                        "Who publishes",
+                        "Anyone with a phone"
+                      ],
+                      [
+                        "Checking",
+                        "Often not checked"
+                      ],
+                      [
+                        "Cost to audience",
+                        "Free, paid for by advertising"
+                      ],
+                      [
+                        "Audience role",
+                        "Comments, shares and creates"
+                      ]
+                    ]
+                  },
+                  "explanation": "Social networking changed news from something you receive to something anyone can publish, instantly and unchecked."
+                },
+                {
                   "type": "quizQuestion",
                   "question": {
                     "id": "impacts-of-technology-u3-3-social-networking-impact-q1",
@@ -3287,6 +3381,59 @@
                     "Record a 15–30 second voice note (any audio app) and export it as both a WAV and an MP3. Compare the file sizes.",
                     "Write a short comparison: which format held up better at small size, and which audio format you'd upload to a podcast platform and why."
                   ]
+                },
+                {
+                  "type": "interactiveDiagram",
+                  "title": "Match the format to what it's best for",
+                  "instruction": "Tap a file format on the left, then tap what it's best used for.",
+                  "kind": "connect",
+                  "config": {
+                    "left": [
+                      "JPEG",
+                      "PNG",
+                      "GIF",
+                      "SVG",
+                      "MP3",
+                      "WAV"
+                    ],
+                    "right": [
+                      "Photographs",
+                      "Logos, screenshots, transparency",
+                      "Simple animations",
+                      "Logos and icons",
+                      "Sharing and streaming",
+                      "Editing and high quality"
+                    ]
+                  },
+                  "goalState": {
+                    "links": [
+                      [
+                        "JPEG",
+                        "Photographs"
+                      ],
+                      [
+                        "PNG",
+                        "Logos, screenshots, transparency"
+                      ],
+                      [
+                        "GIF",
+                        "Simple animations"
+                      ],
+                      [
+                        "SVG",
+                        "Logos and icons"
+                      ],
+                      [
+                        "MP3",
+                        "Sharing and streaming"
+                      ],
+                      [
+                        "WAV",
+                        "Editing and high quality"
+                      ]
+                    ]
+                  },
+                  "explanation": "Every format trades off quality, file size and features differently — that's why you choose the format to fit the job."
                 },
                 {
                   "type": "quizQuestion",
@@ -4521,6 +4668,47 @@
                   "text": "Describe two audience characteristics and write three design criteria for the video, before you check my brief."
                 },
                 {
+                  "type": "interactiveDiagram",
+                  "title": "Match the term to an example",
+                  "instruction": "Tap a design-process term on the left, then tap an example of it.",
+                  "kind": "connect",
+                  "config": {
+                    "left": [
+                      "Product purpose",
+                      "Design criteria",
+                      "Target audience characteristics",
+                      "Presentation medium"
+                    ],
+                    "right": [
+                      "Inform parents about a school camp",
+                      "Camp date appears on every page",
+                      "Parents aged 35 to 55, reading on phones",
+                      "Email newsletter, poster, video, website"
+                    ]
+                  },
+                  "goalState": {
+                    "links": [
+                      [
+                        "Product purpose",
+                        "Inform parents about a school camp"
+                      ],
+                      [
+                        "Design criteria",
+                        "Camp date appears on every page"
+                      ],
+                      [
+                        "Target audience characteristics",
+                        "Parents aged 35 to 55, reading on phones"
+                      ],
+                      [
+                        "Presentation medium",
+                        "Email newsletter, poster, video, website"
+                      ]
+                    ]
+                  },
+                  "explanation": "A clear brief ties each of these together: who it's for, what it must do, and how it reaches them."
+                },
+                {
                   "type": "quizQuestion",
                   "question": {
                     "id": "project-management-u3-2-design-process-components-q1",
@@ -5299,6 +5487,47 @@
                     "Try zipping the already-compressed JPEG and note how little smaller it gets — lossy formats are already compressed, so there's little left to save.",
                     "Write a one-paragraph justification: which type of compression you'd use for the two scenarios in this lesson's quiz, and why."
                   ]
+                },
+                {
+                  "type": "interactiveDiagram",
+                  "title": "Match the feature to lossy compression",
+                  "instruction": "Tap a feature on the left, then tap what's true of it under lossy compression.",
+                  "kind": "connect",
+                  "config": {
+                    "left": [
+                      "Data removed?",
+                      "File size",
+                      "Quality",
+                      "Use when"
+                    ],
+                    "right": [
+                      "Yes, permanently",
+                      "Much smaller",
+                      "Can drop, especially if saved repeatedly",
+                      "Small size matters more than perfect quality"
+                    ]
+                  },
+                  "goalState": {
+                    "links": [
+                      [
+                        "Data removed?",
+                        "Yes, permanently"
+                      ],
+                      [
+                        "File size",
+                        "Much smaller"
+                      ],
+                      [
+                        "Quality",
+                        "Can drop, especially if saved repeatedly"
+                      ],
+                      [
+                        "Use when",
+                        "Small size matters more than perfect quality"
+                      ]
+                    ]
+                  },
+                  "explanation": "Lossy compression trades some quality away permanently in exchange for a much smaller file."
                 },
                 {
                   "type": "quizQuestion",
@@ -7667,6 +7896,47 @@
                   "text": "Describe how the stolen data could enable identity theft and two of the retailer's Privacy Act responsibilities, before you check my case file."
                 },
                 {
+                  "type": "interactiveDiagram",
+                  "title": "Match the term to its definition",
+                  "instruction": "Tap a term on the left, then tap its definition.",
+                  "kind": "connect",
+                  "config": {
+                    "left": [
+                      "Identity theft",
+                      "Data breach",
+                      "Notifiable data breach",
+                      "Safe disposal"
+                    ],
+                    "right": [
+                      "Using someone's personal information to pretend to be them, e.g. to open accounts, take loans or make purchases.",
+                      "Personal information is lost or accessed without permission, e.g. through hacking.",
+                      "Under the Privacy Act, organisations must tell affected people and the regulator when a breach is likely to cause serious harm.",
+                      "Destroying or de-identifying personal information when it is no longer needed, so it cannot be recovered."
+                    ]
+                  },
+                  "goalState": {
+                    "links": [
+                      [
+                        "Identity theft",
+                        "Using someone's personal information to pretend to be them, e.g. to open accounts, take loans or make purchases."
+                      ],
+                      [
+                        "Data breach",
+                        "Personal information is lost or accessed without permission, e.g. through hacking."
+                      ],
+                      [
+                        "Notifiable data breach",
+                        "Under the Privacy Act, organisations must tell affected people and the regulator when a breach is likely to cause serious harm."
+                      ],
+                      [
+                        "Safe disposal",
+                        "Destroying or de-identifying personal information when it is no longer needed, so it cannot be recovered."
+                      ]
+                    ]
+                  },
+                  "explanation": "Identity theft and data breaches are related but distinct — knowing which obligation applies starts with naming the right term."
+                },
+                {
                   "type": "quizQuestion",
                   "question": {
                     "id": "impacts-of-technology-u4-2-identity-theft-and-safe-disposal-q1",
@@ -8499,6 +8769,53 @@
                     "Change the colour values once, in styles.css only, and reload all three pages to confirm every page updated from one edit.",
                     "Write one sentence explaining how long this would have taken if each page had its own separate <style> block instead."
                   ]
+                },
+                {
+                  "type": "interactiveDiagram",
+                  "title": "Match the term to its definition",
+                  "instruction": "Tap a web-authoring term on the left, then tap its definition.",
+                  "kind": "connect",
+                  "config": {
+                    "left": [
+                      "Hyperlink",
+                      "Graphics",
+                      "Template",
+                      ".htm / .html file",
+                      ".css file"
+                    ],
+                    "right": [
+                      "Clickable text or image that goes to another page, part of a page, file or email address.",
+                      "Images, logos and icons on a web page, usually JPEG, PNG or SVG, optimised for fast loading.",
+                      "A pre-designed layout reused on every page for consistency.",
+                      "HyperText Markup Language: holds the content and structure of a page (headings, text, links, images).",
+                      "Cascading Style Sheet: controls how pages look (colours, fonts, layout). One CSS file can style every page."
+                    ]
+                  },
+                  "goalState": {
+                    "links": [
+                      [
+                        "Hyperlink",
+                        "Clickable text or image that goes to another page, part of a page, file or email address."
+                      ],
+                      [
+                        "Graphics",
+                        "Images, logos and icons on a web page, usually JPEG, PNG or SVG, optimised for fast loading."
+                      ],
+                      [
+                        "Template",
+                        "A pre-designed layout reused on every page for consistency."
+                      ],
+                      [
+                        ".htm / .html file",
+                        "HyperText Markup Language: holds the content and structure of a page (headings, text, links, images)."
+                      ],
+                      [
+                        ".css file",
+                        "Cascading Style Sheet: controls how pages look (colours, fonts, layout). One CSS file can style every page."
+                      ]
+                    ]
+                  },
+                  "explanation": "HTML holds what a page is; CSS holds what it looks like — every other web-authoring feature builds on that split."
                 },
                 {
                   "type": "quizQuestion",
@@ -9582,6 +9899,47 @@
                   "variant": "sandbox",
                   "heading": "🚀 SPRINT CHALLENGE",
                   "text": "Identify one hardware, one software and one people resource, then describe how two could be managed, before you check my resourcing plan."
+                },
+                {
+                  "type": "interactiveDiagram",
+                  "title": "Match the resource type to its definition",
+                  "instruction": "Tap a resource type on the left, then tap its definition.",
+                  "kind": "connect",
+                  "config": {
+                    "left": [
+                      "Hardware",
+                      "Software",
+                      "People",
+                      "Managing resources"
+                    ],
+                    "right": [
+                      "Physical equipment, e.g. laptop, camera, microphone.",
+                      "Programs and licences, e.g. InDesign, Canva.",
+                      "Who is involved: designer, client, testers, talent.",
+                      "Booking, tracking and backing up resources so they are available when needed."
+                    ]
+                  },
+                  "goalState": {
+                    "links": [
+                      [
+                        "Hardware",
+                        "Physical equipment, e.g. laptop, camera, microphone."
+                      ],
+                      [
+                        "Software",
+                        "Programs and licences, e.g. InDesign, Canva."
+                      ],
+                      [
+                        "People",
+                        "Who is involved: designer, client, testers, talent."
+                      ],
+                      [
+                        "Managing resources",
+                        "Booking, tracking and backing up resources so they are available when needed."
+                      ]
+                    ]
+                  },
+                  "explanation": "A project plan that only lists hardware and software misses the resource that's hardest to replace: the people."
                 },
                 {
                   "type": "quizQuestion",
