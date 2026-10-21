@@ -52,6 +52,26 @@
                     "Identify the Elements used (e.g., Colour and Shape)",
                     "Describe the Effect (e.g., Captures attention and leads the eye to a key area)."
                   ]
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "design-concepts-1-1-atar-notes-for-elements-and-principles-q1",
+                    "questionType": "extended",
+                    "text": "Describe the difference between a design element and a design principle.",
+                    "marks": 2,
+                    "explanation": "2 marks – describes elements as the building blocks of visual design (e.g. line, colour, shape) and principles as the rules used to organise and arrange those elements\n1 mark – states a relevant point, e.g. \"elements are things you use, principles are the rules\""
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "design-concepts-1-1-atar-notes-for-elements-and-principles-q2",
+                    "questionType": "extended",
+                    "text": "A Year 12 student writes in an exam: \"The designer used emphasis.\" Using the three-part exam format taught in this lesson, explain what else the student needs to add to this answer to gain full marks.",
+                    "marks": 3,
+                    "explanation": "3 marks – explains that the answer must also identify the elements used to create the emphasis (e.g. colour and shape) and describe the effect this has on the user (e.g. captures attention and leads the eye to a key area)\n2 marks – identifies one of the two missing parts\n1 mark – states that more detail is needed\n\nAnswers could include: the student has only stated the principle; they still need to identify the elements used (e.g. colour and shape) and describe the effect (e.g. captures attention, leads the eye to a key area)."
+                  }
                 }
               ]
             },
@@ -309,6 +329,26 @@
                     "Allows other elements (text, buttons, images) to stand out",
                     "Works well in minimalist and modern design styles"
                   ]
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "design-concepts-1-2-design-elements-q1",
+                    "questionType": "extended",
+                    "text": "Describe how the design element of space can be used to direct a viewer's attention on a webpage.",
+                    "marks": 2,
+                    "explanation": "2 marks – describes how space (positive/negative) is used to avoid clutter and focus the viewer's attention on a specific item, e.g. using white space around a key image\n1 mark – states a relevant point, e.g. \"space stops the page looking too busy\""
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "design-concepts-1-2-design-elements-q2",
+                    "questionType": "extended",
+                    "text": "A café wants its new website to feel calm and cohesive, using only shades of green throughout. Identify the type of colour scheme this is, and explain one advantage of using it.",
+                    "marks": 3,
+                    "explanation": "3 marks – identifies a monochromatic colour scheme and explains an advantage linked to the café, e.g. it reduces visual clutter and allows other elements like the menu or photos to stand out, creating a calm, unified look that suits a relaxed café brand\n2 marks – identifies the scheme and states an advantage\n1 mark – identifies the scheme only"
+                  }
                 }
               ]
             },
@@ -389,6 +429,26 @@
                 {
                   "type": "paragraph",
                   "text": "Harmony and unity can be created through the use of a consistent colour scheme (e.g. warm or cool colours) and repetition of similar sized shapes. The use of cool colours in the above image as well as the curvy and soft edges of the water creates unity and harmony, producing calming and soothing effect to the viewer."
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "design-concepts-1-3-design-principles-q1",
+                    "questionType": "extended",
+                    "text": "Explain the difference between contrast and proportion as ways of creating emphasis in a design.",
+                    "marks": 2,
+                    "explanation": "2 marks – explains contrast as the use of different or opposing colours/tones to make an element stand out, and proportion as the relative size of an element, where larger elements appear more important\n1 mark – describes one of the two correctly"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "design-concepts-1-3-design-principles-q2",
+                    "questionType": "extended",
+                    "text": "A website's \"Buy Now\" button is the same size and colour as the surrounding text. Using the design principles from this lesson, explain two changes that would create stronger emphasis on the button.",
+                    "marks": 3,
+                    "explanation": "3 marks – explains two valid changes linked to the principles taught, e.g. increasing the button's proportion (making it larger than the surrounding text) and using a contrasting colour (e.g. an opposite colour on the colour wheel) so it stands out against the background\n2 marks – explains one change in detail, or states two changes\n1 mark – states one relevant change"
+                  }
                 }
               ]
             },
@@ -477,6 +537,26 @@
                     "Customer testimonials, frequently asked questions, currency converters, email subscriptions and contact forms all assist in supporting but is not directly related to the website's purpose of generating online sales, hence is placed in the middle quartile.",
                     "Footer Items (Privacy Act, Copyright, Terms and Conditions) are necessary to include but are not directly related to generating online sales, hence are placed in the footer in the lower quartile of the design."
                   ]
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "design-concepts-1-4-logical-and-hierarchical-organisation-of-content-q1",
+                    "questionType": "extended",
+                    "text": "Explain why a business's logo and contact details are usually placed in the upper quartile of a webpage rather than the lower quartile.",
+                    "marks": 2,
+                    "explanation": "2 marks – explains that the upper quartile is what most users see first, without scrolling, so content directly linked to the website's purpose (brand recognition, contact) should go there\n1 mark – states a relevant point, e.g. \"so people see it straight away\""
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "design-concepts-1-4-logical-and-hierarchical-organisation-of-content-q2",
+                    "questionType": "extended",
+                    "text": "An online bakery's homepage currently places its Privacy Policy and copyright notice at the very top of the page, above its product photos and \"Order Now\" button. Explain why this is poor use of hierarchical organisation, and where this content should be placed instead.",
+                    "marks": 3,
+                    "explanation": "3 marks – explains that the Privacy Policy/copyright are essential but not related to the business's purpose of generating sales, so placing them above the product photos and CTA pushes the most sales-relevant content further down the page where fewer users will see it; identifies that they belong in the lower quartile/footer instead\n2 marks – explains the problem or identifies the correct placement, not both\n1 mark – states a relevant point"
+                  }
                 }
               ]
             },
@@ -3460,6 +3540,26 @@
                     "Separating structure (HTML) from presentation (CSS)",
                     "Ensuring text alternatives for images (alt text)"
                   ]
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "managing-data-6-1-purpose-of-the-world-wide-web-consortium-w3c-q1",
+                    "questionType": "extended",
+                    "text": "Describe the purpose of the World Wide Web Consortium (W3C).",
+                    "marks": 2,
+                    "explanation": "2 marks – describes W3C as the main international standards body for the web, developing open, consensus-based standards (e.g. HTML, CSS) so the web stays open and accessible across devices and platforms\n1 mark – states a relevant point, e.g. \"it sets the rules for websites\""
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "managing-data-6-1-purpose-of-the-world-wide-web-consortium-w3c-q2",
+                    "questionType": "extended",
+                    "text": "A small business builds its new website using non-standard HTML that only displays correctly in one browser. Explain why following W3C standards would have avoided this problem.",
+                    "marks": 3,
+                    "explanation": "3 marks – explains that W3C standards ensure consistent syntax and rules so pages render reliably across different browsers and devices, and following them would mean the website displays and functions the same way for every visitor, regardless of the browser they use\n2 marks – describes the general idea without the browser-specific link\n1 mark – states a relevant point"
+                  }
                 }
               ]
             },
@@ -3707,6 +3807,26 @@
                     "Promotes lightweight, fast-loading pages for mobile users",
                     "Ensures touch-friendly navigation and layouts"
                   ]
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "managing-data-6-3-purpose-of-the-web-design-and-applications-standard-q1",
+                    "questionType": "extended",
+                    "text": "Describe the purpose of the accessibility area of the Web Design and Applications standard.",
+                    "marks": 2,
+                    "explanation": "2 marks – describes it as following WCAG guidelines to make content usable by people with disabilities, e.g. supporting screen readers and keyboard navigation, ensuring equal access to information\n1 mark – states a relevant point"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "managing-data-6-3-purpose-of-the-web-design-and-applications-standard-q2",
+                    "questionType": "extended",
+                    "text": "An online shoe store's website has no alt text on its product images, no captions on its demonstration videos, and does not resize for mobile phones. For each issue, identify which area of the Web Design and Applications standard it fails to meet.",
+                    "marks": 3,
+                    "explanation": "1 mark per issue correctly matched to its standard area:\n- Missing alt text → Accessibility\n- Missing captions → Audio and Video\n- Does not resize for mobile → Mobile Web"
+                  }
                 }
               ]
             },
@@ -3770,6 +3890,26 @@
                   "type": "richText",
                   "heading": "Case Study: Business to Pay $215,000 in Penalties for Fake Testimonials",
                   "html": "<p>In 2015, a carpet cleaning franchisor was ordered to pay $215,000 for fake testimonials on the internet.</p><p>The Court found that Electrodry posted, and requested that its franchisees post, customer testimonials about the quality of carpet cleaning services when those customers were fabricated and the services had not been provided. These fake reviews were published on websites including Google, True Local and Yelp. The ACCC took Electrodry to court over false and misleading advertising.</p><p><a href=\"http://advertising.read/\">Read the full press release by the ACCC here.</a></p>"
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "managing-data-6-4-user-generated-content-q1",
+                    "questionType": "extended",
+                    "text": "Describe one advantage and one disadvantage of a business relying on user generated content (UGC) for its website.",
+                    "marks": 2,
+                    "explanation": "2 marks – describes one valid advantage (e.g. free content, keeps users engaged) and one valid disadvantage (e.g. lack of reliability, risk of online defamation)\n1 mark – describes only an advantage or only a disadvantage"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "managing-data-6-4-user-generated-content-q2",
+                    "questionType": "extended",
+                    "text": "Referring to the Electrodry case study, explain why businesses should not post fake customer testimonials, even though user generated content is normally seen as free and reliable feedback.",
+                    "marks": 3,
+                    "explanation": "3 marks – explains that fake testimonials undermine the reliability that makes UGC valuable, and are a legal liability (Electrodry was ordered to pay $215,000 in penalties for posting and requesting fake testimonials), so the short-term benefit of appearing more popular is outweighed by legal and reputational risk\n2 marks – describes the legal consequence without linking it to UGC's reliability\n1 mark – states a relevant point"
+                  }
                 }
               ]
             },
@@ -4340,6 +4480,26 @@
                       "Spotify, IKEA, Nike"
                     ]
                   ]
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "managing-data-6-7-content-management-systems-q1",
+                    "questionType": "extended",
+                    "text": "Describe the purpose of a Content Management System (CMS).",
+                    "marks": 2,
+                    "explanation": "2 marks – describes a CMS as software that lets users create, edit, organise and publish content without writing code, used to build and maintain a website\n1 mark – states a relevant point, e.g. \"software for building websites\""
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "managing-data-6-7-content-management-systems-q2",
+                    "questionType": "extended",
+                    "text": "A sole trader with no coding experience wants an easy way to run an online portfolio with minimal ongoing cost. Recommend a suitable category of CMS from this lesson and justify your choice.",
+                    "marks": 3,
+                    "explanation": "3 marks – recommends a personal-use CMS (e.g. Carrd or WordPress.com) and justifies it by linking to the scenario: easiest entry point, no coding required, low or no cost, suited to a single user with simple needs\n2 marks – recommends a suitable CMS with a weaker justification\n1 mark – names a relevant CMS only"
+                  }
                 }
               ]
             },
@@ -4385,6 +4545,26 @@
                       "An article published in 2024 about AI tools is more current than one from 2018"
                     ]
                   ]
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "managing-data-6-8-analysing-sources-of-information-q1",
+                    "questionType": "extended",
+                    "text": "Describe the difference between verifiability and currency when analysing an online source of information.",
+                    "marks": 2,
+                    "explanation": "2 marks – describes verifiability as whether the information can be supported by credible evidence or sources, and currency as whether the information is recent and relevant to current developments\n1 mark – describes one correctly"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "managing-data-6-8-analysing-sources-of-information-q2",
+                    "questionType": "extended",
+                    "text": "A student uses a blog post from 2015 with no references to support an assignment on current AI technology. Using the three criteria from this lesson, explain two problems with this source.",
+                    "marks": 3,
+                    "explanation": "3 marks – explains two problems linked to the criteria: the source fails currency, as 2015 information about AI is outdated given how quickly the field has changed; and fails verifiability, as there are no credible references or evidence to support the claims\n2 marks – explains one problem in detail, or states two problems\n1 mark – states one relevant problem"
+                  }
                 }
               ]
             },
@@ -4550,6 +4730,26 @@
                 {
                   "type": "paragraph",
                   "text": "Security Role: Protects data confidentiality during storage or transmission by ensuring only the intended recipient can access the information."
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "managing-data-6-9-data-security-methods-q1",
+                    "questionType": "extended",
+                    "text": "Describe the security role of a firewall.",
+                    "marks": 2,
+                    "explanation": "2 marks – describes a firewall as software or hardware that monitors and filters incoming and outgoing data based on security rules, acting as a barrier between a trusted internal network and untrusted external sources like the internet\n1 mark – states a relevant point, e.g. \"blocks unwanted traffic\""
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "managing-data-6-9-data-security-methods-q2",
+                    "questionType": "extended",
+                    "text": "An online retailer wants customers to trust that their credit card details are safe when checking out, and wants to be sure that files sent to its finance team have not been altered in transit. For each requirement, name and describe one data security method from this lesson that addresses it.",
+                    "marks": 4,
+                    "explanation": "4 marks (2 per method, 1 if only named):\n- Encryption: converts the credit card data into a coded format that only the intended recipient can decrypt, protecting confidentiality during the transaction\n- Digital signature: verifies that the finance file has not been changed since it was signed and confirms the sender's identity"
+                  }
                 }
               ]
             },
@@ -4620,6 +4820,26 @@
                   "type": "richText",
                   "heading": "Further reading",
                   "html": "<p>IBM has an article on examples of good audit trails: <a href=\"https://www.ibm.com/docs/en/cics-ts/5.4?topic=trail-audit-examples\">Audit trail examples (IBM)</a></p>"
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "managing-data-6-10-security-techniques-for-managing-data-disaster-recovery-and-audit-trails-q1",
+                    "questionType": "extended",
+                    "text": "Describe the purpose of a disaster recovery plan (DRP).",
+                    "marks": 2,
+                    "explanation": "2 marks – describes a DRP as a formal, written strategy outlining the procedures to restore critical ICT systems and data after a disruptive event, minimising downtime and ensuring business continuity\n1 mark – states a relevant point"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "managing-data-6-10-security-techniques-for-managing-data-disaster-recovery-and-audit-trails-q2",
+                    "questionType": "extended",
+                    "text": "A hospital discovers that a patient's medical record was accessed and changed by someone without the correct permission. Explain how an audit trail would help the hospital investigate this incident.",
+                    "marks": 3,
+                    "explanation": "3 marks – explains that the audit trail logs the time and date the record was accessed, the identity of the user who accessed it, and the specific action taken (e.g. modifying the file), allowing the hospital to identify who made the unauthorised change and when, supporting the investigation\n2 marks – describes what an audit trail records without linking it to the investigation\n1 mark – states a relevant point"
+                  }
                 }
               ]
             },
@@ -5119,6 +5339,26 @@
                     "Supports real-time collaboration, backup, and auto-sync features.",
                     "Ideal for students, remote teams, and mobile access to files."
                   ]
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "managing-data-6-13-online-data-storage-methods-q1",
+                    "questionType": "extended",
+                    "text": "Describe the difference between a database and a data warehouse.",
+                    "marks": 2,
+                    "explanation": "2 marks – describes a database as being used for day-to-day transactions (OLTP, e.g. logging in, making purchases) and a data warehouse as being used for analysing historical and current data to spot trends (OLAP), not for daily transactions\n1 mark – describes one correctly"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "managing-data-6-13-online-data-storage-methods-q2",
+                    "questionType": "extended",
+                    "text": "A large supermarket chain's marketing team wants to analyse five years of sales data to spot seasonal buying trends, without slowing down the tills that process customer purchases every day. Explain why a data warehouse, rather than the supermarket's transactional database, is the appropriate tool for this task.",
+                    "marks": 3,
+                    "explanation": "3 marks – explains that the transactional database is optimised for fast, simple day-to-day queries like processing purchases at the tills, and running complex trend analysis on it could slow those transactions down; a data warehouse stores historical and current data separately and is built for complex analytical queries (OLAP), so the marketing team can analyse years of sales data without affecting till performance\n2 marks – explains one side of the comparison\n1 mark – states a relevant point"
+                  }
                 }
               ]
             },
@@ -7730,6 +7970,26 @@
                     "Cost of SaaS and LMS Tools: While many tools offer free versions, advanced features or institutional licenses often involve ongoing costs.",
                     "Access to Digital Content: Even with educational copyright exemptions, publishers may not provide digitised versions of textbooks or learning materials, limiting accessibility."
                   ]
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "application-skills-9-2-digital-communication-for-education-purposes-q1",
+                    "questionType": "extended",
+                    "text": "Explain the difference between synchronous and asynchronous digital communication in an educational context.",
+                    "marks": 2,
+                    "explanation": "2 marks – explains synchronous communication as live, real-time interaction (e.g. a Zoom tutorial) and asynchronous as content accessed at any time (e.g. LMS resources, recorded lessons)\n1 mark – describes one correctly"
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "application-skills-9-2-digital-communication-for-education-purposes-q2",
+                    "questionType": "extended",
+                    "text": "A school moves all classes online during a short closure. Some students complain they cannot access live lessons because of unreliable internet at home. Using the tools from this lesson, explain how the school could still support these students' learning.",
+                    "marks": 3,
+                    "explanation": "3 marks – explains that the school could rely more on asynchronous LMS content (e.g. recorded tutorials, readings, assignments posted to Canvas or Google Classroom) that students can access at any time, rather than only synchronous virtual meetings, so students with unreliable internet can catch up when their connection allows, e.g. by watching a recorded lesson later\n2 marks – suggests a relevant asynchronous alternative without full explanation\n1 mark – states a relevant point"
+                  }
                 }
               ]
             },
@@ -7850,6 +8110,26 @@
                     "Miscommunication can occur without face-to-face cues (tone, body language)",
                     "Some advanced features require paid subscriptions"
                   ]
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "application-skills-9-3-use-available-functions-of-online-software-q1",
+                    "questionType": "extended",
+                    "text": "Describe the purpose of version history in online collaboration software.",
+                    "marks": 2,
+                    "explanation": "2 marks – describes version history as tracking changes made to a document over time and allowing users to restore a previous version if needed\n1 mark – states a relevant point, e.g. \"lets you undo changes\""
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "application-skills-9-3-use-available-functions-of-online-software-q2",
+                    "questionType": "extended",
+                    "text": "A group of students is collaborating on a shared Google Doc for an assignment. One student accidentally deletes a large section of another student's work. Explain how two functions from this lesson could help the group recover from this and avoid it happening again.",
+                    "marks": 3,
+                    "explanation": "3 marks – explains two functions linked to the scenario: version history allows the group to restore the document to a version before the section was deleted; sharing and permissions could be used to limit some students to commenting or viewing access rather than full editing rights, reducing the risk of accidental changes in future\n2 marks – explains one function in detail, or names two functions without detail\n1 mark – states one relevant function"
+                  }
                 }
               ]
             },

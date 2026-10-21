@@ -91,7 +91,7 @@ Mr Gibbs Teach is the owner's personal teaching platform (lessons, assessments, 
 - 21 Oct 2026: commercial strategy written (`claude/commercial-strategy.md`). Strategy is to win a niche (interactive, WA-specific, project-based AIT), not to out-scale Atomi.
 - 21 Oct 2026: competitive advantage analysis written (`claude/competitive-advantage.md`). Positioning: interactive hands-on learning, complete student-led course, WA SCSA depth, evidence from real classes. Not competing on breadth, free content, adaptive drill or early reading.
 - 21 Oct 2026: cost rules added. The animation register is not split for now; read it by section instead.
-- 21 Oct 2026: closed Y12 General's remaining no-interactive-diagram gap (8 topics), merged that work with the 3D-animation/PR#1+#2 work pushed from another session, and pushed to `main`. Found the ATAR check-question gap (open question 6) while auditing against item C; not started pending the owner's go-ahead since it needs new content, not a mechanical fix.
+- 21 Oct 2026: closed Y12 General's remaining no-interactive-diagram gap (8 topics), merged that work with the 3D-animation/PR#1+#2 work pushed from another session, and pushed to `main`. Found and then corrected an overstated ATAR check-question gap claim (open question 6); the real, smaller Y12 ATAR gap (3 topics) was fixed with the owner's go-ahead.
 
 ## Educational reference sites
 
@@ -176,7 +176,7 @@ For each new animation: write the lesson placement and one check question per st
 3. Is a Y9 or Y10 group joining the pilot, and which?
 4. Has selling the content been cleared with the school and CEWA (IP, secondary work, student data and privacy)? See the strategy risks.
 5. Does an earlier Commercial Strategy doc (written 18 Oct 2026, outside this project) still exist? If so, merge it into `claude/commercial-strategy.md`.
-6. (New, 21 Oct 2026) Y11 and Y12 ATAR have ~41 lessons with no quiz/check-style block at all (20 of 80 in Y11 ATAR, 23 of 67 in Y12 ATAR, excluding the 2 glossary pages) — found while checking item C's "every lesson has check questions" bar. This fails the Definition of done's "must work with no teacher present" test. Unlike the Y12 General diagram fix this session, it needs new WACE-aligned questions written per lesson, not something lifted from existing content, so it was flagged here rather than started. Work on it, and start with Y11 or Y12?
+6. (21 Oct 2026, resolved) The "41-lesson ATAR gap" reported earlier the same day was overstated — Y11 ATAR's apparent gap was a false positive (every topic deliberately ends in a dedicated quiz/practice/exam lesson covering its content lessons; no fix needed). Y12 ATAR's was real but smaller: 3 topics thin on per-lesson checks (design-concepts-1 1/5, managing-data-6 6/14, application-skills-9 2/4). Owner said yes to all three; `scripts/add-y12-atar-check-questions.mjs` added 2 new WACE-style questions to each of the 14 lessons that had none, matching the marking-key style already used in that course's other lessons. All three topics are now 100% covered. Not yet browser-checked.
 
 ## Keeping this file current
 
