@@ -1,15 +1,31 @@
-# Feature Backlog (ranked, owner approves before any build)
+# Feature Backlog (ranked by importance, approved by the owner)
 
-Written 21 Oct 2026. Seeded from section 5 of `claude/competitive-advantage.md`. Ranked by value to the pilot (Y11 and Y12 AIT, to early 2027), then by cost. Effort is a rough guess (S under a day, M a few days, L a week or more) and is unverified until someone reads the code. Do not build any item until the owner says yes.
+Updated 21 Oct 2026. The owner approved all of this to be built now, not parked. Order is importance for the pilot (Y11 and Y12 AIT, to early 2027) and for a product people will pay for. Effort is a rough guess (S under a day, M a few days, L a week or more), unverified until someone reads the code. Competitor sources are in `claude/competitive-advantage.md`.
 
-| Rank | Feature | Why now | Effort | Source |
+## The owner's verdict on the current courses
+
+"Very similar, a little bit of content, approve it, move on. Boring, static, not intuitive, not interesting, not engaging." This is the main problem. Fix it before adding smaller features. Judge every feature by one test: does it make a student do or discover something, instead of read and tick?
+
+## Ranked list
+
+| Rank | Feature | What it means | Effort | Source |
 |---|---|---|---|---|
-| 1 | Per-student progress and check-question results, visible to the teacher | This is the pilot evidence and the proof for any future buyer. Check first what the portal already records. | M | Atomi, Education Perfect, Khan |
-| 2 | Instant feedback on check questions (student marks themselves or picks an answer, sees the model answer and a note) | Cheap and improves learning now. Answers already sit behind a reveal. | S | Mathspace, Education Perfect, Atomi |
-| 3 | Revision and exam practice mode for Y11 and Y12 | ATAR students need it before exams. Reuse existing check questions and the ATAR practice exam. | M | Atomi |
-| 4 | Individualised next steps after a check (what to revisit) | Builds on rank 1 data. Do after rank 1 has a term of results. | M | Education Perfect |
-| 5 | Parent view of progress | Matters for home education, so wait for Phase 1. | M | Atomi, Reading Eggs |
-| 6 | Problem-based tasks with auto-marking | Large build. Link to Grok Academy for coding practice instead of rebuilding it. | L | Grok |
-| 7 | Light rewards and milestones | Mainly for younger learners, so parked with Y7 to Y10. | S | Reading Eggs |
+| 1 | **Course experience redesign (engagement, UX and UI)** | Replace the read, approve, next pattern with a lesson flow that has variety and a reason to continue: a hook, an interactive moment, a try-it task, a check, a visible win. Cover layout, typography, motion, navigation, pacing and mobile. Keep it student-led and teacher-free. | L, in stages | All competitors, `claude/design-references.md` |
+| 2 | Per-student progress and check-question results, visible to the teacher | Pilot evidence and a selling point. Audit finding: the portal stores per-student lesson completion and skill scores, but quiz answers only as class-level counts, so storing each student's answers is a real build. | M | Atomi, Education Perfect, Khan |
+| 3 | Feedback on written answers and earned completion | Multiple choice and true/false already give instant feedback. The gap is short answer and extended questions (reveal only) and the self-pressed "Mark as complete" and "I understand" gates. Add self-marking with a rubric and make completion depend on doing the checks. | S to M | Mathspace, Education Perfect, Atomi |
+| 4 | Rewards, streaks and milestones | Visible progress, completion badges, small wins. Supports rank 1. Keep it tasteful for Y11 and Y12. | S to M | Reading Eggs, Grok, Code.org |
+| 5 | Interactive animations across the whole course | Roll out the interactive 3D standard to every lesson that has a system or process. Rebuild Fetch, Decode, Execute and The Computer Canteen. See `claude/3d-animation-register.md`. | M each | Own advantage |
+| 6 | Revision and exam practice mode for Y11 and Y12 | Mixed questions by topic, timed practice, using existing check questions and the ATAR practice exam. | M | Atomi |
+| 7 | Individualised next steps after a check | "Revisit these two lessons" based on results. Needs rank 2 data. | M | Education Perfect |
+| 8 | Problem-based tasks with auto-marking | Pair each concept with a challenge that marks itself. Link to Grok Academy for coding rather than rebuild it. | L | Grok |
+| 9 | Parent view of progress | Progress record for home-education parents. | M | Atomi, Reading Eggs |
 
-Recommendation: ask the owner to approve ranks 1 and 2 first. Check rank 1 against what is already in the portal before estimating.
+## How to run rank 1
+
+1. The code and content audit is done: see `claude/course-audit.md`. Still to do: a screenshot pass of one Foundations and one ATAR lesson at laptop and phone width, added to that file, then show the owner.
+2. Study the education reference sites and design galleries (`claude/design-references.md`) for lesson flow, navigation and progress patterns. State which ones you used.
+3. Propose 2 or 3 lesson templates with a one-line tradeoff each and a recommendation. The owner picks.
+4. Build the chosen template once on one lesson. Get the owner's view before applying it course-wide. Reuse the same template across courses (see the build rules in `claude/commercial-strategy.md`).
+5. Roll out by course in pilot order: Y11 and Y12 ATAR, General, Foundations.
+
+Cost rule: audit and propose first, build one lesson, then scale. Do not redesign every lesson speculatively.

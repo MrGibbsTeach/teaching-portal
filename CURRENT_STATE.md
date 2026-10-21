@@ -9,6 +9,10 @@ Read this first — before `STATUS.md`. This file is the live handover: what's t
 - Repo: https://github.com/MrGibbsTeach/teaching-portal (private), branch `main`, auto-deploys on push
 - All 10 courses exist; 6 are `active` with real content (Y11+Y12 × Foundations/General/ATAR), Y7–10 (4 courses) are still `placeholder`
 
+**Owner's instruction for new sessions:** if Clayton types just "continue", follow "If the owner just types continue" in `claude/project-handover.md`. Next up is the course experience redesign (the courses feel static and boring). The code and content audit is already written in `claude/course-audit.md`.
+
+**Open on GitHub (owner to merge):** PR #4 (docs: course audit, ranked feature backlog; includes #3). Merging it puts `claude/` docs updates on `main`. PR #2 (interactive animations) is already merged; check one lesson of each course on production.
+
 **Right now:**
 - Production infrastructure is in place: keep-alive cron, adaptive live-session polling, teacher CSV export, and custom domain. Preview Redis separation, a school-device check, and the school data-policy review remain before student use.
 - All 6 active courses (Y11+Y12 × General/ATAR/Foundations) now have complete per-lesson check-question and hands-on/interactive coverage, closed 2026-10-21 across three sessions' worth of audit scripts (see `STATUS.md` for the full list). Y7–10 remain `placeholder` courses with zero real content — need source material from Clayton first (see Next step).
