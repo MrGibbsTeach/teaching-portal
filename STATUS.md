@@ -214,6 +214,15 @@ Clayton flagged this directly: Y12 General taught the elements and principles of
 - Every one of the 9 image URLs (5 reused + 4 new) was checked with `curl` for a `200`/`image/*` response before being written into the content, not assumed from the filename.
 - Idempotent (second run adds 0). Verified: `npm test` (79 passed), `npm run build`, `npm run lint` (0 errors). Not browser-checked (same login-gate / no-Playwright limitation as other content changes this session) — worth a look to confirm the `grid` block's `h-36 object-cover` crop doesn't awkwardly crop any of the 4 new photos.
 
+## Y11/Y12 General Design Concepts visual upgrade (2026-10-22)
+
+- Completed the full visual pass across all 13 lessons in the Year 11 and Year 12 AIT General Design Concepts sections. Added 11 custom inline SVG worked examples, keeping existing lesson text, tasks and check questions intact.
+- Year 11: added missing Texture and 3D Form illustrations; a five-card photo grid to the Principles lesson; an applied banner layout example; an annotated interface for analysis; and a visual revision map in the quiz lesson. Existing bespoke element/principle SVGs and Typography/Compositional Rules photo grids remain in place.
+- Year 12: added applied digital-product mockups to all seven lessons (streaming screen, concert poster, weather app, bus departure display, banner redesign, pizza order screen, and annotated flyer). Existing photo grids for Elements and Principles remain in place.
+- The changes are repeatable with `scripts/add-y11-general-principles-visuals.mjs` and `scripts/add-general-design-concept-visuals.mjs`.
+- Design reference check: Grok Academy's public Digital Exploration lessons include UI/UX activities, and DT Applied presents interface design through user-centred design, wireframing, principles and prototyping. The portal examples use the same practical concept-to-challenge pattern while keeping the course's own scenarios and WA AIT content. [Digital Exploration](https://groklearning.com/dex/), [DT Applied](https://grokacademy.org/dt-applied/).
+- Verified with `npm run build` (passes). No test suite run. Not yet browser-checked inside a logged-in lesson page; include this in the next teacher-preview browser pass.
+
 ## Per-student quiz-results tracking (2026-10-21)
 
 Checking item 2's full requirement ("check that lesson progress and check-question results can be seen per student") turned up a real architecture gap, not a content one: `lib/db.ts`'s `recordQuizStats` only ever wrote to one shared hash per class (`mg_qstats:{classId}`, incremented by `redis.hincrby`) — no student identity was ever attached to an answer at write time. Lesson *progress* was already per-student (CSV export, `mg_progress:{classId}:{username}`), but check-question *results* were only ever visible as the class-wide "hardest questions" aggregate on `/teacher/insights`. Flagged to Clayton as open question 7; he said build it.

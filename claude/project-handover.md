@@ -2,7 +2,7 @@
 
 This file is the single source of truth for any AI working on this project. Read it fully before doing anything, then read only the other docs your task needs. Update it at the end of every session (see "Keeping this file current").
 
-Last updated: 21 Oct 2026
+Last updated: 22 Oct 2026
 
 ## Start here (60 second version)
 
@@ -152,6 +152,7 @@ For each new animation: write the lesson placement and one check question per st
 ### C. Course content
 
 - Pilot focus: Y11 and Y12 AIT (ATAR, General, Foundations). Audit the existing lessons against the WA SCSA syllabus, complete the gaps, make sure every lesson has check questions, and check that progress and check-question results can be seen per student.
+- Y11 and Y12 General Design Concepts received a full visual upgrade on 22 Oct 2026: custom SVG worked examples across the thin visual gaps, with existing grids and diagrams retained. Build passes; still needs a logged-in lesson-page browser look. Details and references are in `STATUS.md`.
 - Y7 to Y10 Digital Technologies courses are parked (Y7 and Y8 are still placeholders in the portal). A Y9 or Y10 group may join the pilot.
 - Y11 and Y12 AIT (ATAR, General, Foundations) have lessons live with animations placed (see the register's "In the course" table). Further lessons and animation placements follow as animations are built.
 - Course names and topics in the register are a best mapping and must be checked against the owner's scope and sequence before locking lesson slots.

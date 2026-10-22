@@ -2,7 +2,7 @@
 
 Read this first — before `STATUS.md`. This file is the live handover: what's true right now and the next step. `STATUS.md` is the detailed history (why things are built the way they are); `CHECKPOINTS.md` is recorded feedback not yet acted on. Both stay as the deeper record — update this file's **Last updated** / **Right now** / **Next step** every session; add detail to `STATUS.md` only when something durable changed.
 
-**Last updated:** 2026-10-21
+**Last updated:** 2026-10-22
 
 **Live:**
 - Production: https://mrgibbsteach.com (custom domain, DNS live, cert issued) — also reachable at https://teaching-portal-eta.vercel.app
@@ -15,11 +15,12 @@ Read this first — before `STATUS.md`. This file is the live handover: what's t
 - 3D animations: 12 Y11/Y12 lesson placements live via the `animation3d` block. Three (Inside the Computer, Packet Journey, Binary Lights) were rebuilt to an interactive style and swapped in 2026-10-19–21; the raw files are confirmed live and intact on production, but no one has looked at them inside an actual lesson page yet (`/courses/*` requires a login session, which blocks anonymous verification).
 - Per-student quiz-results tracking (built 2026-10-21, Clayton approved): teachers can now see each student's own right/wrong answers via a "Quiz results" link on the class page → `/teacher/classes/[id]/students/[username]`, not just the class-wide aggregate on `/teacher/insights`.
 - Y12 General's Design Concepts lessons (elements, principles) now have a photo for every term, matching how Y11 ATAR already does it — Clayton flagged the gap directly (2026-10-21). See `STATUS.md` → "Y12 General design-concepts visuals".
+- Y11 and Y12 AIT General Design Concepts now have a full visual pass: 11 custom SVG worked examples added, existing diagrams and photo grids retained, and the missing Y11 Texture/3D Form examples supplied. See `STATUS.md` → "Y11/Y12 General Design Concepts visual upgrade". Build passes; real lesson-page appearance still needs a logged-in browser look.
 - **`claude/project-handover.md` is the source of truth for product/content/animation/commercial work** (AGENTS.md points to it) — read it before any of that. This file stays the technical/infra log.
 - Nothing from 2026-10-21's content/feature work (General/ATAR/Foundations lesson changes, the new quiz-results page) has had an actual logged-in browser look yet — not blocking (all passed build/test/lint), but worth a glance next session.
 
 **Next step:**
-1. Logged-in browser pass over this session's changes (teacher preview is enough): the Y12 General/ATAR/Foundations lessons, the 3D animation swap inside a real lesson, and the new quiz-results page.
+1. Logged-in browser pass (teacher preview is enough) over this session's Y11/Y12 General Design Concepts visual upgrade, the recent Y12 General/ATAR/Foundations lessons, 3D animation placement, and quiz-results page.
 2. Y12 Foundations videos — a researched shortlist is waiting on Clayton's confirmation; see `STATUS.md` → "Open item — Year 12 Foundations videos". Not picked unilaterally — needs Clayton's own ~30s check per video.
 3. Y7–10 need source curriculum material from Clayton before any content work can start — ask him where to find it, or whether to adapt the old OneDrive copy at `D:\OneDrive\Personal\Work\mrgibbs-teach` (a stale pre-Y12-ATAR clone of this same repo, last touched 2026-09-25 — worth a look but not authoritative).
 4. `claude/project-handover.md`'s own next-actions list (A2 merge the Fetch/Decode/Execute animation, A3 place Colour Mixing, A1 swap confirmation) are waiting on Clayton, not started here.
