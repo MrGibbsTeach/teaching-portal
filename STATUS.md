@@ -230,7 +230,7 @@ Clayton flagged this directly: Y12 General taught the elements and principles of
 - Added 104 topic-specific visual models to the remaining 55 Year 11 and 49 Year 12 General lessons, spanning Hardware, Impacts of Technology, Application Skills, Project Management, Managing Data and Networks. The 13 Design Concepts lessons retain their previous bespoke visual rebuild.
 - Each model is an accessible inline SVG built from that lesson's existing comparison, table, key terms, list or quiz checks. Model forms vary by content: side-by-side comparisons, process flows, layered systems, application workspaces and concept cards. No teaching text, examples, answers or questions were removed or rewritten.
 - Added repeatable, idempotent generator `scripts/add-general-course-visual-upgrade.mjs`.
-- Reviewed rendered samples for computer systems, CPU/memory, Privacy Act and web authoring. All 104 embedded SVGs parse, both course JSON files parse, a second generator dry run proposes 0 changes, `git diff --check` passes, and `npm run build` passes. Live lesson-page visual check remains login-gated; commit and deployment status follow.
+- Reviewed rendered samples for computer systems, CPU/memory, Privacy Act and web authoring. All 104 embedded SVGs parse, both course JSON files parse, a second generator dry run proposes 0 changes, `git diff --check` passes, and `npm run build` passes. Pushed as `292d965`; Vercel deployment succeeded. Live lesson-page visual check remains login-gated.
 
 ## Per-student quiz-results tracking (2026-10-21)
 
