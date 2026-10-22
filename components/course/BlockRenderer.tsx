@@ -216,7 +216,9 @@ export function BlockRenderer({ block }: { block: Block }) {
                   <img
                     src={it.photo}
                     alt={it.label}
-                    className="mb-2 h-36 w-full object-cover"
+                    className={it.photo.endsWith(".svg")
+                      ? "mb-2 h-44 w-full rounded-md bg-slate-50 object-contain"
+                      : "mb-2 h-36 w-full object-cover"}
                     loading="lazy"
                   />
                 )}

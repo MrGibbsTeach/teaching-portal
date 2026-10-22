@@ -222,6 +222,7 @@ Clayton flagged this directly: Y12 General taught the elements and principles of
 - The changes are repeatable with `scripts/add-y11-general-principles-visuals.mjs` and `scripts/add-general-design-concept-visuals.mjs`.
 - Design reference check: Grok Academy's public Digital Exploration lessons include UI/UX activities, and DT Applied presents interface design through user-centred design, wireframing, principles and prototyping. The portal examples use the same practical concept-to-challenge pattern while keeping the course's own scenarios and WA AIT content. [Digital Exploration](https://groklearning.com/dex/), [DT Applied](https://grokacademy.org/dt-applied/).
 - Verified with `npm run build` (passes). No test suite run. Not yet browser-checked inside a logged-in lesson page; include this in the next teacher-preview browser pass.
+- Follow-up after Clayton's live review: found that Wikimedia-hosted images failed with 404s or rate limits. Replaced all 21 General Design Concepts grid-image references with 19 local SVG illustrations under `public/design-concepts/`, set SVG cards to contain rather than crop, and rebuilt the Y11 Balance diagram so both captions fit within their panels. Local asset audit and XML parsing pass; `npm run build` passes. Checking the live rendering now.
 
 ## Per-student quiz-results tracking (2026-10-21)
 

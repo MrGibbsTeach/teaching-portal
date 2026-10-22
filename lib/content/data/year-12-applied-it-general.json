@@ -97,31 +97,31 @@
                   "items": [
                     {
                       "icon": "📏",
-                      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Orient_IV_%28_%29_-_Bridget_Riley_%281931%29_%2844210674930%29.jpg/500px-Orient_IV_%28_%29_-_Bridget_Riley_%281931%29_%2844210674930%29.jpg",
+                      "photo": "/design-concepts/element-line.svg",
                       "label": "Line",
                       "description": "A mark joining two points — straight, curved, thick or thin. Used to divide, direct the eye, or create a border."
                     },
                     {
                       "icon": "⬡",
-                      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Composition%2C_1921_-_Piet_Mondrian%2C_MET_DT4479.jpg/500px-Composition%2C_1921_-_Piet_Mondrian%2C_MET_DT4479.jpg",
+                      "photo": "/design-concepts/element-shape.svg",
                       "label": "Shape",
                       "description": "A 2D area with a boundary — geometric (circles, squares) or organic (natural forms)."
                     },
                     {
                       "icon": "🔲",
-                      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Facevase.png/500px-Facevase.png",
+                      "photo": "/design-concepts/element-space.svg",
                       "label": "Space",
                       "description": "The area around and between items. White (negative) space, like the gap around these two faces, gives a design room to breathe."
                     },
                     {
                       "icon": "🪨",
-                      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Weathered_wood_grain_texture_macro_closeup_detail.jpg/500px-Weathered_wood_grain_texture_macro_closeup_detail.jpg",
+                      "photo": "/design-concepts/element-texture.svg",
                       "label": "Texture",
                       "description": "How a surface looks like it would feel — rough, smooth or grainy."
                     },
                     {
                       "icon": "🎨",
-                      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Color_star-en_%28tertiary_names%29.svg/500px-Color_star-en_%28tertiary_names%29.svg.png",
+                      "photo": "/design-concepts/element-colour.svg",
                       "label": "Colour",
                       "description": "Hue, value and saturation used to set mood, draw attention and link items."
                     }
@@ -361,25 +361,25 @@
                   "items": [
                     {
                       "icon": "⚖️",
-                      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/500px-Taj_Mahal_in_March_2004.jpg",
+                      "photo": "/design-concepts/principle-balance.svg",
                       "label": "Balance",
                       "description": "How visual weight is spread across a design — symmetrical or asymmetrical. The Taj Mahal's perfectly mirrored facade is a classic example of symmetrical balance."
                     },
                     {
                       "icon": "🎯",
-                      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Caravaggio_-_Canestra_di_frutta.jpg/500px-Caravaggio_-_Canestra_di_frutta.jpg",
+                      "photo": "/design-concepts/principle-emphasis.svg",
                       "label": "Emphasis",
                       "description": "Making one item stand out as the focal point, through contrast and proportion. This basket is lit against a plain background, so it's the only thing the eye can land on."
                     },
                     {
                       "icon": "🌊",
-                      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/The_Great_Wave_off_Kanagawa.jpg/500px-The_Great_Wave_off_Kanagawa.jpg",
+                      "photo": "/design-concepts/principle-dominance.svg",
                       "label": "Dominance",
                       "description": "One item is clearly the most important and is seen first. Hokusai's wave towers over the boats and even Mount Fuji — there's no doubt what you look at first."
                     },
                     {
                       "icon": "🏛️",
-                      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Parthenon_from_west.jpg/500px-Parthenon_from_west.jpg",
+                      "photo": "/design-concepts/principle-unity.svg",
                       "label": "Unity",
                       "description": "All parts look like they belong together, through proximity and repetition. The Parthenon's columns repeat at equal spacing, so the whole row reads as one structure."
                     }

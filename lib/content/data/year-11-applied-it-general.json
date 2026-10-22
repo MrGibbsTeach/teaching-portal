@@ -182,7 +182,7 @@
         {
          "type": "richText",
          "heading": "Balance — distribute visual weight",
-         "html": "<svg viewBox=\"0 0 360 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;border-radius:8px;background:#f8fafc\">\n  <text x=\"16\" y=\"20\" font-family=\"Arial\" font-size=\"11\" fill=\"#64748b\" font-weight=\"700\">BALANCE IN ACTION</text>\n  <!-- Symmetrical -->\n  <rect x=\"16\" y=\"28\" width=\"155\" height=\"112\" rx=\"4\" fill=\"white\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n  <text x=\"94\" y=\"44\" font-family=\"Arial\" font-size=\"9\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"700\">SYMMETRICAL</text>\n  <rect x=\"36\" y=\"52\" width=\"50\" height=\"50\" rx=\"4\" fill=\"#bfdbfe\"/>\n  <rect x=\"120\" y=\"52\" width=\"50\" height=\"50\" rx=\"4\" fill=\"#bfdbfe\"/>\n  <rect x=\"64\" y=\"112\" width=\"42\" height=\"20\" rx=\"10\" fill=\"#3b82f6\"/>\n  <text x=\"85\" y=\"126\" font-family=\"Arial\" font-size=\"9\" fill=\"white\" text-anchor=\"middle\">CTA</text>\n  <!-- Asymmetrical -->\n  <rect x=\"189\" y=\"28\" width=\"155\" height=\"112\" rx=\"4\" fill=\"white\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n  <text x=\"267\" y=\"44\" font-family=\"Arial\" font-size=\"9\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"700\">ASYMMETRICAL</text>\n  <rect x=\"199\" y=\"52\" width=\"80\" height=\"70\" rx=\"4\" fill=\"#bfdbfe\"/>\n  <rect x=\"293\" y=\"52\" width=\"36\" height=\"30\" rx=\"4\" fill=\"#fde68a\"/>\n  <rect x=\"293\" y=\"88\" width=\"36\" height=\"14\" rx=\"3\" fill=\"#fde68a\" opacity=\".6\"/>\n  <rect x=\"293\" y=\"108\" width=\"36\" height=\"14\" rx=\"3\" fill=\"#fde68a\" opacity=\".4\"/>\n  <text x=\"199\" y=\"142\" font-family=\"Arial\" font-size=\"9\" fill=\"#94a3b8\">large image + small elements = balance</text>\n</svg><p style='margin-top:10px;font-size:14px;color:#475569'>Symmetrical balance = formal, corporate, safe. Asymmetrical balance = dynamic, modern, editorial. Neither is better — know which one matches the client's brand.</p>"
+         "html": "<svg viewBox=\"0 0 760 310\" role=\"img\" aria-label=\"Symmetrical and asymmetrical balance in two digital layouts\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto;border-radius:12px;background:#f8fafc\"><title>Symmetrical and asymmetrical balance in two digital layouts</title><text x=\"32\" y=\"38\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"700\">BALANCE: WHERE THE VISUAL WEIGHT SITS</text><rect x=\"28\" y=\"55\" width=\"342\" height=\"226\" rx=\"16\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"3\"/><rect x=\"390\" y=\"55\" width=\"342\" height=\"226\" rx=\"16\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"3\"/><text x=\"199\" y=\"88\" text-anchor=\"middle\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\">SYMMETRICAL</text><text x=\"561\" y=\"88\" text-anchor=\"middle\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\">ASYMMETRICAL</text><rect x=\"78\" y=\"108\" width=\"92\" height=\"80\" rx=\"10\" fill=\"#bfdbfe\"/><rect x=\"228\" y=\"108\" width=\"92\" height=\"80\" rx=\"10\" fill=\"#bfdbfe\"/><rect x=\"151\" y=\"204\" width=\"96\" height=\"34\" rx=\"17\" fill=\"#3b82f6\"/><text x=\"199\" y=\"226\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\">ACTION</text><rect x=\"420\" y=\"108\" width=\"146\" height=\"116\" rx=\"10\" fill=\"#bfdbfe\"/><rect x=\"588\" y=\"108\" width=\"95\" height=\"38\" rx=\"9\" fill=\"#fbbf24\"/><rect x=\"588\" y=\"157\" width=\"95\" height=\"29\" rx=\"8\" fill=\"#fde68a\"/><rect x=\"588\" y=\"196\" width=\"95\" height=\"29\" rx=\"8\" fill=\"#fef3c7\"/><text x=\"199\" y=\"262\" text-anchor=\"middle\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"13\">Matching weight on each side</text><text x=\"561\" y=\"262\" text-anchor=\"middle\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"13\">Different sizes, balanced as a group</text></svg><p style='margin-top:10px;font-size:14px;color:#475569'>Symmetrical balance mirrors the visual weight on both sides. Asymmetrical balance uses different elements whose combined visual weight still feels steady.</p>"
         },
         {
          "type": "richText",
@@ -210,31 +210,31 @@
          "items": [
           {
            "icon": "⚖️",
-           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Taj_Mahal%2C_Agra%2C_India.jpg/500px-Taj_Mahal%2C_Agra%2C_India.jpg",
+           "photo": "/design-concepts/principle-balance.svg",
            "label": "Balance",
            "description": "The two sides mirror each other, giving the building a calm, stable feel."
           },
           {
            "icon": "🎯",
-           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Caravaggio_-_Canestra_di_frutta.jpg/500px-Caravaggio_-_Canestra_di_frutta.jpg",
+           "photo": "/design-concepts/principle-emphasis-dominance.svg",
            "label": "Emphasis and dominance",
            "description": "The basket is the focal point because it is brightly lit against a dark background."
           },
           {
            "icon": "◐",
-           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Rembrandt_Harmensz._van_Rijn_-_Nachtwacht_-_Google_Art_Project.jpg/500px-Rembrandt_Harmensz._van_Rijn_-_Nachtwacht_-_Google_Art_Project.jpg",
+           "photo": "/design-concepts/principle-contrast.svg",
            "label": "Contrast",
            "description": "Light and dark areas, large and small shapes, and blue against white make the forms easy to distinguish."
           },
           {
            "icon": "🏛️",
-           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Parthenon_from_west.jpg/500px-Parthenon_from_west.jpg",
+           "photo": "/design-concepts/principle-unity.svg",
            "label": "Unity",
            "description": "Repeated columns, materials and proportions make the parts feel like one structure."
           },
           {
            "icon": "📐",
-           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/The_Great_Wave_off_Kanagawa.jpg/500px-The_Great_Wave_off_Kanagawa.jpg",
+           "photo": "/design-concepts/principle-proportion.svg",
            "label": "Proportion",
            "description": "The enormous wave dwarfs the boats and Mount Fuji, using relative size to communicate scale and importance."
           }
@@ -298,25 +298,25 @@
          "items": [
           {
            "icon": "✒️",
-           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Garamond_Roman_Sample.svg/500px-Garamond_Roman_Sample.svg.png",
+           "photo": "/design-concepts/type-serif.svg",
            "label": "Serif",
            "description": "Small strokes at letter ends (Georgia, Times). Traditional, trustworthy, editorial. Law firms, newspapers, finance. Excellent for print body text."
           },
           {
            "icon": "🔡",
-           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Helvetica_Neue_typeface_sizes.jpg/500px-Helvetica_Neue_typeface_sizes.jpg",
+           "photo": "/design-concepts/type-sans-serif.svg",
            "label": "Sans-serif",
            "description": "No strokes — clean and modern (Roboto, Inter, Helvetica). Dominant in tech and UI. Every major OS default UI font is sans-serif. Your default choice for screens."
           },
           {
            "icon": "✍️",
-           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Pacifico_font_specimen.png/500px-Pacifico_font_specimen.png",
+           "photo": "/design-concepts/type-script.svg",
            "label": "Script / Handwritten",
            "description": "Mimics handwriting (Pacifico, Dancing Script). Warm, personal, artisanal. The brewery mood board is full of these. Used ONLY for headings, max one per design."
           },
           {
            "icon": "🔠",
-           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Futura_Specimen.svg/500px-Futura_Specimen.svg.png",
+           "photo": "/design-concepts/type-display.svg",
            "label": "Display / Decorative",
            "description": "Eye-catching, highly stylised (Impact, Bebas Neue). Loud and specific. Perfect for event posters. Never for body text. Never more than one per project."
           }
@@ -423,19 +423,19 @@
          "items": [
           {
            "icon": "⊞",
-           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/FingerRuleOfThirds.jpg/500px-FingerRuleOfThirds.jpg",
+           "photo": "/design-concepts/composition-thirds.svg",
            "label": "Rule of Thirds",
            "description": "Divide canvas into 3×3. Place focal point at an intersection — not dead centre. Off-centre subjects feel natural, dynamic, and intentional. The most-used rule in photography and web design."
           },
           {
            "icon": "⬜",
-           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Gridded_Page_Spread.svg/500px-Gridded_Page_Spread.svg.png",
+           "photo": "/design-concepts/composition-grid.svg",
            "label": "Grid & Alignment",
            "description": "All elements align to invisible grid lines. In CSS this is Grid and Flexbox. In Figma it's auto-layout. Consistent alignment = professional. Random placement = student project."
           },
           {
            "icon": "🌀",
-           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Fibonacci_spiral_34.svg/500px-Fibonacci_spiral_34.svg.png",
+           "photo": "/design-concepts/composition-golden-ratio.svg",
            "label": "Golden Ratio",
            "description": "1:1.618 — found in nature, architecture, and logo design. Governs ideal proportions for layout sections, font-size scales (e.g. 16/26/42px follows the ratio), and image cropping."
           }
