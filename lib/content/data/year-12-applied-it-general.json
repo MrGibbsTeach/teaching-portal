@@ -547,7 +547,7 @@
                 },
                 {
                   "type": "richText",
-                  "html": "<p>An online shop product page has a green \"Add to cart\" button on a white page.</p><p>Element</p><p>Colour</p><p><strong>How</strong> — The button is bright green while everything else is black, white and grey.</p><p><strong>Principle</strong> — This contrast creates emphasis.</p><p><strong>Effect</strong> — The shopper's eye goes straight to the button, so they are more likely to buy.</p>"
+                  "html": "<div style=\"margin:1rem 0;padding:1rem;border:1px solid #cbd5e1;border-radius:14px;background:#f8fafc\"><p style=\"margin:0 0 .75rem\"><strong>Scenario:</strong> An online shop has a green &ldquo;Add to cart&rdquo; button on a white page.</p><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:.5rem\"><div style=\"padding:.75rem;border-radius:10px;background:#e0f2fe\"><strong>Element</strong><br>Colour</div><div style=\"padding:.75rem;border-radius:10px;background:#e0f2fe\"><strong>How it is used</strong><br>The button is bright green; the rest is neutral.</div><div style=\"padding:.75rem;border-radius:10px;background:#dcfce7\"><strong>Principle</strong><br>Contrast creates emphasis.</div><div style=\"padding:.75rem;border-radius:10px;background:#fef3c7\"><strong>Effect</strong><br>The shopper notices the button first.</div></div><p style=\"margin:.75rem 0 0\"><strong>Full answer:</strong> The bright green button contrasts with the neutral page, creating emphasis so the shopper notices it first.</p></div>"
                 },
                 {
                   "type": "richText",
@@ -613,11 +613,12 @@
                 },
                 {
                   "type": "richText",
-                  "html": "<p>Question: Explain the relationship between one element and one principle. (3 marks)</p><p><strong>Earns 0 or 1 mark</strong> — \"The page uses colour and emphasis.\"</p><p>Both are named but not linked. Earns 1 mark.</p><p><strong>Earns full marks</strong> — \"The green colour of the button contrasts with the grey page, creating emphasis, so the shopper sees it first.\"</p><p>Element + how + principle + effect.</p>"
+                  "html": "<div style=\"margin:1rem 0;padding:1rem;border:1px solid #cbd5e1;border-radius:14px;background:#f8fafc\"><p style=\"margin:0\"><strong>3-mark question:</strong> Explain the relationship between one element and one principle.</p><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.75rem;margin-top:.75rem\"><div style=\"padding:.75rem;border-left:3px solid #f59e0b;background:#fffbeb\"><strong>1 mark: named, not linked</strong><p style=\"margin:.35rem 0 0\">&ldquo;The page uses colour and emphasis.&rdquo; Both are named, but the relationship is missing.</p></div><div style=\"padding:.75rem;border-left:3px solid #16a34a;background:#f0fdf4\"><strong>Full marks: explain the effect</strong><p style=\"margin:.35rem 0 0\">&ldquo;The green button contrasts with the grey page, creating emphasis so the shopper sees it first.&rdquo;</p></div></div><p style=\"margin:.75rem 0 0\"><strong>Pattern:</strong> element + how it is used + principle + effect.</p></div>"
                 },
                 {
-                  "type": "paragraph",
-                  "text": "A weather app shows today's temperature in very large white numbers at the top. The next five days are shown in a row of same-sized cards below, each with the same icon style."
+                  "type": "callout",
+                  "heading": "Practice scenario: Bunbury Weather",
+                  "text": "Today's temperature is shown in very large white numbers at the top. The next five days appear in same-sized cards with a repeated icon style. Identify one element that creates dominance and one that creates unity."
                 },
                 {
                   "type": "callout",
@@ -765,7 +766,7 @@
                 },
                 {
                   "type": "richText",
-                  "html": "<p>Avoid</p><p>More than two typefaces</p><p><strong>Long passages in capitals</strong> — Centred body text (hard to read)</p><p>Script fonts for small text</p><p>Tight line spacing</p><p><strong>Do</strong> — One typeface for headings, one for body</p><p>A clear size hierarchy: heading, subheading, body</p><p><strong>Left-align body text</strong> — Bold for emphasis, not underline</p><p>Enough contrast between text and background</p>"
+                  "html": "<div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.75rem;margin:1rem 0\"><section style=\"padding:1rem;border:1px solid #fecaca;border-radius:12px;background:#fff7f7\"><h4 style=\"margin:0 0 .5rem;color:#991b1b\">Avoid</h4><ul style=\"margin:0;padding-left:1.25rem;line-height:1.7\"><li>Using more than two typefaces</li><li>Long passages in capitals</li><li>Script fonts for small text</li><li>Tight line spacing</li><li>Centred or justified body text</li></ul></section><section style=\"padding:1rem;border:1px solid #a7f3d0;border-radius:12px;background:#f0fdf4\"><h4 style=\"margin:0 0 .5rem;color:#166534\">Do</h4><ul style=\"margin:0;padding-left:1.25rem;line-height:1.7\"><li>Use one typeface for headings and one for body text</li><li>Build a clear size hierarchy</li><li>Left-align body text</li><li>Use bold for emphasis, not underline</li><li>Keep strong text/background contrast</li></ul></section></div>"
                 },
                 {
                   "type": "callout",
