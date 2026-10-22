@@ -153,6 +153,7 @@ For each new animation: write the lesson placement and one check question per st
 
 - Pilot focus: Y11 and Y12 AIT (ATAR, General, Foundations). Audit the existing lessons against the WA SCSA syllabus, complete the gaps, make sure every lesson has check questions, and check that progress and check-question results can be seen per student.
 - Y11 and Y12 General Design Concepts received a visual fix on 22 Oct 2026, live in commit `b5a2267`: 19 self-hosted SVGs cover all 21 Typography/Compositional Rules grid cards; the Y11 Balance diagram text now fits its panels. Follow-up fixes for the Y11 focal-point label and Y12 Typography/relationship layouts are live in `6c81844` (Vercel succeeded). Details are in `STATUS.md`.
+- On 22 Oct 2026, added 104 lesson-specific visual models across the remaining Y11 and Y12 AIT General lessons (all non-Design Concepts topics), based on each lesson's existing content. The generator is `scripts/add-general-course-visual-upgrade.mjs`; SVG validation and build pass. Details and live deployment status are in `STATUS.md`.
 - Y7 to Y10 Digital Technologies courses are parked (Y7 and Y8 are still placeholders in the portal). A Y9 or Y10 group may join the pilot.
 - Y11 and Y12 AIT (ATAR, General, Foundations) have lessons live with animations placed (see the register's "In the course" table). Further lessons and animation placements follow as animations are built.
 - Course names and topics in the register are a best mapping and must be checked against the owner's scope and sequence before locking lesson slots.
