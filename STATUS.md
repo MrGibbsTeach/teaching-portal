@@ -302,3 +302,12 @@ Corrections in the course data:
 - Year 12 Elements of Design brief now uses the same five elements. Year 12 Principles brief now names balance, emphasis, dominance and unity, with contrast/proportion and proximity/repetition identified as means within emphasis/unity.
 
 Validation: both course JSON files parse; expected element/principle counts and referenced design image paths were checked; `git diff --check` passes. `npm run build` passed using a temporary custom output directory because the existing `.next` path contains a Nextcloud-managed reparse point that caused `EPERM`; the original Next config and tsconfig were restored and the temporary output removed. No tests were added or run. Commits `2dff20f` and `0d6e7e3` are pushed to `main`; the Vercel status check for `0d6e7e3` reports success.
+
+
+## AIT General Y11/Y12 next-lesson navigation audit (2026-10-23)
+
+Checked the ordered lesson sequence and all inline Up next callouts across both General courses. The bottom navigation is generated from the course lesson order in `findNextLesson`; all 60 Year 11 and 55 Year 12 generated next links now resolve to the next lesson. Year 11 has no hard-coded Up next callouts. Reviewed all 33 hard-coded Year 12 callouts and corrected the five that pointed at the wrong lesson: Elements and Principles Relationship, Compositional Rules, Sort Filters, Design Process Components, and Dependency on Communication.
+
+The route audit also found a duplicate Year 11 lesson ID (`evaluating-a-digital-solution`) on the Unit 1 and Unit 2 evaluation lessons. `findLesson` resolves the first match, which made the Unit 2 lesson route inaccessible from its own next link. Renamed the Unit 2 ID to `evaluating-a-digital-solution-unit-2`. All 117 Year 11/12 lesson IDs are now unique, and the generated next links resolve to the intended lesson.
+
+Validation: both course JSON files parse, the navigation sequence check passes for all 117 lessons, and `npm run build` passes. Build used a temporary in-project `distDir` because the default `.next` path is managed by Nextcloud and fails cleanup with `EPERM`; project config was restored and temporary output removed.
