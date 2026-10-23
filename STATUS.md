@@ -289,3 +289,16 @@ Clayton asked for a list of things workable unsupervised overnight, picked all o
 **2026-09-25 — sitewide design overhaul:** new type/colour/shape system replacing the default Geist/shadcn-purple look; lesson content restyled to be typeset rather than boxed into cards throughout. See "Site-wide design overhaul" above for detail. Merged onto everything in this section (Foundations split, checkpoints, diagrams, code exercises, live sessions, insights) — build + lint clean, not yet browser-checked, so treat all the "not yet checked in a browser" notes above as still open.
 
 **2026-09-25 — five-tier design system:** resolved the tension above the same day — one master system, five tier accents (Y7–8/Y9–10/Foundations/General/ATAR), plus brought every merged-in component (MasteryTree, live sessions, code exercises, checkpoints, teacher insights) onto the master system for the first time. New `ATARCoursePage`; `Course.tier` field; split the home page's "Years 7–10" group in two so Y9–10 actually gets its own accent. See "Five-tier design system" above for detail.
+
+
+## AIT General Y11/Y12 syllabus accuracy pass (2026-10-23)
+
+Compared the live course outline and Design Concepts material against the supplied SCSA Year 11 syllabus for teaching from 2026 and Year 12 syllabus for teaching from January 2024. The course unit/topic structure and listed topic categories map to both syllabuses. The prescribed assessment structures were checked as part of the reference review.
+
+Corrections in the course data:
+- Year 11 Elements of Design now names the five syllabus elements (line, shape, space, texture, colour). Removed 3D form and tone as elements, added texture to the matching activity, and kept tonal contrast as a supporting visual property.
+- Year 11 Principles of Design now presents balance, emphasis and dominance as the three principles. Contrast and proportion are described as ways to create emphasis, not standalone principles. Revised the diagnostic prompt, examples and review questions to assess syllabus terms.
+- Clarified the Year 11 document-design checklist and project-review lesson: contrast/alignment/proximity/repetition are practical layout checks, not additional syllabus principles. The project visual, table, review scenario and marking guidance now assess the prescribed principle names.
+- Year 12 Elements of Design brief now uses the same five elements. Year 12 Principles brief now names balance, emphasis, dominance and unity, with contrast/proportion and proximity/repetition identified as means within emphasis/unity.
+
+Validation: both course JSON files parse; expected element/principle counts and referenced design image paths were checked; `git diff --check` passes. `npm run build` passed using a temporary custom output directory because the existing `.next` path contains a Nextcloud-managed reparse point that caused `EPERM`; the original Next config and tsconfig were restored and the temporary output removed. No tests were added or run.

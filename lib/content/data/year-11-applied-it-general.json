@@ -20,7 +20,7 @@
        "blocks": [
         {
          "type": "paragraph",
-         "text": "Every visual design is built from seven fundamental building blocks — the elements of design. Before you touch Figma or Canva, you need to recognise these in the wild and understand what each one communicates."
+         "text": "Every visual design uses five elements: line, shape, space, texture and colour. Learn to recognise what each communicates and how designers use it."
         },
         {
          "type": "richText",
@@ -44,13 +44,13 @@
         },
         {
          "type": "richText",
-         "heading": "Tone — the greyscale test",
-         "html": "<svg viewBox=\"0 0 360 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;border-radius:8px;background:#f8fafc\">\n  <text x=\"16\" y=\"20\" font-family=\"Arial\" font-size=\"11\" fill=\"#64748b\" font-weight=\"700\">TONE IN ACTION — why greyscale test matters</text>\n  <text x=\"16\" y=\"36\" font-family=\"Arial\" font-size=\"9\" fill=\"#94a3b8\">Greyscale test: if contrast disappears in black & white, your design has a tone problem</text>\n  <!-- Full colour version -->\n  <rect x=\"16\" y=\"44\" width=\"155\" height=\"90\" rx=\"6\" fill=\"#1e40af\"/>\n  <text x=\"94\" y=\"68\" font-family=\"Arial\" font-size=\"11\" fill=\"white\" font-weight=\"700\" text-anchor=\"middle\">FULL COLOUR</text>\n  <rect x=\"36\" y=\"76\" width=\"115\" height=\"14\" rx=\"3\" fill=\"#93c5fd\" opacity=\".5\"/>\n  <rect x=\"48\" y=\"96\" width=\"91\" height=\"22\" rx=\"11\" fill=\"#fbbf24\"/>\n  <text x=\"94\" y=\"111\" font-family=\"Arial\" font-size=\"10\" fill=\"#1e293b\" font-weight=\"700\" text-anchor=\"middle\">CTA Button</text>\n  <!-- Greyscale version -->\n  <rect x=\"189\" y=\"44\" width=\"155\" height=\"90\" rx=\"6\" fill=\"#374151\"/>\n  <text x=\"267\" y=\"68\" font-family=\"Arial\" font-size=\"11\" fill=\"#f3f4f6\" font-weight=\"700\" text-anchor=\"middle\">GREYSCALE TEST</text>\n  <rect x=\"209\" y=\"76\" width=\"115\" height=\"14\" rx=\"3\" fill=\"#9ca3af\" opacity=\".5\"/>\n  <rect x=\"221\" y=\"96\" width=\"91\" height=\"22\" rx=\"11\" fill=\"#d1d5db\"/>\n  <text x=\"267\" y=\"111\" font-family=\"Arial\" font-size=\"10\" fill=\"#374151\" font-weight=\"700\" text-anchor=\"middle\">Still visible? ✓</text>\n</svg><p style='margin-top:10px;font-size:14px;color:#475569'>Tone is lightness vs darkness, independent of colour. Run every design through a greyscale filter before launch. If your button disappears in greyscale, it fails for users with colour blindness.</p>"
+         "heading": "Tone and contrast - a colour consideration",
+         "html": "<div style=\"padding:1rem;border:1px solid #cbd5e1;border-radius:14px;background:#f8fafc\"><strong>Tone describes lightness and darkness.</strong><p style=\"margin:.5rem 0 0\">Designers can check tonal contrast in greyscale to see whether text and controls remain distinct. Tone is a useful visual property, not a separate element in this syllabus list.</p></div>"
         },
         {
          "type": "richText",
-         "heading": "Visual walkthrough: texture and three-dimensional form",
-         "html": "<figure style=\"margin:1.25rem 0;padding:1rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 400\" role=\"img\" aria-label=\"Side-by-side examples showing texture and three-dimensional form\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title>Side-by-side examples showing texture and three-dimensional form</title><rect x=\"25\" y=\"32\" width=\"345\" height=\"330\" rx=\"22\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"390\" y=\"32\" width=\"345\" height=\"330\" rx=\"22\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"25\" y=\"32\" width=\"345\" height=\"54\" rx=\"22\" fill=\"#fef3c7\"/><rect x=\"390\" y=\"32\" width=\"345\" height=\"54\" rx=\"22\" fill=\"#e0e7ff\"/><text x=\"48\" y=\"67\" fill=\"#92400e\" font-family=\"Arial\" font-size=\"20\" font-weight=\"700\">TEXTURE</text><text x=\"413\" y=\"67\" fill=\"#3730a3\" font-family=\"Arial\" font-size=\"20\" font-weight=\"700\">3D FORM</text><rect x=\"61\" y=\"116\" width=\"273\" height=\"151\" rx=\"15\" fill=\"#a16207\"/><g stroke=\"#713f12\" stroke-width=\"4\" opacity=\".7\" fill=\"none\"><path d=\"M70 145q45-28 90 0t90 0 80 2M65 177q47-24 93 2t93-1 77 3M68 215q43-19 89 2t90-1 80 0M69 245q50-24 96 1t87-1 76 1\"/><path d=\"M93 120v141M151 120v146M234 120v143M296 120v142\" stroke-width=\"1.5\" opacity=\".45\"/></g><text x=\"197\" y=\"294\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial\" font-size=\"14\">Grain suggests a material you can almost feel</text><ellipse cx=\"562\" cy=\"225\" rx=\"82\" ry=\"25\" fill=\"#3730a3\" opacity=\".18\"/><path d=\"M488 153a74 74 0 0 1 148 0v56a74 74 0 0 1-148 0z\" fill=\"#818cf8\"/><ellipse cx=\"562\" cy=\"153\" rx=\"74\" ry=\"25\" fill=\"#c7d2fe\"/><path d=\"M491 154a71 22 0 0 0 142 0\" fill=\"none\" stroke=\"#fff\" stroke-width=\"3\" opacity=\".8\"/><path d=\"M505 185q56 25 114 0M506 213q55 25 112 0\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><text x=\"562\" y=\"294\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial\" font-size=\"14\">Light, shadow and perspective show volume</text><text x=\"197\" y=\"335\" text-anchor=\"middle\" fill=\"#92400e\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">PATTERN + SURFACE DETAIL</text><text x=\"562\" y=\"335\" text-anchor=\"middle\" fill=\"#3730a3\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">HEIGHT + DEPTH + SHADOW</text></svg><figcaption style=\"margin-top:.75rem;color:#475569;font-size:.95rem;line-height:1.55\">Texture is the surface quality a design suggests, such as wood grain. Three-dimensional form shows volume through height, depth, light and shadow. In a digital interface, both can be created with visual effects even when the screen itself is flat.</figcaption></figure>"
+         "heading": "Visual walkthrough: texture and space",
+         "html": "<div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.75rem;margin:1rem 0\"><section style=\"padding:1rem;border:1px solid #fcd34d;border-radius:14px;background:#fffbeb\"><h3 style=\"margin:0 0 .5rem\">Texture</h3><p style=\"margin:0\">Surface detail such as grain, pattern or material cues can suggest how a digital surface might feel.</p></section><section style=\"padding:1rem;border:1px solid #a5b4fc;border-radius:14px;background:#eef2ff\"><h3 style=\"margin:0 0 .5rem\">Space</h3><p style=\"margin:0\">Margins, padding and negative space separate content, create breathing room and guide attention.</p></section></div>"
         },
         {
          "type": "table",
@@ -84,16 +84,6 @@
            "Colour",
            "Emotion, brand identity, hierarchy",
            "Palettes, gradients, accessibility"
-          ],
-          [
-           "3D Form",
-           "Depth, realism, weight",
-           "Shadows, gradients, perspective"
-          ],
-          [
-           "Tone",
-           "Contrast, readability, accessibility",
-           "Light/dark modes, greyscale test"
           ]
          ]
         },
@@ -107,15 +97,15 @@
            "Line",
            "Shape",
            "Space",
-           "Colour",
-           "Tone"
+           "Texture",
+           "Colour"
           ],
           "right": [
            "Borders, dividers, arrows, underlines",
            "Cards, buttons, icons, illustrations",
            "Padding, margins, negative space",
-           "Palettes, gradients, accessibility",
-           "Light/dark modes, greyscale test"
+           "Background overlays, grain, patterns",
+           "Palettes, gradients, accessibility"
           ]
          },
          "goalState": {
@@ -133,30 +123,30 @@
             "Padding, margins, negative space"
            ],
            [
-            "Colour",
-            "Palettes, gradients, accessibility"
+            "Texture",
+            "Background overlays, grain, patterns"
            ],
            [
-            "Tone",
-            "Light/dark modes, greyscale test"
+            "Colour",
+            "Palettes, gradients, accessibility"
            ]
           ]
          },
-         "explanation": "Each element of design has its own job — and its own toolkit a designer reaches for."
+         "explanation": "The five syllabus elements each have practical tools a designer uses in digital products."
         },
         {
          "type": "quizQuestion",
          "question": {
           "questionType": "mcq",
-          "text": "A health brand uses light grey text on a white background. Which element of design is failing, and why?",
+          "text": "A health brand uses light grey text on a white background. What design issue should be improved, and why?",
           "options": [
-           "Colour — the hue is wrong for healthcare",
-           "Shape — the layout is too geometric",
-           "Tone — insufficient contrast between light grey and white",
-           "Space — there is not enough padding"
+           "The text/background contrast is too low, making the text hard to read",
+           "The shapes are too geometric for a health brand",
+           "The layout needs more decorative texture",
+           "The page needs extra padding around every item"
           ],
-          "correctIndex": 2,
-          "explanation": "Tone — the lightness/darkness contrast between light grey and white is too low. This fails WCAG accessibility standards (minimum 4.5:1 contrast ratio for normal text). The hue (grey) may be fine, but the tone difference is too small to read reliably."
+          "correctIndex": 0,
+          "explanation": "The light text has too little contrast against the white background. Increase tonal contrast so the text is easier to read."
          }
         },
         {
@@ -186,87 +176,60 @@
         },
         {
          "type": "richText",
-         "heading": "Emphasis + Dominance — one hero per screen",
-         "html": "<svg viewBox=\"0 0 360 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;border-radius:8px;background:#f8fafc\">\n  <text x=\"16\" y=\"20\" font-family=\"Arial\" font-size=\"11\" fill=\"#64748b\" font-weight=\"700\">EMPHASIS IN ACTION</text>\n  <!-- No emphasis -->\n  <rect x=\"16\" y=\"28\" width=\"155\" height=\"112\" rx=\"4\" fill=\"white\" stroke=\"#e2e8f0\"/>\n  <text x=\"94\" y=\"44\" font-family=\"Arial\" font-size=\"9\" fill=\"#ef4444\" text-anchor=\"middle\" font-weight=\"700\">❌ NO EMPHASIS</text>\n  <rect x=\"26\" y=\"52\" width=\"135\" height=\"12\" rx=\"2\" fill=\"#e2e8f0\"/>\n  <rect x=\"26\" y=\"68\" width=\"135\" height=\"12\" rx=\"2\" fill=\"#e2e8f0\"/>\n  <rect x=\"26\" y=\"84\" width=\"135\" height=\"12\" rx=\"2\" fill=\"#e2e8f0\"/>\n  <rect x=\"26\" y=\"100\" width=\"135\" height=\"12\" rx=\"2\" fill=\"#e2e8f0\"/>\n  <rect x=\"26\" y=\"116\" width=\"135\" height=\"12\" rx=\"2\" fill=\"#e2e8f0\"/>\n  <!-- Clear emphasis -->\n  <rect x=\"189\" y=\"28\" width=\"155\" height=\"112\" rx=\"4\" fill=\"white\" stroke=\"#e2e8f0\"/>\n  <text x=\"267\" y=\"44\" font-family=\"Arial\" font-size=\"9\" fill=\"#16a34a\" text-anchor=\"middle\" font-weight=\"700\">✓ CLEAR EMPHASIS</text>\n  <text x=\"267\" y=\"68\" font-family=\"Arial\" font-size=\"18\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"900\">Big Heading</text>\n  <rect x=\"209\" y=\"76\" width=\"116\" height=\"8\" rx=\"2\" fill=\"#e2e8f0\" opacity=\".7\"/>\n  <rect x=\"209\" y=\"88\" width=\"90\" height=\"8\" rx=\"2\" fill=\"#e2e8f0\" opacity=\".5\"/>\n  <rect x=\"229\" y=\"104\" width=\"76\" height=\"26\" rx=\"13\" fill=\"#ef4444\"/>\n  <text x=\"267\" y=\"121\" font-family=\"Arial\" font-size=\"10\" fill=\"white\" text-anchor=\"middle\" font-weight=\"700\">BUY NOW</text>\n</svg><p style='margin-top:10px;font-size:14px;color:#475569'>If everything is important, nothing is. Every screen needs ONE dominant element that catches the eye first. Your CTA is the hero. Make it obvious — then make everything else step back.</p>"
-        },
-        {
-         "type": "richText",
-         "heading": "Contrast — make differences clear",
-         "html": "<svg viewBox=\"0 0 360 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;border-radius:8px;background:#f8fafc\">\n  <text x=\"16\" y=\"20\" font-family=\"Arial\" font-size=\"11\" fill=\"#64748b\" font-weight=\"700\">CONTRAST IN ACTION</text>\n  <!-- Low contrast -->\n  <rect x=\"16\" y=\"28\" width=\"155\" height=\"112\" rx=\"4\" fill=\"#f1f5f9\"/>\n  <text x=\"94\" y=\"50\" font-family=\"Arial\" font-size=\"14\" fill=\"#94a3b8\" text-anchor=\"middle\" font-weight=\"700\">Website Title</text>\n  <text x=\"94\" y=\"66\" font-family=\"Arial\" font-size=\"9\" fill=\"#cbd5e1\" text-anchor=\"middle\">body text that is hard to read</text>\n  <rect x=\"60\" y=\"80\" width=\"68\" height=\"20\" rx=\"10\" fill=\"#e2e8f0\"/>\n  <text x=\"94\" y=\"94\" font-family=\"Arial\" font-size=\"9\" fill=\"#94a3b8\" text-anchor=\"middle\">Button</text>\n  <text x=\"94\" y=\"130\" font-family=\"Arial\" font-size=\"9\" fill=\"#ef4444\" text-anchor=\"middle\">❌ FAILS accessibility (WCAG)</text>\n  <!-- High contrast -->\n  <rect x=\"189\" y=\"28\" width=\"155\" height=\"112\" rx=\"4\" fill=\"#0f172a\"/>\n  <text x=\"267\" y=\"50\" font-family=\"Arial\" font-size=\"14\" fill=\"white\" text-anchor=\"middle\" font-weight=\"700\">Website Title</text>\n  <text x=\"267\" y=\"66\" font-family=\"Arial\" font-size=\"9\" fill=\"#cbd5e1\" text-anchor=\"middle\">body text — clearly legible</text>\n  <rect x=\"233\" y=\"80\" width=\"68\" height=\"20\" rx=\"10\" fill=\"#f59e0b\"/>\n  <text x=\"267\" y=\"94\" font-family=\"Arial\" font-size=\"9\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"700\">Button</text>\n  <text x=\"267\" y=\"130\" font-family=\"Arial\" font-size=\"9\" fill=\"#16a34a\" text-anchor=\"middle\">✓ PASSES accessibility (WCAG AA)</text>\n</svg><p style='margin-top:10px;font-size:14px;color:#475569'>Contrast isn't just visual preference — it's an accessibility requirement. WCAG AA requires 4.5:1 contrast ratio for normal text. Failing this means your site is legally inaccessible to users with vision impairment.</p>"
-        },
-        {
-         "type": "richText",
-         "heading": "Unity — one visual language",
-         "html": "<svg viewBox=\"0 0 360 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;border-radius:8px;background:#f8fafc\">\n  <text x=\"16\" y=\"20\" font-family=\"Arial\" font-size=\"11\" fill=\"#64748b\" font-weight=\"700\">UNITY IN ACTION</text>\n  <!-- No unity -->\n  <rect x=\"16\" y=\"28\" width=\"155\" height=\"112\" rx=\"4\" fill=\"white\" stroke=\"#fca5a5\" stroke-width=\"2\"/>\n  <text x=\"94\" y=\"44\" font-family=\"Arial\" font-size=\"9\" fill=\"#ef4444\" text-anchor=\"middle\" font-weight=\"700\">❌ NO UNITY</text>\n  <text x=\"94\" y=\"62\" font-family=\"Arial\" font-size=\"12\" fill=\"#ef4444\" text-anchor=\"middle\" font-weight=\"900\">Comic Sans Heading</text>\n  <rect x=\"26\" y=\"68\" width=\"58\" height=\"16\" rx=\"8\" fill=\"#8b5cf6\"/>\n  <rect x=\"96\" y=\"68\" width=\"75\" height=\"16\" rx=\"2\" fill=\"#f59e0b\"/>\n  <text x=\"94\" y=\"104\" font-family=\"Arial\" font-size=\"8\" fill=\"#64748b\" text-anchor=\"middle\">Three completely different</text>\n  <text x=\"94\" y=\"116\" font-family=\"Arial\" font-size=\"8\" fill=\"#64748b\" text-anchor=\"middle\">fonts, colours, styles</text>\n  <!-- Unity -->\n  <rect x=\"189\" y=\"28\" width=\"155\" height=\"112\" rx=\"4\" fill=\"white\" stroke=\"#86efac\" stroke-width=\"2\"/>\n  <text x=\"267\" y=\"44\" font-family=\"Arial\" font-size=\"9\" fill=\"#16a34a\" text-anchor=\"middle\" font-weight=\"700\">✓ UNIFIED DESIGN SYSTEM</text>\n  <text x=\"267\" y=\"62\" font-family=\"Arial\" font-size=\"12\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"700\">Inter Bold Heading</text>\n  <rect x=\"210\" y=\"68\" width=\"58\" height=\"16\" rx=\"8\" fill=\"#3b82f6\"/>\n  <rect x=\"280\" y=\"68\" width=\"55\" height=\"16\" rx=\"8\" fill=\"#3b82f6\" opacity=\".6\"/>\n  <text x=\"267\" y=\"104\" font-family=\"Arial\" font-size=\"8\" fill=\"#64748b\" text-anchor=\"middle\">One font · One colour</text>\n  <text x=\"267\" y=\"116\" font-family=\"Arial\" font-size=\"8\" fill=\"#64748b\" text-anchor=\"middle\">Consistent corner radius</text>\n</svg><p style='margin-top:10px;font-size:14px;color:#475569'>Unity is what a brand design system enforces. One font family. One colour palette. Consistent corner radius on all buttons and cards. When every element belongs to the same visual family, the design feels intentional.</p>"
-        },
-        {
-         "type": "richText",
-         "heading": "Proportion — size communicates importance",
-         "html": "<svg viewBox=\"0 0 360 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;border-radius:8px;background:#f8fafc\">\n  <text x=\"16\" y=\"20\" font-family=\"Arial\" font-size=\"11\" fill=\"#64748b\" font-weight=\"700\">PROPORTION IN ACTION</text>\n  <!-- Wrong proportion -->\n  <rect x=\"16\" y=\"28\" width=\"155\" height=\"112\" rx=\"4\" fill=\"white\" stroke=\"#fca5a5\" stroke-width=\"2\"/>\n  <text x=\"94\" y=\"44\" font-family=\"Arial\" font-size=\"9\" fill=\"#ef4444\" text-anchor=\"middle\" font-weight=\"700\">❌ BAD PROPORTION</text>\n  <text x=\"94\" y=\"62\" font-family=\"Arial\" font-size=\"9\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"700\">Heading (9px)</text>\n  <text x=\"94\" y=\"88\" font-family=\"Arial\" font-size=\"18\" fill=\"#1e293b\" text-anchor=\"middle\">Body text (18px)</text>\n  <rect x=\"40\" y=\"102\" width=\"112\" height=\"10\" rx=\"5\" fill=\"#fca5a5\"/>\n  <text x=\"96\" y=\"112\" font-family=\"Arial\" font-size=\"6\" fill=\"white\" text-anchor=\"middle\">BUTTON (6px)</text>\n  <!-- Good proportion -->\n  <rect x=\"189\" y=\"28\" width=\"155\" height=\"112\" rx=\"4\" fill=\"white\" stroke=\"#86efac\" stroke-width=\"2\"/>\n  <text x=\"267\" y=\"44\" font-family=\"Arial\" font-size=\"9\" fill=\"#16a34a\" text-anchor=\"middle\" font-weight=\"700\">✓ CORRECT PROPORTION</text>\n  <text x=\"267\" y=\"66\" font-family=\"Arial\" font-size=\"18\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"700\">H1 Heading (32px)</text>\n  <text x=\"267\" y=\"84\" font-family=\"Arial\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"middle\">Body text (16px)</text>\n  <rect x=\"220\" y=\"100\" width=\"94\" height=\"24\" rx=\"12\" fill=\"#16a34a\"/>\n  <text x=\"267\" y=\"116\" font-family=\"Arial\" font-size=\"11\" fill=\"white\" text-anchor=\"middle\" font-weight=\"700\">CTA (16px)</text>\n</svg><p style='margin-top:10px;font-size:14px;color:#475569'>Size relationships communicate hierarchy instantly. H1 > H2 > body > caption. A heading the same size as body text has no proportion — so it has no hierarchy. Eyeballing it is for students. Use a type scale.</p>"
+         "heading": "Emphasis - guide attention",
+         "html": "<svg viewBox=\"0 0 360 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;border-radius:8px;background:#f8fafc\">\n  <text x=\"16\" y=\"20\" font-family=\"Arial\" font-size=\"11\" fill=\"#64748b\" font-weight=\"700\">EMPHASIS IN ACTION</text>\n  <!-- No emphasis -->\n  <rect x=\"16\" y=\"28\" width=\"155\" height=\"112\" rx=\"4\" fill=\"white\" stroke=\"#e2e8f0\"/>\n  <text x=\"94\" y=\"44\" font-family=\"Arial\" font-size=\"9\" fill=\"#ef4444\" text-anchor=\"middle\" font-weight=\"700\">❌ NO EMPHASIS</text>\n  <rect x=\"26\" y=\"52\" width=\"135\" height=\"12\" rx=\"2\" fill=\"#e2e8f0\"/>\n  <rect x=\"26\" y=\"68\" width=\"135\" height=\"12\" rx=\"2\" fill=\"#e2e8f0\"/>\n  <rect x=\"26\" y=\"84\" width=\"135\" height=\"12\" rx=\"2\" fill=\"#e2e8f0\"/>\n  <rect x=\"26\" y=\"100\" width=\"135\" height=\"12\" rx=\"2\" fill=\"#e2e8f0\"/>\n  <rect x=\"26\" y=\"116\" width=\"135\" height=\"12\" rx=\"2\" fill=\"#e2e8f0\"/>\n  <!-- Clear emphasis -->\n  <rect x=\"189\" y=\"28\" width=\"155\" height=\"112\" rx=\"4\" fill=\"white\" stroke=\"#e2e8f0\"/>\n  <text x=\"267\" y=\"44\" font-family=\"Arial\" font-size=\"9\" fill=\"#16a34a\" text-anchor=\"middle\" font-weight=\"700\">✓ CLEAR EMPHASIS</text>\n  <text x=\"267\" y=\"68\" font-family=\"Arial\" font-size=\"18\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"900\">Big Heading</text>\n  <rect x=\"209\" y=\"76\" width=\"116\" height=\"8\" rx=\"2\" fill=\"#e2e8f0\" opacity=\".7\"/>\n  <rect x=\"209\" y=\"88\" width=\"90\" height=\"8\" rx=\"2\" fill=\"#e2e8f0\" opacity=\".5\"/>\n  <rect x=\"229\" y=\"104\" width=\"76\" height=\"26\" rx=\"13\" fill=\"#ef4444\"/>\n  <text x=\"267\" y=\"121\" font-family=\"Arial\" font-size=\"10\" fill=\"white\" text-anchor=\"middle\" font-weight=\"700\">BUY NOW</text>\n</svg><p style=\"margin-top:10px;font-size:14px;color:#475569\">Emphasis directs attention to important content. Contrast and proportion can help a heading or call-to-action stand out. Dominance describes the element with the strongest visual presence; use it to make the main focus clear.</p>"
         },
         {
          "type": "grid",
-         "title": "Five Principles in Real Designs",
+         "title": "Three Principles in Real Designs",
          "items": [
           {
            "icon": "⚖️",
            "photo": "/design-concepts/principle-balance.svg",
            "label": "Balance",
-           "description": "The two sides mirror each other, giving the building a calm, stable feel."
+           "description": "Visual weight is arranged to feel steady across the layout."
           },
           {
            "icon": "🎯",
-           "photo": "/design-concepts/principle-emphasis-dominance.svg",
-           "label": "Emphasis and dominance",
-           "description": "The basket is the focal point because it is brightly lit against a dark background."
+           "photo": "/design-concepts/principle-emphasis.svg",
+           "label": "Emphasis",
+           "description": "Contrast or proportion makes the important date stand out."
           },
           {
-           "icon": "◐",
-           "photo": "/design-concepts/principle-contrast.svg",
-           "label": "Contrast",
-           "description": "Light and dark areas, large and small shapes, and blue against white make the forms easy to distinguish."
-          },
-          {
-           "icon": "🏛️",
-           "photo": "/design-concepts/principle-unity.svg",
-           "label": "Unity",
-           "description": "Repeated columns, materials and proportions make the parts feel like one structure."
-          },
-          {
-           "icon": "📐",
-           "photo": "/design-concepts/principle-proportion.svg",
-           "label": "Proportion",
-           "description": "The enormous wave dwarfs the boats and Mount Fuji, using relative size to communicate scale and importance."
+           "icon": "★",
+           "photo": "/design-concepts/principle-dominance.svg",
+           "label": "Dominance",
+           "description": "One element has the strongest visual presence and is seen first."
           }
          ]
         },
         {
          "type": "callout",
          "heading": "🏭 Leo's Diagnostic Framework",
-         "text": "Before any critique, run through every principle in order: Is there ONE dominant focal point? Is the layout balanced? Does contrast meet WCAG? Is the visual language unified? Are proportions communicating hierarchy? Missing any one of these is why designs feel 'off' even when people can't say why."
+         "text": "Use the three syllabus principles to critique a design: Is the visual weight balanced? What creates emphasis through contrast or proportion? Which element is dominant, and does it support the purpose?"
         },
         {
          "type": "quizQuestion",
          "question": {
           "questionType": "mcq",
-          "text": "A student's landing page has a headline, hero image, 4 columns of body text, 3 CTA buttons, and 2 banner images — all the same visual weight. Which principle is most critically missing?",
+          "text": "A page gives every item the same visual weight, so the important action does not stand out. Which Year 11 principle would help?",
           "options": [
-           "Unity — the visual language is inconsistent",
-           "Emphasis — there is no single dominant focal point",
-           "Texture — the page lacks visual surface variety",
-           "Balance — the columns are uneven"
+           "Balance",
+           "Emphasis",
+           "Dominance",
+           "Line"
           ],
           "correctIndex": 1,
-          "explanation": "Emphasis — when every element has the same visual weight, there's no focal point, no hierarchy, and no clear action for the user. The eye doesn't know where to go. Leo's rule: one hero, one message, one primary CTA per screen."
+          "explanation": "Emphasis directs attention to important information. Contrast or proportion can make the action stand out; dominance describes the element with the strongest visual presence."
          }
         },
         {
          "type": "quizQuestion",
          "question": {
           "questionType": "short_answer",
-          "text": "Look at two website screenshots: Site A uses black text on white (#000 on #FFF). Site B uses light grey text on white (#D1D5DB on #FFFFFF). Both use the same font size. Explain which site has a contrast problem, identify which design principle is violated, and state the accessibility standard it fails.",
+          "text": "Two websites show the same text at the same size. Site A uses black on white; Site B uses pale grey on white. Which needs improvement, and why?",
           "marks": 3,
-          "explanation": "Site B has the contrast problem. Principle violated: Contrast (and tone). #D1D5DB on #FFFFFF has a contrast ratio of approximately 1.6:1 — far below the WCAG AA minimum of 4.5:1 for normal body text. This makes the content inaccessible to users with low vision or colour blindness. Site A's #000 on #FFF achieves 21:1 — perfect contrast."
+          "explanation": "Site B needs improvement because its text/background contrast is too low for comfortable reading. Increase the contrast. Contrast is a design consideration that can support emphasis; it is not a standalone principle in the Year 11 syllabus."
          }
         }
        ]
@@ -599,7 +562,7 @@
         {
          "type": "richText",
          "heading": "Quick visual map: from design choice to user effect",
-         "html": "<figure style=\"margin:1.25rem 0;padding:1rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 400\" role=\"img\" aria-label=\"Four connected stages: elements, principles, composition and audience effect\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title>Four connected stages: elements, principles, composition and audience effect</title><g font-family=\"Arial,sans-serif\"><rect x=\"30\" y=\"55\" width=\"155\" height=\"225\" rx=\"20\" fill=\"#fff\" stroke=\"#c7d2fe\" stroke-width=\"3\"/><rect x=\"215\" y=\"55\" width=\"155\" height=\"225\" rx=\"20\" fill=\"#fff\" stroke=\"#a5f3fc\" stroke-width=\"3\"/><rect x=\"400\" y=\"55\" width=\"155\" height=\"225\" rx=\"20\" fill=\"#fff\" stroke=\"#fde68a\" stroke-width=\"3\"/><rect x=\"585\" y=\"55\" width=\"145\" height=\"225\" rx=\"20\" fill=\"#fff\" stroke=\"#bbf7d0\" stroke-width=\"3\"/><g text-anchor=\"middle\"><circle cx=\"108\" cy=\"112\" r=\"37\" fill=\"#4f46e5\"/><text x=\"108\" y=\"120\" fill=\"#fff\" font-size=\"24\" font-weight=\"700\">1</text><text x=\"108\" y=\"178\" fill=\"#1e293b\" font-size=\"19\" font-weight=\"700\">ELEMENT</text><text x=\"108\" y=\"211\" fill=\"#475569\" font-size=\"14\">Colour, shape,</text><text x=\"108\" y=\"232\" fill=\"#475569\" font-size=\"14\">line, space</text><circle cx=\"293\" cy=\"112\" r=\"37\" fill=\"#0891b2\"/><text x=\"293\" y=\"120\" fill=\"#fff\" font-size=\"24\" font-weight=\"700\">2</text><text x=\"293\" y=\"178\" fill=\"#1e293b\" font-size=\"19\" font-weight=\"700\">PRINCIPLE</text><text x=\"293\" y=\"211\" fill=\"#475569\" font-size=\"14\">Emphasis, unity,</text><text x=\"293\" y=\"232\" fill=\"#475569\" font-size=\"14\">balance</text><circle cx=\"478\" cy=\"112\" r=\"37\" fill=\"#d97706\"/><text x=\"478\" y=\"120\" fill=\"#fff\" font-size=\"24\" font-weight=\"700\">3</text><text x=\"478\" y=\"178\" fill=\"#1e293b\" font-size=\"19\" font-weight=\"700\">LAYOUT</text><text x=\"478\" y=\"211\" fill=\"#475569\" font-size=\"14\">Type, grid,</text><text x=\"478\" y=\"232\" fill=\"#475569\" font-size=\"14\">composition</text><circle cx=\"657\" cy=\"112\" r=\"37\" fill=\"#16a34a\"/><text x=\"657\" y=\"120\" fill=\"#fff\" font-size=\"24\" font-weight=\"700\">4</text><text x=\"657\" y=\"178\" fill=\"#1e293b\" font-size=\"19\" font-weight=\"700\">EFFECT</text><text x=\"657\" y=\"211\" fill=\"#475569\" font-size=\"14\">Clear, accessible,</text><text x=\"657\" y=\"232\" fill=\"#475569\" font-size=\"14\">fit for purpose</text></g><g stroke=\"#64748b\" stroke-width=\"4\" fill=\"none\"><path d=\"M188 168h20\"/><path d=\"M373 168h20\"/><path d=\"M558 168h20\"/></g><g fill=\"#64748b\"><path d=\"m204 160 10 8-10 8z\"/><path d=\"m389 160 10 8-10 8z\"/><path d=\"m574 160 10 8-10 8z\"/></g><text x=\"380\" y=\"338\" text-anchor=\"middle\" fill=\"#334155\" font-size=\"17\" font-weight=\"700\">Explain the link: “The designer used ___ to create ___, so the user can ___.”</text></g></svg><figcaption style=\"margin-top:.75rem;color:#475569;font-size:.95rem;line-height:1.55\">Use this chain to structure a short answer: identify the choice, connect it to the principle or layout, then state what it does for the intended user.</figcaption></figure>"
+         "html": "<figure style=\"margin:1.25rem 0;padding:1rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 400\" role=\"img\" aria-label=\"Four connected stages: elements, principles, composition and audience effect\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title>Four connected stages: elements, principles, composition and audience effect</title><g font-family=\"Arial,sans-serif\"><rect x=\"30\" y=\"55\" width=\"155\" height=\"225\" rx=\"20\" fill=\"#fff\" stroke=\"#c7d2fe\" stroke-width=\"3\"/><rect x=\"215\" y=\"55\" width=\"155\" height=\"225\" rx=\"20\" fill=\"#fff\" stroke=\"#a5f3fc\" stroke-width=\"3\"/><rect x=\"400\" y=\"55\" width=\"155\" height=\"225\" rx=\"20\" fill=\"#fff\" stroke=\"#fde68a\" stroke-width=\"3\"/><rect x=\"585\" y=\"55\" width=\"145\" height=\"225\" rx=\"20\" fill=\"#fff\" stroke=\"#bbf7d0\" stroke-width=\"3\"/><g text-anchor=\"middle\"><circle cx=\"108\" cy=\"112\" r=\"37\" fill=\"#4f46e5\"/><text x=\"108\" y=\"120\" fill=\"#fff\" font-size=\"24\" font-weight=\"700\">1</text><text x=\"108\" y=\"178\" fill=\"#1e293b\" font-size=\"19\" font-weight=\"700\">ELEMENT</text><text x=\"108\" y=\"211\" fill=\"#475569\" font-size=\"14\">Colour, shape,</text><text x=\"108\" y=\"232\" fill=\"#475569\" font-size=\"14\">line, space</text><circle cx=\"293\" cy=\"112\" r=\"37\" fill=\"#0891b2\"/><text x=\"293\" y=\"120\" fill=\"#fff\" font-size=\"24\" font-weight=\"700\">2</text><text x=\"293\" y=\"178\" fill=\"#1e293b\" font-size=\"19\" font-weight=\"700\">PRINCIPLE</text><text x=\"293\" y=\"211\" fill=\"#475569\" font-size=\"14\">Emphasis, dominance,</text><text x=\"293\" y=\"232\" fill=\"#475569\" font-size=\"14\">balance</text><circle cx=\"478\" cy=\"112\" r=\"37\" fill=\"#d97706\"/><text x=\"478\" y=\"120\" fill=\"#fff\" font-size=\"24\" font-weight=\"700\">3</text><text x=\"478\" y=\"178\" fill=\"#1e293b\" font-size=\"19\" font-weight=\"700\">LAYOUT</text><text x=\"478\" y=\"211\" fill=\"#475569\" font-size=\"14\">Type, grid,</text><text x=\"478\" y=\"232\" fill=\"#475569\" font-size=\"14\">composition</text><circle cx=\"657\" cy=\"112\" r=\"37\" fill=\"#16a34a\"/><text x=\"657\" y=\"120\" fill=\"#fff\" font-size=\"24\" font-weight=\"700\">4</text><text x=\"657\" y=\"178\" fill=\"#1e293b\" font-size=\"19\" font-weight=\"700\">EFFECT</text><text x=\"657\" y=\"211\" fill=\"#475569\" font-size=\"14\">Clear, accessible,</text><text x=\"657\" y=\"232\" fill=\"#475569\" font-size=\"14\">fit for purpose</text></g><g stroke=\"#64748b\" stroke-width=\"4\" fill=\"none\"><path d=\"M188 168h20\"/><path d=\"M373 168h20\"/><path d=\"M558 168h20\"/></g><g fill=\"#64748b\"><path d=\"m204 160 10 8-10 8z\"/><path d=\"m389 160 10 8-10 8z\"/><path d=\"m574 160 10 8-10 8z\"/></g><text x=\"380\" y=\"338\" text-anchor=\"middle\" fill=\"#334155\" font-size=\"17\" font-weight=\"700\">Explain the link: “The designer used ___ to create ___, so the user can ___.”</text></g></svg><figcaption style=\"margin-top:.75rem;color:#475569;font-size:.95rem;line-height:1.55\">Use this chain to structure a short answer: identify the choice, connect it to the principle or layout, then state what it does for the intended user.</figcaption></figure>"
         },
         {
          "type": "quizQuestion",
@@ -622,15 +585,15 @@
          "question": {
           "id": "dc-q2",
           "questionType": "mcq",
-          "text": "A designer uses the same brand colour on every page of a website. Which design principle does this demonstrate?",
+          "text": "A flyer uses a bright call-to-action against a muted background so viewers notice it first. Which Year 11 principle is being applied?",
           "options": [
-           "Contrast",
-           "Repetition",
-           "Proximity",
-           "Balance"
+           "Balance",
+           "Emphasis",
+           "Dominance",
+           "Line"
           ],
           "correctIndex": 1,
-          "explanation": "Repetition means consistently using the same visual elements (colours, fonts, shapes) throughout a design to create unity and strengthen brand identity."
+          "explanation": "Emphasis directs attention to an important element. Contrast between the call-to-action and its muted surroundings helps it stand out."
          }
         },
         {
@@ -669,15 +632,15 @@
          "question": {
           "id": "dc-q5",
           "questionType": "mcq",
-          "text": "A heading is large and bold, a subheading is medium weight, and body text is small and regular. Which design principle is being applied?",
+          "text": "A designer increases the size and weight of an important heading so it stands out from the body text. Which Year 11 principle is being applied?",
           "options": [
-           "Unity",
-           "Proximity",
            "Balance",
-           "Emphasis / Hierarchy"
+           "Emphasis",
+           "Dominance",
+           "Line"
           ],
-          "correctIndex": 3,
-          "explanation": "Emphasis (or visual hierarchy) directs the viewer's attention to the most important content first and guides them through information in order of importance. Size and weight differences create this hierarchy."
+          "correctIndex": 1,
+          "explanation": "Emphasis makes important content stand out. Size and weight are design choices that can establish emphasis."
          }
         },
         {
@@ -4042,11 +4005,11 @@
           },
           {
            "term": "Proximity",
-           "definition": "Grouping related elements close together and separating unrelated elements. A label placed next to its data field is immediately understood; a label two centimetres away creates confusion."
+           "definition": "A layout technique: place related elements near one another and leave space between unrelated items. This helps readers see which information belongs together."
           },
           {
            "term": "Repetition",
-           "definition": "Using the same visual style (fonts, colours, icon set, spacing) consistently throughout a document. Repetition creates unity — the reader's brain recognises the pattern and navigates more efficiently."
+           "definition": "A layout technique: repeat visual choices such as fonts, colours or spacing consistently. Consistency can make a document feel coherent."
           },
           {
            "term": "Hierarchy",
@@ -4175,7 +4138,7 @@
          "type": "callout",
          "variant": "sandbox",
          "heading": "💻 SANDBOX CHALLENGE · REDESIGN A BAD DOCUMENT",
-         "text": "Your teacher will provide (or you will create) a deliberately poorly designed one-page document: mismatched fonts, clashing colours, misaligned elements, overcrowded layout. Identify every design violation — name the principle it breaks (Contrast, Alignment, Proximity, Repetition) and explain what the fix is. Then redesign the document in Canva, applying all four CRAP principles. Submit both the 'before' description and the 'after' Canva export."
+         "text": "Your teacher will provide (or you will create) a deliberately poorly designed one-page document: mismatched fonts, clashing colours, misaligned elements and overcrowded layout. Use contrast, alignment, proximity and repetition as a practical layout checklist. Then redesign it in Canva and explain how your changes apply the syllabus concepts of balance, emphasis or dominance, typography and composition. Submit the before-and-after examples with your annotations."
         },
         {
          "type": "callout",
@@ -4472,7 +4435,7 @@
           ],
           [
            "Document Design",
-           "CRAP principles, typography, colour, tools",
+           "design checklist: contrast, alignment, proximity, repetition, typography, colour, tools",
            "Q6"
           ]
          ]
@@ -4537,7 +4500,7 @@
          "type": "quizQuestion",
          "question": {
           "questionType": "mcq",
-          "text": "Which design principle is described by this rule: 'group related elements close together and leave space between unrelated elements'?",
+          "text": "Which layout technique groups related elements close together and leaves space between unrelated elements?",
           "options": [
            "Contrast",
            "Repetition",
@@ -4546,7 +4509,7 @@
           ],
           "correctIndex": 3,
           "marks": 1,
-          "explanation": "Proximity is the principle that related items should be grouped visually close together, while unrelated items should have clear space between them. This helps readers understand which pieces of information belong together without needing to read all the text first."
+          "explanation": "Proximity is a layout technique for grouping related information. It supports document layout; the Year 11 syllabus principles are balance, emphasis and dominance."
          }
         },
         {
@@ -11113,7 +11076,7 @@
          "type": "callout",
          "variant": "ticket",
          "heading": "🎟️ TICKET #4304 · BUNBURY TECH LAUNCHPAD",
-         "text": "Status: 🟡 IN PROGRESS | Sprint 2 — Design Review\n\nLeo has handed you the visual design draft for the community quiz. Before it goes to the client, it goes through a design review. Your task: evaluate the design against the principles of balance, contrast, emphasis, unity, and proportion — and against accessibility standards. If it fails any of these checks, the design does not leave this room."
+         "text": "Status: 🟡 IN PROGRESS | Sprint 2 — Design Review\n\nLeo has handed you the visual design draft for the community quiz. Before it goes to the client, review balance, emphasis and dominance. Check contrast and proportion as ways to create emphasis, then review readability and accessibility separately. If it fails these checks, the design does not leave this room."
         },
         {
          "type": "paragraph",
@@ -11143,7 +11106,7 @@
         {
          "type": "richText",
          "heading": "Visual model: Applying Design Elements and Principles",
-         "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"project-management-applying-design-elements-and-principles-title project-management-applying-design-elements-and-principles-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"project-management-applying-design-elements-and-principles-title\">Applying Design Elements and Principles: Concept cards for Balance, Emphasis, Contrast, Unity.</title><desc id=\"project-management-applying-design-elements-and-principles-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ede9fe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Applying Design Elements and Principles</tspan></text><text x=\"36\" y=\"94\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">PRINCIPLE</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Balance</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Definition: Visual weight distributed</tspan><tspan x=\"84\" dy=\"19\">evenly across the screen · Digital…</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#b45309\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#b45309\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Emphasis</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Definition: One element visually stands out</tspan><tspan x=\"444\" dy=\"19\">as the most important · Digital…</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Contrast</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Definition: Differences between elements to</tspan><tspan x=\"84\" dy=\"19\">create visual interest and ensure…</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#b45309\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#b45309\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Unity</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Definition: All elements feel like they</tspan><tspan x=\"444\" dy=\"19\">belong to the same system · Digital…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
+         "html": "<div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:.8rem;margin:1rem 0\"><section style=\"padding:1rem;border:1px solid #c7d2fe;border-radius:16px;background:#eef2ff\"><strong>1. Balance</strong><p>Arrange visual weight so the layout feels steady.</p><small>Check whether content crowds one side.</small></section><section style=\"padding:1rem;border:1px solid #fde68a;border-radius:16px;background:#fffbeb\"><strong>2. Emphasis</strong><p>Use contrast or proportion to draw attention to important content.</p><small>Check whether the key action stands out.</small></section><section style=\"padding:1rem;border:1px solid #bbf7d0;border-radius:16px;background:#f0fdf4\"><strong>3. Dominance</strong><p>Give one element the strongest visual presence.</p><small>Check whether the main focal point is clear.</small></section></div>"
         },
         {
          "type": "heading",
@@ -11161,33 +11124,21 @@
          "rows": [
           [
            "Balance",
-           "Visual weight distributed evenly across the screen",
-           "Centre-align key content; use grid layouts so elements don't cluster on one side",
-           "Every element left-aligned, creating heavy left side and empty right"
+           "Visual weight is arranged so the layout feels steady",
+           "Distribute text, images and controls across the page; use a grid to organise content",
+           "Most content crowds one side while the other side is empty"
           ],
           [
            "Emphasis",
-           "One element visually stands out as the most important",
-           "The primary call-to-action button is larger, brighter, or higher contrast than surrounding elements",
-           "Making everything bold — nothing stands out when everything competes"
+           "An important element stands out and attracts attention",
+           "Use contrast or proportion to make the primary call-to-action easy to find",
+           "Every item uses the same size and weight, so nothing stands out"
           ],
           [
-           "Contrast",
-           "Differences between elements to create visual interest and ensure readability",
-           "Dark text on light background (or vice versa); WCAG AA contrast ratio minimum 4.5:1",
-           "Grey text on white background — fails contrast check and is unreadable in sunlight"
-          ],
-          [
-           "Unity",
-           "All elements feel like they belong to the same system",
-           "Consistent font, colour palette (2–3 colours), spacing, and button styles throughout",
-           "Different button styles on every screen — looks like multiple products stitched together"
-          ],
-          [
-           "Proportion",
-           "Relative sizes of elements reflect their relative importance",
-           "Heading larger than body text; call-to-action button larger than secondary links",
-           "Decorative elements as large as or larger than functional content"
+           "Dominance",
+           "One element has the strongest visual presence",
+           "Make the key message or action the main focal point",
+           "Several elements compete equally to be seen first"
           ]
          ]
         },
@@ -11222,7 +11173,7 @@
          "type": "callout",
          "variant": "sandbox",
          "heading": "💻 SANDBOX CHALLENGE · DESIGN CRITIQUE",
-         "text": "You are reviewing two design options for the community quiz results screen:\n\nOption A: White background, light grey text (#AAAAAA), a small 'Try Again' button in the corner, no consistent spacing, question text and result text are the same size.\n\nOption B: Off-white background (#FAFAFA), dark charcoal text (#2D2D2D), large centred result heading with the personalised message, a prominent orange 'Try Again' button below, consistent 24px padding on all sides.\n\nFor each option: (a) Identify which design principles it applies well and which it violates. (b) Check the contrast ratios for the text using the descriptions — does either option risk failing WCAG AA? (c) Which option would you approve for the client? Justify with specific principle references."
+         "text": "You are reviewing two design options for the community quiz results screen:\n\nOption A: White background, light grey text (#AAAAAA), a small Try Again button in the corner, no consistent spacing, and question text and result text at the same size.\n\nOption B: Off-white background (#FAFAFA), dark charcoal text (#2D2D2D), a large result heading, a prominent orange Try Again button, and consistent padding.\n\nFor each option: (a) identify how balance, emphasis and dominance are working, and suggest a fix where needed; (b) check whether the text contrast supports readability; (c) choose which option you would approve and justify your decision using the syllabus principle names."
         },
         {
          "type": "quizQuestion",
@@ -11258,9 +11209,9 @@
          "type": "quizQuestion",
          "question": {
           "questionType": "short_answer",
-          "text": "A junior designer presents a quiz interface with these characteristics: five different font styles used across the screens, the 'Submit' button is the same size as all other text, all answer options are in 11px light grey on a white background. (a) Identify three design principle violations. (b) Suggest a specific fix for each.",
+          "text": "A quiz screen uses five font styles, gives the Submit button the same size and weight as other text, shows answer options in pale grey on white, and crowds every item into the left half of the screen. (a) Identify one balance issue and one emphasis issue, and suggest a fix for each. (b) Identify one readability issue and a fix.",
           "marks": 5,
-          "explanation": "Award 5 marks (1 for violation + 1 for fix per pair, 1 bonus for WCAG reference): (1) Unity violation — 5 fonts creates visual chaos; fix: use 2 fonts maximum (heading + body) applied consistently across all screens. (2) Emphasis violation — Submit button the same size as body text; fix: make the Submit button larger, bolder, and higher contrast than surrounding content — it should be the most visually prominent element. (3) Contrast violation (and WCAG AA failure) — 11px light grey on white will almost certainly fail the 4.5:1 contrast requirement and is difficult to read; fix: use dark text (#2D2D2D or similar) on the white background and verify with WebAIM Contrast Checker."
+          "explanation": "Award 2 marks for balance (content is crowded to one side) and a relevant fix (redistribute content using a layout/grid); 2 marks for emphasis (Submit does not stand out) and a relevant fix (use contrast or proportion to make it prominent); 1 mark for the low text/background contrast and a fix (use darker text or otherwise increase contrast). Typography consistency is also a useful observation, but it is not one of the three named principles."
          }
         }
        ]

@@ -21,7 +21,7 @@
                   "type": "callout",
                   "variant": "ticket",
                   "heading": "🎨 BRIEF",
-                  "text": "A streaming service wants their new home screen critiqued before it ships. The client keeps saying it 'feels off' but can't tell me why. That's the job today — before you can fix a design, you have to be able to name exactly what's in it: line, shape, colour, texture, space, form. Pin those down and you can finally talk about what's actually wrong."
+                  "text": "A streaming service wants their new home screen critiqued before it ships. The client keeps saying it 'feels off' but can't tell me why. That's the job today — before you can fix a design, you have to be able to name exactly what's in it: line, shape, colour, texture and space. Pin those down and you can finally talk about what's actually wrong."
                 },
                 {
                   "type": "paragraph",
@@ -290,7 +290,7 @@
                   "type": "callout",
                   "variant": "ticket",
                   "heading": "🎨 BRIEF",
-                  "text": "A concert poster landed on my desk with a note from the client: 'make the date pop more.' That's a principles problem, not an elements one — the elements were already fine. Today's about contrast, balance, emphasis, movement, unity, proportion: the rules for how elements are arranged, not what they are."
+                  "text": "A concert poster needs its date to stand out. The Year 12 syllabus names four principles: balance, emphasis, dominance and unity. Contrast and proportion can create emphasis; proximity and repetition can create unity."
                 },
                 {
                   "type": "paragraph",

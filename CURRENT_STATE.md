@@ -21,8 +21,10 @@ Read this first — before `STATUS.md`. This file is the live handover: what's t
 - **`claude/project-handover.md` is the source of truth for product/content/animation/commercial work** (AGENTS.md points to it) — read it before any of that. This file stays the technical/infra log.
 - Nothing from 2026-10-21's content/feature work (General/ATAR/Foundations lesson changes, the new quiz-results page) has had an actual logged-in browser look yet — not blocking (all passed build/test/lint), but worth a glance next session.
 
+- Syllabus accuracy pass for AIT General Y11/Y12 completed 2026-10-23 against the supplied SCSA syllabuses: corrected Y11 Design Concepts elements, principles and review questions, and corrected Y12 elements/principles briefs. Content JSON parses and changed visual asset paths resolve. See `STATUS.md` for details.
+
 **Next step:**
-1. Logged-in browser pass (teacher preview is enough) over the Y11/Y12 General course-map polish, updated reading cues on the 104 visual models and prior Design Concepts fixes, plus recent Y12 General/ATAR/Foundations lessons, 3D animation placements, and quiz-results page.
+1. Logged-in browser pass (teacher preview is enough) over the Y11/Y12 General course-map polish, syllabus corrections and updated reading cues on the 104 visual models, plus recent Y12 General/ATAR/Foundations lessons, 3D animation placements, and quiz-results page.
 2. Y12 Foundations videos — a researched shortlist is waiting on Clayton's confirmation; see `STATUS.md` → "Open item — Year 12 Foundations videos". Not picked unilaterally — needs Clayton's own ~30s check per video.
 3. Y7–10 need source curriculum material from Clayton before any content work can start — ask him where to find it, or whether to adapt the old OneDrive copy at `D:\OneDrive\Personal\Work\mrgibbs-teach` (a stale pre-Y12-ATAR clone of this same repo, last touched 2026-09-25 — worth a look but not authoritative).
 4. `claude/project-handover.md`'s own next-actions list (A2 merge the Fetch/Decode/Execute animation, A3 place Colour Mixing, A1 swap confirmation) are waiting on Clayton, not started here.
