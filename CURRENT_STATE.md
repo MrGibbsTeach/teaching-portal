@@ -21,7 +21,7 @@ Read this first — before `STATUS.md`. This file is the live handover: what's t
 - **`claude/project-handover.md` is the source of truth for product/content/animation/commercial work** (AGENTS.md points to it) — read it before any of that. This file stays the technical/infra log.
 - Nothing from 2026-10-21's content/feature work (General/ATAR/Foundations lesson changes, the new quiz-results page) has had an actual logged-in browser look yet — not blocking (all passed build/test/lint), but worth a glance next session.
 
-- Syllabus accuracy pass for AIT General Y11/Y12 completed 2026-10-23 against the supplied SCSA syllabuses: corrected Y11 Design Concepts elements, principles and review questions, and corrected Y12 elements/principles briefs. Content JSON parses and changed visual asset paths resolve; production build passes. Commit `2dff20f` is local, but production has not received these corrections because Git Credential Manager has no usable GitHub credential. See `STATUS.md` for details.
+- Syllabus accuracy pass for AIT General Y11/Y12 completed 2026-10-23 against the supplied SCSA syllabuses: corrected Y11 Design Concepts elements, principles and review questions, and corrected Y12 elements/principles briefs. Content JSON parses and changed visual asset paths resolve; production build passes. Commits `2dff20f` and `0d6e7e3` are pushed, and Vercel reports the deployment succeeded. See `STATUS.md` for details.
 
 **Next step:**
 1. Logged-in browser pass (teacher preview is enough) over the Y11/Y12 General course-map polish, syllabus corrections and updated reading cues on the 104 visual models, plus recent Y12 General/ATAR/Foundations lessons, 3D animation placements, and quiz-results page.
