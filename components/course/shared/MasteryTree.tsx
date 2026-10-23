@@ -56,71 +56,87 @@ export function MasteryTree({
   );
 
   return (
-    <ol className="space-y-6">
+    <ol className="space-y-8">
       {tiers.map((tier, d) => (
         <li key={d}>
-          <p className="mb-2 text-xs font-bold uppercase tracking-wide text-muted-foreground">
+          <p className="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-muted-foreground">
+            <span aria-hidden className="h-px w-5 bg-primary/60" />
             {d === 0 ? "Start here" : `Then · level ${d + 1}`}
           </p>
-          <div className="grid gap-3 sm:grid-cols-2">
+          <div className="grid gap-4 sm:grid-cols-2">
             {tier.map((t) => {
               const node = nodes.find((n) => skillIdOf(t) === n.skillId)!;
               const open = unlockAll || node.state !== "locked";
               const isNext = next?.skillId === node.skillId;
               const prereqNames = (t.prerequisites ?? []).map((p) => titleOf.get(p)).filter(Boolean);
               const cont = t.lessons.find((l) => !completed.has(l.id)) ?? t.lessons[0];
+              const doneCount = t.lessons.filter((lesson) => completed.has(lesson.id)).length;
               const state: NodeState = showProgress ? node.state : "available";
               return (
                 <div
                   key={skillIdOf(t)}
-                  className={`border-2 p-4 ${STYLE[open ? state : "locked"]} ${isNext ? "outline outline-2 outline-offset-2 outline-primary" : ""}`}
+                  className={`group relative overflow-hidden rounded-xl border ${STYLE[open ? state : "locked"]} ${isNext ? "ring-2 ring-primary ring-offset-2 ring-offset-background" : ""}`}
                 >
-                  <div className="flex items-start justify-between gap-2">
-                    {open && cont ? (
-                      <Link href={lessonHref(cont)} className="font-semibold hover:underline">
-                        {t.title}
-                      </Link>
-                    ) : (
-                      <span className="font-semibold">{t.title}</span>
-                    )}
-                    {showProgress && LABEL[open ? state : "locked"] && (
-                      <span className="shrink-0 text-xs font-medium uppercase tracking-wide">
-                        {LABEL[open ? state : "locked"]}
-                      </span>
-                    )}
-                  </div>
                   {showProgress && (
-                    <div className="mt-2 h-1.5 overflow-hidden bg-muted">
-                      <div className="h-full bg-primary" style={{ width: `${Math.round(node.progress * 100)}%` }} />
+                    <div className="h-1.5 bg-muted/80" role="img" aria-label={`${doneCount} of ${t.lessons.length} lessons complete`}>
+                      <div className="h-full bg-primary transition-[width]" style={{ width: `${Math.round(node.progress * 100)}%` }} />
                     </div>
                   )}
-                  <p className="mt-1 text-xs">
-                    {!open && prereqNames.length > 0
-                      ? `Unlock by finishing: ${prereqNames.join(", ")}`
-                      : `${t.lessons.length} lessons`}
-                    {isNext && <strong className="ml-2 text-primary">Next up</strong>}
-                  </p>
-                  {open && (
-                    <details className="mt-2 text-sm">
-                      <summary className="cursor-pointer text-xs font-medium text-muted-foreground">Lessons</summary>
-                      <ul className="mt-1 space-y-0.5">
-                        {t.lessons.map((l) => (
-                          <li key={l.id}>
-                            <Link href={lessonHref(l)} className="flex items-center gap-2 rounded px-1 py-1 hover:bg-accent">
-                              {showProgress && (
-                                <span
-                                  aria-hidden
-                                  className={`h-3 w-3 shrink-0 rounded-full border ${completed.has(l.id) ? "border-primary bg-primary" : "border-muted-foreground/40"}`}
-                                />
-                              )}
-                              <span className={completed.has(l.id) ? "text-muted-foreground" : ""}>{l.title}</span>
-                              {completed.has(l.id) && <span className="sr-only">(completed)</span>}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </details>
-                  )}
+                  <div className="p-4 sm:p-5">
+                    <div className="flex items-start justify-between gap-3">
+                      <div className="min-w-0">
+                        <p className="text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-muted-foreground">
+                          {showProgress ? `${doneCount} of ${t.lessons.length} lessons` : `${t.lessons.length} lessons`}
+                        </p>
+                        {open && cont ? (
+                          <Link href={lessonHref(cont)} className="mt-1 block font-heading text-lg font-semibold leading-snug tracking-tight hover:text-primary">
+                            {t.title}
+                          </Link>
+                        ) : (
+                          <span className="mt-1 block font-heading text-lg font-semibold leading-snug tracking-tight">{t.title}</span>
+                        )}
+                      </div>
+                      {showProgress && LABEL[open ? state : "locked"] && (
+                        <span className="shrink-0 rounded-full border border-current/20 px-2.5 py-1 text-[0.65rem] font-semibold uppercase tracking-wide">
+                          {LABEL[open ? state : "locked"]}
+                        </span>
+                      )}
+                    </div>
+                    {t.description && <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{t.description}</p>}
+                    {!open && prereqNames.length > 0 && (
+                      <p className="mt-3 border-t border-current/10 pt-3 text-xs leading-relaxed text-muted-foreground">
+                        Unlock by finishing: {prereqNames.join(", ")}
+                      </p>
+                    )}
+                    {isNext && open && cont && (
+                      <Link href={lessonHref(cont)} className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:underline">
+                        Continue with {cont.title} <span aria-hidden>→</span>
+                      </Link>
+                    )}
+                    {open && (
+                      <details className="mt-4 border-t border-current/10 pt-3 text-sm">
+                        <summary className="cursor-pointer text-xs font-semibold text-muted-foreground">View lessons</summary>
+                        <ul className="mt-2 space-y-1">
+                          {t.lessons.map((l) => (
+                            <li key={l.id}>
+                              <Link href={lessonHref(l)} className="flex items-center gap-2 rounded px-1 py-1 hover:bg-accent">
+                                {showProgress && (
+                                  <span
+                                    aria-hidden
+                                    className={`flex h-4 w-4 shrink-0 items-center justify-center rounded-full border text-[0.6rem] font-bold ${completed.has(l.id) ? "border-primary bg-primary text-primary-foreground" : "border-muted-foreground/40"}`}
+                                  >
+                                    {completed.has(l.id) ? "✓" : ""}
+                                  </span>
+                                )}
+                                <span className={completed.has(l.id) ? "text-muted-foreground" : ""}>{l.title}</span>
+                                {completed.has(l.id) && <span className="sr-only">(completed)</span>}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </details>
+                    )}
+                  </div>
                 </div>
               );
             })}

@@ -2,7 +2,7 @@
 
 This file is the single source of truth for any AI working on this project. Read it fully before doing anything, then read only the other docs your task needs. Update it at the end of every session (see "Keeping this file current").
 
-Last updated: 22 Oct 2026
+Last updated: 23 Oct 2026
 
 ## Start here (60 second version)
 
@@ -74,7 +74,7 @@ Mr Gibbs Teach is the owner's personal teaching platform (lessons, assessments, 
 2. **Customer-facing assets** (landing page, pricing page, email, deck, social post, ad, navigation, link preview image): open `claude/design-references.md`, fetch the matching site live, study 3 to 5 current examples, borrow patterns never designs, and tell the owner which sites and patterns informed the work. This does not apply to the 3D animations.
 3. **Record every build.** When an animation is built, add its row to the register under Built with the link, courses, lesson slot and check questions, and move it out of Planned.
 4. **Verify before showing.** For animations: syntax check, a smoke test, then a real headless browser check of the default labels-on shot, every stage, the info card, the quiz and Flyover. Expect at least one review round after the owner uses it.
-5. **Learn from other education sites.** Mr Gibbs Teach is an online educational website, so its lesson pages, practice, progress tracking and student experience should take the best features of established education platforms (see "Educational reference sites" below). Before designing or changing a learning feature, fetch the relevant sites live, study how they do it, adopt the proven pattern and adapt it to our student-led, WA SCSA-aligned model. Never copy their content, branding or code. Tell the owner which sites and features informed the work.
+5. **Learn from several education sites.** Mr Gibbs Teach is an online educational website, so its lesson pages, practice, progress tracking and student experience should take the best features of established education platforms (see "Educational reference sites" below). Before designing or changing a learning feature, fetch at least two relevant sites live where public access allows; use different references for different strengths rather than relying on one site. Atomi is useful for senior secondary self-paced flow and progress; Education Perfect for lesson-to-practice cycles and student progress; Khan Academy for course/unit mastery and next steps; Grok Academy for Digital Technologies tasks; Code.org for activity sequencing and clear completion states. Adapt proven patterns to our student-led, WA SCSA-aligned model. Never copy content, branding or code. Tell the owner which sites and features informed the work.
 
 ## Definition of done
 
@@ -90,6 +90,7 @@ Mr Gibbs Teach is the owner's personal teaching platform (lessons, assessments, 
 - 21 Oct 2026: pilot is the owner's own AIT Y11 and Y12 classes (ATAR, General, Foundations), this year into early 2027, possibly plus a Y9 or Y10 group. Everything else parked.
 - 21 Oct 2026: commercial strategy written (`claude/commercial-strategy.md`). Strategy is to win a niche (interactive, WA-specific, project-based AIT), not to out-scale Atomi.
 - 21 Oct 2026: competitive advantage analysis written (`claude/competitive-advantage.md`). Positioning: interactive hands-on learning, complete student-led course, WA SCSA depth, evidence from real classes. Not competing on breadth, free content, adaptive drill or early reading.
+- 23 Oct 2026: broadened educational reference practice to draw on multiple relevant platforms per learning-design pass, including Atomi, Education Perfect, Khan Academy, Code.org and Grok Academy; saved current findings in `claude/competitive-advantage.md`.
 - 21 Oct 2026: cost rules added. The animation register is not split for now; read it by section instead.
 - 21 Oct 2026: closed Y12 General's remaining no-interactive-diagram gap (8 topics), merged that work with the 3D-animation/PR#1+#2 work pushed from another session, and pushed to `main`. Found and then corrected an overstated ATAR check-question gap claim (open question 6); the real, smaller Y12 ATAR gap (3 topics) was fixed with the owner's go-ahead, plus one AIT Foundations lesson missing a hands-on activity. Item C's coverage pass is now complete across all 4 pilot tracks.
 - 21 Oct 2026: built per-student quiz-results tracking (open question 7) — a real gap in item 2's own requirement, not content. Teachers can now see each student's own right/wrong answers, not just the class aggregate.
@@ -154,6 +155,7 @@ For each new animation: write the lesson placement and one check question per st
 - Pilot focus: Y11 and Y12 AIT (ATAR, General, Foundations). Audit the existing lessons against the WA SCSA syllabus, complete the gaps, make sure every lesson has check questions, and check that progress and check-question results can be seen per student.
 - Y11 and Y12 General Design Concepts received a visual fix on 22 Oct 2026, live in commit `b5a2267`: 19 self-hosted SVGs cover all 21 Typography/Compositional Rules grid cards; the Y11 Balance diagram text now fits its panels. Follow-up fixes for the Y11 focal-point label and Y12 Typography/relationship layouts are live in `6c81844` (Vercel succeeded). Details are in `STATUS.md`.
 - On 22 Oct 2026, added 104 lesson-specific visual models across the remaining Y11 and Y12 AIT General lessons (all non-Design Concepts topics), based on each lesson's existing content. Live in commit `292d965` (Vercel succeeded). The generator is `scripts/add-general-course-visual-upgrade.mjs`; SVG validation and build pass. Details are in `STATUS.md`.
+- On 23 Oct 2026, improved the shared Y11/Y12 General course map and added type-specific reading guidance plus explicit screen-reader descriptions to all 104 non-Design Concepts visual models. Local only pending logged-in desktop/mobile review.
 - Y7 to Y10 Digital Technologies courses are parked (Y7 and Y8 are still placeholders in the portal). A Y9 or Y10 group may join the pilot.
 - Y11 and Y12 AIT (ATAR, General, Foundations) have lessons live with animations placed (see the register's "In the course" table). Further lessons and animation placements follow as animations are built.
 - Course names and topics in the register are a best mapping and must be checked against the owner's scope and sequence before locking lesson slots.

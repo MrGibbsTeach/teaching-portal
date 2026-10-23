@@ -34,16 +34,44 @@ export async function GeneralCoursePage({ slug }: { slug: string }) {
     }))
     .filter((u) => u.topics.length > 0);
 
+  const topicCount = units.reduce((total, unit) => total + unit.topics.length, 0);
+  const lessonCount = units.reduce(
+    (total, unit) => total + unit.topics.reduce((topicTotal, topic) => topicTotal + topic.lessons.length, 0),
+    0,
+  );
+  const completedCount = units.reduce(
+    (total, unit) => total + unit.topics.reduce(
+      (topicTotal, topic) => topicTotal + topic.lessons.filter((lesson) => completedSet.has(lesson.id)).length,
+      0,
+    ),
+    0,
+  );
+
   return (
     <TierTheme tier="general">
-      <div className="mx-auto max-w-3xl px-6 py-16">
-        <p className="text-sm font-medium uppercase tracking-widest text-primary">
-          {course.yearLevel}
-        </p>
-        <h1 className="mt-3 font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
-          {course.title}
-        </h1>
-        <p className="mt-3 max-w-prose text-muted-foreground">{course.description}</p>
+      <div className="mx-auto max-w-5xl px-5 py-10 sm:px-6 sm:py-14">
+        <header className="relative overflow-hidden border-y border-border py-8 sm:py-10">
+          <div aria-hidden className="absolute right-2 top-1/2 hidden -translate-y-1/2 items-center gap-2 sm:flex">
+            <span className="h-3 w-3 rounded-full border-2 border-primary bg-background" />
+            <span className="h-px w-8 bg-primary/40" />
+            <span className="h-4 w-4 rounded-full bg-primary" />
+            <span className="h-px w-8 bg-primary/40" />
+            <span className="h-3 w-3 rounded-full border-2 border-primary bg-background" />
+          </div>
+          <p className="text-xs font-bold uppercase tracking-[0.18em] text-primary">{course.yearLevel} · Applied Information Technology</p>
+          <h1 className="mt-3 max-w-2xl font-heading text-3xl font-semibold tracking-tight sm:text-4xl">{course.title}</h1>
+          <p className="mt-3 max-w-2xl text-muted-foreground">{course.description} Work through the topics, practise each skill, then apply it in a project.</p>
+          <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted-foreground">
+            <span><strong className="text-foreground">{topicCount}</strong> topics</span>
+            <span><strong className="text-foreground">{lessonCount}</strong> lessons</span>
+            {isStudent && <span><strong className="text-foreground">{completedCount} / {lessonCount}</strong> lessons complete</span>}
+          </div>
+          {isStudent && (
+            <div className="mt-3 h-1.5 max-w-md overflow-hidden rounded-full bg-muted" aria-label={`${completedCount} of ${lessonCount} lessons complete`} role="img">
+              <div className="h-full rounded-full bg-primary transition-[width]" style={{ width: `${lessonCount ? (completedCount / lessonCount) * 100 : 0}%` }} />
+            </div>
+          )}
+        </header>
 
         {units.length === 0 && isStudent && (
           <div className="mt-10 border-t border-b border-dashed border-border py-10 text-center text-sm text-muted-foreground">
@@ -51,19 +79,26 @@ export async function GeneralCoursePage({ slug }: { slug: string }) {
           </div>
         )}
 
-        <div className="mt-12 space-y-12">
+        <div className="mt-10 space-y-12 sm:mt-12">
           {units.map((unit) => (
             <section key={unit.id}>
-              <div className="border-b border-border pb-2">
-                {unit.subtitle && (
-                  <p className="text-xs font-semibold uppercase tracking-widest text-primary">{unit.subtitle}</p>
-                )}
-                <div className="flex items-baseline justify-between gap-3">
-                  <h2 className="font-heading text-2xl tracking-tight">{unit.title}</h2>
-                  {unit.status === "coming_soon" && (
-                    <span className="text-sm text-muted-foreground">Coming soon</span>
+              <div className="flex flex-wrap items-end justify-between gap-3 border-b border-border pb-3">
+                <div>
+                  {unit.subtitle && (
+                    <p className="mb-1 text-xs font-semibold uppercase tracking-widest text-primary">{unit.subtitle}</p>
                   )}
+                  <div className="flex items-baseline gap-3">
+                    <h2 className="font-heading text-2xl tracking-tight">{unit.title}</h2>
+                    {unit.status === "coming_soon" && (
+                      <span className="text-sm text-muted-foreground">Coming soon</span>
+                    )}
+                  </div>
                 </div>
+                {isStudent && unit.status !== "coming_soon" && (() => {
+                  const total = unit.topics.reduce((sum, topic) => sum + topic.lessons.length, 0);
+                  const done = unit.topics.reduce((sum, topic) => sum + topic.lessons.filter((lesson) => completedSet.has(lesson.id)).length, 0);
+                  return <p className="text-xs tabular-nums text-muted-foreground">{done} / {total} lessons</p>;
+                })()}
               </div>
               {unit.status === "coming_soon" ? (
                 <p className="py-6 text-sm text-muted-foreground">Content coming soon.</p>

@@ -176,6 +176,24 @@ function renderCards(items, colors) {
   }).join("");
 }
 
+function readingGuide(mode) {
+  if (mode === "compare") return "Read across the panels to compare the items. Use each detail as a prompt to recall the full explanation from the lesson.";
+  if (mode === "flow") return "Follow the steps from left to right. Notice how each stage leads into the next, then connect the sequence to the worked example.";
+  if (mode === "layers") return "Read from top to bottom to see how the levels are grouped. Use the lesson explanation to describe what each level contributes.";
+  if (mode === "workspace") return "Scan each panel, then connect its label to the related idea explained in the lesson.";
+  return "Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.";
+}
+
+function imageDescription(mode, items) {
+  const labels = items.slice(0, 4).map((item) => plain(item.label)).filter(Boolean).join(", ");
+  const structure = mode === "compare" ? "Side-by-side comparison"
+    : mode === "flow" ? "Left-to-right sequence"
+      : mode === "layers" ? "Top-to-bottom layered model"
+        : mode === "workspace" ? "Application workspace with labelled areas"
+          : "Concept cards";
+  return `${structure} for ${labels}.`;
+}
+
 function visualFor(lesson, topicId) {
   const { mode, label, items } = collectItems(lesson);
   const colors = paletteFor(topicId);
@@ -187,9 +205,11 @@ function visualFor(lesson, topicId) {
       : mode === "layers" ? renderLayers(items, colors)
         : /application/i.test(topicId) ? renderWorkspace(items, colors)
           : renderCards(items, colors);
-  const aria = esc(`${lesson.title}: visual model showing ${items.slice(0, 4).map((item) => item.label).join(", ")}`);
-  const svg = `<svg viewBox="0 0 760 320" role="img" aria-label="${aria}" xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%;height:auto"><title>${aria}</title><rect x="8" y="8" width="744" height="304" rx="24" fill="#f8fafc" stroke="#dbe4f0" stroke-width="2"/><rect x="28" y="20" width="116" height="22" rx="11" fill="${colors[2]}"/><text x="86" y="35" text-anchor="middle" fill="${colors[0]}" font-family="Arial" font-size="10" font-weight="700" letter-spacing="1.4">VISUAL MODEL</text>${titleSvg}<text x="36" y="94" fill="${colors[0]}" font-family="Arial" font-size="12" font-weight="700">${category.toUpperCase()}</text>${body}</svg>`;
-  const caption = `Use this visual to review the key ideas from ${lesson.title}. Check how each label connects to the example and explanation in the lesson.`;
+  const modelId = `${topicId}-${lesson.title}`.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  const aria = esc(`${lesson.title}: ${imageDescription(mode, items)}`);
+  const guide = readingGuide(mode);
+  const svg = `<svg viewBox="0 0 760 320" role="img" aria-labelledby="${modelId}-title ${modelId}-desc" xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%;height:auto"><title id="${modelId}-title">${aria}</title><desc id="${modelId}-desc">${esc(guide)}</desc><rect x="8" y="8" width="744" height="304" rx="24" fill="#f8fafc" stroke="#dbe4f0" stroke-width="2"/><rect x="28" y="20" width="116" height="22" rx="11" fill="${colors[2]}"/><text x="86" y="35" text-anchor="middle" fill="${colors[0]}" font-family="Arial" font-size="10" font-weight="700" letter-spacing="1.4">VISUAL MODEL</text>${titleSvg}<text x="36" y="94" fill="${colors[0]}" font-family="Arial" font-size="12" font-weight="700">${category.toUpperCase()}</text>${body}</svg>`;
+  const caption = `${guide} Use the labels to review the explanation in the lesson.`;
   return {
     type: "richText",
     heading: `Visual model: ${lesson.title}`,
