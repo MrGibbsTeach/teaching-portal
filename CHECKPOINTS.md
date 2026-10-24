@@ -41,7 +41,7 @@ So the intent was already "taught by the professional". The framework delivers i
 
 ### Progress (2026-10-24)
 
-Started a three-lesson Year 12 General pilot of a shorter, note-friendly lesson rhythm in Elements and Principles Relationship, Digital Citizenship and Project Management Considerations. The lessons add a mid-lesson multiple-choice check with immediate feedback while retaining their written exam practice and model answers. Await Clayton's review before extending the format. The broader mentor-voice options above remain open.
+Clayton reviewed the three Year 12 General pilot lessons, approved the format for all Year 11 and Year 12 General lessons, and clarified that General and Foundations must use test or assessment wording, with exam language reserved for ATAR. The rollout is complete across all 117 General lessons. Existing written practice remains; teaching lessons now include a mid-lesson feedback check, a notes cue and a concise test-ready recap. The broader mentor-voice options above remain open.
 
 ### Feedback still to add
 _(Clayton is reviewing the other courses and will send further feedback. Add it below.)_

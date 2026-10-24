@@ -25,10 +25,10 @@ Read this first — before `STATUS.md`. This file is the live handover: what's t
 
 - Year 11/12 AIT General next-lesson audit completed 2026-10-23: corrected five stale Year 12 in-lesson Up next callouts and gave the Year 11 Unit 2 evaluation lesson a unique ID so its route and next link resolve correctly. Verified all 117 lesson sequences and the production build passes; see `STATUS.md`.
 
-- Three Year 12 AIT General engagement pilots now use a shorter lesson rhythm: Elements and Principles Relationship, Digital Citizenship, and Project Management Considerations. Each has a notes cue and a feedback question mid-lesson, with exam practice at the end. The project task now uses the four syllabus considerations consistently. Await Clayton's review before widening the format.
+- Engagement format approved and rolled out across all 117 Year 11/12 AIT General lessons. Added 104 mid-lesson feedback checks across teaching lessons (the three Year 12 pilot checks remain), notes cues and test-ready recaps; the ten Year 11 review lessons keep their existing quiz sequences. Removed 106 repeated Year 12 how-to/objective callouts. Year 11 General, Year 12 General and all 68 Foundations lessons have no exam wording in their course data. Production build passes; deployment status will be recorded after push. See `STATUS.md`.
 
 **Next step:**
-1. Clayton review the three Year 12 General engagement pilots after deployment. Hold the wider format pass until his feedback.
+1. Clayton spot-check the revised Year 11/12 General lessons in teacher preview and send any reactions to the new lesson rhythm.
 2. Logged-in browser pass (teacher preview is enough) over the Y11/Y12 General course-map polish, syllabus corrections, next-lesson navigation and updated reading cues on the 104 visual models, plus recent Y12 General/ATAR/Foundations lessons, 3D animation placements, and quiz-results page.
 3. Y12 Foundations videos: the researched shortlist is waiting on Clayton's confirmation; see `STATUS.md` -> "Open item - Year 12 Foundations videos". Not picked unilaterally; needs Clayton's own ~30s check per video.
 4. Y7-10 need source curriculum material from Clayton before any content work can start; ask him where to find it, or whether to adapt the old OneDrive copy at `D:\OneDrive\Personal\Work\mrgibbs-teach` (a stale pre-Y12-ATAR clone of this same repo, last touched 2026-09-25, not authoritative).

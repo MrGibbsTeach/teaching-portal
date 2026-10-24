@@ -92,7 +92,7 @@ Mr Gibbs Teach is the owner's personal teaching platform (lessons, assessments, 
 - 21 Oct 2026: competitive advantage analysis written (`claude/competitive-advantage.md`). Positioning: interactive hands-on learning, complete student-led course, WA SCSA depth, evidence from real classes. Not competing on breadth, free content, adaptive drill or early reading.
 - 23 Oct 2026: broadened educational reference practice to draw on multiple relevant platforms per learning-design pass, including Atomi, Education Perfect, Khan Academy, Code.org and Grok Academy; saved current findings in `claude/competitive-advantage.md`.
 - 21 Oct 2026: cost rules added. The animation register is not split for now; read it by section instead.
-- 24 Oct 2026: Clayton requested a three-lesson Year 12 General engagement pilot for review. Keep the wider content pass on hold until he reviews those samples.
+- 24 Oct 2026: Clayton approved the three-lesson Year 12 General engagement pilot for rollout across all 117 Year 11/12 General lessons. General and Foundations use test or assessment wording; exam language is reserved for ATAR. The rollout is complete; see `STATUS.md`.
 - 21 Oct 2026: closed Y12 General's remaining no-interactive-diagram gap (8 topics), merged that work with the 3D-animation/PR#1+#2 work pushed from another session, and pushed to `main`. Found and then corrected an overstated ATAR check-question gap claim (open question 6); the real, smaller Y12 ATAR gap (3 topics) was fixed with the owner's go-ahead, plus one AIT Foundations lesson missing a hands-on activity. Item C's coverage pass is now complete across all 4 pilot tracks.
 - 21 Oct 2026: built per-student quiz-results tracking (open question 7) — a real gap in item 2's own requirement, not content. Teachers can now see each student's own right/wrong answers, not just the class aggregate.
 
@@ -115,7 +115,7 @@ How to use them:
 1. Fetch the site live and review the specific feature. Do not work from memory. If a page is behind a login or paywall, say so and use what is public. Do not try to get around it.
 2. Write down what the best examples have in common, and which parts suit student-led delivery (no teacher in the room, parent help in younger years).
 3. Propose 2 or 3 options with a one-line tradeoff each, then recommend one.
-4. Match to the audience: Y7 and Y8 DT (younger, parent-assisted) look more like Reading Eggs and Code.org. Y11 and Y12 AIT (self-directed, exam focused) look more like Atomi, Education Perfect and Khan Academy. Grok Academy is the closest subject match for both.
+4. Match to the audience: Y7 and Y8 DT (younger, parent-assisted) look more like Reading Eggs and Code.org. Y11 and Y12 AIT are self-directed and draw on Atomi, Education Perfect and Khan Academy; use test/assessment practice wording for General and Foundations, and reserve exam preparation wording for ATAR. Grok Academy is the closest subject match for both.
 5. Keep what makes us different: the interactive 3D animations, WA SCSA alignment, and check questions on every lesson page.
 
 ## Upcoming work
