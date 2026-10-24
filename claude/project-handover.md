@@ -2,7 +2,7 @@
 
 This file is the single source of truth for any AI working on this project. Read it fully before doing anything, then read only the other docs your task needs. Update it at the end of every session (see "Keeping this file current").
 
-Last updated: 23 Oct 2026
+Last updated: 24 Oct 2026
 
 ## Start here (60 second version)
 
@@ -92,6 +92,7 @@ Mr Gibbs Teach is the owner's personal teaching platform (lessons, assessments, 
 - 21 Oct 2026: competitive advantage analysis written (`claude/competitive-advantage.md`). Positioning: interactive hands-on learning, complete student-led course, WA SCSA depth, evidence from real classes. Not competing on breadth, free content, adaptive drill or early reading.
 - 23 Oct 2026: broadened educational reference practice to draw on multiple relevant platforms per learning-design pass, including Atomi, Education Perfect, Khan Academy, Code.org and Grok Academy; saved current findings in `claude/competitive-advantage.md`.
 - 21 Oct 2026: cost rules added. The animation register is not split for now; read it by section instead.
+- 24 Oct 2026: Clayton requested a three-lesson Year 12 General engagement pilot for review. Keep the wider content pass on hold until he reviews those samples.
 - 21 Oct 2026: closed Y12 General's remaining no-interactive-diagram gap (8 topics), merged that work with the 3D-animation/PR#1+#2 work pushed from another session, and pushed to `main`. Found and then corrected an overstated ATAR check-question gap claim (open question 6); the real, smaller Y12 ATAR gap (3 topics) was fixed with the owner's go-ahead, plus one AIT Foundations lesson missing a hands-on activity. Item C's coverage pass is now complete across all 4 pilot tracks.
 - 21 Oct 2026: built per-student quiz-results tracking (open question 7) — a real gap in item 2's own requirement, not content. Teachers can now see each student's own right/wrong answers, not just the class aggregate.
 

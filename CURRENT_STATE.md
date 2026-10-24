@@ -2,7 +2,7 @@
 
 Read this first — before `STATUS.md`. This file is the live handover: what's true right now and the next step. `STATUS.md` is the detailed history (why things are built the way they are); `CHECKPOINTS.md` is recorded feedback not yet acted on. Both stay as the deeper record — update this file's **Last updated** / **Right now** / **Next step** every session; add detail to `STATUS.md` only when something durable changed.
 
-**Last updated:** 2026-10-23
+**Last updated:** 2026-10-24
 
 **Live:**
 - Production: https://mrgibbsteach.com (custom domain, DNS live, cert issued) — also reachable at https://teaching-portal-eta.vercel.app
@@ -25,10 +25,11 @@ Read this first — before `STATUS.md`. This file is the live handover: what's t
 
 - Year 11/12 AIT General next-lesson audit completed 2026-10-23: corrected five stale Year 12 in-lesson Up next callouts and gave the Year 11 Unit 2 evaluation lesson a unique ID so its route and next link resolve correctly. Verified all 117 lesson sequences and the production build passes; see `STATUS.md`.
 
-**Next step:**
-1. Logged-in browser pass (teacher preview is enough) over the Y11/Y12 General course-map polish, syllabus corrections, next-lesson navigation and updated reading cues on the 104 visual models, plus recent Y12 General/ATAR/Foundations lessons, 3D animation placements, and quiz-results page.
-2. Y12 Foundations videos — a researched shortlist is waiting on Clayton's confirmation; see `STATUS.md` → "Open item — Year 12 Foundations videos". Not picked unilaterally — needs Clayton's own ~30s check per video.
-3. Y7–10 need source curriculum material from Clayton before any content work can start — ask him where to find it, or whether to adapt the old OneDrive copy at `D:\OneDrive\Personal\Work\mrgibbs-teach` (a stale pre-Y12-ATAR clone of this same repo, last touched 2026-09-25 — worth a look but not authoritative).
-4. `claude/project-handover.md`'s own next-actions list (A2 merge the Fetch/Decode/Execute animation, A3 place Colour Mixing, A1 swap confirmation) are waiting on Clayton, not started here.
+- Three Year 12 AIT General engagement pilots now use a shorter lesson rhythm: Elements and Principles Relationship, Digital Citizenship, and Project Management Considerations. Each has a notes cue and a feedback question mid-lesson, with exam practice at the end. The project task now uses the four syllabus considerations consistently. Await Clayton's review before widening the format.
 
-**Working across tools:** Clayton moves between Claude Code and ChatGPT Codex on this project depending on usage limits. Both read `AGENTS.md` on start by convention — keep this file and `STATUS.md` current in the repo itself, not in either tool's private memory, so a cold start in *either* tool picks this project up correctly.
+**Next step:**
+1. Clayton review the three Year 12 General engagement pilots after deployment. Hold the wider format pass until his feedback.
+2. Logged-in browser pass (teacher preview is enough) over the Y11/Y12 General course-map polish, syllabus corrections, next-lesson navigation and updated reading cues on the 104 visual models, plus recent Y12 General/ATAR/Foundations lessons, 3D animation placements, and quiz-results page.
+3. Y12 Foundations videos: the researched shortlist is waiting on Clayton's confirmation; see `STATUS.md` -> "Open item - Year 12 Foundations videos". Not picked unilaterally; needs Clayton's own ~30s check per video.
+4. Y7-10 need source curriculum material from Clayton before any content work can start; ask him where to find it, or whether to adapt the old OneDrive copy at `D:\OneDrive\Personal\Work\mrgibbs-teach` (a stale pre-Y12-ATAR clone of this same repo, last touched 2026-09-25, not authoritative).
+5. `claude/project-handover.md`'s own next-actions list (A2 merge the Fetch/Decode/Execute animation, A3 place Colour Mixing, A1 swap confirmation) is waiting on Clayton, not started here.

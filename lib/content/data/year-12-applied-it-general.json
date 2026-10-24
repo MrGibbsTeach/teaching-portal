@@ -487,27 +487,12 @@
                 {
                   "type": "callout",
                   "variant": "ticket",
-                  "heading": "🎨 BRIEF",
-                  "text": "This is the one that trips up every junior designer I've trained: explaining how an element and a principle work together, not just naming them separately. Markers want the relationship spelled out — the answer pattern is non-negotiable, so we're drilling it until it's automatic."
-                },
-                {
-                  "type": "paragraph",
-                  "text": "Relationship between elements of design and principles of design"
-                },
-                {
-                  "type": "callout",
-                  "heading": "How to use this lesson",
-                  "text": "Work through each slide in order. Copy the definitions into your notes. Answer the two practice questions, then mark them yourself with the key."
-                },
-                {
-                  "type": "callout",
-                  "heading": "Lesson objective",
-                  "text": "Understand how elements of design are used to create principles of design."
+                  "heading": "Leo’s studio brief",
+                  "text": "Today’s temperature is shown in very large white numbers. The five-day forecast repeats the same card shape and icon style. Before reading, decide what should dominate and what makes the cards feel like one set."
                 },
                 {
                   "type": "heading",
-                  "text": "Success criteria",
-                  "level": 3
+                  "text": "Success criteria"
                 },
                 {
                   "type": "list",
@@ -520,8 +505,7 @@
                 },
                 {
                   "type": "heading",
-                  "text": "Key terms",
-                  "level": 3
+                  "text": "Write this down"
                 },
                 {
                   "type": "keyTerms",
@@ -542,8 +526,7 @@
                 },
                 {
                   "type": "heading",
-                  "text": "Worked example: Building a relationship answer",
-                  "level": 3
+                  "text": "Worked example: connect the choice to its effect"
                 },
                 {
                   "type": "richText",
@@ -552,12 +535,25 @@
                 {
                   "type": "richText",
                   "heading": "Visual worked example: link the choice to its effect",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:1rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 400\" role=\"img\" aria-label=\"Weather app screen showing colour, shape and space creating emphasis and unity\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title>Weather app screen showing colour, shape and space creating emphasis and unity</title><rect x=\"20\" y=\"18\" width=\"720\" height=\"364\" rx=\"25\" fill=\"#dbeafe\"/><rect x=\"190\" y=\"28\" width=\"380\" height=\"344\" rx=\"28\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"5\"/><text x=\"220\" y=\"70\" fill=\"#0f172a\" font-family=\"Arial\" font-size=\"18\" font-weight=\"700\">BUNBURY WEATHER</text><circle cx=\"470\" cy=\"127\" r=\"37\" fill=\"#fbbf24\"/><path d=\"M447 126q5-24 25-16 16-29 37 0 21-2 19 22h-76\" fill=\"#fff\"/><text x=\"220\" y=\"155\" fill=\"#0f172a\" font-family=\"Arial\" font-size=\"50\" font-weight=\"700\">22°</text><text x=\"224\" y=\"181\" fill=\"#64748b\" font-family=\"Arial\" font-size=\"14\">Partly cloudy</text><rect x=\"220\" y=\"204\" width=\"320\" height=\"54\" rx=\"15\" fill=\"#2563eb\"/><text x=\"244\" y=\"238\" fill=\"#fff\" font-family=\"Arial\" font-size=\"15\" font-weight=\"700\">TODAY 　High 24°　Low 16°</text><g><rect x=\"220\" y=\"277\" width=\"92\" height=\"62\" rx=\"13\" fill=\"#eff6ff\"/><rect x=\"326\" y=\"277\" width=\"92\" height=\"62\" rx=\"13\" fill=\"#eff6ff\"/><rect x=\"432\" y=\"277\" width=\"108\" height=\"62\" rx=\"13\" fill=\"#eff6ff\"/><text x=\"239\" y=\"301\" fill=\"#334155\" font-family=\"Arial\" font-size=\"12\">TUE</text><text x=\"239\" y=\"326\" fill=\"#1d4ed8\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\">21°</text><text x=\"345\" y=\"301\" fill=\"#334155\" font-family=\"Arial\" font-size=\"12\">WED</text><text x=\"345\" y=\"326\" fill=\"#1d4ed8\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\">23°</text><text x=\"451\" y=\"301\" fill=\"#334155\" font-family=\"Arial\" font-size=\"12\">THU</text><text x=\"451\" y=\"326\" fill=\"#1d4ed8\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\">22°</text></g><g font-family=\"Arial\" font-size=\"12\" font-weight=\"700\"><rect x=\"28\" y=\"105\" width=\"142\" height=\"44\" rx=\"13\" fill=\"#fff\"/><text x=\"43\" y=\"132\" fill=\"#1d4ed8\">COLOUR → emphasis</text><path d=\"M170 127h38\" stroke=\"#1d4ed8\" stroke-width=\"3\"/><rect x=\"584\" y=\"244\" width=\"150\" height=\"44\" rx=\"13\" fill=\"#fff\"/><text x=\"598\" y=\"271\" fill=\"#0f766e\">REPEATED SHAPES</text><path d=\"M584 266h-35\" stroke=\"#0f766e\" stroke-width=\"3\"/></g></svg><figcaption style=\"margin-top:.75rem;color:#475569;font-size:.95rem;line-height:1.55\">Blue colour and a large temperature are elements used to create emphasis. Repeated rounded forecast cards create unity. In an explanation, name both the element and the principle, then connect them with the effect.</figcaption></figure>"
+                  "html": "<figure style=\"margin:1.25rem 0;padding:1rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 400\" role=\"img\" aria-label=\"Weather app screen showing colour, shape and space creating emphasis and unity\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title>Weather app screen showing colour, shape and space creating emphasis and unity</title><rect x=\"20\" y=\"18\" width=\"720\" height=\"364\" rx=\"25\" fill=\"#dbeafe\"/><rect x=\"190\" y=\"28\" width=\"380\" height=\"344\" rx=\"28\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"5\"/><text x=\"220\" y=\"70\" fill=\"#0f172a\" font-family=\"Arial\" font-size=\"18\" font-weight=\"700\">BUNBURY WEATHER</text><circle cx=\"470\" cy=\"127\" r=\"37\" fill=\"#fbbf24\"/><path d=\"M447 126q5-24 25-16 16-29 37 0 21-2 19 22h-76\" fill=\"#fff\"/><text x=\"220\" y=\"155\" fill=\"#0f172a\" font-family=\"Arial\" font-size=\"50\" font-weight=\"700\">22°</text><text x=\"224\" y=\"181\" fill=\"#64748b\" font-family=\"Arial\" font-size=\"14\">Partly cloudy</text><rect x=\"220\" y=\"204\" width=\"320\" height=\"54\" rx=\"15\" fill=\"#2563eb\"/><text x=\"244\" y=\"238\" fill=\"#fff\" font-family=\"Arial\" font-size=\"15\" font-weight=\"700\">TODAY 　High 24°　Low 16°</text><g><rect x=\"220\" y=\"277\" width=\"92\" height=\"62\" rx=\"13\" fill=\"#eff6ff\"/><rect x=\"326\" y=\"277\" width=\"92\" height=\"62\" rx=\"13\" fill=\"#eff6ff\"/><rect x=\"432\" y=\"277\" width=\"108\" height=\"62\" rx=\"13\" fill=\"#eff6ff\"/><text x=\"239\" y=\"301\" fill=\"#334155\" font-family=\"Arial\" font-size=\"12\">TUE</text><text x=\"239\" y=\"326\" fill=\"#1d4ed8\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\">21°</text><text x=\"345\" y=\"301\" fill=\"#334155\" font-family=\"Arial\" font-size=\"12\">WED</text><text x=\"345\" y=\"326\" fill=\"#1d4ed8\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\">23°</text><text x=\"451\" y=\"301\" fill=\"#334155\" font-family=\"Arial\" font-size=\"12\">THU</text><text x=\"451\" y=\"326\" fill=\"#1d4ed8\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\">22°</text></g><g font-family=\"Arial\" font-size=\"12\" font-weight=\"700\"><rect x=\"28\" y=\"105\" width=\"142\" height=\"44\" rx=\"13\" fill=\"#fff\"/><text x=\"43\" y=\"132\" fill=\"#1d4ed8\">COLOUR → emphasis</text><path d=\"M170 127h38\" stroke=\"#1d4ed8\" stroke-width=\"3\"/><rect x=\"584\" y=\"244\" width=\"150\" height=\"44\" rx=\"13\" fill=\"#fff\"/><text x=\"598\" y=\"271\" fill=\"#0f766e\">REPEATED SHAPES</text><path d=\"M584 266h-35\" stroke=\"#0f766e\" stroke-width=\"3\"/></g></svg><figcaption style=\"margin-top:.75rem;color:#475569;font-size:.95rem;line-height:1.55\">The blue Today bar uses colour to create emphasis. Space around the large temperature gives it dominance, so viewers notice it first. The repeated rounded card shapes create unity, so the forecast reads as one group. Name the element, how it is used, the principle and the effect.</figcaption></figure>"
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "Quick check: Which answer explains a complete element–principle relationship?",
+                    "options": [
+                      "The page uses colour and emphasis.",
+                      "The green button contrasts with the neutral page, creating emphasis so shoppers notice it first.",
+                      "The page has a green button on a white background."
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "A full answer names the element (colour), how it is used (contrast), the principle (emphasis) and the effect (noticed first)."
+                  }
                 },
                 {
                   "type": "heading",
-                  "text": "Common relationships",
-                  "level": 3
+                  "text": "Common relationships"
                 },
                 {
                   "type": "table",
@@ -597,19 +593,12 @@
                 {
                   "type": "callout",
                   "variant": "senior-wisdom",
-                  "heading": "💡 SENIOR WISDOM · LEO THORNE",
-                  "text": "I make every junior memorise the pattern: name the element, name the principle, then one sentence on the effect that happens when they combine. Skip the effect and you've described two things sitting next to each other, not a relationship — and that's where marks get lost."
+                  "heading": "Leo’s test tip",
+                  "text": "Name the element, show how it is used, then link it to the principle and the viewer’s response."
                 },
                 {
                   "type": "heading",
-                  "text": "Test tip: Link them, do not list them",
-                  "level": 3
-                },
-                {
-                  "type": "callout",
-                  "variant": "pr-review",
-                  "heading": "🔍 DESIGN REVIEW · LEO IS CHECKING YOUR WORK",
-                  "text": "I read these looking for the word 'because' or 'which creates'. If your sentence just lists the element and the principle with no causal link between them, I send it back. Show me the effect, every time."
+                  "text": "Exam practice: explain the link"
                 },
                 {
                   "type": "richText",
@@ -617,21 +606,20 @@
                 },
                 {
                   "type": "callout",
-                  "heading": "Practice scenario: Bunbury Weather",
-                  "text": "Today's temperature is shown in very large white numbers at the top. The next five days appear in same-sized cards with a repeated icon style. Identify one element that creates dominance and one that creates unity."
+                  "variant": "sandbox",
+                  "heading": "Your turn",
+                  "text": "Use the weather app at the top. Write one sentence explaining dominance and one explaining unity. Try both before revealing the model answers."
                 },
                 {
-                  "type": "callout",
-                  "variant": "sandbox",
-                  "heading": "🖌️ STUDIO CHALLENGE",
-                  "text": "Have a go at both relationship questions — dominance and unity — before you check the pattern. Write them as one flowing sentence, not three separate fragments."
+                  "type": "heading",
+                  "text": "Exam practice"
                 },
                 {
                   "type": "quizQuestion",
                   "question": {
                     "id": "design-concepts-3-elements-and-principles-relationship-q1",
                     "questionType": "extended",
-                    "text": "Explain the relationship between one element and dominance in the app.",
+                    "text": "Explain how one element creates dominance in the weather app.",
                     "marks": 3,
                     "explanation": "3 marks – Explains how an element (e.g. space, shape, colour) is used to make today's temperature dominant, with the effect\n2 marks – Describes the element and dominance with a weak link\n1 mark – Names an element or principle only"
                   }
@@ -641,29 +629,22 @@
                   "question": {
                     "id": "design-concepts-3-elements-and-principles-relationship-q2",
                     "questionType": "extended",
-                    "text": "Explain the relationship between one element and unity in the app.",
+                    "text": "Explain how one element creates unity in the weather app.",
                     "marks": 3,
                     "explanation": "3 marks – Explains how an element (e.g. same-sized card shapes repeated in a row) creates unity (repetition), with the effect\n2 marks – Describes with a weak link\n1 mark – Names only"
                   }
                 },
                 {
                   "type": "heading",
-                  "text": "Check and move on",
-                  "level": 3
+                  "text": "Test-ready recap"
                 },
                 {
                   "type": "list",
-                  "style": "bullet",
                   "items": [
-                    "I have copied the key terms into my notes.",
-                    "I scored at least 5 out of 6 on the practice questions.",
-                    "If not, reread the key terms and the test tip, then try again."
+                    "Build a relationship answer: element + how it is used + principle + effect on the viewer.",
+                    "Use the syllabus terms: line, shape, space, texture or colour; balance, emphasis, dominance or unity.",
+                    "Check that each answer explains what the viewer notices or understands."
                   ]
-                },
-                {
-                  "type": "callout",
-                  "heading": "Up next",
-                  "text": "Next lesson: Typography."
                 }
               ]
             },
@@ -2336,28 +2317,13 @@
               "blocks": [
                 {
                   "type": "callout",
-                  "variant": "ticket",
-                  "heading": "📋 CASE FILE",
-                  "text": "A school's referred a student case to me: under the minimum social media age, oversharing, the usual. Before I write a single recommendation I need the terms locked down properly — digital citizenship, digital footprint, social networking, the actual minimum age — because sloppy definitions sink a case review fast."
-                },
-                {
-                  "type": "paragraph",
-                  "text": "Concept of digital citizenship: responsible use of social networking"
-                },
-                {
-                  "type": "callout",
-                  "heading": "How to use this lesson",
-                  "text": "Work through each slide in order. Copy the definitions into your notes. Answer the two practice questions, then mark them yourself with the key."
-                },
-                {
-                  "type": "callout",
-                  "heading": "Lesson objective",
-                  "text": "Understand what digital citizenship means and how to use social networking responsibly."
+                  "variant": "hook",
+                  "heading": "Elara’s case file",
+                  "text": "A Year 10 student has a public TikTok account. Her profile shows her school uniform, and her videos are often filmed at a local park. Before reading, spot two details that could identify or locate her."
                 },
                 {
                   "type": "heading",
-                  "text": "Success criteria",
-                  "level": 3
+                  "text": "Success criteria"
                 },
                 {
                   "type": "list",
@@ -2370,8 +2336,7 @@
                 },
                 {
                   "type": "heading",
-                  "text": "Key terms",
-                  "level": 3
+                  "text": "Write this down"
                 },
                 {
                   "type": "keyTerms",
@@ -2401,52 +2366,57 @@
                 },
                 {
                   "type": "heading",
-                  "text": "Worked example: Responsible or not?",
-                  "level": 3
+                  "text": "Worked example: responsible or risky?"
                 },
                 {
                   "type": "richText",
                   "html": "<p>Jordan (17) posts about a party on Instagram. Here are four things he could do.</p><p>Posts a group photo without asking</p><p>Not responsible: others did not give permission and the photo stays in their digital footprint.</p><p>Checks privacy settings first</p><p>Responsible: only approved followers see the post.</p><p>Tags the location in real time</p><p>Risky: strangers can see where a group of young people are right now.</p><p>Deletes a friend's rude comment and messages them</p><p>Responsible: stops harm spreading and deals with it privately.</p>"
                 },
                 {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "Quick check: Jordan wants to post a group photo, but has not asked the other people first. What is the most responsible first step?",
+                    "options": [
+                      "Ask the people in the photo before posting it.",
+                      "Post it now and remove it if someone complains.",
+                      "Tag everyone so they find out after it is posted."
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Ask permission first. Other people should have a say in what is added to their digital footprint."
+                  }
+                },
+                {
                   "type": "heading",
-                  "text": "Responsible use of social networking",
-                  "level": 3
+                  "text": "Responsible social networking"
                 },
                 {
                   "type": "richText",
-                  "html": "<p><strong>Do</strong> — Think before you post: would you be happy for a future employer to see it?</p><p>Ask before posting photos of others</p><p>Use strong privacy settings</p><p>Check if information is true before you share it</p><p>Report harmful content</p><p><strong>Avoid</strong> — Sharing your location, school or phone number publicly</p><p>Accepting requests from people you do not know</p><p><strong>Posting while angry</strong> — Sharing other people's work without credit</p><p>Using someone else's account</p>"
+                  "html": "<div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.75rem;margin:1rem 0\"><div style=\"padding:.85rem;border-left:3px solid #16a34a;background:#f0fdf4\"><strong>Do</strong><ul><li>Pause before posting and consider the audience.</li><li>Ask before sharing another person?s photo.</li><li>Check privacy settings and verify information before sharing.</li><li>Report harmful content.</li></ul></div><div style=\"padding:.85rem;border-left:3px solid #dc2626;background:#fef2f2\"><strong>Avoid</strong><ul><li>Posting your school, phone number or live location publicly.</li><li>Accepting requests from people you do not know.</li><li>Posting while angry.</li><li>Sharing another person?s work without credit or using their account.</li></ul></div></div>"
                 },
                 {
                   "type": "callout",
                   "variant": "senior-wisdom",
-                  "heading": "💡 SENIOR WISDOM · DR ELARA FINCH",
-                  "text": "Digital footprint is bigger than 'what you post' — it includes what others post about you, what's logged by services, even what you deleted but was already indexed somewhere. I correct this misunderstanding in almost every case file I review."
+                  "heading": "Elara’s reminder",
+                  "text": "Your digital footprint includes what other people post about you, too. Ask before sharing a photo, and remember that deleting a post cannot guarantee every copy disappears."
                 },
                 {
                   "type": "heading",
-                  "text": "Test tip: Explain the consequence",
-                  "level": 3
-                },
-                {
-                  "type": "callout",
-                  "variant": "pr-review",
-                  "heading": "📝 CASE REVIEW · ELARA IS SIGNING OFF",
-                  "text": "Don't just define digital citizenship — the question asks for it, so give the definition cleanly, then move straight to the two behaviour changes. Vague 'be safer online' answers don't survive my sign-off; name specific, concrete changes."
+                  "text": "Test tip: explain the consequence"
                 },
                 {
                   "type": "richText",
                   "html": "<p>Question: Explain one consequence of posting an inappropriate photo online. (2 marks)</p><p>Earns 0 or 1 mark</p><p>\"You could get in trouble.\"</p><p>This is too general. It does not say how or why.</p><p><strong>Earns full marks</strong> — \"The photo becomes part of your digital footprint and can be copied or screenshotted, so it may be seen by a future employer even after you delete it.\"</p>"
                 },
                 {
-                  "type": "paragraph",
-                  "text": "A Year 10 student has a public TikTok account. Her profile shows her school uniform and her videos are often filmed at a local park."
-                },
-                {
                   "type": "callout",
                   "variant": "sandbox",
-                  "heading": "⚖️ POLICY CHALLENGE",
-                  "text": "Define digital citizenship and describe two changes this student could realistically make, before you check how I'd write the case note."
+                  "heading": "Your turn",
+                  "text": "In your notes, define digital citizenship and plan two realistic changes for the student in the opening case. Explain how each change reduces risk."
+                },
+                {
+                  "type": "heading",
+                  "text": "Exam practice"
                 },
                 {
                   "type": "quizQuestion",
@@ -2470,22 +2440,21 @@
                 },
                 {
                   "type": "heading",
-                  "text": "Check and move on",
-                  "level": 3
+                  "text": "Test-ready recap"
                 },
                 {
                   "type": "list",
-                  "style": "bullet",
                   "items": [
-                    "I have copied the key terms into my notes.",
-                    "I scored at least 5 out of 6 on the practice questions.",
-                    "If not, reread the key terms and the test tip, then try again."
+                    "Digital citizenship means using technology safely, responsibly and respectfully, while understanding online rights and responsibilities.",
+                    "Give specific actions, such as asking permission or removing identifying details, and explain how each reduces risk.",
+                    "Aim for at least 5/6. If needed, review the key terms and the Do/Avoid list, then try again."
                   ]
                 },
                 {
                   "type": "callout",
+                  "variant": "success",
                   "heading": "Task 1",
-                  "text": "Start Task 1 (Design Book). Complete Questions 1 to 3 before CP1 in Week 2."
+                  "text": "Start Task 1 in your Design Book. Complete Questions 1 to 3 before CP1 in Week 2."
                 }
               ]
             },
@@ -4633,27 +4602,12 @@
                 {
                   "type": "callout",
                   "variant": "ticket",
-                  "heading": "🎟️ TICKET",
-                  "text": "Bunbury Surf Club wants a Nippers sign-up reel and the deadline's tight — before I let anyone touch a camera, we run through the four project management considerations. Skip this step and the first thing that gets sacrificed under pressure is quality, every single time."
-                },
-                {
-                  "type": "paragraph",
-                  "text": "Project management considerations: scope, time, resources, client brief"
-                },
-                {
-                  "type": "callout",
-                  "heading": "How to use this lesson",
-                  "text": "Work through each slide in order. Write the definitions and the table into your notes. Answer the two practice questions, then mark them yourself with the key."
-                },
-                {
-                  "type": "callout",
-                  "heading": "Lesson objective",
-                  "text": "Understand how scope, time, resources and the client brief shape the planning of a digital product."
+                  "heading": "Rory’s client brief",
+                  "text": "Bunbury Surf Club needs a 30-second Nippers sign-up reel in three weeks. The team has one phone, a free editing app and no budget. Could they add a 10-second ad without changing the deadline? Keep the four considerations in mind."
                 },
                 {
                   "type": "heading",
-                  "text": "Success criteria",
-                  "level": 3
+                  "text": "Success criteria"
                 },
                 {
                   "type": "list",
@@ -4666,8 +4620,7 @@
                 },
                 {
                   "type": "heading",
-                  "text": "The four considerations",
-                  "level": 3
+                  "text": "Write this down: the four considerations"
                 },
                 {
                   "type": "table",
@@ -4706,8 +4659,7 @@
                 },
                 {
                   "type": "heading",
-                  "text": "Worked example: Bunbury Surf Club: Nippers sign-up reel",
-                  "level": 3
+                  "text": "Worked example: the Nippers sign-up reel"
                 },
                 {
                   "type": "richText",
@@ -4715,33 +4667,43 @@
                 },
                 {
                   "type": "heading",
-                  "text": "Change one, and the others move",
-                  "level": 3
+                  "text": "When one changes, others move"
                 },
                 {
                   "type": "richText",
                   "html": "<p>Scope</p><p>Time</p><p>Resources</p><p><strong>Client brief</strong> — The client brief sits in the middle: every decision must still meet it.</p><p>Less time: reduce the scope (a 15-second reel) or add resources (another editor).</p><p>Bigger scope: add a poster and you need more time or more people.</p><p>Fewer resources: no budget means free software and your own footage, which can take longer.</p>"
                 },
                 {
+                  "type": "quizQuestion",
+                  "question": {
+                    "questionType": "mcq",
+                    "text": "Quick check: The client adds a 10-second ad but keeps the deadline. Which response handles the trade-off best?",
+                    "options": [
+                      "Add help or agree on a smaller deliverable, then check it still meets the client brief.",
+                      "Keep every requirement and tell the team to work faster.",
+                      "Ignore one of the client’s required details without asking."
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "The scope has grown while time is fixed. Add resources, reduce scope or renegotiate the deadline, while keeping the client brief visible."
+                  }
+                },
+                {
                   "type": "callout",
                   "variant": "senior-wisdom",
-                  "heading": "💡 SENIOR WISDOM · RORY QUINN",
-                  "text": "The four considerations fight each other by design — more time or more budget buys better quality, but real projects rarely get more of either. Naming the trade-off honestly up front is worth more than pretending you can max out all four at once."
+                  "heading": "Rory’s planning tip",
+                  "text": "Name the change first, then explain its effect on time, scope or resources. Keep the client brief as the measure for every decision."
                 },
                 {
                   "type": "heading",
-                  "text": "Test tip: Link every answer to the scenario",
-                  "level": 3
-                },
-                {
-                  "type": "callout",
-                  "variant": "pr-review",
-                  "heading": "🛑 STANDUP REVIEW · RORY IS CHECKING THE BOARD",
-                  "text": "Outline all four considerations for this reel specifically, not a generic list. And for the 10-second ad add-on, I want you to say which consideration gets squeezed when scope increases but the deadline doesn't move."
+                  "text": "Test tip: link each point to the scenario"
                 },
                 {
                   "type": "richText",
                   "html": "<p><strong>Earns 0 or 1 mark</strong> — Time is how long the project takes.</p><p>This is a definition. It does not say anything about the scenario, so it cannot earn the \"outline how it applies\" mark.</p><p><strong>Earns full marks</strong> — The reel is due in three weeks, so filming must be finished in week 1 to leave time for editing and club feedback.</p><p>This uses a detail from the scenario (three weeks) and shows the effect on the project.</p>"
+                },
+                {
+                  "type": "heading",
+                  "text": "Apply it: school canteen display"
                 },
                 {
                   "type": "paragraph",
@@ -4750,29 +4712,32 @@
                 {
                   "type": "callout",
                   "variant": "sandbox",
-                  "heading": "🚀 SPRINT CHALLENGE",
-                  "text": "Outline the four considerations for the Nippers reel, then work out what happens to them when the manager adds a 10-second ad, before you check my call."
+                  "heading": "Your turn",
+                  "text": "Outline the four considerations for the Nippers reel. Then explain what would need to change if the client adds the 10-second ad."
                 },
                 {
                   "type": "task",
-                  "title": "Write a One-Page Plan for the Nippers Reel",
+                  "title": "Create a One-Page Plan for the Nippers Reel",
                   "software": "Any word processor",
-                  "intro": "Produce a genuinely usable one-page project plan for the Bunbury Surf Club Nippers sign-up reel from this lesson — the kind you'd actually hand to a client.",
+                  "intro": "Make a one-page plan the Bunbury Surf Club could use before filming.",
                   "steps": [
-                    "Create a one-page document titled Nippers Sign-Up Reel — Project Plan.",
-                    "Add a table with four rows, one per consideration: Time, Cost, Quality, Scope.",
-                    "For each consideration, write one specific line for this exact project (e.g. a real deadline date, an estimated budget figure, a quality standard, a scope boundary — what's included and what isn't).",
-                    "Add a short paragraph: the manager has now asked for a 10-second ad added. State which consideration gets squeezed and by how much (e.g. '2 extra days needed, or quality drops on the original three scenes').",
-                    "Add one row at the bottom naming the final deliverable and its format (e.g. '60-second MP4, 1080×1920 for Instagram Reels').",
-                    "Save the file as nippers-reel-plan."
+                    "Title the document Nippers Sign-Up Reel: Project Plan.",
+                    "Add a four-row table for Scope, Time, Resources and Client brief.",
+                    "For each row, record a specific detail: Scope: one 30-second Instagram reel; Time: the three-week deadline; Resources: one phone, a free editing app and volunteers; Client brief: promote sign-up to parents of 5 to 13 year olds and include the date, club logo and registration details.",
+                    "The client adds a 10-second ad but keeps the deadline. Recommend a realistic adjustment to scope, resources or the deadline, and explain how the client brief will still be met.",
+                    "Finish by naming the deliverable as one 30-second Instagram reel. Save the file as nippers-reel-plan."
                   ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Exam practice"
                 },
                 {
                   "type": "quizQuestion",
                   "question": {
                     "id": "project-management-u3-1-project-management-considerations-q1",
                     "questionType": "extended",
-                    "text": "Outline how each of the four project management considerations applies to the digital menu board project.",
+                    "text": "Outline how each of the four project management considerations applies to the digital menu board.",
                     "marks": 4,
                     "explanation": "1 mark for each consideration outlined with a link to the menu board\n1 mark – Scope: one menu board screen showing prices, daily specials and allergy symbols\n1 mark – Time: two weeks to design, check with the manager and install\n1 mark – Resources: the student, Canva, a school laptop and the TV screen\n1 mark – Client brief: the manager's requirements, e.g. must show allergy symbols clearly"
                   }
@@ -4782,29 +4747,29 @@
                   "question": {
                     "id": "project-management-u3-1-project-management-considerations-q2",
                     "questionType": "extended",
-                    "text": "The manager now wants the menu board to include a 10-second animated special each day, but the deadline stays at two weeks. Explain how this change affects the other considerations.",
+                    "text": "The manager adds a 10-second animated special each day, but the deadline stays at two weeks. Explain how the change affects the other considerations.",
                     "marks": 3,
                     "explanation": "explains the effect of the change on the other considerations\n3 marks – Explains that the scope has grown, so with the same time, more resources are needed (e.g. a second student or animation software), or the manager must accept a simpler animation or later date\n2 marks – Describes that the scope grows and the project needs more time or resources\n1 mark – States that the project will take longer"
                   }
                 },
                 {
                   "type": "heading",
-                  "text": "Apply it to your own project",
-                  "level": 3
+                  "text": "Test-ready recap"
                 },
                 {
                   "type": "list",
-                  "style": "bullet",
                   "items": [
-                    "I have written all four definitions in my notes.",
-                    "I scored at least 5 out of 7 on the practice questions.",
-                    "If not, reread slides 3 and 6 and try again."
+                    "Know the four syllabus considerations: scope, time, resources and client brief.",
+                    "For an outline, link each consideration to a detail in the scenario.",
+                    "When one consideration changes, explain the effect on the others and how the client brief will still be met.",
+                    "Aim for at least 5/7. If needed, review the four-row table and the worked example."
                   ]
                 },
                 {
                   "type": "callout",
+                  "variant": "success",
                   "heading": "Task 1 link",
-                  "text": "Complete Question 2 in your Task 1 design book: outline how scope, time, resources and client brief apply to your own awareness video. It is checked at CP1 in Week 2."
+                  "text": "Complete Question 2 in your Task 1 Design Book: outline how scope, time, resources and client brief apply to your awareness video. It is checked at CP1 in Week 2."
                 }
               ]
             },
