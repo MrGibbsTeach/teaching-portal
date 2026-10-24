@@ -25,7 +25,7 @@ Read this first — before `STATUS.md`. This file is the live handover: what's t
 
 - Year 11/12 AIT General next-lesson audit completed 2026-10-23: corrected five stale Year 12 in-lesson Up next callouts and gave the Year 11 Unit 2 evaluation lesson a unique ID so its route and next link resolve correctly. Verified all 117 lesson sequences and the production build passes; see `STATUS.md`.
 
-- Engagement format approved and rolled out across all 117 Year 11/12 AIT General lessons. Added 104 mid-lesson feedback checks across teaching lessons (the three Year 12 pilot checks remain), notes cues and test-ready recaps; the ten Year 11 review lessons keep their existing quiz sequences. Removed 106 repeated Year 12 how-to/objective callouts. Year 11 General, Year 12 General and all 68 Foundations lessons have no exam wording in their course data. Production build passes; deployment status will be recorded after push. See `STATUS.md`.
+- Engagement format approved and rolled out across all 117 Year 11/12 AIT General lessons. Added 104 mid-lesson feedback checks across teaching lessons (the three Year 12 pilot checks remain), notes cues and test-ready recaps; the ten Year 11 review lessons keep their existing quiz sequences. Removed 106 repeated Year 12 how-to/objective callouts. Year 11 General, Year 12 General and all 68 Foundations lessons have no exam wording in their course data. Production build and Vercel deployment succeeded for commit `5ab2497`. See `STATUS.md` for the deployment record. See `STATUS.md`.
 
 **Next step:**
 1. Clayton spot-check the revised Year 11/12 General lessons in teacher preview and send any reactions to the new lesson rhythm.
