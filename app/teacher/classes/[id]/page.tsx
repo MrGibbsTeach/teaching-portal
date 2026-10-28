@@ -84,6 +84,64 @@ export default async function ClassManagePage({
     studentProgressList.map(({ username, quizAttempts, quizRight }) => [username, { quizAttempts, quizRight }])
   );
 
+  // Today's-lesson release controls: shared by every tier (account-mode ATAR
+  // classes get this alongside their existing Topic Access checkboxes, so a
+  // teacher can either keep using Topic Access or switch a class over to the
+  // same release model as everyone else, per the agreed "ATAR needs to
+  // follow [the release model], makes it easy" direction).
+  const lessonsSection = (
+    <section>
+      <h2 className="text-lg font-semibold">Lessons</h2>
+      <p className="mt-1 text-sm text-muted-foreground">
+        Release a lesson so students can see it, or make it Today&apos;s lesson so it&apos;s what
+        they land on. Pulled-back and revision-only lessons sit in Previous lessons.
+      </p>
+
+      {!content ? (
+        <p className="mt-4 text-sm text-muted-foreground italic">
+          Course content not yet available.
+        </p>
+      ) : (
+        <div className="mt-4 space-y-6">
+          {content.units.map((unit) => (
+            <div key={unit.id} className="border border-border p-4">
+              {unit.subtitle && (
+                <p className="text-xs font-bold uppercase tracking-widest text-primary mb-0.5">
+                  {unit.subtitle}
+                </p>
+              )}
+              <p className="font-semibold mb-3">{unit.title}</p>
+              <div className="space-y-4">
+                {unit.topics.map((topic) => (
+                  <div key={topic.id}>
+                    <p className="text-xs font-semibold text-muted-foreground mb-2">{topic.title}</p>
+                    <div className="space-y-2">
+                      {topic.lessons.map((lesson) => {
+                        const status = releases[lesson.id]?.status ?? "not_released";
+                        return (
+                          <LessonReleaseRow
+                            key={lesson.id}
+                            title={lesson.title}
+                            status={status}
+                            onRelease={releaseLesson.bind(null, cls!.id, lesson.id)}
+                            onMakeToday={makeTodayLesson.bind(null, cls!.id, lesson.id)}
+                            onPullBack={pullBackLesson.bind(null, cls!.id, lesson.id)}
+                            onOpenRevision={openRevisionLesson.bind(null, cls!.id, lesson.id)}
+                            onCloseRevision={closeRevisionLesson.bind(null, cls!.id, lesson.id)}
+                          />
+                        );
+                      })}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+    </section>
+  );
+
   return (
     <div className="mx-auto max-w-3xl px-6 py-12 space-y-12">
       {/* Header */}
@@ -123,7 +181,8 @@ export default async function ClassManagePage({
 
       {authMode === "account" ? (
         <>
-          {/* Topic Access (ATAR: unchanged) */}
+          {/* Legacy whole-topic unlock, kept for classes already using it.
+              The Lessons section below is the preferred way to manage access now. */}
           <section>
             <h2 className="text-lg font-semibold">Topic Access</h2>
             <p className="mt-1 text-sm text-muted-foreground">
@@ -186,6 +245,8 @@ export default async function ClassManagePage({
               </form>
             )}
           </section>
+
+          {lessonsSection}
 
           {/* Students */}
           <section>
@@ -304,57 +365,7 @@ export default async function ClassManagePage({
             )}
           </section>
 
-          {/* Lesson release */}
-          <section>
-            <h2 className="text-lg font-semibold">Lessons</h2>
-            <p className="mt-1 text-sm text-muted-foreground">
-              Release a lesson so students can see it, or make it Today&apos;s lesson so it&apos;s what
-              they land on. Pulled-back and revision-only lessons sit in Previous lessons.
-            </p>
-
-            {!content ? (
-              <p className="mt-4 text-sm text-muted-foreground italic">
-                Course content not yet available.
-              </p>
-            ) : (
-              <div className="mt-4 space-y-6">
-                {content.units.map((unit) => (
-                  <div key={unit.id} className="border border-border p-4">
-                    {unit.subtitle && (
-                      <p className="text-xs font-bold uppercase tracking-widest text-primary mb-0.5">
-                        {unit.subtitle}
-                      </p>
-                    )}
-                    <p className="font-semibold mb-3">{unit.title}</p>
-                    <div className="space-y-4">
-                      {unit.topics.map((topic) => (
-                        <div key={topic.id}>
-                          <p className="text-xs font-semibold text-muted-foreground mb-2">{topic.title}</p>
-                          <div className="space-y-2">
-                            {topic.lessons.map((lesson) => {
-                              const status = releases[lesson.id]?.status ?? "not_released";
-                              return (
-                                <LessonReleaseRow
-                                  key={lesson.id}
-                                  title={lesson.title}
-                                  status={status}
-                                  onRelease={releaseLesson.bind(null, cls!.id, lesson.id)}
-                                  onMakeToday={makeTodayLesson.bind(null, cls!.id, lesson.id)}
-                                  onPullBack={pullBackLesson.bind(null, cls!.id, lesson.id)}
-                                  onOpenRevision={openRevisionLesson.bind(null, cls!.id, lesson.id)}
-                                  onCloseRevision={closeRevisionLesson.bind(null, cls!.id, lesson.id)}
-                                />
-                              );
-                            })}
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            )}
-          </section>
+          {lessonsSection}
         </>
       )}
 
