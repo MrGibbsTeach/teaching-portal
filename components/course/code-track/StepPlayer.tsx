@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useState, type CSSProperties } from "react";
 import type { Block } from "@/lib/content/types";
 import { splitBlocksByPart } from "@/lib/content/parts";
 import {
@@ -14,6 +14,22 @@ import { BlockRenderer } from "@/components/course/BlockRenderer";
 import { markLessonComplete } from "@/lib/local-progress";
 
 type Tab = "content" | "activities";
+
+/** Arcade-only celebration on a passed lesson (redesign-plan.md §2.2: "stars or
+ *  score per activity, confetti... nothing that carries across lessons"). Pure
+ *  CSS, gated by the `.theme-foundations` ancestor class so it's a no-op (and
+ *  not even rendered visibly) on Portfolio/Study, which explicitly rule out
+ *  game language. */
+function ArcadeBurst() {
+  const pieces = Array.from({ length: 10 });
+  return (
+    <div className="skin-arcade-burst pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
+      {pieces.map((_, i) => (
+        <span key={i} className="skin-arcade-burst-piece" style={{ "--i": i } as CSSProperties} />
+      ))}
+    </div>
+  );
+}
 
 function isGradableQuiz(block: Block): block is Block & { type: "quizQuestion" } {
   return (
@@ -43,7 +59,15 @@ function QuizStep({
 
   return (
     <div>
-      <p className="font-medium text-lg">{q.text}</p>
+      <div className="flex items-start justify-between gap-3">
+        <p className="font-medium text-lg">{q.text}</p>
+        {/* Study-only marks chip (redesign-plan.md §2.2); hidden by CSS on every other skin. */}
+        {q.marks !== undefined && (
+          <span className="skin-marks-chip shrink-0">
+            {q.marks} mark{q.marks === 1 ? "" : "s"}
+          </span>
+        )}
+      </div>
       {q.questionType === "mcq" && q.options && (
         <div className="mt-4 space-y-2">
           {q.options.map((opt, i) => {
@@ -56,7 +80,7 @@ function QuizStep({
                 type="button"
                 disabled={resolved}
                 onClick={() => pick(i, isCorrect)}
-                className={`flex w-full items-center justify-between border px-4 py-2.5 text-left text-sm transition-colors ${
+                className={`skin-btn-primary flex w-full items-center justify-between border px-4 py-2.5 text-left text-sm transition-colors ${
                   show && isCorrect
                     ? "border-primary bg-primary/5 font-medium text-primary"
                     : show && isPicked
@@ -82,7 +106,7 @@ function QuizStep({
                 type="button"
                 disabled={resolved}
                 onClick={() => pick(val, isCorrect)}
-                className={`border py-3 font-medium transition-colors ${
+                className={`skin-btn-primary border py-3 font-medium transition-colors ${
                   show && isCorrect
                     ? "border-primary bg-primary/5 text-primary"
                     : show && isPicked
@@ -103,13 +127,20 @@ function QuizStep({
         </p>
       )}
       {resolved && outcome?.revealed && (
-        <div className="mt-3 rounded-lg bg-amber-500/10 p-3 text-sm">
+        <div className="skin-card mt-3 bg-amber-500/10 p-3 text-sm">
           <p className="font-medium">Worked answer</p>
           <p className="mt-1 text-muted-foreground">{q.explanation ?? "See the correct option above."}</p>
         </div>
       )}
       {resolved && outcome?.correct && q.explanation && (
-        <p className="mt-3 text-sm text-muted-foreground">{q.explanation}</p>
+        <>
+          {/* Study gets the exam-tip card treatment; every other skin keeps the plain line. */}
+          <p className="skin-exam-tip-off mt-3 text-sm text-muted-foreground">{q.explanation}</p>
+          <div className="skin-exam-tip mt-3 text-sm">
+            <p className="text-xs font-bold uppercase tracking-wide text-primary">Exam tip</p>
+            <p className="mt-1 text-muted-foreground">{q.explanation}</p>
+          </div>
+        </>
       )}
     </div>
   );
@@ -166,7 +197,8 @@ export function StepPlayer({
     const score = activitiesScore(outcomesInOrder);
     const passed = hasPassed(outcomesInOrder);
     return (
-      <div className="mx-auto max-w-2xl px-6 py-16 text-center">
+      <div className="relative mx-auto max-w-2xl px-6 py-16 text-center">
+        {passed && <ArcadeBurst />}
         <div
           className={`inline-flex h-16 w-16 items-center justify-center rounded-full ${
             passed ? "bg-primary/10 text-primary" : "bg-amber-500/10 text-amber-600"
@@ -224,7 +256,7 @@ export function StepPlayer({
             <button
               type="button"
               onClick={() => setTab("activities")}
-              className="mt-8 rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
+              className="skin-btn-primary mt-8 bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
             >
               Go to activities →
             </button>
@@ -232,7 +264,7 @@ export function StepPlayer({
             <button
               type="button"
               onClick={finish}
-              className="mt-8 rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
+              className="skin-btn-primary mt-8 bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
             >
               Mark lesson complete
             </button>
@@ -264,7 +296,7 @@ export function StepPlayer({
                   <button
                     type="button"
                     onClick={() => setDone((prev) => ({ ...prev, [stepIndex]: true }))}
-                    className="mt-4 rounded-lg border px-4 py-2 text-sm font-medium hover:bg-accent transition-colors"
+                    className="skin-btn-primary mt-4 border px-4 py-2 text-sm font-medium hover:bg-accent transition-colors"
                   >
                     Done, continue
                   </button>
@@ -285,7 +317,7 @@ export function StepPlayer({
               type="button"
               disabled={!stepResolved}
               onClick={next}
-              className="rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity disabled:opacity-40"
+              className="skin-btn-primary bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity disabled:opacity-40"
             >
               {stepIndex >= activities.length - 1 ? "Finish lesson" : "Next →"}
             </button>
@@ -299,7 +331,7 @@ export function StepPlayer({
           <button
             type="button"
             onClick={finish}
-            className="mt-4 rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
+            className="skin-btn-primary mt-4 bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
           >
             Mark lesson complete
           </button>

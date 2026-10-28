@@ -5,7 +5,7 @@ import { getClassByCode } from "@/lib/db";
 import { getCourseBySlug } from "@/lib/courses";
 import { getCourseContent } from "@/lib/content";
 import { isVisibleToStudents } from "@/lib/logic/release";
-import { TierTheme } from "@/components/course/shared/TierTheme";
+import { CourseTierTheme } from "@/components/course/shared/CourseTierTheme";
 import { PreviousLessonsList, type PreviousLessonEntry } from "@/components/course/code-track/PreviousLessonsList";
 
 export const dynamic = "force-dynamic";
@@ -42,7 +42,7 @@ export default async function PreviousLessonsPage({ params }: { params: Promise<
   }
 
   return (
-    <TierTheme tier={course?.tier ?? "general"}>
+    <CourseTierTheme tier={course?.tier ?? "general"}>
       <div className="mx-auto max-w-2xl px-6 py-12">
         <Link href={`/${normalized}`} className="text-sm text-muted-foreground hover:text-primary">
           ← {cls.name}
@@ -53,6 +53,6 @@ export default async function PreviousLessonsPage({ params }: { params: Promise<
         </p>
         <PreviousLessonsList classCode={normalized} entries={entries} />
       </div>
-    </TierTheme>
+    </CourseTierTheme>
   );
 }

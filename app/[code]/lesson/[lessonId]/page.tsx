@@ -5,7 +5,7 @@ import { getClassByCode } from "@/lib/db";
 import { getCourseBySlug } from "@/lib/courses";
 import { getCourseContent, findLesson } from "@/lib/content";
 import { isVisibleToStudents } from "@/lib/logic/release";
-import { TierTheme } from "@/components/course/shared/TierTheme";
+import { CourseTierTheme } from "@/components/course/shared/CourseTierTheme";
 import { StepPlayer } from "@/components/course/code-track/StepPlayer";
 
 export const dynamic = "force-dynamic";
@@ -35,7 +35,7 @@ export default async function CodeTrackLessonPage({
   const { unit, topic, lesson } = found;
 
   return (
-    <TierTheme tier={course?.tier ?? "general"}>
+    <CourseTierTheme tier={course?.tier ?? "general"}>
       <div className="mx-auto max-w-3xl px-6 py-10">
         <Link href={`/${normalized}`} className="text-sm text-muted-foreground hover:text-primary">
           ← {cls.name}
@@ -61,6 +61,6 @@ export default async function CodeTrackLessonPage({
           </Link>
         </div>
       </div>
-    </TierTheme>
+    </CourseTierTheme>
   );
 }

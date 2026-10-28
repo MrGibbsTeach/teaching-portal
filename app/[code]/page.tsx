@@ -4,7 +4,7 @@ import { isReservedCode, normalizeClassCode } from "@/lib/logic/class-code";
 import { getClassByCode } from "@/lib/db";
 import { getCourseBySlug } from "@/lib/courses";
 import { getCourseContent, findLesson } from "@/lib/content";
-import { TierTheme } from "@/components/course/shared/TierTheme";
+import { CourseTierTheme } from "@/components/course/shared/CourseTierTheme";
 
 export const dynamic = "force-dynamic";
 
@@ -21,7 +21,7 @@ export default async function ClassCodeHome({ params }: { params: Promise<{ code
   const today = cls.todayLessonId ? content && findLesson(content, cls.todayLessonId) : undefined;
 
   return (
-    <TierTheme tier={course?.tier ?? "general"}>
+    <CourseTierTheme tier={course?.tier ?? "general"}>
       <div className="mx-auto max-w-2xl px-6 py-16 text-center">
         <p className="text-sm font-medium text-muted-foreground">{cls.name}</p>
         <h1 className="mt-1 font-heading text-3xl font-semibold tracking-tight">
@@ -38,7 +38,7 @@ export default async function ClassCodeHome({ params }: { params: Promise<{ code
               </p>
               <Link
                 href={`/${normalized}/lesson/${today.lesson.id}`}
-                className="mt-6 inline-block rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
+                className="skin-btn-primary mt-6 inline-block bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
               >
                 Start
               </Link>
@@ -56,6 +56,6 @@ export default async function ClassCodeHome({ params }: { params: Promise<{ code
           </Link>
         </div>
       </div>
-    </TierTheme>
+    </CourseTierTheme>
   );
 }

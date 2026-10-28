@@ -3,6 +3,8 @@ import type { Course } from "@/lib/courses";
 import type { CourseContent } from "@/lib/content/types";
 import type { Releases } from "@/lib/logic/release";
 import { isVisibleToStudents, todayLessonId as findTodayLessonId } from "@/lib/logic/release";
+import { TopicIcon } from "@/components/course/shared/TopicIcon";
+import { iconForTopic } from "@/lib/logic/topic-icon";
 
 export function CourseOverview({
   course,
@@ -62,7 +64,7 @@ export function CourseOverview({
       <p className="mt-3 max-w-prose text-muted-foreground">{course.description}</p>
 
       {todayLesson && (
-        <div className="mt-8 rounded-lg border border-primary/30 bg-primary/5 p-5">
+        <div className="skin-card mt-8 border border-primary/30 bg-primary/5 p-5">
           <p className="text-xs font-bold uppercase tracking-widest text-primary">Today&apos;s lesson</p>
           <h2 className="mt-1 text-lg font-semibold">{todayLesson.lesson.title}</h2>
           <p className="mt-0.5 text-sm text-muted-foreground">
@@ -70,7 +72,7 @@ export function CourseOverview({
           </p>
           <Link
             href={`/courses/${course.slug}/lesson/${todayLesson.lesson.id}`}
-            className="mt-3 inline-block rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
+            className="skin-btn-primary mt-3 inline-block bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
           >
             Start
           </Link>
@@ -112,14 +114,17 @@ export function CourseOverview({
               <div className="mt-5 space-y-6">
                 {unit.topics.map((topic) => (
                   <div key={topic.id}>
-                    <h3 className="font-medium">
-                      {topic.title}
-                      {topic.description && (
-                        <span className="ml-2 font-normal text-muted-foreground">
-                          — {topic.description}
-                        </span>
-                      )}
-                    </h3>
+                    <div className="flex items-center gap-3">
+                      <TopicIcon icon={iconForTopic(topic.title)} />
+                      <h3 className="font-medium">
+                        {topic.title}
+                        {topic.description && (
+                          <span className="ml-2 font-normal text-muted-foreground">
+                            — {topic.description}
+                          </span>
+                        )}
+                      </h3>
+                    </div>
                     <ul className="mt-2">
                       {topic.lessons.map((lesson) => {
                         const isComplete = completedLessonIds?.includes(lesson.id) ?? false;
