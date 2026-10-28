@@ -115,7 +115,19 @@ function QuizStep({
   );
 }
 
-export function StepPlayer({ blocks, classCode, lessonId }: { blocks: Block[]; classCode: string; lessonId: string }) {
+export function StepPlayer({
+  blocks,
+  classCode,
+  lessonId,
+  onFinish,
+}: {
+  blocks: Block[];
+  classCode: string;
+  lessonId: string;
+  /** Called once when the lesson is marked complete. Defaults to localStorage
+   *  (no-login code track); ATAR passes a Redis-backed callback instead. */
+  onFinish?: () => void;
+}) {
   const { content, activities } = useMemo(() => splitBlocksByPart(blocks), [blocks]);
   const [tab, setTab] = useState<Tab>("content");
   const [stepIndex, setStepIndex] = useState(0);
@@ -137,7 +149,8 @@ export function StepPlayer({ blocks, classCode, lessonId }: { blocks: Block[]; c
     : true;
 
   function finish() {
-    markLessonComplete(classCode, lessonId);
+    if (onFinish) onFinish();
+    else markLessonComplete(classCode, lessonId);
     setFinished(true);
   }
 
