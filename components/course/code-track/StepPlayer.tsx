@@ -38,6 +38,111 @@ function isGradableQuiz(block: Block): block is Block & { type: "quizQuestion" }
   );
 }
 
+/** A divider is a pure visual rule, not a thing to step through on its own. */
+function isStep(block: Block): boolean {
+  return block.type !== "divider";
+}
+
+/** Short, human label for a step's dropdown/progress entry (redesign-plan.md
+ *  §4 S4: "Steps named as actions"). Falls back to a generic, type-based name
+ *  when the block carries no title of its own. */
+function stepLabel(block: Block): string {
+  switch (block.type) {
+    case "heading":
+      return block.text;
+    case "richText":
+      return block.heading ?? "Notes";
+    case "paragraph":
+      return "Notes";
+    case "callout":
+      return block.heading ?? "Note";
+    case "keyTerm":
+      return `Key term: ${block.term}`;
+    case "keyTerms":
+      return "Key terms";
+    case "video":
+      return block.title ?? "Watch";
+    case "checkpointVideo":
+      return block.title ?? "Watch";
+    case "animation3d":
+      return block.title ?? "3D animation";
+    case "table":
+      return "Reference table";
+    case "list":
+      return "Notes";
+    case "grid":
+      return block.title ?? "Overview";
+    case "comparison":
+      return block.title ?? "Compare";
+    case "softwareExamples":
+      return block.title ?? "Software examples";
+    case "formulaBreakdown":
+      return block.title ?? "Formula";
+    case "formulaBuilder":
+      return block.title ?? "Build it";
+    case "task":
+      return block.title;
+    case "codePreview":
+      return block.title ?? "Code";
+    case "interactiveDiagram":
+      return block.title ?? "Try it";
+    case "codeExercise":
+      return block.title;
+    case "scenarioChallenge":
+      return block.title ?? "Scenario";
+    case "spotTheThreat":
+      return block.title ?? "Spot the threat";
+    case "activity":
+      return block.title ?? "Activity";
+    case "quizQuestion": {
+      const qt = block.question.questionType;
+      if (qt === "short_answer") return "Short answer";
+      if (qt === "extended") return "Extended answer";
+      if (qt === "matching") return "Match it";
+      return "Check";
+    }
+    default:
+      return "Step";
+  }
+}
+
+/** Dropdown jump + progress strip, shared by the Content and Activities
+ *  tracks (redesign-plan.md §4 S4: "step dropdown with progress strip"). The
+ *  dropdown always allows free review of any step; only the Next button below
+ *  it enforces earned progression on a quiz step. */
+function StepNav({
+  labels,
+  index,
+  onJump,
+}: {
+  labels: string[];
+  index: number;
+  onJump: (i: number) => void;
+}) {
+  const progress = labels.length > 1 ? index / (labels.length - 1) : 1;
+  return (
+    <div className="mt-3">
+      <select
+        value={index}
+        onChange={(e) => onJump(Number(e.target.value))}
+        className="w-full rounded-lg border bg-background px-3 py-2 text-sm font-medium outline-none focus:ring-2 focus:ring-primary"
+      >
+        {labels.map((label, i) => (
+          <option key={i} value={i}>
+            {`Step ${i + 1} of ${labels.length}: ${label}`}
+          </option>
+        ))}
+      </select>
+      <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-muted">
+        <div
+          className="h-full rounded-full bg-primary transition-all"
+          style={{ width: `${Math.round(progress * 100)}%` }}
+        />
+      </div>
+    </div>
+  );
+}
+
 function QuizStep({
   block,
   outcome,
@@ -159,25 +264,37 @@ export function StepPlayer({
    *  (no-login code track); ATAR passes a Redis-backed callback instead. */
   onFinish?: () => void;
 }) {
-  const { content, activities } = useMemo(() => splitBlocksByPart(blocks), [blocks]);
+  const { content: rawContent, activities: rawActivities } = useMemo(
+    () => splitBlocksByPart(blocks),
+    [blocks]
+  );
+  const content = useMemo(() => rawContent.filter(isStep), [rawContent]);
+  const activities = useMemo(() => rawActivities.filter(isStep), [rawActivities]);
+  const contentLabels = useMemo(() => content.map(stepLabel), [content]);
+  const activityLabels = useMemo(() => activities.map(stepLabel), [activities]);
+
   const [tab, setTab] = useState<Tab>("content");
-  const [stepIndex, setStepIndex] = useState(0);
+  const [contentStepIndex, setContentStepIndex] = useState(0);
+  const [activityStepIndex, setActivityStepIndex] = useState(0);
   const [quizOutcomes, setQuizOutcomes] = useState<Record<number, QuizOutcome>>({});
   const [done, setDone] = useState<Record<number, boolean>>({});
   const [finished, setFinished] = useState(false);
 
-  const step = activities[stepIndex];
+  const stepIndex = tab === "content" ? contentStepIndex : activityStepIndex;
+  const step = (tab === "content" ? content : activities)[stepIndex];
+
   const gradableSteps = activities.filter(isGradableQuiz);
   const gradableIndexes = activities
     .map((b, i) => (isGradableQuiz(b) ? i : -1))
     .filter((i) => i >= 0);
   const outcomesInOrder = gradableIndexes.map((i) => quizOutcomes[i]);
 
-  const stepResolved = step
-    ? isGradableQuiz(step)
-      ? quizStepResolved(quizOutcomes[stepIndex])
-      : !!done[stepIndex]
-    : true;
+  const stepResolved =
+    tab === "activities" && step
+      ? isGradableQuiz(step)
+        ? quizStepResolved(quizOutcomes[activityStepIndex])
+        : !!done[activityStepIndex]
+      : true;
 
   function finish() {
     if (onFinish) onFinish();
@@ -185,11 +302,23 @@ export function StepPlayer({
     setFinished(true);
   }
 
-  function next() {
-    if (stepIndex >= activities.length - 1) {
+  function nextContent() {
+    if (contentStepIndex >= content.length - 1) {
+      if (activities.length > 0) {
+        setTab("activities");
+      } else {
+        finish();
+      }
+    } else {
+      setContentStepIndex((i) => i + 1);
+    }
+  }
+
+  function nextActivity() {
+    if (activityStepIndex >= activities.length - 1) {
       finish();
     } else {
-      setStepIndex((i) => i + 1);
+      setActivityStepIndex((i) => i + 1);
     }
   }
 
@@ -247,55 +376,58 @@ export function StepPlayer({
         </button>
       </div>
 
-      {tab === "content" && (
+      {tab === "content" && content.length > 0 && (
         <div className="py-8">
-          {content.map((block, i) => (
-            <BlockRenderer key={i} block={block} />
-          ))}
-          {activities.length > 0 ? (
+          <StepNav labels={contentLabels} index={contentStepIndex} onJump={setContentStepIndex} />
+          <div className="mt-6">
+            <BlockRenderer block={content[contentStepIndex]} />
+          </div>
+          <div className="mt-8 flex items-center justify-between border-t border-border pt-6">
             <button
               type="button"
-              onClick={() => setTab("activities")}
-              className="skin-btn-primary mt-8 bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
+              disabled={contentStepIndex === 0}
+              onClick={() => setContentStepIndex((i) => Math.max(0, i - 1))}
+              className="text-sm text-muted-foreground hover:text-foreground disabled:opacity-40"
             >
-              Go to activities →
+              ← Back
             </button>
-          ) : (
             <button
               type="button"
-              onClick={finish}
-              className="skin-btn-primary mt-8 bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
+              onClick={nextContent}
+              className="skin-btn-primary bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
             >
-              Mark lesson complete
+              {contentStepIndex >= content.length - 1
+                ? activities.length > 0
+                  ? "Go to activities →"
+                  : "Mark lesson complete"
+                : "Next →"}
             </button>
-          )}
+          </div>
         </div>
       )}
 
       {tab === "activities" && step && (
         <div className="py-8">
-          <p className="text-xs font-medium text-muted-foreground">
-            Step {stepIndex + 1} of {activities.length}
-          </p>
-          <div className="mt-3">
+          <StepNav labels={activityLabels} index={activityStepIndex} onJump={setActivityStepIndex} />
+          <div className="mt-6">
             {isGradableQuiz(step) ? (
               <QuizStep
                 block={step}
-                outcome={quizOutcomes[stepIndex]}
+                outcome={quizOutcomes[activityStepIndex]}
                 onAttempt={(correct) =>
                   setQuizOutcomes((prev) => ({
                     ...prev,
-                    [stepIndex]: recordQuizAttempt(prev[stepIndex], correct),
+                    [activityStepIndex]: recordQuizAttempt(prev[activityStepIndex], correct),
                   }))
                 }
               />
             ) : (
               <div>
                 <BlockRenderer block={step} />
-                {!done[stepIndex] && (
+                {!done[activityStepIndex] && (
                   <button
                     type="button"
-                    onClick={() => setDone((prev) => ({ ...prev, [stepIndex]: true }))}
+                    onClick={() => setDone((prev) => ({ ...prev, [activityStepIndex]: true }))}
                     className="skin-btn-primary mt-4 border px-4 py-2 text-sm font-medium hover:bg-accent transition-colors"
                   >
                     Done, continue
@@ -307,8 +439,8 @@ export function StepPlayer({
           <div className="mt-8 flex items-center justify-between border-t border-border pt-6">
             <button
               type="button"
-              disabled={stepIndex === 0}
-              onClick={() => setStepIndex((i) => Math.max(0, i - 1))}
+              disabled={activityStepIndex === 0}
+              onClick={() => setActivityStepIndex((i) => Math.max(0, i - 1))}
               className="text-sm text-muted-foreground hover:text-foreground disabled:opacity-40"
             >
               ← Back
@@ -316,10 +448,10 @@ export function StepPlayer({
             <button
               type="button"
               disabled={!stepResolved}
-              onClick={next}
+              onClick={nextActivity}
               className="skin-btn-primary bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity disabled:opacity-40"
             >
-              {stepIndex >= activities.length - 1 ? "Finish lesson" : "Next →"}
+              {activityStepIndex >= activities.length - 1 ? "Finish lesson" : "Next →"}
             </button>
           </div>
         </div>
