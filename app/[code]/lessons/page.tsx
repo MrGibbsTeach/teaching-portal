@@ -33,6 +33,7 @@ export default async function PreviousLessonsPage({ params }: { params: Promise<
             lessonTitle: lesson.title,
             unitTitle: unit.title,
             topicTitle: topic.title,
+            releasedAt: releases[lesson.id]?.releasedAt ?? new Date(0).toISOString(),
             isToday: releases[lesson.id]?.status === "today",
             isRevision: releases[lesson.id]?.status === "revision",
           });
