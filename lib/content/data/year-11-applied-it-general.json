@@ -4318,49 +4318,63 @@
          "level": 2
         },
         {
-         "type": "table",
-         "headers": [
-          "Category",
-          "Key Functions",
-          "Business Use Case"
-         ],
-         "rows": [
-          [
+         "type": "interactiveDiagram",
+         "title": "Match the formula category to its business use",
+         "instruction": "Tap a category on the left, then tap the use case it matches.",
+         "kind": "connect",
+         "config": {
+          "left": [
            "Arithmetic",
-           "SUM, PRODUCT, MOD",
-           "Totalling project costs, calculating percentage splits"
-          ],
-          [
            "Statistical",
-           "AVERAGE, MIN, MAX, MEDIAN, COUNT, COUNTA",
-           "Summarising sprint data, finding outliers in delivery times"
-          ],
-          [
            "Logical",
-           "IF, AND, OR, NOT, IFS",
-           "Flagging over-budget projects, categorising client status"
-          ],
-          [
            "Lookup",
-           "VLOOKUP, HLOOKUP, INDEX, MATCH, XLOOKUP",
-           "Finding a team member's hourly rate from a reference table"
-          ],
-          [
            "Text",
-           "CONCATENATE, LEFT, RIGHT, MID, TRIM, UPPER, LOWER",
-           "Cleaning imported data, building full names from split columns"
-          ],
-          [
            "Date & Time",
-           "TODAY, NOW, DATE, DATEDIF, NETWORKDAYS",
-           "Calculating days until deadline, tracking sprint durations"
+           "Reference"
           ],
-          [
-           "Reference",
-           "OFFSET, INDIRECT, ROW, COLUMN",
+          "right": [
+           "Totalling project costs, calculating percentage splits",
+           "Summarising sprint data, finding outliers in delivery times",
+           "Flagging over-budget projects, categorising client status",
+           "Finding a team member's hourly rate from a reference table",
+           "Cleaning imported data, building full names from split columns",
+           "Calculating days until a deadline, tracking sprint durations",
            "Building dynamic ranges for charts and pivot tables"
           ]
-         ]
+         },
+         "goalState": {
+          "links": [
+           [
+            "Arithmetic",
+            "Totalling project costs, calculating percentage splits"
+           ],
+           [
+            "Statistical",
+            "Summarising sprint data, finding outliers in delivery times"
+           ],
+           [
+            "Logical",
+            "Flagging over-budget projects, categorising client status"
+           ],
+           [
+            "Lookup",
+            "Finding a team member's hourly rate from a reference table"
+           ],
+           [
+            "Text",
+            "Cleaning imported data, building full names from split columns"
+           ],
+           [
+            "Date & Time",
+            "Calculating days until a deadline, tracking sprint durations"
+           ],
+           [
+            "Reference",
+            "Building dynamic ranges for charts and pivot tables"
+           ]
+          ]
+         },
+         "explanation": "Key functions by category — Arithmetic: SUM, PRODUCT, MOD. Statistical: AVERAGE, MIN, MAX, MEDIAN, COUNT, COUNTA. Logical: IF, AND, OR, NOT, IFS. Lookup: VLOOKUP, HLOOKUP, INDEX, MATCH, XLOOKUP. Text: CONCATENATE, LEFT, RIGHT, MID, TRIM, UPPER, LOWER. Date & Time: TODAY, NOW, DATE, DATEDIF, NETWORKDAYS. Reference: OFFSET, INDIRECT, ROW, COLUMN."
         },
         {
          "type": "quizQuestion",
@@ -4395,28 +4409,45 @@
          "text": "The single habit that separates a competent spreadsheet user from an expert is this: never hardcode a number inside a formula. If your formula says =SUM(B2:B10)*0.10, what happens when the GST rate changes? You have to find every formula and update it manually. Put 0.10 in a named cell called GST_Rate and write =SUM(B2:B10)*GST_Rate. Now when the rate changes, you change one cell and the entire workbook updates. Build your spreadsheets to be maintained, not rebuilt."
         },
         {
-         "type": "comparison",
-         "title": "Relative vs Absolute Cell References",
-         "items": [
-          {
-           "label": "Relative Reference (e.g. B4)",
-           "points": [
-            "Changes automatically when the formula is copied to another cell",
-            "If =B4*C4 is in D4, copying it to D5 gives =B5*C5",
-            "Use when you want the formula to apply row-by-row down a column",
-            "Default behaviour in both Excel and Google Sheets"
-           ]
-          },
-          {
-           "label": "Absolute Reference (e.g. $B$4)",
-           "points": [
-            "Stays fixed on the same cell no matter where the formula is copied",
-            "If =B4*$C$1 is in D4, copying to D5 gives =B5*$C$1",
-            "Use for values that should not move: tax rates, fixed multipliers, lookup headers",
-            "Press F4 after clicking a cell reference to toggle the dollar signs on/off"
-           ]
-          }
-         ]
+         "type": "interactiveDiagram",
+         "title": "Relative or absolute?",
+         "instruction": "For each formula situation, set it to how the reference should behave when copied.",
+         "kind": "toggle-state",
+         "config": {
+          "toggles": [
+           {
+            "id": "copy-down-column",
+            "label": "=B4*C4 copied down a column of daily totals, row by row",
+            "onLabel": "Absolute ($)",
+            "offLabel": "Relative"
+           },
+           {
+            "id": "fixed-tax-rate",
+            "label": "=B4*C1 where C1 holds a fixed tax rate used by every row",
+            "onLabel": "Absolute ($)",
+            "offLabel": "Relative"
+           },
+           {
+            "id": "vlookup-header",
+            "label": "A VLOOKUP's lookup-table range, copied down many rows",
+            "onLabel": "Absolute ($)",
+            "offLabel": "Relative"
+           },
+           {
+            "id": "running-subtotal",
+            "label": "=B4+B5 copied across columns to total each week's figures",
+            "onLabel": "Absolute ($)",
+            "offLabel": "Relative"
+           }
+          ]
+         },
+         "goalState": {
+          "copy-down-column": false,
+          "fixed-tax-rate": true,
+          "vlookup-header": true,
+          "running-subtotal": false
+         },
+         "explanation": "Absolute ($B$4) locks a reference so it never moves when the formula is copied — use it for a single fixed value every row needs, like a tax rate or a lookup table. Relative (B4) shifts with the formula — use it when each row or column needs its own cell. Press F4 after clicking a cell reference to toggle the dollar signs."
         },
         {
          "type": "task",
