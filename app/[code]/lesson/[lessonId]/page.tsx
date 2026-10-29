@@ -6,6 +6,8 @@ import { getCourseBySlug } from "@/lib/courses";
 import { getCourseContent, findLesson } from "@/lib/content";
 import { isVisibleToStudents } from "@/lib/logic/release";
 import { CourseTierTheme } from "@/components/course/shared/CourseTierTheme";
+import { TopicIcon } from "@/components/course/shared/TopicIcon";
+import { iconForTopic } from "@/lib/logic/topic-icon";
 import { StepPlayer } from "@/components/course/code-track/StepPlayer";
 
 export const dynamic = "force-dynamic";
@@ -40,12 +42,32 @@ export default async function CodeTrackLessonPage({
         <Link href={`/${normalized}`} className="text-sm text-muted-foreground hover:text-primary">
           ← {cls.name}
         </Link>
-        <p className="mt-6 text-sm text-muted-foreground">
-          {unit.title} / {topic.title}
-        </p>
-        <h1 className="mt-1 font-heading text-3xl font-semibold tracking-tight">{lesson.title}</h1>
-        {lesson.estimatedMinutes && (
-          <p className="mt-1.5 text-sm text-muted-foreground">{lesson.estimatedMinutes} min</p>
+        {course?.tier === "general" ? (
+          // General only, per the owner's 29 Oct 2026 feedback comparing
+          // against Mr Baker's site: a topic tile and larger, clearer
+          // heading type. Other tiers keep the plain text header for now.
+          <div className="mt-6 flex items-start gap-4">
+            <TopicIcon icon={iconForTopic(topic.title)} size="lg" />
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
+                {unit.title} / {topic.title}
+              </p>
+              <h1 className="mt-1 font-heading text-4xl font-semibold tracking-tight">{lesson.title}</h1>
+              {lesson.estimatedMinutes && (
+                <p className="mt-1.5 text-base text-muted-foreground">{lesson.estimatedMinutes} min</p>
+              )}
+            </div>
+          </div>
+        ) : (
+          <>
+            <p className="mt-6 text-sm text-muted-foreground">
+              {unit.title} / {topic.title}
+            </p>
+            <h1 className="mt-1 font-heading text-3xl font-semibold tracking-tight">{lesson.title}</h1>
+            {lesson.estimatedMinutes && (
+              <p className="mt-1.5 text-sm text-muted-foreground">{lesson.estimatedMinutes} min</p>
+            )}
+          </>
         )}
 
         <div className="mt-6">

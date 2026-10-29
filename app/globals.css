@@ -241,6 +241,24 @@
   align-items: center;
   justify-content: center;
 }
+/* Larger variant for a lesson page's own header tile (vs. the compact one in
+   a topic list), per the owner's "a set tile" feedback comparing against Mr
+   Baker's site, 29 Oct 2026. */
+.skin-topic-icon.skin-topic-icon-lg {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+/* General only: modestly larger body type, per the owner's "nice larger
+   clear text" feedback on 29 Oct 2026 comparing against Mr Baker's site.
+   This is a deliberate, scoped exception to TierTheme's "type stays
+   constant across tiers, only colour shifts" rule (components/course/shared/
+   TierTheme.tsx) - owner-requested for General specifically, not a reversal
+   of that rule for every tier. Smaller bump than Foundations' 122% (that one
+   is a dyslexia-friendly accessibility choice, not a taste one). */
+:root.theme-general {
+  font-size: 107%;
+}
 
 /* Lesson-complete mark: a star for Arcade's game feel, a plain tick everywhere
    else (Portfolio's "evidence collected" ticks, Study's no-game-language rule). */
