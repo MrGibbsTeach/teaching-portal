@@ -2,12 +2,16 @@
 
 Read this first — before `STATUS.md`. This file is the live handover: what's true right now and the next step. `STATUS.md` is the detailed history (why things are built the way they are); `CHECKPOINTS.md` is recorded feedback not yet acted on. Both stay as the deeper record — update this file's **Last updated** / **Right now** / **Next step** every session; add detail to `STATUS.md` only when something durable changed.
 
-**Last updated:** 2026-10-24
+**Last updated:** 2026-10-21
 
 **Live:**
 - Production: https://mrgibbsteach.com (custom domain, DNS live, cert issued) — also reachable at https://teaching-portal-eta.vercel.app
 - Repo: https://github.com/MrGibbsTeach/teaching-portal (private), branch `main`, auto-deploys on push
 - All 10 courses exist; 6 are `active` with real content (Y11+Y12 × Foundations/General/ATAR), Y7–10 (4 courses) are still `placeholder`
+
+**Owner's instruction for new sessions:** if Clayton types just "continue", follow "If the owner just types continue" in `claude/project-handover.md`. Next up is the course experience redesign (the courses feel static and boring). The code and content audit is already written in `claude/course-audit.md`.
+
+**Open on GitHub (owner to merge):** PR #4 (docs: course audit, ranked feature backlog; includes #3). Merging it puts `claude/` docs updates on `main`. PR #2 (interactive animations) is already merged; check one lesson of each course on production.
 
 **Right now:**
 - Production infrastructure is in place: keep-alive cron, adaptive live-session polling, teacher CSV export, and custom domain. Preview Redis separation, a school-device check, and the school data-policy review remain before student use.

@@ -4,6 +4,19 @@ This file is the single source of truth for any AI working on this project. Read
 
 Last updated: 24 Oct 2026
 
+## If the owner just types "continue"
+
+That means: take over and work through "Next actions" below without asking what to do. Do this:
+
+1. Read `CURRENT_STATE.md` (repo root) and this file in full. Skim `claude/course-audit.md` and `claude/feature-backlog.md`.
+2. Run `git pull` on `main`. If any file in `claude/` is missing, the docs are still in an unmerged pull request: tell the owner to merge PR #4 on MrGibbsTeach/teaching-portal (it includes #3), and read the docs from the Claude Project copy or the PR branch `course-audit` meanwhile.
+3. Tell the owner in two lines what you are about to do, then do Next action 2: the course experience redesign. Start with the screenshot pass listed in `claude/course-audit.md` (one Foundations and one ATAR lesson, laptop and 390px mobile, `npm run dev` or a Vercel preview), add the findings to that file, study the reference sites, then propose 2 or 3 lesson templates with a recommendation.
+4. Stop there and ask the owner to pick a template. Everything before that point needs no questions. After they pick, build it on one lesson per tier (Foundations, General, ATAR), show them, then continue down `claude/feature-backlog.md` in order.
+5. Never merge pull requests, never push to `main`, never change student data or production settings. Open a pull request and tell the owner what to merge.
+6. At the end of the session update `CURRENT_STATE.md` and this file, and tell the owner which files changed.
+
+Tools: Claude Code and Codex both read `AGENTS.md` first, which points here. Follow the owner's response style and the cost rules below.
+
 ## Start here (60 second version)
 
 - Goal: an online educational website that students use on their own, that keeps improving, and that can later be sold as a subscription homeschool curriculum for Australian families.
@@ -39,7 +52,7 @@ Last updated: 24 Oct 2026
 The pilot is decided: the owner's own Y11 and Y12 AIT classes (ATAR, General, Foundations), this year into early 2027. Y7 to Y10 and everything else are parked.
 
 1. Ship what is already built: A2 and A3 (A1, the interactive swap, is merged).
-2. Make the courses engaging. The owner's verdict: lessons are static, boring and too similar (a little content, approve, move on). Rank 1 in `claude/feature-backlog.md` is a course experience redesign (UX, UI, lesson flow). Follow the steps there: audit two lessons, study the reference sites, propose 2 or 3 lesson templates, build one, get the owner's view, then roll out.
+2. Make the courses engaging. The owner's verdict: lessons are static, boring and too similar (a little content, approve, move on). Rank 1 in `claude/feature-backlog.md` is a course experience redesign (UX, UI, lesson flow). The code and content audit is done in `claude/course-audit.md`, so start from it: do its screenshot pass, study the reference sites, propose 2 or 3 lesson templates, build one, get the owner's view, then roll out.
 3. Build the rest of `claude/feature-backlog.md` in its ranked order. The owner approved all of it on 21 Oct 2026 and said none of it waits.
 4. Audit and complete the AIT Y11 and Y12 lessons (C), and check that lesson progress and check-question results can be seen per student. This is the pilot evidence.
 5. Build planned animations (B) only if an AIT Y11 or Y12 lesson needs them, in the priority order shown.
@@ -58,6 +71,7 @@ Mr Gibbs Teach is the owner's personal teaching platform (lessons, assessments, 
 - `claude/3d-animation-register.md`: animations built and planned, the locked interactive style standard, lesson placements, check questions, and where each is live in the portal. Always read the style standard before building any animation.
 - `claude/design-references.md`: design galleries to study before making any customer-facing asset.
 - `claude/competitive-advantage.md`: saved research on each competitor (Atomi, Education Perfect, Mathspace, Reading Eggs, Khan Academy, Grok Academy, Code.org and others), where we are better, how it carries beyond Digital Technologies, and the feature backlog seed. Read it instead of re-fetching the sites, and keep all marketing claims consistent with it.
+- `claude/course-audit.md`: read-only audit of how the courses are built and why they feel static, with numbers per course, what already exists to reuse, and where to start. Read it before any course improvement work.
 - `claude/feature-backlog.md`: all planned features in order of importance, led by the course experience redesign. Approved by the owner, build in order.
 - `claude/commercial-strategy.md`: phases and gates, competitor benchmark (Atomi), where we can be better, pricing options, risks, next 90 days. Read it before any commercial decision.
 

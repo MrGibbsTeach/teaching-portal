@@ -11,3 +11,5 @@ Before doing any work on this project, read `CURRENT_STATE.md` — it's short an
 # Product, strategy and animation docs
 
 The business, design and animation docs live in `claude/`. Read `claude/project-handover.md` fully before any product, content, animation, marketing or commercial work. It holds the owner's response style, cost rules, next actions and the list of the other docs in `claude/`.
+
+If the user types just "continue", follow the "If the owner just types continue" steps in `claude/project-handover.md`.
