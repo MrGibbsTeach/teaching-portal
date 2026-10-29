@@ -73,6 +73,13 @@ export async function getClass(id: string): Promise<ClassConfig | null> {
   return all.find((c) => c.id === id) ?? null;
 }
 
+/** For the no-login (authMode "code") student entry point: look a class up by its class code. */
+export async function getClassByCode(code: string): Promise<ClassConfig | null> {
+  const all = await getClasses();
+  const normalized = code.trim().toUpperCase();
+  return all.find((c) => c.classCode === normalized) ?? null;
+}
+
 export async function saveClass(cls: ClassConfig): Promise<void> {
   const all = await getClasses();
   const idx = all.findIndex((c) => c.id === cls.id);
