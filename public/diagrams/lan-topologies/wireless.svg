@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" role="img" aria-labelledby="wireless-title wireless-desc">
+  <title id="wireless-title">Wireless Local Area Network Topology Diagram</title>
+  <desc id="wireless-desc">Diagram showing a wireless topology. Devices communicate over radio waves to a central wireless access point. Devices can move freely within radio coverage without physical cables.</desc>
+  
+  <!-- Background Card -->
+  <rect width="800" height="500" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+  
+  <!-- Header Block -->
+  <text x="50" y="46" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#1F2A44">Wireless Topology (WLAN)</text>
+  <text x="50" y="72" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#475569">Devices communicate using radio frequency signals to a central wireless access point</text>
+  
+  <rect x="620" y="26" width="130" height="32" rx="6" fill="#E0F2FE" stroke="#0284C7" stroke-width="1.5"/>
+  <text x="685" y="47" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#0284C7">SCSA GENERAL</text>
+
+  <!-- Wireless Radio Links (Dashed lines to peripheral devices) -->
+  <g stroke="#0284C7" stroke-width="2" stroke-dasharray="6,6" stroke-linecap="round">
+    <line x1="350" y1="230" x2="200" y2="155"/>
+    <line x1="450" y1="230" x2="600" y2="155"/>
+    <line x1="350" y1="260" x2="200" y2="340"/>
+    <line x1="450" y1="260" x2="600" y2="340"/>
+  </g>
+
+  <!-- Central Wireless Access Point (WAP) -->
+  <g transform="translate(400, 245)">
+    <!-- Radio Waves Emitted Above WAP -->
+    <path d="M -18 -42 A 20 20 0 0 1 18 -42" fill="none" stroke="#0284C7" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M -30 -52 A 34 34 0 0 1 30 -52" fill="none" stroke="#0284C7" stroke-width="2" stroke-linecap="round" stroke-dasharray="4,4"/>
+    <path d="M -42 -62 A 48 48 0 0 1 42 -62" fill="none" stroke="#0284C7" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4,4"/>
+
+    <!-- Antennas -->
+    <line x1="-24" y1="-14" x2="-28" y2="-34" stroke="#1F2A44" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="-28" cy="-36" r="3" fill="#0284C7"/>
+    <line x1="24" y1="-14" x2="28" y2="-34" stroke="#1F2A44" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="28" cy="-36" r="3" fill="#0284C7"/>
+
+    <!-- AP Body -->
+    <rect x="-44" y="-14" width="88" height="32" rx="16" fill="#FFFFFF" stroke="#0284C7" stroke-width="2.5"/>
+    <circle cx="0" cy="2" r="4" fill="#0284C7"/>
+    <circle cx="-20" cy="2" r="2.5" fill="#CBD5E1"/>
+    <circle cx="20" cy="2" r="2.5" fill="#CBD5E1"/>
+
+    <text x="0" y="44" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#1F2A44">Access Point (WAP)</text>
+    <text x="0" y="65" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#0284C7">Radio Hub</text>
+  </g>
+
+  <!-- Device 1: Laptop (Top Left) -->
+  <g transform="translate(160, 140)">
+    <rect x="-32" y="-34" width="64" height="40" rx="4" fill="#FFFFFF" stroke="#1F2A44" stroke-width="2"/>
+    <rect x="-27" y="-29" width="54" height="29" rx="2" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+    <path d="M -40 6 L 40 6 L 34 17 L -34 17 Z" fill="#FFFFFF" stroke="#1F2A44" stroke-width="2"/>
+    <rect x="-10" y="9" width="20" height="4" rx="1" fill="#CBD5E1"/>
+    <!-- Small Wi-Fi waves on laptop -->
+    <path d="M 16 -30 A 10 10 0 0 1 26 -20" fill="none" stroke="#0284C7" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="0" y="44" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#1F2A44">Laptop</text>
+    <text x="0" y="65" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" fill="#475569">Wi-Fi client</text>
+  </g>
+
+  <!-- Device 2: Smartphone (Top Right) -->
+  <g transform="translate(640, 140)">
+    <rect x="-18" y="-34" width="36" height="64" rx="8" fill="#FFFFFF" stroke="#1F2A44" stroke-width="2"/>
+    <rect x="-14" y="-26" width="28" height="48" rx="3" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+    <circle cx="0" cy="-30" r="1.5" fill="#1F2A44"/>
+    <line x1="-6" y1="25" x2="6" y2="25" stroke="#1F2A44" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Small Wi-Fi indicator -->
+    <path d="M 8 -30 A 8 8 0 0 1 16 -22" fill="none" stroke="#0284C7" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="0" y="52" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#1F2A44">Smartphone</text>
+    <text x="0" y="73" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" fill="#475569">Mobile device</text>
+  </g>
+
+  <!-- Device 3: Wireless Printer (Bottom Left) -->
+  <g transform="translate(160, 340)">
+    <rect x="-22" y="-30" width="44" height="16" rx="2" fill="#F1F5F9" stroke="#1F2A44" stroke-width="1.5"/>
+    <rect x="-18" y="-36" width="36" height="14" rx="1" fill="#FFFFFF" stroke="#1F2A44" stroke-width="1.5"/>
+    <rect x="-34" y="-14" width="68" height="34" rx="4" fill="#FFFFFF" stroke="#1F2A44" stroke-width="2"/>
+    <rect x="-20" y="1" width="40" height="5" rx="1" fill="#1F2A44"/>
+    <rect x="-16" y="8" width="32" height="10" rx="1" fill="#F8FAFC" stroke="#1F2A44" stroke-width="1.5"/>
+    <circle cx="22" cy="1" r="3" fill="#0284C7"/>
+    <text x="0" y="44" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#1F2A44">Printer</text>
+    <text x="0" y="65" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" fill="#475569">Wi-Fi enabled</text>
+  </g>
+
+  <!-- Device 4: Desktop PC with Wi-Fi Card (Bottom Right) -->
+  <g transform="translate(640, 340)">
+    <rect x="-35" y="-36" width="70" height="46" rx="4" fill="#FFFFFF" stroke="#1F2A44" stroke-width="2"/>
+    <rect x="-30" y="-31" width="60" height="34" rx="2" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+    <rect x="-5" y="10" width="10" height="9" fill="#1F2A44"/>
+    <rect x="-18" y="19" width="36" height="4" rx="2" fill="#1F2A44"/>
+    <!-- Small Wi-Fi antenna on PC -->
+    <line x1="28" y1="-36" x2="33" y2="-48" stroke="#0284C7" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="33" cy="-48" r="2" fill="#0284C7"/>
+    <text x="0" y="44" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#1F2A44">Desktop PC</text>
+    <text x="0" y="65" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" fill="#475569">Wireless adapter</text>
+  </g>
+
+  <!-- Bottom Educational Summary -->
+  <rect x="50" y="442" width="700" height="38" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+  <text x="400" y="466" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#1F2A44">Mobility: No physical cabling needed. Devices connect and roam freely within radio signal range.</text>
+</svg>

@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" role="img" aria-labelledby="star-title star-desc">
+  <title id="star-title">Wired Star Network Topology Diagram</title>
+  <desc id="star-desc">Diagram showing a wired star topology. Each device connects via its own independent cable to a central switch. If one cable breaks, only that device is isolated while all other devices remain connected.</desc>
+  
+  <!-- Background Card -->
+  <rect width="800" height="500" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+  
+  <!-- Header Block -->
+  <text x="50" y="46" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#1F2A44">Wired Star Topology</text>
+  <text x="50" y="72" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#475569">Every device connects independently to a central switch using physical cables</text>
+  
+  <rect x="620" y="26" width="130" height="32" rx="6" fill="#E0F2FE" stroke="#0284C7" stroke-width="1.5"/>
+  <text x="685" y="47" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#0284C7">SCSA GENERAL</text>
+
+  <!-- Wired Cable Links (Solid lines from switch to devices) -->
+  <g stroke="#1F2A44" stroke-width="2.5" stroke-linecap="round">
+    <!-- To Desktop PC (top-left) -->
+    <line x1="340" y1="240" x2="200" y2="155"/>
+    <!-- To Laptop (top-right) -->
+    <line x1="460" y1="240" x2="600" y2="155"/>
+    <!-- To Network Printer (bottom-left) -->
+    <line x1="340" y1="260" x2="200" y2="340"/>
+    <!-- To File Server (bottom-right) -->
+    <line x1="460" y1="260" x2="600" y2="340"/>
+  </g>
+
+  <!-- Central Switch -->
+  <g transform="translate(400, 250)">
+    <rect x="-60" y="-22" width="120" height="44" rx="6" fill="#FFFFFF" stroke="#0284C7" stroke-width="2.5"/>
+    <!-- RJ-45 Ethernet Ports -->
+    <rect x="-48" y="-6" width="15" height="15" rx="2" fill="#E0F2FE" stroke="#0284C7" stroke-width="1.5"/>
+    <rect x="-26" y="-6" width="15" height="15" rx="2" fill="#E0F2FE" stroke="#0284C7" stroke-width="1.5"/>
+    <rect x="-4" y="-6" width="15" height="15" rx="2" fill="#E0F2FE" stroke="#0284C7" stroke-width="1.5"/>
+    <rect x="18" y="-6" width="15" height="15" rx="2" fill="#E0F2FE" stroke="#0284C7" stroke-width="1.5"/>
+    <rect x="38" y="-6" width="15" height="15" rx="2" fill="#E0F2FE" stroke="#0284C7" stroke-width="1.5"/>
+    <!-- LEDs -->
+    <circle cx="-40" cy="-13" r="2.5" fill="#0284C7"/>
+    <circle cx="-18" cy="-13" r="2.5" fill="#0284C7"/>
+    <circle cx="4" cy="-13" r="2.5" fill="#0284C7"/>
+    <circle cx="26" cy="-13" r="2.5" fill="#0284C7"/>
+    <circle cx="46" cy="-13" r="2.5" fill="#0284C7"/>
+    
+    <text x="0" y="44" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#1F2A44">Central Switch</text>
+    <text x="0" y="65" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#0284C7">Central Hub</text>
+  </g>
+
+  <!-- Device 1: Desktop PC (Top Left) -->
+  <g transform="translate(160, 140)">
+    <rect x="-35" y="-36" width="70" height="46" rx="4" fill="#FFFFFF" stroke="#1F2A44" stroke-width="2"/>
+    <rect x="-30" y="-31" width="60" height="34" rx="2" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+    <rect x="-5" y="10" width="10" height="9" fill="#1F2A44"/>
+    <rect x="-18" y="19" width="36" height="4" rx="2" fill="#1F2A44"/>
+    <text x="0" y="44" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#1F2A44">Desktop PC</text>
+    <text x="0" y="65" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" fill="#475569">Wired client</text>
+  </g>
+
+  <!-- Device 2: Laptop (Top Right) -->
+  <g transform="translate(640, 140)">
+    <rect x="-32" y="-34" width="64" height="40" rx="4" fill="#FFFFFF" stroke="#1F2A44" stroke-width="2"/>
+    <rect x="-27" y="-29" width="54" height="29" rx="2" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+    <path d="M -40 6 L 40 6 L 34 17 L -34 17 Z" fill="#FFFFFF" stroke="#1F2A44" stroke-width="2"/>
+    <rect x="-10" y="9" width="20" height="4" rx="1" fill="#CBD5E1"/>
+    <text x="0" y="44" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#1F2A44">Laptop</text>
+    <text x="0" y="65" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" fill="#475569">Wired client</text>
+  </g>
+
+  <!-- Device 3: Network Printer (Bottom Left) -->
+  <g transform="translate(160, 340)">
+    <rect x="-22" y="-30" width="44" height="16" rx="2" fill="#F1F5F9" stroke="#1F2A44" stroke-width="1.5"/>
+    <rect x="-18" y="-36" width="36" height="14" rx="1" fill="#FFFFFF" stroke="#1F2A44" stroke-width="1.5"/>
+    <rect x="-34" y="-14" width="68" height="34" rx="4" fill="#FFFFFF" stroke="#1F2A44" stroke-width="2"/>
+    <rect x="-20" y="1" width="40" height="5" rx="1" fill="#1F2A44"/>
+    <rect x="-16" y="8" width="32" height="10" rx="1" fill="#F8FAFC" stroke="#1F2A44" stroke-width="1.5"/>
+    <circle cx="22" cy="1" r="3" fill="#0284C7"/>
+    <text x="0" y="44" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#1F2A44">Printer</text>
+    <text x="0" y="65" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" fill="#475569">Shared resource</text>
+  </g>
+
+  <!-- Device 4: File Server (Bottom Right) -->
+  <g transform="translate(640, 340)">
+    <rect x="-35" y="-36" width="70" height="66" rx="6" fill="#FFFFFF" stroke="#0284C7" stroke-width="2.5"/>
+    <rect x="-27" y="-28" width="54" height="13" rx="2" fill="#E0F2FE" stroke="#0284C7" stroke-width="1.5"/>
+    <circle cx="18" cy="-21" r="2.5" fill="#0284C7"/>
+    <rect x="-27" y="-10" width="54" height="13" rx="2" fill="#E0F2FE" stroke="#0284C7" stroke-width="1.5"/>
+    <circle cx="18" cy="-3" r="2.5" fill="#0284C7"/>
+    <rect x="-27" y="8" width="54" height="13" rx="2" fill="#E0F2FE" stroke="#0284C7" stroke-width="1.5"/>
+    <circle cx="18" cy="15" r="2.5" fill="#0284C7"/>
+    <text x="0" y="52" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#1F2A44">Server</text>
+    <text x="0" y="73" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#0284C7">Central files</text>
+  </g>
+
+  <!-- Bottom Educational Summary -->
+  <rect x="50" y="442" width="700" height="38" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+  <text x="400" y="466" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#1F2A44">Reliability: If one cable fails, only that device disconnects; all other devices continue working.</text>
+</svg>

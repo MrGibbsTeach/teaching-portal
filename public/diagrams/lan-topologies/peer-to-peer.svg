@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" role="img" aria-labelledby="p2p-title p2p-desc">
+  <title id="p2p-title">Peer-to-Peer Network Architecture Diagram</title>
+  <desc id="p2p-desc">Diagram showing a peer-to-peer network. Four equal workstation computers connect directly to each other to share files and a printer without a central server or central switch.</desc>
+  
+  <!-- Background Card -->
+  <rect width="800" height="500" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+  
+  <!-- Header Block -->
+  <text x="50" y="46" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#1F2A44">Peer-to-Peer Network (P2P)</text>
+  <text x="50" y="72" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#475569">All connected devices have equal status and share files directly with no central server</text>
+  
+  <rect x="620" y="26" width="130" height="32" rx="6" fill="#E0F2FE" stroke="#0284C7" stroke-width="1.5"/>
+  <text x="685" y="47" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#0284C7">SCSA GENERAL</text>
+
+  <!-- Cross-sharing links between peers (Subtle dashed links) -->
+  <g stroke="#CBD5E1" stroke-width="2" stroke-dasharray="5,5">
+    <line x1="260" y1="160" x2="540" y2="330"/>
+    <line x1="540" y1="160" x2="260" y2="330"/>
+  </g>
+
+  <!-- Direct Peer Communication Links (Solid perimeter lines between all peers) -->
+  <g stroke="#1F2A44" stroke-width="2.5" stroke-linecap="round">
+    <!-- Top peer link (PC 1 to Laptop 2) -->
+    <line x1="260" y1="150" x2="540" y2="150"/>
+    <!-- Bottom peer link (PC 4 to Laptop 3) -->
+    <line x1="260" y1="340" x2="540" y2="340"/>
+    <!-- Left peer link (PC 1 to PC 4) -->
+    <line x1="220" y1="195" x2="220" y2="295"/>
+    <!-- Right peer link (Laptop 2 to Laptop 3) -->
+    <line x1="580" y1="195" x2="580" y2="295"/>
+  </g>
+
+  <!-- Central Distinction Badge (Clear confirmation of no server) -->
+  <g transform="translate(400, 245)">
+    <rect x="-105" y="-24" width="210" height="48" rx="24" fill="#F8FAFC" stroke="#0284C7" stroke-width="1.5"/>
+    <text x="0" y="-2" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#0284C7">NO CENTRAL SERVER</text>
+    <text x="0" y="17" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#475569">Direct peer sharing</text>
+  </g>
+
+  <!-- Peer 1: Desktop PC (Top Left) -->
+  <g transform="translate(220, 150)">
+    <rect x="-35" y="-36" width="70" height="46" rx="4" fill="#FFFFFF" stroke="#1F2A44" stroke-width="2"/>
+    <rect x="-30" y="-31" width="60" height="34" rx="2" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+    <rect x="-5" y="10" width="10" height="9" fill="#1F2A44"/>
+    <rect x="-18" y="19" width="36" height="4" rx="2" fill="#1F2A44"/>
+    <text x="0" y="44" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#1F2A44">Desktop PC</text>
+    <text x="0" y="65" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" fill="#475569">Peer 1 (Equal)</text>
+  </g>
+
+  <!-- Peer 2: Laptop (Top Right) -->
+  <g transform="translate(580, 150)">
+    <rect x="-32" y="-34" width="64" height="40" rx="4" fill="#FFFFFF" stroke="#1F2A44" stroke-width="2"/>
+    <rect x="-27" y="-29" width="54" height="29" rx="2" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+    <path d="M -40 6 L 40 6 L 34 17 L -34 17 Z" fill="#FFFFFF" stroke="#1F2A44" stroke-width="2"/>
+    <rect x="-10" y="9" width="20" height="4" rx="1" fill="#CBD5E1"/>
+    <text x="0" y="44" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#1F2A44">Laptop</text>
+    <text x="0" y="65" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" fill="#475569">Peer 2 (Equal)</text>
+  </g>
+
+  <!-- Peer 3: Laptop (Bottom Right) -->
+  <g transform="translate(580, 340)">
+    <rect x="-32" y="-34" width="64" height="40" rx="4" fill="#FFFFFF" stroke="#1F2A44" stroke-width="2"/>
+    <rect x="-27" y="-29" width="54" height="29" rx="2" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+    <path d="M -40 6 L 40 6 L 34 17 L -34 17 Z" fill="#FFFFFF" stroke="#1F2A44" stroke-width="2"/>
+    <rect x="-10" y="9" width="20" height="4" rx="1" fill="#CBD5E1"/>
+    <text x="0" y="44" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#1F2A44">Laptop</text>
+    <text x="0" y="65" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" fill="#475569">Peer 3 (Equal)</text>
+  </g>
+
+  <!-- Peer 4: Desktop PC with Shared Printer Attached (Bottom Left) -->
+  <g transform="translate(220, 340)">
+    <rect x="-35" y="-36" width="70" height="46" rx="4" fill="#FFFFFF" stroke="#1F2A44" stroke-width="2"/>
+    <rect x="-30" y="-31" width="60" height="34" rx="2" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+    <rect x="-5" y="10" width="10" height="9" fill="#1F2A44"/>
+    <rect x="-18" y="19" width="36" height="4" rx="2" fill="#1F2A44"/>
+    
+    <!-- Shared local printer next to Peer 4 -->
+    <g transform="translate(-62, -4)">
+      <rect x="-14" y="-18" width="28" height="10" rx="2" fill="#F1F5F9" stroke="#1F2A44" stroke-width="1"/>
+      <rect x="-18" y="-8" width="36" height="22" rx="3" fill="#FFFFFF" stroke="#1F2A44" stroke-width="1.5"/>
+      <rect x="-11" y="2" width="22" height="3" rx="1" fill="#1F2A44"/>
+      <line x1="18" y1="3" x2="27" y2="3" stroke="#1F2A44" stroke-width="1.5"/>
+    </g>
+    
+    <text x="0" y="44" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#1F2A44">Desktop + Printer</text>
+    <text x="0" y="65" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" fill="#475569">Peer 4 (Shared print)</text>
+  </g>
+
+  <!-- Bottom Educational Summary -->
+  <rect x="50" y="442" width="700" height="38" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+  <text x="400" y="466" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#1F2A44">Decentralised: Low cost and simple for homes, but security and backups must be managed per device.</text>
+</svg>

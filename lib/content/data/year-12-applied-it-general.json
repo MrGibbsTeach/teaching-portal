@@ -8107,35 +8107,35 @@
                   "kind": "connect",
                   "config": {
                     "left": [
-                      "Star",
-                      "Bus",
-                      "Ring",
-                      "Mesh"
+                      "Wired star",
+                      "Wireless",
+                      "Client-server",
+                      "Peer-to-peer"
                     ],
                     "right": [
-                      "All devices connect to a central switch",
-                      "All devices share one main cable",
-                      "Each device connects to two neighbours in a loop",
-                      "Devices connect to many other devices"
+                      "All devices connect by cable to a central switch",
+                      "Devices connect by radio waves to a wireless access point",
+                      "A central server stores files and controls access for clients",
+                      "Devices share resources directly with each other with no central server"
                     ]
                   },
                   "goalState": {
                     "links": [
                       [
-                        "Star",
-                        "All devices connect to a central switch"
+                        "Wired star",
+                        "All devices connect by cable to a central switch"
                       ],
                       [
-                        "Bus",
-                        "All devices share one main cable"
+                        "Wireless",
+                        "Devices connect by radio waves to a wireless access point"
                       ],
                       [
-                        "Ring",
-                        "Each device connects to two neighbours in a loop"
+                        "Client-server",
+                        "A central server stores files and controls access for clients"
                       ],
                       [
-                        "Mesh",
-                        "Devices connect to many other devices"
+                        "Peer-to-peer",
+                        "Devices share resources directly with each other with no central server"
                       ]
                     ]
                   },
