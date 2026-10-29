@@ -1,6 +1,6 @@
 # Checkpoints
 
-Review notes and feedback that are **recorded but not yet acted on**. Add new feedback under the relevant checkpoint (or start a new one), then plan the work from here. Nothing in this file has been implemented.
+Review notes and feedback that are **recorded but not yet acted on**. Add new feedback under the relevant checkpoint (or start a new one), then plan the work from here. Items here are not yet fully acted on; record progress beneath each checkpoint.
 
 ---
 
@@ -32,12 +32,16 @@ So the intent was already "taught by the professional". The framework delivers i
 3. Is the AgentCard's career-pathway content better placed on a one-time "Meet your mentor" page or at the end of a topic, where it acts as career context rather than an opener?
 4. Should ATAR and Foundations get mentors too, or is this General-only?
 
-### Improvement options (not started)
+### Improvement options
 - **A. A consistent lesson skeleton in the mentor's voice.** Every lesson: short in-role hook tied to *that* lesson, teaching content written as the mentor explaining it ("here's how I explain it to a new starter"), then the same repeatable pieces each time: **Write this down** (the notes box), **On the job** (a real-world example), **Watch out** (the common mistake), **Test-ready summary**. Keeps it easy to take notes from, and easy to revise.
 - **B. Slim the card** to a compact byline (photo, name, role) on every lesson; put the full profile on a "Meet your mentor" page or at the topic's end.
 - **C. Restore the voice in Y11 Design first** (four lessons), keeping the new visual demos.
 - **D. Continuity within a topic:** one recurring client or project per topic, so the mentor's ticket in lesson 1 is followed up in lesson 4.
 - **E. Profession-appropriate framing per mentor** (see question 1).
+
+### Progress (2026-10-24)
+
+Clayton reviewed the three Year 12 General pilot lessons, approved the format for all Year 11 and Year 12 General lessons, and clarified that General and Foundations must use test or assessment wording, with exam language reserved for ATAR. The rollout is complete across all 117 General lessons. Existing written practice remains; teaching lessons now include a mid-lesson feedback check, a notes cue and a concise test-ready recap. The broader mentor-voice options above remain open.
 
 ### Feedback still to add
 _(Clayton is reviewing the other courses and will send further feedback. Add it below.)_

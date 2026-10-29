@@ -143,7 +143,7 @@ function mapBlock(b) {
   }
 }
 
-function mapLesson(lesson, idx) {
+function mapLesson(lesson) {
   const id = slugify(lesson.title);
   if (lesson.type === "quiz") {
     return {

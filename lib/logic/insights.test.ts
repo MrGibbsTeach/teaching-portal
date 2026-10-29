@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { CourseContent } from "@/lib/content/types";
-import { hardestQuestions, mergeStats, parseFeedback, questionKey, statFields } from "./insights";
+import { hardestQuestions, mergeStats, parseFeedback, questionKey, statFields, studentQuizTotals } from "./insights";
 
 describe("questionKey", () => {
   it("is stable per text and differs between questions and lessons", () => {
@@ -74,6 +74,21 @@ describe("hardestQuestions", () => {
     expect(rows.map((r) => r.text)).toEqual(["Hard one", "Easy one"]);
     expect(rows[0]).toMatchObject({ attempts: 5, correctRate: 0.2, commonWrongAnswer: "c", commonWrongCount: 3, lessonTitle: "Lesson 1" });
     expect(rows[1].commonWrongAnswer).toBeUndefined();
+  });
+});
+
+describe("studentQuizTotals", () => {
+  it("sums attempts and correct answers across all questions", () => {
+    const kA = questionKey("l1", "A");
+    const kB = questionKey("l1", "B");
+    const stats = mergeStats([
+      { [`${kA}:r`]: 2, [`${kA}:w`]: 1, [`${kB}:w`]: 3 },
+    ]);
+    expect(studentQuizTotals(stats)).toEqual({ attempts: 6, right: 2 });
+  });
+
+  it("returns zero totals for an empty map", () => {
+    expect(studentQuizTotals(new Map())).toEqual({ attempts: 0, right: 0 });
   });
 });
 

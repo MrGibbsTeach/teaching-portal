@@ -7,7 +7,7 @@ vi.mock("next/cache", () => ({ revalidatePath: () => {} }));
 let session: Record<string, unknown> | null = null;
 vi.mock("@/lib/session", () => ({ getSession: async () => session }));
 
-import { getFeedback, getQuizStats } from "@/lib/db";
+import { getFeedback, getQuizStats, getStudentQuizStats } from "@/lib/db";
 import { getCourseContent } from "@/lib/content";
 import { hardestQuestions, mergeStats, questionKey } from "@/lib/logic/insights";
 import { recordQuizAnswer, resolveFeedback, submitFeedback } from "./insights";
@@ -45,6 +45,24 @@ describe("recordQuizAnswer", () => {
     expect((after[`${key}:w`] ?? 0) - (before[`${key}:w`] ?? 0)).toBe(1);
     expect((after[`${key}:r`] ?? 0) - (before[`${key}:r`] ?? 0)).toBe(1);
     expect((after[`${key}:o${wrong}`] ?? 0) - (before[`${key}:o${wrong}`] ?? 0)).toBe(1);
+  });
+
+  it("also records the answer against the individual student, not just the class", async () => {
+    const key = questionKey(lesson.id, quiz.question.text);
+    const before = await getStudentQuizStats("class-a", "ann");
+
+    await recordQuizAnswer(SLUG, lesson.id, quiz.question.text, right, true);
+    await recordQuizAnswer(SLUG, lesson.id, quiz.question.text, wrong, false);
+
+    const after = await getStudentQuizStats("class-a", "ann");
+    expect((after[`${key}:r`] ?? 0) - (before[`${key}:r`] ?? 0)).toBe(1);
+    expect((after[`${key}:w`] ?? 0) - (before[`${key}:w`] ?? 0)).toBe(1);
+
+    // A different student's answers do not land on ann's record.
+    session = { ...student, username: "bo" };
+    await recordQuizAnswer(SLUG, lesson.id, quiz.question.text, right, true);
+    expect(await getStudentQuizStats("class-a", "bo")).not.toEqual(before);
+    expect(await getStudentQuizStats("class-a", "ann")).toEqual(after);
   });
 
   it("feeds the hardest-questions report", async () => {

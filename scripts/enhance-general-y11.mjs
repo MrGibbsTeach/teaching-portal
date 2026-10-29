@@ -119,7 +119,7 @@ const INDUSTRY_TIPS = [
   { heading: "🏭 Industry Tip", text: "Security is everyone's job, not just the IT department's. Phishing attacks succeed because employees don't recognise them — understanding these threats makes you a valuable team member." },
 ];
 
-function makeScenarioHook(lessonId, lessonTitle, topicId) {
+function makeScenarioHook(lessonId) {
   const text = LESSON_HOOKS[lessonId] ||
     `In the real world, this topic comes up constantly in IT roles. As you work through this lesson, think about how it applies to the kind of IT job you'd like to do.`;
   return {
@@ -164,7 +164,7 @@ for (const unit of data.units) {
       const lesson = topic.lessons[li];
 
       // 1. Add scenario hook at start of EVERY lesson
-      lesson.blocks.unshift(makeScenarioHook(lesson.id, lesson.title, topic.id));
+      lesson.blocks.unshift(makeScenarioHook(lesson.id));
       totalAdded++;
 
       // 2. Add career callout at start of first lesson only

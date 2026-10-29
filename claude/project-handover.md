@@ -2,7 +2,7 @@
 
 This file is the single source of truth for any AI working on this project. Read it fully before doing anything, then read only the other docs your task needs. Update it at the end of every session (see "Keeping this file current").
 
-Last updated: 21 Oct 2026
+Last updated: 24 Oct 2026
 
 ## If the owner just types "continue"
 
@@ -89,7 +89,7 @@ Mr Gibbs Teach is the owner's personal teaching platform (lessons, assessments, 
 2. **Customer-facing assets** (landing page, pricing page, email, deck, social post, ad, navigation, link preview image): open `claude/design-references.md`, fetch the matching site live, study 3 to 5 current examples, borrow patterns never designs, and tell the owner which sites and patterns informed the work. This does not apply to the 3D animations.
 3. **Record every build.** When an animation is built, add its row to the register under Built with the link, courses, lesson slot and check questions, and move it out of Planned.
 4. **Verify before showing.** For animations: syntax check, a smoke test, then a real headless browser check of the default labels-on shot, every stage, the info card, the quiz and Flyover. Expect at least one review round after the owner uses it.
-5. **Learn from other education sites.** Mr Gibbs Teach is an online educational website, so its lesson pages, practice, progress tracking and student experience should take the best features of established education platforms (see "Educational reference sites" below). Before designing or changing a learning feature, fetch the relevant sites live, study how they do it, adopt the proven pattern and adapt it to our student-led, WA SCSA-aligned model. Never copy their content, branding or code. Tell the owner which sites and features informed the work.
+5. **Learn from several education sites.** Mr Gibbs Teach is an online educational website, so its lesson pages, practice, progress tracking and student experience should take the best features of established education platforms (see "Educational reference sites" below). Before designing or changing a learning feature, fetch at least two relevant sites live where public access allows; use different references for different strengths rather than relying on one site. Atomi is useful for senior secondary self-paced flow and progress; Education Perfect for lesson-to-practice cycles and student progress; Khan Academy for course/unit mastery and next steps; Grok Academy for Digital Technologies tasks; Code.org for activity sequencing and clear completion states. Adapt proven patterns to our student-led, WA SCSA-aligned model. Never copy content, branding or code. Tell the owner which sites and features informed the work.
 
 ## Definition of done
 
@@ -105,7 +105,11 @@ Mr Gibbs Teach is the owner's personal teaching platform (lessons, assessments, 
 - 21 Oct 2026: pilot is the owner's own AIT Y11 and Y12 classes (ATAR, General, Foundations), this year into early 2027, possibly plus a Y9 or Y10 group. Everything else parked.
 - 21 Oct 2026: commercial strategy written (`claude/commercial-strategy.md`). Strategy is to win a niche (interactive, WA-specific, project-based AIT), not to out-scale Atomi.
 - 21 Oct 2026: competitive advantage analysis written (`claude/competitive-advantage.md`). Positioning: interactive hands-on learning, complete student-led course, WA SCSA depth, evidence from real classes. Not competing on breadth, free content, adaptive drill or early reading.
+- 23 Oct 2026: broadened educational reference practice to draw on multiple relevant platforms per learning-design pass, including Atomi, Education Perfect, Khan Academy, Code.org and Grok Academy; saved current findings in `claude/competitive-advantage.md`.
 - 21 Oct 2026: cost rules added. The animation register is not split for now; read it by section instead.
+- 24 Oct 2026: Clayton approved the three-lesson Year 12 General engagement pilot for rollout across all 117 Year 11/12 General lessons. General and Foundations use test or assessment wording; exam language is reserved for ATAR. The rollout is complete; see `STATUS.md`.
+- 21 Oct 2026: closed Y12 General's remaining no-interactive-diagram gap (8 topics), merged that work with the 3D-animation/PR#1+#2 work pushed from another session, and pushed to `main`. Found and then corrected an overstated ATAR check-question gap claim (open question 6); the real, smaller Y12 ATAR gap (3 topics) was fixed with the owner's go-ahead, plus one AIT Foundations lesson missing a hands-on activity. Item C's coverage pass is now complete across all 4 pilot tracks.
+- 21 Oct 2026: built per-student quiz-results tracking (open question 7) — a real gap in item 2's own requirement, not content. Teachers can now see each student's own right/wrong answers, not just the class aggregate.
 
 ## Educational reference sites
 
@@ -126,7 +130,7 @@ How to use them:
 1. Fetch the site live and review the specific feature. Do not work from memory. If a page is behind a login or paywall, say so and use what is public. Do not try to get around it.
 2. Write down what the best examples have in common, and which parts suit student-led delivery (no teacher in the room, parent help in younger years).
 3. Propose 2 or 3 options with a one-line tradeoff each, then recommend one.
-4. Match to the audience: Y7 and Y8 DT (younger, parent-assisted) look more like Reading Eggs and Code.org. Y11 and Y12 AIT (self-directed, exam focused) look more like Atomi, Education Perfect and Khan Academy. Grok Academy is the closest subject match for both.
+4. Match to the audience: Y7 and Y8 DT (younger, parent-assisted) look more like Reading Eggs and Code.org. Y11 and Y12 AIT are self-directed and draw on Atomi, Education Perfect and Khan Academy; use test/assessment practice wording for General and Foundations, and reserve exam preparation wording for ATAR. Grok Academy is the closest subject match for both.
 5. Keep what makes us different: the interactive 3D animations, WA SCSA alignment, and check questions on every lesson page.
 
 ## Upcoming work
@@ -165,6 +169,9 @@ For each new animation: write the lesson placement and one check question per st
 ### C. Course content
 
 - Pilot focus: Y11 and Y12 AIT (ATAR, General, Foundations). Audit the existing lessons against the WA SCSA syllabus, complete the gaps, make sure every lesson has check questions, and check that progress and check-question results can be seen per student.
+- Y11 and Y12 General Design Concepts received a visual fix on 22 Oct 2026, live in commit `b5a2267`: 19 self-hosted SVGs cover all 21 Typography/Compositional Rules grid cards; the Y11 Balance diagram text now fits its panels. Follow-up fixes for the Y11 focal-point label and Y12 Typography/relationship layouts are live in `6c81844` (Vercel succeeded). Details are in `STATUS.md`.
+- On 22 Oct 2026, added 104 lesson-specific visual models across the remaining Y11 and Y12 AIT General lessons (all non-Design Concepts topics), based on each lesson's existing content. Live in commit `292d965` (Vercel succeeded). The generator is `scripts/add-general-course-visual-upgrade.mjs`; SVG validation and build pass. Details are in `STATUS.md`.
+- On 23 Oct 2026, improved the shared Y11/Y12 General course map and added type-specific reading guidance plus explicit screen-reader descriptions to all 104 non-Design Concepts visual models. Shipped in `2667c45`; logged-in desktop/mobile review remains.
 - Y7 to Y10 Digital Technologies courses are parked (Y7 and Y8 are still placeholders in the portal). A Y9 or Y10 group may join the pilot.
 - Y11 and Y12 AIT (ATAR, General, Foundations) have lessons live with animations placed (see the register's "In the course" table). Further lessons and animation placements follow as animations are built.
 - Course names and topics in the register are a best mapping and must be checked against the owner's scope and sequence before locking lesson slots.
@@ -190,6 +197,8 @@ For each new animation: write the lesson placement and one check question per st
 3. Is a Y9 or Y10 group joining the pilot, and which?
 4. Has selling the content been cleared with the school and CEWA (IP, secondary work, student data and privacy)? See the strategy risks.
 5. Does an earlier Commercial Strategy doc (written 18 Oct 2026, outside this project) still exist? If so, merge it into `claude/commercial-strategy.md`.
+6. (21 Oct 2026, resolved) The "41-lesson ATAR gap" reported earlier the same day was overstated — Y11 ATAR's apparent gap was a false positive (every topic deliberately ends in a dedicated quiz/practice/exam lesson covering its content lessons; no fix needed). Y12 ATAR's was real but smaller: 3 topics thin on per-lesson checks (design-concepts-1 1/5, managing-data-6 6/14, application-skills-9 2/4). Owner said yes to all three; `scripts/add-y12-atar-check-questions.mjs` added 2 new WACE-style questions to each of the 14 lessons that had none, matching the marking-key style already used in that course's other lessons. All three topics are now 100% covered. Same pass, AIT Foundations' "Typing Formulas" lesson (c11_6_l2) was the one lesson across all 4 pilot tracks (General, ATAR, Foundations) missing a hands-on `activity` block — `scripts/add-foundations-formula-activity.mjs` added one (match-pairs for the 5 formula symbols it already teaches), same tone as its sibling lessons. That completes item C's check-question/interactive-coverage pass for the whole AIT Y11/Y12 pilot. Not yet browser-checked.
+7. (21 Oct 2026, built) Item 2's other half — "check that lesson progress and check-question results can be seen per student" — was only half true: progress was (CSV export), but check-question results were only ever a class-wide aggregate (`lib/db.ts`'s `recordQuizStats` increments one shared counter hash per class, no student attached). Owner said build it. Added `recordStudentQuizStats`/`getStudentQuizStats` (same hash shape, one per student, reusing the existing `mergeStats`/`hardestQuestions` parsing logic unchanged), wired into the existing `recordQuizAnswer` action alongside the class-wide write, a "Quiz results" column on the class management page, and a new per-student results page at `/teacher/classes/[id]/students/[username]`. 79 tests now pass (3 new), build and lint clean. Not browser-checked — same login-gated-route limitation as the animation check above; owner chose to skip that check for now too.
 
 ## Keeping this file current
 
