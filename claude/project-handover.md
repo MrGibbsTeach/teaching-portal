@@ -38,11 +38,12 @@ Last updated: 24 Oct 2026
 
 The pilot is decided: the owner's own Y11 and Y12 AIT classes (ATAR, General, Foundations), this year into early 2027. Y7 to Y10 and everything else are parked.
 
-1. Ship what is already built: A2, A3, then A1.
-2. Audit and complete the AIT Y11 and Y12 lessons (C), and check that lesson progress and check-question results can be seen per student. This is the pilot evidence.
-3. The ranked feature backlog is in `claude/feature-backlog.md` (drafted 21 Oct 2026). Get the owner's yes before building any item.
-4. Build planned animations (B) only if an AIT Y11 or Y12 lesson needs them, in the priority order shown.
-5. Work through the commercial strategy's 90 day plan (`claude/commercial-strategy.md`, section 9).
+1. Ship what is already built: A2 and A3 (A1, the interactive swap, is merged).
+2. Make the courses engaging. The owner's verdict: lessons are static, boring and too similar (a little content, approve, move on). Rank 1 in `claude/feature-backlog.md` is a course experience redesign (UX, UI, lesson flow). Follow the steps there: audit two lessons, study the reference sites, propose 2 or 3 lesson templates, build one, get the owner's view, then roll out.
+3. Build the rest of `claude/feature-backlog.md` in its ranked order. The owner approved all of it on 21 Oct 2026 and said none of it waits.
+4. Audit and complete the AIT Y11 and Y12 lessons (C), and check that lesson progress and check-question results can be seen per student. This is the pilot evidence.
+5. Build planned animations (B) only if an AIT Y11 or Y12 lesson needs them, in the priority order shown.
+6. Work through the commercial strategy's 90 day plan (`claude/commercial-strategy.md`, section 9).
 
 ## What the project is
 
@@ -57,7 +58,7 @@ Mr Gibbs Teach is the owner's personal teaching platform (lessons, assessments, 
 - `claude/3d-animation-register.md`: animations built and planned, the locked interactive style standard, lesson placements, check questions, and where each is live in the portal. Always read the style standard before building any animation.
 - `claude/design-references.md`: design galleries to study before making any customer-facing asset.
 - `claude/competitive-advantage.md`: saved research on each competitor (Atomi, Education Perfect, Mathspace, Reading Eggs, Khan Academy, Grok Academy, Code.org and others), where we are better, how it carries beyond Digital Technologies, and the feature backlog seed. Read it instead of re-fetching the sites, and keep all marketing claims consistent with it.
-- `claude/feature-backlog.md`: ranked features to adopt, with effort guesses. Owner approves before any build.
+- `claude/feature-backlog.md`: all planned features in order of importance, led by the course experience redesign. Approved by the owner, build in order.
 - `claude/commercial-strategy.md`: phases and gates, competitor benchmark (Atomi), where we can be better, pricing options, risks, next 90 days. Read it before any commercial decision.
 
 ## Where these docs live and tool notes
