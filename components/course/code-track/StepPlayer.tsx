@@ -2,7 +2,7 @@
 
 import { useMemo, useState, type CSSProperties } from "react";
 import type { Block } from "@/lib/content/types";
-import { splitBlocksByPart } from "@/lib/content/parts";
+import { blockPart } from "@/lib/content/parts";
 import {
   activitiesScore,
   hasPassed,
@@ -41,6 +41,62 @@ function isGradableQuiz(block: Block): block is Block & { type: "quizQuestion" }
 /** A divider is a pure visual rule, not a thing to step through on its own. */
 function isStep(block: Block): boolean {
   return block.type !== "divider";
+}
+
+/**
+ * Fold a lone heading into the step for whatever comes after it, instead of
+ * giving it a screen of its own with nothing on it (reported 29 Oct 2026: a
+ * "Test-ready recap" heading rendered as its own empty step, with the recap
+ * list on the next one). A heading now reads as a section title sitting
+ * above its content, in the same step — matching how every reference site
+ * treats a heading. A trailing heading with nothing after it (rare) still
+ * gets its own step rather than vanishing.
+ */
+function groupSteps(blocks: Block[]): Block[][] {
+  const steps: Block[][] = [];
+  let pendingHeadings: Block[] = [];
+  for (const block of blocks) {
+    if (block.type === "heading") {
+      pendingHeadings.push(block);
+      continue;
+    }
+    steps.push([...pendingHeadings, block]);
+    pendingHeadings = [];
+  }
+  if (pendingHeadings.length > 0) steps.push(pendingHeadings);
+  return steps;
+}
+
+/**
+ * Group into steps on the lesson's original block order first, THEN split
+ * into Content/Activities tabs by each step's own content. Grouping after
+ * the Content/Activities split (the obvious order) breaks when a heading is
+ * written to introduce an Activities block (e.g. "Assessment practice"
+ * right before a quiz): with Activities blocks already filtered out, that
+ * heading has nothing of its own next to it in the Content stream and gets
+ * wrongly merged into the next, unrelated Content heading instead. Grouping
+ * first keeps every heading paired with whatever it was actually written
+ * to introduce, wherever that block ends up.
+ */
+function groupAndSplit(blocks: Block[]): { content: Block[][]; activities: Block[][] } {
+  const groups = groupSteps(blocks.filter(isStep));
+  const content: Block[][] = [];
+  const activities: Block[][] = [];
+  for (const group of groups) {
+    const mainType = group[group.length - 1].type;
+    (blockPart(mainType) === "activities" ? activities : content).push(group);
+  }
+  return { content, activities };
+}
+
+/** Label for a grouped step: prefer its heading's own text (an action-named
+ *  title, per S4) over the generic label of whatever block it introduces. */
+function groupLabel(group: Block[]): string {
+  // Last heading (closest to the content it introduces), not the first — a
+  // group can carry more than one heading in a row.
+  const headings = group.filter((b): b is Block & { type: "heading" } => b.type === "heading");
+  const heading = headings[headings.length - 1];
+  return heading ? heading.text : stepLabel(group[group.length - 1]);
 }
 
 /** Short, human label for a step's dropdown/progress entry (redesign-plan.md
@@ -264,14 +320,9 @@ export function StepPlayer({
    *  (no-login code track); ATAR passes a Redis-backed callback instead. */
   onFinish?: () => void;
 }) {
-  const { content: rawContent, activities: rawActivities } = useMemo(
-    () => splitBlocksByPart(blocks),
-    [blocks]
-  );
-  const content = useMemo(() => rawContent.filter(isStep), [rawContent]);
-  const activities = useMemo(() => rawActivities.filter(isStep), [rawActivities]);
-  const contentLabels = useMemo(() => content.map(stepLabel), [content]);
-  const activityLabels = useMemo(() => activities.map(stepLabel), [activities]);
+  const { content, activities } = useMemo(() => groupAndSplit(blocks), [blocks]);
+  const contentLabels = useMemo(() => content.map(groupLabel), [content]);
+  const activityLabels = useMemo(() => activities.map(groupLabel), [activities]);
 
   const [tab, setTab] = useState<Tab>("content");
   const [contentStepIndex, setContentStepIndex] = useState(0);
@@ -282,16 +333,17 @@ export function StepPlayer({
 
   const stepIndex = tab === "content" ? contentStepIndex : activityStepIndex;
   const step = (tab === "content" ? content : activities)[stepIndex];
+  const mainBlock = step?.[step.length - 1];
 
-  const gradableSteps = activities.filter(isGradableQuiz);
+  const gradableSteps = activities.filter((g) => isGradableQuiz(g[g.length - 1]));
   const gradableIndexes = activities
-    .map((b, i) => (isGradableQuiz(b) ? i : -1))
+    .map((g, i) => (isGradableQuiz(g[g.length - 1]) ? i : -1))
     .filter((i) => i >= 0);
   const outcomesInOrder = gradableIndexes.map((i) => quizOutcomes[i]);
 
   const stepResolved =
-    tab === "activities" && step
-      ? isGradableQuiz(step)
+    tab === "activities" && mainBlock
+      ? isGradableQuiz(mainBlock)
         ? quizStepResolved(quizOutcomes[activityStepIndex])
         : !!done[activityStepIndex]
       : true;
@@ -379,8 +431,10 @@ export function StepPlayer({
       {tab === "content" && content.length > 0 && (
         <div className="py-8">
           <StepNav labels={contentLabels} index={contentStepIndex} onJump={setContentStepIndex} />
-          <div className="mt-6">
-            <BlockRenderer block={content[contentStepIndex]} />
+          <div className="mt-6 space-y-6">
+            {content[contentStepIndex].map((block, i) => (
+              <BlockRenderer key={i} block={block} />
+            ))}
           </div>
           <div className="mt-8 flex items-center justify-between border-t border-border pt-6">
             <button
@@ -406,13 +460,16 @@ export function StepPlayer({
         </div>
       )}
 
-      {tab === "activities" && step && (
+      {tab === "activities" && step && mainBlock && (
         <div className="py-8">
           <StepNav labels={activityLabels} index={activityStepIndex} onJump={setActivityStepIndex} />
-          <div className="mt-6">
-            {isGradableQuiz(step) ? (
+          <div className="mt-6 space-y-6">
+            {step.slice(0, -1).map((block, i) => (
+              <BlockRenderer key={i} block={block} />
+            ))}
+            {isGradableQuiz(mainBlock) ? (
               <QuizStep
-                block={step}
+                block={mainBlock}
                 outcome={quizOutcomes[activityStepIndex]}
                 onAttempt={(correct) =>
                   setQuizOutcomes((prev) => ({
@@ -423,7 +480,7 @@ export function StepPlayer({
               />
             ) : (
               <div>
-                <BlockRenderer block={step} />
+                <BlockRenderer block={mainBlock} />
                 {!done[activityStepIndex] && (
                   <button
                     type="button"
