@@ -100,6 +100,16 @@ export type Block =
   | { type: "sorter"; title?: string; instruction?: string; categories: string[]; items: SorterItem[] }
   | { type: "sequence"; title?: string; instruction?: string; items: string[]; explanation?: string }
   | { type: "branchingScenario"; title?: string; intro?: string; steps: BranchStep[] }
+  | {
+      type: "placer";
+      title?: string;
+      instruction?: string;
+      /** Trusted authored SVG of the plan; the spots are drawn over it by the component. */
+      planSvg: string;
+      alt: string;
+      spots: { id: string; label: string }[];
+      devices: { name: string; correctSpot: string; why: string }[];
+    }
   | { type: "svgFigure"; title?: string; caption?: string; alt: string; svg: string }
   | {
       type: "videoSlot";

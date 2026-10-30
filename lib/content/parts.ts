@@ -28,6 +28,7 @@ export function blockPart(type: Block["type"]): LessonPart {
     case "sorter":
     case "sequence":
     case "branchingScenario":
+    case "placer":
       return "activities";
     default:
       return "content";

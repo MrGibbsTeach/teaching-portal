@@ -10,6 +10,7 @@ import { Sorter } from "@/components/course/shared/Sorter";
 import { Sequence } from "@/components/course/shared/Sequence";
 import { BranchingScenario } from "@/components/course/shared/BranchingScenario";
 import { VideoSlot } from "@/components/course/shared/VideoSlot";
+import { Placer } from "@/components/course/shared/Placer";
 import { SvgFigure } from "@/components/course/shared/SvgFigure";
 
 function QuizQuestionView({ question }: { question: QuizQuestion }) {
@@ -201,6 +202,8 @@ export function BlockRenderer({ block }: { block: Block }) {
       return <BranchingScenario title={block.title} intro={block.intro} steps={block.steps} />;
     case "videoSlot":
       return <VideoSlot title={block.title} youtubeId={block.youtubeId} brief={block.brief} minutes={block.minutes} watchFor={block.watchFor} />;
+    case "placer":
+      return <Placer title={block.title} instruction={block.instruction} planSvg={block.planSvg} alt={block.alt} spots={block.spots} devices={block.devices} />;
     case "svgFigure":
       return <SvgFigure title={block.title} caption={block.caption} alt={block.alt} svg={block.svg} />;
     case "animation3d":
