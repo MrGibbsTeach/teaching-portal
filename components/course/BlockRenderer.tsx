@@ -4,6 +4,13 @@ import { DiagramRunner } from "@/components/course/shared/DiagramRunner";
 import { CheckpointVideoPlayer } from "@/components/course/shared/CheckpointVideoPlayer";
 import { HotspotActivity } from "@/components/course/shared/HotspotActivity";
 import { Animation3D } from "@/components/course/shared/Animation3D";
+import { InfoCards } from "@/components/course/shared/InfoCards";
+import { FlipCards } from "@/components/course/shared/FlipCards";
+import { Sorter } from "@/components/course/shared/Sorter";
+import { Sequence } from "@/components/course/shared/Sequence";
+import { BranchingScenario } from "@/components/course/shared/BranchingScenario";
+import { VideoSlot } from "@/components/course/shared/VideoSlot";
+import { SvgFigure } from "@/components/course/shared/SvgFigure";
 
 function QuizQuestionView({ question }: { question: QuizQuestion }) {
   return (
@@ -139,11 +146,12 @@ export function BlockRenderer({ block }: { block: Block }) {
       );
     case "keyTerms":
       return (
-        <dl className="mt-3 divide-y divide-border border-y border-border">
+        <dl className="mt-4 grid gap-3 sm:grid-cols-2">
           {block.items.map((it, i) => (
-            <div key={i} className="flex flex-wrap gap-x-2 py-2">
-              <dt className="font-medium">{it.term}</dt>
-              <dd className="text-muted-foreground">— {it.definition}</dd>
+            <div key={i} className="rounded-2xl border bg-card p-4 shadow-sm">
+              <dt className="text-[11px] font-bold uppercase tracking-widest text-primary">Key term</dt>
+              <dd className="mt-1 font-semibold">{it.term}</dd>
+              <dd className="mt-1 text-sm leading-relaxed text-foreground/85">{it.definition}</dd>
             </div>
           ))}
         </dl>
@@ -181,6 +189,20 @@ export function BlockRenderer({ block }: { block: Block }) {
           )}
         </div>
       );
+    case "infoCards":
+      return <InfoCards title={block.title} intro={block.intro} columns={block.columns} cards={block.cards} />;
+    case "flipCards":
+      return <FlipCards title={block.title} instruction={block.instruction} cards={block.cards} />;
+    case "sorter":
+      return <Sorter title={block.title} instruction={block.instruction} categories={block.categories} items={block.items} />;
+    case "sequence":
+      return <Sequence title={block.title} instruction={block.instruction} items={block.items} explanation={block.explanation} />;
+    case "branchingScenario":
+      return <BranchingScenario title={block.title} intro={block.intro} steps={block.steps} />;
+    case "videoSlot":
+      return <VideoSlot title={block.title} youtubeId={block.youtubeId} brief={block.brief} minutes={block.minutes} watchFor={block.watchFor} />;
+    case "svgFigure":
+      return <SvgFigure title={block.title} caption={block.caption} alt={block.alt} svg={block.svg} />;
     case "animation3d":
       return (
         <div className="mt-3">

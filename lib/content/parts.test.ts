@@ -7,6 +7,7 @@ describe("blockPart", () => {
     for (const type of [
       "quizQuestion", "activity", "codeExercise", "interactiveDiagram",
       "scenarioChallenge", "spotTheThreat", "checkpointVideo",
+      "flipCards", "sorter", "sequence", "branchingScenario",
     ] as const) {
       expect(blockPart(type)).toBe("activities");
     }
