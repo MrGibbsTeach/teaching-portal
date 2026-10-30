@@ -2,7 +2,7 @@
 
 Read this first — before `STATUS.md`. This file is the live handover: what's true right now and the next step. `STATUS.md` is the detailed history (why things are built the way they are); `CHECKPOINTS.md` is recorded feedback not yet acted on. Both stay as the deeper record — update this file's **Last updated** / **Right now** / **Next step** every session; add detail to `STATUS.md` only when something durable changed.
 
-**Last updated:** 2026-10-21
+**Last updated:** 2026-10-31
 
 **Live:**
 - Production: https://mrgibbsteach.com (custom domain, DNS live, cert issued) — also reachable at https://teaching-portal-eta.vercel.app
@@ -30,6 +30,8 @@ Read this first — before `STATUS.md`. This file is the live handover: what's t
 - Year 11/12 AIT General next-lesson audit completed 2026-10-23: corrected five stale Year 12 in-lesson Up next callouts and gave the Year 11 Unit 2 evaluation lesson a unique ID so its route and next link resolve correctly. Verified all 117 lesson sequences and the production build passes; see `STATUS.md`.
 
 - Engagement format approved and rolled out across all 117 Year 11/12 AIT General lessons. Added 104 mid-lesson feedback checks across teaching lessons (the three Year 12 pilot checks remain), notes cues and test-ready recaps; the ten Year 11 review lessons keep their existing quiz sequences. Removed 106 repeated Year 12 how-to/objective callouts. Year 11 General, Year 12 General and all 68 Foundations lessons have no exam wording in their course data. Production build and Vercel deployment succeeded for commit `5ab2497`. See `STATUS.md` for the deployment record. See `STATUS.md`.
+
+- **Y12 General Unit 3 Impacts of Technology rebuilt as interactive card lessons (2026-10-31, branch `y12-general-impacts-u3-rebuild`, PR open, owner to merge).** All 5 lessons (Digital Citizenship, Cyberbullying and Work Life Balance, Social Networking Impact, Copyright Act 1968, Referencing and Acknowledging IP) now run: hook, success cards, video slot, key-term cards, animated SVG, flip cards, tap-to-sort, put-in-order, a branching case, test-tip cards, scenario card, extended questions (same IDs and mark schemes as before), recap. New block types: `infoCards`, `flipCards`, `sorter`, `sequence`, `branchingScenario`, `svgFigure`, `videoSlot` (components in `components/course/shared/`; `keyTerms` now renders as cards for every course). Rebuild is repeatable: `node scripts/rebuild-y12-general-impacts-u3.mjs`. Anti-Gravity's earlier attempt never reached GitHub and was not used. **Video placeholders:** each lesson has a `videoSlot` with a brief; set `youtubeId` in the JSON (or the script) to turn it into a real embed. Checked: tsc, 107 tests, eslint, headless-browser render at 1366px and 390px, all interactions clicked through. Not checked: logged-in view on production, Y12 Unit 3's other three topics, Unit 4 Impacts of Technology (same treatment is the obvious next step).
 
 **Next step:**
 1. Clayton spot-check the revised Year 11/12 General lessons in teacher preview and send any reactions to the new lesson rhythm.

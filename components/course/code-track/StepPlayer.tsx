@@ -150,6 +150,20 @@ function stepLabel(block: Block): string {
       return block.title ?? "Spot the threat";
     case "activity":
       return block.title ?? "Activity";
+    case "infoCards":
+      return block.title ?? "Key ideas";
+    case "flipCards":
+      return block.title ?? "Flip the cards";
+    case "sorter":
+      return block.title ?? "Sort it";
+    case "sequence":
+      return block.title ?? "Put it in order";
+    case "branchingScenario":
+      return block.title ?? "What would you do?";
+    case "videoSlot":
+      return block.title;
+    case "svgFigure":
+      return block.title ?? "Diagram";
     case "quizQuestion": {
       const qt = block.question.questionType;
       if (qt === "short_answer") return "Short answer";

@@ -24,6 +24,10 @@ export function blockPart(type: Block["type"]): LessonPart {
     case "scenarioChallenge":
     case "spotTheThreat":
     case "checkpointVideo":
+    case "flipCards":
+    case "sorter":
+    case "sequence":
+    case "branchingScenario":
       return "activities";
     default:
       return "content";

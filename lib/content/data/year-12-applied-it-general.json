@@ -2431,21 +2431,45 @@
                   "text": "A Year 10 student has a public TikTok account. Her profile shows her school uniform, and her videos are often filmed at a local park. Before reading, spot two details that could identify or locate her."
                 },
                 {
-                  "type": "heading",
-                  "text": "Success criteria"
+                  "type": "infoCards",
+                  "title": "By the end of this lesson you can",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "🎯",
+                      "heading": "Define digital citizenship.",
+                      "text": "",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "🧭",
+                      "heading": "Describe responsible behaviours when using social networking.",
+                      "text": "",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "✅",
+                      "heading": "Explain the consequences of irresponsible use for the user and others.",
+                      "text": "",
+                      "tone": "blue"
+                    }
+                  ]
                 },
                 {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Define digital citizenship.",
-                    "Describe responsible behaviours when using social networking.",
-                    "Explain the consequences of irresponsible use for the user and others."
+                  "type": "videoSlot",
+                  "title": "What is your digital footprint?",
+                  "minutes": 3,
+                  "brief": "A short, school-appropriate clip showing how one public post is seen, copied and found later. Suggested source: an eSafety Commissioner education video on digital footprints, or a short teacher-filmed screen recording.",
+                  "watchFor": [
+                    "Who can see a public post",
+                    "What happens when someone screenshots it",
+                    "Why deleting does not remove every copy"
                   ]
                 },
                 {
                   "type": "heading",
-                  "text": "Write this down"
+                  "text": "The big idea",
+                  "level": 2
                 },
                 {
                   "type": "keyTerms",
@@ -2469,23 +2493,96 @@
                   ]
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Digital Citizenship",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"impacts-of-technology-u3-digital-citizenship-title impacts-of-technology-u3-digital-citizenship-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"impacts-of-technology-u3-digital-citizenship-title\">Digital Citizenship: Concept cards for Digital citizenship, Digital footprint, Social networking, Social media minimum age.</title><desc id=\"impacts-of-technology-u3-digital-citizenship-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ede9fe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Digital Citizenship</tspan></text><text x=\"36\" y=\"94\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">CORE IDEAS</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Digital citizenship</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Using digital technologies safely,</tspan><tspan x=\"84\" dy=\"19\">responsibly and respectfully, and…</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#c2410c\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#c2410c\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Digital footprint</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">The permanent record of everything you</tspan><tspan x=\"444\" dy=\"19\">post, share, like and search online.</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Social networking</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Using online platforms to create a profile,</tspan><tspan x=\"84\" dy=\"19\">connect with others and share content.</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#c2410c\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#c2410c\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Social media minimum age</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">From 10 December 2025, age-restricted</tspan><tspan x=\"444\" dy=\"19\">social media platforms in Australia must…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
+                  "type": "svgFigure",
+                  "title": "How far one post travels",
+                  "alt": "Four steps showing a post spreading from friends, to copies, to strangers, to lasting for years.",
+                  "svg": "<svg viewBox=\"0 0 640 330\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui,sans-serif\">\n<style>\n.fp-r{fill:none;stroke:#2563eb;stroke-width:3;transform-origin:120px 165px;animation:fp-grow 4.5s ease-out infinite;opacity:0}\n.fp-r2{animation-delay:1.5s}.fp-r3{animation-delay:3s}\n@keyframes fp-grow{0%{transform:scale(.2);opacity:.9}100%{transform:scale(5.2);opacity:0}}\n.fp-t{font-size:15px;fill:#0f172a;font-weight:600}.fp-s{font-size:13px;fill:#475569}\n.fp-b{animation:fp-pop 9s infinite;opacity:.25}.fp-b2{animation-delay:2.2s}.fp-b3{animation-delay:4.4s}.fp-b4{animation-delay:6.6s}\n@keyframes fp-pop{0%,8%{opacity:.25}14%,30%{opacity:1}40%,100%{opacity:.25}}\n@media (prefers-reduced-motion: reduce){*{animation:none!important}}\n</style>\n<circle class=\"fp-r\" cx=\"120\" cy=\"165\" r=\"30\"/><circle class=\"fp-r fp-r2\" cx=\"120\" cy=\"165\" r=\"30\"/><circle class=\"fp-r fp-r3\" cx=\"120\" cy=\"165\" r=\"30\"/>\n<circle cx=\"120\" cy=\"165\" r=\"38\" fill=\"#2563eb\"/><text x=\"120\" y=\"160\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"26\">📱</text><text x=\"120\" y=\"182\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"13\" font-weight=\"700\">You post</text>\n<g class=\"fp-b\"><rect x=\"260\" y=\"30\" width=\"350\" height=\"56\" rx=\"14\" fill=\"#dbeafe\"/><text x=\"278\" y=\"55\" class=\"fp-t\">1. Friends see it</text><text x=\"278\" y=\"74\" class=\"fp-s\">Followers and the group chat, within minutes</text></g>\n<g class=\"fp-b fp-b2\"><rect x=\"260\" y=\"100\" width=\"350\" height=\"56\" rx=\"14\" fill=\"#e0e7ff\"/><text x=\"278\" y=\"125\" class=\"fp-t\">2. Others copy it</text><text x=\"278\" y=\"144\" class=\"fp-s\">Screenshots, reshares and downloads you never see</text></g>\n<g class=\"fp-b fp-b3\"><rect x=\"260\" y=\"170\" width=\"350\" height=\"56\" rx=\"14\" fill=\"#ede9fe\"/><text x=\"278\" y=\"195\" class=\"fp-t\">3. Strangers find it</text><text x=\"278\" y=\"214\" class=\"fp-s\">Search engines and people who are not your friends</text></g>\n<g class=\"fp-b fp-b4\"><rect x=\"260\" y=\"240\" width=\"350\" height=\"56\" rx=\"14\" fill=\"#fce7f3\"/><text x=\"278\" y=\"265\" class=\"fp-t\">4. It lasts for years</text><text x=\"278\" y=\"284\" class=\"fp-s\">A future employer or university can still find it</text></g>\n</svg>",
+                  "caption": "Each ring is another group who can see, copy or keep your post."
                 },
                 {
                   "type": "heading",
-                  "text": "Worked example: responsible or risky?"
+                  "text": "Flip and test yourself",
+                  "level": 2
                 },
                 {
-                  "type": "richText",
-                  "html": "<p>Jordan (17) posts about a party on Instagram. Here are four things he could do.</p><p>Posts a group photo without asking</p><p>Not responsible: others did not give permission and the photo stays in their digital footprint.</p><p>Checks privacy settings first</p><p>Responsible: only approved followers see the post.</p><p>Tags the location in real time</p><p>Risky: strangers can see where a group of young people are right now.</p><p>Deletes a friend's rude comment and messages them</p><p>Responsible: stops harm spreading and deals with it privately.</p>"
+                  "type": "flipCards",
+                  "title": "Four terms, four answers",
+                  "instruction": "Read the front, answer out loud, then flip.",
+                  "cards": [
+                    {
+                      "tag": "Define",
+                      "front": "What is digital citizenship?",
+                      "back": "Using digital technologies safely, responsibly and respectfully, and understanding your rights and responsibilities online."
+                    },
+                    {
+                      "tag": "Define",
+                      "front": "What is a digital footprint?",
+                      "back": "The permanent record of everything you post, share, like and search online, including what others post about you."
+                    },
+                    {
+                      "tag": "Apply",
+                      "front": "Why is posting a friend's photo without asking irresponsible?",
+                      "back": "The friend did not agree to it joining their digital footprint, and the photo can be copied even if you later delete it."
+                    },
+                    {
+                      "tag": "Apply",
+                      "front": "Who must take 'reasonable steps' to stop under-16s having accounts (from 10 December 2025)?",
+                      "back": "The age-restricted social media platforms. The obligation and penalties apply to the platforms, not to the young person or their parents."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Responsible or risky?",
+                  "level": 2
+                },
+                {
+                  "type": "sorter",
+                  "title": "Sort Jordan's choices",
+                  "instruction": "Jordan (17) is posting about a party. Is each choice responsible or risky?",
+                  "categories": [
+                    "Responsible",
+                    "Risky"
+                  ],
+                  "items": [
+                    {
+                      "text": "Posts a group photo without asking anyone first.",
+                      "category": 1,
+                      "why": "Others did not give permission, and the photo stays in their digital footprint."
+                    },
+                    {
+                      "text": "Checks his privacy settings before posting.",
+                      "category": 0,
+                      "why": "Only approved followers see the post, which limits the audience."
+                    },
+                    {
+                      "text": "Tags the party's location while it is happening.",
+                      "category": 1,
+                      "why": "Strangers can see where a group of young people is right now."
+                    },
+                    {
+                      "text": "Deletes a friend's rude comment and messages them privately.",
+                      "category": 0,
+                      "why": "It stops the harm spreading and deals with it privately."
+                    },
+                    {
+                      "text": "Reshares a shocking story without checking if it is true.",
+                      "category": 1,
+                      "why": "Unchecked information can spread false claims and hurt real people."
+                    },
+                    {
+                      "text": "Credits the photographer when he shares a photo they took.",
+                      "category": 0,
+                      "why": "Crediting others is part of respectful, responsible sharing."
+                    }
+                  ]
                 },
                 {
                   "type": "quizQuestion",
                   "question": {
+                    "id": "impacts-of-technology-u3-1-digital-citizenship-mcq1",
                     "questionType": "mcq",
-                    "text": "Quick check: Jordan wants to post a group photo, but has not asked the other people first. What is the most responsible first step?",
+                    "text": "Jordan wants to post a group photo but has not asked the other people. What is the most responsible first step?",
                     "options": [
                       "Ask the people in the photo before posting it.",
                       "Post it now and remove it if someone complains.",
@@ -2496,26 +2593,124 @@
                   }
                 },
                 {
-                  "type": "heading",
-                  "text": "Responsible social networking"
+                  "type": "infoCards",
+                  "title": "Responsible social networking",
+                  "columns": 2,
+                  "cards": [
+                    {
+                      "icon": "✅",
+                      "heading": "Do",
+                      "text": "Pause and think about the audience. Ask before sharing someone's photo. Check privacy settings. Verify information before sharing. Report harmful content.",
+                      "tone": "green"
+                    },
+                    {
+                      "icon": "🚫",
+                      "heading": "Avoid",
+                      "text": "Posting your school, phone number or live location publicly. Accepting requests from people you do not know. Posting while angry. Sharing someone's work without credit or using their account.",
+                      "tone": "red"
+                    }
+                  ]
                 },
                 {
-                  "type": "richText",
-                  "html": "<div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.75rem;margin:1rem 0\"><div style=\"padding:.85rem;border-left:3px solid #16a34a;background:#f0fdf4\"><strong>Do</strong><ul><li>Pause before posting and consider the audience.</li><li>Ask before sharing another person?s photo.</li><li>Check privacy settings and verify information before sharing.</li><li>Report harmful content.</li></ul></div><div style=\"padding:.85rem;border-left:3px solid #dc2626;background:#fef2f2\"><strong>Avoid</strong><ul><li>Posting your school, phone number or live location publicly.</li><li>Accepting requests from people you do not know.</li><li>Posting while angry.</li><li>Sharing another person?s work without credit or using their account.</li></ul></div></div>"
+                  "type": "heading",
+                  "text": "Try the case",
+                  "level": 2
+                },
+                {
+                  "type": "branchingScenario",
+                  "title": "Elara's case file: the public TikTok",
+                  "intro": "Elara's Year 10 student has a public account showing her school uniform and a local park. Make the calls that reduce her risk.",
+                  "steps": [
+                    {
+                      "situation": "Her profile photo shows her school uniform with the crest clearly visible.",
+                      "prompt": "What is the best first change?",
+                      "choices": [
+                        {
+                          "text": "Swap to a photo with no uniform or crest, and remove the school from her bio.",
+                          "correct": true,
+                          "feedback": "Removing identifying details makes it harder for strangers to work out who she is and where she is during the day."
+                        },
+                        {
+                          "text": "Leave it, because the account is already popular.",
+                          "correct": false,
+                          "feedback": "Popularity does not reduce the risk. It means more strangers can see the identifying details."
+                        },
+                        {
+                          "text": "Add a filter over the crest.",
+                          "correct": false,
+                          "feedback": "Filters are easy to avoid and the uniform can still be recognised."
+                        }
+                      ]
+                    },
+                    {
+                      "situation": "Her videos are often filmed at the same local park, and she posts them as she films.",
+                      "prompt": "What should she change?",
+                      "choices": [
+                        {
+                          "text": "Turn off location tags and post after she has left the park.",
+                          "correct": true,
+                          "feedback": "Delaying posts and removing location tags stops strangers learning where she is right now."
+                        },
+                        {
+                          "text": "Keep tagging the park so friends can join her.",
+                          "correct": false,
+                          "feedback": "A live location tells strangers exactly where to find her."
+                        },
+                        {
+                          "text": "Only tag the park in her Stories, not the main feed.",
+                          "correct": false,
+                          "feedback": "Stories are still visible to a public audience, so the risk stays."
+                        }
+                      ]
+                    },
+                    {
+                      "situation": "A stranger comments asking which school she goes to.",
+                      "prompt": "What is the most responsible response?",
+                      "choices": [
+                        {
+                          "text": "Do not reply, block the account and report it.",
+                          "correct": true,
+                          "feedback": "Not engaging, blocking and reporting protects her and helps the platform act."
+                        },
+                        {
+                          "text": "Reply with the school name because he seems friendly.",
+                          "correct": false,
+                          "feedback": "Giving personal information to a stranger is exactly the risk digital citizenship warns about."
+                        },
+                        {
+                          "text": "Delete the comment and say nothing.",
+                          "correct": false,
+                          "feedback": "Deleting alone does not stop the stranger or warn the platform."
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
                   "type": "callout",
                   "variant": "senior-wisdom",
-                  "heading": "Elara’s reminder",
+                  "heading": "Elara's reminder",
                   "text": "Your digital footprint includes what other people post about you, too. Ask before sharing a photo, and remember that deleting a post cannot guarantee every copy disappears."
                 },
                 {
-                  "type": "heading",
-                  "text": "Test tip: explain the consequence"
-                },
-                {
-                  "type": "richText",
-                  "html": "<p>Question: Explain one consequence of posting an inappropriate photo online. (2 marks)</p><p>Earns 0 or 1 mark</p><p>\"You could get in trouble.\"</p><p>This is too general. It does not say how or why.</p><p><strong>Earns full marks</strong> — \"The photo becomes part of your digital footprint and can be copied or screenshotted, so it may be seen by a future employer even after you delete it.\"</p>"
+                  "type": "infoCards",
+                  "title": "Test tip: what earns the marks",
+                  "intro": "Explain one consequence of posting an inappropriate photo online. (2 marks)",
+                  "columns": 2,
+                  "cards": [
+                    {
+                      "icon": "⚠️",
+                      "heading": "Earns 0 or 1 mark: \"You could get in trouble.\"",
+                      "text": "Too general. It does not say how or why.",
+                      "tone": "red"
+                    },
+                    {
+                      "icon": "⭐",
+                      "heading": "Earns full marks",
+                      "text": "\"The photo becomes part of your digital footprint and can be copied or screenshotted, so it may be seen by a future employer even after you delete it.\" A consequence, plus how it happens.",
+                      "tone": "green"
+                    }
+                  ]
                 },
                 {
                   "type": "callout",
@@ -2525,7 +2720,8 @@
                 },
                 {
                   "type": "heading",
-                  "text": "Assessment practice"
+                  "text": "Assessment practice",
+                  "level": 2
                 },
                 {
                   "type": "quizQuestion",
@@ -2549,14 +2745,31 @@
                 },
                 {
                   "type": "heading",
-                  "text": "Test-ready recap"
+                  "text": "Test-ready recap",
+                  "level": 2
                 },
                 {
-                  "type": "list",
-                  "items": [
-                    "Digital citizenship means using technology safely, responsibly and respectfully, while understanding online rights and responsibilities.",
-                    "Give specific actions, such as asking permission or removing identifying details, and explain how each reduces risk.",
-                    "Aim for at least 5/6. If needed, review the key terms and the Do/Avoid list, then try again."
+                  "type": "infoCards",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "📝",
+                      "heading": "Define it",
+                      "text": "Digital citizenship is using technology safely, responsibly and respectfully, while understanding online rights and responsibilities.",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "🔧",
+                      "heading": "Be specific",
+                      "text": "Give actions such as asking permission or removing identifying details, then explain how each one reduces risk.",
+                      "tone": "purple"
+                    },
+                    {
+                      "icon": "🎯",
+                      "heading": "Aim for",
+                      "text": "At least 5/6 on the practice questions. If you miss it, review the key terms and the Do/Avoid cards, then try again.",
+                      "tone": "green"
+                    }
                   ]
                 },
                 {
@@ -2565,7 +2778,8 @@
                   "heading": "Task 1",
                   "text": "Start Task 1 in your Design Book. Complete Questions 1 to 3 before CP1 in Week 2."
                 }
-              ]
+              ],
+              "estimatedMinutes": 45
             },
             {
               "id": "impacts-of-technology-u3-2-cyberbullying-and-work-life-balance",
@@ -2578,27 +2792,45 @@
                   "text": "Two unrelated cases on my desk that both come back to the same syllabus point: naming the exact form of cyberbullying — harassment, exclusion, impersonation, outing — and separately, a work group chat that's eaten someone's evenings. Precision matters in both; 'bullying' isn't specific enough for a case file."
                 },
                 {
-                  "type": "paragraph",
-                  "text": "Forms of cyberbullying, strategies to manage it, and the impact of digital technologies on work-life balance"
+                  "type": "infoCards",
+                  "title": "By the end of this lesson you can",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "🎯",
+                      "heading": "Identify forms of cyberbullying.",
+                      "text": "",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "🧭",
+                      "heading": "Describe strategies to manage or limit cyberbullying.",
+                      "text": "",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "✅",
+                      "heading": "Explain positive and negative impacts of digital technologies on work-life balance.",
+                      "text": "",
+                      "tone": "blue"
+                    }
+                  ]
                 },
                 {
-                  "type": "heading",
-                  "text": "Success criteria",
-                  "level": 3
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Identify forms of cyberbullying.",
-                    "Describe strategies to manage or limit cyberbullying.",
-                    "Explain positive and negative impacts of digital technologies on work-life balance."
+                  "type": "videoSlot",
+                  "title": "Cyberbullying: what to do next",
+                  "minutes": 4,
+                  "brief": "A short clip showing a student taking the four response steps: do not reply, keep evidence, block and report, get help. Suggested source: an eSafety Commissioner video on dealing with cyberbullying.",
+                  "watchFor": [
+                    "What evidence the student keeps",
+                    "Where the report button is",
+                    "When to go to eSafety"
                   ]
                 },
                 {
                   "type": "heading",
-                  "text": "Write this down",
-                  "level": 3
+                  "text": "Four forms, four mechanisms",
+                  "level": 2
                 },
                 {
                   "type": "keyTerms",
@@ -2630,78 +2862,207 @@
                   ]
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Cyberbullying and Work Life Balance",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"impacts-of-technology-u3-cyberbullying-and-work-life-balance-title impacts-of-technology-u3-cyberbullying-and-work-life-balance-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"impacts-of-technology-u3-cyberbullying-and-work-life-balance-title\">Cyberbullying and Work Life Balance: Concept cards for Cyberbullying, Harassment, Exclusion, Impersonation.</title><desc id=\"impacts-of-technology-u3-cyberbullying-and-work-life-balance-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ede9fe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Cyberbullying and Work Life Balance</tspan></text><text x=\"36\" y=\"94\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">CORE IDEAS</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Cyberbullying</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Using digital technology to deliberately</tspan><tspan x=\"84\" dy=\"19\">and repeatedly hurt, threaten or embarrass…</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#c2410c\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#c2410c\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Harassment</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Repeatedly sending offensive or threatening</tspan><tspan x=\"444\" dy=\"19\">messages.</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Exclusion</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Deliberately leaving someone out of an</tspan><tspan x=\"84\" dy=\"19\">online group or chat.</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#c2410c\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#c2410c\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Impersonation</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Pretending to be someone else online to</tspan><tspan x=\"444\" dy=\"19\">damage their reputation.</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
+                  "type": "infoCards",
+                  "title": "Name the mechanism, not just 'bullying'",
+                  "columns": 2,
+                  "cards": [
+                    {
+                      "icon": "📨",
+                      "heading": "Harassment",
+                      "text": "Repeated offensive or threatening messages.",
+                      "tone": "red"
+                    },
+                    {
+                      "icon": "🚪",
+                      "heading": "Exclusion",
+                      "text": "Deliberately leaving someone out of a group or chat.",
+                      "tone": "amber"
+                    },
+                    {
+                      "icon": "🎭",
+                      "heading": "Impersonation",
+                      "text": "Pretending to be someone else to damage their reputation.",
+                      "tone": "purple"
+                    },
+                    {
+                      "icon": "🔓",
+                      "heading": "Outing",
+                      "text": "Sharing private information or images without permission.",
+                      "tone": "blue"
+                    }
+                  ]
+                },
+                {
+                  "type": "sorter",
+                  "title": "Which form is it?",
+                  "instruction": "Read each situation and tap the form of cyberbullying.",
+                  "categories": [
+                    "Harassment",
+                    "Exclusion",
+                    "Impersonation",
+                    "Outing"
+                  ],
+                  "items": [
+                    {
+                      "text": "A student gets 30 abusive messages in a night from different accounts.",
+                      "category": 0,
+                      "why": "Repeated unwanted, offensive contact is harassment."
+                    },
+                    {
+                      "text": "Everyone in the class is added to a new group chat except one person, on purpose.",
+                      "category": 1,
+                      "why": "Deliberately leaving someone out is exclusion."
+                    },
+                    {
+                      "text": "Someone makes a fake account with a classmate's photo and posts insults as them.",
+                      "category": 2,
+                      "why": "Pretending to be the victim to damage their reputation is impersonation."
+                    },
+                    {
+                      "text": "A private screenshot of someone's personal message is shared with the whole year group.",
+                      "category": 3,
+                      "why": "Sharing private information without consent is outing."
+                    },
+                    {
+                      "text": "A gamer is sent threats every time he streams.",
+                      "category": 0,
+                      "why": "Repeated threatening messages are harassment."
+                    }
+                  ]
                 },
                 {
                   "type": "heading",
-                  "text": "Worked example: Managing cyberbullying",
-                  "level": 3
+                  "text": "What to do about it",
+                  "level": 2
                 },
                 {
-                  "type": "richText",
-                  "html": "<p>A student receives abusive comments on a gaming stream every time he plays.</p><p><strong>Do not respond</strong> — Replying usually makes it worse and gives the bully the reaction they want.</p><p><strong>Collect evidence</strong> — Take screenshots with the date and username before anything is deleted.</p><p><strong>Block and report</strong> — Block the accounts and report them to the platform.</p><p><strong>Get help</strong> — Tell a trusted adult. If the platform does not act within 48 hours, report it to eSafety.</p>"
+                  "type": "svgFigure",
+                  "title": "The four-step response",
+                  "alt": "Four steps in order: do not reply, keep evidence, block and report, get help.",
+                  "svg": "<svg viewBox=\"0 0 680 190\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui,sans-serif\">\n<style>\n.cb-box{fill:#f1f5f9;stroke:#cbd5e1;stroke-width:2}\n.cb-lit{animation:cb-glow 8s infinite;fill:#f1f5f9}.cb-l2{animation-delay:2s}.cb-l3{animation-delay:4s}.cb-l4{animation-delay:6s}\n@keyframes cb-glow{0%,22%{fill:#bbf7d0}25%,100%{fill:#f1f5f9}}\n.cb-n{font-size:22px;font-weight:800;fill:#15803d}.cb-t{font-size:14.5px;font-weight:700;fill:#0f172a}.cb-s{font-size:12px;fill:#475569}\n.cb-a{stroke:#94a3b8;stroke-width:3;fill:none}\n@media (prefers-reduced-motion: reduce){*{animation:none!important}}\n</style>\n<g><rect class=\"cb-box cb-lit\" x=\"8\" y=\"30\" width=\"150\" height=\"130\" rx=\"16\"/><text x=\"24\" y=\"62\" class=\"cb-n\">1</text><text x=\"24\" y=\"88\" class=\"cb-t\">Do not reply</text><text x=\"24\" y=\"108\" class=\"cb-s\">A reaction feeds</text><text x=\"24\" y=\"124\" class=\"cb-s\">the bully</text></g>\n<g><rect class=\"cb-box cb-lit cb-l2\" x=\"182\" y=\"30\" width=\"150\" height=\"130\" rx=\"16\"/><text x=\"198\" y=\"62\" class=\"cb-n\">2</text><text x=\"198\" y=\"88\" class=\"cb-t\">Keep evidence</text><text x=\"198\" y=\"108\" class=\"cb-s\">Screenshots with</text><text x=\"198\" y=\"124\" class=\"cb-s\">date and username</text></g>\n<g><rect class=\"cb-box cb-lit cb-l3\" x=\"356\" y=\"30\" width=\"150\" height=\"130\" rx=\"16\"/><text x=\"372\" y=\"62\" class=\"cb-n\">3</text><text x=\"372\" y=\"88\" class=\"cb-t\">Block and report</text><text x=\"372\" y=\"108\" class=\"cb-s\">Use the platform's</text><text x=\"372\" y=\"124\" class=\"cb-s\">report tool</text></g>\n<g><rect class=\"cb-box cb-lit cb-l4\" x=\"530\" y=\"30\" width=\"142\" height=\"130\" rx=\"16\"/><text x=\"546\" y=\"62\" class=\"cb-n\">4</text><text x=\"546\" y=\"88\" class=\"cb-t\">Get help</text><text x=\"546\" y=\"108\" class=\"cb-s\">Trusted adult, then</text><text x=\"546\" y=\"124\" class=\"cb-s\">eSafety if no action</text></g>\n<path class=\"cb-a\" d=\"M158 95h24M332 95h24M506 95h24\"/>\n</svg>",
+                  "caption": "A student is getting abusive comments on every stream. The steps light up in order."
+                },
+                {
+                  "type": "sequence",
+                  "title": "Put the response in order",
+                  "instruction": "Tap the four steps in the order a student should take them.",
+                  "items": [
+                    "Do not respond to the bully.",
+                    "Collect evidence with screenshots showing date and username.",
+                    "Block the accounts and report them to the platform.",
+                    "Tell a trusted adult, and report to eSafety if the platform does not act within 48 hours."
+                  ],
+                  "explanation": "Evidence comes before blocking, because blocking or deletion can remove what you need to prove it."
                 },
                 {
                   "type": "quizQuestion",
                   "question": {
-                    "id": "impacts-of-technology-u3-2-cyberbullying-and-work-life-balance-quick-check",
+                    "id": "impacts-of-technology-u3-2-cyberbullying-and-work-life-balance-mcq1",
                     "questionType": "mcq",
-                    "text": "Quick check: Which term matches this description? Using digital technology to deliberately and repeatedly hurt, threaten or embarrass someone.",
+                    "text": "Someone sets up a fake profile using a classmate's photo and posts insults as her. Which form is this?",
                     "options": [
-                      "Cyberbullying",
-                      "Harassment",
+                      "Impersonation",
                       "Exclusion",
-                      "Impersonation"
+                      "Outing",
+                      "Harassment"
                     ],
                     "correctIndex": 0,
-                    "explanation": "The term is Cyberbullying. Using digital technology to deliberately and repeatedly hurt, threaten or embarrass someone."
+                    "explanation": "Pretending to be someone else online to damage their reputation is impersonation."
                   }
                 },
                 {
                   "type": "heading",
                   "text": "Work-life balance: both sides",
-                  "level": 3
+                  "level": 2
                 },
                 {
-                  "type": "richText",
-                  "html": "<p><strong>Positive impacts</strong> — Work from home saves travel time</p><p>Flexible hours around family</p><p>Stay in touch with family and friends while away</p><p>Online study at any time</p><p><strong>Negative impacts</strong> — Always contactable: emails and messages after hours</p><p>Blurred line between work and home</p><p>Screen time replaces sleep and exercise</p><p>Less face-to-face contact can lead to isolation</p>"
+                  "type": "sorter",
+                  "title": "Positive or negative?",
+                  "instruction": "Sort each impact of digital technology on work-life balance.",
+                  "categories": [
+                    "Positive impact",
+                    "Negative impact"
+                  ],
+                  "items": [
+                    {
+                      "text": "Working from home saves two hours of travel a day.",
+                      "category": 0,
+                      "why": "Saved travel time can go to family, rest or study."
+                    },
+                    {
+                      "text": "Work emails arrive at 10 pm and staff feel they must reply.",
+                      "category": 1,
+                      "why": "It makes people always contactable and cuts into rest and family time."
+                    },
+                    {
+                      "text": "Flexible hours let a parent work around school pick-up.",
+                      "category": 0,
+                      "why": "Technology allows work to fit around family commitments."
+                    },
+                    {
+                      "text": "Scrolling on a phone in bed replaces sleep.",
+                      "category": 1,
+                      "why": "Screen time displaces sleep and exercise."
+                    },
+                    {
+                      "text": "Video calls keep a worker in touch with family while away.",
+                      "category": 0,
+                      "why": "Staying connected is a positive impact on personal life."
+                    },
+                    {
+                      "text": "Mostly online contact leaves a worker feeling isolated.",
+                      "category": 1,
+                      "why": "Less face-to-face contact can lead to isolation."
+                    }
+                  ]
                 },
                 {
                   "type": "callout",
                   "variant": "senior-wisdom",
-                  "heading": "💡 SENIOR WISDOM · DR ELARA FINCH",
-                  "text": "Each form of cyberbullying has a distinct mechanism: harassment is repeated unwanted contact, exclusion is deliberately leaving someone out, impersonation is pretending to be them, outing is exposing private information without consent. Name the mechanism, not just the umbrella term, or the strategy you recommend won't actually fit the problem."
+                  "heading": "Elara's rule",
+                  "text": "Each form of cyberbullying has a distinct mechanism: harassment is repeated unwanted contact, exclusion is deliberately leaving someone out, impersonation is pretending to be them, outing is exposing private information. Name the mechanism, or the strategy you recommend will not fit the problem."
+                },
+                {
+                  "type": "infoCards",
+                  "title": "Test tip: what earns the marks",
+                  "intro": "Explain one negative impact of mobile devices on work-life balance. (2 marks)",
+                  "columns": 2,
+                  "cards": [
+                    {
+                      "icon": "⚠️",
+                      "heading": "Earns 0 or 1 mark: \"Phones are addictive.\"",
+                      "text": "Not linked to work-life balance.",
+                      "tone": "red"
+                    },
+                    {
+                      "icon": "⭐",
+                      "heading": "Earns full marks",
+                      "text": "\"Work emails arrive on the phone at night, so staff feel they must reply, which cuts into family time and rest.\" A named impact tied to work-life balance.",
+                      "tone": "green"
+                    }
+                  ]
                 },
                 {
                   "type": "heading",
-                  "text": "Test tip: Answer the impact asked for",
-                  "level": 3
+                  "text": "Apply it: read the scenario",
+                  "level": 2
                 },
                 {
-                  "type": "callout",
-                  "variant": "pr-review",
-                  "heading": "📝 CASE REVIEW · ELARA IS SIGNING OFF",
-                  "text": "I want the specific form identified before any strategy — a strategy for exclusion doesn't help someone being impersonated. And the work-life balance answer needs an actual impact named — lost sleep, missed family time — not just 'it's bad for her'."
-                },
-                {
-                  "type": "richText",
-                  "html": "<p>Question: Explain one negative impact of mobile devices on work-life balance. (2 marks)</p><p>Earns 0 or 1 mark</p><p><strong>\"Phones are addictive.\"</strong> — Not linked to work-life balance.</p><p><strong>Earns full marks</strong> — \"Work emails arrive on the phone at night, so staff feel they must reply, which cuts into family time and rest.\"</p>"
-                },
-                {
-                  "type": "paragraph",
-                  "text": "A Year 11 student works part-time at a supermarket. The manager messages shifts in a group chat, often late at night. Two co-workers have started posting jokes about her in the chat."
-                },
-                {
-                  "type": "callout",
-                  "variant": "sandbox",
-                  "heading": "⚖️ POLICY CHALLENGE",
-                  "text": "Identify the form of cyberbullying and one strategy, then explain the group chat's impact on her work-life balance, before you check my notes."
+                  "type": "infoCards",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "📂",
+                      "heading": "Scenario: The supermarket group chat",
+                      "text": "A Year 11 student works part-time at a supermarket. The manager messages shifts in a group chat, often late at night. Two co-workers have started posting jokes about her in the chat. Answer the questions below using this scenario.",
+                      "tone": "amber"
+                    }
+                  ]
                 },
                 {
                   "type": "heading",
-                  "text": "Assessment practice"
+                  "text": "Assessment practice",
+                  "level": 2
                 },
                 {
                   "type": "quizQuestion",
@@ -2726,15 +3087,30 @@
                 {
                   "type": "heading",
                   "text": "Test-ready recap",
-                  "level": 3
+                  "level": 2
                 },
                 {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "I have copied the key terms into my notes.",
-                    "I scored at least 4 out of 5 on the practice questions.",
-                    "If not, reread the key terms and the test tip, then try again."
+                  "type": "infoCards",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "🏷️",
+                      "heading": "Name the form first",
+                      "text": "Harassment, exclusion, impersonation or outing, then choose a strategy that fits.",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "⚖️",
+                      "heading": "Link to work-life balance",
+                      "text": "Name the actual impact, such as lost sleep or missed family time, not just 'it is bad'.",
+                      "tone": "purple"
+                    },
+                    {
+                      "icon": "🎯",
+                      "heading": "Aim for",
+                      "text": "At least 4/5 on the practice questions. If not, reread the key terms and test tip.",
+                      "tone": "green"
+                    }
                   ]
                 },
                 {
@@ -2742,7 +3118,8 @@
                   "heading": "Task 1",
                   "text": "CP1 is this week: Gantt chart, project management considerations and client brief (Questions 1 to 3)."
                 }
-              ]
+              ],
+              "estimatedMinutes": 45
             },
             {
               "id": "impacts-of-technology-u3-3-social-networking-impact",
@@ -2755,27 +3132,45 @@
                   "text": "A storm hit Bunbury and the local paper broke the story on social media before their own website updated. That's not a one-off — it's the whole shift from traditional publication to user-created, instantly distributed content, and it's exactly what reshaped how this industry works."
                 },
                 {
-                  "type": "paragraph",
-                  "text": "Social networking and its impact on traditional publication and distribution of information, including mobile devices"
+                  "type": "infoCards",
+                  "title": "By the end of this lesson you can",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "🎯",
+                      "heading": "Define social networking.",
+                      "text": "",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "🧭",
+                      "heading": "Compare traditional and social publication of information.",
+                      "text": "",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "✅",
+                      "heading": "Explain the role of mobile devices in this change.",
+                      "text": "",
+                      "tone": "blue"
+                    }
+                  ]
                 },
                 {
-                  "type": "heading",
-                  "text": "Success criteria",
-                  "level": 3
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Define social networking.",
-                    "Compare traditional and social publication of information.",
-                    "Explain the role of mobile devices in this change."
+                  "type": "videoSlot",
+                  "title": "How news changed: print to phone",
+                  "minutes": 4,
+                  "brief": "A short explainer comparing how a news story travels through a newsroom with how a social post spreads. Suggested source: an ABC Education or similar media-literacy clip, or a teacher-filmed example using a local story.",
+                  "watchFor": [
+                    "Who checks the story before it is published",
+                    "How fast it reaches an audience",
+                    "Where the audience sees it first"
                   ]
                 },
                 {
                   "type": "heading",
-                  "text": "Write this down",
-                  "level": 3
+                  "text": "The big idea",
+                  "level": 2
                 },
                 {
                   "type": "keyTerms",
@@ -2799,39 +3194,35 @@
                   ]
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Social Networking Impact",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"impacts-of-technology-u3-social-networking-impact-title impacts-of-technology-u3-social-networking-impact-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"impacts-of-technology-u3-social-networking-impact-title\">Social Networking Impact: Concept cards for Speed, Who publishes, Checking, Cost to audience.</title><desc id=\"impacts-of-technology-u3-social-networking-impact-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ede9fe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Social Networking Impact</tspan></text><text x=\"36\" y=\"94\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">FEATURE</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Speed</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Traditional: Hours or days · Social</tspan><tspan x=\"84\" dy=\"19\">networking: Instant</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#c2410c\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#c2410c\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Who publishes</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Traditional: Professional journalists ·</tspan><tspan x=\"444\" dy=\"19\">Social networking: Anyone with a phone</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Checking</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Traditional: Edited before publishing ·</tspan><tspan x=\"84\" dy=\"19\">Social networking: Often not checked</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#c2410c\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#c2410c\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Cost to audience</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Traditional: Buy a paper or subscription ·</tspan><tspan x=\"444\" dy=\"19\">Social networking: Free, paid for by…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
+                  "type": "svgFigure",
+                  "title": "A storm hits Bunbury: 1995 vs today",
+                  "alt": "Two lanes. In 1995 a story moves slowly from journalist to editor to print to doorstep. Today a resident's post reaches everyone in minutes.",
+                  "svg": "<svg viewBox=\"0 0 680 250\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui,sans-serif\">\n<style>\n.nr-l{stroke:#cbd5e1;stroke-width:6;stroke-linecap:round}\n.nr-t{font-size:14px;font-weight:700;fill:#0f172a}.nr-s{font-size:12px;fill:#475569}\n.nr-slow{animation:nr-run 14s linear infinite}.nr-fast{animation:nr-run 2.2s linear infinite}\n@keyframes nr-run{0%{transform:translateX(0)}100%{transform:translateX(480px)}}\n@media (prefers-reduced-motion: reduce){*{animation:none!important}}\n</style>\n<text x=\"16\" y=\"28\" class=\"nr-t\">1995: a storm hits Bunbury</text>\n<line class=\"nr-l\" x1=\"100\" y1=\"70\" x2=\"580\" y2=\"70\"/>\n<text x=\"100\" y=\"100\" class=\"nr-s\">Journalist</text><text x=\"230\" y=\"100\" class=\"nr-s\">Editor checks</text><text x=\"360\" y=\"100\" class=\"nr-s\">Printed</text><text x=\"490\" y=\"100\" class=\"nr-s\">Doorstep next morning</text>\n<g class=\"nr-slow\"><circle cx=\"100\" cy=\"70\" r=\"12\" fill=\"#64748b\"/></g>\n<text x=\"16\" y=\"150\" class=\"nr-t\">Today: the same storm</text>\n<line class=\"nr-l\" x1=\"100\" y1=\"190\" x2=\"580\" y2=\"190\"/>\n<text x=\"100\" y=\"220\" class=\"nr-s\">Resident films it</text><text x=\"320\" y=\"220\" class=\"nr-s\">Posts it</text><text x=\"450\" y=\"220\" class=\"nr-s\">Everyone sees it in minutes</text>\n<g class=\"nr-fast\"><circle cx=\"100\" cy=\"190\" r=\"12\" fill=\"#2563eb\"/></g>\n</svg>",
+                  "caption": "Same event. Watch how long each route takes."
                 },
                 {
-                  "type": "heading",
-                  "text": "Worked example: A storm hits Bunbury",
-                  "level": 3
-                },
-                {
-                  "type": "richText",
-                  "html": "<p>How news of a storm reaches people in 1995 and today.</p><p><strong>1995</strong> — A journalist writes a story, an editor checks it, and it appears in the next morning's newspaper or the 6 pm TV news.</p><p><strong>Today</strong> — Residents post videos on Facebook and TikTok from their phones within minutes. News sites share clips from users.</p><p><strong>Gain</strong> — Information spreads instantly and anyone can report what they see.</p><p><strong>Loss</strong> — Posts are not checked before sharing, so false information and old videos spread too.</p>"
-                },
-                {
-                  "type": "quizQuestion",
-                  "question": {
-                    "id": "impacts-of-technology-u3-3-social-networking-impact-quick-check",
-                    "questionType": "mcq",
-                    "text": "Quick check: Which term matches this description? Online platforms where users create profiles, connect with others and share content.",
-                    "options": [
-                      "Traditional publication",
-                      "Distribution",
-                      "User-created content",
-                      "Social networking"
-                    ],
-                    "correctIndex": 3,
-                    "explanation": "The term is Social networking. Online platforms where users create profiles, connect with others and share content."
-                  }
+                  "type": "infoCards",
+                  "title": "What we gained and lost",
+                  "columns": 2,
+                  "cards": [
+                    {
+                      "icon": "⚡",
+                      "heading": "Gain",
+                      "text": "Information spreads instantly and anyone can report what they see.",
+                      "tone": "green"
+                    },
+                    {
+                      "icon": "⚠️",
+                      "heading": "Loss",
+                      "text": "Posts are not checked before sharing, so false information and old videos spread too.",
+                      "tone": "red"
+                    }
+                  ]
                 },
                 {
                   "type": "heading",
                   "text": "Traditional vs social",
-                  "level": 3
+                  "level": 2
                 },
                 {
                   "type": "table",
@@ -2867,37 +3258,6 @@
                       "Comments, shares and creates"
                     ]
                   ]
-                },
-                {
-                  "type": "callout",
-                  "variant": "senior-wisdom",
-                  "heading": "💡 SENIOR WISDOM · DR ELARA FINCH",
-                  "text": "The real shift isn't 'social media is faster' — it's that distribution used to be controlled by the publisher and now anyone with a phone is a distributor. That single change explains almost every follow-on impact: speed, reach, and the loss of editorial gatekeeping."
-                },
-                {
-                  "type": "heading",
-                  "text": "Test tip: Compare means both sides",
-                  "level": 3
-                },
-                {
-                  "type": "callout",
-                  "variant": "pr-review",
-                  "heading": "📝 CASE REVIEW · ELARA IS SIGNING OFF",
-                  "text": "I want the reason tied to distribution or user-created content specifically, not a generic 'because social media is popular'. And for the mobile devices question, name the actual impact on how people receive news, don't just restate that phones exist."
-                },
-                {
-                  "type": "richText",
-                  "html": "<p>Question: Compare how news is published on social networks and in newspapers. (4 marks)</p><p>Earns 0 or 1 mark</p><p><strong>\"Social media is faster.\"</strong> — Only one side and one feature.</p><p><strong>Earns full marks</strong> — \"Newspapers are checked by editors before printing, so they are more reliable but slower; social networks let anyone post instantly from a phone, so news is faster but may be false.\"</p>"
-                },
-                {
-                  "type": "paragraph",
-                  "text": "A regional newspaper has closed its printed edition and now publishes only on its website and Facebook page."
-                },
-                {
-                  "type": "callout",
-                  "variant": "sandbox",
-                  "heading": "⚖️ POLICY CHALLENGE",
-                  "text": "Explain why the newspaper changed its approach, and one impact of mobile devices on how people receive local news, before you check mine."
                 },
                 {
                   "type": "interactiveDiagram",
@@ -2947,8 +3307,120 @@
                   "explanation": "Social networking changed news from something you receive to something anyone can publish, instantly and unchecked."
                 },
                 {
+                  "type": "flipCards",
+                  "title": "Check your comparison",
+                  "instruction": "Try the answer before you flip.",
+                  "cards": [
+                    {
+                      "tag": "Speed",
+                      "front": "Which is faster to publish: newspaper or social network? Why?",
+                      "back": "Social networking. Anyone can post instantly from a phone, while a newspaper is edited and printed on a schedule."
+                    },
+                    {
+                      "tag": "Checking",
+                      "front": "Why is a newspaper story usually more reliable?",
+                      "back": "Editors check it before it is published. Social posts are often shared with no checking."
+                    },
+                    {
+                      "tag": "Mobile",
+                      "front": "How do mobile devices change how people receive news?",
+                      "back": "Push notifications and feeds deliver news instantly wherever people are, without buying a paper or waiting for the 6 pm bulletin."
+                    },
+                    {
+                      "tag": "Distribution",
+                      "front": "What is the real shift in distribution?",
+                      "back": "Distribution used to be controlled by publishers. Now anyone with a phone is a distributor."
+                    }
+                  ]
+                },
+                {
+                  "type": "sorter",
+                  "title": "Traditional or social?",
+                  "instruction": "Which type of publication does each statement describe?",
+                  "categories": [
+                    "Traditional publication",
+                    "Social networking"
+                  ],
+                  "items": [
+                    {
+                      "text": "An editor checks facts before the story goes out.",
+                      "category": 0,
+                      "why": "Editing and checking before publishing is a feature of traditional publication."
+                    },
+                    {
+                      "text": "A resident posts a video of the storm within minutes.",
+                      "category": 1,
+                      "why": "User-created content posted instantly is social networking."
+                    },
+                    {
+                      "text": "Readers pay for a subscription or a printed paper.",
+                      "category": 0,
+                      "why": "Traditional publishers charge the audience."
+                    },
+                    {
+                      "text": "The audience comments, shares and creates content.",
+                      "category": 1,
+                      "why": "On social networks the audience takes part, not just receives."
+                    },
+                    {
+                      "text": "News arrives on a schedule, such as the morning paper.",
+                      "category": 0,
+                      "why": "Traditional publication follows a schedule."
+                    },
+                    {
+                      "text": "Free to use and paid for by advertising.",
+                      "category": 1,
+                      "why": "Social platforms are free for the audience and funded by ads."
+                    }
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "Elara's point",
+                  "text": "The real shift is not that social media is faster. Distribution used to be controlled by the publisher, and now anyone with a phone is a distributor. That one change explains speed, reach and the loss of editorial gatekeeping."
+                },
+                {
+                  "type": "infoCards",
+                  "title": "Test tip: what earns the marks",
+                  "intro": "Compare how news is published on social networks and in newspapers. (4 marks)",
+                  "columns": 2,
+                  "cards": [
+                    {
+                      "icon": "⚠️",
+                      "heading": "Earns 0 or 1 mark: \"Social media is faster.\"",
+                      "text": "Only one side and one feature.",
+                      "tone": "red"
+                    },
+                    {
+                      "icon": "⭐",
+                      "heading": "Earns full marks",
+                      "text": "\"Newspapers are checked by editors before printing, so they are more reliable but slower; social networks let anyone post instantly from a phone, so news is faster but may be false.\" Both sides, with a linking word.",
+                      "tone": "green"
+                    }
+                  ]
+                },
+                {
                   "type": "heading",
-                  "text": "Assessment practice"
+                  "text": "Apply it: read the scenario",
+                  "level": 2
+                },
+                {
+                  "type": "infoCards",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "📂",
+                      "heading": "Scenario: The newspaper that went online",
+                      "text": "A regional newspaper has closed its printed edition and now publishes only on its website and Facebook page. Answer the questions below using this scenario.",
+                      "tone": "amber"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Assessment practice",
+                  "level": 2
                 },
                 {
                   "type": "quizQuestion",
@@ -2973,15 +3445,30 @@
                 {
                   "type": "heading",
                   "text": "Test-ready recap",
-                  "level": 3
+                  "level": 2
                 },
                 {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "I have copied the key terms into my notes.",
-                    "I scored at least 4 out of 5 on the practice questions.",
-                    "If not, reread the key terms and the test tip, then try again."
+                  "type": "infoCards",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "🔁",
+                      "heading": "Compare means both sides",
+                      "text": "Name a feature for traditional and for social networking, and join them with a linking word like 'whereas'.",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "📱",
+                      "heading": "Mobile devices",
+                      "text": "Name the actual change, such as push notifications delivering news anywhere.",
+                      "tone": "purple"
+                    },
+                    {
+                      "icon": "🎯",
+                      "heading": "Aim for",
+                      "text": "At least 4/5 on the practice questions. If not, reread the key terms and test tip.",
+                      "tone": "green"
+                    }
                   ]
                 },
                 {
@@ -2989,7 +3476,8 @@
                   "heading": "Task 1",
                   "text": "CP2 is this week: topic research, audience, analysis of two videos and design criteria (Questions 4 to 8)."
                 }
-              ]
+              ],
+              "estimatedMinutes": 45
             },
             {
               "id": "impacts-of-technology-u3-4-copyright-act-1968",
@@ -3002,27 +3490,45 @@
                   "text": "A student's in hot water for using copyrighted material and swears they thought 'private use' covered it. Half my case files are exactly this misunderstanding — the Copyright Act 1968, fair dealing, private use and moral rights don't mean what people assume they mean."
                 },
                 {
-                  "type": "paragraph",
-                  "text": "Purpose of the Copyright Act 1968 (Australia): fair dealing, private use, moral rights"
+                  "type": "infoCards",
+                  "title": "By the end of this lesson you can",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "🎯",
+                      "heading": "State the purpose of the Copyright Act 1968.",
+                      "text": "",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "🧭",
+                      "heading": "Describe fair dealing, private use and moral rights.",
+                      "text": "",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "✅",
+                      "heading": "Apply the Act to a scenario.",
+                      "text": "",
+                      "tone": "blue"
+                    }
+                  ]
                 },
                 {
-                  "type": "heading",
-                  "text": "Success criteria",
-                  "level": 3
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "State the purpose of the Copyright Act 1968.",
-                    "Describe fair dealing, private use and moral rights.",
-                    "Apply the Act to a scenario."
+                  "type": "videoSlot",
+                  "title": "Copyright in 3 minutes",
+                  "minutes": 3,
+                  "brief": "A short Australian explainer on what copyright protects, what fair dealing allows and what moral rights mean. Suggested source: Australian Copyright Council or Smartcopying material for schools.",
+                  "watchFor": [
+                    "What counts as a protected work",
+                    "The listed fair dealing purposes",
+                    "What moral rights are"
                   ]
                 },
                 {
                   "type": "heading",
-                  "text": "Write this down",
-                  "level": 3
+                  "text": "The big idea",
+                  "level": 2
                 },
                 {
                   "type": "keyTerms",
@@ -3046,78 +3552,188 @@
                   ]
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Copyright Act 1968",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"impacts-of-technology-u3-copyright-act-1968-title impacts-of-technology-u3-copyright-act-1968-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"impacts-of-technology-u3-copyright-act-1968-title\">Copyright Act 1968: Concept cards for Copyright Act 1968, Fair dealing, Private use, Moral rights.</title><desc id=\"impacts-of-technology-u3-copyright-act-1968-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ede9fe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Copyright Act 1968</tspan></text><text x=\"36\" y=\"94\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">CORE IDEAS</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Copyright Act 1968</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Australian law that protects creators'</tspan><tspan x=\"84\" dy=\"19\">original works (text, images, music, film…</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#c2410c\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#c2410c\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Fair dealing</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Using a reasonable portion of a work</tspan><tspan x=\"444\" dy=\"19\">without permission for specific purposes…</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Private use</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Limited copying for your own use, e.g.</tspan><tspan x=\"84\" dy=\"19\">copying music you own to your phone, or…</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#c2410c\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#c2410c\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Moral rights</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">The creator's right to be named</tspan><tspan x=\"444\" dy=\"19\">(attribution), not to have others named as…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
+                  "type": "svgFigure",
+                  "title": "Can I use this work?",
+                  "alt": "A four-step check: is it a created work, do you have permission, is an exception met, and always credit the creator.",
+                  "svg": "<svg viewBox=\"0 0 680 230\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui,sans-serif\">\n<style>\n.cf-b{fill:#f1f5f9;stroke:#cbd5e1;stroke-width:2}.cf-t{font-size:14px;font-weight:700;fill:#0f172a}.cf-s{font-size:12px;fill:#475569}\n.cf-a{stroke:#94a3b8;stroke-width:3;fill:none}\n.cf-p{animation:cf-pulse 7s infinite;fill:#f1f5f9}.cf-p2{animation-delay:1.7s}.cf-p3{animation-delay:3.4s}.cf-p4{animation-delay:5.1s}\n@keyframes cf-pulse{0%,20%{fill:#fde68a}24%,100%{fill:#f1f5f9}}\n@media (prefers-reduced-motion: reduce){*{animation:none!important}}\n</style>\n<rect class=\"cf-b cf-p\" x=\"8\" y=\"20\" width=\"150\" height=\"100\" rx=\"14\"/><text x=\"20\" y=\"48\" class=\"cf-t\">1. Is it a work</text><text x=\"20\" y=\"66\" class=\"cf-t\">someone created?</text><text x=\"20\" y=\"90\" class=\"cf-s\">Photo, song, text, code.</text><text x=\"20\" y=\"106\" class=\"cf-s\">Protected automatically.</text>\n<rect class=\"cf-b cf-p cf-p2\" x=\"188\" y=\"20\" width=\"150\" height=\"100\" rx=\"14\"/><text x=\"200\" y=\"48\" class=\"cf-t\">2. Do you have</text><text x=\"200\" y=\"66\" class=\"cf-t\">permission?</text><text x=\"200\" y=\"90\" class=\"cf-s\">Owner's yes or a licence</text><text x=\"200\" y=\"106\" class=\"cf-s\">like Creative Commons.</text>\n<rect class=\"cf-b cf-p cf-p3\" x=\"368\" y=\"20\" width=\"150\" height=\"100\" rx=\"14\"/><text x=\"380\" y=\"48\" class=\"cf-t\">3. Is an exception</text><text x=\"380\" y=\"66\" class=\"cf-t\">met?</text><text x=\"380\" y=\"90\" class=\"cf-s\">Fair dealing purpose or</text><text x=\"380\" y=\"106\" class=\"cf-s\">limited private use.</text>\n<rect class=\"cf-b cf-p cf-p4\" x=\"548\" y=\"20\" width=\"124\" height=\"100\" rx=\"14\"/><text x=\"560\" y=\"48\" class=\"cf-t\">4. Still credit</text><text x=\"560\" y=\"66\" class=\"cf-t\">the creator</text><text x=\"560\" y=\"90\" class=\"cf-s\">Moral rights apply</text><text x=\"560\" y=\"106\" class=\"cf-s\">either way.</text>\n<path class=\"cf-a\" d=\"M158 70h30M338 70h30M518 70h30\"/>\n<rect x=\"8\" y=\"150\" width=\"664\" height=\"64\" rx=\"14\" fill=\"#fef2f2\" stroke=\"#fecaca\" stroke-width=\"2\"/>\n<text x=\"24\" y=\"177\" class=\"cf-t\">If steps 2 and 3 both fail, using the work is infringement.</text>\n<text x=\"24\" y=\"197\" class=\"cf-s\">Selling it, posting it publicly or claiming it as yours almost never fits an exception.</text>\n</svg>",
+                  "caption": "Work through the steps in order. Each box lights up as you go."
+                },
+                {
+                  "type": "infoCards",
+                  "title": "Fair dealing: the five purposes",
+                  "intro": "Using a reasonable portion without permission is only allowed for these.",
+                  "columns": 3,
+                  "cards": [
+                    {
+                      "icon": "📚",
+                      "heading": "Research or study",
+                      "text": "A short clip in a marked class assignment.",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "📝",
+                      "heading": "Criticism or review",
+                      "text": "Quoting a scene to review a film.",
+                      "tone": "purple"
+                    },
+                    {
+                      "icon": "🎭",
+                      "heading": "Parody or satire",
+                      "text": "A sketch that mocks a song.",
+                      "tone": "amber"
+                    },
+                    {
+                      "icon": "📰",
+                      "heading": "Reporting news",
+                      "text": "Showing a clip in a news report.",
+                      "tone": "green"
+                    },
+                    {
+                      "icon": "⚖️",
+                      "heading": "Professional advice",
+                      "text": "A lawyer copying a case to advise a client.",
+                      "tone": "slate"
+                    }
+                  ]
                 },
                 {
                   "type": "heading",
-                  "text": "Worked example: Allowed or not?",
-                  "level": 3
+                  "text": "Allowed or not?",
+                  "level": 2
                 },
                 {
-                  "type": "richText",
-                  "html": "<p>Four uses of a song by an Australian artist.</p><p>Using 20 seconds in a class video marked by your teacher</p><p>Likely fair dealing for research or study.</p><p>Uploading that video to a public YouTube channel</p><p>Not fair dealing: no longer for study. Needs permission or a licence.</p><p>Copying a song you bought to your own phone</p><p>Private use: allowed.</p><p>Remixing the song and posting it with your name as creator</p><p>Infringes copyright and the artist's moral right of attribution.</p>"
+                  "type": "sorter",
+                  "title": "Four uses of a song",
+                  "instruction": "A song by an Australian artist is used in four ways. Tap the outcome for each.",
+                  "categories": [
+                    "Fair dealing",
+                    "Private use",
+                    "Needs permission",
+                    "Infringes"
+                  ],
+                  "items": [
+                    {
+                      "text": "Using 20 seconds in a class video marked by your teacher.",
+                      "category": 0,
+                      "why": "Research or study, a reasonable portion, kept for assessment."
+                    },
+                    {
+                      "text": "Copying a song you bought onto your own phone.",
+                      "category": 1,
+                      "why": "Limited copying for your own use is private use."
+                    },
+                    {
+                      "text": "Uploading that class video to a public YouTube channel.",
+                      "category": 2,
+                      "why": "It is no longer for study, so it needs permission or a licence."
+                    },
+                    {
+                      "text": "Remixing the song and posting it with your name as the creator.",
+                      "category": 3,
+                      "why": "It infringes copyright and the artist's moral right of attribution."
+                    }
+                  ]
+                },
+                {
+                  "type": "flipCards",
+                  "title": "Myth or fact?",
+                  "instruction": "Decide if the claim is true, then flip to check.",
+                  "cards": [
+                    {
+                      "tag": "Myth",
+                      "front": "\"It is on the internet, so it is free.\"",
+                      "back": "Online works are still protected by copyright."
+                    },
+                    {
+                      "tag": "Myth",
+                      "front": "\"If I credit the creator, I can use it.\"",
+                      "back": "Credit is required but it is not permission."
+                    },
+                    {
+                      "tag": "Myth",
+                      "front": "\"Under 10 seconds is always fine.\"",
+                      "back": "There is no safe number of seconds. It depends on purpose and portion."
+                    },
+                    {
+                      "tag": "Myth",
+                      "front": "\"I changed it a bit, so it is mine.\"",
+                      "back": "A changed work can still infringe copyright."
+                    }
+                  ]
                 },
                 {
                   "type": "quizQuestion",
                   "question": {
-                    "id": "impacts-of-technology-u3-4-copyright-act-1968-quick-check",
-                    "questionType": "mcq",
-                    "text": "Quick check: Which term matches this description? Australian law that protects creators' original works (text, images, music, film, software). Protection is automatic: no registration is needed.",
-                    "options": [
-                      "Private use",
-                      "Moral rights",
-                      "Copyright Act 1968",
-                      "Fair dealing"
-                    ],
-                    "correctIndex": 2,
-                    "explanation": "The term is Copyright Act 1968. Australian law that protects creators' original works (text, images, music, film, software). Protection is automatic: no registration is needed."
+                    "id": "impacts-of-technology-u3-4-copyright-act-1968-tf1",
+                    "questionType": "true_false",
+                    "text": "Copyright protection is automatic, so a creator does not need to register their work.",
+                    "correctAnswer": true,
+                    "explanation": "Protection under the Copyright Act 1968 applies automatically when an original work is created."
                   }
                 },
                 {
-                  "type": "heading",
-                  "text": "Common myths",
-                  "level": 3
-                },
-                {
-                  "type": "richText",
-                  "html": "<p><strong>Myth</strong> — \"It is on the internet, so it is free.\"</p><p>\"If I credit the creator, I can use it.\"</p><p>\"Under 10 seconds is always fine.\"</p><p>\"I changed it a bit, so it is mine.\"</p><p><strong>Fact</strong> — Online works are still protected.</p><p>Credit is required, but it is not permission.</p><p>There is no safe number of seconds; it depends on purpose and portion.</p><p>A changed work can still infringe copyright.</p>"
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "impacts-of-technology-u3-4-copyright-act-1968-mcq1",
+                    "questionType": "mcq",
+                    "text": "Which moral right is the right to be named as the creator?",
+                    "options": [
+                      "Attribution",
+                      "Integrity",
+                      "False attribution",
+                      "Private use"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Attribution is the right to be named as creator. Integrity protects the work from harmful treatment, and false attribution stops someone else being named."
+                  }
                 },
                 {
                   "type": "callout",
                   "variant": "senior-wisdom",
-                  "heading": "💡 SENIOR WISDOM · DR ELARA FINCH",
-                  "text": "Private use is a much narrower exception than people think — it does not mean 'I didn't make money from it' or 'I only showed my friends'. Most student infringements fail because they assumed private use covered far more than it legally does."
+                  "heading": "Elara's warning",
+                  "text": "Private use is much narrower than people think. It does not mean 'I did not make money' or 'I only showed my friends'. Most student infringements fail because they assumed private use covered far more than it does."
+                },
+                {
+                  "type": "infoCards",
+                  "title": "Test tip: what earns the marks",
+                  "intro": "Explain whether fair dealing applies to a clip used in a school assignment. (2 marks)",
+                  "columns": 2,
+                  "cards": [
+                    {
+                      "icon": "⚠️",
+                      "heading": "Earns 0 or 1 mark: \"Yes, because it is only a small part.\"",
+                      "text": "Size alone does not decide it.",
+                      "tone": "red"
+                    },
+                    {
+                      "icon": "⭐",
+                      "heading": "Earns full marks",
+                      "text": "\"Yes. The clip is a reasonable portion used for research or study, so fair dealing applies while it is only used for assessment.\" Names the purpose, the portion and the limit.",
+                      "tone": "green"
+                    }
+                  ]
                 },
                 {
                   "type": "heading",
-                  "text": "Test tip: Name the exception and the purpose",
-                  "level": 3
+                  "text": "Apply it: read the scenario",
+                  "level": 2
                 },
                 {
-                  "type": "callout",
-                  "variant": "pr-review",
-                  "heading": "📝 CASE REVIEW · ELARA IS SIGNING OFF",
-                  "text": "Explain why this specific use infringes, don't just say 'copyright was broken'. And moral rights are a separate concept from copyright ownership — attribution and integrity of the work — so don't conflate the two in your answer."
-                },
-                {
-                  "type": "richText",
-                  "html": "<p>Question: Explain whether fair dealing applies. (2 marks)</p><p><strong>Earns 0 or 1 mark</strong> — \"Yes, because it is only a small part.\"</p><p>Size alone does not decide it.</p><p><strong>Earns full marks</strong> — \"Yes. The clip is a reasonable portion used for research or study (a school assignment), so fair dealing applies while it is only used for assessment.\"</p>"
-                },
-                {
-                  "type": "paragraph",
-                  "text": "A student designs a T-shirt for a school fundraiser using a cartoon character copied from a website. The shirts are sold to parents."
-                },
-                {
-                  "type": "callout",
-                  "variant": "sandbox",
-                  "heading": "⚖️ POLICY CHALLENGE",
-                  "text": "Explain why the student has infringed copyright and describe the cartoonist's moral rights, before you check my case note."
+                  "type": "infoCards",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "📂",
+                      "heading": "Scenario: The fundraiser T-shirt",
+                      "text": "A student designs a T-shirt for a school fundraiser using a cartoon character copied from a website. The shirts are sold to parents. Answer the questions below using this scenario.",
+                      "tone": "amber"
+                    }
+                  ]
                 },
                 {
                   "type": "heading",
-                  "text": "Assessment practice"
+                  "text": "Assessment practice",
+                  "level": 2
                 },
                 {
                   "type": "quizQuestion",
@@ -3142,15 +3758,30 @@
                 {
                   "type": "heading",
                   "text": "Test-ready recap",
-                  "level": 3
+                  "level": 2
                 },
                 {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "I have copied the key terms into my notes.",
-                    "I scored at least 4 out of 5 on the practice questions.",
-                    "If not, reread the key terms and the test tip, then try again."
+                  "type": "infoCards",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "🛡️",
+                      "heading": "Copyright is automatic",
+                      "text": "No registration needed. Fair dealing is only for the five listed purposes.",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "🪪",
+                      "heading": "Moral rights are separate",
+                      "text": "Attribution, false attribution and integrity. Do not mix them up with ownership.",
+                      "tone": "purple"
+                    },
+                    {
+                      "icon": "🎯",
+                      "heading": "Aim for",
+                      "text": "At least 4/5 on the practice questions. If not, reread the key terms and myths.",
+                      "tone": "green"
+                    }
                   ]
                 },
                 {
@@ -3158,7 +3789,8 @@
                   "heading": "Up next",
                   "text": "Next lesson: referencing techniques and acknowledging the IP owner."
                 }
-              ]
+              ],
+              "estimatedMinutes": 50
             },
             {
               "id": "impacts-of-technology-u3-5-referencing-and-acknowledging-ip",
@@ -3171,27 +3803,45 @@
                   "text": "Every case file I close ends the same way — an intellectual property acknowledgement that has to be done properly or the whole report is worthless. APA 7, in-text citations, acknowledgement versus full referencing: get the technique right, because 'I mentioned where it came from' isn't the same as a correct citation."
                 },
                 {
-                  "type": "paragraph",
-                  "text": "Referencing techniques for digital publications and acknowledgement of the intellectual property (IP) owner"
+                  "type": "infoCards",
+                  "title": "By the end of this lesson you can",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "🎯",
+                      "heading": "Explain why IP owners must be acknowledged.",
+                      "text": "",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "🧭",
+                      "heading": "Write a reference in one consistent technique (APA 7).",
+                      "text": "",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "✅",
+                      "heading": "Acknowledge images, music and video in a digital product.",
+                      "text": "",
+                      "tone": "blue"
+                    }
+                  ]
                 },
                 {
-                  "type": "heading",
-                  "text": "Success criteria",
-                  "level": 3
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Explain why IP owners must be acknowledged.",
-                    "Write a reference in one consistent technique (APA 7).",
-                    "Acknowledge images, music and video in a digital product."
+                  "type": "videoSlot",
+                  "title": "APA 7 referencing in 3 minutes",
+                  "minutes": 3,
+                  "brief": "A short walk-through building one website reference and one image reference in APA 7. Suggested source: a university library APA 7 guide video, or a teacher-filmed screen recording.",
+                  "watchFor": [
+                    "The order of the five parts",
+                    "Where the full stops and brackets go",
+                    "How a photograph reference differs from a website one"
                   ]
                 },
                 {
                   "type": "heading",
-                  "text": "Write this down",
-                  "level": 3
+                  "text": "The big idea",
+                  "level": 2
                 },
                 {
                   "type": "keyTerms",
@@ -3215,78 +3865,182 @@
                   ]
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Referencing and Acknowledging IP",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"impacts-of-technology-u3-referencing-and-acknowledging-ip-title impacts-of-technology-u3-referencing-and-acknowledging-ip-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"impacts-of-technology-u3-referencing-and-acknowledging-ip-title\">Referencing and Acknowledging IP: Concept cards for Intellectual property (IP), Acknowledgement, Referencing technique, In-text citation.</title><desc id=\"impacts-of-technology-u3-referencing-and-acknowledging-ip-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ede9fe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Referencing and Acknowledging IP</tspan></text><text x=\"36\" y=\"94\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">CORE IDEAS</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Intellectual property (IP)</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Creations of the mind, such as writing,</tspan><tspan x=\"84\" dy=\"19\">images, music, software and designs, that…</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#c2410c\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#c2410c\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Acknowledgement</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Naming the creator and source of work you</tspan><tspan x=\"444\" dy=\"19\">have used, on or with your product.</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Referencing technique</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">A consistent set of rules for listing</tspan><tspan x=\"84\" dy=\"19\">sources, e.g. APA or Harvard.</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#c2410c\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#c2410c\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">In-text citation</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">A short reference in the body of the work,</tspan><tspan x=\"444\" dy=\"19\">e.g. (eSafety Commissioner, 2026).</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
+                  "type": "svgFigure",
+                  "title": "Anatomy of an APA 7 reference",
+                  "alt": "A reference split into five coloured parts: author, year, title, source, URL.",
+                  "svg": "<svg viewBox=\"0 0 680 200\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"ui-monospace,Menlo,monospace\">\n<style>\n.ap-w{font-size:13px;fill:#0f172a}\n.ap-a{animation:ap-hi 10s infinite;opacity:.2}.ap-b{animation-delay:2s}.ap-c{animation-delay:4s}.ap-d{animation-delay:6s}.ap-e{animation-delay:8s}\n@keyframes ap-hi{0%,16%{opacity:.85}20%,100%{opacity:.2}}\n.ap-l{font-family:system-ui,sans-serif;font-size:12.5px;font-weight:700}\n@media (prefers-reduced-motion: reduce){*{animation:none!important}}\n</style>\n<rect class=\"ap-a\" x=\"14\" y=\"48\" width=\"84\" height=\"30\" rx=\"6\" fill=\"#2563eb\"/>\n<rect class=\"ap-a ap-b\" x=\"104\" y=\"48\" width=\"68\" height=\"30\" rx=\"6\" fill=\"#16a34a\"/>\n<rect class=\"ap-a ap-c\" x=\"178\" y=\"48\" width=\"154\" height=\"30\" rx=\"6\" fill=\"#d97706\"/>\n<rect class=\"ap-a ap-d\" x=\"338\" y=\"48\" width=\"84\" height=\"30\" rx=\"6\" fill=\"#9333ea\"/>\n<rect class=\"ap-a ap-e\" x=\"428\" y=\"48\" width=\"238\" height=\"30\" rx=\"6\" fill=\"#dc2626\"/>\n<text class=\"ap-w\" x=\"20\" y=\"68\">Smith, J.</text><text class=\"ap-w\" x=\"110\" y=\"68\">(2026).</text><text class=\"ap-w\" x=\"184\" y=\"68\">Phones in schools.</text><text class=\"ap-w\" x=\"344\" y=\"68\">ABC News.</text><text class=\"ap-w\" x=\"434\" y=\"68\">https://www.abc.net.au/...</text>\n<text class=\"ap-l\" x=\"20\" y=\"108\" fill=\"#2563eb\">1 Author</text><text class=\"ap-l\" x=\"110\" y=\"128\" fill=\"#16a34a\">2 Year</text><text class=\"ap-l\" x=\"184\" y=\"108\" fill=\"#d97706\">3 Title</text><text class=\"ap-l\" x=\"344\" y=\"128\" fill=\"#9333ea\">4 Source</text><text class=\"ap-l\" x=\"434\" y=\"108\" fill=\"#dc2626\">5 URL</text>\n<text class=\"ap-l\" x=\"20\" y=\"170\" fill=\"#475569\" style=\"font-family:system-ui,sans-serif\">Same five parts, same order, same punctuation, every time.</text>\n</svg>",
+                  "caption": "Each part lights up in turn. The order and punctuation never change."
                 },
                 {
-                  "type": "heading",
-                  "text": "Worked example: Referencing in APA 7",
-                  "level": 3
+                  "type": "sequence",
+                  "title": "Build the reference",
+                  "instruction": "Tap the five parts in APA 7 order.",
+                  "items": [
+                    "Author: Smith, J.",
+                    "Year: (2026).",
+                    "Title: Phones in schools.",
+                    "Source: ABC News.",
+                    "URL: https://www.abc.net.au/news/..."
+                  ],
+                  "explanation": "Author, year, title, source, URL. A URL on its own is never a reference."
                 },
                 {
-                  "type": "richText",
-                  "html": "<p>The same four parts appear in most references.</p><p><strong>Website</strong> — Author. (Year). Title of page. Site name. URL</p><p><strong>Image</strong> — Creator. (Year). Title of image [Photograph]. Site. URL</p><p><strong>Music</strong> — Artist. (Year). Title of track [Song]. Source. URL</p><p><strong>Video</strong> — Creator. (Year, Month Day). Title of video [Video]. YouTube. URL</p>"
+                  "type": "infoCards",
+                  "title": "The same parts for each type of source",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "🌐",
+                      "heading": "Website",
+                      "text": "Author. (Year). Title of page. Site name. URL",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "🖼️",
+                      "heading": "Image",
+                      "text": "Creator. (Year). Title of image [Photograph]. Site. URL",
+                      "tone": "purple"
+                    },
+                    {
+                      "icon": "🎵",
+                      "heading": "Music",
+                      "text": "Artist. (Year). Title of track [Song]. Source. URL",
+                      "tone": "amber"
+                    },
+                    {
+                      "icon": "🎬",
+                      "heading": "Video",
+                      "text": "Creator. (Year, Month Day). Title of video [Video]. YouTube. URL",
+                      "tone": "red"
+                    }
+                  ]
                 },
                 {
                   "type": "quizQuestion",
                   "question": {
-                    "id": "impacts-of-technology-u3-5-referencing-and-acknowledging-ip-quick-check",
+                    "id": "impacts-of-technology-u3-5-referencing-and-acknowledging-ip-mcq1",
                     "questionType": "mcq",
-                    "text": "Quick check: Which term matches this description? Creations of the mind, such as writing, images, music, software and designs, that belong to their creator.",
+                    "text": "Which of these is a correct APA 7 style reference?",
                     "options": [
-                      "Intellectual property (IP)",
-                      "Acknowledgement",
-                      "Referencing technique",
-                      "In-text citation"
+                      "Smith, J. (2026). Phones in schools. ABC News. https://www.abc.net.au/news/...",
+                      "https://www.abc.net.au/news/...",
+                      "ABC News, Phones in schools, by Smith, 2026",
+                      "Phones in schools (ABC)"
                     ],
                     "correctIndex": 0,
-                    "explanation": "The term is Intellectual property (IP). Creations of the mind, such as writing, images, music, software and designs, that belong to their creator."
+                    "explanation": "It has author, year, title, source and URL in the right order with the right punctuation."
                   }
                 },
                 {
                   "type": "heading",
                   "text": "Acknowledging in digital products",
-                  "level": 3
+                  "level": 2
                 },
                 {
-                  "type": "richText",
-                  "html": "<p>Where to credit</p><p><strong>Video: end credits</strong> — Website: caption under each image or a Credits page</p><p>Presentation: caption on the slide and a reference list</p><p>Podcast: read out and list in show notes</p><p><strong>Creative Commons</strong> — Many free images and music use a Creative Commons licence</p><p>CC BY means you must credit the creator</p><p>NC means no commercial use</p><p>Check the licence before you use it</p>"
+                  "type": "infoCards",
+                  "title": "Where to credit",
+                  "columns": 2,
+                  "cards": [
+                    {
+                      "icon": "🎥",
+                      "heading": "Video",
+                      "text": "End credits.",
+                      "tone": "red"
+                    },
+                    {
+                      "icon": "🌐",
+                      "heading": "Website",
+                      "text": "A caption under each image, or a Credits page.",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "📽️",
+                      "heading": "Presentation",
+                      "text": "A caption on the slide and a reference list.",
+                      "tone": "purple"
+                    },
+                    {
+                      "icon": "🎙️",
+                      "heading": "Podcast",
+                      "text": "Read it out and list it in the show notes.",
+                      "tone": "amber"
+                    }
+                  ]
+                },
+                {
+                  "type": "flipCards",
+                  "title": "Creative Commons",
+                  "instruction": "Tap each to see what you must do.",
+                  "cards": [
+                    {
+                      "tag": "CC BY",
+                      "front": "What does CC BY require?",
+                      "back": "You must credit the creator."
+                    },
+                    {
+                      "tag": "NC",
+                      "front": "What does NC mean?",
+                      "back": "No commercial use. You cannot use it to make money."
+                    },
+                    {
+                      "tag": "Check",
+                      "front": "What must you do before using a free image or track?",
+                      "back": "Check its licence. Free to download does not mean free of conditions."
+                    },
+                    {
+                      "tag": "Acknowledge or reference?",
+                      "front": "What is the difference?",
+                      "back": "Acknowledgement can be a simple credit line. Referencing follows an exact technique like APA 7. If the question names the technique, use that format."
+                    }
+                  ]
                 },
                 {
                   "type": "callout",
                   "variant": "senior-wisdom",
-                  "heading": "💡 SENIOR WISDOM · DR ELARA FINCH",
-                  "text": "Acknowledgement and referencing are not interchangeable terms in a marking key. Acknowledgement can be informal — a credit line. Referencing follows a specific technique, like APA 7, with exact formatting. If the question names the technique, you must use that exact format."
+                  "heading": "Elara's rule",
+                  "text": "Acknowledgement and referencing are not interchangeable terms in a marking key. If the question names the technique, you must use that exact format."
+                },
+                {
+                  "type": "infoCards",
+                  "title": "Test tip: what earns the marks",
+                  "intro": "Write a reference for the source. (2 marks)",
+                  "columns": 2,
+                  "cards": [
+                    {
+                      "icon": "⚠️",
+                      "heading": "Earns 0 or 1 mark: \"https://www.abc.net.au/news/...\"",
+                      "text": "No author, date or title. Earns 0.",
+                      "tone": "red"
+                    },
+                    {
+                      "icon": "⭐",
+                      "heading": "Earns full marks",
+                      "text": "\"Smith, J. (2026). Phones in schools. ABC News. https://www.abc.net.au/news/...\" Author, year, title, site, URL.",
+                      "tone": "green"
+                    }
+                  ]
                 },
                 {
                   "type": "heading",
-                  "text": "Test tip: A URL is not a reference",
-                  "level": 3
+                  "text": "Apply it: read the scenario",
+                  "level": 2
                 },
                 {
-                  "type": "callout",
-                  "variant": "pr-review",
-                  "heading": "📝 CASE REVIEW · ELARA IS SIGNING OFF",
-                  "text": "I check APA 7 references character by character — author, year, title, source, in that specific order and punctuation. A reference with the right information in the wrong format still loses marks."
-                },
-                {
-                  "type": "richText",
-                  "html": "<p>Question: Write a reference for the source. (2 marks)</p><p><strong>Earns 0 or 1 mark</strong> — \"https://www.abc.net.au/news/...\"</p><p>No author, date or title. Earns 0.</p><p><strong>Earns full marks</strong> — \"Smith, J. (2026). Phones in schools. ABC News. https://www.abc.net.au/news/...\"</p><p>Author, year, title, site, URL.</p>"
-                },
-                {
-                  "type": "paragraph",
-                  "text": "A student's video uses a photo by Maya Lee called \"Busselton Jetty at dawn\" from Unsplash (2024) and a music track \"Morning Tide\" by Coastline Audio (2023) from Pixabay."
-                },
-                {
-                  "type": "callout",
-                  "variant": "sandbox",
-                  "heading": "⚖️ POLICY CHALLENGE",
-                  "text": "Write the APA 7 reference for the photograph and describe how the student should acknowledge the music, before you check my version."
+                  "type": "infoCards",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "📂",
+                      "heading": "Scenario: The student video",
+                      "text": "A student's video uses a photo by Maya Lee called \"Busselton Jetty at dawn\" from Unsplash (2024) and a music track \"Morning Tide\" by Coastline Audio (2023) from Pixabay. Answer the questions below using this scenario.",
+                      "tone": "amber"
+                    }
+                  ]
                 },
                 {
                   "type": "heading",
-                  "text": "Assessment practice"
+                  "text": "Assessment practice",
+                  "level": 2
                 },
                 {
                   "type": "quizQuestion",
@@ -3311,15 +4065,30 @@
                 {
                   "type": "heading",
                   "text": "Test-ready recap",
-                  "level": 3
+                  "level": 2
                 },
                 {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "I have copied the key terms into my notes.",
-                    "I scored at least 3 out of 4 on the practice questions.",
-                    "If not, reread the key terms and the test tip, then try again."
+                  "type": "infoCards",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "🔢",
+                      "heading": "Five parts, one order",
+                      "text": "Author, year, title, source, URL, with consistent punctuation.",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "🎼",
+                      "heading": "Acknowledge every type",
+                      "text": "Images, music and video each need credit in the right place for the product.",
+                      "tone": "purple"
+                    },
+                    {
+                      "icon": "🎯",
+                      "heading": "Aim for",
+                      "text": "At least 3/4 on the practice questions. If not, reread the key terms and test tip.",
+                      "tone": "green"
+                    }
                   ]
                 },
                 {
@@ -3327,7 +4096,8 @@
                   "heading": "Task 1",
                   "text": "Task 1 Design Book is due this week. Check your Question 4 references use one consistent technique."
                 }
-              ]
+              ],
+              "estimatedMinutes": 45
             }
           ]
         },

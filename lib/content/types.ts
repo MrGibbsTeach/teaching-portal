@@ -63,8 +63,54 @@ export interface Animation3DBlock {
   pauseQuestions?: { stage: string; question: string; answer: string }[];
 }
 
+/** Tone used to colour a card. */
+export type CardTone = "green" | "red" | "blue" | "amber" | "purple" | "slate";
+
+export interface InfoCard {
+  icon?: string;
+  heading: string;
+  text: string;
+  tone?: CardTone;
+}
+
+export interface SorterItem {
+  text: string;
+  /** Index into `categories`. */
+  category: number;
+  /** Shown after the learner places the item, right or wrong. */
+  why: string;
+}
+
+export interface BranchChoice {
+  text: string;
+  correct: boolean;
+  feedback: string;
+}
+
+export interface BranchStep {
+  situation: string;
+  prompt: string;
+  choices: BranchChoice[];
+}
+
 export type Block =
   | { type: "heading"; text: string; level?: number }
+  | { type: "infoCards"; title?: string; intro?: string; columns?: 1 | 2 | 3; cards: InfoCard[] }
+  | { type: "flipCards"; title?: string; instruction?: string; cards: { front: string; back: string; tag?: string }[] }
+  | { type: "sorter"; title?: string; instruction?: string; categories: string[]; items: SorterItem[] }
+  | { type: "sequence"; title?: string; instruction?: string; items: string[]; explanation?: string }
+  | { type: "branchingScenario"; title?: string; intro?: string; steps: BranchStep[] }
+  | { type: "svgFigure"; title?: string; caption?: string; alt: string; svg: string }
+  | {
+      type: "videoSlot";
+      title: string;
+      /** YouTube ID once a video is chosen. Leave unset to show the placeholder card. */
+      youtubeId?: string;
+      /** What the video should show, so whoever sources or films it knows the brief. */
+      brief: string;
+      minutes?: number;
+      watchFor?: string[];
+    }
   | Animation3DBlock
   | { type: "checkpointVideo"; youtubeId: string; title?: string; checkpoints: VideoCheckpoint[] }
   | InteractiveDiagramBlock
