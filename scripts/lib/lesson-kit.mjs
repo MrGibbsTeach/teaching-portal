@@ -85,8 +85,12 @@ export const fig = (title, alt, svg, caption) => ({ type: "svgFigure", title, al
 export const assemble = (l, parts) => {
   // parts: ordered array; strings select harvested pieces, objects are authored blocks.
   const hv = harvest(l);
+  if (parts.includes("criteria") && !hv.criteria) {
+    throw new Error(`${l.id}: already rebuilt (the original goals list is gone). Restore the original data first: git checkout <commit-before-rebuild> -- lib/content/data/year-12-applied-it-general.json`);
+  }
   const out = [];
   for (const p of parts) {
+    if (p == null) continue;
     if (typeof p === "string") {
       const v = hv[p];
       if (Array.isArray(v)) out.push(...v); else if (v) out.push(v);
