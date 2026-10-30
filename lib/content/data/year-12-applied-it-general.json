@@ -7104,27 +7104,20 @@
                   "text": "A real estate agent's 24 MB house photo is killing their website's load time, and the same file needs to go to print, online and email — three completely different jobs from one source image. File optimisation isn't one setting, it's choosing the right resolution, colour mode and format for where the file actually ends up."
                 },
                 {
-                  "type": "paragraph",
-                  "text": "Purpose of file optimisation for use in print, digital and/or online environments"
-                },
-                {
-                  "type": "heading",
-                  "text": "Success criteria",
-                  "level": 3
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Explain the purpose of file optimisation.",
-                    "Compare optimisation for print and for online use.",
-                    "Choose settings for a given environment."
+                  "type": "videoSlot",
+                  "title": "One photo, three destinations",
+                  "minutes": 4,
+                  "brief": "A short screen recording exporting one 24 MB photo for print, for a website and for email, showing the size and pixel dimensions each time. Suggested source: a teacher-filmed demo in Photopea or Canva.",
+                  "watchFor": [
+                    "Pixel dimensions against file size",
+                    "Why print needs more resolution",
+                    "How fast pages load with small files"
                   ]
                 },
                 {
                   "type": "heading",
-                  "text": "Write this down",
-                  "level": 3
+                  "text": "The big idea",
+                  "level": 2
                 },
                 {
                   "type": "keyTerms",
@@ -7152,100 +7145,108 @@
                   ]
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: File Optimisation",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"managing-data-file-optimisation-title managing-data-file-optimisation-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"managing-data-file-optimisation-title\">File Optimisation: Concept cards for Resolution, Colour mode, File size, Common formats.</title><desc id=\"managing-data-file-optimisation-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ccfbf1\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#0f766e\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">File Optimisation</tspan></text><text x=\"36\" y=\"94\" fill=\"#0f766e\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">SETTING</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0f766e\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#0f766e\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Resolution</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Print: About 300 ppi at print size ·</tspan><tspan x=\"84\" dy=\"19\">Online: Pixel size to fit the screen</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#4f46e5\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#4f46e5\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Colour mode</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Print: CMYK · Online: RGB</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0f766e\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#0f766e\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">File size</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Print: Large · Online: As small as possible</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#4f46e5\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#4f46e5\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Common formats</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Print: PDF, TIFF · Online: JPEG, PNG, WebP,</tspan><tspan x=\"444\" dy=\"19\">SVG</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
+                  "type": "svgFigure",
+                  "title": "Print or online?",
+                  "alt": "Two panels comparing print settings with online settings.",
+                  "svg": "<svg viewBox=\"0 0 680 173\" xmlns=\"http://www.w3.org/2000/svg\"><style>.tp-t{font:700 14px system-ui,sans-serif;fill:#0f172a}.tp-s{font:12px system-ui,sans-serif;fill:#334155}.tp-w{stroke:#2563eb;stroke-width:3;stroke-dasharray:6 6;fill:none;animation:tp-d 2s linear infinite}@keyframes tp-d{to{stroke-dashoffset:-24}}.tp-m{font:700 12.5px system-ui,sans-serif;fill:#1d4ed8;animation:tp-b 3s infinite}@keyframes tp-b{0%,45%{opacity:1}55%,100%{opacity:.3}}@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style><rect x=\"10\" y=\"14\" width=\"270\" height=\"121\" rx=\"16\" fill=\"#fef3c7\"/><text x=\"26\" y=\"42\" class=\"tp-t\">Print</text><text x=\"26\" y=\"70\" class=\"tp-s\">About 300 ppi at printed size</text><text x=\"26\" y=\"89\" class=\"tp-s\">CMYK colour</text><text x=\"26\" y=\"108\" class=\"tp-s\">Large files are fine</text><rect x=\"400\" y=\"14\" width=\"270\" height=\"121\" rx=\"16\" fill=\"#dbeafe\"/><text x=\"416\" y=\"42\" class=\"tp-t\">Online</text><text x=\"416\" y=\"70\" class=\"tp-s\">Sized in pixels for the screen</text><text x=\"416\" y=\"89\" class=\"tp-s\">RGB colour</text><text x=\"416\" y=\"108\" class=\"tp-s\">Small files so pages load fast</text><path class=\"tp-w\" d=\"M285 74.5 Q 340 24.5 395 74.5\"/><text class=\"tp-m\" x=\"340\" y=\"163\" text-anchor=\"middle\">same photo, two jobs</text></svg>",
+                  "caption": "Optimise the photo for where it will be used."
                 },
                 {
-                  "type": "heading",
-                  "text": "Worked example: One photo, three uses",
-                  "level": 3
+                  "type": "fileSizeLab",
+                  "title": "File size lab: the real estate photo",
+                  "width": 6000,
+                  "height": 4000,
+                  "useCase": "website listing"
                 },
                 {
-                  "type": "richText",
-                  "html": "<p>A 24 MB photo of a new house is used by a real estate agent.</p><p><strong>Print brochure</strong> — 300 ppi at the printed size, CMYK, high-quality PDF. Large file is fine.</p><p><strong>Website listing</strong> — Resized to 1600 pixels wide, JPEG, about 300 KB, so it loads fast on phones.</p><p><strong>Email to a buyer</strong> — Resized to 1200 pixels wide so it fits under attachment limits.</p><p>Why bother?</p><p>Fast pages keep buyers on the site; sharp prints look professional.</p>"
-                },
-                {
-                  "type": "quizQuestion",
-                  "question": {
-                    "id": "managing-data-1-file-optimisation-quick-check",
-                    "questionType": "mcq",
-                    "text": "Quick check: Which term matches this description? Adjusting a file's size, resolution, format and colour so it suits where it will be used, with the smallest size that still looks right.",
-                    "options": [
-                      "Resolution",
-                      "Print environment",
-                      "Online environment",
-                      "File optimisation"
-                    ],
-                    "correctIndex": 3,
-                    "explanation": "The term is File optimisation. Adjusting a file's size, resolution, format and colour so it suits where it will be used, with the smallest size that still looks right."
-                  }
-                },
-                {
-                  "type": "heading",
-                  "text": "Print vs online",
-                  "level": 3
-                },
-                {
-                  "type": "table",
-                  "headers": [
-                    "Setting",
+                  "type": "sorter",
+                  "title": "Print or online?",
+                  "instruction": "Which environment does each setting belong to?",
+                  "categories": [
                     "Print",
                     "Online"
                   ],
-                  "rows": [
-                    [
-                      "Resolution",
-                      "About 300 ppi at print size",
-                      "Pixel size to fit the screen"
-                    ],
-                    [
-                      "Colour mode",
-                      "CMYK",
-                      "RGB"
-                    ],
-                    [
-                      "File size",
-                      "Large",
-                      "As small as possible"
-                    ],
-                    [
-                      "Common formats",
-                      "PDF, TIFF",
-                      "JPEG, PNG, WebP, SVG"
-                    ]
+                  "items": [
+                    {
+                      "text": "300 ppi at the printed size.",
+                      "category": 0,
+                      "why": "Print needs high resolution."
+                    },
+                    {
+                      "text": "Resized to 1600 pixels wide.",
+                      "category": 1,
+                      "why": "Online images are sized in pixels for the screen."
+                    },
+                    {
+                      "text": "CMYK colour mode.",
+                      "category": 0,
+                      "why": "Print uses CMYK inks."
+                    },
+                    {
+                      "text": "About 300 KB so it loads quickly on a phone.",
+                      "category": 1,
+                      "why": "Small files keep pages fast."
+                    },
+                    {
+                      "text": "A large file is fine.",
+                      "category": 0,
+                      "why": "Print files are large because they hold more detail."
+                    },
+                    {
+                      "text": "RGB colour mode.",
+                      "category": 1,
+                      "why": "Screens display RGB."
+                    }
                   ]
                 },
                 {
-                  "type": "callout",
-                  "variant": "senior-wisdom",
-                  "heading": "💡 SENIOR WISDOM · SLOANE VANE",
-                  "text": "Nobody ever gets marked down for knowing print needs 300 ppi — they get marked down for not explaining why online doesn't. Say it out loud: screens display pixels, not printed dots, so 'resolution' for online is about pixel dimensions fitting the screen, not ppi at all."
-                },
-                {
-                  "type": "heading",
-                  "text": "Test tip: Purpose means why",
-                  "level": 3
-                },
-                {
-                  "type": "callout",
-                  "variant": "pr-review",
-                  "heading": "🛑 PR REVIEW · SLOANE IS AUDITING YOUR WORK",
-                  "text": "'To make it better' earns nothing from me, same as it earns nothing in an assessment. I want file size, load time and the specific audience (mobile data, slow connections) all connected in one sentence before I sign off on an optimisation answer."
-                },
-                {
-                  "type": "richText",
-                  "html": "<p>Question: Explain the purpose of optimising an image for a website. (2 marks)</p><p>Earns 0 or 1 mark</p><p>\"To make it better.\"</p><p>Too general.</p><p><strong>Earns full marks</strong> — \"To reduce the file size so the page loads quickly, especially on phones using mobile data, while the image still looks clear on screen.\"</p>"
-                },
-                {
-                  "type": "paragraph",
-                  "text": "A school uses the same 18 MB photo of its sports team on its website home page and in a printed yearbook."
-                },
-                {
-                  "type": "callout",
-                  "variant": "sandbox",
-                  "heading": "💻 SANDBOX CHALLENGE",
-                  "text": "Explain why the school's photo slows the website, then compare how it should be optimised for the website versus the yearbook, before you check my version."
+                  "type": "branchingScenario",
+                  "title": "The 18 MB team photo",
+                  "intro": "A school uses the same 18 MB photo of its sports team on its website home page and in a printed yearbook.",
+                  "steps": [
+                    {
+                      "situation": "The home page is slow to load.",
+                      "prompt": "What is the best explanation?",
+                      "choices": [
+                        {
+                          "text": "The 18 MB file is far larger than a screen needs, so it takes a long time to download, especially on phones.",
+                          "correct": true,
+                          "feedback": "It links the file size to the loading time."
+                        },
+                        {
+                          "text": "The photo is the wrong colour.",
+                          "correct": false,
+                          "feedback": "Colour does not cause slow loading."
+                        },
+                        {
+                          "text": "Websites cannot show photos.",
+                          "correct": false,
+                          "feedback": "They can, if the file is optimised."
+                        }
+                      ]
+                    },
+                    {
+                      "situation": "The school optimises the photo for both uses.",
+                      "prompt": "Which plan is best?",
+                      "choices": [
+                        {
+                          "text": "Website: resize to a screen size in RGB as a small JPEG. Yearbook: keep about 300 ppi at the printed size in CMYK.",
+                          "correct": true,
+                          "feedback": "Each use gets its own settings."
+                        },
+                        {
+                          "text": "Use the same 18 MB file for both.",
+                          "correct": false,
+                          "feedback": "That is the problem, not the fix."
+                        },
+                        {
+                          "text": "Shrink the yearbook photo to 300 KB.",
+                          "correct": false,
+                          "feedback": "It would print blurry."
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
                   "type": "task",
@@ -7262,8 +7263,32 @@
                   ]
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · SLOANE VANE",
+                  "text": "Nobody ever gets marked down for knowing print needs 300 ppi — they get marked down for not explaining why online doesn't. Say it out loud: screens display pixels, not printed dots, so 'resolution' for online is about pixel dimensions fitting the screen, not ppi at all."
+                },
+                {
+                  "type": "flipCards",
+                  "title": "Check your understanding",
+                  "instruction": "Answer first, then flip.",
+                  "cards": [
+                    {
+                      "tag": "Define",
+                      "front": "What is file optimisation?",
+                      "back": "Adjusting a file's size, resolution, format and colour so it suits where it will be used, with the smallest size that still looks good."
+                    },
+                    {
+                      "tag": "Compare",
+                      "front": "How does optimising for print differ from online?",
+                      "back": "Print needs about 300 ppi and CMYK so files are large. Online needs small RGB files sized in pixels so pages load quickly."
+                    }
+                  ]
+                },
+                {
                   "type": "heading",
-                  "text": "Assessment practice"
+                  "text": "Assessment practice",
+                  "level": 2
                 },
                 {
                   "type": "quizQuestion",
@@ -7288,15 +7313,30 @@
                 {
                   "type": "heading",
                   "text": "Test-ready recap",
-                  "level": 3
+                  "level": 2
                 },
                 {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "I have copied the key terms into my notes.",
-                    "I scored at least 5 out of 6 on the practice questions.",
-                    "If not, reread the key terms and the test tip, then try again."
+                  "type": "infoCards",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "📌",
+                      "heading": "Match the setting to the use",
+                      "text": "Print: about 300 ppi, CMYK. Online: small, RGB, sized in pixels.",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "🧭",
+                      "heading": "Explain the effect",
+                      "text": "Large file means slow loading.",
+                      "tone": "purple"
+                    },
+                    {
+                      "icon": "🎯",
+                      "heading": "Aim for",
+                      "text": "At least 4/6 on the practice questions. If not, reread the key terms and test tip.",
+                      "tone": "green"
+                    }
                   ]
                 },
                 {
@@ -7304,7 +7344,8 @@
                   "heading": "Up next",
                   "text": "Next lesson: file compression."
                 }
-              ]
+              ],
+              "estimatedMinutes": 45
             },
             {
               "id": "managing-data-2-compression",
@@ -7317,27 +7358,20 @@
                   "text": "Two files, two very different compression needs crossed my desk this week — and picking the wrong type for the wrong job either wrecks the quality or barely shrinks the file. Compression isn't a single technique; justifying lossy versus lossless for a specific use is exactly what gets tested."
                 },
                 {
-                  "type": "paragraph",
-                  "text": "Considerations for file compression for transfer and display of data: purpose, lossy compression, lossless compression, file sizes"
-                },
-                {
-                  "type": "heading",
-                  "text": "Success criteria",
-                  "level": 3
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "State the purpose of compression.",
-                    "Compare lossy and lossless compression.",
-                    "Select a compression type for a file and justify it."
+                  "type": "videoSlot",
+                  "title": "Lossy or lossless?",
+                  "minutes": 4,
+                  "brief": "A short clip comparing a photo saved as high and low quality JPEG and as PNG, then zipping a folder to show nothing is lost. Suggested source: a teacher-filmed screen recording.",
+                  "watchFor": [
+                    "What is thrown away in lossy compression",
+                    "Why logos and text suit lossless",
+                    "How much smaller each option is"
                   ]
                 },
                 {
                   "type": "heading",
-                  "text": "Write this down",
-                  "level": 3
+                  "text": "The big idea",
+                  "level": 2
                 },
                 {
                   "type": "table",
@@ -7370,112 +7404,107 @@
                   ]
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Compression",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"managing-data-compression-title managing-data-compression-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"managing-data-compression-title\">Compression: Concept cards for Compression, Lossy, Lossless, File size.</title><desc id=\"managing-data-compression-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ccfbf1\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#0f766e\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Compression</tspan></text><text x=\"36\" y=\"94\" fill=\"#0f766e\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">TERM</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0f766e\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#0f766e\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Compression</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Definition: Reducing file size so data</tspan><tspan x=\"84\" dy=\"19\">transfers faster and uses less storage.</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#4f46e5\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#4f46e5\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Lossy</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Definition: Permanently removes some data</tspan><tspan x=\"444\" dy=\"19\">the user is unlikely to notice. Much…</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0f766e\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#0f766e\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Lossless</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Definition: Reduces size without losing any</tspan><tspan x=\"84\" dy=\"19\">data; the original can be restored exactly…</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#4f46e5\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#4f46e5\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">File size</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Definition: How much storage a file uses:</tspan><tspan x=\"444\" dy=\"19\">KB, MB, GB. · Examples: 1 GB = 1000 MB</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
+                  "type": "svgFigure",
+                  "title": "Lossy vs lossless",
+                  "alt": "Two panels comparing lossy compression, which discards data, with lossless, which keeps every bit.",
+                  "svg": "<svg viewBox=\"0 0 680 173\" xmlns=\"http://www.w3.org/2000/svg\"><style>.tp-t{font:700 14px system-ui,sans-serif;fill:#0f172a}.tp-s{font:12px system-ui,sans-serif;fill:#334155}.tp-w{stroke:#2563eb;stroke-width:3;stroke-dasharray:6 6;fill:none;animation:tp-d 2s linear infinite}@keyframes tp-d{to{stroke-dashoffset:-24}}.tp-m{font:700 12.5px system-ui,sans-serif;fill:#1d4ed8;animation:tp-b 3s infinite}@keyframes tp-b{0%,45%{opacity:1}55%,100%{opacity:.3}}@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style><rect x=\"10\" y=\"14\" width=\"270\" height=\"121\" rx=\"16\" fill=\"#fee2e2\"/><text x=\"26\" y=\"42\" class=\"tp-t\">Lossy (JPEG, MP3)</text><text x=\"26\" y=\"70\" class=\"tp-s\">Throws some data away</text><text x=\"26\" y=\"89\" class=\"tp-s\">Much smaller files</text><text x=\"26\" y=\"108\" class=\"tp-s\">Cannot be restored</text><rect x=\"400\" y=\"14\" width=\"270\" height=\"121\" rx=\"16\" fill=\"#dcfce7\"/><text x=\"416\" y=\"42\" class=\"tp-t\">Lossless (PNG, ZIP)</text><text x=\"416\" y=\"70\" class=\"tp-s\">Keeps every bit</text><text x=\"416\" y=\"89\" class=\"tp-s\">Larger files</text><text x=\"416\" y=\"108\" class=\"tp-s\">Exactly restored</text><path class=\"tp-w\" d=\"M285 74.5 Q 340 24.5 395 74.5\"/><text class=\"tp-m\" x=\"340\" y=\"163\" text-anchor=\"middle\">size against quality</text></svg>",
+                  "caption": "The trade-off is file size against exactness."
                 },
                 {
-                  "type": "heading",
-                  "text": "Worked example: Choosing compression",
-                  "level": 3
+                  "type": "fileSizeLab",
+                  "title": "File size lab: JPEG against PNG",
+                  "width": 4000,
+                  "height": 3000,
+                  "useCase": "email attachment"
                 },
                 {
-                  "type": "richText",
-                  "html": "<p>Four files a designer needs to send.</p><p>Holiday photos for Instagram</p><p>Lossy (JPEG): small files, quality loss not noticed on a phone.</p><p><strong>Client's logo with text</strong> — Lossless (PNG): sharp edges and text stay crisp.</p><p><strong>Folder of contracts</strong> — Lossless (ZIP): every character must be exactly the same.</p><p><strong>Music for streaming</strong> — Lossy (MP3/AAC): small enough to stream smoothly.</p>"
-                },
-                {
-                  "type": "quizQuestion",
-                  "question": {
-                    "id": "managing-data-2-compression-quick-check",
-                    "questionType": "mcq",
-                    "text": "Quick check: Which term matches this description? Reducing file size so data transfers faster and uses less storage.",
-                    "options": [
-                      "File size",
-                      "Compression",
-                      "Lossy",
-                      "Lossless"
-                    ],
-                    "correctIndex": 1,
-                    "explanation": "The term is Compression. Reducing file size so data transfers faster and uses less storage."
-                  }
-                },
-                {
-                  "type": "heading",
-                  "text": "Lossy vs lossless",
-                  "level": 3
-                },
-                {
-                  "type": "table",
-                  "headers": [
-                    "Feature",
+                  "type": "sorter",
+                  "title": "Which compression fits?",
+                  "instruction": "A designer is sending four files. Tap the best type.",
+                  "categories": [
                     "Lossy",
                     "Lossless"
                   ],
-                  "rows": [
-                    [
-                      "Data removed?",
-                      "Yes, permanently",
-                      "No"
-                    ],
-                    [
-                      "File size",
-                      "Much smaller",
-                      "Smaller, but larger than lossy"
-                    ],
-                    [
-                      "Quality",
-                      "Can drop, especially if saved repeatedly",
-                      "Identical to the original"
-                    ],
-                    [
-                      "Use when",
-                      "Small size matters more than perfect quality",
-                      "Every detail must be kept"
-                    ]
+                  "items": [
+                    {
+                      "text": "Holiday photos for Instagram.",
+                      "category": 0,
+                      "why": "Quality loss is not noticed on a phone, and files stay small."
+                    },
+                    {
+                      "text": "The client's logo with text.",
+                      "category": 1,
+                      "why": "Sharp edges and text stay crisp."
+                    },
+                    {
+                      "text": "A folder of contracts.",
+                      "category": 1,
+                      "why": "Every character must be exactly the same."
+                    },
+                    {
+                      "text": "Music for streaming.",
+                      "category": 0,
+                      "why": "Small files stream smoothly."
+                    },
+                    {
+                      "text": "12 songs sent to a record label for mastering.",
+                      "category": 1,
+                      "why": "Mastering needs full quality, so nothing can be discarded."
+                    },
+                    {
+                      "text": "12 songs as a free fan download.",
+                      "category": 0,
+                      "why": "Smaller files download faster and quality loss is acceptable."
+                    }
                   ]
                 },
                 {
-                  "type": "callout",
-                  "variant": "senior-wisdom",
-                  "heading": "💡 SENIOR WISDOM · SLOANE VANE",
-                  "text": "My rule of thumb: if the file needs to be restored byte-for-byte identical — a document, a database export — it's lossless, no exceptions. If it's a photo or audio where a human eye or ear won't notice the difference, lossy buys you a much smaller file for free."
-                },
-                {
-                  "type": "heading",
-                  "text": "Test tip: Compare, with an example",
-                  "level": 3
-                },
-                {
-                  "type": "callout",
-                  "variant": "pr-review",
-                  "heading": "🛑 PR REVIEW · SLOANE IS AUDITING YOUR WORK",
-                  "text": "State the purpose of compression cleanly first. Then for each use, I want the type named and justified against what that specific use actually needs — quality-critical or size-critical — not just 'lossy is smaller'."
-                },
-                {
-                  "type": "richText",
-                  "html": "<p>Question: Compare lossy and lossless compression. (4 marks)</p><p><strong>Earns 0 or 1 mark</strong> — \"Lossy loses quality. Lossless does not.\"</p><p>One feature only; no examples.</p><p><strong>Earns full marks</strong> — \"Lossy permanently removes data, so files like JPEG are much smaller but lower quality; lossless keeps all the data, so PNG or ZIP files can be restored exactly but are larger.\"</p>"
-                },
-                {
-                  "type": "paragraph",
-                  "text": "A band is sending 12 songs to a record label for mastering, and 12 songs to fans as a free download."
-                },
-                {
-                  "type": "callout",
-                  "variant": "sandbox",
-                  "heading": "💻 SANDBOX CHALLENGE",
-                  "text": "State compression's purpose, then justify a type for each of the two uses, before you check my call."
-                },
-                {
-                  "type": "task",
-                  "title": "Compare Lossy and Lossless Compression",
-                  "software": "Any file archiver (7-Zip, WinZip, or your OS's built-in zip) and a photo editor",
-                  "intro": "Compress the same content two different ways and see the actual size and quality trade-off, instead of just reading about it.",
+                  "type": "branchingScenario",
+                  "title": "The band's two uses",
+                  "intro": "A band is sending 12 songs to a record label for mastering, and 12 songs to fans as a free download.",
                   "steps": [
-                    "Take a photo (JPEG) and a text document of similar visual complexity.",
-                    "Save the photo as a JPEG at two different quality settings (e.g. 90% and 40%) and compare the file sizes and visible quality loss — this is lossy compression.",
-                    "Zip the text document using your OS's built-in compression and compare the zipped size to the original — this is lossless; unzip it and confirm it's identical to the original, with nothing lost.",
-                    "Try zipping the already-compressed JPEG and note how little smaller it gets — lossy formats are already compressed, so there's little left to save.",
-                    "Write a one-paragraph justification: which type of compression you'd use for the two scenarios in this lesson's quiz, and why."
+                    {
+                      "situation": "The label will master the tracks.",
+                      "prompt": "Which compression should the band use?",
+                      "choices": [
+                        {
+                          "text": "Lossless, because mastering needs every detail of the original recording.",
+                          "correct": true,
+                          "feedback": "It names the type and justifies it with the use."
+                        },
+                        {
+                          "text": "Lossy, because it is smaller.",
+                          "correct": false,
+                          "feedback": "Size is not the priority when the label needs full quality."
+                        },
+                        {
+                          "text": "No compression is possible.",
+                          "correct": false,
+                          "feedback": "Lossless compression keeps quality."
+                        }
+                      ]
+                    },
+                    {
+                      "situation": "The fans download the songs.",
+                      "prompt": "Which compression should they use?",
+                      "choices": [
+                        {
+                          "text": "Lossy, because smaller files download faster and the quality loss is acceptable for listening.",
+                          "correct": true,
+                          "feedback": "It justifies lossy with the use."
+                        },
+                        {
+                          "text": "Lossless, because it is always better.",
+                          "correct": false,
+                          "feedback": "Not always. Large files slow the download."
+                        },
+                        {
+                          "text": "Neither.",
+                          "correct": false,
+                          "feedback": "Compression helps both uses."
+                        }
+                      ]
+                    }
                   ]
                 },
                 {
@@ -7520,8 +7549,28 @@
                   "explanation": "Lossy compression trades some quality away permanently in exchange for a much smaller file."
                 },
                 {
+                  "type": "task",
+                  "title": "Compare Lossy and Lossless Compression",
+                  "software": "Any file archiver (7-Zip, WinZip, or your OS's built-in zip) and a photo editor",
+                  "intro": "Compress the same content two different ways and see the actual size and quality trade-off, instead of just reading about it.",
+                  "steps": [
+                    "Take a photo (JPEG) and a text document of similar visual complexity.",
+                    "Save the photo as a JPEG at two different quality settings (e.g. 90% and 40%) and compare the file sizes and visible quality loss — this is lossy compression.",
+                    "Zip the text document using your OS's built-in compression and compare the zipped size to the original — this is lossless; unzip it and confirm it's identical to the original, with nothing lost.",
+                    "Try zipping the already-compressed JPEG and note how little smaller it gets — lossy formats are already compressed, so there's little left to save.",
+                    "Write a one-paragraph justification: which type of compression you'd use for the two scenarios in this lesson's quiz, and why."
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · SLOANE VANE",
+                  "text": "My rule of thumb: if the file needs to be restored byte-for-byte identical — a document, a database export — it's lossless, no exceptions. If it's a photo or audio where a human eye or ear won't notice the difference, lossy buys you a much smaller file for free."
+                },
+                {
                   "type": "heading",
-                  "text": "Assessment practice"
+                  "text": "Assessment practice",
+                  "level": 2
                 },
                 {
                   "type": "quizQuestion",
@@ -7546,15 +7595,30 @@
                 {
                   "type": "heading",
                   "text": "Test-ready recap",
-                  "level": 3
+                  "level": 2
                 },
                 {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "I have copied the key terms into my notes.",
-                    "I scored at least 4 out of 5 on the practice questions.",
-                    "If not, reread the key terms and the test tip, then try again."
+                  "type": "infoCards",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "📌",
+                      "heading": "Know the purpose",
+                      "text": "Compression reduces file size so files store and send faster.",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "🧭",
+                      "heading": "Justify the type",
+                      "text": "Lossless when exactness matters, lossy when small size matters more.",
+                      "tone": "purple"
+                    },
+                    {
+                      "icon": "🎯",
+                      "heading": "Aim for",
+                      "text": "At least 4/5 on the practice questions. If not, reread the table and test tip.",
+                      "tone": "green"
+                    }
                   ]
                 },
                 {
@@ -7562,7 +7626,8 @@
                   "heading": "Up next",
                   "text": "Next lesson: cropping and resampling."
                 }
-              ]
+              ],
+              "estimatedMinutes": 45
             },
             {
               "id": "managing-data-3-cropping-and-resampling",
@@ -7575,27 +7640,20 @@
                   "text": "A website photo needs cropping to fit a banner, and a PDF is bloated because nobody resampled the images inside it before export. Cropping and resampling get confused constantly — one changes what's in the frame, the other changes how much data describes it."
                 },
                 {
-                  "type": "paragraph",
-                  "text": "Techniques for file size minimisation: cropping, resampling"
-                },
-                {
-                  "type": "heading",
-                  "text": "Success criteria",
-                  "level": 3
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Describe cropping and resampling.",
-                    "Explain how each reduces file size.",
-                    "Apply both to prepare an image for a product."
+                  "type": "videoSlot",
+                  "title": "Crop first, then resample",
+                  "minutes": 4,
+                  "brief": "A short screen recording cropping a photo, downsampling it to its display size and exporting it, with the file size shown at each step. Suggested source: a teacher-filmed demo in Photopea.",
+                  "watchFor": [
+                    "Pixels before and after each step",
+                    "Why you keep the original",
+                    "Why upsampling looks blurry"
                   ]
                 },
                 {
                   "type": "heading",
-                  "text": "Write this down",
-                  "level": 3
+                  "text": "The big idea",
+                  "level": 2
                 },
                 {
                   "type": "keyTerms",
@@ -7619,74 +7677,94 @@
                   ]
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Cropping and Resampling",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"managing-data-cropping-and-resampling-title managing-data-cropping-and-resampling-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"managing-data-cropping-and-resampling-title\">Cropping and Resampling: Concept cards for Cropping, Resampling, Pixel dimensions, Upsampling.</title><desc id=\"managing-data-cropping-and-resampling-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ccfbf1\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#0f766e\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Cropping and Resampling</tspan></text><text x=\"36\" y=\"94\" fill=\"#0f766e\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">CORE IDEAS</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0f766e\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#0f766e\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Cropping</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Removing unwanted areas from the edges of</tspan><tspan x=\"84\" dy=\"19\">an image. Fewer pixels, smaller file, and a…</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#4f46e5\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#4f46e5\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Resampling</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Changing the number of pixels in an image.</tspan><tspan x=\"444\" dy=\"19\">Downsampling reduces the pixel dimensions…</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0f766e\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#0f766e\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Pixel dimensions</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Width x height in pixels, e.g. 6000 x 4000.</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#4f46e5\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#4f46e5\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Upsampling</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Adding pixels. Makes the file larger and</tspan><tspan x=\"444\" dy=\"19\">the image blurry; avoid it.</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
+                  "type": "svgFigure",
+                  "title": "The cafe photo, step by step",
+                  "alt": "Four steps: keep the original, crop, resample, export.",
+                  "svg": "<svg viewBox=\"0 0 680 131\" xmlns=\"http://www.w3.org/2000/svg\"><style>.sg-b{fill:#f1f5f9;stroke:#cbd5e1;stroke-width:2;animation:sg-g 8s infinite}.sg-n{font-size:18px;font-weight:800;fill:#1d4ed8;font-family:system-ui,sans-serif}.sg-t{font-size:13.5px;font-weight:700;fill:#0f172a;font-family:system-ui,sans-serif}.sg-s{font-size:11.5px;fill:#475569;font-family:system-ui,sans-serif}.sg-a{stroke:#94a3b8;stroke-width:3}@keyframes sg-g{0%,21%{fill:#bfdbfe}25%,100%{fill:#f1f5f9}}@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style><rect class=\"sg-b\" style=\"animation-delay:0s\" x=\"6\" y=\"22\" width=\"156\" height=\"87\" rx=\"14\"/><text class=\"sg-n\" x=\"18\" y=\"48\">1</text><text class=\"sg-t\" x=\"18\" y=\"62\">Keep original</text><text class=\"sg-s\" x=\"18\" y=\"81\">Work on a copy</text><line class=\"sg-a\" x1=\"162\" y1=\"65.5\" x2=\"176\" y2=\"65.5\"/><rect class=\"sg-b\" style=\"animation-delay:2s\" x=\"176\" y=\"22\" width=\"156\" height=\"87\" rx=\"14\"/><text class=\"sg-n\" x=\"188\" y=\"48\">2</text><text class=\"sg-t\" x=\"188\" y=\"62\">Crop</text><text class=\"sg-s\" x=\"188\" y=\"81\">Remove what you do</text><text class=\"sg-s\" x=\"188\" y=\"96\">not need</text><line class=\"sg-a\" x1=\"332\" y1=\"65.5\" x2=\"346\" y2=\"65.5\"/><rect class=\"sg-b\" style=\"animation-delay:4s\" x=\"346\" y=\"22\" width=\"156\" height=\"87\" rx=\"14\"/><text class=\"sg-n\" x=\"358\" y=\"48\">3</text><text class=\"sg-t\" x=\"358\" y=\"62\">Resample</text><text class=\"sg-s\" x=\"358\" y=\"81\">Reduce to display</text><text class=\"sg-s\" x=\"358\" y=\"96\">size</text><line class=\"sg-a\" x1=\"502\" y1=\"65.5\" x2=\"516\" y2=\"65.5\"/><rect class=\"sg-b\" style=\"animation-delay:6s\" x=\"516\" y=\"22\" width=\"156\" height=\"87\" rx=\"14\"/><text class=\"sg-n\" x=\"528\" y=\"48\">4</text><text class=\"sg-t\" x=\"528\" y=\"62\">Export</text><text class=\"sg-s\" x=\"528\" y=\"81\">Choose format and</text><text class=\"sg-s\" x=\"528\" y=\"96\">quality</text></svg>",
+                  "caption": "A 6000 x 4000 photo ends up about 40 times smaller."
                 },
                 {
-                  "type": "heading",
-                  "text": "Worked example: Preparing a website photo",
-                  "level": 3
+                  "type": "sequence",
+                  "title": "Put the workflow in order",
+                  "instruction": "Tap the four steps in order.",
+                  "items": [
+                    "Keep the original and work on a copy.",
+                    "Crop first to remove what you do not need.",
+                    "Resample down to the size it will display at.",
+                    "Export, choosing the format and quality."
+                  ],
+                  "explanation": "Crop, then resample, on a copy. Resampling down cannot be undone."
                 },
                 {
-                  "type": "richText",
-                  "html": "<p>A 6000 x 4000 pixel photo (8 MB) of a cafe owner needs to fit a 1200 x 800 website box.</p><p><strong>Step 1: crop</strong> — Remove the empty car park on the left; the owner is now on a thirds line. 4500 x 3000 pixels.</p><p><strong>Step 2: resample</strong> — Downsample to 1200 x 800 pixels.</p><p>Step 3: export</p><p>JPEG at 75% quality.</p><p><strong>Result</strong> — About 200 KB: 40 times smaller, and it looks the same on screen.</p>"
+                  "type": "fileSizeLab",
+                  "title": "File size lab: crop and resample",
+                  "width": 6000,
+                  "height": 4000,
+                  "useCase": "website"
                 },
                 {
-                  "type": "quizQuestion",
-                  "question": {
-                    "id": "managing-data-3-cropping-and-resampling-quick-check",
-                    "questionType": "mcq",
-                    "text": "Quick check: Which term matches this description? Removing unwanted areas from the edges of an image. Fewer pixels, smaller file, and a stronger composition.",
-                    "options": [
-                      "Upsampling",
-                      "Cropping",
-                      "Resampling",
-                      "Pixel dimensions"
-                    ],
-                    "correctIndex": 1,
-                    "explanation": "The term is Cropping. Removing unwanted areas from the edges of an image. Fewer pixels, smaller file, and a stronger composition."
-                  }
+                  "type": "sorter",
+                  "title": "Cropping or resampling?",
+                  "instruction": "Which operation does each statement describe?",
+                  "categories": [
+                    "Cropping",
+                    "Resampling"
+                  ],
+                  "items": [
+                    {
+                      "text": "Removes unwanted areas from the edges.",
+                      "category": 0,
+                      "why": "That is cropping."
+                    },
+                    {
+                      "text": "Changes the number of pixels in the image.",
+                      "category": 1,
+                      "why": "That is resampling."
+                    },
+                    {
+                      "text": "Can strengthen the composition, for example moving the subject onto a thirds line.",
+                      "category": 0,
+                      "why": "Cropping changes what is in the frame."
+                    },
+                    {
+                      "text": "Downsampling reduces the pixel dimensions and file size.",
+                      "category": 1,
+                      "why": "Fewer pixels mean a smaller file."
+                    },
+                    {
+                      "text": "Upsampling adds pixels and makes the image blurry, so avoid it.",
+                      "category": 1,
+                      "why": "Upsampling cannot add real detail."
+                    }
+                  ]
                 },
                 {
-                  "type": "heading",
-                  "text": "Order matters",
-                  "level": 3
-                },
-                {
-                  "type": "richText",
-                  "html": "<p>1</p><p><strong>Keep the original</strong> — Work on a copy; resampling down cannot be undone.</p><p>2</p><p>Crop first</p><p>Remove what you do not need.</p><p>3</p><p><strong>Resample</strong> — Reduce to the size it will display at.</p><p>4</p><p>Export</p><p>Choose format and quality.</p>"
-                },
-                {
-                  "type": "callout",
-                  "variant": "senior-wisdom",
-                  "heading": "💡 SENIOR WISDOM · SLOANE VANE",
-                  "text": "Cropping removes part of the image — the pixel dimensions and framing both change. Resampling reduces the number of pixels describing the same framing — the content stays, the detail shrinks. Confuse the two in an answer and I know immediately the concept isn't understood, just the word."
-                },
-                {
-                  "type": "heading",
-                  "text": "Test tip: Say why the file gets smaller",
-                  "level": 3
-                },
-                {
-                  "type": "callout",
-                  "variant": "pr-review",
-                  "heading": "🛑 PR REVIEW · SLOANE IS AUDITING YOUR WORK",
-                  "text": "Describe cropping's specific effect on this photo, not the definition in isolation. And for resampling reducing the PDF's size — I want 'fewer pixels, smaller file' explained, not just asserted."
-                },
-                {
-                  "type": "richText",
-                  "html": "<p>Question: Describe how resampling reduces file size. (2 marks)</p><p><strong>Earns 0 or 1 mark</strong> — \"It makes the picture smaller.\"</p><p>Does not mention pixels.</p><p><strong>Earns full marks</strong> — \"Resampling reduces the number of pixels, e.g. from 6000 wide to 1200 wide, so there is much less data to store.\"</p>"
-                },
-                {
-                  "type": "paragraph",
-                  "text": "A student places a 5 MB photo of a school building in an interactive PDF, where it only fills a small box 600 pixels wide. The PDF is now 80 MB."
-                },
-                {
-                  "type": "callout",
-                  "variant": "sandbox",
-                  "heading": "💻 SANDBOX CHALLENGE",
-                  "text": "Describe how cropping could be used on the photo, then explain how resampling reduces the PDF's size, before you check my notes."
+                  "type": "branchingScenario",
+                  "title": "The 80 MB PDF",
+                  "intro": "A student places a 5 MB photo of a school building in an interactive PDF, where it only fills a small box 600 pixels wide. The PDF is now 80 MB.",
+                  "steps": [
+                    {
+                      "situation": "She wants to shrink the PDF.",
+                      "prompt": "Which fix is best?",
+                      "choices": [
+                        {
+                          "text": "Downsample the photo to about 600 pixels wide before placing it, so each copy is a small file.",
+                          "correct": true,
+                          "feedback": "Resampling to the display size cuts the size dramatically."
+                        },
+                        {
+                          "text": "Upsample the photo.",
+                          "correct": false,
+                          "feedback": "That makes the file larger and blurrier."
+                        },
+                        {
+                          "text": "Rename the file.",
+                          "correct": false,
+                          "feedback": "Names do not change size."
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
                   "type": "task",
@@ -7704,8 +7782,15 @@
                   ]
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · SLOANE VANE",
+                  "text": "Cropping removes part of the image — the pixel dimensions and framing both change. Resampling reduces the number of pixels describing the same framing — the content stays, the detail shrinks. Confuse the two in an answer and I know immediately the concept isn't understood, just the word."
+                },
+                {
                   "type": "heading",
-                  "text": "Assessment practice"
+                  "text": "Assessment practice",
+                  "level": 2
                 },
                 {
                   "type": "quizQuestion",
@@ -7730,15 +7815,30 @@
                 {
                   "type": "heading",
                   "text": "Test-ready recap",
-                  "level": 3
+                  "level": 2
                 },
                 {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "I have copied the key terms into my notes.",
-                    "I scored at least 4 out of 5 on the practice questions.",
-                    "If not, reread the key terms and the test tip, then try again."
+                  "type": "infoCards",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "📌",
+                      "heading": "Crop then resample",
+                      "text": "Crop first, then reduce to the display size, always on a copy.",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "🧭",
+                      "heading": "Avoid upsampling",
+                      "text": "It adds pixels but no detail, so the image looks blurry.",
+                      "tone": "purple"
+                    },
+                    {
+                      "icon": "🎯",
+                      "heading": "Aim for",
+                      "text": "At least 4/5 on the practice questions.",
+                      "tone": "green"
+                    }
                   ]
                 },
                 {
@@ -7746,7 +7846,8 @@
                   "heading": "Task 7",
                   "text": "Crop and resample your Task 7 images before placing them (CP1 in Week 3). Save a before and after for your evidence."
                 }
-              ]
+              ],
+              "estimatedMinutes": 45
             },
             {
               "id": "managing-data-4-online-data-management",
@@ -7759,27 +7860,20 @@
                   "text": "A netball club's shared files are a mess — someone's working copy got overwritten, nobody can find last season's roster. Shared folders, permissions, sync, search and tags — this is the unglamorous admin work that determines whether a volunteer-run club's data survives contact with real life."
                 },
                 {
-                  "type": "paragraph",
-                  "text": "Strategies for efficient online data management"
-                },
-                {
-                  "type": "heading",
-                  "text": "Success criteria",
-                  "level": 3
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Describe strategies for managing data online.",
-                    "Explain the benefit of each strategy.",
-                    "Apply strategies to a shared project folder."
+                  "type": "videoSlot",
+                  "title": "A tidy shared folder",
+                  "minutes": 3,
+                  "brief": "A short walk-through of a shared OneDrive folder for a club: subfolders, file names, permissions and an archive. Suggested source: a teacher-filmed screen recording using a school OneDrive.",
+                  "watchFor": [
+                    "How subfolders are organised",
+                    "How permissions are set",
+                    "What an archive folder is for"
                   ]
                 },
                 {
                   "type": "heading",
-                  "text": "Write this down",
-                  "level": 3
+                  "text": "The big idea",
+                  "level": 2
                 },
                 {
                   "type": "keyTerms",
@@ -7807,43 +7901,102 @@
                   ]
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Online Data Management",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"managing-data-online-data-management-title managing-data-online-data-management-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"managing-data-online-data-management-title\">Online Data Management: Concept cards for Online data management, Shared folder, Permissions, Synchronisation (sync).</title><desc id=\"managing-data-online-data-management-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ccfbf1\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#0f766e\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Online Data Management</tspan></text><text x=\"36\" y=\"94\" fill=\"#0f766e\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">CORE IDEAS</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0f766e\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#0f766e\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Online data management</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Organising, storing, sharing and protecting</tspan><tspan x=\"84\" dy=\"19\">files kept online (e.g. OneDrive, Google…</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#4f46e5\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#4f46e5\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Shared folder</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">An online folder that set people can open,</tspan><tspan x=\"444\" dy=\"19\">with chosen permissions.</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0f766e\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#0f766e\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Permissions</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Who can view, comment or edit a file or</tspan><tspan x=\"84\" dy=\"19\">folder.</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#4f46e5\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#4f46e5\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Synchronisation (sync)</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Keeping the same files up to date on the</tspan><tspan x=\"444\" dy=\"19\">cloud and on each device.</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
+                  "type": "svgFigure",
+                  "title": "Setting up the club folder",
+                  "alt": "Four steps: create the structure, name files consistently, set permissions, archive and tidy.",
+                  "svg": "<svg viewBox=\"0 0 680 131\" xmlns=\"http://www.w3.org/2000/svg\"><style>.sg-b{fill:#f1f5f9;stroke:#cbd5e1;stroke-width:2;animation:sg-g 8s infinite}.sg-n{font-size:18px;font-weight:800;fill:#1d4ed8;font-family:system-ui,sans-serif}.sg-t{font-size:13.5px;font-weight:700;fill:#0f172a;font-family:system-ui,sans-serif}.sg-s{font-size:11.5px;fill:#475569;font-family:system-ui,sans-serif}.sg-a{stroke:#94a3b8;stroke-width:3}@keyframes sg-g{0%,21%{fill:#bfdbfe}25%,100%{fill:#f1f5f9}}@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style><rect class=\"sg-b\" style=\"animation-delay:0s\" x=\"6\" y=\"22\" width=\"156\" height=\"87\" rx=\"14\"/><text class=\"sg-n\" x=\"18\" y=\"48\">1</text><text class=\"sg-t\" x=\"18\" y=\"62\">Structure</text><text class=\"sg-s\" x=\"18\" y=\"81\">Shared folder with</text><text class=\"sg-s\" x=\"18\" y=\"96\">subfolders</text><line class=\"sg-a\" x1=\"162\" y1=\"65.5\" x2=\"176\" y2=\"65.5\"/><rect class=\"sg-b\" style=\"animation-delay:2s\" x=\"176\" y=\"22\" width=\"156\" height=\"87\" rx=\"14\"/><text class=\"sg-n\" x=\"188\" y=\"48\">2</text><text class=\"sg-t\" x=\"188\" y=\"62\">Naming</text><text class=\"sg-s\" x=\"188\" y=\"81\">Consistent file names</text><text class=\"sg-s\" x=\"188\" y=\"96\">with dates</text><line class=\"sg-a\" x1=\"332\" y1=\"65.5\" x2=\"346\" y2=\"65.5\"/><rect class=\"sg-b\" style=\"animation-delay:4s\" x=\"346\" y=\"22\" width=\"156\" height=\"87\" rx=\"14\"/><text class=\"sg-n\" x=\"358\" y=\"48\">3</text><text class=\"sg-t\" x=\"358\" y=\"62\">Permissions</text><text class=\"sg-s\" x=\"358\" y=\"81\">Least access needed</text><line class=\"sg-a\" x1=\"502\" y1=\"65.5\" x2=\"516\" y2=\"65.5\"/><rect class=\"sg-b\" style=\"animation-delay:6s\" x=\"516\" y=\"22\" width=\"156\" height=\"87\" rx=\"14\"/><text class=\"sg-n\" x=\"528\" y=\"48\">4</text><text class=\"sg-t\" x=\"528\" y=\"62\">Housekeeping</text><text class=\"sg-s\" x=\"528\" y=\"81\">Archive old, delete</text><text class=\"sg-s\" x=\"528\" y=\"96\">duplicates</text></svg>",
+                  "caption": "Five committee members share files on OneDrive."
                 },
                 {
-                  "type": "heading",
-                  "text": "Worked example: A netball club's online files",
-                  "level": 3
+                  "type": "sorter",
+                  "title": "Good or poor practice?",
+                  "instruction": "Four students share a Google Drive folder. Is each habit good or poor?",
+                  "categories": [
+                    "Good practice",
+                    "Poor practice"
+                  ],
+                  "items": [
+                    {
+                      "text": "Files named doc1, final and final2.",
+                      "category": 1,
+                      "why": "Names should describe the content and date."
+                    },
+                    {
+                      "text": "Fixtures_Round03_2027-05-10.pdf",
+                      "category": 0,
+                      "why": "A consistent name with a date sorts in order."
+                    },
+                    {
+                      "text": "Everyone has edit access to every file.",
+                      "category": 1,
+                      "why": "Anyone can delete someone else's work."
+                    },
+                    {
+                      "text": "The treasurer can edit Finance while coaches only view it.",
+                      "category": 0,
+                      "why": "Permissions match what each person needs."
+                    },
+                    {
+                      "text": "Last season's files moved to an Archive folder.",
+                      "category": 0,
+                      "why": "It keeps the live folder tidy."
+                    },
+                    {
+                      "text": "Leaving access on after a member leaves.",
+                      "category": 1,
+                      "why": "Access should be removed when people leave."
+                    }
+                  ]
                 },
                 {
-                  "type": "richText",
-                  "html": "<p>Five committee members share files on OneDrive.</p><p><strong>Structure</strong> — One shared \"Club 2027\" folder with subfolders: Finance, Teams, Fixtures, Photos.</p><p><strong>Permissions</strong> — Treasurer can edit Finance; coaches can only view it.</p><p><strong>Naming</strong> — Fixtures_Round03_2027-05-10.pdf, so files sort in order.</p><p><strong>Housekeeping</strong> — Last season's files moved to an Archive folder; duplicates deleted.</p>"
+                  "type": "branchingScenario",
+                  "title": "The deleted work",
+                  "intro": "Four students share a Google Drive folder. One accidentally deleted another's work.",
+                  "steps": [
+                    {
+                      "situation": "How could permissions have prevented it?",
+                      "prompt": "Which answer is best?",
+                      "choices": [
+                        {
+                          "text": "Give each student edit access only to their own section and view access to the rest, so they cannot delete each other's work.",
+                          "correct": true,
+                          "feedback": "It links permissions to the problem."
+                        },
+                        {
+                          "text": "Give everyone edit access to everything.",
+                          "correct": false,
+                          "feedback": "That caused the problem."
+                        },
+                        {
+                          "text": "Tell people to be careful.",
+                          "correct": false,
+                          "feedback": "A request is not a control."
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
-                  "type": "quizQuestion",
-                  "question": {
-                    "id": "managing-data-4-online-data-management-quick-check",
-                    "questionType": "mcq",
-                    "text": "Quick check: Which term matches this description? Organising, storing, sharing and protecting files kept online (e.g. OneDrive, Google Drive).",
-                    "options": [
-                      "Shared folder",
-                      "Permissions",
-                      "Synchronisation (sync)",
-                      "Online data management"
-                    ],
-                    "correctIndex": 3,
-                    "explanation": "The term is Online data management. Organising, storing, sharing and protecting files kept online (e.g. OneDrive, Google Drive)."
-                  }
-                },
-                {
-                  "type": "heading",
-                  "text": "Strategies",
-                  "level": 3
-                },
-                {
-                  "type": "richText",
-                  "html": "<p>Organise</p><p>Logical folder structure</p><p>Consistent file names</p><p>Archive old files</p><p>Delete duplicates</p><p><strong>Share and protect</strong> — Share links with the least permission needed</p><p>Remove access when people leave</p><p>Turn on two-step verification</p><p>Check sync before working offline</p>"
+                  "type": "flipCards",
+                  "title": "Check your understanding",
+                  "instruction": "Answer first, then flip.",
+                  "cards": [
+                    {
+                      "tag": "Define",
+                      "front": "What are permissions?",
+                      "back": "Who can view, comment or edit a file or folder."
+                    },
+                    {
+                      "tag": "Explain",
+                      "front": "What does sync do?",
+                      "back": "Keeps the same files up to date on the cloud and on each device."
+                    },
+                    {
+                      "tag": "Apply",
+                      "front": "Name two ways to share and protect files.",
+                      "back": "Any two of: share links with the least permission needed, remove access when people leave, turn on two-step verification, check sync before working offline."
+                    }
+                  ]
                 },
                 {
                   "type": "callout",
@@ -7853,32 +8006,8 @@
                 },
                 {
                   "type": "heading",
-                  "text": "Test tip: Strategy plus benefit",
-                  "level": 3
-                },
-                {
-                  "type": "callout",
-                  "variant": "pr-review",
-                  "heading": "🛑 PR REVIEW · SLOANE IS AUDITING YOUR WORK",
-                  "text": "I want two concrete strategies for this club — not a general list of good practice, strategies that fit a small volunteer team specifically. And the permissions answer needs to explain how restricting access would have actually stopped this specific deletion."
-                },
-                {
-                  "type": "richText",
-                  "html": "<p>Question: Describe one strategy for efficient online data management. (2 marks)</p><p>Earns 0 or 1 mark</p><p>\"Use OneDrive.\"</p><p>A product, not a strategy.</p><p><strong>Earns full marks</strong> — \"Give coaches view-only permission on the Finance folder, so they can see the budget but cannot change it by accident.\"</p>"
-                },
-                {
-                  "type": "paragraph",
-                  "text": "Four students share a Google Drive folder for a group project. Files are called \"doc1\", \"final\", \"final2\", and one student accidentally deleted another's work."
-                },
-                {
-                  "type": "callout",
-                  "variant": "sandbox",
-                  "heading": "💻 SANDBOX CHALLENGE",
-                  "text": "Describe two strategies to fix the club's online data mess, and how permissions could have prevented the deleted work, before you check my recommendations."
-                },
-                {
-                  "type": "heading",
-                  "text": "Assessment practice"
+                  "text": "Assessment practice",
+                  "level": 2
                 },
                 {
                   "type": "quizQuestion",
@@ -7903,15 +8032,30 @@
                 {
                   "type": "heading",
                   "text": "Test-ready recap",
-                  "level": 3
+                  "level": 2
                 },
                 {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "I have copied the key terms into my notes.",
-                    "I scored at least 5 out of 6 on the practice questions.",
-                    "If not, reread the key terms and the test tip, then try again."
+                  "type": "infoCards",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "📌",
+                      "heading": "Structure and naming",
+                      "text": "Logical folders and consistent file names.",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "🧭",
+                      "heading": "Protect with permissions",
+                      "text": "Least access needed, removed when people leave.",
+                      "tone": "purple"
+                    },
+                    {
+                      "icon": "🎯",
+                      "heading": "Aim for",
+                      "text": "At least 5/6 on the practice questions.",
+                      "tone": "green"
+                    }
                   ]
                 },
                 {
@@ -7919,7 +8063,8 @@
                   "heading": "Up next",
                   "text": "Next lesson: document version control."
                 }
-              ]
+              ],
+              "estimatedMinutes": 45
             },
             {
               "id": "managing-data-5-version-control",
@@ -7932,27 +8077,20 @@
                   "text": "A club newsletter went through six 'final' versions and nobody can find which one actually got sent. Version control — numbering, history, a master copy, checking files out — exists entirely to prevent this exact chaos, and it's cheap insurance most small teams skip until it bites them."
                 },
                 {
-                  "type": "paragraph",
-                  "text": "Strategies for efficient document version control"
-                },
-                {
-                  "type": "heading",
-                  "text": "Success criteria",
-                  "level": 3
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Define document version control.",
-                    "Describe strategies for version control.",
-                    "Apply a version naming convention and use version history."
+                  "type": "videoSlot",
+                  "title": "Version history in action",
+                  "minutes": 3,
+                  "brief": "A short clip restoring yesterday's version of a document from version history and showing a v01, v02 naming pattern. Suggested source: a teacher-filmed recording in Word online or Google Docs.",
+                  "watchFor": [
+                    "Where version history is found",
+                    "How a version is restored",
+                    "How version numbers are written"
                   ]
                 },
                 {
                   "type": "heading",
-                  "text": "Write this down",
-                  "level": 3
+                  "text": "The big idea",
+                  "level": 2
                 },
                 {
                   "type": "keyTerms",
@@ -7980,43 +8118,97 @@
                   ]
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Version Control",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"managing-data-version-control-title managing-data-version-control-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"managing-data-version-control-title\">Version Control: Concept cards for Version control, Version numbering, Version history, Master copy.</title><desc id=\"managing-data-version-control-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ccfbf1\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#0f766e\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Version Control</tspan></text><text x=\"36\" y=\"94\" fill=\"#0f766e\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">CORE IDEAS</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0f766e\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#0f766e\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Version control</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Managing changes to a document so the</tspan><tspan x=\"84\" dy=\"19\">current version is clear and earlier…</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#4f46e5\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#4f46e5\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Version numbering</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Adding v01, v02 to file names; major</tspan><tspan x=\"444\" dy=\"19\">changes can use v1.0, v2.0.</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0f766e\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#0f766e\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Version history</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">A record kept by OneDrive or Google Docs of</tspan><tspan x=\"84\" dy=\"19\">every saved version, which can be viewed or…</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#4f46e5\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#4f46e5\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Master copy</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">The single, official current version of a</tspan><tspan x=\"444\" dy=\"19\">document.</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
+                  "type": "svgFigure",
+                  "title": "Bad against good",
+                  "alt": "Two panels: emailed copies with confusing names, and one shared master with numbered versions.",
+                  "svg": "<svg viewBox=\"0 0 680 230\" xmlns=\"http://www.w3.org/2000/svg\"><style>.tp-t{font:700 14px system-ui,sans-serif;fill:#0f172a}.tp-s{font:12px system-ui,sans-serif;fill:#334155}.tp-w{stroke:#2563eb;stroke-width:3;stroke-dasharray:6 6;fill:none;animation:tp-d 2s linear infinite}@keyframes tp-d{to{stroke-dashoffset:-24}}.tp-m{font:700 12.5px system-ui,sans-serif;fill:#1d4ed8;animation:tp-b 3s infinite}@keyframes tp-b{0%,45%{opacity:1}55%,100%{opacity:.3}}@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style><rect x=\"10\" y=\"14\" width=\"270\" height=\"178\" rx=\"16\" fill=\"#fee2e2\"/><text x=\"26\" y=\"42\" class=\"tp-t\">Bad</text><text x=\"26\" y=\"70\" class=\"tp-s\">report_final.docx</text><text x=\"26\" y=\"89\" class=\"tp-s\">report_final2.docx</text><text x=\"26\" y=\"108\" class=\"tp-s\">report_final_REAL.docx</text><text x=\"26\" y=\"127\" class=\"tp-s\">Emailed copies, different</text><text x=\"26\" y=\"146\" class=\"tp-s\">edits</text><rect x=\"400\" y=\"14\" width=\"270\" height=\"178\" rx=\"16\" fill=\"#dcfce7\"/><text x=\"416\" y=\"42\" class=\"tp-t\">Good</text><text x=\"416\" y=\"70\" class=\"tp-s\">Report_v01.docx,</text><text x=\"416\" y=\"89\" class=\"tp-s\">Report_v02.docx</text><text x=\"416\" y=\"108\" class=\"tp-s\">Dates as YYYY-MM-DD</text><text x=\"416\" y=\"127\" class=\"tp-s\">One shared master with history</text><text x=\"416\" y=\"146\" class=\"tp-s\">Change note: v03 added budget</text><text x=\"416\" y=\"165\" class=\"tp-s\">table</text><path class=\"tp-w\" d=\"M285 103 Q 340 53 395 103\"/><text class=\"tp-m\" x=\"340\" y=\"220\" text-anchor=\"middle\">which is the master?</text></svg>",
+                  "caption": "Names and one shared master make the current version obvious."
                 },
                 {
-                  "type": "heading",
-                  "text": "Worked example: Writing a club newsletter",
-                  "level": 3
+                  "type": "sorter",
+                  "title": "Bad or good version control?",
+                  "instruction": "Sort each habit.",
+                  "categories": [
+                    "Bad",
+                    "Good"
+                  ],
+                  "items": [
+                    {
+                      "text": "Emailing yourself Essay, Essay new and Essay latest.",
+                      "category": 0,
+                      "why": "You cannot tell which copy has the feedback."
+                    },
+                    {
+                      "text": "Saving copies as Report_v01 and Report_v02.",
+                      "category": 1,
+                      "why": "Version numbers show the order."
+                    },
+                    {
+                      "text": "Keeping one master copy in a shared folder.",
+                      "category": 1,
+                      "why": "Nobody emails attachments around."
+                    },
+                    {
+                      "text": "Report_final_REAL.docx",
+                      "category": 0,
+                      "why": "Names like this say nothing about order."
+                    },
+                    {
+                      "text": "Restoring yesterday's version from version history.",
+                      "category": 1,
+                      "why": "History lets you recover from mistakes."
+                    }
+                  ]
                 },
                 {
-                  "type": "richText",
-                  "html": "<p>The newsletter editor and two writers work on the same document each month.</p><p><strong>One master copy</strong> — Stored in the shared folder; nobody emails attachments.</p><p><strong>Version history</strong> — When a paragraph is deleted by mistake, the editor restores yesterday's version.</p><p><strong>Naming</strong> — Newsletter_2027-06_v03 when saving a copy for the printer.</p><p><strong>Comments</strong> — Writers suggest changes as comments; the editor accepts or rejects them.</p>"
+                  "type": "branchingScenario",
+                  "title": "14 copies of an essay",
+                  "intro": "A student emails her draft essay to herself each night. She now has 14 copies called Essay, Essay new and Essay latest and cannot tell which has her teacher's feedback.",
+                  "steps": [
+                    {
+                      "situation": "She asks how to fix this.",
+                      "prompt": "Which strategies are best?",
+                      "choices": [
+                        {
+                          "text": "Keep one master copy in a shared folder, number saved versions (v01, v02) and use version history to restore earlier work.",
+                          "correct": true,
+                          "feedback": "Numbering and a single master with history solve it."
+                        },
+                        {
+                          "text": "Email herself more often.",
+                          "correct": false,
+                          "feedback": "More copies makes it worse."
+                        },
+                        {
+                          "text": "Delete all but the newest.",
+                          "correct": false,
+                          "feedback": "She cannot tell which is newest or has the feedback."
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
-                  "type": "quizQuestion",
-                  "question": {
-                    "id": "managing-data-5-version-control-quick-check",
-                    "questionType": "mcq",
-                    "text": "Quick check: Which term matches this description? Managing changes to a document so the current version is clear and earlier versions can be found or restored.",
-                    "options": [
-                      "Version control",
-                      "Version numbering",
-                      "Version history",
-                      "Master copy"
-                    ],
-                    "correctIndex": 0,
-                    "explanation": "The term is Version control. Managing changes to a document so the current version is clear and earlier versions can be found or restored."
-                  }
-                },
-                {
-                  "type": "heading",
-                  "text": "Good and bad version control",
-                  "level": 3
-                },
-                {
-                  "type": "richText",
-                  "html": "<p>Bad</p><p>report_final.docx</p><p>report_final2.docx</p><p><strong>report_final_REAL.docx</strong> — Emailed copies with different edits</p><p><strong>Good</strong> — Report_v01.docx, Report_v02.docx</p><p>Dates in YYYY-MM-DD format</p><p>One shared master with version history</p><p>Change notes: \"v03: added budget table\"</p>"
+                  "type": "flipCards",
+                  "title": "Check your understanding",
+                  "instruction": "Answer first, then flip.",
+                  "cards": [
+                    {
+                      "tag": "Define",
+                      "front": "What is document version control?",
+                      "back": "Managing changes to a document so the current version is clear and earlier versions can be found or restored."
+                    },
+                    {
+                      "tag": "Define",
+                      "front": "What is a master copy?",
+                      "back": "The single, official current version of a document."
+                    },
+                    {
+                      "tag": "Define",
+                      "front": "What does check out do?",
+                      "back": "Locks a file while one person edits it, so others cannot overwrite changes."
+                    }
+                  ]
                 },
                 {
                   "type": "callout",
@@ -8026,32 +8218,8 @@
                 },
                 {
                   "type": "heading",
-                  "text": "Test tip: Explain how it helps",
-                  "level": 3
-                },
-                {
-                  "type": "callout",
-                  "variant": "pr-review",
-                  "heading": "🛑 PR REVIEW · SLOANE IS AUDITING YOUR WORK",
-                  "text": "Define version control precisely — it's not just 'saving different copies', it's a deliberate system. Then for this student's strategies, I want something that would have actually prevented the newsletter confusion, not generic advice."
-                },
-                {
-                  "type": "richText",
-                  "html": "<p>Question: Explain how version history supports version control. (2 marks)</p><p>Earns 0 or 1 mark</p><p>\"It saves versions.\"</p><p>Repeats the term.</p><p><strong>Earns full marks</strong> — \"It keeps a record of every saved version with the date and editor, so if work is overwritten, an earlier version can be restored.\"</p>"
-                },
-                {
-                  "type": "paragraph",
-                  "text": "A student emails her draft essay to herself each night. She now has 14 copies called \"Essay\", \"Essay new\", \"Essay latest\" and cannot tell which has her teacher's feedback."
-                },
-                {
-                  "type": "callout",
-                  "variant": "sandbox",
-                  "heading": "💻 SANDBOX CHALLENGE",
-                  "text": "Define document version control, then describe two strategies the student should use, before you check my fix."
-                },
-                {
-                  "type": "heading",
-                  "text": "Assessment practice"
+                  "text": "Assessment practice",
+                  "level": 2
                 },
                 {
                   "type": "quizQuestion",
@@ -8076,15 +8244,30 @@
                 {
                   "type": "heading",
                   "text": "Test-ready recap",
-                  "level": 3
+                  "level": 2
                 },
                 {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "I have copied the key terms into my notes.",
-                    "I scored at least 5 out of 6 on the practice questions.",
-                    "If not, reread the key terms and the test tip, then try again."
+                  "type": "infoCards",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "📌",
+                      "heading": "One master copy",
+                      "text": "Never email attachments around.",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "🧭",
+                      "heading": "Number and date versions",
+                      "text": "v01, v02 and YYYY-MM-DD, with a change note.",
+                      "tone": "purple"
+                    },
+                    {
+                      "icon": "🎯",
+                      "heading": "Aim for",
+                      "text": "At least 4/6 on the practice questions.",
+                      "tone": "green"
+                    }
                   ]
                 },
                 {
@@ -8092,7 +8275,8 @@
                   "heading": "Up next",
                   "text": "Next lesson: the concept of cloud computing."
                 }
-              ]
+              ],
+              "estimatedMinutes": 45
             },
             {
               "id": "managing-data-6-cloud-computing",
@@ -8105,27 +8289,20 @@
                   "text": "A mobile hairdresser wants to ditch the laptop she drags between appointments and run everything from her phone instead. Cloud computing's real sell for someone like her isn't the buzzword — it's that her bookings and client notes follow her, with trade-offs she needs to understand before she commits."
                 },
                 {
-                  "type": "paragraph",
-                  "text": "Concept of cloud computing"
-                },
-                {
-                  "type": "heading",
-                  "text": "Success criteria",
-                  "level": 3
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Explain the concept of cloud computing.",
-                    "Identify types of cloud services.",
-                    "Explain advantages and disadvantages for a user."
+                  "type": "videoSlot",
+                  "title": "What is the cloud?",
+                  "minutes": 4,
+                  "brief": "A short clip showing files, bookings and accounting software used from a tablet and a phone with nothing stored locally. Suggested source: a teacher-filmed demonstration with a cloud booking app and OneDrive.",
+                  "watchFor": [
+                    "What runs on the provider's servers",
+                    "What happens with no internet",
+                    "How sharing works"
                   ]
                 },
                 {
                   "type": "heading",
-                  "text": "Write this down",
-                  "level": 3
+                  "text": "The big idea",
+                  "level": 2
                 },
                 {
                   "type": "table",
@@ -8158,43 +8335,128 @@
                   ]
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Cloud Computing",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"managing-data-cloud-computing-title managing-data-cloud-computing-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"managing-data-cloud-computing-title\">Cloud Computing: Concept cards for Cloud computing, Cloud storage, Cloud software, Cloud platform.</title><desc id=\"managing-data-cloud-computing-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ccfbf1\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#0f766e\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Cloud Computing</tspan></text><text x=\"36\" y=\"94\" fill=\"#0f766e\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">TERM</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0f766e\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#0f766e\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Cloud computing</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Definition: Storing data and running</tspan><tspan x=\"84\" dy=\"19\">software on remote servers owned by a…</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#4f46e5\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#4f46e5\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Cloud storage</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Definition: Saving files on the provider's</tspan><tspan x=\"444\" dy=\"19\">servers. · Example: OneDrive, Google Drive…</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0f766e\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#0f766e\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Cloud software</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Definition: Applications used through a</tspan><tspan x=\"84\" dy=\"19\">browser or app, paid by subscription. ·…</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#4f46e5\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#4f46e5\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Cloud platform</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Definition: Servers and tools rented to run</tspan><tspan x=\"444\" dy=\"19\">websites and apps. · Example: Amazon Web…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
+                  "type": "svgFigure",
+                  "title": "Office server or cloud?",
+                  "alt": "Two panels comparing an office server with cloud storage.",
+                  "svg": "<svg viewBox=\"0 0 680 211\" xmlns=\"http://www.w3.org/2000/svg\"><style>.tp-t{font:700 14px system-ui,sans-serif;fill:#0f172a}.tp-s{font:12px system-ui,sans-serif;fill:#334155}.tp-w{stroke:#2563eb;stroke-width:3;stroke-dasharray:6 6;fill:none;animation:tp-d 2s linear infinite}@keyframes tp-d{to{stroke-dashoffset:-24}}.tp-m{font:700 12.5px system-ui,sans-serif;fill:#1d4ed8;animation:tp-b 3s infinite}@keyframes tp-b{0%,45%{opacity:1}55%,100%{opacity:.3}}@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style><rect x=\"10\" y=\"14\" width=\"270\" height=\"159\" rx=\"16\" fill=\"#fef3c7\"/><text x=\"26\" y=\"42\" class=\"tp-t\">Office server</text><text x=\"26\" y=\"70\" class=\"tp-s\">Bought and maintained by the</text><text x=\"26\" y=\"89\" class=\"tp-s\">firm</text><text x=\"26\" y=\"108\" class=\"tp-s\">Works without the internet</text><text x=\"26\" y=\"127\" class=\"tp-s\">Backups are the firm's job</text><rect x=\"400\" y=\"14\" width=\"270\" height=\"159\" rx=\"16\" fill=\"#dbeafe\"/><text x=\"416\" y=\"42\" class=\"tp-t\">Cloud</text><text x=\"416\" y=\"70\" class=\"tp-s\">Provider runs the servers</text><text x=\"416\" y=\"89\" class=\"tp-s\">Needs a reliable internet</text><text x=\"416\" y=\"108\" class=\"tp-s\">connection</text><text x=\"416\" y=\"127\" class=\"tp-s\">Automatic backup by the</text><text x=\"416\" y=\"146\" class=\"tp-s\">provider</text><path class=\"tp-w\" d=\"M285 93.5 Q 340 43.5 395 93.5\"/><text class=\"tp-m\" x=\"340\" y=\"201\" text-anchor=\"middle\">where does the data live?</text></svg>",
+                  "caption": "The data lives on the provider's servers, reached over the internet."
                 },
                 {
-                  "type": "heading",
-                  "text": "Worked example: A mobile hairdresser",
-                  "level": 3
+                  "type": "sorter",
+                  "title": "Advantage or disadvantage?",
+                  "instruction": "Sort each effect of cloud computing.",
+                  "categories": [
+                    "Advantage",
+                    "Disadvantage"
+                  ],
+                  "items": [
+                    {
+                      "text": "Access from any device, anywhere.",
+                      "category": 0,
+                      "why": "Files follow the user."
+                    },
+                    {
+                      "text": "Needs a reliable internet connection.",
+                      "category": 1,
+                      "why": "No signal means no access."
+                    },
+                    {
+                      "text": "Automatic backup by the provider.",
+                      "category": 0,
+                      "why": "A stolen tablet loses nothing."
+                    },
+                    {
+                      "text": "Ongoing subscription cost.",
+                      "category": 1,
+                      "why": "It is a continuing expense."
+                    },
+                    {
+                      "text": "No expensive servers to buy.",
+                      "category": 0,
+                      "why": "The provider supplies the hardware."
+                    },
+                    {
+                      "text": "Data held by a third party, sometimes overseas.",
+                      "category": 1,
+                      "why": "The user has less control over it."
+                    },
+                    {
+                      "text": "Storage can grow as needed.",
+                      "category": 0,
+                      "why": "It scales without new hardware."
+                    },
+                    {
+                      "text": "A provider outage stops work.",
+                      "category": 1,
+                      "why": "The user depends on the provider being up."
+                    }
+                  ]
                 },
                 {
-                  "type": "richText",
-                  "html": "<p>She works from clients' homes and uses only a tablet and phone.</p><p><strong>Bookings</strong> — A cloud booking app: clients book online 24/7; she sees them on any device.</p><p><strong>Files</strong> — Price list and photos in cloud storage, synced to both devices.</p><p><strong>Advantage</strong> — If her tablet is stolen, nothing is lost; she logs in on a new one.</p><p><strong>Disadvantage</strong> — No mobile signal at a rural client's house means no access to bookings.</p>"
+                  "type": "branchingScenario",
+                  "title": "The accounting firm",
+                  "intro": "A small accounting firm is deciding whether to replace its office server with cloud storage and cloud accounting software.",
+                  "steps": [
+                    {
+                      "situation": "The partner asks for one real advantage.",
+                      "prompt": "Which is best?",
+                      "choices": [
+                        {
+                          "text": "Staff can open client files from any device at any site, and the provider backs them up automatically.",
+                          "correct": true,
+                          "feedback": "A real advantage linked to the firm."
+                        },
+                        {
+                          "text": "The cloud is modern.",
+                          "correct": false,
+                          "feedback": "Not an advantage and not linked to the firm."
+                        },
+                        {
+                          "text": "It is always free.",
+                          "correct": false,
+                          "feedback": "There is an ongoing subscription."
+                        }
+                      ]
+                    },
+                    {
+                      "situation": "She asks for one real disadvantage.",
+                      "prompt": "Which is best?",
+                      "choices": [
+                        {
+                          "text": "If the internet or the provider goes down, staff cannot reach client files, and the data sits with a third party.",
+                          "correct": true,
+                          "feedback": "It links the downside to the firm's work."
+                        },
+                        {
+                          "text": "The cloud has no disadvantages.",
+                          "correct": false,
+                          "feedback": "There are several."
+                        },
+                        {
+                          "text": "It uses too much power at the office.",
+                          "correct": false,
+                          "feedback": "The provider runs the servers, not the firm."
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
-                  "type": "quizQuestion",
-                  "question": {
-                    "id": "managing-data-6-cloud-computing-quick-check",
-                    "questionType": "mcq",
-                    "text": "Quick check: Which term matches this description? Storing data and running software on remote servers owned by a provider, accessed over the internet, instead of on your own device.",
-                    "options": [
-                      "Cloud platform",
-                      "Cloud computing",
-                      "Cloud storage",
-                      "Cloud software"
-                    ],
-                    "correctIndex": 1,
-                    "explanation": "The term is Cloud computing. Storing data and running software on remote servers owned by a provider, accessed over the internet, instead of on your own device."
-                  }
-                },
-                {
-                  "type": "heading",
-                  "text": "Cloud computing",
-                  "level": 3
-                },
-                {
-                  "type": "richText",
-                  "html": "<p><strong>Advantages</strong> — Access from any device, anywhere</p><p>Automatic backup by the provider</p><p>No expensive servers to buy</p><p>Easy to share and collaborate</p><p>Storage can grow as needed</p><p><strong>Disadvantages</strong> — Needs a reliable internet connection</p><p><strong>Ongoing subscription cost</strong> — Data held by a third party, sometimes overseas</p><p>Provider outages stop work</p><p>Security depends on strong passwords</p>"
+                  "type": "flipCards",
+                  "title": "Check your understanding",
+                  "instruction": "Answer first, then flip.",
+                  "cards": [
+                    {
+                      "tag": "Explain",
+                      "front": "What is cloud computing?",
+                      "back": "Using storage and software on a provider's servers over the internet instead of on your own equipment."
+                    },
+                    {
+                      "tag": "Apply",
+                      "front": "Why did the stolen tablet lose nothing?",
+                      "back": "The files were synced to the cloud, so she logs in on a new device."
+                    }
+                  ]
                 },
                 {
                   "type": "callout",
@@ -8204,32 +8466,8 @@
                 },
                 {
                   "type": "heading",
-                  "text": "Test tip: Concept: remote + internet",
-                  "level": 3
-                },
-                {
-                  "type": "callout",
-                  "variant": "pr-review",
-                  "heading": "🛑 PR REVIEW · SLOANE IS AUDITING YOUR WORK",
-                  "text": "Explain the concept properly — remote storage and processing accessed over the internet — before you weigh advantage against disadvantage. A one-sided answer, all upside or all downside, isn't the full picture and won't get full marks."
-                },
-                {
-                  "type": "richText",
-                  "html": "<p>Question: Explain the concept of cloud computing. (2 marks)</p><p>Earns 0 or 1 mark</p><p><strong>\"Saving to the cloud.\"</strong> — Uses the term to explain itself.</p><p><strong>Earns full marks</strong> — \"Data and software are stored on remote servers owned by a provider and accessed over the internet, instead of on the user's own computer.\"</p>"
-                },
-                {
-                  "type": "paragraph",
-                  "text": "A small accounting firm is deciding whether to replace its office server with cloud storage and cloud accounting software."
-                },
-                {
-                  "type": "callout",
-                  "variant": "sandbox",
-                  "heading": "💻 SANDBOX CHALLENGE",
-                  "text": "Explain cloud computing, then give one real advantage and one real disadvantage for this accounting firm, before you check my assessment."
-                },
-                {
-                  "type": "heading",
-                  "text": "Assessment practice"
+                  "text": "Assessment practice",
+                  "level": 2
                 },
                 {
                   "type": "quizQuestion",
@@ -8254,15 +8492,30 @@
                 {
                   "type": "heading",
                   "text": "Test-ready recap",
-                  "level": 3
+                  "level": 2
                 },
                 {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "I have copied the key terms into my notes.",
-                    "I scored at least 5 out of 6 on the practice questions.",
-                    "If not, reread the key terms and the test tip, then try again."
+                  "type": "infoCards",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "📌",
+                      "heading": "Define it",
+                      "text": "Storage and software on a provider's servers, used over the internet.",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "🧭",
+                      "heading": "Give both sides",
+                      "text": "A real advantage and a real disadvantage, linked to the business.",
+                      "tone": "purple"
+                    },
+                    {
+                      "icon": "🎯",
+                      "heading": "Aim for",
+                      "text": "At least 5/6 on the practice questions.",
+                      "tone": "green"
+                    }
                   ]
                 },
                 {
@@ -8270,7 +8523,8 @@
                   "heading": "Task 6",
                   "text": "Task 6 Design Book is due this week. Check your shared folder and version naming (Question 10)."
                 }
-              ]
+              ],
+              "estimatedMinutes": 45
             },
             {
               "id": "managing-data-7-maintenance-utilities",
@@ -8283,27 +8537,20 @@
                   "text": "A family laptop's crawling and everyone assumes it needs replacing. Nine times out of ten it just needs the maintenance it's never had — disk clean-up, clearing the internet cache, checking temporary files — before anyone spends money on new hardware."
                 },
                 {
-                  "type": "paragraph",
-                  "text": "System utility tools for efficient operation: disk clean-up, deletion of temporary files and internet cache, disk fragmentation"
-                },
-                {
-                  "type": "heading",
-                  "text": "Success criteria",
-                  "level": 3
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Describe disk clean-up, temporary file and cache deletion, and defragmentation.",
-                    "Explain how each improves performance.",
-                    "Identify when defragmentation should not be used."
+                  "type": "videoSlot",
+                  "title": "Keeping a computer healthy",
+                  "minutes": 4,
+                  "brief": "A short clip running Disk Clean-up, clearing the browser cache and checking whether a drive is an HDD or an SSD. Suggested source: a teacher-filmed screen recording on a school laptop.",
+                  "watchFor": [
+                    "How much space a clean-up frees",
+                    "Why the cache can fix a website",
+                    "Why SSDs are not defragmented"
                   ]
                 },
                 {
                   "type": "heading",
-                  "text": "Write this down",
-                  "level": 3
+                  "text": "The big idea",
+                  "level": 2
                 },
                 {
                   "type": "keyTerms",
@@ -8331,39 +8578,11 @@
                   ]
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Maintenance Utilities",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"managing-data-maintenance-utilities-title managing-data-maintenance-utilities-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"managing-data-maintenance-utilities-title\">Maintenance Utilities: Concept cards for Storage almost full, Website shows old content or errors, Files slow to open on an old HDD, Many leftover files from installs.</title><desc id=\"managing-data-maintenance-utilities-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ccfbf1\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#0f766e\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Maintenance Utilities</tspan></text><text x=\"36\" y=\"94\" fill=\"#0f766e\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">PROBLEM</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0f766e\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#0f766e\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Storage almost full</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Tool: Disk clean-up</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#4f46e5\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#4f46e5\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Website shows old content or…</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Tool: Clear internet cache</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0f766e\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#0f766e\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Files slow to open on an old HDD</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Tool: Defragmentation</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#4f46e5\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#4f46e5\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Many leftover files from…</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Tool: Delete temporary files</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
-                },
-                {
-                  "type": "heading",
-                  "text": "Worked example: Fixing a slow family computer",
-                  "level": 3
-                },
-                {
-                  "type": "richText",
-                  "html": "<p>A 6-year-old desktop with a hard disk drive is slow and has only 2 GB free.</p><p><strong>Disk clean-up</strong> — Removes 18 GB of old update files and temporary files.</p><p><strong>Clear browser cache</strong> — Frees 3 GB and fixes a website that shows old images.</p><p><strong>Defragment</strong> — The HDD is 30% fragmented; defragmenting makes files open faster.</p><p><strong>Result</strong> — More free space, faster start-up and file opening.</p>"
-                },
-                {
-                  "type": "quizQuestion",
-                  "question": {
-                    "id": "managing-data-7-maintenance-utilities-quick-check",
-                    "questionType": "mcq",
-                    "text": "Quick check: Which term matches this description? Software that maintains or protects the computer rather than doing a user task.",
-                    "options": [
-                      "Temporary files",
-                      "Internet cache",
-                      "System utility tool",
-                      "Disk clean-up"
-                    ],
-                    "correctIndex": 2,
-                    "explanation": "The term is System utility tool. Software that maintains or protects the computer rather than doing a user task."
-                  }
-                },
-                {
-                  "type": "heading",
-                  "text": "Which tool fixes what?",
-                  "level": 3
+                  "type": "svgFigure",
+                  "title": "Why defragmenting depends on the drive",
+                  "alt": "Two panels: a hard disk drive scatters file parts so defragmenting helps, and an SSD has no moving parts so defragmenting is not needed.",
+                  "svg": "<svg viewBox=\"0 0 680 173\" xmlns=\"http://www.w3.org/2000/svg\"><style>.tp-t{font:700 14px system-ui,sans-serif;fill:#0f172a}.tp-s{font:12px system-ui,sans-serif;fill:#334155}.tp-w{stroke:#2563eb;stroke-width:3;stroke-dasharray:6 6;fill:none;animation:tp-d 2s linear infinite}@keyframes tp-d{to{stroke-dashoffset:-24}}.tp-m{font:700 12.5px system-ui,sans-serif;fill:#1d4ed8;animation:tp-b 3s infinite}@keyframes tp-b{0%,45%{opacity:1}55%,100%{opacity:.3}}@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style><rect x=\"10\" y=\"14\" width=\"270\" height=\"121\" rx=\"16\" fill=\"#fef3c7\"/><text x=\"26\" y=\"42\" class=\"tp-t\">Hard disk drive (HDD)</text><text x=\"26\" y=\"70\" class=\"tp-s\">Parts of a file get scattered</text><text x=\"26\" y=\"89\" class=\"tp-s\">Slower to read</text><text x=\"26\" y=\"108\" class=\"tp-s\">Defragmentation helps</text><rect x=\"400\" y=\"14\" width=\"270\" height=\"121\" rx=\"16\" fill=\"#dcfce7\"/><text x=\"416\" y=\"42\" class=\"tp-t\">Solid state drive (SSD)</text><text x=\"416\" y=\"70\" class=\"tp-s\">No moving parts</text><text x=\"416\" y=\"89\" class=\"tp-s\">Fast wherever data sits</text><text x=\"416\" y=\"108\" class=\"tp-s\">Defragmentation not needed</text><path class=\"tp-w\" d=\"M285 74.5 Q 340 24.5 395 74.5\"/><text class=\"tp-m\" x=\"340\" y=\"163\" text-anchor=\"middle\">check the drive type</text></svg>",
+                  "caption": "Match the utility to the problem and the drive."
                 },
                 {
                   "type": "table",
@@ -8391,35 +8610,90 @@
                   ]
                 },
                 {
-                  "type": "callout",
-                  "variant": "senior-wisdom",
-                  "heading": "💡 SENIOR WISDOM · SLOANE VANE",
-                  "text": "Defragmentation is the classic trap question — it's essential on an old spinning hard drive and actively unnecessary, even mildly harmful, on an SSD, which have no moving parts to benefit from it. If a laptop has an SSD, say so and explain why defrag doesn't apply."
+                  "type": "sorter",
+                  "title": "Which tool fixes it?",
+                  "instruction": "A 6-year-old desktop with a hard disk drive is slow. Tap the tool.",
+                  "categories": [
+                    "Disk clean-up",
+                    "Clear browser cache",
+                    "Defragment"
+                  ],
+                  "items": [
+                    {
+                      "text": "Only 2 GB free, mostly old update files and temporary files.",
+                      "category": 0,
+                      "why": "Disk clean-up removes unneeded files to free space."
+                    },
+                    {
+                      "text": "A website keeps showing old images.",
+                      "category": 1,
+                      "why": "Clearing the cache removes the saved copies."
+                    },
+                    {
+                      "text": "The HDD is 30% fragmented and files open slowly.",
+                      "category": 2,
+                      "why": "Defragmenting rearranges scattered file parts."
+                    },
+                    {
+                      "text": "The recycle bin and temporary files are using 18 GB.",
+                      "category": 0,
+                      "why": "Clean-up removes recycle bin and temporary files."
+                    },
+                    {
+                      "text": "The browser has not been cleared for two years.",
+                      "category": 1,
+                      "why": "Clearing the cache frees space."
+                    }
+                  ]
                 },
                 {
-                  "type": "heading",
-                  "text": "Test tip: Say how it improves performance",
-                  "level": 3
-                },
-                {
-                  "type": "callout",
-                  "variant": "pr-review",
-                  "heading": "🛑 PR REVIEW · SLOANE IS AUDITING YOUR WORK",
-                  "text": "Name two specific utility tools and what each actually fixes for this laptop, not a generic list of 'things that help'. And if it's an SSD, don't recommend defrag — explain why it's not needed, that's the actual mark."
-                },
-                {
-                  "type": "richText",
-                  "html": "<p>Question: Explain how defragmentation improves performance. (2 marks)</p><p>Earns 0 or 1 mark</p><p>\"It cleans the disk.\"</p><p>That is disk clean-up.</p><p><strong>Earns full marks</strong> — \"It moves the scattered parts of each file together on the hard disk drive, so the drive reads files in one pass and they open faster.\"</p>"
-                },
-                {
-                  "type": "paragraph",
-                  "text": "A student's laptop has an SSD that is 95% full. Her browser has not been cleared for two years."
-                },
-                {
-                  "type": "callout",
-                  "variant": "sandbox",
-                  "heading": "💻 SANDBOX CHALLENGE",
-                  "text": "Describe how two utility tools could help this laptop, and explain why defragmentation isn't needed on her machine, before you check my diagnosis."
+                  "type": "branchingScenario",
+                  "title": "The 95% full laptop",
+                  "intro": "A student's laptop has an SSD that is 95% full. Her browser has not been cleared for two years.",
+                  "steps": [
+                    {
+                      "situation": "She asks which two utilities would help.",
+                      "prompt": "Which pair is best?",
+                      "choices": [
+                        {
+                          "text": "Disk clean-up to remove temporary files and free storage, and clearing the browser cache to free space and remove old saved pages.",
+                          "correct": true,
+                          "feedback": "Both target the space problem."
+                        },
+                        {
+                          "text": "Defragmentation and a spam filter.",
+                          "correct": false,
+                          "feedback": "Defragmentation is not for SSDs, and a spam filter is not a maintenance utility here."
+                        },
+                        {
+                          "text": "Buy a new laptop.",
+                          "correct": false,
+                          "feedback": "Not a utility tool."
+                        }
+                      ]
+                    },
+                    {
+                      "situation": "She wonders about defragmenting.",
+                      "prompt": "Why is it not needed on her laptop?",
+                      "choices": [
+                        {
+                          "text": "An SSD has no moving parts, so scattered file parts do not slow it, and defragmenting would add wear.",
+                          "correct": true,
+                          "feedback": "It names the drive type and the reason."
+                        },
+                        {
+                          "text": "Laptops cannot be defragmented.",
+                          "correct": false,
+                          "feedback": "Not the reason."
+                        },
+                        {
+                          "text": "The laptop is too full.",
+                          "correct": false,
+                          "feedback": "Fullness is not why."
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
                   "type": "task",
@@ -8436,8 +8710,15 @@
                   ]
                 },
                 {
+                  "type": "callout",
+                  "variant": "senior-wisdom",
+                  "heading": "💡 SENIOR WISDOM · SLOANE VANE",
+                  "text": "Defragmentation is the classic trap question — it's essential on an old spinning hard drive and actively unnecessary, even mildly harmful, on an SSD, which have no moving parts to benefit from it. If a laptop has an SSD, say so and explain why defrag doesn't apply."
+                },
+                {
                   "type": "heading",
-                  "text": "Assessment practice"
+                  "text": "Assessment practice",
+                  "level": 2
                 },
                 {
                   "type": "quizQuestion",
@@ -8462,15 +8743,30 @@
                 {
                   "type": "heading",
                   "text": "Test-ready recap",
-                  "level": 3
+                  "level": 2
                 },
                 {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "I have copied the key terms into my notes.",
-                    "I scored at least 5 out of 6 on the practice questions.",
-                    "If not, reread the key terms and the test tip, then try again."
+                  "type": "infoCards",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "📌",
+                      "heading": "Name the tool and what it does",
+                      "text": "Clean-up frees space, cache clearing frees space, defrag rearranges an HDD.",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "🧭",
+                      "heading": "Check the drive",
+                      "text": "No defragmentation on an SSD.",
+                      "tone": "purple"
+                    },
+                    {
+                      "icon": "🎯",
+                      "heading": "Aim for",
+                      "text": "At least 5/6 on the practice questions.",
+                      "tone": "green"
+                    }
                   ]
                 },
                 {
@@ -8478,7 +8774,8 @@
                   "heading": "Up next",
                   "text": "Next lesson: security utilities."
                 }
-              ]
+              ],
+              "estimatedMinutes": 45
             },
             {
               "id": "managing-data-8-security-utilities",
@@ -8491,27 +8788,20 @@
                   "text": "A suspicious email just hit a family's inbox and something's already behaving strangely on their laptop. Malware, virus, spyware, anti-virus, spam filters — identifying exactly what kind of threat you're dealing with changes what protection actually stops it."
                 },
                 {
-                  "type": "paragraph",
-                  "text": "System utility tools: anti-malware, anti-virus, spam filter, spyware"
-                },
-                {
-                  "type": "heading",
-                  "text": "Success criteria",
-                  "level": 3
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Define malware, virus and spyware.",
-                    "Describe the purpose of anti-malware, anti-virus and spam filters.",
-                    "Recommend protection for a user."
+                  "type": "videoSlot",
+                  "title": "Malware and how to stop it",
+                  "minutes": 4,
+                  "brief": "A short clip showing a phishing email, the spam filter catching it, and anti-malware quarantining a bad attachment. Suggested source: a teacher-filmed screen recording using a safe demo, or an Australian Cyber Security Centre education video.",
+                  "watchFor": [
+                    "The warning signs in the email",
+                    "What spyware can record",
+                    "What quarantine means"
                   ]
                 },
                 {
                   "type": "heading",
-                  "text": "Write this down",
-                  "level": 3
+                  "text": "The big idea",
+                  "level": 2
                 },
                 {
                   "type": "keyTerms",
@@ -8539,43 +8829,128 @@
                   ]
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Security Utilities",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"managing-data-security-utilities-title managing-data-security-utilities-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"managing-data-security-utilities-title\">Security Utilities: Concept cards for Malware, Virus, Spyware, Anti-virus / anti-malware.</title><desc id=\"managing-data-security-utilities-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ccfbf1\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#0f766e\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Security Utilities</tspan></text><text x=\"36\" y=\"94\" fill=\"#0f766e\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">CORE IDEAS</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0f766e\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#0f766e\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Malware</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Any software designed to harm a computer or</tspan><tspan x=\"84\" dy=\"19\">steal data. Includes viruses, spyware…</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#4f46e5\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#4f46e5\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Virus</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Malware that attaches to files and spreads</tspan><tspan x=\"444\" dy=\"19\">when they are opened or shared.</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0f766e\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#0f766e\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Spyware</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Malware that secretly collects information</tspan><tspan x=\"84\" dy=\"19\">such as passwords, browsing and keystrokes.</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#4f46e5\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#4f46e5\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Anti-virus / anti-malware</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Scans files and memory, detects known</tspan><tspan x=\"444\" dy=\"19\">threats and quarantines or removes them…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
+                  "type": "svgFigure",
+                  "title": "A suspicious parcel email",
+                  "alt": "Four steps: spam filter, if opened spyware, anti-malware scans, user action.",
+                  "svg": "<svg viewBox=\"0 0 680 131\" xmlns=\"http://www.w3.org/2000/svg\"><style>.sg-b{fill:#f1f5f9;stroke:#cbd5e1;stroke-width:2;animation:sg-g 8s infinite}.sg-n{font-size:18px;font-weight:800;fill:#1d4ed8;font-family:system-ui,sans-serif}.sg-t{font-size:13.5px;font-weight:700;fill:#0f172a;font-family:system-ui,sans-serif}.sg-s{font-size:11.5px;fill:#475569;font-family:system-ui,sans-serif}.sg-a{stroke:#94a3b8;stroke-width:3}@keyframes sg-g{0%,21%{fill:#bfdbfe}25%,100%{fill:#f1f5f9}}@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style><rect class=\"sg-b\" style=\"animation-delay:0s\" x=\"6\" y=\"22\" width=\"156\" height=\"87\" rx=\"14\"/><text class=\"sg-n\" x=\"18\" y=\"48\">1</text><text class=\"sg-t\" x=\"18\" y=\"62\">Spam filter</text><text class=\"sg-s\" x=\"18\" y=\"81\">Moves it to Junk</text><line class=\"sg-a\" x1=\"162\" y1=\"65.5\" x2=\"176\" y2=\"65.5\"/><rect class=\"sg-b\" style=\"animation-delay:2s\" x=\"176\" y=\"22\" width=\"156\" height=\"87\" rx=\"14\"/><text class=\"sg-n\" x=\"188\" y=\"48\">2</text><text class=\"sg-t\" x=\"188\" y=\"62\">If opened</text><text class=\"sg-s\" x=\"188\" y=\"81\">Spyware records</text><text class=\"sg-s\" x=\"188\" y=\"96\">passwords</text><line class=\"sg-a\" x1=\"332\" y1=\"65.5\" x2=\"346\" y2=\"65.5\"/><rect class=\"sg-b\" style=\"animation-delay:4s\" x=\"346\" y=\"22\" width=\"156\" height=\"87\" rx=\"14\"/><text class=\"sg-n\" x=\"358\" y=\"48\">3</text><text class=\"sg-t\" x=\"358\" y=\"62\">Anti-malware</text><text class=\"sg-s\" x=\"358\" y=\"81\">Scans and quarantines</text><line class=\"sg-a\" x1=\"502\" y1=\"65.5\" x2=\"516\" y2=\"65.5\"/><rect class=\"sg-b\" style=\"animation-delay:6s\" x=\"516\" y=\"22\" width=\"156\" height=\"87\" rx=\"14\"/><text class=\"sg-n\" x=\"528\" y=\"48\">4</text><text class=\"sg-t\" x=\"528\" y=\"62\">User action</text><text class=\"sg-s\" x=\"528\" y=\"81\">Do not click, report,</text><text class=\"sg-s\" x=\"528\" y=\"96\">delete</text></svg>",
+                  "caption": "An email says 'Your parcel is waiting' with a link and an attachment called Invoice.zip."
                 },
                 {
-                  "type": "heading",
-                  "text": "Worked example: A suspicious email",
-                  "level": 3
+                  "type": "sorter",
+                  "title": "Tool or habit?",
+                  "instruction": "Sort each protection.",
+                  "categories": [
+                    "Tool",
+                    "Habit"
+                  ],
+                  "items": [
+                    {
+                      "text": "Anti-malware with real-time scanning.",
+                      "category": 0,
+                      "why": "Software that scans and quarantines."
+                    },
+                    {
+                      "text": "Do not open unexpected attachments.",
+                      "category": 1,
+                      "why": "A behaviour users must practise."
+                    },
+                    {
+                      "text": "A spam filter in the email service.",
+                      "category": 0,
+                      "why": "Software that filters suspicious mail."
+                    },
+                    {
+                      "text": "Hover over links to check the address.",
+                      "category": 1,
+                      "why": "A behaviour that spots fake links."
+                    },
+                    {
+                      "text": "Firewall turned on.",
+                      "category": 0,
+                      "why": "A software control."
+                    },
+                    {
+                      "text": "Use strong, different passwords.",
+                      "category": 1,
+                      "why": "A user habit."
+                    },
+                    {
+                      "text": "Automatic updates.",
+                      "category": 0,
+                      "why": "A setting that installs security fixes."
+                    },
+                    {
+                      "text": "Download software only from official sites.",
+                      "category": 1,
+                      "why": "A habit that avoids fake installers."
+                    }
+                  ]
                 },
                 {
-                  "type": "richText",
-                  "html": "<p>An email says \"Your parcel is waiting\", with a link and an attachment called Invoice.zip.</p><p><strong>Spam filter</strong> — Recognises the sender and wording and moves it to Junk.</p><p><strong>If opened</strong> — The attachment contains spyware that records passwords.</p><p><strong>Anti-malware</strong> — Scans the attachment when downloaded and quarantines it.</p><p><strong>User action</strong> — Do not click; report as phishing; delete.</p>"
+                  "type": "branchingScenario",
+                  "title": "The slow family laptop",
+                  "intro": "A family laptop has become slow, shows pop-up ads, and a parent's bank password was used by someone else.",
+                  "steps": [
+                    {
+                      "situation": "Which malware is most likely involved?",
+                      "prompt": "Pick the best answer.",
+                      "choices": [
+                        {
+                          "text": "Spyware: it secretly collects information such as passwords and browsing, which explains the stolen bank password.",
+                          "correct": true,
+                          "feedback": "It names the type, what it does and links it to the evidence."
+                        },
+                        {
+                          "text": "A spam filter.",
+                          "correct": false,
+                          "feedback": "That is a protection, not malware."
+                        },
+                        {
+                          "text": "A firewall.",
+                          "correct": false,
+                          "feedback": "That is a protection, not malware."
+                        }
+                      ]
+                    },
+                    {
+                      "situation": "How should the family protect the laptop?",
+                      "prompt": "Pick the best answer.",
+                      "choices": [
+                        {
+                          "text": "Run anti-malware with real-time scanning and turn on automatic updates, and avoid unexpected attachments and unofficial downloads.",
+                          "correct": true,
+                          "feedback": "A tool and a habit, both tied to the problem."
+                        },
+                        {
+                          "text": "Turn the laptop off permanently.",
+                          "correct": false,
+                          "feedback": "It does not protect the laptop in use."
+                        },
+                        {
+                          "text": "Share the password with the whole family.",
+                          "correct": false,
+                          "feedback": "That makes it less secure."
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
-                  "type": "quizQuestion",
-                  "question": {
-                    "id": "managing-data-8-security-utilities-quick-check",
-                    "questionType": "mcq",
-                    "text": "Quick check: Which term matches this description? Any software designed to harm a computer or steal data. Includes viruses, spyware, ransomware and trojans.",
-                    "options": [
-                      "Malware",
-                      "Virus",
-                      "Spyware",
-                      "Anti-virus / anti-malware"
-                    ],
-                    "correctIndex": 0,
-                    "explanation": "The term is Malware. Any software designed to harm a computer or steal data. Includes viruses, spyware, ransomware and trojans."
-                  }
-                },
-                {
-                  "type": "heading",
-                  "text": "Staying protected",
-                  "level": 3
-                },
-                {
-                  "type": "richText",
-                  "html": "<p><strong>Tools</strong> — Anti-malware with real-time scanning (e.g. Microsoft Defender)</p><p>Spam filter in the email service</p><p>Firewall turned on</p><p>Automatic updates</p><p><strong>Habits</strong> — Do not open unexpected attachments</p><p>Hover over links to check the address</p><p>Download software only from official sites</p><p>Use strong, different passwords</p>"
+                  "type": "flipCards",
+                  "title": "Check your understanding",
+                  "instruction": "Answer first, then flip.",
+                  "cards": [
+                    {
+                      "tag": "Define",
+                      "front": "What is malware?",
+                      "back": "Any software designed to harm a computer or steal data, including viruses, spyware, ransomware and trojans."
+                    },
+                    {
+                      "tag": "Compare",
+                      "front": "How is a virus different from spyware?",
+                      "back": "A virus attaches to files and spreads when they are opened or shared. Spyware secretly collects information such as passwords."
+                    }
+                  ]
                 },
                 {
                   "type": "callout",
@@ -8585,32 +8960,8 @@
                 },
                 {
                   "type": "heading",
-                  "text": "Test tip: Purpose of the tool, not the threat",
-                  "level": 3
-                },
-                {
-                  "type": "callout",
-                  "variant": "pr-review",
-                  "heading": "🛑 PR REVIEW · SLOANE IS AUDITING YOUR WORK",
-                  "text": "Identify the specific type of malware involved, don't just say 'a virus' by default — read the clues. And for protecting the family going forward, I want two distinct, concrete protections, not one idea restated twice."
-                },
-                {
-                  "type": "richText",
-                  "html": "<p>Question: Describe the purpose of a spam filter. (2 marks)</p><p>Earns 0 or 1 mark</p><p><strong>\"Spam is junk mail.\"</strong> — Describes the threat, not the tool.</p><p><strong>Earns full marks</strong> — \"A spam filter checks incoming email and moves unwanted or suspicious messages to a junk folder, so users are less likely to open phishing links.\"</p>"
-                },
-                {
-                  "type": "paragraph",
-                  "text": "A family laptop has become slow, shows pop-up ads, and a parent's bank password was used by someone else."
-                },
-                {
-                  "type": "callout",
-                  "variant": "sandbox",
-                  "heading": "💻 SANDBOX CHALLENGE",
-                  "text": "Identify the likely malware type and a strategy for it, then describe two ways to protect the laptop going forward, before you check my ruling."
-                },
-                {
-                  "type": "heading",
-                  "text": "Assessment practice"
+                  "text": "Assessment practice",
+                  "level": 2
                 },
                 {
                   "type": "quizQuestion",
@@ -8635,15 +8986,30 @@
                 {
                   "type": "heading",
                   "text": "Test-ready recap",
-                  "level": 3
+                  "level": 2
                 },
                 {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "I have copied the key terms into my notes.",
-                    "I scored at least 5 out of 7 on the practice questions.",
-                    "If not, reread the key terms and the test tip, then try again."
+                  "type": "infoCards",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "📌",
+                      "heading": "Name the malware type",
+                      "text": "Say what it does, linked to the evidence in the scenario.",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "🧭",
+                      "heading": "Pair a tool with a habit",
+                      "text": "Software protection plus safe behaviour.",
+                      "tone": "purple"
+                    },
+                    {
+                      "icon": "🎯",
+                      "heading": "Aim for",
+                      "text": "At least 5/7 on the practice questions.",
+                      "tone": "green"
+                    }
                   ]
                 },
                 {
@@ -8651,7 +9017,8 @@
                   "heading": "Task 7",
                   "text": "Task 7 CP1 this week: master page, swatches and optimised images."
                 }
-              ]
+              ],
+              "estimatedMinutes": 45
             }
           ]
         },

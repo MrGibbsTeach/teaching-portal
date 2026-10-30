@@ -110,6 +110,16 @@ export type Block =
       spots: { id: string; label: string }[];
       devices: { name: string; correctSpot: string; why: string }[];
     }
+  | {
+      type: "fileSizeLab";
+      title?: string;
+      instruction?: string;
+      /** Original photo size in pixels. */
+      width: number;
+      height: number;
+      /** What the image is used for, shown in the verdict ("website", "email"...). */
+      useCase?: string;
+    }
   | { type: "svgFigure"; title?: string; caption?: string; alt: string; svg: string }
   | {
       type: "videoSlot";

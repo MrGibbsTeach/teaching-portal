@@ -160,6 +160,8 @@ function stepLabel(block: Block): string {
       return block.title ?? "Put it in order";
     case "branchingScenario":
       return block.title ?? "What would you do?";
+    case "fileSizeLab":
+      return block.title ?? "File size lab";
     case "placer":
       return block.title ?? "Place the devices";
     case "videoSlot":
