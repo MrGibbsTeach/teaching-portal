@@ -42,6 +42,17 @@
                   ]
                 },
                 {
+                  "type": "videoSlot",
+                  "title": "Spotting the five elements",
+                  "minutes": 4,
+                  "brief": "A short clip pausing on a streaming app screen and naming where line, shape, space, texture and colour are used. Suggested source: a teacher-filmed annotated screen recording of a real app.",
+                  "watchFor": [
+                    "Where each element appears",
+                    "Why naming is not enough: describe how it is used",
+                    "How colour is used sparingly"
+                  ]
+                },
+                {
                   "type": "heading",
                   "text": "Write this down",
                   "level": 3
@@ -177,6 +188,77 @@
                 },
                 {
                   "type": "heading",
+                  "text": "Try it yourself",
+                  "level": 2
+                },
+                {
+                  "type": "sorter",
+                  "title": "Which element is it?",
+                  "instruction": "Tap the element each example shows.",
+                  "categories": [
+                    "Line",
+                    "Shape",
+                    "Space",
+                    "Texture",
+                    "Colour"
+                  ],
+                  "items": [
+                    {
+                      "text": "A divider under a heading.",
+                      "category": 0,
+                      "why": "A mark joining two points."
+                    },
+                    {
+                      "text": "Round buttons on an app.",
+                      "category": 1,
+                      "why": "A 2D area with a boundary."
+                    },
+                    {
+                      "text": "Margins around text.",
+                      "category": 2,
+                      "why": "The area around and between items."
+                    },
+                    {
+                      "text": "A paper-grain background.",
+                      "category": 3,
+                      "why": "How a surface looks like it would feel."
+                    },
+                    {
+                      "text": "The brand colour on every button.",
+                      "category": 4,
+                      "why": "Hue used to link items."
+                    },
+                    {
+                      "text": "Wide gaps between the drinks and food sections on a menu board.",
+                      "category": 2,
+                      "why": "Space between items."
+                    },
+                    {
+                      "text": "A chalkboard-look background.",
+                      "category": 3,
+                      "why": "A rough, chalky texture."
+                    }
+                  ]
+                },
+                {
+                  "type": "flipCards",
+                  "title": "Name or describe?",
+                  "instruction": "Answer first, then flip.",
+                  "cards": [
+                    {
+                      "tag": "1 mark",
+                      "front": "\"The app uses colour.\" Why does this earn only 1 mark?",
+                      "back": "It names the element only. It does not say how it is used."
+                    },
+                    {
+                      "tag": "2 marks",
+                      "front": "How do you turn it into a 2-mark answer?",
+                      "back": "Describe how it is used: red is used only on the logo and the play button, so these stand out from the dark background."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
                   "text": "Test tip: Elements are not principles",
                   "level": 3
                 },
@@ -187,8 +269,24 @@
                   "text": "I mark these the same way every time: name the element, then prove you saw it in the actual image, not in general. 'They used colour' earns nothing. 'They used a bright orange CTA button against a dark background to pull the eye straight to it' earns the mark."
                 },
                 {
-                  "type": "richText",
-                  "html": "<p>Question: Identify two elements of design in the app. (2 marks)</p><p>Earns 0 or 1 mark</p><p><strong>\"Balance and contrast.\"</strong> — These are principles (contrast is part of emphasis), not elements. Earns 0.</p><p>Earns full marks</p><p><strong>\"Colour and shape.\"</strong> — Both are elements. Only five count: line, shape, space, texture, colour.</p>"
+                  "type": "infoCards",
+                  "title": "Test tip: what earns the marks",
+                  "intro": "Identify two elements of design in the app. (2 marks)",
+                  "columns": 2,
+                  "cards": [
+                    {
+                      "icon": "⚠️",
+                      "heading": "Earns 0 or 1 mark",
+                      "text": "\"Balance and contrast.\" — These are principles (contrast is part of emphasis), not elements. Earns 0.",
+                      "tone": "red"
+                    },
+                    {
+                      "icon": "⭐",
+                      "heading": "Earns full marks",
+                      "text": "\"Colour and shape.\" — Both are elements. Only five count: line, shape, space, texture, colour.",
+                      "tone": "green"
+                    }
+                  ]
                 },
                 {
                   "type": "paragraph",
@@ -290,7 +388,8 @@
                   "heading": "Up next",
                   "text": "Next lesson: the principles of design."
                 }
-              ]
+              ],
+              "estimatedMinutes": 45
             },
             {
               "id": "design-concepts-2-principles-of-design",
@@ -318,6 +417,17 @@
                     "Define balance, emphasis, dominance and unity.",
                     "Identify contrast and proportion as part of emphasis, and proximity and repetition as part of unity.",
                     "Identify principles in a digital product."
+                  ]
+                },
+                {
+                  "type": "videoSlot",
+                  "title": "Spotting the four principles",
+                  "minutes": 4,
+                  "brief": "A short clip analysing a concert poster for balance, emphasis, dominance and unity. Suggested source: a teacher-filmed annotated walk-through of a real poster.",
+                  "watchFor": [
+                    "What the eye sees first",
+                    "How grouping creates unity",
+                    "How balance can be asymmetrical"
                   ]
                 },
                 {
@@ -432,6 +542,87 @@
                 },
                 {
                   "type": "heading",
+                  "text": "Try it yourself",
+                  "level": 2
+                },
+                {
+                  "type": "sorter",
+                  "title": "Which principle is it?",
+                  "instruction": "Tap the principle each example shows.",
+                  "categories": [
+                    "Balance",
+                    "Emphasis",
+                    "Dominance",
+                    "Unity"
+                  ],
+                  "items": [
+                    {
+                      "text": "A large hero image that is seen first.",
+                      "category": 2,
+                      "why": "One item is clearly most important."
+                    },
+                    {
+                      "text": "A bright button on a grey page.",
+                      "category": 1,
+                      "why": "Contrast makes one item stand out."
+                    },
+                    {
+                      "text": "The same font on every page.",
+                      "category": 3,
+                      "why": "Repetition makes parts belong together."
+                    },
+                    {
+                      "text": "A centred title page, mirrored left and right.",
+                      "category": 0,
+                      "why": "Symmetrical balance."
+                    },
+                    {
+                      "text": "Contact details grouped together.",
+                      "category": 3,
+                      "why": "Proximity creates unity."
+                    },
+                    {
+                      "text": "A large photo on the left balanced by a column of text on the right.",
+                      "category": 0,
+                      "why": "Asymmetrical balance."
+                    }
+                  ]
+                },
+                {
+                  "type": "sorter",
+                  "title": "Which technique?",
+                  "instruction": "Each principle is created with techniques. Tap the technique.",
+                  "categories": [
+                    "Contrast",
+                    "Proportion",
+                    "Proximity",
+                    "Repetition"
+                  ],
+                  "items": [
+                    {
+                      "text": "A difference in colour, size, shape or tone.",
+                      "category": 0,
+                      "why": "Contrast, used for emphasis."
+                    },
+                    {
+                      "text": "The size of one item compared to another.",
+                      "category": 1,
+                      "why": "Proportion, used for emphasis."
+                    },
+                    {
+                      "text": "Grouping related items close together.",
+                      "category": 2,
+                      "why": "Proximity, used for unity."
+                    },
+                    {
+                      "text": "A small team logo repeated in each corner.",
+                      "category": 3,
+                      "why": "Repetition, used for unity."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
                   "text": "Test tip: Use the syllabus names",
                   "level": 3
                 },
@@ -442,8 +633,24 @@
                   "text": "The marker wants to see you connect the principle to the actual visual effect it causes. 'Emphasis' alone is a definition. 'Emphasis, because the designer made the date the largest text on the page so it's the first thing read' is an answer that scores."
                 },
                 {
-                  "type": "richText",
-                  "html": "<p>Question: Identify the principle created by grouping the contact details together. (1 mark)</p><p>Earns 0 or 1 mark</p><p><strong>\"Alignment.\"</strong> — Alignment is a compositional rule, not a principle.</p><p>Earns full marks</p><p><strong>\"Unity (proximity).\"</strong> — Proximity is part of unity, so naming unity is correct.</p>"
+                  "type": "infoCards",
+                  "title": "Test tip: what earns the marks",
+                  "intro": "Identify the principle created by grouping the contact details together. (1 mark)",
+                  "columns": 2,
+                  "cards": [
+                    {
+                      "icon": "⚠️",
+                      "heading": "Earns 0 or 1 mark",
+                      "text": "\"Alignment.\" — Alignment is a compositional rule, not a principle.",
+                      "tone": "red"
+                    },
+                    {
+                      "icon": "⭐",
+                      "heading": "Earns full marks",
+                      "text": "\"Unity (proximity).\" — Proximity is part of unity, so naming unity is correct.",
+                      "tone": "green"
+                    }
+                  ]
                 },
                 {
                   "type": "paragraph",
@@ -498,7 +705,8 @@
                   "heading": "Up next",
                   "text": "Next lesson: the relationship between elements and principles."
                 }
-              ]
+              ],
+              "estimatedMinutes": 45
             },
             {
               "id": "design-concepts-3-elements-and-principles-relationship",
@@ -521,6 +729,17 @@
                     "Explain how a named element creates a named principle.",
                     "State the effect on the viewer.",
                     "Write relationship answers using the element + how + principle + effect pattern."
+                  ]
+                },
+                {
+                  "type": "videoSlot",
+                  "title": "Linking an element to a principle",
+                  "minutes": 4,
+                  "brief": "A short clip building a full answer from a screenshot: element, how it is used, principle and effect on the viewer. Suggested source: a teacher-filmed whiteboard demo.",
+                  "watchFor": [
+                    "The four parts of the answer pattern",
+                    "How a choice creates an effect",
+                    "Why element and principle are different"
                   ]
                 },
                 {
@@ -665,8 +884,92 @@
                     "Use the syllabus terms: line, shape, space, texture or colour; balance, emphasis, dominance or unity.",
                     "Check that each answer explains what the viewer notices or understands."
                   ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Try it yourself",
+                  "level": 2
+                },
+                {
+                  "type": "sorter",
+                  "title": "Which principle does it create?",
+                  "instruction": "Each choice is an element used a certain way. Tap the principle it creates.",
+                  "categories": [
+                    "Unity",
+                    "Emphasis",
+                    "Dominance",
+                    "Balance"
+                  ],
+                  "items": [
+                    {
+                      "text": "Colour: the same brand colour on every heading.",
+                      "category": 0,
+                      "why": "Repetition creates unity."
+                    },
+                    {
+                      "text": "Space: wide gaps between sections, tight gaps within a section.",
+                      "category": 0,
+                      "why": "Proximity creates unity."
+                    },
+                    {
+                      "text": "Shape: one circle among many rectangles.",
+                      "category": 1,
+                      "why": "Contrast creates emphasis."
+                    },
+                    {
+                      "text": "Line: lines lead from the edge towards the product photo.",
+                      "category": 2,
+                      "why": "The photo dominates."
+                    },
+                    {
+                      "text": "Space: equal space on both sides of a centred logo.",
+                      "category": 3,
+                      "why": "Symmetrical balance."
+                    }
+                  ]
+                },
+                {
+                  "type": "sequence",
+                  "title": "Build the answer",
+                  "instruction": "Tap the four parts of the answer pattern in order.",
+                  "items": [
+                    "ELEMENT: what is being used, e.g. colour.",
+                    "HOW it is used: the button is bright green and the rest of the page is neutral.",
+                    "Creates a PRINCIPLE: contrast creates emphasis.",
+                    "EFFECT on the viewer: the shopper notices the button first."
+                  ],
+                  "explanation": "Element, how, principle, effect."
+                },
+                {
+                  "type": "branchingScenario",
+                  "title": "The green button",
+                  "intro": "An online shop has a green Add to cart button on a white page.",
+                  "steps": [
+                    {
+                      "situation": "Which full answer scores best?",
+                      "prompt": "Pick the strongest.",
+                      "choices": [
+                        {
+                          "text": "The bright green button contrasts with the neutral page, creating emphasis so the shopper notices it first.",
+                          "correct": true,
+                          "feedback": "Element, how, principle and effect."
+                        },
+                        {
+                          "text": "The page uses colour.",
+                          "correct": false,
+                          "feedback": "Names the element only."
+                        },
+                        {
+                          "text": "The button is green and looks nice.",
+                          "correct": false,
+                          "feedback": "No principle and no effect."
+                        }
+                      ]
+                    }
+                  ]
                 }
-              ]
+              ],
+              "estimatedMinutes": 45
             },
             {
               "id": "design-concepts-4-typography",
@@ -694,6 +997,17 @@
                     "Define the five parts of typography.",
                     "Describe typography choices in a digital product.",
                     "Justify typography choices for a given audience."
+                  ]
+                },
+                {
+                  "type": "videoSlot",
+                  "title": "Typography that works",
+                  "minutes": 4,
+                  "brief": "A short clip comparing a clear and a hard-to-read bus departure screen on typeface, size, alignment, format and spacing. Suggested source: a teacher-filmed side-by-side comparison.",
+                  "watchFor": [
+                    "How size creates hierarchy",
+                    "Why sans serif suits screens",
+                    "What makes text readable at a distance"
                   ]
                 },
                 {
@@ -783,6 +1097,140 @@
                 },
                 {
                   "type": "heading",
+                  "text": "Try it yourself",
+                  "level": 2
+                },
+                {
+                  "type": "sorter",
+                  "title": "Which part of typography?",
+                  "instruction": "Tap the part each example shows.",
+                  "categories": [
+                    "Typeface",
+                    "Size",
+                    "Alignment",
+                    "Format",
+                    "Spacing"
+                  ],
+                  "items": [
+                    {
+                      "text": "Arial for screen text.",
+                      "category": 0,
+                      "why": "The design of the letters."
+                    },
+                    {
+                      "text": "Heading 32 pt, body 12 pt.",
+                      "category": 1,
+                      "why": "How big the text is."
+                    },
+                    {
+                      "text": "Body text left-aligned.",
+                      "category": 2,
+                      "why": "How text lines up."
+                    },
+                    {
+                      "text": "Bold for key terms.",
+                      "category": 3,
+                      "why": "A style applied to text."
+                    },
+                    {
+                      "text": "Extra line spacing for readability.",
+                      "category": 4,
+                      "why": "Space between lines (leading)."
+                    }
+                  ]
+                },
+                {
+                  "type": "sorter",
+                  "title": "Do or avoid?",
+                  "instruction": "Which typography choices are good practice?",
+                  "categories": [
+                    "Do",
+                    "Avoid"
+                  ],
+                  "items": [
+                    {
+                      "text": "Use one typeface for headings and one for body text.",
+                      "category": 0,
+                      "why": "Consistent and clear."
+                    },
+                    {
+                      "text": "Use more than two typefaces.",
+                      "category": 1,
+                      "why": "Looks cluttered."
+                    },
+                    {
+                      "text": "Long passages in capitals.",
+                      "category": 1,
+                      "why": "Hard to read."
+                    },
+                    {
+                      "text": "Left-align body text.",
+                      "category": 0,
+                      "why": "Easier to read."
+                    },
+                    {
+                      "text": "Script fonts for small text.",
+                      "category": 1,
+                      "why": "Hard to read at small sizes."
+                    },
+                    {
+                      "text": "Keep strong text and background contrast.",
+                      "category": 0,
+                      "why": "Readable."
+                    }
+                  ]
+                },
+                {
+                  "type": "branchingScenario",
+                  "title": "The retirement village newsletter",
+                  "intro": "A retirement village is designing a printed newsletter for residents, many of whom have poor eyesight.",
+                  "steps": [
+                    {
+                      "situation": "Which two typography choices suit the residents?",
+                      "prompt": "Pick the best answer.",
+                      "choices": [
+                        {
+                          "text": "A larger body size (for example 14 pt or more) and strong contrast between dark text and a plain light background, so the text is easier to read.",
+                          "correct": true,
+                          "feedback": "Two choices, each with a reason tied to poor eyesight."
+                        },
+                        {
+                          "text": "A small script font to look elegant.",
+                          "correct": false,
+                          "feedback": "Hard for poor eyesight."
+                        },
+                        {
+                          "text": "Tight line spacing to fit more in.",
+                          "correct": false,
+                          "feedback": "Makes lines merge."
+                        }
+                      ]
+                    },
+                    {
+                      "situation": "Why may justified alignment be a poor choice?",
+                      "prompt": "Pick the best answer.",
+                      "choices": [
+                        {
+                          "text": "Justified text creates uneven gaps between words, which makes lines harder to follow for readers with poor eyesight.",
+                          "correct": true,
+                          "feedback": "The effect on these readers."
+                        },
+                        {
+                          "text": "It is illegal.",
+                          "correct": false,
+                          "feedback": "Not true."
+                        },
+                        {
+                          "text": "It uses more ink.",
+                          "correct": false,
+                          "feedback": "Not the reason."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
                   "text": "Test tip: Name the part and give a reason",
                   "level": 3
                 },
@@ -793,8 +1241,24 @@
                   "text": "Don't just name the typography choice — tie it to the audience. 'Larger font' is thin. 'A larger font size because residents reading the timetable outdoors, often at a distance or in bright sun, need it legible without squinting' is what I'd sign off."
                 },
                 {
-                  "type": "richText",
-                  "html": "<p>Question: Describe one typography choice for the bus screen. (2 marks)</p><p>Earns 0 or 1 mark</p><p><strong>\"Use a good font.\"</strong> — \"Good\" is not a reason and \"font\" is too general.</p><p><strong>Earns full marks</strong> — \"Use a sans serif typeface such as Arial, because it has no small strokes and is clearer to read from a distance.\"</p>"
+                  "type": "infoCards",
+                  "title": "Test tip: what earns the marks",
+                  "intro": "Describe one typography choice for the bus screen. (2 marks)",
+                  "columns": 2,
+                  "cards": [
+                    {
+                      "icon": "⚠️",
+                      "heading": "Earns 0 or 1 mark",
+                      "text": "\"Use a good font.\" — \"Good\" is not a reason and \"font\" is too general.",
+                      "tone": "red"
+                    },
+                    {
+                      "icon": "⭐",
+                      "heading": "Earns full marks",
+                      "text": "\"Use a sans serif typeface such as Arial, because it has no small strokes and is clearer to read from a distance.\"",
+                      "tone": "green"
+                    }
+                  ]
                 },
                 {
                   "type": "paragraph",
@@ -849,7 +1313,8 @@
                   "heading": "Up next",
                   "text": "Next lesson: compositional rules."
                 }
-              ]
+              ],
+              "estimatedMinutes": 45
             },
             {
               "id": "design-concepts-5-compositional-rules",
@@ -877,6 +1342,17 @@
                     "Describe the rule of thirds.",
                     "Describe how a grid and alignment organise content.",
                     "Apply compositional rules to improve a layout."
+                  ]
+                },
+                {
+                  "type": "videoSlot",
+                  "title": "Composition: thirds, grids and alignment",
+                  "minutes": 4,
+                  "brief": "A short clip fixing a centred banner photo using the rule of thirds, a grid and alignment. Suggested source: a teacher-filmed screen recording in Canva or Photopea.",
+                  "watchFor": [
+                    "Where the thirds lines sit",
+                    "How a grid sets columns and margins",
+                    "What alignment adds"
                   ]
                 },
                 {
@@ -952,6 +1428,84 @@
                 },
                 {
                   "type": "heading",
+                  "text": "Try it yourself",
+                  "level": 2
+                },
+                {
+                  "type": "sorter",
+                  "title": "Which rule?",
+                  "instruction": "Tap the rule each description fits.",
+                  "categories": [
+                    "Rule of thirds",
+                    "Grid",
+                    "Alignment",
+                    "Focal point"
+                  ],
+                  "items": [
+                    {
+                      "text": "Divide the frame into a 3 x 3 grid and place key items on the lines or crossings.",
+                      "category": 0,
+                      "why": "The rule of thirds."
+                    },
+                    {
+                      "text": "Invisible columns and rows used to place content consistently.",
+                      "category": 1,
+                      "why": "A grid."
+                    },
+                    {
+                      "text": "Lining up the edges or centres of items so they look connected.",
+                      "category": 2,
+                      "why": "Alignment."
+                    },
+                    {
+                      "text": "The first place the eye goes.",
+                      "category": 3,
+                      "why": "The focal point."
+                    }
+                  ]
+                },
+                {
+                  "type": "sequence",
+                  "title": "Lay out a page in four steps",
+                  "instruction": "Tap the steps in order.",
+                  "items": [
+                    "Set a grid: choose columns and margins first.",
+                    "Place the focal point on a thirds line.",
+                    "Align everything: snap text and images to the grid lines.",
+                    "Check the space: keep equal gaps between items of the same type."
+                  ],
+                  "explanation": "Grid, focal point, align, check the space."
+                },
+                {
+                  "type": "branchingScenario",
+                  "title": "The school play post",
+                  "intro": "A student's Instagram post for a school play has the title, date, photo and ticket link all centred and stacked down the middle, with different gaps between each.",
+                  "steps": [
+                    {
+                      "situation": "How could a grid and alignment improve it?",
+                      "prompt": "Pick the best answer.",
+                      "choices": [
+                        {
+                          "text": "A grid would give every item the same margins and column edges, and aligning the text to one edge would make the post look organised and connected, with equal gaps between items.",
+                          "correct": true,
+                          "feedback": "Grid and alignment, each with an effect."
+                        },
+                        {
+                          "text": "Add more items.",
+                          "correct": false,
+                          "feedback": "Makes it more cluttered."
+                        },
+                        {
+                          "text": "Use bigger text everywhere.",
+                          "correct": false,
+                          "feedback": "Not a grid or alignment fix."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
                   "text": "Test tip: Describe, then apply",
                   "level": 3
                 },
@@ -962,8 +1516,24 @@
                   "text": "I want the rule of thirds defined properly first, then applied to the actual photo — don't skip straight to 'move it left'. Tell me which line or intersection, and why that placement is stronger than centred."
                 },
                 {
-                  "type": "richText",
-                  "html": "<p>Question: Explain how the rule of thirds could improve the banner. (2 marks)</p><p><strong>Earns 0 or 1 mark</strong> — \"Use the rule of thirds to make it better.\"</p><p>Repeats the question.</p><p><strong>Earns full marks</strong> — \"Move the surfer onto the left vertical third line so the image is more interesting and the right two-thirds is free for the heading.\"</p>"
+                  "type": "infoCards",
+                  "title": "Test tip: what earns the marks",
+                  "intro": "Explain how the rule of thirds could improve the banner. (2 marks)",
+                  "columns": 2,
+                  "cards": [
+                    {
+                      "icon": "⚠️",
+                      "heading": "Earns 0 or 1 mark",
+                      "text": "\"Use the rule of thirds to make it better.\" Repeats the question.",
+                      "tone": "red"
+                    },
+                    {
+                      "icon": "⭐",
+                      "heading": "Earns full marks",
+                      "text": "\"Move the surfer onto the left vertical third line so the image is more interesting and the right two-thirds is free for the heading.\"",
+                      "tone": "green"
+                    }
+                  ]
                 },
                 {
                   "type": "paragraph",
@@ -1018,7 +1588,8 @@
                   "heading": "Up next",
                   "text": "Next lesson: Analysing Existing Products."
                 }
-              ]
+              ],
+              "estimatedMinutes": 45
             },
             {
               "id": "design-concepts-6-analysing-existing-products",
@@ -1046,6 +1617,17 @@
                     "Identify elements and principles in a product.",
                     "Explain relationships between elements and principles.",
                     "Evaluate strengths and weaknesses of a design."
+                  ]
+                },
+                {
+                  "type": "videoSlot",
+                  "title": "Analysing a product in four moves",
+                  "minutes": 4,
+                  "brief": "A short clip analysing a pizza ordering screen: scan, name, explain, judge. Suggested source: a teacher-filmed annotated screen recording.",
+                  "watchFor": [
+                    "What the eye sees first, second, third",
+                    "How to name the element and the principle",
+                    "How to give a strength, a weakness and a fix"
                   ]
                 },
                 {
@@ -1121,6 +1703,84 @@
                 },
                 {
                   "type": "heading",
+                  "text": "Try it yourself",
+                  "level": 2
+                },
+                {
+                  "type": "sequence",
+                  "title": "Analyse in four moves",
+                  "instruction": "Tap the four moves in order.",
+                  "items": [
+                    "Scan: what do you see first, second, third?",
+                    "Name: which elements and principles cause that order?",
+                    "Explain: element + how + principle + effect.",
+                    "Judge: one strength, one weakness, one fix."
+                  ],
+                  "explanation": "Scan, name, explain, judge."
+                },
+                {
+                  "type": "sorter",
+                  "title": "Which command term?",
+                  "instruction": "Tap the level each answer is written at.",
+                  "categories": [
+                    "Identify",
+                    "Describe",
+                    "Explain",
+                    "Evaluate"
+                  ],
+                  "items": [
+                    {
+                      "text": "The element is colour.",
+                      "category": 0,
+                      "why": "Names the element only."
+                    },
+                    {
+                      "text": "Red is used only on the Order now button.",
+                      "category": 1,
+                      "why": "Says how it is used."
+                    },
+                    {
+                      "text": "The red button contrasts with the white background, creating emphasis so the user sees it first.",
+                      "category": 2,
+                      "why": "Element, how, principle and effect."
+                    },
+                    {
+                      "text": "The prices are too small and pale, so make them bold and darker.",
+                      "category": 3,
+                      "why": "A judgement with a reason and an improvement."
+                    }
+                  ]
+                },
+                {
+                  "type": "branchingScenario",
+                  "title": "The council event website",
+                  "intro": "A council event website home page has a full-width photo of fireworks, the event name in large white text over the photo, and four equal buttons below: Map, Food, Parking, Tickets.",
+                  "steps": [
+                    {
+                      "situation": "Explain a relationship between one element and unity.",
+                      "prompt": "Pick the best answer.",
+                      "choices": [
+                        {
+                          "text": "Shape: four equal buttons of the same size repeat across the page, creating unity so the visitor sees them as one set of options.",
+                          "correct": true,
+                          "feedback": "Element, how, principle and effect, tied to the page."
+                        },
+                        {
+                          "text": "The page has buttons.",
+                          "correct": false,
+                          "feedback": "Names only."
+                        },
+                        {
+                          "text": "The fireworks are pretty.",
+                          "correct": false,
+                          "feedback": "No element, principle or effect."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
                   "text": "Test tip: Refer to the stimulus",
                   "level": 3
                 },
@@ -1131,8 +1791,24 @@
                   "text": "Check your own command word before you write a single sentence. I've sent back more assessment answers for ignoring the command word than for getting the content wrong — the content was often right, just pitched at the wrong level."
                 },
                 {
-                  "type": "richText",
-                  "html": "<p>Question: Explain the relationship between one element and one principle in the app. (3 marks)</p><p>Earns 0 or 1 mark</p><p>\"Colour creates emphasis.\"</p><p>True in general, but nothing from this app.</p><p><strong>Earns full marks</strong> — \"The red Order now button contrasts with the white screen, creating emphasis, so users find the button straight away.\"</p>"
+                  "type": "infoCards",
+                  "title": "Test tip: what earns the marks",
+                  "intro": "Explain the relationship between one element and one principle in the app. (3 marks)",
+                  "columns": 2,
+                  "cards": [
+                    {
+                      "icon": "⚠️",
+                      "heading": "Earns 0 or 1 mark",
+                      "text": "\"Colour creates emphasis.\" True in general, but nothing from this app.",
+                      "tone": "red"
+                    },
+                    {
+                      "icon": "⭐",
+                      "heading": "Earns full marks",
+                      "text": "\"The red Order now button contrasts with the white screen, creating emphasis, so users find the button straight away.\"",
+                      "tone": "green"
+                    }
+                  ]
                 },
                 {
                   "type": "paragraph",
@@ -1187,7 +1863,8 @@
                   "heading": "Up next",
                   "text": "Next lesson: modifying products and annotating designs."
                 }
-              ]
+              ],
+              "estimatedMinutes": 45
             },
             {
               "id": "design-concepts-7-modifying-and-annotating-designs",
@@ -1215,6 +1892,17 @@
                     "Identify what a brief requires that a draft does not provide.",
                     "Redesign a layout using elements, principles and compositional rules.",
                     "Write detailed annotations that explain each choice."
+                  ]
+                },
+                {
+                  "type": "videoSlot",
+                  "title": "Modify and annotate",
+                  "minutes": 4,
+                  "brief": "A short clip redesigning a cluttered flyer to meet a brief and annotating the changes. Suggested source: a teacher-filmed screen recording using the dog-walking flyer.",
+                  "watchFor": [
+                    "What the brief requires",
+                    "How each change is annotated",
+                    "Where the annotation sits next to the part"
                   ]
                 },
                 {
@@ -1290,6 +1978,97 @@
                 },
                 {
                   "type": "heading",
+                  "text": "Try it yourself",
+                  "level": 2
+                },
+                {
+                  "type": "sorter",
+                  "title": "Weak or strong annotation?",
+                  "instruction": "Strong annotations name the choice, the design term and the reason.",
+                  "categories": [
+                    "Weak",
+                    "Strong"
+                  ],
+                  "items": [
+                    {
+                      "text": "Nice colours",
+                      "category": 0,
+                      "why": "No term and no reason."
+                    },
+                    {
+                      "text": "Phone number in bold orange, contrasting with the navy background, so it is the second focal point.",
+                      "category": 1,
+                      "why": "Names the choice, the term and the effect."
+                    },
+                    {
+                      "text": "Logo",
+                      "category": 0,
+                      "why": "A label only."
+                    },
+                    {
+                      "text": "Services grouped in one box (proximity) with matching paw icons (repetition).",
+                      "category": 1,
+                      "why": "Names the terms and the effect of unity."
+                    },
+                    {
+                      "text": "Big title",
+                      "category": 0,
+                      "why": "No reason."
+                    },
+                    {
+                      "text": "One sans serif typeface; heading 36 pt, body 14 pt, left-aligned for easy reading.",
+                      "category": 1,
+                      "why": "Typography choices with a reason."
+                    }
+                  ]
+                },
+                {
+                  "type": "flipCards",
+                  "title": "The annotation formula",
+                  "instruction": "Answer first, then flip.",
+                  "cards": [
+                    {
+                      "tag": "Formula",
+                      "front": "What are the three parts of a detailed annotation?",
+                      "back": "WHAT you did + DESIGN TERM + WHY or EFFECT."
+                    },
+                    {
+                      "tag": "Check",
+                      "front": "Why does a design with no annotations score low?",
+                      "back": "The marker cannot see your reasoning, so even good choices earn no marks."
+                    }
+                  ]
+                },
+                {
+                  "type": "branchingScenario",
+                  "title": "The bakery post",
+                  "intro": "A bakery's draft Instagram post has the logo in the centre, the opening hours in tiny text at the bottom, and five different fonts. The owner wants people to notice the new Saturday hours.",
+                  "steps": [
+                    {
+                      "situation": "Which two modifications best meet the owner's need?",
+                      "prompt": "Pick the best answer.",
+                      "choices": [
+                        {
+                          "text": "Make the Saturday hours large and bold in a contrasting colour so they are the focal point, and reduce the five fonts to one or two so the post looks unified.",
+                          "correct": true,
+                          "feedback": "Two changes tied to the brief."
+                        },
+                        {
+                          "text": "Make the logo bigger.",
+                          "correct": false,
+                          "feedback": "Does not help the hours stand out."
+                        },
+                        {
+                          "text": "Add two more fonts.",
+                          "correct": false,
+                          "feedback": "Makes it worse."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
                   "text": "Test tip: A design with no annotations scores low",
                   "level": 3
                 },
@@ -1300,8 +2079,24 @@
                   "text": "I'm checking every annotation against the brief, not just against good taste. A modification can look great and still score nothing if you never connect it back to what the client actually asked for."
                 },
                 {
-                  "type": "richText",
-                  "html": "<p>Question: Redesign the flyer. Annotate layout, elements and principles, and typography. (12 marks)</p><p><strong>Earns 0 or 1 mark</strong> — A neat drawing with no notes. The marker cannot award marks for reasons you did not write.</p><p><strong>Earns full marks</strong> — A clear sketch with 8 to 10 annotations, each using the formula WHAT + TERM + WHY, and lines pointing to the part described.</p>"
+                  "type": "infoCards",
+                  "title": "Test tip: what earns the marks",
+                  "intro": "Redesign the flyer. Annotate layout, elements and principles, and typography. (12 marks)",
+                  "columns": 2,
+                  "cards": [
+                    {
+                      "icon": "⚠️",
+                      "heading": "Earns 0 or 1 mark",
+                      "text": "A neat drawing with no notes. The marker cannot award marks for reasons you did not write.",
+                      "tone": "red"
+                    },
+                    {
+                      "icon": "⭐",
+                      "heading": "Earns full marks",
+                      "text": "A clear sketch with 8 to 10 annotations, each using the formula WHAT + TERM + WHY, and lines pointing to the part described.",
+                      "tone": "green"
+                    }
+                  ]
                 },
                 {
                   "type": "paragraph",
@@ -1371,7 +2166,8 @@
                   "heading": "EST preparation",
                   "text": "Weeks 3 to 5 are EST preparation with your teacher. Bring your notes from all Unit 3 lessons."
                 }
-              ]
+              ],
+              "estimatedMinutes": 45
             }
           ]
         },
