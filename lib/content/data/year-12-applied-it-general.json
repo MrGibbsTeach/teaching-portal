@@ -1391,27 +1391,45 @@
                   "text": "Call-out today: a client's laptop 'just feels slow' opening video files. Before I send a tech out, I want you to be able to explain what's actually happening inside the box — CPU, primary memory, secondary storage, volatile vs non-volatile — because half of 'it's slow' complaints are really 'you need more RAM', not a dying CPU."
                 },
                 {
-                  "type": "paragraph",
-                  "text": "Purpose of the CPU; purpose and types of memory and storage: primary, secondary"
+                  "type": "infoCards",
+                  "title": "By the end of this lesson you can",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "🎯",
+                      "heading": "Describe the purpose of the CPU.",
+                      "text": "",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "🧭",
+                      "heading": "Compare primary and secondary storage.",
+                      "text": "",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "✅",
+                      "heading": "Explain how CPU and RAM specifications affect performance.",
+                      "text": "",
+                      "tone": "blue"
+                    }
+                  ]
                 },
                 {
-                  "type": "heading",
-                  "text": "Success criteria",
-                  "level": 3
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Describe the purpose of the CPU.",
-                    "Compare primary and secondary storage.",
-                    "Explain how CPU and RAM specifications affect performance."
+                  "type": "videoSlot",
+                  "title": "What is inside a laptop?",
+                  "minutes": 4,
+                  "brief": "A short clip opening up a laptop to show the CPU, RAM and SSD, with a note on what each one does. Suggested source: a teacher-filmed teardown of a spare laptop or a short hardware explainer.",
+                  "watchFor": [
+                    "Which chip is the CPU",
+                    "Where the RAM and SSD sit",
+                    "Why a laptop with little RAM feels slow"
                   ]
                 },
                 {
                   "type": "heading",
-                  "text": "Write this down",
-                  "level": 3
+                  "text": "The big idea",
+                  "level": 2
                 },
                 {
                   "type": "keyTerms",
@@ -1433,6 +1451,13 @@
                       "definition": "Loses its data when power is turned off."
                     }
                   ]
+                },
+                {
+                  "type": "svgFigure",
+                  "title": "Opening a video file",
+                  "alt": "A file moves from secondary storage into RAM and then to the CPU.",
+                  "svg": "<svg viewBox=\"0 0 680 170\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui,sans-serif\">\n<style>\n.mm-b{fill:#f1f5f9;stroke:#cbd5e1;stroke-width:2;animation:mm-g 9s infinite}.mm-2{animation-delay:3s}.mm-3{animation-delay:6s}\n@keyframes mm-g{0%,28%{fill:#bfdbfe}32%,100%{fill:#f1f5f9}}\n.mm-t{font-size:14px;font-weight:700;fill:#0f172a}.mm-s{font-size:11.5px;fill:#475569}.mm-a{stroke:#94a3b8;stroke-width:3}\n.mm-p{fill:#2563eb;animation:mm-m 9s linear infinite}@keyframes mm-m{0%{transform:translateX(0)}100%{transform:translateX(480px)}}\n@media (prefers-reduced-motion: reduce){*{animation:none!important}}\n</style>\n<line class=\"mm-a\" x1=\"170\" y1=\"85\" x2=\"238\" y2=\"85\"/><line class=\"mm-a\" x1=\"418\" y1=\"85\" x2=\"486\" y2=\"85\"/>\n<rect class=\"mm-b\" x=\"10\" y=\"35\" width=\"160\" height=\"100\" rx=\"14\"/><text x=\"24\" y=\"66\" class=\"mm-t\">Secondary storage</text><text x=\"24\" y=\"86\" class=\"mm-s\">SSD or HDD. The file</text><text x=\"24\" y=\"102\" class=\"mm-s\">lives here, powered off.</text>\n<rect class=\"mm-b mm-2\" x=\"248\" y=\"35\" width=\"160\" height=\"100\" rx=\"14\"/><text x=\"262\" y=\"66\" class=\"mm-t\">Primary memory</text><text x=\"262\" y=\"86\" class=\"mm-s\">RAM. Holds what is in</text><text x=\"262\" y=\"102\" class=\"mm-s\">use now. Volatile.</text>\n<rect class=\"mm-b mm-3\" x=\"496\" y=\"35\" width=\"174\" height=\"100\" rx=\"14\"/><text x=\"510\" y=\"66\" class=\"mm-t\">CPU</text><text x=\"510\" y=\"86\" class=\"mm-s\">Processes the instructions</text><text x=\"510\" y=\"102\" class=\"mm-s\">and plays the video.</text>\n<circle class=\"mm-p\" cx=\"40\" cy=\"152\" r=\"7\"/>\n</svg>",
+                  "caption": "Each stage lights up in turn: the file sits in storage, loads into RAM, and the CPU processes it."
                 },
                 {
                   "type": "animation3d",
@@ -1468,39 +1493,62 @@
                   ]
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: CPU and Memory",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"hardware-cpu-and-memory-title hardware-cpu-and-memory-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"hardware-cpu-and-memory-title\">CPU and Memory: Concept cards for Purpose, Volatile?, Speed, Typical size.</title><desc id=\"hardware-cpu-and-memory-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#dbeafe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#1d4ed8\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">CPU and Memory</tspan></text><text x=\"36\" y=\"94\" fill=\"#1d4ed8\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">FEATURE</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#1d4ed8\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#1d4ed8\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Purpose</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Primary (RAM): Holds data in use now ·</tspan><tspan x=\"84\" dy=\"19\">Secondary (SSD, HDD): Stores files long…</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0e7490\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#0e7490\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Volatile?</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Primary (RAM): Yes · Secondary (SSD, HDD):</tspan><tspan x=\"444\" dy=\"19\">No</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#1d4ed8\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#1d4ed8\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Speed</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Primary (RAM): Very fast · Secondary (SSD,</tspan><tspan x=\"84\" dy=\"19\">HDD): Slower</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0e7490\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#0e7490\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Typical size</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Primary (RAM): 8 to 32 GB · Secondary (SSD,</tspan><tspan x=\"444\" dy=\"19\">HDD): 256 GB to several TB</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
+                  "type": "sequence",
+                  "title": "Put the video playback in order",
+                  "instruction": "Tap what happens when you double-click a saved video.",
+                  "items": [
+                    "The file is stored on the SSD.",
+                    "The file and the video player are loaded into RAM.",
+                    "The CPU processes the instructions to decode and play the video.",
+                    "Power off: RAM is cleared, but the file is still on the SSD."
+                  ],
+                  "explanation": "Storage holds the file, RAM holds what is in use, the CPU processes it. RAM is volatile; the SSD is not."
                 },
                 {
                   "type": "heading",
-                  "text": "Worked example: What happens when you open a video file",
-                  "level": 3
+                  "text": "RAM or storage?",
+                  "level": 2
                 },
                 {
-                  "type": "richText",
-                  "html": "<p>You double-click a video saved on your laptop.</p><p><strong>Secondary storage</strong> — The file is stored on the SSD.</p><p><strong>Primary memory</strong> — The file and the video player are loaded into RAM.</p><p><strong>CPU</strong> — The CPU processes the instructions to decode and play the video.</p><p><strong>Power off</strong> — RAM is cleared. The file is still on the SSD.</p>"
-                },
-                {
-                  "type": "quizQuestion",
-                  "question": {
-                    "id": "hardware-1-cpu-and-memory-quick-check",
-                    "questionType": "mcq",
-                    "text": "Quick check: Which term matches this description? Processes instructions and performs calculations. Speed is measured in GHz; more cores means more tasks at once.",
-                    "options": [
-                      "Volatile",
-                      "CPU (central processing unit)",
-                      "Primary memory",
-                      "Secondary storage"
-                    ],
-                    "correctIndex": 1,
-                    "explanation": "The term is CPU (central processing unit). Processes instructions and performs calculations. Speed is measured in GHz; more cores means more tasks at once."
-                  }
-                },
-                {
-                  "type": "heading",
-                  "text": "Primary vs secondary",
-                  "level": 3
+                  "type": "sorter",
+                  "title": "Primary or secondary?",
+                  "instruction": "Which type of memory does each statement describe?",
+                  "categories": [
+                    "Primary memory (RAM)",
+                    "Secondary storage (SSD, HDD)"
+                  ],
+                  "items": [
+                    {
+                      "text": "Loses its contents when the power goes off.",
+                      "category": 0,
+                      "why": "Volatile memory is RAM."
+                    },
+                    {
+                      "text": "Keeps your files with the power off.",
+                      "category": 1,
+                      "why": "Non-volatile storage keeps data without power."
+                    },
+                    {
+                      "text": "Holds the data being used right now, so the CPU can reach it fast.",
+                      "category": 0,
+                      "why": "Primary memory is the CPU's working space."
+                    },
+                    {
+                      "text": "Typically 256 GB to several TB.",
+                      "category": 1,
+                      "why": "Secondary storage is much larger than RAM."
+                    },
+                    {
+                      "text": "Very fast but high cost per GB.",
+                      "category": 0,
+                      "why": "RAM is much faster and costs more per GB."
+                    },
+                    {
+                      "text": "Where a saved video file lives long term.",
+                      "category": 1,
+                      "why": "Files are stored long term on secondary storage."
+                    }
+                  ]
                 },
                 {
                   "type": "table",
@@ -1538,39 +1586,118 @@
                   ]
                 },
                 {
+                  "type": "branchingScenario",
+                  "title": "Two laptops",
+                  "intro": "Laptop A: 4-core 2.4 GHz CPU, 16 GB RAM, 256 GB SSD. Laptop B: 2-core 1.6 GHz CPU, 8 GB RAM, 1 TB HDD. A student needs one for school.",
+                  "steps": [
+                    {
+                      "situation": "She edits short videos for a media project.",
+                      "prompt": "Which statement best explains which laptop suits her?",
+                      "choices": [
+                        {
+                          "text": "Laptop A: video editing loads large clips into RAM, and 16 GB with a faster 4-core CPU copes better than 8 GB.",
+                          "correct": true,
+                          "feedback": "It links RAM and CPU specs to the task."
+                        },
+                        {
+                          "text": "Laptop B, because it stores more videos.",
+                          "correct": false,
+                          "feedback": "That is secondary storage, not what makes editing smooth."
+                        },
+                        {
+                          "text": "Laptop A, because it is newer.",
+                          "correct": false,
+                          "feedback": "Age is not a specification. Name the specs and the effect."
+                        }
+                      ]
+                    },
+                    {
+                      "situation": "She compares the storage of the two laptops.",
+                      "prompt": "Which comparison earns the marks?",
+                      "choices": [
+                        {
+                          "text": "B holds four times more (1 TB against 256 GB), but A's SSD is faster and more durable than B's HDD.",
+                          "correct": true,
+                          "feedback": "It compares capacity and speed or durability, as the marker wants."
+                        },
+                        {
+                          "text": "B has more storage.",
+                          "correct": false,
+                          "feedback": "Only one feature, and no comparison of speed."
+                        },
+                        {
+                          "text": "They both store files.",
+                          "correct": false,
+                          "feedback": "A comparison needs differences, not a shared feature."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "flipCards",
+                  "title": "Check your understanding",
+                  "instruction": "Answer first, then flip.",
+                  "cards": [
+                    {
+                      "tag": "Define",
+                      "front": "What does the CPU do?",
+                      "back": "It processes instructions and performs calculations. Speed is measured in GHz and more cores means more tasks at once."
+                    },
+                    {
+                      "tag": "Define",
+                      "front": "What does volatile mean?",
+                      "back": "Loses its data when the power is turned off, like RAM."
+                    },
+                    {
+                      "tag": "Explain",
+                      "front": "Why might 8 GB of RAM be slow for video editing?",
+                      "back": "Large clips fill the RAM quickly, so the computer falls back on slower storage and lags."
+                    }
+                  ]
+                },
+                {
                   "type": "callout",
                   "variant": "senior-wisdom",
-                  "heading": "💡 SENIOR WISDOM · SPARKY MILLER",
-                  "text": "Volatile is the word that trips people up every year. It just means 'loses its contents when the power goes' — that's RAM. Secondary storage (your SSD or hard drive) keeps everything with the power off. If a student can't tell me which one is volatile, they can't yet explain why unsaved work disappears in a blackout."
+                  "heading": "Sparky's warning",
+                  "text": "Volatile is the word that trips people up every year. It just means 'loses its contents when the power goes', which is RAM. If a student cannot tell me which one is volatile, they cannot yet explain why unsaved work disappears in a blackout."
+                },
+                {
+                  "type": "infoCards",
+                  "title": "Test tip: what earns the marks",
+                  "intro": "Explain why a laptop with 8 GB of RAM may be slow for video editing. (2 marks)",
+                  "columns": 2,
+                  "cards": [
+                    {
+                      "icon": "⚠️",
+                      "heading": "Earns 0 or 1 mark: \"It cannot store many videos.\"",
+                      "text": "That is secondary storage, not RAM.",
+                      "tone": "red"
+                    },
+                    {
+                      "icon": "⭐",
+                      "heading": "Earns full marks",
+                      "text": "\"Video editing loads large clips into RAM; with only 8 GB it fills quickly, so the computer uses slower storage instead and lags.\" RAM, the task and the effect.",
+                      "tone": "green"
+                    }
+                  ]
+                },
+                {
+                  "type": "infoCards",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "📂",
+                      "heading": "Scenario: Choosing a laptop",
+                      "text": "A student compares two laptops for school. Laptop A: 4-core 2.4 GHz CPU, 16 GB RAM, 256 GB SSD. Laptop B: 2-core 1.6 GHz CPU, 8 GB RAM, 1 TB HDD. Answer the questions below using this scenario.",
+                      "tone": "amber"
+                    }
+                  ]
                 },
                 {
                   "type": "heading",
-                  "text": "Test tip: RAM is not storage space",
-                  "level": 3
-                },
-                {
-                  "type": "callout",
-                  "variant": "pr-review",
-                  "heading": "🧰 CALLBACK CHECK · SPARKY IS REVIEWING THE JOB",
-                  "text": "I grade the CPU question on function, not just the acronym — what does it actually do, in your own words, not 'it's the brain'. And for the storage comparison, I want capacity and speed both mentioned, not just one."
-                },
-                {
-                  "type": "richText",
-                  "html": "<p>Question: Explain why a laptop with 8 GB of RAM may be slow for video editing. (2 marks)</p><p><strong>Earns 0 or 1 mark</strong> — \"It cannot store many videos.\"</p><p>That is secondary storage, not RAM.</p><p><strong>Earns full marks</strong> — \"Video editing loads large clips into RAM; with only 8 GB it fills quickly, so the computer uses slower storage instead and lags.\"</p>"
-                },
-                {
-                  "type": "paragraph",
-                  "text": "A student compares two laptops for school. Laptop A: 4-core 2.4 GHz CPU, 16 GB RAM, 256 GB SSD. Laptop B: 2-core 1.6 GHz CPU, 8 GB RAM, 1 TB HDD."
-                },
-                {
-                  "type": "callout",
-                  "variant": "sandbox",
-                  "heading": "🛠️ WORKSHOP CHALLENGE",
-                  "text": "Describe the CPU's purpose and compare the two laptops' storage yourself first — then check what I'd flag as missing."
-                },
-                {
-                  "type": "heading",
-                  "text": "Assessment practice"
+                  "text": "Assessment practice",
+                  "level": 2
                 },
                 {
                   "type": "quizQuestion",
@@ -1595,15 +1722,30 @@
                 {
                   "type": "heading",
                   "text": "Test-ready recap",
-                  "level": 3
+                  "level": 2
                 },
                 {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "I have copied the key terms into my notes.",
-                    "I scored at least 5 out of 6 on the practice questions.",
-                    "If not, reread the key terms and the test tip, then try again."
+                  "type": "infoCards",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "🧠",
+                      "heading": "Function, not 'the brain'",
+                      "text": "The CPU processes instructions and performs calculations.",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "💾",
+                      "heading": "Compare on capacity and speed",
+                      "text": "Name both, for both types of storage.",
+                      "tone": "purple"
+                    },
+                    {
+                      "icon": "🎯",
+                      "heading": "Aim for",
+                      "text": "At least 5/6 on the practice questions. If not, reread the key terms and test tip.",
+                      "tone": "green"
+                    }
                   ]
                 },
                 {
@@ -1611,7 +1753,8 @@
                   "heading": "Up next",
                   "text": "Next lesson: peripheral devices and types of computer systems."
                 }
-              ]
+              ],
+              "estimatedMinutes": 45
             },
             {
               "id": "hardware-2-peripherals-and-computer-systems",
@@ -1624,27 +1767,45 @@
                   "text": "A physiotherapy clinic wants their whole setup reviewed — barcode scanners, printers, the lot — and they need every device sorted correctly as input, output or storage before I can even start on the network side. Get the classification wrong and the rest of the job plan is wrong too."
                 },
                 {
-                  "type": "paragraph",
-                  "text": "Types of peripheral devices; types of computer systems: desktop systems, mobile devices, server"
+                  "type": "infoCards",
+                  "title": "By the end of this lesson you can",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "🎯",
+                      "heading": "Classify peripherals as input, output or storage.",
+                      "text": "",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "🧭",
+                      "heading": "Describe desktop systems, mobile devices and servers.",
+                      "text": "",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "✅",
+                      "heading": "Select a system type for a user's needs.",
+                      "text": "",
+                      "tone": "blue"
+                    }
+                  ]
                 },
                 {
-                  "type": "heading",
-                  "text": "Success criteria",
-                  "level": 3
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Classify peripherals as input, output or storage.",
-                    "Describe desktop systems, mobile devices and servers.",
-                    "Select a system type for a user's needs."
+                  "type": "videoSlot",
+                  "title": "Inputs, outputs and systems",
+                  "minutes": 3,
+                  "brief": "A short clip sorting everyday devices into input, output and storage, then showing a desktop, a tablet and a server room. Suggested source: a teacher-filmed walk around the school, or a short computer-systems explainer.",
+                  "watchFor": [
+                    "Which direction the data moves",
+                    "Why a touchscreen is both input and output",
+                    "What a server does for many users"
                   ]
                 },
                 {
                   "type": "heading",
-                  "text": "Write this down",
-                  "level": 3
+                  "text": "The big idea",
+                  "level": 2
                 },
                 {
                   "type": "table",
@@ -1692,39 +1853,58 @@
                   ]
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Peripherals and Computer Systems",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"hardware-peripherals-and-computer-systems-title hardware-peripherals-and-computer-systems-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"hardware-peripherals-and-computer-systems-title\">Peripherals and Computer Systems: Top-to-bottom layered model for Peripheral device, Input device, Output device, Storage device.</title><desc id=\"hardware-peripherals-and-computer-systems-desc\">Read from top to bottom to see how the levels are grouped. Use the lesson explanation to describe what each level contributes.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#dbeafe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#1d4ed8\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Peripherals and Computer Systems</tspan></text><text x=\"36\" y=\"94\" fill=\"#1d4ed8\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">TERM</text><rect x=\"74\" y=\"118\" width=\"612\" height=\"38\" rx=\"10\" fill=\"#ecfeff\"/><rect x=\"74\" y=\"118\" width=\"10\" height=\"38\" rx=\"5\" fill=\"#1d4ed8\"/><text x=\"102\" y=\"142\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\"><tspan x=\"102\" dy=\"0\">Peripheral device</tspan></text><text x=\"360\" y=\"141\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"360\" dy=\"0\">Definition: Hardware connected to a computer to add a…</tspan></text><rect x=\"74\" y=\"163\" width=\"612\" height=\"38\" rx=\"10\" fill=\"#eef2ff\"/><rect x=\"74\" y=\"163\" width=\"10\" height=\"38\" rx=\"5\" fill=\"#0e7490\"/><text x=\"102\" y=\"187\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\"><tspan x=\"102\" dy=\"0\">Input device</tspan></text><text x=\"360\" y=\"186\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"360\" dy=\"0\">Definition: Sends data into the computer. · Example…</tspan></text><rect x=\"74\" y=\"208\" width=\"612\" height=\"38\" rx=\"10\" fill=\"#ecfeff\"/><rect x=\"74\" y=\"208\" width=\"10\" height=\"38\" rx=\"5\" fill=\"#1d4ed8\"/><text x=\"102\" y=\"232\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\"><tspan x=\"102\" dy=\"0\">Output device</tspan></text><text x=\"360\" y=\"231\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"360\" dy=\"0\">Definition: Presents data from the computer. · Example…</tspan></text><rect x=\"74\" y=\"253\" width=\"612\" height=\"38\" rx=\"10\" fill=\"#eef2ff\"/><rect x=\"74\" y=\"253\" width=\"10\" height=\"38\" rx=\"5\" fill=\"#0e7490\"/><text x=\"102\" y=\"277\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\"><tspan x=\"102\" dy=\"0\">Storage device</tspan></text><text x=\"360\" y=\"276\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"360\" dy=\"0\">Definition: Saves data outside the computer. · Example…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Read from top to bottom to see how the levels are grouped. Use the lesson explanation to describe what each level contributes. Use the labels to review the explanation in the lesson.</figcaption></figure>"
+                  "type": "svgFigure",
+                  "title": "Which way does the data go?",
+                  "alt": "Input devices send data into the computer, output devices present it, and storage devices hold it.",
+                  "svg": "<svg viewBox=\"0 0 680 190\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui,sans-serif\">\n<style>\n.pp-t{font-size:13.5px;font-weight:700;fill:#0f172a}.pp-s{font-size:11.5px;fill:#475569}.pp-n{fill:#f1f5f9;stroke:#cbd5e1;stroke-width:2}\n.pp-i{stroke:#2563eb;stroke-width:4;stroke-dasharray:8 6;animation:pp-r 1.6s linear infinite}.pp-o{stroke:#16a34a;stroke-width:4;stroke-dasharray:8 6;animation:pp-r 1.6s linear infinite}\n@keyframes pp-r{to{stroke-dashoffset:-28}}\n@media (prefers-reduced-motion: reduce){*{animation:none!important}}\n</style>\n<rect class=\"pp-n\" x=\"10\" y=\"20\" width=\"190\" height=\"60\" rx=\"12\" fill=\"#dbeafe\"/><text x=\"24\" y=\"46\" class=\"pp-t\">Input devices</text><text x=\"24\" y=\"64\" class=\"pp-s\">keyboard, scanner, webcam</text>\n<rect class=\"pp-n\" x=\"480\" y=\"20\" width=\"190\" height=\"60\" rx=\"12\" fill=\"#dcfce7\"/><text x=\"494\" y=\"46\" class=\"pp-t\">Output devices</text><text x=\"494\" y=\"64\" class=\"pp-s\">monitor, printer, speakers</text>\n<rect class=\"pp-n\" x=\"245\" y=\"55\" width=\"190\" height=\"80\" rx=\"14\"/><text x=\"340\" y=\"92\" text-anchor=\"middle\" class=\"pp-t\">Computer</text><text x=\"340\" y=\"112\" text-anchor=\"middle\" class=\"pp-s\">processes the data</text>\n<rect class=\"pp-n\" x=\"245\" y=\"150\" width=\"190\" height=\"34\" rx=\"10\" fill=\"#fef3c7\"/><text x=\"340\" y=\"172\" text-anchor=\"middle\" class=\"pp-t\">Storage: external SSD, USB</text>\n<line class=\"pp-i\" x1=\"200\" y1=\"50\" x2=\"245\" y2=\"85\"/><line class=\"pp-o\" x1=\"435\" y1=\"85\" x2=\"480\" y2=\"50\"/>\n</svg>",
+                  "caption": "Ask which direction the data is moving for the function you are thinking of."
                 },
                 {
                   "type": "heading",
-                  "text": "Worked example: A physiotherapy clinic",
-                  "level": 3
+                  "text": "Input, output or storage?",
+                  "level": 2
                 },
                 {
-                  "type": "richText",
-                  "html": "<p>Match each person to a computer system.</p><p><strong>Receptionist</strong> — Desktop: large screen for bookings all day, fixed at the front desk.</p><p><strong>Physio visiting patients</strong> — Tablet: light, battery-powered, takes notes on the move.</p><p><strong>Clinic records</strong> — Server: stores patient files centrally so every staff computer can access them.</p>"
-                },
-                {
-                  "type": "quizQuestion",
-                  "question": {
-                    "id": "hardware-2-peripherals-and-computer-systems-quick-check",
-                    "questionType": "mcq",
-                    "text": "Quick check: Which term matches this description? Hardware connected to a computer to add a function.",
-                    "options": [
-                      "Output device",
-                      "Storage device",
-                      "Peripheral device",
-                      "Input device"
-                    ],
-                    "correctIndex": 2,
-                    "explanation": "The term is Peripheral device. Hardware connected to a computer to add a function."
-                  }
-                },
-                {
-                  "type": "heading",
-                  "text": "Comparing systems",
-                  "level": 3
+                  "type": "sorter",
+                  "title": "Classify the clinic's devices",
+                  "instruction": "A physiotherapy clinic lists its devices. Tap the right category.",
+                  "categories": [
+                    "Input",
+                    "Output",
+                    "Storage"
+                  ],
+                  "items": [
+                    {
+                      "text": "Barcode scanner",
+                      "category": 0,
+                      "why": "It sends data into the computer."
+                    },
+                    {
+                      "text": "Receipt printer",
+                      "category": 1,
+                      "why": "It presents data from the computer on paper."
+                    },
+                    {
+                      "text": "External hard drive",
+                      "category": 2,
+                      "why": "It saves data outside the computer."
+                    },
+                    {
+                      "text": "Webcam",
+                      "category": 0,
+                      "why": "It captures video and sends it in."
+                    },
+                    {
+                      "text": "Projector",
+                      "category": 1,
+                      "why": "It presents data from the computer on a screen."
+                    },
+                    {
+                      "text": "USB flash drive",
+                      "category": 2,
+                      "why": "It stores data away from the computer."
+                    }
+                  ]
                 },
                 {
                   "type": "table",
@@ -1762,39 +1942,106 @@
                   ]
                 },
                 {
+                  "type": "heading",
+                  "text": "Which system fits?",
+                  "level": 2
+                },
+                {
+                  "type": "sorter",
+                  "title": "Match the person to the system",
+                  "instruction": "Which type of computer system suits each user?",
+                  "categories": [
+                    "Desktop",
+                    "Mobile device",
+                    "Server"
+                  ],
+                  "items": [
+                    {
+                      "text": "Receptionist who uses a large screen for bookings all day at a fixed desk.",
+                      "category": 0,
+                      "why": "A fixed desktop with a large screen suits all-day desk work."
+                    },
+                    {
+                      "text": "Physio who visits patients and takes notes on the move.",
+                      "category": 1,
+                      "why": "A light, battery-powered tablet suits work away from a desk."
+                    },
+                    {
+                      "text": "Clinic records that every staff computer must reach.",
+                      "category": 2,
+                      "why": "A server stores files centrally for many users over a network."
+                    },
+                    {
+                      "text": "Library catalogue that many staff and students search at once.",
+                      "category": 2,
+                      "why": "A server provides a service to many users."
+                    }
+                  ]
+                },
+                {
+                  "type": "flipCards",
+                  "title": "Check your understanding",
+                  "instruction": "Answer first, then flip.",
+                  "cards": [
+                    {
+                      "tag": "Tricky",
+                      "front": "A touchscreen is input or output?",
+                      "back": "Both. It displays (output) and senses touch (input). Do not force it into one box."
+                    },
+                    {
+                      "tag": "Compare",
+                      "front": "What is a server and who uses it?",
+                      "back": "A machine that provides services to many users over a network, such as storing shared files."
+                    },
+                    {
+                      "tag": "Justify",
+                      "front": "Why a tablet for the visiting physio?",
+                      "back": "It is light and battery-powered, so she can carry it to homes and record notes during appointments."
+                    }
+                  ]
+                },
+                {
                   "type": "callout",
                   "variant": "senior-wisdom",
-                  "heading": "💡 SENIOR WISDOM · SPARKY MILLER",
-                  "text": "The trick with tricky devices like touchscreens or multifunction printers: ask what direction the data is actually moving for the function you're thinking of. A touchscreen displays (output) and senses touch (input) — same device, two jobs. Don't force it into one box."
+                  "heading": "Sparky's tip",
+                  "text": "Ask what direction the data is actually moving for the function you are thinking of. A touchscreen displays (output) and senses touch (input): same device, two jobs."
+                },
+                {
+                  "type": "infoCards",
+                  "title": "Test tip: what earns the marks",
+                  "intro": "Justify a mobile device for the visiting physio. (3 marks)",
+                  "columns": 2,
+                  "cards": [
+                    {
+                      "icon": "⚠️",
+                      "heading": "Earns 0 or 1 mark: \"Tablets are good.\"",
+                      "text": "No link to the user.",
+                      "tone": "red"
+                    },
+                    {
+                      "icon": "⭐",
+                      "heading": "Earns full marks",
+                      "text": "\"A tablet is light and battery-powered, so the physio can carry it to homes and record notes during appointments.\" Features tied to the user.",
+                      "tone": "green"
+                    }
+                  ]
+                },
+                {
+                  "type": "infoCards",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "📂",
+                      "heading": "Scenario: The school library",
+                      "text": "A school library is upgrading its equipment. Answer the questions below using this scenario.",
+                      "tone": "amber"
+                    }
+                  ]
                 },
                 {
                   "type": "heading",
-                  "text": "Test tip: Link the system to the user",
-                  "level": 3
-                },
-                {
-                  "type": "callout",
-                  "variant": "pr-review",
-                  "heading": "🧰 CALLBACK CHECK · SPARKY IS REVIEWING THE JOB",
-                  "text": "Classification questions look easy and get rushed. I send back any answer that mislabels a scanner or a server — a server in a library isn't an input or output device at all, it's a different category of machine, and conflating them tells me the concept isn't solid yet."
-                },
-                {
-                  "type": "richText",
-                  "html": "<p>Question: Justify a mobile device for the visiting physio. (3 marks)</p><p>Earns 0 or 1 mark</p><p>\"Tablets are good.\"</p><p>No link to the user.</p><p><strong>Earns full marks</strong> — \"A tablet is light and battery-powered, so the physio can carry it to homes and record notes during appointments.\"</p>"
-                },
-                {
-                  "type": "paragraph",
-                  "text": "A school library is upgrading its equipment."
-                },
-                {
-                  "type": "callout",
-                  "variant": "sandbox",
-                  "heading": "🛠️ WORKSHOP CHALLENGE",
-                  "text": "Classify every device in the clinic list yourself — input, output or storage — and write the server's purpose in the library, before you check mine."
-                },
-                {
-                  "type": "heading",
-                  "text": "Assessment practice"
+                  "text": "Assessment practice",
+                  "level": 2
                 },
                 {
                   "type": "quizQuestion",
@@ -1819,15 +2066,30 @@
                 {
                   "type": "heading",
                   "text": "Test-ready recap",
-                  "level": 3
+                  "level": 2
                 },
                 {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "I have copied the key terms into my notes.",
-                    "I scored at least 4 out of 5 on the practice questions.",
-                    "If not, reread the key terms and the test tip, then try again."
+                  "type": "infoCards",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "↔️",
+                      "heading": "Think about direction",
+                      "text": "Input sends data in, output presents it, storage keeps it.",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "🖥️",
+                      "heading": "A server is a system, not a peripheral",
+                      "text": "It provides services to many users over a network.",
+                      "tone": "purple"
+                    },
+                    {
+                      "icon": "🎯",
+                      "heading": "Aim for",
+                      "text": "At least 4/5 on the practice questions. If not, reread the key terms and test tip.",
+                      "tone": "green"
+                    }
                   ]
                 },
                 {
@@ -1835,7 +2097,8 @@
                   "heading": "Up next",
                   "text": "Next lesson: operating systems."
                 }
-              ]
+              ],
+              "estimatedMinutes": 45
             },
             {
               "id": "hardware-3-operating-systems",
@@ -1848,27 +2111,45 @@
                   "text": "A client's asking why their old software won't run and whether Linux would save them money. That's an operating-system question dressed up as a hardware complaint — purposes of an OS, open source versus proprietary — and I need a straight answer, not a sales pitch for whichever OS I personally like."
                 },
                 {
-                  "type": "paragraph",
-                  "text": "Purpose of an operating system (OS); types of operating systems: Windows, Mac OS, iOS, Android, Linux"
+                  "type": "infoCards",
+                  "title": "By the end of this lesson you can",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "🎯",
+                      "heading": "Describe the purpose of an operating system.",
+                      "text": "",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "🧭",
+                      "heading": "Identify the device types each OS is used on.",
+                      "text": "",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "✅",
+                      "heading": "Compare two operating systems.",
+                      "text": "",
+                      "tone": "blue"
+                    }
+                  ]
                 },
                 {
-                  "type": "heading",
-                  "text": "Success criteria",
-                  "level": 3
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Describe the purpose of an operating system.",
-                    "Identify the device types each OS is used on.",
-                    "Compare two operating systems."
+                  "type": "videoSlot",
+                  "title": "What does an operating system do?",
+                  "minutes": 4,
+                  "brief": "A short clip showing an OS managing files, running apps, handling a plugged-in printer and installing an update. Suggested source: a teacher-filmed screen recording on a school laptop.",
+                  "watchFor": [
+                    "The jobs an OS does behind the scenes",
+                    "How a driver lets a printer work",
+                    "Why updates matter"
                   ]
                 },
                 {
                   "type": "heading",
-                  "text": "Write this down",
-                  "level": 3
+                  "text": "The big idea",
+                  "level": 2
                 },
                 {
                   "type": "keyTerms",
@@ -1892,39 +2173,55 @@
                   ]
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Operating Systems",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"hardware-operating-systems-title hardware-operating-systems-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"hardware-operating-systems-title\">Operating Systems: Concept cards for Windows, macOS, iOS, Android.</title><desc id=\"hardware-operating-systems-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#dbeafe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#1d4ed8\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Operating Systems</tspan></text><text x=\"36\" y=\"94\" fill=\"#1d4ed8\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">OS</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#1d4ed8\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#1d4ed8\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Windows</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Devices: Desktops, laptops · Licence:</tspan><tspan x=\"84\" dy=\"19\">Proprietary</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0e7490\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#0e7490\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">macOS</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Devices: Apple computers · Licence:</tspan><tspan x=\"444\" dy=\"19\">Proprietary</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#1d4ed8\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#1d4ed8\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">iOS</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Devices: iPhone · Licence: Proprietary</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0e7490\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#0e7490\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Android</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Devices: Phones, tablets, TVs · Licence:</tspan><tspan x=\"444\" dy=\"19\">Open source core</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
+                  "type": "svgFigure",
+                  "title": "Where the OS sits",
+                  "alt": "Four layers from top to bottom: user interface, applications, operating system and hardware.",
+                  "svg": "<svg viewBox=\"0 0 680 200\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui,sans-serif\">\n<style>\n.os-b{fill:#f1f5f9;stroke:#cbd5e1;stroke-width:2;animation:os-g 8s infinite}.os-2{animation-delay:2s}.os-3{animation-delay:4s}.os-4{animation-delay:6s}\n@keyframes os-g{0%,22%{fill:#fde68a}26%,100%{fill:#f1f5f9}}\n.os-t{font-size:14px;font-weight:700;fill:#0f172a}.os-s{font-size:12px;fill:#475569}\n@media (prefers-reduced-motion: reduce){*{animation:none!important}}\n</style>\n<rect class=\"os-b\" x=\"120\" y=\"10\" width=\"440\" height=\"40\" rx=\"10\"/><text x=\"340\" y=\"36\" text-anchor=\"middle\" class=\"os-t\">You: the user interface</text>\n<rect class=\"os-b os-2\" x=\"120\" y=\"56\" width=\"440\" height=\"40\" rx=\"10\"/><text x=\"340\" y=\"82\" text-anchor=\"middle\" class=\"os-t\">Applications: browser, Word, games</text>\n<rect class=\"os-b os-3\" x=\"120\" y=\"102\" width=\"440\" height=\"40\" rx=\"10\" stroke=\"#d97706\"/><text x=\"340\" y=\"128\" text-anchor=\"middle\" class=\"os-t\">Operating system: memory, CPU, files, drivers, security</text>\n<rect class=\"os-b os-4\" x=\"120\" y=\"148\" width=\"440\" height=\"40\" rx=\"10\"/><text x=\"340\" y=\"174\" text-anchor=\"middle\" class=\"os-t\">Hardware: CPU, RAM, storage, peripherals</text>\n<text x=\"10\" y=\"132\" class=\"os-s\">the OS sits</text><text x=\"10\" y=\"148\" class=\"os-s\">in the middle</text>\n</svg>",
+                  "caption": "The operating system sits between the applications and the hardware."
                 },
                 {
                   "type": "heading",
-                  "text": "Worked example: Which OS where?",
-                  "level": 3
+                  "text": "Which OS?",
+                  "level": 2
                 },
                 {
-                  "type": "richText",
-                  "html": "<p>The same person uses five operating systems in one day.</p><p><strong>Windows</strong> — School laptop: runs most business and school software.</p><p><strong>macOS</strong> — Graphic design studio iMac: common in creative industries.</p><p><strong>iOS</strong> — iPhone: only on Apple mobile devices.</p><p><strong>Android</strong> — Samsung phone and smart TV: used by many brands.</p><p><strong>Linux</strong> — The web server hosting a website: free, stable and secure.</p>"
-                },
-                {
-                  "type": "quizQuestion",
-                  "question": {
-                    "id": "hardware-3-operating-systems-quick-check",
-                    "questionType": "mcq",
-                    "text": "Quick check: Which term matches this description? Software that manages the hardware and provides a platform for applications and a user interface.",
-                    "options": [
-                      "Purposes of an OS",
-                      "Open source OS",
-                      "Proprietary OS",
-                      "Operating system (OS)"
-                    ],
-                    "correctIndex": 3,
-                    "explanation": "The term is Operating system (OS). Software that manages the hardware and provides a platform for applications and a user interface."
-                  }
-                },
-                {
-                  "type": "heading",
-                  "text": "Operating systems compared",
-                  "level": 3
+                  "type": "sorter",
+                  "title": "Match the OS to its use",
+                  "instruction": "Which operating system does each description fit best?",
+                  "categories": [
+                    "Windows",
+                    "macOS",
+                    "iOS",
+                    "Android",
+                    "Linux"
+                  ],
+                  "items": [
+                    {
+                      "text": "A school laptop running the widest range of business and school software.",
+                      "category": 0,
+                      "why": "Windows runs the widest range of software."
+                    },
+                    {
+                      "text": "A graphic design studio's iMac that works closely with other Apple devices.",
+                      "category": 1,
+                      "why": "macOS runs on Apple computers and is common in creative industries."
+                    },
+                    {
+                      "text": "An iPhone, with apps only from the App Store.",
+                      "category": 2,
+                      "why": "iOS is only on Apple mobile devices."
+                    },
+                    {
+                      "text": "A Samsung phone and a smart TV made by different brands.",
+                      "category": 3,
+                      "why": "Android is used by many manufacturers."
+                    },
+                    {
+                      "text": "A free, stable web server that is highly customisable.",
+                      "category": 4,
+                      "why": "Linux is open source and common on servers."
+                    }
+                  ]
                 },
                 {
                   "type": "table",
@@ -1968,39 +2265,144 @@
                   ]
                 },
                 {
+                  "type": "sorter",
+                  "title": "Open source or proprietary?",
+                  "instruction": "Sort each feature.",
+                  "categories": [
+                    "Open source",
+                    "Proprietary"
+                  ],
+                  "items": [
+                    {
+                      "text": "Source code can be viewed and changed.",
+                      "category": 0,
+                      "why": "That is the definition of open source."
+                    },
+                    {
+                      "text": "Owned by a company, with closed source code.",
+                      "category": 1,
+                      "why": "That is what proprietary means."
+                    },
+                    {
+                      "text": "Linux, and the core of Android.",
+                      "category": 0,
+                      "why": "Both are open source."
+                    },
+                    {
+                      "text": "Windows, macOS and iOS.",
+                      "category": 1,
+                      "why": "All three are owned by a company."
+                    }
+                  ]
+                },
+                {
+                  "type": "branchingScenario",
+                  "title": "Windows or Linux?",
+                  "intro": "A small business is choosing between Windows laptops and Linux laptops for its five staff.",
+                  "steps": [
+                    {
+                      "situation": "The owner asks for one real advantage of Linux for the business.",
+                      "prompt": "Which answer is strongest?",
+                      "choices": [
+                        {
+                          "text": "It is free, so the business saves licence fees on five laptops.",
+                          "correct": true,
+                          "feedback": "A real advantage linked to the business."
+                        },
+                        {
+                          "text": "Linux is cool.",
+                          "correct": false,
+                          "feedback": "Not an advantage, and not linked to the business."
+                        },
+                        {
+                          "text": "Linux has no advantages.",
+                          "correct": false,
+                          "feedback": "It does: it is free and customisable."
+                        }
+                      ]
+                    },
+                    {
+                      "situation": "The owner asks for one real disadvantage.",
+                      "prompt": "Which answer is strongest?",
+                      "choices": [
+                        {
+                          "text": "Support is mostly from the community, so there is no guaranteed help when something breaks during the working day.",
+                          "correct": true,
+                          "feedback": "A disadvantage that applies to a business needing reliable support."
+                        },
+                        {
+                          "text": "It costs a lot.",
+                          "correct": false,
+                          "feedback": "Linux is generally free, so this is wrong."
+                        },
+                        {
+                          "text": "It cannot run any software.",
+                          "correct": false,
+                          "feedback": "It runs a lot of software, though some business programs are Windows-only."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "flipCards",
+                  "title": "Check your understanding",
+                  "instruction": "Answer first, then flip.",
+                  "cards": [
+                    {
+                      "tag": "Purposes",
+                      "front": "Name two purposes of an OS.",
+                      "back": "Any two of: manage memory and the CPU, manage files and storage, control peripherals via drivers, provide a user interface, run applications, provide security."
+                    },
+                    {
+                      "tag": "Careful",
+                      "front": "Why is 'Windows and Android' a wrong answer to 'purposes of an OS'?",
+                      "back": "Those are types of OS, not purposes."
+                    }
+                  ]
+                },
+                {
                   "type": "callout",
                   "variant": "senior-wisdom",
-                  "heading": "💡 SENIOR WISDOM · SPARKY MILLER",
-                  "text": "Don't just say Linux is 'free' and proprietary is 'not free' — that's the shallow half of the answer. Free also usually means community-supported, which is an advantage for a hobbyist and a real disadvantage for a business that needs guaranteed support when something breaks at 2pm on a Tuesday."
+                  "heading": "Sparky's warning",
+                  "text": "Do not just say Linux is free and proprietary is not. Free also usually means community-supported, which is an advantage for a hobbyist and a real disadvantage for a business that needs guaranteed support."
+                },
+                {
+                  "type": "infoCards",
+                  "title": "Test tip: what earns the marks",
+                  "intro": "Describe two purposes of an operating system. (4 marks)",
+                  "columns": 2,
+                  "cards": [
+                    {
+                      "icon": "⚠️",
+                      "heading": "Earns 0 or 1 mark: \"Windows and Android.\"",
+                      "text": "These are types, not purposes.",
+                      "tone": "red"
+                    },
+                    {
+                      "icon": "⭐",
+                      "heading": "Earns full marks",
+                      "text": "\"It manages files, so users can save, open and organise them in folders. It controls peripherals through drivers, so a printer works when plugged in.\" Two purposes, each with how it helps.",
+                      "tone": "green"
+                    }
+                  ]
+                },
+                {
+                  "type": "infoCards",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "📂",
+                      "heading": "Scenario: The five-laptop business",
+                      "text": "A small business is choosing between Windows laptops and Linux laptops for its five staff. Answer the questions below using this scenario.",
+                      "tone": "amber"
+                    }
+                  ]
                 },
                 {
                   "type": "heading",
-                  "text": "Test tip: Purpose, not brand",
-                  "level": 3
-                },
-                {
-                  "type": "callout",
-                  "variant": "pr-review",
-                  "heading": "🧰 CALLBACK CHECK · SPARKY IS REVIEWING THE JOB",
-                  "text": "For the Linux advantage/disadvantage question, I want one of each paired to this specific client, not generic textbook lines. A disadvantage that doesn't apply to their situation doesn't earn the mark even if it's true in general."
-                },
-                {
-                  "type": "richText",
-                  "html": "<p>Question: Describe two purposes of an operating system. (4 marks)</p><p>Earns 0 or 1 mark</p><p><strong>\"Windows and Android.\"</strong> — These are types, not purposes.</p><p><strong>Earns full marks</strong> — \"It manages files, so users can save, open and organise them in folders. It controls peripherals through drivers, so a printer works when plugged in.\"</p>"
-                },
-                {
-                  "type": "paragraph",
-                  "text": "A small business is choosing between Windows laptops and Linux laptops for its five staff."
-                },
-                {
-                  "type": "callout",
-                  "variant": "sandbox",
-                  "heading": "🛠️ WORKSHOP CHALLENGE",
-                  "text": "Describe two purposes of an OS, then give one real advantage and one real disadvantage of Linux for this business, before you check my version."
-                },
-                {
-                  "type": "heading",
-                  "text": "Assessment practice"
+                  "text": "Assessment practice",
+                  "level": 2
                 },
                 {
                   "type": "quizQuestion",
@@ -2025,15 +2427,30 @@
                 {
                   "type": "heading",
                   "text": "Test-ready recap",
-                  "level": 3
+                  "level": 2
                 },
                 {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "I have copied the key terms into my notes.",
-                    "I scored at least 6 out of 8 on the practice questions.",
-                    "If not, reread the key terms and the test tip, then try again."
+                  "type": "infoCards",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "🧩",
+                      "heading": "Purposes, not types",
+                      "text": "Describe what an OS does, such as managing files or controlling peripherals through drivers.",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "⚖️",
+                      "heading": "Pair the advantage and disadvantage to the client",
+                      "text": "Free but community-supported is the classic Linux pair.",
+                      "tone": "purple"
+                    },
+                    {
+                      "icon": "🎯",
+                      "heading": "Aim for",
+                      "text": "At least 6/8 on the practice questions. If not, reread the key terms and test tip.",
+                      "tone": "green"
+                    }
                   ]
                 },
                 {
@@ -2041,7 +2458,8 @@
                   "heading": "Up next",
                   "text": "Next lesson: software compatibility and buying hardware."
                 }
-              ]
+              ],
+              "estimatedMinutes": 45
             },
             {
               "id": "hardware-4-software-compatibility-and-hardware-purchase",
@@ -2054,27 +2472,45 @@
                   "text": "A practice wants new computers but is worried their current software won't run on them — or that their current software won't run on anything modern at all. Before I quote the job, I check minimum requirements both directions: can new hardware run their old software, and can an old machine run anything current."
                 },
                 {
-                  "type": "paragraph",
-                  "text": "Software compatibility issues; considerations for hardware purchase: cost, specifications, user needs; minimum hardware requirements"
+                  "type": "infoCards",
+                  "title": "By the end of this lesson you can",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "🎯",
+                      "heading": "Describe compatibility issues with older and newer software.",
+                      "text": "",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "🧭",
+                      "heading": "Compare hardware specifications against minimum requirements.",
+                      "text": "",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "✅",
+                      "heading": "Explain purchase considerations for a user.",
+                      "text": "",
+                      "tone": "blue"
+                    }
+                  ]
                 },
                 {
-                  "type": "heading",
-                  "text": "Success criteria",
-                  "level": 3
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Describe compatibility issues with older and newer software.",
-                    "Compare hardware specifications against minimum requirements.",
-                    "Explain purchase considerations for a user."
+                  "type": "videoSlot",
+                  "title": "Will it run?",
+                  "minutes": 4,
+                  "brief": "A short clip checking a game's minimum requirements against a laptop's specifications, then a clinic's old software on a new computer. Suggested source: a teacher-filmed screen recording using a real requirements page and the System Information window.",
+                  "watchFor": [
+                    "Where to find a computer's specs",
+                    "How to read minimum requirements",
+                    "What fails first when specs fall short"
                   ]
                 },
                 {
                   "type": "heading",
-                  "text": "Write this down",
-                  "level": 3
+                  "text": "The big idea",
+                  "level": 2
                 },
                 {
                   "type": "keyTerms",
@@ -2102,78 +2538,173 @@
                   ]
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Software Compatibility and Hardware Purchase",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"hardware-software-compatibility-and-hardware-purchase-title hardware-software-compatibility-and-hardware-purchase-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"hardware-software-compatibility-and-hardware-purchase-title\">Software Compatibility and Hardware Purchase: Concept cards for Software compatibility, Older software on current hardware, Newer software on older hardware, Minimum requirements.</title><desc id=\"hardware-software-compatibility-and-hardware-purchase-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#dbeafe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#1d4ed8\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Software Compatibility and Hardware Purchase</tspan></text><text x=\"36\" y=\"94\" fill=\"#1d4ed8\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">CORE IDEAS</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#1d4ed8\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#1d4ed8\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Software compatibility</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Whether software runs correctly on a given</tspan><tspan x=\"84\" dy=\"19\">hardware and operating system.</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0e7490\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#0e7490\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Older software on current…</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">May not install or may crash, because the</tspan><tspan x=\"444\" dy=\"19\">new OS no longer supports it; no longer…</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#1d4ed8\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#1d4ed8\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Newer software on older hardware</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">May not install or may run slowly, because</tspan><tspan x=\"84\" dy=\"19\">the hardware is below the minimum…</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0e7490\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#0e7490\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Minimum requirements</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">The lowest specifications (CPU, RAM,</tspan><tspan x=\"444\" dy=\"19\">storage, OS, graphics) the software needs…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
+                  "type": "svgFigure",
+                  "title": "Check both ways",
+                  "alt": "Old software on new hardware and new software on old hardware both need checking for compatibility.",
+                  "svg": "<svg viewBox=\"0 0 680 170\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui,sans-serif\">\n<style>\n.cp-n{fill:#f1f5f9;stroke:#cbd5e1;stroke-width:2}.cp-t{font-size:13.5px;font-weight:700;fill:#0f172a}.cp-s{font-size:11.5px;fill:#475569}\n.cp-a{animation:cp-b 6s infinite}.cp-a2{animation-delay:3s}\n@keyframes cp-b{0%,40%{opacity:1}50%,100%{opacity:.25}}\n@media (prefers-reduced-motion: reduce){*{animation:none!important}}\n</style>\n<rect class=\"cp-n\" x=\"10\" y=\"30\" width=\"190\" height=\"100\" rx=\"14\"/><text x=\"24\" y=\"60\" class=\"cp-t\">Old software</text><text x=\"24\" y=\"80\" class=\"cp-s\">made for Windows 7</text>\n<rect class=\"cp-n\" x=\"480\" y=\"30\" width=\"190\" height=\"100\" rx=\"14\"/><text x=\"494\" y=\"60\" class=\"cp-t\">New hardware</text><text x=\"494\" y=\"80\" class=\"cp-s\">Windows 11 computers</text>\n<g class=\"cp-a\"><path d=\"M200 62h280\" stroke=\"#dc2626\" stroke-width=\"4\" fill=\"none\"/><text x=\"340\" y=\"52\" text-anchor=\"middle\" class=\"cp-s\">will it install and run?</text></g>\n<g class=\"cp-a cp-a2\"><path d=\"M480 108h-280\" stroke=\"#2563eb\" stroke-width=\"4\" fill=\"none\"/><text x=\"340\" y=\"132\" text-anchor=\"middle\" class=\"cp-s\">and new software on old machines?</text></g>\n<text x=\"340\" y=\"160\" text-anchor=\"middle\" class=\"cp-t\">Always check compatibility both ways.</text>\n</svg>",
+                  "caption": "Both arrows pulse in turn: old software on new hardware, and the other way round."
                 },
                 {
                   "type": "heading",
-                  "text": "Worked example: Checking minimum requirements",
-                  "level": 3
+                  "text": "Does it meet the minimum?",
+                  "level": 2
                 },
                 {
-                  "type": "richText",
-                  "html": "<p>A student wants to run a video game on her laptop.</p><p><strong>Game needs</strong> — RAM 16 GB, 60 GB free storage, dedicated graphics card, Windows 10 64-bit or later.</p><p><strong>Laptop has</strong> — RAM 8 GB, 200 GB free, integrated graphics, Windows 11 64-bit.</p><p><strong>Does not meet</strong> — RAM and graphics are below the minimum.</p><p><strong>Result</strong> — The game may not start, or run with very low frame rates.</p>"
+                  "type": "sorter",
+                  "title": "Game versus laptop",
+                  "instruction": "The game needs 16 GB RAM, 60 GB free storage, a dedicated graphics card and Windows 10 64-bit or later. Her laptop has 8 GB RAM, 200 GB free, integrated graphics and Windows 11 64-bit. Does each specification meet the requirement?",
+                  "categories": [
+                    "Meets it",
+                    "Does not meet it"
+                  ],
+                  "items": [
+                    {
+                      "text": "RAM: 8 GB against 16 GB required.",
+                      "category": 1,
+                      "why": "8 GB is below the 16 GB minimum."
+                    },
+                    {
+                      "text": "Storage: 200 GB free against 60 GB required.",
+                      "category": 0,
+                      "why": "200 GB is well above 60 GB."
+                    },
+                    {
+                      "text": "Graphics: integrated against a dedicated card required.",
+                      "category": 1,
+                      "why": "Integrated graphics does not meet a dedicated card requirement."
+                    },
+                    {
+                      "text": "Operating system: Windows 11 64-bit against Windows 10 64-bit or later.",
+                      "category": 0,
+                      "why": "Windows 11 is later than Windows 10."
+                    }
+                  ]
                 },
                 {
-                  "type": "quizQuestion",
-                  "question": {
-                    "id": "hardware-4-software-compatibility-and-hardware-purchase-quick-check",
-                    "questionType": "mcq",
-                    "text": "Quick check: Which term matches this description? Whether software runs correctly on a given hardware and operating system.",
-                    "options": [
-                      "Older software on current hardware",
-                      "Newer software on older hardware",
-                      "Minimum requirements",
-                      "Software compatibility"
-                    ],
-                    "correctIndex": 3,
-                    "explanation": "The term is Software compatibility. Whether software runs correctly on a given hardware and operating system."
-                  }
+                  "type": "sequence",
+                  "title": "The purchase decision",
+                  "instruction": "Tap the four steps for choosing new computers in order.",
+                  "items": [
+                    "User needs: what will they do, where and how often?",
+                    "Software: list it and its minimum requirements.",
+                    "Specifications: choose above the minimum, with room to grow.",
+                    "Cost: compare options within the budget."
+                  ],
+                  "explanation": "Needs first, then software, then specs, then cost. Cost alone is never a full answer."
                 },
                 {
-                  "type": "heading",
-                  "text": "Buying hardware",
-                  "level": 3
+                  "type": "branchingScenario",
+                  "title": "The dental practice",
+                  "intro": "A dental practice still uses booking software made for Windows 7. It is buying new Windows 11 computers for $1200 each.",
+                  "steps": [
+                    {
+                      "situation": "The practice manager asks what could go wrong.",
+                      "prompt": "Which compatibility issue is specific to this practice?",
+                      "choices": [
+                        {
+                          "text": "The old Windows 7 booking software may not install or may crash on Windows 11, and it no longer receives security updates.",
+                          "correct": true,
+                          "feedback": "It names the issue for this setup, in both directions."
+                        },
+                        {
+                          "text": "Computers are sometimes incompatible.",
+                          "correct": false,
+                          "feedback": "A general statement, not specific to the practice."
+                        },
+                        {
+                          "text": "Nothing. New computers run everything.",
+                          "correct": false,
+                          "feedback": "Old software may not run on a new OS."
+                        }
+                      ]
+                    },
+                    {
+                      "situation": "She asks what to consider before choosing the new computers.",
+                      "prompt": "Which answer is strongest?",
+                      "choices": [
+                        {
+                          "text": "Check the booking software's minimum requirements against the specifications, and match them to what staff do, not just the cost.",
+                          "correct": true,
+                          "feedback": "Specifications, user needs and cost all matter."
+                        },
+                        {
+                          "text": "Buy the cheapest.",
+                          "correct": false,
+                          "feedback": "Cost alone is never a full answer."
+                        },
+                        {
+                          "text": "Buy the newest model.",
+                          "correct": false,
+                          "feedback": "Newest does not guarantee it runs the practice's software."
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
-                  "type": "richText",
-                  "html": "<p>1</p><p><strong>User needs</strong> — What will they do? Where? How often?</p><p>2</p><p><strong>Software</strong> — List the software and its minimum requirements.</p><p>3</p><p><strong>Specifications</strong> — Choose specs above the minimum, with room to grow.</p><p>4</p><p><strong>Cost</strong> — Compare options within the budget.</p>"
+                  "type": "flipCards",
+                  "title": "Check your understanding",
+                  "instruction": "Answer first, then flip.",
+                  "cards": [
+                    {
+                      "tag": "Define",
+                      "front": "What are minimum requirements?",
+                      "back": "The lowest specifications (CPU, RAM, storage, OS, graphics) the software needs to run."
+                    },
+                    {
+                      "tag": "Explain",
+                      "front": "What goes wrong when new software meets older hardware?",
+                      "back": "It may not install, or may run slowly, because the hardware is below the minimum requirements."
+                    },
+                    {
+                      "tag": "Explain",
+                      "front": "What goes wrong when old software meets a new OS?",
+                      "back": "It may not install or may crash, and it no longer receives security updates."
+                    }
+                  ]
                 },
                 {
                   "type": "callout",
                   "variant": "senior-wisdom",
-                  "heading": "💡 SENIOR WISDOM · SPARKY MILLER",
-                  "text": "Everyone checks 'will the new software run on the old machine' and forgets the other direction — will the old, specialised software still run on new hardware and a new OS. I've seen a clinic nearly buy new PCs that couldn't run their decade-old, business-critical records software. Always check both ways."
+                  "heading": "Sparky's warning",
+                  "text": "Everyone checks whether the new software will run on the old machine and forgets the other direction: will the old, specialised software still run on new hardware and a new OS. Always check both ways."
+                },
+                {
+                  "type": "infoCards",
+                  "title": "Test tip: what earns the marks",
+                  "intro": "Identify which specifications do not meet the requirements. (2 marks)",
+                  "columns": 2,
+                  "cards": [
+                    {
+                      "icon": "⚠️",
+                      "heading": "Earns 0 or 1 mark: \"It is too slow.\"",
+                      "text": "Does not name a specification.",
+                      "tone": "red"
+                    },
+                    {
+                      "icon": "⭐",
+                      "heading": "Earns full marks",
+                      "text": "\"RAM (8 GB is below the required 16 GB) and graphics (integrated, but a dedicated card is required).\" The specification and the gap.",
+                      "tone": "green"
+                    }
+                  ]
+                },
+                {
+                  "type": "infoCards",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "📂",
+                      "heading": "Scenario: The dental practice",
+                      "text": "A dental practice still uses booking software made for Windows 7. It is buying new Windows 11 computers for $1200 each. Answer the questions below using this scenario.",
+                      "tone": "amber"
+                    }
+                  ]
                 },
                 {
                   "type": "heading",
-                  "text": "Test tip: Compare the numbers",
-                  "level": 3
-                },
-                {
-                  "type": "callout",
-                  "variant": "pr-review",
-                  "heading": "🧰 CALLBACK CHECK · SPARKY IS REVIEWING THE JOB",
-                  "text": "I'm looking for you to actually name a compatibility issue specific to this practice's setup, not recite the general definition of compatibility. And for the purchase considerations, cost alone is never a full answer — what else matters to them?"
-                },
-                {
-                  "type": "richText",
-                  "html": "<p>Question: Identify which specifications do not meet the requirements. (2 marks)</p><p>Earns 0 or 1 mark</p><p><strong>\"It is too slow.\"</strong> — Does not name a specification.</p><p><strong>Earns full marks</strong> — \"RAM (8 GB is below the required 16 GB) and graphics (integrated, but a dedicated card is required).\"</p>"
-                },
-                {
-                  "type": "paragraph",
-                  "text": "A dental practice still uses booking software made for Windows 7. It is buying new Windows 11 computers for $1200 each."
-                },
-                {
-                  "type": "callout",
-                  "variant": "sandbox",
-                  "heading": "🛠️ WORKSHOP CHALLENGE",
-                  "text": "Describe the practice's likely compatibility issue and two things they should consider before buying, then compare it to what I'd flag."
-                },
-                {
-                  "type": "heading",
-                  "text": "Assessment practice"
+                  "text": "Assessment practice",
+                  "level": 2
                 },
                 {
                   "type": "quizQuestion",
@@ -2198,15 +2729,30 @@
                 {
                   "type": "heading",
                   "text": "Test-ready recap",
-                  "level": 3
+                  "level": 2
                 },
                 {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "I have copied the key terms into my notes.",
-                    "I scored at least 5 out of 6 on the practice questions.",
-                    "If not, reread the key terms and the test tip, then try again."
+                  "type": "infoCards",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "↔️",
+                      "heading": "Both directions",
+                      "text": "Old software on new hardware, and new software on old hardware.",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "📋",
+                      "heading": "Name the specification",
+                      "text": "Say which spec fails and by how much.",
+                      "tone": "purple"
+                    },
+                    {
+                      "icon": "🎯",
+                      "heading": "Aim for",
+                      "text": "At least 5/6 on the practice questions. If not, reread the key terms and test tip.",
+                      "tone": "green"
+                    }
                   ]
                 },
                 {
@@ -2214,7 +2760,8 @@
                   "heading": "Up next",
                   "text": "Next lesson: physical maintenance and solving simple computer problems."
                 }
-              ]
+              ],
+              "estimatedMinutes": 45
             },
             {
               "id": "hardware-5-maintenance-and-troubleshooting",
@@ -2227,27 +2774,45 @@
                   "text": "3am call-out: a server shut itself down twice this week and the client lost power mid-task with no warning. This is exactly the job a UPS and proper environmental control exist to prevent — today's about recognising the fix before the client has to call me at 3am again."
                 },
                 {
-                  "type": "paragraph",
-                  "text": "Physical maintenance strategies (UPS, environmental temperature control) and solving simple computer problems"
+                  "type": "infoCards",
+                  "title": "By the end of this lesson you can",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "🎯",
+                      "heading": "Explain the purpose of a UPS and temperature control.",
+                      "text": "",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "🧭",
+                      "heading": "Describe steps to solve no sound, frozen devices and projector problems.",
+                      "text": "",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "✅",
+                      "heading": "Apply a logical troubleshooting order.",
+                      "text": "",
+                      "tone": "blue"
+                    }
+                  ]
                 },
                 {
-                  "type": "heading",
-                  "text": "Success criteria",
-                  "level": 3
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Explain the purpose of a UPS and temperature control.",
-                    "Describe steps to solve no sound, frozen devices and projector problems.",
-                    "Apply a logical troubleshooting order."
+                  "type": "videoSlot",
+                  "title": "Fixing it before the call-out",
+                  "minutes": 4,
+                  "brief": "A short clip fixing the three common faults (no sound, a frozen screen, a projector with no picture) and showing a UPS in a server cabinet. Suggested source: a teacher-filmed demonstration using a school classroom setup.",
+                  "watchFor": [
+                    "The order the checks are made in",
+                    "What a UPS does in a blackout",
+                    "Why the server room needs cooling"
                   ]
                 },
                 {
                   "type": "heading",
-                  "text": "Write this down",
-                  "level": 3
+                  "text": "The big idea",
+                  "level": 2
                 },
                 {
                   "type": "keyTerms",
@@ -2267,67 +2832,89 @@
                   ]
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Maintenance and Troubleshooting",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"hardware-maintenance-and-troubleshooting-title hardware-maintenance-and-troubleshooting-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"hardware-maintenance-and-troubleshooting-title\">Maintenance and Troubleshooting: Concept cards for Uninterruptible power supply (UPS), Environmental temperature control, Troubleshooting.</title><desc id=\"hardware-maintenance-and-troubleshooting-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#dbeafe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#1d4ed8\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Maintenance and Troubleshooting</tspan></text><text x=\"36\" y=\"94\" fill=\"#1d4ed8\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">CORE IDEAS</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#1d4ed8\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#1d4ed8\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Uninterruptible power supply…</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">A battery unit that keeps equipment running</tspan><tspan x=\"84\" dy=\"19\">during a power failure long enough to save…</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0e7490\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#0e7490\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Environmental temperature…</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Keeping equipment cool with</tspan><tspan x=\"444\" dy=\"19\">air-conditioning and ventilation, because…</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#1d4ed8\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#1d4ed8\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Troubleshooting</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Finding and fixing a problem by checking</tspan><tspan x=\"84\" dy=\"19\">the simplest causes first.</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
+                  "type": "svgFigure",
+                  "title": "A blackout with a UPS",
+                  "alt": "Mains power drops out and the UPS battery takes over, giving time to save and shut down.",
+                  "svg": "<svg viewBox=\"0 0 680 190\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui,sans-serif\">\n<style>\n.up-t{font-size:13.5px;font-weight:700;fill:#0f172a}.up-s{font-size:12px;fill:#475569}\n.up-m{fill:#16a34a;animation:up-m 8s infinite}@keyframes up-m{0%,30%{fill:#16a34a}35%,100%{fill:#e2e8f0}}\n.up-u{fill:#2563eb;transform-origin:150px 0;transform-box:view-box;animation:up-u 8s infinite}\n@keyframes up-u{0%,30%{transform:scaleX(0);opacity:.2}35%{transform:scaleX(1);opacity:1}80%{transform:scaleX(.25);opacity:1}100%{transform:scaleX(0);opacity:.2}}\n.up-w{opacity:0;animation:up-w 8s infinite}@keyframes up-w{0%,32%{opacity:0}38%,78%{opacity:1}85%,100%{opacity:0}}\n@media (prefers-reduced-motion: reduce){*{animation:none!important}}\n</style>\n<text x=\"10\" y=\"24\" class=\"up-t\">A blackout hits the accounting firm's server room</text>\n<text x=\"10\" y=\"64\" class=\"up-s\">Mains power</text><rect x=\"150\" y=\"48\" width=\"500\" height=\"22\" rx=\"11\" fill=\"#e2e8f0\"/><rect class=\"up-m\" x=\"150\" y=\"48\" width=\"260\" height=\"22\" rx=\"11\"/>\n<text x=\"10\" y=\"114\" class=\"up-s\">UPS battery</text><rect x=\"150\" y=\"98\" width=\"500\" height=\"22\" rx=\"11\" fill=\"#e2e8f0\"/><rect class=\"up-u\" x=\"150\" y=\"98\" width=\"500\" height=\"22\" rx=\"11\"/>\n<g class=\"up-w\"><text x=\"150\" y=\"154\" class=\"up-t\" fill=\"#1d4ed8\">Battery takes over: time to save work and shut down safely.</text></g>\n</svg>",
+                  "caption": "The UPS does not keep the power on forever. It buys time to shut down safely."
+                },
+                {
+                  "type": "infoCards",
+                  "title": "Why both matter",
+                  "columns": 2,
+                  "cards": [
+                    {
+                      "icon": "🔋",
+                      "heading": "UPS",
+                      "text": "Server stays on during a short blackout. Time to save work and shut down safely. Stops data loss and file damage. Protects against surges.",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "🌡️",
+                      "heading": "Temperature control",
+                      "text": "Servers produce a lot of heat. Overheating slows or shuts down the CPU and shortens component life. Keep vents clear of dust.",
+                      "tone": "amber"
+                    }
+                  ]
                 },
                 {
                   "type": "heading",
-                  "text": "Worked example: Three common problems",
-                  "level": 3
+                  "text": "Fix it in order",
+                  "level": 2
                 },
                 {
-                  "type": "richText",
-                  "html": "<p>Check the simple things first.</p><p><strong>No sound</strong> — Check mute and volume; check the correct output device is selected; check headphones or speaker cables; restart the app.</p><p>Frozen screen, keyboard or mouse</p><p>Wait; open Task Manager (Ctrl+Shift+Esc) and end the frozen app; check wireless mouse batteries; restart.</p><p><strong>No display on projector</strong> — Check the cable at both ends; select the correct input on the projector; press Windows+P and choose Duplicate.</p>"
+                  "type": "sequence",
+                  "title": "A logical troubleshooting order",
+                  "instruction": "Tap the four steps in order.",
+                  "items": [
+                    "Describe the problem and when it happens.",
+                    "Check the simplest causes first, such as cables, volume and power.",
+                    "Try one fix at a time and test after each.",
+                    "Restart, then escalate if it is still not fixed."
+                  ],
+                  "explanation": "Simplest first, one change at a time, and test as you go."
                 },
                 {
-                  "type": "quizQuestion",
-                  "question": {
-                    "id": "hardware-5-maintenance-and-troubleshooting-quick-check",
-                    "questionType": "mcq",
-                    "text": "Quick check: Which term matches this description? A battery unit that keeps equipment running during a power failure long enough to save work and shut down safely. Also protects against power surges.",
-                    "options": [
-                      "Troubleshooting",
-                      "Uninterruptible power supply (UPS)",
-                      "Environmental temperature control"
-                    ],
-                    "correctIndex": 1,
-                    "explanation": "The term is Uninterruptible power supply (UPS). A battery unit that keeps equipment running during a power failure long enough to save work and shut down safely. Also protects against power surges."
-                  }
-                },
-                {
-                  "type": "heading",
-                  "text": "Why maintenance matters",
-                  "level": 3
-                },
-                {
-                  "type": "richText",
-                  "html": "<p><strong>UPS</strong> — Server stays on during a short blackout</p><p>Time to save work and shut down safely</p><p>Stops data loss and file damage</p><p>Protects against surges</p><p>Temperature control</p><p>Servers produce a lot of heat</p><p>Overheating slows or shuts down the CPU</p><p>Heat shortens the life of components</p><p>Keep vents clear of dust</p>"
-                },
-                {
-                  "type": "callout",
-                  "variant": "senior-wisdom",
-                  "heading": "💡 SENIOR WISDOM · SPARKY MILLER",
-                  "text": "A UPS doesn't keep the power on forever — it buys you minutes to save your work and shut down safely, or bridges a short outage. If an answer claims a UPS 'stops the computer losing power', that's not quite it; it manages the loss, it doesn't eliminate it."
-                },
-                {
-                  "type": "heading",
-                  "text": "Test tip: Steps must be specific",
-                  "level": 3
-                },
-                {
-                  "type": "callout",
-                  "variant": "pr-review",
-                  "heading": "🧰 CALLBACK CHECK · SPARKY IS REVIEWING THE JOB",
-                  "text": "For the blackout question I want the UPS's actual function explained, not just 'it would have helped'. And the server shutting down on hot days is a temperature problem — if your answer doesn't mention heat or cooling, you've missed what's actually being tested."
-                },
-                {
-                  "type": "richText",
-                  "html": "<p>Question: Describe one step to fix a laptop with no sound. (2 marks)</p><p>Earns 0 or 1 mark</p><p>\"Fix the settings.\"</p><p>Which settings?</p><p><strong>Earns full marks</strong> — \"Click the speaker icon and check the output is set to the laptop speakers, not a disconnected Bluetooth headset.\"</p>"
-                },
-                {
-                  "type": "paragraph",
-                  "text": "A small accounting firm keeps its server in a storeroom with no windows. Last summer the server shut down twice on hot days, and a blackout corrupted a file."
+                  "type": "sorter",
+                  "title": "Which fault does this fix?",
+                  "instruction": "Tap the problem each step helps solve.",
+                  "categories": [
+                    "No sound",
+                    "Frozen screen or device",
+                    "No display on projector"
+                  ],
+                  "items": [
+                    {
+                      "text": "Click the speaker icon and check the output is the laptop speakers, not a disconnected Bluetooth headset.",
+                      "category": 0,
+                      "why": "Checking the output device is a no-sound fix."
+                    },
+                    {
+                      "text": "Open Task Manager (Ctrl+Shift+Esc) and end the frozen app.",
+                      "category": 1,
+                      "why": "Ending the frozen application is a frozen-device fix."
+                    },
+                    {
+                      "text": "Press Windows+P and choose Duplicate.",
+                      "category": 2,
+                      "why": "It sends the laptop's display to the projector."
+                    },
+                    {
+                      "text": "Check the cable is secure at both ends and the projector's input is selected.",
+                      "category": 2,
+                      "why": "Cable and input selection are the first projector checks."
+                    },
+                    {
+                      "text": "Check wireless mouse batteries, then restart.",
+                      "category": 1,
+                      "why": "A dead wireless mouse can look like a frozen device."
+                    },
+                    {
+                      "text": "Check mute and volume, then restart the app.",
+                      "category": 0,
+                      "why": "Mute and volume are the first no-sound checks."
+                    }
+                  ]
                 },
                 {
                   "type": "interactiveDiagram",
@@ -2363,14 +2950,113 @@
                   "explanation": "Regular updates, scans and backups keep a computer healthy and your files safe."
                 },
                 {
+                  "type": "branchingScenario",
+                  "title": "The accounting firm's server",
+                  "intro": "A small accounting firm keeps its server in a storeroom with no windows. Last summer the server shut down twice on hot days, and a blackout corrupted a file.",
+                  "steps": [
+                    {
+                      "situation": "The partner asks how a UPS would have helped in the blackout.",
+                      "prompt": "Which explanation is strongest?",
+                      "choices": [
+                        {
+                          "text": "The UPS battery keeps the server running for a few minutes, giving time to save files and shut down safely, so the file would not have been corrupted.",
+                          "correct": true,
+                          "feedback": "It explains the function, not just 'it would have helped'."
+                        },
+                        {
+                          "text": "A UPS stops the server ever losing power.",
+                          "correct": false,
+                          "feedback": "It manages the loss, it does not eliminate it. The battery only lasts minutes."
+                        },
+                        {
+                          "text": "It would have helped.",
+                          "correct": false,
+                          "feedback": "No explanation of what the UPS actually does."
+                        }
+                      ]
+                    },
+                    {
+                      "situation": "The server keeps shutting down on hot days.",
+                      "prompt": "Which strategies address the cause?",
+                      "choices": [
+                        {
+                          "text": "Add air-conditioning or ventilation to the storeroom, and keep the server's vents clear of dust.",
+                          "correct": true,
+                          "feedback": "Both strategies address heat, which is the cause."
+                        },
+                        {
+                          "text": "Buy a bigger monitor.",
+                          "correct": false,
+                          "feedback": "Unrelated to overheating."
+                        },
+                        {
+                          "text": "Move the server somewhere with no power outlets.",
+                          "correct": false,
+                          "feedback": "It would not run, and does not address heat."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "flipCards",
+                  "title": "Check your understanding",
+                  "instruction": "Answer first, then flip.",
+                  "cards": [
+                    {
+                      "tag": "Define",
+                      "front": "What is a UPS?",
+                      "back": "A battery unit that keeps equipment running during a power failure long enough to save work and shut down safely. It also protects against surges."
+                    },
+                    {
+                      "tag": "Explain",
+                      "front": "Why does a server shut down on a hot day?",
+                      "back": "Heat damages components and causes shutdowns. Cooling and ventilation prevent it."
+                    }
+                  ]
+                },
+                {
                   "type": "callout",
-                  "variant": "sandbox",
-                  "heading": "🛠️ WORKSHOP CHALLENGE",
-                  "text": "Explain how a UPS would have helped during the blackout, and describe two strategies to stop the server overheating, before checking mine."
+                  "variant": "senior-wisdom",
+                  "heading": "Sparky's warning",
+                  "text": "A UPS does not keep the power on forever. It buys you minutes to save your work and shut down safely, or bridges a short outage. If an answer says a UPS 'stops the computer losing power', that is not quite it."
+                },
+                {
+                  "type": "infoCards",
+                  "title": "Test tip: what earns the marks",
+                  "intro": "Describe one step to fix a laptop with no sound. (2 marks)",
+                  "columns": 2,
+                  "cards": [
+                    {
+                      "icon": "⚠️",
+                      "heading": "Earns 0 or 1 mark: \"Fix the settings.\"",
+                      "text": "Which settings?",
+                      "tone": "red"
+                    },
+                    {
+                      "icon": "⭐",
+                      "heading": "Earns full marks",
+                      "text": "\"Click the speaker icon and check the output is set to the laptop speakers, not a disconnected Bluetooth headset.\" A specific step.",
+                      "tone": "green"
+                    }
+                  ]
+                },
+                {
+                  "type": "infoCards",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "📂",
+                      "heading": "Scenario: The accounting firm",
+                      "text": "A small accounting firm keeps its server in a storeroom with no windows. Last summer the server shut down twice on hot days, and a blackout corrupted a file. Answer the questions below using this scenario.",
+                      "tone": "amber"
+                    }
+                  ]
                 },
                 {
                   "type": "heading",
-                  "text": "Assessment practice"
+                  "text": "Assessment practice",
+                  "level": 2
                 },
                 {
                   "type": "quizQuestion",
@@ -2395,15 +3081,30 @@
                 {
                   "type": "heading",
                   "text": "Test-ready recap",
-                  "level": 3
+                  "level": 2
                 },
                 {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "I have copied the key terms into my notes.",
-                    "I scored at least 5 out of 6 on the practice questions.",
-                    "If not, reread the key terms and the test tip, then try again."
+                  "type": "infoCards",
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "icon": "🔋",
+                      "heading": "Explain the UPS properly",
+                      "text": "Battery gives time to save and shut down safely. It manages the power loss, it does not remove it.",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "🌡️",
+                      "heading": "Mention heat and cooling",
+                      "text": "Hot-day shutdowns are a temperature problem.",
+                      "tone": "purple"
+                    },
+                    {
+                      "icon": "🎯",
+                      "heading": "Aim for",
+                      "text": "At least 5/6 on the practice questions. If not, reread the key terms and test tip.",
+                      "tone": "green"
+                    }
                   ]
                 },
                 {
@@ -2411,7 +3112,8 @@
                   "heading": "Task 3",
                   "text": "Task 3 Short Answer Test (Unit 3) is this week. Revise hardware, copyright and file formats."
                 }
-              ]
+              ],
+              "estimatedMinutes": 45
             }
           ]
         },
