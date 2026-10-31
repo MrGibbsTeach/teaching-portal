@@ -134,3 +134,31 @@ export const twoPanelSvg = (left, right, mid = "") => {
   return `<svg viewBox="0 0 680 ${H + 24}" xmlns="http://www.w3.org/2000/svg"><style>.tp-t{font:700 14px system-ui,sans-serif;fill:#0f172a}.tp-s{font:12px system-ui,sans-serif;fill:#334155}.tp-w{stroke:#2563eb;stroke-width:3;stroke-dasharray:6 6;fill:none;animation:tp-d 2s linear infinite}@keyframes tp-d{to{stroke-dashoffset:-24}}.tp-m{font:700 12.5px system-ui,sans-serif;fill:#1d4ed8;animation:tp-b 3s infinite}@keyframes tp-b{0%,45%{opacity:1}55%,100%{opacity:.3}}${"@media (prefers-reduced-motion: reduce){*{animation:none!important}}"}</style>${panel(left, 10)}${panel(right, 400)}<path class="tp-w" d="M285 ${H / 2} Q 340 ${H / 2 - 50} 395 ${H / 2}"/><text class="tp-m" x="340" y="${H + 14}" text-anchor="middle">${esc(mid)}</text></svg>`;
 };
 export const fileSizeLab = (o) => ({ type: "fileSizeLab", ...o });
+
+// ---------- compact helpers + in-place upgrade (used for Year 11 General) ----------
+/** Sorter from compact rows: [text, categoryIndex, why] */
+export const S = (title, instruction, categories, rows) => sorter(title, instruction, categories, rows.map(([text, category, why]) => ({ text, category, why })));
+/** Flip cards from compact rows: [tag, front, back] */
+export const F = (title, rows) => flip(title, rows.map(([tag, front, back]) => ({ tag, front, back })));
+/** Branching scenario: steps = [[situation, prompt, [[text, correct(bool), feedback], ...]], ...] */
+export const B = (title, intro, steps) => branch(title, intro, steps.map(([situation, prompt, choices]) => ({ situation, prompt, choices: choices.map(([text, correct, feedback]) => ({ text, correct, feedback })) })));
+export const V = (title, minutes, brief, watchFor) => video(title, minutes, brief, watchFor);
+/**
+ * Upgrade an existing lesson in place: remove boilerplate "Visual model" filler, add a video placeholder
+ * (unless the lesson already has a real video), and insert interactives before "Assessment practice".
+ * Skips lessons already upgraded.
+ */
+export const upgradeInPlace = (l, { video: vid, blocks }) => {
+  if (l.blocks.some((b) => b.type === "heading" && b.text === "Try it yourself")) return false;
+  l.blocks = l.blocks.filter((b) => !(b.type === "richText" && (b.heading ?? "").startsWith("Visual model") && /Treat each card/.test(b.html ?? "")));
+  const hasRealVideo = l.blocks.some((b) => b.type === "video" || b.type === "checkpointVideo");
+  if (vid && !hasRealVideo) {
+    const li = l.blocks.findIndex((b) => b.type === "list");
+    l.blocks.splice(li >= 0 ? li + 1 : 1, 0, vid);
+  }
+  let at = l.blocks.findIndex((b) => b.type === "heading" && /^Assessment practice/.test(b.text));
+  if (at < 0) at = l.blocks.findIndex((b) => b.type === "heading" && /^Test-ready recap/.test(b.text));
+  if (at < 0) at = l.blocks.length;
+  l.blocks.splice(at, 0, h("Try it yourself"), ...blocks);
+  return true;
+};
