@@ -50,7 +50,10 @@
                     "Where each element appears",
                     "Why naming is not enough: describe how it is used",
                     "How colour is used sparingly"
-                  ]
+                  ],
+                  "youtubeId": "YqQx75OPRa0",
+                  "videoTitle": "The Elements of Design Explained",
+                  "videoSource": "existing ID used in Year 11 ATAR"
                 },
                 {
                   "type": "heading",
@@ -428,7 +431,10 @@
                     "What the eye sees first",
                     "How grouping creates unity",
                     "How balance can be asymmetrical"
-                  ]
+                  ],
+                  "youtubeId": "FLzAimyPxiw",
+                  "videoTitle": "8 Principles of Design Explained in 4 Minutes",
+                  "videoSource": "YouTube search"
                 },
                 {
                   "type": "heading",
@@ -1008,7 +1014,10 @@
                     "How size creates hierarchy",
                     "Why sans serif suits screens",
                     "What makes text readable at a distance"
-                  ]
+                  ],
+                  "youtubeId": "sByzHoiYFX0",
+                  "videoTitle": "Beginning Graphic Design: Typography",
+                  "videoSource": "existing ID used in Year 11 ATAR and Y11 General"
                 },
                 {
                   "type": "heading",
@@ -1353,7 +1362,10 @@
                     "Where the thirds lines sit",
                     "How a grid sets columns and margins",
                     "What alignment adds"
-                  ]
+                  ],
+                  "youtubeId": "6cYsS7GbvyI",
+                  "videoTitle": "The Three Thirds Rule For Graphic Designers (Image Composition)",
+                  "videoSource": "YouTube search"
                 },
                 {
                   "type": "heading",
@@ -2215,7 +2227,10 @@
                     "Which chip is the CPU",
                     "Where the RAM and SSD sit",
                     "Why a laptop with little RAM feels slow"
-                  ]
+                  ],
+                  "youtubeId": "cNN_tTXABUA",
+                  "videoTitle": "How a CPU Works",
+                  "videoSource": "existing ID used in Year 11 ATAR"
                 },
                 {
                   "type": "heading",
@@ -2592,7 +2607,10 @@
                     "Which direction the data moves",
                     "Why a touchscreen is both input and output",
                     "What a server does for many users"
-                  ]
+                  ],
+                  "youtubeId": "vU7H5gNvqh0",
+                  "videoTitle": "Computer Input, Output & Storage Devices Explained",
+                  "videoSource": "YouTube search"
                 },
                 {
                   "type": "heading",
@@ -2937,7 +2955,10 @@
                     "The jobs an OS does behind the scenes",
                     "How a driver lets a printer work",
                     "Why updates matter"
-                  ]
+                  ],
+                  "youtubeId": "GjNp0bBrjmU",
+                  "videoTitle": "How Do Operating Systems Work?",
+                  "videoSource": "existing ID used in Year 11 ATAR"
                 },
                 {
                   "type": "heading",
@@ -3602,7 +3623,10 @@
                     "The order the checks are made in",
                     "What a UPS does in a blackout",
                     "Why the server room needs cooling"
-                  ]
+                  ],
+                  "youtubeId": "gmbjZFzumEE",
+                  "videoTitle": "How Does a UPS Work? Uninterruptible Power Supply Explained",
+                  "videoSource": "YouTube search"
                 },
                 {
                   "type": "heading",
@@ -3957,7 +3981,10 @@
                     "Who can see a public post",
                     "What happens when someone screenshots it",
                     "Why deleting does not remove every copy"
-                  ]
+                  ],
+                  "youtubeId": "kHYkWtI7004",
+                  "videoTitle": "Privacy Student Intro Video: The Digital Footprint (Common Sense Education)",
+                  "videoSource": "cited by a university teaching resource"
                 },
                 {
                   "type": "heading",
@@ -4312,7 +4339,10 @@
                     "What evidence the student keeps",
                     "Where the report button is",
                     "When to go to eSafety"
-                  ]
+                  ],
+                  "youtubeId": "4Zcmdwr2pk4",
+                  "videoTitle": "What to do if You Experience Cyberbullying",
+                  "videoSource": "YouTube search"
                 },
                 {
                   "type": "heading",
@@ -5002,7 +5032,10 @@
                     "What counts as a protected work",
                     "The listed fair dealing purposes",
                     "What moral rights are"
-                  ]
+                  ],
+                  "youtubeId": "Lb1nIjjJvPI",
+                  "videoTitle": "Copyright in 3 minutes: A guide for Students",
+                  "videoSource": "YouTube search"
                 },
                 {
                   "type": "heading",
@@ -5316,7 +5349,10 @@
                     "The order of the five parts",
                     "Where the full stops and brackets go",
                     "How a photograph reference differs from a website one"
-                  ]
+                  ],
+                  "youtubeId": "BF8U4Oauidw",
+                  "videoTitle": "APA 7th Referencing: Webpage (UTS Library)",
+                  "videoSource": "YouTube search"
                 },
                 {
                   "type": "heading",
@@ -5906,7 +5942,10 @@
                     "What happens when a raster image is enlarged",
                     "Which formats keep transparency",
                     "Why MP3 is smaller than WAV"
-                  ]
+                  ],
+                  "youtubeId": "1vUG2AbZTnI",
+                  "videoTitle": "Raster vs Vector: What is the Difference?",
+                  "videoSource": "existing ID used in Year 11 ATAR"
                 },
                 {
                   "type": "heading",
@@ -6880,7 +6919,10 @@
                     "Who owns the source code",
                     "Whether copies can be shared",
                     "What the licence allows"
-                  ]
+                  ],
+                  "youtubeId": "mBbz6iUHVss",
+                  "videoTitle": "Types of Software Licenses: A Complete Beginner's Guide",
+                  "videoSource": "YouTube search"
                 },
                 {
                   "type": "heading",
@@ -7486,7 +7528,10 @@
                     "Ascending and descending",
                     "How a multi-level sort groups data",
                     "Why filtering hides rather than deletes"
-                  ]
+                  ],
+                  "youtubeId": "1V3Tjc7KztI",
+                  "videoTitle": "Excel for Beginners #6: Sorting And Filtering Made Easy",
+                  "videoSource": "YouTube search"
                 },
                 {
                   "type": "heading",
@@ -8366,7 +8411,10 @@
                     "Why thumbnails come first",
                     "What a storyboard frame contains",
                     "How an annotation differs from a label"
-                  ]
+                  ],
+                  "youtubeId": "lJipkxgMSF0",
+                  "videoTitle": "Wireframe vs Mockup vs Prototype: What's the Difference?",
+                  "videoSource": "YouTube search"
                 },
                 {
                   "type": "heading",
@@ -9308,7 +9356,10 @@
                     "What is thrown away in lossy compression",
                     "Why logos and text suit lossless",
                     "How much smaller each option is"
-                  ]
+                  ],
+                  "youtubeId": "5I0niqqJxJw",
+                  "videoTitle": "Lossy vs. Lossless Compression",
+                  "videoSource": "YouTube search"
                 },
                 {
                   "type": "heading",
@@ -10466,7 +10517,10 @@
                     "What runs on the provider's servers",
                     "What happens with no internet",
                     "How sharing works"
-                  ]
+                  ],
+                  "youtubeId": "-3bn-C3b0Ek",
+                  "videoTitle": "Cloud Computing Advantages and Disadvantages Explained",
+                  "videoSource": "YouTube search"
                 },
                 {
                   "type": "heading",
@@ -11076,7 +11130,10 @@
                     "The warning signs in the email",
                     "What spyware can record",
                     "What quarantine means"
-                  ]
+                  ],
+                  "youtubeId": "XBkzBrXlle0",
+                  "videoTitle": "Phishing Explained in 6 Minutes",
+                  "videoSource": "existing ID used in Year 11 ATAR"
                 },
                 {
                   "type": "heading",
@@ -11379,7 +11436,10 @@
                     "What each person shared before and after",
                     "Where data moves between devices",
                     "What can go wrong"
-                  ]
+                  ],
+                  "youtubeId": "ApbOARvYZY4",
+                  "videoTitle": "Computer Networks: LANs and WANs Explained",
+                  "videoSource": "existing ID used in Year 11 ATAR"
                 },
                 {
                   "type": "heading",
@@ -11714,7 +11774,10 @@
                     "How each medium carries data",
                     "How far each can reach",
                     "What interferes with wireless"
-                  ]
+                  ],
+                  "youtubeId": "Hoe48glXbjk",
+                  "videoTitle": "Fiber Optic vs Ethernet Cable: When and Where to Use (trueCABLE)",
+                  "videoSource": "YouTube search"
                 },
                 {
                   "type": "heading",
@@ -12314,7 +12377,10 @@
                     "What each box does",
                     "Why a modem and router are different devices",
                     "What a NIC is"
-                  ]
+                  ],
+                  "youtubeId": "3QhU9jd03a0",
+                  "videoTitle": "Computer Networks: Crash Course Computer Science #28",
+                  "videoSource": "existing ID used in Year 11 General"
                 },
                 {
                   "type": "heading",
@@ -12572,7 +12638,10 @@
                     "How devices are connected in a star",
                     "Where files are stored in each model",
                     "Which model suits which business"
-                  ]
+                  ],
+                  "youtubeId": "njvdE_GzbSE",
+                  "videoTitle": "Client Server and Peer to Peer Networks",
+                  "videoSource": "YouTube search"
                 },
                 {
                   "type": "heading",
@@ -13167,7 +13236,10 @@
                     "What counts as personal information",
                     "The 'only collect what you need' rule",
                     "How a person asks to see their information"
-                  ]
+                  ],
+                  "youtubeId": "AsK0W310G_w",
+                  "videoTitle": "What are Australia's 13 privacy principles?",
+                  "videoSource": "YouTube search"
                 },
                 {
                   "type": "heading",
@@ -13486,7 +13558,10 @@
                     "Which details are most useful to a thief",
                     "Why deleted files can still be recovered",
                     "What a data-wipe or shredding service does"
-                  ]
+                  ],
+                  "youtubeId": "XBkzBrXlle0",
+                  "videoTitle": "Phishing Explained in 6 Minutes",
+                  "videoSource": "existing ID used in Year 11 ATAR"
                 },
                 {
                   "type": "heading",
@@ -13783,7 +13858,10 @@
                     "Who is on each side of the divide",
                     "Which services have moved online",
                     "Why a connection alone does not fix it"
-                  ]
+                  ],
+                  "youtubeId": "uYQ503GU0YE",
+                  "videoTitle": "Ronnie is the only person in his town with internet. The digital divide is to blame",
+                  "videoSource": "YouTube search (Australian news)"
                 },
                 {
                   "type": "heading",
@@ -16520,7 +16598,10 @@
                     "How overlaps show on a Gantt chart",
                     "Where the buffer goes",
                     "How time blocking works"
-                  ]
+                  ],
+                  "youtubeId": "fB0wsdmV3Sw",
+                  "videoTitle": "What is a Gantt Chart? Project Management in Under 5",
+                  "videoSource": "existing ID used in Year 11 ATAR"
                 },
                 {
                   "type": "heading",

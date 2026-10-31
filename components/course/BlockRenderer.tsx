@@ -202,7 +202,7 @@ export function BlockRenderer({ block }: { block: Block }) {
     case "branchingScenario":
       return <BranchingScenario title={block.title} intro={block.intro} steps={block.steps} />;
     case "videoSlot":
-      return <VideoSlot title={block.title} youtubeId={block.youtubeId} brief={block.brief} minutes={block.minutes} watchFor={block.watchFor} />;
+      return <VideoSlot title={block.title} youtubeId={block.youtubeId} brief={block.brief} minutes={block.minutes} watchFor={block.watchFor} videoTitle={block.videoTitle} />;
     case "fileSizeLab":
       return <FileSizeLab title={block.title} instruction={block.instruction} width={block.width} height={block.height} useCase={block.useCase} />;
     case "placer":

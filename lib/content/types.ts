@@ -126,6 +126,10 @@ export type Block =
       title: string;
       /** YouTube ID once a video is chosen. Leave unset to show the placeholder card. */
       youtubeId?: string;
+      /** The real title of the chosen video (shown to students instead of the placeholder brief). */
+      videoTitle?: string;
+      /** Where the video was found, for the teacher to vet. */
+      videoSource?: string;
       /** What the video should show, so whoever sources or films it knows the brief. */
       brief: string;
       minutes?: number;

@@ -5,12 +5,14 @@ export function VideoSlot({
   brief,
   minutes,
   watchFor,
+  videoTitle,
 }: {
   title: string;
   youtubeId?: string;
   brief: string;
   minutes?: number;
   watchFor?: string[];
+  videoTitle?: string;
 }) {
   return (
     <section className="mt-5 overflow-hidden rounded-2xl border bg-card shadow-sm">
@@ -38,6 +40,9 @@ export function VideoSlot({
           {youtubeId ? "Watch" : "Video placeholder"}
         </p>
         <p className="mt-1 font-semibold">{title}</p>
+        {youtubeId && videoTitle && (
+          <p className="mt-0.5 text-xs text-muted-foreground">Video: {videoTitle}</p>
+        )}
         <p className="mt-1 text-foreground/85">{brief}</p>
         {watchFor && watchFor.length > 0 && (
           <>

@@ -1,0 +1,352 @@
+[
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "hardware-1-cpu-and-memory",
+    "youtubeId": "cNN_tTXABUA",
+    "videoTitle": "How a CPU Works",
+    "source": "existing ID used in Year 11 ATAR"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "hardware-2-peripherals-and-computer-systems",
+    "youtubeId": "vU7H5gNvqh0",
+    "videoTitle": "Computer Input, Output & Storage Devices Explained",
+    "source": "YouTube search"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "hardware-3-operating-systems",
+    "youtubeId": "GjNp0bBrjmU",
+    "videoTitle": "How Do Operating Systems Work?",
+    "source": "existing ID used in Year 11 ATAR"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "hardware-5-maintenance-and-troubleshooting",
+    "youtubeId": "gmbjZFzumEE",
+    "videoTitle": "How Does a UPS Work? Uninterruptible Power Supply Explained",
+    "source": "YouTube search"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "design-concepts-1-elements-of-design",
+    "youtubeId": "YqQx75OPRa0",
+    "videoTitle": "The Elements of Design Explained",
+    "source": "existing ID used in Year 11 ATAR"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "design-concepts-2-principles-of-design",
+    "youtubeId": "FLzAimyPxiw",
+    "videoTitle": "8 Principles of Design Explained in 4 Minutes",
+    "source": "YouTube search"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "design-concepts-4-typography",
+    "youtubeId": "sByzHoiYFX0",
+    "videoTitle": "Beginning Graphic Design: Typography",
+    "source": "existing ID used in Year 11 ATAR and Y11 General"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "design-concepts-5-compositional-rules",
+    "youtubeId": "6cYsS7GbvyI",
+    "videoTitle": "The Three Thirds Rule For Graphic Designers (Image Composition)",
+    "source": "YouTube search"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "impacts-of-technology-u3-1-digital-citizenship",
+    "youtubeId": "kHYkWtI7004",
+    "videoTitle": "Privacy Student Intro Video: The Digital Footprint (Common Sense Education)",
+    "source": "cited by a university teaching resource"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "impacts-of-technology-u3-2-cyberbullying-and-work-life-balance",
+    "youtubeId": "4Zcmdwr2pk4",
+    "videoTitle": "What to do if You Experience Cyberbullying",
+    "source": "YouTube search"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "impacts-of-technology-u3-4-copyright-act-1968",
+    "youtubeId": "Lb1nIjjJvPI",
+    "videoTitle": "Copyright in 3 minutes: A guide for Students",
+    "source": "YouTube search"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "impacts-of-technology-u3-5-referencing-and-acknowledging-ip",
+    "youtubeId": "BF8U4Oauidw",
+    "videoTitle": "APA 7th Referencing: Webpage (UTS Library)",
+    "source": "YouTube search"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "application-skills-u3-2-graphic-and-audio-file-formats",
+    "youtubeId": "1vUG2AbZTnI",
+    "videoTitle": "Raster vs Vector: What is the Difference?",
+    "source": "existing ID used in Year 11 ATAR"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "application-skills-u3-5-software-licences",
+    "youtubeId": "mBbz6iUHVss",
+    "videoTitle": "Types of Software Licenses: A Complete Beginner's Guide",
+    "source": "YouTube search"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "application-skills-u3-7-sort-filters",
+    "youtubeId": "1V3Tjc7KztI",
+    "videoTitle": "Excel for Beginners #6: Sorting And Filtering Made Easy",
+    "source": "YouTube search"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "project-management-u3-3-representing-the-design",
+    "youtubeId": "lJipkxgMSF0",
+    "videoTitle": "Wireframe vs Mockup vs Prototype: What's the Difference?",
+    "source": "YouTube search"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "networks-1-networking-concepts",
+    "youtubeId": "ApbOARvYZY4",
+    "videoTitle": "Computer Networks: LANs and WANs Explained",
+    "source": "existing ID used in Year 11 ATAR"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "networks-2-transmission-media",
+    "youtubeId": "Hoe48glXbjk",
+    "videoTitle": "Fiber Optic vs Ethernet Cable: When and Where to Use (trueCABLE)",
+    "source": "YouTube search"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "networks-4-network-components",
+    "youtubeId": "3QhU9jd03a0",
+    "videoTitle": "Computer Networks: Crash Course Computer Science #28",
+    "source": "existing ID used in Year 11 General"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "networks-5-lan-topologies",
+    "youtubeId": "njvdE_GzbSE",
+    "videoTitle": "Client Server and Peer to Peer Networks",
+    "source": "YouTube search"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "managing-data-2-compression",
+    "youtubeId": "5I0niqqJxJw",
+    "videoTitle": "Lossy vs. Lossless Compression",
+    "source": "YouTube search"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "managing-data-6-cloud-computing",
+    "youtubeId": "-3bn-C3b0Ek",
+    "videoTitle": "Cloud Computing Advantages and Disadvantages Explained",
+    "source": "YouTube search"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "managing-data-8-security-utilities",
+    "youtubeId": "XBkzBrXlle0",
+    "videoTitle": "Phishing Explained in 6 Minutes",
+    "source": "existing ID used in Year 11 ATAR"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "impacts-of-technology-u4-1-privacy-act-collection-use-access",
+    "youtubeId": "AsK0W310G_w",
+    "videoTitle": "What are Australia's 13 privacy principles?",
+    "source": "YouTube search"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "impacts-of-technology-u4-2-identity-theft-and-safe-disposal",
+    "youtubeId": "XBkzBrXlle0",
+    "videoTitle": "Phishing Explained in 6 Minutes",
+    "source": "existing ID used in Year 11 ATAR"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "impacts-of-technology-u4-3-digital-divide",
+    "youtubeId": "uYQ503GU0YE",
+    "videoTitle": "Ronnie is the only person in his town with internet. The digital divide is to blame",
+    "source": "YouTube search (Australian news)"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "project-management-u4-2-time-management-strategies",
+    "youtubeId": "fB0wsdmV3Sw",
+    "videoTitle": "What is a Gantt Chart? Project Management in Under 5",
+    "source": "existing ID used in Year 11 ATAR"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "types-of-computer-systems",
+    "youtubeId": "d86ws7mQYIg",
+    "videoTitle": "How does Computer Hardware Work?",
+    "source": "existing ID used in Year 11 ATAR"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "input-output-and-peripheral-devices",
+    "youtubeId": "vU7H5gNvqh0",
+    "videoTitle": "Computer Input, Output & Storage Devices Explained",
+    "source": "YouTube search"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "troubleshooting-hardware-and-software",
+    "youtubeId": "Q8LHfWZwChE",
+    "videoTitle": "How To Fix a PC That Doesn't Boot: Troubleshooting Guide",
+    "source": "YouTube search"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "elements-of-design",
+    "youtubeId": "YqQx75OPRa0",
+    "videoTitle": "The Elements of Design Explained",
+    "source": "existing ID used in Year 11 ATAR"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "principles-of-design",
+    "youtubeId": "FLzAimyPxiw",
+    "videoTitle": "8 Principles of Design Explained in 4 Minutes",
+    "source": "YouTube search"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "compositional-rules",
+    "youtubeId": "6cYsS7GbvyI",
+    "videoTitle": "The Three Thirds Rule For Graphic Designers (Image Composition)",
+    "source": "YouTube search"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "work-health-and-safety-in-the-digital-workplace",
+    "youtubeId": "F8_ME4VwTiw",
+    "videoTitle": "Ergonomics Expert Explains How to Set Up Your Desk",
+    "source": "YouTube search"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "health-impacts-of-technology",
+    "youtubeId": "F8_ME4VwTiw",
+    "videoTitle": "Ergonomics Expert Explains How to Set Up Your Desk",
+    "source": "YouTube search"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "privacy-and-personal-information",
+    "youtubeId": "AsK0W310G_w",
+    "videoTitle": "What are Australia's 13 privacy principles?",
+    "source": "YouTube search"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "digital-citizenship-and-online-conduct",
+    "youtubeId": "yfZN4_gP5kQ",
+    "videoTitle": "Digital Citizenship Explained",
+    "source": "existing ID used in Year 11 ATAR"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "digital-citizenship-and-cyberbullying",
+    "youtubeId": "4Zcmdwr2pk4",
+    "videoTitle": "What to do if You Experience Cyberbullying",
+    "source": "YouTube search"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "spreadsheet-features",
+    "youtubeId": "5C_H5faX_MY",
+    "videoTitle": "Learn Basic Excel Formulas in Under 15 Minutes",
+    "source": "existing ID used in Year 11 ATAR"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "online-database-tools",
+    "youtubeId": "d3BYVQ6xIE4",
+    "videoTitle": "Excel VLOOKUP Tutorial: Everything You Need To Know",
+    "source": "existing ID used in Year 11 ATAR"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "image-manipulation-software",
+    "youtubeId": "1vUG2AbZTnI",
+    "videoTitle": "Raster vs Vector: What is the Difference?",
+    "source": "existing ID used in Year 11 ATAR"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "common-file-formats",
+    "youtubeId": "1vUG2AbZTnI",
+    "videoTitle": "Raster vs Vector: What is the Difference?",
+    "source": "existing ID used in Year 11 ATAR"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "planning-a-digital-solution",
+    "youtubeId": "fB0wsdmV3Sw",
+    "videoTitle": "What is a Gantt Chart? Project Management in Under 5",
+    "source": "existing ID used in Year 11 ATAR"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "time-management-skills",
+    "youtubeId": "fB0wsdmV3Sw",
+    "videoTitle": "What is a Gantt Chart? Project Management in Under 5",
+    "source": "existing ID used in Year 11 ATAR"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "the-design-process",
+    "youtubeId": "SaCYkPD4_K0",
+    "videoTitle": "Software Development Life Cycle Explained",
+    "source": "existing ID used in Year 11 ATAR"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "representing-a-design",
+    "youtubeId": "lJipkxgMSF0",
+    "videoTitle": "Wireframe vs Mockup vs Prototype: What's the Difference?",
+    "source": "YouTube search"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "applying-design-elements-and-principles",
+    "youtubeId": "FLzAimyPxiw",
+    "videoTitle": "8 Principles of Design Explained in 4 Minutes",
+    "source": "YouTube search"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "types-of-computer-crime",
+    "youtubeId": "XBkzBrXlle0",
+    "videoTitle": "Phishing Explained in 6 Minutes",
+    "source": "existing ID used in Year 11 ATAR"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "network-security",
+    "youtubeId": "XBkzBrXlle0",
+    "videoTitle": "Phishing Explained in 6 Minutes",
+    "source": "existing ID used in Year 11 ATAR"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "copyright-and-intellectual-property",
+    "youtubeId": "Lb1nIjjJvPI",
+    "videoTitle": "Copyright in 3 minutes: A guide for Students",
+    "source": "YouTube search"
+  }
+]

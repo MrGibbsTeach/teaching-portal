@@ -44,7 +44,10 @@
                     "Where each element appears",
                     "Naming against describing",
                     "How colour is used sparingly"
-                  ]
+                  ],
+                  "youtubeId": "YqQx75OPRa0",
+                  "videoTitle": "The Elements of Design Explained",
+                  "videoSource": "existing ID used in Year 11 ATAR"
                 },
                 {
                   "type": "richText",
@@ -317,7 +320,10 @@
                     "What the eye sees first",
                     "How grouping creates unity",
                     "How balance can be asymmetrical"
-                  ]
+                  ],
+                  "youtubeId": "FLzAimyPxiw",
+                  "videoTitle": "8 Principles of Design Explained in 4 Minutes",
+                  "videoSource": "YouTube search"
                 },
                 {
                   "type": "richText",
@@ -778,7 +784,10 @@
                     "Where the thirds lines sit",
                     "How a grid sets columns",
                     "What alignment adds"
-                  ]
+                  ],
+                  "youtubeId": "6cYsS7GbvyI",
+                  "videoTitle": "The Three Thirds Rule For Graphic Designers (Image Composition)",
+                  "videoSource": "YouTube search"
                 },
                 {
                   "type": "heading",
@@ -2060,7 +2069,10 @@
                     "Resolution against colour gamut",
                     "Which interface is fastest",
                     "Which devices are both input and output"
-                  ]
+                  ],
+                  "youtubeId": "vU7H5gNvqh0",
+                  "videoTitle": "Computer Input, Output & Storage Devices Explained",
+                  "videoSource": "YouTube search"
                 },
                 {
                   "type": "heading",
@@ -2492,7 +2504,10 @@
                     "The order the checks are made in",
                     "What POST beeps mean",
                     "How heat causes shutdowns"
-                  ]
+                  ],
+                  "youtubeId": "Q8LHfWZwChE",
+                  "videoTitle": "How To Fix a PC That Doesn't Boot: Troubleshooting Guide",
+                  "videoSource": "YouTube search"
                 },
                 {
                   "type": "heading",
@@ -3077,7 +3092,10 @@
                     "Correct screen height",
                     "The 20-20-20 rule",
                     "Why breaks matter"
-                  ]
+                  ],
+                  "youtubeId": "F8_ME4VwTiw",
+                  "videoTitle": "Ergonomics Expert Explains How to Set Up Your Desk",
+                  "videoSource": "YouTube search"
                 },
                 {
                   "type": "heading",
@@ -3361,7 +3379,10 @@
                     "Personal against sensitive",
                     "Collect only what you need",
                     "What a data breach triggers"
-                  ]
+                  ],
+                  "youtubeId": "AsK0W310G_w",
+                  "videoTitle": "What are Australia's 13 privacy principles?",
+                  "videoSource": "YouTube search"
                 },
                 {
                   "type": "heading",
@@ -3677,7 +3698,10 @@
                     "Forms of cyberbullying",
                     "How to report",
                     "Which laws apply"
-                  ]
+                  ],
+                  "youtubeId": "yfZN4_gP5kQ",
+                  "videoTitle": "Digital Citizenship Explained",
+                  "videoSource": "existing ID used in Year 11 ATAR"
                 },
                 {
                   "type": "heading",
@@ -5300,7 +5324,10 @@
                     "What the dollar signs do",
                     "How a named range helps",
                     "How a pivot table summarises"
-                  ]
+                  ],
+                  "youtubeId": "5C_H5faX_MY",
+                  "videoTitle": "Learn Basic Excel Formulas in Under 15 Minutes",
+                  "videoSource": "existing ID used in Year 11 ATAR"
                 },
                 {
                   "type": "heading",
@@ -6971,7 +6998,10 @@
                     "What is in and out of scope",
                     "How milestones are set",
                     "Waterfall against Agile"
-                  ]
+                  ],
+                  "youtubeId": "fB0wsdmV3Sw",
+                  "videoTitle": "What is a Gantt Chart? Project Management in Under 5",
+                  "videoSource": "existing ID used in Year 11 ATAR"
                 },
                 {
                   "type": "heading",
@@ -8991,7 +9021,10 @@
                     "Which formats hold structured data",
                     "Which compression loses quality",
                     "Why a screenshot of a spreadsheet is not data"
-                  ]
+                  ],
+                  "youtubeId": "1vUG2AbZTnI",
+                  "videoTitle": "Raster vs Vector: What is the Difference?",
+                  "videoSource": "existing ID used in Year 11 ATAR"
                 },
                 {
                   "type": "heading",
@@ -11186,7 +11219,10 @@
                     "The warning signs of phishing",
                     "What ransomware does",
                     "Which router settings matter"
-                  ]
+                  ],
+                  "youtubeId": "XBkzBrXlle0",
+                  "videoTitle": "Phishing Explained in 6 Minutes",
+                  "videoSource": "existing ID used in Year 11 ATAR"
                 },
                 {
                   "type": "heading",
@@ -12256,7 +12292,10 @@
                     "The red flags in a fake email",
                     "How ransomware spreads",
                     "Where to report cybercrime"
-                  ]
+                  ],
+                  "youtubeId": "XBkzBrXlle0",
+                  "videoTitle": "Phishing Explained in 6 Minutes",
+                  "videoSource": "existing ID used in Year 11 ATAR"
                 },
                 {
                   "type": "heading",
@@ -12606,7 +12645,10 @@
                     "How to find an image's licence",
                     "What fair dealing covers",
                     "When to ask for permission"
-                  ]
+                  ],
+                  "youtubeId": "Lb1nIjjJvPI",
+                  "videoTitle": "Copyright in 3 minutes: A guide for Students",
+                  "videoSource": "YouTube search"
                 },
                 {
                   "type": "heading",
@@ -13114,7 +13156,10 @@
                     "What a bystander can do",
                     "How eSafety helps",
                     "How a footprint lasts"
-                  ]
+                  ],
+                  "youtubeId": "4Zcmdwr2pk4",
+                  "videoTitle": "What to do if You Experience Cyberbullying",
+                  "videoSource": "YouTube search"
                 },
                 {
                   "type": "heading",
@@ -13389,7 +13434,10 @@
                     "Early warning symptoms",
                     "Simple preventions",
                     "Why breaks matter"
-                  ]
+                  ],
+                  "youtubeId": "F8_ME4VwTiw",
+                  "videoTitle": "Ergonomics Expert Explains How to Set Up Your Desk",
+                  "videoSource": "YouTube search"
                 },
                 {
                   "type": "paragraph",
@@ -14621,7 +14669,10 @@
                     "What layers do",
                     "How re-saving a JPEG degrades it",
                     "Which format keeps transparency"
-                  ]
+                  ],
+                  "youtubeId": "1vUG2AbZTnI",
+                  "videoTitle": "Raster vs Vector: What is the Difference?",
+                  "videoSource": "existing ID used in Year 11 ATAR"
                 },
                 {
                   "type": "heading",
@@ -14931,7 +14982,10 @@
                     "Records, fields and keys",
                     "How VLOOKUP joins data",
                     "When to move to a real database"
-                  ]
+                  ],
+                  "youtubeId": "d3BYVQ6xIE4",
+                  "videoTitle": "Excel VLOOKUP Tutorial: Everything You Need To Know",
+                  "videoSource": "existing ID used in Year 11 ATAR"
                 },
                 {
                   "type": "heading",
@@ -15904,7 +15958,10 @@
                     "What each phase produces",
                     "Where iteration happens",
                     "Who is involved"
-                  ]
+                  ],
+                  "youtubeId": "SaCYkPD4_K0",
+                  "videoTitle": "Software Development Life Cycle Explained",
+                  "videoSource": "existing ID used in Year 11 ATAR"
                 },
                 {
                   "type": "heading",
@@ -16232,7 +16289,10 @@
                     "Urgent against important",
                     "Must have against could have",
                     "How a sprint is planned"
-                  ]
+                  ],
+                  "youtubeId": "fB0wsdmV3Sw",
+                  "videoTitle": "What is a Gantt Chart? Project Management in Under 5",
+                  "videoSource": "existing ID used in Year 11 ATAR"
                 },
                 {
                   "type": "heading",
@@ -16522,7 +16582,10 @@
                     "How fidelity increases",
                     "When a flowchart helps",
                     "What a storyboard shows"
-                  ]
+                  ],
+                  "youtubeId": "lJipkxgMSF0",
+                  "videoTitle": "Wireframe vs Mockup vs Prototype: What's the Difference?",
+                  "videoSource": "YouTube search"
                 },
                 {
                   "type": "heading",
@@ -16793,7 +16856,10 @@
                     "What visual hierarchy is",
                     "How whitespace helps",
                     "How to check contrast"
-                  ]
+                  ],
+                  "youtubeId": "FLzAimyPxiw",
+                  "videoTitle": "8 Principles of Design Explained in 4 Minutes",
+                  "videoSource": "YouTube search"
                 },
                 {
                   "type": "heading",
