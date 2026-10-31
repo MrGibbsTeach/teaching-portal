@@ -28,7 +28,9 @@ export const pick = (lesson, pred) => lesson.blocks.find(pred);
 export const extended = (l) => l.blocks.filter((b) => b.type === "quizQuestion" && b.question.questionType === "extended");
 export const keyTerms = (l) => pick(l, (b) => b.type === "keyTerms");
 export const hook = (l) => l.blocks[0];
-export const last = (l) => l.blocks[l.blocks.length - 1];
+/** Assessment tasks and dates change every year, so they never live in lessons. */
+export const isAssessmentRef = (b) => !!b && b.type === "callout" && /^(Task \d|EST preparation)/i.test(b.heading ?? "");
+export const last = (l) => { const b = l.blocks[l.blocks.length - 1]; return isAssessmentRef(b) ? null : b; };
 
 // ---------- harvest: carry over the parts of an existing lesson that need no re-authoring ----------
 const strip = (html) => html.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
@@ -69,7 +71,7 @@ export const harvest = (l) => {
     testTip: testTipBlock,
     scenario: scenarioBlock,
     extended: extended(l),
-    last: b[b.length - 1],
+    last: isAssessmentRef(b[b.length - 1]) ? null : b[b.length - 1],
   };
 };
 export const standardRecap = (a, bText, c) => recap([

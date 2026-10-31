@@ -21,6 +21,8 @@ for (const f of FILES) {
     l.blocks.forEach((b, i) => {
       const at = `${L}[${i}]`;
       if (!b || !b.type) return err(at, "null or typeless block");
+      if (b.type === "callout" && /^(Task \d|EST preparation)/i.test(b.heading ?? "")) err(at, "assessment schedule reference (tasks and dates change every year, keep them out of lessons)");
+      if (b.type !== "quizQuestion" && /\bCP\s?\d\b|Design Book|Short Answer Test|Extended Answer Test|Externally Set/i.test(JSON.stringify(b))) err(at, "mentions a specific assessment task");
       if (INTERACTIVE.has(b.type)) interactive++;
       const txt = JSON.stringify(b).replace(/<[^>]+>/g, " ");
       words += (txt.match(/[A-Za-z']+/g) ?? []).length;
