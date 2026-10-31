@@ -12,7 +12,7 @@ function scan(course, unit, topic, lesson) {
   for (const b of lesson.blocks) {
     if (b.type === "videoSlot") {
       if (b.youtubeId) { filled++; continue; }
-      rows.push({ course: course.title, slug: course.slug, unit: unit.title, topic: topic.title, lessonId: lesson.id, lesson: lesson.title, kind: "Video", title: b.title, minutes: b.minutes, brief: b.brief, watchFor: b.watchFor ?? [] });
+      rows.push({ course: `${(course.slug.match(/year-(\d+)/) ?? [])[1] ? "Year " + course.slug.match(/year-(\d+)/)[1] + " " : ""}${course.title}`, slug: course.slug, unit: unit.title, topic: topic.title, lessonId: lesson.id, lesson: lesson.title, kind: "Video", title: b.title, minutes: b.minutes, brief: b.brief, watchFor: b.watchFor ?? [] });
     }
   }
 }
