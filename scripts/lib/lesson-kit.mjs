@@ -18,7 +18,7 @@ export const testTip = (question, weak, weakWhy, strong, strongWhy) => ({
   ],
 });
 export const scenario = (title, text) => ({
-  type: "infoCards", columns: 1,
+  type: "infoCards", columns: 1, part: "activities",
   cards: [{ icon: "📂", heading: `Scenario: ${title}`, text: `${text} Answer the questions below using this scenario.`, tone: "amber" }],
 });
 export const recap = (cards) => ({ type: "infoCards", columns: 1, cards });
@@ -53,7 +53,7 @@ export const harvest = (l) => {
   const tipIdx = b.indexOf(tipBlock);
   const scenarioPara = tipIdx >= 0 ? b.slice(tipIdx + 1).find((x) => x.type === "paragraph") : null;
   const scenarioBlock = scenarioPara
-    ? { type: "infoCards", columns: 1, cards: [{ icon: "📂", heading: "Scenario", text: `${scenarioPara.text} Answer the questions below using this scenario.`, tone: "amber" }] }
+    ? { type: "infoCards", columns: 1, part: "activities", cards: [{ icon: "📂", heading: "Scenario", text: `${scenarioPara.text} Answer the questions below using this scenario.`, tone: "amber" }] }
     : null;
   const mentorNotes = b.filter((x) => x.type === "callout" && x.variant === "senior-wisdom");
   const keep = (t) => b.filter((x) => t.includes(x.type));

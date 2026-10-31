@@ -24,6 +24,8 @@ export function blockPart(type: Block["type"]): LessonPart {
     case "scenarioChallenge":
     case "spotTheThreat":
     case "checkpointVideo":
+    case "task":
+    case "formulaBuilder":
     case "flipCards":
     case "sorter":
     case "sequence":
@@ -36,11 +38,19 @@ export function blockPart(type: Block["type"]): LessonPart {
   }
 }
 
+/** Part for a specific block: an explicit `part` override wins, otherwise the type decides. */
+export function blockPartOf(block: Block): LessonPart {
+  if (block.type === "infoCards" && block.part) return block.part;
+  // Challenge and review prompts in the mentor stories are work for the student to do.
+  if (block.type === "callout" && (block.variant === "sandbox" || block.variant === "pr-review")) return "activities";
+  return blockPart(block.type);
+}
+
 export function splitBlocksByPart(blocks: Block[]): { content: Block[]; activities: Block[] } {
   const content: Block[] = [];
   const activities: Block[] = [];
   for (const b of blocks) {
-    (blockPart(b.type) === "activities" ? activities : content).push(b);
+    (blockPartOf(b) === "activities" ? activities : content).push(b);
   }
   return { content, activities };
 }

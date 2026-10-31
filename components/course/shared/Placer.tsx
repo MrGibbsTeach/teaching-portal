@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useStepDone } from "./StepDone";
 
 /**
  * Place devices on a plan. The plan is authored SVG; the learner picks the location for each
@@ -25,6 +26,7 @@ export function Placer({
   const [placed, setPlaced] = useState<Record<number, string>>({});
   const right = devices.filter((d, i) => placed[i] === d.correctSpot).length;
   const allDone = devices.every((d, i) => placed[i] === d.correctSpot);
+  useStepDone(allDone);
 
   return (
     <section className="mt-5 rounded-2xl border bg-card p-4 shadow-sm">

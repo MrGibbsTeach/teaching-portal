@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useStepDone } from "./StepDone";
 
 type Format = "jpeg" | "png";
 
@@ -47,6 +48,7 @@ export function FileSizeLab({
   const good = bytes <= 500_000 && finalW >= 800;
   const tooBig = bytes > 500_000;
   const tooSmall = finalW < 800;
+  useStepDone(good);
 
   return (
     <section className="mt-5 rounded-2xl border bg-card p-4 shadow-sm">

@@ -1,8 +1,9 @@
 "use client";
 
-import { useMemo, useState, type CSSProperties } from "react";
+import { useCallback, useMemo, useState, type CSSProperties } from "react";
+import { SELF_COMPLETING, StepDoneContext } from "@/components/course/shared/StepDone";
 import type { Block } from "@/lib/content/types";
-import { blockPart } from "@/lib/content/parts";
+import { blockPartOf } from "@/lib/content/parts";
 import {
   activitiesScore,
   hasPassed,
@@ -56,7 +57,11 @@ function groupSteps(blocks: Block[]): Block[][] {
   const steps: Block[][] = [];
   let pendingHeadings: Block[] = [];
   for (const block of blocks) {
-    if (block.type === "heading") {
+    // The opening hook (a ticket or hook callout) rides with the success criteria that follow it,
+    // instead of being a nearly empty first screen.
+    const isLeadIn =
+      steps.length === 0 && pendingHeadings.length === 0 && block.type === "callout" && (block.variant === "ticket" || block.variant === "hook");
+    if (block.type === "heading" || isLeadIn) {
       pendingHeadings.push(block);
       continue;
     }
@@ -83,8 +88,7 @@ function groupAndSplit(blocks: Block[]): { content: Block[][]; activities: Block
   const content: Block[][] = [];
   const activities: Block[][] = [];
   for (const group of groups) {
-    const mainType = group[group.length - 1].type;
-    (blockPart(mainType) === "activities" ? activities : content).push(group);
+    (blockPartOf(group[group.length - 1]) === "activities" ? activities : content).push(group);
   }
   return { content, activities };
 }
@@ -359,6 +363,8 @@ export function StepPlayer({
     .filter((i) => i >= 0);
   const outcomesInOrder = gradableIndexes.map((i) => quizOutcomes[i]);
 
+  const markStepDone = useCallback(() => setDone((prev) => (prev[activityStepIndex] ? prev : { ...prev, [activityStepIndex]: true })), [activityStepIndex]);
+
   const stepResolved =
     tab === "activities" && mainBlock
       ? isGradableQuiz(mainBlock)
@@ -497,18 +503,27 @@ export function StepPlayer({
                 }
               />
             ) : (
-              <div>
+              <StepDoneContext.Provider value={markStepDone}>
                 <BlockRenderer block={mainBlock} />
-                {!done[activityStepIndex] && (
-                  <button
-                    type="button"
-                    onClick={() => setDone((prev) => ({ ...prev, [activityStepIndex]: true }))}
-                    className="skin-btn-primary mt-4 border px-4 py-2 text-sm font-medium hover:bg-accent transition-colors"
-                  >
-                    Done, continue
-                  </button>
-                )}
-              </div>
+                {!done[activityStepIndex] &&
+                  (SELF_COMPLETING.has(mainBlock.type) ? (
+                    <button
+                      type="button"
+                      onClick={markStepDone}
+                      className="mt-3 text-xs text-muted-foreground underline-offset-2 hover:text-foreground hover:underline"
+                    >
+                      Skip this activity for now
+                    </button>
+                  ) : (
+                    <button
+                      type="button"
+                      onClick={markStepDone}
+                      className="skin-btn-primary mt-4 border px-4 py-2 text-sm font-medium hover:bg-accent transition-colors"
+                    >
+                      Done, continue
+                    </button>
+                  ))}
+              </StepDoneContext.Provider>
             )}
           </div>
           <div className="mt-8 flex items-center justify-between border-t border-border pt-6">

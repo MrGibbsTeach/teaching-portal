@@ -95,7 +95,7 @@ export interface BranchStep {
 
 export type Block =
   | { type: "heading"; text: string; level?: number }
-  | { type: "infoCards"; title?: string; intro?: string; columns?: 1 | 2 | 3; cards: InfoCard[] }
+  | { type: "infoCards"; title?: string; intro?: string; columns?: 1 | 2 | 3; cards: InfoCard[]; /** Force this block into a lesson part (scenario cards sit with their questions). */ part?: "content" | "activities" }
   | { type: "flipCards"; title?: string; instruction?: string; cards: { front: string; back: string; tag?: string }[] }
   | { type: "sorter"; title?: string; instruction?: string; categories: string[]; items: SorterItem[] }
   | { type: "sequence"; title?: string; instruction?: string; items: string[]; explanation?: string }

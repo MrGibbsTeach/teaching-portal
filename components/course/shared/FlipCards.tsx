@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useStepDone } from "./StepDone";
 
 export function FlipCards({
   title,
@@ -12,6 +13,7 @@ export function FlipCards({
   cards: { front: string; back: string; tag?: string }[];
 }) {
   const [flipped, setFlipped] = useState<Set<number>>(new Set());
+  useStepDone(flipped.size === cards.length);
   const toggle = (i: number) =>
     setFlipped((prev) => {
       const next = new Set(prev);

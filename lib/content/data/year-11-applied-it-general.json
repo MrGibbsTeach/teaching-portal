@@ -30,8 +30,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Line in your own words.",
-                    "Apply Shape to a practical situation."
+                    "Explain Line and Shape in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -302,8 +303,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Balance in your own words.",
-                    "Apply Emphasis to a practical situation."
+                    "Explain Balance and Emphasis in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -501,8 +503,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Typeface in your own words.",
-                    "Apply Weight to a practical situation."
+                    "Explain Typeface and Weight in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -761,8 +764,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Rule of Thirds in your own words.",
-                    "Apply Grid & Alignment to a practical situation."
+                    "Explain Rule of Thirds and Grid & Alignment in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -1307,8 +1311,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Client in your own words.",
-                    "Apply Server to a practical situation."
+                    "Explain Client, Server and Embedded system in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -1487,11 +1492,6 @@
                   "text": "Cloud services — AWS, Azure, Google Cloud — are still just servers. The difference is you're renting compute time on someone else's hardware. When Leo's front-end UI hits Sloane's database, that request is bouncing through server hardware somewhere."
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Types of Computer Systems",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"hardware-types-of-computer-systems-title hardware-types-of-computer-systems-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"hardware-types-of-computer-systems-title\">Types of Computer Systems: Top-to-bottom layered model for Desktop PC, Laptop, Tablet, Smartphone.</title><desc id=\"hardware-types-of-computer-systems-desc\">Read from top to bottom to see how the levels are grouped. Use the lesson explanation to describe what each level contributes.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#dbeafe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#1d4ed8\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Types of Computer Systems</tspan></text><text x=\"36\" y=\"94\" fill=\"#1d4ed8\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">SYSTEM TYPE</text><rect x=\"74\" y=\"118\" width=\"612\" height=\"38\" rx=\"10\" fill=\"#ecfeff\"/><rect x=\"74\" y=\"118\" width=\"10\" height=\"38\" rx=\"5\" fill=\"#1d4ed8\"/><text x=\"102\" y=\"142\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\"><tspan x=\"102\" dy=\"0\">Desktop PC</tspan></text><text x=\"360\" y=\"141\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"360\" dy=\"0\">Portability: None — fixed location · Performance: High</tspan></text><rect x=\"74\" y=\"163\" width=\"612\" height=\"38\" rx=\"10\" fill=\"#eef2ff\"/><rect x=\"74\" y=\"163\" width=\"10\" height=\"38\" rx=\"5\" fill=\"#0e7490\"/><text x=\"102\" y=\"187\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\"><tspan x=\"102\" dy=\"0\">Laptop</tspan></text><text x=\"360\" y=\"186\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"360\" dy=\"0\">Portability: High — battery-powered · Performance…</tspan></text><rect x=\"74\" y=\"208\" width=\"612\" height=\"38\" rx=\"10\" fill=\"#ecfeff\"/><rect x=\"74\" y=\"208\" width=\"10\" height=\"38\" rx=\"5\" fill=\"#1d4ed8\"/><text x=\"102\" y=\"232\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\"><tspan x=\"102\" dy=\"0\">Tablet</tspan></text><text x=\"360\" y=\"231\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"360\" dy=\"0\">Portability: Very high — lightweight · Performance: Medium</tspan></text><rect x=\"74\" y=\"253\" width=\"612\" height=\"38\" rx=\"10\" fill=\"#eef2ff\"/><rect x=\"74\" y=\"253\" width=\"10\" height=\"38\" rx=\"5\" fill=\"#0e7490\"/><text x=\"102\" y=\"277\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\"><tspan x=\"102\" dy=\"0\">Smartphone</tspan></text><text x=\"360\" y=\"276\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"360\" dy=\"0\">Portability: Pocket-sized · Performance: Medium</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Read from top to bottom to see how the levels are grouped. Use the lesson explanation to describe what each level contributes. Use the labels to review the explanation in the lesson.</figcaption></figure>"
-                },
-                {
                   "type": "callout",
                   "variant": "sandbox",
                   "heading": "💻 SANDBOX CHALLENGE · SYSTEM SELECTION FOR BUNBURY REGIONAL COUNCIL",
@@ -1643,8 +1643,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain CPU (Central Processing Unit) in your own words.",
-                    "Apply Core to a practical situation."
+                    "Explain CPU, Core and RAM in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -1902,11 +1903,6 @@
                   "text": "The Bunbury Video Productions machine has these specs: Intel Core i5 (4 cores, 2.9 GHz), 8 GB DDR4 RAM, 500 GB HDD (spinning disk). The editor is working with 4K footage files averaging 40 GB each.\n\nTasks:\n1. Identify THREE specific bottlenecks in this setup for 4K video editing. For each, name the component, explain why it's a bottleneck, and suggest a specific upgrade (include a real product name like 'Intel Core i7-13700' or 'Samsung 870 EVO SSD').\n2. The client has a $1,200 upgrade budget. Rank your upgrades by impact-per-dollar and justify the order.\n3. After the upgrades, which component do you predict will become the new bottleneck? Why?"
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: CPU and Memory",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"hardware-cpu-and-memory-title hardware-cpu-and-memory-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"hardware-cpu-and-memory-title\">CPU and Memory: Side-by-side comparison for RAM (Primary Memory), ROM (Read-Only Memory), Cache Memory.</title><desc id=\"hardware-cpu-and-memory-desc\">Read across the panels to compare the items. Use each detail as a prompt to recall the full explanation from the lesson.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#dbeafe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#1d4ed8\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">CPU and Memory</tspan></text><text x=\"36\" y=\"94\" fill=\"#1d4ed8\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">TYPES OF MEMORY</text><rect x=\"30\" y=\"115\" width=\"221.33333333333334\" height=\"177\" rx=\"18\" fill=\"#fff\" stroke=\"#1d4ed8\" stroke-opacity=\".35\" stroke-width=\"2\"/><rect x=\"30\" y=\"115\" width=\"221.33333333333334\" height=\"12\" rx=\"6\" fill=\"#1d4ed8\"/><text x=\"46\" y=\"151\" text-anchor=\"start\" fill=\"#1d4ed8\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\"><tspan x=\"46\" dy=\"0\">RAM (Primary</tspan><tspan x=\"46\" dy=\"19\">Memory)</tspan></text><text x=\"46\" y=\"194\" text-anchor=\"start\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"46\" dy=\"0\">Volatile — cleared when</tspan><tspan x=\"46\" dy=\"19\">power off · Holds</tspan><tspan x=\"46\" dy=\"19\">currently running programs</tspan><tspan x=\"46\" dy=\"19\">and active data</tspan></text><rect x=\"269.33333333333337\" y=\"115\" width=\"221.33333333333334\" height=\"177\" rx=\"18\" fill=\"#fff\" stroke=\"#0e7490\" stroke-opacity=\".35\" stroke-width=\"2\"/><rect x=\"269.33333333333337\" y=\"115\" width=\"221.33333333333334\" height=\"12\" rx=\"6\" fill=\"#0e7490\"/><text x=\"285.33333333333337\" y=\"151\" text-anchor=\"start\" fill=\"#0e7490\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\"><tspan x=\"285.33333333333337\" dy=\"0\">ROM (Read-Only</tspan><tspan x=\"285.33333333333337\" dy=\"19\">Memory)</tspan></text><text x=\"285.33333333333337\" y=\"194\" text-anchor=\"start\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"285.33333333333337\" dy=\"0\">Non-volatile — persists</tspan><tspan x=\"285.33333333333337\" dy=\"19\">without power · Contains</tspan><tspan x=\"285.33333333333337\" dy=\"19\">the BIOS/UEFI firmware</tspan></text><rect x=\"508.6666666666667\" y=\"115\" width=\"221.33333333333334\" height=\"177\" rx=\"18\" fill=\"#fff\" stroke=\"#1d4ed8\" stroke-opacity=\".35\" stroke-width=\"2\"/><rect x=\"508.6666666666667\" y=\"115\" width=\"221.33333333333334\" height=\"12\" rx=\"6\" fill=\"#1d4ed8\"/><text x=\"524.6666666666667\" y=\"151\" text-anchor=\"start\" fill=\"#1d4ed8\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\"><tspan x=\"524.6666666666667\" dy=\"0\">Cache Memory</tspan></text><text x=\"524.6666666666667\" y=\"194\" text-anchor=\"start\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"524.6666666666667\" dy=\"0\">Built into or adjacent to</tspan><tspan x=\"524.6666666666667\" dy=\"19\">the CPU · Fastest memory</tspan><tspan x=\"524.6666666666667\" dy=\"19\">in the system (nanosecond</tspan><tspan x=\"524.6666666666667\" dy=\"19\">access)</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Read across the panels to compare the items. Use each detail as a prompt to recall the full explanation from the lesson. Use the labels to review the explanation in the lesson.</figcaption></figure>"
-                },
-                {
                   "type": "heading",
                   "text": "Try it yourself",
                   "level": 2
@@ -2050,8 +2046,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Input device in your own words.",
-                    "Apply Output device to a practical situation."
+                    "Explain Input device, Output device and Peripheral device in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -2283,11 +2280,6 @@
                   "text": "You have $400 per workstation for peripherals. Each station already has the PC tower. Your job is to build the peripheral list for a graphic design/video editing student workstation.\n\n1. Create a table listing at least 6 peripherals. For each: name the device, classify it (input/output/I/O), specify a real product (brand + model), and give the price and justification.\n2. Your total must not exceed $400. Show your working.\n3. Sloane's data management curriculum requires students to print reports and scan paper documents. Add the appropriate devices and adjust your budget accordingly.\n4. One student has a disability requiring voice control. What additional input device would you include, and why?"
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Input, Output, and Peripheral Devices",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"hardware-input-output-and-peripheral-devices-title hardware-input-output-and-peripheral-devices-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"hardware-input-output-and-peripheral-devices-title\">Input, Output, and Peripheral Devices: Side-by-side comparison for Input Devices, Output Devices, I/O (Both).</title><desc id=\"hardware-input-output-and-peripheral-devices-desc\">Read across the panels to compare the items. Use each detail as a prompt to recall the full explanation from the lesson.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#dbeafe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#1d4ed8\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Input, Output, and Peripheral Devices</tspan></text><text x=\"36\" y=\"94\" fill=\"#1d4ed8\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">INPUT VS OUTPUT VS I/O</text><rect x=\"30\" y=\"115\" width=\"221.33333333333334\" height=\"177\" rx=\"18\" fill=\"#fff\" stroke=\"#1d4ed8\" stroke-opacity=\".35\" stroke-width=\"2\"/><rect x=\"30\" y=\"115\" width=\"221.33333333333334\" height=\"12\" rx=\"6\" fill=\"#1d4ed8\"/><text x=\"46\" y=\"151\" text-anchor=\"start\" fill=\"#1d4ed8\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\"><tspan x=\"46\" dy=\"0\">Input Devices</tspan></text><text x=\"46\" y=\"194\" text-anchor=\"start\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"46\" dy=\"0\">Send data INTO the</tspan><tspan x=\"46\" dy=\"19\">computer · Keyboard — text</tspan><tspan x=\"46\" dy=\"19\">and command entry</tspan></text><rect x=\"269.33333333333337\" y=\"115\" width=\"221.33333333333334\" height=\"177\" rx=\"18\" fill=\"#fff\" stroke=\"#0e7490\" stroke-opacity=\".35\" stroke-width=\"2\"/><rect x=\"269.33333333333337\" y=\"115\" width=\"221.33333333333334\" height=\"12\" rx=\"6\" fill=\"#0e7490\"/><text x=\"285.33333333333337\" y=\"151\" text-anchor=\"start\" fill=\"#0e7490\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\"><tspan x=\"285.33333333333337\" dy=\"0\">Output Devices</tspan></text><text x=\"285.33333333333337\" y=\"194\" text-anchor=\"start\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"285.33333333333337\" dy=\"0\">Deliver data OUT of the</tspan><tspan x=\"285.33333333333337\" dy=\"19\">computer · Monitor /</tspan><tspan x=\"285.33333333333337\" dy=\"19\">Display — visual output</tspan></text><rect x=\"508.6666666666667\" y=\"115\" width=\"221.33333333333334\" height=\"177\" rx=\"18\" fill=\"#fff\" stroke=\"#1d4ed8\" stroke-opacity=\".35\" stroke-width=\"2\"/><rect x=\"508.6666666666667\" y=\"115\" width=\"221.33333333333334\" height=\"12\" rx=\"6\" fill=\"#1d4ed8\"/><text x=\"524.6666666666667\" y=\"151\" text-anchor=\"start\" fill=\"#1d4ed8\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\"><tspan x=\"524.6666666666667\" dy=\"0\">I/O (Both)</tspan></text><text x=\"524.6666666666667\" y=\"194\" text-anchor=\"start\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"524.6666666666667\" dy=\"0\">Send and receive data ·</tspan><tspan x=\"524.6666666666667\" dy=\"19\">Touchscreen — input touch,</tspan><tspan x=\"524.6666666666667\" dy=\"19\">output display</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Read across the panels to compare the items. Use each detail as a prompt to recall the full explanation from the lesson. Use the labels to review the explanation in the lesson.</figcaption></figure>"
-                },
-                {
                   "type": "interactiveDiagram",
                   "title": "Sort the devices",
                   "instruction": "Tap a device on the left, then tap what kind of device it is.",
@@ -2486,8 +2478,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain POST (Power-On Self-Test) in your own words.",
-                    "Apply BSOD (Blue Screen of Death) to a practical situation."
+                    "Explain POST, BSOD and Thermal throttling in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -2706,11 +2699,6 @@
                   "text": "Work through each of the three machines from Ticket #1004:\n\nMachine A — Won't boot. Screen is black, no POST beeps, power LED is off.\nMachine B — Randomly shutting down after 15–30 minutes of use. BIOS shows CPU temp hitting 95°C.\nMachine C — Random BSODs. STOP code: MEMORY_MANAGEMENT. BSODs occur when running multiple browser tabs and their accounting software simultaneously.\n\nFor each machine:\n1. State your initial hypothesis (most likely cause)\n2. List the exact diagnostic steps you'd take in order\n3. Propose the fix with the specific tool or action\n4. Estimate the time and cost (parts + labour at $120/hr)\n\nBonus: The office manager says 'Why don't you just reinstall Windows on all three? That fixes everything, right?' Write Sparky's response."
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Troubleshooting Hardware and Software",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"hardware-troubleshooting-hardware-and-software-title hardware-troubleshooting-hardware-and-software-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"hardware-troubleshooting-hardware-and-software-title\">Troubleshooting Hardware and Software: Left-to-right sequence for 1. Identify the problem, 2. Establish a theory, 3. Test the theory, 4. Create an action plan.</title><desc id=\"hardware-troubleshooting-hardware-and-software-desc\">Follow the steps from left to right. Notice how each stage leads into the next, then connect the sequence to the worked example.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#dbeafe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#1d4ed8\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Troubleshooting Hardware and Software</tspan></text><text x=\"36\" y=\"94\" fill=\"#1d4ed8\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">STEP</text><rect x=\"28\" y=\"127\" width=\"157\" height=\"161\" rx=\"18\" fill=\"#fff\" stroke=\"#1d4ed8\" stroke-opacity=\".35\" stroke-width=\"2\"/><circle cx=\"106.5\" cy=\"153\" r=\"15\" fill=\"#1d4ed8\"/><text x=\"106.5\" y=\"158\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"13\" font-weight=\"700\">1</text><text x=\"40\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\"><tspan x=\"40\" dy=\"0\">1. Identify the</tspan><tspan x=\"40\" dy=\"19\">problem</tspan></text><text x=\"40\" y=\"221\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"40\" dy=\"0\">Action: Gather</tspan><tspan x=\"40\" dy=\"19\">symptoms — what is</tspan><tspan x=\"40\" dy=\"19\">and isn't working…</tspan></text><path d=\"M187 191h17m-7-7 7 7-7 7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"206\" y=\"127\" width=\"157\" height=\"161\" rx=\"18\" fill=\"#fff\" stroke=\"#0e7490\" stroke-opacity=\".35\" stroke-width=\"2\"/><circle cx=\"284.5\" cy=\"153\" r=\"15\" fill=\"#0e7490\"/><text x=\"284.5\" y=\"158\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"13\" font-weight=\"700\">2</text><text x=\"218\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\"><tspan x=\"218\" dy=\"0\">2. Establish a</tspan><tspan x=\"218\" dy=\"19\">theory</tspan></text><text x=\"218\" y=\"221\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"218\" dy=\"0\">Action: Form a</tspan><tspan x=\"218\" dy=\"19\">hypothesis based on</tspan><tspan x=\"218\" dy=\"19\">symptoms. Start with…</tspan></text><path d=\"M365 191h17m-7-7 7 7-7 7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"384\" y=\"127\" width=\"157\" height=\"161\" rx=\"18\" fill=\"#fff\" stroke=\"#1d4ed8\" stroke-opacity=\".35\" stroke-width=\"2\"/><circle cx=\"462.5\" cy=\"153\" r=\"15\" fill=\"#1d4ed8\"/><text x=\"462.5\" y=\"158\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"13\" font-weight=\"700\">3</text><text x=\"396\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\"><tspan x=\"396\" dy=\"0\">3. Test the</tspan><tspan x=\"396\" dy=\"19\">theory</tspan></text><text x=\"396\" y=\"221\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"396\" dy=\"0\">Action: Try one fix</tspan><tspan x=\"396\" dy=\"19\">at a time. Don't</tspan><tspan x=\"396\" dy=\"19\">change multiple…</tspan></text><path d=\"M543 191h17m-7-7 7 7-7 7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"562\" y=\"127\" width=\"157\" height=\"161\" rx=\"18\" fill=\"#fff\" stroke=\"#0e7490\" stroke-opacity=\".35\" stroke-width=\"2\"/><circle cx=\"640.5\" cy=\"153\" r=\"15\" fill=\"#0e7490\"/><text x=\"640.5\" y=\"158\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"13\" font-weight=\"700\">4</text><text x=\"574\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\"><tspan x=\"574\" dy=\"0\">4. Create an</tspan><tspan x=\"574\" dy=\"19\">action plan</tspan></text><text x=\"574\" y=\"221\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"574\" dy=\"0\">Action: Plan the fix</tspan><tspan x=\"574\" dy=\"19\">steps before</tspan><tspan x=\"574\" dy=\"19\">executing. Consider…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Follow the steps from left to right. Notice how each stage leads into the next, then connect the sequence to the worked example. Use the labels to review the explanation in the lesson.</figcaption></figure>"
-                },
-                {
                   "type": "interactiveDiagram",
                   "title": "Fix the computer that will not start",
                   "instruction": "The computer shows a black screen. Switch each setting to the right position until it works.",
@@ -2882,11 +2870,6 @@
                   "variant": "senior-wisdom",
                   "heading": "💡 SENIOR WISDOM · JAXEN 'SPARKY' MILLER, BUNBURY HARDWARE INTEGRATORS",
                   "text": "Hardware knowledge is foundational. You can't troubleshoot what you don't understand. Sloane can write the most efficient database queries in the world and Leo can build a beautiful UI — but if the physical layer fails, none of it matters. Know your hardware cold."
-                },
-                {
-                  "type": "richText",
-                  "heading": "Visual model: Hardware Quiz",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"hardware-hardware-quiz-title hardware-hardware-quiz-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"hardware-hardware-quiz-title\">Hardware Quiz: Concept cards for Check 1, Check 2, Check 3, Check 4.</title><desc id=\"hardware-hardware-quiz-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#dbeafe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#1d4ed8\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Hardware Quiz</tspan></text><text x=\"36\" y=\"94\" fill=\"#1d4ed8\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">REVISION CHECKPOINTS</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#1d4ed8\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#1d4ed8\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Check 1</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">A school wants to set up a device for each</tspan><tspan x=\"84\" dy=\"19\">classroom that automatically controls the…</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0e7490\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#0e7490\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Check 2</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Which memory type retains its contents when</tspan><tspan x=\"444\" dy=\"19\">the computer is powered off?</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#1d4ed8\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#1d4ed8\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Check 3</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">A video editing workstation has a 6-core</tspan><tspan x=\"84\" dy=\"19\">Intel Core i7 and 16 GB RAM. The editor…</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0e7490\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#0e7490\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Check 4</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">During the POST (Power-On Self-Test), a</tspan><tspan x=\"444\" dy=\"19\">computer emits three short beeps and fails…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
                 },
                 {
                   "type": "heading",
@@ -3080,8 +3063,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Ergonomics in your own words.",
-                    "Apply Repetitive Strain Injury (RSI) to a practical situation."
+                    "Explain Ergonomics, Repetitive Strain Injury and 20-20-20 Rule in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -3363,8 +3347,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Personal Information in your own words.",
-                    "Apply Sensitive Information to a practical situation."
+                    "Explain Personal Information, Sensitive Information and Data Breach in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -3678,8 +3663,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Digital Citizenship in your own words.",
-                    "Apply Cyberbullying to a practical situation."
+                    "Explain Digital Citizenship, Cyberbullying and Digital Footprint in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -4020,8 +4006,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain E-Waste in your own words.",
-                    "Apply Product Stewardship Act 2011 to a practical situation."
+                    "Explain E-Waste, Product Stewardship Act 2011 and National Television and Computer Recycling Scheme in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -4320,8 +4307,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Synchronous Communication in your own words.",
-                    "Apply Asynchronous Communication to a practical situation."
+                    "Explain Synchronous Communication, Asynchronous Communication and Digital Communication in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -4601,11 +4589,6 @@
                   "text": "In this industry, 'I know the theory' is never enough. Every question below reflects a situation I have dealt with in practice. Think about the law, the ethics, and the human impact — in that order. A technically correct answer that ignores the human cost is still an incomplete answer."
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Impacts of Technology — Unit Review Quiz",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"impacts-of-technology-impacts-of-technology-unit-review-quiz-title impacts-of-technology-impacts-of-technology-unit-review-quiz-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"impacts-of-technology-impacts-of-technology-unit-review-quiz-title\">Impacts of Technology — Unit Review Quiz: Concept cards for Check 1, Check 2, Check 3, Check 4.</title><desc id=\"impacts-of-technology-impacts-of-technology-unit-review-quiz-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ede9fe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Impacts of Technology — Unit Review Quiz</tspan></text><text x=\"36\" y=\"94\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">REVISION CHECKPOINTS</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Check 1</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">An employer is required under Australian</tspan><tspan x=\"84\" dy=\"19\">law to provide employees with ergonomically…</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#c2410c\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#c2410c\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Check 2</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Under the Privacy Act 1988, an organisation</tspan><tspan x=\"444\" dy=\"19\">can sell customer email addresses to a…</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Check 3</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Which of the following correctly describes</tspan><tspan x=\"84\" dy=\"19\">a 'digital footprint'?</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#c2410c\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#c2410c\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Check 4</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">A student repeatedly sends threatening</tspan><tspan x=\"444\" dy=\"19\">private messages to a classmate on…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
-                },
-                {
                   "type": "heading",
                   "text": "Assessment practice"
                 },
@@ -4743,8 +4726,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Styles in your own words.",
-                    "Apply Mail Merge to a practical situation."
+                    "Explain Styles, Mail Merge and Track Changes in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -4799,11 +4783,6 @@
                 {
                   "type": "paragraph",
                   "text": "Microsoft Word and Google Docs share the same core feature set, but Word has deeper formatting control and is the industry standard for formal documents. Google Docs wins on real-time collaboration — which is why Sloane uses it for shared data summaries. Know both, and know when to reach for which one."
-                },
-                {
-                  "type": "richText",
-                  "heading": "Visual model: Word Processing Features",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"application-skills-word-processing-features-title application-skills-word-processing-features-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"application-skills-word-processing-features-title\">Word Processing Features: Side-by-side comparison for Microsoft Word, Google Docs.</title><desc id=\"application-skills-word-processing-features-desc\">Read across the panels to compare the items. Use each detail as a prompt to recall the full explanation from the lesson.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#d1fae5\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#047857\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Word Processing Features</tspan></text><text x=\"36\" y=\"94\" fill=\"#047857\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">MICROSOFT WORD VS GOOGLE DOCS</text><rect x=\"30\" y=\"115\" width=\"341\" height=\"177\" rx=\"18\" fill=\"#fff\" stroke=\"#047857\" stroke-opacity=\".35\" stroke-width=\"2\"/><rect x=\"30\" y=\"115\" width=\"341\" height=\"12\" rx=\"6\" fill=\"#047857\"/><text x=\"46\" y=\"151\" text-anchor=\"start\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\"><tspan x=\"46\" dy=\"0\">Microsoft Word</tspan></text><text x=\"46\" y=\"194\" text-anchor=\"start\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"46\" dy=\"0\">Industry standard for formal business and</tspan><tspan x=\"46\" dy=\"19\">legal documents · Superior mail merge,</tspan><tspan x=\"46\" dy=\"19\">macro support (VBA), and print layout</tspan><tspan x=\"46\" dy=\"19\">control</tspan></text><rect x=\"389\" y=\"115\" width=\"341\" height=\"177\" rx=\"18\" fill=\"#fff\" stroke=\"#2563eb\" stroke-opacity=\".35\" stroke-width=\"2\"/><rect x=\"389\" y=\"115\" width=\"341\" height=\"12\" rx=\"6\" fill=\"#2563eb\"/><text x=\"405\" y=\"151\" text-anchor=\"start\" fill=\"#2563eb\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\"><tspan x=\"405\" dy=\"0\">Google Docs</tspan></text><text x=\"405\" y=\"194\" text-anchor=\"start\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"405\" dy=\"0\">Real-time multi-user collaboration with</tspan><tspan x=\"405\" dy=\"19\">live cursors · Version history stored</tspan><tspan x=\"405\" dy=\"19\">automatically in Google Drive</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Read across the panels to compare the items. Use each detail as a prompt to recall the full explanation from the lesson. Use the labels to review the explanation in the lesson.</figcaption></figure>"
                 },
                 {
                   "type": "heading",
@@ -5065,8 +5044,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Document Skeleton in your own words.",
-                    "Apply Widow / Orphan Control to a practical situation."
+                    "Explain Document Skeleton, Widow / Orphan Control and Merge Field in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -5117,11 +5097,6 @@
                 {
                   "type": "paragraph",
                   "text": "Before you open Word, plan your structure. The worst mistake a junior makes is typing content and then trying to format it. Start with your Styles, build your skeleton, then fill it in. You will save thirty minutes and avoid the 'I've formatted myself into a corner' disaster at 3:45 PM."
-                },
-                {
-                  "type": "richText",
-                  "heading": "Visual model: Word Processing Practical Task",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"application-skills-word-processing-practical-task-title application-skills-word-processing-practical-task-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"application-skills-word-processing-practical-task-title\">Word Processing Practical Task: Left-to-right sequence for Consistent Styles, Page Numbers, Table Formatting, Spelling &amp; Grammar.</title><desc id=\"application-skills-word-processing-practical-task-desc\">Follow the steps from left to right. Notice how each stage leads into the next, then connect the sequence to the worked example.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#d1fae5\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#047857\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Word Processing Practical Task</tspan></text><text x=\"36\" y=\"94\" fill=\"#047857\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">QUALITY CHECK</text><rect x=\"28\" y=\"127\" width=\"157\" height=\"161\" rx=\"18\" fill=\"#fff\" stroke=\"#047857\" stroke-opacity=\".35\" stroke-width=\"2\"/><circle cx=\"106.5\" cy=\"153\" r=\"15\" fill=\"#047857\"/><text x=\"106.5\" y=\"158\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"13\" font-weight=\"700\">1</text><text x=\"40\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\"><tspan x=\"40\" dy=\"0\">Consistent</tspan><tspan x=\"40\" dy=\"19\">Styles</tspan></text><text x=\"40\" y=\"221\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"40\" dy=\"0\">What to Look For:</tspan><tspan x=\"40\" dy=\"19\">All body text in</tspan><tspan x=\"40\" dy=\"19\">Normal, all section…</tspan></text><path d=\"M187 191h17m-7-7 7 7-7 7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"206\" y=\"127\" width=\"157\" height=\"161\" rx=\"18\" fill=\"#fff\" stroke=\"#2563eb\" stroke-opacity=\".35\" stroke-width=\"2\"/><circle cx=\"284.5\" cy=\"153\" r=\"15\" fill=\"#2563eb\"/><text x=\"284.5\" y=\"158\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"13\" font-weight=\"700\">2</text><text x=\"218\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\"><tspan x=\"218\" dy=\"0\">Page Numbers</tspan></text><text x=\"218\" y=\"221\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"218\" dy=\"0\">What to Look For:</tspan><tspan x=\"218\" dy=\"19\">Footer shows correct</tspan><tspan x=\"218\" dy=\"19\">page number on every…</tspan></text><path d=\"M365 191h17m-7-7 7 7-7 7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"384\" y=\"127\" width=\"157\" height=\"161\" rx=\"18\" fill=\"#fff\" stroke=\"#047857\" stroke-opacity=\".35\" stroke-width=\"2\"/><circle cx=\"462.5\" cy=\"153\" r=\"15\" fill=\"#047857\"/><text x=\"462.5\" y=\"158\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"13\" font-weight=\"700\">3</text><text x=\"396\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\"><tspan x=\"396\" dy=\"0\">Table Formatting</tspan></text><text x=\"396\" y=\"221\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"396\" dy=\"0\">What to Look For:</tspan><tspan x=\"396\" dy=\"19\">Table has header</tspan><tspan x=\"396\" dy=\"19\">row, consistent…</tspan></text><path d=\"M543 191h17m-7-7 7 7-7 7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"562\" y=\"127\" width=\"157\" height=\"161\" rx=\"18\" fill=\"#fff\" stroke=\"#2563eb\" stroke-opacity=\".35\" stroke-width=\"2\"/><circle cx=\"640.5\" cy=\"153\" r=\"15\" fill=\"#2563eb\"/><text x=\"640.5\" y=\"158\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"13\" font-weight=\"700\">4</text><text x=\"574\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\"><tspan x=\"574\" dy=\"0\">Spelling &amp;</tspan><tspan x=\"574\" dy=\"19\">Grammar</tspan></text><text x=\"574\" y=\"221\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"574\" dy=\"0\">What to Look For: No</tspan><tspan x=\"574\" dy=\"19\">red or blue</tspan><tspan x=\"574\" dy=\"19\">underlines remain in…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Follow the steps from left to right. Notice how each stage leads into the next, then connect the sequence to the worked example. Use the labels to review the explanation in the lesson.</figcaption></figure>"
                 },
                 {
                   "type": "heading",
@@ -5311,8 +5286,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Cell Reference in your own words.",
-                    "Apply Absolute Reference to a practical situation."
+                    "Explain Cell Reference, Absolute Reference and Named Range in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -5367,11 +5343,6 @@
                 {
                   "type": "paragraph",
                   "text": "A spreadsheet is not just a grid of numbers — it is a calculation engine, a database, a charting tool, and an automation platform rolled into one. The difference between someone who types values into cells and someone who builds dynamic, formula-driven workbooks is the difference between spending four hours on a report and spending twenty minutes on it."
-                },
-                {
-                  "type": "richText",
-                  "heading": "Visual model: Spreadsheet Features",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"application-skills-spreadsheet-features-title application-skills-spreadsheet-features-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"application-skills-spreadsheet-features-title\">Spreadsheet Features: Side-by-side comparison for Relative Reference (e.g. B4), Absolute Reference (e.g. $B$4).</title><desc id=\"application-skills-spreadsheet-features-desc\">Read across the panels to compare the items. Use each detail as a prompt to recall the full explanation from the lesson.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#d1fae5\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#047857\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Spreadsheet Features</tspan></text><text x=\"36\" y=\"94\" fill=\"#047857\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">RELATIVE VS ABSOLUTE CELL REFERENCES</text><rect x=\"30\" y=\"115\" width=\"341\" height=\"177\" rx=\"18\" fill=\"#fff\" stroke=\"#047857\" stroke-opacity=\".35\" stroke-width=\"2\"/><rect x=\"30\" y=\"115\" width=\"341\" height=\"12\" rx=\"6\" fill=\"#047857\"/><text x=\"46\" y=\"151\" text-anchor=\"start\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\"><tspan x=\"46\" dy=\"0\">Relative Reference (e.g.</tspan><tspan x=\"46\" dy=\"19\">B4)</tspan></text><text x=\"46\" y=\"194\" text-anchor=\"start\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"46\" dy=\"0\">Changes automatically when the formula is</tspan><tspan x=\"46\" dy=\"19\">copied to another cell · If =B4*C4 is in</tspan><tspan x=\"46\" dy=\"19\">D4, copying it to D5 gives =B5*C5</tspan></text><rect x=\"389\" y=\"115\" width=\"341\" height=\"177\" rx=\"18\" fill=\"#fff\" stroke=\"#2563eb\" stroke-opacity=\".35\" stroke-width=\"2\"/><rect x=\"389\" y=\"115\" width=\"341\" height=\"12\" rx=\"6\" fill=\"#2563eb\"/><text x=\"405\" y=\"151\" text-anchor=\"start\" fill=\"#2563eb\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\"><tspan x=\"405\" dy=\"0\">Absolute Reference (e.g.</tspan><tspan x=\"405\" dy=\"19\">$B$4)</tspan></text><text x=\"405\" y=\"194\" text-anchor=\"start\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"405\" dy=\"0\">Stays fixed on the same cell no matter</tspan><tspan x=\"405\" dy=\"19\">where the formula is copied · If =B4*$C$1</tspan><tspan x=\"405\" dy=\"19\">is in D4, copying to D5 gives =B5*$C$1</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Read across the panels to compare the items. Use each detail as a prompt to recall the full explanation from the lesson. Use the labels to review the explanation in the lesson.</figcaption></figure>"
                 },
                 {
                   "type": "heading",
@@ -5656,8 +5627,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Data Validation in your own words.",
-                    "Apply SUMIF / SUMIFS to a practical situation."
+                    "Explain Data Validation, SUMIF / SUMIFS and Freeze Panes in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -5708,11 +5680,6 @@
                 {
                   "type": "paragraph",
                   "text": "The workflow for any spreadsheet analysis task is always the same: inspect the raw data first, clean it second, build formulas third, add presentation last. Analysts who skip to the formulas before checking the data produce beautiful summaries of corrupted numbers. Sloane's cardinal rule is: garbage in, garbage out."
-                },
-                {
-                  "type": "richText",
-                  "heading": "Visual model: Spreadsheet Practical Task",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"application-skills-spreadsheet-practical-task-title application-skills-spreadsheet-practical-task-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"application-skills-spreadsheet-practical-task-title\">Spreadsheet Practical Task: Left-to-right sequence for 1. Inspect, 2. Clean, 3. Summarise, 4. Flag.</title><desc id=\"application-skills-spreadsheet-practical-task-desc\">Follow the steps from left to right. Notice how each stage leads into the next, then connect the sequence to the worked example.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#d1fae5\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#047857\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Spreadsheet Practical Task</tspan></text><text x=\"36\" y=\"94\" fill=\"#047857\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">ANALYSIS STAGE</text><rect x=\"28\" y=\"127\" width=\"157\" height=\"161\" rx=\"18\" fill=\"#fff\" stroke=\"#047857\" stroke-opacity=\".35\" stroke-width=\"2\"/><circle cx=\"106.5\" cy=\"153\" r=\"15\" fill=\"#047857\"/><text x=\"106.5\" y=\"158\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"13\" font-weight=\"700\">1</text><text x=\"40\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\"><tspan x=\"40\" dy=\"0\">1. Inspect</tspan></text><text x=\"40\" y=\"221\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"40\" dy=\"0\">Action: Check for</tspan><tspan x=\"40\" dy=\"19\">blank rows,</tspan><tspan x=\"40\" dy=\"19\">duplicate entries…</tspan></text><path d=\"M187 191h17m-7-7 7 7-7 7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"206\" y=\"127\" width=\"157\" height=\"161\" rx=\"18\" fill=\"#fff\" stroke=\"#2563eb\" stroke-opacity=\".35\" stroke-width=\"2\"/><circle cx=\"284.5\" cy=\"153\" r=\"15\" fill=\"#2563eb\"/><text x=\"284.5\" y=\"158\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"13\" font-weight=\"700\">2</text><text x=\"218\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\"><tspan x=\"218\" dy=\"0\">2. Clean</tspan></text><text x=\"218\" y=\"221\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"218\" dy=\"0\">Action: Remove extra</tspan><tspan x=\"218\" dy=\"19\">spaces, fix date</tspan><tspan x=\"218\" dy=\"19\">formats, standardise…</tspan></text><path d=\"M365 191h17m-7-7 7 7-7 7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"384\" y=\"127\" width=\"157\" height=\"161\" rx=\"18\" fill=\"#fff\" stroke=\"#047857\" stroke-opacity=\".35\" stroke-width=\"2\"/><circle cx=\"462.5\" cy=\"153\" r=\"15\" fill=\"#047857\"/><text x=\"462.5\" y=\"158\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"13\" font-weight=\"700\">3</text><text x=\"396\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\"><tspan x=\"396\" dy=\"0\">3. Summarise</tspan></text><text x=\"396\" y=\"221\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"396\" dy=\"0\">Action: Calculate</tspan><tspan x=\"396\" dy=\"19\">totals and averages</tspan><tspan x=\"396\" dy=\"19\">per group · Tool /…</tspan></text><path d=\"M543 191h17m-7-7 7 7-7 7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"562\" y=\"127\" width=\"157\" height=\"161\" rx=\"18\" fill=\"#fff\" stroke=\"#2563eb\" stroke-opacity=\".35\" stroke-width=\"2\"/><circle cx=\"640.5\" cy=\"153\" r=\"15\" fill=\"#2563eb\"/><text x=\"640.5\" y=\"158\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"13\" font-weight=\"700\">4</text><text x=\"574\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\"><tspan x=\"574\" dy=\"0\">4. Flag</tspan></text><text x=\"574\" y=\"221\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"574\" dy=\"0\">Action: Mark</tspan><tspan x=\"574\" dy=\"19\">exceptions (over</tspan><tspan x=\"574\" dy=\"19\">budget, late…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Follow the steps from left to right. Notice how each stage leads into the next, then connect the sequence to the worked example. Use the labels to review the explanation in the lesson.</figcaption></figure>"
                 },
                 {
                   "type": "quizQuestion",
@@ -5903,8 +5870,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain To in your own words.",
-                    "Apply CC (Carbon Copy) to a practical situation."
+                    "Explain To, CC and BCC in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -5959,11 +5927,6 @@
                 {
                   "type": "paragraph",
                   "text": "Webmail services like Gmail and Outlook Online give you access to your email through a browser, with no installed software required. They also include calendaring, task lists, and collaborative document tools — making them full productivity platforms, not just message delivery systems. The Bunbury Tech Launchpad team uses Gmail for internal communication and Outlook for client-facing correspondence."
-                },
-                {
-                  "type": "richText",
-                  "heading": "Visual model: Email and Webmail",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"application-skills-email-and-webmail-title application-skills-email-and-webmail-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"application-skills-email-and-webmail-title\">Email and Webmail: Side-by-side comparison for Gmail (Google Workspace), Outlook Online (Microsoft 365).</title><desc id=\"application-skills-email-and-webmail-desc\">Read across the panels to compare the items. Use each detail as a prompt to recall the full explanation from the lesson.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#d1fae5\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#047857\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Email and Webmail</tspan></text><text x=\"36\" y=\"94\" fill=\"#047857\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">WEBMAIL PLATFORMS — GMAIL VS OUTLOOK ONLINE</text><rect x=\"30\" y=\"115\" width=\"341\" height=\"177\" rx=\"18\" fill=\"#fff\" stroke=\"#047857\" stroke-opacity=\".35\" stroke-width=\"2\"/><rect x=\"30\" y=\"115\" width=\"341\" height=\"12\" rx=\"6\" fill=\"#047857\"/><text x=\"46\" y=\"151\" text-anchor=\"start\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\"><tspan x=\"46\" dy=\"0\">Gmail (Google Workspace)</tspan></text><text x=\"46\" y=\"194\" text-anchor=\"start\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"46\" dy=\"0\">Conversation threading groups all replies</tspan><tspan x=\"46\" dy=\"19\">in one view automatically · Labels (not</tspan><tspan x=\"46\" dy=\"19\">folders) — an email can have multiple</tspan><tspan x=\"46\" dy=\"19\">labels</tspan></text><rect x=\"389\" y=\"115\" width=\"341\" height=\"177\" rx=\"18\" fill=\"#fff\" stroke=\"#2563eb\" stroke-opacity=\".35\" stroke-width=\"2\"/><rect x=\"389\" y=\"115\" width=\"341\" height=\"12\" rx=\"6\" fill=\"#2563eb\"/><text x=\"405\" y=\"151\" text-anchor=\"start\" fill=\"#2563eb\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\"><tspan x=\"405\" dy=\"0\">Outlook Online (Microsoft</tspan><tspan x=\"405\" dy=\"19\">365)</tspan></text><text x=\"405\" y=\"194\" text-anchor=\"start\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"405\" dy=\"0\">Folders-based organisation — traditional</tspan><tspan x=\"405\" dy=\"19\">and familiar for corporate environments ·</tspan><tspan x=\"405\" dy=\"19\">Deep integration with Word, Excel, Teams,</tspan><tspan x=\"405\" dy=\"19\">and SharePoint</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Read across the panels to compare the items. Use each detail as a prompt to recall the full explanation from the lesson. Use the labels to review the explanation in the lesson.</figcaption></figure>"
                 },
                 {
                   "type": "heading",
@@ -6194,8 +6157,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Contrast in your own words.",
-                    "Apply Alignment to a practical situation."
+                    "Explain Contrast, Alignment and Proximity in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -6250,11 +6214,6 @@
                 {
                   "type": "paragraph",
                   "text": "Leo's first rule when he reviews any document: 'Did you use a grid?' White space is not wasted space — it is breathing room that directs the eye and reduces cognitive load. The instinct to fill every gap with text or colour is the number one mistake non-designers make. Less, placed deliberately, is always more powerful than more, scattered randomly."
-                },
-                {
-                  "type": "richText",
-                  "heading": "Visual model: Document Design and Layout",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"application-skills-document-design-and-layout-title application-skills-document-design-and-layout-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"application-skills-document-design-and-layout-title\">Document Design and Layout: Side-by-side comparison for Canva, Figma.</title><desc id=\"application-skills-document-design-and-layout-desc\">Read across the panels to compare the items. Use each detail as a prompt to recall the full explanation from the lesson.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#d1fae5\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#047857\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Document Design and Layout</tspan></text><text x=\"36\" y=\"94\" fill=\"#047857\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">DESIGN TOOLS FOR BUSINESS DOCUMENTS</text><rect x=\"30\" y=\"115\" width=\"341\" height=\"177\" rx=\"18\" fill=\"#fff\" stroke=\"#047857\" stroke-opacity=\".35\" stroke-width=\"2\"/><rect x=\"30\" y=\"115\" width=\"341\" height=\"12\" rx=\"6\" fill=\"#047857\"/><text x=\"46\" y=\"151\" text-anchor=\"start\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\"><tspan x=\"46\" dy=\"0\">Canva</tspan></text><text x=\"46\" y=\"194\" text-anchor=\"start\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"46\" dy=\"0\">Browser-based, drag-and-drop — minimal</tspan><tspan x=\"46\" dy=\"19\">design skill required · Thousands of</tspan><tspan x=\"46\" dy=\"19\">professional templates for flyers,</tspan><tspan x=\"46\" dy=\"19\">presentations, and social graphics</tspan></text><rect x=\"389\" y=\"115\" width=\"341\" height=\"177\" rx=\"18\" fill=\"#fff\" stroke=\"#2563eb\" stroke-opacity=\".35\" stroke-width=\"2\"/><rect x=\"389\" y=\"115\" width=\"341\" height=\"12\" rx=\"6\" fill=\"#2563eb\"/><text x=\"405\" y=\"151\" text-anchor=\"start\" fill=\"#2563eb\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\"><tspan x=\"405\" dy=\"0\">Figma</tspan></text><text x=\"405\" y=\"194\" text-anchor=\"start\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"405\" dy=\"0\">Industry-standard UI/UX and graphic</tspan><tspan x=\"405\" dy=\"19\">design tool · Component-based design —</tspan><tspan x=\"405\" dy=\"19\">Leo's component library can be reused in</tspan><tspan x=\"405\" dy=\"19\">any project</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Read across the panels to compare the items. Use each detail as a prompt to recall the full explanation from the lesson. Use the labels to review the explanation in the lesson.</figcaption></figure>"
                 },
                 {
                   "type": "heading",
@@ -6499,8 +6458,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Real-Time Collaboration in your own words.",
-                    "Apply Version History to a practical situation."
+                    "Explain Real-Time Collaboration, Version History and Access Permissions in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -6555,11 +6515,6 @@
                 {
                   "type": "paragraph",
                   "text": "Collaborative tools introduce concepts that do not exist in single-user software: version history, simultaneous editing, commenting, access permissions, and change notifications. Understanding these concepts is as important as knowing how to use the tools, because misusing them — sharing the wrong link, editing without permission, or ignoring a comment — can cause the exact document chaos the tools are designed to prevent."
-                },
-                {
-                  "type": "richText",
-                  "heading": "Visual model: Collaborative Software Tools",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"application-skills-collaborative-software-tools-title application-skills-collaborative-software-tools-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"application-skills-collaborative-software-tools-title\">Collaborative Software Tools: Side-by-side comparison for Trello, Asana.</title><desc id=\"application-skills-collaborative-software-tools-desc\">Read across the panels to compare the items. Use each detail as a prompt to recall the full explanation from the lesson.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#d1fae5\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#047857\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Collaborative Software Tools</tspan></text><text x=\"36\" y=\"94\" fill=\"#047857\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">TRELLO VS ASANA</text><rect x=\"30\" y=\"115\" width=\"341\" height=\"177\" rx=\"18\" fill=\"#fff\" stroke=\"#047857\" stroke-opacity=\".35\" stroke-width=\"2\"/><rect x=\"30\" y=\"115\" width=\"341\" height=\"12\" rx=\"6\" fill=\"#047857\"/><text x=\"46\" y=\"151\" text-anchor=\"start\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\"><tspan x=\"46\" dy=\"0\">Trello</tspan></text><text x=\"46\" y=\"194\" text-anchor=\"start\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"46\" dy=\"0\">Card-and-column Kanban board — clean and</tspan><tspan x=\"46\" dy=\"19\">visual · Minimal setup — boards are ready</tspan><tspan x=\"46\" dy=\"19\">to use in minutes</tspan></text><rect x=\"389\" y=\"115\" width=\"341\" height=\"177\" rx=\"18\" fill=\"#fff\" stroke=\"#2563eb\" stroke-opacity=\".35\" stroke-width=\"2\"/><rect x=\"389\" y=\"115\" width=\"341\" height=\"12\" rx=\"6\" fill=\"#2563eb\"/><text x=\"405\" y=\"151\" text-anchor=\"start\" fill=\"#2563eb\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\"><tspan x=\"405\" dy=\"0\">Asana</tspan></text><text x=\"405\" y=\"194\" text-anchor=\"start\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"405\" dy=\"0\">Multiple views: List, Board, Timeline</tspan><tspan x=\"405\" dy=\"19\">(Gantt), Calendar · Task dependencies —</tspan><tspan x=\"405\" dy=\"19\">set which tasks must complete before</tspan><tspan x=\"405\" dy=\"19\">others begin</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Read across the panels to compare the items. Use each detail as a prompt to recall the full explanation from the lesson. Use the labels to review the explanation in the lesson.</figcaption></figure>"
                 },
                 {
                   "type": "heading",
@@ -6836,11 +6791,6 @@
                   ]
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Application Skills Quiz",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"application-skills-application-skills-quiz-title application-skills-application-skills-quiz-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"application-skills-application-skills-quiz-title\">Application Skills Quiz: Concept cards for Word Processing, Spreadsheets, Email and Webmail, Document Design.</title><desc id=\"application-skills-application-skills-quiz-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#d1fae5\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#047857\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Application Skills Quiz</tspan></text><text x=\"36\" y=\"94\" fill=\"#047857\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">LESSON</text><rect x=\"28\" y=\"110\" width=\"704\" height=\"194\" rx=\"18\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"28\" y=\"110\" width=\"704\" height=\"31\" rx=\"18\" fill=\"#e2e8f0\"/><circle cx=\"49\" cy=\"125\" r=\"5\" fill=\"#fb7185\"/><circle cx=\"66\" cy=\"125\" r=\"5\" fill=\"#fbbf24\"/><circle cx=\"83\" cy=\"125\" r=\"5\" fill=\"#34d399\"/><rect x=\"72\" y=\"143\" width=\"304\" height=\"70\" rx=\"12\" fill=\"#ecfdf5\"/><circle cx=\"94\" cy=\"165\" r=\"10\" fill=\"#047857\"/><text x=\"114\" y=\"169\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"114\" dy=\"0\">Word Processing</tspan></text><text x=\"88\" y=\"192\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"88\" dy=\"0\">Topics Assessed: Styles, TOC, Mail Merge,</tspan><tspan x=\"88\" dy=\"19\">Track Changes · Question Number(s): Q1…</tspan></text><rect x=\"404\" y=\"143\" width=\"304\" height=\"70\" rx=\"12\" fill=\"#eef2ff\"/><circle cx=\"426\" cy=\"165\" r=\"10\" fill=\"#2563eb\"/><text x=\"446\" y=\"169\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"446\" dy=\"0\">Spreadsheets</tspan></text><text x=\"420\" y=\"192\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"420\" dy=\"0\">Topics Assessed: Formulas, references,</tspan><tspan x=\"420\" dy=\"19\">SUMIF, Conditional Formatting · Question…</tspan></text><rect x=\"72\" y=\"227\" width=\"304\" height=\"70\" rx=\"12\" fill=\"#ecfdf5\"/><circle cx=\"94\" cy=\"249\" r=\"10\" fill=\"#047857\"/><text x=\"114\" y=\"253\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"114\" dy=\"0\">Email and Webmail</tspan></text><text x=\"88\" y=\"276\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"88\" dy=\"0\">Topics Assessed: To/CC/BCC, professional</tspan><tspan x=\"88\" dy=\"19\">communication, filters · Question…</tspan></text><rect x=\"404\" y=\"227\" width=\"304\" height=\"70\" rx=\"12\" fill=\"#eef2ff\"/><circle cx=\"426\" cy=\"249\" r=\"10\" fill=\"#2563eb\"/><text x=\"446\" y=\"253\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"446\" dy=\"0\">Document Design</tspan></text><text x=\"420\" y=\"276\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"420\" dy=\"0\">Topics Assessed: CRAP principles,</tspan><tspan x=\"420\" dy=\"19\">typography, colour, tools · Question…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
-                },
-                {
                   "type": "table",
                   "headers": [
                     "Lesson",
@@ -7007,8 +6957,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Project Brief in your own words.",
-                    "Apply Scope to a practical situation."
+                    "Explain Project Brief, Scope and Milestone in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -7067,11 +7018,6 @@
                 {
                   "type": "paragraph",
                   "text": "We work in a structured environment here. Every project at the Launchpad goes through a planning phase that produces three key artefacts: a project brief, a scope statement, and a project timeline. These documents protect you, protect the client, and protect the team."
-                },
-                {
-                  "type": "richText",
-                  "heading": "Visual model: Planning a Digital Solution",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"project-management-planning-a-digital-solution-title project-management-planning-a-digital-solution-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"project-management-planning-a-digital-solution-title\">Planning a Digital Solution: Side-by-side comparison for Waterfall, Agile (Scrum / Kanban).</title><desc id=\"project-management-planning-a-digital-solution-desc\">Read across the panels to compare the items. Use each detail as a prompt to recall the full explanation from the lesson.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ede9fe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Planning a Digital Solution</tspan></text><text x=\"36\" y=\"94\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">WATERFALL VS AGILE</text><rect x=\"30\" y=\"115\" width=\"341\" height=\"177\" rx=\"18\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".35\" stroke-width=\"2\"/><rect x=\"30\" y=\"115\" width=\"341\" height=\"12\" rx=\"6\" fill=\"#7c3aed\"/><text x=\"46\" y=\"151\" text-anchor=\"start\" fill=\"#7c3aed\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\"><tspan x=\"46\" dy=\"0\">Waterfall</tspan></text><text x=\"46\" y=\"194\" text-anchor=\"start\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"46\" dy=\"0\">Linear, sequential phases: Plan → Design</tspan><tspan x=\"46\" dy=\"19\">→ Build → Test → Deploy · Best for</tspan><tspan x=\"46\" dy=\"19\">projects with fixed, well-understood</tspan><tspan x=\"46\" dy=\"19\">requirements</tspan></text><rect x=\"389\" y=\"115\" width=\"341\" height=\"177\" rx=\"18\" fill=\"#fff\" stroke=\"#b45309\" stroke-opacity=\".35\" stroke-width=\"2\"/><rect x=\"389\" y=\"115\" width=\"341\" height=\"12\" rx=\"6\" fill=\"#b45309\"/><text x=\"405\" y=\"151\" text-anchor=\"start\" fill=\"#b45309\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\"><tspan x=\"405\" dy=\"0\">Agile (Scrum / Kanban)</tspan></text><text x=\"405\" y=\"194\" text-anchor=\"start\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"405\" dy=\"0\">Iterative sprints (1–4 weeks) with</tspan><tspan x=\"405\" dy=\"19\">working deliverables each cycle · Best</tspan><tspan x=\"405\" dy=\"19\">for evolving requirements and client</tspan><tspan x=\"405\" dy=\"19\">feedback loops</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Read across the panels to compare the items. Use each detail as a prompt to recall the full explanation from the lesson. Use the labels to review the explanation in the lesson.</figcaption></figure>"
                 },
                 {
                   "type": "heading",
@@ -7316,8 +7262,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Evaluation Criteria in your own words.",
-                    "Apply Functional Requirements to a practical situation."
+                    "Explain Evaluation Criteria, Functional Requirements and Non-Functional Requirements in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -7376,11 +7323,6 @@
                 {
                   "type": "paragraph",
                   "text": "Evaluation also looks forward, not just backward. A good evaluation identifies what worked well, what should be improved, and what would be included in a future version of the solution. This feeds directly back into the next project's planning phase — which is how professional teams get better over time."
-                },
-                {
-                  "type": "richText",
-                  "heading": "Visual model: Evaluating a Digital Solution",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"project-management-evaluating-a-digital-solution-title project-management-evaluating-a-digital-solution-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"project-management-evaluating-a-digital-solution-title\">Evaluating a Digital Solution: Side-by-side comparison for Weak Evaluation (don't do this), Strong Evaluation (this is the standard).</title><desc id=\"project-management-evaluating-a-digital-solution-desc\">Read across the panels to compare the items. Use each detail as a prompt to recall the full explanation from the lesson.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ede9fe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Evaluating a Digital Solution</tspan></text><text x=\"36\" y=\"94\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">WEAK VS STRONG EVALUATION STATEMENTS</text><rect x=\"30\" y=\"115\" width=\"341\" height=\"177\" rx=\"18\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".35\" stroke-width=\"2\"/><rect x=\"30\" y=\"115\" width=\"341\" height=\"12\" rx=\"6\" fill=\"#7c3aed\"/><text x=\"46\" y=\"151\" text-anchor=\"start\" fill=\"#7c3aed\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\"><tspan x=\"46\" dy=\"0\">Weak Evaluation (don't do</tspan><tspan x=\"46\" dy=\"19\">this)</tspan></text><text x=\"46\" y=\"194\" text-anchor=\"start\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"46\" dy=\"0\">'The website looks good and is easy to</tspan><tspan x=\"46\" dy=\"19\">use.' — No evidence, no criterion</tspan><tspan x=\"46\" dy=\"19\">referenced. · 'Users seemed happy with</tspan><tspan x=\"46\" dy=\"19\">the system.' — 'Seemed' is not evidence.</tspan></text><rect x=\"389\" y=\"115\" width=\"341\" height=\"177\" rx=\"18\" fill=\"#fff\" stroke=\"#b45309\" stroke-opacity=\".35\" stroke-width=\"2\"/><rect x=\"389\" y=\"115\" width=\"341\" height=\"12\" rx=\"6\" fill=\"#b45309\"/><text x=\"405\" y=\"151\" text-anchor=\"start\" fill=\"#b45309\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\"><tspan x=\"405\" dy=\"0\">Strong Evaluation (this is</tspan><tspan x=\"405\" dy=\"19\">the standard)</tspan></text><text x=\"405\" y=\"194\" text-anchor=\"start\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"405\" dy=\"0\">'Criterion: Members can complete a court</tspan><tspan x=\"405\" dy=\"19\">booking in under 3 minutes. Evidence:</tspan><tspan x=\"405\" dy=\"19\">Usability test with 5 members averaged 2</tspan><tspan x=\"405\" dy=\"19\">min 14 sec. Criterion MET.' · 'Criterion…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Read across the panels to compare the items. Use each detail as a prompt to recall the full explanation from the lesson. Use the labels to review the explanation in the lesson.</figcaption></figure>"
                 },
                 {
                   "type": "heading",
@@ -7620,8 +7562,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Project Lifecycle in your own words.",
-                    "Apply Iterative Development to a practical situation."
+                    "Explain Project Lifecycle, Iterative Development and Version Control in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -7680,11 +7623,6 @@
                 {
                   "type": "paragraph",
                   "text": "At the Launchpad, we assess personal projects on four dimensions: the quality of the planning documentation, the evidence of iterative development, the rigour of the evaluation, and the professionalism of the final deliverable. A brilliant product with no documentation will score lower than a modest product with excellent artefacts. Document everything as you go — not at the end."
-                },
-                {
-                  "type": "richText",
-                  "heading": "Visual model: Personal Digital Project Task",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"project-management-personal-digital-project-task-title project-management-personal-digital-project-task-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"project-management-personal-digital-project-task-title\">Personal Digital Project Task: Side-by-side comparison for Common Student Mistakes, Professional Practice (Launchpad Standard).</title><desc id=\"project-management-personal-digital-project-task-desc\">Read across the panels to compare the items. Use each detail as a prompt to recall the full explanation from the lesson.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ede9fe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Personal Digital Project Task</tspan></text><text x=\"36\" y=\"94\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">COMMON PERSONAL PROJECT PITFALLS VS PROFESSIONAL …</text><rect x=\"30\" y=\"115\" width=\"341\" height=\"177\" rx=\"18\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".35\" stroke-width=\"2\"/><rect x=\"30\" y=\"115\" width=\"341\" height=\"12\" rx=\"6\" fill=\"#7c3aed\"/><text x=\"46\" y=\"151\" text-anchor=\"start\" fill=\"#7c3aed\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\"><tspan x=\"46\" dy=\"0\">Common Student Mistakes</tspan></text><text x=\"46\" y=\"194\" text-anchor=\"start\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"46\" dy=\"0\">Starting to build before writing a</tspan><tspan x=\"46\" dy=\"19\">project brief · Changing the scope</tspan><tspan x=\"46\" dy=\"19\">halfway through without documenting the</tspan><tspan x=\"46\" dy=\"19\">change</tspan></text><rect x=\"389\" y=\"115\" width=\"341\" height=\"177\" rx=\"18\" fill=\"#fff\" stroke=\"#b45309\" stroke-opacity=\".35\" stroke-width=\"2\"/><rect x=\"389\" y=\"115\" width=\"341\" height=\"12\" rx=\"6\" fill=\"#b45309\"/><text x=\"405\" y=\"151\" text-anchor=\"start\" fill=\"#b45309\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\"><tspan x=\"405\" dy=\"0\">Professional Practice</tspan><tspan x=\"405\" dy=\"19\">(Launchpad Standard)</tspan></text><text x=\"405\" y=\"194\" text-anchor=\"start\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"405\" dy=\"0\">Brief approved before any development</tspan><tspan x=\"405\" dy=\"19\">work begins · Scope changes formally</tspan><tspan x=\"405\" dy=\"19\">documented with a reason and date</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Read across the panels to compare the items. Use each detail as a prompt to recall the full explanation from the lesson. Use the labels to review the explanation in the lesson.</figcaption></figure>"
                 },
                 {
                   "type": "heading",
@@ -7928,11 +7866,6 @@
                   "text": "Status: 🟣 ASSESSMENT | Sprint Review | Assigned to: All Junior Analysts\n\nRory here. Before you start this quiz, I want you to remember something: the point of project management is not to fill in templates — it's to ship the right thing on time, with evidence that you planned and evaluated it properly. Every question in this quiz connects to a real decision you'd make on a real project. Think like a professional. You have 30 minutes."
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Project Management Quiz",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"project-management-project-management-quiz-title project-management-project-management-quiz-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"project-management-project-management-quiz-title\">Project Management Quiz: Concept cards for Check 1, Check 2, Check 3, Check 4.</title><desc id=\"project-management-project-management-quiz-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ede9fe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Project Management Quiz</tspan></text><text x=\"36\" y=\"94\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">REVISION CHECKPOINTS</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Check 1</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">A junior analyst begins writing code for a</tspan><tspan x=\"84\" dy=\"19\">new client app before completing the…</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#b45309\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#b45309\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Check 2</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Which of the following BEST describes</tspan><tspan x=\"444\" dy=\"19\">'scope creep' in a digital project?</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Check 3</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">A team is building a community website.</tspan><tspan x=\"84\" dy=\"19\">They release a basic working version after…</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#b45309\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#b45309\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Check 4</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">A project evaluation should only measure</tspan><tspan x=\"444\" dy=\"19\">criteria that the solution has successfully…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
-                },
-                {
                   "type": "heading",
                   "text": "Assessment practice"
                 },
@@ -8077,8 +8010,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Data in your own words.",
-                    "Apply Information to a practical situation."
+                    "Explain Data and Information in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -8117,11 +8051,6 @@
                 {
                   "type": "paragraph",
                   "text": "At SW Logistical Analytics, every decision a client makes is backed by information — but information has to be built from data. Raw data on its own tells you nothing. The moment you add context, structure, and meaning, data becomes information you can act on."
-                },
-                {
-                  "type": "richText",
-                  "heading": "Visual model: Data vs Information",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"managing-data-data-vs-information-title managing-data-data-vs-information-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"managing-data-data-vs-information-title\">Data vs Information: Side-by-side comparison for Quantitative (Numbers), Qualitative (Descriptive).</title><desc id=\"managing-data-data-vs-information-desc\">Read across the panels to compare the items. Use each detail as a prompt to recall the full explanation from the lesson.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ccfbf1\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#0f766e\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Data vs Information</tspan></text><text x=\"36\" y=\"94\" fill=\"#0f766e\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">QUANTITATIVE VS QUALITATIVE DATA</text><rect x=\"30\" y=\"115\" width=\"341\" height=\"177\" rx=\"18\" fill=\"#fff\" stroke=\"#0f766e\" stroke-opacity=\".35\" stroke-width=\"2\"/><rect x=\"30\" y=\"115\" width=\"341\" height=\"12\" rx=\"6\" fill=\"#0f766e\"/><text x=\"46\" y=\"151\" text-anchor=\"start\" fill=\"#0f766e\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\"><tspan x=\"46\" dy=\"0\">Quantitative (Numbers)</tspan></text><text x=\"46\" y=\"194\" text-anchor=\"start\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"46\" dy=\"0\">Expressed as numbers — can be measured or</tspan><tspan x=\"46\" dy=\"19\">counted · Examples: delivery time in</tspan><tspan x=\"46\" dy=\"19\">hours, payload in kg, number of failed</tspan><tspan x=\"46\" dy=\"19\">scans</tspan></text><rect x=\"389\" y=\"115\" width=\"341\" height=\"177\" rx=\"18\" fill=\"#fff\" stroke=\"#4f46e5\" stroke-opacity=\".35\" stroke-width=\"2\"/><rect x=\"389\" y=\"115\" width=\"341\" height=\"12\" rx=\"6\" fill=\"#4f46e5\"/><text x=\"405\" y=\"151\" text-anchor=\"start\" fill=\"#4f46e5\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\"><tspan x=\"405\" dy=\"0\">Qualitative (Descriptive)</tspan></text><text x=\"405\" y=\"194\" text-anchor=\"start\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"405\" dy=\"0\">Describes characteristics, categories, or</tspan><tspan x=\"405\" dy=\"19\">qualities · Examples: delivery status</tspan><tspan x=\"405\" dy=\"19\">labels, driver feedback, client</tspan><tspan x=\"405\" dy=\"19\">satisfaction ratings</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Read across the panels to compare the items. Use each detail as a prompt to recall the full explanation from the lesson. Use the labels to review the explanation in the lesson.</figcaption></figure>"
                 },
                 {
                   "type": "paragraph",
@@ -8424,8 +8353,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Accuracy in your own words.",
-                    "Apply Reliability to a practical situation."
+                    "Explain Accuracy, Reliability and Validity in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -8472,11 +8402,6 @@
                 {
                   "type": "paragraph",
                   "text": "At SW Logistical Analytics, every figure in a client report has to stand up to scrutiny. If a client's lawyer or auditor asks 'where did this number come from?' — you need an answer. Using inaccurate or unreliable sources doesn't just produce bad analysis; it damages the firm's reputation and can expose clients to costly decisions based on false data."
-                },
-                {
-                  "type": "richText",
-                  "heading": "Visual model: Accuracy and Reliability of Sources",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"managing-data-accuracy-and-reliability-of-sources-title managing-data-accuracy-and-reliability-of-sources-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"managing-data-accuracy-and-reliability-of-sources-title\">Accuracy and Reliability of Sources: Side-by-side comparison for High Reliability, Low Reliability — Approach with Caution.</title><desc id=\"managing-data-accuracy-and-reliability-of-sources-desc\">Read across the panels to compare the items. Use each detail as a prompt to recall the full explanation from the lesson.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ccfbf1\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#0f766e\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Accuracy and Reliability of Sources</tspan></text><text x=\"36\" y=\"94\" fill=\"#0f766e\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">RELIABLE VS UNRELIABLE SOURCES</text><rect x=\"30\" y=\"115\" width=\"341\" height=\"177\" rx=\"18\" fill=\"#fff\" stroke=\"#0f766e\" stroke-opacity=\".35\" stroke-width=\"2\"/><rect x=\"30\" y=\"115\" width=\"341\" height=\"12\" rx=\"6\" fill=\"#0f766e\"/><text x=\"46\" y=\"151\" text-anchor=\"start\" fill=\"#0f766e\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\"><tspan x=\"46\" dy=\"0\">High Reliability</tspan></text><text x=\"46\" y=\"194\" text-anchor=\"start\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"46\" dy=\"0\">Government agencies: ABS, Department of</tspan><tspan x=\"46\" dy=\"19\">Infrastructure, Australian Border Force ·</tspan><tspan x=\"46\" dy=\"19\">Peer-reviewed research and industry</tspan><tspan x=\"46\" dy=\"19\">reports (e.g. Deloitte, IBISWorld)</tspan></text><rect x=\"389\" y=\"115\" width=\"341\" height=\"177\" rx=\"18\" fill=\"#fff\" stroke=\"#4f46e5\" stroke-opacity=\".35\" stroke-width=\"2\"/><rect x=\"389\" y=\"115\" width=\"341\" height=\"12\" rx=\"6\" fill=\"#4f46e5\"/><text x=\"405\" y=\"151\" text-anchor=\"start\" fill=\"#4f46e5\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\"><tspan x=\"405\" dy=\"0\">Low Reliability — Approach</tspan><tspan x=\"405\" dy=\"19\">with Caution</tspan></text><text x=\"405\" y=\"194\" text-anchor=\"start\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"405\" dy=\"0\">Anonymous or unsigned web content — no</tspan><tspan x=\"405\" dy=\"19\">accountability · Social media posts, even</tspan><tspan x=\"405\" dy=\"19\">from large companies</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Read across the panels to compare the items. Use each detail as a prompt to recall the full explanation from the lesson. Use the labels to review the explanation in the lesson.</figcaption></figure>"
                 },
                 {
                   "type": "heading",
@@ -8760,8 +8685,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain AND in your own words.",
-                    "Apply OR to a practical situation."
+                    "Explain AND and OR in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -9051,8 +8977,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain File Extension in your own words.",
-                    "Apply Compression to a practical situation."
+                    "Explain File Extension and Compression in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -9485,8 +9412,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Client/Project code in your own words.",
-                    "Apply Document type to a practical situation."
+                    "Explain Client/Project code and Document type in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -9849,8 +9777,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Version Control in your own words.",
-                    "Apply Revision History to a practical situation."
+                    "Explain Version Control, Revision History and Rollback in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -10173,11 +10102,6 @@
                   "level": 2
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Managing Data — Sloane's Final Audit",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"managing-data-managing-data-sloane-s-final-audit-title managing-data-managing-data-sloane-s-final-audit-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"managing-data-managing-data-sloane-s-final-audit-title\">Managing Data — Sloane's Final Audit: Concept cards for Check 1, Check 2, Check 3, Check 4.</title><desc id=\"managing-data-managing-data-sloane-s-final-audit-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ccfbf1\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#0f766e\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Managing Data — Sloane's Final Audit</tspan></text><text x=\"36\" y=\"94\" fill=\"#0f766e\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">REVISION CHECKPOINTS</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0f766e\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#0f766e\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Check 1</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">SW Logistical Analytics receives a</tspan><tspan x=\"84\" dy=\"19\">spreadsheet with a single column of values…</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#4f46e5\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#4f46e5\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Check 2</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Sloane finds a freight delay report</tspan><tspan x=\"444\" dy=\"19\">published by a national freight…</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0f766e\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#0f766e\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Check 3</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">The Boolean query &quot;freight delays&quot;</tspan><tspan x=\"84\" dy=\"19\">site:gov.au returns results from any…</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#4f46e5\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#4f46e5\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Check 4</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">SW Logistical Analytics needs to send a</tspan><tspan x=\"444\" dy=\"19\">client their 50,000-row delivery database…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
-                },
-                {
                   "type": "heading",
                   "text": "Assessment practice"
                 },
@@ -10362,8 +10286,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Network in your own words.",
-                    "Apply Modem to a practical situation."
+                    "Explain Network, Modem and Router in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -10663,11 +10588,6 @@
                   "text": "Using the site description from Ticket #2001 (40m × 20m clubhouse, concrete block walls, bar / function room / outdoor deck / admin office), design the network installation:\n\n1. Draw a simple floor plan (on paper or in a diagram tool) and mark where you'd place each WAP. How many do you need to cover the whole building including the outdoor deck?\n2. Create a hardware list: for each component (modem, router, switch, WAPs, cabling), list the quantity, a real product name, and approximate price.\n3. The surf club wants a separate Wi-Fi password for members vs. staff. What network feature allows this, and which consumer/commercial routers support it? (Hint: look up 'SSID' and 'VLAN'.)\n4. The concrete walls between the function room and bar are 300mm thick. What impact does this have on 5 GHz signal? How would you address it?"
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Components of a Wireless Network",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"networks-components-of-a-wireless-network-title networks-components-of-a-wireless-network-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"networks-components-of-a-wireless-network-title\">Components of a Wireless Network: Side-by-side comparison for 2.4 GHz, 5 GHz.</title><desc id=\"networks-components-of-a-wireless-network-desc\">Read across the panels to compare the items. Use each detail as a prompt to recall the full explanation from the lesson.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#e0f2fe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#0369a1\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Components of a Wireless Network</tspan></text><text x=\"36\" y=\"94\" fill=\"#0369a1\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2.4 GHZ VS 5 GHZ</text><rect x=\"30\" y=\"115\" width=\"341\" height=\"177\" rx=\"18\" fill=\"#fff\" stroke=\"#0369a1\" stroke-opacity=\".35\" stroke-width=\"2\"/><rect x=\"30\" y=\"115\" width=\"341\" height=\"12\" rx=\"6\" fill=\"#0369a1\"/><text x=\"46\" y=\"151\" text-anchor=\"start\" fill=\"#0369a1\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\"><tspan x=\"46\" dy=\"0\">2.4 GHz</tspan></text><text x=\"46\" y=\"194\" text-anchor=\"start\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"46\" dy=\"0\">Longer range — better penetration through</tspan><tspan x=\"46\" dy=\"19\">walls · Slower speeds (max ~600 Mbps with</tspan><tspan x=\"46\" dy=\"19\">Wi-Fi 4/5)</tspan></text><rect x=\"389\" y=\"115\" width=\"341\" height=\"177\" rx=\"18\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".35\" stroke-width=\"2\"/><rect x=\"389\" y=\"115\" width=\"341\" height=\"12\" rx=\"6\" fill=\"#7c3aed\"/><text x=\"405\" y=\"151\" text-anchor=\"start\" fill=\"#7c3aed\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\"><tspan x=\"405\" dy=\"0\">5 GHz</tspan></text><text x=\"405\" y=\"194\" text-anchor=\"start\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"405\" dy=\"0\">Shorter range — concrete walls reduce</tspan><tspan x=\"405\" dy=\"19\">coverage significantly · Faster speeds</tspan><tspan x=\"405\" dy=\"19\">(up to 3.5 Gbps with Wi-Fi 5/6)</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Read across the panels to compare the items. Use each detail as a prompt to recall the full explanation from the lesson. Use the labels to review the explanation in the lesson.</figcaption></figure>"
-                },
-                {
                   "type": "heading",
                   "text": "Try it yourself",
                   "level": 2
@@ -10854,8 +10774,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Managed switch in your own words.",
-                    "Apply PoE (Power over Ethernet) to a practical situation."
+                    "Explain Managed switch, PoE and VLAN in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -11104,11 +11025,6 @@
                   "text": "Using Ticket #2002 requirements (15 consulting rooms, 4 reception desktops, server room, patient guest Wi-Fi, $8,000 budget), create a complete network hardware specification:\n\n1. Create a bill of materials table: Device, Product Name, Quantity, Unit Price, Total, Justification. Research real current prices.\n2. Total your bill of materials. If it exceeds $8,000, identify what you'd cut and why. If under, identify what you'd add.\n3. The practice manager insists on separating the patient Wi-Fi from the clinical network. What specific hardware feature makes this possible, and which device implements it?\n4. The server room has two servers — one for practice management software, one for patient records backup. Should these servers use PoE connections? Explain why or why not."
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Selecting Hardware for a Network",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"networks-selecting-hardware-for-a-network-title networks-selecting-hardware-for-a-network-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"networks-selecting-hardware-for-a-network-title\">Selecting Hardware for a Network: Side-by-side comparison for Unmanaged Switch, Managed Switch.</title><desc id=\"networks-selecting-hardware-for-a-network-desc\">Read across the panels to compare the items. Use each detail as a prompt to recall the full explanation from the lesson.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#e0f2fe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#0369a1\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Selecting Hardware for a Network</tspan></text><text x=\"36\" y=\"94\" fill=\"#0369a1\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">MANAGED VS UNMANAGED SWITCHES</text><rect x=\"30\" y=\"115\" width=\"341\" height=\"177\" rx=\"18\" fill=\"#fff\" stroke=\"#0369a1\" stroke-opacity=\".35\" stroke-width=\"2\"/><rect x=\"30\" y=\"115\" width=\"341\" height=\"12\" rx=\"6\" fill=\"#0369a1\"/><text x=\"46\" y=\"151\" text-anchor=\"start\" fill=\"#0369a1\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\"><tspan x=\"46\" dy=\"0\">Unmanaged Switch</tspan></text><text x=\"46\" y=\"194\" text-anchor=\"start\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"46\" dy=\"0\">Plug-and-play — no configuration needed ·</tspan><tspan x=\"46\" dy=\"19\">No remote management or monitoring</tspan></text><rect x=\"389\" y=\"115\" width=\"341\" height=\"177\" rx=\"18\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".35\" stroke-width=\"2\"/><rect x=\"389\" y=\"115\" width=\"341\" height=\"12\" rx=\"6\" fill=\"#7c3aed\"/><text x=\"405\" y=\"151\" text-anchor=\"start\" fill=\"#7c3aed\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\"><tspan x=\"405\" dy=\"0\">Managed Switch</tspan></text><text x=\"405\" y=\"194\" text-anchor=\"start\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"405\" dy=\"0\">Web or CLI interface for configuration ·</tspan><tspan x=\"405\" dy=\"19\">Supports VLANs — separate guest Wi-Fi</tspan><tspan x=\"405\" dy=\"19\">from staff network</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Read across the panels to compare the items. Use each detail as a prompt to recall the full explanation from the lesson. Use the labels to review the explanation in the lesson.</figcaption></figure>"
-                },
-                {
                   "type": "heading",
                   "text": "Try it yourself",
                   "level": 2
@@ -11256,8 +11172,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Phishing in your own words.",
-                    "Apply Ransomware to a practical situation."
+                    "Explain Phishing, Ransomware and MFA in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -11679,8 +11596,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain IP address in your own words.",
-                    "Apply DHCP (Dynamic Host Configuration Protocol) to a practical situation."
+                    "Explain IP address, DHCP and DNS in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -11930,11 +11848,6 @@
                   "text": "Work through each of the three issues from Ticket #2004:\n\nIssue 1 — 7 laptops can't reach the internet but can see each other.\nIssue 2 — 1 staff desktop can't reach the file server by name, but has internet access.\nIssue 3 — Network-wide slowdown starting at 9:30 AM daily when students arrive.\n\nFor each issue:\n1. State which OSI layer the fault is most likely at.\n2. List the exact diagnostic commands or steps you'd run in order.\n3. Propose the most likely cause and the fix.\n\nBonus: Issue 3 has multiple possible causes. Name three different root causes that would all produce the same 'slow network at 9:30 AM' symptom, and explain how you'd distinguish between them."
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Connecting and Troubleshooting Networks",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"networks-connecting-and-troubleshooting-networks-title networks-connecting-and-troubleshooting-networks-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"networks-connecting-and-troubleshooting-networks-title\">Connecting and Troubleshooting Networks: Left-to-right sequence for Private IPv4 (LAN), Public IPv4 (WAN), Loopback, APIPA / Link-local.</title><desc id=\"networks-connecting-and-troubleshooting-networks-desc\">Follow the steps from left to right. Notice how each stage leads into the next, then connect the sequence to the worked example.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#e0f2fe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#0369a1\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Connecting and Troubleshooting Networks</tspan></text><text x=\"36\" y=\"94\" fill=\"#0369a1\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">ADDRESS TYPE</text><rect x=\"28\" y=\"127\" width=\"157\" height=\"161\" rx=\"18\" fill=\"#fff\" stroke=\"#0369a1\" stroke-opacity=\".35\" stroke-width=\"2\"/><circle cx=\"106.5\" cy=\"153\" r=\"15\" fill=\"#0369a1\"/><text x=\"106.5\" y=\"158\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"13\" font-weight=\"700\">1</text><text x=\"40\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\"><tspan x=\"40\" dy=\"0\">Private IPv4</tspan><tspan x=\"40\" dy=\"19\">(LAN)</tspan></text><text x=\"40\" y=\"221\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"40\" dy=\"0\">Example:</tspan><tspan x=\"40\" dy=\"19\">192.168.1.x,</tspan><tspan x=\"40\" dy=\"19\">10.0.0.x · Purpose…</tspan></text><path d=\"M187 191h17m-7-7 7 7-7 7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"206\" y=\"127\" width=\"157\" height=\"161\" rx=\"18\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".35\" stroke-width=\"2\"/><circle cx=\"284.5\" cy=\"153\" r=\"15\" fill=\"#7c3aed\"/><text x=\"284.5\" y=\"158\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"13\" font-weight=\"700\">2</text><text x=\"218\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\"><tspan x=\"218\" dy=\"0\">Public IPv4</tspan><tspan x=\"218\" dy=\"19\">(WAN)</tspan></text><text x=\"218\" y=\"221\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"218\" dy=\"0\">Example:</tspan><tspan x=\"218\" dy=\"19\">203.0.113.42 ·</tspan><tspan x=\"218\" dy=\"19\">Purpose: Your…</tspan></text><path d=\"M365 191h17m-7-7 7 7-7 7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"384\" y=\"127\" width=\"157\" height=\"161\" rx=\"18\" fill=\"#fff\" stroke=\"#0369a1\" stroke-opacity=\".35\" stroke-width=\"2\"/><circle cx=\"462.5\" cy=\"153\" r=\"15\" fill=\"#0369a1\"/><text x=\"462.5\" y=\"158\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"13\" font-weight=\"700\">3</text><text x=\"396\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\"><tspan x=\"396\" dy=\"0\">Loopback</tspan></text><text x=\"396\" y=\"221\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"396\" dy=\"0\">Example: 127.0.0.1 ·</tspan><tspan x=\"396\" dy=\"19\">Purpose: The device</tspan><tspan x=\"396\" dy=\"19\">itself — used to…</tspan></text><path d=\"M543 191h17m-7-7 7 7-7 7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"562\" y=\"127\" width=\"157\" height=\"161\" rx=\"18\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".35\" stroke-width=\"2\"/><circle cx=\"640.5\" cy=\"153\" r=\"15\" fill=\"#7c3aed\"/><text x=\"640.5\" y=\"158\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"13\" font-weight=\"700\">4</text><text x=\"574\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\"><tspan x=\"574\" dy=\"0\">APIPA /</tspan><tspan x=\"574\" dy=\"19\">Link-local</tspan></text><text x=\"574\" y=\"221\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"574\" dy=\"0\">Example: 169.254.x.x</tspan><tspan x=\"574\" dy=\"19\">· Purpose: Automatic</tspan><tspan x=\"574\" dy=\"19\">fallback when DHCP…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Follow the steps from left to right. Notice how each stage leads into the next, then connect the sequence to the worked example. Use the labels to review the explanation in the lesson.</figcaption></figure>"
-                },
-                {
                   "type": "interactiveDiagram",
                   "title": "Fix the office Wi-Fi",
                   "instruction": "A laptop cannot get online. Switch each setting to the right position until it connects.",
@@ -12139,11 +12052,6 @@
                   "text": "Networks connect everything. Sloane's data doesn't get from the database to Leo's front-end without a working network layer. If the physical infrastructure is solid, the higher-level stuff — apps, security, cloud services — can do their job. If the physical layer is broken, none of it matters. Networks first."
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Networks Review Quiz",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"networks-networks-review-quiz-title networks-networks-review-quiz-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"networks-networks-review-quiz-title\">Networks Review Quiz: Concept cards for Check 1, Check 2, Check 3, Check 4.</title><desc id=\"networks-networks-review-quiz-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#e0f2fe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#0369a1\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Networks Review Quiz</tspan></text><text x=\"36\" y=\"94\" fill=\"#0369a1\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">REVISION CHECKPOINTS</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0369a1\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#0369a1\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Check 1</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">A café installs a wireless network for</tspan><tspan x=\"84\" dy=\"19\">customers. They want customers to have…</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#7c3aed\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Check 2</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Which device assigns IP addresses to</tspan><tspan x=\"444\" dy=\"19\">devices on a local network?</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0369a1\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#0369a1\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Check 3</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">A company's office is on the 4th floor of a</tspan><tspan x=\"84\" dy=\"19\">building. They need a wireless network…</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#7c3aed\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Check 4</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">An employee's laptop gets a 169.254.x.x IP</tspan><tspan x=\"444\" dy=\"19\">address when connecting to the office…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
-                },
-                {
                   "type": "heading",
                   "text": "Assessment practice"
                 },
@@ -12334,8 +12242,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Cybercrime in your own words.",
-                    "Apply Hacking to a practical situation."
+                    "Explain Cybercrime, Hacking and Phishing in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -12683,8 +12592,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Intellectual Property (IP) in your own words.",
-                    "Apply Copyright to a practical situation."
+                    "Explain Intellectual Property, Copyright and Fair Dealing in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -12966,8 +12876,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Commercial Electronic Message (CEM) in your own words.",
-                    "Apply Consent to a practical situation."
+                    "Explain Commercial Electronic Message, Consent and Unsubscribe Mechanism in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -13189,8 +13100,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Digital Footprint in your own words.",
-                    "Apply Cyberbullying to a practical situation."
+                    "Explain Digital Footprint, Cyberbullying and eSafety Commissioner in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -13463,8 +13375,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Repetitive Strain Injury (RSI) in your own words.",
-                    "Apply Digital Eye Strain to a practical situation."
+                    "Explain Repetitive Strain Injury and Digital Eye Strain in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -13712,11 +13625,6 @@
                   "text": "This topic covered five key areas:\n1. Types of Computer Crime — cybercrime categories, Criminal Code Act 1995 (Cth)\n2. Copyright and IP — Copyright Act 1968 (Cth), Creative Commons, moral rights\n3. The Spam Act 2003 — consent, identify, unsubscribe rules, ACMA enforcement\n4. Digital Citizenship — cyberbullying types, eSafety Commissioner, online conduct\n5. Health Impacts — physical risks (RSI, eye strain, posture) and mental health risks (anxiety, sleep disruption, FOMO)"
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Impacts of Technology — Unit 2 Review",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"impacts-of-technology-impacts-of-technology-unit-2-review-title impacts-of-technology-impacts-of-technology-unit-2-review-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"impacts-of-technology-impacts-of-technology-unit-2-review-title\">Impacts of Technology — Unit 2 Review: Concept cards for Check 1, Check 2, Check 3, Check 4.</title><desc id=\"impacts-of-technology-impacts-of-technology-unit-2-review-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ede9fe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Impacts of Technology — Unit 2 Review</tspan></text><text x=\"36\" y=\"94\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">REVISION CHECKPOINTS</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Check 1</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Which Australian legislation primarily</tspan><tspan x=\"84\" dy=\"19\">governs commercial email and SMS messages…</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#c2410c\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#c2410c\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Check 2</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Under the Copyright Act 1968 (Cth), a</tspan><tspan x=\"444\" dy=\"19\">creator must register their work with a…</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Check 3</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">A business receives 300 unsubscribe</tspan><tspan x=\"84\" dy=\"19\">requests on a Monday. Under the Spam Act…</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#c2410c\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#c2410c\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Check 4</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Malicious software that encrypts a victim's</tspan><tspan x=\"444\" dy=\"19\">files and demands payment for the…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
-                },
-                {
                   "type": "heading",
                   "text": "Assessment practice"
                 },
@@ -13855,8 +13763,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Slide Master in your own words.",
-                    "Apply Transition to a practical situation."
+                    "Explain Slide Master, Transition and Animation in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -13902,11 +13811,6 @@
                 {
                   "type": "paragraph",
                   "text": "Presentation software is not just about putting bullet points on a screen — it is about controlling how information lands in the room. PowerPoint and Google Slides share a core feature set, but knowing which features actually matter in a professional context separates the interns who slow the team down from the ones who speed it up."
-                },
-                {
-                  "type": "richText",
-                  "heading": "Visual model: Presentation Software — Features",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"application-skills-presentation-software-features-title application-skills-presentation-software-features-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"application-skills-presentation-software-features-title\">Presentation Software — Features: Side-by-side comparison for Microsoft PowerPoint, Google Slides.</title><desc id=\"application-skills-presentation-software-features-desc\">Read across the panels to compare the items. Use each detail as a prompt to recall the full explanation from the lesson.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#d1fae5\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#047857\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Presentation Software — Features</tspan></text><text x=\"36\" y=\"94\" fill=\"#047857\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">CHOOSING YOUR TOOL</text><rect x=\"30\" y=\"115\" width=\"341\" height=\"177\" rx=\"18\" fill=\"#fff\" stroke=\"#047857\" stroke-opacity=\".35\" stroke-width=\"2\"/><rect x=\"30\" y=\"115\" width=\"341\" height=\"12\" rx=\"6\" fill=\"#047857\"/><text x=\"46\" y=\"151\" text-anchor=\"start\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\"><tspan x=\"46\" dy=\"0\">Microsoft PowerPoint</tspan></text><text x=\"46\" y=\"194\" text-anchor=\"start\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"46\" dy=\"0\">Industry standard for formal client and</tspan><tspan x=\"46\" dy=\"19\">government presentations · Superior</tspan><tspan x=\"46\" dy=\"19\">animation control and Morph transition</tspan><tspan x=\"46\" dy=\"19\">for smooth data reveals</tspan></text><rect x=\"389\" y=\"115\" width=\"341\" height=\"177\" rx=\"18\" fill=\"#fff\" stroke=\"#2563eb\" stroke-opacity=\".35\" stroke-width=\"2\"/><rect x=\"389\" y=\"115\" width=\"341\" height=\"12\" rx=\"6\" fill=\"#2563eb\"/><text x=\"405\" y=\"151\" text-anchor=\"start\" fill=\"#2563eb\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\"><tspan x=\"405\" dy=\"0\">Google Slides</tspan></text><text x=\"405\" y=\"194\" text-anchor=\"start\" fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"405\" dy=\"0\">Real-time collaboration — multiple team</tspan><tspan x=\"405\" dy=\"19\">members edit simultaneously · Auto-saved</tspan><tspan x=\"405\" dy=\"19\">in Drive, accessible from any device</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Read across the panels to compare the items. Use each detail as a prompt to recall the full explanation from the lesson. Use the labels to review the explanation in the lesson.</figcaption></figure>"
                 },
                 {
                   "type": "heading",
@@ -14147,8 +14051,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Eye contact in your own words.",
-                    "Apply Pacing to a practical situation."
+                    "Explain Eye contact and Pacing in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -14401,8 +14306,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Sample Rate in your own words.",
-                    "Apply Bit Depth to a practical situation."
+                    "Explain Sample Rate, Bit Depth and Noise Floor in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -14701,8 +14607,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Raster Image in your own words.",
-                    "Apply Vector Image to a practical situation."
+                    "Explain Raster Image, Vector Image and Layer in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -15010,8 +14917,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Record in your own words.",
-                    "Apply Field to a practical situation."
+                    "Explain Record, Field and Primary Key in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -15278,8 +15186,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Application crashes on open in your own words.",
-                    "Apply Computer running very slowly to a practical situation."
+                    "Explain Application crashes on open and Computer running very slowly in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -15453,11 +15362,6 @@
                   "explanation": "The first fix to try depends on the symptom — that's why IDENTIFY comes before you touch anything."
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Software Troubleshooting",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"application-skills-software-troubleshooting-title application-skills-software-troubleshooting-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"application-skills-software-troubleshooting-title\">Software Troubleshooting: Left-to-right sequence for Application crashes on open, Computer running very slowly, Browser not loading websites, File will not open / shows wrong icon.</title><desc id=\"application-skills-software-troubleshooting-desc\">Follow the steps from left to right. Notice how each stage leads into the next, then connect the sequence to the worked example.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#d1fae5\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#047857\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Software Troubleshooting</tspan></text><text x=\"36\" y=\"94\" fill=\"#047857\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">PROBLEM</text><rect x=\"28\" y=\"127\" width=\"157\" height=\"161\" rx=\"18\" fill=\"#fff\" stroke=\"#047857\" stroke-opacity=\".35\" stroke-width=\"2\"/><circle cx=\"106.5\" cy=\"153\" r=\"15\" fill=\"#047857\"/><text x=\"106.5\" y=\"158\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"13\" font-weight=\"700\">1</text><text x=\"40\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\"><tspan x=\"40\" dy=\"0\">Application</tspan><tspan x=\"40\" dy=\"19\">crashes on open</tspan></text><text x=\"40\" y=\"221\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"40\" dy=\"0\">Likely Cause:</tspan><tspan x=\"40\" dy=\"19\">Corrupted file,</tspan><tspan x=\"40\" dy=\"19\">missing update, or…</tspan></text><path d=\"M187 191h17m-7-7 7 7-7 7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"206\" y=\"127\" width=\"157\" height=\"161\" rx=\"18\" fill=\"#fff\" stroke=\"#2563eb\" stroke-opacity=\".35\" stroke-width=\"2\"/><circle cx=\"284.5\" cy=\"153\" r=\"15\" fill=\"#2563eb\"/><text x=\"284.5\" y=\"158\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"13\" font-weight=\"700\">2</text><text x=\"218\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\"><tspan x=\"218\" dy=\"0\">Computer running</tspan><tspan x=\"218\" dy=\"19\">very slowly</tspan></text><text x=\"218\" y=\"221\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"218\" dy=\"0\">Likely Cause: Too</tspan><tspan x=\"218\" dy=\"19\">many processes, low</tspan><tspan x=\"218\" dy=\"19\">RAM, malware, or…</tspan></text><path d=\"M365 191h17m-7-7 7 7-7 7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"384\" y=\"127\" width=\"157\" height=\"161\" rx=\"18\" fill=\"#fff\" stroke=\"#047857\" stroke-opacity=\".35\" stroke-width=\"2\"/><circle cx=\"462.5\" cy=\"153\" r=\"15\" fill=\"#047857\"/><text x=\"462.5\" y=\"158\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"13\" font-weight=\"700\">3</text><text x=\"396\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\"><tspan x=\"396\" dy=\"0\">Browser not</tspan><tspan x=\"396\" dy=\"19\">loading websites</tspan></text><text x=\"396\" y=\"221\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"396\" dy=\"0\">Likely Cause: DNS</tspan><tspan x=\"396\" dy=\"19\">issue, cache</tspan><tspan x=\"396\" dy=\"19\">problem, or browser…</tspan></text><path d=\"M543 191h17m-7-7 7 7-7 7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"562\" y=\"127\" width=\"157\" height=\"161\" rx=\"18\" fill=\"#fff\" stroke=\"#2563eb\" stroke-opacity=\".35\" stroke-width=\"2\"/><circle cx=\"640.5\" cy=\"153\" r=\"15\" fill=\"#2563eb\"/><text x=\"640.5\" y=\"158\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"13\" font-weight=\"700\">4</text><text x=\"574\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\"><tspan x=\"574\" dy=\"0\">File will not</tspan><tspan x=\"574\" dy=\"19\">open / shows…</tspan></text><text x=\"574\" y=\"221\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"574\" dy=\"0\">Likely Cause:</tspan><tspan x=\"574\" dy=\"19\">Missing associated</tspan><tspan x=\"574\" dy=\"19\">application or…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Follow the steps from left to right. Notice how each stage leads into the next, then connect the sequence to the worked example. Use the labels to review the explanation in the lesson.</figcaption></figure>"
-                },
-                {
                   "type": "heading",
                   "text": "Try it yourself",
                   "level": 2
@@ -15578,8 +15482,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Project Brief in your own words.",
-                    "Apply Scope to a practical situation."
+                    "Explain Project Brief, Scope and Wireframe in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -15847,11 +15752,6 @@
                   "text": "This topic covered seven professional tool sets:\n1. Presentation Software Features — Slide Masters, transitions, Presenter View\n2. Creating and Presenting — 6×6 rule, embedded charts, delivery skills\n3. Audio Software — Audacity workflow, file formats, WAV vs MP3\n4. Image Manipulation — Photopea, raster vs vector, format selection, background removal\n5. Online Database Tools — Google Sheets, VLOOKUP, data validation, when to use SQL\n6. Software Troubleshooting — systematic process, common fixes, documentation\n7. Planning an Interactive Project — brief, wireframe, MVP, Gantt chart"
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Application Skills Review Quiz — Unit 2",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"application-skills-application-skills-review-quiz-unit-2-title application-skills-application-skills-review-quiz-unit-2-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"application-skills-application-skills-review-quiz-unit-2-title\">Application Skills Review Quiz — Unit 2: Concept cards for Check 1, Check 2, Check 3, Check 4.</title><desc id=\"application-skills-application-skills-review-quiz-unit-2-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#d1fae5\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#047857\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Application Skills Review Quiz — Unit 2</tspan></text><text x=\"36\" y=\"94\" fill=\"#047857\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">REVISION CHECKPOINTS</text><rect x=\"28\" y=\"110\" width=\"704\" height=\"194\" rx=\"18\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"28\" y=\"110\" width=\"704\" height=\"31\" rx=\"18\" fill=\"#e2e8f0\"/><circle cx=\"49\" cy=\"125\" r=\"5\" fill=\"#fb7185\"/><circle cx=\"66\" cy=\"125\" r=\"5\" fill=\"#fbbf24\"/><circle cx=\"83\" cy=\"125\" r=\"5\" fill=\"#34d399\"/><rect x=\"72\" y=\"143\" width=\"304\" height=\"70\" rx=\"12\" fill=\"#ecfdf5\"/><circle cx=\"94\" cy=\"165\" r=\"10\" fill=\"#047857\"/><text x=\"114\" y=\"169\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"114\" dy=\"0\">Check 1</tspan></text><text x=\"88\" y=\"192\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"88\" dy=\"0\">Editing the Slide Master in a 30-slide</tspan><tspan x=\"88\" dy=\"19\">PowerPoint affects:</tspan></text><rect x=\"404\" y=\"143\" width=\"304\" height=\"70\" rx=\"12\" fill=\"#eef2ff\"/><circle cx=\"426\" cy=\"165\" r=\"10\" fill=\"#2563eb\"/><text x=\"446\" y=\"169\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"446\" dy=\"0\">Check 2</tspan></text><text x=\"420\" y=\"192\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"420\" dy=\"0\">A WAV file and an MP3 file of the same</tspan><tspan x=\"420\" dy=\"19\">recording will have identical file sizes.</tspan></text><rect x=\"72\" y=\"227\" width=\"304\" height=\"70\" rx=\"12\" fill=\"#ecfdf5\"/><circle cx=\"94\" cy=\"249\" r=\"10\" fill=\"#047857\"/><text x=\"114\" y=\"253\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"114\" dy=\"0\">Check 3</tspan></text><text x=\"88\" y=\"276\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"88\" dy=\"0\">A client provides a logo as a JPEG for</tspan><tspan x=\"88\" dy=\"19\">use on a dark website background. The…</tspan></text><rect x=\"404\" y=\"227\" width=\"304\" height=\"70\" rx=\"12\" fill=\"#eef2ff\"/><circle cx=\"426\" cy=\"249\" r=\"10\" fill=\"#2563eb\"/><text x=\"446\" y=\"253\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"446\" dy=\"0\">Check 4</tspan></text><text x=\"420\" y=\"276\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"420\" dy=\"0\">In software troubleshooting, applying</tspan><tspan x=\"420\" dy=\"19\">multiple fixes at the same time is the…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
-                },
-                {
                   "type": "heading",
                   "text": "Assessment practice"
                 },
@@ -15990,8 +15890,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Design Process in your own words.",
-                    "Apply Iteration to a practical situation."
+                    "Explain Design Process, Iteration and Prototype in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -16037,11 +15938,6 @@
                 {
                   "type": "paragraph",
                   "text": "The design process is a structured, iterative method for solving problems through digital products. Every professional IT team follows some version of it — whether they call it Agile, Design Thinking, or the SDLC. The specific names vary; the underlying logic does not. You discover the problem, define the solution, design it, build it, deliver it, and evaluate it. Then you do it again, better."
-                },
-                {
-                  "type": "richText",
-                  "heading": "Visual model: The Design Process",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"project-management-the-design-process-title project-management-the-design-process-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"project-management-the-design-process-title\">The Design Process: Left-to-right sequence for Discover, Define, Design, Develop.</title><desc id=\"project-management-the-design-process-desc\">Follow the steps from left to right. Notice how each stage leads into the next, then connect the sequence to the worked example.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ede9fe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">The Design Process</tspan></text><text x=\"36\" y=\"94\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">PHASE</text><rect x=\"28\" y=\"127\" width=\"157\" height=\"161\" rx=\"18\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".35\" stroke-width=\"2\"/><circle cx=\"106.5\" cy=\"153\" r=\"15\" fill=\"#7c3aed\"/><text x=\"106.5\" y=\"158\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"13\" font-weight=\"700\">1</text><text x=\"40\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\"><tspan x=\"40\" dy=\"0\">Discover</tspan></text><text x=\"40\" y=\"221\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"40\" dy=\"0\">What Happens:</tspan><tspan x=\"40\" dy=\"19\">Research the problem</tspan><tspan x=\"40\" dy=\"19\">— interview users…</tspan></text><path d=\"M187 191h17m-7-7 7 7-7 7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"206\" y=\"127\" width=\"157\" height=\"161\" rx=\"18\" fill=\"#fff\" stroke=\"#b45309\" stroke-opacity=\".35\" stroke-width=\"2\"/><circle cx=\"284.5\" cy=\"153\" r=\"15\" fill=\"#b45309\"/><text x=\"284.5\" y=\"158\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"13\" font-weight=\"700\">2</text><text x=\"218\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\"><tspan x=\"218\" dy=\"0\">Define</tspan></text><text x=\"218\" y=\"221\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"218\" dy=\"0\">What Happens: Agree</tspan><tspan x=\"218\" dy=\"19\">on exactly what you</tspan><tspan x=\"218\" dy=\"19\">are solving and for…</tspan></text><path d=\"M365 191h17m-7-7 7 7-7 7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"384\" y=\"127\" width=\"157\" height=\"161\" rx=\"18\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".35\" stroke-width=\"2\"/><circle cx=\"462.5\" cy=\"153\" r=\"15\" fill=\"#7c3aed\"/><text x=\"462.5\" y=\"158\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"13\" font-weight=\"700\">3</text><text x=\"396\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\"><tspan x=\"396\" dy=\"0\">Design</tspan></text><text x=\"396\" y=\"221\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"396\" dy=\"0\">What Happens:</tspan><tspan x=\"396\" dy=\"19\">Wireframe screens,</tspan><tspan x=\"396\" dy=\"19\">choose tools, agree…</tspan></text><path d=\"M543 191h17m-7-7 7 7-7 7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"562\" y=\"127\" width=\"157\" height=\"161\" rx=\"18\" fill=\"#fff\" stroke=\"#b45309\" stroke-opacity=\".35\" stroke-width=\"2\"/><circle cx=\"640.5\" cy=\"153\" r=\"15\" fill=\"#b45309\"/><text x=\"640.5\" y=\"158\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"13\" font-weight=\"700\">4</text><text x=\"574\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\"><tspan x=\"574\" dy=\"0\">Develop</tspan></text><text x=\"574\" y=\"221\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\"><tspan x=\"574\" dy=\"0\">What Happens: Build</tspan><tspan x=\"574\" dy=\"19\">the product — code,</tspan><tspan x=\"574\" dy=\"19\">configure, populate…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Follow the steps from left to right. Notice how each stage leads into the next, then connect the sequence to the worked example. Use the labels to review the explanation in the lesson.</figcaption></figure>"
                 },
                 {
                   "type": "heading",
@@ -16322,8 +16218,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Eisenhower Matrix in your own words.",
-                    "Apply MoSCoW Method to a practical situation."
+                    "Explain Eisenhower Matrix, MoSCoW Method and Sprint in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -16611,8 +16508,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Wireframe in your own words.",
-                    "Apply Mockup to a practical situation."
+                    "Explain Wireframe, Mockup and Prototype in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -16881,8 +16779,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Visual Hierarchy in your own words.",
-                    "Apply Whitespace to a practical situation."
+                    "Explain Visual Hierarchy, Whitespace and WCAG 2.1 AA in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -16924,11 +16823,6 @@
                 {
                   "type": "paragraph",
                   "text": "Design elements and principles are not just for graphic designers — they are the shared vocabulary IT teams use when reviewing digital products. When Rory says 'the call-to-action button is not getting enough emphasis' or 'the colour contrast is going to fail WCAG,' everyone on the team needs to know what that means and what to do about it."
-                },
-                {
-                  "type": "richText",
-                  "heading": "Visual model: Applying Design Elements and Principles",
-                  "html": "<div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:.8rem;margin:1rem 0\"><section style=\"padding:1rem;border:1px solid #c7d2fe;border-radius:16px;background:#eef2ff\"><strong>1. Balance</strong><p>Arrange visual weight so the layout feels steady.</p><small>Check whether content crowds one side.</small></section><section style=\"padding:1rem;border:1px solid #fde68a;border-radius:16px;background:#fffbeb\"><strong>2. Emphasis</strong><p>Use contrast or proportion to draw attention to important content.</p><small>Check whether the key action stands out.</small></section><section style=\"padding:1rem;border:1px solid #bbf7d0;border-radius:16px;background:#f0fdf4\"><strong>3. Dominance</strong><p>Give one element the strongest visual presence.</p><small>Check whether the main focal point is clear.</small></section></div>"
                 },
                 {
                   "type": "heading",
@@ -17135,8 +17029,9 @@
                   "type": "list",
                   "style": "bullet",
                   "items": [
-                    "Explain Success Criteria in your own words.",
-                    "Apply Usability to a practical situation."
+                    "Explain Success Criteria, Usability and Heuristic Evaluation in your own words.",
+                    "Use these ideas to solve the problem in the ticket at the top of this lesson.",
+                    "Check your understanding with the quick questions and the assessment practice."
                   ]
                 },
                 {
@@ -17411,11 +17306,6 @@
                   "variant": "info",
                   "heading": "📋 Unit 2 Project Management — What You've Covered",
                   "text": "This topic covered five core PM skills:\n1. The Design Process — 6 phases, deliverables, the cost of skipping Discovery\n2. Time Management — Eisenhower Matrix, MoSCoW method, Gantt charts, sprint planning\n3. Representing a Design — wireframes, mockups, prototypes, flowcharts\n4. Design Elements and Principles — applied to digital products, WCAG accessibility standards\n5. Evaluating a Digital Solution — success criteria, user testing, heuristics, evaluation reports"
-                },
-                {
-                  "type": "richText",
-                  "heading": "Visual model: Project Management Review Quiz — Unit 2",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"project-management-project-management-review-quiz-unit-2-title project-management-project-management-review-quiz-unit-2-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"project-management-project-management-review-quiz-unit-2-title\">Project Management Review Quiz — Unit 2: Concept cards for Check 1, Check 2, Check 3, Check 4.</title><desc id=\"project-management-project-management-review-quiz-unit-2-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ede9fe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Project Management Review Quiz — Unit 2</tspan></text><text x=\"36\" y=\"94\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">REVISION CHECKPOINTS</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Check 1</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">In the design process, which phase involves</tspan><tspan x=\"84\" dy=\"19\">research — interviewing users and…</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#b45309\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#b45309\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Check 2</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">A MoSCoW 'Could Have' feature must be</tspan><tspan x=\"444\" dy=\"19\">delivered in the current project sprint.</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Check 3</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">A low-fidelity wireframe is most useful</tspan><tspan x=\"84\" dy=\"19\">for:</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#b45309\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#b45309\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Check 4</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">During user testing, the evaluator should</tspan><tspan x=\"444\" dy=\"19\">explain the interface to the tester when…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
                 },
                 {
                   "type": "heading",

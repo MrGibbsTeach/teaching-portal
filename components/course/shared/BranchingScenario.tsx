@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { BranchStep } from "@/lib/content/types";
+import { useStepDone } from "./StepDone";
 
 /** A short decision story. Each step shows a situation; the learner picks, sees why, and moves on. */
 export function BranchingScenario({
@@ -18,6 +19,7 @@ export function BranchingScenario({
   const [good, setGood] = useState(0);
   const done = index >= steps.length;
   const step = steps[index];
+  useStepDone(done);
 
   function pick(i: number) {
     if (picked !== null) return;

@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import type { SorterItem } from "@/lib/content/types";
+import { useStepDone } from "./StepDone";
 
 /**
  * Tap-to-sort: the learner gets one card at a time and taps the bucket it belongs in.
@@ -25,6 +26,7 @@ export function Sorter({
   const done = index >= items.length;
   const current = items[index];
   const score = useMemo(() => firstTry.filter(Boolean).length, [firstTry]);
+  useStepDone(done);
 
   function choose(i: number) {
     if (picked !== null || done) return;

@@ -71,7 +71,7 @@ export default async function CodeTrackLessonPage({
         )}
 
         <div className="mt-6">
-          <StepPlayer blocks={lesson.blocks} classCode={normalized} lessonId={lesson.id} />
+          <StepPlayer blocks={lesson.blocks.filter((b) => !(b.type === "videoSlot" && !b.youtubeId))} classCode={normalized} lessonId={lesson.id} />
         </div>
 
         <div className="mt-12 flex items-center justify-between border-t border-border pt-6 text-sm">

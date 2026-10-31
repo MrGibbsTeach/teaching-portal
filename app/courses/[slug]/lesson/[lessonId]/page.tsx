@@ -5,7 +5,8 @@ import { FoundationsLessonView } from "@/components/course/foundations/Foundatio
 import { FoundationsThemeRoot } from "@/components/course/foundations/FoundationsThemeRoot";
 import { atkinson } from "@/components/course/foundations/font";
 import { getCourseBySlug } from "@/lib/courses";
-import { GeneralLessonView } from "@/components/course/GeneralLessonView";
+import { AgentCard } from "@/components/course/AgentCard";
+import { getAgentForTopic } from "@/lib/agents";
 import { getCourseContent, findLesson, findNextLesson } from "@/lib/content";
 import { getSession } from "@/lib/session";
 import { getClass, getStudentProgress } from "@/lib/db";
@@ -100,23 +101,61 @@ export default async function LessonPage({
     }
   }
 
+  // Video placeholders are for the teacher to see and fill; students never see "coming soon" cards.
+  const isTeacher = session?.role === "teacher";
+  const visibleBlocks = isTeacher
+    ? lesson.blocks
+    : lesson.blocks.filter((b) => !(b.type === "videoSlot" && !b.youtubeId));
+
   if (course.tier === "general") {
+    const agent = getAgentForTopic(topic.id);
     return (
       <LessonShell courseSlug={course.slug} lessonId={lessonId}>
         <TierTheme tier="general">
-          <GeneralLessonView
-            courseSlug={course.slug}
-            courseTitle={course.title}
-            unitTitle={unit.title}
-            topicTitle={topic.title}
-            topicId={topic.id}
-            lessonTitle={lesson.title}
-            estimatedMinutes={lesson.estimatedMinutes}
-            blocks={lesson.blocks}
-            nextLesson={nextLesson}
-          />
+          <div className="mx-auto max-w-3xl px-6 py-10">
+            <Link
+              href={`/courses/${slug}`}
+              className="text-sm text-muted-foreground hover:text-primary"
+            >
+              ← {course.title}
+            </Link>
+            <p className="mt-6 text-sm text-muted-foreground">
+              {unit.title} / {topic.title}
+            </p>
+            <h1 className="mt-1 font-heading text-3xl font-semibold tracking-tight">
+              {lesson.title}
+            </h1>
+            {lesson.estimatedMinutes && (
+              <p className="mt-1.5 text-sm text-muted-foreground">{lesson.estimatedMinutes} min</p>
+            )}
+            {agent && (
+              <div className="mt-6">
+                <AgentCard agent={agent} />
+              </div>
+            )}
+
+            <div className="mt-6">
+              <ATARStepPlayer
+                blocks={visibleBlocks}
+                lessonId={lessonId}
+                courseSlug={slug}
+                initialCompleted={isCompleted}
+              />
+            </div>
+
+            {nextLesson && (
+              <div className="mt-12 flex items-center justify-between border-t border-border pt-6">
+                <span className="text-sm text-muted-foreground">Up next</span>
+                <Link
+                  href={`/courses/${slug}/lesson/${nextLesson.lessonId}`}
+                  className="flex items-center gap-1.5 font-medium text-primary hover:underline"
+                >
+                  {nextLesson.lessonTitle} →
+                </Link>
+              </div>
+            )}
+          </div>
         </TierTheme>
-        {completeButton}
       </LessonShell>
     );
   }

@@ -7,14 +7,14 @@ describe("blockPart", () => {
     for (const type of [
       "quizQuestion", "activity", "codeExercise", "interactiveDiagram",
       "scenarioChallenge", "spotTheThreat", "checkpointVideo",
-      "flipCards", "sorter", "sequence", "branchingScenario", "placer", "fileSizeLab",
+      "task", "flipCards", "sorter", "sequence", "branchingScenario", "placer", "fileSizeLab",
     ] as const) {
       expect(blockPart(type)).toBe("activities");
     }
   });
 
   it("sends everything else to content", () => {
-    for (const type of ["heading", "paragraph", "richText", "video", "table", "task"] as const) {
+    for (const type of ["heading", "paragraph", "richText", "video", "table"] as const) {
       expect(blockPart(type)).toBe("content");
     }
   });

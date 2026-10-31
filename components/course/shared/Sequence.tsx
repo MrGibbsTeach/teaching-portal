@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { useStepDone } from "./StepDone";
 
 function shuffled(n: number): number[] {
   // Deterministic rotation-based shuffle so server and client render the same markup.
@@ -32,6 +33,7 @@ export function Sequence({
   const [wrong, setWrong] = useState<number | null>(null);
   const [mistakes, setMistakes] = useState(0);
   const done = chosen.length === items.length;
+  useStepDone(done);
 
   function tap(i: number) {
     if (done || chosen.includes(i)) return;

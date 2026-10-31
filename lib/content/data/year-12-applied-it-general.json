@@ -2488,7 +2488,8 @@
                       "text": "A student compares two laptops for school. Laptop A: 4-core 2.4 GHz CPU, 16 GB RAM, 256 GB SSD. Laptop B: 2-core 1.6 GHz CPU, 8 GB RAM, 1 TB HDD. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -2832,7 +2833,8 @@
                       "text": "A school library is upgrading its equipment. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -3193,7 +3195,8 @@
                       "text": "A small business is choosing between Windows laptops and Linux laptops for its five staff. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -3495,7 +3498,8 @@
                       "text": "A dental practice still uses booking software made for Windows 7. It is buying new Windows 11 computers for $1200 each. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -3847,7 +3851,8 @@
                       "text": "A small accounting firm keeps its server in a storeroom with no windows. Last summer the server shut down twice on hot days, and a blackout corrupted a file. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -4555,7 +4560,8 @@
                       "text": "A Year 11 student works part-time at a supermarket. The manager messages shifts in a group chat, often late at night. Two co-workers have started posting jokes about her in the chat. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -4913,7 +4919,8 @@
                       "text": "A regional newspaper has closed its printed edition and now publishes only on its website and Facebook page. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -5226,7 +5233,8 @@
                       "text": "A student designs a T-shirt for a school fundraiser using a cartoon character copied from a website. The shirts are sold to parents. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -5533,7 +5541,8 @@
                       "text": "A student's video uses a photo by Maya Lee called \"Busselton Jetty at dawn\" from Unsplash (2024) and a music track \"Morning Tide\" by Coastline Audio (2023) from Pixabay. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -5824,7 +5833,8 @@
                       "text": "A small real estate agency saves property photos, contracts and floor plans for 50 houses on one shared drive with no folders. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -6222,7 +6232,8 @@
                       "text": "A school is producing a podcast and a website for its Year 12 graduation. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -6524,7 +6535,8 @@
                       "text": "A cafe owner records a 60-second radio ad on her phone. The radio station needs an MP3 file no longer than 30 seconds. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -6800,7 +6812,8 @@
                       "text": "A student finds a free video editor on a website she has not heard of. Her laptop also shows 12 pending Windows updates. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -7120,7 +7133,8 @@
                       "text": "A school is choosing an office suite for 800 student laptops: Microsoft 365 (proprietary, school licence) or LibreOffice (open source). Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -7409,7 +7423,8 @@
                       "text": "A school canteen tracks stock in a spreadsheet. Some prices are typed as \"$2\", some as \"2.00\" and some as \"two dollars\". Blank rows separate each food type. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -7699,7 +7714,8 @@
                       "text": "A surf school has a spreadsheet of 500 bookings with columns for Name, Lesson date, Level (Beginner, Intermediate, Advanced) and Paid (Yes/No). Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -7972,7 +7988,8 @@
                       "text": "The school canteen wants a digital menu board on a TV screen above the counter. It must show prices, daily specials and allergy symbols. The canteen manager needs it in two weeks. A Year 12 student will design it using Canva on a school laptop. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -8292,7 +8309,8 @@
                       "text": "A local gym wants a 20-second video advertisement to show on screens inside the gym. It will promote a new beginners' boxing class for adults over 50. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -8616,7 +8634,8 @@
                       "text": "A student is designing a three-page website for a local bike repair shop. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -8910,7 +8929,8 @@
                       "text": "A student made a 30-second promotional video for the school's music night. One design criterion was: \"The date and venue appear on screen for at least 5 seconds.\" Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -9236,7 +9256,8 @@
                       "text": "A school uses the same 18 MB photo of its sports team on its website home page and in a printed yearbook. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -9575,7 +9596,8 @@
                       "text": "A band is sending 12 songs to a record label for mastering, and 12 songs to fans as a free download. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -9852,7 +9874,8 @@
                       "text": "A student places a 5 MB photo of a school building in an interactive PDF, where it only fills a small box 600 pixels wide. The PDF is now 80 MB. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -10126,7 +10149,8 @@
                       "text": "Four students share a Google Drive folder for a group project. Files are called \"doc1\", \"final\", \"final2\", and one student accidentally deleted another's work. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -10395,7 +10419,8 @@
                       "text": "A student emails her draft essay to herself each night. She now has 14 copies called \"Essay\", \"Essay new\", \"Essay latest\" and cannot tell which has her teacher's feedback. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -10700,7 +10725,8 @@
                       "text": "A small accounting firm is deciding whether to replace its office server with cloud storage and cloud accounting software. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -11008,7 +11034,8 @@
                       "text": "A student's laptop has an SSD that is 95% full. Her browser has not been cleared for two years. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -11308,7 +11335,8 @@
                       "text": "A family laptop has become slow, shows pop-up ads, and a parent's bank password was used by someone else. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -11649,7 +11677,8 @@
                       "text": "A real estate office has four computers, each with its own printer and internet connection. Staff move files between computers on USB drives. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -11960,7 +11989,8 @@
                       "text": "A farm has a house and a machinery shed 400 m apart. The owner wants internet in the shed and on her phone around the house. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -12252,7 +12282,8 @@
                       "text": "A gamer in Bunbury has a 50/20 Mbps plan. He live-streams his games every evening while his family streams TV and videos. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -12514,7 +12545,8 @@
                       "text": "A small design studio has three wired desktop computers, a network printer, a file server and staff laptops that use Wi-Fi. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -12847,7 +12879,8 @@
                       "text": "A physiotherapy clinic with eight staff stores patient records that must be secure and backed up daily. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -13105,7 +13138,8 @@
                       "text": "A two-storey home: NBN point in the downstairs garage; home office upstairs with a desktop and printer; teenagers' bedrooms upstairs with laptops; lounge downstairs with a smart TV. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -13430,7 +13464,8 @@
                       "text": "A large online ticket seller asks for name, email, phone, date of birth and the name of the buyer's school when selling concert tickets. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -13731,7 +13766,8 @@
                       "text": "A retail chain's customer database, including names, addresses, dates of birth and driver's licence numbers, was stolen by hackers. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -14038,7 +14074,8 @@
                       "text": "A bank closes its only branch in a small country town and tells customers to use its app. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -14309,7 +14346,8 @@
                       "text": "A family-owned bakery starts taking online orders for birthday cakes through its website. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -14605,7 +14643,8 @@
                       "text": "A medical centre moves all appointments, reminders and test results to an app. Staff now talk to patients mainly by video call. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -14907,7 +14946,8 @@
                       "text": "Three students are making a group video. One edits, one writes the script, and one finds music. They live in different towns. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -15258,7 +15298,8 @@
                       "text": "A student builds a five-page website for a netball club. Each page has its colours and fonts set inside the HTML, and the club now wants to change its brand colour. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -15548,7 +15589,8 @@
                       "text": "A five-page interactive PDF for a local zoo has: Cover, Animals, Opening hours, Map, and Contact. Every page links back to the Cover. Animals links to Map. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -15838,7 +15880,8 @@
                       "text": "A cafe website shows a wide menu table and small buttons. On a phone, customers have to zoom in and scroll sideways. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -16159,7 +16202,8 @@
                       "text": "A student is making an animated title for a school video: the school logo slides in from the left and fades in, then a \"Watch now\" button appears. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -16474,7 +16518,8 @@
                       "text": "A student has three weeks to design and print a program for the school musical. The drama teacher must approve the design before printing. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -16784,7 +16829,8 @@
                       "text": "Two students are making a five-minute documentary for a local museum in four weeks. They keep running out of class time and have not started editing. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -17127,7 +17173,8 @@
                       "text": "A student is creating an interactive PDF guide to local walking trails. She needs photos of each trail, InDesign, and feedback from a park ranger. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
@@ -17438,7 +17485,8 @@
                       "text": "A student built an interactive PDF menu for a restaurant. The plan of action allowed one week for photos, but it took two weeks. Answer the questions below using this scenario.",
                       "tone": "amber"
                     }
-                  ]
+                  ],
+                  "part": "activities"
                 },
                 {
                   "type": "heading",
