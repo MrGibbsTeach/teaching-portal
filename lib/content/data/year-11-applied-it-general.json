@@ -8082,6 +8082,17 @@
                   ]
                 },
                 {
+                  "type": "videoSlot",
+                  "title": "From raw data to information",
+                  "minutes": 4,
+                  "brief": "A short clip turning an unlabelled spreadsheet column into information by adding headers, units and context. Suggested source: a teacher-filmed screen recording.",
+                  "watchFor": [
+                    "What a number means without context",
+                    "How headers and units add meaning",
+                    "Primary against secondary data"
+                  ]
+                },
+                {
                   "type": "heading",
                   "text": "Write this down"
                 },
@@ -8236,6 +8247,95 @@
                 },
                 {
                   "type": "heading",
+                  "text": "Try it yourself",
+                  "level": 2
+                },
+                {
+                  "type": "sorter",
+                  "title": "Data or information?",
+                  "instruction": "Data is raw facts. Information is data with context.",
+                  "categories": [
+                    "Data",
+                    "Information"
+                  ],
+                  "items": [
+                    {
+                      "text": "47",
+                      "category": 0,
+                      "why": "A raw number with no meaning."
+                    },
+                    {
+                      "text": "Delivery 47 took 12.4 hours on 2025-07-01.",
+                      "category": 1,
+                      "why": "Context makes it meaningful."
+                    },
+                    {
+                      "text": "0, 1, 1, 0, 1",
+                      "category": 0,
+                      "why": "Raw symbols."
+                    },
+                    {
+                      "text": "A chart of weekly delays with a title and units.",
+                      "category": 1,
+                      "why": "Processed and organised."
+                    },
+                    {
+                      "text": "12.4",
+                      "category": 0,
+                      "why": "A number with no units."
+                    }
+                  ]
+                },
+                {
+                  "type": "sorter",
+                  "title": "Quantitative or qualitative?",
+                  "instruction": "Which type of data is each?",
+                  "categories": [
+                    "Quantitative (numbers)",
+                    "Qualitative (descriptive)"
+                  ],
+                  "items": [
+                    {
+                      "text": "Delay in minutes.",
+                      "category": 0,
+                      "why": "A measurable number."
+                    },
+                    {
+                      "text": "A driver's comment that the route felt unsafe.",
+                      "category": 1,
+                      "why": "Descriptive opinion."
+                    },
+                    {
+                      "text": "Weight of a parcel in kg.",
+                      "category": 0,
+                      "why": "Numeric."
+                    },
+                    {
+                      "text": "Customer feedback written in their own words.",
+                      "category": 1,
+                      "why": "Descriptive."
+                    }
+                  ]
+                },
+                {
+                  "type": "flipCards",
+                  "title": "Check yourself",
+                  "instruction": "Answer first, then flip.",
+                  "cards": [
+                    {
+                      "tag": "Define",
+                      "front": "What is primary data?",
+                      "back": "Data you collect yourself for your own purpose, for example a survey you run."
+                    },
+                    {
+                      "tag": "Define",
+                      "front": "What is secondary data?",
+                      "back": "Data collected by someone else, such as an ABS report."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
                   "text": "Assessment practice",
                   "level": 2
                 },
@@ -8326,6 +8426,17 @@
                   "items": [
                     "Explain Accuracy in your own words.",
                     "Apply Reliability to a practical situation."
+                  ]
+                },
+                {
+                  "type": "videoSlot",
+                  "title": "Is this source trustworthy?",
+                  "minutes": 4,
+                  "brief": "A short clip applying the CRAAP test to three sources of freight statistics. Suggested source: a teacher-filmed example.",
+                  "watchFor": [
+                    "Which red flags to look for",
+                    "Why an author and sources matter",
+                    "How bias shows up"
                   ]
                 },
                 {
@@ -8500,6 +8611,67 @@
                 },
                 {
                   "type": "heading",
+                  "text": "Try it yourself",
+                  "level": 2
+                },
+                {
+                  "type": "sorter",
+                  "title": "Which CRAAP criterion?",
+                  "instruction": "Tap the criterion each red flag breaks.",
+                  "categories": [
+                    "Currency",
+                    "Relevance",
+                    "Authority",
+                    "Accuracy",
+                    "Purpose"
+                  ],
+                  "items": [
+                    {
+                      "text": "Statistics published three years ago.",
+                      "category": 0,
+                      "why": "Out of date."
+                    },
+                    {
+                      "text": "The data does not answer your question.",
+                      "category": 1,
+                      "why": "Not relevant."
+                    },
+                    {
+                      "text": "No author and no credentials listed.",
+                      "category": 2,
+                      "why": "No authority."
+                    },
+                    {
+                      "text": "No sources are cited for the claims.",
+                      "category": 3,
+                      "why": "Cannot be checked for accuracy."
+                    },
+                    {
+                      "text": "Written to sell a product.",
+                      "category": 4,
+                      "why": "The purpose may bias it."
+                    }
+                  ]
+                },
+                {
+                  "type": "flipCards",
+                  "title": "Check yourself",
+                  "instruction": "Answer first, then flip.",
+                  "cards": [
+                    {
+                      "tag": "Define",
+                      "front": "What is bias?",
+                      "back": "A tendency to present data in a way that favours one view."
+                    },
+                    {
+                      "tag": "Compare",
+                      "front": "Reliability or validity?",
+                      "back": "Reliability is consistent trustworthiness over time. Validity is whether it measures what it claims to measure."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
                   "text": "Assessment practice",
                   "level": 2
                 },
@@ -8590,6 +8762,17 @@
                   "items": [
                     "Explain AND in your own words.",
                     "Apply OR to a practical situation."
+                  ]
+                },
+                {
+                  "type": "videoSlot",
+                  "title": "Searching with Boolean operators",
+                  "minutes": 4,
+                  "brief": "A short clip building precise searches with AND, OR, NOT, quotation marks and site:. Suggested source: a teacher-filmed screen recording.",
+                  "watchFor": [
+                    "How AND narrows a search",
+                    "How quotation marks find an exact phrase",
+                    "How site: limits results"
                   ]
                 },
                 {
@@ -8724,13 +8907,64 @@
                 },
                 {
                   "type": "heading",
-                  "text": "Assessment practice",
+                  "text": "Try it yourself",
                   "level": 2
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Search Engines and Boolean Operators",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"managing-data-search-engines-and-boolean-operators-title managing-data-search-engines-and-boolean-operators-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"managing-data-search-engines-and-boolean-operators-title\">Search Engines and Boolean Operators: Concept cards for AND, OR, NOT, &quot; &quot;.</title><desc id=\"managing-data-search-engines-and-boolean-operators-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ccfbf1\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#0f766e\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Search Engines and Boolean Operators</tspan></text><text x=\"36\" y=\"94\" fill=\"#0f766e\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">OPERATOR</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0f766e\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#0f766e\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">AND</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Effect: Both terms must appear — narrows</tspan><tspan x=\"84\" dy=\"19\">results · Logistics Example: freight delay…</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#4f46e5\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#4f46e5\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">OR</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Effect: Either term can appear — broadens</tspan><tspan x=\"444\" dy=\"19\">results · Logistics Example: CSV OR JSON OR…</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0f766e\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#0f766e\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">NOT</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Effect: Excludes the second term ·</tspan><tspan x=\"84\" dy=\"19\">Logistics Example: logistics software NOT…</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#4f46e5\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#4f46e5\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">&quot; &quot;</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Effect: Exact phrase match · Logistics</tspan><tspan x=\"444\" dy=\"19\">Example: &quot;supply chain disruption&quot;</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
+                  "type": "sorter",
+                  "title": "Which operator?",
+                  "instruction": "Tap the operator each search uses.",
+                  "categories": [
+                    "AND",
+                    "OR",
+                    "NOT or minus",
+                    "Quotation marks",
+                    "site:"
+                  ],
+                  "items": [
+                    {
+                      "text": "rail AND freight",
+                      "category": 0,
+                      "why": "Both words must appear."
+                    },
+                    {
+                      "text": "freight OR cargo",
+                      "category": 1,
+                      "why": "Either word can appear."
+                    },
+                    {
+                      "text": "freight NOT air",
+                      "category": 2,
+                      "why": "Excludes results with air."
+                    },
+                    {
+                      "text": "\"rail freight\"",
+                      "category": 3,
+                      "why": "The exact phrase."
+                    },
+                    {
+                      "text": "site:gov.au freight delays",
+                      "category": 4,
+                      "why": "Only results from that domain."
+                    }
+                  ]
+                },
+                {
+                  "type": "flipCards",
+                  "title": "Check yourself",
+                  "instruction": "Answer first, then flip.",
+                  "cards": [
+                    {
+                      "tag": "Explain",
+                      "front": "Why use Boolean operators?",
+                      "back": "They return fewer, more relevant results, so you find useful information faster."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Assessment practice",
+                  "level": 2
                 },
                 {
                   "type": "quizQuestion",
@@ -8822,6 +9056,17 @@
                   ]
                 },
                 {
+                  "type": "videoSlot",
+                  "title": "Choosing a file format",
+                  "minutes": 4,
+                  "brief": "A short clip comparing CSV, JSON, PDF and DOCX files, and JPEG and PNG images. Suggested source: a teacher-filmed screen recording.",
+                  "watchFor": [
+                    "Which formats hold structured data",
+                    "Which compression loses quality",
+                    "Why a screenshot of a spreadsheet is not data"
+                  ]
+                },
+                {
                   "type": "heading",
                   "text": "Write this down"
                 },
@@ -8884,11 +9129,6 @@
                       "answer": "12 million pixels × 3 bytes = 36 million bytes, about 36 MB. That is why formats like JPEG and PNG compress images."
                     }
                   ]
-                },
-                {
-                  "type": "richText",
-                  "heading": "Visual model: Common File Formats",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"managing-data-common-file-formats-title managing-data-common-file-formats-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"managing-data-common-file-formats-title\">Common File Formats: Concept cards for CSV (Comma-Separated Values), JSON (JavaScript Object Notation), PDF (Portable Document Format), DOCX (Word Document).</title><desc id=\"managing-data-common-file-formats-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ccfbf1\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#0f766e\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Common File Formats</tspan></text><text x=\"36\" y=\"94\" fill=\"#0f766e\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">FORMAT</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0f766e\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#0f766e\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">CSV (Comma-Separated Values)</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Extension: .csv · Best Used For: Exchanging</tspan><tspan x=\"84\" dy=\"19\">structured data between systems</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#4f46e5\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#4f46e5\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">JSON (JavaScript Object…</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Extension: .json · Best Used For: API</tspan><tspan x=\"444\" dy=\"19\">responses, nested/hierarchical data</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0f766e\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#0f766e\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">PDF (Portable Document Format)</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Extension: .pdf · Best Used For: Final</tspan><tspan x=\"84\" dy=\"19\">reports, documents not to be edited</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#4f46e5\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#4f46e5\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">DOCX (Word Document)</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Extension: .docx · Best Used For: Editable</tspan><tspan x=\"444\" dy=\"19\">reports and written documents</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
                 },
                 {
                   "type": "heading",
@@ -9042,6 +9282,68 @@
                 },
                 {
                   "type": "heading",
+                  "text": "Try it yourself",
+                  "level": 2
+                },
+                {
+                  "type": "sorter",
+                  "title": "Which format?",
+                  "instruction": "Tap the best format for each purpose.",
+                  "categories": [
+                    "CSV",
+                    "JSON",
+                    "PDF",
+                    "DOCX"
+                  ],
+                  "items": [
+                    {
+                      "text": "Rows and columns of delivery records for analysis.",
+                      "category": 0,
+                      "why": "Simple tabular data."
+                    },
+                    {
+                      "text": "Structured data passed between apps and systems.",
+                      "category": 1,
+                      "why": "Machine-readable structure."
+                    },
+                    {
+                      "text": "A final report that must look the same on every device.",
+                      "category": 2,
+                      "why": "Fixed layout."
+                    },
+                    {
+                      "text": "A report the team still needs to edit.",
+                      "category": 3,
+                      "why": "Editable document."
+                    }
+                  ]
+                },
+                {
+                  "type": "fileSizeLab",
+                  "title": "File size lab: JPEG against PNG",
+                  "width": 4000,
+                  "height": 3000,
+                  "useCase": "email attachment"
+                },
+                {
+                  "type": "flipCards",
+                  "title": "Check yourself",
+                  "instruction": "Answer first, then flip.",
+                  "cards": [
+                    {
+                      "tag": "Define",
+                      "front": "What is lossy compression?",
+                      "back": "Reduces file size by discarding some data, for example JPEG."
+                    },
+                    {
+                      "tag": "Define",
+                      "front": "What is lossless compression?",
+                      "back": "Reduces size without losing any data, for example PNG or ZIP."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
                   "text": "Assessment practice",
                   "level": 2
                 },
@@ -9185,6 +9487,17 @@
                   "items": [
                     "Explain Client/Project code in your own words.",
                     "Apply Document type to a practical situation."
+                  ]
+                },
+                {
+                  "type": "videoSlot",
+                  "title": "Naming and storing files",
+                  "minutes": 4,
+                  "brief": "A short clip building a file naming convention and a client folder structure. Suggested source: a teacher-filmed screen recording in File Explorer.",
+                  "watchFor": [
+                    "The parts of a good file name",
+                    "Where files should be stored",
+                    "Why 'final_v3_USE THIS ONE' is a problem"
                   ]
                 },
                 {
@@ -9377,13 +9690,79 @@
                 },
                 {
                   "type": "heading",
-                  "text": "Assessment practice",
+                  "text": "Try it yourself",
                   "level": 2
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: File and Folder Organisation",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"managing-data-file-and-folder-organisation-title managing-data-file-and-folder-organisation-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"managing-data-file-and-folder-organisation-title\">File and Folder Organisation: Concept cards for Client/Project code, Document type, Version number, Date (YYYYMMDD).</title><desc id=\"managing-data-file-and-folder-organisation-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ccfbf1\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#0f766e\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">File and Folder Organisation</tspan></text><text x=\"36\" y=\"94\" fill=\"#0f766e\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">ELEMENT</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0f766e\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#0f766e\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Client/Project code</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Purpose: Identifies which client or project</tspan><tspan x=\"84\" dy=\"19\">· Format: Short code or name</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#4f46e5\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#4f46e5\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Document type</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Purpose: Describes the content · Format:</tspan><tspan x=\"444\" dy=\"19\">Descriptive noun</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0f766e\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#0f766e\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Version number</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Purpose: Tracks revision history · Format:</tspan><tspan x=\"84\" dy=\"19\">v1.0, v1.1, v2.0</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#4f46e5\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#4f46e5\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Date (YYYYMMDD)</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Purpose: Enables chronological sorting ·</tspan><tspan x=\"444\" dy=\"19\">Format: Year first — always</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
+                  "type": "sorter",
+                  "title": "Which part of the file name?",
+                  "instruction": "SWL_Report_v03_20250620_DRAFT.docx: tap the element each part is.",
+                  "categories": [
+                    "Client or project code",
+                    "Document type",
+                    "Version number",
+                    "Date (YYYYMMDD)",
+                    "Status"
+                  ],
+                  "items": [
+                    {
+                      "text": "SWL",
+                      "category": 0,
+                      "why": "Identifies the client."
+                    },
+                    {
+                      "text": "Report",
+                      "category": 1,
+                      "why": "Says what kind of document."
+                    },
+                    {
+                      "text": "v03",
+                      "category": 2,
+                      "why": "The version number."
+                    },
+                    {
+                      "text": "20250620",
+                      "category": 3,
+                      "why": "The date, which sorts in order."
+                    },
+                    {
+                      "text": "DRAFT",
+                      "category": 4,
+                      "why": "The status."
+                    }
+                  ]
+                },
+                {
+                  "type": "sorter",
+                  "title": "Which storage type?",
+                  "instruction": "Tap the storage each risk belongs to.",
+                  "categories": [
+                    "Local (internal)",
+                    "External",
+                    "Cloud"
+                  ],
+                  "items": [
+                    {
+                      "text": "Lost if the laptop fails or is stolen.",
+                      "category": 0,
+                      "why": "Only one copy."
+                    },
+                    {
+                      "text": "Easy to lose or damage and must be carried.",
+                      "category": 1,
+                      "why": "Physical device."
+                    },
+                    {
+                      "text": "Needs internet access and a trusted provider.",
+                      "category": 2,
+                      "why": "Depends on the connection and provider."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Assessment practice",
+                  "level": 2
                 },
                 {
                   "type": "quizQuestion",
@@ -9475,6 +9854,17 @@
                   ]
                 },
                 {
+                  "type": "videoSlot",
+                  "title": "Versions and rollback",
+                  "minutes": 4,
+                  "brief": "A short clip versioning a live data file, recording changes and rolling back a bad edit. Suggested source: a teacher-filmed screen recording.",
+                  "watchFor": [
+                    "How version numbers show the size of a change",
+                    "What revision history records",
+                    "How a rollback works"
+                  ]
+                },
+                {
                   "type": "heading",
                   "text": "Write this down"
                 },
@@ -9507,11 +9897,6 @@
                 {
                   "type": "paragraph",
                   "text": "Version control is a system for tracking changes to files over time so that specific versions can be retrieved, compared, or restored. In a data environment, version control protects against accidental overwrites, allows teams to work on files simultaneously without conflict, and creates an audit trail of every change made to client data."
-                },
-                {
-                  "type": "richText",
-                  "heading": "Visual model: Version Control for Data Files",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"managing-data-version-control-for-data-files-title managing-data-version-control-for-data-files-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"managing-data-version-control-for-data-files-title\">Version Control for Data Files: Concept cards for v1.0, v1.1, v2.0, v2.1.</title><desc id=\"managing-data-version-control-for-data-files-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ccfbf1\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#0f766e\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Version Control for Data Files</tspan></text><text x=\"36\" y=\"94\" fill=\"#0f766e\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">VERSION</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0f766e\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#0f766e\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">v1.0</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">What Changed: Initial delivery data schema</tspan><tspan x=\"84\" dy=\"19\">— baseline · Who Approved: Sloane Vane</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#4f46e5\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#4f46e5\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">v1.1</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">What Changed: Added 'DeliveryZone' column —</tspan><tspan x=\"444\" dy=\"19\">minor addition · Who Approved: Sloane Vane</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0f766e\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#0f766e\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">v2.0</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">What Changed: Complete restructure of</tspan><tspan x=\"84\" dy=\"19\">schema to match new client API — major…</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#4f46e5\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#4f46e5\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">v2.1</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">What Changed: Fixed column header</tspan><tspan x=\"444\" dy=\"19\">capitalisation issue flagged in QA · Who…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
                 },
                 {
                   "type": "heading",
@@ -9646,6 +10031,59 @@
                 },
                 {
                   "type": "divider"
+                },
+                {
+                  "type": "heading",
+                  "text": "Try it yourself",
+                  "level": 2
+                },
+                {
+                  "type": "sorter",
+                  "title": "Overwrite or version control?",
+                  "instruction": "Which is each action?",
+                  "categories": [
+                    "Overwrite (risky)",
+                    "Version control (safe)"
+                  ],
+                  "items": [
+                    {
+                      "text": "Saving an untested edit over the approved v1.0 file.",
+                      "category": 0,
+                      "why": "The original is lost."
+                    },
+                    {
+                      "text": "Saving as v1.1 with a change note.",
+                      "category": 1,
+                      "why": "The previous version is kept."
+                    },
+                    {
+                      "text": "Reverting to v1.0 after an edit breaks the client's system.",
+                      "category": 1,
+                      "why": "A rollback."
+                    },
+                    {
+                      "text": "Having no record of who changed the file.",
+                      "category": 0,
+                      "why": "No revision history."
+                    }
+                  ]
+                },
+                {
+                  "type": "flipCards",
+                  "title": "Check yourself",
+                  "instruction": "Answer first, then flip.",
+                  "cards": [
+                    {
+                      "tag": "Define",
+                      "front": "What is a rollback?",
+                      "back": "Reverting a file to a previous version, essential when a change introduces an error."
+                    },
+                    {
+                      "tag": "Define",
+                      "front": "What is revision history?",
+                      "back": "A log of all changes, including who made them and when."
+                    }
+                  ]
                 },
                 {
                   "type": "heading",
@@ -10231,6 +10669,108 @@
                 },
                 {
                   "type": "heading",
+                  "text": "Try it yourself",
+                  "level": 2
+                },
+                {
+                  "type": "sorter",
+                  "title": "Modem, router or access point?",
+                  "instruction": "Tap the device.",
+                  "categories": [
+                    "Modem",
+                    "Router",
+                    "Wireless access point"
+                  ],
+                  "items": [
+                    {
+                      "text": "Connects the premises to the internet through the ISP.",
+                      "category": 0,
+                      "why": "Converts the ISP signal."
+                    },
+                    {
+                      "text": "Directs traffic between the local network and the internet and assigns IP addresses.",
+                      "category": 1,
+                      "why": "The router."
+                    },
+                    {
+                      "text": "Broadcasts a Wi-Fi signal.",
+                      "category": 2,
+                      "why": "The wireless access point."
+                    }
+                  ]
+                },
+                {
+                  "type": "sorter",
+                  "title": "2.4 GHz or 5 GHz?",
+                  "instruction": "Which band does each describe?",
+                  "categories": [
+                    "2.4 GHz",
+                    "5 GHz"
+                  ],
+                  "items": [
+                    {
+                      "text": "Longer range and better through walls.",
+                      "category": 0,
+                      "why": "Lower frequency travels further."
+                    },
+                    {
+                      "text": "Faster speeds over a shorter range.",
+                      "category": 1,
+                      "why": "Higher frequency carries more data."
+                    },
+                    {
+                      "text": "More crowded with other devices.",
+                      "category": 0,
+                      "why": "Many devices use 2.4 GHz."
+                    },
+                    {
+                      "text": "Better for a video call close to the access point.",
+                      "category": 1,
+                      "why": "Faster."
+                    }
+                  ]
+                },
+                {
+                  "type": "sorter",
+                  "title": "Which type of network?",
+                  "instruction": "Tap the network type.",
+                  "categories": [
+                    "PAN",
+                    "LAN",
+                    "WLAN",
+                    "MAN",
+                    "WAN"
+                  ],
+                  "items": [
+                    {
+                      "text": "Bluetooth earbuds connected to your phone.",
+                      "category": 0,
+                      "why": "Around one person."
+                    },
+                    {
+                      "text": "Wired computers in one office.",
+                      "category": 1,
+                      "why": "One building."
+                    },
+                    {
+                      "text": "Wi-Fi covering a clubhouse.",
+                      "category": 2,
+                      "why": "A wireless LAN."
+                    },
+                    {
+                      "text": "A network across a city.",
+                      "category": 3,
+                      "why": "Metropolitan area."
+                    },
+                    {
+                      "text": "The internet.",
+                      "category": 4,
+                      "why": "A very wide area."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
                   "text": "Assessment practice"
                 },
                 {
@@ -10316,6 +10856,17 @@
                   "items": [
                     "Explain Managed switch in your own words.",
                     "Apply PoE (Power over Ethernet) to a practical situation."
+                  ]
+                },
+                {
+                  "type": "videoSlot",
+                  "title": "Specifying network hardware",
+                  "minutes": 4,
+                  "brief": "A short clip building a bill of materials for a medical centre network. Suggested source: a teacher-filmed example using real product pages.",
+                  "watchFor": [
+                    "Managed against unmanaged switches",
+                    "What PoE powers",
+                    "Which devices should be wired"
                   ]
                 },
                 {
@@ -10559,6 +11110,69 @@
                 },
                 {
                   "type": "heading",
+                  "text": "Try it yourself",
+                  "level": 2
+                },
+                {
+                  "type": "sorter",
+                  "title": "Wired or wireless?",
+                  "instruction": "Tap the best connection for each device.",
+                  "categories": [
+                    "Wired Ethernet",
+                    "Wireless"
+                  ],
+                  "items": [
+                    {
+                      "text": "Reception desktop PCs.",
+                      "category": 0,
+                      "why": "Reliable and fast."
+                    },
+                    {
+                      "text": "The practice management server.",
+                      "category": 0,
+                      "why": "Needs a stable connection."
+                    },
+                    {
+                      "text": "Shared printers.",
+                      "category": 0,
+                      "why": "Fixed devices."
+                    },
+                    {
+                      "text": "Staff laptops.",
+                      "category": 1,
+                      "why": "They move around."
+                    },
+                    {
+                      "text": "Patients' devices on guest Wi-Fi.",
+                      "category": 1,
+                      "why": "Mobile, separate from the main network."
+                    },
+                    {
+                      "text": "IP cameras powered over the cable.",
+                      "category": 0,
+                      "why": "PoE gives power and data over one cable."
+                    }
+                  ]
+                },
+                {
+                  "type": "flipCards",
+                  "title": "Check yourself",
+                  "instruction": "Answer first, then flip.",
+                  "cards": [
+                    {
+                      "tag": "Compare",
+                      "front": "Managed or unmanaged switch: which supports VLANs?",
+                      "back": "A managed switch is configurable and supports VLANs, QoS and port monitoring. An unmanaged switch is plug-and-play."
+                    },
+                    {
+                      "tag": "Define",
+                      "front": "What does PoE do?",
+                      "back": "Delivers electrical power through Ethernet cables, for example to access points and cameras."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
                   "text": "Assessment practice"
                 },
                 {
@@ -10644,6 +11258,17 @@
                   "items": [
                     "Explain Phishing in your own words.",
                     "Apply Ransomware to a practical situation."
+                  ]
+                },
+                {
+                  "type": "videoSlot",
+                  "title": "Securing a network",
+                  "minutes": 4,
+                  "brief": "A short clip showing a phishing email, a ransomware warning and how to secure a router. Suggested source: an Australian Cyber Security Centre education video or a teacher-filmed demo.",
+                  "watchFor": [
+                    "The warning signs of phishing",
+                    "What ransomware does",
+                    "Which router settings matter"
                   ]
                 },
                 {
@@ -10852,11 +11477,6 @@
                   "text": "Ticket #2003 is a live incident. Work through the response in two phases:\n\nPhase 1 — Incident Response (right now):\n1. List the first 5 actions you'd take in order to contain the ransomware attack. Be specific — name actual tools or steps (e.g. 'Disconnect affected PCs from the network by unplugging Ethernet and disabling Wi-Fi').\n2. The ransom note demands $15,000 in Bitcoin for the decryption key. The firm asks if they should pay. What is your advice and why?\n3. The firm's last backup was six months ago. What data loss will they face if they restore from that backup?\n\nPhase 2 — Security Hardening (after the incident):\n4. List 6 specific security measures the firm should implement to prevent a recurrence. For each: name the measure, explain what it prevents, and name a specific product or tool.\n5. Sloane's recommendation: all financial data should be encrypted at rest on the server. Name the Windows Server feature that handles this and explain how it helps in a ransomware scenario."
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Network Security",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"networks-network-security-title networks-network-security-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"networks-network-security-title\">Network Security: Concept cards for Phishing, Ransomware, Man-in-the-Middle (MitM), Denial of Service (DoS/DDoS).</title><desc id=\"networks-network-security-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#e0f2fe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#0369a1\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Network Security</tspan></text><text x=\"36\" y=\"94\" fill=\"#0369a1\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">THREAT</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0369a1\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#0369a1\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Phishing</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">How It Works: Deceptive emails/sites trick</tspan><tspan x=\"84\" dy=\"19\">users into revealing credentials or…</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#7c3aed\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Ransomware</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">How It Works: Malware encrypts files;</tspan><tspan x=\"444\" dy=\"19\">attackers demand payment for decryption key…</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0369a1\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#0369a1\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Man-in-the-Middle (MitM)</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">How It Works: Attacker intercepts traffic</tspan><tspan x=\"84\" dy=\"19\">between two parties — reads or modifies…</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#7c3aed\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Denial of Service (DoS/DDoS)</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">How It Works: Floods a server with fake</tspan><tspan x=\"444\" dy=\"19\">requests until it can't serve real users ·…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
-                },
-                {
                   "type": "interactiveDiagram",
                   "title": "Secure the home network",
                   "instruction": "Set up the router so the network is safe.",
@@ -10893,6 +11513,86 @@
                     "shared": false
                   },
                   "explanation": "Strong passwords, encryption, a firewall and updates all help keep intruders out."
+                },
+                {
+                  "type": "heading",
+                  "text": "Try it yourself",
+                  "level": 2
+                },
+                {
+                  "type": "sorter",
+                  "title": "Which threat?",
+                  "instruction": "Tap the threat each describes.",
+                  "categories": [
+                    "Phishing",
+                    "Ransomware",
+                    "Man-in-the-middle",
+                    "Denial of service",
+                    "Unauthorised access"
+                  ],
+                  "items": [
+                    {
+                      "text": "A fake IT email that tricks someone into entering a password.",
+                      "category": 0,
+                      "why": "Social engineering."
+                    },
+                    {
+                      "text": "Files encrypted with a demand for payment.",
+                      "category": 1,
+                      "why": "Ransomware."
+                    },
+                    {
+                      "text": "An attacker secretly intercepting traffic.",
+                      "category": 2,
+                      "why": "Sits between two parties."
+                    },
+                    {
+                      "text": "A flood of traffic that overwhelms a service.",
+                      "category": 3,
+                      "why": "DoS or DDoS."
+                    },
+                    {
+                      "text": "Someone using a stolen login to get in.",
+                      "category": 4,
+                      "why": "No permission."
+                    }
+                  ]
+                },
+                {
+                  "type": "sorter",
+                  "title": "Good or poor practice?",
+                  "instruction": "Which Wi-Fi settings are good practice?",
+                  "categories": [
+                    "Good practice",
+                    "Poor practice"
+                  ],
+                  "items": [
+                    {
+                      "text": "Use WPA3 or WPA2 encryption.",
+                      "category": 0,
+                      "why": "Encrypts the traffic."
+                    },
+                    {
+                      "text": "Keep the default router admin password.",
+                      "category": 1,
+                      "why": "Easy to guess."
+                    },
+                    {
+                      "text": "Keep firmware updated.",
+                      "category": 0,
+                      "why": "Closes known holes."
+                    },
+                    {
+                      "text": "Separate guest Wi-Fi on its own VLAN.",
+                      "category": 0,
+                      "why": "Keeps guests off the main network."
+                    },
+                    {
+                      "text": "Leave WPS switched on.",
+                      "category": 1,
+                      "why": "It is a known weakness."
+                    }
+                  ]
                 },
                 {
                   "type": "heading",
@@ -11274,6 +11974,84 @@
                 },
                 {
                   "type": "heading",
+                  "text": "Try it yourself",
+                  "level": 2
+                },
+                {
+                  "type": "sorter",
+                  "title": "Which command?",
+                  "instruction": "Tap the command for each job.",
+                  "categories": [
+                    "ping",
+                    "ipconfig",
+                    "tracert",
+                    "nslookup"
+                  ],
+                  "items": [
+                    {
+                      "text": "Test whether another device can be reached.",
+                      "category": 0,
+                      "why": "Sends a test message."
+                    },
+                    {
+                      "text": "Show this computer's IP address and settings.",
+                      "category": 1,
+                      "why": "Displays configuration."
+                    },
+                    {
+                      "text": "Show the route and hops a packet takes.",
+                      "category": 2,
+                      "why": "Traces the path."
+                    },
+                    {
+                      "text": "Look up the IP address for a domain name.",
+                      "category": 3,
+                      "why": "DNS lookup."
+                    }
+                  ]
+                },
+                {
+                  "type": "sorter",
+                  "title": "Likely cause?",
+                  "instruction": "Tap the most likely cause.",
+                  "categories": [
+                    "No DHCP address",
+                    "DNS problem",
+                    "Router or ISP fault"
+                  ],
+                  "items": [
+                    {
+                      "text": "A laptop has a 169.254.x.x address.",
+                      "category": 0,
+                      "why": "It could not get an address from DHCP."
+                    },
+                    {
+                      "text": "A desktop cannot reach the file server by name but has internet.",
+                      "category": 1,
+                      "why": "Name resolution is failing."
+                    },
+                    {
+                      "text": "Seven laptops see each other but not the internet.",
+                      "category": 2,
+                      "why": "The route out is down."
+                    }
+                  ]
+                },
+                {
+                  "type": "sequence",
+                  "title": "Troubleshoot from the bottom up",
+                  "instruction": "Tap the layers in the order you check them.",
+                  "items": [
+                    "Physical: cables, power and link lights.",
+                    "Data link: the Wi-Fi or switch connection.",
+                    "Network (IP): address, gateway and ping.",
+                    "Transport: ports and connections.",
+                    "Application: the program or service itself."
+                  ],
+                  "explanation": "Start with the simplest, lowest layer and work up."
+                },
+                {
+                  "type": "heading",
                   "text": "Assessment practice"
                 },
                 {
@@ -11561,6 +12339,17 @@
                   ]
                 },
                 {
+                  "type": "videoSlot",
+                  "title": "Cybercrime targeting businesses",
+                  "minutes": 4,
+                  "brief": "A short clip showing a phishing email being picked apart and the main types of cybercrime. Suggested source: an Australian Cyber Security Centre or Scamwatch video.",
+                  "watchFor": [
+                    "The red flags in a fake email",
+                    "How ransomware spreads",
+                    "Where to report cybercrime"
+                  ]
+                },
+                {
                   "type": "heading",
                   "text": "Write this down"
                 },
@@ -11592,11 +12381,6 @@
                 {
                   "type": "paragraph",
                   "text": "Computer crime — also called cybercrime — is any criminal offence that involves a computer, network, or digital data. In Australia, the Australian Cyber Security Centre (ACSC) received over 94,000 cybercrime reports in 2022–23, equivalent to one report every six minutes. As IT professionals, we are often the first line of defence and the first people colleagues call when something goes wrong."
-                },
-                {
-                  "type": "richText",
-                  "heading": "Visual model: Types of Computer Crime",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"impacts-of-technology-types-of-computer-crime-title impacts-of-technology-types-of-computer-crime-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"impacts-of-technology-types-of-computer-crime-title\">Types of Computer Crime: Concept cards for Hacking / Unauthorised Access, Phishing, Ransomware, Identity Theft.</title><desc id=\"impacts-of-technology-types-of-computer-crime-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ede9fe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Types of Computer Crime</tspan></text><text x=\"36\" y=\"94\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">CRIME TYPE</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Hacking / Unauthorised Access</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">How It Works: Exploiting software flaws or</tspan><tspan x=\"84\" dy=\"19\">stolen passwords to enter systems without…</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#c2410c\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#c2410c\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Phishing</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">How It Works: Fake emails or websites that</tspan><tspan x=\"444\" dy=\"19\">mimic banks, myGov, or ATO to steal…</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Ransomware</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">How It Works: Malware encrypts all files;</tspan><tspan x=\"84\" dy=\"19\">attacker demands crypto payment for the key…</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#c2410c\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#c2410c\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Identity Theft</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">How It Works: Using stolen personal data to</tspan><tspan x=\"444\" dy=\"19\">open accounts, obtain loans, or file false…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
                 },
                 {
                   "type": "callout",
@@ -11694,6 +12478,92 @@
                   "variant": "pr-review",
                   "heading": "🛑 PR REVIEW · DR. FINCH IS IN THE REVIEW",
                   "text": "Before your briefing materials leave this office, answer these:\n1. A company director says 'we're too small to be a target.' Using the ACSC statistics and what you know about how attackers select victims, how do you respond?\n2. A staff member receives a phone call from someone claiming to be from Microsoft saying their computer has a virus. Is this a crime? Which type? What should they do?\n3. Under the Criminal Code Act 1995 (Cth), what is the difference between s 477.1 (unauthorised access) and s 477.2 (unauthorised modification)? Why does the distinction matter for prosecutions?"
+                },
+                {
+                  "type": "heading",
+                  "text": "Try it yourself",
+                  "level": 2
+                },
+                {
+                  "type": "sorter",
+                  "title": "Which type of cybercrime?",
+                  "instruction": "Tap the crime each example shows.",
+                  "categories": [
+                    "Hacking",
+                    "Phishing",
+                    "Ransomware",
+                    "Identity theft",
+                    "Cyberstalking or harassment",
+                    "Online fraud or scams"
+                  ],
+                  "items": [
+                    {
+                      "text": "Gaining access to a network without permission.",
+                      "category": 0,
+                      "why": "Unauthorised access."
+                    },
+                    {
+                      "text": "A fake email tricking staff into entering a password.",
+                      "category": 1,
+                      "why": "Social engineering."
+                    },
+                    {
+                      "text": "Files are encrypted and a payment is demanded.",
+                      "category": 2,
+                      "why": "Ransomware."
+                    },
+                    {
+                      "text": "Using someone's details to open a credit card.",
+                      "category": 3,
+                      "why": "Pretending to be them."
+                    },
+                    {
+                      "text": "Repeated threatening messages and tracking someone online.",
+                      "category": 4,
+                      "why": "Persistent targeting."
+                    },
+                    {
+                      "text": "A fake online shop that takes payment and sends nothing.",
+                      "category": 5,
+                      "why": "A scam."
+                    }
+                  ]
+                },
+                {
+                  "type": "sorter",
+                  "title": "Red flag or safe response?",
+                  "instruction": "An email from ato-gov-alerts.com.au says a $2,847 refund needs immediate verification.",
+                  "categories": [
+                    "Red flag",
+                    "Safe response"
+                  ],
+                  "items": [
+                    {
+                      "text": "The sender address is not the official government domain.",
+                      "category": 0,
+                      "why": "A look-alike domain."
+                    },
+                    {
+                      "text": "The greeting is a generic 'Dear Valued Taxpayer'.",
+                      "category": 0,
+                      "why": "Real agencies use your name."
+                    },
+                    {
+                      "text": "It demands urgent action to claim a refund.",
+                      "category": 0,
+                      "why": "Urgency is a pressure tactic."
+                    },
+                    {
+                      "text": "Going to the official site yourself instead of clicking the link.",
+                      "category": 1,
+                      "why": "Avoids the fake link."
+                    },
+                    {
+                      "text": "Reporting the email and deleting it.",
+                      "category": 1,
+                      "why": "Stops it reaching others."
+                    }
+                  ]
                 },
                 {
                   "type": "heading",
@@ -11818,6 +12688,17 @@
                   ]
                 },
                 {
+                  "type": "videoSlot",
+                  "title": "Can we use this image?",
+                  "minutes": 4,
+                  "brief": "A short clip checking four images from a brochure for licences and conditions. Suggested source: Australian Copyright Council or Smartcopying material for schools.",
+                  "watchFor": [
+                    "How to find an image's licence",
+                    "What fair dealing covers",
+                    "When to ask for permission"
+                  ]
+                },
+                {
                   "type": "heading",
                   "text": "Write this down"
                 },
@@ -11849,11 +12730,6 @@
                 {
                   "type": "paragraph",
                   "text": "Intellectual property (IP) law protects the creations of the human mind — including written works, images, music, software code, and digital designs. Copyright is the most relevant form of IP for IT professionals because it applies automatically to almost everything digital the moment it is created, without any registration required. Ignoring copyright is not a grey area: it is a civil and potentially criminal offence."
-                },
-                {
-                  "type": "richText",
-                  "heading": "Visual model: Copyright and Intellectual Property",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"impacts-of-technology-copyright-and-intellectual-property-title impacts-of-technology-copyright-and-intellectual-property-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"impacts-of-technology-copyright-and-intellectual-property-title\">Copyright and Intellectual Property: Concept cards for CC BY, CC BY-SA, CC BY-NC, CC BY-ND.</title><desc id=\"impacts-of-technology-copyright-and-intellectual-property-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ede9fe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Copyright and Intellectual Property</tspan></text><text x=\"36\" y=\"94\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">LICENCE</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">CC BY</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Symbol: BY · What You Can Do: Use, adapt,</tspan><tspan x=\"84\" dy=\"19\">and redistribute for any purpose</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#c2410c\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#c2410c\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">CC BY-SA</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Symbol: BY-SA · What You Can Do: Use and</tspan><tspan x=\"444\" dy=\"19\">adapt, including commercially</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">CC BY-NC</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Symbol: BY-NC · What You Can Do: Use and</tspan><tspan x=\"84\" dy=\"19\">adapt freely</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#c2410c\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#c2410c\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">CC BY-ND</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Symbol: BY-ND · What You Can Do: Use and</tspan><tspan x=\"444\" dy=\"19\">redistribute as-is</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
                 },
                 {
                   "type": "heading",
@@ -11954,6 +12830,67 @@
                 },
                 {
                   "type": "heading",
+                  "text": "Try it yourself",
+                  "level": 2
+                },
+                {
+                  "type": "sorter",
+                  "title": "Which Creative Commons licence?",
+                  "instruction": "Tap the licence each description fits.",
+                  "categories": [
+                    "CC BY",
+                    "CC BY-SA",
+                    "CC BY-NC",
+                    "CC BY-ND",
+                    "CC0 (public domain)"
+                  ],
+                  "items": [
+                    {
+                      "text": "Use it for any purpose, as long as you credit the creator.",
+                      "category": 0,
+                      "why": "Attribution only."
+                    },
+                    {
+                      "text": "Adapt it, but share your version under the same licence.",
+                      "category": 1,
+                      "why": "Share alike."
+                    },
+                    {
+                      "text": "Not allowed in a brochure that is sold.",
+                      "category": 2,
+                      "why": "Non-commercial only."
+                    },
+                    {
+                      "text": "Share it as it is, but you cannot edit it.",
+                      "category": 3,
+                      "why": "No derivatives."
+                    },
+                    {
+                      "text": "No restrictions at all.",
+                      "category": 4,
+                      "why": "Public domain."
+                    }
+                  ]
+                },
+                {
+                  "type": "flipCards",
+                  "title": "Check yourself",
+                  "instruction": "Answer first, then flip.",
+                  "cards": [
+                    {
+                      "tag": "Apply",
+                      "front": "A photo from Google Images has no licence shown. Can the client use it?",
+                      "back": "Not without permission. Copyright protection is automatic, so assume it is protected."
+                    },
+                    {
+                      "tag": "Define",
+                      "front": "What is fair dealing?",
+                      "back": "Limited use without permission for purposes such as research or study, criticism or review, parody or satire, and reporting news."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
                   "text": "Assessment practice",
                   "level": 2
                 },
@@ -12034,6 +12971,17 @@
                   ]
                 },
                 {
+                  "type": "videoSlot",
+                  "title": "Sending marketing emails legally",
+                  "minutes": 4,
+                  "brief": "A short clip checking a marketing email list for consent, sender identity and an unsubscribe link. Suggested source: an ACMA Spam Act education video or a teacher-filmed example.",
+                  "watchFor": [
+                    "What counts as consent",
+                    "What every message must include",
+                    "How fast an unsubscribe must be honoured"
+                  ]
+                },
+                {
                   "type": "heading",
                   "text": "Write this down"
                 },
@@ -12061,11 +13009,6 @@
                 {
                   "type": "paragraph",
                   "text": "The Spam Act 2003 (Cth) is Australia's primary legislation governing commercial electronic messages. It applies to emails, SMS messages, and instant messages sent for commercial purposes. The Act is enforced by the Australian Communications and Media Authority (ACMA), which has the power to investigate complaints, issue fines, and pursue court action against repeat offenders. In 2022, ACMA fined an Australian company $2.5 million for sending over 121 million spam messages."
-                },
-                {
-                  "type": "richText",
-                  "heading": "Visual model: The Spam Act 2003",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"impacts-of-technology-the-spam-act-2003-title impacts-of-technology-the-spam-act-2003-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"impacts-of-technology-the-spam-act-2003-title\">The Spam Act 2003: Concept cards for Commercial Electronic Message (CEM), Consent, Unsubscribe Mechanism, ACMA.</title><desc id=\"impacts-of-technology-the-spam-act-2003-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ede9fe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">The Spam Act 2003</tspan></text><text x=\"36\" y=\"94\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">CORE IDEAS</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Commercial Electronic Message…</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Any electronic message (email, SMS, instant</tspan><tspan x=\"84\" dy=\"19\">message) sent with a commercial purpose —…</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#c2410c\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#c2410c\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Consent</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Under the Spam Act 2003 (Cth), permission</tspan><tspan x=\"444\" dy=\"19\">from the recipient to receive commercial…</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Unsubscribe Mechanism</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">A clearly visible, functional option in</tspan><tspan x=\"84\" dy=\"19\">every commercial message that allows the…</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#c2410c\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#c2410c\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">ACMA</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Australian Communications and Media</tspan><tspan x=\"444\" dy=\"19\">Authority — the federal regulator…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
                 },
                 {
                   "type": "heading",
@@ -12114,6 +13057,69 @@
                   "variant": "pr-review",
                   "heading": "🛑 PR REVIEW · DR. FINCH IS IN THE REVIEW",
                   "text": "1. A business sends a single transactional email — an order confirmation — that also includes a promotional offer for 10% off the customer's next purchase. Does the Spam Act apply to this email? Why or why not?\n2. A recipient clicks 'unsubscribe' on 15 March. The business processes the request on 25 March (8 business days later). Have they violated the Spam Act? What are the potential consequences?\n3. The Spam Act covers 'commercial electronic messages.' Does it apply to an SMS from a political party during an election campaign? Explain why or why not — check the Act's exemptions."
+                },
+                {
+                  "type": "heading",
+                  "text": "Try it yourself",
+                  "level": 2
+                },
+                {
+                  "type": "sorter",
+                  "title": "Meets the Spam Act or breaks it?",
+                  "instruction": "A client plans a promotional email to 1,500 people. Tap each practice.",
+                  "categories": [
+                    "Meets the Act",
+                    "Breaks the Act"
+                  ],
+                  "items": [
+                    {
+                      "text": "Sending to customers who bought in the last 12 months and have not opted out.",
+                      "category": 0,
+                      "why": "Inferred consent from the relationship."
+                    },
+                    {
+                      "text": "Sending to 200 addresses bought from a list broker.",
+                      "category": 1,
+                      "why": "No consent from those people."
+                    },
+                    {
+                      "text": "Including a clear working unsubscribe link in every email.",
+                      "category": 0,
+                      "why": "Required in every commercial message."
+                    },
+                    {
+                      "text": "Hiding who the sender is.",
+                      "category": 1,
+                      "why": "The sender must be clearly identified."
+                    },
+                    {
+                      "text": "Honouring an unsubscribe request within 5 working days.",
+                      "category": 0,
+                      "why": "Required by the Act."
+                    },
+                    {
+                      "text": "Ignoring unsubscribe requests.",
+                      "category": 1,
+                      "why": "A breach."
+                    }
+                  ]
+                },
+                {
+                  "type": "flipCards",
+                  "title": "Check yourself",
+                  "instruction": "Answer first, then flip.",
+                  "cards": [
+                    {
+                      "tag": "Define",
+                      "front": "What is a commercial electronic message?",
+                      "back": "Any email, SMS or instant message sent with a commercial purpose, such as promoting goods or services."
+                    },
+                    {
+                      "tag": "Define",
+                      "front": "What is consent under the Act?",
+                      "back": "Permission from the recipient to receive the message, express or inferred."
+                    }
+                  ]
                 },
                 {
                   "type": "heading",
@@ -12188,6 +13194,17 @@
                   ]
                 },
                 {
+                  "type": "videoSlot",
+                  "title": "Writing a digital citizenship charter",
+                  "minutes": 4,
+                  "brief": "A short clip showing a school charter with clauses on conduct, digital footprint and bystander duty. Suggested source: an eSafety Commissioner education video.",
+                  "watchFor": [
+                    "What a bystander can do",
+                    "How eSafety helps",
+                    "How a footprint lasts"
+                  ]
+                },
+                {
                   "type": "heading",
                   "text": "Write this down"
                 },
@@ -12215,11 +13232,6 @@
                 {
                   "type": "paragraph",
                   "text": "Digital citizenship is the responsible, ethical, and legal use of technology to participate in society. As digital tools become integral to education, work, and relationships, the standards we hold ourselves to online carry the same moral and legal weight as our offline behaviour. For IT professionals, understanding these standards is not just personal — it shapes the advice we give clients and the systems we build."
-                },
-                {
-                  "type": "richText",
-                  "heading": "Visual model: Digital Citizenship and Cyberbullying",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"impacts-of-technology-digital-citizenship-and-cyberbullying-title impacts-of-technology-digital-citizenship-and-cyberbullying-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"impacts-of-technology-digital-citizenship-and-cyberbullying-title\">Digital Citizenship and Cyberbullying: Concept cards for Harassment, Cyberstalking, Exclusion, Outing / Doxxing.</title><desc id=\"impacts-of-technology-digital-citizenship-and-cyberbullying-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ede9fe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Digital Citizenship and Cyberbullying</tspan></text><text x=\"36\" y=\"94\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">TYPE</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Harassment</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Description: Sending repeated threatening</tspan><tspan x=\"84\" dy=\"19\">or insulting messages · Example: Sending…</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#c2410c\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#c2410c\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Cyberstalking</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Description: Using technology to monitor,</tspan><tspan x=\"444\" dy=\"19\">track, or intimidate a person · Example…</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Exclusion</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Description: Deliberately excluding someone</tspan><tspan x=\"84\" dy=\"19\">from online groups or activities · Example…</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#c2410c\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#c2410c\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Outing / Doxxing</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Description: Sharing someone's private</tspan><tspan x=\"444\" dy=\"19\">information publicly without consent ·…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
                 },
                 {
                   "type": "heading",
@@ -12318,6 +13330,64 @@
                 },
                 {
                   "type": "heading",
+                  "text": "Try it yourself",
+                  "level": 2
+                },
+                {
+                  "type": "sorter",
+                  "title": "Good or poor bystander response?",
+                  "instruction": "Someone is being targeted in a group chat. Tap each response.",
+                  "categories": [
+                    "Good response",
+                    "Poor response"
+                  ],
+                  "items": [
+                    {
+                      "text": "Report the messages to the platform.",
+                      "category": 0,
+                      "why": "Helps stop the harm."
+                    },
+                    {
+                      "text": "Share the hurtful post to the group.",
+                      "category": 1,
+                      "why": "Spreads it further."
+                    },
+                    {
+                      "text": "Message the targeted person to support them.",
+                      "category": 0,
+                      "why": "Shows they are not alone."
+                    },
+                    {
+                      "text": "Ignore it because it is not your problem.",
+                      "category": 1,
+                      "why": "Silence allows it to continue."
+                    },
+                    {
+                      "text": "Take screenshots and tell a trusted adult.",
+                      "category": 0,
+                      "why": "Keeps evidence and gets help."
+                    }
+                  ]
+                },
+                {
+                  "type": "flipCards",
+                  "title": "Check yourself",
+                  "instruction": "Answer first, then flip.",
+                  "cards": [
+                    {
+                      "tag": "Define",
+                      "front": "What does the eSafety Commissioner do?",
+                      "back": "An independent office under the Online Safety Act that handles complaints about cyberbullying and harmful content and can order removal."
+                    },
+                    {
+                      "tag": "Define",
+                      "front": "What is a digital footprint?",
+                      "back": "The permanent, searchable trail of data left by online activity."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
                   "text": "Assessment practice",
                   "level": 2
                 },
@@ -12395,6 +13465,17 @@
                   "items": [
                     "Explain Repetitive Strain Injury (RSI) in your own words.",
                     "Apply Digital Eye Strain to a practical situation."
+                  ]
+                },
+                {
+                  "type": "videoSlot",
+                  "title": "Looking after your health at a screen",
+                  "minutes": 4,
+                  "brief": "A short clip showing the physical and mental health effects of long computer days, and simple preventions. Suggested source: a WorkSafe WA or Healthy Workplaces video.",
+                  "watchFor": [
+                    "Early warning symptoms",
+                    "Simple preventions",
+                    "Why breaks matter"
                   ]
                 },
                 {
@@ -12507,13 +13588,64 @@
                 },
                 {
                   "type": "heading",
-                  "text": "Assessment practice",
+                  "text": "Try it yourself",
                   "level": 2
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Health Impacts of Technology",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"impacts-of-technology-health-impacts-of-technology-title impacts-of-technology-health-impacts-of-technology-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"impacts-of-technology-health-impacts-of-technology-title\">Health Impacts of Technology: Concept cards for Repetitive Strain Injury (RSI), Digital Eye Strain, Neck and Back Pain, Tension Headaches.</title><desc id=\"impacts-of-technology-health-impacts-of-technology-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ede9fe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Health Impacts of Technology</tspan></text><text x=\"36\" y=\"94\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">HEALTH RISK</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Repetitive Strain Injury (RSI)</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Primary Cause: Repetitive keyboard/mouse</tspan><tspan x=\"84\" dy=\"19\">use, poor wrist position · Symptoms: Wrist…</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#c2410c\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#c2410c\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Digital Eye Strain</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Primary Cause: Prolonged screen use, blue</tspan><tspan x=\"444\" dy=\"19\">light, poor contrast, glare · Symptoms: Dry…</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Neck and Back Pain</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Primary Cause: Poor posture, non-adjustable</tspan><tspan x=\"84\" dy=\"19\">chair, monitor height wrong · Symptoms…</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#c2410c\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#c2410c\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Tension Headaches</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Primary Cause: Screen glare, dehydration,</tspan><tspan x=\"444\" dy=\"19\">eye strain, stress · Symptoms: Frontal or…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
+                  "type": "sorter",
+                  "title": "Which health risk?",
+                  "instruction": "Tap the risk each symptom points to.",
+                  "categories": [
+                    "Repetitive strain injury",
+                    "Digital eye strain",
+                    "Neck and back pain",
+                    "Tension headaches",
+                    "Sedentary behaviour"
+                  ],
+                  "items": [
+                    {
+                      "text": "Tingling and pain in the wrists.",
+                      "category": 0,
+                      "why": "Repeated movements."
+                    },
+                    {
+                      "text": "Dry, tired, blurry eyes.",
+                      "category": 1,
+                      "why": "Long screen focus."
+                    },
+                    {
+                      "text": "A stiff neck and sore lower back.",
+                      "category": 2,
+                      "why": "Poor posture."
+                    },
+                    {
+                      "text": "An afternoon headache from screen glare.",
+                      "category": 3,
+                      "why": "Tension and glare."
+                    },
+                    {
+                      "text": "Little movement because of long periods of sitting.",
+                      "category": 4,
+                      "why": "Inactive work."
+                    }
+                  ]
+                },
+                {
+                  "type": "flipCards",
+                  "title": "Check yourself",
+                  "instruction": "Answer first, then flip.",
+                  "cards": [
+                    {
+                      "tag": "Apply",
+                      "front": "Name two preventions for a graphic design studio working 8-hour days.",
+                      "back": "Any two of: regular breaks, the 20-20-20 rule, an adjustable chair and monitor at eye level, standing or walking breaks."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Assessment practice",
+                  "level": 2
                 },
                 {
                   "type": "quizQuestion",
@@ -12728,6 +13860,17 @@
                   ]
                 },
                 {
+                  "type": "videoSlot",
+                  "title": "Presenting professionally",
+                  "minutes": 4,
+                  "brief": "A short clip building a slide master, using transitions and animations sparingly, and using Presenter View. Suggested source: a teacher-filmed screen recording.",
+                  "watchFor": [
+                    "What the slide master controls",
+                    "Why subtle transitions are best",
+                    "What Presenter View shows"
+                  ]
+                },
+                {
                   "type": "heading",
                   "text": "Write this down"
                 },
@@ -12892,6 +14035,50 @@
                 },
                 {
                   "type": "heading",
+                  "text": "Try it yourself",
+                  "level": 2
+                },
+                {
+                  "type": "sorter",
+                  "title": "Which feature?",
+                  "instruction": "Tap the feature each professional use belongs to.",
+                  "categories": [
+                    "Slide master or theme",
+                    "Transitions",
+                    "Animations",
+                    "Presenter view",
+                    "Speaker notes"
+                  ],
+                  "items": [
+                    {
+                      "text": "Keeps fonts, colours and the logo consistent on every slide.",
+                      "category": 0,
+                      "why": "The default design for all slides."
+                    },
+                    {
+                      "text": "A subtle change between slides.",
+                      "category": 1,
+                      "why": "Avoid flashy effects."
+                    },
+                    {
+                      "text": "Revealing one bullet at a time.",
+                      "category": 2,
+                      "why": "Movement on elements."
+                    },
+                    {
+                      "text": "Seeing the next slide and your notes while the audience sees only the slide.",
+                      "category": 3,
+                      "why": "The presenter's view."
+                    },
+                    {
+                      "text": "Reminders of what to say on each slide.",
+                      "category": 4,
+                      "why": "Notes for the speaker."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
                   "text": "Assessment practice"
                 },
                 {
@@ -12962,6 +14149,17 @@
                   "items": [
                     "Explain Eye contact in your own words.",
                     "Apply Pacing to a practical situation."
+                  ]
+                },
+                {
+                  "type": "videoSlot",
+                  "title": "Presenting an 8-slide report",
+                  "minutes": 4,
+                  "brief": "A short clip of a 5-minute mini-report delivered well and poorly, with feedback. Suggested source: a teacher-filmed example with two students.",
+                  "watchFor": [
+                    "Eye contact and pacing",
+                    "How questions are handled",
+                    "Screen sharing tips"
                   ]
                 },
                 {
@@ -13082,9 +14280,50 @@
                   "text": "Once your 8-slide deck is complete, present slides 2–4 to a partner (2 minutes). Your partner's job: count how many times you look at the screen instead of at them, and note one specific thing you did well. Swap and repeat. The feedback is not optional — write down what your partner said and what you will change for the real presentation."
                 },
                 {
-                  "type": "richText",
-                  "heading": "Visual model: Presentation Software — Create and Present",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"application-skills-presentation-software-create-and-present-title application-skills-presentation-software-create-and-present-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"application-skills-presentation-software-create-and-present-title\">Presentation Software — Create and Present: Concept cards for Eye contact, Pacing, Pointer use, Screen sharing (remote).</title><desc id=\"application-skills-presentation-software-create-and-present-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#d1fae5\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#047857\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Presentation Software — Create and Present</tspan></text><text x=\"36\" y=\"94\" fill=\"#047857\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">SKILL</text><rect x=\"28\" y=\"110\" width=\"704\" height=\"194\" rx=\"18\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"28\" y=\"110\" width=\"704\" height=\"31\" rx=\"18\" fill=\"#e2e8f0\"/><circle cx=\"49\" cy=\"125\" r=\"5\" fill=\"#fb7185\"/><circle cx=\"66\" cy=\"125\" r=\"5\" fill=\"#fbbf24\"/><circle cx=\"83\" cy=\"125\" r=\"5\" fill=\"#34d399\"/><rect x=\"72\" y=\"143\" width=\"304\" height=\"70\" rx=\"12\" fill=\"#ecfdf5\"/><circle cx=\"94\" cy=\"165\" r=\"10\" fill=\"#047857\"/><text x=\"114\" y=\"169\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"114\" dy=\"0\">Eye contact</tspan></text><text x=\"88\" y=\"192\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"88\" dy=\"0\">What Good Looks Like: Spend 70% of time</tspan><tspan x=\"88\" dy=\"19\">looking at the audience, 30% at the…</tspan></text><rect x=\"404\" y=\"143\" width=\"304\" height=\"70\" rx=\"12\" fill=\"#eef2ff\"/><circle cx=\"426\" cy=\"165\" r=\"10\" fill=\"#2563eb\"/><text x=\"446\" y=\"169\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"446\" dy=\"0\">Pacing</tspan></text><text x=\"420\" y=\"192\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"420\" dy=\"0\">What Good Looks Like: Aim for 120–140</tspan><tspan x=\"420\" dy=\"19\">words per minute; pause between key…</tspan></text><rect x=\"72\" y=\"227\" width=\"304\" height=\"70\" rx=\"12\" fill=\"#ecfdf5\"/><circle cx=\"94\" cy=\"249\" r=\"10\" fill=\"#047857\"/><text x=\"114\" y=\"253\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"114\" dy=\"0\">Pointer use</tspan></text><text x=\"88\" y=\"276\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"88\" dy=\"0\">What Good Looks Like: Use sparingly to</tspan><tspan x=\"88\" dy=\"19\">highlight a specific data point; put it…</tspan></text><rect x=\"404\" y=\"227\" width=\"304\" height=\"70\" rx=\"12\" fill=\"#eef2ff\"/><circle cx=\"426\" cy=\"249\" r=\"10\" fill=\"#2563eb\"/><text x=\"446\" y=\"253\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"446\" dy=\"0\">Screen sharing (remote)</tspan></text><text x=\"420\" y=\"276\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"420\" dy=\"0\">What Good Looks Like: Share the specific</tspan><tspan x=\"420\" dy=\"19\">window, not your whole desktop · Common…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
+                  "type": "heading",
+                  "text": "Try it yourself",
+                  "level": 2
+                },
+                {
+                  "type": "sorter",
+                  "title": "Good practice or common mistake?",
+                  "instruction": "Sort each presenting habit.",
+                  "categories": [
+                    "Good practice",
+                    "Common mistake"
+                  ],
+                  "items": [
+                    {
+                      "text": "Looking at the audience, glancing at notes.",
+                      "category": 0,
+                      "why": "Builds connection."
+                    },
+                    {
+                      "text": "Reading every word off the screen.",
+                      "category": 1,
+                      "why": "Loses the audience."
+                    },
+                    {
+                      "text": "A steady pace with pauses on key points.",
+                      "category": 0,
+                      "why": "Easy to follow."
+                    },
+                    {
+                      "text": "Rushing to finish in time.",
+                      "category": 1,
+                      "why": "Hard to follow."
+                    },
+                    {
+                      "text": "Pausing, then answering honestly, including saying you will find out.",
+                      "category": 0,
+                      "why": "Handles questions well."
+                    },
+                    {
+                      "text": "Making up an answer you do not know.",
+                      "category": 1,
+                      "why": "Loses trust."
+                    }
+                  ]
                 },
                 {
                   "type": "heading",
@@ -13167,6 +14406,17 @@
                   ]
                 },
                 {
+                  "type": "videoSlot",
+                  "title": "Recording and cleaning audio",
+                  "minutes": 4,
+                  "brief": "A short clip recording a voiceover, reducing noise and exporting WAV and MP3. Suggested source: a teacher-filmed screen recording in Audacity.",
+                  "watchFor": [
+                    "What gain and noise floor are",
+                    "How sample rate affects quality",
+                    "Why WAV is larger than MP3"
+                  ]
+                },
+                {
                   "type": "heading",
                   "text": "Write this down"
                 },
@@ -13198,11 +14448,6 @@
                 {
                   "type": "paragraph",
                   "text": "Audio software is used across professional IT contexts — voiceovers for client videos, podcast content, accessibility features (text-to-speech alternatives), and screen recordings with narration. Audacity is the industry-standard free tool. Understanding how it works — and how audio itself works — is the difference between delivering a professional clip and submitting a file that sounds like it was recorded in a bathroom."
-                },
-                {
-                  "type": "richText",
-                  "heading": "Visual model: Audio Software — Features",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"application-skills-audio-software-features-title application-skills-audio-software-features-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"application-skills-audio-software-features-title\">Audio Software — Features: Concept cards for WAV, MP3, OGG Vorbis, FLAC.</title><desc id=\"application-skills-audio-software-features-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#d1fae5\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#047857\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Audio Software — Features</tspan></text><text x=\"36\" y=\"94\" fill=\"#047857\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">FORMAT</text><rect x=\"28\" y=\"110\" width=\"704\" height=\"194\" rx=\"18\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"28\" y=\"110\" width=\"704\" height=\"31\" rx=\"18\" fill=\"#e2e8f0\"/><circle cx=\"49\" cy=\"125\" r=\"5\" fill=\"#fb7185\"/><circle cx=\"66\" cy=\"125\" r=\"5\" fill=\"#fbbf24\"/><circle cx=\"83\" cy=\"125\" r=\"5\" fill=\"#34d399\"/><rect x=\"72\" y=\"143\" width=\"304\" height=\"70\" rx=\"12\" fill=\"#ecfdf5\"/><circle cx=\"94\" cy=\"165\" r=\"10\" fill=\"#047857\"/><text x=\"114\" y=\"169\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"114\" dy=\"0\">WAV</tspan></text><text x=\"88\" y=\"192\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"88\" dy=\"0\">Type: Lossless · Quality: Highest (no</tspan><tspan x=\"88\" dy=\"19\">compression artefacts)</tspan></text><rect x=\"404\" y=\"143\" width=\"304\" height=\"70\" rx=\"12\" fill=\"#eef2ff\"/><circle cx=\"426\" cy=\"165\" r=\"10\" fill=\"#2563eb\"/><text x=\"446\" y=\"169\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"446\" dy=\"0\">MP3</tspan></text><text x=\"420\" y=\"192\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"420\" dy=\"0\">Type: Lossy · Quality: Good at 192 kbps+,</tspan><tspan x=\"420\" dy=\"19\">audible artefacts at low bitrates</tspan></text><rect x=\"72\" y=\"227\" width=\"304\" height=\"70\" rx=\"12\" fill=\"#ecfdf5\"/><circle cx=\"94\" cy=\"249\" r=\"10\" fill=\"#047857\"/><text x=\"114\" y=\"253\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"114\" dy=\"0\">OGG Vorbis</tspan></text><text x=\"88\" y=\"276\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"88\" dy=\"0\">Type: Lossy · Quality: Better than MP3 at</tspan><tspan x=\"88\" dy=\"19\">same file size</tspan></text><rect x=\"404\" y=\"227\" width=\"304\" height=\"70\" rx=\"12\" fill=\"#eef2ff\"/><circle cx=\"426\" cy=\"249\" r=\"10\" fill=\"#2563eb\"/><text x=\"446\" y=\"253\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"446\" dy=\"0\">FLAC</tspan></text><text x=\"420\" y=\"276\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"420\" dy=\"0\">Type: Lossless · Quality: Identical to</tspan><tspan x=\"420\" dy=\"19\">WAV, compressed</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
                 },
                 {
                   "type": "heading",
@@ -13317,6 +14562,77 @@
                 },
                 {
                   "type": "heading",
+                  "text": "Try it yourself",
+                  "level": 2
+                },
+                {
+                  "type": "sorter",
+                  "title": "Which audio term?",
+                  "instruction": "Tap the term each description fits.",
+                  "categories": [
+                    "Sample rate",
+                    "Bit depth",
+                    "Noise floor",
+                    "Gain"
+                  ],
+                  "items": [
+                    {
+                      "text": "How many times per second the audio is captured.",
+                      "category": 0,
+                      "why": "Measured in Hz, such as 44,100 Hz."
+                    },
+                    {
+                      "text": "The number of bits used for each sample, setting dynamic range.",
+                      "category": 1,
+                      "why": "More bits mean more detail."
+                    },
+                    {
+                      "text": "The background noise present even when nothing is recorded.",
+                      "category": 2,
+                      "why": "The noise floor."
+                    },
+                    {
+                      "text": "The amplification applied to the input signal.",
+                      "category": 3,
+                      "why": "Gain."
+                    }
+                  ]
+                },
+                {
+                  "type": "sorter",
+                  "title": "Which audio format?",
+                  "instruction": "Tap the format.",
+                  "categories": [
+                    "WAV",
+                    "MP3",
+                    "FLAC",
+                    "OGG Vorbis"
+                  ],
+                  "items": [
+                    {
+                      "text": "Uncompressed, full quality, very large files.",
+                      "category": 0,
+                      "why": "Used while editing."
+                    },
+                    {
+                      "text": "Lossy, small files, widely supported.",
+                      "category": 1,
+                      "why": "Good for sending."
+                    },
+                    {
+                      "text": "Lossless compression, smaller than WAV with no quality loss.",
+                      "category": 2,
+                      "why": "Archive quality."
+                    },
+                    {
+                      "text": "Open lossy format.",
+                      "category": 3,
+                      "why": "Free and open."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
                   "text": "Assessment practice"
                 },
                 {
@@ -13390,6 +14706,17 @@
                   ]
                 },
                 {
+                  "type": "videoSlot",
+                  "title": "Preparing product images",
+                  "minutes": 4,
+                  "brief": "A short clip removing a background, resizing to 800 x 800 and exporting JPEG, PNG and SVG. Suggested source: a teacher-filmed screen recording in Photopea.",
+                  "watchFor": [
+                    "What layers do",
+                    "How re-saving a JPEG degrades it",
+                    "Which format keeps transparency"
+                  ]
+                },
+                {
                   "type": "heading",
                   "text": "Write this down"
                 },
@@ -13417,11 +14744,6 @@
                       "definition": "Lossless compression (PNG, WebP lossless) preserves every pixel of data. Lossy compression (JPEG, WebP lossy) discards some data to achieve smaller file sizes — quality degrades with each save."
                     }
                   ]
-                },
-                {
-                  "type": "richText",
-                  "heading": "Visual model: Image Manipulation Software",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"application-skills-image-manipulation-software-title application-skills-image-manipulation-software-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"application-skills-image-manipulation-software-title\">Image Manipulation Software: Concept cards for JPEG / JPG, PNG, WebP, SVG.</title><desc id=\"application-skills-image-manipulation-software-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#d1fae5\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#047857\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Image Manipulation Software</tspan></text><text x=\"36\" y=\"94\" fill=\"#047857\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">FORMAT</text><rect x=\"28\" y=\"110\" width=\"704\" height=\"194\" rx=\"18\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"28\" y=\"110\" width=\"704\" height=\"31\" rx=\"18\" fill=\"#e2e8f0\"/><circle cx=\"49\" cy=\"125\" r=\"5\" fill=\"#fb7185\"/><circle cx=\"66\" cy=\"125\" r=\"5\" fill=\"#fbbf24\"/><circle cx=\"83\" cy=\"125\" r=\"5\" fill=\"#34d399\"/><rect x=\"72\" y=\"143\" width=\"304\" height=\"70\" rx=\"12\" fill=\"#ecfdf5\"/><circle cx=\"94\" cy=\"165\" r=\"10\" fill=\"#047857\"/><text x=\"114\" y=\"169\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"114\" dy=\"0\">JPEG / JPG</tspan></text><text x=\"88\" y=\"192\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"88\" dy=\"0\">Compression: Lossy · Transparency: None</tspan></text><rect x=\"404\" y=\"143\" width=\"304\" height=\"70\" rx=\"12\" fill=\"#eef2ff\"/><circle cx=\"426\" cy=\"165\" r=\"10\" fill=\"#2563eb\"/><text x=\"446\" y=\"169\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"446\" dy=\"0\">PNG</tspan></text><text x=\"420\" y=\"192\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"420\" dy=\"0\">Compression: Lossless · Transparency: Yes</tspan><tspan x=\"420\" dy=\"19\">(alpha channel)</tspan></text><rect x=\"72\" y=\"227\" width=\"304\" height=\"70\" rx=\"12\" fill=\"#ecfdf5\"/><circle cx=\"94\" cy=\"249\" r=\"10\" fill=\"#047857\"/><text x=\"114\" y=\"253\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"114\" dy=\"0\">WebP</tspan></text><text x=\"88\" y=\"276\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"88\" dy=\"0\">Compression: Both lossless and lossy</tspan><tspan x=\"88\" dy=\"19\">options · Transparency: Yes</tspan></text><rect x=\"404\" y=\"227\" width=\"304\" height=\"70\" rx=\"12\" fill=\"#eef2ff\"/><circle cx=\"426\" cy=\"249\" r=\"10\" fill=\"#2563eb\"/><text x=\"446\" y=\"253\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"446\" dy=\"0\">SVG</tspan></text><text x=\"420\" y=\"276\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"420\" dy=\"0\">Compression: Vector (not raster) ·</tspan><tspan x=\"420\" dy=\"19\">Transparency: Yes</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
                 },
                 {
                   "type": "heading",
@@ -13538,6 +14860,82 @@
                 },
                 {
                   "type": "heading",
+                  "text": "Try it yourself",
+                  "level": 2
+                },
+                {
+                  "type": "sorter",
+                  "title": "Raster or vector?",
+                  "instruction": "Tap the image type.",
+                  "categories": [
+                    "Raster",
+                    "Vector"
+                  ],
+                  "items": [
+                    {
+                      "text": "Made of a fixed grid of pixels.",
+                      "category": 0,
+                      "why": "Zooming in shows pixels."
+                    },
+                    {
+                      "text": "Defined by mathematical paths and shapes.",
+                      "category": 1,
+                      "why": "Scales without losing quality."
+                    },
+                    {
+                      "text": "A photograph.",
+                      "category": 0,
+                      "why": "Photos are raster."
+                    },
+                    {
+                      "text": "A logo that must print at any size.",
+                      "category": 1,
+                      "why": "Vector."
+                    }
+                  ]
+                },
+                {
+                  "type": "sorter",
+                  "title": "Which image format?",
+                  "instruction": "Tap the best format.",
+                  "categories": [
+                    "JPEG",
+                    "PNG",
+                    "SVG",
+                    "GIF"
+                  ],
+                  "items": [
+                    {
+                      "text": "A photo where small file size matters.",
+                      "category": 0,
+                      "why": "Lossy compression."
+                    },
+                    {
+                      "text": "A logo cut-out with a transparent background.",
+                      "category": 1,
+                      "why": "Lossless with transparency."
+                    },
+                    {
+                      "text": "A scalable logo for print and web.",
+                      "category": 2,
+                      "why": "Vector format."
+                    },
+                    {
+                      "text": "A short, simple animation.",
+                      "category": 3,
+                      "why": "Supports animation."
+                    }
+                  ]
+                },
+                {
+                  "type": "fileSizeLab",
+                  "title": "File size lab: the product photo",
+                  "width": 3000,
+                  "height": 3000,
+                  "useCase": "website product page"
+                },
+                {
+                  "type": "heading",
                   "text": "Assessment practice"
                 },
                 {
@@ -13617,6 +15015,17 @@
                   ]
                 },
                 {
+                  "type": "videoSlot",
+                  "title": "From spreadsheet to database",
+                  "minutes": 4,
+                  "brief": "A short clip building a client tracker in Google Sheets and showing where Airtable and SQL take over. Suggested source: a teacher-filmed screen recording.",
+                  "watchFor": [
+                    "Records, fields and keys",
+                    "How VLOOKUP joins data",
+                    "When to move to a real database"
+                  ]
+                },
+                {
                   "type": "heading",
                   "text": "Write this down"
                 },
@@ -13648,11 +15057,6 @@
                 {
                   "type": "paragraph",
                   "text": "A spreadsheet is not a database — but for small teams with hundreds of records, it often works well enough. Google Sheets gives IT teams a live, shareable, queryable data store that requires no server setup and integrates with Google Forms for data collection. Knowing when to use Sheets, when to upgrade to Airtable, and when to escalate to a proper SQL database is a skill that will save you and your client time and money."
-                },
-                {
-                  "type": "richText",
-                  "heading": "Visual model: Online Database Tools",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"application-skills-online-database-tools-title application-skills-online-database-tools-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"application-skills-online-database-tools-title\">Online Database Tools: Concept cards for Google Sheets, Airtable, SQL Database (MySQL, PostgreSQL).</title><desc id=\"application-skills-online-database-tools-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#d1fae5\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#047857\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Online Database Tools</tspan></text><text x=\"36\" y=\"94\" fill=\"#047857\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">TOOL</text><rect x=\"28\" y=\"110\" width=\"704\" height=\"194\" rx=\"18\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"28\" y=\"110\" width=\"704\" height=\"31\" rx=\"18\" fill=\"#e2e8f0\"/><circle cx=\"49\" cy=\"125\" r=\"5\" fill=\"#fb7185\"/><circle cx=\"66\" cy=\"125\" r=\"5\" fill=\"#fbbf24\"/><circle cx=\"83\" cy=\"125\" r=\"5\" fill=\"#34d399\"/><rect x=\"72\" y=\"143\" width=\"304\" height=\"70\" rx=\"12\" fill=\"#ecfdf5\"/><circle cx=\"94\" cy=\"165\" r=\"10\" fill=\"#047857\"/><text x=\"114\" y=\"169\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"114\" dy=\"0\">Google Sheets</tspan></text><text x=\"88\" y=\"192\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"88\" dy=\"0\">Best For: Small teams (&lt;5), up to a few</tspan><tspan x=\"88\" dy=\"19\">thousand records, shared live access ·…</tspan></text><rect x=\"404\" y=\"143\" width=\"304\" height=\"70\" rx=\"12\" fill=\"#eef2ff\"/><circle cx=\"426\" cy=\"165\" r=\"10\" fill=\"#2563eb\"/><text x=\"446\" y=\"169\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"446\" dy=\"0\">Airtable</tspan></text><text x=\"420\" y=\"192\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"420\" dy=\"0\">Best For: Medium-sized operations needing</tspan><tspan x=\"420\" dy=\"19\">relational views without SQL · Limit…</tspan></text><rect x=\"72\" y=\"227\" width=\"304\" height=\"70\" rx=\"12\" fill=\"#ecfdf5\"/><circle cx=\"94\" cy=\"249\" r=\"10\" fill=\"#047857\"/><text x=\"114\" y=\"253\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"114\" dy=\"0\">SQL Database (MySQL…</tspan></text><text x=\"88\" y=\"276\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"88\" dy=\"0\">Best For: Applications, large data</tspan><tspan x=\"88\" dy=\"19\">volumes, complex relational queries ·…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
                 },
                 {
                   "type": "heading",
@@ -13735,6 +15139,71 @@
                 },
                 {
                   "type": "heading",
+                  "text": "Try it yourself",
+                  "level": 2
+                },
+                {
+                  "type": "sorter",
+                  "title": "Record, field, primary key or VLOOKUP?",
+                  "instruction": "Tap the term.",
+                  "categories": [
+                    "Record",
+                    "Field",
+                    "Primary key",
+                    "VLOOKUP"
+                  ],
+                  "items": [
+                    {
+                      "text": "A single row with all the data about one client.",
+                      "category": 0,
+                      "why": "One record per client."
+                    },
+                    {
+                      "text": "A single column representing one type of data.",
+                      "category": 1,
+                      "why": "For example, Email."
+                    },
+                    {
+                      "text": "A unique identifier for each record that never changes.",
+                      "category": 2,
+                      "why": "No two records share it."
+                    },
+                    {
+                      "text": "Looks up a value in another table using a key.",
+                      "category": 3,
+                      "why": "Joins related data."
+                    }
+                  ]
+                },
+                {
+                  "type": "sorter",
+                  "title": "Which tool?",
+                  "instruction": "Tap the tool that fits the job.",
+                  "categories": [
+                    "Google Sheets",
+                    "Airtable",
+                    "SQL database"
+                  ],
+                  "items": [
+                    {
+                      "text": "A few hundred rows managed by one person.",
+                      "category": 0,
+                      "why": "Simple and free."
+                    },
+                    {
+                      "text": "A small team needing forms and linked tables without code.",
+                      "category": 1,
+                      "why": "A relational database with a friendly interface."
+                    },
+                    {
+                      "text": "Thousands of users and complex queries.",
+                      "category": 2,
+                      "why": "Scales to large systems."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
                   "text": "Assessment practice"
                 },
                 {
@@ -13811,6 +15280,17 @@
                   "items": [
                     "Explain Application crashes on open in your own words.",
                     "Apply Computer running very slowly to a practical situation."
+                  ]
+                },
+                {
+                  "type": "videoSlot",
+                  "title": "Fixing a crashing application",
+                  "minutes": 4,
+                  "brief": "A short clip troubleshooting a crashing presentation file with ten minutes to go. Suggested source: a teacher-filmed demo.",
+                  "watchFor": [
+                    "What question to ask first",
+                    "How to isolate the cause",
+                    "What to try first"
                   ]
                 },
                 {
@@ -13979,6 +15459,57 @@
                 },
                 {
                   "type": "heading",
+                  "text": "Try it yourself",
+                  "level": 2
+                },
+                {
+                  "type": "sequence",
+                  "title": "Troubleshoot calmly",
+                  "instruction": "Tap the steps in order.",
+                  "items": [
+                    "Ask what changed and what exactly happens.",
+                    "Try the simplest fix first, such as restarting.",
+                    "Isolate the cause, for example try another file or computer.",
+                    "Apply the fix and test it.",
+                    "Record what fixed it."
+                  ],
+                  "explanation": "Simplest first, isolate the cause, then document."
+                },
+                {
+                  "type": "sorter",
+                  "title": "First fix to try",
+                  "instruction": "Tap the best first step for each problem.",
+                  "categories": [
+                    "Restart the application",
+                    "Check the connection",
+                    "Check the file type",
+                    "Check the cable or driver"
+                  ],
+                  "items": [
+                    {
+                      "text": "PowerPoint crashes every time it opens.",
+                      "category": 0,
+                      "why": "A restart or repair is the simplest first step."
+                    },
+                    {
+                      "text": "A browser will not load websites.",
+                      "category": 1,
+                      "why": "Check the network first."
+                    },
+                    {
+                      "text": "A file opens with the wrong icon.",
+                      "category": 2,
+                      "why": "The extension or default app may be wrong."
+                    },
+                    {
+                      "text": "A printer is not recognised.",
+                      "category": 3,
+                      "why": "Cable and driver."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
                   "text": "Assessment practice"
                 },
                 {
@@ -14052,6 +15583,17 @@
                   ]
                 },
                 {
+                  "type": "videoSlot",
+                  "title": "Planning an interactive quiz",
+                  "minutes": 4,
+                  "brief": "A short clip writing a brief, sketching a wireframe and choosing an MVP for a community quiz. Suggested source: a teacher-filmed example.",
+                  "watchFor": [
+                    "What goes in the brief",
+                    "What a wireframe shows",
+                    "What an MVP includes"
+                  ]
+                },
+                {
                   "type": "heading",
                   "text": "Write this down"
                 },
@@ -14083,11 +15625,6 @@
                 {
                   "type": "paragraph",
                   "text": "An interactive project is any digital product where user input changes what happens next — a quiz with personalised results, a survey that branches based on answers, a calculator, a booking form. Planning these projects follows the same professional process regardless of the size: brief, scope, wireframe, task list, timeline. Skipping any step always costs more time than it saves."
-                },
-                {
-                  "type": "richText",
-                  "heading": "Visual model: Planning an Interactive Project",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"application-skills-planning-an-interactive-project-title application-skills-planning-an-interactive-project-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"application-skills-planning-an-interactive-project-title\">Planning an Interactive Project: Concept cards for Week 1, Week 2, Week 3, Week 4.</title><desc id=\"application-skills-planning-an-interactive-project-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#d1fae5\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#047857\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Planning an Interactive Project</tspan></text><text x=\"36\" y=\"94\" fill=\"#047857\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">WEEK</text><rect x=\"28\" y=\"110\" width=\"704\" height=\"194\" rx=\"18\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"28\" y=\"110\" width=\"704\" height=\"31\" rx=\"18\" fill=\"#e2e8f0\"/><circle cx=\"49\" cy=\"125\" r=\"5\" fill=\"#fb7185\"/><circle cx=\"66\" cy=\"125\" r=\"5\" fill=\"#fbbf24\"/><circle cx=\"83\" cy=\"125\" r=\"5\" fill=\"#34d399\"/><rect x=\"72\" y=\"143\" width=\"304\" height=\"70\" rx=\"12\" fill=\"#ecfdf5\"/><circle cx=\"94\" cy=\"165\" r=\"10\" fill=\"#047857\"/><text x=\"114\" y=\"169\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"114\" dy=\"0\">Week 1</tspan></text><text x=\"88\" y=\"192\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"88\" dy=\"0\">Tasks: Brief finalised, wireframes</tspan><tspan x=\"88\" dy=\"19\">approved, tool selected (e.g. Google…</tspan></text><rect x=\"404\" y=\"143\" width=\"304\" height=\"70\" rx=\"12\" fill=\"#eef2ff\"/><circle cx=\"426\" cy=\"165\" r=\"10\" fill=\"#2563eb\"/><text x=\"446\" y=\"169\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"446\" dy=\"0\">Week 2</tspan></text><text x=\"420\" y=\"192\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"420\" dy=\"0\">Tasks: Build quiz structure, write all 5</tspan><tspan x=\"420\" dy=\"19\">questions and 3 result messages ·…</tspan></text><rect x=\"72\" y=\"227\" width=\"304\" height=\"70\" rx=\"12\" fill=\"#ecfdf5\"/><circle cx=\"94\" cy=\"249\" r=\"10\" fill=\"#047857\"/><text x=\"114\" y=\"253\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"114\" dy=\"0\">Week 3</tspan></text><text x=\"88\" y=\"276\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"88\" dy=\"0\">Tasks: Apply design (colours, fonts,</tspan><tspan x=\"88\" dy=\"19\">images), test on mobile, fix bugs ·…</tspan></text><rect x=\"404\" y=\"227\" width=\"304\" height=\"70\" rx=\"12\" fill=\"#eef2ff\"/><circle cx=\"426\" cy=\"249\" r=\"10\" fill=\"#2563eb\"/><text x=\"446\" y=\"253\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"446\" dy=\"0\">Week 4</tspan></text><text x=\"420\" y=\"276\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"420\" dy=\"0\">Tasks: User testing with 3 people outside</tspan><tspan x=\"420\" dy=\"19\">the team, final fixes, embed on test page…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
                 },
                 {
                   "type": "heading",
@@ -14196,6 +15733,44 @@
                   "variant": "pr-review",
                   "heading": "🛑 PR REVIEW · RORY IS IN THE REVIEW",
                   "text": "1. Halfway through Week 2, the client emails asking if you can add a leaderboard that saves high scores. You said yes. Explain exactly what went wrong in this conversation and what you should have said instead.\n2. Your wireframe shows a 'Previous' button on the question screen, but you forgot to show what happens if the user clicks it on Question 1. What document should capture this edge case, and why is it a risk to leave it unresolved before building?\n3. Your MVP is a working 5-question quiz. Your teammate suggests 'while we're at it' adding animations, a countdown timer, and social media sharing before the deadline. Apply the MoSCoW method to these three features and explain your reasoning."
+                },
+                {
+                  "type": "heading",
+                  "text": "Try it yourself",
+                  "level": 2
+                },
+                {
+                  "type": "sorter",
+                  "title": "Brief, scope, wireframe or MVP?",
+                  "instruction": "Tap the term.",
+                  "categories": [
+                    "Project brief",
+                    "Scope",
+                    "Wireframe",
+                    "MVP"
+                  ],
+                  "items": [
+                    {
+                      "text": "Defines the problem, audience and requirements.",
+                      "category": 0,
+                      "why": "A short planning document."
+                    },
+                    {
+                      "text": "The boundary of what the project will and will not include.",
+                      "category": 1,
+                      "why": "Protects against scope creep."
+                    },
+                    {
+                      "text": "A low-fidelity layout of the structure.",
+                      "category": 2,
+                      "why": "Shows placement, not final design."
+                    },
+                    {
+                      "text": "The smallest version that still does its main job.",
+                      "category": 3,
+                      "why": "Minimum viable product."
+                    }
+                  ]
                 },
                 {
                   "type": "heading",
@@ -14420,6 +15995,17 @@
                   ]
                 },
                 {
+                  "type": "videoSlot",
+                  "title": "The six-phase design process",
+                  "minutes": 4,
+                  "brief": "A short clip walking a quiz project through discover, define, design, develop, deliver and evaluate. Suggested source: a teacher-filmed example.",
+                  "watchFor": [
+                    "What each phase produces",
+                    "Where iteration happens",
+                    "Who is involved"
+                  ]
+                },
+                {
                   "type": "heading",
                   "text": "Write this down"
                 },
@@ -14598,6 +16184,70 @@
                 },
                 {
                   "type": "heading",
+                  "text": "Try it yourself",
+                  "level": 2
+                },
+                {
+                  "type": "sequence",
+                  "title": "Put the phases in order",
+                  "instruction": "Tap the six phases in order.",
+                  "items": [
+                    "Discover",
+                    "Define",
+                    "Design",
+                    "Develop",
+                    "Deliver",
+                    "Evaluate"
+                  ],
+                  "explanation": "Discover, define, design, develop, deliver, evaluate, with iteration based on feedback."
+                },
+                {
+                  "type": "sorter",
+                  "title": "Which phase?",
+                  "instruction": "Tap the phase each action belongs to.",
+                  "categories": [
+                    "Discover",
+                    "Define",
+                    "Design",
+                    "Develop",
+                    "Deliver",
+                    "Evaluate"
+                  ],
+                  "items": [
+                    {
+                      "text": "Talk to the community group and research their needs.",
+                      "category": 0,
+                      "why": "Understand the problem."
+                    },
+                    {
+                      "text": "Write the brief and success criteria.",
+                      "category": 1,
+                      "why": "Fix what success looks like."
+                    },
+                    {
+                      "text": "Draw wireframes and a prototype.",
+                      "category": 2,
+                      "why": "Plan how it will look and work."
+                    },
+                    {
+                      "text": "Build the quiz.",
+                      "category": 3,
+                      "why": "Create the product."
+                    },
+                    {
+                      "text": "Launch it on the website.",
+                      "category": 4,
+                      "why": "Hand it over."
+                    },
+                    {
+                      "text": "Test it against the success criteria.",
+                      "category": 5,
+                      "why": "Judge how well it works."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
                   "text": "Assessment practice"
                 },
                 {
@@ -14677,6 +16327,17 @@
                   ]
                 },
                 {
+                  "type": "videoSlot",
+                  "title": "Prioritising a task list",
+                  "minutes": 4,
+                  "brief": "A short clip sorting a task list with the Eisenhower matrix and MoSCoW. Suggested source: a teacher-filmed whiteboard demo.",
+                  "watchFor": [
+                    "Urgent against important",
+                    "Must have against could have",
+                    "How a sprint is planned"
+                  ]
+                },
+                {
                   "type": "heading",
                   "text": "Write this down"
                 },
@@ -14704,11 +16365,6 @@
                 {
                   "type": "paragraph",
                   "text": "Time is the only resource in a project that cannot be recovered when it is wasted. Money can be reallocated; scope can be reduced; deadlines rarely move. Professionals who manage their time well do not work harder than those who do not — they work with a clearer picture of what matters most, what can wait, and what has to be cut."
-                },
-                {
-                  "type": "richText",
-                  "heading": "Visual model: Time Management Skills",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"project-management-time-management-skills-title project-management-time-management-skills-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"project-management-time-management-skills-title\">Time Management Skills: Concept cards for Do Now, Schedule, Delegate, Eliminate.</title><desc id=\"project-management-time-management-skills-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ede9fe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Time Management Skills</tspan></text><text x=\"36\" y=\"94\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">QUADRANT</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Do Now</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Urgent?: Yes · Important?: Yes</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#b45309\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#b45309\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Schedule</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Urgent?: No · Important?: Yes</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Delegate</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Urgent?: Yes · Important?: No</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#b45309\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#b45309\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Eliminate</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Urgent?: No · Important?: No</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
                 },
                 {
                   "type": "heading",
@@ -14816,6 +16472,77 @@
                 },
                 {
                   "type": "heading",
+                  "text": "Try it yourself",
+                  "level": 2
+                },
+                {
+                  "type": "sorter",
+                  "title": "Eisenhower quadrant",
+                  "instruction": "Tap the quadrant for each task.",
+                  "categories": [
+                    "Do now",
+                    "Schedule",
+                    "Delegate",
+                    "Eliminate"
+                  ],
+                  "items": [
+                    {
+                      "text": "Fix the bug where Question 3 shows the wrong answer, due today.",
+                      "category": 0,
+                      "why": "Urgent and important."
+                    },
+                    {
+                      "text": "Plan the next sprint's tasks.",
+                      "category": 1,
+                      "why": "Important but not urgent."
+                    },
+                    {
+                      "text": "Reply to a routine email that a teammate could handle.",
+                      "category": 2,
+                      "why": "Urgent but not important."
+                    },
+                    {
+                      "text": "Reorganise your desktop icons.",
+                      "category": 3,
+                      "why": "Neither urgent nor important."
+                    }
+                  ]
+                },
+                {
+                  "type": "sorter",
+                  "title": "MoSCoW priority",
+                  "instruction": "Tap the priority for each feature of the quiz.",
+                  "categories": [
+                    "Must have",
+                    "Should have",
+                    "Could have",
+                    "Won't have (this time)"
+                  ],
+                  "items": [
+                    {
+                      "text": "Five questions with scoring.",
+                      "category": 0,
+                      "why": "Essential for launch."
+                    },
+                    {
+                      "text": "It works on phones.",
+                      "category": 1,
+                      "why": "Important but the quiz still runs without it."
+                    },
+                    {
+                      "text": "Sound effects.",
+                      "category": 2,
+                      "why": "Nice if there is time."
+                    },
+                    {
+                      "text": "A global leaderboard.",
+                      "category": 3,
+                      "why": "Out of scope for this release."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
                   "text": "Assessment practice"
                 },
                 {
@@ -14889,6 +16616,17 @@
                   ]
                 },
                 {
+                  "type": "videoSlot",
+                  "title": "Wireframe, mockup, prototype",
+                  "minutes": 4,
+                  "brief": "A short clip moving from a paper sketch to a digital wireframe, a mockup and a clickable prototype. Suggested source: a teacher-filmed example in Figma or draw.io.",
+                  "watchFor": [
+                    "How fidelity increases",
+                    "When a flowchart helps",
+                    "What a storyboard shows"
+                  ]
+                },
+                {
                   "type": "heading",
                   "text": "Write this down"
                 },
@@ -14920,11 +16658,6 @@
                 {
                   "type": "paragraph",
                   "text": "Design representations are the visual language of IT projects. They let a team show, rather than describe, what a product will look like and how it will behave — before any code is written. The right representation at the right fidelity level saves enormous amounts of rework. The wrong representation (too detailed too early, or too vague too late) creates confusion and missed expectations."
-                },
-                {
-                  "type": "richText",
-                  "heading": "Visual model: Representing a Design",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"project-management-representing-a-design-title project-management-representing-a-design-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"project-management-representing-a-design-title\">Representing a Design: Concept cards for Sketch / Paper wireframe, Digital wireframe, Mockup, Clickable prototype.</title><desc id=\"project-management-representing-a-design-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ede9fe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Representing a Design</tspan></text><text x=\"36\" y=\"94\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">TYPE</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Sketch / Paper wireframe</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Fidelity: Very low · Tool: Pencil + paper</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#b45309\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#b45309\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Digital wireframe</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Fidelity: Low · Tool: draw.io, Google</tspan><tspan x=\"444\" dy=\"19\">Slides, Figma</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Mockup</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">Fidelity: High · Tool: Figma, Canva, Adobe</tspan><tspan x=\"84\" dy=\"19\">XD</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#b45309\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#b45309\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Clickable prototype</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">Fidelity: High · Tool: Figma, Marvel,</tspan><tspan x=\"444\" dy=\"19\">Protopie</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
                 },
                 {
                   "type": "heading",
@@ -15024,6 +16757,56 @@
                 },
                 {
                   "type": "heading",
+                  "text": "Try it yourself",
+                  "level": 2
+                },
+                {
+                  "type": "sorter",
+                  "title": "Which representation?",
+                  "instruction": "Tap the best representation for each job.",
+                  "categories": [
+                    "Paper wireframe",
+                    "Digital wireframe",
+                    "Mockup",
+                    "Clickable prototype",
+                    "Flowchart",
+                    "Storyboard"
+                  ],
+                  "items": [
+                    {
+                      "text": "A quick, low-cost layout idea.",
+                      "category": 0,
+                      "why": "Sketch on paper."
+                    },
+                    {
+                      "text": "Structure and content placement without colours.",
+                      "category": 1,
+                      "why": "Low fidelity in a tool."
+                    },
+                    {
+                      "text": "The final look of each screen, as a static image.",
+                      "category": 2,
+                      "why": "High fidelity."
+                    },
+                    {
+                      "text": "A model users can click to test the flow.",
+                      "category": 3,
+                      "why": "Simulates the product."
+                    },
+                    {
+                      "text": "The logic: 0 to 2 correct shows Result A, and so on.",
+                      "category": 4,
+                      "why": "Shows decisions and paths."
+                    },
+                    {
+                      "text": "The sequence of screens or scenes.",
+                      "category": 5,
+                      "why": "Frame by frame."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
                   "text": "Assessment practice"
                 },
                 {
@@ -15100,6 +16883,17 @@
                   "items": [
                     "Explain Visual Hierarchy in your own words.",
                     "Apply Whitespace to a practical situation."
+                  ]
+                },
+                {
+                  "type": "videoSlot",
+                  "title": "Reviewing a design for hierarchy and contrast",
+                  "minutes": 4,
+                  "brief": "A short clip reviewing two quiz result screens for hierarchy, whitespace and WCAG contrast. Suggested source: a teacher-filmed example.",
+                  "watchFor": [
+                    "What visual hierarchy is",
+                    "How whitespace helps",
+                    "How to check contrast"
                   ]
                 },
                 {
@@ -15221,6 +17015,52 @@
                 },
                 {
                   "type": "heading",
+                  "text": "Try it yourself",
+                  "level": 2
+                },
+                {
+                  "type": "sorter",
+                  "title": "Strengthens or weakens the design?",
+                  "instruction": "Judge each choice on the quiz results screen.",
+                  "categories": [
+                    "Strengthens",
+                    "Weakens"
+                  ],
+                  "items": [
+                    {
+                      "text": "Light grey text (#AAAAAA) on a white background.",
+                      "category": 1,
+                      "why": "Fails the contrast guideline."
+                    },
+                    {
+                      "text": "Dark text with strong contrast on a plain background.",
+                      "category": 0,
+                      "why": "Easy to read, meets accessibility guidelines."
+                    },
+                    {
+                      "text": "A tiny Try Again button in the corner.",
+                      "category": 1,
+                      "why": "The main action is easy to miss."
+                    },
+                    {
+                      "text": "A large, clear result heading.",
+                      "category": 0,
+                      "why": "Creates dominance so it is seen first."
+                    },
+                    {
+                      "text": "Whitespace around groups of items.",
+                      "category": 0,
+                      "why": "Gives the design room to breathe."
+                    },
+                    {
+                      "text": "Inconsistent spacing between items.",
+                      "category": 1,
+                      "why": "Looks disorganised."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
                   "text": "Assessment practice"
                 },
                 {
@@ -15300,6 +17140,17 @@
                   ]
                 },
                 {
+                  "type": "videoSlot",
+                  "title": "Evaluating the quiz honestly",
+                  "minutes": 4,
+                  "brief": "A short clip running a peer test, and writing up results against success criteria. Suggested source: a teacher-filmed example.",
+                  "watchFor": [
+                    "How evidence is collected",
+                    "How each method has limits",
+                    "How findings become recommendations"
+                  ]
+                },
+                {
                   "type": "heading",
                   "text": "Write this down"
                 },
@@ -15327,11 +17178,6 @@
                 {
                   "type": "paragraph",
                   "text": "Evaluation is the discipline of answering 'did this product actually solve the problem?' — not 'does the team like how it turned out?' The difference between those two questions is the difference between self-congratulation and professional accountability. Evaluation uses evidence: user testing results, success criteria checklists, and honest analysis of what worked and what did not."
-                },
-                {
-                  "type": "richText",
-                  "heading": "Visual model: Evaluating a Digital Solution",
-                  "html": "<figure style=\"margin:1.25rem 0;padding:.75rem;border:1px solid #dbe4f0;border-radius:16px;background:linear-gradient(135deg,#f8fafc,#eef2ff);overflow:hidden\"><svg viewBox=\"0 0 760 320\" role=\"img\" aria-labelledby=\"project-management-evaluating-a-digital-solution-title project-management-evaluating-a-digital-solution-desc\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;width:100%;height:auto\"><title id=\"project-management-evaluating-a-digital-solution-title\">Evaluating a Digital Solution: Concept cards for Success criteria checklist, Peer testing, User testing (observation), Heuristic evaluation.</title><desc id=\"project-management-evaluating-a-digital-solution-desc\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic.</desc><rect x=\"8\" y=\"8\" width=\"744\" height=\"304\" rx=\"24\" fill=\"#f8fafc\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><rect x=\"28\" y=\"20\" width=\"116\" height=\"22\" rx=\"11\" fill=\"#ede9fe\"/><text x=\"86\" y=\"35\" text-anchor=\"middle\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"10\" font-weight=\"700\" letter-spacing=\"1.4\">VISUAL MODEL</text><text x=\"36\" y=\"68\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"23\" font-weight=\"700\"><tspan x=\"36\" dy=\"0\">Evaluating a Digital Solution</tspan></text><text x=\"36\" y=\"94\" fill=\"#7c3aed\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">METHOD</text><rect x=\"34\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"147\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">1</text><text x=\"84\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">Success criteria checklist</tspan></text><text x=\"84\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">What It Involves: Compare product features</tspan><tspan x=\"84\" dy=\"19\">against the original brief requirements one…</tspan></text><rect x=\"394\" y=\"122\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#b45309\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"147\" r=\"14\" fill=\"#b45309\"/><text x=\"420\" y=\"152\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">2</text><text x=\"444\" y=\"149\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Peer testing</tspan></text><text x=\"444\" y=\"174\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">What It Involves: Team members test each</tspan><tspan x=\"444\" dy=\"19\">other's work using a structured task list ·…</tspan></text><rect x=\"34\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"237\" r=\"14\" fill=\"#7c3aed\"/><text x=\"60\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">3</text><text x=\"84\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"84\" dy=\"0\">User testing (observation)</tspan></text><text x=\"84\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"84\" dy=\"0\">What It Involves: Real target users</tspan><tspan x=\"84\" dy=\"19\">complete tasks while you observe — do not…</tspan></text><rect x=\"394\" y=\"212\" width=\"332\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#b45309\" stroke-opacity=\".26\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"237\" r=\"14\" fill=\"#b45309\"/><text x=\"420\" y=\"242\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\">4</text><text x=\"444\" y=\"239\" text-anchor=\"start\" fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\"><tspan x=\"444\" dy=\"0\">Heuristic evaluation</tspan></text><text x=\"444\" y=\"264\" text-anchor=\"start\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\"><tspan x=\"444\" dy=\"0\">What It Involves: Expert reviews product</tspan><tspan x=\"444\" dy=\"19\">against Nielsen's 10 usability heuristics ·…</tspan></text></svg><figcaption style=\"margin:.65rem .25rem .15rem;color:#475569;font-size:.93rem;line-height:1.55\">Treat each card as a separate checkpoint. Recall its supporting detail and explain how it connects to the lesson topic. Use the labels to review the explanation in the lesson.</figcaption></figure>"
                 },
                 {
                   "type": "heading",
@@ -15436,6 +17282,61 @@
                   "variant": "pr-review",
                   "heading": "🛑 PR REVIEW · RORY IS IN THE REVIEW",
                   "text": "1. Your evaluation report says 'overall the product worked well and the client seemed happy.' Explain why this statement does not constitute an evaluation and what specific evidence you would need instead to make it useful.\n2. During user testing, your tester completed all 5 questions successfully but could not find the 'Try Again' button on the results screen for 45 seconds. According to Nielsen's heuristics, which specific heuristic does this violate? What is the fix?\n3. Your success criteria included 'at least 60% of quiz takers reach the results screen.' After launch, you check the analytics and find only 38% of users who start the quiz complete it. What does this tell you, and what is your recommended next action?"
+                },
+                {
+                  "type": "heading",
+                  "text": "Try it yourself",
+                  "level": 2
+                },
+                {
+                  "type": "sorter",
+                  "title": "Which evaluation method?",
+                  "instruction": "Tap the method each description fits.",
+                  "categories": [
+                    "Success criteria checklist",
+                    "Peer testing",
+                    "User testing (observation)",
+                    "Heuristic evaluation"
+                  ],
+                  "items": [
+                    {
+                      "text": "Compares the product with the measurable conditions in the brief.",
+                      "category": 0,
+                      "why": "Checks each criterion."
+                    },
+                    {
+                      "text": "Classmates try the product and give feedback.",
+                      "category": 1,
+                      "why": "Quick and easy to arrange."
+                    },
+                    {
+                      "text": "Watching real users try to reach a goal.",
+                      "category": 2,
+                      "why": "Shows where they struggle."
+                    },
+                    {
+                      "text": "An expert reviews it against established usability principles.",
+                      "category": 3,
+                      "why": "Heuristics."
+                    }
+                  ]
+                },
+                {
+                  "type": "flipCards",
+                  "title": "Check yourself",
+                  "instruction": "Answer first, then flip.",
+                  "cards": [
+                    {
+                      "tag": "Define",
+                      "front": "What is usability?",
+                      "back": "How easily a target user can reach their goal using the product."
+                    },
+                    {
+                      "tag": "Define",
+                      "front": "What are success criteria?",
+                      "back": "Measurable conditions in the brief that the product must meet."
+                    }
+                  ]
                 },
                 {
                   "type": "heading",

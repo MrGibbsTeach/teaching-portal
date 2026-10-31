@@ -69,7 +69,7 @@ export function GeneralLessonView({
         </div>
       )}
 
-      <div className="mt-8">
+      <div className="mt-8 break-words [&_span]:!whitespace-normal [&_span]:![overflow-wrap:anywhere]">
         {blocks.map((block, i) => (
           <RenderBlock key={i} block={block} />
         ))}
