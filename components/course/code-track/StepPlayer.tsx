@@ -485,7 +485,7 @@ export function StepPlayer({
   return (
     <div className="lg:grid lg:grid-cols-[17rem_minmax(0,1fr)] rounded-xl border border-border bg-background">
       <aside aria-label="Lesson steps" className="hidden border-r border-border lg:block">
-        <nav className="sticky top-4 max-h-[calc(100vh-2rem)] overflow-y-auto py-4">
+        <nav className="max-h-[75vh] overflow-y-auto py-4">
           {items.map((it, n) => {
             const Icon = KIND_ICON[it.kind];
             const current = n === gi;
@@ -521,7 +521,7 @@ export function StepPlayer({
         </nav>
       </aside>
 
-      <section className="min-w-0">
+      <section className="flex min-w-0 flex-col">
         <div className="flex items-center gap-4 px-5 pt-5 sm:px-8">
           <span className="whitespace-nowrap text-sm text-muted-foreground">
             {gi + 1} of {total}
@@ -541,7 +541,7 @@ export function StepPlayer({
           ))}
         </select>
 
-        <div className={`mx-auto px-5 py-8 sm:px-8 ${wide ? "max-w-4xl" : "max-w-[40rem]"}`}>
+        <div className={`mx-auto w-full flex-1 px-5 py-8 sm:px-8 ${wide ? "max-w-4xl" : "max-w-[40rem]"}`}>
           {tab === "content" && step && (
             <div className="space-y-6">
               {step.map((block, i) => (
@@ -593,7 +593,7 @@ export function StepPlayer({
           )}
         </div>
 
-        <div className="sticky bottom-0 flex items-center justify-between gap-3 rounded-b-xl border-t border-border bg-muted/60 px-5 py-3 backdrop-blur sm:px-8">
+        <div className="sticky bottom-0 mt-auto flex items-center justify-between gap-3 rounded-b-xl border-t border-border bg-muted/60 px-5 py-3 backdrop-blur sm:px-8">
           <button
             type="button"
             disabled={gi === 0}
