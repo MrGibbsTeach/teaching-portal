@@ -20,15 +20,15 @@ interface StudentPayload {
   myAnswer?: LiveAnswer | null;
 }
 
-async function loadSlide(): Promise<StudentPayload> {
-  const r = await fetch("/api/live", { cache: "no-store" });
+async function loadSlide(code?: string): Promise<StudentPayload> {
+  const r = await fetch(code ? `/api/live?code=${encodeURIComponent(code)}` : "/api/live", { cache: "no-store" });
   if (!r.ok) throw new Error(String(r.status));
   return (await r.json()) as StudentPayload;
 }
 
 /** Follows the teacher's live session: polls for the current slide and sends answers back. */
-export function LiveStudent({ courseHref }: { courseHref: string }) {
-  const { data, offline } = useLivePoll(loadSlide, (d) => d.active);
+export function LiveStudent({ courseHref, code }: { courseHref: string; code?: string }) {
+  const { data, offline } = useLivePoll(() => loadSlide(code), (d) => d.active);
 
   if (!data) return <p className="text-muted-foreground">Connecting…</p>;
 
@@ -54,22 +54,24 @@ export function LiveStudent({ courseHref }: { courseHref: string }) {
         </span>
       </div>
       {/* Keyed by slide so local answer state resets when the teacher moves on. */}
-      <LiveSlide key={`${data.lessonTitle}-${data.slideIndex}`} data={data} block={data.block} slideIndex={data.slideIndex} />
+      <LiveSlide key={`${data.lessonTitle}-${data.slideIndex}`} data={data} block={data.block} slideIndex={data.slideIndex} anonymous={!!code} />
     </div>
   );
 }
 
-function LiveSlide({ data, block, slideIndex }: { data: StudentPayload; block: Block; slideIndex: number }) {
+function LiveSlide({ data, block, slideIndex, anonymous }: { data: StudentPayload; block: Block; slideIndex: number; anonymous: boolean }) {
   if (block.type === "codeExercise") {
     return (
       <CodeExercise
         block={block}
-        onResult={(score) => void submitLiveAnswer(slideIndex, { score })}
+        onResult={(score) => {
+          if (!anonymous) void submitLiveAnswer(slideIndex, { score });
+        }}
       />
     );
   }
   if (block.type === "quizQuestion" && choiceLabels(block).length > 0) {
-    return <LiveQuestion block={block} slideIndex={slideIndex} revealed={!!data.revealed} saved={data.myAnswer} />;
+    return <LiveQuestion block={block} slideIndex={slideIndex} revealed={!!data.revealed} saved={data.myAnswer} anonymous={anonymous} />;
   }
   return <BlockRenderer block={block} />;
 }
@@ -79,11 +81,13 @@ function LiveQuestion({
   slideIndex,
   revealed,
   saved,
+  anonymous,
 }: {
   block: Block;
   slideIndex: number;
   revealed: boolean;
   saved?: LiveAnswer | null;
+  anonymous: boolean;
 }) {
   const labels = choiceLabels(block);
   const right = correctChoice(block);
@@ -94,6 +98,8 @@ function LiveQuestion({
   async function choose(i: number) {
     if (revealed) return;
     setPicked(i);
+    // No-login classes have no student identity, so the answer stays on this screen only.
+    if (anonymous) return;
     const r = await submitLiveAnswer(slideIndex, { choice: i });
     setFailed(!r.ok);
   }
@@ -135,7 +141,9 @@ function LiveQuestion({
               ? "Correct!"
               : "The right answer is highlighted."
             : picked !== null
-              ? "Answer sent. You can change it until your teacher shows the answer."
+              ? anonymous
+                ? "Locked in on your screen. Your teacher will show the answer."
+                : "Answer sent. You can change it until your teacher shows the answer."
               : ""}
       </p>
       {revealed && q?.explanation && <p className="bg-muted p-3 text-sm">{q.explanation}</p>}

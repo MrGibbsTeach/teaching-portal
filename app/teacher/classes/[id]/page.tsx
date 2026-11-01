@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { headers } from "next/headers";
 import Link from "next/link";
-import { getClass, getStudentProgress, getStudentQuizStats } from "@/lib/db";
+import { getClass, getLiveState, getStudentProgress, getStudentQuizStats } from "@/lib/db";
 import { getCourseContent } from "@/lib/content";
 import { getCourseBySlug } from "@/lib/courses";
 import {
@@ -40,6 +40,7 @@ export default async function ClassManagePage({
   // so nothing breaks until the teacher (or ensureClassCode) touches them.
   const authMode = cls!.authMode ?? (course?.tier === "atar" ? "account" : "code");
   const releases = cls!.releases ?? {};
+  const liveState = await getLiveState(cls!.id);
 
   const updateAccessForClass = updateAccess.bind(null, cls!.id);
   const addStudentToClass = addStudent.bind(null, cls!.id);
@@ -167,15 +168,26 @@ export default async function ClassManagePage({
 
       {/* Live session */}
       <section>
-        <h2 className="text-lg font-semibold">Live session</h2>
+        <h2 className="flex items-center gap-3 text-lg font-semibold">
+          Live session
+          {liveState && (
+            <span className="inline-flex items-center gap-2 rounded-full bg-red-600 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white">
+              <span className="live-now-dot inline-block h-2 w-2 rounded-full bg-white" aria-hidden />
+              Live now
+            </span>
+          )}
+        </h2>
         <p className="mt-1 text-sm text-muted-foreground">
-          Teach a lesson slide by slide. Students follow on their own screens and you see their answers as they come in.
+          Teach a lesson slide by slide. As soon as you start, a flashing Live now button appears on your
+          class homepage so students can join. You see their answers as they come in.
         </p>
         <Link
           href={`/teacher/classes/${cls!.id}/live`}
-          className="mt-3 inline-block rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:opacity-90"
+          className={`mt-3 inline-block rounded-lg px-4 py-2 text-sm font-semibold text-white hover:opacity-90 ${
+            liveState ? "live-now-btn bg-red-600" : "bg-primary text-primary-foreground"
+          }`}
         >
-          Start or resume live session
+          {liveState ? "Live now: return to session" : "Start live lesson"}
         </Link>
       </section>
 

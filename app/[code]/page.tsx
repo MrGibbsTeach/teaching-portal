@@ -4,6 +4,7 @@ import { isReservedCode, normalizeClassCode } from "@/lib/logic/class-code";
 import { getClassByCode } from "@/lib/db";
 import { getCourseBySlug } from "@/lib/courses";
 import { getCourseContent, findLesson } from "@/lib/content";
+import { LiveNowButton } from "@/components/live/LiveNowButton";
 import { CourseTierTheme } from "@/components/course/shared/CourseTierTheme";
 
 export const dynamic = "force-dynamic";
@@ -29,6 +30,7 @@ export default async function ClassCodeHome({ params }: { params: Promise<{ code
         </h1>
 
         <div className="mt-10">
+          <LiveNowButton href={`/${normalized}/live`} code={normalized} />
           {today ? (
             <>
               <p className="text-xs font-bold uppercase tracking-widest text-primary">Today&apos;s lesson</p>

@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { getSession } from "@/lib/session";
-import { getClass, getLiveResponses, getLiveState } from "@/lib/db";
+import { getClass, getClassByCode, getLiveResponses, getLiveState } from "@/lib/db";
+import { isReservedCode, normalizeClassCode } from "@/lib/logic/class-code";
 import { findLesson, getCourseContent } from "@/lib/content";
 import { liveSlides, redactForStudent, slideLabel, summarizeSlide, clampSlide } from "@/lib/logic/live";
 
@@ -13,20 +14,39 @@ export const dynamic = "force-dynamic";
  *  - teachers (with ?classId=) also get the full slide, slide list and response summary
  */
 export async function GET(req: Request) {
+  const url = new URL(req.url);
   const session = await getSession();
-  if (!session) return NextResponse.json({ error: "unauthorised" }, { status: 401 });
+  const code = url.searchParams.get("code");
+  const statusOnly = url.searchParams.get("status") === "1";
 
-  const isTeacher = session.role === "teacher";
-  const classId = isTeacher ? new URL(req.url).searchParams.get("classId") : session.classId;
+  // No-login classes (code track) have no session: they are identified by the class code,
+  // which only ever exposes a redacted student view of the current slide.
+  let anonymousCls = null;
+  if (!session) {
+    const normalized = code ? normalizeClassCode(code) : "";
+    anonymousCls = normalized && !isReservedCode(normalized) ? await getClassByCode(normalized) : null;
+    if (!anonymousCls || anonymousCls.authMode !== "code") {
+      return NextResponse.json({ error: "unauthorised" }, { status: 401 });
+    }
+  }
+
+  const isTeacher = session?.role === "teacher";
+  const classId = anonymousCls
+    ? anonymousCls.id
+    : isTeacher
+      ? url.searchParams.get("classId")
+      : session?.classId;
   if (!classId) return NextResponse.json({ error: "no class" }, { status: 400 });
 
-  const cls = await getClass(classId);
+  const cls = anonymousCls ?? (await getClass(classId));
   if (!cls) return NextResponse.json({ error: "no class" }, { status: 404 });
 
   const state = await getLiveState(classId);
   const content = getCourseContent(cls.courseSlug);
   const found = state && content ? findLesson(content, state.lessonId) : undefined;
   if (!state || !found) return NextResponse.json({ active: false });
+  // Lightweight check used by the "Live now" button on class homepages.
+  if (statusOnly) return NextResponse.json({ active: true, lessonTitle: found.lesson.title });
 
   const slides = liveSlides(found.lesson);
   const slideIndex = clampSlide(state.slideIndex, slides.length);
@@ -46,7 +66,7 @@ export async function GET(req: Request) {
     return NextResponse.json({
       ...base,
       block: redactForStudent(block, state.revealed),
-      myAnswer: session.username ? (responses[session.username] ?? null) : null,
+      myAnswer: session?.username ? (responses[session.username] ?? null) : null,
     });
   }
 

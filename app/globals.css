@@ -395,3 +395,18 @@
 .font-foundations {
   font-family: var(--font-foundations), var(--font-sans);
 }
+
+/* "Live now" button on class homepages */
+@keyframes live-now-flash {
+  0%, 100% { box-shadow: 0 0 0 0 rgb(220 38 38 / 0.65); background-color: rgb(220 38 38); }
+  50% { box-shadow: 0 0 0 14px rgb(220 38 38 / 0); background-color: rgb(185 28 28); }
+}
+@keyframes live-now-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.25; transform: scale(0.7); }
+}
+.live-now-btn { animation: live-now-flash 1.4s ease-in-out infinite; }
+.live-now-dot { animation: live-now-dot 1s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .live-now-btn, .live-now-dot { animation: none; }
+}

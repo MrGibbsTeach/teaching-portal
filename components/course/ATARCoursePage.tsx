@@ -3,6 +3,7 @@ import { CourseOverview } from "@/components/course/CourseOverview";
 import { TierTheme } from "@/components/course/shared/TierTheme";
 import { getCourseBySlug } from "@/lib/courses";
 import { getCourseContent } from "@/lib/content";
+import { LiveNowButton } from "@/components/live/LiveNowButton";
 import { getSession } from "@/lib/session";
 import { getClass, getStudentProgress } from "@/lib/db";
 import type { Releases } from "@/lib/logic/release";
@@ -35,6 +36,11 @@ export async function ATARCoursePage({ slug }: { slug: string }) {
 
   return (
     <TierTheme tier="atar">
+      {session?.role === "student" && (
+        <div className="mx-auto max-w-3xl px-6 pt-8 text-center">
+          <LiveNowButton href={`/courses/${slug}/live`} />
+        </div>
+      )}
       <CourseOverview
         course={course}
         content={content}
