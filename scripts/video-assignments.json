@@ -348,5 +348,33 @@
     "youtubeId": "Lb1nIjjJvPI",
     "videoTitle": "Copyright in 3 minutes: A guide for Students",
     "source": "YouTube search"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "spreadsheet-practical-task",
+    "youtubeId": "UsdedFoTA68",
+    "videoTitle": "How to Create Pivot Tables in Excel (Kevin Stratvert)",
+    "source": "cited on Kevin Stratvert's site"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "document-design-and-layout",
+    "youtubeId": "admfIU5UkUs",
+    "videoTitle": "CRAP: 4 Basic Principles of Graphic Design",
+    "source": "cited by a college communication blog"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "accuracy-and-reliability-of-sources",
+    "youtubeId": "UST2zJjGQ4I",
+    "videoTitle": "Evaluating Resources with CRAAP (Shake Library)",
+    "source": "cited by a school library guide"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "search-engines-and-boolean-operators",
+    "youtubeId": "xsSZps3NH-M",
+    "videoTitle": "Boolean Operators (Emily Wixson)",
+    "source": "cited by a college library guide"
   }
 ]
