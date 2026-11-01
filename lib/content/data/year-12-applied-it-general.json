@@ -359,7 +359,9 @@
                     "questionType": "extended",
                     "text": "Identify three elements of design used in the menu board.",
                     "marks": 3,
-                    "explanation": "1 mark per element\n3 marks – Texture (chalkboard), line (hand-drawn dividers), shape (round badges), space (gaps between sections), colour (white on dark)"
+                    "explanation": "1 mark per element\n3 marks – Texture (chalkboard), line (hand-drawn dividers), shape (round badges), space (gaps between sections), colour (white on dark)",
+                    "modelAnswer": "Texture: the chalkboard-look background. Line: the white hand-drawn lines between sections. Shape: the round price badges. (Space, the wide gaps between drinks and food, or colour, white on a dark board, would also earn the mark.)",
+                    "stimulus": "A cafe menu board uses a chalkboard-look background, white hand-drawn lines between sections, round price badges, and wide gaps between the drinks and food sections."
                   }
                 },
                 {
@@ -367,9 +369,11 @@
                   "question": {
                     "id": "design-concepts-1-elements-of-design-q2",
                     "questionType": "extended",
-                    "text": "Describe how two of those elements are used.",
+                    "text": "Describe how two of the elements you identified in the menu board are used.",
                     "marks": 4,
-                    "explanation": "for each element (2 x 2 marks)\n2 marks – Describes how the element is used on the menu board and its purpose\n1 mark – Names the element with little description"
+                    "explanation": "for each element (2 x 2 marks)\n2 marks – Describes how the element is used on the menu board and its purpose\n1 mark – Names the element with little description",
+                    "modelAnswer": "Line: the white hand-drawn lines divide the menu into sections, so customers can see where the drinks end and the food begins and scan the board quickly. Shape: the round price badges repeat the same shape for every price, so prices are easy to find and look consistent.",
+                    "stimulus": "A cafe menu board uses a chalkboard-look background, white hand-drawn lines between sections, round price badges, and wide gaps between the drinks and food sections."
                   }
                 },
                 {
@@ -679,7 +683,9 @@
                     "questionType": "extended",
                     "text": "Identify the principle shown by each of: (a) the huge heading, (b) the repeated logo, (c) the grouped times.",
                     "marks": 3,
-                    "explanation": "1 mark each\n3 marks – (a) dominance (accept emphasis) (b) unity (repetition) (c) unity (proximity)"
+                    "explanation": "1 mark each\n3 marks – (a) dominance (accept emphasis) (b) unity (repetition) (c) unity (proximity)",
+                    "modelAnswer": "(a) Dominance (emphasis): the huge orange heading is the first thing the eye goes to. (b) Unity (repetition): the same small logo repeated in each corner ties the flyer together. (c) Unity (proximity): grouping the times in one box shows they belong together.",
+                    "stimulus": "A school sports carnival flyer has a huge orange \"CARNIVAL DAY\" heading, a small team logo repeated in each corner, and event times grouped in one box. The date is in small grey text near the bottom."
                   }
                 },
                 {
@@ -689,7 +695,9 @@
                     "questionType": "extended",
                     "text": "Describe how emphasis could be used to make the date stand out.",
                     "marks": 2,
-                    "explanation": "2 marks – Describes using contrast or proportion on the date (e.g. larger, bold, in a contrasting colour to the background)\n1 mark – States \"make it bigger\" with no link to emphasis"
+                    "explanation": "2 marks – Describes using contrast or proportion on the date (e.g. larger, bold, in a contrasting colour to the background)\n1 mark – States \"make it bigger\" with no link to emphasis",
+                    "modelAnswer": "Emphasis could be created with contrast and proportion: make the date much larger and bold, and use a colour that contrasts with the background, such as dark blue on a light panel. The date then becomes a clear focal point that readers notice straight after the heading, instead of being lost in the small grey text.",
+                    "stimulus": "A school sports carnival flyer has a huge orange \"CARNIVAL DAY\" heading, a small team logo repeated in each corner, and event times grouped in one box. The date is in small grey text near the bottom."
                   }
                 },
                 {
@@ -869,7 +877,9 @@
                     "questionType": "extended",
                     "text": "Explain how one element creates dominance in the weather app.",
                     "marks": 3,
-                    "explanation": "3 marks – Explains how an element (e.g. space, shape, colour) is used to make today's temperature dominant, with the effect\n2 marks – Describes the element and dominance with a weak link\n1 mark – Names an element or principle only"
+                    "explanation": "3 marks – Explains how an element (e.g. space, shape, colour) is used to make today's temperature dominant, with the effect\n2 marks – Describes the element and dominance with a weak link\n1 mark – Names an element or principle only",
+                    "modelAnswer": "Space creates dominance. The large temperature has a lot of empty space around it, so nothing competes with it and the eye goes there first. This means the viewer can read today's temperature at a glance, which is the most important information on the screen.",
+                    "stimulus": "A weather app home screen for Bunbury shows a large \"22°\" with \"Partly cloudy\" on a blue \"Today\" bar, with plenty of empty space around the temperature. Below it, three equal rounded cards in one row show TUE 21°, WED 23° and THU 22°."
                   }
                 },
                 {
@@ -879,7 +889,9 @@
                     "questionType": "extended",
                     "text": "Explain how one element creates unity in the weather app.",
                     "marks": 3,
-                    "explanation": "3 marks – Explains how an element (e.g. same-sized card shapes repeated in a row) creates unity (repetition), with the effect\n2 marks – Describes with a weak link\n1 mark – Names only"
+                    "explanation": "3 marks – Explains how an element (e.g. same-sized card shapes repeated in a row) creates unity (repetition), with the effect\n2 marks – Describes with a weak link\n1 mark – Names only",
+                    "modelAnswer": "Shape creates unity through repetition. The three forecast cards use the same rounded rectangle shape in the same size, set in one row. Repeating the shape makes the forecast read as one group, so the screen looks organised and consistent.",
+                    "stimulus": "A weather app home screen for Bunbury shows a large \"22°\" with \"Partly cloudy\" on a blue \"Today\" bar, with plenty of empty space around the temperature. Below it, three equal rounded cards in one row show TUE 21°, WED 23° and THU 22°."
                   }
                 },
                 {
@@ -1293,7 +1305,9 @@
                     "questionType": "extended",
                     "text": "Describe two typography choices that would suit the residents.",
                     "marks": 4,
-                    "explanation": "for each choice (2 x 2 marks)\n2 marks – Names a typography part and describes a choice with a reason linked to the residents (e.g. body text at least 14 pt so it can be read without glasses)\n1 mark – States a choice with no reason"
+                    "explanation": "for each choice (2 x 2 marks)\n2 marks – Names a typography part and describes a choice with a reason linked to the residents (e.g. body text at least 14 pt so it can be read without glasses)\n1 mark – States a choice with no reason",
+                    "modelAnswer": "1. Body text size: use at least 14 pt for the body text, because many residents have poor eyesight and need to read it without straining or glasses. 2. Typeface: use a clear sans serif such as Arial for the body text, because its simple letter shapes are easier to recognise at a glance than a decorative typeface.",
+                    "stimulus": "A retirement village is designing a printed newsletter for its residents, many of whom have poor eyesight."
                   }
                 },
                 {
@@ -1303,7 +1317,9 @@
                     "questionType": "extended",
                     "text": "Explain why justified alignment may be a poor choice for the newsletter.",
                     "marks": 2,
-                    "explanation": "2 marks – Explains that justified text creates uneven gaps between words (\"rivers\"), which makes it harder to read\n1 mark – States that it is harder to read"
+                    "explanation": "2 marks – Explains that justified text creates uneven gaps between words (\"rivers\"), which makes it harder to read\n1 mark – States that it is harder to read",
+                    "modelAnswer": "Justified alignment stretches the spaces between words so both edges are straight. This leaves uneven gaps, sometimes forming 'rivers' of white space down the page, which makes the text harder to follow. Residents with poor eyesight would find it even harder to read, so left alignment is better.",
+                    "stimulus": "A retirement village is designing a printed newsletter for its residents, many of whom have poor eyesight."
                   }
                 },
                 {
@@ -1571,7 +1587,9 @@
                     "questionType": "extended",
                     "text": "Describe the rule of thirds.",
                     "marks": 2,
-                    "explanation": "2 marks – Describes dividing the frame into a 3 x 3 grid and placing key items on the lines or intersections\n1 mark – States it divides the frame into thirds"
+                    "explanation": "2 marks – Describes dividing the frame into a 3 x 3 grid and placing key items on the lines or intersections\n1 mark – States it divides the frame into thirds",
+                    "modelAnswer": "The rule of thirds divides the frame into a 3 x 3 grid using two horizontal and two vertical lines. Key items are placed on the lines or where they cross, instead of in the centre, so the composition looks balanced and more interesting.",
+                    "stimulus": "A student's Instagram post for a school play has the title, date, a photo and the ticket link all centred and stacked down the middle, with different gaps between each."
                   }
                 },
                 {
@@ -1581,7 +1599,9 @@
                     "questionType": "extended",
                     "text": "Explain how a grid and alignment could improve the post.",
                     "marks": 4,
-                    "explanation": "grid (2) and alignment (2)\n2 marks – Explains how a grid gives consistent positions and gaps for each item\n2 marks – Explains how aligning items to one edge connects them and looks organised\n- marks – Award 1 mark for each if stated without explanation"
+                    "explanation": "grid (2) and alignment (2)\n2 marks – Explains how a grid gives consistent positions and gaps for each item\n2 marks – Explains how aligning items to one edge connects them and looks organised\n- marks – Award 1 mark for each if stated without explanation",
+                    "modelAnswer": "A grid would give every item a consistent position and equal gaps, so the title, date, photo and ticket link no longer float with random spacing. Alignment would line the items up on one edge, such as the left margin, which connects them visually and makes the post look neat, organised and easy to read in order.",
+                    "stimulus": "A student's Instagram post for a school play has the title, date, a photo and the ticket link all centred and stacked down the middle, with different gaps between each."
                   }
                 },
                 {
@@ -1846,7 +1866,9 @@
                     "questionType": "extended",
                     "text": "Identify one element and describe how it is used on the page.",
                     "marks": 2,
-                    "explanation": "2 marks – Identifies an element (1) and describes its use on this page (1)"
+                    "explanation": "2 marks – Identifies an element (1) and describes its use on this page (1)",
+                    "modelAnswer": "Colour: the event name is in large white text over the dark fireworks photo, so it contrasts strongly with the background and is easy to read.",
+                    "stimulus": "A council event website home page has a full-width photo of fireworks, the event name in large white text over the photo, and four equal buttons below: Map, Food, Parking, Tickets."
                   }
                 },
                 {
@@ -1856,7 +1878,9 @@
                     "questionType": "extended",
                     "text": "Explain the relationship between one element and unity on the page, and suggest one improvement.",
                     "marks": 4,
-                    "explanation": "3 marks – Explains how an element creates unity on this page (e.g. four equal button shapes repeated in a row) with effect\n2 marks – Describes with a weak link\n1 mark – Names only\n1 mark – Suggests a specific, relevant improvement"
+                    "explanation": "3 marks – Explains how an element creates unity on this page (e.g. four equal button shapes repeated in a row) with effect\n2 marks – Describes with a weak link\n1 mark – Names only\n1 mark – Suggests a specific, relevant improvement",
+                    "modelAnswer": "Shape creates unity. The four buttons (Map, Food, Parking, Tickets) are the same size and shape, repeated in one row, so they read as one set of related choices and the page looks consistent. An improvement would be to give each button a small icon, such as a car for Parking, so visitors can recognise them faster.",
+                    "stimulus": "A council event website home page has a full-width photo of fireworks, the event name in large white text over the photo, and four equal buttons below: Map, Food, Parking, Tickets."
                   }
                 },
                 {
@@ -2149,7 +2173,9 @@
                     "questionType": "extended",
                     "text": "Describe two modifications that would help the post meet the owner's needs.",
                     "marks": 4,
-                    "explanation": "for each modification (2 x 2 marks)\n2 marks – Describes a change and how it meets the need (e.g. make the Saturday hours larger and bold so they are the focal point)\n1 mark – States a change"
+                    "explanation": "for each modification (2 x 2 marks)\n2 marks – Describes a change and how it meets the need (e.g. make the Saturday hours larger and bold so they are the focal point)\n1 mark – States a change",
+                    "modelAnswer": "1. Make the Saturday hours larger and bold, and move them above the logo, so they become the focal point and people notice the new hours first. 2. Reduce the five fonts to two, one for the heading and one for the body, so the post looks consistent and professional instead of cluttered.",
+                    "stimulus": "A bakery's draft Instagram post has the logo in the centre, the opening hours in tiny text at the bottom, and five different fonts. The owner wants people to notice the new Saturday hours."
                   }
                 },
                 {
@@ -2159,7 +2185,9 @@
                     "questionType": "extended",
                     "text": "Write one detailed annotation for your modified design.",
                     "marks": 2,
-                    "explanation": "2 marks – Annotation names the choice, uses a design term and gives a reason or effect\n1 mark – A label with a design term only"
+                    "explanation": "2 marks – Annotation names the choice, uses a design term and gives a reason or effect\n1 mark – A label with a design term only",
+                    "modelAnswer": "Opening hours moved to the top and enlarged to 36 pt bold (element: size and space). This creates emphasis, so the new Saturday hours are the first thing the viewer notices.",
+                    "stimulus": "A bakery's draft Instagram post has the logo in the centre, the opening hours in tiny text at the bottom, and five different fonts. The owner wants people to notice the new Saturday hours."
                   }
                 },
                 {
@@ -2516,7 +2544,9 @@
                     "questionType": "extended",
                     "text": "Describe the purpose of the CPU.",
                     "marks": 2,
-                    "explanation": "2 marks – Describes that the CPU processes instructions and performs calculations to run programs\n1 mark – States it is the \"brain\""
+                    "explanation": "2 marks – Describes that the CPU processes instructions and performs calculations to run programs\n1 mark – States it is the \"brain\"",
+                    "modelAnswer": "The CPU is the processor of the computer. It fetches and carries out instructions and performs the calculations needed to run programs.",
+                    "stimulus": "Choosing a laptop. A student compares two laptops for school. Laptop A: 4-core 2.4 GHz CPU, 16 GB RAM, 256 GB SSD. Laptop B: 2-core 1.6 GHz CPU, 8 GB RAM, 1 TB HDD."
                   }
                 },
                 {
@@ -2526,7 +2556,9 @@
                     "questionType": "extended",
                     "text": "Compare the storage of the two laptops.",
                     "marks": 4,
-                    "explanation": "4 marks – Compares on capacity (B holds four times more) and speed or durability (A's SSD is faster, no moving parts), linked to use\n2 to 3 marks – Compares on one feature\n1 mark – Describes one laptop only"
+                    "explanation": "4 marks – Compares on capacity (B holds four times more) and speed or durability (A's SSD is faster, no moving parts), linked to use\n2 to 3 marks – Compares on one feature\n1 mark – Describes one laptop only",
+                    "modelAnswer": "Laptop A has a 256 GB SSD, while Laptop B has a 1 TB HDD, so B holds about four times more files, which suits a student storing large videos. But A's SSD has no moving parts, so it is faster to open programs and files and is less likely to be damaged if the laptop is knocked in a school bag.",
+                    "stimulus": "Choosing a laptop. A student compares two laptops for school. Laptop A: 4-core 2.4 GHz CPU, 16 GB RAM, 256 GB SSD. Laptop B: 2-core 1.6 GHz CPU, 8 GB RAM, 1 TB HDD."
                   }
                 },
                 {
@@ -2864,7 +2896,9 @@
                     "questionType": "extended",
                     "text": "Classify each device as input, output or storage: barcode scanner, receipt printer, external hard drive.",
                     "marks": 3,
-                    "explanation": "1 mark each\n3 marks – Barcode scanner: input. Receipt printer: output. External hard drive: storage."
+                    "explanation": "1 mark each\n3 marks – Barcode scanner: input. Receipt printer: output. External hard drive: storage.",
+                    "modelAnswer": "Barcode scanner: input. Receipt printer: output. External hard drive: storage.",
+                    "stimulus": "The school library. A school library is upgrading its equipment."
                   }
                 },
                 {
@@ -2874,7 +2908,9 @@
                     "questionType": "extended",
                     "text": "Describe the purpose of a server in the library.",
                     "marks": 2,
-                    "explanation": "2 marks – Describes the server providing a service to other computers (e.g. stores the catalogue database so every library computer can search it)\n1 mark – States it stores files"
+                    "explanation": "2 marks – Describes the server providing a service to other computers (e.g. stores the catalogue database so every library computer can search it)\n1 mark – States it stores files",
+                    "modelAnswer": "The server stores the library catalogue database and shares it over the network, so every library computer can search for books at the same time without each one holding its own copy.",
+                    "stimulus": "The school library. A school library is upgrading its equipment."
                   }
                 },
                 {
@@ -3229,7 +3265,9 @@
                     "questionType": "extended",
                     "text": "Describe two purposes of an operating system.",
                     "marks": 4,
-                    "explanation": "for each purpose (2 x 2 marks)\n2 marks – Describes a purpose and how it helps the user\n1 mark – Names a purpose only"
+                    "explanation": "for each purpose (2 x 2 marks)\n2 marks – Describes a purpose and how it helps the user\n1 mark – Names a purpose only",
+                    "modelAnswer": "1. File management: the operating system lets users save, open and organise files in folders. 2. Peripheral management: it controls devices such as printers through drivers, so a printer works when it is plugged in.",
+                    "stimulus": "The five-laptop business. A small business is choosing between Windows laptops and Linux laptops for its five staff."
                   }
                 },
                 {
@@ -3239,7 +3277,9 @@
                     "questionType": "extended",
                     "text": "Explain one advantage and one disadvantage of Linux for the business.",
                     "marks": 4,
-                    "explanation": "2 marks – Advantage explained (e.g. free, so no licence cost for five laptops)\n2 marks – Disadvantage explained (e.g. some business software only runs on Windows, and staff may need training)"
+                    "explanation": "2 marks – Advantage explained (e.g. free, so no licence cost for five laptops)\n2 marks – Disadvantage explained (e.g. some business software only runs on Windows, and staff may need training)",
+                    "modelAnswer": "Advantage: Linux is free, so the business saves the licence cost for five laptops. Disadvantage: some business software only runs on Windows, and staff used to Windows may need training, which costs time.",
+                    "stimulus": "The five-laptop business. A small business is choosing between Windows laptops and Linux laptops for its five staff."
                   }
                 },
                 {
@@ -3532,7 +3572,9 @@
                     "questionType": "extended",
                     "text": "Describe one compatibility issue the practice may have.",
                     "marks": 2,
-                    "explanation": "2 marks – Describes an issue of older software on current hardware (e.g. the booking software may not install or may crash on Windows 11, and gets no security updates)\n1 mark – States it may not work"
+                    "explanation": "2 marks – Describes an issue of older software on current hardware (e.g. the booking software may not install or may crash on Windows 11, and gets no security updates)\n1 mark – States it may not work",
+                    "modelAnswer": "The booking software was made for Windows 7, so it may not install or may crash on Windows 11. Even if it runs, Windows 7 no longer receives security updates, so the practice's patient data could be at risk.",
+                    "stimulus": "The dental practice. A dental practice still uses booking software made for Windows 7. It is buying new Windows 11 computers for $1200 each."
                   }
                 },
                 {
@@ -3542,7 +3584,9 @@
                     "questionType": "extended",
                     "text": "Explain two considerations when choosing the new computers.",
                     "marks": 4,
-                    "explanation": "for each consideration (2 x 2 marks)\n2 marks – Explains cost, specifications or user needs linked to the practice\n1 mark – States a consideration with no link"
+                    "explanation": "for each consideration (2 x 2 marks)\n2 marks – Explains cost, specifications or user needs linked to the practice\n1 mark – States a consideration with no link",
+                    "modelAnswer": "1. Cost: the practice must buy several computers at $1200 each, so it should compare prices and choose specifications that meet its needs without overspending. 2. Specifications: the computers must meet the minimum requirements of the new booking software, such as enough RAM and storage, and should be compatible with the practice's printers and other equipment.",
+                    "stimulus": "The dental practice. A dental practice still uses booking software made for Windows 7. It is buying new Windows 11 computers for $1200 each."
                   }
                 },
                 {
@@ -3888,7 +3932,9 @@
                     "questionType": "extended",
                     "text": "Explain how a UPS would have helped during the blackout.",
                     "marks": 2,
-                    "explanation": "2 marks – Explains the UPS battery keeps the server running long enough to save and shut down safely, so files are not corrupted\n1 mark – States it provides backup power"
+                    "explanation": "2 marks – Explains the UPS battery keeps the server running long enough to save and shut down safely, so files are not corrupted\n1 mark – States it provides backup power",
+                    "modelAnswer": "A UPS has a battery that keeps the server running for a few minutes when the power fails. This gives time to save work and shut the server down safely, so the file would not have been corrupted.",
+                    "stimulus": "The accounting firm. A small accounting firm keeps its server in a storeroom with no windows. Last summer the server shut down twice on hot days, and a blackout corrupted a file."
                   }
                 },
                 {
@@ -3898,7 +3944,9 @@
                     "questionType": "extended",
                     "text": "Describe two strategies to stop the server shutting down on hot days.",
                     "marks": 4,
-                    "explanation": "for each strategy (2 x 2 marks)\n2 marks – Describes a strategy and why it helps (e.g. install air-conditioning set to about 20 to 24 degrees Celsius; add ventilation; keep vents clear)\n1 mark – States a strategy"
+                    "explanation": "for each strategy (2 x 2 marks)\n2 marks – Describes a strategy and why it helps (e.g. install air-conditioning set to about 20 to 24 degrees Celsius; add ventilation; keep vents clear)\n1 mark – States a strategy",
+                    "modelAnswer": "1. Install air-conditioning set to about 20 to 24 degrees Celsius, so the storeroom stays cool and the server does not overheat. 2. Keep the vents clear and add ventilation, so hot air can escape and cool air can reach the server.",
+                    "stimulus": "The accounting firm. A small accounting firm keeps its server in a storeroom with no windows. Last summer the server shut down twice on hot days, and a blackout corrupted a file."
                   }
                 },
                 {
@@ -4253,7 +4301,8 @@
                     "questionType": "extended",
                     "text": "Define digital citizenship.",
                     "marks": 2,
-                    "explanation": "2 marks – Defines digital citizenship as using technology safely, responsibly and respectfully, including rights and responsibilities\n1 mark – States it is \"being good online\""
+                    "explanation": "2 marks – Defines digital citizenship as using technology safely, responsibly and respectfully, including rights and responsibilities\n1 mark – States it is \"being good online\"",
+                    "modelAnswer": "Digital citizenship is using technology safely, responsibly and respectfully. It includes knowing your rights and your responsibilities when you are online."
                   }
                 },
                 {
@@ -4263,7 +4312,9 @@
                     "questionType": "extended",
                     "text": "Describe two changes the student could make to use social networking more responsibly.",
                     "marks": 4,
-                    "explanation": "for each change (2 x 2 marks)\n2 marks – Describes a change and how it protects her (e.g. set the account to private so only approved followers see her videos)\n1 mark – States a change with no reason"
+                    "explanation": "for each change (2 x 2 marks)\n2 marks – Describes a change and how it protects her (e.g. set the account to private so only approved followers see her videos)\n1 mark – States a change with no reason",
+                    "modelAnswer": "1. Set her account to private, so only approved followers can see her videos and strangers cannot copy or share them. 2. Think before posting and ask permission before sharing photos of other people, so she does not damage her digital footprint or break other people's privacy.",
+                    "stimulus": "A Year 10 student has a public TikTok account. Her profile shows her school uniform, and her videos are often filmed at a local park."
                   }
                 },
                 {
@@ -4592,7 +4643,9 @@
                     "questionType": "extended",
                     "text": "Identify the form of cyberbullying and describe one strategy she could use to manage it.",
                     "marks": 3,
-                    "explanation": "3 marks – Identifies a form (harassment or denigration) (1) and describes a strategy with how it helps (2)\n2 marks – Identifies a form and states a strategy\n1 mark – Identifies a form only"
+                    "explanation": "3 marks – Identifies a form (harassment or denigration) (1) and describes a strategy with how it helps (2)\n2 marks – Identifies a form and states a strategy\n1 mark – Identifies a form only",
+                    "modelAnswer": "The form is harassment (the co-workers repeatedly post jokes about her in the group chat). She could screenshot the messages as evidence and report them to the manager or the business, so action can be taken.",
+                    "stimulus": "The supermarket group chat. A Year 11 student works part-time at a supermarket. The manager messages shifts in a group chat, often late at night. Two co-workers have started posting jokes about her in the chat."
                   }
                 },
                 {
@@ -4602,7 +4655,9 @@
                     "questionType": "extended",
                     "text": "Explain one negative impact of the group chat on her work-life balance.",
                     "marks": 2,
-                    "explanation": "2 marks – Explains that late messages mean she is always \"on call\" and work intrudes on rest or study time\n1 mark – States a negative impact with no link to work-life balance"
+                    "explanation": "2 marks – Explains that late messages mean she is always \"on call\" and work intrudes on rest or study time\n1 mark – States a negative impact with no link to work-life balance",
+                    "modelAnswer": "The manager messages shifts late at night, so she feels she must check the chat at all hours. She is always 'on call', and work intrudes on her rest and study time, which is a poor work-life balance.",
+                    "stimulus": "The supermarket group chat. A Year 11 student works part-time at a supermarket. The manager messages shifts in a group chat, often late at night. Two co-workers have started posting jokes about her in the chat."
                   }
                 },
                 {
@@ -4949,7 +5004,9 @@
                     "questionType": "extended",
                     "text": "Explain one reason the newspaper made this change.",
                     "marks": 2,
-                    "explanation": "2 marks – Explains a reason (e.g. fewer people buy printed papers because they read free news on social media, so print costs are no longer covered)\n1 mark – States a reason with no explanation"
+                    "explanation": "2 marks – Explains a reason (e.g. fewer people buy printed papers because they read free news on social media, so print costs are no longer covered)\n1 mark – States a reason with no explanation",
+                    "modelAnswer": "Fewer people buy printed newspapers because they can read free news on social media, so the paper could no longer cover its printing and delivery costs. Publishing online only is cheaper and reaches readers on their phones.",
+                    "stimulus": "The newspaper that went online. A regional newspaper has closed its printed edition and now publishes only on its website and Facebook page."
                   }
                 },
                 {
@@ -4959,7 +5016,9 @@
                     "questionType": "extended",
                     "text": "Explain one impact of mobile devices on how people receive local news.",
                     "marks": 3,
-                    "explanation": "3 marks – Explains an impact in detail linked to mobile devices (e.g. push notifications and feeds deliver news instantly wherever people are)\n2 marks – Describes an impact\n1 mark – States an impact"
+                    "explanation": "3 marks – Explains an impact in detail linked to mobile devices (e.g. push notifications and feeds deliver news instantly wherever people are)\n2 marks – Describes an impact\n1 mark – States an impact",
+                    "modelAnswer": "Mobile devices deliver news instantly wherever people are. Push notifications and social media feeds alert people to local news within minutes, so they no longer wait for the next day's paper.",
+                    "stimulus": "The newspaper that went online. A regional newspaper has closed its printed edition and now publishes only on its website and Facebook page."
                   }
                 },
                 {
@@ -5261,7 +5320,9 @@
                     "questionType": "extended",
                     "text": "Explain why the student has infringed copyright.",
                     "marks": 2,
-                    "explanation": "2 marks – Explains that the character is protected automatically and was reproduced and sold without permission; fair dealing does not cover selling products\n1 mark – States that permission was not asked"
+                    "explanation": "2 marks – Explains that the character is protected automatically and was reproduced and sold without permission; fair dealing does not cover selling products\n1 mark – States that permission was not asked",
+                    "modelAnswer": "The cartoon character is protected by copyright automatically. The student copied it and sold shirts with it without the creator's permission. Fair dealing does not cover selling products, so this is an infringement.",
+                    "stimulus": "The fundraiser T-shirt. A student designs a T-shirt for a school fundraiser using a cartoon character copied from a website. The shirts are sold to parents."
                   }
                 },
                 {
@@ -5271,7 +5332,9 @@
                     "questionType": "extended",
                     "text": "Describe the moral rights of the cartoon's creator.",
                     "marks": 3,
-                    "explanation": "1 mark per right, up to 3\n3 marks – Attribution: right to be named as creator. False attribution: right not to have someone else named. Integrity: right not to have the work treated in a harmful way."
+                    "explanation": "1 mark per right, up to 3\n3 marks – Attribution: right to be named as creator. False attribution: right not to have someone else named. Integrity: right not to have the work treated in a harmful way.",
+                    "modelAnswer": "1. Attribution: the creator has the right to be named as the creator of the work. 2. False attribution: the creator has the right not to have someone else named as the creator. 3. Integrity: the creator has the right not to have the work treated in a way that harms their reputation.",
+                    "stimulus": "The fundraiser T-shirt. A student designs a T-shirt for a school fundraiser using a cartoon character copied from a website. The shirts are sold to parents."
                   }
                 },
                 {
@@ -5572,7 +5635,9 @@
                     "questionType": "extended",
                     "text": "Write a reference for the photograph using APA 7.",
                     "marks": 2,
-                    "explanation": "2 marks – Lee, M. (2024). Busselton Jetty at dawn [Photograph]. Unsplash. URL, with all parts present in order\n1 mark – Reference with one or two parts missing"
+                    "explanation": "2 marks – Lee, M. (2024). Busselton Jetty at dawn [Photograph]. Unsplash. URL, with all parts present in order\n1 mark – Reference with one or two parts missing",
+                    "modelAnswer": "Lee, M. (2024). Busselton Jetty at dawn [Photograph]. Unsplash. https://unsplash.com/...",
+                    "stimulus": "The student video. A student's video uses a photo by Maya Lee called \"Busselton Jetty at dawn\" from Unsplash (2024) and a music track \"Morning Tide\" by Coastline Audio (2023) from Pixabay."
                   }
                 },
                 {
@@ -5582,7 +5647,9 @@
                     "questionType": "extended",
                     "text": "Describe one way the student should acknowledge the music in the video.",
                     "marks": 2,
-                    "explanation": "2 marks – Describes naming the track and artist (and source or licence) in the end credits or description\n1 mark – States \"give credit\""
+                    "explanation": "2 marks – Describes naming the track and artist (and source or licence) in the end credits or description\n1 mark – States \"give credit\"",
+                    "modelAnswer": "She should name the track and artist in the end credits and video description, for example: 'Morning Tide' by Coastline Audio (2023), from Pixabay, and state the licence.",
+                    "stimulus": "The student video. A student's video uses a photo by Maya Lee called \"Busselton Jetty at dawn\" from Unsplash (2024) and a music track \"Morning Tide\" by Coastline Audio (2023) from Pixabay."
                   }
                 },
                 {
@@ -5862,7 +5929,9 @@
                     "questionType": "extended",
                     "text": "Describe a folder structure the agency could use.",
                     "marks": 2,
-                    "explanation": "2 marks – Describes a logical hierarchy (e.g. one folder per property address with subfolders for Photos, Contracts, Floor plans)\n1 mark – Suggests folders with no clear structure"
+                    "explanation": "2 marks – Describes a logical hierarchy (e.g. one folder per property address with subfolders for Photos, Contracts, Floor plans)\n1 mark – Suggests folders with no clear structure",
+                    "modelAnswer": "Create one main folder for each property, named by its address, with subfolders called Photos, Contracts and Floor plans. This puts every file for a house in one place, so staff can find it quickly.",
+                    "stimulus": "A small real estate agency saves property photos, contracts and floor plans for 50 houses on one shared drive with no folders."
                   }
                 },
                 {
@@ -5872,7 +5941,9 @@
                     "questionType": "extended",
                     "text": "Explain two benefits of a consistent file naming convention for the agency.",
                     "marks": 4,
-                    "explanation": "for each benefit (2 x 2 marks)\n2 marks – Explains a benefit linked to the agency (e.g. staff can search by address and find the right contract quickly)\n1 mark – States a benefit"
+                    "explanation": "for each benefit (2 x 2 marks)\n2 marks – Explains a benefit linked to the agency (e.g. staff can search by address and find the right contract quickly)\n1 mark – States a benefit",
+                    "modelAnswer": "1. Staff can search by address and find the right contract quickly, which saves time. 2. Files in the same format sort in a clear order, so staff can see which file is current and avoid opening the wrong document.",
+                    "stimulus": "A small real estate agency saves property photos, contracts and floor plans for 50 houses on one shared drive with no folders."
                   }
                 },
                 {
@@ -6259,7 +6330,9 @@
                     "questionType": "extended",
                     "text": "Compare vector and raster graphics.",
                     "marks": 4,
-                    "explanation": "4 marks – Compares both on two features (e.g. structure: pixels vs paths; scaling: raster loses quality, vector does not)\n2 to 3 marks – Compares on one feature, or describes both with little comparison\n1 mark – Describes one type only"
+                    "explanation": "4 marks – Compares both on two features (e.g. structure: pixels vs paths; scaling: raster loses quality, vector does not)\n2 to 3 marks – Compares on one feature, or describes both with little comparison\n1 mark – Describes one type only",
+                    "modelAnswer": "A vector graphic is made of mathematical paths and shapes, while a raster graphic is made of a grid of pixels. When enlarged, a vector stays sharp, but a raster loses quality and looks blocky. Vector suits logos; raster suits photographs.",
+                    "stimulus": "A school is producing a podcast and a website for its Year 12 graduation."
                   }
                 },
                 {
@@ -6269,7 +6342,9 @@
                     "questionType": "extended",
                     "text": "Identify a suitable audio format for uploading the podcast to the website, and justify your choice.",
                     "marks": 2,
-                    "explanation": "2 marks – MP3 (or AAC) (1) because the small file size streams and downloads quickly (1)"
+                    "explanation": "2 marks – MP3 (or AAC) (1) because the small file size streams and downloads quickly (1)",
+                    "modelAnswer": "MP3, because its small file size means the podcast streams and downloads quickly from the website.",
+                    "stimulus": "A school is producing a podcast and a website for its Year 12 graduation."
                   }
                 },
                 {
@@ -6565,7 +6640,9 @@
                     "questionType": "extended",
                     "text": "Describe two editing features she should use.",
                     "marks": 4,
-                    "explanation": "for each feature (2 x 2 marks)\n2 marks – Describes a feature and how it helps this ad (e.g. trim to remove unneeded parts so the ad is 30 seconds)\n1 mark – Names a feature only"
+                    "explanation": "for each feature (2 x 2 marks)\n2 marks – Describes a feature and how it helps this ad (e.g. trim to remove unneeded parts so the ad is 30 seconds)\n1 mark – Names a feature only",
+                    "modelAnswer": "1. Trim: cut out the parts she does not need so the 60-second recording becomes 30 seconds or less for the radio station. 2. Noise reduction: remove background noise from the phone recording, so her voice is clear on the radio.",
+                    "stimulus": "A cafe owner records a 60-second radio ad on her phone. The radio station needs an MP3 file no longer than 30 seconds."
                   }
                 },
                 {
@@ -6575,7 +6652,9 @@
                     "questionType": "extended",
                     "text": "Explain why she must export or convert the file before sending it.",
                     "marks": 2,
-                    "explanation": "2 marks – Explains the phone recording is in a different format (e.g. M4A) and the station needs MP3, so it must be exported or converted\n1 mark – States that the station needs MP3"
+                    "explanation": "2 marks – Explains the phone recording is in a different format (e.g. M4A) and the station needs MP3, so it must be exported or converted\n1 mark – States that the station needs MP3",
+                    "modelAnswer": "The phone recorded the audio in a different format, such as M4A, but the radio station only accepts MP3. She must export or convert it to MP3 or the station cannot use it.",
+                    "stimulus": "A cafe owner records a 60-second radio ad on her phone. The radio station needs an MP3 file no longer than 30 seconds."
                   }
                 },
                 {
@@ -6840,7 +6919,9 @@
                     "questionType": "extended",
                     "text": "Describe two things she should check before installing the video editor.",
                     "marks": 4,
-                    "explanation": "for each check (2 x 2 marks)\n2 marks – Describes a check and why (e.g. download from the official developer site so it is not bundled with malware; check minimum requirements)\n1 mark – States a check"
+                    "explanation": "for each check (2 x 2 marks)\n2 marks – Describes a check and why (e.g. download from the official developer site so it is not bundled with malware; check minimum requirements)\n1 mark – States a check",
+                    "modelAnswer": "1. Download the editor only from the official developer site, so the installer is not bundled with malware. 2. Check the minimum system requirements, so the editor will run properly on her laptop.",
+                    "stimulus": "A student finds a free video editor on a website she has not heard of. Her laptop also shows 12 pending Windows updates."
                   }
                 },
                 {
@@ -6850,7 +6931,9 @@
                     "questionType": "extended",
                     "text": "Explain one risk of ignoring the Windows updates.",
                     "marks": 2,
-                    "explanation": "2 marks – Explains that known security holes stay open, so malware can infect the laptop\n1 mark – States it is less secure"
+                    "explanation": "2 marks – Explains that known security holes stay open, so malware can infect the laptop\n1 mark – States it is less secure",
+                    "modelAnswer": "Windows updates patch security holes. If she ignores them, known weaknesses stay open, so malware can infect her laptop and damage or steal her files.",
+                    "stimulus": "A student finds a free video editor on a website she has not heard of. Her laptop also shows 12 pending Windows updates."
                   }
                 },
                 {
@@ -7164,7 +7247,9 @@
                     "questionType": "extended",
                     "text": "Define proprietary software.",
                     "marks": 2,
-                    "explanation": "2 marks – Defines it as owned by a company, closed source and used under a paid licence with restrictions\n1 mark – States that it must be paid for"
+                    "explanation": "2 marks – Defines it as owned by a company, closed source and used under a paid licence with restrictions\n1 mark – States that it must be paid for",
+                    "modelAnswer": "Proprietary software is owned by a company. It is closed source, so users cannot see or change the code, and it is used under a paid licence with restrictions on how it can be used.",
+                    "stimulus": "A school is choosing an office suite for 800 student laptops: Microsoft 365 (proprietary, school licence) or LibreOffice (open source)."
                   }
                 },
                 {
@@ -7174,7 +7259,9 @@
                     "questionType": "extended",
                     "text": "Compare the two options for the school.",
                     "marks": 4,
-                    "explanation": "4 marks – Compares on two features (e.g. cost, file compatibility, support) with a link to the school\n2 to 3 marks – One feature compared, or two with no link\n1 mark – Describes one option only"
+                    "explanation": "4 marks – Compares on two features (e.g. cost, file compatibility, support) with a link to the school\n2 to 3 marks – One feature compared, or two with no link\n1 mark – Describes one option only",
+                    "modelAnswer": "Cost: Microsoft 365 needs a licence fee for every laptop, while LibreOffice is free, so the school could save money on 800 laptops. Support: Microsoft provides guaranteed support and regular updates, but LibreOffice relies on community help, which may be harder for a school with limited IT staff. Both can open common documents, but formatting may differ.",
+                    "stimulus": "A school is choosing an office suite for 800 student laptops: Microsoft 365 (proprietary, school licence) or LibreOffice (open source)."
                   }
                 },
                 {
@@ -7449,7 +7536,9 @@
                     "questionType": "extended",
                     "text": "Explain why the prices must use one consistent number format.",
                     "marks": 2,
-                    "explanation": "2 marks – Explains that mixed text and numbers cannot be calculated or sorted correctly, so totals will be wrong\n1 mark – States that it looks inconsistent"
+                    "explanation": "2 marks – Explains that mixed text and numbers cannot be calculated or sorted correctly, so totals will be wrong\n1 mark – States that it looks inconsistent",
+                    "modelAnswer": "Mixed prices such as '$2', '2.00' and 'two dollars' are a mix of text and numbers. The spreadsheet cannot calculate or sort text correctly, so totals will be wrong.",
+                    "stimulus": "A school canteen tracks stock in a spreadsheet. Some prices are typed as \"$2\", some as \"2.00\" and some as \"two dollars\". Blank rows separate each food type."
                   }
                 },
                 {
@@ -7459,7 +7548,9 @@
                     "questionType": "extended",
                     "text": "Describe two other layout or design changes that would improve the spreadsheet.",
                     "marks": 4,
-                    "explanation": "for each change (2 x 2 marks)\n2 marks – Describes a change and how it helps (e.g. remove blank rows and add a Category column so the data can be sorted and filtered)\n1 mark – States a change"
+                    "explanation": "for each change (2 x 2 marks)\n2 marks – Describes a change and how it helps (e.g. remove blank rows and add a Category column so the data can be sorted and filtered)\n1 mark – States a change",
+                    "modelAnswer": "1. Remove the blank rows and add a Category column, so the data can be sorted and filtered by food type. 2. Add a clear heading row and freeze it, so each column's meaning stays visible when scrolling.",
+                    "stimulus": "A school canteen tracks stock in a spreadsheet. Some prices are typed as \"$2\", some as \"2.00\" and some as \"two dollars\". Blank rows separate each food type."
                   }
                 },
                 {
@@ -7743,7 +7834,9 @@
                     "questionType": "extended",
                     "text": "Describe how a multi-level sort could be used to organise the bookings.",
                     "marks": 2,
-                    "explanation": "2 marks – Describes sorting by one column then a second (e.g. Lesson date, then Level) with a reason\n1 mark – Describes a single sort"
+                    "explanation": "2 marks – Describes sorting by one column then a second (e.g. Lesson date, then Level) with a reason\n1 mark – Describes a single sort",
+                    "modelAnswer": "A multi-level sort could sort first by Lesson date, then by Level within each date. The owner would see each day's bookings grouped by beginners, intermediates and advanced, which helps her plan instructors and groups.",
+                    "stimulus": "A surf school has a spreadsheet of 500 bookings with columns for Name, Lesson date, Level (Beginner, Intermediate, Advanced) and Paid (Yes/No)."
                   }
                 },
                 {
@@ -7753,7 +7846,9 @@
                     "questionType": "extended",
                     "text": "Describe how the owner could use filters to find beginners who have not paid, and explain one benefit.",
                     "marks": 4,
-                    "explanation": "2 marks – Describes filtering Level = Beginner and Paid = No\n2 marks – Explains a benefit (e.g. only relevant rows are shown so she can follow them up quickly, and no data is deleted)"
+                    "explanation": "2 marks – Describes filtering Level = Beginner and Paid = No\n2 marks – Explains a benefit (e.g. only relevant rows are shown so she can follow them up quickly, and no data is deleted)",
+                    "modelAnswer": "She would filter the Level column to Beginner and the Paid column to No. One benefit is that only the relevant rows are shown, so she can follow up quickly, and no data is deleted because the other rows are only hidden.",
+                    "stimulus": "A surf school has a spreadsheet of 500 bookings with columns for Name, Lesson date, Level (Beginner, Intermediate, Advanced) and Paid (Yes/No)."
                   }
                 },
                 {
@@ -8020,7 +8115,9 @@
                     "questionType": "extended",
                     "text": "Outline how each of the four project management considerations applies to the digital menu board.",
                     "marks": 4,
-                    "explanation": "1 mark for each consideration outlined with a link to the menu board\n1 mark – Scope: one menu board screen showing prices, daily specials and allergy symbols\n1 mark – Time: two weeks to design, check with the manager and install\n1 mark – Resources: the student, Canva, a school laptop and the TV screen\n1 mark – Client brief: the manager's requirements, e.g. must show allergy symbols clearly"
+                    "explanation": "1 mark for each consideration outlined with a link to the menu board\n1 mark – Scope: one menu board screen showing prices, daily specials and allergy symbols\n1 mark – Time: two weeks to design, check with the manager and install\n1 mark – Resources: the student, Canva, a school laptop and the TV screen\n1 mark – Client brief: the manager's requirements, e.g. must show allergy symbols clearly",
+                    "modelAnswer": "Scope: one digital menu board screen showing prices, daily specials and allergy symbols. Time: two weeks to design, check with the manager and install. Resources: the student, Canva, a school laptop and the TV screen. Client brief: the manager's requirements, such as allergy symbols that are clear enough to read from the counter.",
+                    "stimulus": "The school canteen wants a digital menu board on a TV screen above the counter. It must show prices, daily specials and allergy symbols. The canteen manager needs it in two weeks. A Year 12 student will design it using Canva on a school laptop."
                   }
                 },
                 {
@@ -8030,7 +8127,9 @@
                     "questionType": "extended",
                     "text": "The manager adds a 10-second animated special each day, but the deadline stays at two weeks. Explain how the change affects the other considerations.",
                     "marks": 3,
-                    "explanation": "explains the effect of the change on the other considerations\n3 marks – Explains that the scope has grown, so with the same time, more resources are needed (e.g. a second student or animation software), or the manager must accept a simpler animation or later date\n2 marks – Describes that the scope grows and the project needs more time or resources\n1 mark – States that the project will take longer"
+                    "explanation": "explains the effect of the change on the other considerations\n3 marks – Explains that the scope has grown, so with the same time, more resources are needed (e.g. a second student or animation software), or the manager must accept a simpler animation or later date\n2 marks – Describes that the scope grows and the project needs more time or resources\n1 mark – States that the project will take longer",
+                    "modelAnswer": "Adding a 10-second animated special each day increases the scope. With the same two-week deadline, the project needs more resources, such as animation software or a second student, or the manager must accept a simpler animation or a later date. If none of these change, the quality of the other parts of the menu board could suffer.",
+                    "stimulus": "The school canteen wants a digital menu board on a TV screen above the counter. It must show prices, daily specials and allergy symbols. The canteen manager needs it in two weeks. A Year 12 student will design it using Canva on a school laptop."
                   }
                 },
                 {
@@ -8338,7 +8437,9 @@
                     "questionType": "extended",
                     "text": "Describe two characteristics of the target audience that should affect the design of the video.",
                     "marks": 4,
-                    "explanation": "for each characteristic (2 x 2 marks)\n2 marks – Describes a characteristic and links it to a design decision (e.g. adults over 50 may be new to boxing, so show beginners, not fit athletes)\n1 mark – States a characteristic with no link to the design"
+                    "explanation": "for each characteristic (2 x 2 marks)\n2 marks – Describes a characteristic and links it to a design decision (e.g. adults over 50 may be new to boxing, so show beginners, not fit athletes)\n1 mark – States a characteristic with no link to the design",
+                    "modelAnswer": "1. Age: the audience is adults over 50, so text should be large and the voiceover clear and not too fast, so it is easy to read and hear on a gym screen. 2. Experience: many may be new to boxing, so the video should show beginners training safely, not fit athletes, so viewers feel the class is for them.",
+                    "stimulus": "A local gym wants a 20-second video advertisement to show on screens inside the gym. It will promote a new beginners' boxing class for adults over 50."
                   }
                 },
                 {
@@ -8348,7 +8449,9 @@
                     "questionType": "extended",
                     "text": "Write three design criteria for the video.",
                     "marks": 3,
-                    "explanation": "1 mark per criterion\n3 marks – A specific, checkable criterion (e.g. class time is on screen for at least 5 seconds; text is readable from 3 metres)"
+                    "explanation": "1 mark per criterion\n3 marks – A specific, checkable criterion (e.g. class time is on screen for at least 5 seconds; text is readable from 3 metres)",
+                    "modelAnswer": "1. The class day and time are on screen for at least 5 seconds. 2. All text is readable from 3 metres away. 3. The video is no longer than 20 seconds.",
+                    "stimulus": "A local gym wants a 20-second video advertisement to show on screens inside the gym. It will promote a new beginners' boxing class for adults over 50."
                   }
                 },
                 {
@@ -8666,7 +8769,9 @@
                     "questionType": "extended",
                     "text": "Describe how thumbnails could be used in this project.",
                     "marks": 2,
-                    "explanation": "2 marks – Describes drawing several quick, small layout ideas for the home page to compare before choosing one\n1 mark – States that thumbnails are small sketches"
+                    "explanation": "2 marks – Describes drawing several quick, small layout ideas for the home page to compare before choosing one\n1 mark – States that thumbnails are small sketches",
+                    "modelAnswer": "The student could draw several small, quick thumbnail sketches of different layouts for the home page, such as a banner above or beside the repair menu. She can compare them and choose the best one before spending time on detailed design.",
+                    "stimulus": "A student is designing a three-page website for a local bike repair shop."
                   }
                 },
                 {
@@ -8676,7 +8781,9 @@
                     "questionType": "extended",
                     "text": "Describe two annotations the student should include on an annotated sketch of the home page.",
                     "marks": 4,
-                    "explanation": "for each annotation (2 x 2 marks)\n2 marks – Describes a specific annotation with the reason for the choice (e.g. menu across the top so customers find Bookings on every page)\n1 mark – Gives a label with no reason"
+                    "explanation": "for each annotation (2 x 2 marks)\n2 marks – Describes a specific annotation with the reason for the choice (e.g. menu across the top so customers find Bookings on every page)\n1 mark – Gives a label with no reason",
+                    "modelAnswer": "1. The menu runs across the top of every page, so customers can reach Bookings from any page. 2. A large 'Book a repair' button in a contrasting colour sits above the fold, so the main action is easy to find.",
+                    "stimulus": "A student is designing a three-page website for a local bike repair shop."
                   }
                 },
                 {
@@ -8961,7 +9068,9 @@
                     "questionType": "extended",
                     "text": "Describe two methods the student could use to gather evidence for the evaluation.",
                     "marks": 4,
-                    "explanation": "for each method (2 x 2 marks)\n2 marks – Describes a method and what evidence it gives (e.g. survey 10 students to rate whether the video made them want to attend)\n1 mark – Names a method only"
+                    "explanation": "for each method (2 x 2 marks)\n2 marks – Describes a method and what evidence it gives (e.g. survey 10 students to rate whether the video made them want to attend)\n1 mark – Names a method only",
+                    "modelAnswer": "1. Survey: ask 10 students to rate whether the video made them want to attend, which shows whether the video achieved its purpose. 2. Check against the criteria: play the video with a stopwatch to see whether the date and venue are on screen for at least 5 seconds, which gives measurable evidence.",
+                    "stimulus": "A student made a 30-second promotional video for the school's music night. One design criterion was: \"The date and venue appear on screen for at least 5 seconds.\""
                   }
                 },
                 {
@@ -8971,7 +9080,9 @@
                     "questionType": "extended",
                     "text": "Write two more design criteria that could be used to evaluate the video.",
                     "marks": 2,
-                    "explanation": "1 mark per criterion\n2 marks – A specific, checkable criterion (e.g. video is no longer than 30 seconds; school logo appears in the final frame)"
+                    "explanation": "1 mark per criterion\n2 marks – A specific, checkable criterion (e.g. video is no longer than 30 seconds; school logo appears in the final frame)",
+                    "modelAnswer": "1. The video is no longer than 30 seconds. 2. The school logo appears in the final frame.",
+                    "stimulus": "A student made a 30-second promotional video for the school's music night. One design criterion was: \"The date and venue appear on screen for at least 5 seconds.\""
                   }
                 },
                 {
@@ -9283,7 +9394,9 @@
                     "questionType": "extended",
                     "text": "Explain why the photo slows down the website.",
                     "marks": 2,
-                    "explanation": "2 marks – Explains that a large file takes longer to download, so the page loads slowly, especially on mobile data\n1 mark – States that the file is too big"
+                    "explanation": "2 marks – Explains that a large file takes longer to download, so the page loads slowly, especially on mobile data\n1 mark – States that the file is too big",
+                    "modelAnswer": "An 18 MB photo is a large file, so it takes a long time to download, especially on mobile data. The home page therefore loads slowly, and visitors may leave before it appears.",
+                    "stimulus": "A school uses the same 18 MB photo of its sports team on its website home page and in a printed yearbook."
                   }
                 },
                 {
@@ -9293,7 +9406,9 @@
                     "questionType": "extended",
                     "text": "Compare how the photo should be optimised for the website and for the yearbook.",
                     "marks": 4,
-                    "explanation": "4 marks – Compares both on two settings (e.g. resolution and colour mode or file size)\n2 to 3 marks – Compares on one setting, or two with little comparison\n1 mark – Describes one use only"
+                    "explanation": "4 marks – Compares both on two settings (e.g. resolution and colour mode or file size)\n2 to 3 marks – Compares on one setting, or two with little comparison\n1 mark – Describes one use only",
+                    "modelAnswer": "For the website, the photo should be reduced to a small size, such as about 1200 pixels wide, saved in RGB colour as a compressed JPEG so it loads quickly on screen. For the yearbook, it needs a higher resolution, about 300 PPI at the printed size, usually in CMYK, so the print is sharp. The file will be larger, but print quality matters more than download speed.",
+                    "stimulus": "A school uses the same 18 MB photo of its sports team on its website home page and in a printed yearbook."
                   }
                 },
                 {
@@ -9626,7 +9741,9 @@
                     "questionType": "extended",
                     "text": "State the purpose of compression.",
                     "marks": 1,
-                    "explanation": "1 mark – Reduces file size for faster transfer and less storage"
+                    "explanation": "1 mark – Reduces file size for faster transfer and less storage",
+                    "modelAnswer": "Compression reduces file size, so files transfer faster and use less storage.",
+                    "stimulus": "A band is sending 12 songs to a record label for mastering, and 12 songs to fans as a free download."
                   }
                 },
                 {
@@ -9636,7 +9753,9 @@
                     "questionType": "extended",
                     "text": "Justify a type of compression for each of the two uses.",
                     "marks": 4,
-                    "explanation": "for each use (2 x 2 marks)\n2 marks – Label: lossless (e.g. WAV/FLAC) because mastering needs every detail. Fans: lossy (MP3) because small files download quickly and quality loss is barely heard\n1 mark – Correct type with a general reason"
+                    "explanation": "for each use (2 x 2 marks)\n2 marks – Label: lossless (e.g. WAV/FLAC) because mastering needs every detail. Fans: lossy (MP3) because small files download quickly and quality loss is barely heard\n1 mark – Correct type with a general reason",
+                    "modelAnswer": "For the label, use lossless compression, such as WAV or FLAC, because mastering needs every detail of the original recording. For fans, use lossy compression, such as MP3, because the small files download quickly and the loss of quality is hardly noticeable.",
+                    "stimulus": "A band is sending 12 songs to a record label for mastering, and 12 songs to fans as a free download."
                   }
                 },
                 {
@@ -9904,7 +10023,9 @@
                     "questionType": "extended",
                     "text": "Describe how cropping could be used on the photo.",
                     "marks": 2,
-                    "explanation": "2 marks – Describes removing unneeded areas around the building so fewer pixels are stored and the building is the focus\n1 mark – States that it cuts part of the image"
+                    "explanation": "2 marks – Describes removing unneeded areas around the building so fewer pixels are stored and the building is the focus\n1 mark – States that it cuts part of the image",
+                    "modelAnswer": "She could crop out the unneeded areas around the building, such as sky and ground. Fewer pixels are stored and the building becomes the focus of the image.",
+                    "stimulus": "A student places a 5 MB photo of a school building in an interactive PDF, where it only fills a small box 600 pixels wide. The PDF is now 80 MB."
                   }
                 },
                 {
@@ -9914,7 +10035,9 @@
                     "questionType": "extended",
                     "text": "Explain how resampling would reduce the size of the PDF.",
                     "marks": 3,
-                    "explanation": "3 marks – Explains downsampling the photo to about 600 pixels wide removes pixels the box cannot display, greatly reducing each image and the total PDF size\n2 marks – Describes reducing pixels\n1 mark – States it makes the image smaller"
+                    "explanation": "3 marks – Explains downsampling the photo to about 600 pixels wide removes pixels the box cannot display, greatly reducing each image and the total PDF size\n2 marks – Describes reducing pixels\n1 mark – States it makes the image smaller",
+                    "modelAnswer": "The photo is much larger than the 600-pixel box it fills. Resampling (downsampling) the photo to about 600 pixels wide removes pixels the box cannot display, so each image is much smaller and the PDF shrinks from 80 MB.",
+                    "stimulus": "A student places a 5 MB photo of a school building in an interactive PDF, where it only fills a small box 600 pixels wide. The PDF is now 80 MB."
                   }
                 },
                 {
@@ -10177,7 +10300,9 @@
                     "questionType": "extended",
                     "text": "Describe two strategies that would make the group's online data management more efficient.",
                     "marks": 4,
-                    "explanation": "for each strategy (2 x 2 marks)\n2 marks – Describes a strategy and its benefit for the group\n1 mark – States a strategy"
+                    "explanation": "for each strategy (2 x 2 marks)\n2 marks – Describes a strategy and its benefit for the group\n1 mark – States a strategy",
+                    "modelAnswer": "1. Use a consistent naming convention, such as Name_Task_v01, so the group can find each file and see which version is current. 2. Organise the folder into subfolders for each section of the project, so files are easy to find and not mixed up.",
+                    "stimulus": "Four students share a Google Drive folder for a group project. Files are called \"doc1\", \"final\", \"final2\", and one student accidentally deleted another's work."
                   }
                 },
                 {
@@ -10187,7 +10312,9 @@
                     "questionType": "extended",
                     "text": "Explain how permissions could have prevented the deleted work.",
                     "marks": 2,
-                    "explanation": "2 marks – Explains giving each student edit rights only to their own files (others view or comment), so they cannot delete them\n1 mark – States permissions control access"
+                    "explanation": "2 marks – Explains giving each student edit rights only to their own files (others view or comment), so they cannot delete them\n1 mark – States permissions control access",
+                    "modelAnswer": "The group could give each student edit rights only to their own files, with the others set to view or comment only. Then a student could not delete someone else's work by mistake.",
+                    "stimulus": "Four students share a Google Drive folder for a group project. Files are called \"doc1\", \"final\", \"final2\", and one student accidentally deleted another's work."
                   }
                 },
                 {
@@ -10450,7 +10577,9 @@
                     "questionType": "extended",
                     "text": "Define document version control.",
                     "marks": 2,
-                    "explanation": "2 marks – Defines managing changes so the current version is clear and earlier versions can be retrieved\n1 mark – States it is saving versions"
+                    "explanation": "2 marks – Defines managing changes so the current version is clear and earlier versions can be retrieved\n1 mark – States it is saving versions",
+                    "modelAnswer": "Document version control is managing changes to a file so the current version is clear and earlier versions can be retrieved if needed.",
+                    "stimulus": "A student emails her draft essay to herself each night. She now has 14 copies called \"Essay\", \"Essay new\", \"Essay latest\" and cannot tell which has her teacher's feedback."
                   }
                 },
                 {
@@ -10460,7 +10589,9 @@
                     "questionType": "extended",
                     "text": "Describe two version control strategies the student should use.",
                     "marks": 4,
-                    "explanation": "for each strategy (2 x 2 marks)\n2 marks – Describes a strategy and how it solves her problem (e.g. one master in OneDrive with version history; names with version numbers and dates)\n1 mark – States a strategy"
+                    "explanation": "for each strategy (2 x 2 marks)\n2 marks – Describes a strategy and how it solves her problem (e.g. one master in OneDrive with version history; names with version numbers and dates)\n1 mark – States a strategy",
+                    "modelAnswer": "1. Keep one master file in OneDrive and use its version history, so there is only one current copy and she can restore earlier drafts. 2. Name files with version numbers and dates, such as Essay_v03_2026-03-14, so she can see which version contains her teacher's feedback.",
+                    "stimulus": "A student emails her draft essay to herself each night. She now has 14 copies called \"Essay\", \"Essay new\", \"Essay latest\" and cannot tell which has her teacher's feedback."
                   }
                 },
                 {
@@ -10759,7 +10890,9 @@
                     "questionType": "extended",
                     "text": "Explain the concept of cloud computing.",
                     "marks": 2,
-                    "explanation": "2 marks – Explains data and software on remote servers accessed over the internet\n1 mark – States files are stored online"
+                    "explanation": "2 marks – Explains data and software on remote servers accessed over the internet\n1 mark – States files are stored online",
+                    "modelAnswer": "Cloud computing means data and software are stored and run on remote servers, owned by a provider, and users access them over the internet instead of using their own equipment.",
+                    "stimulus": "A small accounting firm is deciding whether to replace its office server with cloud storage and cloud accounting software."
                   }
                 },
                 {
@@ -10769,7 +10902,9 @@
                     "questionType": "extended",
                     "text": "Explain one advantage and one disadvantage of cloud computing for the firm.",
                     "marks": 4,
-                    "explanation": "2 marks – Advantage explained with a link to the firm (e.g. staff can work from home or client offices)\n2 marks – Disadvantage explained with a link to the firm (e.g. client financial data is held by a third party; no access if the internet fails)"
+                    "explanation": "2 marks – Advantage explained with a link to the firm (e.g. staff can work from home or client offices)\n2 marks – Disadvantage explained with a link to the firm (e.g. client financial data is held by a third party; no access if the internet fails)",
+                    "modelAnswer": "Advantage: staff can access client files and accounting software from home or at client offices, so they can work anywhere. Disadvantage: client financial data is held by a third party, which is a privacy risk, and staff cannot work if the internet goes down.",
+                    "stimulus": "A small accounting firm is deciding whether to replace its office server with cloud storage and cloud accounting software."
                   }
                 },
                 {
@@ -11063,7 +11198,9 @@
                     "questionType": "extended",
                     "text": "Describe how two utility tools could help the laptop.",
                     "marks": 4,
-                    "explanation": "for each tool (2 x 2 marks)\n2 marks – Describes a tool and its effect on this laptop (e.g. disk clean-up removes temporary files, freeing space on the full SSD)\n1 mark – Names a tool"
+                    "explanation": "for each tool (2 x 2 marks)\n2 marks – Describes a tool and its effect on this laptop (e.g. disk clean-up removes temporary files, freeing space on the full SSD)\n1 mark – Names a tool",
+                    "modelAnswer": "1. Disk clean-up: removes temporary files, which frees space on her nearly full SSD. 2. Clearing the browser cache and history: deletes stored data built up over two years, which saves space and helps the browser run faster.",
+                    "stimulus": "A student's laptop has an SSD that is 95% full. Her browser has not been cleared for two years."
                   }
                 },
                 {
@@ -11073,7 +11210,9 @@
                     "questionType": "extended",
                     "text": "Explain why defragmentation is not needed on her laptop.",
                     "marks": 2,
-                    "explanation": "2 marks – Explains SSDs have no moving parts and access all locations equally fast, so fragmentation does not slow them\n1 mark – States it is an SSD"
+                    "explanation": "2 marks – Explains SSDs have no moving parts and access all locations equally fast, so fragmentation does not slow them\n1 mark – States it is an SSD",
+                    "modelAnswer": "An SSD has no moving parts and reaches every storage location equally quickly, so fragmented files do not slow it down. Defragmenting would not help and adds unnecessary wear.",
+                    "stimulus": "A student's laptop has an SSD that is 95% full. Her browser has not been cleared for two years."
                   }
                 },
                 {
@@ -11367,7 +11506,9 @@
                     "questionType": "extended",
                     "text": "Identify the type of malware most likely involved and describe what it does.",
                     "marks": 3,
-                    "explanation": "3 marks – Identifies spyware (1) and describes that it secretly collects information such as passwords and sends it to someone else (2)"
+                    "explanation": "3 marks – Identifies spyware (1) and describes that it secretly collects information such as passwords and sends it to someone else (2)",
+                    "modelAnswer": "Spyware. It secretly installs on a computer, collects information such as passwords, and sends it to someone else, which explains how the parent's bank password was used.",
+                    "stimulus": "A family laptop has become slow, shows pop-up ads, and a parent's bank password was used by someone else."
                   }
                 },
                 {
@@ -11377,7 +11518,9 @@
                     "questionType": "extended",
                     "text": "Describe two ways the family could protect the laptop.",
                     "marks": 4,
-                    "explanation": "for each way (2 x 2 marks)\n2 marks – Describes a tool or habit and how it protects (e.g. run an updated anti-malware scan to find and remove the spyware)\n1 mark – States a way"
+                    "explanation": "for each way (2 x 2 marks)\n2 marks – Describes a tool or habit and how it protects (e.g. run an updated anti-malware scan to find and remove the spyware)\n1 mark – States a way",
+                    "modelAnswer": "1. Run an updated anti-malware scan to find and remove the spyware. 2. Change the bank password on a safe device and turn on two-factor authentication, so a stolen password alone cannot be used to log in.",
+                    "stimulus": "A family laptop has become slow, shows pop-up ads, and a parent's bank password was used by someone else."
                   }
                 },
                 {
@@ -11707,7 +11850,9 @@
                     "questionType": "extended",
                     "text": "Explain the purpose of a computer network for the office.",
                     "marks": 2,
-                    "explanation": "2 marks – Explains a network connects the computers so they can share files, printers and one internet connection\n1 mark – States it connects computers"
+                    "explanation": "2 marks – Explains a network connects the computers so they can share files, printers and one internet connection\n1 mark – States it connects computers",
+                    "modelAnswer": "A network connects the four computers so they can share files, printers and one internet connection. Staff no longer need USB drives, and the office needs fewer printers and internet connections.",
+                    "stimulus": "The real estate office. A real estate office has four computers, each with its own printer and internet connection. Staff move files between computers on USB drives."
                   }
                 },
                 {
@@ -11717,7 +11862,9 @@
                     "questionType": "extended",
                     "text": "Describe one advantage and one disadvantage of networking the office.",
                     "marks": 4,
-                    "explanation": "2 marks – Advantage described with a link to the office\n2 marks – Disadvantage described with a link to the office"
+                    "explanation": "2 marks – Advantage described with a link to the office\n2 marks – Disadvantage described with a link to the office",
+                    "modelAnswer": "Advantage: staff can share files straight away instead of using USB drives, which saves time. Disadvantage: if the network fails, all computers lose access to shared files and the printer, and the office is also more exposed to viruses spreading between computers.",
+                    "stimulus": "The real estate office. A real estate office has four computers, each with its own printer and internet connection. Staff move files between computers on USB drives."
                   }
                 },
                 {
@@ -12022,7 +12169,9 @@
                     "questionType": "extended",
                     "text": "Recommend a transmission medium to connect the shed to the house, and justify it.",
                     "marks": 3,
-                    "explanation": "3 marks – Recommends optic fibre (1) and justifies with two reasons (400 m is beyond Ethernet's 100 m limit; high speed; no interference) (2)"
+                    "explanation": "3 marks – Recommends optic fibre (1) and justifies with two reasons (400 m is beyond Ethernet's 100 m limit; high speed; no interference) (2)",
+                    "modelAnswer": "Optic fibre. The shed is 400 m from the house, which is beyond the 100 m limit of Ethernet cable. Optic fibre carries data at high speed over long distances and is not affected by electrical interference from farm machinery.",
+                    "stimulus": "The farm. A farm has a house and a machinery shed 400 m apart. The owner wants internet in the shed and on her phone around the house."
                   }
                 },
                 {
@@ -12032,7 +12181,9 @@
                     "questionType": "extended",
                     "text": "Compare wired and wireless media for devices inside the house.",
                     "marks": 4,
-                    "explanation": "4 marks – Compares both on two features linked to the house\n2 to 3 marks – One feature compared, or two with no link\n1 mark – Describes one medium"
+                    "explanation": "4 marks – Compares both on two features linked to the house\n2 to 3 marks – One feature compared, or two with no link\n1 mark – Describes one medium",
+                    "modelAnswer": "Wired media, such as Ethernet cable, give a fast and reliable connection with little interference, but devices must stay plugged in and cables run through the house. Wireless media, such as Wi-Fi, let phones and laptops move around the house without cables, but the signal can be slower and weaker through walls.",
+                    "stimulus": "The farm. A farm has a house and a machinery shed 400 m apart. The owner wants internet in the shed and on her phone around the house."
                   }
                 },
                 {
@@ -12318,7 +12469,9 @@
                     "questionType": "extended",
                     "text": "Explain the concept of transmission rate.",
                     "marks": 2,
-                    "explanation": "2 marks – Explains the amount of data sent per second, measured in bits per second (e.g. Mbps)\n1 mark – States it is internet speed"
+                    "explanation": "2 marks – Explains the amount of data sent per second, measured in bits per second (e.g. Mbps)\n1 mark – States it is internet speed",
+                    "modelAnswer": "Transmission rate is the amount of data sent per second, measured in bits per second, such as Mbps.",
+                    "stimulus": "The evening streamer. A gamer in Bunbury has a 50/20 Mbps plan. He live-streams his games every evening while his family streams TV and videos."
                   }
                 },
                 {
@@ -12328,7 +12481,9 @@
                     "questionType": "extended",
                     "text": "Explain why his live stream keeps freezing in the evening, and suggest one solution.",
                     "marks": 4,
-                    "explanation": "3 marks – Explains the connection's bandwidth is shared with family streaming, so less is available for his stream, and the 20 Mbps upload rate is already much lower than download\n1 mark – Suggests a relevant solution (e.g. a wired connection, lower stream quality, or a plan with a higher upload rate)"
+                    "explanation": "3 marks – Explains the connection's bandwidth is shared with family streaming, so less is available for his stream, and the 20 Mbps upload rate is already much lower than download\n1 mark – Suggests a relevant solution (e.g. a wired connection, lower stream quality, or a plan with a higher upload rate)",
+                    "modelAnswer": "The connection's bandwidth is shared with the family streaming TV, so less is available for his stream. His upload rate is only 20 Mbps, much lower than download, and live streaming needs upload. A solution is to use a wired connection, lower the stream quality, or move to a plan with a higher upload rate.",
+                    "stimulus": "The evening streamer. A gamer in Bunbury has a 50/20 Mbps plan. He live-streams his games every evening while his family streams TV and videos."
                   }
                 },
                 {
@@ -12579,7 +12734,9 @@
                     "questionType": "extended",
                     "text": "Describe the purpose of the router and the modem in the studio's network.",
                     "marks": 4,
-                    "explanation": "for each device (2 x 2 marks)\n2 marks – Router: directs data between the studio's LAN and the internet. Modem: converts the provider's signal so the network can connect to the internet\n1 mark – States a general purpose"
+                    "explanation": "for each device (2 x 2 marks)\n2 marks – Router: directs data between the studio's LAN and the internet. Modem: converts the provider's signal so the network can connect to the internet\n1 mark – States a general purpose",
+                    "modelAnswer": "The router directs data between the studio's LAN and the internet, and between devices. The modem converts the signal from the internet provider so the studio's network can connect to the internet.",
+                    "stimulus": "The design studio. A small design studio has three wired desktop computers, a network printer, a file server and staff laptops that use Wi-Fi."
                   }
                 },
                 {
@@ -12589,7 +12746,9 @@
                     "questionType": "extended",
                     "text": "Explain why each computer needs a NIC.",
                     "marks": 2,
-                    "explanation": "2 marks – Explains the NIC is the hardware that physically connects the computer to the network (wired or wireless); without it the computer cannot send or receive network data\n1 mark – States it connects the computer"
+                    "explanation": "2 marks – Explains the NIC is the hardware that physically connects the computer to the network (wired or wireless); without it the computer cannot send or receive network data\n1 mark – States it connects the computer",
+                    "modelAnswer": "The NIC (network interface card) is the hardware that physically connects a computer to the network, wired or wireless. Without it, the computer cannot send or receive data on the network.",
+                    "stimulus": "The design studio. A small design studio has three wired desktop computers, a network printer, a file server and staff laptops that use Wi-Fi."
                   }
                 },
                 {
@@ -12911,7 +13070,9 @@
                     "questionType": "extended",
                     "text": "Describe a wired star topology.",
                     "marks": 2,
-                    "explanation": "2 marks – Describes every device connected by its own cable to a central switch\n1 mark – States devices connect to a centre"
+                    "explanation": "2 marks – Describes every device connected by its own cable to a central switch\n1 mark – States devices connect to a centre",
+                    "modelAnswer": "In a wired star topology every device is connected by its own cable to a central switch. Data passes through the switch, so if one cable fails, the other devices keep working.",
+                    "stimulus": "The physiotherapy clinic. A physiotherapy clinic with eight staff stores patient records that must be secure and backed up daily."
                   }
                 },
                 {
@@ -12921,7 +13082,9 @@
                     "questionType": "extended",
                     "text": "Justify whether the clinic should use a client-server or peer-to-peer network.",
                     "marks": 4,
-                    "explanation": "4 marks – Identifies client-server (1) and justifies with three points linked to the clinic (central security, daily central backup, controlled access to records) (3)\n2 to 3 marks – Identifies with one or two linked reasons\n1 mark – Identifies only"
+                    "explanation": "4 marks – Identifies client-server (1) and justifies with three points linked to the clinic (central security, daily central backup, controlled access to records) (3)\n2 to 3 marks – Identifies with one or two linked reasons\n1 mark – Identifies only",
+                    "modelAnswer": "The clinic should use client-server. 1. Patient records are stored centrally on the server, where security can be controlled. 2. The server can be backed up daily in one place. 3. Access to records can be controlled by user accounts, so only authorised staff see patient data. Peer-to-peer would leave records spread across staff computers.",
+                    "stimulus": "The physiotherapy clinic. A physiotherapy clinic with eight staff stores patient records that must be secure and backed up daily."
                   }
                 },
                 {
@@ -13170,7 +13333,9 @@
                     "questionType": "extended",
                     "text": "Describe where you would place the router and one other network device, with a reason for each.",
                     "marks": 4,
-                    "explanation": "for each device (2 x 2 marks)\n2 marks – Placement and reason linked to the home (e.g. router at the NBN point in the garage; wireless access point upstairs so bedrooms get a strong signal through the floor)\n1 mark – Placement with no reason"
+                    "explanation": "for each device (2 x 2 marks)\n2 marks – Placement and reason linked to the home (e.g. router at the NBN point in the garage; wireless access point upstairs so bedrooms get a strong signal through the floor)\n1 mark – Placement with no reason",
+                    "modelAnswer": "Router: at the NBN point in the garage, because the internet connection arrives there and it needs to connect to it directly. Wireless access point: upstairs, in a central position, so the home office and bedrooms get a strong signal through the floor.",
+                    "stimulus": "The two-storey home. A two-storey home: NBN point in the downstairs garage; home office upstairs with a desktop and printer; teenagers' bedrooms upstairs with laptops; lounge downstairs with a smart TV."
                   }
                 },
                 {
@@ -13180,7 +13345,9 @@
                     "questionType": "extended",
                     "text": "Justify a wired connection for the home office desktop.",
                     "marks": 3,
-                    "explanation": "3 marks – Justifies with two or more reasons linked to the office (reliable connection for work video calls, faster file uploads, no loss of signal upstairs)\n2 marks – One linked reason\n1 mark – States wired is faster"
+                    "explanation": "3 marks – Justifies with two or more reasons linked to the office (reliable connection for work video calls, faster file uploads, no loss of signal upstairs)\n2 marks – One linked reason\n1 mark – States wired is faster",
+                    "modelAnswer": "A wired connection is reliable for work video calls, so calls do not drop out. It is faster for uploading large files than Wi-Fi, and it does not lose signal through the floor to the upstairs office.",
+                    "stimulus": "The two-storey home. A two-storey home: NBN point in the downstairs garage; home office upstairs with a desktop and printer; teenagers' bedrooms upstairs with laptops; lounge downstairs with a smart TV."
                   }
                 },
                 {
@@ -13494,7 +13661,9 @@
                     "questionType": "extended",
                     "text": "Explain whether the ticket seller should collect the school name.",
                     "marks": 2,
-                    "explanation": "2 marks – Explains it should not, because it is not needed to sell a ticket; only necessary information should be collected\n1 mark – States no, with no reason"
+                    "explanation": "2 marks – Explains it should not, because it is not needed to sell a ticket; only necessary information should be collected\n1 mark – States no, with no reason",
+                    "modelAnswer": "No. The school name is not needed to sell a concert ticket. Under the Privacy Act, an organisation should only collect personal information that is necessary for its function.",
+                    "stimulus": "Online ticket seller. A large online ticket seller asks for name, email, phone, date of birth and the name of the buyer's school when selling concert tickets."
                   }
                 },
                 {
@@ -13504,7 +13673,9 @@
                     "questionType": "extended",
                     "text": "Describe the right a customer has to access their personal information.",
                     "marks": 2,
-                    "explanation": "2 marks – Describes the right to ask to see the information held and to have incorrect details corrected\n1 mark – States they can see their information"
+                    "explanation": "2 marks – Describes the right to ask to see the information held and to have incorrect details corrected\n1 mark – States they can see their information",
+                    "modelAnswer": "A customer has the right to ask to see the personal information an organisation holds about them, and to ask for incorrect or out-of-date details to be corrected.",
+                    "stimulus": "Online ticket seller. A large online ticket seller asks for name, email, phone, date of birth and the name of the buyer's school when selling concert tickets."
                   }
                 },
                 {
@@ -13799,7 +13970,9 @@
                     "questionType": "extended",
                     "text": "Describe how the stolen data could be used for identity theft.",
                     "marks": 2,
-                    "explanation": "2 marks – Describes using the details to pretend to be a customer, e.g. to open a credit card or loan in their name\n1 mark – States hackers can use the data"
+                    "explanation": "2 marks – Describes using the details to pretend to be a customer, e.g. to open a credit card or loan in their name\n1 mark – States hackers can use the data",
+                    "modelAnswer": "Criminals could use the names, addresses, dates of birth and licence numbers to pretend to be a customer, for example to open a credit card or take out a loan in that person's name.",
+                    "stimulus": "Retail chain breach. A retail chain's customer database, including names, addresses, dates of birth and driver's licence numbers, was stolen by hackers."
                   }
                 },
                 {
@@ -13809,7 +13982,9 @@
                     "questionType": "extended",
                     "text": "Explain two responsibilities the retailer has under the Privacy Act 1988 for this data.",
                     "marks": 4,
-                    "explanation": "for each responsibility (2 x 2 marks)\n2 marks – Explains a responsibility (e.g. keep data secure; notify customers and the regulator of a serious breach; destroy data no longer needed)\n1 mark – States a responsibility"
+                    "explanation": "for each responsibility (2 x 2 marks)\n2 marks – Explains a responsibility (e.g. keep data secure; notify customers and the regulator of a serious breach; destroy data no longer needed)\n1 mark – States a responsibility",
+                    "modelAnswer": "1. Keep the data secure, using protections such as strong passwords, encryption and access controls, so hackers cannot steal it. 2. Notify affected customers and the regulator when a serious data breach happens, so customers can protect themselves. (Destroying data no longer needed is another responsibility.)",
+                    "stimulus": "Retail chain breach. A retail chain's customer database, including names, addresses, dates of birth and driver's licence numbers, was stolen by hackers."
                   }
                 },
                 {
@@ -14105,7 +14280,9 @@
                     "questionType": "extended",
                     "text": "Explain the concept of the digital divide.",
                     "marks": 2,
-                    "explanation": "2 marks – Explains the gap between those with access to and skills in digital technologies and those without\n1 mark – States some people do not have technology"
+                    "explanation": "2 marks – Explains the gap between those with access to and skills in digital technologies and those without\n1 mark – States some people do not have technology",
+                    "modelAnswer": "The digital divide is the gap between people who have access to, and the skills to use, digital technologies and those who do not.",
+                    "stimulus": "The closed bank branch. A bank closes its only branch in a small country town and tells customers to use its app."
                   }
                 },
                 {
@@ -14115,7 +14292,9 @@
                     "questionType": "extended",
                     "text": "Explain how this change could affect two different groups in the town.",
                     "marks": 4,
-                    "explanation": "for each group (2 x 2 marks)\n2 marks – Explains an effect on a named group (e.g. older residents without app skills must travel to another town to bank)\n1 mark – States an effect"
+                    "explanation": "for each group (2 x 2 marks)\n2 marks – Explains an effect on a named group (e.g. older residents without app skills must travel to another town to bank)\n1 mark – States an effect",
+                    "modelAnswer": "Older residents who lack app skills or a smartphone can no longer bank locally, so they must travel to another town. People with poor internet in the country area may not be able to use the app reliably, so they cannot access their money or pay bills.",
+                    "stimulus": "The closed bank branch. A bank closes its only branch in a small country town and tells customers to use its app."
                   }
                 },
                 {
@@ -14380,7 +14559,9 @@
                     "questionType": "extended",
                     "text": "Explain the concept of electronic commerce.",
                     "marks": 2,
-                    "explanation": "2 marks – Explains buying and selling goods or services over the internet\n1 mark – States selling online"
+                    "explanation": "2 marks – Explains buying and selling goods or services over the internet\n1 mark – States selling online",
+                    "modelAnswer": "Electronic commerce is buying and selling goods or services over the internet.",
+                    "stimulus": "The online bakery. A family-owned bakery starts taking online orders for birthday cakes through its website."
                   }
                 },
                 {
@@ -14390,7 +14571,9 @@
                     "questionType": "extended",
                     "text": "Describe one positive and one negative implication of 24/7 online orders for the bakery.",
                     "marks": 4,
-                    "explanation": "2 marks – Positive implication described with a link to the bakery\n2 marks – Negative implication described with a link to the bakery"
+                    "explanation": "2 marks – Positive implication described with a link to the bakery\n2 marks – Negative implication described with a link to the bakery",
+                    "modelAnswer": "Positive: customers can order birthday cakes at any time, including at night, so the bakery can take more orders and sell more. Negative: orders can arrive outside opening hours, so a small family business may have to check and respond to orders at all hours, which adds to workload.",
+                    "stimulus": "The online bakery. A family-owned bakery starts taking online orders for birthday cakes through its website."
                   }
                 },
                 {
@@ -14680,7 +14863,9 @@
                     "questionType": "extended",
                     "text": "Explain why staff and patients need to develop their technology skills.",
                     "marks": 3,
-                    "explanation": "3 marks – Explains that without the skills to use the app and video calls, staff cannot do their job and patients cannot book or see results, so training is needed\n2 marks – Describes a need with some explanation\n1 mark – States they need skills"
+                    "explanation": "3 marks – Explains that without the skills to use the app and video calls, staff cannot do their job and patients cannot book or see results, so training is needed\n2 marks – Describes a need with some explanation\n1 mark – States they need skills",
+                    "modelAnswer": "If staff cannot use the app and video calls, they cannot do their jobs, and if patients cannot use them, they cannot book appointments or see results. Training and support are therefore needed so everyone can use the system.",
+                    "stimulus": "The medical centre. A medical centre moves all appointments, reminders and test results to an app. Staff now talk to patients mainly by video call."
                   }
                 },
                 {
@@ -14690,7 +14875,9 @@
                     "questionType": "extended",
                     "text": "Describe one responsibility patients have for maintaining their privacy when using the app.",
                     "marks": 2,
-                    "explanation": "2 marks – Describes a responsibility (e.g. use a strong password and do not share login details; take video calls in a private space)\n1 mark – States a responsibility"
+                    "explanation": "2 marks – Describes a responsibility (e.g. use a strong password and do not share login details; take video calls in a private space)\n1 mark – States a responsibility",
+                    "modelAnswer": "Patients should use a strong password and not share their login details, so no one else can see their health information.",
+                    "stimulus": "The medical centre. A medical centre moves all appointments, reminders and test results to an app. Staff now talk to patients mainly by video call."
                   }
                 },
                 {
@@ -14986,7 +15173,9 @@
                     "questionType": "extended",
                     "text": "Describe two types of online collaboration the group could use.",
                     "marks": 4,
-                    "explanation": "for each type (2 x 2 marks)\n2 marks – Describes a type and how it helps this group\n1 mark – Names a type only"
+                    "explanation": "for each type (2 x 2 marks)\n2 marks – Describes a type and how it helps this group\n1 mark – Names a type only",
+                    "modelAnswer": "1. Shared cloud storage, such as OneDrive: all three can store and access the video files, script and music in one place, even though they live in different towns. 2. Video conferencing, such as Teams: the group can talk, share screens and plan the video together without meeting in person.",
+                    "stimulus": "Three students are making a group video. One edits, one writes the script, and one finds music. They live in different towns."
                   }
                 },
                 {
@@ -14996,7 +15185,9 @@
                     "questionType": "extended",
                     "text": "Explain one disadvantage of online collaboration for the group.",
                     "marks": 2,
-                    "explanation": "2 marks – Explains a disadvantage linked to the group (e.g. slow internet in one town makes uploading large video files difficult)\n1 mark – States a disadvantage"
+                    "explanation": "2 marks – Explains a disadvantage linked to the group (e.g. slow internet in one town makes uploading large video files difficult)\n1 mark – States a disadvantage",
+                    "modelAnswer": "Slow internet in one town may make uploading and downloading large video files difficult, so the group may be delayed, and time zones or availability may make it harder to meet.",
+                    "stimulus": "Three students are making a group video. One edits, one writes the script, and one finds music. They live in different towns."
                   }
                 },
                 {
@@ -15341,7 +15532,9 @@
                     "questionType": "extended",
                     "text": "Describe two types of hyperlink the club website could include.",
                     "marks": 4,
-                    "explanation": "for each type (2 x 2 marks)\n2 marks – Describes a hyperlink type and its use on the club site (e.g. internal link from Home to Fixtures; email link to the secretary; external link to the league site)\n1 mark – Names a type only"
+                    "explanation": "for each type (2 x 2 marks)\n2 marks – Describes a hyperlink type and its use on the club site (e.g. internal link from Home to Fixtures; email link to the secretary; external link to the league site)\n1 mark – Names a type only",
+                    "modelAnswer": "1. Internal link: connects pages within the club site, such as from Home to Fixtures, so visitors can move around. 2. Email link: opens a new message to the club secretary, so visitors can contact the club quickly. (An external link to the league website would also earn marks.)",
+                    "stimulus": "A student builds a five-page website for a netball club. Each page has its colours and fonts set inside the HTML, and the club now wants to change its brand colour."
                   }
                 },
                 {
@@ -15351,7 +15544,9 @@
                     "questionType": "extended",
                     "text": "Explain how a .css file would have made the colour change easier.",
                     "marks": 2,
-                    "explanation": "2 marks – Explains one CSS file controls the colour for all pages, so it changes in one place rather than on five pages\n1 mark – States CSS controls colour"
+                    "explanation": "2 marks – Explains one CSS file controls the colour for all pages, so it changes in one place rather than on five pages\n1 mark – States CSS controls colour",
+                    "modelAnswer": "A .css file controls colours and fonts for every page that links to it. The student would change the brand colour in one place, instead of editing each of the five pages.",
+                    "stimulus": "A student builds a five-page website for a netball club. Each page has its colours and fonts set inside the HTML, and the club now wants to change its brand colour."
                   }
                 },
                 {
@@ -15632,7 +15827,9 @@
                     "questionType": "extended",
                     "text": "Identify the structure used and describe why it suits the zoo guide.",
                     "marks": 3,
-                    "explanation": "3 marks – Identifies hierarchical (1) and describes why it suits (content in sections off the cover) (2)"
+                    "explanation": "3 marks – Identifies hierarchical (1) and describes why it suits (content in sections off the cover) (2)",
+                    "modelAnswer": "Hierarchical. The pages are arranged in levels, with the Cover at the top and sections such as Animals and Map below. It suits the zoo guide because visitors choose a section from the cover and return to it easily.",
+                    "stimulus": "A five-page interactive PDF for a local zoo has: Cover, Animals, Opening hours, Map, and Contact. Every page links back to the Cover. Animals links to Map."
                   }
                 },
                 {
@@ -15642,7 +15839,9 @@
                     "questionType": "extended",
                     "text": "Describe two features your navigation map would need to show.",
                     "marks": 2,
-                    "explanation": "1 mark each\n2 marks – All five pages; links between pages; direction of links; levels from the cover"
+                    "explanation": "1 mark each\n2 marks – All five pages; links between pages; direction of links; levels from the cover",
+                    "modelAnswer": "1. All five pages shown as boxes and labelled. 2. Arrows between pages showing the direction of each link.",
+                    "stimulus": "A five-page interactive PDF for a local zoo has: Cover, Animals, Opening hours, Map, and Contact. Every page links back to the Cover. Animals links to Map."
                   }
                 },
                 {
@@ -15921,7 +16120,9 @@
                     "questionType": "extended",
                     "text": "Explain the concept of responsive design.",
                     "marks": 2,
-                    "explanation": "2 marks – Explains the layout adjusts automatically to the screen size or device\n1 mark – States it works on different devices"
+                    "explanation": "2 marks – Explains the layout adjusts automatically to the screen size or device\n1 mark – States it works on different devices",
+                    "modelAnswer": "Responsive design means a website's layout adjusts automatically to the size of the screen or device, so it is easy to use on a phone, tablet or computer.",
+                    "stimulus": "A cafe website shows a wide menu table and small buttons. On a phone, customers have to zoom in and scroll sideways."
                   }
                 },
                 {
@@ -15931,7 +16132,9 @@
                     "questionType": "extended",
                     "text": "Describe two responsive design changes that would fix the cafe website.",
                     "marks": 4,
-                    "explanation": "for each change (2 x 2 marks)\n2 marks – Describes a technique and how it fixes the problem (e.g. menu table becomes a single column at phone width so no sideways scrolling)\n1 mark – States a change"
+                    "explanation": "for each change (2 x 2 marks)\n2 marks – Describes a technique and how it fixes the problem (e.g. menu table becomes a single column at phone width so no sideways scrolling)\n1 mark – States a change",
+                    "modelAnswer": "1. Change the wide menu table into a single column at phone width, so customers do not need to scroll sideways. 2. Make the buttons larger and spaced apart at phone width, so they are easy to tap without zooming in.",
+                    "stimulus": "A cafe website shows a wide menu table and small buttons. On a phone, customers have to zoom in and scroll sideways."
                   }
                 },
                 {
@@ -16243,7 +16446,9 @@
                     "questionType": "extended",
                     "text": "Describe how a tween could create the logo movement.",
                     "marks": 2,
-                    "explanation": "2 marks – Describes setting a start keyframe (off-screen left, transparent) and end keyframe (in place, visible) so the software creates the frames between\n1 mark – States the software moves the logo"
+                    "explanation": "2 marks – Describes setting a start keyframe (off-screen left, transparent) and end keyframe (in place, visible) so the software creates the frames between\n1 mark – States the software moves the logo",
+                    "modelAnswer": "Set a start keyframe with the logo off-screen to the left and fully transparent, and an end keyframe with the logo in its final position and fully visible. The software creates the frames in between (a tween), so the logo slides in and fades in smoothly.",
+                    "stimulus": "A student is making an animated title for a school video: the school logo slides in from the left and fades in, then a \"Watch now\" button appears."
                   }
                 },
                 {
@@ -16253,7 +16458,9 @@
                     "questionType": "extended",
                     "text": "Describe the purpose of a button in an animation and its states.",
                     "marks": 3,
-                    "explanation": "3 marks – Describes that a button lets the user interact and triggers an action (1), and names the states up, over, down (1 each, up to 2)"
+                    "explanation": "3 marks – Describes that a button lets the user interact and triggers an action (1), and names the states up, over, down (1 each, up to 2)",
+                    "modelAnswer": "A button lets the user interact with the animation and triggers an action when it is clicked. Its states are up (normal), over (when the mouse is on it) and down (when it is clicked).",
+                    "stimulus": "A student is making an animated title for a school video: the school logo slides in from the left and fades in, then a \"Watch now\" button appears."
                   }
                 },
                 {
@@ -16554,7 +16761,9 @@
                     "questionType": "extended",
                     "text": "Identify four parts that should appear in each row of a plan of action.",
                     "marks": 2,
-                    "explanation": "1 mark for every two parts\n2 marks – Task, time allocated, resources, responsible person, due date, completed"
+                    "explanation": "1 mark for every two parts\n2 marks – Task, time allocated, resources, responsible person, due date, completed",
+                    "modelAnswer": "Each row should include the task, the time allocated, the resources needed, the person responsible and the due date. (Whether the task is complete is also acceptable.)",
+                    "stimulus": "A student has three weeks to design and print a program for the school musical. The drama teacher must approve the design before printing."
                   }
                 },
                 {
@@ -16564,7 +16773,9 @@
                     "questionType": "extended",
                     "text": "Write three tasks for the plan, in order, each with a time allocation and resources.",
                     "marks": 3,
-                    "explanation": "1 mark per task\n3 marks – A specific task in a logical order with a realistic time and resources (e.g. \"Get approval from drama teacher: 15 min, printed draft\")"
+                    "explanation": "1 mark per task\n3 marks – A specific task in a logical order with a realistic time and resources (e.g. \"Get approval from drama teacher: 15 min, printed draft\")",
+                    "modelAnswer": "1. Draft the program layout: 3 hours, laptop and Canva. 2. Get approval from the drama teacher: 15 minutes, printed draft. 3. Make changes and print the final copies: 2 hours, laptop and school printer.",
+                    "stimulus": "A student has three weeks to design and print a program for the school musical. The drama teacher must approve the design before printing."
                   }
                 },
                 {
@@ -16863,7 +17074,9 @@
                     "questionType": "extended",
                     "text": "Describe two time management strategies they could use.",
                     "marks": 4,
-                    "explanation": "for each strategy (2 x 2 marks)\n2 marks – Describes a strategy linked to the documentary\n1 mark – Names a strategy"
+                    "explanation": "for each strategy (2 x 2 marks)\n2 marks – Describes a strategy linked to the documentary\n1 mark – Names a strategy",
+                    "modelAnswer": "1. Break the documentary into tasks with deadlines, such as filming interviews by week 1, so they can see what must be finished each week. 2. Use a Gantt chart or timeline, so they can see that editing must start by week 3 and keep on track.",
+                    "stimulus": "Two students are making a five-minute documentary for a local museum in four weeks. They keep running out of class time and have not started editing."
                   }
                 },
                 {
@@ -16873,7 +17086,9 @@
                     "questionType": "extended",
                     "text": "Explain why buffer time should be included in their plan.",
                     "marks": 2,
-                    "explanation": "2 marks – Explains that unexpected problems (e.g. a missed interview, museum feedback) can be fixed without missing the deadline\n1 mark – States it gives extra time"
+                    "explanation": "2 marks – Explains that unexpected problems (e.g. a missed interview, museum feedback) can be fixed without missing the deadline\n1 mark – States it gives extra time",
+                    "modelAnswer": "Buffer time is extra time in the plan. Unexpected problems, such as a missed interview or museum feedback needing changes, can be fixed without missing the four-week deadline.",
+                    "stimulus": "Two students are making a five-minute documentary for a local museum in four weeks. They keep running out of class time and have not started editing."
                   }
                 },
                 {
@@ -17207,7 +17422,9 @@
                     "questionType": "extended",
                     "text": "Identify one hardware, one software and one people resource for the project.",
                     "marks": 3,
-                    "explanation": "1 mark each\n3 marks – Hardware (camera or phone, laptop); software (InDesign); people (park ranger, testers)"
+                    "explanation": "1 mark each\n3 marks – Hardware (camera or phone, laptop); software (InDesign); people (park ranger, testers)",
+                    "modelAnswer": "Hardware: a camera or phone and a laptop. Software: InDesign. People: the park ranger, who gives feedback, and test users.",
+                    "stimulus": "A student is creating an interactive PDF guide to local walking trails. She needs photos of each trail, InDesign, and feedback from a park ranger."
                   }
                 },
                 {
@@ -17217,7 +17434,9 @@
                     "questionType": "extended",
                     "text": "Describe how two resources could be managed.",
                     "marks": 4,
-                    "explanation": "for each resource (2 x 2 marks)\n2 marks – Describes a specific management strategy for the resource\n1 mark – States a strategy"
+                    "explanation": "for each resource (2 x 2 marks)\n2 marks – Describes a specific management strategy for the resource\n1 mark – States a strategy",
+                    "modelAnswer": "Photos: back them up to OneDrive after each trail visit and name them by trail, so none are lost or confused. Park ranger: book a feedback time in the plan in advance and send the draft early, so the ranger has time to respond before the deadline.",
+                    "stimulus": "A student is creating an interactive PDF guide to local walking trails. She needs photos of each trail, InDesign, and feedback from a park ranger."
                   }
                 },
                 {
@@ -17514,7 +17733,9 @@
                     "questionType": "extended",
                     "text": "Describe two tools the student could use to gather evaluation evidence.",
                     "marks": 4,
-                    "explanation": "for each tool (2 x 2 marks)\n2 marks – Describes a tool and the evidence it gives\n1 mark – Names a tool"
+                    "explanation": "for each tool (2 x 2 marks)\n2 marks – Describes a tool and the evidence it gives\n1 mark – Names a tool",
+                    "modelAnswer": "1. Survey or questionnaire: ask restaurant staff and customers whether the menu was clear and attractive, which gives opinions from the people who use it. 2. Checklist of criteria: tick off the design criteria, such as 'all prices are readable', which gives clear evidence of what was and was not met.",
+                    "stimulus": "A student built an interactive PDF menu for a restaurant. The plan of action allowed one week for photos, but it took two weeks."
                   }
                 },
                 {
@@ -17524,7 +17745,9 @@
                     "questionType": "extended",
                     "text": "Recommend one change to the plan of action for a future project and justify it.",
                     "marks": 3,
-                    "explanation": "3 marks – Recommends a specific change (e.g. book the photo session in week 1 with a backup date) and justifies it using what happened\n2 marks – Recommends a change with a general reason\n1 mark – States a change"
+                    "explanation": "3 marks – Recommends a specific change (e.g. book the photo session in week 1 with a backup date) and justifies it using what happened\n2 marks – Recommends a change with a general reason\n1 mark – States a change",
+                    "modelAnswer": "Book the photo session in week 1 with a backup date. The photos took twice as long as planned, so booking earlier with a backup would have kept the project on schedule.",
+                    "stimulus": "A student built an interactive PDF menu for a restaurant. The plan of action allowed one week for photos, but it took two weeks."
                   }
                 },
                 {

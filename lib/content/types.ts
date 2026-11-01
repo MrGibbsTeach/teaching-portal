@@ -8,6 +8,10 @@ export interface QuizQuestion {
   pairs?: { term: string; definition: string }[];
   marks?: number;
   explanation?: string;
+  /** Full-mark sample answer for short_answer/extended questions, shown with the marking guide. */
+  modelAnswer?: string;
+  /** Scenario text shown with a written question, so it stands alone on the Activities tab. */
+  stimulus?: string;
 }
 
 /** Interactive diagram kinds rendered by DiagramRunner. */

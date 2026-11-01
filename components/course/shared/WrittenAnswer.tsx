@@ -37,6 +37,12 @@ export function WrittenAnswer({ question }: { question: QuizQuestion }) {
     <div className="mt-3 rounded-2xl border bg-card p-4 shadow-sm">
       <p className="font-medium">{question.text}</p>
       {question.marks && <p className="mt-0.5 text-xs text-muted-foreground">{question.marks} marks</p>}
+      {question.stimulus && (
+        <div className="mt-3 rounded-xl border-l-4 border-amber-400 bg-amber-50 p-3 text-sm dark:bg-amber-950/30">
+          <p className="text-xs font-bold uppercase tracking-widest text-amber-800 dark:text-amber-300">Scenario</p>
+          <p className="mt-1 text-foreground/90">{question.stimulus}</p>
+        </div>
+      )}
 
       {!checked ? (
         <>
@@ -78,8 +84,18 @@ export function WrittenAnswer({ question }: { question: QuizQuestion }) {
               <p className="mt-1 whitespace-pre-line text-sm">{text}</p>
             </div>
           )}
+          {question.modelAnswer && (
+            <div className="rounded-xl border-l-4 border-emerald-500 bg-emerald-50 p-3 dark:bg-emerald-950/30">
+              <p className="text-xs font-bold uppercase tracking-widest text-emerald-800 dark:text-emerald-300">
+                Model answer (full marks)
+              </p>
+              <p className="mt-1 whitespace-pre-line text-sm text-foreground/90">{question.modelAnswer}</p>
+            </div>
+          )}
           <div className="rounded-xl border-l-4 border-primary bg-primary/5 p-3">
-            <p className="text-xs font-bold uppercase tracking-widest text-primary">Marking guide</p>
+            <p className="text-xs font-bold uppercase tracking-widest text-primary">
+              {question.modelAnswer ? "Marking guide" : "Model answer and marking guide"}
+            </p>
             <p className="mt-1 whitespace-pre-line text-sm text-foreground/90">{question.explanation}</p>
           </div>
           <div>
