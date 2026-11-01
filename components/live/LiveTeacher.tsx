@@ -19,6 +19,7 @@ interface TeacherPayload {
   slideIndex?: number;
   slideCount?: number;
   revealed?: boolean;
+  heading?: string | null;
   block?: Block;
   slides?: { index: number; label: string }[];
   roster?: { username: string; displayName: string }[];
@@ -147,6 +148,7 @@ export function LiveTeacher({ classId, lessons }: { classId: string; lessons: Le
 
       <div className="border border-border p-4">
         <p className="mb-2 text-xs font-bold uppercase tracking-wide text-muted-foreground">What students see</p>
+        {data.heading && <h2 className="mb-3 text-lg font-semibold">{data.heading}</h2>}
         <BlockRenderer block={block} />
       </div>
 

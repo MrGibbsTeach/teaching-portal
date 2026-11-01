@@ -3,7 +3,7 @@ import { getSession } from "@/lib/session";
 import { getClass, getClassByCode, getLiveResponses, getLiveState } from "@/lib/db";
 import { isReservedCode, normalizeClassCode } from "@/lib/logic/class-code";
 import { findLesson, getCourseContent } from "@/lib/content";
-import { liveSlides, redactForStudent, slideLabel, summarizeSlide, clampSlide } from "@/lib/logic/live";
+import { liveSlides, liveSlideHeadings, redactForStudent, slideLabel, summarizeSlide, clampSlide } from "@/lib/logic/live";
 
 export const dynamic = "force-dynamic";
 
@@ -49,6 +49,7 @@ export async function GET(req: Request) {
   if (statusOnly) return NextResponse.json({ active: true, lessonTitle: found.lesson.title });
 
   const slides = liveSlides(found.lesson);
+  const headings = liveSlideHeadings(found.lesson);
   const slideIndex = clampSlide(state.slideIndex, slides.length);
   const block = slides[slideIndex];
   const responses = await getLiveResponses(classId, state.startedAt, slideIndex);
@@ -60,6 +61,7 @@ export async function GET(req: Request) {
     slideIndex,
     slideCount: slides.length,
     revealed: state.revealed,
+    heading: headings[slideIndex] ?? null,
   };
 
   if (!isTeacher) {
@@ -74,7 +76,7 @@ export async function GET(req: Request) {
   return NextResponse.json({
     ...base,
     block,
-    slides: slides.map((b, i) => ({ index: i, label: slideLabel(b) })),
+    slides: slides.map((b, i) => ({ index: i, label: headings[i] ? `${headings[i]}: ${slideLabel(b)}` : slideLabel(b) })),
     roster,
     summary: summarizeSlide(block, responses, roster.map((r) => r.username)),
   });

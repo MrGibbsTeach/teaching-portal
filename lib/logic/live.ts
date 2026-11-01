@@ -12,9 +12,32 @@ export interface LiveState {
 /** What a student submitted for a slide. */
 export type LiveAnswer = { choice: number } | { score: number };
 
-/** Slides are the lesson's blocks minus dividers; teacher and students derive them identically. */
+/**
+ * Slides are the lesson's blocks minus dividers and bare headings; teacher and students derive
+ * them identically. A heading on its own would be a slide with just a title on it, so headings
+ * are folded into the slide that follows (see liveSlideHeadings).
+ */
 export function liveSlides(lesson: Lesson): Block[] {
-  return lesson.blocks.filter((b) => b.type !== "divider");
+  return lesson.blocks.filter((b) => b.type !== "divider" && b.type !== "heading");
+}
+
+/**
+ * The heading(s) that sit directly above each slide in the lesson, parallel to liveSlides().
+ * Shown as a title on that slide instead of getting a slide of its own.
+ */
+export function liveSlideHeadings(lesson: Lesson): (string | undefined)[] {
+  const out: (string | undefined)[] = [];
+  let pending: string[] = [];
+  for (const b of lesson.blocks) {
+    if (b.type === "divider") continue;
+    if (b.type === "heading") {
+      pending.push(b.text);
+      continue;
+    }
+    out.push(pending.length ? pending.join(" / ") : undefined);
+    pending = [];
+  }
+  return out;
 }
 
 export function clampSlide(index: number, count: number): number {

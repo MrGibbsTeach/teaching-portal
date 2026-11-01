@@ -16,6 +16,7 @@ interface StudentPayload {
   slideIndex?: number;
   slideCount?: number;
   revealed?: boolean;
+  heading?: string | null;
   block?: Block;
   myAnswer?: LiveAnswer | null;
 }
@@ -54,6 +55,7 @@ export function LiveStudent({ courseHref, code }: { courseHref: string; code?: s
         </span>
       </div>
       {/* Keyed by slide so local answer state resets when the teacher moves on. */}
+      {data.heading && <h2 className="font-heading text-xl font-semibold tracking-tight">{data.heading}</h2>}
       <LiveSlide key={`${data.lessonTitle}-${data.slideIndex}`} data={data} block={data.block} slideIndex={data.slideIndex} anonymous={!!code} />
     </div>
   );
