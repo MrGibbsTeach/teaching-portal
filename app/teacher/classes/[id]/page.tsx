@@ -21,6 +21,7 @@ import { AddStudentForm } from "@/components/teacher/AddStudentForm";
 import { ClassCodeBox } from "@/components/teacher/ClassCodeBox";
 import { StopLiveButton } from "@/components/teacher/StopLiveButton";
 import { LessonReleaseRow } from "@/components/teacher/LessonReleaseRow";
+import { ReleaseNextBar } from "@/components/teacher/ReleaseNextBar";
 import { mergeStats, studentQuizTotals } from "@/lib/logic/insights";
 
 export const dynamic = "force-dynamic";
@@ -91,6 +92,15 @@ export default async function ClassManagePage({
   // teacher can either keep using Topic Access or switch a class over to the
   // same release model as everyone else, per the agreed "ATAR needs to
   // follow [the release model], makes it easy" direction).
+  const flatLessons = content
+    ? content.units.flatMap((u) => u.topics.flatMap((t) => t.lessons.map((l) => ({ id: l.id, title: l.title, topic: t.title }))))
+    : [];
+  const todayIdx = flatLessons.findIndex((l) => releases[l.id]?.status === "today");
+  const isOpen = (id: string) => (releases[id]?.status ?? "not_released") === "not_released";
+  const nextLesson =
+    flatLessons.slice(todayIdx + 1).find((l) => isOpen(l.id)) ?? flatLessons.find((l) => isOpen(l.id));
+  const todayLesson = todayIdx >= 0 ? flatLessons[todayIdx] : undefined;
+
   const lessonsSection = (
     <section>
       <h2 className="text-lg font-semibold">Lessons</h2>
@@ -98,6 +108,13 @@ export default async function ClassManagePage({
         Release a lesson so students can see it, or make it Today&apos;s lesson so it&apos;s what
         they land on. Pulled-back and revision-only lessons sit in Previous lessons.
       </p>
+
+      <ReleaseNextBar
+        todayTitle={todayLesson?.title}
+        nextTitle={nextLesson?.title}
+        nextTopic={nextLesson?.topic}
+        onReleaseNext={nextLesson ? makeTodayLesson.bind(null, cls!.id, nextLesson.id) : undefined}
+      />
 
       {!content ? (
         <p className="mt-4 text-sm text-muted-foreground italic">
@@ -115,9 +132,18 @@ export default async function ClassManagePage({
               <p className="font-semibold mb-3">{unit.title}</p>
               <div className="space-y-4">
                 {unit.topics.map((topic) => (
-                  <div key={topic.id}>
-                    <p className="text-xs font-semibold text-muted-foreground mb-2">{topic.title}</p>
-                    <div className="space-y-2">
+                  <details
+                    key={topic.id}
+                    open={topic.lessons.some((l) => ["today", "released", "revision"].includes(releases[l.id]?.status ?? ""))}
+                    className="group rounded-xl border border-border"
+                  >
+                    <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-4 py-3">
+                      <span className="text-sm font-semibold">{topic.title}</span>
+                      <span className="text-xs text-muted-foreground">
+                        {topic.lessons.filter((l) => (releases[l.id]?.status ?? "not_released") !== "not_released").length} of {topic.lessons.length} released
+                      </span>
+                    </summary>
+                    <div className="space-y-2 px-4 pb-4">
                       {topic.lessons.map((lesson) => {
                         const status = releases[lesson.id]?.status ?? "not_released";
                         return (
@@ -134,7 +160,7 @@ export default async function ClassManagePage({
                         );
                       })}
                     </div>
-                  </div>
+                  </details>
                 ))}
               </div>
             </div>
@@ -145,7 +171,7 @@ export default async function ClassManagePage({
   );
 
   return (
-    <div className="mx-auto max-w-3xl px-6 py-12 space-y-12">
+    <div className="mx-auto max-w-4xl px-6 py-12 space-y-12">
       {/* Header */}
       <div>
         <Link href="/teacher" className="text-sm text-muted-foreground hover:underline">
@@ -166,6 +192,9 @@ export default async function ClassManagePage({
           </a>
         </div>
       </div>
+
+      {/* Code-track classes: the daily release controls come first. */}
+      {cls!.authMode === "code" && lessonsSection}
 
       {/* Live session */}
       <section>
@@ -378,8 +407,6 @@ export default async function ClassManagePage({
               </form>
             )}
           </section>
-
-          {lessonsSection}
         </>
       )}
 

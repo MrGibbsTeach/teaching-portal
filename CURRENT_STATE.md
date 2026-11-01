@@ -53,6 +53,8 @@ Read this first — before `STATUS.md`. This file is the live handover: what's t
 
 - **2026-11-01: Today and Previous lessons pages restyled** (`app/[code]/page.tsx`, `app/[code]/lessons/page.tsx`, `PreviousLessonsList.tsx`): large Today card with topic icon, topic sections with icon and two-column lesson tiles (release label, Latest tag, tick when done on this device), and a search box. Checked with a seeded class at 1366px; tsc and 108 tests pass. Not checked: phone width, Foundations/ATAR skins, live site.
 
+- **2026-11-01: teacher class page restyled** (code-track classes): release controls now come first, with a "Students see today" bar and a one-click "Release next lesson" (next unreleased lesson in course order becomes Today's lesson). Topics are collapsible with "n of m released"; rows have a status chip and a primary "Make today's lesson" (works on unreleased lessons too, since it releases and makes today in one step), plus "Release only" and "Open for revision". Checked with a seeded class: Release next lesson moved Today to the right lesson; tsc and 108 tests pass. Not checked: account-mode (ATAR) class page, phone width, term planner (still to build).
+
 **Next step:**
 1. Clayton spot-check the revised Year 11/12 General lessons in teacher preview and send any reactions to the new lesson rhythm.
 2. Logged-in browser pass (teacher preview is enough) over the Y11/Y12 General course-map polish, syllabus corrections, next-lesson navigation and updated reading cues on the 104 visual models, plus recent Y12 General/ATAR/Foundations lessons, 3D animation placements, and quiz-results page.

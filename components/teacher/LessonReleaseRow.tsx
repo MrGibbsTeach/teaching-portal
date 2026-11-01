@@ -10,13 +10,6 @@ const STATUS_LABEL: Record<LessonReleaseStatus, string> = {
   revision: "Open for revision",
 };
 
-const STATUS_CLASS: Record<LessonReleaseStatus, string> = {
-  not_released: "text-muted-foreground",
-  released: "text-primary",
-  today: "text-primary font-semibold",
-  revision: "text-amber-600",
-};
-
 export function LessonReleaseRow({
   title,
   status,
@@ -42,60 +35,52 @@ export function LessonReleaseRow({
     });
   }
 
+  const chip: Record<LessonReleaseStatus, string> = {
+    not_released: "bg-muted text-muted-foreground",
+    released: "bg-accent text-accent-foreground",
+    today: "bg-primary text-primary-foreground",
+    revision: "bg-amber-100 text-amber-800",
+  };
+  const btn = "rounded-lg border border-border bg-background px-3 py-1.5 text-xs font-medium transition-colors hover:bg-muted disabled:opacity-50";
+  const primary = "rounded-lg bg-primary px-3 py-1.5 text-xs font-semibold text-primary-foreground transition-opacity hover:opacity-90 disabled:opacity-50";
+
   return (
-    <div className="flex flex-wrap items-center justify-between gap-2 rounded-lg border p-3">
-      <div>
+    <div className={`flex flex-wrap items-center justify-between gap-2 rounded-xl border p-3 ${status === "today" ? "border-primary" : "border-border"}`}>
+      <div className="flex min-w-0 items-center gap-3">
+        <span className={`shrink-0 rounded-full px-2.5 py-0.5 text-[0.7rem] font-semibold ${chip[status]}`}>{STATUS_LABEL[status]}</span>
         <p className="text-sm font-medium">{title}</p>
-        <p className={`text-xs ${STATUS_CLASS[status]}`}>{STATUS_LABEL[status]}</p>
       </div>
-      <div className="flex gap-1.5">
+      <div className="flex flex-wrap gap-1.5">
         {status === "not_released" && (
-          <button
-            type="button"
-            disabled={isPending}
-            onClick={() => run(onRelease)}
-            className="rounded-lg border px-3 py-1.5 text-xs font-medium hover:bg-accent transition-colors disabled:opacity-50"
-          >
-            Release
-          </button>
+          <>
+            <button type="button" disabled={isPending} onClick={() => run(onMakeToday)} className={primary}>
+              Make today&apos;s lesson
+            </button>
+            <button type="button" disabled={isPending} onClick={() => run(onRelease)} className={btn}>
+              Release only
+            </button>
+            <button type="button" disabled={isPending} onClick={() => run(onOpenRevision)} className={btn}>
+              Open for revision
+            </button>
+          </>
         )}
         {status === "released" && (
-          <button
-            type="button"
-            disabled={isPending}
-            onClick={() => run(onMakeToday)}
-            className="rounded-lg bg-primary px-3 py-1.5 text-xs font-semibold text-primary-foreground hover:opacity-90 transition-opacity disabled:opacity-50"
-          >
-            Make today&apos;s lesson
-          </button>
+          <>
+            <button type="button" disabled={isPending} onClick={() => run(onMakeToday)} className={primary}>
+              Make today&apos;s lesson
+            </button>
+            <button type="button" disabled={isPending} onClick={() => run(onPullBack)} className={btn}>
+              Pull back
+            </button>
+          </>
         )}
-        {(status === "released" || status === "today") && (
-          <button
-            type="button"
-            disabled={isPending}
-            onClick={() => run(onPullBack)}
-            className="rounded-lg border px-3 py-1.5 text-xs font-medium hover:bg-accent transition-colors disabled:opacity-50"
-          >
+        {status === "today" && (
+          <button type="button" disabled={isPending} onClick={() => run(onPullBack)} className={btn}>
             Pull back
           </button>
         )}
-        {status === "not_released" && (
-          <button
-            type="button"
-            disabled={isPending}
-            onClick={() => run(onOpenRevision)}
-            className="rounded-lg border px-3 py-1.5 text-xs font-medium hover:bg-accent transition-colors disabled:opacity-50"
-          >
-            Open for revision
-          </button>
-        )}
         {status === "revision" && (
-          <button
-            type="button"
-            disabled={isPending}
-            onClick={() => run(onCloseRevision)}
-            className="rounded-lg border px-3 py-1.5 text-xs font-medium hover:bg-accent transition-colors disabled:opacity-50"
-          >
+          <button type="button" disabled={isPending} onClick={() => run(onCloseRevision)} className={btn}>
             Close revision
           </button>
         )}
