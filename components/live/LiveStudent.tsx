@@ -122,15 +122,19 @@ function LiveQuestion({
               onClick={() => void choose(i)}
               className={`border px-4 py-3 text-left font-medium ${
                 showRight
-                  ? "border-primary bg-primary/10 text-primary"
+                  ? "border-2 border-green-600 bg-green-100 text-green-900"
                   : showWrong
-                    ? "border-destructive bg-destructive/10 text-destructive"
+                    ? "border-2 border-red-600 bg-red-100 text-red-900"
                     : picked === i
                       ? "border-primary bg-primary/10"
                       : "border-border bg-card"
               }`}
             >
+              {showRight && <span aria-hidden className="mr-2 font-bold text-green-700">✓</span>}
+              {showWrong && <span aria-hidden className="mr-2 font-bold text-red-700">✗</span>}
               {label}
+              {showRight && <span className="sr-only"> (correct answer)</span>}
+              {showWrong && <span className="sr-only"> (your answer, incorrect)</span>}
             </button>
           );
         })}
@@ -141,7 +145,7 @@ function LiveQuestion({
           : revealed
             ? picked === right
               ? "Correct!"
-              : "The right answer is highlighted."
+              : "The right answer is highlighted in green."
             : picked !== null
               ? anonymous
                 ? "Locked in on your screen. Your teacher will show the answer."
