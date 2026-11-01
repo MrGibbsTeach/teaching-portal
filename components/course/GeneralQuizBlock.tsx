@@ -34,15 +34,17 @@ export function GeneralQuizBlock({ question }: { question: QuizQuestion }) {
                 disabled={selected !== null}
                 className={`flex w-full items-center justify-between border px-4 py-2.5 text-left text-sm transition-colors ${
                   showResult && isCorrect
-                    ? "border-primary font-medium text-primary"
+                    ? "border-2 border-green-600 bg-green-100 font-medium text-green-900"
                     : showResult && isSelected
-                      ? "border-destructive text-destructive"
-                      : "border-border hover:bg-accent/40"
+                      ? "border-2 border-red-600 bg-red-100 text-red-900"
+                      : showResult
+                        ? "border-border text-muted-foreground"
+                        : "border-border hover:bg-accent/40"
                 }`}
               >
                 <span>{opt}</span>
-                {showResult && isCorrect && <Check className="h-4 w-4 shrink-0" />}
-                {showResult && isSelected && !isCorrect && <X className="h-4 w-4 shrink-0" />}
+                {showResult && isCorrect && <Check className="h-4 w-4 shrink-0 text-green-700" />}
+                {showResult && !isCorrect && <X className={`h-4 w-4 shrink-0 ${isSelected ? "text-red-700" : "text-muted-foreground"}`} />}
               </button>
             );
           })}
@@ -76,12 +78,16 @@ export function GeneralQuizBlock({ question }: { question: QuizQuestion }) {
                 disabled={showResult}
                 className={`border py-3 font-medium transition-colors ${
                   showResult && isCorrect
-                    ? "border-primary text-primary"
+                    ? "border-2 border-green-600 bg-green-100 text-green-900"
                     : showResult && isSelected
-                      ? "border-destructive text-destructive"
-                      : "border-border hover:bg-accent/40"
+                      ? "border-2 border-red-600 bg-red-100 text-red-900"
+                      : showResult
+                        ? "border-border text-muted-foreground"
+                        : "border-border hover:bg-accent/40"
                 }`}
               >
+                {showResult && isCorrect && <Check className="mr-2 inline h-4 w-4 text-green-700" />}
+                {showResult && !isCorrect && <X className={`mr-2 inline h-4 w-4 ${isSelected ? "text-red-700" : "text-muted-foreground"}`} />}
                 {label}
               </button>
             );

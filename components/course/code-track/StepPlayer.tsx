@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useMemo, useState, type CSSProperties } from "react";
+import { Check, X } from "lucide-react";
 import { SELF_COMPLETING, StepDoneContext } from "@/components/course/shared/StepDone";
 import type { Block } from "@/lib/content/types";
 import { blockPartOf } from "@/lib/content/parts";
@@ -233,11 +234,41 @@ function QuizStep({
   const q = block.question;
   const resolved = quizStepResolved(outcome);
   const [picked, setPicked] = useState<number | boolean | null>(null);
+  // Every wrong option the student has tried stays marked red while they retry.
+  const [wrongPicks, setWrongPicks] = useState<(number | boolean)[]>([]);
 
   function pick(value: number | boolean, isCorrect: boolean) {
     if (resolved) return;
     setPicked(value);
+    if (!isCorrect) setWrongPicks((w) => (w.includes(value) ? w : [...w, value]));
     onAttempt(isCorrect);
+  }
+
+  /** Green tick for the answer, red cross for a wrong pick, grey cross for the other wrong options once resolved. */
+  function optionLook(value: number | boolean, isCorrect: boolean) {
+    const isWrongPick = wrongPicks.includes(value) || (picked === value && !isCorrect);
+    if (isCorrect && (resolved || picked === value)) {
+      return {
+        cls: "border-2 border-green-600 bg-green-100 font-medium text-green-900",
+        icon: <Check aria-hidden className="h-4 w-4 shrink-0 text-green-700" />,
+        sr: " (correct answer)",
+      };
+    }
+    if (isWrongPick) {
+      return {
+        cls: "border-2 border-red-600 bg-red-100 text-red-900",
+        icon: <X aria-hidden className="h-4 w-4 shrink-0 text-red-700" />,
+        sr: " (incorrect)",
+      };
+    }
+    if (resolved && !isCorrect) {
+      return {
+        cls: "border-border text-muted-foreground",
+        icon: <X aria-hidden className="h-4 w-4 shrink-0 text-muted-foreground" />,
+        sr: " (incorrect)",
+      };
+    }
+    return { cls: "border-border hover:bg-accent/40", icon: null, sr: "" };
   }
 
   return (
@@ -255,23 +286,20 @@ function QuizStep({
         <div className="mt-4 space-y-2">
           {q.options.map((opt, i) => {
             const isCorrect = i === q.correctIndex;
-            const isPicked = picked === i;
-            const show = resolved || isPicked;
+            const look = optionLook(i, isCorrect);
             return (
               <button
                 key={i}
                 type="button"
                 disabled={resolved}
                 onClick={() => pick(i, isCorrect)}
-                className={`skin-btn-primary flex w-full items-center justify-between border px-4 py-2.5 text-left text-sm transition-colors ${
-                  show && isCorrect
-                    ? "border-primary bg-primary/5 font-medium text-primary"
-                    : show && isPicked
-                      ? "border-destructive text-destructive"
-                      : "border-border hover:bg-accent/40"
-                }`}
+                className={`skin-btn-primary flex w-full items-center justify-between gap-3 border px-4 py-2.5 text-left text-sm transition-colors ${look.cls}`}
               >
-                {opt}
+                <span>
+                  {opt}
+                  {look.sr && <span className="sr-only">{look.sr}</span>}
+                </span>
+                {look.icon}
               </button>
             );
           })}
@@ -281,23 +309,20 @@ function QuizStep({
         <div className="mt-4 grid grid-cols-2 gap-3">
           {[true, false].map((val) => {
             const isCorrect = val === q.correctAnswer;
-            const isPicked = picked === val;
-            const show = resolved || isPicked;
+            const look = optionLook(val, isCorrect);
             return (
               <button
                 key={String(val)}
                 type="button"
                 disabled={resolved}
                 onClick={() => pick(val, isCorrect)}
-                className={`skin-btn-primary border py-3 font-medium transition-colors ${
-                  show && isCorrect
-                    ? "border-primary bg-primary/5 text-primary"
-                    : show && isPicked
-                      ? "border-destructive text-destructive"
-                      : "border-border hover:bg-accent/40"
-                }`}
+                className={`skin-btn-primary flex items-center justify-center gap-2 border py-3 font-medium transition-colors ${look.cls}`}
               >
-                {val ? "True" : "False"}
+                {look.icon}
+                <span>
+                  {val ? "True" : "False"}
+                  {look.sr && <span className="sr-only">{look.sr}</span>}
+                </span>
               </button>
             );
           })}
