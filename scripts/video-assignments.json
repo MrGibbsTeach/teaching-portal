@@ -376,5 +376,166 @@
     "youtubeId": "xsSZps3NH-M",
     "videoTitle": "Boolean Operators (Emily Wixson)",
     "source": "cited by a college library guide"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "digital-vs-traditional-communication",
+    "youtubeId": "coLbK_N1_yo",
+    "videoTitle": "What is synchronous vs. asynchronous communication? | Atlassian University Training (Atlassian)",
+    "source": "ChatGPT suggestion, unverified"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "word-processing-features",
+    "youtubeId": "45s9VKQ6wEI",
+    "videoTitle": "How to Create a Table of Contents in Word (Automatically!) (Kevin Stratvert)",
+    "source": "ChatGPT suggestion, unverified"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "email-and-webmail",
+    "youtubeId": "8bi47TlDJbI",
+    "videoTitle": "Cc, Bcc, Reply, and Reply All Settings (CMCSS Instructional Technology)",
+    "source": "ChatGPT suggestion, unverified"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "file-and-folder-organisation",
+    "youtubeId": "rai-fEXqnJ0",
+    "videoTitle": "Records Management 101: Document naming conventions (The University of British Columbia)",
+    "source": "ChatGPT suggestion, unverified"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "version-control-for-data-files",
+    "youtubeId": "OYdZ118ThmM",
+    "videoTitle": "\u2601 How to use version history to restore files in OneDrive and SharePoint (Giuliano De Luca)",
+    "source": "ChatGPT suggestion, unverified"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "the-spam-act-2003",
+    "youtubeId": "YDkXqaFQ8FI",
+    "videoTitle": "The Spam Act (Richard Pester)",
+    "source": "ChatGPT suggestion, unverified"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "presentation-software-create-and-present",
+    "youtubeId": "V8eLdbKXGzk",
+    "videoTitle": "Good Presentation VS Bad Presentation * (Project IDEA)",
+    "source": "ChatGPT suggestion, unverified"
+  },
+  {
+    "course": "year-11-applied-it-general",
+    "lesson": "audio-software-features",
+    "youtubeId": "AjRWzUdZzR0",
+    "videoTitle": "AUDACITY | How To Record / Normalize / Noise Reduction / Export A Track | Beginner's Tutorial | 2021 (Dj Dragon)",
+    "source": "ChatGPT suggestion, unverified"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "design-concepts-3-elements-and-principles-relationship",
+    "youtubeId": "YqQx75OPRa0",
+    "videoTitle": "Beginning Graphic Design: Fundamentals (LearnFree)",
+    "source": "ChatGPT suggestion, unverified"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "impacts-of-technology-u3-3-social-networking-impact",
+    "youtubeId": "cSKGa_7XJkg",
+    "videoTitle": "How false news can spread - Noah Tavlin (TED-Ed)",
+    "source": "ChatGPT suggestion, unverified"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "application-skills-u3-1-data-organisation",
+    "youtubeId": "kIlEFcW5VNs",
+    "videoTitle": "File Name Conventions and Folder Structures (University of Staffordshire Student Life)",
+    "source": "ChatGPT suggestion, unverified"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "application-skills-u3-3-audio-software-features",
+    "youtubeId": "FetdRQv0YQs",
+    "videoTitle": "Audacity Recording a voice, normalizing, noise removal, trim, EQ (Russell Posegate)",
+    "source": "ChatGPT suggestion, unverified"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "application-skills-u3-4-software-management",
+    "youtubeId": "J-UUJH_3eGg",
+    "videoTitle": "How to Install Software on Windows (LearnFree)",
+    "source": "ChatGPT suggestion, unverified"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "project-management-u3-1-project-management-considerations",
+    "youtubeId": "-XC0__JC-ZU",
+    "videoTitle": "What is Triple Constraints Triangle in Project Management? (Institute of Project Management)",
+    "source": "ChatGPT suggestion, unverified"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "project-management-u3-2-design-process-components",
+    "youtubeId": "agVym46cvK8",
+    "videoTitle": "Design Criteria Intro (Duke Engineering First Year Design)",
+    "source": "ChatGPT suggestion, unverified"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "managing-data-4-online-data-management",
+    "youtubeId": "8XS1Wrj5RPA",
+    "videoTitle": "How to Manage File and Folder Sharing Permissions on OneDrive (Tech-Gov Insider with Sir Ronel)",
+    "source": "ChatGPT suggestion, unverified"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "managing-data-5-version-control",
+    "youtubeId": "COGvtTC9p-0",
+    "videoTitle": "How to use version history in OneDrive (WorkplaceBuddy)",
+    "source": "ChatGPT suggestion, unverified"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "networks-3-transmission-rates",
+    "youtubeId": "mHXY5E44FbE",
+    "videoTitle": "What\u2019s the Difference Between Upload and Download Speed? (NetWork From Home)",
+    "source": "ChatGPT suggestion, unverified"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "impacts-of-technology-u4-4-electronic-commerce",
+    "youtubeId": "FXrlSxK-joA",
+    "videoTitle": "COVID-19 forces clothing retailers to fastrack move to online | ABC News (ABC News (Australia))",
+    "source": "ChatGPT suggestion, unverified"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "impacts-of-technology-u4-5-dependency-on-communication",
+    "youtubeId": "GqrEVqqq_50",
+    "videoTitle": "Cyber expert says Crowdstrike outage could be biggest in history | ABC NEWS (ABC News (Australia))",
+    "source": "ChatGPT suggestion, unverified"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "application-skills-u4-1-online-collaboration",
+    "youtubeId": "GSwKANtsBuQ",
+    "videoTitle": "1 3 How to share documents and co author in Teams (Lincolnshire Training Hub)",
+    "source": "ChatGPT suggestion, unverified"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "application-skills-u4-2-web-authoring-features",
+    "youtubeId": "iXSSHlOe47s",
+    "videoTitle": "HTML CSS TUTORIAL FOR BEGINNERS - multiple pages (LearnCode.academy)",
+    "source": "ChatGPT suggestion, unverified"
+  },
+  {
+    "course": "year-12-applied-it-general",
+    "lesson": "application-skills-u4-4-responsive-design",
+    "youtubeId": "bPo7hxD5gfI",
+    "videoTitle": "5 MIN TUTORIAL - Responsive Web Design - SIMPLE EASY (Tom Heylen)",
+    "source": "ChatGPT suggestion, unverified"
   }
 ]
