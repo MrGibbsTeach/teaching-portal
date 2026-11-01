@@ -45,7 +45,7 @@ Patterns to adopt, not designs to copy.
 | Code.org | A lesson is a row of short levels (progress bubbles). Each level is something to do (predict, investigate, modify, make), with "check for understanding" levels. Bubbles fill when work is done. | Replace long reading steps with short do-steps. Progress strip shows done, not just position. |
 | Grok | Short notes paired with a problem. Automarked, with solutions after an attempt. Colour-coded progress per student for the teacher. | Every idea is followed straight away by a problem on that idea. Model answers unlock after an attempt. |
 | Education Perfect | Instruction, practice, assessment in one cycle. Students type written answers, then self-mark against the model (per their help docs). | Typed answers plus self-marking against the existing marking guidance, for every short and extended answer. |
-| Atomi | Short lesson plus quiz; separate revision mode. | A Unit 3 EST revision mode for Y12, and topic test practice for both years. |
+| Atomi | Short lesson plus quiz; separate revision mode. | Topic test practice for both years (no exam-specific revision track, as the topics change every year). |
 
 ## 4. Target shape: a two-year course, not 117 lessons
 
@@ -99,7 +99,6 @@ Plus the existing 3D animations, which are the strongest thing in the course.
 | 2. Term planner and assessment calendar | Class plan by term and week, one-click or dated release, assessment calendar with marking keys | M | Before Term 1 2027 |
 | 3. Interactives | Build the reusable interactives in the order the 2027 calendar needs them | M each | Just ahead of teaching |
 | 4. Roll out | Convert the remaining missions about three weeks ahead of when they are taught, not all at once | L, ongoing | Through 2027 |
-| 5. EST track | Unit 3 EST revision mode for Y12 using the 2027 highlighted content | M | Before Term 2 2027 |
 
 **Recommended first mission: Y12 Unit 3, Design Concepts brief (Leo Thorne).** Reasons: the 2027 Y12 class starts Unit 3 in Term 1 and sits the EST on Unit 3 in Term 2, so it is the most time-critical; design concepts appear in all four units' skill lists; and the design spotter, layout fixer and typography tuner it needs are reused by Y11 Unit 1 straight after.
 
