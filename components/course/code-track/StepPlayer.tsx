@@ -2,7 +2,7 @@
 
 import { useCallback, useMemo, useState, type CSSProperties } from "react";
 import { Check, X } from "lucide-react";
-import { SELF_COMPLETING, StepDoneContext } from "@/components/course/shared/StepDone";
+import { isSelfCompleting, StepDoneContext } from "@/components/course/shared/StepDone";
 import type { Block } from "@/lib/content/types";
 import { blockPartOf } from "@/lib/content/parts";
 import {
@@ -531,7 +531,7 @@ export function StepPlayer({
               <StepDoneContext.Provider value={markStepDone}>
                 <BlockRenderer block={mainBlock} />
                 {!done[activityStepIndex] &&
-                  (SELF_COMPLETING.has(mainBlock.type) ? (
+                  (isSelfCompleting(mainBlock as never) ? (
                     <button
                       type="button"
                       onClick={markStepDone}

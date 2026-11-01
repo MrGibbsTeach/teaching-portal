@@ -2,7 +2,7 @@
 
 Read this first — before `STATUS.md`. This file is the live handover: what's true right now and the next step. `STATUS.md` is the detailed history (why things are built the way they are); `CHECKPOINTS.md` is recorded feedback not yet acted on. Both stay as the deeper record — update this file's **Last updated** / **Right now** / **Next step** every session; add detail to `STATUS.md` only when something durable changed.
 
-**Last updated:** 2026-10-31
+**Last updated:** 2026-11-01
 
 **Live:**
 - Production: https://mrgibbsteach.com (custom domain, DNS live, cert issued) — also reachable at https://teaching-portal-eta.vercel.app
@@ -55,3 +55,5 @@ Read this first — before `STATUS.md`. This file is the live handover: what's t
 3. Y12 Foundations videos: the researched shortlist is waiting on Clayton's confirmation; see `STATUS.md` -> "Open item - Year 12 Foundations videos". Not picked unilaterally; needs Clayton's own ~30s check per video.
 4. Y7-10 need source curriculum material from Clayton before any content work can start; ask him where to find it, or whether to adapt the old OneDrive copy at `D:\OneDrive\Personal\Work\mrgibbs-teach` (a stale pre-Y12-ATAR clone of this same repo, last touched 2026-09-25, not authoritative).
 5. `claude/project-handover.md`'s own next-actions list (A2 merge the Fetch/Decode/Execute animation, A3 place Colour Mixing, A1 swap confirmation) is waiting on Clayton, not started here.
+
+- **2026-11-01: video slots and typed answers.** 76 of 102 video slots filled (`scripts/video-assignments.json` holds the ID, real title and source for each; `node scripts/apply-video-assignments.mjs` applies them, `--reset <lessonId> <course>` clears one). Owner vetted the first 49 as good; the 27 added after (4 mine, 23 from a ChatGPT list) are unverified. 26 slots stay open (hidden from students); the gaps are mostly teacher-style demos that likely do not exist on YouTube. Written short/extended answers now render `WrittenAnswer` (type, check against the marking guide, self-mark 0..N, unlocks Next); drafts are kept in memory only, nothing is stored or sent. Y12 EST revision track dropped from the plan (topics change yearly). Next: Microsoft Forms exit ticket, term planner, tighten Y11, logged-in production check.

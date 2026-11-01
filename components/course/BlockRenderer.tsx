@@ -13,6 +13,11 @@ import { VideoSlot } from "@/components/course/shared/VideoSlot";
 import { FileSizeLab } from "@/components/course/shared/FileSizeLab";
 import { Placer } from "@/components/course/shared/Placer";
 import { SvgFigure } from "@/components/course/shared/SvgFigure";
+import { WrittenAnswer } from "@/components/course/shared/WrittenAnswer";
+
+function isWritten(q: QuizQuestion) {
+  return (q.questionType === "short_answer" || q.questionType === "extended") && !!q.explanation;
+}
 
 function QuizQuestionView({ question }: { question: QuizQuestion }) {
   return (
@@ -394,6 +399,7 @@ export function BlockRenderer({ block }: { block: Block }) {
         </div>
       );
     case "quizQuestion":
+      if (isWritten(block.question)) return <WrittenAnswer question={block.question} />;
       return <QuizQuestionView question={block.question} />;
     case "activity":
       if (block.hotspots && block.svgContent) {

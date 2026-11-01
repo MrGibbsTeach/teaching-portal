@@ -18,6 +18,13 @@ export const SELF_COMPLETING = new Set([
   "fileSizeLab",
 ]);
 
+/** Written short/extended answers also report completion (after the student self-marks). */
+export function isSelfCompleting(block: { type: string; question?: { questionType?: string; explanation?: string } }) {
+  if (SELF_COMPLETING.has(block.type)) return true;
+  const q = block.question;
+  return block.type === "quizQuestion" && !!q?.explanation && (q.questionType === "short_answer" || q.questionType === "extended");
+}
+
 /** Call from an interactive block: marks the step done once `complete` becomes true. */
 export function useStepDone(complete: boolean) {
   const markDone = useContext(StepDoneContext);
