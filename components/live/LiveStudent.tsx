@@ -113,6 +113,8 @@ function LiveQuestion({
         {labels.map((label, i) => {
           const showRight = revealed && right === i;
           const showWrong = revealed && picked === i && right !== i;
+          // Once revealed, every option that is not the answer carries a cross.
+          const showCross = revealed && right !== undefined && right !== i;
           return (
             <button
               key={i}
@@ -131,10 +133,15 @@ function LiveQuestion({
               }`}
             >
               {showRight && <span aria-hidden className="mr-2 font-bold text-green-700">✓</span>}
-              {showWrong && <span aria-hidden className="mr-2 font-bold text-red-700">✗</span>}
+              {showCross && (
+                <span aria-hidden className={`mr-2 font-bold ${showWrong ? "text-red-700" : "text-muted-foreground"}`}>
+                  ✗
+                </span>
+              )}
               {label}
               {showRight && <span className="sr-only"> (correct answer)</span>}
               {showWrong && <span className="sr-only"> (your answer, incorrect)</span>}
+              {showCross && !showWrong && <span className="sr-only"> (incorrect)</span>}
             </button>
           );
         })}
