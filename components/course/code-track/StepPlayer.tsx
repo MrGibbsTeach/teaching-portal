@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useMemo, useState, type CSSProperties } from "react";
-import { Check, X } from "lucide-react";
+import { BookOpen, Check, CircleHelp, CirclePlay, MousePointerClick, Pencil, X } from "lucide-react";
 import { isSelfCompleting, StepDoneContext } from "@/components/course/shared/StepDone";
 import type { Block } from "@/lib/content/types";
 import { blockPartOf } from "@/lib/content/parts";
@@ -185,42 +185,34 @@ function stepLabel(block: Block): string {
   }
 }
 
-/** Dropdown jump + progress strip, shared by the Content and Activities
- *  tracks (redesign-plan.md §4 S4: "step dropdown with progress strip"). The
- *  dropdown always allows free review of any step; only the Next button below
- *  it enforces earned progression on a quiz step. */
-function StepNav({
-  labels,
-  index,
-  onJump,
-}: {
-  labels: string[];
-  index: number;
-  onJump: (i: number) => void;
-}) {
-  const progress = labels.length > 1 ? index / (labels.length - 1) : 1;
-  return (
-    <div className="mt-3">
-      <select
-        value={index}
-        onChange={(e) => onJump(Number(e.target.value))}
-        className="w-full rounded-lg border bg-background px-3 py-2 text-sm font-medium outline-none focus:ring-2 focus:ring-primary"
-      >
-        {labels.map((label, i) => (
-          <option key={i} value={i}>
-            {`Step ${i + 1} of ${labels.length}: ${label}`}
-          </option>
-        ))}
-      </select>
-      <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-muted">
-        <div
-          className="h-full rounded-full bg-primary transition-all"
-          style={{ width: `${Math.round(progress * 100)}%` }}
-        />
-      </div>
-    </div>
-  );
+type StepKind = "Read" | "Watch" | "Try it" | "Check" | "Write it";
+
+const TRY_TYPES = new Set<string>([
+  "interactiveDiagram", "codeExercise", "formulaBuilder", "scenarioChallenge", "spotTheThreat",
+  "activity", "task", "sorter", "sequence", "flipCards", "branchingScenario", "fileSizeLab", "placer", "animation3d",
+]);
+
+/** What the student does on this step. Shown in the outline, like "1 min read" / "Question" in the reference players. */
+function stepKind(group: Block[]): StepKind {
+  const b = group[group.length - 1];
+  if (b.type === "video" || b.type === "checkpointVideo" || b.type === "videoSlot") return "Watch";
+  if (b.type === "quizQuestion") {
+    const qt = b.question.questionType;
+    return qt === "short_answer" || qt === "extended" ? "Write it" : "Check";
+  }
+  if (TRY_TYPES.has(b.type)) return "Try it";
+  return "Read";
 }
+
+const KIND_ICON: Record<StepKind, typeof BookOpen> = {
+  Read: BookOpen,
+  Watch: CirclePlay,
+  "Try it": MousePointerClick,
+  Check: CircleHelp,
+  "Write it": Pencil,
+};
+
+type Item = { part: Tab; label: string; kind: StepKind; wide: boolean };
 
 function QuizStep({
   block,
@@ -371,12 +363,23 @@ export function StepPlayer({
   const contentLabels = useMemo(() => content.map(groupLabel), [content]);
   const activityLabels = useMemo(() => activities.map(groupLabel), [activities]);
 
-  const [tab, setTab] = useState<Tab>("content");
+  const [tab, setTab] = useState<Tab>(content.length > 0 ? "content" : "activities");
   const [contentStepIndex, setContentStepIndex] = useState(0);
   const [activityStepIndex, setActivityStepIndex] = useState(0);
   const [quizOutcomes, setQuizOutcomes] = useState<Record<number, QuizOutcome>>({});
   const [done, setDone] = useState<Record<number, boolean>>({});
+  const [seen, setSeen] = useState<Record<number, boolean>>({});
   const [finished, setFinished] = useState(false);
+
+  const items: Item[] = useMemo(
+    () => [
+      ...content.map((g, i) => ({ part: "content" as Tab, label: contentLabels[i], kind: stepKind(g), wide: stepKind(g) === "Try it" })),
+      ...activities.map((g, i) => ({ part: "activities" as Tab, label: activityLabels[i], kind: stepKind(g), wide: stepKind(g) === "Try it" })),
+    ],
+    [content, activities, contentLabels, activityLabels],
+  );
+  const total = items.length;
+  const gi = tab === "content" ? contentStepIndex : content.length + activityStepIndex;
 
   const stepIndex = tab === "content" ? contentStepIndex : activityStepIndex;
   const step = (tab === "content" ? content : activities)[stepIndex];
@@ -397,30 +400,34 @@ export function StepPlayer({
         : !!done[activityStepIndex]
       : true;
 
+  function isDone(n: number): boolean {
+    if (n < content.length) return !!seen[n];
+    const ai = n - content.length;
+    const g = activities[ai];
+    return isGradableQuiz(g[g.length - 1]) ? quizStepResolved(quizOutcomes[ai]) : !!done[ai];
+  }
+
+  function jump(n: number) {
+    if (n < 0 || n >= total) return;
+    if (tab === "content") setSeen((p) => (p[contentStepIndex] ? p : { ...p, [contentStepIndex]: true }));
+    if (n < content.length) {
+      setTab("content");
+      setContentStepIndex(n);
+    } else {
+      setTab("activities");
+      setActivityStepIndex(n - content.length);
+    }
+  }
+
   function finish() {
     if (onFinish) onFinish();
     else markLessonComplete(classCode, lessonId);
     setFinished(true);
   }
 
-  function nextContent() {
-    if (contentStepIndex >= content.length - 1) {
-      if (activities.length > 0) {
-        setTab("activities");
-      } else {
-        finish();
-      }
-    } else {
-      setContentStepIndex((i) => i + 1);
-    }
-  }
-
-  function nextActivity() {
-    if (activityStepIndex >= activities.length - 1) {
-      finish();
-    } else {
-      setActivityStepIndex((i) => i + 1);
-    }
+  function next() {
+    if (gi >= total - 1) finish();
+    else jump(gi + 1);
   }
 
   if (finished) {
@@ -454,136 +461,158 @@ export function StepPlayer({
     );
   }
 
-  return (
-    <div>
-      <div className="flex gap-1 border-b border-border">
-        <button
-          type="button"
-          onClick={() => setTab("content")}
-          className={`px-4 py-2 text-sm font-medium transition-colors ${
-            tab === "content" ? "border-b-2 border-primary text-primary" : "text-muted-foreground hover:text-foreground"
-          }`}
-        >
-          Content
-        </button>
-        <button
-          type="button"
-          onClick={() => setTab("activities")}
-          className={`px-4 py-2 text-sm font-medium transition-colors ${
-            tab === "activities" ? "border-b-2 border-primary text-primary" : "text-muted-foreground hover:text-foreground"
-          }`}
-        >
-          Activities{activities.length > 0 ? ` (${activities.length})` : ""}
+  if (total === 0) {
+    return (
+      <div className="py-8">
+        <p className="text-sm text-muted-foreground italic">No steps in this lesson.</p>
+        <button type="button" onClick={finish} className="skin-btn-primary mt-4 bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground">
+          Mark lesson complete
         </button>
       </div>
+    );
+  }
 
-      {tab === "content" && content.length > 0 && (
-        <div className="py-8">
-          <StepNav labels={contentLabels} index={contentStepIndex} onJump={setContentStepIndex} />
-          <div className="mt-6 space-y-6">
-            {content[contentStepIndex].map((block, i) => (
-              <BlockRenderer key={i} block={block} />
-            ))}
-          </div>
-          <div className="mt-8 flex items-center justify-between border-t border-border pt-6">
-            <button
-              type="button"
-              disabled={contentStepIndex === 0}
-              onClick={() => setContentStepIndex((i) => Math.max(0, i - 1))}
-              className="text-sm text-muted-foreground hover:text-foreground disabled:opacity-40"
-            >
-              ← Back
-            </button>
-            <button
-              type="button"
-              onClick={nextContent}
-              className="skin-btn-primary bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
-            >
-              {contentStepIndex >= content.length - 1
-                ? activities.length > 0
-                  ? "Go to activities →"
-                  : "Mark lesson complete"
-                : "Next →"}
-            </button>
+  const lastStep = gi >= total - 1;
+  const blocked = tab === "activities" && !stepResolved;
+  const hint = blocked
+    ? mainBlock && isGradableQuiz(mainBlock)
+      ? "Answer the question to continue"
+      : "Finish the activity to continue"
+    : "";
+  const wide = items[gi].wide;
+  const showHead = (n: number) => n === 0 || items[n - 1].part !== items[n].part;
+
+  return (
+    <div className="lg:grid lg:grid-cols-[17rem_minmax(0,1fr)] rounded-xl border border-border bg-background">
+      <aside aria-label="Lesson steps" className="hidden border-r border-border lg:block">
+        <nav className="sticky top-4 max-h-[calc(100vh-2rem)] overflow-y-auto py-4">
+          {items.map((it, n) => {
+            const Icon = KIND_ICON[it.kind];
+            const current = n === gi;
+            const complete = isDone(n);
+            return (
+              <div key={n}>
+                {showHead(n) && (
+                  <p className="px-5 pb-1 pt-3 text-xs font-bold uppercase tracking-wide text-muted-foreground">
+                    {it.part === "content" ? "Content" : "Activities"}
+                  </p>
+                )}
+                <button
+                  type="button"
+                  aria-current={current ? "step" : undefined}
+                  onClick={() => jump(n)}
+                  className={`flex w-full items-center gap-3 px-5 py-2 text-left transition-colors hover:bg-muted ${current ? "bg-muted" : ""}`}
+                >
+                  <span
+                    className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full border ${
+                      complete ? "border-green-600 bg-green-600 text-white" : "border-primary text-primary"
+                    }`}
+                  >
+                    {complete ? <Check aria-hidden className="h-4 w-4" /> : <Icon aria-hidden className="h-3.5 w-3.5" />}
+                  </span>
+                  <span className="min-w-0">
+                    <span className={`block text-sm font-semibold leading-tight ${current ? "text-primary" : ""}`}>{it.label}</span>
+                    <span className="block text-xs text-muted-foreground">{it.kind}</span>
+                  </span>
+                </button>
+              </div>
+            );
+          })}
+        </nav>
+      </aside>
+
+      <section className="min-w-0">
+        <div className="flex items-center gap-4 px-5 pt-5 sm:px-8">
+          <span className="whitespace-nowrap text-sm text-muted-foreground">
+            {gi + 1} of {total}
+          </span>
+          <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-muted">
+            <div className="h-full rounded-full bg-primary transition-all" style={{ width: `${Math.round(((gi + 1) / total) * 100)}%` }} />
           </div>
         </div>
-      )}
+        <select
+          aria-label="Jump to a step"
+          value={gi}
+          onChange={(e) => jump(Number(e.target.value))}
+          className="mx-5 mt-3 w-[calc(100%-2.5rem)] rounded-lg border bg-background px-3 py-2 text-sm font-medium outline-none focus:ring-2 focus:ring-primary lg:hidden"
+        >
+          {items.map((it, n) => (
+            <option key={n} value={n}>{`${n + 1}. ${it.label} (${it.kind})`}</option>
+          ))}
+        </select>
 
-      {tab === "activities" && step && mainBlock && (
-        <div className="py-8">
-          <StepNav labels={activityLabels} index={activityStepIndex} onJump={setActivityStepIndex} />
-          <div className="mt-6 space-y-6">
-            {step.slice(0, -1).map((block, i) => (
-              <BlockRenderer key={i} block={block} />
-            ))}
-            {isGradableQuiz(mainBlock) ? (
-              <QuizStep
-                block={mainBlock}
-                outcome={quizOutcomes[activityStepIndex]}
-                onAttempt={(correct) =>
-                  setQuizOutcomes((prev) => ({
-                    ...prev,
-                    [activityStepIndex]: recordQuizAttempt(prev[activityStepIndex], correct),
-                  }))
-                }
-              />
-            ) : (
-              <StepDoneContext.Provider value={markStepDone}>
-                <BlockRenderer block={mainBlock} />
-                {!done[activityStepIndex] &&
-                  (isSelfCompleting(mainBlock as never) ? (
-                    <button
-                      type="button"
-                      onClick={markStepDone}
-                      className="mt-3 text-xs text-muted-foreground underline-offset-2 hover:text-foreground hover:underline"
-                    >
-                      Skip this activity for now
-                    </button>
-                  ) : (
-                    <button
-                      type="button"
-                      onClick={markStepDone}
-                      className="skin-btn-primary mt-4 border px-4 py-2 text-sm font-medium hover:bg-accent transition-colors"
-                    >
-                      Done, continue
-                    </button>
-                  ))}
-              </StepDoneContext.Provider>
-            )}
-          </div>
-          <div className="mt-8 flex items-center justify-between border-t border-border pt-6">
-            <button
-              type="button"
-              disabled={activityStepIndex === 0}
-              onClick={() => setActivityStepIndex((i) => Math.max(0, i - 1))}
-              className="text-sm text-muted-foreground hover:text-foreground disabled:opacity-40"
-            >
-              ← Back
-            </button>
-            <button
-              type="button"
-              disabled={!stepResolved}
-              onClick={nextActivity}
-              className="skin-btn-primary bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity disabled:opacity-40"
-            >
-              {activityStepIndex >= activities.length - 1 ? "Finish lesson" : "Next →"}
-            </button>
-          </div>
+        <div className={`mx-auto px-5 py-8 sm:px-8 ${wide ? "max-w-4xl" : "max-w-[40rem]"}`}>
+          {tab === "content" && step && (
+            <div className="space-y-6">
+              {step.map((block, i) => (
+                <BlockRenderer key={`${gi}-${i}`} block={block} />
+              ))}
+            </div>
+          )}
+          {tab === "activities" && step && mainBlock && (
+            <div className="space-y-6">
+              {step.slice(0, -1).map((block, i) => (
+                <BlockRenderer key={`${gi}-${i}`} block={block} />
+              ))}
+              {isGradableQuiz(mainBlock) ? (
+                <QuizStep
+                  key={gi}
+                  block={mainBlock}
+                  outcome={quizOutcomes[activityStepIndex]}
+                  onAttempt={(correct) =>
+                    setQuizOutcomes((prev) => ({
+                      ...prev,
+                      [activityStepIndex]: recordQuizAttempt(prev[activityStepIndex], correct),
+                    }))
+                  }
+                />
+              ) : (
+                <StepDoneContext.Provider value={markStepDone}>
+                  <BlockRenderer key={gi} block={mainBlock} />
+                  {!done[activityStepIndex] &&
+                    (isSelfCompleting(mainBlock as never) ? (
+                      <button
+                        type="button"
+                        onClick={markStepDone}
+                        className="mt-3 text-xs text-muted-foreground underline-offset-2 hover:text-foreground hover:underline"
+                      >
+                        Skip this activity for now
+                      </button>
+                    ) : (
+                      <button
+                        type="button"
+                        onClick={markStepDone}
+                        className="skin-btn-primary mt-4 border px-4 py-2 text-sm font-medium transition-colors hover:bg-accent"
+                      >
+                        Done, continue
+                      </button>
+                    ))}
+                </StepDoneContext.Provider>
+              )}
+            </div>
+          )}
         </div>
-      )}
 
-      {tab === "activities" && activities.length === 0 && (
-        <div className="py-8">
-          <p className="text-sm text-muted-foreground italic">No activities in this lesson.</p>
+        <div className="sticky bottom-0 flex items-center justify-between gap-3 rounded-b-xl border-t border-border bg-muted/60 px-5 py-3 backdrop-blur sm:px-8">
           <button
             type="button"
-            onClick={finish}
-            className="skin-btn-primary mt-4 bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
+            disabled={gi === 0}
+            onClick={() => jump(gi - 1)}
+            className="skin-btn-primary border border-border bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-muted disabled:opacity-40"
           >
-            Mark lesson complete
+            Back
+          </button>
+          <span className="hidden text-sm text-muted-foreground sm:block">{hint}</span>
+          <button
+            type="button"
+            disabled={blocked}
+            onClick={next}
+            className="skin-btn-primary bg-primary px-6 py-2.5 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90 disabled:opacity-40"
+          >
+            {lastStep ? (activities.length > 0 ? "Finish lesson" : "Mark lesson complete") : "Next"}
           </button>
         </div>
-      )}
+      </section>
     </div>
   );
 }

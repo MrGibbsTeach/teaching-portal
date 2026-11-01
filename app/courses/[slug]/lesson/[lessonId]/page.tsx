@@ -112,7 +112,7 @@ export default async function LessonPage({
     return (
       <LessonShell courseSlug={course.slug} lessonId={lessonId}>
         <TierTheme tier="general">
-          <div className="mx-auto max-w-3xl px-6 py-10">
+          <div className="mx-auto max-w-6xl px-6 py-10">
             <Link
               href={`/courses/${slug}`}
               className="text-sm text-muted-foreground hover:text-primary"
@@ -164,7 +164,7 @@ export default async function LessonPage({
     return (
       <LessonShell courseSlug={course.slug} lessonId={lessonId}>
         <TierTheme tier="atar">
-          <div className="mx-auto max-w-3xl px-6 py-10">
+          <div className="mx-auto max-w-6xl px-6 py-10">
             <Link
               href={`/courses/${slug}`}
               className="text-sm text-muted-foreground hover:text-primary"

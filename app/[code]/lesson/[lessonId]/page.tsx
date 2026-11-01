@@ -38,7 +38,7 @@ export default async function CodeTrackLessonPage({
 
   return (
     <CourseTierTheme tier={course?.tier ?? "general"}>
-      <div className="mx-auto max-w-3xl px-6 py-10">
+      <div className="mx-auto max-w-6xl px-6 py-10">
         <Link href={`/${normalized}`} className="text-sm text-muted-foreground hover:text-primary">
           ← {cls.name}
         </Link>
