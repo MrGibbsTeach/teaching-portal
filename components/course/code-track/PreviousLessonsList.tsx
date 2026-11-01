@@ -5,6 +5,8 @@ import { Check, Star } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { getCompletedLessons } from "@/lib/local-progress";
 import { releaseLabel } from "@/lib/term-dates";
+import { TopicIcon } from "@/components/course/shared/TopicIcon";
+import { iconForTopic } from "@/lib/logic/topic-icon";
 
 export interface PreviousLessonEntry {
   lessonId: string;
@@ -63,7 +65,12 @@ export function PreviousLessonsList({
     return () => clearTimeout(id);
   }, [classCode]);
 
-  const groups = useMemo(() => groupByTopic(entries), [entries]);
+  const [query, setQuery] = useState("");
+  const shown = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    return q ? entries.filter((e) => `${e.lessonTitle} ${e.topicTitle}`.toLowerCase().includes(q)) : entries;
+  }, [entries, query]);
+  const groups = useMemo(() => groupByTopic(shown), [shown]);
 
   const latestLessonId = useMemo(() => {
     let latest: PreviousLessonEntry | null = null;
@@ -78,42 +85,58 @@ export function PreviousLessonsList({
   }
 
   return (
-    <div className="mt-4 space-y-8">
-      {groups.map((group) => (
-        <section key={group.key}>
-          <h2 className="font-heading text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-            {group.topicTitle}
-          </h2>
-          <p className="text-xs text-muted-foreground/70">{group.unitTitle}</p>
-          <div className="mt-2 space-y-2">
-            {group.entries.map((e) => (
-              <Link
-                key={e.lessonId}
-                href={`/${classCode}/lesson/${e.lessonId}`}
-                className="skin-card flex items-center justify-between gap-3 border p-3 hover:bg-accent/40 transition-colors"
-              >
-                <div>
-                  <p className="text-sm font-medium">{e.lessonTitle}</p>
-                  <p className="text-xs text-muted-foreground">
-                    {releaseLabel(new Date(e.releasedAt))}
-                    {e.lessonId === latestLessonId && " · Latest"}
-                    {e.isToday && " · Today's lesson"}
-                    {e.isRevision && " · Open for revision"}
-                  </p>
-                </div>
-                {completed.has(e.lessonId) && (
-                  <>
-                    {/* Arcade gets a star, Portfolio/Study a plain tick — toggled by
-                        the .theme-{tier} ancestor class, see globals.css. */}
-                    <Star className="skin-tick-star h-5 w-5 shrink-0 fill-primary text-primary" />
-                    <Check className="skin-tick-check h-5 w-5 shrink-0 text-primary" />
-                  </>
-                )}
-              </Link>
-            ))}
-          </div>
-        </section>
-      ))}
+    <div className="mt-6">
+      <input
+        type="search"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        placeholder="Search lessons and topics"
+        aria-label="Search lessons and topics"
+        className="w-full max-w-md rounded-full border border-border bg-muted px-4 py-2.5 text-sm outline-none focus:ring-2 focus:ring-primary"
+      />
+      {groups.length === 0 && <p className="mt-6 text-sm text-muted-foreground italic">No lessons match.</p>}
+      <div className="mt-8 space-y-10">
+        {groups.map((group) => (
+          <section key={group.key}>
+            <div className="flex items-center gap-3">
+              <TopicIcon icon={iconForTopic(group.topicTitle)} />
+              <div>
+                <h2 className="font-heading text-xl font-bold leading-tight tracking-tight">{group.topicTitle}</h2>
+                <p className="text-xs text-muted-foreground">{group.unitTitle}</p>
+              </div>
+            </div>
+            <div className="mt-4 grid gap-3 sm:grid-cols-2">
+              {group.entries.map((e) => (
+                <Link
+                  key={e.lessonId}
+                  href={`/${classCode}/lesson/${e.lessonId}`}
+                  className="skin-card flex items-center justify-between gap-3 border border-border bg-background p-4 transition hover:border-primary hover:shadow-md"
+                >
+                  <div>
+                    <p className="text-xs text-muted-foreground">{releaseLabel(new Date(e.releasedAt))}</p>
+                    <p className="font-semibold">
+                      {e.lessonTitle}
+                      {e.lessonId === latestLessonId && (
+                        <span className="ml-2 rounded-full bg-primary px-2 py-0.5 align-middle text-[0.65rem] font-bold text-primary-foreground">Latest</span>
+                      )}
+                    </p>
+                    <p className="text-xs text-muted-foreground">
+                      {e.isToday ? "Today's lesson" : e.isRevision ? "Open for revision" : "Content and activities"}
+                    </p>
+                  </div>
+                  {completed.has(e.lessonId) && (
+                    <>
+                      {/* Arcade gets a star, Portfolio/Study a plain tick, toggled by the .theme-{tier} ancestor class. */}
+                      <Star className="skin-tick-star h-5 w-5 shrink-0 fill-primary text-primary" />
+                      <Check className="skin-tick-check h-5 w-5 shrink-0 text-primary" />
+                    </>
+                  )}
+                </Link>
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
     </div>
   );
 }

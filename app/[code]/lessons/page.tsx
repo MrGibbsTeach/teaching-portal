@@ -44,13 +44,13 @@ export default async function PreviousLessonsPage({ params }: { params: Promise<
 
   return (
     <CourseTierTheme tier={course?.tier ?? "general"}>
-      <div className="mx-auto max-w-2xl px-6 py-12">
+      <div className="mx-auto max-w-5xl px-6 py-12">
         <Link href={`/${normalized}`} className="text-sm text-muted-foreground hover:text-primary">
           ← {cls.name}
         </Link>
-        <h1 className="mt-3 font-heading text-2xl font-semibold tracking-tight">Previous lessons</h1>
-        <p className="mt-1 text-sm text-muted-foreground">
-          Everything your teacher has released so far.
+        <h1 className="mt-3 font-heading text-4xl font-extrabold tracking-tight">Previous lessons</h1>
+        <p className="mt-2 text-muted-foreground">
+          Everything your teacher has released, grouped by topic.
         </p>
         <PreviousLessonsList classCode={normalized} entries={entries} />
       </div>
