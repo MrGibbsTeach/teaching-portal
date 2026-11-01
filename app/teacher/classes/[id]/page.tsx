@@ -19,6 +19,7 @@ import {
 import DeleteClassButton from "@/components/teacher/DeleteClassButton";
 import { AddStudentForm } from "@/components/teacher/AddStudentForm";
 import { ClassCodeBox } from "@/components/teacher/ClassCodeBox";
+import { StopLiveButton } from "@/components/teacher/StopLiveButton";
 import { LessonReleaseRow } from "@/components/teacher/LessonReleaseRow";
 import { mergeStats, studentQuizTotals } from "@/lib/logic/insights";
 
@@ -189,6 +190,7 @@ export default async function ClassManagePage({
         >
           {liveState ? "Live now: return to session" : "Start live lesson"}
         </Link>
+        {liveState && <StopLiveButton classId={cls!.id} />}
       </section>
 
       {authMode === "account" ? (
