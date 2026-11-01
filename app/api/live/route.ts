@@ -19,18 +19,18 @@ export async function GET(req: Request) {
   const code = url.searchParams.get("code");
   const statusOnly = url.searchParams.get("status") === "1";
 
-  // No-login classes (code track) have no session: they are identified by the class code,
-  // which only ever exposes a redacted student view of the current slide.
+  // No-login classes (code track) are identified by the class code, never by a session, so the
+  // button also works for a teacher or student who happens to be logged in on the same browser.
+  // The code only ever exposes a redacted student view of the current slide.
   let anonymousCls = null;
-  if (!session) {
-    const normalized = code ? normalizeClassCode(code) : "";
-    anonymousCls = normalized && !isReservedCode(normalized) ? await getClassByCode(normalized) : null;
-    if (!anonymousCls || anonymousCls.authMode !== "code") {
-      return NextResponse.json({ error: "unauthorised" }, { status: 401 });
-    }
+  if (code) {
+    const normalized = normalizeClassCode(code);
+    const found = normalized && !isReservedCode(normalized) ? await getClassByCode(normalized) : null;
+    if (found && found.authMode === "code") anonymousCls = found;
   }
+  if (!anonymousCls && !session) return NextResponse.json({ error: "unauthorised" }, { status: 401 });
 
-  const isTeacher = session?.role === "teacher";
+  const isTeacher = !anonymousCls && session?.role === "teacher";
   const classId = anonymousCls
     ? anonymousCls.id
     : isTeacher
@@ -66,7 +66,7 @@ export async function GET(req: Request) {
     return NextResponse.json({
       ...base,
       block: redactForStudent(block, state.revealed),
-      myAnswer: session?.username ? (responses[session.username] ?? null) : null,
+      myAnswer: !anonymousCls && session?.username ? (responses[session.username] ?? null) : null,
     });
   }
 
