@@ -32,7 +32,7 @@ But it is a digital textbook, not a course. Mr Baker, Code.org, Grok and Educati
 
 Implications for the course design:
 - The spine of a General course is **client-brief projects that run the design process**, with theory taught inside them. The current spine is theory, with a few projects attached.
-- Y12 needs a **Unit 3 EST preparation track** that peaks in Term 2, using the content SCSA highlights for 2027 (released late September 2026 on the AIT course page and extranet; we do not have it in the repo yet).
+- No EST revision track is planned: SCSA names different Unit 3 content each year, so exam-specific content would date immediately. Teach Unit 3 well and use topic test practice.
 - "General" wording rule stays: tests and assessments, never exams.
 
 ## 3. What the reference sites do that we do not
@@ -100,7 +100,7 @@ Plus the existing 3D animations, which are the strongest thing in the course.
 | 3. Interactives | Build the reusable interactives in the order the 2027 calendar needs them | M each | Just ahead of teaching |
 | 4. Roll out | Convert the remaining missions about three weeks ahead of when they are taught, not all at once | L, ongoing | Through 2027 |
 
-**Recommended first mission: Y12 Unit 3, Design Concepts brief (Leo Thorne).** Reasons: the 2027 Y12 class starts Unit 3 in Term 1 and sits the EST on Unit 3 in Term 2, so it is the most time-critical; design concepts appear in all four units' skill lists; and the design spotter, layout fixer and typography tuner it needs are reused by Y11 Unit 1 straight after.
+**Recommended first mission: Y12 Unit 3, Design Concepts brief (Leo Thorne).** Reasons: the 2027 Y12 class starts Unit 3 in Term 1 so it is the most time-critical; design concepts appear in all four units' skill lists; and the design spotter, layout fixer and typography tuner it needs are reused by Y11 Unit 1 straight after.
 
 Cost honesty: rebuilding all of General to this standard is several weeks of work spread across 2027. Done just in time, mission by mission, it never has to be finished before it is useful.
 
@@ -108,5 +108,5 @@ Cost honesty: rebuilding all of General to this standard is several weeks of wor
 
 1. **Structure:** rebuild General around missions and a term plan (recommended), or keep the current topic order and only upgrade lessons in place (cheaper, but keeps the textbook feel and leaves projects outside the portal).
 2. **Evidence route:** Teams assignments, a pre-filled Microsoft Form at each milestone, or no hand-in through the portal.
-3. **Inputs only the owner has:** the school's 2027 term dates, the 2027 AIT General EST Unit 3 content, the school's assessment outline for General if one exists, and which software students actually have on their laptops (Microsoft 365, Canva for Education, Audacity, a browser image editor).
+3. **Inputs only the owner has:** the school's 2027 term dates, the school's assessment outline for General if one exists, and which software students actually have on their laptops (Microsoft 365, Canva for Education, Audacity, a browser image editor).
 4. **First mission:** confirm Y12 Unit 3 Design Concepts, or name another.
