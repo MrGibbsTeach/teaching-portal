@@ -8241,6 +8241,14 @@
                   "part": "activities"
                 },
                 {
+                  "type": "htmlInteractive",
+                  "title": "Gantt Planner: build a timeline from a client brief",
+                  "src": "/interactives/gantt-planner.html",
+                  "tier": "general",
+                  "instruction": "Read the client brief, add tasks, set how long each takes and what it waits for, then clear every clash. Finish by explaining your choices and testing what happens if a task runs late.",
+                  "minHeight": 900
+                },
+                {
                   "type": "heading",
                   "text": "Assessment practice",
                   "level": 2
@@ -17198,6 +17206,14 @@
                     }
                   ],
                   "part": "activities"
+                },
+                {
+                  "type": "htmlInteractive",
+                  "title": "Gantt Planner: build a timeline from a client brief",
+                  "src": "/interactives/gantt-planner.html",
+                  "tier": "general",
+                  "instruction": "Read the client brief, add tasks, set how long each takes and what it waits for, then clear every clash. Finish by explaining your choices and testing what happens if a task runs late.",
+                  "minHeight": 900
                 },
                 {
                   "type": "heading",

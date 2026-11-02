@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gantt Planner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:wght@600;700&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: white working page, brief on top, chart centre-stage, checker panel beside it. */
+:root{
+  --bg:#ffffff;--panel:#f4f6f9;--ink:#14213d;--muted:#5b6679;--line:#d9dee7;
+  --accent:#0b6e79;--accent-soft:#dff1f2;
+  --good:#1b7f45;--warn:#b26a00;--bad:#c0262d;--bad-soft:#fde8e9;--warn-soft:#fff2da;--good-soft:#e1f4e9;
+  --r-you:#2563eb;--r-client:#c2410c;--r-lab:#7c3aed;--r-ext:#0f766e;
+  --display:"Bricolage Grotesque",system-ui,sans-serif;--body:"Atkinson Hyperlegible",system-ui,sans-serif;
+}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#10151f;--panel:#182030;--ink:#e8edf6;--muted:#98a3b8;--line:#2b3548;
+  --accent:#4fc3cf;--accent-soft:#16363b;--good:#4ad08a;--warn:#f0b04a;--bad:#ff7b80;
+  --bad-soft:#3a1c20;--warn-soft:#3a2d12;--good-soft:#14301f;
+  --r-you:#6ea0ff;--r-client:#ff9a62;--r-lab:#b99bff;--r-ext:#4fd1c2;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#10151f;--panel:#182030;--ink:#e8edf6;--muted:#98a3b8;--line:#2b3548;
+  --accent:#4fc3cf;--accent-soft:#16363b;--good:#4ad08a;--warn:#f0b04a;--bad:#ff7b80;
+  --bad-soft:#3a1c20;--warn-soft:#3a2d12;--good-soft:#14301f;
+  --r-you:#6ea0ff;--r-client:#ff9a62;--r-lab:#b99bff;--r-ext:#4fd1c2;color-scheme:dark}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:16px/1.45 var(--body)}
+.wrap{max-width:1180px;margin:0 auto;padding:16px}
+header.top{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-bottom:12px}
+h1{font:700 26px var(--display);margin:0;text-wrap:balance}
+h2{font:700 19px var(--display);margin:0 0 8px;text-wrap:balance}
+h3{font:700 15px var(--display);margin:0 0 6px}
+.sub{color:var(--muted);margin:2px 0 0;font-size:14px}
+button,select,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{border:0;background:var(--bg);padding:7px 14px;min-height:36px}
+.seg button[aria-pressed="true"]{background:var(--accent);color:#fff}
+.tabs{display:flex;gap:4px;border-bottom:2px solid var(--line);margin-bottom:14px;overflow-x:auto}
+.tabs button{border:0;background:none;padding:10px 16px;font-weight:700;color:var(--muted);border-bottom:3px solid transparent;margin-bottom:-2px;white-space:nowrap}
+.tabs button[aria-selected="true"]{color:var(--accent);border-color:var(--accent)}
+.tabs button:disabled{opacity:.5;cursor:not-allowed}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.briefs{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+.bcard{text-align:left;border:2px solid var(--line);background:var(--bg);border-radius:10px;padding:14px}
+.bcard[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft)}
+.pill{display:inline-block;font-size:12px;font-weight:700;padding:2px 8px;border-radius:99px;background:var(--panel);border:1px solid var(--line);color:var(--muted)}
+.pill.on{background:var(--good-soft);border-color:var(--good);color:var(--good)}
+.btn{border:1px solid var(--accent);background:var(--accent);color:#fff;border-radius:8px;padding:8px 14px;font-weight:700;min-height:38px}
+.btn.alt{background:var(--bg);color:var(--accent)}
+.btn.sm{padding:3px 9px;min-height:28px;font-size:13px}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+ul.plain{margin:6px 0 0;padding-left:20px}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:14px;align-items:start}
+.chartbox{border:1px solid var(--line);border-radius:10px;overflow:auto;background:var(--bg);max-height:70vh}
+.gt{position:relative}
+.gt .hd{position:sticky;top:0;z-index:5;background:var(--bg)}
+.row{display:flex;height:34px;border-bottom:1px solid var(--line);align-items:center}
+.left{flex:none;width:430px;display:flex;gap:4px;align-items:center;padding:0 6px;position:sticky;left:0;z-index:4;background:var(--bg);border-right:1px solid var(--line);height:100%}
+.left input.nm{width:185px;border:1px solid transparent;background:transparent;padding:3px 4px;border-radius:5px;min-width:0}
+.left input.nm:hover,.left input.nm:focus{border-color:var(--line);background:var(--bg)}
+.left select{width:72px;padding:2px;border:1px solid var(--line);border-radius:5px;background:var(--bg);font-size:13px}
+.left input.dn{width:42px;padding:2px 3px;border:1px solid var(--line);border-radius:5px;background:var(--bg);text-align:center}
+.left .dep{font-size:12px;min-width:56px;padding:2px 6px;border:1px solid var(--line);border-radius:5px;background:var(--bg)}
+.left .x{border:0;background:none;color:var(--muted);font-size:18px;padding:0 4px}
+.track{position:relative;flex:none;height:100%}
+.bar{position:absolute;top:5px;height:24px;border-radius:6px;color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;padding:0 7px;overflow:hidden;white-space:nowrap;cursor:grab;touch-action:none;user-select:none;border:2px solid transparent}
+.bar.fixed{cursor:not-allowed;background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.25) 0 6px,transparent 6px 12px)}
+.bar.bad{border-color:var(--bad);box-shadow:0 0 0 2px var(--bad-soft)}
+.bar.crit{border-color:var(--ink)}
+.bar .h{position:absolute;right:0;top:0;bottom:0;width:8px;cursor:ew-resize;background:rgba(0,0,0,.25)}
+.bar.ghost{background:transparent!important;border:2px dashed var(--muted);color:var(--muted);z-index:0}
+.cell{position:absolute;top:0;bottom:0;border-left:1px solid var(--line);opacity:.5}
+.wkh{display:flex;font-size:12px;font-weight:700;color:var(--muted)}
+.dayh{display:flex;font-size:11px;color:var(--muted)}
+.dayh span,.wkh span{flex:none;text-align:center;border-left:1px solid var(--line)}
+.wkh span{text-align:left;padding-left:4px}
+.lane{background:repeating-linear-gradient(45deg,var(--warn-soft) 0 5px,transparent 5px 10px);position:absolute;top:0;bottom:0;border-left:1px solid var(--warn);border-right:1px solid var(--warn);opacity:.9}
+.lane.dl{background:none;border:0;border-left:3px solid var(--bad)}
+.legend{display:flex;flex-wrap:wrap;gap:10px;font-size:13px;color:var(--muted);margin:8px 0}
+.dot{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:4px;vertical-align:-1px}
+.issue{border-left:5px solid var(--bad);background:var(--bad-soft);padding:8px 10px;border-radius:6px;margin-bottom:8px;font-size:14px}
+.issue.warn{border-color:var(--warn);background:var(--warn-soft)}
+.issue.ok{border-color:var(--good);background:var(--good-soft)}
+.issue b{display:block}
+.bank{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+.bank button{border:1px solid var(--line);background:var(--bg);border-radius:99px;padding:4px 10px;font-size:13px}
+.bank button:hover{border-color:var(--accent)}
+.fr{width:100%;min-height:78px;border:1px solid var(--line);border-radius:8px;padding:8px;background:var(--bg)}
+.hints{display:flex;flex-wrap:wrap;gap:5px;margin:6px 0}
+.pop{position:fixed;inset:0;background:rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;z-index:50;padding:16px}
+.pop .box{background:var(--bg);border-radius:12px;padding:16px;max-width:360px;width:100%;max-height:80vh;overflow:auto}
+table.sheet{border-collapse:collapse;width:100%;font-size:14px}
+table.sheet th,table.sheet td{border-bottom:1px solid var(--line);padding:5px 8px;text-align:left}
+.tw{overflow-x:auto}
+.muted{color:var(--muted)}
+@media(max-width:860px){.layout,.grid2{grid-template-columns:1fr}.left{position:static}}
+@media(prefers-reduced-motion:no-preference){.bar{transition:left .08s}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>Gantt Planner</h1>
+      <p class="sub">Turn a client brief into a timeline. Add tasks, link them, then fix every clash.</p>
+    </div>
+    <div class="seg" role="group" aria-label="Level">
+      <button id="tg" aria-pressed="true">General</button>
+      <button id="ta" aria-pressed="false">ATAR</button>
+    </div>
+  </header>
+  <div class="tabs" role="tablist" id="tabs"></div>
+  <main id="main"></main>
+</div>
+<div id="pop"></div>
+<script>
+/* ---------- DATA ---------- */
+const RES={You:{c:'--r-you',use:['You'],label:'You'},Lab:{c:'--r-lab',use:['You','Lab'],label:'Lab'},Client:{c:'--r-client',use:['Client'],label:'Client'},External:{c:'--r-ext',use:['External'],label:'Supplier'},External2:{c:'--r-ext',use:['External2'],label:'Supplier 2'},Meeting:{c:'--r-client',use:['You','Client'],label:'Meeting'}};
+const STAGES=['Plan','Design','Build','Check','Review','Deliver'];
+const T=(id,name,dur,start,res,stage,deps,fixed)=>({id,name,dur,start,res,stage,deps:deps||[],fixed:!!fixed});
+const BRIEFS=[
+{id:'market',name:'Bunbury Farmers Market',tag:'Easier · 18 days',deadline:18,
+ summary:'The market manager wants one A3 poster and a set of social media tiles for the summer season launch. She is easy to reach but is away for part of the project, and the computer lab has a maintenance closure.',
+ client:'Market manager', unavail:[{res:'Lab',from:12,to:13,why:'Lab closed for maintenance'},{res:'Client',from:14,to:15,why:'Client away'}],
+ ref:[T('brief','Client brief meeting',1,1,'Meeting','Plan',[],1),T('a1','Research other market posters',1,2,'You','Plan',['brief']),T('a2','Write design criteria',1,3,'You','Plan',['a1']),T('a3','Sketch thumbnails',2,4,'You','Design',['a2']),T('a4','Build poster draft',3,6,'Lab','Build',['a3']),T('fb','Client feedback meeting',1,9,'Meeting','Review',['a4'],1),T('a5','Revise poster',2,10,'Lab','Build',['fb']),T('a6','Proofread and check print size',1,12,'You','Check',['a5']),T('a7','Make social tiles',2,13,'You','Build',['a5']),T('a8','Client signs off poster',1,13,'Client','Review',['a6']),T('a9','Export final files',1,15,'Lab','Deliver',['a8','a7']),T('a10','Send files to client',1,16,'You','Deliver',['a9'])]},
+{id:'surf',name:'South Coast Surf Films',tag:'Medium · 25 days',deadline:25,
+ summary:'The surf club wants a 60 second promo video. Filming can only happen at the club training session. The voice-over artist needs three days, the music licence two, the edit suite is closed for a week, and the club president is away before final sign-off.',
+ client:'Club president', unavail:[{res:'Lab',from:12,to:13,why:'Edit suite closed'},{res:'Client',from:18,to:20,why:'Client away'}],
+ ref:[T('brief','Client brief meeting',1,1,'Meeting','Plan',[],1),T('b1','Research surf promo videos',1,2,'You','Plan',['brief']),T('b2','Write script and shot list',2,3,'You','Plan',['b1']),T('b3','Draw storyboard',2,5,'You','Design',['b2']),T('b4','Music licence arranged',2,5,'External2','Build',['b2']),T('b5','Voice-over recorded by artist',3,5,'External','Build',['b2']),T('film','Filming at club training session',1,7,'Meeting','Build',['b3'],1),T('b6','Edit rough cut',4,8,'Lab','Build',['film','b4','b5']),T('b7','Add titles and captions',2,14,'Lab','Build',['b6']),T('fb','Client feedback meeting',1,16,'Meeting','Review',['b7'],1),T('b8','Revise the cut',3,17,'Lab','Build',['fb']),T('b9','Test playback on two devices',1,20,'You','Check',['b8']),T('b10','Client signs off video',1,21,'Client','Review',['b9']),T('b11','Export final video',1,22,'Lab','Deliver',['b10']),T('b12','Upload and send to client',1,23,'You','Deliver',['b11'])]},
+{id:'esports',name:'Bunbury Esports Club',tag:'Harder · 30 days',deadline:30,
+ summary:'The club needs a logo and a three page responsive website. A public holiday falls in week one, the lab is closed twice, the client is away twice, and members are only available for one usability session. Fixed dates are locked.',
+ client:'Club secretary', unavail:[{res:'All',from:5,to:5,why:'Public holiday'},{res:'Lab',from:20,to:21,why:'Lab closed'},{res:'Client',from:15,to:17,why:'Client away'},{res:'Client',from:24,to:25,why:'Client away'}],
+ ref:[T('brief','Client brief meeting',1,1,'Meeting','Plan',[],1),T('c1','Research gaming club sites',2,2,'You','Plan',['brief']),T('c2','Define audience and criteria',1,4,'You','Plan',['c1']),T('c3','Draw navigation map',2,6,'You','Design',['c2']),T('c4','Sketch wireframes',2,8,'You','Design',['c3']),T('c5','Build site draft',3,11,'Lab','Build',['c4']),T('fb','Client feedback meeting',1,14,'Meeting','Review',['c5'],1),T('c6','Design logo from feedback',2,15,'Lab','Design',['fb']),T('c7','Build remaining pages',3,17,'Lab','Build',['c6']),T('c8','Test on phone and laptop',2,20,'You','Check',['c7']),T('use','Usability session with members',1,22,'Meeting','Review',['c8'],1),T('c9','Fix problems found',2,23,'Lab','Build',['use']),T('c10','Client signs off site',1,26,'Client','Review',['c9']),T('c11','Publish site',1,27,'Lab','Deliver',['c10']),T('c12','Hand files to client',1,28,'You','Deliver',['c11'])]}
+];
+const BRIEF_BY={};BRIEFS.forEach(b=>BRIEF_BY[b.id]=b);
+/* ---------- ENGINE ---------- */
+const endOf=t=>t.start+t.dur-1;
+const uses=t=>RES[t.res].use;
+const byId=ts=>{const m={};ts.forEach(t=>m[t.id]=t);return m};
+function topo(ts){const m=byId(ts),ind={},out=[],q=[];ts.forEach(t=>{ind[t.id]=t.deps.filter(d=>m[d]).length});
+  ts.forEach(t=>{if(!ind[t.id])q.push(t)});
+  while(q.length){const t=q.shift();out.push(t);ts.forEach(s=>{if(s.deps.includes(t.id)&&--ind[s.id]===0)q.push(s)})}
+  return out.length===ts.length?out:null}
+function ancestors(ts,id){const m=byId(ts),seen=new Set(),st=[id];
+  while(st.length){const x=m[st.pop()];if(!x)continue;x.deps.forEach(d=>{if(!seen.has(d)){seen.add(d);st.push(d)}})}return seen}
+function cpm(ts){const o=topo(ts);if(!o)return null;const m=byId(ts),ES={},EF={},LS={},LF={},succ={};
+  ts.forEach(t=>succ[t.id]=[]);ts.forEach(t=>t.deps.forEach(d=>{if(succ[d])succ[d].push(t.id)}));
+  o.forEach(t=>{const p=t.deps.filter(d=>m[d]).map(d=>EF[d]+1);ES[t.id]=t.fixed?t.start:Math.max(1,...p,1);EF[t.id]=ES[t.id]+t.dur-1});
+  const fin=Math.max(...ts.map(t=>EF[t.id]));
+  o.slice().reverse().forEach(t=>{const s=succ[t.id].map(i=>LS[i]-1);LF[t.id]=t.fixed?EF[t.id]:Math.min(fin,...s);LS[t.id]=LF[t.id]-t.dur+1});
+  const fl={},crit={};ts.forEach(t=>{fl[t.id]=LS[t.id]-ES[t.id];crit[t.id]=fl[t.id]===0});
+  return{ES,EF,LS,LF,fl,crit,fin}}
+function ripple(ts,id,n){const o=topo(ts);if(!o)return null;const c=ts.map(t=>({...t})),m=byId(c);m[id].start+=n;
+  const pushed=[],missed=[];
+  topo(c).forEach(t=>{if(t.id===id)return;const need=Math.max(0,...t.deps.map(d=>endOf(m[d])+1));
+    if(t.start<need){t.moved=need-t.start;t.start=need;pushed.push(t.id);if(t.fixed)missed.push(t.id)}});
+  return{tasks:c,pushed,missed,finish:Math.max(...c.map(endOf))}}
+function check(ts,br,tier){
+  const I=[],m=byId(ts),atar=tier==='atar';
+  const add=(sev,rule,ids,g,a,fix)=>I.push({sev,rule,ids,g,a:a||g,fix});
+  const real=ts.filter(t=>!t.fixed);
+  if(!real.length)add('warn','empty',[],'Add your first task. Use the task bank, or type your own.','No tasks yet.');
+  ts.forEach(t=>t.deps.forEach(d=>{const p=m[d];if(p&&t.start<=endOf(p))
+    add('error','dep',[t.id,p.id],`"${t.name}" starts on day ${t.start} but "${p.name}" is not finished until day ${endOf(p)}. Move it to day ${endOf(p)+1} or later.`,
+      `Dependency broken: "${t.name}" (day ${t.start}) precedes the finish of "${p.name}" (day ${endOf(p)}).`,
+      t.fixed?null:{id:t.id,start:endOf(p)+1})}));
+  if(!topo(ts))add('error','cycle',[],'Some tasks wait for each other in a circle, so none could ever start. Remove one link.','Circular dependency detected.');
+  ts.forEach(t=>{if(endOf(t)>br.deadline)add('error','deadline',[t.id],`"${t.name}" finishes on day ${endOf(t)}, after the deadline on day ${br.deadline}.`,`Deadline exceeded: "${t.name}" ends day ${endOf(t)}, deadline ${br.deadline}.`)});
+  for(let i=0;i<ts.length;i++)for(let j=i+1;j<ts.length;j++){const a=ts[i],b=ts[j];
+    const sh=uses(a).filter(r=>uses(b).includes(r));
+    if(sh.length&&a.start<=endOf(b)&&b.start<=endOf(a)){
+      const first=a.start<=b.start?a:b,second=first===a?b:a,who=sh[0]==='You'?'You':sh[0]==='Lab'?'The lab':sh[0]==='Client'?'The client':'The supplier';
+      add('error','clash',[a.id,b.id],`${who} cannot do "${a.name}" and "${b.name}" on the same day. Move one so they do not overlap.`,
+        `Resource clash on ${sh[0]}: "${a.name}" overlaps "${b.name}".`,
+        second.fixed?(first.fixed?null:{id:first.id,start:second.start-first.dur}):{id:second.id,start:endOf(first)+1})}}
+  ts.forEach(t=>br.unavail.forEach(w=>{if((w.res==='All'||uses(t).includes(w.res))&&t.start<=w.to&&endOf(t)>=w.from)
+    add('error','avail',[t.id],`"${t.name}" runs into a blocked period (${w.why}, day${w.from===w.to?' '+w.from:'s '+w.from+' to '+w.to}).`,`Availability: "${t.name}" overlaps "${w.why}" (days ${w.from}-${w.to}).`)}));
+  STAGES.forEach(s=>{if(!ts.some(t=>t.stage===s))add('error','stage',[],`There is no ${s} task yet. Every project needs one.`,`Missing stage: ${s}.`)});
+  const lim=atar?8:5;
+  ts.forEach(t=>{if(t.dur>lim)add('warn','big',[t.id],`"${t.name}" is ${t.dur} days long. Split big tasks into smaller steps so you can track progress.`,`Task "${t.name}" (${t.dur} d) exceeds ${lim} d. Decompose.`)});
+  ts.forEach(t=>{if(!t.deps.length&&t.stage!=='Plan'&&!t.fixed||(!t.deps.length&&t.fixed&&t.id!=='brief'))
+    add('warn','nodep',[t.id],`"${t.name}" does not depend on anything. What has to finish before it can start?`,`No predecessor set for "${t.name}".`)});
+  ts.forEach(t=>{if(t.stage!=='Deliver'&&!ts.some(s=>s.deps.includes(t.id)))
+    add('warn','nosucc',[t.id],`Nothing waits for "${t.name}". Link a later task to it, or check it is needed.`,`No successor for "${t.name}".`)});
+  const fin=ts.length?Math.max(...ts.map(endOf)):0,need=atar?2:1,buf=br.deadline-fin;
+  if(real.length&&fin<=br.deadline&&buf<need)add('warn','buffer',[],`You finish on day ${fin} with ${buf} spare day${buf===1?'':'s'}. Leave at least ${need} in case something slips.`,`Contingency ${buf} d, below ${need} d.`);
+  return{issues:I,finish:fin,buffer:buf,bufNeed:need}}
+function needs(ts,br,tier){
+  const m=byId(ts),del=ts.filter(t=>t.stage==='Deliver'),fb=m.fb,res=[];
+  const anc=t=>ancestors(ts,t.id),has=(set,st,not)=>[...set].some(i=>m[i]&&m[i].stage===st&&i!==not);
+  res.push({ok:!!del.length&&del.every(d=>has(anc(d),'Check')),text:'Something is checked before anything is delivered'});
+  res.push({ok:!!fb&&[...anc(fb)].some(i=>m[i]&&m[i].stage==='Build')&&ts.some(t=>t.stage==='Build'&&anc(t).has('fb')),text:'A draft is built before the client feedback meeting, and revised after it'});
+  res.push({ok:!!del.length&&del.every(d=>[...anc(d)].some(i=>m[i]&&m[i].stage==='Review'&&i!=='fb'&&!m[i].fixed)||[...anc(d)].some(i=>m[i]&&m[i].stage==='Review'&&i!=='fb'&&anc(m[i]).has('fb'))),text:'The client signs off after the changes, before final delivery'});
+  const c=check(ts,br,tier);
+  res.push({ok:!c.issues.some(i=>i.sev==='error'),text:'No clashes, broken links or missed dates'});
+  res.push({ok:c.finish<=br.deadline&&c.buffer>=c.bufNeed,text:`Finishes with at least ${c.bufNeed} spare day${c.bufNeed>1?'s':''} before day ${br.deadline}`});
+  return res}
+/* ---------- STATE ---------- */
+const DW=26,HEADH=40;
+const qs=new URLSearchParams(location.search);
+const S={tier:qs.get('tier')==='atar'?'atar':'general',brief:'market',tab:'brief',tasks:{},just:{},crit:null,wi:{id:'',n:2},ref:false,seq:1,pop:null,copy:''};
+BRIEFS.forEach(b=>S.tasks[b.id]=b.ref.filter(t=>t.fixed).map(t=>({...t,deps:[],start:t.start})));
+try{const j=JSON.parse(localStorage.getItem('gantt-v1')||'null');if(j&&j.tasks){S.tasks=j.tasks;S.just=j.just||{};S.brief=j.brief||S.brief;S.seq=j.seq||1;if(!qs.get('tier')&&j.tier)S.tier=j.tier}}catch(e){}
+const save=()=>{try{localStorage.setItem('gantt-v1',JSON.stringify({tasks:S.tasks,just:S.just,brief:S.brief,seq:S.seq,tier:S.tier}))}catch(e){}};
+const br=()=>BRIEF_BY[S.brief],ts=()=>S.tasks[S.brief],atar=()=>S.tier==='atar';
+const critOn=()=>S.crit===null?atar():S.crit;
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const css=v=>`var(${RES[v].c})`;
+const EX={market:{a:'Sketch thumbnails',b:'Build poster draft',late:'Build poster draft',cons:'the lab closure on days 12 and 13'},
+ surf:{a:'Write script and shot list',b:'Edit rough cut',late:'Edit rough cut',cons:'the club training session on day 7'},
+ esports:{a:'Draw navigation map',b:'Build site draft',late:'Build site draft',cons:'the public holiday on day 5'}};
+const unlocked=()=>{const t=ts();return t.some(x=>!x.fixed)&&!check(t,br(),S.tier).issues.some(i=>i.sev==='error')};
+
+/* ---------- CHART ---------- */
+function chart(list,b,o){o=o||{};
+  const ND=b.deadline+6,W=ND*DW,LEFT=o.ro?190:430,cp=o.crit?cpm(list):null,iss=o.ro?[]:check(list,b,S.tier).issues;
+  const badIds=new Set();iss.forEach(i=>{if(i.sev==='error')i.ids.forEach(x=>badIds.add(x))});
+  let wk='',dy='';for(let d=1;d<=ND;d++){dy+=`<span style="width:${DW}px">${d}</span>`}
+  for(let w=0;w*5<ND;w++)wk+=`<span style="width:${5*DW}px">Week ${w+1}</span>`;
+  const idx={};list.forEach((t,i)=>idx[t.id]=i);
+  let rows='';
+  list.forEach(t=>{
+    const lanes=b.unavail.filter(w=>w.res==='All'||uses(t).includes(w.res)).map(w=>`<div class="lane" title="${esc(w.why)}" style="left:${(w.from-1)*DW}px;width:${(w.to-w.from+1)*DW}px"></div>`).join('');
+    const dl=`<div class="lane dl" title="Deadline" style="left:${b.deadline*DW}px;width:0"></div>`;
+    const g=o.ghost&&o.ghost[t.id]!=null?`<div class="bar ghost" style="left:${(o.ghost[t.id]-1)*DW}px;width:${t.dur*DW-2}px"></div>`:'';
+    const lab=t.dur*DW>70?esc(t.name):'';
+    const cls=['bar',t.fixed?'fixed':'',badIds.has(t.id)?'bad':'',cp&&cp.crit[t.id]?'crit':''].join(' ');
+    const fl=cp&&!cp.crit[t.id]?`<span class="muted" style="position:absolute;left:${endOf(t)*DW+4}px;top:9px;font-size:11px">float ${cp.fl[t.id]}d</span>`:'';
+    const bar=`<div class="${cls}" data-id="${t.id}" style="left:${(t.start-1)*DW}px;width:${t.dur*DW-2}px;background:${css(t.res)}" title="${esc(t.name)}: day ${t.start} to ${endOf(t)}">${t.fixed?'🔒 ':''}${lab}${t.fixed||o.ro?'':'<span class="h"></span>'}</div>`;
+    let left;
+    if(o.ro||t.fixed){left=`<div class="left" style="width:${LEFT}px"><span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${esc(t.name)}">${t.fixed?'🔒 ':''}${esc(t.name)}</span><span class="pill">${RES[t.res].label}</span></div>`}
+    else{left=`<div class="left" style="width:${LEFT}px"><input class="nm" id="nm-${t.id}" data-f="name" value="${esc(t.name)}" aria-label="Task name"><span class="muted" style="font-size:11px;width:28px">${t.stage.slice(0,3)}</span>
+      <select data-f="res" aria-label="Who does it">${['You','Lab','Client','External','External2','Meeting'].map(r=>`<option value="${r}"${t.res===r?' selected':''}>${RES[r].label}</option>`).join('')}</select>
+      <input class="dn" type="number" min="1" max="15" data-f="dur" value="${t.dur}" aria-label="Days">
+      <button class="dep" data-act="deps" aria-label="Details and links">After ${t.deps.length}</button><button class="x" data-act="del" aria-label="Delete task">×</button></div>`}
+    rows+=`<div class="row" data-id="${t.id}">${left}<div class="track" style="width:${W}px;background-image:linear-gradient(to right,var(--line) 1px,transparent 1px);background-size:${DW}px 100%">${lanes}${dl}${g}${bar}${fl}</div></div>`});
+  let arrows='';
+  list.forEach(t=>t.deps.forEach(d=>{const p=list[idx[d]];if(!p)return;const bad=t.start<=endOf(p);
+    const x1=endOf(p)*DW-2,y1=idx[d]*34+17,x2=(t.start-1)*DW+1,y2=idx[t.id]*34+17,mx=Math.max(x1,x2-6)+(bad?4:0);
+    arrows+=`<path d="M${x1} ${y1} H${x1+5} V${y2} H${x2-4}" fill="none" stroke="${bad?'var(--bad)':'var(--muted)'}" stroke-width="1.5"/><path d="M${x2} ${y2} l-5 -3.5 v7z" fill="${bad?'var(--bad)':'var(--muted)'}"/>`}));
+  return `<div class="chartbox" id="cb"><div class="gt" style="width:${LEFT+W}px">
+    <div class="hd" style="height:${HEADH}px"><div style="display:flex"><div class="left" style="width:${LEFT}px;height:${HEADH}px;font-size:12px;color:var(--muted);align-items:end;padding-bottom:3px">Task · stage · who · days · links</div><div><div class="wkh">${wk}</div><div class="dayh">${dy}</div></div></div></div>
+    ${rows||'<div class="row"><div class="muted" style="padding:8px">No tasks yet.</div></div>'}
+    <svg style="position:absolute;left:${LEFT}px;top:${HEADH}px;pointer-events:none" width="${W}" height="${list.length*34}">${arrows}</svg></div></div>`}
+function legend(b){return `<div class="legend"><span><i class="dot" style="background:var(--r-you)"></i>You</span><span><i class="dot" style="background:var(--r-lab)"></i>Lab (also uses you)</span><span><i class="dot" style="background:var(--r-client)"></i>Client / meeting</span><span><i class="dot" style="background:var(--r-ext)"></i>Supplier</span><span>🔒 fixed date</span><span><i class="dot" style="background:repeating-linear-gradient(45deg,var(--warn-soft) 0 3px,var(--warn) 3px 4px)"></i>blocked</span><span style="color:var(--bad)">▌ deadline (end of day ${b.deadline})</span></div>`}
+
+/* ---------- TABS ---------- */
+function tabBrief(){const b=br();
+  return `<h2>Choose a client</h2><div class="briefs">${BRIEFS.map(x=>`<button class="bcard" data-act="pick" data-id="${x.id}" aria-pressed="${x.id===S.brief}"><b>${x.name}</b><br><span class="pill">${x.tag}</span><p class="sub">${x.summary.split('.')[0]}.</p></button>`).join('')}</div>
+  <div class="grid2" style="margin-top:14px"><div class="card"><h3>${b.name}</h3><p>${b.summary}</p>
+  <h3>You must deliver by</h3><p><b>End of day ${b.deadline}</b> (${Math.ceil(b.deadline/5)} school weeks, days counted Monday to Friday).</p></div>
+  <div class="card"><h3>What blocks the plan</h3><ul class="plain"><li>Locked dates already on the chart: ${ts().filter(t=>t.fixed).map(t=>`${esc(t.name)} (day ${t.start})`).join('; ')}</li>${b.unavail.map(w=>`<li>${w.why}: day${w.from===w.to?' '+w.from:'s '+w.from+' to '+w.to}</li>`).join('')}</ul>
+  <h3 style="margin-top:10px">Your job</h3><ul class="plain"><li>Add tasks that cover plan, design, build, check, review and deliver.</li><li>Give each a length, a person or resource, and what it waits for.</li><li>Clear every red clash, then explain your choices.</li></ul>
+  <p style="margin-top:12px"><button class="btn" data-act="tab" data-id="plan">Start planning</button></p></div></div>`}
+function bank(){const b=br(),have=new Set(ts().map(t=>t.name));
+  return `<div class="bank" aria-label="Task bank">${b.ref.filter(t=>!t.fixed).map(t=>`<button data-act="bank" data-id="${t.id}"${have.has(t.name)?' disabled style="opacity:.4"':''}>+ ${esc(t.name)}${atar()?'':' · '+t.dur+'d'}</button>`).join('')}</div>`}
+function panel(){const b=br(),r=check(ts(),b,S.tier),er=r.issues.filter(i=>i.sev==='error'),wr=r.issues.filter(i=>i.sev==='warn');
+  const one=i=>`<div class="issue ${i.sev==='warn'?'warn':''}"><b>${i.sev==='warn'?'Check':i.rule==='dep'?'Order':i.rule==='clash'?'Clash':i.rule==='deadline'?'Deadline':i.rule==='avail'?'Blocked':'Missing'}</b>${esc(atar()?i.a:i.g)}${i.fix&&!atar()?` <button class="btn sm alt" data-act="fix" data-id="${i.fix.id}" data-s="${i.fix.start}">Move to day ${i.fix.start}</button>`:''}</div>`;
+  let cp='';if(critOn()){const c=cpm(ts());if(c){const l=ts().filter(t=>c.crit[t.id]).sort((a,b)=>a.start-b.start);cp=`<div class="card" style="margin-top:10px"><h3>Critical path</h3><p class="sub">${l.map(t=>esc(t.name)).join(' → ')}</p><p class="sub">Earliest finish ${c.fin} days. Any slip on these tasks moves the end date.</p></div>`}}
+  return `<div><div class="card"><h3>Clash checker</h3><p style="margin:0 0 8px"><span class="pill ${er.length?'':'on'}">${er.length} problem${er.length===1?'':'s'}</span> <span class="pill">${wr.length} to check</span></p>
+  <p class="sub" style="margin:0 0 8px">Finish: day ${r.finish||'-'} of ${b.deadline} · spare: ${ts().some(t=>!t.fixed)?r.buffer:'-'}</p>
+  ${er.length||wr.length?er.concat(wr).map(one).join(''):'<div class="issue ok"><b>All clear</b>No clashes. Open Justify to explain your plan.</div>'}</div>${cp}</div>`}
+function tabPlan(){const b=br();
+  return `<div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between"><h2 style="margin:0">${b.name}</h2><label><input type="checkbox" id="crit" ${critOn()?'checked':''}> Show critical path and float</label></div>
+  <p class="sub">Drag a bar to move it. Drag its right edge to change the length. Press “After” to set what it waits for.</p>${bank()}
+  <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px"><input id="cn" placeholder="Or type your own task" style="flex:1;min-width:160px;border:1px solid var(--line);border-radius:8px;padding:6px 8px;background:var(--bg)"><button class="btn alt" data-act="custom">Add task</button><button class="btn alt" data-act="sort">Sort by start</button></div>
+  <div class="layout"><div>${chart(ts(),b,{crit:critOn()})}${legend(b)}</div>${panel()}</div>`}
+/* ---------- JUSTIFY ---------- */
+const JB=()=>{const g=[
+ {k:'order',q:'Pick two tasks where one must finish before the other starts. Explain why.',fr:'I put ___ before ___ because ...',min:60,h:[['a reason',/because|so that|since/i],['before or after',/before|after|first|then/i],['depends',/depend|need|wait|require/i]],ex:e=>`I put "${e.a}" before "${e.b}" because the draft needs the design decisions made first. If I built it without them I would have to redo work, so "${e.b}" depends on "${e.a}" finishing.`},
+ {k:'late',q:'Pick one task that could run late. What happens to the rest of your plan?',fr:'If ___ ran late, then ...',min:60,h:[['a task could slip',/late|delay|slip|overrun/i],['knock-on effect',/then|push|move|affect|everything|after/i],['the deadline',/deadline|spare|buffer|finish/i]],ex:e=>`If "${e.late}" ran two days late, then every task that depends on it would be pushed back two days as well. I have spare days at the end, so I would still finish before the deadline, but I would have no room for a second delay.`},
+ {k:'clash',q:'A fixed date or blocked period shaped your plan. How did you work around it?',fr:'I worked around ___ by ...',min:60,h:[['names the constraint',/lab|client|holiday|away|closed|meeting|session|fixed/i],['says what you did',/moved|around|before|after|instead|scheduled|placed/i],['a reason',/because|so that|since/i]],ex:e=>`I worked around ${e.cons} by placing the tasks that need it on other days and doing work that does not need it at that time. I did this because a task cannot run when the resource is not available.`}];
+ if(atar())g.push({k:'strat',q:'Evaluate your schedule. Identify the critical path, justify your contingency and name one trade-off.',fr:'The critical path is ... I allowed ... days of contingency because ... A trade-off was ...',min:110,h:[['critical path',/critical/i],['float or slack',/float|slack/i],['contingency',/contingency|buffer|spare/i],['a trade-off',/trade-?off|however|instead|at the cost|whereas/i],['milestone',/milestone|review point|checkpoint/i]],ex:e=>`The critical path runs from the brief through "${e.b}" to delivery, so any slip there moves the end date. Tasks off that path have float, which lets me absorb small delays without moving the deadline. I kept two days of contingency because the client and lab are not always available. A trade-off was giving up extra revision time to protect that buffer, and the client meeting acts as the main milestone where progress is reviewed.`});
+ return g};
+function tabJust(){if(!unlocked())return `<div class="card"><h2>Justify is locked</h2><p>Clear every red problem on the Plan tab first. Then you can explain the decisions behind your timeline.</p><button class="btn" data-act="tab" data-id="plan">Back to the plan</button></div>`;
+  const b=br(),J=(S.just[b.id]=S.just[b.id]||{});
+  return `<h2>Justify your plan</h2><p class="sub">Write in your own words. The pills only check that you covered the ideas. They are not marks.</p>
+  ${JB().map(x=>{const v=J[x.k]||'';return `<div class="card" style="margin-bottom:12px"><h3>${x.q}</h3><p class="sub" style="margin:0 0 6px">Sentence frame: <i>${x.fr}</i></p>
+  <textarea class="fr" id="j-${x.k}" data-k="${x.k}" aria-label="${esc(x.q)}">${esc(v)}</textarea><div class="hints" id="h-${x.k}"></div><div id="ex-${x.k}"></div></div>`}).join('')}
+  <button class="btn" data-act="tab" data-id="review">Review my plan</button>`}
+function updJ(k){const x=JB().find(y=>y.k===k),v=((S.just[S.brief]||{})[k])||'',h=document.getElementById('h-'+k);if(!h)return;
+  h.innerHTML=x.h.map(p=>`<span class="pill ${p[1].test(v)?'on':''}">${p[1].test(v)?'✓ ':''}${p[0]}</span>`).join('')+`<span class="pill">${v.length}/${x.min} characters</span>`;
+  const e=document.getElementById('ex-'+k);if(e){e.innerHTML=v.length>=x.min?`<button class="btn sm alt" data-act="ex" data-k="${k}">Show an example answer</button><div id="exb-${k}" class="sub"></div>`:''}}
+
+/* ---------- REVIEW ---------- */
+function summary(){const b=br();return `${b.name} - plan (deadline day ${b.deadline})\n`+ts().slice().sort((a,c)=>a.start-c.start).map(t=>`Day ${t.start}-${endOf(t)} | ${t.name} | ${RES[t.res].label} | ${t.stage} | after: ${t.deps.map(d=>(ts().find(x=>x.id===d)||{}).name).filter(Boolean).join(', ')||'none'}`).join('\n')}
+function tabReview(){if(!unlocked())return `<div class="card"><h2>Review is locked</h2><p>Clear every red problem on the Plan tab first.</p><button class="btn" data-act="tab" data-id="plan">Back to the plan</button></div>`;
+  const b=br(),l=ts(),nd=needs(l,b,S.tier),real=l.filter(t=>!t.fixed);
+  if(!S.wi.id||!real.some(t=>t.id===S.wi.id))S.wi.id=real[0].id;
+  const rp=ripple(l,S.wi.id,+S.wi.n),orig={};l.forEach(t=>orig[t.id]=t.start);
+  const late=rp.finish>b.deadline;
+  const moved=rp.pushed.map(i=>rp.tasks.find(t=>t.id===i));
+  return `<h2>Review</h2><div class="grid2"><div class="card"><h3>Did the plan meet the brief?</h3>${nd.map(n=>`<div class="issue ${n.ok?'ok':''}" style="margin-bottom:6px">${n.ok?'✓':'✗'} ${n.text}</div>`).join('')}</div>
+  <div class="card"><h3>What if a task slips?</h3><p class="sub">Choose a task and delay it. Every task that depends on it is pushed back.</p>
+  <div style="display:flex;gap:8px;flex-wrap:wrap"><select id="wi-id" aria-label="Task that slips">${real.map(t=>`<option value="${t.id}"${t.id===S.wi.id?' selected':''}>${esc(t.name)}</option>`).join('')}</select>
+  <select id="wi-n" aria-label="Days late">${[1,2,3,4,5].map(n=>`<option value="${n}"${+S.wi.n===n?' selected':''}>${n} day${n>1?'s':''} late</option>`).join('')}</select></div>
+  <div class="issue ${late||rp.missed.length?'':'ok'}" style="margin-top:10px"><b>${late?'The deadline is missed':rp.missed.length?'A fixed date is missed':'Still on time'}</b>${rp.pushed.length?`${rp.pushed.length} later task${rp.pushed.length>1?'s are':' is'} pushed.`:'Nothing else moves.'} New finish: day ${rp.finish} (deadline day ${b.deadline}).${rp.missed.length?' Locked meeting moved: '+rp.missed.map(i=>esc(rp.tasks.find(t=>t.id===i).name)).join(', ')+'.':''}</div></div></div>
+  <div style="margin-top:12px">${chart(rp.tasks,b,{ro:true,ghost:orig})}<p class="sub">Dashed outline shows where each task was planned. Solid bars show the slipped plan.</p></div>
+  <div class="card" style="margin-top:12px"><h3>Plan sheet for hand-in</h3><div class="tw"><table class="sheet"><tr><th>Days</th><th>Task</th><th>Who</th><th>Stage</th><th>After</th>${atar()?'<th>Float</th>':''}</tr>
+  ${(()=>{const c=cpm(l);return l.slice().sort((a,c2)=>a.start-c2.start).map(t=>`<tr><td>${t.start}-${endOf(t)}</td><td>${esc(t.name)}</td><td>${RES[t.res].label}</td><td>${t.stage}</td><td>${t.deps.map(d=>esc((l.find(x=>x.id===d)||{}).name||'')).join(', ')||'-'}</td>${atar()?`<td>${c?c.fl[t.id]:'-'}</td>`:''}</tr>`).join('')})()}</table></div>
+  <p style="margin-top:10px"><button class="btn" data-act="copy">Copy plan as text</button></p>${S.copy?`<textarea class="fr" readonly style="min-height:120px" id="cp">${esc(S.copy)}</textarea><p class="sub">Select all and copy if the button was blocked, then paste into your Teams hand-in.</p>`:''}</div>
+  <p style="margin-top:12px"><button class="btn alt" data-act="ref">${S.ref?'Hide':'Compare with'} one possible plan</button></p>${S.ref?chart(b.ref,b,{ro:true})+'<p class="sub">Many other orders also work. Compare the sequence and the spare days, not the exact dates.</p>':''}`}
+
+/* ---------- POPUP ---------- */
+function popHtml(){if(!S.pop)return '';const t=ts().find(x=>x.id===S.pop);if(!t)return '';
+  return `<div class="pop" data-act="popbg"><div class="box" role="dialog" aria-label="Task details"><h3>${esc(t.name)}</h3>
+  <label>Stage <select id="pf-stage">${STAGES.map(s=>`<option${t.stage===s?' selected':''}>${s}</option>`).join('')}</select></label>
+  <p style="margin:10px 0 4px"><b>This task waits for:</b></p>
+  ${ts().filter(x=>x.id!==t.id).map(x=>`<label style="display:block"><input type="checkbox" data-dep="${x.id}"${t.deps.includes(x.id)?' checked':''}> ${esc(x.name)} <span class="muted">(ends day ${endOf(x)})</span></label>`).join('')||'<p class="sub">Add another task first.</p>'}
+  <p><button class="btn" data-act="popclose">Done</button></p></div></div>`}
+
+/* ---------- RENDER ---------- */
+const TABS=[['brief','1 Brief'],['plan','2 Plan'],['justify','3 Justify'],['review','4 Review']];
+function render(){
+  document.getElementById('tg').setAttribute('aria-pressed',!atar());document.getElementById('ta').setAttribute('aria-pressed',atar());
+  const u=unlocked();
+  document.getElementById('tabs').innerHTML=TABS.map(t=>`<button role="tab" data-act="tab" data-id="${t[0]}" aria-selected="${S.tab===t[0]}"${(t[0]==='justify'||t[0]==='review')&&!u?' title="Clear every red problem first"':''}>${t[1]}${(t[0]==='justify'||t[0]==='review')&&!u?' 🔒':''}</button>`).join('');
+  const m=document.getElementById('main'),sc=m.querySelector('#cb'),sl=sc?sc.scrollLeft:0,st=sc?sc.scrollTop:0;
+  m.innerHTML=S.tab==='brief'?tabBrief():S.tab==='plan'?tabPlan():S.tab==='justify'?tabJust():tabReview();
+  const nc=m.querySelector('#cb');if(nc){nc.scrollLeft=sl;nc.scrollTop=st}
+  if(S.tab==='justify'&&u)JB().forEach(x=>updJ(x.k));
+  document.getElementById('pop').innerHTML=popHtml();save();reportHeight();if(S.tab==='review'&&unlocked()&&!window.__d){window.__d=1;say('done')}}
+function addTask(name,dur,res,stage,open){const b=br(),l=ts(),ND=b.deadline+6;
+  const s=Math.max(1,Math.min(Math.max(0,...l.map(endOf))+1,ND-dur+1));
+  const t={id:'t'+(S.seq++),name,dur,start:s,res,stage,deps:[],fixed:false};l.push(t);if(open)S.pop=t.id;render()}
+/* ---------- PORTAL MESSAGES ---------- */
+function say(t,v){try{parent.postMessage({source:'mgt-interactive',type:t,value:v},'*')}catch(e){}}
+function reportHeight(){var w=document.querySelector('.wrap');say('height',Math.ceil((w?w.offsetHeight:document.documentElement.scrollHeight)+8))}
+/* ---------- EVENTS ---------- */
+const main=document.getElementById('main'),popEl=document.getElementById('pop');
+const rowTask=el=>{const r=el.closest('[data-id]');return r?ts().find(t=>t.id===r.dataset.id):null};
+document.getElementById('tg').onclick=()=>{S.tier='general';render()};
+document.getElementById('ta').onclick=()=>{S.tier='atar';render()};
+function onClick(e){const a=e.target.closest('[data-act]');if(!a)return;const act=a.dataset.act,id=a.dataset.id;
+  if(act==='popbg'){if(e.target!==a)return;S.pop=null;return render()}
+  if(act==='tab'){if((id==='justify'||id==='review')&&!unlocked())return;S.tab=id;S.copy='';return render()}
+  if(act==='pick'){S.brief=id;S.copy='';S.ref=false;return render()}
+  if(act==='bank'){const r=br().ref.find(t=>t.id===id);return addTask(r.name,r.dur,r.res,r.stage,false)}
+  if(act==='custom'){const i=document.getElementById('cn'),v=i.value.trim();if(!v){i.focus();return}return addTask(v,1,'You','Build',true)}
+  if(act==='sort'){ts().sort((x,y)=>x.start-y.start);return render()}
+  if(act==='del'){const t=rowTask(a);if(!t)return;const l=ts();S.tasks[S.brief]=l.filter(x=>x.id!==t.id);S.tasks[S.brief].forEach(x=>x.deps=x.deps.filter(d=>d!==t.id));return render()}
+  if(act==='deps'){const t=rowTask(a);if(t){S.pop=t.id;render()}return}
+  if(act==='popclose'){S.pop=null;return render()}
+  if(act==='fix'){const t=ts().find(x=>x.id===id);if(t){t.start=Math.max(1,+a.dataset.s);render()}return}
+  if(act==='ex'){const x=JB().find(y=>y.k===a.dataset.k),el=document.getElementById('exb-'+x.k);el.innerHTML='<b>Example:</b> '+esc(x.ex(EX[S.brief]));a.remove();return}
+  if(act==='copy'){S.copy=summary();try{navigator.clipboard.writeText(S.copy).catch(()=>{})}catch(err){}return render()}
+  if(act==='ref'){S.ref=!S.ref;return render()}}
+main.addEventListener('click',onClick);popEl.addEventListener('click',onClick);document.getElementById('tabs').addEventListener('click',onClick);
+main.addEventListener('change',e=>{const el=e.target;
+  if(el.id==='crit'){S.crit=el.checked;return render()}
+  if(el.id==='wi-id'){S.wi.id=el.value;return render()}
+  if(el.id==='wi-n'){S.wi.n=el.value;return render()}
+  const f=el.dataset.f;if(!f)return;const t=rowTask(el);if(!t)return;
+  if(f==='name')t.name=el.value.trim()||t.name;
+  if(f==='res')t.res=el.value;
+  if(f==='dur'){t.dur=Math.max(1,Math.min(15,Math.round(+el.value)||1))}
+  render()});
+main.addEventListener('input',e=>{const k=e.target.dataset&&e.target.dataset.k;if(!k)return;(S.just[S.brief]=S.just[S.brief]||{})[k]=e.target.value;updJ(k);save()});
+main.addEventListener('keydown',e=>{if(e.target.id==='cn'&&e.key==='Enter')onClick({target:main.querySelector('[data-act="custom"]')})});
+popEl.addEventListener('change',e=>{const t=ts().find(x=>x.id===S.pop);if(!t)return;const el=e.target;
+  if(el.id==='pf-stage')t.stage=el.value;
+  if(el.dataset.dep){t.deps=t.deps.filter(d=>d!==el.dataset.dep);if(el.checked)t.deps.push(el.dataset.dep)}
+  const open=S.pop;render();});
+/* drag to move or resize */
+let drag=null;
+main.addEventListener('pointerdown',e=>{const bar=e.target.closest('.bar[data-id]');if(!bar||bar.classList.contains('fixed')||bar.classList.contains('ghost')||!bar.closest('.chartbox')||!main.querySelector('[data-f="name"]'))return;
+  const t=ts().find(x=>x.id===bar.dataset.id);if(!t)return;
+  drag={t,bar,x:e.clientX,s:t.start,d:t.dur,mode:e.target.classList.contains('h')?'size':'move',ND:br().deadline+6};
+  bar.setPointerCapture(e.pointerId);e.preventDefault()});
+main.addEventListener('pointermove',e=>{if(!drag)return;const dd=Math.round((e.clientX-drag.x)/DW),{t,bar,ND}=drag;
+  if(drag.mode==='move'){t.start=Math.max(1,Math.min(ND-drag.d+1,drag.s+dd));bar.style.left=(t.start-1)*DW+'px'}
+  else{t.dur=Math.max(1,Math.min(15,ND-drag.s+1,drag.d+dd));bar.style.width=t.dur*DW-2+'px'}});
+const endDrag=()=>{if(drag){drag=null;render()}};
+main.addEventListener('pointerup',endDrag);main.addEventListener('pointercancel',endDrag);
+render();
+</script>
+</body>
+</html>

@@ -2956,6 +2956,14 @@
                 {
                   "type": "paragraph",
                   "text": "A diagram used to explain a work flow or process. Flow charts shows a series of chronological steps and the relationship between each step."
+                },
+                {
+                  "type": "htmlInteractive",
+                  "title": "Gantt Planner: build a timeline from a client brief",
+                  "src": "/interactives/gantt-planner.html",
+                  "tier": "atar",
+                  "instruction": "Build a schedule from the client brief. Sequence dependent tasks, resolve resource and availability conflicts, identify the critical path and float, then justify your contingency and a trade-off.",
+                  "minHeight": 900
                 }
               ]
             },

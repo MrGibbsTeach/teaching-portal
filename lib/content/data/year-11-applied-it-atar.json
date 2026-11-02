@@ -945,6 +945,14 @@
                   ]
                 },
                 {
+                  "type": "htmlInteractive",
+                  "title": "Gantt Planner: build a timeline from a client brief",
+                  "src": "/interactives/gantt-planner.html",
+                  "tier": "atar",
+                  "instruction": "Build a schedule from the client brief. Sequence dependent tasks, resolve resource and availability conflicts, identify the critical path and float, then justify your contingency and a trade-off.",
+                  "minHeight": 900
+                },
+                {
                   "type": "callout",
                   "variant": "tip",
                   "heading": "Build in buffer time",

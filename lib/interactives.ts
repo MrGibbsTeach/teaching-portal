@@ -21,6 +21,16 @@ export interface InteractiveTool {
 
 export const INTERACTIVE_TOOLS: InteractiveTool[] = [
   {
+    id: "gantt-planner",
+    title: "Gantt Planner",
+    blurb: "Turn a client brief into a timeline. Add tasks, link what each one waits for, then clear every clash and test what happens if a task runs late.",
+    topic: "Project management",
+    kind: "Build and justify",
+    src: "/interactives/gantt-planner.html",
+    tiers: ["general", "atar"],
+    minHeight: 900,
+  },
+  {
     id: "spec-the-computer",
     title: "Spec the Computer",
     blurb: "Pick real parts for a client within a budget. Compatibility rules catch bad picks, then you justify each choice.",
