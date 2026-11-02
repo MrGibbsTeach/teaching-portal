@@ -31,6 +31,16 @@ export const INTERACTIVE_TOOLS: InteractiveTool[] = [
     minHeight: 900,
   },
   {
+    id: "troubleshooter",
+    title: "Troubleshooter",
+    blurb: "Fix a hidden fault: no power, no display, no network or no sound. Test one thing at a time. You are scored on whether your order of steps is logical.",
+    topic: "Hardware",
+    kind: "Practise",
+    src: "/interactives/troubleshooter.html",
+    tiers: ["general", "atar"],
+    minHeight: 900,
+  },
+  {
     id: "inside-the-computer",
     title: "Inside the Computer",
     blurb: "Tap each part of a computer to see what it does, take it apart, and test yourself on the names.",

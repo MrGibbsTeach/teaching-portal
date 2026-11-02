@@ -3937,6 +3937,14 @@
                   "part": "activities"
                 },
                 {
+                  "type": "htmlInteractive",
+                  "title": "Troubleshooter: find the hidden fault",
+                  "src": "/interactives/troubleshooter.html",
+                  "tier": "general",
+                  "instruction": "You are the technician. Pick a problem, then test one thing at a time to find the hidden fault. Start with the cheapest and quickest checks. You are marked on whether your order of steps is logical, not just on whether you fixed it.",
+                  "minHeight": 900
+                },
+                {
                   "type": "heading",
                   "text": "Assessment practice",
                   "level": 2

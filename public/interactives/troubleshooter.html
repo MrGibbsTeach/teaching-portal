@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Troubleshooter</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--acc:#0f766e;--accd:#115e59;--accl:#e6f4f2;--ink:#111827;--mut:#5b6472;--line:#e3e6ec;--bg:#f6f7f9;--ok:#15803d;--okl:#e7f6ec;--warn:#9a5b00;--warnl:#fdf1e0;--bad:#b91c1c;--badl:#fdeaea;--r:12px}
+body.atar{--acc:#4338ca;--accd:#3730a3;--accl:#eceafd}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.5;padding-bottom:130px}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.mono{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:12.5px}
+header.top{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:12px 20px;border-bottom:1px solid var(--line);position:sticky;top:0;background:#fff;z-index:20}
+header.top h1{font-size:19px;font-weight:800;margin:0;letter-spacing:-.01em}
+.badge{font-size:12px;font-weight:700;padding:2px 9px;border-radius:99px;background:var(--accl);color:var(--accd)}
+.sp{flex:1}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.seg button{border:0;background:#fff;padding:7px 14px;font-weight:600;font-size:14px}
+.seg button[aria-pressed=true]{background:var(--acc);color:#fff}
+.btn{border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 14px;font-weight:600;font-size:14px}
+.btn:hover{border-color:var(--acc)}
+.btn.pri{background:var(--acc);border-color:var(--acc);color:#fff}
+.btn.pri:hover{background:var(--accd)}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+.wrap{max-width:1100px;margin:0 auto;padding:22px 20px}
+.lead{font-size:17px;color:#2a3140;max-width:68ch}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:18px 0}
+.card{border:1px solid var(--line);border-radius:var(--r);padding:16px;background:#fff}
+.card.sc{text-align:left;display:flex;flex-direction:column;gap:6px}
+.card.sc:hover{border-color:var(--acc);box-shadow:0 4px 14px rgba(17,24,39,.07)}
+.card h3{margin:0;font-size:17px}
+.card .ic{width:44px;height:44px;border-radius:10px;background:var(--accl);color:var(--accd);display:grid;place-items:center;font-size:22px}
+.muted{color:var(--mut)}
+.small{font-size:14px}
+.chip{display:inline-block;font-size:12.5px;font-weight:600;padding:2px 9px;border-radius:99px;border:1px solid var(--line);background:#fff;color:#374151}
+.chip.hw{background:#fdf1e0;border-color:#f3d9ae;color:#7a4a00}
+.chip.sw{background:#e8f0fd;border-color:#c3d6f7;color:#1e4a9c}
+.chip.net{background:#ece8fb;border-color:#d3c9f5;color:#4b2fb0}
+.chip.ask{background:#e7f6ec;border-color:#bfe3cb;color:#166534}
+.chip.tool{background:#f1f3f7}
+details.box{border:1px solid var(--line);border-radius:var(--r);padding:12px 16px;margin:14px 0;background:var(--bg)}
+details.box summary{font-weight:700;cursor:pointer}
+.grid2{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:18px;align-items:start}
+@media(max-width:860px){.grid2{grid-template-columns:1fr}}
+.scene{background:linear-gradient(#f9fafc,#eef1f6);border:1px solid var(--line);border-radius:var(--r);padding:6px 10px 0;text-align:center}
+.scene svg{width:100%;max-width:520px;height:auto}
+.scene .cap{font-weight:700;padding:4px 0 10px}
+.scene .cap.fixed{color:var(--ok)}
+.ticket{border-left:5px solid var(--acc);background:var(--bg);border-radius:0 var(--r) var(--r) 0;padding:12px 16px;margin:14px 0}
+.ticket b{display:block;font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.05em}
+.ev{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 0}
+.ev .chip{background:var(--accl);border-color:transparent;color:var(--accd)}
+h2{font-size:20px;margin:22px 0 8px}
+h3.grp{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--mut);margin:16px 0 6px;display:flex;gap:8px;align-items:baseline}
+h3.grp span{font-weight:500;text-transform:none;letter-spacing:0}
+.acts{display:flex;flex-direction:column;gap:6px}
+.act{display:grid;grid-template-columns:1fr auto;gap:2px 10px;text-align:left;border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 12px}
+.act:hover:not([disabled]){border-color:var(--acc);background:var(--accl)}
+.act .al{font-weight:600;font-size:15px}
+.act .am{font-size:12.5px;color:var(--mut);white-space:nowrap;text-align:right}
+.act .ar{grid-column:1/-1;font-size:12.5px;color:var(--mut)}
+.act.done{background:var(--bg);color:#4b5563}
+.act.done .al::before{content:"\2713  ";color:var(--ok)}
+.act[disabled]{cursor:not-allowed;opacity:.6}
+.log{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.log li{border:1px solid var(--line);border-radius:10px;padding:9px 12px;background:#fff}
+.log li .h{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.log li .n{font-weight:800;color:var(--acc)}
+.log li .t{margin:3px 0 0;font-size:15px}
+.flag{font-size:12.5px;font-weight:700;padding:1px 8px;border-radius:99px}
+.flag.g{background:var(--okl);color:var(--ok)}
+.flag.a{background:var(--warnl);color:var(--warn)}
+.flag.r{background:var(--badl);color:var(--bad)}
+.flag.n{background:#eceff3;color:#4b5563}
+#bar{position:fixed;left:0;right:0;bottom:0;background:var(--bg);border-top:1px solid var(--line);z-index:30;padding:10px 20px calc(10px + env(safe-area-inset-bottom))}
+#bar .in{max-width:1100px;margin:0 auto;display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap}
+#bar .res{flex:1;min-width:230px;max-height:28vh;overflow:auto}
+#bar .res b{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.05em;display:block}
+#bar .res.fixed{color:var(--ok)}
+#bar .stats{display:flex;gap:14px;font-size:14px;font-weight:600;white-space:nowrap}
+#bar .stats span span{color:var(--mut);font-weight:500}
+.hintbox{background:var(--warnl);border:1px solid #f3d9ae;border-radius:10px;padding:8px 12px;margin:8px 0;font-size:15px}
+.fixedbanner{background:var(--okl);border:1px solid #bfe3cb;color:#14532d;border-radius:var(--r);padding:12px 16px;margin:10px 0;font-weight:600}
+label.f{display:block;font-weight:700;margin:14px 0 4px}
+select,textarea{width:100%;font:inherit;border:1px solid #c9ced8;border-radius:10px;padding:9px 12px;background:#fff}
+textarea{min-height:110px;resize:vertical}
+.radio{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:10px;padding:9px 12px;margin:6px 0;cursor:pointer;background:#fff}
+.radio input{margin-top:5px;accent-color:var(--acc)}
+.radio:has(input:checked){border-color:var(--acc);background:var(--accl)}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+.pill{font-size:13px;padding:2px 10px;border-radius:99px;border:1px dashed #aab1bf;color:#4b5563}
+.pill.on{border-style:solid;border-color:var(--ok);background:var(--okl);color:var(--ok)}
+.score{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.big{font-size:64px;font-weight:800;line-height:1;color:var(--acc);letter-spacing:-.03em}
+.big small{font-size:20px;color:var(--mut);font-weight:600}
+.bars{flex:1;min-width:260px;display:grid;gap:8px}
+.brow{display:grid;grid-template-columns:150px 1fr 56px;gap:8px;align-items:center;font-size:14px}
+.brow i{display:block;height:10px;border-radius:99px;background:#e8ebf0;position:relative;overflow:hidden}
+.brow i::after{content:"";position:absolute;inset:0;width:var(--w);background:var(--acc);border-radius:99px}
+.brow b{text-align:right}
+@media(max-width:520px){.brow{grid-template-columns:110px 1fr 48px}.big{font-size:52px}}
+table.st{width:100%;border-collapse:collapse;font-size:14px}
+table.st td,table.st th{padding:7px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+table.st td:last-child{white-space:nowrap}
+table.st th{font-size:12.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--mut)}
+.ideal{counter-reset:i;list-style:none;padding:0;margin:0}
+.ideal li{counter-increment:i;padding:5px 0 5px 32px;position:relative}
+.ideal li::before{content:counter(i);position:absolute;left:0;top:5px;width:22px;height:22px;border-radius:50%;background:var(--acc);color:#fff;font-weight:700;font-size:12px;display:grid;place-items:center}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.spin{animation:spin 1.2s linear infinite}
+.pulse{animation:pulse 1.6s ease-in-out infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes pulse{0%,100%{opacity:.45}50%{opacity:1}}
+@media(prefers-reduced-motion:reduce){.spin,.pulse{animation:none}}
+.toggles{display:flex;gap:16px;flex-wrap:wrap;font-size:14px;margin:6px 0 2px}
+.toggles label{display:flex;gap:6px;align-items:center;cursor:pointer}
+.toggles input{accent-color:var(--acc);width:17px;height:17px}
+</style>
+</head>
+<body>
+<header class="top">
+  <h1>Troubleshooter</h1>
+  <span class="badge" id="tierbadge"></span>
+  <span class="sp"></span>
+  <div class="seg" role="group" aria-label="Course tier">
+    <button id="tg" aria-pressed="true">General</button>
+    <button id="ta" aria-pressed="false">ATAR</button>
+  </div>
+  <button class="btn" id="homebtn" hidden>All problems</button>
+</header>
+<main id="app" class="wrap"></main>
+<footer id="bar" hidden><div class="in"><div class="res" id="res" aria-live="polite"></div><div class="stats" id="stats"></div></div></footer>
+
+<script>
+"use strict";
+/* ============================================================
+   DATA: four problems. Each has hidden faults. Actions are shared
+   across the faults of a problem; the fault decides what each test shows.
+   Field key: t tier, k kind, s short name, l full label (General), a ATAR label,
+   m minutes, u dollars, pre = prerequisite groups (AND of ORs), need = hard gate,
+   fx = faults this action fixes, ok = faults it fixes but is overkill for,
+   chg = a change (replace/reset/reinstall), bad = illogical reason, atar = ATAR only,
+   r = results keyed by fault id (comma lists allowed), _ = default. A result is a
+   string or [text, short finding].
+   ============================================================ */
+const TIERNAME={1:"Ask and look",2:"Quick checks",3:"Tests and tools",4:"Deeper fixes",5:"Replace or rebuild"};
+const TIERHINT={1:"Free and fast. Start here.",2:"Cheap swaps and settings.",3:"Tools, or opening things up.",4:"Changes that take time.",5:"Costs money. Last resort."};
+const STAGE={1:"Identify the problem",2:"Test a theory",3:"Test a theory",4:"Fix the fault",5:"Fix the fault",6:"Verify"};
+const KIND={ask:"Ask",hw:"Hardware",sw:"Software",net:"Network",tool:"Tool"};
+
+const SC={
+power:{
+  id:"power",name:"No power",icon:"⚡",client:"Bunbury Bakehouse",device:"Front counter PC",
+  blurb:"The till PC is completely dead.",
+  ticket:{g:`"The counter PC will not turn on this morning. Nothing happens when I press the button. We open in 30 minutes and the till runs on it!"`,
+          a:`Desktop PC will not power on. No fans, no LEDs. Business critical (point of sale). Opening in 30 minutes.`},
+  symptom:{broken:"The PC is completely dead",fixed:"The PC is running"},
+  verify:`The user turns the PC on, signs in and rings up a test sale. Everything works.`,
+  lesson:`Work from the wall towards the PC: lead, switch, socket, then the power supply. Do not buy parts until the cheap checks are done.`,
+  decoys:["Faulty motherboard","Corrupted operating system","Failed hard drive"],
+  faults:{
+    cable:{cause:"Power lead not fully pushed into the back of the PC",type:"Hardware",
+      ideal:["ask","lead"],
+      why:`Everything was dead, but the desk had power. The cheapest check is the lead at the back of the PC, and a vacuum cleaner is a classic cause.`,
+      prevent:{o:["Route and clip the cables behind the desk so they cannot be pulled","Buy a more powerful PC","Unplug the PC every night"]}},
+    switch:{cause:"Power supply switch turned off",type:"User error",
+      ideal:["ask","lead","psusw"],
+      why:`The lead was fine and the desk had power, so the next cheapest check is the small switch on the back of the power supply.`,
+      prevent:{o:["Label the switch and keep people away from the back of the PC","Remove the power supply switch","Replace the power lead monthly"]}},
+    board:{cause:"Faulty power board (surge protector)",type:"Hardware",
+      ideal:["ask","lights","socket","othersock"],
+      why:`The power board light and the monitor were both dead, so the whole desk had lost power. Testing with a lamp and moving to another socket proved it.`,
+      prevent:{o:["Use a good surge-protected board and replace it after a big surge","Plug several boards into each other","Switch the PC off at the wall every night"]}},
+    psu:{cause:"Failed power supply unit (PSU)",type:"Hardware",
+      ideal:["ask","lights","lead","psusw","socket","swaplead","psutest","replpsu"],
+      why:`The desk had power, the lead, switch and socket were fine and a known-good lead changed nothing. The PSU tester proved the supply had failed, so replacing it was justified.`,
+      prevent:{o:["Keep vents dust free and put the till PC on a surge protector or UPS","Stack boxes on the PC to keep it warm","Run the PC with the case open"]}}
+  },
+  actions:[
+   {id:"ask",t:1,k:"ask",s:"Ask the user what happened",l:"Ask the user what happened and what changed",m:3,r:{
+     cable:["The cleaner vacuumed behind the desk last night. Nothing else changed.","Cleaner vacuumed behind the desk"],
+     switch:["Nothing changed on the computer, but someone was fishing round the back yesterday looking for a spare USB port.","Someone was behind the PC yesterday"],
+     board:["There was a storm last night and the lights flickered. A few things in the shop beeped when the power came back.","Storm last night, power flickered"],
+     psu:["It worked all day yesterday. Late in the afternoon there was a faint burning smell near the PC, then it shut off and never came back.","Burning smell before it died"]}},
+   {id:"press",t:1,k:"ask",s:"Press the power button",l:"Press the power button and watch and listen",m:1,r:{_:["No fans, no lights, no beeps. The PC is completely dead.","PC: completely dead"]}},
+   {id:"lights",t:1,k:"hw",s:"Check the power board and monitor lights",l:"Look at the power board and the monitor: are any lights on?",m:1,r:{
+     board:["The power board light is off and the monitor is dark too. The whole desk has no power.","Power board: no light, monitor dark"],
+     _:["The power board light is on and the monitor light is on (amber, waiting for a signal). Power is reaching the desk.","Power board and monitor: lights on"]}},
+   {id:"lead",t:1,k:"hw",s:"Check the power lead",l:"Check the power lead at the back of the PC and at the wall. Push both ends in firmly.",m:2,fx:["cable"],r:{
+     cable:"The lead is sitting half out of the back of the PC. You push it in firmly and the fan spins up. The PC is running.",
+     _:["Both ends of the lead are in firmly.","Power lead: secure"]}},
+   {id:"psusw",t:1,k:"hw",s:"Check the power supply switch",l:"Check the switch on the back of the power supply (I is on, O is off)",m:1,fx:["switch"],r:{
+     switch:"The switch is set to O (off). You flick it to I and the PC starts straight away.",
+     _:["The switch is already on (I).","Power supply switch: on"]}},
+   {id:"socket",t:2,k:"hw",s:"Test the wall socket with a lamp",l:"Plug a working lamp into the same power board and wall socket",m:3,r:{
+     board:["The lamp stays off, even after you press the board's reset button. No power is coming through that board.","Lamp dead on this board"],
+     _:["The lamp lights up. The socket and the board are working.","Socket and board: working"]}},
+   {id:"othersock",t:2,k:"hw",s:"Plug the PC into a different socket",l:"Plug the PC straight into a different wall socket",m:3,pre:[["socket","lights"]],fx:["board"],r:{
+     board:"The PC starts at once. The old power board has failed and needs replacing.",
+     _:["The PC is still dead in a different socket.","Different socket: still dead"]}},
+   {id:"swaplead",t:2,k:"hw",s:"Swap in a known-good power lead",l:"Swap the power lead for a known-good one (the kettle lead works)",m:4,pre:[["lead"]],fx:["cable"],r:{
+     cable:"The new lead clicks in firmly and the PC starts.",
+     _:["No change. The PC is still dead with a lead that works.","Known-good lead: no change"]}},
+   {id:"opencase",t:3,k:"hw",s:"Open the case and look inside",l:"Unplug the PC, open the case and look for loose connectors, burn marks or a swollen capacitor",m:8,pre:[["lead"],["psusw"],["socket","lights"]],r:{
+     psu:["There is a burnt smell and a dark mark on the power supply vent. All the connectors are seated.","Inside: burnt smell near the PSU"],
+     _:["Everything is seated and clean. No burn marks.","Inside: all connectors seated"]}},
+   {id:"psutest",t:3,k:"tool",s:"Test the power supply",l:"Test the power supply with a PSU tester (or swap in a known-good PSU)",m:10,pre:[["lead"],["psusw"],["socket","lights"],["swaplead"]],r:{
+     psu:["The tester shows no voltage on the main connector. The power supply has failed.","PSU tester: fail"],
+     _:["All the voltages are in range. The power supply is good.","PSU tester: pass"]}},
+   {id:"bypass",t:3,k:"hw",atar:true,s:"Bypass the front power button",l:"Bypass the front power button",a:"Bypass the front power switch: briefly short the PWR_SW header pins on the motherboard",m:5,pre:[["opencase"]],r:{_:["Nothing happens when you short the pins. The front button is not the problem.","Power button bypass: no start"]}},
+   {id:"replpsu",t:5,k:"hw",s:"Replace the power supply",l:"Replace the power supply with a new one",m:45,u:110,chg:true,pre:[["psutest"]],fx:["psu"],r:{
+     psu:"The new power supply goes in and the PC starts. Job done.",
+     _:"No change. The old power supply was fine and the $110 is wasted."}},
+   {id:"replmobo",t:5,k:"hw",s:"Replace the motherboard",l:"Replace the motherboard",m:90,u:260,chg:true,pre:[["psutest"],["opencase"]],r:{_:"No change. The PC is still dead and the $260 is wasted."}},
+   {id:"reinstall",t:5,k:"sw",s:"Reinstall Windows",l:"Reinstall the operating system",m:90,chg:true,bad:"A PC with no power cannot run any software, so reinstalling Windows cannot fix this.",r:{_:"You cannot even start the PC to begin. An hour and a half is gone."}}
+  ]
+},
+
+display:{
+  id:"display",name:"No display",icon:"🖥",client:"South Coast Surf Films",device:"Edit suite PC and monitor",
+  blurb:"The monitor is black but the PC sounds like it is on.",
+  ticket:{g:`"The edit suite screen is black. The PC sounds like it is running but I cannot see anything. We have a client deadline at 3 pm."`,
+          a:`Monitor displays nothing. PC appears to be running (fans audible). Client deadline at 15:00.`},
+  symptom:{broken:"The screen is black",fixed:"The picture is back"},
+  verify:`The editor opens the project and plays a clip on both screens. Colours and resolution look right.`,
+  lesson:`Find out whether the picture is lost between the PC and the monitor, inside the monitor, or inside the PC. Swapping one part at a time splits the problem in half.`,
+  decoys:["Failed hard drive","Faulty keyboard","Not enough RAM"],
+  faults:{
+    loose:{cause:"Video cable loose at the monitor end",type:"Hardware",ideal:["ask","lights","cables"],
+      why:`The PC was running and the monitor was waiting for a signal (amber). A loose plug is the cheapest cause, and pushing the cable in fixed it.`,
+      prevent:{o:["Use cables with locking screws and keep them clear of cleaning","Replace the monitor every year","Turn the monitor off when it is not used"]}},
+    input:{cause:"Monitor set to the wrong input source",type:"Configuration",ideal:["ask","lights","cables","input"],
+      why:`The cable was secure and the monitor said "No signal". After a power cut the monitor had reset its input to the wrong socket.`,
+      prevent:{o:["Set the monitor to a fixed input rather than automatic, and note the right one on a label","Unplug the monitor after every shift","Buy a bigger monitor"]}},
+    port:{cause:"Video cable plugged into the motherboard port instead of the graphics card",type:"Hardware",ideal:["ask","lights","cables","input","ports"],
+      why:`The cable was secure and the input was right, yet "No signal". The PC has a graphics card, which switches off the motherboard video port. Only the card's port works.`,
+      prevent:{o:["Cover the unused motherboard video ports or label the correct port after moving a PC","Remove the graphics card","Plug the monitor into the keyboard port"]}},
+    driver:{cause:"Faulty graphics driver after an update",type:"Software",ideal:["ask","lights","restart","safe","rollback"],
+      why:`The monitor light was green, so a signal was arriving, and the logos showed at start up. The picture only died when the driver loaded. Safe Mode proved it was the driver.`,
+      prevent:{o:["Create a restore point and delay driver updates on important PCs until they are tested","Turn off the monitor during updates","Never restart the PC"]}},
+    monitor:{cause:"Failed monitor",type:"Hardware",ideal:["ask","lights","monpower","cables","input","monelse","replmon"],
+      why:`The monitor light was off, the menu did not respond, and the monitor was dead on a second computer. The PC was proven fine, so the monitor was replaced.`,
+      prevent:{o:["Keep a spare monitor for critical edit suites","Leave the monitor on all night","Move the monitor to a cooler room each week"]}}
+  },
+  actions:[
+   {id:"ask",t:1,k:"ask",s:"Ask the user what happened",l:"Ask the user what happened and what changed",m:3,r:{
+     loose:["The desk was cleaned and shuffled around yesterday. Nothing else happened.","Desk cleaned and moved"],
+     input:["There was a power cut over the weekend. Everything came back on, but the screen never did.","Power cut over the weekend"],
+     port:["We moved the PC to dust behind it and plugged everything back in ourselves.","PC moved and re-plugged"],
+     driver:["Windows installed updates overnight. It showed a logo this morning and then the screen went black.","Updates installed overnight"],
+     monitor:["Nothing changed. The screen flickered yesterday afternoon and then died.","Screen flickered, then died"]}},
+   {id:"lights",t:1,k:"hw",s:"Look at the PC and monitor lights",l:"Look at the PC and the monitor: lights, fans and any message on the screen",m:1,r:{
+     "loose,input,port":["The PC fans and lights are on. The monitor light is amber and a \"No signal\" box flashes briefly.","Monitor LED: amber, \"No signal\""],
+     driver:["The PC is on. The monitor light is green and steady, but the screen is black.","Monitor LED: green (signal present)"],
+     monitor:["The PC is on, but the monitor has no light at all.","Monitor LED: off"]}},
+   {id:"monpower",t:1,k:"hw",s:"Check the monitor power lead and button",l:"Check the monitor's own power lead and press its power button",m:2,r:{
+     monitor:["The lead is secure and the wall socket works, but the monitor stays dead.","Monitor power: lead OK, still dead"],
+     _:["The monitor powers on normally.","Monitor power: OK"]}},
+   {id:"cables",t:1,k:"hw",s:"Check the video cable at both ends",l:"Check the video cable at both ends and push it in firmly",m:2,fx:["loose"],r:{
+     loose:"The HDMI plug is half out at the monitor end. You push it in and the desktop appears.",
+     _:["The video cable is firmly in at both ends.","Video cable: secure"]}},
+   {id:"input",t:1,k:"sw",s:"Check the monitor input source",l:"Open the monitor menu and check the selected input (HDMI 1, HDMI 2, DisplayPort)",m:2,fx:["input"],r:{
+     input:"The input is set to DisplayPort 2 but the cable is in HDMI 1. You switch it and the desktop appears.",
+     monitor:["The menu will not open. The monitor is not responding at all.","Monitor menu: no response"],
+     _:["The input is set to match the cable.","Input source: correct"]}},
+   {id:"swapcable",t:2,k:"hw",s:"Swap in a known-good video cable",l:"Swap the video cable for a known-good one",m:4,pre:[["cables"]],fx:["loose"],r:{
+     loose:"The new cable fits tightly and the desktop appears.",
+     _:["No change with a different cable.","Different cable: no change"]}},
+   {id:"ports",t:2,k:"hw",s:"Check which video port is used",l:"Look at the back of the PC: is the cable in the graphics card or the motherboard video port?",m:3,pre:[["cables"]],fx:["port"],r:{
+     port:"The cable is in the motherboard port. The PC has a graphics card, so the motherboard port is switched off. You move the cable to the graphics card port and the desktop appears.",
+     _:["The cable is in the graphics card port, which is correct.","Cable port: graphics card (correct)"]}},
+   {id:"monelse",t:2,k:"tool",s:"Test the monitor on another computer",l:"Test the monitor on a different computer or laptop",m:8,pre:[["cables"],["input"]],r:{
+     monitor:["The monitor stays black on the laptop too. The monitor is faulty.","Monitor on laptop: dead"],
+     _:["The laptop's picture shows fine. The monitor works.","Monitor on laptop: works"]}},
+   {id:"pcelse",t:2,k:"tool",s:"Test the PC with a different monitor",l:"Connect the PC to a different, known-good monitor",m:8,pre:[["cables"],["input"]],r:{
+     monitor:["The spare monitor shows the desktop. The PC and its video output are fine.","PC on spare monitor: works"],
+     input:["The spare monitor finds the signal on its own. The PC is fine.","PC on spare monitor: works"],
+     loose:["The PC is fine. The problem is in the connection to the first monitor.","PC fine: fault between PC and monitor"],
+     port:["No picture on the spare monitor either. The PC is not sending a picture through that port.","Spare monitor: no picture"],
+     driver:["The spare monitor goes black after the Windows logo too. The fault is inside the PC.","Spare monitor: black after logo"]}},
+   {id:"restart",t:2,k:"sw",s:"Restart the PC and watch the screen",l:"Restart the PC and watch the screen from the moment it powers on",m:3,r:{
+     driver:["You see the PC logo and the Windows logo, then the screen goes black just as the desktop should load.","Restart: logos show, then black"],
+     _:["No picture at any point. The PC starts normally by sound.","Restart: no picture at all"]}},
+   {id:"safe",t:3,k:"sw",s:"Start in Safe Mode",l:"Start the PC in Safe Mode (basic low resolution video)",m:10,pre:[["restart"],["lights"]],r:{
+     driver:["A low resolution desktop appears. Windows and the hardware are fine, so the graphics driver is the problem.","Safe Mode works: driver suspected"],
+     _:["Still no picture in Safe Mode.","Safe Mode: still no picture"]}},
+   {id:"dispset",t:3,k:"sw",atar:true,s:"Check display settings in Safe Mode",l:"Check display settings in Safe Mode",a:"In Safe Mode, check the resolution and refresh rate set for the display",m:4,need:["safe"],r:{
+     driver:["The driver update set a refresh rate the monitor cannot show (out of range signal).","Refresh rate: out of range"],
+     _:["The settings are normal for this monitor.","Display settings: normal"]}},
+   {id:"rollback",t:4,k:"sw",s:"Roll back the graphics driver",l:"In Safe Mode, roll back or reinstall the graphics driver, then restart",m:8,chg:true,need:["safe"],fx:["driver"],r:{
+     driver:"You roll back to the previous driver and restart. The desktop appears at the normal resolution.",
+     _:"No change. The driver was not the problem."}},
+   {id:"reseat",t:4,k:"hw",s:"Reseat the graphics card",l:"Open the case and reseat the graphics card",m:10,pre:[["ports"],["pcelse"]],r:{_:["The card was seated properly. No change.","Graphics card: seated"]}},
+   {id:"replmon",t:5,k:"hw",s:"Replace the monitor",l:"Replace the monitor",m:30,u:240,chg:true,pre:[["monelse"]],fx:["monitor"],r:{
+     monitor:"The new monitor shows the desktop straight away.",
+     _:"No change. The old monitor was fine and the $240 is wasted."}},
+   {id:"replgpu",t:5,k:"hw",s:"Replace the graphics card",l:"Replace the graphics card",m:40,u:650,chg:true,pre:[["reseat"],["pcelse"]],fx:["driver"],ok:["driver"],r:{
+     driver:"The new card with fresh drivers works, but the old card was fine. A driver rollback would have done it. $650 spent that was not needed.",
+     _:"No change. The old card was fine and the $650 is wasted."}},
+   {id:"reinstall",t:5,k:"sw",s:"Reinstall Windows",l:"Reinstall the operating system",m:120,chg:true,pre:[["safe"]],fx:["driver"],ok:["driver"],r:{
+     driver:"A clean install brings the screen back, but it took two hours and the user lost their settings. A driver rollback would have been enough.",
+     _:"No change after two hours."}}
+  ]
+},
+
+network:{
+  id:"network",name:"No network",icon:"🌐",client:"Bunbury Bakehouse",device:"Office laptop and Wi-Fi router",
+  blurb:"The laptop cannot get on the Internet.",
+  ticket:{g:`"The office laptop says it cannot get online. The accounting software and every website are stuck. Payroll is due today!"`,
+          a:`Laptop has no Internet access. Line of business software and web browsing are down. Payroll deadline today.`},
+  symptom:{broken:"No Internet on the laptop",fixed:"Internet is working"},
+  verify:`The user opens the accounting software and three websites. Everything loads and payroll can go ahead.`,
+  lesson:`Test from the laptop outwards and split the problem: is it this device, the local network, or the Internet beyond the router? Another device and a few pings do that in minutes.`,
+  decoys:["Faulty network cable","Not enough RAM","Virus on the laptop"],
+  faults:{
+    airplane:{cause:"Airplane mode switched on",type:"User error",ideal:["ask","icon","airplane"],
+      why:`The taskbar showed an airplane icon. Airplane mode switches the Wi-Fi off, and it takes a second to check.`,
+      prevent:{o:["Teach staff to read the network icon before calling for help","Remove the Wi-Fi card","Use the laptop only on battery"]}},
+    password:{cause:"Saved Wi-Fi password out of date after the router password changed",type:"Configuration",ideal:["ask","icon","phone","wifilist","rejoin"],
+      why:`A phone with the new password worked, so the network was fine. The laptop would not connect, which points at its saved password.`,
+      prevent:{o:["Update saved Wi-Fi details on every device whenever the router password changes, and keep a record","Never change the Wi-Fi password","Share the password in a public notice"]}},
+    router:{cause:"Router lost its Internet connection and needed a restart",type:"Hardware",ideal:["ask","icon","phone","rlights","rrouter"],
+      why:`The phone had no Internet either and the router's Internet light was red. The whole network was affected, so restarting the router was the right fix.`,
+      prevent:{o:["Put the router on a surge-protected board and keep its firmware updated","Replace the laptop","Turn off all the phones"]}},
+    static:{cause:"Old fixed (static) IP address left over from another network",type:"Configuration",ideal:["ask","icon","phone","ipconfig","pgw","setauto"],
+      why:`A phone worked, so the fault was on the laptop. The laptop's address belonged to a different network and could not reach the gateway. Automatic settings cured it.`,
+      prevent:{o:["Use automatic (DHCP) settings, and write down any manual settings so they get changed back","Always type addresses in by hand","Give every laptop the same address"]}},
+    dns:{cause:"DNS server setting pointing at an unreachable server",type:"Software",ideal:["ask","icon","phone","ipconfig","pip","pname","setdns"],
+      why:`Pings by number worked but pings by name failed. That is the signature of a DNS fault. The laptop was told to use a DNS server that is not on this network.`,
+      prevent:{o:["Use automatic DNS from the router and document any custom DNS servers","Turn the router off at night","Use a longer Wi-Fi password"]}}
+  },
+  actions:[
+   {id:"ask",t:1,k:"ask",s:"Ask the user what happened",l:"Ask the user what happened and what changed",m:3,r:{
+     airplane:["The keyboard was cleaned yesterday and a few keys got pressed. Nothing else changed.","Keyboard cleaned, keys pressed"],
+     password:["The router installer changed the Wi-Fi password last week. The laptop worked until it was restarted this morning.","Wi-Fi password changed last week"],
+     router:["Everything was fine at lunchtime. The Internet stopped about an hour ago. Nothing was changed on the laptop.","Internet stopped about an hour ago"],
+     static:["The laptop went to the Esports Club last week, where someone typed in an address by hand. It has not been used here since.","Laptop used on another network"],
+     dns:["A chat app is still working, but new websites will not open. Nothing was changed.","Chat app works, websites do not"]}},
+   {id:"icon",t:1,k:"net",s:"Read the network icon",l:"Look at the network icon in the taskbar and read what it says",m:1,r:{
+     airplane:["The taskbar shows an airplane icon: \"Airplane mode\".","Taskbar: airplane icon"],
+     password:["The Wi-Fi icon has a warning sign: \"Can't connect to this network\".","Wi-Fi: can't connect to this network"],
+     "router,static":["The Wi-Fi icon says \"Connected, no Internet access\".","Wi-Fi: connected, no Internet"],
+     dns:["The Wi-Fi icon says \"Connected\" with no warning, but web pages will not load.","Wi-Fi: connected, pages fail"]}},
+   {id:"airplane",t:1,k:"sw",s:"Check Airplane mode and Wi-Fi switch",l:"Check that Airplane mode is off and Wi-Fi is switched on",m:1,fx:["airplane"],r:{
+     airplane:"Airplane mode was on. You switch it off, the laptop joins the Wi-Fi and pages load.",
+     _:["Airplane mode is off and Wi-Fi is switched on.","Airplane mode: off"]}},
+   {id:"phone",t:1,k:"net",s:"Test another device on the same Wi-Fi",l:"Check whether a phone can get online on the same Wi-Fi",m:3,r:{
+     router:["The phone joins the Wi-Fi but cannot load pages either. The fault is in the network, not just the laptop.","Phone also has no Internet"],
+     _:["The phone loads pages fine. The network is working, so the fault is on the laptop.","Phone works: fault is on the laptop"]}},
+   {id:"rlights",t:1,k:"hw",s:"Look at the router and modem lights",l:"Look at the lights on the router and modem",m:2,r:{
+     router:["The Internet light is red. The power and Wi-Fi lights are green.","Router: Internet light red"],
+     _:["All the router lights are green, including Internet.","Router: all lights green"]}},
+   {id:"wifilist",t:2,k:"net",s:"Check the Wi-Fi network list",l:"Open the Wi-Fi list and check which network the laptop is joined to",m:2,r:{
+     airplane:["The list is empty because Wi-Fi is switched off.","Wi-Fi list: empty (Wi-Fi off)"],
+     password:["The network \"BakehouseOffice\" is listed, but Connect says \"Can't connect to this network\".","Network listed but will not connect"],
+     _:["The laptop is joined to BakehouseOffice with a strong signal.","Joined to the correct network"]}},
+   {id:"rejoin",t:2,k:"net",s:"Forget the network and rejoin",l:"Forget the Wi-Fi network and rejoin using the current password",m:4,pre:[["wifilist"]],fx:["password"],r:{
+     password:"You forget the network and rejoin with the new password from the router label. Pages load.",
+     airplane:"You cannot rejoin because Wi-Fi is switched off.",
+     _:["You rejoin with the right password. No change: the laptop was already connected properly.","Rejoin: no change"]}},
+   {id:"rrouter",t:2,k:"hw",s:"Restart the router",l:"Restart the router: unplug it for 30 seconds, then plug it back in",m:5,pre:[["rlights","phone"]],fx:["router"],r:{
+     router:"After about two minutes the Internet light turns green. Pages load on the laptop and the phone.",
+     _:["The router restarts. Everyone in the office lost the Internet for three minutes and the laptop is still not working.","Router restart: no change"]}},
+   {id:"rpc",t:2,k:"sw",s:"Restart the laptop",l:"Restart the laptop",m:3,r:{_:["After the restart the problem is exactly the same.","Laptop restart: no change"]}},
+   {id:"ipconfig",t:3,k:"net",s:"Check the IP address (ipconfig /all)",l:"Open Command Prompt and run ipconfig /all to see the IP address, gateway and DNS server",a:"Run ipconfig /all and read the IPv4 address, subnet mask, default gateway and DNS server",m:4,r:{
+     "airplane,password":["The Wi-Fi adapter shows \"Media disconnected\". It has no address.","Wi-Fi adapter: media disconnected"],
+     router:["IP 192.168.1.23, gateway 192.168.1.1, DNS 192.168.1.1. These look normal.","IP settings: look normal"],
+     static:["IP 192.168.0.50, gateway 192.168.0.1. The router is on the 192.168.1.x network, so these settings do not match. The address was typed in by hand.","IP 192.168.0.50: wrong network"],
+     dns:["IP 192.168.1.23, gateway 192.168.1.1, DNS server 10.255.0.9. The DNS server is not on this network.","DNS server 10.255.0.9: odd"]}},
+   {id:"loop",t:3,k:"net",atar:true,s:"Ping 127.0.0.1 (loopback)",l:"Ping 127.0.0.1",a:"Ping 127.0.0.1 (loopback) to test the TCP/IP stack on the laptop",m:2,r:{_:["Replies from 127.0.0.1. The network software on the laptop is working.","Loopback: OK (TCP/IP stack fine)"]}},
+   {id:"pgw",t:3,k:"net",s:"Ping the gateway (router)",l:"Ping the default gateway (the router) to see if the laptop can reach it",m:2,need:["ipconfig"],r:{
+     "airplane,password":["\"General failure\": there is no connection to ping over.","Ping gateway: general failure"],
+     "router,dns":["Replies in 2 ms. The laptop can talk to the router.","Ping gateway: OK"],
+     static:["Request timed out. The laptop is aiming at 192.168.0.1, which is not the router.","Ping gateway: timed out"]}},
+   {id:"pip",t:3,k:"net",s:"Ping an Internet address by number",l:"Ping an Internet address by number (8.8.8.8)",m:2,need:["ipconfig"],r:{
+     "airplane,password":["\"General failure\": no connection.","Ping 8.8.8.8: general failure"],
+     router:["Request timed out. The router is not passing traffic to the Internet.","Ping 8.8.8.8: timed out"],
+     static:["\"Destination host unreachable\".","Ping 8.8.8.8: unreachable"],
+     dns:["Replies. The Internet can be reached by number.","Ping 8.8.8.8: OK"]}},
+   {id:"pname",t:3,k:"net",s:"Ping a website by name",l:"Ping a website by name (www.abc.net.au)",m:2,need:["ipconfig"],r:{
+     "airplane,password":["\"General failure\": no connection.","Ping by name: general failure"],
+     "router,static,dns":["\"Ping request could not find host\". The name cannot be turned into an address.","Ping by name: could not find host"]}},
+   {id:"tracert",t:3,k:"net",atar:true,s:"Trace the route (tracert 8.8.8.8)",l:"Trace the route",a:"Run tracert 8.8.8.8 to see where packets stop",m:4,need:["ipconfig"],r:{
+     router:["Hop 1 (the router) replies, then every hop times out. The break is beyond the router.","Tracert: stops after the router"],
+     static:["Hop 1 never replies. Traffic cannot even reach the gateway.","Tracert: fails at hop 1"],
+     dns:["The trace to 8.8.8.8 completes in 9 hops. Routing is fine.","Tracert: completes (routing OK)"],
+     "airplane,password":["\"General failure\": the adapter has no connection.","Tracert: general failure"]}},
+   {id:"trouble",t:3,k:"tool",s:"Run the Windows network troubleshooter",l:"Run the Windows network troubleshooter",m:5,pre:[["icon"]],fx:["airplane"],r:{
+     airplane:"The troubleshooter finds Airplane mode on and turns it off. Pages load.",
+     password:["It reports \"Can't connect to this network\" and suggests forgetting the network and rejoining.","Troubleshooter: can't connect"],
+     router:["It reports that the Internet connection is not working and it cannot fix it.","Troubleshooter: no Internet, cannot fix"],
+     static:["It reports \"Wi-Fi doesn't have a valid IP configuration\" and cannot fix it.","Troubleshooter: invalid IP configuration"],
+     dns:["It reports \"DNS server isn't responding\" and cannot fix it.","Troubleshooter: DNS not responding"]}},
+   {id:"setauto",t:3,k:"net",s:"Set the IP address to automatic",l:"Set the Wi-Fi adapter to get its IP address automatically (DHCP)",m:4,pre:[["ipconfig"]],fx:["static"],r:{
+     static:"The laptop picks up 192.168.1.23 from the router. Pages load.",
+     _:["It was already set to automatic. No change.","IP setting: already automatic"]}},
+   {id:"setdns",t:3,k:"net",s:"Set DNS to automatic and flush the cache",l:"Set the DNS server to automatic (or 8.8.8.8) and clear the DNS cache",a:"Set the DNS server to automatic (or 8.8.8.8) and run ipconfig /flushdns",m:4,pre:[["ipconfig"],["pip","pname"]],fx:["dns"],r:{
+     dns:"The laptop now uses the router for DNS. Websites load.",
+     _:["No change. DNS was not the problem.","DNS change: no change"]}},
+   {id:"nreset",t:4,k:"sw",s:"Run Network reset",l:"Run Network reset (removes every saved network and adapter setting)",m:10,chg:true,pre:[["ipconfig"],["setauto","setdns"]],fx:["static","dns"],ok:["static","dns"],r:{
+     "static,dns":"Network reset clears the bad settings and pages load. It also forgot every saved Wi-Fi network and VPN, and you now have to set those up again.",
+     _:"No change, and now every saved Wi-Fi network has been forgotten too."}},
+   {id:"drv",t:4,k:"sw",s:"Reinstall the Wi-Fi driver",l:"Uninstall and reinstall the Wi-Fi adapter driver",m:12,chg:true,pre:[["ipconfig"],["pgw"]],r:{_:"The driver reinstalls. No change."}},
+   {id:"replcard",t:5,k:"hw",s:"Replace the Wi-Fi card",l:"Replace the Wi-Fi card",m:40,u:55,chg:true,pre:[["drv"]],r:{_:"No change. The Wi-Fi card was fine and the $55 is wasted."}},
+   {id:"replrouter",t:5,k:"hw",s:"Replace the router",l:"Replace the router",m:60,u:190,chg:true,pre:[["rrouter"]],fx:["router"],ok:["router"],r:{
+     router:"The new router works, but a restart would have done the job. $190 spent that was not needed.",
+     _:"No change. The router was fine and the $190 is wasted."}},
+   {id:"reinstall",t:5,k:"sw",s:"Reinstall Windows",l:"Reinstall the operating system",m:120,chg:true,pre:[["nreset"]],fx:["airplane","static","dns"],ok:["airplane","static","dns"],r:{
+     "airplane,static,dns":"A clean install clears the setting, but it took two hours and the user lost their settings.",
+     _:"No change after two hours."}}
+  ]
+},
+
+sound:{
+  id:"sound",name:"No sound",icon:"🔊",client:"Bunbury Esports Club",device:"Commentary desk PC and speakers",
+  blurb:"The commentary PC is silent before a stream.",
+  ticket:{g:`"There is no sound on the commentary PC. The game audio and the music are silent and the stream starts in 20 minutes."`,
+          a:`No audio output on the commentary PC. Stream starts in 20 minutes.`},
+  symptom:{broken:"The speakers are silent",fixed:"Sound is playing"},
+  verify:`The commentator plays the game and the intro music. Both come out of the speakers at a good level.`,
+  lesson:`Split the problem: speakers and cable on one side, the PC's settings and software on the other. Headphones are a quick way to tell which side is broken.`,
+  decoys:["Faulty monitor","Failed hard drive","Faulty keyboard"],
+  faults:{
+    muted:{cause:"System volume muted",type:"User error",ideal:["ask","volume"],
+      why:`A mute is the cheapest check and costs seconds. Keys had been pressed on the keyboard.`,
+      prevent:{o:["Keep the volume indicator visible and check mute first when sound is missing","Remove the speakers","Turn the PC off and on"]}},
+    output:{cause:"Sound sent to the wrong output device (monitor HDMI)",type:"Configuration",ideal:["ask","volume","outchk"],
+      why:`Volume was fine and the speakers were on, but Windows was sending the sound to the new monitor, which has no speakers.`,
+      prevent:{o:["Check the default output device after connecting a new monitor or headset","Unplug the monitor","Use the loudest volume setting"]}},
+    knob:{cause:"Speakers switched off",type:"User error",ideal:["ask","speakers"],
+      why:`The speakers had been moved when the desk was tidied. Their power switch is the cheapest hardware check.`,
+      prevent:{o:["Put the speaker power switch where it is easy to see and label it","Hide the speakers under the desk","Replace the speakers every year"]}},
+    jack:{cause:"Speaker lead plugged into the wrong jack (microphone)",type:"Hardware",ideal:["ask","speakers","volume","headphones","jackchk"],
+      why:`Headphones worked in the green jack, so the PC's sound was fine. The speakers and their lead were the problem, and the lead was in the pink microphone jack.`,
+      prevent:{o:["Label the cables and match plug colours to jack colours before moving a desk","Plug everything into the same jack","Use longer cables"]}},
+    driver:{cause:"Audio driver not working after an update",type:"Software",ideal:["ask","volume","outchk","devmgr","updrv"],
+      why:`Windows said there was no audio device. Device Manager showed a warning on the audio driver, which fits an update the night before. A driver rollback fixed it.`,
+      prevent:{o:["Create a restore point and delay driver updates on important PCs until they are tested","Switch the speakers off at night","Never use the PC for streaming"]}}
+  },
+  actions:[
+   {id:"ask",t:1,k:"ask",s:"Ask the user what happened",l:"Ask the user what happened and what changed",m:3,r:{
+     muted:["A visitor was tapping on the keyboard yesterday. Nothing else changed.","Keys were pressed on the keyboard"],
+     output:["A new monitor was connected with an HDMI cable last week. The sound worked until today's restart.","New HDMI monitor connected last week"],
+     knob:["Nothing on the PC changed. The speakers got moved when the desk was tidied.","Desk tidied, speakers moved"],
+     jack:["The desk was rearranged and every cable was unplugged and plugged back in.","Cables re-plugged after a desk move"],
+     driver:["Windows updated overnight and restarted by itself. The sound has been gone since.","Windows updated overnight"]}},
+   {id:"play",t:1,k:"ask",s:"Play a sound to confirm the problem",l:"Play a sound or video to confirm what the user hears",m:1,r:{
+     driver:["Confirmed: no sound, and Windows says no output device is installed.","No sound, no output device"],
+     _:["Confirmed: nothing comes out of the speakers.","Confirmed: no sound"]}},
+   {id:"speakers",t:1,k:"hw",s:"Check the speakers are on",l:"Check the speakers are switched on and the volume knob is turned up",m:1,fx:["knob"],r:{
+     knob:"The speakers are switched off. You switch them on and the game audio plays.",
+     _:["The power light is on and the volume knob is about halfway.","Speakers: on, knob at half"]}},
+   {id:"volume",t:1,k:"sw",s:"Check the volume and unmute",l:"Look at the volume icon and the volume level. Unmute it if it is muted.",m:1,fx:["muted"],r:{
+     muted:"The sound is muted. You unmute it and the game audio plays.",
+     driver:["The volume icon has a red cross: \"No audio output device is installed\".","Volume icon: no audio device"],
+     _:["The volume is at 60% and is not muted.","Volume: 60%, not muted"]}},
+   {id:"headphones",t:2,k:"hw",s:"Try headphones",l:"Plug headphones into the PC's green jack (or try different speakers)",m:3,r:{
+     "knob,jack":["The headphones play fine. The PC's sound is working, so the speakers or their cable are the problem.","Headphones work: PC sound OK"],
+     _:["Silent in the headphones too. The problem is on the PC, not the speakers.","Headphones silent: fault is on the PC"]}},
+   {id:"outchk",t:2,k:"sw",s:"Check the selected sound output",l:"Open Sound settings and check which output device is selected",m:3,pre:[["volume"]],fx:["output"],r:{
+     output:"The output is set to \"HDMI (monitor)\". You choose \"Speakers\" and the audio plays.",
+     driver:["No output devices are listed at all.","Sound settings: no output devices"],
+     _:["The output is set to \"Speakers\", which is correct.","Output device: Speakers (correct)"]}},
+   {id:"jackchk",t:2,k:"hw",s:"Check the speaker lead and jack",l:"Check the speaker lead is pushed in and plugged into the green (line out) jack",m:3,fx:["jack"],r:{
+     jack:"The lead is in the pink (microphone) jack. You move it to the green jack and the audio plays.",
+     _:["The lead is firm and in the green jack.","Speaker lead: green jack, secure"]}},
+   {id:"restart",t:2,k:"sw",s:"Restart the PC",l:"Restart the PC",m:3,r:{_:["After the restart the problem is the same.","Restart: no change"]}},
+   {id:"devmgr",t:3,k:"sw",s:"Look in Device Manager",l:"Open Device Manager and look at the sound devices",a:"Open Device Manager and inspect Sound, video and game controllers",m:4,pre:[["volume"],["outchk"]],r:{
+     driver:["The audio device shows a yellow warning triangle: the driver is not working.","Device Manager: audio driver warning"],
+     _:["The audio device is listed with no warning.","Device Manager: audio device OK"]}},
+   {id:"trouble",t:3,k:"tool",s:"Run the Windows audio troubleshooter",l:"Run the Windows audio troubleshooter",m:4,pre:[["play"]],r:{
+     muted:["It reports that the sound is muted.","Troubleshooter: sound muted"],
+     output:["It reports that the output may be set to the wrong device.","Troubleshooter: wrong output device?"],
+     driver:["It reports \"Audio driver might be out of date\" and cannot fix it.","Troubleshooter: driver problem"],
+     _:["It finds nothing wrong, because the PC thinks the sound is playing normally.","Troubleshooter: finds nothing"]}},
+   {id:"svc",t:3,k:"sw",atar:true,s:"Check the Windows Audio service",l:"Check the Windows Audio service",a:"Open services.msc and check that the Windows Audio service is running",m:3,pre:[["devmgr"]],r:{_:["The Windows Audio service is running.","Windows Audio service: running"]}},
+   {id:"updrv",t:4,k:"sw",s:"Roll back the audio driver",l:"Roll back or reinstall the audio driver, then restart",m:10,chg:true,pre:[["devmgr"]],fx:["driver"],r:{
+     driver:"You roll back the driver and restart. The audio plays.",
+     _:"No change. The driver was not the problem."}},
+   {id:"replspk",t:5,k:"hw",s:"Replace the speakers",l:"Replace the speakers",m:20,u:90,chg:true,pre:[["headphones"],["speakers"]],fx:["knob"],ok:["knob"],r:{
+     knob:"The new speakers work, but the old ones only needed switching on. $90 spent that was not needed.",
+     _:"No change. The speakers were fine and the $90 is wasted."}},
+   {id:"replcard",t:5,k:"hw",s:"Replace the sound card",l:"Replace the sound card",m:40,u:75,chg:true,pre:[["devmgr"],["updrv"]],fx:["driver"],ok:["driver"],r:{
+     driver:"A new sound card with fresh drivers works, but a driver rollback would have been enough. $75 spent that was not needed.",
+     _:"No change. The sound hardware was fine and the $75 is wasted."}},
+   {id:"reinstall",t:5,k:"sw",s:"Reinstall Windows",l:"Reinstall the operating system",m:120,chg:true,pre:[["updrv"]],fx:["driver","muted","output"],ok:["driver","muted","output"],r:{
+     "driver,muted,output":"A clean install clears the fault, but it took two hours and the user lost their settings.",
+     _:"No change after two hours."}}
+  ]
+}
+};
+const VERIFY={id:"verify",t:6,k:"ask",s:"Confirm with the user",l:"Ask the user to try it and confirm everything works",m:5};
+
+/* ============================================================
+   ENGINE
+   ============================================================ */
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const hash=s=>{let h=0;for(const c of s)h=(h*31+c.charCodeAt(0))>>>0;return h};
+let S=null;           // current case
+let UI={tier:"general",group:true,coach:true,screen:"start"};
+let lastFault={};
+
+function store(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
+const L=(a)=>UI.tier==="atar"&&a.a?a.a:(a.l||a.s);
+const actions=()=>S.sc.actions.filter(a=>UI.tier==="atar"||!a.atar);
+const getAct=id=>id==="verify"?VERIFY:S.sc.actions.find(a=>a.id===id);
+const isDone=id=>!!S.done[id];
+const unmet=a=>(a.pre||[]).filter(g=>!g.some(isDone));
+const gateMissing=a=>(a.need||[]).filter(id=>!isDone(id));
+
+function resolveResult(a,fault){
+  const r=a.r||{};
+  let hit=r._;
+  for(const k of Object.keys(r)){ if(k!=="_"&&k.split(",").includes(fault)){hit=r[k];break} }
+  if(hit===undefined) hit="Nothing useful to report.";
+  return Array.isArray(hit)?hit:[hit,null];
+}
+
+function startCase(scId,faultId){
+  const sc=SC[scId];
+  const ids=Object.keys(sc.faults);
+  let f=faultId;
+  if(!f){const pool=ids.filter(i=>i!==lastFault[scId]);f=pool[Math.floor(Math.random()*pool.length)]}
+  lastFault[scId]=f;
+  const fa=sc.faults[f];
+  const others=shuffle(ids.filter(i=>i!==f)).slice(0,2).map(i=>sc.faults[i].cause);
+  const decoys=shuffle(sc.decoys).slice(0,2);
+  S={sc,fault:f,fa,steps:[],done:{},fixed:false,fixedBy:null,overkill:false,verified:false,min:0,usd:0,hints:0,hl:{},hint:"",evid:[],over:false,
+     rep:{cause:"",prev:"",note:""},causeOpts:shuffle([fa.cause,...others,...decoys]),prevOpts:shuffle(fa.prevent.o),escalated:false,confirmEsc:false,vmin:0};
+  UI.screen="work";
+  render();
+}
+
+function perform(id){
+  if(!S||S.over)return;
+  if(S.fixed&&id!=="verify")return;
+  const a=getAct(id); if(!a)return;
+  if(gateMissing(a).length)return;
+  if(id==="verify"){
+    if(!S.fixed||S.verified)return;
+    S.verified=true;S.min+=a.m;S.vmin=a.m;
+    S.steps.push({n:S.steps.length+1,id,s:a.s,text:S.sc.verify,flags:[],missing:[],min:a.m,usd:0,fix:false,t:6});
+    UI.screen="report";render();return;
+  }
+  const repeat=isDone(id);
+  const flags=[];let missing=[];
+  if(repeat)flags.push("repeat");
+  else{
+    if(a.bad)flags.push("illogical");
+    const um=unmet(a);
+    if(um.length){flags.push("order");missing=um.map(g=>g.map(x=>{const s=getAct(x).s;return s.charAt(0).toLowerCase()+s.slice(1)}).join(" or "));}
+  }
+  const [text,fnd]=resolveResult(a,S.fault);
+  const fixes=!repeat&&!!(a.fx&&a.fx.includes(S.fault));
+  if(a.chg&&!fixes)flags.push("wrong");
+  const over=fixes&&!!(a.ok&&a.ok.includes(S.fault));
+  if(over)flags.push("overkill");
+  S.done[id]=true;
+  S.min+=a.m;S.usd+=a.u||0;
+  if(fnd&&!S.evid.includes(fnd))S.evid.push(fnd);
+  S.steps.push({n:S.steps.length+1,id,s:a.s,text,flags,missing,min:a.m,usd:a.u||0,fix:fixes,t:a.t,bad:a.bad});
+  S.hint="";
+  if(fixes){S.fixed=true;S.fixedBy=id;S.overkill=over}
+  render(id);
+}
+
+function nextIdeal(){return S.fa.ideal.find(i=>!isDone(i))}
+function hint(){
+  if(UI.tier==="atar"||S.fixed)return;
+  const id=nextIdeal();if(!id)return;
+  const a=getAct(id);
+  const lv=S.hl[id]||0;
+  S.hints++;S.hl[id]=lv+1;
+  S.hint=lv===0?`Think about the group "${TIERNAME[a.t]}". A technician has something still to do there. (Hint costs 2 marks.)`
+                :`Try this: ${a.s}. (Hint costs 2 marks.)`;
+  render();
+}
+
+function escalate(){S.escalated=true;S.over=true;UI.screen="review";render()}
+
+function computeScore(){
+  const st=S.steps.filter(x=>x.id!=="verify");
+  const nr=st.filter(x=>!x.flags.includes("repeat"));
+  const okc=nr.filter(x=>!x.flags.includes("order")&&!x.flags.includes("illogical")).length;
+  const order=nr.length?Math.round(50*okc/nr.length):0;
+  const repeats=st.length-nr.length;
+  const wrongs=st.filter(x=>x.flags.includes("wrong")).length;
+  const ideal=S.fa.ideal.map(getAct);
+  const parMin=ideal.reduce((t,a)=>t+a.m,0);
+  const allow=ideal.length+(UI.tier==="atar"?2:4);
+  const overSteps=Math.max(0,nr.length-allow);
+  const allowMin=Math.round(parMin*1.5+10);
+  const overMin=Math.max(0,Math.floor((S.min-S.vmin-allowMin)/15));
+  const eff=!S.fixed?0:Math.max(0,Math.min(15,15-3*repeats-3*wrongs-(S.overkill?3:0)-overSteps-overMin));
+  const fixed=S.fixed?(S.overkill?8:15):0;
+  const verify=S.verified?5:0;
+  const diag=(S.verified&&S.rep.cause===S.fa.cause)?10:0;
+  const prev=(S.verified&&S.rep.prev===S.fa.prevent.o[0])?5:0;
+  const hintPen=UI.tier==="general"?S.hints*2:0;
+  const sum=order+eff+fixed+verify+diag+prev;
+  const total=Math.max(0,sum-hintPen);
+  return {order,eff,fixed,verify,diag,prev,hintPen,total,repeats,wrongs,overSteps,overMin,parMin,nr:nr.length,okc};
+}
+
+/* ============================================================
+   SCENES (symptom only, no clues about the cause)
+   ============================================================ */
+function sceneSVG(id,ok){
+  const desk=`<rect x="10" y="152" width="340" height="8" rx="3" fill="#d5d9e0"/>`;
+  const tower=(x,led,fan)=>`<g><rect x="${x}" y="62" width="58" height="90" rx="6" fill="#f1f3f7" stroke="#1f2937" stroke-width="2"/><circle cx="${x+13}" cy="76" r="4.5" fill="${led}"/><rect x="${x+10}" y="92" width="38" height="6" rx="2" fill="#cfd4dc"/><rect x="${x+10}" y="104" width="38" height="6" rx="2" fill="#cfd4dc"/>${fan?`<g class="spin" style="transform-origin:${x+29}px 132px;transform-box:view-box"><circle cx="${x+29}" cy="132" r="12" fill="none" stroke="#1f2937" stroke-width="1.5"/><path d="M${x+29} 120v24M${x+17} 132h24" stroke="#1f2937" stroke-width="1.5"/></g>`:`<circle cx="${x+29}" cy="132" r="12" fill="none" stroke="#9ca3af" stroke-width="1.5"/>`}</g>`;
+  const mon=(x,w,h,scr)=>{
+    const sy=152-h-14;
+    let inner;
+    if(scr==="desk")inner=`<rect x="${x+6}" y="${sy+6}" width="${w-12}" height="${h-12}" fill="url(#gd)"/><rect x="${x+14}" y="${sy+14}" width="${(w-12)*0.5}" height="${(h-12)*0.45}" rx="3" fill="#fff" opacity=".9"/><rect x="${x+14}" y="${sy+h-26}" width="${w-28}" height="8" rx="2" fill="#fff" opacity=".6"/>`;
+    else if(scr==="black")inner=`<rect x="${x+6}" y="${sy+6}" width="${w-12}" height="${h-12}" fill="#04060a"/>`;
+    else inner=`<rect x="${x+6}" y="${sy+6}" width="${w-12}" height="${h-12}" fill="#1b2230"/>`;
+    return `<g><rect x="${x}" y="${sy}" width="${w}" height="${h}" rx="6" fill="#1f2937"/>${inner}<rect x="${x+w/2-5}" y="${sy+h}" width="10" height="14" fill="#6b7280"/><rect x="${x+w/2-24}" y="150" width="48" height="4" rx="2" fill="#6b7280"/></g>`;
+  };
+  const defs=`<defs><linearGradient id="gd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#14b8a6"/><stop offset="1" stop-color="#3b82f6"/></linearGradient></defs>`;
+  const g="#16a34a",gr="#9ca3af";
+  let body="",label="";
+  if(id==="power"){
+    label=ok?"A PC running, with a lit monitor":"A PC and monitor with no lights";
+    body=tower(36,ok?g:gr,ok)+mon(128,140,92,ok?"desk":"off")
+      +`<path d="M94 146 C150 182 250 182 300 134" stroke="#374151" fill="none" stroke-width="3"/><rect x="296" y="104" width="38" height="44" rx="5" fill="#fff" stroke="#374151" stroke-width="2"/><rect x="306" y="118" width="4" height="12" fill="#374151"/><rect x="320" y="118" width="4" height="12" fill="#374151"/>`;
+  }else if(id==="display"){
+    label=ok?"A PC with a working monitor":"A running PC with a black monitor";
+    body=tower(34,g,true)+mon(130,180,110,ok?"desk":"black")
+      +`<path d="M92 120 C110 120 112 110 130 110" stroke="#374151" fill="none" stroke-width="3"/>`;
+  }else if(id==="network"){
+    label=ok?"A laptop connected to the Internet":"A laptop with no Internet connection";
+    const badge=ok?`<circle cx="164" cy="86" r="11" fill="#16a34a"/><path d="M158 86l4 4 8-9" stroke="#fff" stroke-width="3" fill="none"/>`
+                  :`<circle cx="164" cy="86" r="11" fill="#dc2626"/><path d="M159 81l10 10M169 81l-10 10" stroke="#fff" stroke-width="3"/>`;
+    body=`<path d="M50 152 h160 l-12 -10 h-136z" fill="#cfd4dc" stroke="#1f2937" stroke-width="2"/><rect x="66" y="66" width="128" height="78" rx="5" fill="#1f2937"/><rect x="72" y="72" width="116" height="66" fill="#eaf0fa"/>
+      <g stroke="${ok?"#0f766e":"#6b7280"}" stroke-width="2.5" fill="none"><circle cx="130" cy="106" r="22"/><ellipse cx="130" cy="106" rx="9" ry="22"/><path d="M108 106h44M112 94h36M112 118h36"/></g>${badge}
+      <rect x="250" y="128" width="74" height="22" rx="4" fill="#374151"/><path d="M262 128l-6-24M312 128l6-24" stroke="#374151" stroke-width="3"/><circle cx="264" cy="139" r="3" fill="#9ca3af"/><circle cx="278" cy="139" r="3" fill="#9ca3af"/><circle cx="292" cy="139" r="3" fill="#9ca3af"/>
+      <g fill="none" stroke="${ok?"#0f766e":"#9ca3af"}" stroke-width="3" ${ok?'class="pulse"':'stroke-dasharray="4 6"'}><path d="M240 112 q-14 -14 -30 -4"/><path d="M246 98 q-22 -26 -48 -10"/></g>`;
+  }else{
+    label=ok?"Speakers playing sound":"Silent speakers";
+    const spk=(x)=>`<g><rect x="${x}" y="86" width="40" height="66" rx="5" fill="#374151"/><circle cx="${x+20}" cy="106" r="7" fill="#9ca3af"/><circle cx="${x+20}" cy="132" r="12" fill="#6b7280"/></g>`;
+    const waves=ok?`<g fill="none" stroke="#0f766e" stroke-width="3" class="pulse"><path d="M232 100 q8 8 0 16"/><path d="M240 94 q14 14 0 28"/><path d="M296 100 q-8 8 0 16"/><path d="M288 94 q-14 14 0 28"/></g><text x="258" y="70" font-size="22" fill="#0f766e" class="pulse">♪</text>`
+      :`<g stroke="#dc2626" stroke-width="3.5"><path d="M246 66l16 16M262 66l-16 16"/></g>`;
+    body=tower(26,g,true)+mon(98,110,76,"desk")+spk(190)+spk(264)+waves;
+  }
+  return `<svg viewBox="0 0 360 190" role="img" aria-label="${esc(label)}" xmlns="http://www.w3.org/2000/svg">${defs}${desk}${body}</svg>`;
+}
+
+/* ============================================================
+   RENDER
+   ============================================================ */
+function bestKey(sc){return `trb-best-${UI.tier}-${sc}`}
+function render(focusId){
+  document.body.className=UI.tier==="atar"?"atar":"";
+  $("#tg").setAttribute("aria-pressed",UI.tier==="general");
+  $("#ta").setAttribute("aria-pressed",UI.tier==="atar");
+  $("#tierbadge").textContent=UI.tier==="atar"?"ATAR: Selecting hardware and troubleshooting":"General: Troubleshooting";
+  $("#homebtn").hidden=UI.screen==="start";
+  const bar=$("#bar");
+  if(UI.screen==="start"){bar.hidden=true;$("#app").innerHTML=startHTML();bindStart();return}
+  if(UI.screen==="review"){bar.hidden=true;$("#app").innerHTML=reviewHTML();bindReview();window.scrollTo(0,0);return}
+  bar.hidden=false;
+  $("#app").innerHTML=workHTML();
+  bindWork();
+  renderBar();
+  if(focusId){const el=document.querySelector(`[data-id="${focusId}"]`);if(el&&!el.disabled)el.focus({preventScroll:true})}
+}
+
+function startHTML(){
+  const cards=Object.values(SC).map(sc=>{
+    const b=store(bestKey(sc.id));
+    return `<button class="card sc" data-sc="${sc.id}"><span class="ic" aria-hidden="true">${sc.icon}</span><h3>${sc.name}</h3><span class="muted small">${sc.blurb}</span><span class="small"><b>${Object.keys(sc.faults).length}</b> possible hidden faults${b?` &middot; best <b>${b}</b>/100`:""}</span></button>`;
+  }).join("");
+  const opts=Object.values(SC).map(sc=>`<optgroup label="${sc.name}">`+Object.entries(sc.faults).map(([k,f])=>`<option value="${sc.id}:${k}">${esc(f.cause)} (${f.type})</option>`).join("")+`</optgroup>`).join("");
+  return `
+  <p class="lead">You are the technician. Pick a problem, then test <b>one thing at a time</b>. The fault is hidden and changes each time you play. You are marked mostly on whether your order of steps is <b>logical</b>, not on whether you got lucky.</p>
+  <div class="cards">${cards}</div>
+  <details class="box"><summary>How you are scored (100 marks)</summary>
+    <table class="st"><tbody>
+    <tr><td><b>Logical order</b></td><td>50</td><td>Each step is in order if the checks a technician would do before it are already done. Guessing a fix early loses these marks, even when it works.</td></tr>
+    <tr><td><b>Efficiency</b></td><td>15</td><td>Repeated tests, wrong fixes, wasted parts and too many steps or too much time cost marks.</td></tr>
+    <tr><td><b>Fixed the fault</b></td><td>15</td><td>8 if the fix worked but a cheaper fix existed.</td></tr>
+    <tr><td><b>Checked with the user</b></td><td>5</td><td>Always confirm it works before you leave.</td></tr>
+    <tr><td><b>Named the cause</b></td><td>10</td><td>Pick the real cause from the job write-up.</td></tr>
+    <tr><td><b>Prevention advice</b></td><td>5</td><td>Choose the best way to stop it happening again.</td></tr>
+    </tbody></table>
+    <p class="small muted">The method: ask and look, test a theory, fix it, confirm it, write it up. Hints (General only) cost 2 marks each. Everything you type stays in your browser.</p>
+    <p class="small"><b>General</b> shows steps in groups from cheapest to dearest, gives coaching after each step and offers hints. <b>ATAR</b> shows a flat list with technical wording, extra command line and diagnostic tools, no coaching until the review, and a tighter allowance for steps and time. You can switch either setting on or off during a job.</p>
+  </details>
+  <details class="box"><summary>Teacher: start a chosen fault</summary>
+    <div class="row"><select id="tf" aria-label="Choose a case">${opts}</select><button class="btn pri" id="tgo">Start this case</button></div>
+    <p class="small muted">Students normally get a random fault, and never the same fault twice in a row.</p>
+  </details>`;
+}
+function bindStart(){
+  document.querySelectorAll("[data-sc]").forEach(b=>b.onclick=()=>startCase(b.dataset.sc));
+  $("#tgo").onclick=()=>{const [a,f]=$("#tf").value.split(":");startCase(a,f)};
+}
+
+function actHTML(a){
+  const done=isDone(a.id), gm=gateMissing(a), locked=gm.length>0, fx=S.fixed;
+  const dis=locked||fx;
+  const cost=`${a.m} min${a.u?` &middot; $${a.u}`:""}`;
+  const tag=UI.tier==="atar"||!UI.group?"":"";
+  return `<button class="act${done?" done":""}" data-id="${a.id}" ${dis?"disabled":""}>
+    <span class="al">${esc(L(a))}</span><span class="am">${cost}</span>
+    <span class="ar"><span class="chip ${a.k}">${KIND[a.k]}</span>${locked?` &nbsp;Needs first: ${gm.map(x=>esc(getAct(x).s)).join(", ")}`:""}${done&&!dis?" &nbsp;Done. Doing it again wastes time.":""}</span></button>`;
+}
+function workHTML(){
+  const sc=S.sc;
+  const list=actions();
+  let acts;
+  if(UI.group){
+    acts=[1,2,3,4,5].map(t=>{
+      const items=list.filter(a=>a.t===t);
+      if(!items.length)return "";
+      return `<h3 class="grp">${TIERNAME[t]} <span>${TIERHINT[t]}</span></h3><div class="acts">${items.map(actHTML).join("")}</div>`;
+    }).join("");
+  }else{
+    const items=list.slice().sort((a,b)=>hash(sc.id+a.id)-hash(sc.id+b.id));
+    acts=`<div class="acts">${items.map(actHTML).join("")}</div>`;
+  }
+  const evid=S.evid.length?`<div class="ev" aria-label="Evidence so far">${S.evid.map(e=>`<span class="chip">${esc(e)}</span>`).join("")}</div>`:`<p class="small muted" style="margin:6px 0 0">Nothing found yet. Each test you run pins what you learned here.</p>`;
+  const log=S.steps.length?`<ol class="log">${S.steps.map(stepLI).join("")}</ol>`:`<p class="small muted">Your steps will appear here.</p>`;
+  const right = S.fixed
+    ? `<div class="fixedbanner" role="status">The fault is cleared. Before you leave, check with the user that it all works.</div><button class="btn pri" data-id="verify" style="width:100%;padding:12px">${esc(VERIFY.l)}</button>`
+    : `<h2 style="margin-top:0">What will you do next?</h2>
+       <div class="toggles"><label><input type="checkbox" id="tgrp" ${UI.group?"checked":""}> Group steps by stage</label><label><input type="checkbox" id="tcoach" ${UI.coach?"checked":""}> Coaching after each step</label></div>
+       ${S.hint?`<div class="hintbox" role="status">${esc(S.hint)}</div>`:""}
+       ${acts}
+       <div class="row" style="margin-top:16px">
+         ${UI.tier==="general"?`<button class="btn" id="hintbtn">Hint (costs 2 marks)</button>`:""}
+         <button class="btn" id="escbtn">${S.confirmEsc?"Cancel":"Escalate to a senior technician"}</button>
+       </div>
+       ${S.confirmEsc?`<div class="hintbox">Escalating ends the job with no fix and no marks for fixing. You will still see the answer. <button class="btn pri" id="escyes" style="margin-left:6px">Yes, escalate</button></div>`:""}`;
+  return `<div class="grid2">
+    <section aria-label="The job">
+      <div class="scene">${sceneSVG(sc.id,S.fixed)}<div class="cap${S.fixed?" fixed":""}">${sc.symptom[S.fixed?"fixed":"broken"]}</div></div>
+      <div class="ticket"><b>${esc(sc.client)} &middot; ${esc(sc.device)}</b>${UI.tier==="atar"?sc.ticket.a:sc.ticket.g}</div>
+      <h2>${UI.tier==="atar"?"Evidence log":"What you have found"}</h2>${evid}
+      <h2>Steps so far</h2>${log}
+    </section>
+    <section aria-label="Actions">${right}</section>
+  </div>`;
+}
+function flagTexts(x,full){
+  const o=[];
+  if(x.flags.includes("repeat"))o.push(["n","Repeat","You already did this test. It cost time and gave the same answer."]);
+  if(x.flags.includes("illogical"))o.push(["r","Illogical",x.bad]);
+  if(x.flags.includes("order"))o.push(["a","Out of order","You jumped ahead. A technician would first: "+x.missing.join("; and ")+"."]);
+  if(x.flags.includes("wrong"))o.push(["r","Wrong fix","That change did not fix it"+(x.usd?" and the money is wasted":"")+". Test before you replace or reset."]);
+  if(x.flags.includes("overkill"))o.push(["a","Overkill","It worked, but a cheaper fix was available."]);
+  if(!o.length&&x.id!=="verify")o.push(["g","In order","A sensible step: the earlier checks were done first."]);
+  return o;
+}
+function stepLI(x){
+  const fl=UI.coach?flagTexts(x):[];
+  return `<li><div class="h"><span class="n">${x.n}</span><b>${esc(x.s)}</b>${fl.map(f=>`<span class="flag ${f[0]}">${f[1]}</span>`).join("")}${x.fix?`<span class="flag g">Fixed</span>`:""}<span class="muted small">${x.min} min${x.usd?`, $${x.usd}`:""}</span></div><p class="t">${esc(x.text)}</p>${fl.filter(f=>f[0]!=="g"&&f[0]!=="n").map(f=>`<p class="small" style="margin:4px 0 0;color:#6b4b00">${esc(f[2])}</p>`).join("")}</li>`;
+}
+function renderBar(){
+  const last=S.steps[S.steps.length-1];
+  const res=$("#res");
+  res.className="res"+(S.fixed?" fixed":"");
+  if(!last)res.innerHTML=`<b>Latest result</b>Choose a test. Start with the cheapest and quickest.`;
+  else{
+    const fl=UI.coach?flagTexts(last).filter(f=>f[0]!=="g"):[];
+    res.innerHTML=`<b>Step ${last.n}: ${esc(last.s)}</b>${esc(last.text)}${fl.length?`<br><span class="small" style="color:#6b4b00">${fl.map(f=>esc(f[2])).join(" ")}</span>`:""}`;
+  }
+  $("#stats").innerHTML=`<span><span>Time </span>${S.min} min</span><span><span>Parts </span>$${S.usd}</span><span><span>Steps </span>${S.steps.length}</span>`;
+}
+function bindWork(){
+  document.querySelectorAll("button[data-id]").forEach(b=>b.onclick=()=>perform(b.dataset.id));
+  const g=$("#tgrp"),c=$("#tcoach"),h=$("#hintbtn"),e=$("#escbtn"),y=$("#escyes");
+  if(g)g.onchange=()=>{UI.group=g.checked;render()};
+  if(c)c.onchange=()=>{UI.coach=c.checked;render()};
+  if(h)h.onclick=hint;
+  if(e)e.onclick=()=>{S.confirmEsc=!S.confirmEsc;render()};
+  if(y)y.onclick=escalate;
+}
+
+/* ---------- report (write-up) ---------- */
+function reportHTML(){
+  return `<div class="grid2"><section>
+    <div class="fixedbanner" role="status">Confirmed with the user. ${esc(S.sc.verify)}</div>
+    <h2>Job write-up</h2>
+    <label class="f" for="cause">1. What was the cause?</label>
+    <select id="cause"><option value="">Choose the cause</option>${S.causeOpts.map(c=>`<option ${S.rep.cause===c?"selected":""}>${esc(c)}</option>`).join("")}</select>
+    <label class="f">2. What is the best way to stop it happening again?</label>
+    ${S.prevOpts.map((p,i)=>`<label class="radio"><input type="radio" name="prev" value="${i}" ${S.rep.prev===p?"checked":""}> <span>${esc(p)}</span></label>`).join("")}
+    <label class="f" for="note">3. Job note for the user (optional, kept in your browser)</label>
+    <textarea id="note" placeholder="${UI.tier==="atar"?"Problem: ... Cause: ... Tests that ruled out other causes: ... Fix: ... Confirmed by: ...":"The problem was ... The cause was ... I tested ... and then I fixed it by ... I confirmed it by ..."}">${esc(S.rep.note)}</textarea>
+    <div class="pills" id="pills"></div>
+    <p class="small muted">The ticks are word-based hints, not marks.</p>
+    <div class="row" style="margin-top:12px"><button class="btn pri" id="finish" disabled>Finish and see my score</button></div>
+  </section><section>
+    <h2 style="margin-top:0">Steps so far</h2><ol class="log">${S.steps.map(stepLI).join("")}</ol>
+  </section></div>`;
+}
+function pillsFor(txt){
+  const t=txt.toLowerCase();
+  const chk=[["Said what the problem was",/problem|issue|symptom|no (power|sound|display|network|internet)|black|silent|dead/],
+             ["Named the cause",/cause|because|caused|due to/],
+             ["Said what you tested",/test|check|tried|ask|ping|swap|look/],
+             ["Said what you did to fix it",/fix|replac|chang|switch|move|push|restart|roll|set|unmute|plug|rejoin|forg/],
+             ["Said how you confirmed it",/confirm|verif|user|client|works|working/]];
+  if(UI.tier==="atar")chk.push(["Explained what you ruled out",/rule[sd]? out|eliminat|not the|excluded/]);
+  return chk.map(([n,re])=>`<span class="pill${re.test(t)?" on":""}">${re.test(t)?"✓ ":""}${n}</span>`).join("");
+}
+function bindReport(){
+  const sel=$("#cause"),note=$("#note"),fin=$("#finish");
+  const upd=()=>{fin.disabled=!(S.rep.cause&&S.rep.prev);$("#pills").innerHTML=pillsFor(S.rep.note)};
+  sel.onchange=()=>{S.rep.cause=sel.value;upd()};
+  document.querySelectorAll('input[name=prev]').forEach(r=>r.onchange=()=>{S.rep.prev=S.prevOpts[+r.value];upd()});
+  note.oninput=()=>{S.rep.note=note.value;upd()};
+  fin.onclick=()=>{S.over=true;UI.screen="review";const sc=computeScore();const k=bestKey(S.sc.id);const b=+store(k)||0;if(sc.total>b)store(k,String(sc.total));render()};
+  upd();
+}
+
+/* ---------- review ---------- */
+function jobSheet(){
+  const sc=computeScore();
+  const lines=[`TROUBLESHOOTER JOB SHEET (${UI.tier==="atar"?"ATAR":"General"})`,`Problem: ${S.sc.name} (${S.sc.client}, ${S.sc.device})`,`Cause: ${S.fa.cause} [${S.fa.type}]`,
+   S.fixed?`Fixed by: ${getAct(S.fixedBy).s}${S.overkill?" (a cheaper fix existed)":""}`:`Not fixed: escalated`,"",`Steps:`];
+  S.steps.forEach(x=>lines.push(`${x.n}. ${x.s}: ${x.text}`));
+  lines.push("",`Time: ${S.min} min. Parts: $${S.usd}.`);
+  if(S.rep.cause)lines.push(`My diagnosis: ${S.rep.cause}`,`Prevention: ${S.rep.prev}`);
+  if(S.rep.note)lines.push(`Note: ${S.rep.note}`);
+  lines.push("",`Score: ${sc.total}/100 (order ${sc.order}/50, efficiency ${sc.eff}/15, fixed ${sc.fixed}/15, confirmed ${sc.verify}/5, cause ${sc.diag}/10, prevention ${sc.prev}/5${sc.hintPen?`, hints -${sc.hintPen}`:""})`);
+  return lines.join("\n");
+}
+function band(t){return t>=90?"Senior technician standard":t>=75?"Solid and logical":t>=55?"Developing":"Back to basics"}
+function reviewHTML(){
+  const sc=computeScore();
+  const bars=[["Logical order",sc.order,50],["Efficiency",sc.eff,15],["Fixed the fault",sc.fixed,15],["Checked with the user",sc.verify,5],["Named the cause",sc.diag,10],["Prevention advice",sc.prev,5]]
+    .map(([n,v,m])=>`<div class="brow"><span>${n}</span><i style="--w:${Math.round(100*v/m)}%"></i><b>${v}/${m}</b></div>`).join("");
+  const rows=S.steps.map(x=>{
+    const fl=flagTexts(x);
+    return `<tr><td>${x.n}</td><td><b>${esc(x.s)}</b><br><span class="muted">${esc(x.text)}</span>${fl.filter(f=>f[0]!=="g"&&f[0]!=="n").map(f=>`<br><span style="color:#6b4b00">${esc(f[2])}</span>`).join("")}</td><td>${fl.map(f=>`<span class="flag ${f[0]}">${f[1]}</span>`).join(" ")}${x.fix?` <span class="flag g">Fixed</span>`:""}</td>${UI.tier==="atar"?`<td>${STAGE[x.t]||""}</td>`:""}<td>${x.min} min${x.usd?`<br>$${x.usd}`:""}</td></tr>`;
+  }).join("");
+  const ideal=S.fa.ideal.map(id=>{const a=getAct(id);return `<li><b>${esc(a.s)}</b> <span class="muted small">${a.m} min${a.u?`, $${a.u}`:""}</span></li>`}).join("");
+  return `
+  <div class="score"><div class="big" aria-label="Score ${sc.total} out of 100">${sc.total}<small> / 100</small></div><div class="bars">${bars}</div></div>
+  <p><b>${band(sc.total)}.</b> ${S.escalated?"You escalated this one, so there are no marks for fixing it.":S.overkill?"Your fix worked, but a cheaper fix existed.":"Fixed and confirmed."}${sc.hintPen?` Hints used: ${S.hints} (minus ${sc.hintPen}).`:""}</p>
+  <div class="ticket"><b>The hidden fault was</b>${esc(S.fa.cause)} <span class="chip">${S.fa.type}</span><br><span class="small">${esc(S.fa.why)}</span></div>
+  <h2>Your steps, one by one</h2>
+  <div style="overflow:auto"><table class="st"><thead><tr><th>#</th><th>Step and result</th><th>Verdict</th>${UI.tier==="atar"?"<th>Stage</th>":""}<th>Cost</th></tr></thead><tbody>${rows}</tbody></table></div>
+  <div class="grid2" style="margin-top:6px"><div><h2>What a technician would do</h2><ol class="ideal">${ideal}</ol></div>
+  <div><h2>Rule of thumb</h2><p>${esc(S.sc.lesson)}</p>
+  ${sc.order<50?`<p class="small muted">Order: ${sc.okc} of ${sc.nr} steps were in order. A step is in order when the checks that normally come before it are already done.</p>`:""}</div></div>
+  <div class="row" style="margin:18px 0 6px"><button class="btn pri" id="again">Same problem, new fault</button><button class="btn" id="other">Choose another problem</button><button class="btn" id="copy">Copy job sheet</button></div>
+  <textarea id="sheet" readonly hidden aria-label="Job sheet" style="margin-top:10px;min-height:200px"></textarea>
+  <p class="small muted" id="copymsg" role="status"></p>`;
+}
+function bindReview(){
+  $("#again").onclick=()=>startCase(S.sc.id);
+  $("#other").onclick=()=>{UI.screen="start";S=null;render()};
+  $("#copy").onclick=()=>{
+    const txt=jobSheet(),ta=$("#sheet");
+    const show=()=>{ta.hidden=false;ta.value=txt;ta.select();$("#copymsg").textContent="Copy blocked here. Select the text above and copy it for your Teams hand-in."};
+    try{navigator.clipboard.writeText(txt).then(()=>{$("#copymsg").textContent="Job sheet copied. Paste it into your Teams hand-in."},show)}catch(e){show()}
+  };
+}
+
+/* ---------- screen router for report ---------- */
+const _render=render;
+render=function(f){
+  if(UI.screen==="report"){
+    document.body.className=UI.tier==="atar"?"atar":"";
+    $("#tg").setAttribute("aria-pressed",UI.tier==="general");$("#ta").setAttribute("aria-pressed",UI.tier==="atar");
+    $("#tierbadge").textContent=UI.tier==="atar"?"ATAR: Selecting hardware and troubleshooting":"General: Troubleshooting";
+    $("#homebtn").hidden=false;$("#bar").hidden=false;
+    $("#app").innerHTML=reportHTML();bindReport();renderBar();window.scrollTo(0,0);return;
+  }
+  _render(f);
+};
+
+/* ---------- header controls ---------- */
+function setTier(t){
+  UI.tier=t;UI.group=t==="general";UI.coach=t==="general";store("trb-tier",t);
+  if(S&&UI.screen!=="review"&&UI.screen!=="start"&&S.steps.length===0){}
+  render();
+}
+$("#tg").onclick=()=>setTier("general");
+$("#ta").onclick=()=>setTier("atar");
+$("#homebtn").onclick=()=>{UI.screen="start";S=null;render()};
+(function init(){
+  const h=(location.hash||"").replace("#","").toLowerCase();
+  const q=new URLSearchParams(location.search).get("tier");
+  const t=(q||h||store("trb-tier")||"general").toLowerCase();
+  UI.tier=t==="atar"?"atar":"general";UI.group=UI.tier==="general";UI.coach=UI.tier==="general";
+  render();
+})();
+window.__T={SC,startCase,perform,computeScore,get S(){return S},UI,getAct,render,hint,escalate};
+</script>
+</body>
+</html>
