@@ -14,6 +14,8 @@ import {
   closeRevision as closeRevisionFn,
   syncTodayLessonId,
 } from "@/lib/logic/release";
+import { getCourseContent } from "@/lib/content";
+import { consecutiveLessonIds, isValidDate, liveReliefLinks, makeReliefLink } from "@/lib/logic/relief";
 import type { ClassAuthMode, ClassConfig } from "@/lib/auth-types";
 import { getAssessments, isValidDueDate } from "@/lib/plans/assessments";
 
@@ -181,4 +183,40 @@ export async function removeClass(classId: string) {
   await requireTeacher();
   await deleteClass(classId);
   redirect("/teacher");
+}
+
+/**
+ * Creates a read-only relief-teacher link for `count` consecutive lessons starting at `startLessonId`.
+ * Optionally releases them now (code-track classes only) so a relief teacher has nothing to press.
+ */
+export async function createReliefLink(classId: string, formData: FormData) {
+  await requireTeacher();
+  const cls = await getClass(classId);
+  if (!cls) return;
+  const content = getCourseContent(cls.courseSlug);
+  if (!content) return;
+
+  const orderedIds = content.units.flatMap((u) => u.topics.flatMap((t) => t.lessons.map((l) => l.id)));
+  const startId = String(formData.get("startLessonId") ?? "");
+  const count = Number.parseInt(String(formData.get("count") ?? "1"), 10) || 1;
+  const date = String(formData.get("date") ?? "");
+  const lessonIds = consecutiveLessonIds(orderedIds, startId, count);
+  if (lessonIds.length === 0 || !isValidDate(date)) return;
+
+  const link = makeReliefLink(lessonIds, date, String(formData.get("summary") ?? ""));
+  const next: ClassConfig = {
+    ...cls,
+    reliefLinks: [...liveReliefLinks(cls.reliefLinks), link],
+  };
+  const release = formData.get("release") === "on" && (cls.authMode ?? "code") === "code";
+  await saveClass(release ? syncTodayLessonId(next, releaseWeekFn(cls.releases ?? {}, lessonIds)) : next);
+  revalidatePath("/teacher/classes/" + classId);
+}
+
+export async function revokeReliefLink(classId: string, token: string) {
+  await requireTeacher();
+  const cls = await getClass(classId);
+  if (!cls) return;
+  await saveClass({ ...cls, reliefLinks: (cls.reliefLinks ?? []).filter((l) => l.token !== token) });
+  revalidatePath("/teacher/classes/" + classId);
 }

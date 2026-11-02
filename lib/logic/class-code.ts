@@ -8,7 +8,7 @@ const CODE_LENGTH = 6;
 
 /** Routes the class-code entry page must never match, so a code can't collide with a real page. */
 export const RESERVED_CODES = new Set([
-  "login", "teacher", "courses", "api", "admin", "about", "contact",
+  "login", "teacher", "courses", "api", "admin", "about", "contact", "relief",
 ]);
 
 export function generateClassCode(): string {

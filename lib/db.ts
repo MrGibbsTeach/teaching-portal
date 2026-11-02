@@ -4,6 +4,7 @@ import type { ClassConfig } from "./auth-types";
 import { foundationsY12BareTopicIds } from "./content";
 import type { LiveAnswer, LiveState } from "./logic/live";
 import type { FeedbackItem } from "./logic/insights";
+import { isReliefExpired } from "./logic/relief";
 import { LEGACY_FOUNDATIONS_SLUG, legacyFoundationsTarget } from "./logic/foundations-migration";
 
 const KV_KEY = "mg_classes";
@@ -78,6 +79,19 @@ export async function getClassByCode(code: string): Promise<ClassConfig | null> 
   const all = await getClasses();
   const normalized = code.trim().toUpperCase();
   return all.find((c) => c.classCode === normalized) ?? null;
+}
+
+/** For the relief-teacher page: find the class holding an unexpired relief link with this token. */
+export async function getClassByReliefToken(
+  token: string,
+): Promise<{ cls: ClassConfig; link: import("./auth-types").ReliefLink } | null> {
+  if (!token || token.length < 16) return null;
+  const all = await getClasses();
+  for (const cls of all) {
+    const link = cls.reliefLinks?.find((l) => l.token === token);
+    if (link) return isReliefExpired(link) ? null : { cls, link };
+  }
+  return null;
 }
 
 export async function saveClass(cls: ClassConfig): Promise<void> {

@@ -33,6 +33,21 @@ export interface AssessmentSetting {
   dueDate?: string;
 }
 
+/** A read-only, expiring page for a relief teacher (redesign-plan.md, relief lessons). No student data. */
+export interface ReliefLink {
+  /** Unguessable token used in /relief/<token>. */
+  token: string;
+  /** Lessons covered, in teaching order. */
+  lessonIds: string[];
+  /** The day the relief teacher takes the class, as YYYY-MM-DD (Perth). */
+  date: string;
+  /** Optional teacher-written summary shown at the top of the page. */
+  summary?: string;
+  createdAt: string;
+  /** The link stops working after this time. */
+  expiresAt: string;
+}
+
 export interface ClassConfig {
   id: string;
   name: string;
@@ -51,4 +66,6 @@ export interface ClassConfig {
   todayLessonId?: string;
   /** Assessment calendar settings, keyed by assessment task id (see lib/plans/assessments.ts). */
   assessments?: Record<string, AssessmentSetting>;
+  /** Relief-teacher links created for this class. Expired ones are pruned on save. */
+  reliefLinks?: ReliefLink[];
 }

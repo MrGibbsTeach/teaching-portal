@@ -23,6 +23,8 @@ import { StopLiveButton } from "@/components/teacher/StopLiveButton";
 import { LessonReleaseRow } from "@/components/teacher/LessonReleaseRow";
 import { ReleaseNextBar } from "@/components/teacher/ReleaseNextBar";
 import { TermPlanView } from "@/components/teacher/TermPlan";
+import { ReliefPanel } from "@/components/teacher/ReliefPanel";
+import { liveReliefLinks } from "@/lib/logic/relief";
 import { currentPlanWeek, getPlan } from "@/lib/plans";
 import { AssessmentCalendar } from "@/components/teacher/AssessmentCalendar";
 import { getAssessments } from "@/lib/plans/assessments";
@@ -233,6 +235,18 @@ export default async function ClassManagePage({
 
       {/* Code-track classes: the daily release controls come first. */}
       {cls!.authMode === "code" && lessonsSection}
+
+      {content && (
+        <ReliefPanel
+          classId={cls!.id}
+          units={content.units}
+          defaultStartId={(todayIdx >= 0 ? flatLessons[todayIdx + 1] : undefined)?.id ?? nextLesson?.id ?? flatLessons[0]?.id}
+          links={liveReliefLinks(cls!.reliefLinks)}
+          canRelease={authMode === "code"}
+          titleById={Object.fromEntries(flatLessons.map((l) => [l.id, l.title]))}
+          defaultDate={new Date(perthNow.getTime() + 24 * 60 * 60 * 1000).toLocaleDateString("en-CA")}
+        />
+      )}
 
       {/* Live session */}
       <section>
