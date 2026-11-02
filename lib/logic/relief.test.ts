@@ -52,6 +52,7 @@ describe("lessonGlance", () => {
       { type: "paragraph", text: "A local charity needs a plan for its new video project and wants to see who does what and when." },
       { type: "keyTerm", term: "Gantt chart", definition: "A bar chart of tasks over time." },
       { type: "videoSlot", title: "Empty", brief: "tbc" },
+      { type: "video", youtubeId: "abc123", title: "Gantt explained" },
       { type: "sorter", title: "Sort the considerations", categories: ["a", "b"], items: [] },
       { type: "quizQuestion", question: { questionType: "mcq", text: "What does a bar show?", options: ["A task", "A person"], correctIndex: 0 } },
       { type: "quizQuestion", question: { questionType: "extended", text: "Explain a dependency.", marks: 4, modelAnswer: "A task that cannot start until another finishes." } },
@@ -60,8 +61,14 @@ describe("lessonGlance", () => {
 
   it("lists steps in order and skips empty video slots", () => {
     const g = lessonGlance(lesson);
-    expect(g.steps.map((s) => s.kind)).toEqual(["Read", "Try it", "Check", "Write it"]);
+    expect(g.steps.map((s) => s.kind)).toEqual(["Read", "Watch", "Try it", "Check", "Write it"]);
     expect(g.totalMinutes).toBe(g.steps.reduce((n, s) => n + s.minutes, 0));
+  });
+
+  it("keeps the YouTube id on Watch steps only", () => {
+    const g = lessonGlance(lesson);
+    expect(g.steps.find((s) => s.kind === "Watch")?.youtubeId).toBe("abc123");
+    expect(g.steps.filter((s) => s.kind !== "Watch").every((s) => s.youtubeId === undefined)).toBe(true);
   });
 
   it("collects key terms, opening text and answers", () => {

@@ -75,10 +75,37 @@ export default async function ReliefPage({ params }: { params: Promise<{ token: 
               <h3 className="mt-8 text-sm font-bold uppercase tracking-wide text-primary">What students do</h3>
               <ol className="mt-2 space-y-1.5">
                 {g.steps.map((s, i) => (
-                  <li key={i} className="flex gap-3 text-sm">
-                    <span className="w-16 shrink-0 font-semibold">{s.kind}</span>
-                    <span className="flex-1">{s.label}</span>
-                    <span className="shrink-0 text-muted-foreground">~{s.minutes} min</span>
+                  <li key={i} className="text-sm">
+                    <div className="flex gap-3">
+                      <span className="w-16 shrink-0 font-semibold">{s.kind}</span>
+                      <span className="flex-1">{s.label}</span>
+                      <span className="shrink-0 text-muted-foreground">~{s.minutes} min</span>
+                    </div>
+                    {s.youtubeId && (
+                      <details className="mt-2 ml-[4.75rem] rounded-xl border border-border p-3">
+                        <summary className="cursor-pointer font-semibold text-primary">
+                          Play video here
+                        </summary>
+                        <div className="mt-3 aspect-video overflow-hidden rounded-lg">
+                          <iframe
+                            src={`https://www.youtube-nocookie.com/embed/${s.youtubeId}`}
+                            title={s.label}
+                            loading="lazy"
+                            allow="accelerometer; encrypted-media; picture-in-picture; fullscreen"
+                            allowFullScreen
+                            className="h-full w-full"
+                          />
+                        </div>
+                        <a
+                          href={`https://www.youtube.com/watch?v=${s.youtubeId}`}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="mt-2 inline-block text-xs font-semibold text-primary hover:underline"
+                        >
+                          Open on YouTube
+                        </a>
+                      </details>
+                    )}
                   </li>
                 ))}
               </ol>

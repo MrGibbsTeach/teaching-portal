@@ -65,6 +65,8 @@ export interface GlanceStep {
   kind: GlanceKind;
   label: string;
   minutes: number;
+  /** For Watch steps: the YouTube video, so a relief teacher can play it on the main screen. */
+  youtubeId?: string;
 }
 
 export interface GlanceAnswer {
@@ -156,13 +158,13 @@ export function lessonGlance(lesson: Lesson): LessonGlance {
       case "video":
       case "checkpointVideo":
         flushRead();
-        steps.push({ kind: "Watch", label: b.title ?? "Video", minutes: 4 });
+        steps.push({ kind: "Watch", label: b.title ?? "Video", minutes: 4, youtubeId: b.youtubeId });
         break;
       case "videoSlot":
         // Empty slots are hidden from students, so they are not a step.
         if (b.youtubeId) {
           flushRead();
-          steps.push({ kind: "Watch", label: b.videoTitle ?? b.title, minutes: b.minutes ?? 4 });
+          steps.push({ kind: "Watch", label: b.videoTitle ?? b.title, minutes: b.minutes ?? 4, youtubeId: b.youtubeId });
         }
         break;
       case "task":
