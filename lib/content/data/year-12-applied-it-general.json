@@ -7902,8 +7902,8 @@
                 {
                   "type": "callout",
                   "variant": "ticket",
-                  "heading": "Rory’s client brief",
-                  "text": "Bunbury Surf Club needs a 30-second Nippers sign-up reel in three weeks. The team has one phone, a free editing app and no budget. Could they add a 10-second ad without changing the deadline? Keep the four considerations in mind."
+                  "heading": "Ticket from the South West Digital Wellbeing Alliance",
+                  "text": "We want a 60-second video that helps teenagers in the South West build healthy and safe technology habits. It will go on our website, YouTube and social media. You have four weeks to plan it. Start by working out how scope, time, resources and our brief will shape your plan."
                 },
                 {
                   "type": "infoCards",
@@ -7918,13 +7918,19 @@
                     },
                     {
                       "icon": "🧭",
-                      "heading": "Outline how each consideration applies to a given scenario.",
+                      "heading": "Outline how each consideration applies to your own video.",
                       "text": "",
                       "tone": "blue"
                     },
                     {
-                      "icon": "✅",
-                      "heading": "Explain how a change to one consideration affects the others.",
+                      "icon": "🔍",
+                      "heading": "Read a Gantt chart and spot what a plan is missing.",
+                      "text": "",
+                      "tone": "blue"
+                    },
+                    {
+                      "icon": "🛠️",
+                      "heading": "Build a Gantt chart and write a client brief with all five parts.",
                       "text": "",
                       "tone": "blue"
                     }
@@ -7988,40 +7994,73 @@
                 },
                 {
                   "type": "sorter",
-                  "title": "Which consideration changes?",
-                  "instruction": "Each change affects one consideration. Which?",
+                  "title": "Which consideration is it?",
+                  "instruction": "Each item belongs to one consideration. Tap the right one.",
                   "categories": [
                     "Scope",
                     "Time",
-                    "Resources"
+                    "Resources",
+                    "Client brief"
                   ],
                   "items": [
                     {
-                      "text": "Cut the reel from 30 seconds to 15 seconds.",
+                      "text": "The video will use filmed scenes and a voiceover, with no presenter on screen.",
                       "category": 0,
-                      "why": "Less is included."
+                      "why": "Scope is what the project will and will not produce."
                     },
                     {
-                      "text": "Sign-up day moves from three weeks away to two.",
+                      "text": "You decide to make one 60-second video, not a second vertical version as well.",
+                      "category": 0,
+                      "why": "Leaving something out is a scope decision."
+                    },
+                    {
+                      "text": "Filming cannot start until the plan is checked, and editing must finish before the deadline.",
                       "category": 1,
-                      "why": "The deadline changed."
+                      "why": "Time covers the schedule and the deadlines."
                     },
                     {
-                      "text": "No budget, so use free software and your own footage.",
+                      "text": "Rain cancels the planned filming day, so you have one day less.",
+                      "category": 1,
+                      "why": "Less time available is a time change."
+                    },
+                    {
+                      "text": "You have one phone, no tripod and a borrowed microphone.",
                       "category": 2,
-                      "why": "Fewer resources available."
+                      "why": "Resources are the people, equipment and software you can use."
                     },
                     {
-                      "text": "Add a poster and a website to the project.",
-                      "category": 0,
-                      "why": "Bigger scope."
-                    },
-                    {
-                      "text": "Another volunteer joins to edit.",
-                      "category": 2,
-                      "why": "More people."
+                      "text": "The Alliance wants its logo on the end card and a call to action to its website.",
+                      "category": 3,
+                      "why": "The client brief is what the client asked for."
                     }
                   ]
+                },
+                {
+                  "type": "heading",
+                  "text": "Reading a Gantt chart",
+                  "level": 2
+                },
+                {
+                  "type": "svgFigure",
+                  "title": "A student's Gantt chart for a 60-second video",
+                  "alt": "A Gantt chart over eight weeks with pre-production in weeks 1 to 4, filming in week 5 and editing in weeks 6 to 8. The review row is empty.",
+                  "svg": "<svg viewBox=\"0 0 680 190\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui,sans-serif\"><style>.g-t{font-size:12.5px;font-weight:700;fill:#0f172a}.g-h{font-size:11px;fill:#475569;text-anchor:middle}.g-c{fill:#f1f5f9}.g-1{fill:#0f766e}.g-2{fill:#4f46e5}.g-3{fill:#b45309}@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style>\n<text x=\"10\" y=\"22\" class=\"g-t\">Task</text>\n<text x=\"229\" y=\"22\" class=\"g-h\">Week 1</text><text x=\"287\" y=\"22\" class=\"g-h\">Week 2</text><text x=\"345\" y=\"22\" class=\"g-h\">Week 3</text><text x=\"403\" y=\"22\" class=\"g-h\">Week 4</text><text x=\"461\" y=\"22\" class=\"g-h\">Week 5</text><text x=\"519\" y=\"22\" class=\"g-h\">Week 6</text><text x=\"577\" y=\"22\" class=\"g-h\">Week 7</text><text x=\"635\" y=\"22\" class=\"g-h\">Week 8</text>\n<text x=\"10\" y=\"59\" class=\"g-t\">Pre-production</text><rect x=\"202\" y=\"40\" width=\"54\" height=\"28\" rx=\"5\" class=\"g-1\"/><rect x=\"260\" y=\"40\" width=\"54\" height=\"28\" rx=\"5\" class=\"g-1\"/><rect x=\"318\" y=\"40\" width=\"54\" height=\"28\" rx=\"5\" class=\"g-1\"/><rect x=\"376\" y=\"40\" width=\"54\" height=\"28\" rx=\"5\" class=\"g-1\"/><rect x=\"434\" y=\"40\" width=\"54\" height=\"28\" rx=\"5\" class=\"g-c\"/><rect x=\"492\" y=\"40\" width=\"54\" height=\"28\" rx=\"5\" class=\"g-c\"/><rect x=\"550\" y=\"40\" width=\"54\" height=\"28\" rx=\"5\" class=\"g-c\"/><rect x=\"608\" y=\"40\" width=\"54\" height=\"28\" rx=\"5\" class=\"g-c\"/><text x=\"10\" y=\"99\" class=\"g-t\">Filming</text><rect x=\"202\" y=\"80\" width=\"54\" height=\"28\" rx=\"5\" class=\"g-c\"/><rect x=\"260\" y=\"80\" width=\"54\" height=\"28\" rx=\"5\" class=\"g-c\"/><rect x=\"318\" y=\"80\" width=\"54\" height=\"28\" rx=\"5\" class=\"g-c\"/><rect x=\"376\" y=\"80\" width=\"54\" height=\"28\" rx=\"5\" class=\"g-c\"/><rect x=\"434\" y=\"80\" width=\"54\" height=\"28\" rx=\"5\" class=\"g-2\"/><rect x=\"492\" y=\"80\" width=\"54\" height=\"28\" rx=\"5\" class=\"g-c\"/><rect x=\"550\" y=\"80\" width=\"54\" height=\"28\" rx=\"5\" class=\"g-c\"/><rect x=\"608\" y=\"80\" width=\"54\" height=\"28\" rx=\"5\" class=\"g-c\"/><text x=\"10\" y=\"139\" class=\"g-t\">Editing</text><rect x=\"202\" y=\"120\" width=\"54\" height=\"28\" rx=\"5\" class=\"g-c\"/><rect x=\"260\" y=\"120\" width=\"54\" height=\"28\" rx=\"5\" class=\"g-c\"/><rect x=\"318\" y=\"120\" width=\"54\" height=\"28\" rx=\"5\" class=\"g-c\"/><rect x=\"376\" y=\"120\" width=\"54\" height=\"28\" rx=\"5\" class=\"g-c\"/><rect x=\"434\" y=\"120\" width=\"54\" height=\"28\" rx=\"5\" class=\"g-c\"/><rect x=\"492\" y=\"120\" width=\"54\" height=\"28\" rx=\"5\" class=\"g-3\"/><rect x=\"550\" y=\"120\" width=\"54\" height=\"28\" rx=\"5\" class=\"g-3\"/><rect x=\"608\" y=\"120\" width=\"54\" height=\"28\" rx=\"5\" class=\"g-3\"/>\n<text x=\"10\" y=\"170\" class=\"g-t\">Review</text><text x=\"204\" y=\"170\" class=\"g-h\" style=\"text-anchor:start\">(nothing here)</text></svg>",
+                  "caption": "Every phase is a row, every task has a start and an end. One required phase is missing."
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "project-management-u3-1-project-management-considerations-gantt",
+                    "questionType": "mcq",
+                    "text": "Look at the student's Gantt chart. What is missing?",
+                    "options": [
+                      "A review phase",
+                      "A budget",
+                      "A title card"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "A Gantt chart for a video covers all four phases: pre-production, production, post-production and review. This one stops after editing, so there is no time to check the finished video against the brief."
+                  }
                 },
                 {
                   "type": "branchingScenario",
@@ -8052,16 +8091,82 @@
                   ]
                 },
                 {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "project-management-u3-1-project-management-considerations-time",
+                    "questionType": "mcq",
+                    "text": "Which answer earns the mark for Time on a 60-second video project?",
+                    "options": [
+                      "Time is how long a project takes.",
+                      "Planning ends in four weeks, filming takes one day and editing finishes before the deadline.",
+                      "Time is important."
+                    ],
+                    "correctIndex": 1,
+                    "explanation": "It links time to this video with real details. A definition on its own does not say anything about the project, so it earns no mark."
+                  }
+                },
+                {
+                  "type": "quizQuestion",
+                  "question": {
+                    "id": "project-management-u3-1-project-management-considerations-brief",
+                    "questionType": "mcq",
+                    "text": "A student's client brief states the purpose, the topic angle, the target audience and the requirements. Which part is missing?",
+                    "options": [
+                      "The key message",
+                      "The budget",
+                      "The film title"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "A full client brief has five parts: purpose, topic angle, target audience, key message and requirements given (length, platforms, branding)."
+                  }
+                },
+                {
                   "type": "task",
-                  "title": "Create a One-Page Plan for the Nippers Reel",
+                  "title": "Apply the four considerations to your video",
                   "software": "Any word processor",
-                  "intro": "Make a one-page plan the Bunbury Surf Club could use before filming.",
+                  "intro": "Choose your topic angle, then show how scope, time, resources and the client brief shape your plan.",
                   "steps": [
-                    "Title the document Nippers Sign-Up Reel: Project Plan.",
-                    "Add a four-row table for Scope, Time, Resources and Client brief.",
-                    "For each row, record a specific detail: Scope: one 30-second Instagram reel; Time: the three-week deadline; Resources: one phone, a free editing app and volunteers; Client brief: promote sign-up to parents of 5 to 13 year olds and include the date, club logo and registration details.",
-                    "The client adds a 10-second ad but keeps the deadline. Recommend a realistic adjustment to scope, resources or the deadline, and explain how the client brief will still be met.",
-                    "Finish by naming the deliverable as one 30-second Instagram reel. Save the file as nippers-reel-plan."
+                    "Choose one angle: managing screen time and work-life balance, dealing with cyberbullying, responsible use of social networking, protecting your personal information, or positive use of social media for community building.",
+                    "Make a table with four rows: Scope, Time, Resources and Client brief.",
+                    "In each row, write a detail from your own video, such as 60 seconds, your planning deadline, the phone you will film on, or the Alliance's logo and website.",
+                    "A definition on its own earns no mark. Check each row: could someone tell it is about your video and not any video?"
+                  ]
+                },
+                {
+                  "type": "task",
+                  "title": "Build your Gantt chart",
+                  "software": "Excel, Word or by hand",
+                  "intro": "Plan the whole project so someone else could follow it.",
+                  "steps": [
+                    "Show all four phases: pre-production, production, post-production and review.",
+                    "Give every task a name, a duration, and a start and end date.",
+                    "Make the dates realistic for your deadline and for the length of the video.",
+                    "Save or photograph the chart so you can attach it to your plan."
+                  ]
+                },
+                {
+                  "type": "task",
+                  "title": "Write the client brief",
+                  "software": "Any word processor",
+                  "intro": "Put the Alliance's request into your own words. All five parts are needed.",
+                  "steps": [
+                    "Purpose: why does the Alliance want this video?",
+                    "Your topic angle, taken from the list in the first task.",
+                    "Target audience: who will watch it, and on what?",
+                    "Key message: the one idea viewers should remember.",
+                    "Requirements given: 60 seconds, YouTube and social media, and the Alliance's branding."
+                  ]
+                },
+                {
+                  "type": "task",
+                  "title": "Show your teacher, then upload",
+                  "software": "Microsoft Teams",
+                  "intro": "Your teacher checks your work in class before it goes in.",
+                  "steps": [
+                    "Open your considerations table, Gantt chart and client brief on your laptop. Put your hand up when all three are ready.",
+                    "Your teacher looks at them with you. Work that has not been shown may not earn marks.",
+                    "Save the Gantt chart as a PDF or photo, and the other two as one document named with the lesson and your name.",
+                    "Upload both to the assignment in Microsoft Teams that your teacher gives you."
                   ]
                 },
                 {
@@ -8162,7 +8267,7 @@
                   ]
                 }
               ],
-              "estimatedMinutes": 45
+              "estimatedMinutes": 50
             },
             {
               "id": "project-management-u3-2-design-process-components",

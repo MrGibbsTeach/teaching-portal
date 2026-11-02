@@ -2,7 +2,7 @@
 
 Read this first — before `STATUS.md`. This file is the live handover: what's true right now and the next step. `STATUS.md` is the detailed history (why things are built the way they are); `CHECKPOINTS.md` is recorded feedback not yet acted on. Both stay as the deeper record — update this file's **Last updated** / **Right now** / **Next step** every session; add detail to `STATUS.md` only when something durable changed.
 
-**Last updated:** 2026-11-01
+**Last updated:** 2026-11-02
 
 **Live:**
 - Production: https://mrgibbsteach.com (custom domain, DNS live, cert issued) — also reachable at https://teaching-portal-eta.vercel.app
@@ -56,6 +56,8 @@ Read this first — before `STATUS.md`. This file is the live handover: what's t
 - **2026-11-01: teacher class page restyled** (code-track classes): release controls now come first, with a "Students see today" bar and a one-click "Release next lesson" (next unreleased lesson in course order becomes Today's lesson). Topics are collapsible with "n of m released"; rows have a status chip and a primary "Make today's lesson" (works on unreleased lessons too, since it releases and makes today in one step), plus "Release only" and "Open for revision". Checked with a seeded class: Release next lesson moved Today to the right lesson; tsc and 108 tests pass. Not checked: account-mode (ATAR) class page, phone width, term planner (still to build).
 
 - **2026-11-01: Foundations and ATAR checked against the new shell.** Foundations class link (Arcade) and ATAR lesson (Study, via /courses as teacher) both render the outline, progress bar and Back/Next bar with their accents. Fixes: the Back/Next bar now sits at the bottom of the card (not mid-card), the outline scrolls inside a capped height, and Foundations' warm beige surfaces are now cool white/grey. Not changed: the logged-in Foundations route `/courses/year-11-ait-foundations/lesson/...` still uses the old `FoundationsLessonView` (one block per screen with "I understand" gates); only class-link Foundations uses the new shell. Foundations lessons are many one-sentence steps, so the outline is long (12 near-identical "Read" rows); consider merging steps there.
+
+- **2026-11-02: first "mission" session in the portal.** Y12 General Unit 3 `Project Management Considerations` now runs as a hands-on planning session built around one client (South West Digital Wellbeing Alliance, a 60-second video): ticket, four-way sorter, Gantt reading with a spot-the-gap check, three build tasks (considerations table, Gantt chart, client brief) and a show-the-teacher then upload-to-Teams step. No assessment task names, numbers or dates are in the lesson (the validator still passes with 0 errors); those live in `claude/general-2027-term-plan.md`. Script: `scripts/rebuild-y12-general-mission1-session.mjs` (safe to re-run, it replaces its own blocks). Checked: validate:content, tsc, 108 tests, headless render as teacher at 1366px (outline, Gantt figure, task steps with "Done, continue"). Not checked: phone width, class-link (code-track) view, logged-in student. Planning docs: `claude/general-2027-term-plan.md` (term plan, assessment maps, calendar decisions) and `claude/general-2027-lesson-map.md` (existing lessons mapped to outline weeks, gaps).
 
 **Next step:**
 1. Clayton spot-check the revised Year 11/12 General lessons in teacher preview and send any reactions to the new lesson rhythm.
