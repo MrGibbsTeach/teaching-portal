@@ -2,6 +2,7 @@
 // Dates are indicative: the teacher sets the proposed due date per class and chooses when students see a task.
 import { getPlan } from "./index";
 import type { AssessmentSetting } from "@/lib/auth-types";
+import { termWeekFor } from "@/lib/term-dates";
 
 export interface AssessmentTask {
   /** Stable id, used to store the teacher's settings. */
@@ -79,24 +80,85 @@ export function formatDueDate(s: string): string {
   return `${WEEKDAY[dt.getDay()]} ${d} ${MONTH[m - 1]} ${y}`;
 }
 
-export interface VisibleAssessment {
-  task: AssessmentTask;
-  dueDate?: string;
+/** A task is shown to students unless the teacher has switched it off. */
+export function isShown(settings: Record<string, AssessmentSetting> | undefined, taskId: string): boolean {
+  return settings?.[taskId]?.visible !== false;
 }
 
-/** The tasks a class's students can see: dated ones first in date order, then the rest in outline order. */
-export function visibleAssessments(
+const addDays = (iso: string, n: number): string => {
+  const [y, m, d] = iso.split("-").map(Number);
+  const dt = new Date(y, m - 1, d + n);
+  return `${dt.getFullYear()}-${String(dt.getMonth() + 1).padStart(2, "0")}-${String(dt.getDate()).padStart(2, "0")}`;
+};
+
+export interface CalendarRow {
+  task: AssessmentTask;
+  /** Teacher's proposed date, if entered. */
+  dueDate?: string;
+  /** Main due label, e.g. "Fri 26 Feb 2027" or "Term 1, Wk 5". */
+  due: string;
+  /** Second line, e.g. "Term 1, Wk 5" or "week of 22 Feb (proposed)". */
+  dueNote: string;
+  /** Date (YYYY-MM-DD) used to order rows: the teacher's date, else the planned Monday. */
+  sortKey: string;
+  /** Last day of the due week (or the due date), used to find the next assessment. */
+  endKey: string;
+  /** Percent of the course assessed up to and including this row, in date order. */
+  cumulative: number;
+  /** The date is still to be confirmed (e.g. set by the Authority). */
+  tbc: boolean;
+}
+
+/**
+ * The calendar students see: every task the teacher has not hidden, in date order, with a running total.
+ * A teacher's date wins; without one the row shows the planned term and week.
+ */
+export function buildCalendar(
+  courseSlug: string,
   tasks: AssessmentTask[],
   settings: Record<string, AssessmentSetting> | undefined,
-): VisibleAssessment[] {
-  const out = tasks
-    .filter((x) => settings?.[x.id]?.visible)
-    .map((x) => ({ task: x, dueDate: settings?.[x.id]?.dueDate || undefined }));
-  const dated = out.filter((x) => x.dueDate).sort((a, b) => a.dueDate!.localeCompare(b.dueDate!));
-  return [...dated, ...out.filter((x) => !x.dueDate)];
+): CalendarRow[] {
+  const rows = tasks
+    .filter((x) => isShown(settings, x.id))
+    .map((task) => {
+      const dueDate = settings?.[task.id]?.dueDate || undefined;
+      const monday = plannedMonday(courseSlug, task) ?? "9999-12-31";
+      const planned = `Term ${task.term}, Wk ${task.week}`;
+      let due: string, dueNote: string;
+      if (dueDate) {
+        const tw = termWeekFor(new Date(dueDate + "T00:00:00"));
+        due = formatDueDate(dueDate);
+        dueNote = tw ? `Term ${tw.term}, Wk ${tw.week}` : "School holidays";
+      } else if (task.tbc) {
+        due = `Term ${task.term}, date TBC`;
+        dueNote = "Set by the Authority";
+      } else {
+        due = planned;
+        const [, m, d] = monday.split("-").map(Number);
+        dueNote = `week of ${d} ${MONTH[m - 1]} (proposed)`;
+      }
+      return {
+        task, dueDate, due, dueNote,
+        sortKey: dueDate ?? monday,
+        endKey: dueDate ?? addDays(monday, 4),
+        cumulative: 0,
+        tbc: !dueDate && !!task.tbc,
+      };
+    })
+    .sort((a, b) => a.sortKey.localeCompare(b.sortKey) || a.task.no - b.task.no);
+  let run = 0;
+  for (const r of rows) { run += r.task.weight; r.cumulative = run; }
+  return rows;
 }
 
-/** The next dated visible task on or after a day (YYYY-MM-DD). */
-export function nextAssessment(list: VisibleAssessment[], today: string): VisibleAssessment | undefined {
-  return list.find((x) => x.dueDate && x.dueDate >= today);
+/** Percent of the course per assessment type, for the shown tasks. */
+export function typeTotals(rows: CalendarRow[]): { type: string; weight: number }[] {
+  const out = new Map<string, number>();
+  for (const r of rows) out.set(r.task.type, (out.get(r.task.type) ?? 0) + r.task.weight);
+  return [...out].map(([type, weight]) => ({ type, weight }));
+}
+
+/** The first row whose due date (or due week) has not passed, given today as YYYY-MM-DD. */
+export function nextRow(rows: CalendarRow[], today: string): CalendarRow | undefined {
+  return rows.find((r) => r.endKey >= today);
 }

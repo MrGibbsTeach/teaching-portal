@@ -214,6 +214,7 @@ export default async function ClassManagePage({
       courseSlug={cls!.courseSlug}
       tasks={assessmentTasks}
       settings={cls!.assessments ?? {}}
+      classCode={cls!.classCode}
     />
   ) : null;
 
