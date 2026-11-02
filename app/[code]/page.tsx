@@ -8,6 +8,7 @@ import { LiveNowButton } from "@/components/live/LiveNowButton";
 import { CourseTierTheme } from "@/components/course/shared/CourseTierTheme";
 import { TopicIcon } from "@/components/course/shared/TopicIcon";
 import { iconForTopic } from "@/lib/logic/topic-icon";
+import { formatDueDate, getAssessments, nextAssessment, visibleAssessments } from "@/lib/plans/assessments";
 
 export const dynamic = "force-dynamic";
 
@@ -22,6 +23,11 @@ export default async function ClassCodeHome({ params }: { params: Promise<{ code
   const course = getCourseBySlug(cls.courseSlug);
   const content = getCourseContent(cls.courseSlug);
   const today = cls.todayLessonId ? content && findLesson(content, cls.todayLessonId) : undefined;
+
+  const assessments = visibleAssessments(getAssessments(cls.courseSlug) ?? [], cls.assessments);
+  const perthToday = new Date(new Date().toLocaleString("en-US", { timeZone: "Australia/Perth" }));
+  const todayIso = `${perthToday.getFullYear()}-${String(perthToday.getMonth() + 1).padStart(2, "0")}-${String(perthToday.getDate()).padStart(2, "0")}`;
+  const next = nextAssessment(assessments, todayIso);
 
   const Icon = iconForTopic(today?.topic.title ?? course?.title ?? "");
   return (
@@ -75,6 +81,18 @@ export default async function ClassCodeHome({ params }: { params: Promise<{ code
             See previous lessons →
           </Link>
         </div>
+
+        {assessments.length > 0 && (
+          <div className="mt-10">
+            <h2 className="font-heading text-xl font-bold tracking-tight">Assessments</h2>
+            <p className="mt-1 text-muted-foreground">
+              {next?.dueDate ? `Next: ${next.task.name}, proposed ${formatDueDate(next.dueDate)}.` : "See the proposed dates."}
+            </p>
+            <Link href={`/${normalized}/assessments`} className="mt-3 inline-block text-sm font-semibold text-primary hover:underline">
+              See all assessments →
+            </Link>
+          </div>
+        )}
       </div>
     </CourseTierTheme>
   );

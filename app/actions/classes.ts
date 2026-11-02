@@ -15,6 +15,7 @@ import {
   syncTodayLessonId,
 } from "@/lib/logic/release";
 import type { ClassAuthMode, ClassConfig } from "@/lib/auth-types";
+import { getAssessments, isValidDueDate } from "@/lib/plans/assessments";
 
 async function requireTeacher() {
   const session = await getSession();
@@ -101,6 +102,21 @@ export async function releaseWeekLessons(classId: string, lessonIds: string[]) {
   const next = releaseWeekFn(cls.releases ?? {}, lessonIds);
   await saveClass(syncTodayLessonId(cls, next));
   revalidatePath("/teacher/classes/" + classId);
+}
+
+/** Set whether students see an assessment task and its proposed due date (YYYY-MM-DD, or empty for none). */
+export async function setAssessment(classId: string, taskId: string, visible: boolean, dueDate: string) {
+  await requireTeacher();
+  const cls = await getClass(classId);
+  if (!cls) return;
+  const tasks = getAssessments(cls.courseSlug);
+  if (!tasks?.some((x) => x.id === taskId)) return;
+  const date = dueDate.trim();
+  if (date && !isValidDueDate(date)) return;
+  cls.assessments = { ...(cls.assessments ?? {}), [taskId]: { visible: !!visible, ...(date ? { dueDate: date } : {}) } };
+  await saveClass(cls);
+  revalidatePath("/teacher/classes/" + classId);
+  if (cls.classCode) revalidatePath("/" + cls.classCode.toLowerCase() + "/assessments");
 }
 
 export async function makeTodayLesson(classId: string, lessonId: string) {

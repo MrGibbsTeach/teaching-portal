@@ -26,6 +26,13 @@ export interface LessonRelease {
   releasedAt: string;
 }
 
+/** Teacher's setting for one assessment task: whether students see it, and the proposed due date. */
+export interface AssessmentSetting {
+  visible: boolean;
+  /** Proposed due date, YYYY-MM-DD. Always subject to change. */
+  dueDate?: string;
+}
+
 export interface ClassConfig {
   id: string;
   name: string;
@@ -42,4 +49,6 @@ export interface ClassConfig {
   releases?: Record<string, LessonRelease>;
   /** The lesson currently shown as "Today's lesson", if any. */
   todayLessonId?: string;
+  /** Assessment calendar settings, keyed by assessment task id (see lib/plans/assessments.ts). */
+  assessments?: Record<string, AssessmentSetting>;
 }

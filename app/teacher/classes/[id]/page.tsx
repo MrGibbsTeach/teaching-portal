@@ -24,6 +24,8 @@ import { LessonReleaseRow } from "@/components/teacher/LessonReleaseRow";
 import { ReleaseNextBar } from "@/components/teacher/ReleaseNextBar";
 import { TermPlanView } from "@/components/teacher/TermPlan";
 import { currentPlanWeek, getPlan } from "@/lib/plans";
+import { AssessmentCalendar } from "@/components/teacher/AssessmentCalendar";
+import { getAssessments } from "@/lib/plans/assessments";
 import { mergeStats, studentQuizTotals } from "@/lib/logic/insights";
 
 export const dynamic = "force-dynamic";
@@ -107,6 +109,7 @@ export default async function ClassManagePage({
   const plan = getPlan(cls!.courseSlug);
   const perthNow = new Date(new Date().toLocaleString("en-US", { timeZone: "Australia/Perth" }));
   const thisWeek = plan ? currentPlanWeek(plan, perthNow) : undefined;
+  const assessmentTasks = getAssessments(cls!.courseSlug);
 
   const lessonsSection = (
     <section>
@@ -122,6 +125,15 @@ export default async function ClassManagePage({
         nextTopic={nextLesson?.topic}
         onReleaseNext={nextLesson ? makeTodayLesson.bind(null, cls!.id, nextLesson.id) : undefined}
       />
+
+      {assessmentTasks && (
+        <AssessmentCalendar
+          classId={cls!.id}
+          courseSlug={cls!.courseSlug}
+          tasks={assessmentTasks}
+          settings={cls!.assessments ?? {}}
+        />
+      )}
 
       {plan && content && (
         <div className="mt-8">
