@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design Annotation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Fraunces:opsz,wght@9..144,700;9..144,800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#111827;--muted:#4b5563;--line:#e5e7eb;--panel:#F6F7F9;--accent:#4338ca;--accent-soft:#eef2ff}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:#fff;color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.45}
+button,select,textarea{font:inherit;color:inherit}
+.frame{max-width:1320px;margin:0 auto;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:14px 20px;border-bottom:1px solid var(--line)}
+.head h1{font-size:18px;font-weight:800;margin:0;margin-right:auto}
+.chip{font-size:12px;font-weight:700;padding:3px 10px;border-radius:99px;background:var(--panel);color:var(--muted);white-space:nowrap}
+.chip.study{background:var(--accent-soft);color:var(--accent)}
+.chip.cmd{background:#fff;border:1.5px solid var(--accent);color:var(--accent)}
+.maintabs{display:flex;background:var(--panel);border-bottom:1px solid var(--line);overflow-x:auto}
+.mt{flex:1;min-width:150px;display:flex;align-items:center;justify-content:center;gap:10px;padding:14px 10px;border:0;background:transparent;font-weight:700;font-size:15px;color:var(--muted);cursor:pointer;border-bottom:3px solid transparent}
+.mt .n{width:24px;height:24px;border-radius:50%;background:#d1d5db;color:#fff;font-size:12px;display:grid;place-items:center}
+.mt[aria-selected=true]{color:var(--accent);background:#fff;border-bottom-color:var(--accent)}
+.mt[aria-selected=true] .n{background:var(--accent)}
+.pane{padding:20px}
+.lead{margin:0 0 14px;color:var(--muted);font-size:15px;max-width:960px}
+.lead b{color:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;margin-bottom:16px;font-size:13px}
+.legend .sl{display:inline-flex;gap:6px;align-items:center;font-weight:600}
+.legend .sl i{font-style:normal;background:var(--ink);color:#fff;border-radius:6px;padding:1px 7px;font-size:11px;font-weight:800}
+.legend .cl{display:inline-flex;gap:6px;align-items:center;font-weight:600}
+.legend .cl span{width:14px;height:14px;border-radius:4px;background:var(--c)}
+.rc{font-weight:700}
+
+/* stage */
+.stagewrap{position:relative;width:100%;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff;touch-action:manipulation}
+.design{position:absolute;left:0;top:0;transform-origin:0 0;overflow:hidden;font-family:Inter,system-ui,sans-serif}
+.overlay{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.pins{position:absolute;inset:0;pointer-events:none}
+.pin{pointer-events:auto;position:absolute;width:30px;height:30px;transform:translate(-50%,-50%);display:grid;place-items:center;border:2px solid #fff;color:#fff;font-weight:800;font-size:11px;padding:0;cursor:pointer;box-shadow:0 1px 5px rgba(0,0,0,.45);background:var(--c)}
+.pin.E{border-radius:50%}
+.pin.P{border-radius:7px}
+.pin.T{transform:translate(-50%,-50%) rotate(45deg);border-radius:4px}
+.pin.T span{transform:rotate(-45deg)}
+.pin.R{width:40px;height:26px;border-radius:13px}
+.pin.N{border-radius:8px 15px 8px 15px}
+.pin.sm{width:26px;height:26px;font-size:10px}
+.pin.R.sm{width:34px;height:22px}
+.pin.sel{box-shadow:0 0 0 3px var(--ink),0 1px 5px rgba(0,0,0,.45);z-index:3}
+.pin.ghost{border-style:dashed}
+
+/* design 1: Estuary Kayaks */
+.design .abs{position:absolute}
+.design *{box-sizing:border-box}
+.d-nav{left:0;top:0;width:960px;height:64px;background:#12344d}
+.d-logo{left:60px;top:16px;height:32px;display:flex;align-items:center;gap:10px;color:#fff;font-family:Fraunces,Georgia,serif;font-weight:700;font-size:22px;white-space:nowrap}
+.d-links{left:470px;top:0;height:64px;display:flex;align-items:center;gap:30px;color:#dbeafe;font-size:15px;font-weight:500}
+.d-btn{display:flex;align-items:center;justify-content:center;background:#ff6b4a;color:#12344d;font-weight:700;border-radius:8px;white-space:nowrap}
+.d-btn-nav{left:780px;top:14px;width:120px;height:36px;font-size:15px}
+.d-btn-cta{left:60px;top:358px;width:190px;height:48px;font-size:16px}
+.d-hero{left:0;top:64px;width:960px;height:356px;background:linear-gradient(180deg,#cfe8f3 0%,#f7efe0 68%)}
+.d-art{left:0;top:64px;width:960px;height:356px}
+.d-eyebrow{left:60px;top:96px;font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#12344d;white-space:nowrap}
+.d-h{left:60px;top:120px;margin:0;font-family:Fraunces,Georgia,serif;font-weight:800;font-size:40px;line-height:44px;color:#12344d;white-space:nowrap}
+.d-body{left:60px;top:264px;width:340px;margin:0;font-size:16px;line-height:25px;color:#2f4a5f}
+.d-sec{left:60px;top:446px;font-family:Fraunces,Georgia,serif;font-weight:700;font-size:28px;line-height:38px;color:#12344d}
+.d-rule{left:60px;top:492px;width:60px;height:3px;background:#ff6b4a}
+.d-card{top:516px;width:266.67px;height:140px;background:#fff;border:1px solid #d9e2ea;border-radius:14px;padding:16px 20px}
+.d-card .ic{width:36px;height:36px;border-radius:50%;background:#12344d;display:grid;place-items:center}
+.d-card h3{margin:8px 0 0;font-size:18px;line-height:24px;color:#12344d;font-weight:700}
+.d-card p{margin:2px 0 0;font-size:14.5px;line-height:21px;color:#3b5368}
+.d-foot{left:0;top:680px;width:960px;height:40px;background:#12344d;color:#bcd2e2;font-size:13px}
+.d-foot .l{position:absolute;left:60px;top:0;line-height:40px}
+.d-foot .r{position:absolute;right:60px;top:0;line-height:40px;display:flex;gap:18px}
+/* design 2: Harbour Night Market poster */
+.p-eyebrow{left:40px;top:32px;font-size:12.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#ffcf5c;white-space:nowrap}
+.p-moon{left:312px;top:192px;width:96px;height:96px;border-radius:50%;background:#fdf1cf;box-shadow:0 0 60px 20px rgba(253,241,207,.3)}
+.p-moon i{position:absolute;border-radius:50%;background:rgba(120,100,60,.12)}
+.p-script{left:40px;top:292px;font-family:Caveat,"Segoe Script","Brush Script MT",cursive;font-weight:700;font-size:58px;line-height:60px;color:#ff8a65;transform:rotate(-4deg);transform-origin:left bottom;white-space:nowrap}
+.p-h{left:40px;top:346px;font-weight:800;font-size:76px;line-height:66px;color:#fdf1cf;letter-spacing:.01em;white-space:nowrap}
+.p-det{left:40px;top:498px;font-size:15px;line-height:24px;font-weight:600;letter-spacing:.05em;color:#ffcf5c;white-space:nowrap}
+.p-band{left:0;top:664px;width:540px;height:56px;background:#ff7a59}
+.p-band .l{position:absolute;left:40px;line-height:56px;font-weight:800;font-size:17px;color:#2a1b3d;white-space:nowrap}
+.p-band .r{position:absolute;right:40px;line-height:56px;font-weight:700;font-size:15px;color:#2a1b3d}
+
+/* tab 1: model */
+.m3{position:relative;display:grid;grid-template-columns:240px minmax(0,1fr) 240px;gap:36px;align-items:center}
+.m3 .col{display:flex;flex-direction:column;gap:10px;align-self:stretch;justify-content:space-between}
+.m3 .lines{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:2}
+.mcard{display:block;text-align:left;width:100%;background:#fff;border:1.5px solid var(--line);border-left:6px solid var(--c);border-radius:10px;padding:8px 10px;cursor:pointer;font-size:12.5px;line-height:1.35}
+.mcard.active{box-shadow:0 0 0 2px var(--c)}
+.mcard .mh{display:flex;align-items:center;gap:8px;margin-bottom:3px}
+.mcard .tag{min-width:30px;text-align:center;color:#fff;font-weight:800;font-size:11px;padding:2px 0;border-radius:6px;background:var(--c)}
+.mcard .mh b{font-size:13.5px}
+.mcard .mh small{margin-left:auto;font-size:11px;color:var(--muted);font-weight:600}
+.mcard p{margin:2px 0}
+.mcard p i{font-style:normal;font-weight:800;color:var(--c);font-size:11px;text-transform:uppercase;letter-spacing:.05em;margin-right:4px}
+.chips{display:flex;flex-wrap:wrap;gap:4px;margin:3px 0 4px}
+.chip2{font-size:11px;font-weight:700;color:#fff;border-radius:6px;padding:1px 7px;background:var(--c)}
+@media(max-width:1060px){.m3{grid-template-columns:1fr 1fr;gap:14px;align-items:start}#mstage{grid-column:1/-1;order:-1}.m3 .lines{display:none}.m3 .col{align-self:auto;justify-content:flex-start}}
+@media(max-width:640px){.m3{grid-template-columns:minmax(0,1fr)}}
+
+/* tab 2: question */
+.q2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:start}
+@media(max-width:1000px){.q2{grid-template-columns:minmax(0,1fr)}}
+.seg{display:inline-flex;border:1.5px solid var(--accent);border-radius:10px;overflow:hidden;margin-bottom:12px}
+.seg button{border:0;background:#fff;padding:6px 16px;font-weight:700;cursor:pointer;color:var(--accent)}
+.seg button[aria-pressed=true]{background:var(--accent);color:#fff}
+.qcard{border:1.5px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:6px}
+.qtop{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.qstem{margin:0 0 8px;color:var(--muted)}
+.qmain{margin:0 0 8px;font-size:16px}
+.qnote{margin:6px 0 0;font-size:12px;color:#92400e;background:#fffbeb;border-radius:6px;padding:4px 8px;display:inline-block}
+.parts{margin:8px 0 0;padding:0;list-style:none}
+.parts li{display:flex;gap:10px;align-items:flex-start;padding:8px 10px;border:1.5px solid var(--line);border-left:6px solid var(--c);border-radius:10px;margin-bottom:8px;font-size:14.5px}
+.parts .rn{font-weight:800;color:var(--c);min-width:26px}
+.parts .mk{margin-left:auto;white-space:nowrap;font-size:12px;font-weight:700;color:var(--muted);padding-left:8px}
+.q2 h3,.b3 h3{font-size:14px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:18px 0 8px}
+.map3{display:grid;grid-template-columns:auto auto 1fr;gap:6px 12px;align-items:center;font-size:14px}
+.map3 .arrow{color:var(--muted);font-weight:800}
+.map3 .t{font-weight:700}
+.map3 .s{background:var(--ink);color:#fff;border-radius:6px;padding:2px 10px;font-weight:700;justify-self:start}
+.pairdemo{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:14px;border:1.5px dashed #cbd5e1;border-radius:10px;padding:10px 12px}
+.pairdemo .arrow{font-weight:800;color:var(--muted)}
+.tips{margin:0;padding-left:18px;font-size:14px}
+.tips li{margin:3px 0}
+.next{margin-top:18px;padding:11px 18px;border:0;border-radius:10px;background:var(--accent);color:#fff;font-weight:700;cursor:pointer}
+.ghostbtn{margin-top:18px;padding:10px 16px;border:1.5px solid #cbd5e1;border-radius:10px;background:#fff;font-weight:700;cursor:pointer}
+
+/* tab 3: build */
+.b3{display:grid;grid-template-columns:minmax(0,1fr) 430px;gap:24px;align-items:start}
+.b3>div:first-child{position:sticky;top:12px}
+@media(max-width:1000px){.b3{grid-template-columns:minmax(0,1fr)}.b3>div:first-child{position:static}}
+.stepbar{display:flex;gap:6px;margin-bottom:12px;overflow-x:auto}
+.sb{flex:1 0 auto;padding:8px 8px;border:2px solid var(--line);background:#fff;border-radius:10px;font-weight:700;font-size:12px;cursor:pointer;color:var(--muted)}
+.sb[aria-pressed=true]{border-color:var(--c);color:var(--c);box-shadow:0 0 0 1px var(--c) inset}
+.sb.done::after{content:" \2713"}
+.tipbox{border:1.5px solid var(--line);border-left:6px solid var(--c);border-radius:10px;padding:8px 14px 10px}
+.tipbox h4{margin:4px 0 4px;font-size:14px;color:var(--c)}
+.bsec{border:1.5px solid var(--line);border-radius:10px;padding:10px 14px;margin-top:12px}
+.bsec.on{border-color:var(--c);box-shadow:0 0 0 1px var(--c) inset}
+.bsec h4{margin:0 0 6px;font-size:14px;display:flex;gap:8px;align-items:center}
+.bsec h4 small{font-weight:600;color:var(--muted)}
+.slot{display:grid;grid-template-columns:62px 1fr;gap:8px;margin:5px 0;font-size:13.5px}
+.slot i{font-style:normal;font-weight:800;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#fff;background:var(--c);border-radius:6px;padding:2px 0;text-align:center;align-self:start}
+.bsec textarea{width:100%;padding:8px 10px;border:1.5px solid #cbd5e1;border-radius:8px;background:#fff;resize:none;height:58px}
+.bsec textarea:focus,button:focus-visible,select:focus{outline:3px solid #c7d2fe;outline-offset:1px}
+.count{font-size:12px;color:var(--muted);text-align:right}
+.count.full{color:#b91c1c;font-weight:700}
+.comp{background:var(--panel);border-radius:8px;padding:8px 10px;margin-top:8px;font-size:13px}
+.comp p{margin:3px 0}
+.selfck{display:flex;gap:8px;align-items:flex-start;font-size:13px;margin:6px 0}
+.selfck input{margin-top:3px}
+.flag{font-size:13px;margin:4px 0}
+.ok{color:#047857}.bad{color:#b91c1c}.mid{color:#b45309}
+.navrow{display:flex;gap:10px;margin-top:14px}
+.navrow .next,.navrow .ghostbtn{margin-top:0}
+.navrow .sp{flex:1}
+
+/* tab 4: practice */
+.stats{display:flex;align-items:stretch;flex-wrap:wrap;background:var(--panel);border:1px solid var(--line);border-radius:10px 10px 0 0}
+.stat{padding:10px 20px;border-right:1px solid var(--line);min-width:130px}
+.stat small{display:block;font-size:12px;font-weight:600;color:var(--muted)}
+.stat b{font-size:20px;font-weight:800}
+.stat .ringrow{display:flex;align-items:center;gap:8px}
+.stats .grow{flex:1}
+.reset{align-self:center;margin:0 16px;padding:8px 14px;border:1px solid #cbd5e1;background:#fff;border-radius:8px;font-weight:600;cursor:pointer}
+.reset.armed{border-color:#b91c1c;color:#b91c1c}
+.toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;padding:12px 16px;border:1px solid var(--line);border-top:0;border-radius:0 0 10px 10px;margin-bottom:16px}
+.toolbar .grp{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.toolbar .lbl{font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.cbtn{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border:2px solid var(--line);background:#fff;border-radius:10px;font-weight:600;font-size:14px;cursor:pointer}
+.cbtn .dot{width:22px;height:22px;display:grid;place-items:center;color:#fff;font-size:11px;font-weight:800}
+.cbtn[aria-pressed=true]{border-color:var(--c);box-shadow:0 0 0 2px var(--c) inset}
+.lens{padding:7px 12px;border:2px solid var(--line);background:#fff;border-radius:10px;font-weight:600;font-size:14px;cursor:pointer}
+.lens[aria-pressed=true]{border-color:var(--accent);background:var(--accent-soft);color:var(--accent)}
+.main{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:20px}
+@media(max-width:900px){.main{grid-template-columns:minmax(0,1fr)}}
+.hint{font-size:14px;color:var(--muted);margin:10px 2px 0}
+.panel{border:1px solid var(--line);border-radius:12px;overflow:hidden;align-self:start}
+.tabs{display:flex;background:var(--panel);border-bottom:1px solid var(--line)}
+.tab{flex:1;padding:11px;border:0;background:transparent;font-weight:700;font-size:14px;cursor:pointer;color:var(--muted);border-bottom:3px solid transparent}
+.tab[aria-selected=true]{color:var(--accent);border-bottom-color:var(--accent);background:#fff}
+.tab:disabled{opacity:.45;cursor:not-allowed}
+.pbody{padding:14px 16px}
+.empty{color:var(--muted);font-size:14px}
+.edhead{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.edhead b{font-size:15px}
+.edhead .del{margin-left:auto;border:0;background:none;color:#b91c1c;font-weight:600;cursor:pointer;font-size:13px}
+.catsw{display:flex;gap:5px;margin-bottom:12px}
+.catsw button{flex:1;padding:6px 2px;border:2px solid var(--line);background:#fff;border-radius:8px;font-size:11px;font-weight:700;cursor:pointer}
+.catsw button[aria-pressed=true]{border-color:var(--c);color:var(--c)}
+.field{margin-bottom:12px}
+.field>label{display:block;font-weight:700;font-size:14px}
+.field .sub{display:block;font-weight:400;font-size:13px;color:var(--muted);margin-bottom:4px}
+.field select,.field textarea{width:100%;padding:8px 10px;border:1.5px solid #cbd5e1;border-radius:8px;background:#fff}
+.field textarea{resize:none;height:64px}
+.pinlist{margin-top:6px;border-top:1px solid var(--line);padding-top:10px;display:flex;flex-direction:column;gap:6px}
+.prow{display:flex;gap:8px;align-items:center;text-align:left;border:1.5px solid var(--line);background:#fff;border-radius:8px;padding:6px 8px;cursor:pointer;font-size:13px}
+.prow.sel{border-color:var(--ink)}
+.prow .tag{min-width:34px;text-align:center;color:#fff;font-weight:800;font-size:11px;padding:3px 0;border-radius:6px;background:var(--c)}
+.prow span.t{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.primary{width:100%;margin-top:12px;padding:11px;border:0;border-radius:10px;background:var(--accent);color:#fff;font-weight:700;cursor:pointer}
+.primary:disabled{background:#c7c9d9;cursor:not-allowed}
+.pcard{border:1.5px solid var(--line);border-left:6px solid var(--c);border-radius:10px;padding:10px 12px;margin-bottom:12px}
+.pcard h4{margin:0 0 6px;font-size:14px;display:flex;gap:6px;align-items:center}
+.pcard h4 .score{margin-left:auto;font-size:12px;background:var(--panel);padding:2px 8px;border-radius:99px}
+.ck{font-size:13px;margin:4px 0;display:flex;gap:6px;align-items:flex-start}
+.ck .ic{font-weight:800;min-width:16px}
+details{font-size:13px;margin-top:6px}
+details summary{cursor:pointer;font-weight:600}
+.model{background:var(--panel);border-radius:8px;padding:8px 10px;margin-top:6px}
+.model p{margin:2px 0}
+.grp3 h5{margin:14px 0 6px;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.crow{border:1px solid var(--line);border-left:5px solid var(--c);border-radius:8px;padding:6px 10px;margin-bottom:6px;font-size:13px}
+.crow summary{display:flex;gap:8px;align-items:center}
+.showbtn{margin-top:6px;border:1px solid #cbd5e1;background:#fff;border-radius:6px;padding:3px 8px;font-size:12px;font-weight:600;cursor:pointer}
+</style>
+</head>
+<body>
+
+<template id="t-kayak">
+  <div class="abs d-hero"></div>
+  <svg class="abs d-art" viewBox="0 0 960 356">
+    <defs><radialGradient id="glow__ID__"><stop offset="0" stop-color="#ffb84d" stop-opacity=".55"/><stop offset="1" stop-color="#ffb84d" stop-opacity="0"/></radialGradient></defs>
+    <circle cx="640" cy="176" r="110" fill="url(#glow__ID__)"/>
+    <circle cx="640" cy="176" r="34" fill="#ffb84d"/>
+    <path d="M420 236 L520 190 L600 215 L700 175 L820 222 L960 198 L960 240 L420 240Z" fill="#8fbcd1"/>
+    <polygon points="500,236 960,236 960,356 400,356" fill="#2b7fa6"/>
+    <g stroke="#fff" stroke-opacity=".45" stroke-width="2" fill="none" stroke-linecap="round">__WAVES__</g>
+    <g stroke="#ffd98a" stroke-width="3" stroke-linecap="round" stroke-opacity=".85"><path d="M624 250h32M630 262h20M634 274h12"/></g>
+    <path d="M690 270 Q760 292 830 270 Q760 258 690 270Z" fill="#ff6b4a"/>
+    <path d="M752 268 L756 240 Q760 234 764 240 L768 268Z" fill="#12344d"/>
+    <circle cx="760" cy="230" r="8" fill="#f2c9a0"/>
+    <line x1="722" y1="284" x2="800" y2="246" stroke="#12344d" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="722" cy="284" rx="10" ry="4" transform="rotate(-25 722 284)" fill="#12344d"/>
+    <ellipse cx="800" cy="246" rx="10" ry="4" transform="rotate(-25 800 246)" fill="#12344d"/>
+  </svg>
+  <div class="abs d-nav"></div>
+  <div class="abs d-logo"><svg width="36" height="16" viewBox="0 0 36 16" aria-hidden="true"><path d="M1 9 Q18 17 35 9 Q18 3 1 9Z" fill="#ff6b4a"/></svg><span>Estuary Kayaks</span></div>
+  <div class="abs d-links"><span>Tours</span><span>Hire</span><span>Safety</span><span>Contact</span></div>
+  <div class="abs d-btn d-btn-nav">Book now</div>
+  <div class="abs d-eyebrow">Guided tours and hire</div>
+  <h2 class="abs d-h">Paddle the<br>inlet at<br>sunrise</h2>
+  <p class="abs d-body">Calm water, friendly guides and gear for every age. No experience needed.</p>
+  <div class="abs d-btn d-btn-cta">Book a sunrise tour</div>
+  <div class="abs d-sec">Choose your paddle</div>
+  <div class="abs d-rule"></div>
+  <div class="abs d-card" style="left:60px"><div class="ic"><svg width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="5" fill="#ffb84d"/></svg></div><h3>Sunrise Tour</h3><p>2 hours with a guide. Calm water, great light.</p></div>
+  <div class="abs d-card" style="left:346.67px"><div class="ic"><svg width="20" height="20" viewBox="0 0 20 20"><circle cx="7" cy="10" r="4" fill="#fff"/><circle cx="14" cy="11" r="3" fill="#ffb84d"/></svg></div><h3>Family Hire</h3><p>Singles and doubles by the hour. Lifejackets included.</p></div>
+  <div class="abs d-card" style="left:633.33px"><div class="ic"><svg width="20" height="20" viewBox="0 0 20 20"><path d="M13 3a7 7 0 1 0 4 11 6 6 0 0 1-4-11z" fill="#fff"/></svg></div><h3>Full Moon Paddle</h3><p>An evening glide under the stars. Limited places.</p></div>
+  <div class="abs d-foot"><span class="l">Estuary Kayaks. A fictional business for teaching.</span><span class="r"><span>Safety</span><span>Contact</span><span>Terms</span></span></div>
+</template>
+
+<template id="t-poster">
+  <div class="abs p-eyebrow">Every Friday in summer</div>
+  <svg class="abs" style="left:0;top:60px" width="540" height="110" viewBox="0 0 540 110"><path d="M-10 20 Q270 130 550 20" stroke="#6b5a86" stroke-width="2" fill="none"/>__BULBS__</svg>
+  <div class="abs p-moon"><i style="left:22px;top:20px;width:20px;height:20px"></i><i style="left:56px;top:50px;width:26px;height:26px"></i><i style="left:30px;top:62px;width:12px;height:12px"></i></div>
+  <div class="abs p-script">Harbour</div>
+  <div class="abs p-h">NIGHT<br>MARKET</div>
+  <div class="abs p-det">Live music &middot; Street food &middot; Handmade gifts</div>
+  <svg class="abs" style="left:40px;top:548px" width="460" height="96" viewBox="0 0 460 96">__STALLS__</svg>
+  <div class="abs p-band"><span class="l">Fri 6pm to 10pm &middot; Harbour Lawn</span><span class="r">Free entry</span></div>
+</template>
+
+<div class="frame">
+  <div class="head">
+    <h1>Design Annotation: from model answer to your own</h1>
+    <span class="chip study" id="tierchip">Study skin</span>
+  </div>
+  <div class="maintabs" role="tablist" id="maintabs">
+    <button class="mt" role="tab" id="mt-1" data-main="1" aria-selected="true" type="button"><span class="n">1</span>See it</button>
+    <button class="mt" role="tab" id="mt-2" data-main="2" aria-selected="false" type="button"><span class="n">2</span>The question</button>
+    <button class="mt" role="tab" id="mt-3" data-main="3" aria-selected="false" type="button"><span class="n">3</span>Build it</button>
+    <button class="mt" role="tab" id="mt-4" data-main="4" aria-selected="false" type="button"><span class="n">4</span>Your turn</button>
+  </div>
+
+  <div class="pane" id="pane-1"></div>
+  <div class="pane" id="pane-2" hidden></div>
+  <div class="pane" id="pane-3" hidden></div>
+
+  <div class="pane" id="pane-4" hidden>
+    <p class="lead"><b>Your turn.</b> Practice question: this poster promotes a weekly community night market. Annotate it to identify and explain the elements and principles together, typography, how it meets the design need, and the compositional rules. Aim for two principles, each linked to two elements, then the other parts (mock numbers).</p>
+    <div class="stats">
+      <div class="stat"><small>Pins placed</small><b id="st-pins">0</b></div>
+      <div class="stat"><small>Categories covered</small><div class="ringrow"><svg id="ring" width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"></svg><b id="st-cats">0 of 5</b></div></div>
+      <div class="stat"><small>Features found</small><b id="st-found">Not checked</b></div>
+      <div class="stat"><small>Self-mark</small><b id="st-score">Not checked</b></div>
+      <div class="grow"></div>
+      <button class="reset" id="reset" type="button">Reset</button>
+    </div>
+    <div class="toolbar">
+      <div class="grp" role="group" aria-label="Category to place"><span class="lbl">Place a pin</span><span id="tools" style="display:contents"></span></div>
+      <div class="grp" role="group" aria-label="Lenses"><span class="lbl">Lenses</span>
+        <button class="lens" type="button" data-lens="thirds" aria-pressed="false">Rule of thirds</button>
+        <button class="lens" type="button" data-lens="grid" aria-pressed="false">Column grid</button>
+        <button class="lens" type="button" data-lens="align" aria-pressed="false">Alignment</button>
+      </div>
+    </div>
+    <div class="main">
+      <div>
+        <div id="practiceStage"></div>
+        <p class="hint">Pick a category, then click the design to drop a pin. For a principle pin, link the element pins that create it. Drag a pin to move it.</p>
+      </div>
+      <div class="panel">
+        <div class="tabs" role="tablist">
+          <button class="tab" role="tab" id="tab-a" aria-selected="true" type="button">My pins</button>
+          <button class="tab" role="tab" id="tab-c" aria-selected="false" type="button" disabled>Check</button>
+        </div>
+        <div class="pbody" id="body-a">
+          <div id="editor"></div>
+          <div class="pinlist" id="pinlist"></div>
+          <button class="primary" id="gocheck" type="button" disabled>Check my work</button>
+        </div>
+        <div class="pbody" id="body-c" hidden></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+var $=function(s,root){return (root||document).querySelector(s)};
+var QS=new URLSearchParams(location.search),TIER=(QS.get('tier')||'atar').toLowerCase();
+if(TIER==='general'){var rs=document.documentElement.style;rs.setProperty('--accent','#0f766e');rs.setProperty('--accent-soft','#ccfbf1');$('#tierchip').textContent='Portfolio skin'}
+function say(t,v){try{parent.postMessage({source:'mgt-interactive',type:t,value:v},'*')}catch(e){}}
+var CATS={
+ E:{name:'Elements',color:'#D55E00',features:['Line','Shape','Space','Texture','Colour']},
+ P:{name:'Principles',color:'#0072B2',features:['Balance','Emphasis: contrast','Emphasis: proportion','Dominance','Unity: proximity','Unity: repetition']},
+ T:{name:'Typography',color:'#007A5E',features:['Typeface','Size','Alignment','Format','Spacing']},
+ R:{name:'Compositional rules',color:'#9B3D80',features:['Rule of thirds','Grid and alignment']},
+ N:{name:'Design need',color:'#475569',features:['Audience','Purpose','Usability','Accessibility']}
+};
+var ORDER=['E','P','T','R','N'];
+var SHORT={E:'Elements',P:'Principles',T:'Typography',R:'Rules',N:'Need'};
+var $=function(s,root){return (root||document).querySelector(s)};
+var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
+var rich=function(s){return esc(s).replace(/\[([EPTRN])\](.*?)\[\/\]/g,function(_,k,t){return '<span class="rc" style="color:'+CATS[k].color+'">'+t+'</span>'})};
+var VAGUE=/\b(nice|nicely|good|looks? (?:good|nice|great)|pretty|cool|great|beautiful|attractive|appealing|amazing)\b/i;
+var USE_MAX=90,WHY_MAX=110,TOL=10;
+
+/* ---------- design 1: Estuary Kayaks homepage (960 x 720) ---------- */
+var C1=[60,516,266.67,140],C2=[346.67,516,266.67,140],C3=[633.33,516,266.67,140];
+var ROW=[60,516,840,140],HERO=[0,64,960,356],NAVBTN=[780,14,120,36],CTA=[60,358,190,48],NAV=[0,0,960,64],
+    HEAD=[60,120,350,132],BODY=[60,264,340,78],EYE=[60,96,230,20],STACK=[60,90,350,320],LOGO=[60,16,190,32],SECH=[60,446,260,40];
+var KAYAK={W:960,H:720,bg:'#f7efe0',tpl:'t-kayak',
+ alt:'A fictional kayak hire website homepage: navy navigation bar, hero with headline, button and a sunrise illustration, then three tour cards and a footer.',
+ grid:{x:60,w:840,cols:12,gut:20},alignX:[60,900],
+ pills:{grid:[64,426],thirds:[672,236],alignL:[66,662],alignR:[780,662]},
+ groups:[
+  {id:'g-contrast',principle:{feature:'Emphasis: contrast',label:'Booking button',pin:[400,436],rects:[CTA]},
+   elements:[{feature:'Colour',label:'Coral button',pin:[140,382],rects:[CTA]},{feature:'Space',label:'Empty sand beside it',pin:[330,392],rects:[[260,350,160,70]]}],
+   use:'[E]Warm coral colour[/] and the [E]empty space[/] around the button create strong [P]contrast[/] against the cool blue scene.',
+   why:'The [P]emphasis[/] pulls the eye to booking, which is the purpose of the site.',starter:{use:'The ',why:'This '}},
+  {id:'g-repeat',principle:{feature:'Unity: repetition',label:'Tour cards',pin:[490,486],rects:[ROW]},
+   elements:[{feature:'Shape',label:'Rounded cards',pin:[352,522],rects:[C1,C2,C3]},{feature:'Line',label:'Card outlines',pin:[640,522],rects:[C1,C2,C3]}],
+   use:'Three [E]rounded rectangle[/] cards with thin [E]outlines[/] repeat the same layout, creating [P]repetition[/].',
+   why:'[P]Unity[/] makes the tours read as one set that families can compare easily.',starter:{use:'The three ',why:'This '}}
+ ],
+ regions:[
+ {id:'nav-colour',cat:'E',feature:'Colour',label:'Navigation bar',anchor:[24,32],pin:[300,32],rects:[NAV],use:'Deep navy bar with white and pale blue links.',why:'High contrast keeps the links readable, and navy suggests water for a kayak business.'},
+ {id:'cta-colour',cat:'E',feature:'Colour',label:'Buttons',rects:[CTA,NAVBTN],use:'Warm coral buttons against cool blues.',why:'The warm colour stands out, so visitors spot where to book.'},
+ {id:'sky-space',cat:'E',feature:'Space',label:'Sky around the sun',rects:[[440,70,500,120]],use:'Open sky with nothing crowding the sun.',why:'Empty space feels calm and lets the focal point breathe.'},
+ {id:'water-texture',cat:'E',feature:'Texture',label:'Water',anchor:[935,360],pin:[850,360],rects:[[420,300,540,120]],use:'Repeated wave lines across the water.',why:'Adds movement and a natural feel without extra images.',starter:{use:'The water has ',why:'This adds '}},
+ {id:'accent-line',cat:'E',feature:'Line',label:'Heading underline',rects:[[56,486,74,14]],use:'Short coral line under the section heading.',why:'Marks the start of a new section and echoes the button colour.'},
+ {id:'cards-shape',cat:'E',feature:'Shape',label:'Cards and icons',rects:[C1,C2,C3],use:'Rounded rectangles with circular icons.',why:'Soft corners feel friendly for families and keep each tour separate.'},
+ {id:'hero-balance',cat:'P',feature:'Balance',label:'Hero',rects:[HERO],use:'Text on the left is matched by the sun and kayak on the right.',why:'Asymmetrical balance feels lively but stable, so neither side feels heavy.'},
+ {id:'headline-proportion',cat:'P',feature:'Emphasis: proportion',label:'Headline against body',rects:[HEAD,BODY],use:'The headline is much larger than the body text.',why:'Size difference shows what to read first.'},
+ {id:'hero-dominance',cat:'P',feature:'Dominance',label:'Hero',rects:[HERO],use:'The hero fills about half the page above the cards.',why:'One dominant area tells visitors where to look first and makes the cards secondary.'},
+ {id:'headline-size',cat:'T',feature:'Size',label:'Headline',anchor:[40,190],pin:[220,190],rects:[HEAD],use:'Headline is about 40px against 16px body text.',why:'The size jump creates a clear hierarchy so the main message is read first.'},
+ {id:'body-typeface',cat:'T',feature:'Typeface',label:'Headline and body',anchor:[40,300],pin:[330,296],rects:[BODY,HEAD],use:'A serif headline is paired with a plain sans-serif body.',why:'The headline gets character while the body stays easy to read.',starter:{use:'The headline uses ',why:'This pairing '}},
+ {id:'body-spacing',cat:'T',feature:'Spacing',label:'Body text',rects:[BODY],use:'Open line spacing and short lines.',why:'Makes small text easier to scan for casual visitors.'},
+ {id:'eyebrow-format',cat:'T',feature:'Format',label:'Label above headline',rects:[EYE],use:'Small bold uppercase label with wide letter spacing.',why:'Names the content type without competing with the headline.'},
+ {id:'text-align',cat:'T',feature:'Alignment',label:'Hero text',rects:[STACK],use:'All hero text is left aligned to one edge.',why:'A shared edge gives a clean line for the eye to follow.'},
+ {id:'n-usability',cat:'N',feature:'Usability',label:'Navigation bar',anchor:[24,32],pin:[300,32],rects:[NAV],use:'Four clear links sit in one bar at the top.',why:'Visitors can find tours, hire, safety and contact without hunting.',starter:{use:'The links ',why:'Visitors can '}},
+ {id:'n-purpose',cat:'N',feature:'Purpose',label:'Booking buttons',anchor:[38,382],pin:[150,382],rects:[CTA,NAVBTN],use:'A booking button appears in the nav bar and again in the hero.',why:'The site exists to get bookings, so the action is always within reach.',starter:{use:'A booking button ',why:'The site exists '}},
+ {id:'n-audience',cat:'N',feature:'Audience',label:'Hero text',rects:[BODY],use:'Copy promises "every age" and "no experience needed".',why:'Reassures first-time tourists and families that tours are for them.'},
+ {id:'n-access',cat:'N',feature:'Accessibility',label:'Text contrast',rects:[BODY,NAV],use:'Dark navy text on light backgrounds, white text on navy.',why:'High contrast keeps text readable for older visitors and people with low vision.'},
+ {id:'sun-thirds',cat:'R',feature:'Rule of thirds',label:'Sun',anchor:[678,240],pin:[640,240],rects:[[596,196,88,88]],use:'The sun sits on the upper right intersection of the thirds grid.',why:'An off-centre focal point pulls the eye there and feels more natural than dead centre.'},
+ {id:'cards-grid',cat:'R',feature:'Grid and alignment',label:'Card row',anchor:[925,600],pin:[800,640],rects:[C1,C2,C3],use:'Cards sit on a 12-column grid, four columns each, with equal gutters.',why:'Consistent columns look organised and keep content easy to scan.',starter:{use:'The cards sit ',why:'This makes '}},
+ {id:'left-edge',cat:'R',feature:'Grid and alignment',label:'Left margin',rects:[STACK,LOGO,SECH,C1],use:'Logo, hero text, section heading and first card share one left edge.',why:'A strong shared edge links the sections and guides the eye down the page.'}
+ ]};
+
+/* ---------- design 2: Harbour Night Market poster (540 x 720) ---------- */
+var PH=[40,346,420,132],PSC=[40,290,210,64],PDET=[40,498,460,24],PEY=[40,30,260,20],PST=[40,548,460,96],PBAND=[0,664,540,56],PCOPY=[40,290,460,240],PLIGHT=[0,70,540,85];
+var POSTER={W:540,H:720,maxW:560,bg:'#2a1b3d',tpl:'t-poster',
+ alt:'A fictional night market poster: dark plum sky with a string of lights, a large cream moon, the words Harbour Night Market, a row of five market stalls and a coral information band.',
+ grid:{x:40,w:460,cols:12,gut:12},alignX:[40,500],
+ pills:{grid:[44,10],thirds:[412,236],alignL:[44,648],alignR:[404,648]},
+ regions:[
+ {id:'p-colour',cat:'E',feature:'Colour',label:'Information band',rects:[PBAND],use:'Bright coral band with dark plum text.',why:'The warm band stands out from the dark poster, so the time and place are easy to find.'},
+ {id:'p-colour-head',cat:'E',feature:'Colour',label:'Headline and moon',rects:[PH,[300,180,120,120]],use:'Cream headline and moon against a dark plum sky.',why:'Light on dark makes the key shapes glow and read first.'},
+ {id:'p-shape',cat:'E',feature:'Shape',label:'Stall awnings',rects:[PST],use:'Sharp triangular awnings along the bottom.',why:'Triangles contrast with the round moon and read as market stalls at a glance.'},
+ {id:'p-line',cat:'E',feature:'Line',label:'String lights',rects:[PLIGHT],use:'A curved string of lights runs across the top.',why:'The curve leads the eye across the poster and sets a festive night mood.'},
+ {id:'p-space',cat:'E',feature:'Space',label:'Dark sky',rects:[[30,160,260,120]],use:'Open dark sky around the moon.',why:'Empty space makes the moon glow and gives the headline room.'},
+ {id:'p-contrast',cat:'P',feature:'Emphasis: contrast',label:'Headline',elements:['Colour','Space'],rects:[PH],use:'Cream capitals on a dark plum background.',why:'Strong light on dark contrast makes the event name the first thing read.'},
+ {id:'p-proportion',cat:'P',feature:'Emphasis: proportion',label:'Headline against details',elements:['Shape','Space'],rects:[PH,PDET],use:'NIGHT MARKET is about five times the size of the detail line.',why:'Size shows importance: name first, details second.'},
+ {id:'p-balance',cat:'P',feature:'Balance',label:'Moon and headline',elements:['Shape','Colour'],rects:[[0,150,540,360]],use:'The moon on the right balances the heavy left-aligned headline.',why:'Keeps the layout stable while still feeling dynamic.'},
+ {id:'p-dominance',cat:'P',feature:'Dominance',label:'Headline',elements:['Colour','Shape'],rects:[PH],use:'The headline is the largest and brightest element.',why:'One clear dominant element focuses attention and organises everything else.'},
+ {id:'p-repetition',cat:'P',feature:'Unity: repetition',label:'Stalls',elements:['Shape','Colour'],rects:[PST],use:'Five stalls repeat the same shape and spacing in two alternating colours.',why:'Repetition creates rhythm and ties the base of the poster together.'},
+ {id:'p-proximity',cat:'P',feature:'Unity: proximity',label:'Headline and details',elements:['Space','Line'],rects:[PCOPY],use:'The title and the three attractions sit close together.',why:'Closeness groups them as one message about what the night offers.'},
+ {id:'p-typeface',cat:'T',feature:'Typeface',label:'Harbour and NIGHT MARKET',rects:[PSC,PH],use:'A handwritten script word sits above a heavy sans-serif headline.',why:'The pairing adds a friendly feel to a strong, clear name.'},
+ {id:'p-size',cat:'T',feature:'Size',label:'Headline and details',rects:[PH,PDET],use:'Headline about 76px, detail text about 15px.',why:'Clear size steps create a hierarchy that reads from a distance.'},
+ {id:'p-format',cat:'T',feature:'Format',label:'Label and headline',rects:[PEY,PH],use:'Capitals in the headline and a spaced-out capitals label.',why:'Capitals feel bold and signal an event, and wide spacing keeps small text readable on dark.'},
+ {id:'p-align',cat:'T',feature:'Alignment',label:'Text block',rects:[PCOPY,PBAND],use:'Script, headline, details and band text share a left edge.',why:'A shared edge gives the eye a clean line through a busy poster.'},
+ {id:'p-spacing',cat:'T',feature:'Spacing',label:'Headline',rects:[PH],use:'Tight line spacing between NIGHT and MARKET.',why:'Locks the two words into one solid block.'},
+ {id:'pn-audience',cat:'N',feature:'Audience',label:'Script and lights',rects:[PSC,PLIGHT],use:'A friendly handwritten word and warm string lights.',why:'Feels welcoming and festive for families and locals out for an evening.'},
+ {id:'pn-purpose',cat:'N',feature:'Purpose',label:'Information band',rects:[PBAND],use:'Day, time and place sit in a bold band at the base.',why:'The poster must get people to turn up, so the practical details are easy to find.'},
+ {id:'pn-usability',cat:'N',feature:'Usability',label:'Reading order',rects:[PH,PDET,PBAND],use:'The eye moves from the title to the attractions and then to the details.',why:'A clear top-to-bottom order lets passers-by get the message in seconds.'},
+ {id:'pn-access',cat:'N',feature:'Accessibility',label:'Headline and band',rects:[PH,PBAND],use:'Large light capitals on dark, and dark text on the coral band.',why:'High contrast and large size stay readable from a distance and for low vision.'},
+ {id:'p-thirds',cat:'R',feature:'Rule of thirds',label:'Moon',rects:[[300,180,120,120]],use:'The moon sits on the upper right intersection of the thirds grid.',why:'An off-centre focal point draws the eye in, then down to the headline.'},
+ {id:'p-grid',cat:'R',feature:'Grid and alignment',label:'Margins',rects:[PCOPY,PST,PBAND],use:'Content sits inside equal 40px margins with a shared left and right edge.',why:'Consistent margins make the poster look organised and professional.'}
+ ]};
+
+function reg(D,id){return D.regions.filter(function(r){return r.id===id})[0]}
+function grp(D,id){return D.groups.filter(function(g){return g.id===id})[0]}
+function hit(p,r){return r.rects.some(function(q){return p.x>=q[0]-TOL&&p.x<=q[0]+q[2]+TOL&&p.y>=q[1]-TOL&&p.y<=q[1]+q[3]+TOL})}
+function gParts(g){return [{cat:'P',rects:g.principle.rects}].concat(g.elements.map(function(e){return {cat:'E',rects:e.rects}}))}
+
+/* ---------- template fill ---------- */
+function fillTpl(D,id){
+ var h=$('#'+D.tpl).innerHTML;
+ var waves='';[258,280,302,324,344].forEach(function(y,i){var d='M'+(470+(i%2)*14)+' '+y;for(var k=0;k<24;k++){d+=' q10 -6 20 0 t20 0'}waves+='<path d="'+d+'"/>'});
+ var bulbs='',ts=[.06,.17,.28,.39,.5,.61,.72,.83,.94];
+ ts.forEach(function(t,i){var u=1-t,x=u*u*-10+2*u*t*270+t*t*550,y=u*u*20+2*u*t*130+t*t*20,c=i%2?'#ff8a65':'#ffcf5c';
+  bulbs+='<circle cx="'+x.toFixed(1)+'" cy="'+(y+8).toFixed(1)+'" r="14" fill="'+c+'" fill-opacity=".22"/><circle cx="'+x.toFixed(1)+'" cy="'+(y+8).toFixed(1)+'" r="7" fill="'+c+'"/>'});
+ var stalls='';for(var i=0;i<5;i++){var x=i*94,c=i%2?'#ffcf5c':'#ff7a59';
+  stalls+='<path d="M'+(x+42)+' 0 L'+(x+84)+' 34 L'+x+' 34Z" fill="'+c+'"/><rect x="'+(x+6)+'" y="34" width="72" height="56" rx="4" fill="#4a2f66"/><rect x="'+(x+2)+'" y="64" width="80" height="8" rx="3" fill="#6b4a8c"/><circle cx="'+(x+42)+'" cy="50" r="6" fill="#ffcf5c"/>'}
+ return h.split('__ID__').join(id).replace('__WAVES__',waves).replace('__BULBS__',bulbs).replace('__STALLS__',stalls);
+}
+
+/* ---------- stage factory ---------- */
+function ln(x1,y1,x2,y2,dash,col){return '<line x1="'+x1+'" y1="'+y1+'" x2="'+x2+'" y2="'+y2+'" stroke="#fff" stroke-width="5" stroke-opacity=".85"/><line x1="'+x1+'" y1="'+y1+'" x2="'+x2+'" y2="'+y2+'" stroke="'+(col||'#4338ca')+'" stroke-width="2.2"'+(dash?' stroke-dasharray="8 6"':'')+'/>'}
+function pill(p,t){return '<g><rect x="'+p[0]+'" y="'+p[1]+'" width="'+(t.length*6.4+14)+'" height="16" rx="8" fill="#4338ca"/><text x="'+(p[0]+7)+'" y="'+(p[1]+12)+'" font-size="11" font-weight="700" fill="#fff" font-family="Inter,sans-serif">'+t+'</text></g>'}
+function lensSvg(D,lens){
+ var s='',W=D.W,H=D.H;
+ if(lens.grid){var g=D.grid,cw=(g.w-(g.cols-1)*g.gut)/g.cols;for(var i=0;i<g.cols;i++){s+='<rect x="'+(g.x+i*(cw+g.gut))+'" y="0" width="'+cw+'" height="'+H+'" fill="#4338ca" fill-opacity=".13" stroke="#4338ca" stroke-opacity=".4"/>'}
+  s+=pill(D.pills.grid,g.cols+' columns, '+g.gut+'px gutters')}
+ if(lens.thirds){var tx=[W/3,2*W/3],ty=[H/3,2*H/3];
+  tx.forEach(function(x){s+=ln(x,0,x,H)});ty.forEach(function(y){s+=ln(0,y,W,y)});
+  tx.forEach(function(x){ty.forEach(function(y){s+='<circle cx="'+x+'" cy="'+y+'" r="9" fill="none" stroke="#fff" stroke-width="5"/><circle cx="'+x+'" cy="'+y+'" r="9" fill="none" stroke="#4338ca" stroke-width="2.5"/>'})});
+  s+=pill(D.pills.thirds,'Power point')}
+ if(lens.align){D.alignX.forEach(function(x){s+=ln(x,0,x,H,true)});s+=pill(D.pills.alignL,'Shared left edge')+pill(D.pills.alignR,'Shared right edge')}
+ return s;
+}
+function hlSvg(r){var c=CATS[r.cat].color,s='';
+ r.rects.forEach(function(q){s+='<rect x="'+q[0]+'" y="'+q[1]+'" width="'+q[2]+'" height="'+q[3]+'" rx="6" fill="'+c+'" fill-opacity=".15" stroke="#fff" stroke-width="6"/><rect x="'+q[0]+'" y="'+q[1]+'" width="'+q[2]+'" height="'+q[3]+'" rx="6" fill="none" stroke="'+c+'" stroke-width="3" stroke-dasharray="9 6"/>'});
+ return s}
+function gConn(g){return g.elements.map(function(e){return ln(g.principle.pin[0],g.principle.pin[1],e.pin[0],e.pin[1],true,CATS.P.color)}).join('')}
+var stageSeq=0;
+function createStage(D){
+ var id=++stageSeq,wrap=document.createElement('div');
+ wrap.className='stagewrap';wrap.style.aspectRatio=D.W+'/'+D.H;if(D.maxW){wrap.style.maxWidth=D.maxW+'px';wrap.style.margin='0 auto'}
+ wrap.setAttribute('role','img');wrap.setAttribute('aria-label',D.alt);
+ wrap.innerHTML='<div class="design" aria-hidden="true" style="width:'+D.W+'px;height:'+D.H+'px;background:'+D.bg+'">'+fillTpl(D,id)+'</div><svg class="overlay" viewBox="0 0 '+D.W+' '+D.H+'" preserveAspectRatio="none" aria-hidden="true"></svg><div class="pins"></div>';
+ var dz=wrap.children[0],ov=wrap.children[1],pn=wrap.children[2];
+ function fit(){dz.style.transform='scale('+(wrap.clientWidth/D.W)+')'}
+ if(window.ResizeObserver){new ResizeObserver(fit).observe(wrap)}else{window.addEventListener('resize',fit)}
+ fit();
+ return {wrap:wrap,overlay:ov,pins:pn,fit:fit,draw:function(lens,hl,extra){var h='';if(hl){(Array.isArray(hl)?hl:[hl]).forEach(function(r){h+=hlSvg(r)})}ov.innerHTML=lensSvg(D,lens||{})+h+(extra||'')}};
+}
+function pinHtml(cat,label,x,y,D,cls){return '<button type="button" class="pin '+cat+' sm'+(cls?' '+cls:'')+'" style="--c:'+CATS[cat].color+';left:'+(x/D.W*100)+'%;top:'+(y/D.H*100)+'%" aria-label="'+esc(label)+'"><span>'+esc(label)+'</span></button>'}
+function slot(c,k,html){return '<div class="slot" style="--c:'+CATS[c].color+'"><i>'+k+'</i><span>'+html+'</span></div>'}
+function mdl(r){return slot(r.cat,'Name','<b>'+esc(r.feature)+'</b> ('+esc(r.label.toLowerCase())+')')+slot(r.cat,'Use',esc(r.use))+slot(r.cat,'Why',esc(r.why))}
+function namesGroup(g){return '<span class="rc" style="color:'+CATS.P.color+'">'+esc(g.principle.feature)+'</span> made by '+g.elements.map(function(e){return '<span class="rc" style="color:'+CATS.E.color+'">'+esc(e.feature)+'</span> ('+esc(e.label.toLowerCase())+')'}).join(' and ')}
+function mdlGroup(g){return slot('P','Name',namesGroup(g))+slot('P','Use',rich(g.use))+slot('P','Why',rich(g.why))}
+
+/* ---------- main tabs ---------- */
+var mainBuilt={},relayout=null;
+function showMain(n){
+ for(var i=1;i<=4;i++){$('#mt-'+i).setAttribute('aria-selected',i===n);$('#pane-'+i).hidden=(i!==n)}
+ if(!mainBuilt[n]){mainBuilt[n]=true;({1:buildModel,2:buildQuestion,3:buildBuild,4:buildPractice})[n]()}
+ if(n===1&&relayout)requestAnimationFrame(relayout);
+ window.scrollTo({top:0});say('top');
+}
+$('#maintabs').addEventListener('click',function(e){var b=e.target.closest('[data-main]');if(b)showMain(+b.dataset.main)});
+
+/* ---------- tab 1: see it ---------- */
+function buildModel(){
+ var D=KAYAK,pane=$('#pane-1'),st=createStage(D),n=0;
+ var spec=[['L','r','n-usability'],['L','r','headline-size'],['L','r','body-typeface'],['L','r','n-purpose'],['R','r','sun-thirds'],['R','g','g-contrast'],['R','g','g-repeat'],['R','r','cards-grid']];
+ var items=spec.map(function(s){var it={side:s[0],kind:s[1],id:s[2]};
+  if(s[1]==='r'){it.r=reg(D,s[2]);it.tag=it.r.cat+(++n);it.lead=it.r.anchor;it.pins=[[it.r.cat,it.tag,it.r.anchor[0],it.r.anchor[1]]]}
+  else{it.g=grp(D,s[2]);var pn=++n;it.tag='P'+pn;it.lead=it.g.principle.pin;it.pins=[['P',it.tag,it.g.principle.pin[0],it.g.principle.pin[1]]];
+   it.etags=it.g.elements.map(function(e){var t='E'+(++n);it.pins.push(['E',t,e.pin[0],e.pin[1]]);return t})}
+  return it});
+ function card(it){
+  if(it.kind==='r'){var c=CATS[it.r.cat].color;
+   return '<button type="button" class="mcard" data-id="'+it.id+'" style="--c:'+c+'"><div class="mh"><span class="tag">'+it.tag+'</span><b>'+esc(it.r.feature)+'</b><small>'+CATS[it.r.cat].name+'</small></div><p><i>Use</i>'+esc(it.r.use)+'</p><p><i>Why</i>'+esc(it.r.why)+'</p></button>'}
+  var g=it.g;
+  return '<button type="button" class="mcard" data-id="'+it.id+'" style="--c:'+CATS.P.color+'"><div class="mh"><span class="tag">'+it.tag+'</span><b>'+esc(g.principle.feature)+'</b><small>Principle + elements</small></div><div class="chips">'+g.elements.map(function(e,i){return '<span class="chip2" style="--c:'+CATS.E.color+'">'+it.etags[i]+' '+esc(e.feature)+'</span>'}).join('')+'</div><p><i>Use</i>'+rich(g.use)+'</p><p><i>Why</i>'+rich(g.why)+'</p></button>'}
+ pane.innerHTML='<p class="lead"><b>A complete answer.</b> Eight annotations that cover every part of the question: two principles each made by two elements, typography, design need and compositional rules. Click a card to see exactly where it points. Every card does the same three jobs.</p>'+
+  '<div class="legend"><span class="sl"><i>Name</i> the feature (card heading)</span><span class="sl"><i>Use</i> how it appears in this design</span><span class="sl"><i>Why</i> the benefit for the audience or purpose</span>'+
+  ORDER.map(function(k){return '<span class="cl" style="--c:'+CATS[k].color+'"><span></span>'+CATS[k].name+'</span>'}).join('')+'</div>'+
+  '<div class="m3" id="m3"><div class="col" id="colL">'+items.filter(function(i){return i.side==='L'}).map(card).join('')+'</div><div id="mstage"></div><div class="col" id="colR">'+items.filter(function(i){return i.side==='R'}).map(card).join('')+'</div><svg class="lines" id="mlines" aria-hidden="true"></svg></div>'+
+  '<button class="next" id="to2" type="button">Next: read the question</button>';
+ $('#mstage').appendChild(st.wrap);
+ var itemOf={};items.forEach(function(it){itemOf[it.id]=it});
+ var pinsHtml='',pinIds=[];
+ items.forEach(function(it){it.pins.forEach(function(p){pinsHtml+=pinHtml(p[0],p[1],p[2],p[3],D);pinIds.push(it.id)})});
+ st.pins.innerHTML=pinsHtml;
+ var allConn=items.filter(function(i){return i.kind==='g'}).map(function(i){return gConn(i.g)}).join('');
+ var m3=$('#m3'),lines=$('#mlines'),active=null;
+ function setActive(id){active=(active===id)?null:id;
+  pane.querySelectorAll('.mcard').forEach(function(c){c.classList.toggle('active',c.dataset.id===active)});
+  var hl=null;if(active){var it=itemOf[active];hl=it.kind==='r'?it.r:gParts(it.g)}
+  st.draw({},hl,allConn)}
+ pane.querySelectorAll('.mcard').forEach(function(c){c.addEventListener('click',function(){setActive(c.dataset.id)})});
+ st.pins.querySelectorAll('.pin').forEach(function(p,i){p.addEventListener('click',function(){setActive(pinIds[i])})});
+ st.draw({},null,allConn);
+ relayout=function(){
+  if(window.getComputedStyle(lines).display==='none'){lines.innerHTML='';return}
+  var cr=m3.getBoundingClientRect(),sr=st.wrap.getBoundingClientRect();if(!cr.width||!sr.width)return;
+  lines.setAttribute('viewBox','0 0 '+cr.width+' '+cr.height);
+  var s='';
+  items.forEach(function(it){var el=pane.querySelector('.mcard[data-id="'+it.id+'"]'),r=el.getBoundingClientRect(),left=it.side==='L',c=CATS[it.kind==='g'?'P':it.r.cat].color;
+   var ax=sr.left-cr.left+it.lead[0]/D.W*sr.width+(left?-15:15),ay=sr.top-cr.top+it.lead[1]/D.H*sr.height;
+   var sx=(left?r.right:r.left)-cr.left,sy=r.top-cr.top+r.height/2,dx=Math.abs(ax-sx)*.5;
+   var d='M'+sx+' '+sy+' C'+(sx+(left?dx:-dx))+' '+sy+' '+(ax+(left?-dx:dx))+' '+ay+' '+ax+' '+ay;
+   s+='<path d="'+d+'" fill="none" stroke="#fff" stroke-width="5" stroke-opacity=".9"/><path d="'+d+'" fill="none" stroke="'+c+'" stroke-width="2.2"/><circle cx="'+sx+'" cy="'+sy+'" r="3.5" fill="'+c+'"/>'});
+  lines.innerHTML=s};
+ if(window.ResizeObserver){new ResizeObserver(function(){requestAnimationFrame(relayout)}).observe(m3)}else{window.addEventListener('resize',relayout)}
+ requestAnimationFrame(relayout);setTimeout(relayout,300);
+ $('#to2').onclick=function(){showMain(2)};
+}
+
+/* ---------- tab 2: the question ---------- */
+function buildQuestion(){
+ var D=KAYAK,pane=$('#pane-2'),st=createStage(D),ver=(TIER==='general')?'General':'ATAR';
+ var V={
+  General:{marks:['TBC','TBC','TBC','TBC'],
+   p:['Identify the elements and principles of design used, and explain the relationship between them. Show two elements for each of two principles.','Explain the use of appropriate typography.','Explain how the design meets the design need or considerations.','Identify and explain two compositional rules used.'],
+   note:'Mock General wording. Marks and exact phrasing to be replaced with the real EST wording.'},
+  ATAR:{marks:['5 marks','3 marks','5 marks','4 marks'],
+   p:['Identify the elements and principles of design used, with a critical analysis of the relationship between them.','Explain the use of appropriate typography.','Explain how the digital solution meets a design need or consideration.','Apply two principles of layout and composition.'],
+   note:'Marks follow a past ATAR question. Wording here is paraphrased. In the exam, ATAR students also design the page; this tool covers the annotation half.'}};
+ var cols=[['E','P'],['T'],['N'],['R']];
+ function left(){var v=V[ver];
+  return '<div class="seg" role="group" aria-label="Version"><button type="button" data-v="General" aria-pressed="'+(ver==='General')+'">General</button><button type="button" data-v="ATAR" aria-pressed="'+(ver==='ATAR')+'">ATAR</button></div>'+
+  '<div class="qcard"><div class="qtop"><span class="chip">Question 4</span><span class="chip cmd">Identify</span><span class="chip cmd">Explain</span>'+(ver==='ATAR'?'<span class="chip cmd">Critically analyse</span><span class="chip cmd">Apply</span>':'')+'</div>'+
+  '<p class="qstem">Estuary Kayaks hires kayaks and runs guided tours for tourists and local families. Its homepage is shown.</p>'+
+  '<p class="qmain"><b>Annotate the design</b> to show:</p>'+
+  '<ul class="parts">'+v.p.map(function(t,i){var c=CATS[cols[i][0]].color;return '<li style="--c:'+c+'"><span class="rn">('+['i','ii','iii','iv'][i]+')</span><span>'+esc(t)+'<span class="chips" style="margin-top:4px">'+cols[i].map(function(k){return '<span class="chip2" style="--c:'+CATS[k].color+'">'+CATS[k].name+'</span>'}).join('')+'</span></span><span class="mk">'+v.marks[i]+'</span></li>'}).join('')+'</ul>'+
+  '<p class="qnote">'+esc(v.note)+'</p></div>'}
+ function render(){
+  $('#qleft').innerHTML=left();
+ }
+ pane.innerHTML='<div class="q2"><div><div id="qleft"></div>'+
+  '<h3>Elements and principles are answered together</h3><div class="pairdemo"><span class="chip2" style="--c:'+CATS.E.color+'">Element: Colour</span><span class="chip2" style="--c:'+CATS.E.color+'">Element: Space</span><span class="arrow">&rarr;</span><span class="chip2" style="--c:'+CATS.P.color+'">Principle: Emphasis (contrast)</span></div>'+
+  '<p style="font-size:14px;margin:6px 0 0;color:var(--muted)">Name two elements, name the principle they create, say how they create it, then say why it helps. Do this for two principles. Keep each colour for its own category.</p>'+
+  '<h3>The command words become your three slots</h3><div class="map3"><span class="t">Identify</span><span class="arrow">&rarr;</span><span class="s">Name it</span><span class="t">Explain: how</span><span class="arrow">&rarr;</span><span class="s">Use</span><span class="t">Explain: why</span><span class="arrow">&rarr;</span><span class="s">Why</span></div>'+
+  '<h3>Before you start</h3><ul class="tips"><li>Space is small, so write short, pointed fragments, not paragraphs.</li><li>One feature per annotation. Point at the exact part of the design.</li><li>Colour-code by category so the marker sees your coverage at a glance.</li></ul>'+
+  '<div class="navrow"><button class="ghostbtn" id="b1" type="button">Back</button><span class="sp"></span><button class="next" id="to3" type="button">Next: build it</button></div>'+
+  '</div><div><div id="qstage"></div><p class="hint" style="text-align:center">The design for this question.</p></div></div>';
+ render();
+ $('#qstage').appendChild(st.wrap);
+ pane.addEventListener('click',function(e){var b=e.target.closest('[data-v]');if(!b)return;ver=b.dataset.v;render()});
+ $('#b1').onclick=function(){showMain(1)};$('#to3').onclick=function(){showMain(3)};
+}
+
+/* ---------- tab 3: build it ---------- */
+var STEPS=[
+ {cat:'E',kind:'one',worked:'nav-colour',guided:'water-texture',tips:['Choose one element: line, shape, space, texture or colour.','Point to the exact part of the design, not the whole page.','Say what it does. Words like "nice" earn nothing.']},
+ {cat:'P',kind:'rel',worked:'g-contrast',guided:'g-repeat',tips:['Name the principle, then the two elements that create it.','Say how the elements work together, for example colour and space creating contrast.','End with the effect on the audience or purpose. Do this for two principles.']},
+ {cat:'T',kind:'one',worked:'headline-size',guided:'body-typeface',tips:['Talk about the text itself: typeface, size, alignment, format or spacing.','Compare two pieces of text, such as headline and body.','Link it to how easy it is to read for this audience.']},
+ {cat:'N',kind:'one',worked:'n-usability',guided:'n-purpose',tips:['Link the design back to the brief: who it is for and what it must do.','Name one consideration: audience, purpose, usability or accessibility.','Point to a feature that meets it and say how.']},
+ {cat:'R',kind:'one',worked:'sun-thirds',guided:'cards-grid',workedLens:{thirds:true},guidedLens:{grid:true,align:true},tips:['Name the rule: rule of thirds, or grid and alignment.','Say where the lines or columns fall and what sits on them.','Say what it does for the eye or for how organised the page looks.']}
+];
+function buildBuild(){
+ var D=KAYAK,pane=$('#pane-3'),st=createStage(D),step=0,focus='w',ans={},done={},N=STEPS.length;
+ pane.innerHTML='<p class="lead"><b>Build it, one part of the question at a time.</b> Each step has tips, one worked example to read, and one for you to write with the Name already given. Draft tips: replace with your own mark-earning rules.</p>'+
+  '<div class="b3"><div><div id="bstage"></div><p class="hint" style="text-align:center">The first pins are the worked example. The dashed pins are yours.</p></div><div id="bpanel"></div></div>';
+ $('#bstage').appendChild(st.wrap);
+ function draw(){
+  var S=STEPS[step],rel=S.kind==='rel',c=CATS[S.cat].color;
+  var w=rel?grp(D,S.worked):reg(D,S.worked),g=rel?grp(D,S.guided):reg(D,S.guided);
+  var a=ans[S.guided]||(ans[S.guided]={use:g.starter.use,why:g.starter.why,open:false,tU:false,tW:false,tR:false});
+  var f=(focus==='w')?w:g,lens=(focus==='w'?S.workedLens:S.guidedLens)||{};
+  var hl=rel?gParts(f):f,extra='',pinsH='';
+  if(rel){extra=gConn(w)+gConn(g);
+   pinsH=pinHtml('P','P1',w.principle.pin[0],w.principle.pin[1],D,focus==='w'?'sel':'')+w.elements.map(function(e,i){return pinHtml('E','E'+(i+1),e.pin[0],e.pin[1],D,focus==='w'?'sel':'')}).join('')+
+        pinHtml('P','P2',g.principle.pin[0],g.principle.pin[1],D,'ghost'+(focus==='g'?' sel':''))+g.elements.map(function(e,i){return pinHtml('E','E'+(i+3),e.pin[0],e.pin[1],D,'ghost'+(focus==='g'?' sel':''))}).join('')}
+  else{pinsH=pinHtml(S.cat,S.cat+'1',(w.pin||w.anchor)[0],(w.pin||w.anchor)[1],D,focus==='w'?'sel':'')+pinHtml(S.cat,S.cat+'2',(g.pin||g.anchor)[0],(g.pin||g.anchor)[1],D,'ghost'+(focus==='g'?' sel':''))}
+  st.draw(lens,hl,extra);st.pins.innerHTML=pinsH;
+  var p=$('#bpanel');
+  var nameRow=rel?slot('P','Name',namesGroup(g)+' (given)'):slot(S.cat,'Name','<b>'+esc(g.feature)+'</b> (given) on the '+esc(g.label.toLowerCase()));
+  p.innerHTML='<div class="stepbar">'+STEPS.map(function(s,i){return '<button type="button" class="sb'+(done[i]?' done':'')+'" data-step="'+i+'" style="--c:'+CATS[s.cat].color+'" aria-pressed="'+(i===step)+'">'+(i+1)+'. '+SHORT[s.cat]+(s.kind==='rel'?' + E':'')+'</button>'}).join('')+'</div>'+
+   '<div class="tipbox" style="--c:'+c+'"><h4>Tips: '+(rel?'elements and principles together':CATS[S.cat].name.toLowerCase())+'</h4><ul class="tips">'+S.tips.map(function(t){return '<li>'+esc(t)+'</li>'}).join('')+'</ul></div>'+
+   '<div class="bsec'+(focus==='w'?' on':'')+'" id="secw" style="--c:'+c+'"><h4>Worked example <small>Read how it is built.</small></h4>'+(rel?mdlGroup(w):mdl(w))+'</div>'+
+   '<div class="bsec'+(focus==='g'?' on':'')+'" id="secg" style="--c:'+c+'"><h4>Your turn</h4>'+nameRow+
+   slot(S.cat,'Use','<textarea id="gu" maxlength="'+USE_MAX+'" aria-label="Use">'+esc(a.use)+'</textarea><div class="count" id="gcu"></div>')+
+   slot(S.cat,'Why','<textarea id="gw" maxlength="'+WHY_MAX+'" aria-label="Why">'+esc(a.why)+'</textarea><div class="count" id="gcw"></div>')+
+   '<button class="ghostbtn" id="cmp" type="button" style="margin-top:6px">Compare with the model</button><div id="cmpbox"></div></div>'+
+   '<div class="navrow"><button class="ghostbtn" id="bb" type="button">'+(step?'Back':'Back to the question')+'</button><span class="sp"></span><button class="next" id="bn" type="button">'+(step<N-1?'Next step':'Go to your turn')+'</button></div>';
+  function cnt(){$('#gcu').textContent=a.use.length+' / '+USE_MAX;$('#gcw').textContent=a.why.length+' / '+WHY_MAX;$('#gcu').className='count'+(a.use.length>=USE_MAX?' full':'');$('#gcw').className='count'+(a.why.length>=WHY_MAX?' full':'')}
+  cnt();
+  function compare(){
+   var v=(a.use+' '+a.why).match(VAGUE),filled=a.use.trim().length>g.starter.use.length+3&&a.why.trim().length>g.starter.why.length+3;
+   $('#cmpbox').innerHTML='<div class="comp"><p><b>Model:</b></p><p><b>Use:</b> '+(rel?rich(g.use):esc(g.use))+'</p><p><b>Why:</b> '+(rel?rich(g.why):esc(g.why))+'</p></div>'+
+    '<p class="flag '+(!filled?'bad':v?'mid':'ok')+'">'+(!filled?'Finish both Use and Why in your own words first.':v?'Vague word: &ldquo;'+esc(v[0])+'&rdquo;. Say what you can actually see.':'Both slots written, no vague words.')+'</p>'+
+    '<label class="selfck"><input type="checkbox" id="tu"'+(a.tU?' checked':'')+'><span>My Use says how it appears in this design.</span></label>'+
+    (rel?'<label class="selfck"><input type="checkbox" id="tr"'+(a.tR?' checked':'')+'><span>I named the principle and both elements, and said how the elements create it.</span></label>':'')+
+    '<label class="selfck"><input type="checkbox" id="tw"'+(a.tW?' checked':'')+'><span>My Why gives a benefit for the audience or purpose.</span></label>';
+   function upd(){a.tU=$('#tu').checked;a.tW=$('#tw').checked;if(rel)a.tR=$('#tr').checked;var d=a.tU&&a.tW&&(!rel||a.tR);if(done[step]!==d){done[step]=d;var b=p.querySelector('.sb[data-step="'+step+'"]');if(b)b.classList.toggle('done',d)}}
+   $('#tu').onchange=upd;$('#tw').onchange=upd;if(rel)$('#tr').onchange=upd;
+  }
+  if(a.open)compare();
+  $('#cmp').onclick=function(){a.open=true;compare()};
+  $('#gu').oninput=function(){a.use=this.value;cnt()};$('#gw').oninput=function(){a.why=this.value;cnt()};
+  $('#secw').addEventListener('click',function(){if(focus!=='w'){focus='w';draw()}});
+  $('#gu').onfocus=$('#gw').onfocus=function(){if(focus!=='g'){var id=this.id;focus='g';draw();var t=$('#'+id);if(t){t.focus();var n=t.value.length;t.setSelectionRange(n,n)}}};
+  p.querySelector('.stepbar').onclick=function(e){var b=e.target.closest('[data-step]');if(!b)return;step=+b.dataset.step;focus='w';draw()};
+  $('#bb').onclick=function(){if(step){step--;focus='w';draw()}else showMain(2)};
+  $('#bn').onclick=function(){if(step<N-1){step++;focus='w';draw()}else showMain(4)};
+ }
+ draw();
+}
+
+/* ---------- tab 4: your turn (free pins on a new design) ---------- */
+function buildPractice(){
+ var D=POSTER,REG=D.regions,W=D.W,H=D.H,S=createStage(D),NC=ORDER.length;
+ S.wrap.style.cursor='crosshair';$('#practiceStage').appendChild(S.wrap);
+ var wrap=S.wrap,pinsEl=S.pins;
+ var pins=[],sel=null,tool='E',lens={thirds:false,grid:false,align:false},tab='a',checked=false,hl=null,seq=0;
+ function pinById(id){return pins.filter(function(q){return q.id===id})[0]}
+ function conSvg(){var s='';pins.forEach(function(p){if(p.cat==='P')(p.links||[]).forEach(function(id){var q=pinById(id);if(q)s+=ln(p.x,p.y,q.x,q.y,true,CATS.P.color)})});return s}
+ function renderOverlay(){S.draw(lens,hl?reg(D,hl):null,conSvg())}
+ function shapeCss(k){return k==='E'?'border-radius:50%':k==='P'?'border-radius:5px':k==='T'?'border-radius:3px;transform:rotate(45deg) scale(.8)':k==='N'?'border-radius:5px 10px 5px 10px':'border-radius:11px;width:30px'}
+ function buildTools(){$('#tools').innerHTML=ORDER.map(function(k){var c=CATS[k];return '<button class="cbtn" type="button" data-tool="'+k+'" style="--c:'+c.color+'" aria-pressed="'+(tool===k)+'"><span class="dot" style="background:'+c.color+';'+shapeCss(k)+'">'+k+'</span>'+c.name+'</button>'}).join('')}
+ $('#tools').addEventListener('click',function(e){var b=e.target.closest('[data-tool]');if(!b)return;tool=b.dataset.tool;buildTools()});
+ document.querySelectorAll('#pane-4 .lens').forEach(function(b){b.addEventListener('click',function(){var k=b.dataset.lens;lens[k]=!lens[k];b.setAttribute('aria-pressed',lens[k]);renderOverlay()})});
+ function pinLabel(p){return p.cat+(pins.indexOf(p)+1)}
+ function renderPins(){pinsEl.innerHTML=pins.map(function(p){return '<button type="button" class="pin '+p.cat+(p===sel?' sel':'')+'" data-id="'+p.id+'" style="--c:'+CATS[p.cat].color+';left:'+(p.x/W*100)+'%;top:'+(p.y/H*100)+'%" aria-label="Pin '+pinLabel(p)+', '+CATS[p.cat].name+'"><span>'+pinLabel(p)+'</span></button>'}).join('')}
+ function posIn(e){var r=wrap.getBoundingClientRect();return {x:Math.max(0,Math.min(W,(e.clientX-r.left)/r.width*W)),y:Math.max(0,Math.min(H,(e.clientY-r.top)/r.height*H))}}
+ wrap.addEventListener('click',function(e){
+  if(e.target.closest('.pin')||pins.length>=24)return;
+  var q=posIn(e),p={id:++seq,x:q.x,y:q.y,cat:tool,feature:'',use:'',why:'',tU:false,tW:false,links:[]};
+  pins.push(p);sel=p;tab='a';hl=null;renderAll();var f=$('#f-feature');if(f)f.focus()});
+ var drag=null;
+ pinsEl.addEventListener('pointerdown',function(e){var el=e.target.closest('.pin');if(!el)return;var p=pinById(+el.dataset.id);drag={p:p,el:el,sx:e.clientX,sy:e.clientY,moved:false};try{el.setPointerCapture(e.pointerId)}catch(_){}});
+ pinsEl.addEventListener('pointermove',function(e){if(!drag)return;if(!drag.moved&&Math.hypot(e.clientX-drag.sx,e.clientY-drag.sy)>4)drag.moved=true;
+  if(drag.moved){var q=posIn(e);drag.p.x=q.x;drag.p.y=q.y;drag.el.style.left=(q.x/W*100)+'%';drag.el.style.top=(q.y/H*100)+'%';renderOverlay()}});
+ pinsEl.addEventListener('pointerup',function(){if(!drag)return;var p=drag.p,m=drag.moved;drag=null;if(!m){sel=p;tab='a';hl=null;renderAll()}else{renderStats();if(tab==='c'&&checked)renderCheck()}});
+ pinsEl.addEventListener('click',function(e){var el=e.target.closest('.pin');if(!el||e.detail!==0)return;sel=pinById(+el.dataset.id);tab='a';renderAll()});
+ function covered(){var s={};pins.forEach(function(p){s[p.cat]=1});return s}
+ function found(r){return pins.some(function(p){return p.feature===r.feature&&p.cat===r.cat&&hit(p,r)})}
+ function result(p){
+  var hits=REG.filter(function(r){return hit(p,r)}),match=hits.filter(function(r){return r.feature===p.feature&&r.cat===p.cat})[0],same=hits.filter(function(r){return r.cat===p.cat});
+  var status=!p.feature?'nofeature':match?'match':same.length?'area':'miss',vague=(p.use+' '+p.why).match(VAGUE),filled=p.use.trim().length>=8&&p.why.trim().length>=8,slotsOk=filled&&!vague;
+  var rel=null;
+  if(p.cat==='P'){var lk=(p.links||[]).map(pinById).filter(Boolean),mel=match&&match.elements,okm=!mel||lk.some(function(l){return mel.indexOf(l.feature)>-1});
+   rel={lk:lk,mel:mel,ok:lk.length>=2&&okm,status:lk.length<2?'few':okm?'ok':'other'}}
+  return {match:match,same:same,status:status,vague:vague,filled:filled,rel:rel,max:rel?5:4,pts:(status==='match'?1:0)+(slotsOk?1:0)+(p.tU?1:0)+(p.tW?1:0)+(rel&&rel.ok?1:0)}}
+ function renderStats(){
+  $('#st-pins').textContent=pins.length;var cv=covered(),n=Object.keys(cv).length;$('#st-cats').textContent=n+' of '+NC;
+  var C=2*Math.PI*13,seg=C/NC-3,r='';ORDER.forEach(function(k,i){r+='<circle cx="17" cy="17" r="13" fill="none" stroke-width="6" stroke="'+(cv[k]?CATS[k].color:'#e5e7eb')+'" stroke-dasharray="'+seg+' '+(C-seg)+'" stroke-dashoffset="'+(-i*C/NC)+'" transform="rotate(-90 17 17)"/>'});$('#ring').innerHTML=r;
+  if(checked&&pins.length){var f=REG.filter(found).length,pts=0,mx=0;pins.forEach(function(p){var q=result(p);pts+=q.pts;mx+=q.max});$('#st-found').textContent=f+' of '+REG.length;$('#st-score').textContent=pts+' of '+mx}
+  else{$('#st-found').textContent='Not checked';$('#st-score').textContent='Not checked'}
+  $('#gocheck').disabled=!pins.length;$('#tab-c').disabled=!pins.length}
+ function renderEditor(){
+  var ed=$('#editor');
+  if(!sel){ed.innerHTML='<p class="empty">No pin selected. Choose a category above, then click the poster to place your first pin.</p>';return}
+  var c=CATS[sel.cat],es=pins.filter(function(p){return p.cat==='E'}),n=3;
+  ed.innerHTML='<div class="edhead"><b style="color:'+c.color+'">Pin '+pinLabel(sel)+' &middot; '+c.name+'</b><button class="del" type="button" id="del">Delete pin</button></div>'+
+  '<div class="catsw">'+ORDER.map(function(k){return '<button type="button" data-cat="'+k+'" style="--c:'+CATS[k].color+'" aria-pressed="'+(sel.cat===k)+'">'+k+' '+SHORT[k]+'</button>'}).join('')+'</div>'+
+  '<div class="field"><label for="f-feature">1. Name it<span class="sub">Which feature is this?</span></label><select id="f-feature"><option value="">Choose a feature</option>'+c.features.map(function(f){return '<option'+(sel.feature===f?' selected':'')+'>'+esc(f)+'</option>'}).join('')+'</select></div>'+
+  (sel.cat==='P'?'<div class="field"><label>Created by<span class="sub">Link the element pins that create this principle (two or more).</span></label>'+(es.length?es.map(function(e){return '<label class="selfck"><input type="checkbox" data-link="'+e.id+'"'+((sel.links||[]).indexOf(e.id)>-1?' checked':'')+'><span>'+pinLabel(e)+' '+esc(e.feature||'(no feature yet)')+'</span></label>'}).join(''):'<p class="empty">Place element pins (orange) first, then link them here.</p>')+'</div>':'')+
+  '<div class="field"><label for="f-use">2. Use<span class="sub">How is it used in this design?</span></label><textarea id="f-use" maxlength="'+USE_MAX+'">'+esc(sel.use)+'</textarea><div class="count" id="c-use"></div></div>'+
+  '<div class="field"><label for="f-why">3. Why<span class="sub">What does it do for the audience or purpose?</span></label><textarea id="f-why" maxlength="'+WHY_MAX+'">'+esc(sel.why)+'</textarea><div class="count" id="c-why"></div></div>';
+  function cnt(){var u=$('#c-use'),w=$('#c-why');u.textContent=sel.use.length+' / '+USE_MAX;w.textContent=sel.why.length+' / '+WHY_MAX;u.className='count'+(sel.use.length>=USE_MAX?' full':'');w.className='count'+(sel.why.length>=WHY_MAX?' full':'')}
+  cnt();
+  $('#del').onclick=function(){var id=sel.id;pins=pins.filter(function(p){return p!==sel});pins.forEach(function(q){q.links=(q.links||[]).filter(function(x){return x!==id})});sel=pins[pins.length-1]||null;hl=null;renderAll()};
+  ed.querySelector('.catsw').onclick=function(e){var b=e.target.closest('[data-cat]');if(!b||b.dataset.cat===sel.cat)return;sel.cat=b.dataset.cat;sel.feature='';sel.links=[];tool=sel.cat;buildTools();renderAll()};
+  $('#f-feature').onchange=function(){sel.feature=this.value;renderPinList();renderStats()};
+  $('#f-use').oninput=function(){sel.use=this.value;cnt();renderPinList()};$('#f-why').oninput=function(){sel.why=this.value;cnt();renderPinList()};
+  ed.onchange=function(e){var t=e.target;if(!t.dataset||!t.dataset.link)return;var ids=[];ed.querySelectorAll('[data-link]').forEach(function(i){if(i.checked)ids.push(+i.dataset.link)});
+   if(ids.length>n){t.checked=false;ids=ids.filter(function(x){return x!==+t.dataset.link})}
+   sel.links=ids;renderOverlay();renderPinList();renderStats();if(tab==='c')renderCheck()};
+ }
+ function renderPinList(){$('#pinlist').innerHTML=pins.length?pins.map(function(p){return '<button type="button" class="prow'+(p===sel?' sel':'')+'" data-id="'+p.id+'" style="--c:'+CATS[p.cat].color+'"><span class="tag">'+pinLabel(p)+'</span><span class="t">'+esc(p.feature||'No feature yet')+(p.cat==='P'&&(p.links||[]).length?' + '+(p.links||[]).length+' linked':'')+(p.use?': '+esc(p.use):'')+'</span></button>'}).join(''):''}
+ $('#pinlist').addEventListener('click',function(e){var b=e.target.closest('.prow');if(!b)return;sel=pinById(+b.dataset.id);renderAll()});
+ function mk(r){return '<div class="model"><p><b>Name:</b> '+esc(r.feature)+' ('+esc(r.label)+')'+(r.elements?' made by '+esc(r.elements.join(' and ')):'')+'</p><p><b>Use:</b> '+esc(r.use)+'</p><p><b>Why:</b> '+esc(r.why)+'</p></div>'}
+ function renderCheck(){
+  var h='<p class="empty" style="margin-top:0">Name, location and links are checked automatically, then wording. Tick the last two honestly against your own text.</p>';
+  pins.forEach(function(p){var r=result(p),c=CATS[p.cat];
+   var loc=r.status==='match'?['ok','&#10003;','Named and placed: this feature is in this part of the design.']:r.status==='area'?['mid','~','Right kind of feature, but not the one you named. The model has here: '+esc(r.same.map(function(x){return x.feature}).join(', '))+'.']:r.status==='miss'?['bad','&#10007;','The model has no '+esc(c.name.toLowerCase())+' feature at this spot. Try a lens, or move the pin.']:['bad','&#10007;','Choose a feature first.'];
+   var sl=!r.filled?['bad','&#10007;','Fill in both Use and Why.']:r.vague?['mid','~','Vague word: &ldquo;'+esc(r.vague[0])+'&rdquo;. Say what you can actually see.']:['ok','&#10003;','Both slots filled, no vague words.'];
+   var rl=null;if(r.rel){var names=r.rel.lk.map(function(l){return pinLabel(l)+' '+(l.feature||'?')}).join(' and ');
+    rl=r.rel.status==='few'?['bad','&#10007;','Link two element pins to this principle. Elements and principles are answered together.']:r.rel.status==='other'?['mid','~','Linked '+esc(names)+', but the model pairs this principle with '+esc(r.rel.mel.join(' and '))+'.']:['ok','&#10003;','Linked '+esc(names)+'.']}
+   var shown=r.match?[r.match]:r.same;
+   h+='<div class="pcard" style="--c:'+c.color+'"><h4><span style="color:'+c.color+'">Pin '+pinLabel(p)+'</span> '+esc(p.feature||'No feature')+'<span class="score" id="sc-'+p.id+'">'+r.pts+' of '+r.max+'</span></h4>'+
+    '<div class="ck"><span class="ic '+loc[0]+'">'+loc[1]+'</span><span>'+loc[2]+'</span></div>'+
+    (rl?'<div class="ck"><span class="ic '+rl[0]+'">'+rl[1]+'</span><span>'+rl[2]+'</span></div>':'')+
+    '<div class="ck"><span class="ic '+sl[0]+'">'+sl[1]+'</span><span>'+sl[2]+'</span></div>'+
+    '<label class="selfck"><input type="checkbox" data-t="tU" data-id="'+p.id+'"'+(p.tU?' checked':'')+'><span>My Use says how it appears in this design, not just what the feature is.</span></label>'+
+    '<label class="selfck"><input type="checkbox" data-t="tW" data-id="'+p.id+'"'+(p.tW?' checked':'')+'><span>My Why gives a benefit for the audience or purpose.</span></label>'+
+    (shown.length?'<details><summary>Show model annotation</summary>'+shown.map(mk).join('')+'</details>':'')+'</div>'});
+  var f=REG.filter(found).length;
+  h+='<div class="grp3"><h5>Features in this design: you found '+f+' of '+REG.length+'</h5>';
+  ORDER.forEach(function(k){var rs=REG.filter(function(r){return r.cat===k});
+   h+='<h5 style="color:'+CATS[k].color+'">'+CATS[k].name+'</h5>'+rs.map(function(r){var fd=found(r);
+    return '<details class="crow" style="--c:'+CATS[k].color+'"><summary><span class="'+(fd?'ok':'mid')+'" style="font-weight:800">'+(fd?'&#10003;':'&#9675;')+'</span><span>'+esc(r.feature)+' &middot; '+esc(r.label)+'</span></summary>'+mk(r)+'<button class="showbtn" type="button" data-hl="'+r.id+'">Show on design</button></details>'}).join('')});
+  h+='</div>';$('#body-c').innerHTML=h}
+ $('#body-c').addEventListener('change',function(e){var t=e.target;if(!t.dataset||!t.dataset.t)return;var p=pinById(+t.dataset.id);p[t.dataset.t]=t.checked;var r=result(p),sc=$('#sc-'+p.id);if(sc)sc.textContent=r.pts+' of '+r.max;renderStats()});
+ $('#body-c').addEventListener('click',function(e){var b=e.target.closest('[data-hl]');if(!b)return;hl=(hl===b.dataset.hl)?null:b.dataset.hl;b.textContent=hl?'Hide on design':'Show on design';renderOverlay()});
+ function showTab(){$('#tab-a').setAttribute('aria-selected',tab==='a');$('#tab-c').setAttribute('aria-selected',tab==='c');$('#body-a').hidden=tab!=='a';$('#body-c').hidden=tab!=='c'}
+ $('#tab-a').onclick=function(){tab='a';hl=null;renderAll()};
+ function goCheck(){if(!pins.length)return;tab='c';checked=true;hl=null;renderAll();say('done')}
+ $('#tab-c').onclick=goCheck;$('#gocheck').onclick=goCheck;
+ var armTimer=null;
+ $('#reset').onclick=function(){var b=this;
+  if(!b.classList.contains('armed')){b.classList.add('armed');b.textContent='Click again to clear';armTimer=setTimeout(function(){b.classList.remove('armed');b.textContent='Reset'},3000);return}
+  clearTimeout(armTimer);b.classList.remove('armed');b.textContent='Reset';pins=[];sel=null;checked=false;hl=null;tab='a';renderAll()};
+ function renderAll(){renderPins();renderEditor();renderPinList();renderStats();renderOverlay();if(tab==='c')renderCheck();showTab()}
+ buildTools();renderAll();
+}
+
+buildModel();mainBuilt[1]=true;
+function reportHeight(){say('height',Math.ceil(document.documentElement.scrollHeight))}
+if(window.ResizeObserver){new ResizeObserver(reportHeight).observe(document.body)}
+window.addEventListener('load',reportHeight);setTimeout(reportHeight,500);
+})();
+</script>
+</body>
+</html>

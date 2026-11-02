@@ -1117,6 +1117,14 @@
                   ]
                 },
                 {
+                  "type": "htmlInteractive",
+                  "title": "Annotate a design: see it, build it, do it",
+                  "src": "/interactives/design-annotation.html",
+                  "tier": "general",
+                  "instruction": "Work through the four tabs. See a finished annotation, read a typical question, build your own one part at a time, then annotate a new design.",
+                  "minHeight": 760
+                },
+                {
                   "type": "heading",
                   "text": "Test-ready recap"
                 },

@@ -8,7 +8,7 @@ const warns = [];
 const err = (l, m) => errors.push(`${l}: ${m}`);
 const warn = (l, m) => warns.push(`${l}: ${m}`);
 const DOMParserCtor = new JSDOM("").window.DOMParser;
-const INTERACTIVE = new Set(["sorter", "sequence", "branchingScenario", "flipCards", "placer", "fileSizeLab", "interactiveDiagram", "codeExercise", "spotTheThreat", "formulaBuilder", "activity"]);
+const INTERACTIVE = new Set(["sorter", "sequence", "branchingScenario", "flipCards", "placer", "fileSizeLab", "interactiveDiagram", "codeExercise", "spotTheThreat", "formulaBuilder", "activity", "htmlInteractive"]);
 
 for (const f of FILES) {
   const course = JSON.parse(fs.readFileSync(`lib/content/data/${f}.json`, "utf8"));
@@ -54,6 +54,11 @@ for (const f of FILES) {
           if (!b.alt) err(at, "svgFigure missing alt text");
           break;
         }
+        case "htmlInteractive":
+          if (!b.title || !b.src) err(at, "htmlInteractive needs title and src");
+          else if (!/^\/interactives\/[\w.-]+\.html$/.test(b.src)) err(at, "htmlInteractive src must be /interactives/<file>.html");
+          else if (!fs.existsSync(`public${b.src}`)) err(at, `htmlInteractive file missing: public${b.src}`);
+          break;
         case "videoSlot":
           if (!b.title || !b.brief) err(at, "videoSlot needs title and brief");
           if (b.youtubeId && !/^[\w-]{11}$/.test(b.youtubeId)) err(at, "bad youtubeId");

@@ -169,6 +169,8 @@ function stepLabel(block: Block): string {
       return block.title ?? "File size lab";
     case "placer":
       return block.title ?? "Place the devices";
+    case "htmlInteractive":
+      return block.title;
     case "videoSlot":
       return block.title;
     case "svgFigure":
@@ -189,7 +191,7 @@ type StepKind = "Read" | "Watch" | "Try it" | "Check" | "Write it";
 
 const TRY_TYPES = new Set<string>([
   "interactiveDiagram", "codeExercise", "formulaBuilder", "scenarioChallenge", "spotTheThreat",
-  "activity", "task", "sorter", "sequence", "flipCards", "branchingScenario", "fileSizeLab", "placer", "animation3d",
+  "activity", "task", "sorter", "sequence", "flipCards", "branchingScenario", "fileSizeLab", "placer", "animation3d", "htmlInteractive",
 ]);
 
 /** What the student does on this step. Shown in the outline, like "1 min read" / "Question" in the reference players. */
@@ -212,7 +214,7 @@ const KIND_ICON: Record<StepKind, typeof BookOpen> = {
   "Write it": Pencil,
 };
 
-type Item = { part: Tab; label: string; kind: StepKind; wide: boolean };
+type Item = { part: Tab; label: string; kind: StepKind; wide: boolean; xwide?: boolean };
 
 function QuizStep({
   block,
@@ -373,8 +375,8 @@ export function StepPlayer({
 
   const items: Item[] = useMemo(
     () => [
-      ...content.map((g, i) => ({ part: "content" as Tab, label: contentLabels[i], kind: stepKind(g), wide: stepKind(g) === "Try it" })),
-      ...activities.map((g, i) => ({ part: "activities" as Tab, label: activityLabels[i], kind: stepKind(g), wide: stepKind(g) === "Try it" })),
+      ...content.map((g, i) => ({ part: "content" as Tab, label: contentLabels[i], kind: stepKind(g), wide: stepKind(g) === "Try it", xwide: g[g.length - 1].type === "htmlInteractive" })),
+      ...activities.map((g, i) => ({ part: "activities" as Tab, label: activityLabels[i], kind: stepKind(g), wide: stepKind(g) === "Try it", xwide: g[g.length - 1].type === "htmlInteractive" })),
     ],
     [content, activities, contentLabels, activityLabels],
   );
@@ -541,7 +543,7 @@ export function StepPlayer({
           ))}
         </select>
 
-        <div className={`mx-auto w-full flex-1 px-5 py-8 sm:px-8 ${wide ? "max-w-4xl" : "max-w-[40rem]"}`}>
+        <div className={`mx-auto w-full flex-1 px-5 py-8 sm:px-8 ${items[gi].xwide ? "max-w-6xl" : wide ? "max-w-4xl" : "max-w-[40rem]"}`}>
           {tab === "content" && step && (
             <div className="space-y-6">
               {step.map((block, i) => (

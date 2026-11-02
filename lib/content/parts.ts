@@ -32,6 +32,7 @@ export function blockPart(type: Block["type"]): LessonPart {
     case "branchingScenario":
     case "placer":
     case "fileSizeLab":
+    case "htmlInteractive":
       return "activities";
     default:
       return "content";

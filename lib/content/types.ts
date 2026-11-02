@@ -126,6 +126,16 @@ export type Block =
     }
   | { type: "svgFigure"; title?: string; caption?: string; alt: string; svg: string }
   | {
+      type: "htmlInteractive";
+      title: string;
+      /** Path to a self-contained page under /public/interactives (served as /interactives/...). */
+      src: string;
+      /** Which tier's wording and accent the page opens in. Defaults to atar. */
+      tier?: "general" | "atar" | "foundations";
+      instruction?: string;
+      minHeight?: number;
+    }
+  | {
       type: "videoSlot";
       title: string;
       /** YouTube ID once a video is chosen. Leave unset to show the placeholder card. */

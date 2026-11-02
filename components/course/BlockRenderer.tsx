@@ -13,6 +13,7 @@ import { VideoSlot } from "@/components/course/shared/VideoSlot";
 import { FileSizeLab } from "@/components/course/shared/FileSizeLab";
 import { Placer } from "@/components/course/shared/Placer";
 import { SvgFigure } from "@/components/course/shared/SvgFigure";
+import { HtmlInteractive } from "@/components/course/shared/HtmlInteractive";
 import { WrittenAnswer } from "@/components/course/shared/WrittenAnswer";
 
 function isWritten(q: QuizQuestion) {
@@ -212,6 +213,8 @@ export function BlockRenderer({ block }: { block: Block }) {
       return <FileSizeLab title={block.title} instruction={block.instruction} width={block.width} height={block.height} useCase={block.useCase} />;
     case "placer":
       return <Placer title={block.title} instruction={block.instruction} planSvg={block.planSvg} alt={block.alt} spots={block.spots} devices={block.devices} />;
+    case "htmlInteractive":
+      return <HtmlInteractive title={block.title} src={block.src} tier={block.tier} instruction={block.instruction} minHeight={block.minHeight} />;
     case "svgFigure":
       return <SvgFigure title={block.title} caption={block.caption} alt={block.alt} svg={block.svg} />;
     case "animation3d":

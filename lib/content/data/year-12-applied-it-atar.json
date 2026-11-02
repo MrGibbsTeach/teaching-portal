@@ -628,6 +628,14 @@
                   }
                 },
                 {
+                  "type": "htmlInteractive",
+                  "title": "Annotate a design: see it, build it, do it",
+                  "src": "/interactives/design-annotation.html",
+                  "tier": "atar",
+                  "instruction": "Work through the four tabs. The question tab shows ATAR wording and marks. Elements and principles are answered together, with a critical analysis of the relationship.",
+                  "minHeight": 760
+                },
+                {
                   "type": "heading",
                   "text": "Scenario Question",
                   "level": 3

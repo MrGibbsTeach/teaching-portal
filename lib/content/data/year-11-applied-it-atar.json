@@ -1836,6 +1836,14 @@
               "title": "Practice Questions — Design Concepts",
               "blocks": [
                 {
+                  "type": "htmlInteractive",
+                  "title": "Annotate a design: see it, build it, do it",
+                  "src": "/interactives/design-annotation.html",
+                  "tier": "atar",
+                  "instruction": "Work through the four tabs. The question tab shows ATAR wording and marks. Elements and principles are answered together.",
+                  "minHeight": 760
+                },
+                {
                   "type": "quizQuestion",
                   "question": {
                     "id": 1,

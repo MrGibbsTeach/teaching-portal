@@ -1856,6 +1856,14 @@
                   "text": "Try the pizza app questions — one 'identify and describe', one 'explain the relationship' — and check which command word you actually answered to."
                 },
                 {
+                  "type": "htmlInteractive",
+                  "title": "Annotate a design: see it, build it, do it",
+                  "src": "/interactives/design-annotation.html",
+                  "tier": "general",
+                  "instruction": "Work through the four tabs. See a finished annotation, read a typical question, build your own one part at a time, then annotate a new design. Elements and principles are answered together.",
+                  "minHeight": 760
+                },
+                {
                   "type": "heading",
                   "text": "Assessment practice"
                 },

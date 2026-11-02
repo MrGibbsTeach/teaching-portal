@@ -16,6 +16,7 @@ export const SELF_COMPLETING = new Set([
   "placer",
   "flipCards",
   "fileSizeLab",
+  "htmlInteractive",
 ]);
 
 /** Written short/extended answers also report completion (after the student self-marks). */
