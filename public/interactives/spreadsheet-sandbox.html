@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spreadsheet Sandbox</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  /* Portfolio skin (General): white page, deep teal accent, Inter. Layout: step outline | step card + wide activity frame. */
+  --bg:#ffffff; --panel:#F6F7F9; --line:#E2E6EB; --ink:#0F1B2D; --muted:#586274;
+  --accent:#0F766E; --accent-ink:#0B5A54; --accent-weak:#E4F3F0; /* General (Portfolio). ATAR (Study) overrides these in script. */
+  --good:#15803D; --good-weak:#E8F5EC; --warn:#8A5200; --warn-weak:#FFF4DE; --bad:#B42318; --bad-weak:#FDECEA;
+  --sans:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,Menlo,Consolas,monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+button,select,input,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid color-mix(in srgb,var(--accent) 45%,#fff);outline-offset:2px}
+h1,h2,h3{text-wrap:balance;line-height:1.2;margin:0}
+p{margin:0 0 12px}
+
+
+
+.card{max-width:680px;margin-bottom:20px}
+.chips{margin-bottom:10px}
+.chip{display:inline-block;font-family:var(--mono);font-size:12px;padding:3px 10px;border-radius:999px;background:var(--accent-weak);color:var(--accent-ink)}
+.card h1{font-size:30px;font-weight:800;letter-spacing:-.02em;margin-bottom:14px}
+.card p,.card li{max-width:65ch}
+.card ul{margin:0 0 12px;padding-left:20px}
+.callout{border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:12px;background:var(--panel);padding:12px 16px;margin:0 0 14px;max-width:65ch}
+.callout b.lab{display:block;font-size:12px;font-family:var(--mono);color:var(--accent-ink);margin-bottom:2px;font-weight:500}
+code,.mono{font-family:var(--mono);font-size:.9em;background:var(--panel);padding:1px 6px;border-radius:6px;border:1px solid var(--line)}
+details.hint{margin:0 0 14px;max-width:65ch}
+details.hint summary{cursor:pointer;color:var(--accent-ink);font-weight:600;font-size:14px}
+details.hint div{margin-top:8px;padding:10px 14px;background:var(--panel);border-radius:10px;font-size:15px}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin:6px 0 12px}
+.btn{border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 16px;font-weight:600;cursor:pointer;font-size:15px}
+.btn:hover:not([disabled]){background:var(--panel)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.primary:hover:not([disabled]){background:var(--accent-ink)}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+.btn.small{padding:6px 12px;font-size:14px}
+.fb{border-radius:12px;padding:12px 16px;max-width:65ch;font-size:15px;margin-bottom:12px}
+.fb.good{background:var(--good-weak);color:#0E4F25}
+.fb.warn{background:var(--warn-weak);color:var(--warn)}
+.fb b{display:block;margin-bottom:2px}
+.worked{max-width:65ch;border:1px dashed var(--accent);border-radius:12px;padding:12px 16px;margin-bottom:12px;font-size:15px}
+.q{max-width:65ch;margin-bottom:20px}
+.q label{display:block;font-weight:600;margin-bottom:6px}
+.q textarea{width:100%;min-height:84px;border:1px solid var(--line);border-radius:10px;padding:10px 12px;resize:vertical}
+.q .model{margin-top:10px;background:var(--accent-weak);border-radius:10px;padding:10px 14px;font-size:15px}
+.q .mark{display:flex;gap:8px;align-items:center;margin-top:8px;flex-wrap:wrap;font-size:14px}
+.q .marked{font-family:var(--mono);font-size:12px;color:var(--good)}
+
+.frame{max-width:960px;border:1px solid var(--line);border-radius:12px;background:#fff;overflow:hidden}
+.strip{display:flex;flex-wrap:wrap;gap:6px 24px;align-items:center;padding:10px 16px;background:var(--panel);border-bottom:1px solid var(--line);border-top:4px solid var(--accent)}
+.stat .l{display:block;font-family:var(--mono);font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.stat .v{font-weight:700;font-size:17px;font-variant-numeric:tabular-nums}
+.stat .v.bad{color:var(--bad)}
+.strip .spacer{margin-left:auto}
+.bar{display:flex;gap:8px;align-items:center;padding:8px 16px;border-bottom:1px solid var(--line)}
+.namebox{width:56px;text-align:center;font-family:var(--mono);font-size:14px;font-weight:500;border:1px solid var(--line);border-radius:8px;padding:6px 4px;background:var(--panel)}
+.fx{font-family:var(--mono);font-weight:500;color:var(--accent-ink);font-size:14px}
+#fbar{flex:1;min-width:0;border:1px solid var(--line);border-radius:8px;padding:6px 10px;font-family:var(--mono);font-size:14px}
+.tools{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;padding:8px 16px;border-bottom:1px solid var(--line);font-size:14px}
+.tools .grp{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.tools .gl{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.tools select,.tools input[type=text]{border:1px solid var(--line);border-radius:8px;padding:5px 8px;background:#fff;font-size:14px}
+.tools input[type=text]{width:90px}
+.chk{display:flex;gap:6px;align-items:center;cursor:pointer}
+.activefilter{font-size:13px;color:var(--accent-ink);background:var(--accent-weak);padding:2px 10px;border-radius:999px}
+
+.gridwrap{overflow:auto;max-height:420px;outline:none}
+.gridwrap:focus-visible{box-shadow:inset 0 0 0 3px color-mix(in srgb,var(--accent) 45%,#fff)}
+table.sheet{border-collapse:separate;border-spacing:0;table-layout:fixed;font-size:14px}
+.sheet th,.sheet td{border-right:1px solid var(--line);border-bottom:1px solid var(--line);height:30px;padding:0 10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sheet th{background:var(--panel);color:var(--muted);font-weight:600;font-size:12px;text-align:center;position:sticky;top:0;z-index:2;padding:0}
+.sheet th.rowh{position:sticky;left:0;z-index:1;top:auto}
+.sheet th.corner{left:0;z-index:3}
+.sheet th.filtered{color:var(--accent-ink);background:var(--accent-weak)}
+.sheet td{position:relative;cursor:cell;background:#fff}
+.sheet td.hdr{font-weight:700;background:#FAFBFC}
+.sheet td.num{text-align:right;font-variant-numeric:tabular-nums}
+.sheet td.bool{text-align:center}
+.sheet td.fxc::after{content:"";position:absolute;top:0;right:0;border-style:solid;border-width:0 8px 8px 0;border-color:transparent var(--accent) transparent transparent}
+.sheet td.err{color:var(--bad);background:var(--bad-weak);font-weight:600}
+.sheet td.sel{outline:2px solid var(--accent);outline-offset:-2px;background:var(--accent-weak)}
+.sheet td.showf{font-family:var(--mono);font-size:13px}
+.msg{padding:10px 16px;font-size:14px;color:var(--muted);border-top:1px solid var(--line);min-height:42px}
+.msg.err{color:var(--bad)}
+
+
+.done-screen{max-width:680px}
+.faces{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 18px}
+.faces button{border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 18px;font-weight:600;cursor:pointer}
+.faces button[aria-pressed="true"]{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+
+/* embedded app shell: head, step tabs, pane, footer */
+.app{max-width:1320px;margin:0 auto;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}
+.head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:12px 20px;border-bottom:1px solid var(--line)}
+.head h2{font-size:18px;font-weight:800;margin:0 auto 0 0;letter-spacing:-.01em}
+.tabs{display:flex;background:var(--panel);border-bottom:1px solid var(--line);overflow-x:auto}
+.tab{flex:1 0 auto;min-width:132px;display:flex;align-items:center;justify-content:center;gap:8px;padding:12px 10px;border:0;border-bottom:3px solid transparent;background:transparent;font-weight:600;font-size:14px;color:var(--muted);cursor:pointer;white-space:nowrap}
+.tab .n{width:22px;height:22px;border-radius:50%;background:#C5CBD3;color:#fff;font-size:12px;display:grid;place-items:center;font-weight:700}
+.tab.done .n{background:var(--good)}
+.tab[aria-selected=true]{color:var(--accent-ink);background:#fff;border-bottom-color:var(--accent)}
+.tab[aria-selected=true] .n{background:var(--accent)}
+.tab[disabled]{opacity:.5;cursor:not-allowed}
+.pane{padding:20px}
+.work{display:block}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 20px;background:var(--panel);border-top:1px solid var(--line)}
+.foot .where{font-family:var(--mono);font-size:13px;color:var(--muted)}
+@media (min-width:940px){
+  .work:not(.solo){display:grid;grid-template-columns:300px minmax(0,1fr);gap:24px;align-items:start}
+  .work:not(.solo) .card{margin-bottom:0}
+  .work:not(.solo) .card h1{font-size:22px}
+  .work:not(.solo) .card p,.work:not(.solo) .card li{font-size:15px}
+}
+@media (max-width:600px){.pane{padding:14px}.head{padding:10px 14px}.foot{padding:10px 14px}.card h1{font-size:22px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="head">
+    <h2>Spreadsheet sandbox</h2>
+    <span class="chip" id="tierchip">Portfolio skin</span>
+  </div>
+  <div class="tabs" id="tabs" role="tablist" aria-label="Steps"></div>
+  <div class="pane">
+    <div class="work" id="work">
+      <section class="card" id="stepcard" aria-live="off"></section>
+      <section class="frame" id="frame" aria-label="Spreadsheet activity">
+        <div class="strip">
+          <div class="stat"><span class="l">Step</span><span class="v" id="sStep">1 of 8</span></div>
+          <div class="stat"><span class="l">Formulas</span><span class="v" id="sForm">0</span></div>
+          <div class="stat"><span class="l">Errors</span><span class="v" id="sErr">0</span></div>
+          <div class="stat"><span class="l">Rows shown</span><span class="v" id="sRows">8 of 8</span></div>
+          <div class="stat spacer"><button class="btn small" id="resetBtn" type="button">Reset sheet</button></div>
+        </div>
+        <div class="bar">
+          <div class="namebox" id="namebox">A1</div>
+          <span class="fx" aria-hidden="true">fx</span>
+          <input id="fbar" type="text" autocomplete="off" spellcheck="false" aria-label="Formula bar">
+        </div>
+        <div class="tools">
+          <div class="grp"><button class="btn small" id="fillBtn" type="button">Fill down</button></div>
+          <div class="grp">
+            <span class="gl" id="sortLabel">Sort column D</span>
+            <button class="btn small" id="sortAsc" type="button">Smallest to largest</button>
+            <button class="btn small" id="sortDesc" type="button">Largest to smallest</button>
+          </div>
+          <div class="grp">
+            <span class="gl">Filter</span>
+            <select id="fCol" aria-label="Filter column"></select>
+            <select id="fOp" aria-label="Filter condition">
+              <option value="is">is</option><option value="isnot">is not</option>
+              <option value="gt">is greater than</option><option value="lt">is less than</option>
+              <option value="has">contains</option>
+            </select>
+            <input type="text" id="fVal" placeholder="value" aria-label="Filter value">
+            <button class="btn small" id="fApply" type="button">Apply</button>
+            <button class="btn small" id="fClear" type="button">Clear</button>
+            <span class="activefilter" id="fActive" hidden></span>
+          </div>
+          <label class="chk"><input type="checkbox" id="showF"> Show formulas</label>
+        </div>
+        <div class="gridwrap" id="gridwrap" tabindex="0" role="application" aria-label="Spreadsheet. Arrow keys move. Type to edit. Enter to confirm."></div>
+        <div class="msg" id="msg">Click a cell. Type to change it. Formulas start with =.</div>
+      </section>
+    </div>
+  </div>
+  <div class="foot">
+    <button class="btn" id="backBtn" type="button">Back</button>
+    <span class="where" id="where"></span>
+    <button class="btn primary" id="nextBtn" type="button">Next</button>
+  </div>
+</div>
+<script>
+(function(){
+'use strict';
+/* ---------- sheet model ---------- */
+var COLS=['A','B','C','D','E','F'], ROWS=12, R1=2, R2=9;
+var FMT={B:1,D:1};
+var INITIAL={
+ A1:'Item',B1:'Price',C1:'Sold',D1:'Revenue',E1:'Restock?',
+ A2:'Flat white',B2:'4.50',C2:'62',
+ A3:'Iced latte',B3:'5.50',C3:'18',
+ A4:'Banana bread',B4:'6.00',C4:'35',
+ A5:'Chai',B5:'5.00',C5:'12',
+ A6:'Cold brew',B6:'6.50',C6:'27',
+ A7:'Toastie',B7:'9.00',C7:'41',
+ A8:'Smoothie',B8:'8.50',C8:'15',
+ A9:'Muffin',B9:'4.00',C9:'54',
+ A10:'Total',A11:'Average'
+};
+var cells={}, sel='A1', filter=null, showF=false, barRef='A1';
+function resetCells(){cells={};for(var k in INITIAL)cells[k]=INITIAL[k];filter=null;}
+resetCells();
+
+function FErr(code){this.code=code;}
+var ERRTXT={
+ '#DIV/0!':'This formula divides by zero or by an empty cell.',
+ '#NAME?':'The sheet does not recognise a word in this formula. Check the function name, and put text answers in speech marks, like "Yes".',
+ '#REF!':'This formula points at a cell that is not in the sheet (columns A to F, rows 1 to 12).',
+ '#VALUE!':'This formula needed a number but found text.',
+ '#CIRC!':'This formula refers to itself, directly or through other cells.',
+ '#ERROR!':'This formula is not written correctly. Check brackets, commas and speech marks. Straight quotes only: "Yes", not curly quotes.'
+};
+
+/* ---------- parser ---------- */
+function tokenize(s){
+  var re=/\s*(?:(\d+\.?\d*|\.\d+)|"((?:[^"]|"")*)"|(\$?[A-Za-z]{1,2}\$?\d+)(?![A-Za-z0-9(])|([A-Za-z][A-Za-z0-9.]*)(?=\s*\()|([A-Za-z_][A-Za-z0-9_.]*)|(<=|>=|<>|[-+*\/^&=<>():,%]))/y;
+  var out=[],i=0,m;
+  while(i<s.length){
+    re.lastIndex=i; m=re.exec(s);
+    if(!m){ if(s.slice(i).trim()==='')break; throw new FErr('#ERROR!'); }
+    i=re.lastIndex;
+    if(m[1]!==undefined)out.push({t:'num',v:m[1]});
+    else if(m[2]!==undefined)out.push({t:'str',v:m[2].replace(/""/g,'"')});
+    else if(m[3]!==undefined)out.push({t:'ref',v:m[3]});
+    else if(m[4]!==undefined)out.push({t:'fn',v:m[4]});
+    else if(m[5]!==undefined)out.push({t:'name',v:m[5]});
+    else out.push({t:'op',v:m[6]});
+  }
+  return out;
+}
+function parse(tokens){
+  var p=0;
+  function peek(){return tokens[p];}
+  function isOp(v){var t=tokens[p];return t&&t.t==='op'&&t.v===v;}
+  function expect(v){if(!isOp(v))throw new FErr('#ERROR!');p++;}
+  function expr(){return cmp();}
+  function cmp(){var l=cat();while(peek()&&peek().t==='op'&&['=','<>','<','>','<=','>='].indexOf(peek().v)>=0){var op=tokens[p++].v;l={k:'bin',op:op,l:l,r:cat()};}return l;}
+  function cat(){var l=add();while(isOp('&')){p++;l={k:'bin',op:'&',l:l,r:add()};}return l;}
+  function add(){var l=mul();while(isOp('+')||isOp('-')){var op=tokens[p++].v;l={k:'bin',op:op,l:l,r:mul()};}return l;}
+  function mul(){var l=pow();while(isOp('*')||isOp('/')){var op=tokens[p++].v;l={k:'bin',op:op,l:l,r:pow()};}return l;}
+  function pow(){var l=unary();while(isOp('^')){p++;l={k:'bin',op:'^',l:l,r:unary()};}return l;}
+  function unary(){if(isOp('-')){p++;return {k:'neg',e:unary()};}if(isOp('+')){p++;return unary();}return post();}
+  function post(){var e=primary();while(isOp('%')){p++;e={k:'pct',e:e};}return e;}
+  function primary(){
+    var t=tokens[p++];
+    if(!t)throw new FErr('#ERROR!');
+    if(t.t==='num')return {k:'lit',v:parseFloat(t.v)};
+    if(t.t==='str')return {k:'lit',v:t.v};
+    if(t.t==='ref'){
+      if(isOp(':')){p++;var t2=tokens[p++];if(!t2||t2.t!=='ref')throw new FErr('#ERROR!');return {k:'range',a:t.v,b:t2.v};}
+      return {k:'ref',v:t.v};
+    }
+    if(t.t==='fn'){
+      expect('(');var args=[];
+      if(!isOp(')')){args.push(expr());while(isOp(',')){p++;args.push(expr());}}
+      expect(')');
+      return {k:'fn',name:t.v.toUpperCase(),args:args};
+    }
+    if(t.t==='name'){var u=t.v.toUpperCase();if(u==='TRUE')return {k:'lit',v:true};if(u==='FALSE')return {k:'lit',v:false};throw new FErr('#NAME?');}
+    if(t.t==='op'&&t.v==='('){var e=expr();expect(')');return e;}
+    throw new FErr('#ERROR!');
+  }
+  var ast=expr();
+  if(p<tokens.length)throw new FErr('#ERROR!');
+  return ast;
+}
+
+/* ---------- evaluator ---------- */
+var cache={}, stack=[];
+function normRef(r){return r.replace(/\$/g,'').toUpperCase();}
+function splitRef(r){var m=/^([A-Z]+)(\d+)$/.exec(normRef(r));return {c:m[1],r:+m[2]};}
+function checkRef(r){var x=splitRef(r);if(COLS.indexOf(x.c)<0||x.r<1||x.r>ROWS)throw new FErr('#REF!');return x;}
+function toNum(v){
+  if(v===null||v===undefined)return 0;
+  if(typeof v==='boolean')return v?1:0;
+  if(typeof v==='number')return v;
+  var n=parseNumber(v);
+  if(n===null)throw new FErr('#VALUE!');
+  return n;
+}
+function parseNumber(s){
+  var t=String(s).trim().replace(/^\$/,'').replace(/,/g,'');
+  if(/^-?(\d+\.?\d*|\.\d+)$/.test(t))return parseFloat(t);
+  return null;
+}
+function toStr(v){if(v===null||v===undefined)return '';if(typeof v==='boolean')return v?'TRUE':'FALSE';return String(v);}
+function getVal(ref){
+  ref=normRef(ref);
+  var hit=cache[ref];
+  if(hit){ if(hit instanceof FErr)throw hit; return hit.v; }
+  if(stack.indexOf(ref)>=0)throw new FErr('#CIRC!');
+  stack.push(ref);
+  try{
+    var v=computeRaw(cells[ref]);
+    cache[ref]={v:v};
+    return v;
+  }catch(e){
+    if(e instanceof FErr){cache[ref]=e;}
+    throw e;
+  }finally{stack.pop();}
+}
+function computeRaw(raw){
+  if(raw===undefined||raw==='')return null;
+  if(raw.charAt(0)==='=')return evalAst(parse(tokenize(raw.slice(1))));
+  var n=parseNumber(raw);
+  return n===null?raw:n;
+}
+function rangeCells(a,b){
+  var A=checkRef(a),B=checkRef(b),out=[];
+  var c1=Math.min(COLS.indexOf(A.c),COLS.indexOf(B.c)),c2=Math.max(COLS.indexOf(A.c),COLS.indexOf(B.c));
+  var r1=Math.min(A.r,B.r),r2=Math.max(A.r,B.r);
+  for(var r=r1;r<=r2;r++)for(var c=c1;c<=c2;c++)out.push(COLS[c]+r);
+  return out;
+}
+function argList(n){
+  if(n.k==='range')return rangeCells(n.a,n.b).map(function(r){return getVal(r);});
+  return [evalAst(n)];
+}
+function nums(args){
+  var out=[];
+  args.forEach(function(n){
+    if(n.k==='range'){argList(n).forEach(function(v){if(typeof v==='number')out.push(v);});}
+    else{var v=evalAst(n);out.push(toNum(v));}
+  });
+  return out;
+}
+function cmpVals(a,b){
+  if(a===null)a=(typeof b==='string')?'':0;
+  if(b===null)b=(typeof a==='string')?'':0;
+  if(typeof a==='number'&&typeof b==='number')return a<b?-1:a>b?1:0;
+  if(typeof a==='string'&&typeof b==='string'){a=a.toLowerCase();b=b.toLowerCase();return a<b?-1:a>b?1:0;}
+  if(typeof a==='boolean'||typeof b==='boolean'){return (a===b)?0:(a?1:-1);}
+  return typeof a==='number'?-1:1;
+}
+function matcher(crit){
+  if(typeof crit==='number')return function(v){return typeof v==='number'&&v===crit;};
+  var m=/^(<=|>=|<>|<|>|=)?(.*)$/.exec(String(crit)),op=m[1]||'=',rhs=m[2];
+  var rn=parseNumber(rhs);
+  return function(v){
+    var c;
+    if(rn!==null&&typeof v==='number'){c=v<rn?-1:v>rn?1:0;}
+    else{c=cmpVals(toStr(v).toLowerCase(),rhs.toLowerCase());if(v===null&&op==='=')return rhs==='';}
+    switch(op){case '=':return c===0;case '<>':return c!==0;case '<':return c<0;case '>':return c>0;case '<=':return c<=0;case '>=':return c>=0;}
+    return false;
+  };
+}
+function truthy(v){if(typeof v==='boolean')return v;if(typeof v==='number')return v!==0;if(v===null)return false;var u=String(v).toUpperCase();if(u==='TRUE')return true;if(u==='FALSE')return false;throw new FErr('#VALUE!');}
+function evalAst(n){
+  switch(n.k){
+    case 'lit':return n.v;
+    case 'ref':checkRef(n.v);return getVal(n.v);
+    case 'range':throw new FErr('#VALUE!');
+    case 'neg':return -toNum(evalAst(n.e));
+    case 'pct':return toNum(evalAst(n.e))/100;
+    case 'bin':{
+      var l=evalAst(n.l),r=evalAst(n.r);
+      switch(n.op){
+        case '+':return toNum(l)+toNum(r);
+        case '-':return toNum(l)-toNum(r);
+        case '*':return toNum(l)*toNum(r);
+        case '/':{var d=toNum(r);if(d===0)throw new FErr('#DIV/0!');return toNum(l)/d;}
+        case '^':return Math.pow(toNum(l),toNum(r));
+        case '&':return toStr(l)+toStr(r);
+        case '=':return cmpVals(l,r)===0;
+        case '<>':return cmpVals(l,r)!==0;
+        case '<':return cmpVals(l,r)<0;
+        case '>':return cmpVals(l,r)>0;
+        case '<=':return cmpVals(l,r)<=0;
+        case '>=':return cmpVals(l,r)>=0;
+      }
+      throw new FErr('#ERROR!');
+    }
+    case 'fn':return callFn(n);
+  }
+  throw new FErr('#ERROR!');
+}
+function callFn(n){
+  var a=n.args,x;
+  switch(n.name){
+    case 'SUM':return nums(a).reduce(function(s,v){return s+v;},0);
+    case 'AVERAGE':x=nums(a);if(!x.length)throw new FErr('#DIV/0!');return x.reduce(function(s,v){return s+v;},0)/x.length;
+    case 'MIN':x=nums(a);return x.length?Math.min.apply(null,x):0;
+    case 'MAX':x=nums(a);return x.length?Math.max.apply(null,x):0;
+    case 'COUNT':{var c=0;a.forEach(function(q){argList(q).forEach(function(v){if(typeof v==='number')c++;});});return c;}
+    case 'COUNTA':{var c2=0;a.forEach(function(q){argList(q).forEach(function(v){if(v!==null)c2++;});});return c2;}
+    case 'COUNTIF':{if(a.length!==2||a[0].k!=='range')throw new FErr('#ERROR!');var mt=matcher(evalAst(a[1]));return argList(a[0]).filter(mt).length;}
+    case 'SUMIF':{
+      if(a.length<2||a[0].k!=='range')throw new FErr('#ERROR!');
+      var mt2=matcher(evalAst(a[1])),rng=argList(a[0]),sr=a[2]?argList(a[2]):rng,t=0;
+      rng.forEach(function(v,i){if(mt2(v)&&typeof sr[i]==='number')t+=sr[i];});return t;
+    }
+    case 'IF':{
+      if(a.length<2||a.length>3)throw new FErr('#ERROR!');
+      if(truthy(evalAst(a[0])))return evalAst(a[1]);
+      return a[2]?evalAst(a[2]):false;
+    }
+    case 'ROUND':{if(a.length<1||a.length>2)throw new FErr('#ERROR!');var d=a[1]?toNum(evalAst(a[1])):0,f=Math.pow(10,d);return Math.round(toNum(evalAst(a[0]))*f)/f;}
+    case 'AND':return a.every(function(q){return truthy(evalAst(q));});
+    case 'OR':return a.some(function(q){return truthy(evalAst(q));});
+  }
+  throw new FErr('#NAME?');
+}
+function valueOf(ref){
+  try{var v=getVal(ref);return {v:v};}catch(e){if(e instanceof FErr)return {err:e.code};throw e;}
+}
+function fresh(){cache={};stack=[];}
+
+/* ---------- formula shifting (fill down, sort) ---------- */
+var REFRE=/(\$?)([A-Za-z]{1,2})(\$?)(\d+)(?![A-Za-z0-9(])/g;
+function mapRefs(f,fn){
+  return f.split(/("(?:[^"]|"")*")/).map(function(part,i){
+    if(i%2)return part;
+    return part.replace(REFRE,function(m,ca,col,ra,row){return fn(ca,col.toUpperCase(),ra,+row);});
+  }).join('');
+}
+function shiftDown(f,d){return mapRefs(f,function(ca,col,ra,row){return ca+col+ra+(ra?row:row+d);});}
+function remapRow(f,from,to){return mapRefs(f,function(ca,col,ra,row){return ca+col+ra+((!ra&&row===from)?to:row);});}
+
+/* ---------- display ---------- */
+function money(n){return '$'+n.toLocaleString('en-AU',{minimumFractionDigits:2,maximumFractionDigits:2});}
+function display(ref){
+  var raw=cells[ref], col=ref.charAt(0), row=+ref.slice(1);
+  var o={text:'',err:null,num:false,bool:false,fx:!!(raw&&raw.charAt(0)==='=')};
+  if(raw===undefined||raw==='')return o;
+  var r=valueOf(ref);
+  if(r.err){o.err=r.err;o.text=r.err;return o;}
+  var v=r.v;
+  if(typeof v==='number'){
+    o.num=true;
+    o.text=(FMT[col]&&row>=2)?money(v):String(+v.toFixed(10));
+  }else if(typeof v==='boolean'){o.bool=true;o.text=v?'TRUE':'FALSE';}
+  else if(v!==null)o.text=String(v);
+  return o;
+}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+
+/* ---------- filter ---------- */
+function rowMatches(r){
+  if(!filter)return true;
+  var v=valueOf(filter.col+r);
+  if(v.err)return false;
+  var val=v.v, f=filter.val, fn=parseNumber(f);
+  switch(filter.op){
+    case 'has':return toStr(val).toLowerCase().indexOf(f.toLowerCase())>=0;
+    case 'gt':return fn!==null&&typeof val==='number'&&val>fn;
+    case 'lt':return fn!==null&&typeof val==='number'&&val<fn;
+    case 'is':case 'isnot':{
+      var eq;
+      if(fn!==null&&typeof val==='number')eq=(val===fn);
+      else eq=toStr(val).toLowerCase()===f.toLowerCase();
+      return filter.op==='is'?eq:!eq;
+    }
+  }
+  return true;
+}
+function visibleRows(){
+  var s=new Set();
+  for(var r=R1;r<=R2;r++)if(rowMatches(r))s.add(r);
+  return s;
+}
+
+/* ---------- rendering the grid ---------- */
+var $=function(id){return document.getElementById(id);};
+var WIDTHS={A:124,B:80,C:70,D:104,E:92,F:84};
+function renderGrid(){
+  fresh();
+  var vis=visibleRows(), h='<table class="sheet" role="presentation"><colgroup><col style="width:42px">';
+  COLS.forEach(function(c){h+='<col style="width:'+WIDTHS[c]+'px">';});
+  h+='</colgroup><thead><tr><th class="corner"></th>';
+  COLS.forEach(function(c){h+='<th>'+c+'</th>';});
+  h+='</tr></thead><tbody>';
+  for(var r=1;r<=ROWS;r++){
+    if(r>=R1&&r<=R2&&!vis.has(r))continue;
+    h+='<tr><th class="rowh'+(filter&&r>=R1&&r<=R2?' filtered':'')+'">'+r+'</th>';
+    COLS.forEach(function(c){
+      var ref=c+r, d=display(ref), cls=[];
+      if(r===1)cls.push('hdr');
+      if(d.num)cls.push('num');if(d.bool)cls.push('bool');
+      if(d.fx)cls.push('fxc');if(d.err)cls.push('err');
+      if(ref===sel)cls.push('sel');
+      var txt=showF&&cells[ref]!==undefined?cells[ref]:d.text;
+      if(showF&&d.fx)cls.push('showf');
+      h+='<td data-ref="'+ref+'" id="c'+ref+'" class="'+cls.join(' ')+'"'+(d.err?' title="'+esc(ERRTXT[d.err]||'')+'"':'')+'>'+esc(txt)+'</td>';
+    });
+    h+='</tr>';
+  }
+  h+='</tbody></table>';
+  var wrap=$('gridwrap'), st=wrap.scrollTop, sl=wrap.scrollLeft;
+  wrap.innerHTML=h; wrap.scrollTop=st; wrap.scrollLeft=sl;
+  // stats
+  var f=0,e=0;
+  for(var k in cells){ if(cells[k].charAt(0)==='='){f++;} }
+  COLS.forEach(function(c){for(var rr=1;rr<=ROWS;rr++){var raw=cells[c+rr];if(raw&&raw.charAt(0)==='='&&valueOf(c+rr).err)e++;}});
+  $('sForm').textContent=f; var se=$('sErr'); se.textContent=e; se.className='v'+(e?' bad':'');
+  $('sRows').textContent=vis.size+' of '+(R2-R1+1);
+  updateTools(); updateMsg();
+}
+function updateMsg(){
+  var m=$('msg'), d=display(sel);
+  if(d.err){m.className='msg err';m.textContent=sel+': '+d.err+' '+(ERRTXT[d.err]||'');}
+  else{m.className='msg';m.textContent=msgText||'Click a cell. Type to change it. Formulas start with =.';}
+}
+var msgText='';
+function setMsg(t){msgText=t;updateMsg();}
+function header(c){var v=cells[c+'1'];return v?v:'Column '+c;}
+function updateTools(){
+  var c=sel.charAt(0), isNumCol=false;
+  for(var r=R1;r<=R2;r++){var v=valueOf(c+r);if(v.v!==undefined&&v.v!==null){isNumCol=typeof v.v==='number';break;}}
+  $('sortLabel').textContent='Sort column '+c+(cells[c+'1']?' ('+cells[c+'1']+')':'');
+  $('sortAsc').textContent=isNumCol?'Smallest to largest':'A to Z';
+  $('sortDesc').textContent=isNumCol?'Largest to smallest':'Z to A';
+  var fa=$('fActive');
+  if(filter){fa.hidden=false;fa.textContent='Filter on: '+header(filter.col)+' '+opName(filter.op)+' '+filter.val;}else fa.hidden=true;
+  $('namebox').textContent=sel;
+}
+function opName(o){return {is:'is',isnot:'is not',gt:'is greater than',lt:'is less than',has:'contains'}[o];}
+function buildFilterCols(){
+  var s=$('fCol'), keep=s.value;
+  s.innerHTML=['A','B','C','D','E'].map(function(c){return '<option value="'+c+'">'+c+': '+esc(header(c))+'</option>';}).join('');
+  if(keep)s.value=keep;
+}
+
+/* ---------- selection and editing ---------- */
+var bar=$('fbar');
+function select(ref){
+  commitBar();
+  sel=ref; barRef=ref; bar.value=cells[ref]||'';
+  msgText='';
+  renderGrid();
+  var el=$('c'+ref); if(el&&el.scrollIntoView)el.scrollIntoView({block:'nearest',inline:'nearest'});
+}
+function commitBar(){
+  var cur=cells[barRef]||'';
+  if(bar.value===cur)return;
+  var v=bar.value.replace(/[\u201C\u201D\u201E]/g,'"').replace(/[\u2018\u2019]/g,"'").replace(/\u00A0/g,' ');
+  if(v==='')delete cells[barRef];else cells[barRef]=v;
+  buildFilterCols();
+}
+function move(dc,dr){
+  var c=COLS.indexOf(sel.charAt(0))+dc, r=+sel.slice(1)+dr;
+  c=Math.max(0,Math.min(COLS.length-1,c)); r=Math.max(1,Math.min(ROWS,r));
+  var ref=COLS[c]+r;
+  if(filter&&r>=R1&&r<=R2&&!visibleRows().has(r)){ // skip hidden rows
+    var step=dr||1; while(r>=R1&&r<=R2&&!visibleRows().has(r))r+=step;
+    r=Math.max(1,Math.min(ROWS,r)); ref=COLS[c]+r;
+  }
+  select(ref); onChange();
+}
+function pointMode(){
+  return document.activeElement===bar&&bar.value.charAt(0)==='='&&/[=+\-*\/^&<>(,:]$/.test(bar.value);
+}
+$('gridwrap').addEventListener('mousedown',function(e){
+  var td=e.target.closest('td[data-ref]'); if(!td)return;
+  var ref=td.getAttribute('data-ref');
+  if(pointMode()){e.preventDefault();bar.value+=ref;bar.focus();return;}
+  if(ref===sel){e.preventDefault();bar.focus();return;}
+  e.preventDefault(); select(ref); onChange(); $('gridwrap').focus();
+});
+$('gridwrap').addEventListener('keydown',function(e){
+  if(e.ctrlKey||e.metaKey||e.altKey)return;
+  var k=e.key;
+  if(k==='ArrowDown'){e.preventDefault();move(0,1);}
+  else if(k==='ArrowUp'){e.preventDefault();move(0,-1);}
+  else if(k==='ArrowLeft'){e.preventDefault();move(-1,0);}
+  else if(k==='ArrowRight'||k==='Tab'){e.preventDefault();move(k==='Tab'&&e.shiftKey?-1:1,0);}
+  else if(k==='Enter'||k==='F2'){e.preventDefault();bar.focus();}
+  else if(k==='Delete'||k==='Backspace'){e.preventDefault();delete cells[sel];bar.value='';renderGrid();onChange();}
+  else if(k.length===1){e.preventDefault();bar.value=k;bar.focus();}
+});
+bar.addEventListener('keydown',function(e){
+  if(e.key==='Enter'){e.preventDefault();commitBar();var r=+sel.slice(1);renderGrid();onChange();move(0,1);$('gridwrap').focus();}
+  else if(e.key==='Tab'){e.preventDefault();commitBar();renderGrid();onChange();move(e.shiftKey?-1:1,0);$('gridwrap').focus();}
+  else if(e.key==='Escape'){e.preventDefault();bar.value=cells[barRef]||'';$('gridwrap').focus();}
+});
+bar.addEventListener('blur',function(){ if(bar.value!==(cells[barRef]||'')){commitBar();renderGrid();onChange();} });
+
+/* ---------- tools ---------- */
+$('fillBtn').addEventListener('click',function(){
+  commitBar();
+  var c=sel.charAt(0), r=+sel.slice(1), raw=cells[sel];
+  if(r<R1||r>=R2){setMsg('Select a cell in rows 2 to 8, then press Fill down. It copies that cell down to row 9.');renderGrid();return;}
+  if(raw===undefined||raw===''){setMsg(sel+' is empty. Type a formula in it first, then press Fill down.');renderGrid();return;}
+  for(var q=r+1;q<=R2;q++)cells[c+q]=raw.charAt(0)==='='?shiftDown(raw,q-r):raw;
+  setMsg('Copied '+sel+' down to row 9. The row numbers in the formula moved with each row.');
+  renderGrid(); onChange();
+});
+function sortBy(col,dir){
+  fresh();
+  var rows=[];
+  for(var r=R1;r<=R2;r++){
+    var raw={};COLS.forEach(function(c){raw[c]=cells[c+r];});
+    var v=valueOf(col+r);
+    rows.push({r:r,raw:raw,key:v.err?null:v.v,i:r});
+  }
+  rows.sort(function(a,b){
+    var an=(a.key===null||a.key===undefined||a.key===''),bn=(b.key===null||b.key===undefined||b.key==='');
+    if(an&&bn)return a.i-b.i; if(an)return 1; if(bn)return -1;
+    var c=cmpVals(a.key,b.key); if(dir==='desc')c=-c;
+    return c||a.i-b.i;
+  });
+  rows.forEach(function(e,i){
+    var nr=R1+i;
+    COLS.forEach(function(c){
+      var raw=e.raw[c];
+      if(raw===undefined)delete cells[c+nr];
+      else cells[c+nr]=raw.charAt(0)==='='?remapRow(raw,e.r,nr):raw;
+    });
+  });
+}
+function doSort(dir){
+  commitBar();
+  var col=sel.charAt(0);
+  sortBy(col,dir);
+  bar.value=cells[sel]||''; barRef=sel;
+  setMsg('Sorted rows 2 to 9 by '+header(col)+'. Whole rows move together, so each item keeps its own price and number sold.');
+  renderGrid(); onChange();
+}
+$('sortAsc').addEventListener('click',function(){doSort('asc');});
+$('sortDesc').addEventListener('click',function(){doSort('desc');});
+$('fApply').addEventListener('click',function(){
+  commitBar();
+  var v=$('fVal').value.trim();
+  if(v===''){setMsg('Type a value to filter by, for example Yes.');renderGrid();return;}
+  filter={col:$('fCol').value,op:$('fOp').value,val:v};
+  var n=visibleRows().size;
+  setMsg('Filter on. '+n+' of 8 rows match. Hidden rows are not deleted, and the row numbers skip them.');
+  renderGrid(); onChange();
+});
+$('fClear').addEventListener('click',function(){filter=null;setMsg('Filter cleared. All 8 rows are showing.');renderGrid();onChange();});
+$('showF').addEventListener('change',function(){showF=this.checked;renderGrid();});
+$('resetBtn').addEventListener('click',function(){
+  resetCells();sel='A1';barRef='A1';bar.value='';$('fVal').value='';
+  setMsg('Sheet reset to the starting data.');buildFilterCols();renderGrid();onChange();
+});
+
+/* ---------- steps ---------- */
+var QS=new URLSearchParams(location.search), TIER=(QS.get('tier')||'general').toLowerCase(), ATAR=TIER==='atar';
+(function(){
+  var rs=document.documentElement.style;
+  if(ATAR){rs.setProperty('--accent','#4338ca');rs.setProperty('--accent-ink','#3730a3');rs.setProperty('--accent-weak','#EEF2FF');}
+  document.getElementById('tierchip').textContent=ATAR?'Study skin':'Portfolio skin';
+})();
+function say(t,v){try{parent.postMessage({source:'mgt-interactive',type:t,value:v},'*');}catch(e){}}
+
+function rawNorm(ref){return (cells[ref]||'').replace(/\s+/g,'').toUpperCase();}
+function numAt(ref){var r=valueOf(ref);return (r.v!==undefined&&typeof r.v==='number')?r.v:null;}
+function near(a,b){return Math.abs(a-b)<1e-6;}
+function countBad(fn){var bad=[];for(var r=R1;r<=R2;r++){var m=fn(r);if(m)bad.push({r:r,m:m});}return bad;}
+
+var STEPS=[
+ {id:'brief',type:'read',label:'Read · 1 min',short:'The brief',title:'The Coastal Cuppa brief',
+  body:'<p>Coastal Cuppa is a cafe on the Bunbury foreshore. Last week it sold the items in the sheet. The owner works out takings with a calculator and gets it wrong when a price changes.</p><p><b>Your job:</b> turn this list into a sheet that works itself out, then sort it and filter it so the owner can see what to restock.</p><div class="callout"><b class="lab">KEY TERM</b>A <b>formula</b> starts with <code>=</code>. It calculates from other cells, so when a price changes, the answer changes too.</div><p>You cannot break this sheet, and <b>Reset sheet</b> puts the data back. Click a cell and type to change it. Cells with a corner mark hold formulas.</p>'},
+ {id:'t1',type:'build',label:'Build · 4 min',short:'Work out revenue',title:'Work out revenue',
+  body:'<p>Revenue is price times number sold. Click <span class="mono">D2</span>, type <code>=B2*C2</code> and press Enter. The cell shows the answer and the formula stays in the formula bar.</p><p>Now copy it down. Click <span class="mono">D2</span> again, then press <b>Fill down</b>. Look at <span class="mono">D3</span>: it became <code>=B3*C3</code>. The row numbers shift because they are <b>relative references</b>.</p><p>Goal: every cell from D2 to D9 holds a formula.</p>',
+  hint:'Click D2. Type =B2*C2 and press Enter. Click D2 once more, press Fill down. Tip: while a formula is open you can click cells instead of typing their names.',
+  worked:'In D2 type <code>=B2*C2</code> and press Enter. Select D2, press <b>Fill down</b>. D3 to D9 now hold <code>=B3*C3</code> down to <code>=B9*C9</code>.',
+  solve:function(){for(var r=R1;r<=R2;r++)cells['D'+r]='=B'+r+'*C'+r;},
+  check:function(){
+    var bad=countBad(function(r){
+      var raw=cells['D'+r];
+      if(!raw)return 'D'+r+' is empty. Click D2 and use Fill down.';
+      if(raw.charAt(0)!=='=')return 'D'+r+' holds a typed number. Start it with = so it recalculates.';
+      if(!/[A-F]\$?\d/i.test(raw))return 'D'+r+' has no cell references. Use the price and sold cells, like B'+r+'*C'+r+'.';
+      var v=valueOf('D'+r),b=numAt('B'+r),c=numAt('C'+r);
+      if(v.err)return 'D'+r+' shows '+v.err+'. Check the formula.';
+      if(b===null||c===null||!near(v.v,b*c))return 'D'+r+' does not equal price times sold. Check the formula uses B'+r+' and C'+r+'.';
+      return null;
+    });
+    if(bad.length)return {ok:false,msg:bad[0].m+(bad.length>1?' ('+bad.length+' cells still need fixing.)':'')};
+    return {ok:true,msg:'All eight revenue cells are formulas that use their own row.'};
+  }},
+ {id:'t2',type:'build',label:'Build · 4 min',short:'Total with SUM',title:'Add up the takings',
+  body:'<p>Click <span class="mono">D10</span> and use the <code>SUM</code> function to add the revenue column: <code>=SUM(D2:D9)</code>.</p><p><span class="mono">D2:D9</span> is a <b>range</b>: every cell from D2 to D9. A function does the adding for you, so you do not type <code>D2+D3+D4</code> and so on.</p><div class="callout"><b class="lab">TRY IT AFTER YOU PASS</b>Change C2 to 100. Watch D2 and D10 update. Change it back to 62.</div>',
+  hint:'Type =SUM( then click D2, type a colon, click D9, close the bracket with ) and press Enter.',
+  worked:'In D10 type <code>=SUM(D2:D9)</code> and press Enter. The total should be $1,536.00.',
+  solve:function(){cells.D10='=SUM(D2:D9)';},
+  check:function(){
+    var raw=rawNorm('D10');
+    if(!raw)return {ok:false,msg:'D10 is empty. Type the formula there.'};
+    if(raw.charAt(0)!=='=')return {ok:false,msg:'D10 holds a typed number. Use a formula so it updates when sales change.'};
+    if(raw.indexOf('SUM(')<0)return {ok:false,msg:'Use the SUM function: =SUM(D2:D9).'};
+    var v=valueOf('D10');if(v.err)return {ok:false,msg:'D10 shows '+v.err+'. Check the brackets and the range.'};
+    var t=0;for(var r=R1;r<=R2;r++){var n=numAt('D'+r);if(n===null)return {ok:false,msg:'D'+r+' is not a number yet. Finish the revenue column in the last step first.'};t+=n;}
+    if(!near(v.v,t))return {ok:false,msg:'D10 shows '+money(v.v)+' but the revenue column adds to '+money(t)+'. Does your range cover D2 to D9?'};
+    return {ok:true,msg:'D10 uses SUM over the whole revenue column. Now try the change in the box above: set C2 to 100 and watch the total move.'};
+  }},
+ {id:'t3',type:'build',label:'Build · 3 min',short:'Average',title:'Find the average',
+  body:'<p>The owner wants to know the average revenue per item. In <span class="mono">D11</span>, use <code>AVERAGE</code> over the same range as before.</p><p>Compare it with a few of the revenue cells. Is the average close to the middle of the list?</p>',
+  hint:'Same shape as SUM: =AVERAGE(D2:D9).',
+  worked:'In D11 type <code>=AVERAGE(D2:D9)</code> and press Enter. The answer should be $192.00.',
+  solve:function(){cells.D11='=AVERAGE(D2:D9)';},
+  check:function(){
+    var raw=rawNorm('D11');
+    if(!raw)return {ok:false,msg:'D11 is empty. Type the formula there.'};
+    if(raw.charAt(0)!=='=')return {ok:false,msg:'D11 holds a typed number. Use the AVERAGE function.'};
+    if(raw.indexOf('AVERAGE(')<0)return {ok:false,msg:'Use the AVERAGE function: =AVERAGE(D2:D9).'};
+    var v=valueOf('D11');if(v.err)return {ok:false,msg:'D11 shows '+v.err+'. Check the brackets and the range.'};
+    var t=0;for(var r=R1;r<=R2;r++){var n=numAt('D'+r);if(n===null)return {ok:false,msg:'D'+r+' is not a number yet. Finish the revenue column first.'};t+=n;}
+    if(!near(v.v,t/8))return {ok:false,msg:'D11 shows '+money(v.v)+' but the average is '+money(t/8)+'. Does the range cover D2 to D9?'};
+    return {ok:true,msg:'D11 averages the whole revenue column.'};
+  }},
+ {id:'t4',type:'build',label:'Build · 5 min',short:'Decide with IF',title:'Decide what to restock',
+  body:'<p>The cafe restocks anything that sold <b>fewer than 20</b>. In <span class="mono">E2</span> type:</p><p><code>=IF(C2&lt;20,"Yes","No")</code></p><p>The <code>IF</code> function asks a question (<code>C2&lt;20</code>). It gives the first answer if the question is true and the second answer if it is false. Text answers go in speech marks. Then Fill down to row 9.</p><p>Goal: E2 to E9 each show Yes or No, using IF.</p>',
+  hint:'If you see #NAME?, check the speech marks around Yes and No. Click E2 and press Fill down when it works.',
+  worked:'In E2 type <code>=IF(C2&lt;20,"Yes","No")</code>, press Enter, select E2 and press <b>Fill down</b>. Three items show Yes: Iced latte, Chai and Smoothie.',
+  solve:function(){for(var r=R1;r<=R2;r++)cells['E'+r]='=IF(C'+r+'<20,"Yes","No")';},
+  check:function(){
+    var bad=countBad(function(r){
+      var raw=rawNorm('E'+r);
+      if(!raw)return 'E'+r+' is empty. Click E2 and use Fill down.';
+      if(raw.charAt(0)!=='=')return 'E'+r+' holds typed text. Use an IF formula so it updates.';
+      if(raw.indexOf('IF(')<0)return 'E'+r+' needs the IF function.';
+      var v=valueOf('E'+r);if(v.err)return 'E'+r+' shows '+v.err+'. '+(v.err==='#NAME?'?'Put Yes and No in speech marks.':'Check the formula.');
+      var c=numAt('C'+r);
+      if(c===null)return 'C'+r+' is not a number.';
+      var want=c<20?'yes':'no';
+      if(String(v.v).toLowerCase()!==want)return 'E'+r+' shows '+v.v+' but '+c+' sold means '+(want==='yes'?'Yes':'No')+'. Check the question: fewer than 20.';
+      return null;
+    });
+    if(bad.length)return {ok:false,msg:bad[0].m+(bad.length>1?' ('+bad.length+' cells still need fixing.)':'')};
+    return {ok:true,msg:'Every row answers the restock question with IF.'};
+  }},
+ {id:'t5',type:'try',label:'Try it · 3 min',short:'Sort',title:'Sort by best seller',
+  body:'<p>Put the best seller at the top. Click any cell in column <b>D</b>, then press <b>Largest to smallest</b>.</p><p>Notice that the whole row moves together, so Flat white keeps its own price and number sold. Look at the formulas afterwards: they still work, and the row numbers inside them changed with the move.</p><p>Goal: revenue runs from largest at the top to smallest at row 9.</p>',
+  hint:'Click D2 or any cell in column D. The label above the buttons says which column will be sorted.',
+  worked:'Click any cell in column D, then press <b>Largest to smallest</b>. Toastie ($369.00) should be at the top.',
+  solve:function(){sortBy('D','desc');},
+  check:function(){
+    fresh();var v=[];
+    for(var r=R1;r<=R2;r++){var n=numAt('D'+r);if(n===null)return {ok:false,msg:'D'+r+' is not a number yet. Finish the revenue column first.'};v.push(n);}
+    var desc=true,asc=true;
+    for(var i=1;i<v.length;i++){if(v[i]>v[i-1])desc=false;if(v[i]<v[i-1])asc=false;}
+    if(desc)return {ok:true,msg:'Sorted. The rows moved together and the formulas still work.'};
+    if(asc)return {ok:false,msg:'It is sorted smallest first. Press Largest to smallest.'};
+    return {ok:false,msg:'The table is not sorted by Revenue yet. Click a cell in column D, then press Largest to smallest.'};
+  }},
+ {id:'t6',type:'try',label:'Try it · 4 min',short:'Filter',title:'Filter to the restock list',
+  body:'<p>Show only the items to restock. In the filter bar choose column <b>E</b>, <b>is</b>, type <b>Yes</b>, then press <b>Apply</b>.</p><p>Rows that do not match are <b>hidden, not deleted</b>. The row numbers skip them.</p><p>Before you finish, look at <span class="mono">D10</span>. Did the total change? Write down your guess and your reason. You will explain it in the next step.</p>',
+  hint:'Pick E: Restock? in the first menu, leave the second on "is", type Yes, press Apply. Press Clear to bring the rows back.',
+  worked:'Choose E: Restock?, <b>is</b>, type <code>Yes</code>, press <b>Apply</b>. Three rows should remain.',
+  solve:function(){filter={col:'E',op:'is',val:'Yes'};},
+  check:function(){
+    fresh();var want=[],r;
+    for(r=R1;r<=R2;r++){var e=valueOf('E'+r);if(e.err||e.v===null||e.v===undefined)return {ok:false,msg:'Finish the Restock? column first.'};if(String(e.v).toLowerCase()==='yes')want.push(r);}
+    if(!filter)return {ok:false,msg:'No filter is on yet. Set the filter bar and press Apply.'};
+    var vis=visibleRows(),same=vis.size===want.length&&want.every(function(x){return vis.has(x);});
+    if(same)return {ok:true,msg:'Only the '+want.length+' items to restock are showing. Check D10: the total still counts the hidden rows.'};
+    return {ok:false,msg:'Your filter shows '+vis.size+' rows. It should show only the '+want.length+' rows where Restock? is Yes.'};
+  }},
+ {id:'check',type:'check',label:'Check · 5 min',short:ATAR?'Exam-style questions':'Pause and check',title:ATAR?'Exam-style questions':'Pause and check',
+  body:ATAR?'<p>Answer in full sentences, as you would under test conditions. Then show the model answer and mark yourself against the marks. Your answers stay in this page only.</p>':'<p>Answer in your own words, then show the model answer and mark yourself. Your answers stay in this page only.</p>',
+  qs:ATAR?[
+   {q:'Explain why a formula such as =B2*C2 is better than typing the result into D2. (2 marks)',model:'A formula recalculates automatically when B2 or C2 changes (1 mark), so the revenue and any totals that depend on it stay accurate without manual updating (1 mark). A typed value goes out of date.'},
+   {q:'Explain why the total in D10 did not change after the data was filtered. (2 marks)',model:'SUM adds every cell in its range, including rows hidden by a filter (1 mark), because filtering hides rows without removing their values. A function such as SUBTOTAL would total only the visible rows (1 mark).'},
+   {q:'Distinguish between a relative and an absolute cell reference. (2 marks)',model:'A relative reference, such as B2, changes to match its new position when the formula is copied or filled (1 mark). An absolute reference, such as $B$2, stays fixed on the same cell when the formula is copied (1 mark).'}
+  ]:[
+   {q:'Why is =B2*C2 better than typing the number 279 into D2?',model:'A formula recalculates when B2 or C2 changes, so the revenue and the total stay correct. A typed number goes out of date and has to be fixed by hand every time a price or a sales figure changes.'},
+   {q:'After you filtered to the restock items, the total in D10 did not change. Explain why.',model:'SUM adds every cell in D2:D9, including rows hidden by the filter. Hiding a row does not remove its values. To total only the visible rows you would use a different function, such as SUBTOTAL.'}
+  ]}
+];
+if(ATAR){
+  STEPS.splice(5,0,{id:'t4b',type:'build',label:'Build · 3 min',short:'Count with COUNTIF',title:'Count the restock items',
+    body:'<p>The owner wants one number: how many items need restocking. In <span class="mono">E10</span> use <code>COUNTIF</code> to count the Yes answers in the Restock? column:</p><p><code>=COUNTIF(E2:E9,"Yes")</code></p><p><code>COUNTIF</code> counts only the cells in a range that meet a condition. <code>COUNT</code> would not work here, because it counts numbers and these cells hold text.</p>',
+    hint:'Range first, then a comma, then the condition in speech marks: =COUNTIF(E2:E9,"Yes").',
+    worked:'In E10 type <code>=COUNTIF(E2:E9,"Yes")</code> and press Enter. The answer should be 3.',
+    solve:function(){cells.E10='=COUNTIF(E2:E9,"Yes")';},
+    check:function(){
+      var raw=rawNorm('E10');
+      if(!raw)return {ok:false,msg:'E10 is empty. Type the formula there.'};
+      if(raw.charAt(0)!=='=')return {ok:false,msg:'E10 holds a typed number. Use the COUNTIF function.'};
+      if(raw.indexOf('COUNTIF(')<0)return {ok:false,msg:'Use the COUNTIF function: =COUNTIF(E2:E9,"Yes").'};
+      var v=valueOf('E10');if(v.err)return {ok:false,msg:'E10 shows '+v.err+'. Check the brackets, the comma and the speech marks.'};
+      var yes=0;for(var r=R1;r<=R2;r++){var e=valueOf('E'+r);if(e.err||e.v===null||e.v===undefined)return {ok:false,msg:'Finish the Restock? column first.'};if(String(e.v).toLowerCase()==='yes')yes++;}
+      if(!near(v.v,yes))return {ok:false,msg:'E10 shows '+v.v+' but '+yes+' items are marked Yes. Does the range cover E2 to E9?'};
+      return {ok:true,msg:'E10 counts the Yes answers and will change if the sales numbers change.'};
+    }});
+}
+var TASKS=STEPS.filter(function(s){return s.type==='build'||s.type==='try';}).length;
+STEPS.forEach(function(s){s.done=false;s.tries=0;s.fb=null;s.showWorked=false;s.firstTry=false;});
+var CHK=STEPS[STEPS.length-1];
+CHK.qState=CHK.qs.map(function(){return {text:'',revealed:false,mark:null};});
+var cur=0, finished=false, checkin=null;
+
+function maxReach(){var i=0;while(i<STEPS.length&&STEPS[i].done)i++;return Math.min(i,STEPS.length-1);}
+function renderTabs(){
+  var reach=maxReach(), h='';
+  STEPS.forEach(function(s,i){
+    var ok=i<=reach;
+    h+='<button type="button" role="tab" class="tab'+(s.done?' done':'')+'" data-i="'+i+'" aria-selected="'+(i===cur&&!finished)+'"'+(ok?'':' disabled')+'><span class="n">'+(s.done?'&#10003;':(i+1))+'</span>'+s.short+'</button>';
+  });
+  var allDone=STEPS.every(function(s){return s.done;});
+  h+='<button type="button" role="tab" class="tab" data-i="fin" aria-selected="'+finished+'"'+(allDone?'':' disabled')+'><span class="n">&#10003;</span>Finish</button>';
+  $('tabs').innerHTML=h;
+}
+function renderProgress(){
+  var d=STEPS.filter(function(s){return s.done;}).length;
+  $('sStep').textContent=finished?'Done':(cur+1)+' of '+STEPS.length;
+  $('where').textContent=d+' of '+STEPS.length+' steps done';
+  if(d===STEPS.length)say('done');
+}
+function renderStep(){
+  var card=$('stepcard'), fr=$('frame');
+  if(finished){renderFinish();return;}
+  fr.hidden=false; $('work').classList.remove('solo');
+  var s=STEPS[cur], h='<div class="chips"><span class="chip">'+s.label+'</span></div><h1>'+s.title+'</h1>'+s.body;
+  if(s.type==='build'||s.type==='try'){
+    h+='<details class="hint"><summary>Need a hint?</summary><div>'+s.hint+'</div></details>';
+    h+='<div class="actions"><button class="btn primary" id="checkBtn" type="button">Check my work</button></div>';
+    h+='<div id="feedback" aria-live="polite">'+(s.fb||'')+'</div>';
+    if(s.showWorked&&!s.done)h+=workedHtml(s);
+  }else if(s.type==='check'){
+    h=h.replace(s.body,'')+checkHtml(s);
+  }
+  card.innerHTML=h;
+  var cb=$('checkBtn');if(cb)cb.addEventListener('click',runCheck);
+  var wb=$('applyWorked');if(wb)wb.addEventListener('click',applyWorked);
+  if(s.type==='check')wireQs();
+  renderNav();
+}
+function workedHtml(s){
+  return '<div class="worked"><b>Worked answer</b><br>'+s.worked+'<div class="actions"><button class="btn small" id="applyWorked" type="button">Do this on my sheet</button></div></div>';
+}
+function runCheck(){
+  var s=STEPS[cur]; commitBar(); renderGrid(); fresh();
+  var r=s.check();
+  if(r.ok){
+    if(!s.done){s.firstTry=(s.tries===0);}
+    s.done=true;
+    s.fb='<div class="fb good"><b>Done.</b>'+r.msg+'</div>';
+  }else{
+    s.tries++;
+    s.fb='<div class="fb warn"><b>Not yet.</b>'+esc(r.msg)+'</div>';
+    if(s.tries>=3)s.showWorked=true;
+  }
+  renderStep(); renderTabs(); renderProgress();
+}
+function applyWorked(){
+  var s=STEPS[cur];
+  s.solve(); if(!s.done)s.firstTry=false;
+  renderGrid();
+  var r=s.check();
+  s.done=r.ok;
+  s.fb=r.ok?'<div class="fb good"><b>Done.</b>The worked answer is on your sheet. Look at how it was built, then move on.</div>':'<div class="fb warn">That did not apply cleanly. Press Reset sheet and try again.</div>';
+  renderStep();renderTabs();renderProgress();
+}
+function checkHtml(s){
+  var h=s.body;
+  s.qs.forEach(function(q,i){
+    var st=s.qState[i];
+    h+='<div class="q"><label for="qa'+i+'">'+(i+1)+'. '+q.q+'</label><textarea id="qa'+i+'" data-i="'+i+'" placeholder="Write your answer here">'+esc(st.text)+'</textarea>';
+    if(!st.revealed)h+='<div class="actions"><button class="btn small" type="button" data-show="'+i+'"'+(st.text.trim().length<10?' disabled':'')+'>Show model answer</button></div>';
+    else{
+      h+='<div class="model"><b>Model answer</b><br>'+q.model+'</div><div class="mark">';
+      if(st.mark===null)h+='<span>Mark yourself:</span><button class="btn small" type="button" data-mark="'+i+':got">Got it</button><button class="btn small" type="button" data-mark="'+i+':not">Not yet</button>';
+      else h+='<span class="marked">Marked: '+(st.mark==='got'?'Got it':'Not yet, reread the model answer')+'</span>';
+      h+='</div>';
+    }
+    h+='</div>';
+  });
+  return h;
+}
+function wireQs(){
+  var s=STEPS[cur];
+  document.querySelectorAll('#stepcard textarea').forEach(function(t){
+    t.addEventListener('input',function(){
+      var i=+t.getAttribute('data-i');s.qState[i].text=t.value;
+      var b=document.querySelector('[data-show="'+i+'"]');if(b)b.disabled=t.value.trim().length<10;
+    });
+  });
+  document.querySelectorAll('[data-show]').forEach(function(b){b.addEventListener('click',function(){s.qState[+b.getAttribute('data-show')].revealed=true;renderStep();});});
+  document.querySelectorAll('[data-mark]').forEach(function(b){b.addEventListener('click',function(){
+    var p=b.getAttribute('data-mark').split(':');s.qState[+p[0]].mark=p[1];
+    s.done=s.qState.every(function(q){return q.mark!==null;});
+    renderStep();renderTabs();renderProgress();
+  });});
+}
+function renderFinish(){
+  $('frame').hidden=true; $('work').classList.add('solo');
+  var ft=STEPS.filter(function(s){return (s.type==='build'||s.type==='try')&&s.firstTry;}).length;
+  var h='<div class="done-screen"><div class="chips"><span class="chip">Lesson complete</span></div><h1>Spreadsheet sandbox finished</h1>'
+   +'<p>First-try checks: <b>'+ft+' of '+TASKS+'</b>. You built formulas, used SUM, AVERAGE and IF'+(ATAR?', COUNTIF':'')+', then sorted and filtered a real list.</p>'
+   +'<p><b>How did that feel?</b></p><div class="faces" role="group" aria-label="Check-in">';
+  ['Lost','Unsure','Got it','Easy'].forEach(function(f){h+='<button type="button" data-face="'+f+'" aria-pressed="'+(checkin===f)+'">'+f+'</button>';});
+  h+='</div><p class="mono" style="max-width:none">Use Next in the lesson to carry on. Your sheet and answers stay in this page and are not saved.</p></div>';
+  $('stepcard').innerHTML=h;
+  document.querySelectorAll('[data-face]').forEach(function(b){b.addEventListener('click',function(){checkin=b.getAttribute('data-face');renderFinish();});});
+  renderNav();
+}
+function renderNav(){
+  var s=STEPS[cur];
+  $('backBtn').disabled=!finished&&cur===0;
+  var nb=$('nextBtn');
+  if(finished){nb.textContent='Back to steps';nb.disabled=false;}
+  else{
+    nb.textContent=cur===STEPS.length-1?'Finish':'Next';
+    nb.disabled=!(s.done||s.type==='read');
+  }
+}
+function go(i){
+  commitBar();
+  if(i==='fin'){finished=true;}
+  else{finished=false;cur=i;}
+  renderTabs();renderProgress();renderStep();say('top');
+}
+$('nextBtn').addEventListener('click',function(){
+  if(finished){go(STEPS.length-1);return;}
+  var s=STEPS[cur];
+  if(s.type==='read')s.done=true;
+  if(cur===STEPS.length-1){if(s.done)go('fin');return;}
+  go(cur+1);
+});
+$('backBtn').addEventListener('click',function(){ if(finished){go(STEPS.length-1);} else if(cur>0)go(cur-1); });
+$('tabs').addEventListener('click',function(e){var b=e.target.closest('button[data-i]');if(!b||b.disabled)return;var v=b.getAttribute('data-i');go(v==='fin'?'fin':+v);});
+
+function onChange(){ renderNav(); }
+
+/* ---------- init ---------- */
+buildFilterCols();
+bar.value=cells[sel]||'';
+renderGrid();renderTabs();renderProgress();renderStep();
+function reportHeight(){say('height',Math.ceil(document.documentElement.scrollHeight));}
+if(window.ResizeObserver){new ResizeObserver(reportHeight).observe(document.body);}
+window.addEventListener('load',reportHeight);setTimeout(reportHeight,500);
+})();
+</script>
+</body>
+</html>

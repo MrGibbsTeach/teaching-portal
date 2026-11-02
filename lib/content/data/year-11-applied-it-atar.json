@@ -5656,6 +5656,14 @@
                   "template": "=IF( ___ , ___ , ___ )"
                 },
                 {
+                  "type": "htmlInteractive",
+                  "title": "Spreadsheet sandbox: formulas, sort and filter",
+                  "src": "/interactives/spreadsheet-sandbox.html",
+                  "tier": "atar",
+                  "instruction": "A working sheet for a Bunbury cafe. Build formulas with SUM, AVERAGE, IF and COUNTIF, sort and filter, then answer exam-style questions and mark yourself.",
+                  "minHeight": 760
+                },
+                {
                   "type": "richText",
                   "heading": "Formulas and Functions",
                   "html": "<p>Formulas begin with \"=\" and use cell references: =A1+B1, =SUM(A1:A10), =AVERAGE(B2:B20).</p><p>Common functions: SUM (total), AVERAGE (mean), MAX/MIN, COUNT, IF (conditional), VLOOKUP (find matching data).</p><p>Charts and graphs visualise spreadsheet data — column charts for comparisons, line charts for trends, pie charts for proportions.</p>"

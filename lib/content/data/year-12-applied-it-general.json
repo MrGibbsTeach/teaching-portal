@@ -7831,6 +7831,14 @@
                   "part": "activities"
                 },
                 {
+                  "type": "htmlInteractive",
+                  "title": "Spreadsheet sandbox: formulas, sort and filter",
+                  "src": "/interactives/spreadsheet-sandbox.html",
+                  "tier": "general",
+                  "instruction": "A working sheet for a Bunbury cafe. Build the formulas, then sort it and filter it, and see what each one does to the rows and the totals.",
+                  "minHeight": 760
+                },
+                {
                   "type": "heading",
                   "text": "Assessment practice",
                   "level": 2

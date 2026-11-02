@@ -59,7 +59,7 @@ export function HtmlInteractive({
         style={{ height }}
       />
       <p className="mt-2 text-xs text-muted-foreground">
-        Your annotations stay in this browser and are not saved or sent anywhere.{" "}
+        Your work stays in this browser and is not saved or sent anywhere.{" "}
         <a className="font-semibold text-primary underline" href={url} target="_blank" rel="noreferrer">
           Open full screen
         </a>
