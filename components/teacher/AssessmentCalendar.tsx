@@ -25,7 +25,7 @@ export function AssessmentCalendar({
 }) {
   const shown = tasks.filter((x) => settings[x.id]?.visible).length;
   return (
-    <div className="mt-8">
+    <div>
       <h3 className="text-base font-semibold">Assessment calendar 2027</h3>
       <p className="mt-1 text-sm text-muted-foreground">
         All {tasks.length} tasks, {totalWeight(tasks)}% in total. Students see only the tasks you switch on, with the

@@ -23,6 +23,7 @@ import { StopLiveButton } from "@/components/teacher/StopLiveButton";
 import { LessonReleaseRow } from "@/components/teacher/LessonReleaseRow";
 import { ReleaseNextBar } from "@/components/teacher/ReleaseNextBar";
 import { TermPlanView } from "@/components/teacher/TermPlan";
+import { ClassTabs } from "@/components/teacher/ClassTabs";
 import { ReliefPanel } from "@/components/teacher/ReliefPanel";
 import { liveReliefLinks } from "@/lib/logic/relief";
 import { currentPlanWeek, getPlan } from "@/lib/plans";
@@ -48,6 +49,7 @@ export default async function ClassManagePage({
   // so nothing breaks until the teacher (or ensureClassCode) touches them.
   const authMode = cls!.authMode ?? (course?.tier === "atar" ? "account" : "code");
   const releases = cls!.releases ?? {};
+  const isCodeTrack = authMode === "code";
   const liveState = await getLiveState(cls!.id);
 
   const updateAccessForClass = updateAccess.bind(null, cls!.id);
@@ -113,49 +115,27 @@ export default async function ClassManagePage({
   const thisWeek = plan ? currentPlanWeek(plan, perthNow) : undefined;
   const assessmentTasks = getAssessments(cls!.courseSlug);
 
-  const lessonsSection = (
-    <section>
+  const releaseBar = (
+    <ReleaseNextBar
+      todayTitle={todayLesson?.title}
+      nextTitle={nextLesson?.title}
+      nextTopic={nextLesson?.topic}
+      onReleaseNext={nextLesson ? makeTodayLesson.bind(null, cls!.id, nextLesson.id) : undefined}
+    />
+  );
+
+  const lessonsIntro = (
+    <>
       <h2 className="text-lg font-semibold">Lessons</h2>
       <p className="mt-1 text-sm text-muted-foreground">
         Release a lesson so students can see it, or make it Today&apos;s lesson so it&apos;s what
         they land on. Pulled-back and revision-only lessons sit in Previous lessons.
       </p>
+    </>
+  );
 
-      <ReleaseNextBar
-        todayTitle={todayLesson?.title}
-        nextTitle={nextLesson?.title}
-        nextTopic={nextLesson?.topic}
-        onReleaseNext={nextLesson ? makeTodayLesson.bind(null, cls!.id, nextLesson.id) : undefined}
-      />
-
-      {assessmentTasks && (
-        <AssessmentCalendar
-          classId={cls!.id}
-          courseSlug={cls!.courseSlug}
-          tasks={assessmentTasks}
-          settings={cls!.assessments ?? {}}
-        />
-      )}
-
-      {plan && content && (
-        <div className="mt-8">
-          <h3 className="text-base font-semibold">Term plan 2027</h3>
-          <p className="mt-1 text-sm text-muted-foreground">
-            The year laid out by week, with assessment points and calendar notes. Dates are indicative and will
-            change, so release is still your call: open a week and release its lessons, or release them one at a time.
-          </p>
-          <TermPlanView
-            classId={cls!.id}
-            plan={plan}
-            lessons={flatLessons.map((l) => ({ id: l.id, title: l.title }))}
-            releases={releases}
-            currentWeek={thisWeek}
-            today={perthNow}
-          />
-          <h3 className="mt-10 text-base font-semibold">All lessons by topic</h3>
-        </div>
-      )}
-
+  const topicsPanel = (
+    <>
       {!content ? (
         <p className="mt-4 text-sm text-muted-foreground italic">
           Course content not yet available.
@@ -207,6 +187,57 @@ export default async function ClassManagePage({
           ))}
         </div>
       )}
+    </>
+  );
+
+  const planPanel =
+    plan && content ? (
+      <div>
+        <p className="text-sm text-muted-foreground">
+          The year laid out by week, with assessment points and calendar notes. Dates are indicative and will
+          change, so release is still your call: open a week and release its lessons, or release them one at a time.
+        </p>
+        <TermPlanView
+          classId={cls!.id}
+          plan={plan}
+          lessons={flatLessons.map((l) => ({ id: l.id, title: l.title }))}
+          releases={releases}
+          currentWeek={thisWeek}
+          today={perthNow}
+        />
+      </div>
+    ) : null;
+
+  const assessPanel = assessmentTasks ? (
+    <AssessmentCalendar
+      classId={cls!.id}
+      courseSlug={cls!.courseSlug}
+      tasks={assessmentTasks}
+      settings={cls!.assessments ?? {}}
+    />
+  ) : null;
+
+  // Account-mode (ATAR) classes keep the single Lessons section.
+  const lessonsSection = (
+    <section>
+      {lessonsIntro}
+      {releaseBar}
+      <div className="mt-4">{topicsPanel}</div>
+    </section>
+  );
+
+  // Class-link classes: today's lesson first, then tabs (lessons by topic, term plan, assessment calendar).
+  const codeLessonsSection = (
+    <section>
+      {lessonsIntro}
+      {releaseBar}
+      <ClassTabs
+        tabs={[
+          { id: "topics", label: "All lessons by topic", content: topicsPanel },
+          ...(planPanel ? [{ id: "plan", label: "Term plan", content: planPanel }] : []),
+          ...(assessPanel ? [{ id: "assessments", label: "Assessment calendar", content: assessPanel }] : []),
+        ]}
+      />
     </section>
   );
 
@@ -233,8 +264,56 @@ export default async function ClassManagePage({
         </div>
       </div>
 
-      {/* Code-track classes: the daily release controls come first. */}
-      {cls!.authMode === "code" && lessonsSection}
+      {authMode === "code" ? (
+        <>
+          {/* Class-link classes: live session and class link up top, then today's lesson and tabs. */}
+      {/* Live session */}
+      <section>
+        <h2 className="flex items-center gap-3 text-lg font-semibold">
+          Live session
+          {liveState && (
+            <span className="inline-flex items-center gap-2 rounded-full bg-red-600 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white">
+              <span className="live-now-dot inline-block h-2 w-2 rounded-full bg-white" aria-hidden />
+              Live now
+            </span>
+          )}
+        </h2>
+        <p className="mt-1 text-sm text-muted-foreground">
+          Teach a lesson slide by slide. As soon as you start, a flashing Live now button appears on your
+          class homepage so students can join. You see their answers as they come in.
+        </p>
+        <Link
+          href={`/teacher/classes/${cls!.id}/live`}
+          className={`mt-3 inline-block rounded-lg px-4 py-2 text-sm font-semibold text-white hover:opacity-90 ${
+            liveState ? "live-now-btn bg-red-600" : "bg-primary text-primary-foreground"
+          }`}
+        >
+          {liveState ? "Live now: return to session" : "Start live lesson"}
+        </Link>
+        {liveState && <StopLiveButton classId={cls!.id} />}
+      </section>
+
+          <section>
+            <h2 className="text-lg font-semibold">Class link</h2>
+            <p className="mt-1 text-sm text-muted-foreground">
+              No accounts. Students open the link or enter the code, no sign-in. Nothing about who they
+              are reaches the server.
+            </p>
+            {cls!.classCode ? (
+              <ClassCodeBox code={cls!.classCode} origin={origin} />
+            ) : (
+              <form action={ensureClassCodeForClass} className="mt-4">
+                <button
+                  type="submit"
+                  className="rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
+                >
+                  Generate class code
+                </button>
+              </form>
+            )}
+          </section>
+
+          {codeLessonsSection}
 
       {content && (
         <ReliefPanel
@@ -242,7 +321,21 @@ export default async function ClassManagePage({
           units={content.units}
           defaultStartId={(todayIdx >= 0 ? flatLessons[todayIdx + 1] : undefined)?.id ?? nextLesson?.id ?? flatLessons[0]?.id}
           links={liveReliefLinks(cls!.reliefLinks)}
-          canRelease={authMode === "code"}
+          canRelease={isCodeTrack}
+          titleById={Object.fromEntries(flatLessons.map((l) => [l.id, l.title]))}
+          defaultDate={new Date(perthNow.getTime() + 24 * 60 * 60 * 1000).toLocaleDateString("en-CA")}
+        />
+      )}
+        </>
+      ) : (
+        <>
+      {content && (
+        <ReliefPanel
+          classId={cls!.id}
+          units={content.units}
+          defaultStartId={(todayIdx >= 0 ? flatLessons[todayIdx + 1] : undefined)?.id ?? nextLesson?.id ?? flatLessons[0]?.id}
+          links={liveReliefLinks(cls!.reliefLinks)}
+          canRelease={isCodeTrack}
           titleById={Object.fromEntries(flatLessons.map((l) => [l.id, l.title]))}
           defaultDate={new Date(perthNow.getTime() + 24 * 60 * 60 * 1000).toLocaleDateString("en-CA")}
         />
@@ -273,6 +366,8 @@ export default async function ClassManagePage({
         </Link>
         {liveState && <StopLiveButton classId={cls!.id} />}
       </section>
+        </>
+      )}
 
       {authMode === "account" ? (
         <>
@@ -438,28 +533,7 @@ export default async function ClassManagePage({
           </section>
         </>
       ) : (
-        <>
-          {/* No-login class code */}
-          <section>
-            <h2 className="text-lg font-semibold">Class link</h2>
-            <p className="mt-1 text-sm text-muted-foreground">
-              No accounts. Students open the link or enter the code, no sign-in. Nothing about who they
-              are reaches the server.
-            </p>
-            {cls!.classCode ? (
-              <ClassCodeBox code={cls!.classCode} origin={origin} />
-            ) : (
-              <form action={ensureClassCodeForClass} className="mt-4">
-                <button
-                  type="submit"
-                  className="rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
-                >
-                  Generate class code
-                </button>
-              </form>
-            )}
-          </section>
-        </>
+        null
       )}
 
       {/* Danger zone */}
