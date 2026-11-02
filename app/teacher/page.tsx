@@ -12,6 +12,12 @@ export default async function TeacherDashboard() {
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-semibold tracking-tight">Your Classes</h1>
         <div className="flex items-center gap-3">
+          <Link
+            href="/teacher/tools"
+            className="rounded-lg border px-4 py-2 text-sm font-semibold hover:bg-accent transition-colors"
+          >
+            Interactive tools
+          </Link>
           {classes.length > 0 && (
             <a
               href="/api/export"

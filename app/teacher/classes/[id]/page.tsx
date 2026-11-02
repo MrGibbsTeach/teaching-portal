@@ -256,12 +256,20 @@ export default async function ClassManagePage({
               {course?.title ?? cls!.courseSlug} · {course?.yearLevel}
             </p>
           </div>
-          <a
-            href={`/api/export?classId=${encodeURIComponent(cls!.id)}`}
-            className="shrink-0 rounded-lg border px-4 py-2 text-sm font-semibold hover:bg-accent transition-colors"
-          >
-            Download backup (CSV)
-          </a>
+          <div className="flex shrink-0 items-center gap-2">
+            <Link
+              href="/teacher/tools"
+              className="rounded-lg border px-4 py-2 text-sm font-semibold hover:bg-accent transition-colors"
+            >
+              Interactive tools
+            </Link>
+            <a
+              href={`/api/export?classId=${encodeURIComponent(cls!.id)}`}
+              className="rounded-lg border px-4 py-2 text-sm font-semibold hover:bg-accent transition-colors"
+            >
+              Download backup (CSV)
+            </a>
+          </div>
         </div>
       </div>
 

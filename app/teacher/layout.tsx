@@ -16,6 +16,9 @@ export default function TeacherLayout({ children }: { children: React.ReactNode 
             <Link href="/teacher/insights" className="text-muted-foreground hover:text-foreground">
               Insights
             </Link>
+            <Link href="/teacher/tools" className="text-muted-foreground hover:text-foreground">
+              Interactive tools
+            </Link>
           </div>
           <form action={logout}>
             <button type="submit" className="text-muted-foreground hover:text-foreground">

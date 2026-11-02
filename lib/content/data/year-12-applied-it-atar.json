@@ -876,6 +876,14 @@
                   ]
                 },
                 {
+                  "type": "htmlInteractive",
+                  "title": "Spec the Computer: choose parts for a client",
+                  "src": "/interactives/spec-computer.html",
+                  "tier": "atar",
+                  "instruction": "Select hardware for a client brief within a budget. Derive the specification yourself, resolve compatibility faults, then justify each choice with specification figures, a rejected alternative and a trade-off.",
+                  "minHeight": 900
+                },
+                {
                   "type": "task",
                   "title": "Activity: Match the specifications to the user",
                   "steps": [
@@ -1087,6 +1095,14 @@
                   "type": "callout",
                   "heading": "Exam tip",
                   "text": "Specification + what it does + why it matters for this user.\n\"32 GB of RAM lets the video editor keep Premiere Pro and large 4K files open without slowing down\" earns full marks. \"32 GB is good\" does not."
+                },
+                {
+                  "type": "htmlInteractive",
+                  "title": "Spec the Computer: choose parts for a client",
+                  "src": "/interactives/spec-computer.html",
+                  "tier": "atar",
+                  "instruction": "Select hardware for a client brief within a budget. Derive the specification yourself, resolve compatibility faults, then justify each choice with specification figures, a rejected alternative and a trade-off.",
+                  "minHeight": 900
                 },
                 {
                   "type": "quizQuestion",

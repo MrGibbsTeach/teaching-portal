@@ -82,6 +82,14 @@ export default async function ClassCodeHome({ params }: { params: Promise<{ code
           </Link>
         </div>
 
+        <div className="mt-10">
+          <h2 className="font-heading text-xl font-bold tracking-tight">Interactive tools</h2>
+          <p className="mt-1 text-muted-foreground">Practise any time, without finding the lesson first.</p>
+          <Link href={`/${normalized}/tools`} className="mt-3 inline-block text-sm font-semibold text-primary hover:underline">
+            Open interactive tools →
+          </Link>
+        </div>
+
         {assessments.length > 0 && (
           <div className="mt-10">
             <h2 className="font-heading text-xl font-bold tracking-tight">Assessments</h2>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MasteryTree } from "@/components/course/shared/MasteryTree";
 import { TierTheme } from "@/components/course/shared/TierTheme";
@@ -61,6 +62,7 @@ export async function GeneralCoursePage({ slug }: { slug: string }) {
           <p className="text-xs font-bold uppercase tracking-[0.18em] text-primary">{course.yearLevel} · Applied Information Technology</p>
           <h1 className="mt-3 max-w-2xl font-heading text-3xl font-semibold tracking-tight sm:text-4xl">{course.title}</h1>
           <p className="mt-3 max-w-2xl text-muted-foreground">{course.description} Work through the topics, practise each skill, then apply it in a project.</p>
+          <Link href={`/courses/${course.slug}/tools`} className="mt-4 inline-block text-sm font-semibold text-primary hover:underline">Interactive tools →</Link>
           <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted-foreground">
             <span><strong className="text-foreground">{topicCount}</strong> topics</span>
             <span><strong className="text-foreground">{lessonCount}</strong> lessons</span>

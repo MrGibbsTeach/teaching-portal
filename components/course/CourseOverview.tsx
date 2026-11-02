@@ -62,6 +62,7 @@ export function CourseOverview({
         {course.title}
       </h1>
       <p className="mt-3 max-w-prose text-muted-foreground">{course.description}</p>
+      <Link href={`/courses/${course.slug}/tools`} className="mt-4 inline-block text-sm font-semibold text-primary hover:underline">Interactive tools →</Link>
 
       {todayLesson && (
         <div className="skin-card mt-8 border border-primary/30 bg-primary/5 p-5">

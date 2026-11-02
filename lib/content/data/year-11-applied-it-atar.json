@@ -495,6 +495,14 @@
                   "text": "Match hardware to the task. Video editing needs a fast multi-core CPU, 32 GB+ RAM, and an SSD. A basic document workstation needs far less. Always verify your chosen hardware meets the minimum requirements of all software you plan to run."
                 },
                 {
+                  "type": "htmlInteractive",
+                  "title": "Spec the Computer: choose parts for a client",
+                  "src": "/interactives/spec-computer.html",
+                  "tier": "atar",
+                  "instruction": "Select hardware for a client brief within a budget. Derive the specification yourself, resolve compatibility faults, then justify each choice with specification figures, a rejected alternative and a trade-off.",
+                  "minHeight": 900
+                },
+                {
                   "type": "keyTerms",
                   "items": [
                     {

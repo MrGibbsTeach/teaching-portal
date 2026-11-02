@@ -1985,6 +1985,14 @@
                   ]
                 },
                 {
+                  "type": "htmlInteractive",
+                  "title": "Spec the Computer: choose parts for a client",
+                  "src": "/interactives/spec-computer.html",
+                  "tier": "general",
+                  "instruction": "Choose real parts for a client within a budget. Red checks mean parts that do not work together. Then explain each choice and review your build against the brief.",
+                  "minHeight": 900
+                },
+                {
                   "type": "heading",
                   "text": "Assessment practice"
                 },
