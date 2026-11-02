@@ -61,3 +61,18 @@ export function isVisibleToStudents(releases: Releases, lessonId: string): boole
 export function syncTodayLessonId(cls: ClassConfig, releases: Releases): ClassConfig {
   return { ...cls, releases, todayLessonId: todayLessonId(releases) };
 }
+
+/**
+ * Release every lesson planned for a week in one go: each lesson that students cannot see yet is
+ * released, and the first one becomes Today's lesson. Lessons already released keep their status
+ * (a pulled-back lesson is released again, a revision lesson stays open).
+ */
+export function releaseWeek(releases: Releases, lessonIds: string[]): Releases {
+  const ids = [...new Set(lessonIds)];
+  if (ids.length === 0) return releases;
+  let next: Releases = { ...releases };
+  for (const id of ids) {
+    if (!isVisibleToStudents(next, id)) next = release(next, id);
+  }
+  return makeToday(next, ids[0]);
+}

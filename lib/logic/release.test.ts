@@ -6,6 +6,7 @@ import {
   openForRevision,
   pullBack,
   release,
+  releaseWeek,
   todayLessonId,
   type Releases,
 } from "./release";
@@ -54,5 +55,29 @@ describe("release", () => {
 
   it("a lesson with no release record is not visible to students", () => {
     expect(isVisibleToStudents({}, "never-released")).toBe(false);
+  });
+});
+
+describe("releaseWeek", () => {
+  it("releases every lesson and makes the first one today's lesson", () => {
+    const r = releaseWeek({}, ["a", "b", "c"]);
+    expect(r.a.status).toBe("today");
+    expect(r.b.status).toBe("released");
+    expect(r.c.status).toBe("released");
+  });
+
+  it("demotes the previous today's lesson and keeps lessons already open for revision", () => {
+    let r: Releases = makeToday({}, "old");
+    r = openForRevision(r, "b");
+    r = releaseWeek(r, ["a", "b"]);
+    expect(r.old.status).toBe("released");
+    expect(r.a.status).toBe("today");
+    expect(r.b.status).toBe("revision");
+  });
+
+  it("does nothing for an empty week and ignores repeated lessons", () => {
+    const base: Releases = release({}, "x");
+    expect(releaseWeek(base, [])).toBe(base);
+    expect(Object.keys(releaseWeek({}, ["a", "a"]))).toEqual(["a"]);
   });
 });

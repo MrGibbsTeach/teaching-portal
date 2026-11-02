@@ -1,18 +1,20 @@
 /**
- * WA school term start dates (Monday of week 1), used to label a release as
- * "Term 4, Week 3" instead of a bare date.
+ * Term start dates (Monday of week 1) and how many teaching weeks each term has, used to label a
+ * release as "Term 4, Week 3" instead of a bare date. Week numbers are school week numbers, so
+ * Term 1 2027 week 1 is the week of 25 Jan (students start on the Friday, Year 11 on Mon 1 Feb).
  *
- * NOT YET CONFIRMED against Bunbury Catholic College's actual calendar
- * (redesign-plan.md decision 2 is still open). These are CEWA's published
- * 2026 term dates as a placeholder so the feature works end to end; replace
- * with the confirmed dates before relying on this for a real release.
+ * 2027 comes from Bunbury Catholic College's proposed calendar (updated 30 Oct 2026). 2026 is
+ * CEWA's published dates as a placeholder.
  */
-const TERM_STARTS: { year: number; term: number; start: string }[] = [
+const TERM_STARTS: { year: number; term: number; start: string; weeks?: number }[] = [
   { year: 2026, term: 1, start: "2026-02-02" },
   { year: 2026, term: 2, start: "2026-04-20" },
   { year: 2026, term: 3, start: "2026-07-13" },
   { year: 2026, term: 4, start: "2026-10-12" },
-  { year: 2027, term: 1, start: "2027-02-01" },
+  { year: 2027, term: 1, start: "2027-01-25", weeks: 11 },
+  { year: 2027, term: 2, start: "2027-04-26", weeks: 10 },
+  { year: 2027, term: 3, start: "2027-07-19", weeks: 10 },
+  { year: 2027, term: 4, start: "2027-10-11", weeks: 10 },
 ];
 
 export interface TermWeek {
@@ -35,18 +37,18 @@ function mondayOf(d: Date): Date {
 /** Which term and week a date falls in, or null if before/after all known terms. */
 export function termWeekFor(date: Date): TermWeek | null {
   const target = mondayOf(date).getTime();
-  let best: { start: Date; year: number; term: number } | null = null;
+  let best: { start: Date; year: number; term: number; weeks: number } | null = null;
   for (const t of TERM_STARTS) {
     const start = mondayOf(new Date(t.start));
     if (start.getTime() <= target) {
       if (!best || start.getTime() > best.start.getTime()) {
-        best = { start, year: t.year, term: t.term };
+        best = { start, year: t.year, term: t.term, weeks: t.weeks ?? 12 };
       }
     }
   }
   if (!best) return null;
   const week = Math.floor((target - best.start.getTime()) / (7 * DAY_MS)) + 1;
-  if (week < 1 || week > 12) return null; // past the end of a term block / before term 1
+  if (week < 1 || week > best.weeks) return null; // school holidays after the last week of a term
   return { year: best.year, term: best.term, week };
 }
 

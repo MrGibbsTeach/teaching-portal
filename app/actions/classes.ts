@@ -7,6 +7,7 @@ import { getCourseBySlug } from "@/lib/courses";
 import { generateClassCode, isReservedCode } from "@/lib/logic/class-code";
 import {
   release as releaseLessonFn,
+  releaseWeek as releaseWeekFn,
   makeToday as makeTodayFn,
   pullBack as pullBackFn,
   openForRevision as openForRevisionFn,
@@ -90,6 +91,16 @@ async function applyRelease(
 
 export async function releaseLesson(classId: string, lessonId: string) {
   await applyRelease(classId, lessonId, releaseLessonFn);
+}
+
+/** Release every lesson planned for a week and make the first one Today's lesson. */
+export async function releaseWeekLessons(classId: string, lessonIds: string[]) {
+  await requireTeacher();
+  const cls = await getClass(classId);
+  if (!cls) return;
+  const next = releaseWeekFn(cls.releases ?? {}, lessonIds);
+  await saveClass(syncTodayLessonId(cls, next));
+  revalidatePath("/teacher/classes/" + classId);
 }
 
 export async function makeTodayLesson(classId: string, lessonId: string) {

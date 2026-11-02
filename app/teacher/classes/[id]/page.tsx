@@ -22,6 +22,8 @@ import { ClassCodeBox } from "@/components/teacher/ClassCodeBox";
 import { StopLiveButton } from "@/components/teacher/StopLiveButton";
 import { LessonReleaseRow } from "@/components/teacher/LessonReleaseRow";
 import { ReleaseNextBar } from "@/components/teacher/ReleaseNextBar";
+import { TermPlanView } from "@/components/teacher/TermPlan";
+import { currentPlanWeek, getPlan } from "@/lib/plans";
 import { mergeStats, studentQuizTotals } from "@/lib/logic/insights";
 
 export const dynamic = "force-dynamic";
@@ -101,6 +103,11 @@ export default async function ClassManagePage({
     flatLessons.slice(todayIdx + 1).find((l) => isOpen(l.id)) ?? flatLessons.find((l) => isOpen(l.id));
   const todayLesson = todayIdx >= 0 ? flatLessons[todayIdx] : undefined;
 
+  // 2027 term plan, when this course has one (Y11 and Y12 AIT General).
+  const plan = getPlan(cls!.courseSlug);
+  const perthNow = new Date(new Date().toLocaleString("en-US", { timeZone: "Australia/Perth" }));
+  const thisWeek = plan ? currentPlanWeek(plan, perthNow) : undefined;
+
   const lessonsSection = (
     <section>
       <h2 className="text-lg font-semibold">Lessons</h2>
@@ -115,6 +122,25 @@ export default async function ClassManagePage({
         nextTopic={nextLesson?.topic}
         onReleaseNext={nextLesson ? makeTodayLesson.bind(null, cls!.id, nextLesson.id) : undefined}
       />
+
+      {plan && content && (
+        <div className="mt-8">
+          <h3 className="text-base font-semibold">Term plan 2027</h3>
+          <p className="mt-1 text-sm text-muted-foreground">
+            The year laid out by week, with assessment points and calendar notes. Dates are indicative and will
+            change, so release is still your call: open a week and release its lessons, or release them one at a time.
+          </p>
+          <TermPlanView
+            classId={cls!.id}
+            plan={plan}
+            lessons={flatLessons.map((l) => ({ id: l.id, title: l.title }))}
+            releases={releases}
+            currentWeek={thisWeek}
+            today={perthNow}
+          />
+          <h3 className="mt-10 text-base font-semibold">All lessons by topic</h3>
+        </div>
+      )}
 
       {!content ? (
         <p className="mt-4 text-sm text-muted-foreground italic">
