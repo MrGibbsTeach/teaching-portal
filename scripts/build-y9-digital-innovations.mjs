@@ -102,6 +102,7 @@ function ch1Lesson() {
         "The Background is locked, so you cannot select it in the scene.",
         ["Open the Instances list panel.", "Click the lock next to Background to unlock it.", "Resize it to fill the whole game window (the black outline). You can lock it again afterwards."],
         "the Background fills the black game-window outline with no gaps.",
+        { imageSrc: "/y9/ch1-task2-answer.png", alt: "The Instances List panel open at the bottom of the editor with the Instances List button highlighted at the top right and the Background lock icon highlighted, showing how to unlock the Background." },
       ),
       task(
         "Task 3: Add a UI layer with the Layers panel",
