@@ -399,6 +399,15 @@ export function BlockRenderer({ block }: { block: Block }) {
               <li key={i}>{s}</li>
             ))}
           </ol>
+          {block.reveal && (
+            <details className="group mt-4">
+              <summary className="inline-flex cursor-pointer list-none items-center rounded-lg border-2 border-foreground bg-foreground px-4 py-2 text-sm font-bold text-background hover:opacity-90 group-open:hidden [&::-webkit-details-marker]:hidden">
+                {block.reveal.label ?? "Reveal solution"}
+              </summary>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={block.reveal.imageSrc} alt={block.reveal.alt} className="mt-1 w-full rounded-lg border" />
+            </details>
+          )}
         </div>
       );
     case "quizQuestion":

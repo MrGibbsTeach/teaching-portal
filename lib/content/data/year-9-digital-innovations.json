@@ -67,7 +67,11 @@
                     "Open the Properties panel and change its position, size and angle.",
                     "Remember: the angle is 0 when the object faces right, and a smaller Y value moves an object up.",
                     "Check: the Ghost sits at X 640, Y 385, width 88, height 60, angle 0, exactly on top of the LockedGhost."
-                  ]
+                  ],
+                  "reveal": {
+                    "imageSrc": "/y9/ch1-task1-answer.png",
+                    "alt": "The Properties panel for the Ghost with X 640, Y 385, W 88, H 60 and rotation 0 highlighted, next to the Ghost in the scene."
+                  }
                 },
                 {
                   "type": "task",
