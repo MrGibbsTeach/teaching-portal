@@ -27,13 +27,17 @@ function lesson(id, title, summary, bullets, extra = []) {
   };
 }
 
-const gdevelop = (id, title, chapter, summary, bullets, taskSteps) =>
+// opts.youtubeId: chosen video (owner-supplied). opts.check: our own "check your work" note shown after the task.
+const gdevelop = (id, title, chapter, summary, bullets, taskSteps, opts = {}) =>
   lesson(id, title, summary, bullets, [
     {
       type: "videoSlot",
       title: `GDevelop Essentials: ${chapter}`,
+      ...(opts.youtubeId ? { youtubeId: opts.youtubeId } : {}),
       brief: `Embed the GDevelop Essentials course video for ${chapter}. Choose and vet the video, then paste its YouTube ID.`,
-      videoSource: "GDevelop Essentials Course, editor.gdevelop.io, Learn tab. Chapter list is provisional until the owner confirms which chapters to use.",
+      videoSource: opts.youtubeId
+        ? "GDevelop Essentials Course, editor.gdevelop.io, Learn tab. Video link supplied by the owner (6 Nov 2026)."
+        : "GDevelop Essentials Course, editor.gdevelop.io, Learn tab. Chapter list is provisional until the owner confirms which chapters to use.",
       minutes: 10,
       watchFor: ["The names of the panels and tools used", "How the video completes the task you will repeat"],
     },
@@ -41,9 +45,10 @@ const gdevelop = (id, title, chapter, summary, bullets, taskSteps) =>
       type: "task",
       title: `Complete the ${chapter} template tasks`,
       software: "GDevelop",
-      intro: "Open the chapter template from the course page, work through the tasks, then check your work against the answer.",
+      intro: opts.intro ?? "Open the chapter template from the course page, work through the tasks, then check your work against the answer.",
       steps: taskSteps,
     },
+    ...(opts.check ? [{ type: "callout", heading: "Check your work", text: opts.check }] : []),
   ]);
 
 const course = {
@@ -71,9 +76,19 @@ const course = {
               "y9_gd_2",
               "Explore the engine",
               "Chapter 1",
-              "Learn your way around the GDevelop editor: the scene, the properties panel, the instance list and layers.",
-              ["Name the main panels of the editor", "Change an object using only the properties panel", "Add a UI layer"],
-              ["Manipulate an object with the Properties panel", "Unlock an object with the Instance list panel", "Add a UI layer with the Layers panel"],
+              "Learn your way around the GDevelop editor: the scene, the properties panel, the instance list, layers and image smoothing. You will fix a small soul-collecting game that has a few problems.",
+              ["Change an object using only the Properties panel", "Unlock and resize an object with the Instances list", "Add a UI layer so the health bar stays on screen", "Turn off image smoothing so pixel art looks sharp"],
+              [
+                "Manipulate an object with the Properties panel: using only the Properties panel, make the large Ghost match the size, angle and position of the transparent LockedGhost. Remember that the angle is 0 when the object faces right, and a smaller Y value moves an object up.",
+                "Unlock an object with the Instance list panel: the Background is locked. Unlock it in the Instances list and resize it to fill the whole game window (the black outline). You can lock it again afterwards.",
+                "Add a UI layer with the Layers panel: preview the game and move the Ghost down. Then create a new layer, move the ResourceBar onto it, and preview again to see the bar stay at the bottom of the screen. Layers higher in the list appear on top.",
+                "Change smoothing settings in the Resources tab: preview the Ghost's idle animation and spot the blurry second frame. Turn off 'Smooth the image' for that resource. To fix it for the whole game, set the project's scale mode from Linear to Nearest in Game properties.",
+              ],
+              {
+                youtubeId: "OsPTdjhqur8",
+                intro: "Watch the video, then open the chapter 1 template in GDevelop: go to Learn, open the GDevelop Essentials Course, find Chapter 1 and click Open template. Do the four tasks, then open each Answer in the course to check.",
+                check: "Ghost matches LockedGhost at X 640, Y 385, width 88, height 60, angle 0. Linear smoothing suits high-resolution art; Nearest (no smoothing) suits pixel art.",
+              },
             ),
             gdevelop(
               "y9_gd_3",
