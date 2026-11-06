@@ -19,17 +19,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Get to know the course, see what past student games look like, and get GDevelop ready to use."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Find out how the semester works",
-                    "Sign in to GDevelop",
-                    "Open the editor for the first time"
-                  ]
+                  "type": "richText",
+                  "heading": "Welcome and set-up",
+                  "html": "<p>Get to know the course, see what past student games look like, and get GDevelop ready to use.</p><ul><li>Find out how the semester works</li><li>Sign in to GDevelop</li><li>Open the editor for the first time</li></ul>"
                 },
                 {
                   "type": "callout",
@@ -44,24 +36,15 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Learn your way around the GDevelop editor: the scene, the properties panel, the instance list, layers and image smoothing. You will fix a small soul-collecting game that has a few problems."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Change an object using only the Properties panel",
-                    "Unlock and resize an object with the Instances list",
-                    "Add a UI layer so the health bar stays on screen",
-                    "Turn off image smoothing so pixel art looks sharp"
-                  ]
+                  "type": "richText",
+                  "heading": "Explore the engine",
+                  "html": "<p>Learn your way around the GDevelop editor: the scene, the properties panel, the instance list, layers and image smoothing. You will fix a small soul-collecting game that has a few problems.</p><ul><li>Change an object using only the Properties panel</li><li>Unlock and resize an object with the Instances list</li><li>Add a UI layer so the health bar stays on screen</li><li>Turn off image smoothing so pixel art looks sharp</li></ul>"
                 },
                 {
                   "type": "videoSlot",
                   "title": "GDevelop Essentials: Chapter 1",
                   "youtubeId": "OsPTdjhqur8",
-                  "brief": "Embed the GDevelop Essentials course video for Chapter 1. Choose and vet the video, then paste its YouTube ID.",
+                  "brief": "Watch the video and note the names of the panels and tools. You will repeat the same steps in the tasks.",
                   "videoSource": "GDevelop Essentials Course, editor.gdevelop.io, Learn tab. Video link supplied by the owner (6 Nov 2026).",
                   "minutes": 10,
                   "watchFor": [
@@ -72,29 +55,56 @@
                 {
                   "type": "richText",
                   "heading": "Get the project files",
-                  "html": "<p><a href=\"/api/downloads/gdevelop-chapter-1\"><strong>Download the Chapter 1 project (zip)</strong></a></p><ol><li>Save the zip, then right-click it and choose Extract All.</li><li>Open the GDevelop app on your computer.</li><li>Choose Open a project and pick <code>lesson_1_game.json</code> from the extracted folder.</li></ol><p>You do not need a GDevelop account. Keep the <code>assets</code> folder next to the project file.</p>"
+                  "html": "<p style=\"margin:8px 0 16px\"><a href=\"/api/downloads/gdevelop-chapter-1\" download style=\"display:inline-flex;align-items:center;gap:12px;background:#ffd400;color:#000;font-weight:800;font-size:1.25rem;line-height:1.2;padding:18px 28px;border:4px solid #000;border-radius:14px;box-shadow:0 6px 0 #000;text-decoration:none\">&#11015; DOWNLOAD the Chapter 1 project (zip)</a></p><ol><li>Save the zip, then right-click it and choose <strong>Extract All</strong>.</li><li>Open the GDevelop app on your computer.</li><li>Choose <strong>Open a project</strong> and pick <code>lesson_1_game.json</code> from the extracted folder.</li></ol><p>You do not need a GDevelop account. Keep the <code>assets</code> folder next to the project file.</p>"
                 },
                 {
                   "type": "task",
-                  "title": "Complete the Chapter 1 template tasks",
+                  "title": "Task 1: Manipulate an object with the Properties panel",
                   "software": "GDevelop",
-                  "intro": "Watch the video, then open the project you just downloaded in GDevelop and do the four tasks. Use the check notes at the end to see if you got them right.",
+                  "intro": "Using only the Properties panel, make the large Ghost match the size, angle and position of the transparent LockedGhost.",
                   "steps": [
-                    "Manipulate an object with the Properties panel: using only the Properties panel, make the large Ghost match the size, angle and position of the transparent LockedGhost. Remember that the angle is 0 when the object faces right, and a smaller Y value moves an object up.",
-                    "Unlock an object with the Instance list panel: the Background is locked. Unlock it in the Instances list and resize it to fill the whole game window (the black outline). You can lock it again afterwards.",
-                    "Add a UI layer with the Layers panel: preview the game and move the Ghost down. Then create a new layer, move the ResourceBar onto it, and preview again to see the bar stay at the bottom of the screen. Layers higher in the list appear on top.",
-                    "Change smoothing settings in the Resources tab: preview the Ghost's idle animation and spot the blurry second frame. Turn off 'Smooth the image' for that resource. To fix it for the whole game, set the project's scale mode from Linear to Nearest in Game properties."
+                    "Click the large Ghost in the scene.",
+                    "Open the Properties panel and change its position, size and angle.",
+                    "Remember: the angle is 0 when the object faces right, and a smaller Y value moves an object up.",
+                    "Check: the Ghost sits at X 640, Y 385, width 88, height 60, angle 0, exactly on top of the LockedGhost."
                   ]
                 },
                 {
-                  "type": "callout",
-                  "heading": "Check your work",
-                  "text": "1) The Ghost should end up at X 640, Y 385, width 88, height 60, angle 0, matching the transparent LockedGhost. 2) The Background should fill the black game-window outline. 3) After adding a layer called UI and moving the ResourceBar onto it, the bar stays on screen when the Ghost moves. 4) With 'Smooth the image' off (and scale mode Nearest in Game properties), the idle frames look sharp. Linear smoothing suits high-resolution art; Nearest suits pixel art."
+                  "type": "task",
+                  "title": "Task 2: Unlock an object with the Instances list",
+                  "software": "GDevelop",
+                  "intro": "The Background is locked, so you cannot select it in the scene.",
+                  "steps": [
+                    "Open the Instances list panel.",
+                    "Click the lock next to Background to unlock it.",
+                    "Resize it to fill the whole game window (the black outline). You can lock it again afterwards.",
+                    "Check: the Background fills the black game-window outline with no gaps."
+                  ]
                 },
                 {
-                  "type": "callout",
-                  "heading": "Draft lesson",
-                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                  "type": "task",
+                  "title": "Task 3: Add a UI layer with the Layers panel",
+                  "software": "GDevelop",
+                  "intro": "Right now the ResourceBar scrolls away with the game world. A UI layer keeps it fixed on the screen.",
+                  "steps": [
+                    "Preview the game and move the Ghost down. Notice the bar does not stay put.",
+                    "In the Layers panel, add a new layer and name it UI.",
+                    "Select the ResourceBar and set its layer to UI in the Properties panel.",
+                    "Preview again. Layers higher in the list appear on top.",
+                    "Check: the ResourceBar stays at the bottom of the screen when the Ghost moves."
+                  ]
+                },
+                {
+                  "type": "task",
+                  "title": "Task 4: Change smoothing settings in the Resources tab",
+                  "software": "GDevelop",
+                  "intro": "One frame of the Ghost's idle animation looks blurry because of image smoothing.",
+                  "steps": [
+                    "Preview the Ghost's idle animation and spot the blurry second frame.",
+                    "Open the Project Manager, go to Resources and select that image. Turn off Smooth the image.",
+                    "To fix it for the whole game, open Game properties and change Scale mode from Linear to Nearest.",
+                    "Check: the idle frames look sharp. Linear smoothing suits high-resolution art; Nearest (no smoothing) suits pixel art."
+                  ]
                 }
               ]
             },
@@ -104,17 +114,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Create objects, place them in a scene and set up a simple level."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Create and edit objects",
-                    "Place and arrange instances",
-                    "Build a basic scene"
-                  ]
+                  "type": "richText",
+                  "heading": "Build a scene",
+                  "html": "<p>Create objects, place them in a scene and set up a simple level.</p><ul><li>Create and edit objects</li><li>Place and arrange instances</li><li>Build a basic scene</li></ul>"
                 },
                 {
                   "type": "videoSlot",
@@ -158,17 +160,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Give objects abilities such as movement using behaviors."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Add a behavior to an object",
-                    "Change its settings",
-                    "Test how it moves in a preview"
-                  ]
+                  "type": "richText",
+                  "heading": "Use behaviors",
+                  "html": "<p>Give objects abilities such as movement using behaviors.</p><ul><li>Add a behavior to an object</li><li>Change its settings</li><li>Test how it moves in a preview</li></ul>"
                 },
                 {
                   "type": "videoSlot",
@@ -205,17 +199,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Make things happen in your game using events: conditions and actions."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Read an event as 'when this happens, do that'",
-                    "Build a simple event",
-                    "Fix an event that does not work"
-                  ]
+                  "type": "richText",
+                  "heading": "Game logic with events",
+                  "html": "<p>Make things happen in your game using events: conditions and actions.</p><ul><li>Read an event as 'when this happens, do that'</li><li>Build a simple event</li><li>Fix an event that does not work</li></ul>"
                 },
                 {
                   "type": "videoSlot",
@@ -252,17 +238,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Show what you have learned by changing a ready-made game so it plays differently."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Choose three changes to make",
-                    "Make them in GDevelop",
-                    "Explain what you changed and why"
-                  ]
+                  "type": "richText",
+                  "heading": "Taster challenge: change a template",
+                  "html": "<p>Show what you have learned by changing a ready-made game so it plays differently.</p><ul><li>Choose three changes to make</li><li>Make them in GDevelop</li><li>Explain what you changed and why</li></ul>"
                 },
                 {
                   "type": "callout",
@@ -292,17 +270,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "See the finished game you will build and set up your project."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Play the finished example",
-                    "Set up the project",
-                    "List the features you will build"
-                  ]
+                  "type": "richText",
+                  "heading": "Plan the slice and set up",
+                  "html": "<p>See the finished game you will build and set up your project.</p><ul><li>Play the finished example</li><li>Set up the project</li><li>List the features you will build</li></ul>"
                 },
                 {
                   "type": "callout",
@@ -317,17 +287,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Build the map of your game from tiles."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Create a tilemap",
-                    "Paint a simple map",
-                    "Mark where the player can and cannot walk"
-                  ]
+                  "type": "richText",
+                  "heading": "Tilemap: build the world",
+                  "html": "<p>Build the map of your game from tiles.</p><ul><li>Create a tilemap</li><li>Paint a simple map</li><li>Mark where the player can and cannot walk</li></ul>"
                 },
                 {
                   "type": "callout",
@@ -342,17 +304,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Make the player move around the map from above."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Add top-down movement",
-                    "Set up the controls",
-                    "Test the speed"
-                  ]
+                  "type": "richText",
+                  "heading": "Player movement",
+                  "html": "<p>Make the player move around the map from above.</p><ul><li>Add top-down movement</li><li>Set up the controls</li><li>Test the speed</li></ul>"
                 },
                 {
                   "type": "callout",
@@ -367,17 +321,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Stop the player walking through walls and make the camera follow."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Add collisions",
-                    "Follow the player with the camera",
-                    "Fix anything that sticks"
-                  ]
+                  "type": "richText",
+                  "heading": "Walls and camera",
+                  "html": "<p>Stop the player walking through walls and make the camera follow.</p><ul><li>Add collisions</li><li>Follow the player with the camera</li><li>Fix anything that sticks</li></ul>"
                 },
                 {
                   "type": "callout",
@@ -392,17 +338,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Collect items and keep track of them."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Add collectable items",
-                    "Count them with a variable",
-                    "Show the count on screen"
-                  ]
+                  "type": "richText",
+                  "heading": "Items and variables",
+                  "html": "<p>Collect items and keep track of them.</p><ul><li>Add collectable items</li><li>Count them with a variable</li><li>Show the count on screen</li></ul>"
                 },
                 {
                   "type": "callout",
@@ -417,17 +355,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Add a character the player can talk to."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Add a non-player character",
-                    "Show a message when the player is near",
-                    "Make the dialogue change"
-                  ]
+                  "type": "richText",
+                  "heading": "Characters and dialogue",
+                  "html": "<p>Add a character the player can talk to.</p><ul><li>Add a non-player character</li><li>Show a message when the player is near</li><li>Make the dialogue change</li></ul>"
                 },
                 {
                   "type": "callout",
@@ -442,17 +372,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Add something dangerous and a health bar."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Add a hazard",
-                    "Track health with a variable",
-                    "Handle running out of health"
-                  ]
+                  "type": "richText",
+                  "heading": "Hazards and health",
+                  "html": "<p>Add something dangerous and a health bar.</p><ul><li>Add a hazard</li><li>Track health with a variable</li><li>Handle running out of health</li></ul>"
                 },
                 {
                   "type": "callout",
@@ -467,17 +389,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Finish the game with a goal, ending screens, sound and a cleaner look."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Add a win condition",
-                    "Add win and lose scenes",
-                    "Add sound and tidy the screen"
-                  ]
+                  "type": "richText",
+                  "heading": "Win, lose and polish",
+                  "html": "<p>Finish the game with a goal, ending screens, sound and a cleaner look.</p><ul><li>Add a win condition</li><li>Add win and lose scenes</li><li>Add sound and tidy the screen</li></ul>"
                 },
                 {
                   "type": "callout",
@@ -499,17 +413,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Meet the Australian STEM Video Game Challenge and the rubric your project is marked against."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Read the challenge theme",
-                    "Read the Game Design Document sections",
-                    "Form your team (up to four)"
-                  ]
+                  "type": "richText",
+                  "heading": "The challenge and how it is marked",
+                  "html": "<p>Meet the Australian STEM Video Game Challenge and the rubric your project is marked against.</p><ul><li>Read the challenge theme</li><li>Read the Game Design Document sections</li><li>Form your team (up to four)</li></ul>"
                 },
                 {
                   "type": "callout",
@@ -524,17 +430,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Come up with game ideas that link to this year's theme."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Explore the theme",
-                    "Brainstorm ideas as a team",
-                    "Pick one idea and say why"
-                  ]
+                  "type": "richText",
+                  "heading": "Theme and brainstorm",
+                  "html": "<p>Come up with game ideas that link to this year's theme.</p><ul><li>Explore the theme</li><li>Brainstorm ideas as a team</li><li>Pick one idea and say why</li></ul>"
                 },
                 {
                   "type": "callout",
@@ -549,17 +447,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Decide who does what, in what order, and by when."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Choose team roles",
-                    "Build a timeline",
-                    "Write the Planning section of your Game Design Document"
-                  ]
+                  "type": "richText",
+                  "heading": "Team plan and timeline",
+                  "html": "<p>Decide who does what, in what order, and by when.</p><ul><li>Choose team roles</li><li>Build a timeline</li><li>Write the Planning section of your Game Design Document</li></ul>"
                 },
                 {
                   "type": "callout",
@@ -581,17 +471,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Describe your game, its characters and its world."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Name your game and explain the title",
-                    "Describe characters and environments",
-                    "Draw a storyboard"
-                  ]
+                  "type": "richText",
+                  "heading": "Game overview and storyboard",
+                  "html": "<p>Describe your game, its characters and its world.</p><ul><li>Name your game and explain the title</li><li>Describe characters and environments</li><li>Draw a storyboard</li></ul>"
                 },
                 {
                   "type": "callout",
@@ -606,17 +488,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Decide the goal, the controls and the point of view."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "State the goal of the game",
-                    "List the controls",
-                    "Plan how the game gets harder"
-                  ]
+                  "type": "richText",
+                  "heading": "Gameplay and mechanics",
+                  "html": "<p>Decide the goal, the controls and the point of view.</p><ul><li>State the goal of the game</li><li>List the controls</li><li>Plan how the game gets harder</li></ul>"
                 },
                 {
                   "type": "callout",
@@ -631,17 +505,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Plan the look of your game and make your own art."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Choose a visual style",
-                    "Link it to the theme",
-                    "Start your original art"
-                  ]
+                  "type": "richText",
+                  "heading": "Visual design",
+                  "html": "<p>Plan the look of your game and make your own art.</p><ul><li>Choose a visual style</li><li>Link it to the theme</li><li>Start your original art</li></ul>"
                 },
                 {
                   "type": "callout",
@@ -656,17 +522,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Plan the sound of your game and make your own audio."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Choose a sound style",
-                    "Link it to the theme",
-                    "Start your original audio"
-                  ]
+                  "type": "richText",
+                  "heading": "Audio design",
+                  "html": "<p>Plan the sound of your game and make your own audio.</p><ul><li>Choose a sound style</li><li>Link it to the theme</li><li>Start your original audio</li></ul>"
                 },
                 {
                   "type": "callout",
@@ -688,17 +546,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Build the first playable version of your game. This repeats over several lessons."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Build the core mechanic first",
-                    "Test it as you go",
-                    "Record what you built in your work plan"
-                  ]
+                  "type": "richText",
+                  "heading": "Prototype sprint",
+                  "html": "<p>Build the first playable version of your game. This repeats over several lessons.</p><ul><li>Build the core mechanic first</li><li>Test it as you go</li><li>Record what you built in your work plan</li></ul>"
                 },
                 {
                   "type": "callout",
@@ -713,17 +563,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Replace placeholder art and sound with your own."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Create original characters and backgrounds",
-                    "Create original sound effects and music",
-                    "Put them in the game"
-                  ]
+                  "type": "richText",
+                  "heading": "Original art and audio sprint",
+                  "html": "<p>Replace placeholder art and sound with your own.</p><ul><li>Create original characters and backgrounds</li><li>Create original sound effects and music</li><li>Put them in the game</li></ul>"
                 },
                 {
                   "type": "callout",
@@ -738,17 +580,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Show your playable prototype and the Design section of your Game Design Document."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Demonstrate your prototype",
-                    "Hand in the Design section",
-                    "Plan what is left"
-                  ]
+                  "type": "richText",
+                  "heading": "Prototype checkpoint",
+                  "html": "<p>Show your playable prototype and the Design section of your Game Design Document.</p><ul><li>Demonstrate your prototype</li><li>Hand in the Design section</li><li>Plan what is left</li></ul>"
                 },
                 {
                   "type": "callout",
@@ -770,17 +604,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Test your own game against the judging criteria and fix what you find."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Test against the criteria",
-                    "List the bugs",
-                    "Fix the most important ones"
-                  ]
+                  "type": "richText",
+                  "heading": "Alpha testing",
+                  "html": "<p>Test your own game against the judging criteria and fix what you find.</p><ul><li>Test against the criteria</li><li>List the bugs</li><li>Fix the most important ones</li></ul>"
                 },
                 {
                   "type": "callout",
@@ -795,17 +621,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Have another team play your game and give feedback."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Test another team's game",
-                    "Collect feedback on yours",
-                    "Decide what to change"
-                  ]
+                  "type": "richText",
+                  "heading": "Beta testing",
+                  "html": "<p>Have another team play your game and give feedback.</p><ul><li>Test another team's game</li><li>Collect feedback on yours</li><li>Decide what to change</li></ul>"
                 },
                 {
                   "type": "callout",
@@ -820,17 +638,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Complete your document and record your gameplay."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Finish every section of the Game Design Document",
-                    "Record a short gameplay video",
-                    "Check the submission requirements"
-                  ]
+                  "type": "richText",
+                  "heading": "Finish: Game Design Document and screen recording",
+                  "html": "<p>Complete your document and record your gameplay.</p><ul><li>Finish every section of the Game Design Document</li><li>Record a short gameplay video</li><li>Check the submission requirements</li></ul>"
                 },
                 {
                   "type": "callout",
@@ -909,17 +719,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Play each other's games, share your VR creations and reflect on the semester."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Play and rate games",
-                    "Share a VR creation",
-                    "Write a final reflection"
-                  ]
+                  "type": "richText",
+                  "heading": "Showcase day and reflection",
+                  "html": "<p>Play each other's games, share your VR creations and reflect on the semester.</p><ul><li>Play and rate games</li><li>Share a VR creation</li><li>Write a final reflection</li></ul>"
                 },
                 {
                   "type": "callout",
@@ -949,17 +751,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Learn how to use the headset safely and how the rotation works. You will keep a passport of your turns."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Play space, comfort and time limits",
-                    "Your role as headset user and as spotter",
-                    "How the roster works"
-                  ]
+                  "type": "richText",
+                  "heading": "Safety, set-up and your VR passport",
+                  "html": "<p>Learn how to use the headset safely and how the rotation works. You will keep a passport of your turns.</p><ul><li>Play space, comfort and time limits</li><li>Your role as headset user and as spotter</li><li>How the roster works</li></ul>"
                 },
                 {
                   "type": "callout",
@@ -981,17 +775,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Try free VR games and note your first impressions."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Play a free game for one turn",
-                    "Note comfort, controls and fun",
-                    "Rate it against the criteria"
-                  ]
+                  "type": "richText",
+                  "heading": "Play",
+                  "html": "<p>Try free VR games and note your first impressions.</p><ul><li>Play a free game for one turn</li><li>Note comfort, controls and fun</li><li>Rate it against the criteria</li></ul>"
                 },
                 {
                   "type": "callout",
@@ -1006,17 +792,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Explore immersive video and places."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Watch and explore for one turn",
-                    "Note what feels real and what does not",
-                    "Compare with the game you played"
-                  ]
+                  "type": "richText",
+                  "heading": "View",
+                  "html": "<p>Explore immersive video and places.</p><ul><li>Watch and explore for one turn</li><li>Note what feels real and what does not</li><li>Compare with the game you played</li></ul>"
                 },
                 {
                   "type": "callout",
@@ -1031,17 +809,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Try a free learning or exploration experience."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Use the experience for one turn",
-                    "Note what you learned",
-                    "Compare it with the games"
-                  ]
+                  "type": "richText",
+                  "heading": "Experience",
+                  "html": "<p>Try a free learning or exploration experience.</p><ul><li>Use the experience for one turn</li><li>Note what you learned</li><li>Compare it with the games</li></ul>"
                 },
                 {
                   "type": "callout",
@@ -1056,17 +826,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Make something simple using a free VR creation app (to be chosen and confirmed)."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Watch the how-to card before your turn",
-                    "Make a simple object or scene",
-                    "Save a picture or recording to show later"
-                  ]
+                  "type": "richText",
+                  "heading": "Create",
+                  "html": "<p>Make something simple using a free VR creation app (to be chosen and confirmed).</p><ul><li>Watch the how-to card before your turn</li><li>Make a simple object or scene</li><li>Save a picture or recording to show later</li></ul>"
                 },
                 {
                   "type": "callout",
@@ -1088,17 +850,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Write a structured review of two VR experiences."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Use the review criteria",
-                    "Compare two experiences",
-                    "Give evidence for your ratings"
-                  ]
+                  "type": "richText",
+                  "heading": "Write your review",
+                  "html": "<p>Write a structured review of two VR experiences.</p><ul><li>Use the review criteria</li><li>Compare two experiences</li><li>Give evidence for your ratings</li></ul>"
                 },
                 {
                   "type": "callout",
@@ -1113,17 +867,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Show a classmate what you made in VR and get feedback."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Show your creation",
-                    "Get feedback on a checklist",
-                    "Note what you would change"
-                  ]
+                  "type": "richText",
+                  "heading": "Demonstrate",
+                  "html": "<p>Show a classmate what you made in VR and get feedback.</p><ul><li>Show your creation</li><li>Get feedback on a checklist</li><li>Note what you would change</li></ul>"
                 },
                 {
                   "type": "callout",
@@ -1138,17 +884,9 @@
               "estimatedMinutes": 60,
               "blocks": [
                 {
-                  "type": "paragraph",
-                  "text": "Reflect on what VR is good for and what it is not. This is the VR assessment."
-                },
-                {
-                  "type": "list",
-                  "style": "bullet",
-                  "items": [
-                    "Evaluate VR as a tool",
-                    "Use your passport as evidence",
-                    "Hand in your reflection"
-                  ]
+                  "type": "richText",
+                  "heading": "Evaluate",
+                  "html": "<p>Reflect on what VR is good for and what it is not. This is the VR assessment.</p><ul><li>Evaluate VR as a tool</li><li>Use your passport as evidence</li><li>Hand in your reflection</li></ul>"
                 },
                 {
                   "type": "callout",

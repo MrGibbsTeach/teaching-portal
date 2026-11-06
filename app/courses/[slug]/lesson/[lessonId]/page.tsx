@@ -107,11 +107,11 @@ export default async function LessonPage({
     ? lesson.blocks
     : lesson.blocks.filter((b) => !(b.type === "videoSlot" && !b.youtubeId));
 
-  if (course.tier === "general") {
+  if (course.tier === "general" || course.tier === "y9-10") {
     const agent = getAgentForTopic(topic.id);
     return (
       <LessonShell courseSlug={course.slug} lessonId={lessonId}>
-        <TierTheme tier="general">
+        <TierTheme tier={course.tier}>
           <div className="mx-auto max-w-6xl px-6 py-10">
             <Link
               href={`/courses/${slug}`}

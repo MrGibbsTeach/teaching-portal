@@ -13,14 +13,15 @@ const DRAFT = {
   text: "This lesson is an outline for review. The video, tasks and check questions are still to be added.",
 };
 
+const esc = (t) => t.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
 function lesson(id, title, summary, bullets, extra = []) {
   return {
     id,
     title,
     estimatedMinutes: 60,
     blocks: [
-      { type: "paragraph", text: summary },
-      { type: "list", style: "bullet", items: bullets },
+      { type: "richText", heading: title, html: `<p>${esc(summary)}</p><ul>${bullets.map((b) => `<li>${esc(b)}</li>`).join("")}</ul>` },
       ...extra,
       DRAFT,
     ],
@@ -52,6 +53,68 @@ const gdevelop = (id, title, chapter, summary, bullets, taskSteps, opts = {}) =>
     ...(opts.check ? [{ type: "callout", heading: "Check your work", text: opts.check }] : []),
   ]);
 
+// Chapter 1 is built as separate cards: overview, watch, get the files, then one card per task (each ends with a check).
+const DOWNLOAD_BUTTON = '<p style="margin:8px 0 16px"><a href="/api/downloads/gdevelop-chapter-1" download style="display:inline-flex;align-items:center;gap:12px;background:#ffd400;color:#000;font-weight:800;font-size:1.25rem;line-height:1.2;padding:18px 28px;border:4px solid #000;border-radius:14px;box-shadow:0 6px 0 #000;text-decoration:none">&#11015; DOWNLOAD the Chapter 1 project (zip)</a></p>';
+function ch1Lesson() {
+  const task = (title, intro, steps, check) => ({
+    type: "task",
+    title,
+    software: "GDevelop",
+    intro,
+    steps: [...steps, `Check: ${check}`],
+  });
+  return {
+    id: "y9_gd_2",
+    title: "Explore the engine",
+    estimatedMinutes: 60,
+    blocks: [
+      {
+        type: "richText",
+        heading: "Explore the engine",
+        html: `<p>${esc("Learn your way around the GDevelop editor: the scene, the properties panel, the instance list, layers and image smoothing. You will fix a small soul-collecting game that has a few problems.")}</p><ul><li>Change an object using only the Properties panel</li><li>Unlock and resize an object with the Instances list</li><li>Add a UI layer so the health bar stays on screen</li><li>Turn off image smoothing so pixel art looks sharp</li></ul>`,
+      },
+      {
+        type: "videoSlot",
+        title: "GDevelop Essentials: Chapter 1",
+        youtubeId: "OsPTdjhqur8",
+        brief: "Watch the video and note the names of the panels and tools. You will repeat the same steps in the tasks.",
+        videoSource: "GDevelop Essentials Course, editor.gdevelop.io, Learn tab. Video link supplied by the owner (6 Nov 2026).",
+        minutes: 10,
+        watchFor: ["The names of the panels and tools used", "How the video completes the task you will repeat"],
+      },
+      {
+        type: "richText",
+        heading: "Get the project files",
+        html: DOWNLOAD_BUTTON + '<ol><li>Save the zip, then right-click it and choose <strong>Extract All</strong>.</li><li>Open the GDevelop app on your computer.</li><li>Choose <strong>Open a project</strong> and pick <code>lesson_1_game.json</code> from the extracted folder.</li></ol><p>You do not need a GDevelop account. Keep the <code>assets</code> folder next to the project file.</p>',
+      },
+      task(
+        "Task 1: Manipulate an object with the Properties panel",
+        "Using only the Properties panel, make the large Ghost match the size, angle and position of the transparent LockedGhost.",
+        ["Click the large Ghost in the scene.", "Open the Properties panel and change its position, size and angle.", "Remember: the angle is 0 when the object faces right, and a smaller Y value moves an object up."],
+        "the Ghost sits at X 640, Y 385, width 88, height 60, angle 0, exactly on top of the LockedGhost.",
+      ),
+      task(
+        "Task 2: Unlock an object with the Instances list",
+        "The Background is locked, so you cannot select it in the scene.",
+        ["Open the Instances list panel.", "Click the lock next to Background to unlock it.", "Resize it to fill the whole game window (the black outline). You can lock it again afterwards."],
+        "the Background fills the black game-window outline with no gaps.",
+      ),
+      task(
+        "Task 3: Add a UI layer with the Layers panel",
+        "Right now the ResourceBar scrolls away with the game world. A UI layer keeps it fixed on the screen.",
+        ["Preview the game and move the Ghost down. Notice the bar does not stay put.", "In the Layers panel, add a new layer and name it UI.", "Select the ResourceBar and set its layer to UI in the Properties panel.", "Preview again. Layers higher in the list appear on top."],
+        "the ResourceBar stays at the bottom of the screen when the Ghost moves.",
+      ),
+      task(
+        "Task 4: Change smoothing settings in the Resources tab",
+        "One frame of the Ghost's idle animation looks blurry because of image smoothing.",
+        ["Preview the Ghost's idle animation and spot the blurry second frame.", "Open the Project Manager, go to Resources and select that image. Turn off Smooth the image.", "To fix it for the whole game, open Game properties and change Scale mode from Linear to Nearest."],
+        "the idle frames look sharp. Linear smoothing suits high-resolution art; Nearest (no smoothing) suits pixel art.",
+      ),
+    ],
+  };
+}
+
 const course = {
   slug: "year-9-digital-innovations",
   title: "Digital Innovations",
@@ -73,25 +136,7 @@ const course = {
               "Get to know the course, see what past student games look like, and get GDevelop ready to use.",
               ["Find out how the semester works", "Sign in to GDevelop", "Open the editor for the first time"],
             ),
-            gdevelop(
-              "y9_gd_2",
-              "Explore the engine",
-              "Chapter 1",
-              "Learn your way around the GDevelop editor: the scene, the properties panel, the instance list, layers and image smoothing. You will fix a small soul-collecting game that has a few problems.",
-              ["Change an object using only the Properties panel", "Unlock and resize an object with the Instances list", "Add a UI layer so the health bar stays on screen", "Turn off image smoothing so pixel art looks sharp"],
-              [
-                "Manipulate an object with the Properties panel: using only the Properties panel, make the large Ghost match the size, angle and position of the transparent LockedGhost. Remember that the angle is 0 when the object faces right, and a smaller Y value moves an object up.",
-                "Unlock an object with the Instance list panel: the Background is locked. Unlock it in the Instances list and resize it to fill the whole game window (the black outline). You can lock it again afterwards.",
-                "Add a UI layer with the Layers panel: preview the game and move the Ghost down. Then create a new layer, move the ResourceBar onto it, and preview again to see the bar stay at the bottom of the screen. Layers higher in the list appear on top.",
-                "Change smoothing settings in the Resources tab: preview the Ghost's idle animation and spot the blurry second frame. Turn off 'Smooth the image' for that resource. To fix it for the whole game, set the project's scale mode from Linear to Nearest in Game properties.",
-              ],
-              {
-                youtubeId: "OsPTdjhqur8",
-                downloadHtml: '<p><a href="/api/downloads/gdevelop-chapter-1"><strong>Download the Chapter 1 project (zip)</strong></a></p><ol><li>Save the zip, then right-click it and choose Extract All.</li><li>Open the GDevelop app on your computer.</li><li>Choose Open a project and pick <code>lesson_1_game.json</code> from the extracted folder.</li></ol><p>You do not need a GDevelop account. Keep the <code>assets</code> folder next to the project file.</p>',
-                intro: "Watch the video, then open the project you just downloaded in GDevelop and do the four tasks. Use the check notes at the end to see if you got them right.",
-                check: "1) The Ghost should end up at X 640, Y 385, width 88, height 60, angle 0, matching the transparent LockedGhost. 2) The Background should fill the black game-window outline. 3) After adding a layer called UI and moving the ResourceBar onto it, the bar stays on screen when the Ghost moves. 4) With 'Smooth the image' off (and scale mode Nearest in Game properties), the idle frames look sharp. Linear smoothing suits high-resolution art; Nearest suits pixel art.",
-              },
-            ),
+            ch1Lesson(),
             gdevelop(
               "y9_gd_3",
               "Build a scene",
