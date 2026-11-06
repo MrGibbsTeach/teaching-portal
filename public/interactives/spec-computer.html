@@ -402,6 +402,8 @@ function hintsOn(){return st.hints===null?tier==='general':st.hints}
 var view=document.getElementById('view'),tabsEl=document.getElementById('tabs'),toastEl=document.getElementById('toast');
 var TABS=[{id:'brief',n:1,l:'Brief'},{id:'build',n:2,l:'Build'},{id:'justify',n:3,l:'Justify'},{id:'review',n:4,l:'Review'}];
 function canJustify(){var B=run().build;return ready(B)&&!rulesFor(B).some(function(r){return r.state==='fail'})}
+function justAny(){return JI.filter(function(j){return (run().just[j.k]||'').trim().length>0}).length}
+function justDone(){return justAny()===JI.length}
 function toast(m){toastEl.innerHTML=m?'<div class="toast" role="status">'+m+'</div>':''}
 function go(t){
   if(t==='justify'&&!canJustify()){st.tab='build';toast('Finish the build first: every required slot filled and no red rules. Then you can justify your choices.');render();return}
@@ -508,10 +510,11 @@ function renderReview(){
   var res=s.needs.map(function(n){return n.f(B)});
   var met=res.filter(function(r){return r[0]}).length;
   var items=s.needs.map(function(n,i){var r=res[i];return '<div class="rv"><span class="ic '+(r[0]?'pass':'fail')+'">'+(r[0]?'✓':'✕')+'</span><div>'+esc(n.t)+'<div class="small mut">'+(tier==='general'?'Target: '+esc(n.tg)+'. ':'Target: '+esc(n.tg)+'. ')+'Yours: '+esc(r[1])+'</div></div><span></span></div>'}).join('');
-  var js=JI.filter(function(j){return (run().just[j.k]||'').trim().length>=minLen()}).length;
+  var js=justAny();
   var ref=s.ref;
   return '<div class="two"><section class="card"><h2>Does it meet the brief?</h2><p style="margin:0 0 6px"><b>'+met+' of '+s.needs.length+'</b> needs met · '+(fails?fails+' compatibility error'+(fails>1?'s':''):'no compatibility errors')+' · '+js+' of '+JI.length+' justifications written</p>'+items
-  +(ready(B)?'':'<p class="small mut">Your build is not complete yet, so some needs cannot pass.</p>')+'</section>'
+  +(ready(B)?'':'<p class="small mut">Your build is not complete yet, so some needs cannot pass.</p>')
+  +(justDone()?'':'<div style="margin-top:10px;padding:10px 12px;border-radius:10px;background:#fff7ed;border:1px solid #fed7aa"><p class="small" style="margin:0 0 6px"><b>Not finished yet:</b> the done tick is sent once every justification box has some text. You have written '+justAny()+' of '+JI.length+'. The word checks are hints, not a mark.</p><button class="btn sm" data-act="tab" data-tab="justify">Finish the justifications</button></div>')+'</section>'
   +'<section class="card"><h2>Your spec sheet</h2>'+specTable(B,st.cmp?ref:null)
   +'<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><button class="btn sm ghost" data-act="cmp">'+(st.cmp?'Hide':'Compare with')+' the reference build</button><button class="btn sm" data-act="copy">Copy my spec sheet</button></div>'
   +(st.cmp?'<p class="small mut" style="margin:8px 0 0">Highlighted cells differ from the reference. A different build can still be right if it meets every need and the budget. The reference costs '+fmt(total(ref))+' and leaves '+fmt(s.budget-total(ref))+' of the budget unspent.</p>':'')
@@ -534,7 +537,7 @@ function specText(){
 var stageEl=null;
 function render(){
   renderTabs();
-  if(st.tab==='review'&&canJustify()&&!sentDone){sentDone=true;say('done')}
+  if(st.tab==='review'&&canJustify()&&justDone()&&!sentDone){sentDone=true;say('done')}
   if(stageEl&&stageEl.parentNode)stageEl.parentNode.removeChild(stageEl);
   view.innerHTML=st.tab==='brief'?renderBrief():st.tab==='build'?renderBuild():st.tab==='justify'?renderJustify():renderReview();
   if(st.tab==='build'){var slot=document.getElementById('stageSlot');if(slot&&stageEl){slot.appendChild(stageEl);resize3D();applySel();updLabels()}}
