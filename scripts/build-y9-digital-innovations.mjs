@@ -109,12 +109,21 @@ function ch1Lesson() {
         "Right now the ResourceBar scrolls away with the game world. A UI layer keeps it fixed on the screen.",
         ["Preview the game and move the Ghost down. Notice the bar does not stay put.", "In the Layers panel, add a new layer and name it UI.", "Select the ResourceBar and set its layer to UI in the Properties panel.", "Preview again. Layers higher in the list appear on top."],
         "the ResourceBar stays at the bottom of the screen when the Ghost moves.",
+        { imageSrc: "/y9/ch1-task3-answer.png", alt: "The Layers panel with a new layer named UI and the Add a layer button highlighted, and the ResourceBar selected with its layer set to UI in the Properties panel." },
       ),
       task(
         "Task 4: Change smoothing settings in the Resources tab",
         "One frame of the Ghost's idle animation looks blurry because of image smoothing.",
         ["Preview the Ghost's idle animation and spot the blurry second frame.", "Open the Project Manager, go to Resources and select that image. Turn off Smooth the image.", "To fix it for the whole game, open Game properties and change Scale mode from Linear to Nearest."],
         "the idle frames look sharp. Linear smoothing suits high-resolution art; Nearest (no smoothing) suits pixel art.",
+        {
+          imageSrc: "/y9/ch1-task4-answer-1.png",
+          alt: "Step 1: open the Project Manager with the button at the top left. Step 2: the project menu with Properties under Game settings and Resources under Project settings highlighted.",
+          more: [
+            { imageSrc: "/y9/ch1-task4-answer-2.png", alt: "The Resources tab with Ghost_Idle_2.png selected and the Smooth the image box unticked." },
+            { imageSrc: "/y9/ch1-task4-answer-3.png", alt: "Game properties with Scale mode set to Nearest (no antialiasing, good for pixel perfect games)." },
+          ],
+        },
       ),
     ],
   };

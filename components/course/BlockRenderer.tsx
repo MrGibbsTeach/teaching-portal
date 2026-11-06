@@ -413,6 +413,10 @@ export function BlockRenderer({ block }: { block: Block }) {
               </summary>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={block.reveal.imageSrc} alt={block.reveal.alt} className="mt-1 w-full rounded-lg border" />
+              {block.reveal.more?.map((m, i) => (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img key={i} src={m.imageSrc} alt={m.alt} className="mt-3 w-full rounded-lg border" />
+              ))}
             </details>
           )}
         </div>
