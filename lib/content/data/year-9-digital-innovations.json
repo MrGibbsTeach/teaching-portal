@@ -71,6 +71,11 @@
                   "reveal": {
                     "imageSrc": "/y9/ch1-task1-answer.png",
                     "alt": "The Properties panel for the Ghost with X 640, Y 385, W 88, H 60 and rotation 0 highlighted, next to the Ghost in the scene."
+                  },
+                  "demo": {
+                    "imageSrc": "/y9/ch1-task1-demo.gif",
+                    "alt": "Animation: the large tilted Ghost is resized, rotated and moved until it sits exactly on top of the small transparent LockedGhost.",
+                    "caption": "This is what you are aiming for: the big Ghost ends up exactly on top of the small one."
                   }
                 },
                 {

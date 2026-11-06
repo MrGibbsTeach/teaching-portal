@@ -205,7 +205,7 @@ export type Block =
       }[];
     }
   | { type: "codePreview"; title?: string; defaultCode: string; challenge?: string }
-  | { type: "task"; title: string; software?: string; intro?: string; steps: string[]; /** Optional solution image shown behind a Reveal solution button. */ reveal?: { imageSrc: string; alt: string; label?: string } }
+  | { type: "task"; title: string; software?: string; intro?: string; steps: string[]; /** Optional solution image shown behind a Reveal solution button. */ demo?: { imageSrc: string; alt: string; caption?: string }; reveal?: { imageSrc: string; alt: string; label?: string } }
   | { type: "quizQuestion"; question: QuizQuestion }
   | {
       type: "activity";

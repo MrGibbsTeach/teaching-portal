@@ -399,6 +399,13 @@ export function BlockRenderer({ block }: { block: Block }) {
               <li key={i}>{s}</li>
             ))}
           </ol>
+          {block.demo && (
+            <figure className="mt-4">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={block.demo.imageSrc} alt={block.demo.alt} className="mx-auto w-full max-w-xs rounded-lg border" />
+              {block.demo.caption && <figcaption className="mt-1 text-center text-xs text-muted-foreground">{block.demo.caption}</figcaption>}
+            </figure>
+          )}
           {block.reveal && (
             <details className="group mt-4">
               <summary className="inline-flex cursor-pointer list-none items-center rounded-lg border-2 border-foreground bg-foreground px-4 py-2 text-sm font-bold text-background hover:opacity-90 group-open:hidden [&::-webkit-details-marker]:hidden">

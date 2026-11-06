@@ -56,13 +56,14 @@ const gdevelop = (id, title, chapter, summary, bullets, taskSteps, opts = {}) =>
 // Chapter 1 is built as separate cards: overview, watch, get the files, then one card per task (each ends with a check).
 const DOWNLOAD_BUTTON = '<p style="margin:8px 0 16px"><a href="/api/downloads/gdevelop-chapter-1" download style="display:inline-flex;align-items:center;gap:12px;background:#ffd400;color:#000;font-weight:800;font-size:1.25rem;line-height:1.2;padding:18px 28px;border:4px solid #000;border-radius:14px;box-shadow:0 6px 0 #000;text-decoration:none">&#11015; DOWNLOAD the Chapter 1 project (zip)</a></p>';
 function ch1Lesson() {
-  const task = (title, intro, steps, check, reveal) => ({
+  const task = (title, intro, steps, check, reveal, demo) => ({
     type: "task",
     title,
     software: "GDevelop",
     intro,
     steps: [...steps, `Check: ${check}`],
     ...(reveal ? { reveal } : {}),
+    ...(demo ? { demo } : {}),
   });
   return {
     id: "y9_gd_2",
@@ -94,6 +95,7 @@ function ch1Lesson() {
         ["Click the large Ghost in the scene.", "Open the Properties panel and change its position, size and angle.", "Remember: the angle is 0 when the object faces right, and a smaller Y value moves an object up."],
         "the Ghost sits at X 640, Y 385, width 88, height 60, angle 0, exactly on top of the LockedGhost.",
         { imageSrc: "/y9/ch1-task1-answer.png", alt: "The Properties panel for the Ghost with X 640, Y 385, W 88, H 60 and rotation 0 highlighted, next to the Ghost in the scene." },
+        { imageSrc: "/y9/ch1-task1-demo.gif", alt: "Animation: the large tilted Ghost is resized, rotated and moved until it sits exactly on top of the small transparent LockedGhost.", caption: "This is what you are aiming for: the big Ghost ends up exactly on top of the small one." },
       ),
       task(
         "Task 2: Unlock an object with the Instances list",
