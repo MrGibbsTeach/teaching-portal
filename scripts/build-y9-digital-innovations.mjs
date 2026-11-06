@@ -41,6 +41,7 @@ const gdevelop = (id, title, chapter, summary, bullets, taskSteps, opts = {}) =>
       minutes: 10,
       watchFor: ["The names of the panels and tools used", "How the video completes the task you will repeat"],
     },
+    ...(opts.downloadHtml ? [{ type: "richText", heading: "Get the project files", html: opts.downloadHtml }] : []),
     {
       type: "task",
       title: `Complete the ${chapter} template tasks`,
@@ -86,8 +87,9 @@ const course = {
               ],
               {
                 youtubeId: "OsPTdjhqur8",
-                intro: "Watch the video, then open the chapter 1 template in GDevelop: go to Learn, open the GDevelop Essentials Course, find Chapter 1 and click Open template. Do the four tasks, then open each Answer in the course to check.",
-                check: "Ghost matches LockedGhost at X 640, Y 385, width 88, height 60, angle 0. Linear smoothing suits high-resolution art; Nearest (no smoothing) suits pixel art.",
+                downloadHtml: '<p><a href="/api/downloads/gdevelop-chapter-1"><strong>Download the Chapter 1 project (zip)</strong></a></p><ol><li>Save the zip, then right-click it and choose Extract All.</li><li>Open the GDevelop app on your computer.</li><li>Choose Open a project and pick <code>lesson_1_game.json</code> from the extracted folder.</li></ol><p>You do not need a GDevelop account. Keep the <code>assets</code> folder next to the project file.</p>',
+                intro: "Watch the video, then open the project you just downloaded in GDevelop and do the four tasks. Use the check notes at the end to see if you got them right.",
+                check: "1) The Ghost should end up at X 640, Y 385, width 88, height 60, angle 0, matching the transparent LockedGhost. 2) The Background should fill the black game-window outline. 3) After adding a layer called UI and moving the ResourceBar onto it, the bar stays on screen when the Ghost moves. 4) With 'Smooth the image' off (and scale mode Nearest in Game properties), the idle frames look sharp. Linear smoothing suits high-resolution art; Nearest suits pixel art.",
               },
             ),
             gdevelop(

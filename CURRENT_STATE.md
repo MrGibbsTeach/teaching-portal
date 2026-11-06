@@ -7,7 +7,7 @@ Read this first — before `STATUS.md`. This file is the live handover: what's t
 **Live:**
 - Production: https://mrgibbsteach.com (custom domain, DNS live, cert issued) — also reachable at https://teaching-portal-eta.vercel.app
 - Repo: https://github.com/MrGibbsTeach/teaching-portal (private), branch `main`, auto-deploys on push
-- All 10 courses exist; 6 are `active` with real content (Y11+Y12 × Foundations/General/ATAR). Year 9 Digital Innovations is `active` as a skeleton mock-up (6 Nov 2026: 3 units, 37 draft lessons; data from `scripts/build-y9-digital-innovations.mjs`, plan in `claude/y9-digital-innovations.md`, overview via `components/course/CourseReleasePage.tsx`, teacher releases per lesson like the other courses). Y7, Y8 and Y10 are still `placeholder`
+- All 10 courses exist; 6 are `active` with real content (Y11+Y12 × Foundations/General/ATAR). Year 9 Digital Innovations is `active` as a skeleton mock-up (6 Nov 2026: 3 units, 37 draft lessons; data from `scripts/build-y9-digital-innovations.mjs`, plan in `claude/y9-digital-innovations.md`, overview via `components/course/CourseReleasePage.tsx`; lesson y9_gd_2 is real GDevelop Essentials chapter 1, project zip in `private/gdevelop/` served login-gated by `app/api/downloads/gdevelop-chapter-1`, teacher releases per lesson like the other courses). Y7, Y8 and Y10 are still `placeholder`
 
 **Owner's instruction for new sessions:** if Clayton types just "continue", follow "If the owner just types continue" in `claude/project-handover.md`. Next up is the course experience redesign (the courses feel static and boring). The code and content audit is already written in `claude/course-audit.md`.
 
