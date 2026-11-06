@@ -1,0 +1,1152 @@
+{
+  "slug": "year-9-digital-innovations",
+  "title": "Digital Innovations",
+  "units": [
+    {
+      "id": "y9-gdevelop",
+      "title": "GDevelop Training",
+      "subtitle": "Get started making games",
+      "status": "available",
+      "topics": [
+        {
+          "id": "y9-gd-meet",
+          "title": "Meet GDevelop",
+          "description": "a first look at the engine",
+          "lessons": [
+            {
+              "id": "y9_gd_1",
+              "title": "Welcome and set-up",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Get to know the course, see what past student games look like, and get GDevelop ready to use."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Find out how the semester works",
+                    "Sign in to GDevelop",
+                    "Open the editor for the first time"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            },
+            {
+              "id": "y9_gd_2",
+              "title": "Explore the engine",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Learn your way around the GDevelop editor: the scene, the properties panel, the instance list and layers."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Name the main panels of the editor",
+                    "Change an object using only the properties panel",
+                    "Add a UI layer"
+                  ]
+                },
+                {
+                  "type": "videoSlot",
+                  "title": "GDevelop Essentials: Chapter 1",
+                  "brief": "Embed the GDevelop Essentials course video for Chapter 1. Choose and vet the video, then paste its YouTube ID.",
+                  "videoSource": "GDevelop Essentials Course, editor.gdevelop.io, Learn tab. Chapter list is provisional until the owner confirms which chapters to use.",
+                  "minutes": 10,
+                  "watchFor": [
+                    "The names of the panels and tools used",
+                    "How the video completes the task you will repeat"
+                  ]
+                },
+                {
+                  "type": "task",
+                  "title": "Complete the Chapter 1 template tasks",
+                  "software": "GDevelop",
+                  "intro": "Open the chapter template from the course page, work through the tasks, then check your work against the answer.",
+                  "steps": [
+                    "Manipulate an object with the Properties panel",
+                    "Unlock an object with the Instance list panel",
+                    "Add a UI layer with the Layers panel"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            },
+            {
+              "id": "y9_gd_3",
+              "title": "Build a scene",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Create objects, place them in a scene and set up a simple level."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Create and edit objects",
+                    "Place and arrange instances",
+                    "Build a basic scene"
+                  ]
+                },
+                {
+                  "type": "videoSlot",
+                  "title": "GDevelop Essentials: Chapter 2",
+                  "brief": "Embed the GDevelop Essentials course video for Chapter 2. Choose and vet the video, then paste its YouTube ID.",
+                  "videoSource": "GDevelop Essentials Course, editor.gdevelop.io, Learn tab. Chapter list is provisional until the owner confirms which chapters to use.",
+                  "minutes": 10,
+                  "watchFor": [
+                    "The names of the panels and tools used",
+                    "How the video completes the task you will repeat"
+                  ]
+                },
+                {
+                  "type": "task",
+                  "title": "Complete the Chapter 2 template tasks",
+                  "software": "GDevelop",
+                  "intro": "Open the chapter template from the course page, work through the tasks, then check your work against the answer.",
+                  "steps": [
+                    "Add objects to the scene",
+                    "Arrange them to build a level",
+                    "Run a preview of your scene"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "y9-gd-react",
+          "title": "Make it move and react",
+          "description": "behaviors and game logic",
+          "lessons": [
+            {
+              "id": "y9_gd_4",
+              "title": "Use behaviors",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Give objects abilities such as movement using behaviors."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Add a behavior to an object",
+                    "Change its settings",
+                    "Test how it moves in a preview"
+                  ]
+                },
+                {
+                  "type": "videoSlot",
+                  "title": "GDevelop Essentials: Chapter 3",
+                  "brief": "Embed the GDevelop Essentials course video for Chapter 3. Choose and vet the video, then paste its YouTube ID.",
+                  "videoSource": "GDevelop Essentials Course, editor.gdevelop.io, Learn tab. Chapter list is provisional until the owner confirms which chapters to use.",
+                  "minutes": 10,
+                  "watchFor": [
+                    "The names of the panels and tools used",
+                    "How the video completes the task you will repeat"
+                  ]
+                },
+                {
+                  "type": "task",
+                  "title": "Complete the Chapter 3 template tasks",
+                  "software": "GDevelop",
+                  "intro": "Open the chapter template from the course page, work through the tasks, then check your work against the answer.",
+                  "steps": [
+                    "Add a behavior to an object",
+                    "Adjust its settings",
+                    "Preview the result"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            },
+            {
+              "id": "y9_gd_5",
+              "title": "Game logic with events",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Make things happen in your game using events: conditions and actions."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Read an event as 'when this happens, do that'",
+                    "Build a simple event",
+                    "Fix an event that does not work"
+                  ]
+                },
+                {
+                  "type": "videoSlot",
+                  "title": "GDevelop Essentials: Chapter 4",
+                  "brief": "Embed the GDevelop Essentials course video for Chapter 4. Choose and vet the video, then paste its YouTube ID.",
+                  "videoSource": "GDevelop Essentials Course, editor.gdevelop.io, Learn tab. Chapter list is provisional until the owner confirms which chapters to use.",
+                  "minutes": 10,
+                  "watchFor": [
+                    "The names of the panels and tools used",
+                    "How the video completes the task you will repeat"
+                  ]
+                },
+                {
+                  "type": "task",
+                  "title": "Complete the Chapter 4 template tasks",
+                  "software": "GDevelop",
+                  "intro": "Open the chapter template from the course page, work through the tasks, then check your work against the answer.",
+                  "steps": [
+                    "Create an event with a condition and an action",
+                    "Test it in a preview",
+                    "Fix the template's broken event"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            },
+            {
+              "id": "y9_gd_6",
+              "title": "Taster challenge: change a template",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Show what you have learned by changing a ready-made game so it plays differently."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Choose three changes to make",
+                    "Make them in GDevelop",
+                    "Explain what you changed and why"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "y9-game-project",
+      "title": "Video Game Project",
+      "subtitle": "Learn a top-down RPG, then make your own game for the STEM Video Game Challenge",
+      "status": "available",
+      "topics": [
+        {
+          "id": "y9-rpg",
+          "title": "Top-down RPG tutorial",
+          "description": "build one small, finished game",
+          "lessons": [
+            {
+              "id": "y9_rpg_1",
+              "title": "Plan the slice and set up",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "See the finished game you will build and set up your project."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Play the finished example",
+                    "Set up the project",
+                    "List the features you will build"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            },
+            {
+              "id": "y9_rpg_2",
+              "title": "Tilemap: build the world",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Build the map of your game from tiles."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Create a tilemap",
+                    "Paint a simple map",
+                    "Mark where the player can and cannot walk"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            },
+            {
+              "id": "y9_rpg_3",
+              "title": "Player movement",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Make the player move around the map from above."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Add top-down movement",
+                    "Set up the controls",
+                    "Test the speed"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            },
+            {
+              "id": "y9_rpg_4",
+              "title": "Walls and camera",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Stop the player walking through walls and make the camera follow."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Add collisions",
+                    "Follow the player with the camera",
+                    "Fix anything that sticks"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            },
+            {
+              "id": "y9_rpg_5",
+              "title": "Items and variables",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Collect items and keep track of them."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Add collectable items",
+                    "Count them with a variable",
+                    "Show the count on screen"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            },
+            {
+              "id": "y9_rpg_6",
+              "title": "Characters and dialogue",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Add a character the player can talk to."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Add a non-player character",
+                    "Show a message when the player is near",
+                    "Make the dialogue change"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            },
+            {
+              "id": "y9_rpg_7",
+              "title": "Hazards and health",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Add something dangerous and a health bar."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Add a hazard",
+                    "Track health with a variable",
+                    "Handle running out of health"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            },
+            {
+              "id": "y9_rpg_8",
+              "title": "Win, lose and polish",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Finish the game with a goal, ending screens, sound and a cleaner look."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Add a win condition",
+                    "Add win and lose scenes",
+                    "Add sound and tidy the screen"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "y9-vgc-plan",
+          "title": "Plan your game",
+          "description": "STEM Video Game Challenge: planning",
+          "lessons": [
+            {
+              "id": "y9_vgc_1",
+              "title": "The challenge and how it is marked",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Meet the Australian STEM Video Game Challenge and the rubric your project is marked against."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Read the challenge theme",
+                    "Read the Game Design Document sections",
+                    "Form your team (up to four)"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            },
+            {
+              "id": "y9_vgc_2",
+              "title": "Theme and brainstorm",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Come up with game ideas that link to this year's theme."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Explore the theme",
+                    "Brainstorm ideas as a team",
+                    "Pick one idea and say why"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            },
+            {
+              "id": "y9_vgc_3",
+              "title": "Team plan and timeline",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Decide who does what, in what order, and by when."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Choose team roles",
+                    "Build a timeline",
+                    "Write the Planning section of your Game Design Document"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "y9-vgc-design",
+          "title": "Design your game",
+          "description": "STEM Video Game Challenge: designing",
+          "lessons": [
+            {
+              "id": "y9_vgc_4",
+              "title": "Game overview and storyboard",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Describe your game, its characters and its world."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Name your game and explain the title",
+                    "Describe characters and environments",
+                    "Draw a storyboard"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            },
+            {
+              "id": "y9_vgc_5",
+              "title": "Gameplay and mechanics",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Decide the goal, the controls and the point of view."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "State the goal of the game",
+                    "List the controls",
+                    "Plan how the game gets harder"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            },
+            {
+              "id": "y9_vgc_6",
+              "title": "Visual design",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Plan the look of your game and make your own art."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Choose a visual style",
+                    "Link it to the theme",
+                    "Start your original art"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            },
+            {
+              "id": "y9_vgc_7",
+              "title": "Audio design",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Plan the sound of your game and make your own audio."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Choose a sound style",
+                    "Link it to the theme",
+                    "Start your original audio"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "y9-vgc-build",
+          "title": "Build your game",
+          "description": "STEM Video Game Challenge: prototyping (runs over several lessons)",
+          "lessons": [
+            {
+              "id": "y9_vgc_8",
+              "title": "Prototype sprint",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Build the first playable version of your game. This repeats over several lessons."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Build the core mechanic first",
+                    "Test it as you go",
+                    "Record what you built in your work plan"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            },
+            {
+              "id": "y9_vgc_9",
+              "title": "Original art and audio sprint",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Replace placeholder art and sound with your own."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Create original characters and backgrounds",
+                    "Create original sound effects and music",
+                    "Put them in the game"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            },
+            {
+              "id": "y9_vgc_10",
+              "title": "Prototype checkpoint",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Show your playable prototype and the Design section of your Game Design Document."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Demonstrate your prototype",
+                    "Hand in the Design section",
+                    "Plan what is left"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "y9-vgc-test",
+          "title": "Test and finish",
+          "description": "STEM Video Game Challenge: reflecting",
+          "lessons": [
+            {
+              "id": "y9_vgc_11",
+              "title": "Alpha testing",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Test your own game against the judging criteria and fix what you find."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Test against the criteria",
+                    "List the bugs",
+                    "Fix the most important ones"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            },
+            {
+              "id": "y9_vgc_12",
+              "title": "Beta testing",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Have another team play your game and give feedback."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Test another team's game",
+                    "Collect feedback on yours",
+                    "Decide what to change"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            },
+            {
+              "id": "y9_vgc_13",
+              "title": "Finish: Game Design Document and screen recording",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Complete your document and record your gameplay."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Finish every section of the Game Design Document",
+                    "Record a short gameplay video",
+                    "Check the submission requirements"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "y9-assessment",
+          "title": "Assessment and showcase",
+          "description": "how the project is marked, and sharing your game",
+          "lessons": [
+            {
+              "id": "y9_asm_1",
+              "title": "How your project is marked",
+              "estimatedMinutes": 20,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "You make one game with your team. It is marked in stages, so you get feedback along the way. The stages follow the Australian STEM Video Game Challenge rubrics."
+                },
+                {
+                  "type": "table",
+                  "headers": [
+                    "Stage",
+                    "When",
+                    "What is marked",
+                    "Weight"
+                  ],
+                  "rows": [
+                    [
+                      "1. Plan",
+                      "End of planning",
+                      "Game Design Document: Planning section and team plan",
+                      "15%"
+                    ],
+                    [
+                      "2. Design and prototype",
+                      "Prototype checkpoint",
+                      "Game Design Document: Designing section and a playable prototype",
+                      "25%"
+                    ],
+                    [
+                      "3. Final game",
+                      "End of build",
+                      "The game: functionality, gameplay, visual and audio, technical, engagement, theme",
+                      "30%"
+                    ],
+                    [
+                      "4. Test and reflect",
+                      "End of testing",
+                      "Game Design Document: Reflecting section, testing evidence, screen recording",
+                      "20%"
+                    ],
+                    [
+                      "5. VR reflection",
+                      "End of the VR rotation",
+                      "A short review, evaluation and demonstration",
+                      "10%"
+                    ]
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft weights",
+                  "text": "These stages and weights are a draft for the teacher to confirm. Each team member's mark is adjusted for their individual contribution."
+                }
+              ]
+            },
+            {
+              "id": "y9_asm_2",
+              "title": "Showcase day and reflection",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Play each other's games, share your VR creations and reflect on the semester."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Play and rate games",
+                    "Share a VR creation",
+                    "Write a final reflection"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "y9-vr",
+      "title": "VR Interactive",
+      "subtitle": "Meta Quest 3S rotation: play, view, experience, create",
+      "status": "available",
+      "topics": [
+        {
+          "id": "y9-vr-start",
+          "title": "Before you start",
+          "description": "safety and your VR passport",
+          "lessons": [
+            {
+              "id": "y9_vr_1",
+              "title": "Safety, set-up and your VR passport",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Learn how to use the headset safely and how the rotation works. You will keep a passport of your turns."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Play space, comfort and time limits",
+                    "Your role as headset user and as spotter",
+                    "How the roster works"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "y9-vr-stations",
+          "title": "Stations",
+          "description": "your four headset turns",
+          "lessons": [
+            {
+              "id": "y9_vr_2",
+              "title": "Play",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Try free VR games and note your first impressions."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Play a free game for one turn",
+                    "Note comfort, controls and fun",
+                    "Rate it against the criteria"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            },
+            {
+              "id": "y9_vr_3",
+              "title": "View",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Explore immersive video and places."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Watch and explore for one turn",
+                    "Note what feels real and what does not",
+                    "Compare with the game you played"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            },
+            {
+              "id": "y9_vr_4",
+              "title": "Experience",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Try a free learning or exploration experience."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Use the experience for one turn",
+                    "Note what you learned",
+                    "Compare it with the games"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            },
+            {
+              "id": "y9_vr_5",
+              "title": "Create",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Make something simple using a free VR creation app (to be chosen and confirmed)."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Watch the how-to card before your turn",
+                    "Make a simple object or scene",
+                    "Save a picture or recording to show later"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "y9-vr-review",
+          "title": "Review and share",
+          "description": "review, demonstrate, evaluate",
+          "lessons": [
+            {
+              "id": "y9_vr_6",
+              "title": "Write your review",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Write a structured review of two VR experiences."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Use the review criteria",
+                    "Compare two experiences",
+                    "Give evidence for your ratings"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            },
+            {
+              "id": "y9_vr_7",
+              "title": "Demonstrate",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Show a classmate what you made in VR and get feedback."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Show your creation",
+                    "Get feedback on a checklist",
+                    "Note what you would change"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            },
+            {
+              "id": "y9_vr_8",
+              "title": "Evaluate",
+              "estimatedMinutes": 60,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Reflect on what VR is good for and what it is not. This is the VR assessment."
+                },
+                {
+                  "type": "list",
+                  "style": "bullet",
+                  "items": [
+                    "Evaluate VR as a tool",
+                    "Use your passport as evidence",
+                    "Hand in your reflection"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "heading": "Draft lesson",
+                  "text": "This lesson is an outline for review. The video, tasks and check questions are still to be added."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

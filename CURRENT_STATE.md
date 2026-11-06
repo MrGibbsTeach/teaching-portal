@@ -2,12 +2,12 @@
 
 Read this first — before `STATUS.md`. This file is the live handover: what's true right now and the next step. `STATUS.md` is the detailed history (why things are built the way they are); `CHECKPOINTS.md` is recorded feedback not yet acted on. Both stay as the deeper record — update this file's **Last updated** / **Right now** / **Next step** every session; add detail to `STATUS.md` only when something durable changed.
 
-**Last updated:** 2026-11-02 (Gantt Planner, Troubleshooter, Spec the Computer and Interactive tools)
+**Last updated:** 2026-11-06 (Year 9 Digital Innovations skeleton; before that 2026-11-02: Gantt Planner, Troubleshooter, Spec the Computer and Interactive tools)
 
 **Live:**
 - Production: https://mrgibbsteach.com (custom domain, DNS live, cert issued) — also reachable at https://teaching-portal-eta.vercel.app
 - Repo: https://github.com/MrGibbsTeach/teaching-portal (private), branch `main`, auto-deploys on push
-- All 10 courses exist; 6 are `active` with real content (Y11+Y12 × Foundations/General/ATAR), Y7–10 (4 courses) are still `placeholder`
+- All 10 courses exist; 6 are `active` with real content (Y11+Y12 × Foundations/General/ATAR). Year 9 Digital Innovations is `active` as a skeleton mock-up (6 Nov 2026: 3 units, 37 draft lessons; data from `scripts/build-y9-digital-innovations.mjs`, plan in `claude/y9-digital-innovations.md`, overview via `components/course/CourseReleasePage.tsx`, teacher releases per lesson like the other courses). Y7, Y8 and Y10 are still `placeholder`
 
 **Owner's instruction for new sessions:** if Clayton types just "continue", follow "If the owner just types continue" in `claude/project-handover.md`. Next up is the course experience redesign (the courses feel static and boring). The code and content audit is already written in `claude/course-audit.md`.
 

@@ -4,6 +4,7 @@ import general12Data from "./data/year-12-applied-it-general.json";
 import atarData from "./data/year-11-applied-it-atar.json";
 import atar12Data from "./data/year-12-applied-it-atar.json";
 import foundationsData from "./data/ait-foundations.json";
+import year9Data from "./data/year-9-digital-innovations.json";
 import {
   FOUNDATIONS_Y11_SLUG,
   FOUNDATIONS_Y12_SLUG,
@@ -34,6 +35,7 @@ const registry: Record<string, CourseContent> = {
   "year-12-applied-it-general": general12Data as CourseContent,
   "year-11-applied-it-atar": atarData as CourseContent,
   "year-12-applied-it-atar": atar12Data as CourseContent,
+  "year-9-digital-innovations": year9Data as CourseContent,
   [FOUNDATIONS_Y11_SLUG]: foundationsY11,
   [FOUNDATIONS_Y12_SLUG]: foundationsY12,
 };

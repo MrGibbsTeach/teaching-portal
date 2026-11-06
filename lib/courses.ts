@@ -46,8 +46,8 @@ export const courseGroups: { heading: string; courses: Course[] }[] = [
         slug: "year-9-digital-innovations",
         title: "Digital Innovations",
         yearLevel: "Year 9",
-        description: "Digital innovations elective.",
-        status: "placeholder",
+        description: "Year 9 elective: learn GDevelop, make a top-down RPG, then design and build your own game for the STEM Video Game Challenge, with a VR rotation along the way.",
+        status: "active",
         tier: "y9-10",
       },
       {

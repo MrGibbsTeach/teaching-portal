@@ -1,9 +1,7 @@
-import { notFound } from "next/navigation";
-import { CoursePlaceholder } from "@/components/course/CoursePlaceholder";
-import { getCourseBySlug } from "@/lib/courses";
+import { CourseReleasePage } from "@/components/course/CourseReleasePage";
+
+export const dynamic = "force-dynamic";
 
 export default function Page() {
-  const course = getCourseBySlug("year-9-digital-innovations");
-  if (!course) notFound();
-  return <CoursePlaceholder course={course} />;
+  return <CourseReleasePage slug="year-9-digital-innovations" />;
 }
