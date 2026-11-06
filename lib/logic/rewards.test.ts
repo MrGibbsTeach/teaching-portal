@@ -102,7 +102,7 @@ describe("lesson milestones", () => {
 
   it("earns all five at once when everything is done", () => {
     const days = [MON, TUE, WED, THU, NEXT_FRI];
-    const events = days.flatMap((day, d) => [
+    const events = days.flatMap((day) => [
       ev(`${day}-1`, day),
       ev(`${day}-2`, day),
     ]);
