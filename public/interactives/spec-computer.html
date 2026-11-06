@@ -177,7 +177,7 @@ var BOARD=[
 {id:'b760mh',n:'Gigabyte B760M H DDR4',chip:'B760',sock:'LGA1700',mem:'DDR4',ff:'mATX',m2:2,sata:4,p:146,e:1},
 {id:'b760mgx',n:'Gigabyte B760M Gaming X WiFi6E',chip:'B760',sock:'LGA1700',mem:'DDR5',ff:'mATX',m2:2,sata:4,p:195},
 {id:'b760i',n:'Gigabyte B760I Aorus Pro DDR4',chip:'B760',sock:'LGA1700',mem:'DDR4',ff:'ITX',m2:2,sata:4,p:319,e:1},
-{id:'b550a',n:'MSI B550M-A Pro',chip:'B550',sock:'AM4',mem:'DDR4',ff:'mATX',m2:1,sata:6,p:103,e:1},
+{id:'b550a',n:'MSI B550M-A Pro',chip:'B550',sock:'AM4',mem:'DDR4',ff:'mATX',m2:1,sata:4,p:103,e:1},
 {id:'b550m',n:'MSI B550M Pro-VDH WiFi',chip:'B550',sock:'AM4',mem:'DDR4',ff:'mATX',m2:2,sata:4,p:187},
 {id:'b650m',n:'MSI B650M Gaming Plus WiFi',chip:'B650',sock:'AM5',mem:'DDR5',ff:'mATX',m2:2,sata:4,p:199,e:1},
 {id:'b650e',n:'ASUS TUF Gaming B650E-E WiFi',chip:'B650E',sock:'AM5',mem:'DDR5',ff:'ATX',m2:3,sata:4,p:290},
@@ -359,7 +359,7 @@ function rulesFor(B){
       stt==='fail'?'The CPU and graphics card can draw about '+draw+' W at full load (including about 75 W for everything else). The '+p.n+' is too small and the computer could shut down. Choose a bigger power supply.'
        :stt==='warn'?'The parts can draw about '+draw+' W at full load. The '+p.n+' works but leaves little spare capacity. A supply with about 30% extra runs cooler and quieter and leaves room to upgrade.'
        :'The parts can draw about '+draw+' W at full load and the '+p.n+' gives plenty of spare capacity.',
-      'Est. draw '+draw+' W (CPU '+c.tdp+' + GPU '+(g.id==='none'?0:g.tdp)+' + 75). PSU '+p.w+' W = '+Math.round(ratio*100)+'% of draw'+(stt==='fail'?' (needs 110%+)':stt==='warn'?' (below 130% headroom)':'')+'.',
+      'Est. draw '+draw+' W (CPU '+c.tdp+' + GPU '+(g.id==='none'?0:g.tdp)+' + 75). PSU '+p.w+' W = '+Math.round(ratio*100)+'% of draw'+(stt==='fail'?' (needs at least 110% of draw)':stt==='warn'?' (under 30% headroom)':'')+'.',
       stt==='fail'?'Power supply too small':'Little spare power');
   } else add('power','Power supply is big enough',['psu','cpu','gpu'],'na','Choose a CPU, a graphics option and a power supply to check this.','','');
   // 8 balance (warn only)
