@@ -2,7 +2,8 @@
 
 Last checked: 6 Nov 2026. This is the research behind the part list in
 `public/interactives/spec-computer.html`. Prices in the tool are indicative AUD for
-November 2026 and many are marked "~" as estimates; they are not live retail prices.
+November 2026 and only prices with no direct Australian listing are marked "~" as
+estimates; they are not live retail prices.
 
 **Why this file exists:** the interactive teaches compatibility, so the spec numbers
 (socket, memory type, M.2 and SATA counts, card and case lengths) have to be right.
@@ -23,7 +24,7 @@ manufacturer URL; the snapshot dates are recorded below. ASUS pages were read li
 | b760mh | Gigabyte B760M H DDR4 | LGA1700 | DDR4 | 2 | 4 | ~$146 | [GIGABYTE spec](https://www.gigabyte.com/Motherboard/B760M-H-DDR4-rev-10/sp) | 6 Nov 2026 | OK |
 | b760mgx | Gigabyte B760M Gaming X WiFi6E | LGA1700 | DDR5 | 2 | 4 | $195 | [GIGABYTE spec, GEN5 revision](https://www.gigabyte.com/Motherboard/B760M-GAMING-X-WIFI6E-GEN5/sp) | 6 Nov 2026 | OK, but see note 1 |
 | b760i | Gigabyte B760I Aorus Pro DDR4 | LGA1700 | DDR4 | 2 | 4 | ~$319 | [GIGABYTE spec](https://www.gigabyte.com/Motherboard/B760I-AORUS-PRO-DDR4-rev-10/sp) | 6 Nov 2026 | OK |
-| b550a | MSI B550M-A Pro | AM4 | DDR4 | 1 | 4 | ~$103 | [MSI spec](https://www.msi.com/Motherboard/B550M-A-PRO/Specification) (snapshot 1 Mar 2026) | 6 Nov 2026 | OK (was 6 SATA; fixed 6 Nov 2026) |
+| b550a | MSI B550M-A Pro | AM4 | DDR4 | 1 | 4 | ~$103 | [MSI spec](https://www.msi.com/Motherboard/B550M-A-PRO/Specification) (snapshot 1 Mar 2026) | 6 Nov 2026 | OK (4 SATA; the original note said 6 and was wrong) |
 | b550m | MSI B550M Pro-VDH WiFi | AM4 | DDR4 | 2 | 4 | $187 | [MSI spec](https://www.msi.com/Motherboard/B550M-PRO-VDH-WIFI/Specification) (snapshot 12 Dec 2025) | 6 Nov 2026 | OK |
 | b650m | MSI B650M Gaming Plus WiFi | AM5 | DDR5 | 2 | 4 | ~$199 | [MSI spec](https://www.msi.com/Motherboard/B650M-GAMING-PLUS-WIFI/Specification) (snapshot 17 Dec 2025) | 6 Nov 2026 | OK |
 | b650e | ASUS TUF Gaming B650E-E WiFi | AM5 | DDR5 | 3 | 4 | $290 | [ASUS tech specs](https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b650e-e-wifi/techspec/) | 6 Nov 2026 | OK |
@@ -31,10 +32,11 @@ manufacturer URL; the snapshot dates are recorded below. ASUS pages were read li
 
 Notes:
 
-1. The tool calls this board "B760M Gaming X WiFi6E"; GIGABYTE's current page is the
-   "B760M GAMING X WIFI6E GEN5" revision. The storage count is unchanged (2 M.2, 4 SATA)
-   and the memory is DDR5 either way, so the rule behaviour is unaffected. Rename the row
-   to match the page, or keep the short name, is an owner call.
+1. The tool row now reads "B760M Gaming X WiFi6E GEN5", matching GIGABYTE's page and
+   the Australian listings (Umart and PB Tech AU both list the GEN5 revision). The
+   storage count is unchanged (2 M.2, 4 SATA) and the memory is DDR5 either way. Caution:
+   a DDR4 version is also sold under a very similar name, so the row's DDR5 tag rests on
+   GIGABYTE's spec page, not on the retailer listing.
 2. Every board in the catalogue has at least four SATA ports, and the tool allows only
    two drives, so the SATA rule can never be the one that fails. Rule 6's failure message
    still says "not enough M.2 slots" only; that stays true while this table is unchanged.
@@ -71,18 +73,20 @@ the natural alternative to the i3-12100 in the Bakehouse brief.
 | rx9070xt | AMD Radeon RX 9070 XT 16GB | 16 GB | 304 W | 320 mm | 95 | $1,249 | 3-fan |
 | rtx5070ti | NVIDIA GeForce RTX 5070 Ti 16GB | 16 GB | 300 W | 304 mm | 100 | ~$1,599 | Index reference point |
 
-Known issue, not fixed and left for the owner: the 5060 Ti is priced above the 5070
-while being slower and only 4 GB richer, so it is dominated. Live Australian lows on
-6 Nov 2026 were about $899 for the 5060 Ti 16GB and about $1,166 for the 5070, which
-inverts the tool's prices. Prices move; decide whether this is a teaching list (keep the
-numbers approximate) or a buying guide (refresh every term).
+Known issue, kept on purpose (owner, 6 Nov 2026): the 5060 Ti is priced above the
+5070 while being slower and only 4 GB richer, so it looks dominated. That is the real
+market: Australian retailers had the 5060 Ti listed above the 5070 in October 2026
+(shortage pricing). The price was kept as found because it makes a good value-for-money
+discussion, so do not "correct" the order. Prices move; the list is a teaching list, not
+a buying guide.
 
 ## What is not verified
 
 - The CPU and graphics indices are a teaching simplification, not a benchmark. Relative
   order looks sensible; absolute values are not traceable to a source.
 - TDP figures are nominal, not peak. Real turbo and transient draw is higher, so the
-  power estimate is deliberately conservative in the student's favour. Changing that is
-  a rule decision, not a data fix.
+  power estimate is deliberately conservative in the student's favour. The owner kept it
+  that way on 6 Nov 2026 and asked for one short line on the page saying the estimate
+  uses rated power and real peaks are higher.
 - RAM, SSD, PSU and case prices were not re-checked this session; only the motherboard
   spec counts and the 5600G row were in scope.

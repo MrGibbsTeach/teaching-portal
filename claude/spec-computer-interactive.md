@@ -1,6 +1,6 @@
 # Spec the Computer Interactive: Decisions and Status
 
-Demo built 2 Nov 2026, switched to real parts the same day. Not in the portal yet (owner asked for a demo only, repo untouched). Demo (private artifact): https://claude.ai/artifact/3Yj38UUpeJwUSJY3f6FQkY. Source is one self-contained page, `index.html`, honouring `?tier=general|atar`. Parts, specs and prices: `claude/hardware-parts-research.md`.
+Built 2 Nov 2026 as a demo, switched to real parts the same day, and in the portal since 2 Nov 2026 (committed straight to `main`). Live as `public/interactives/spec-computer.html`, one self-contained page honouring `?tier=general|atar`, placed in five lessons by `scripts/add-spec-computer.mjs` and listed in `lib/interactives.ts`, so it also shows on `/teacher/tools`, `/{code}/tools` and `/courses/[slug]/tools`. The original private demo artifact is https://claude.ai/artifact/3Yj38UUpeJwUSJY3f6FQkY. Parts, specs and prices: `claude/hardware-parts-research.md`.
 
 ## What it is
 
@@ -17,7 +17,9 @@ Syllabus fit: General hardware unit (compatibility and hardware purchase, hardwa
 
 ## Rules
 
-Socket match, memory type, board fits case, GPU length fits case, display output (no GPU needs CPU graphics), drive connections (M.2 and SATA counts), PSU size (error below 110% of estimated draw, warning below 130%; draw = CPU TDP + GPU power + 75 W), CPU and GPU balance (warning only when the GPU index is more than 30 above the CPU index). Each rule has plain wording for General and terse technical wording for ATAR.
+Socket match, memory type, board fits case, GPU length fits case, display output (no GPU needs CPU graphics), drive connections (M.2 and SATA counts), PSU size (error below 110% of estimated draw, warning below 130%; draw = CPU TDP + GPU power + 75 W), and "CPU may hold the card back" (warning only when the GPU index is more than 30 above the CPU index). Each rule has plain wording for General and terse technical wording for ATAR.
+
+The power rule adds up rated TDP figures, not measured peaks. A short line under the compatibility checks on the Build tab says so, so the number reads as a floor rather than a measurement.
 
 ## General vs ATAR (toggle inside the tool)
 
@@ -34,17 +36,30 @@ Socket match, memory type, board fits case, GPU length fits case, display output
 - Justification checks are word-based hints, never marks.
 - **Bakery feasibility fix (owner, 2 Nov 2026).** The owner could not find a build that met every bakery need under $950. Brute force confirmed it was real: only 28 builds worked, all variations on one (Core i3-12100 plus the LGA1700 DDR4 board), because "no graphics card" forces a CPU with built-in graphics and the only cheap one was the i3. Fixed by adding the Ryzen 5 5600G (AM4, built-in graphics, ~$229) and raising the budget to $1,000. Now 118 working builds across two platforms. Always brute-force a scenario's feasibility after changing the catalogue, budgets or needs.
 
+### Owner decisions, 6 Nov 2026
+
+- **The 5060 Ti staying above the 5070 is deliberate, not a bug.** Australian retailers had the 5060 Ti listed above the 5070 in October 2026 (shortage pricing). The price was kept as found in the research document because it makes a good value-for-money discussion. Do not "fix" the order.
+- **The "~" mark is for estimates only.** Only a price with no direct Australian listing is marked as an estimate; the rest are listed prices. Do not mark every price "~".
+- **Nominal TDP stays.** The power estimate uses rated watts and real peaks are higher. The page carries one short line saying so, rather than inflating the figures.
+- **The balance rule is named "CPU may hold the card back" and stays one-way.** It warns when a graphics card is much faster than the CPU; it never warns about the reverse.
+- **Board name matches the manufacturer.** The B760M Gaming X WiFi6E row now reads "B760M Gaming X WiFi6E GEN5", the revision on GIGABYTE's spec page and on Australian listings.
+- **B550M-A Pro has 4 SATA ports**, not the 6 in the original research notes, and the tool now agrees with the manufacturer.
+
 ## Feasibility (working builds that pass every rule, every need and the budget)
 
 Bakery 118 (cheapest $828). Surf Films 376 (cheapest $2,027). Esports 19 (cheapest $2,037), intentionally tight: one ITX board, one case, one GPU class. Loosen the esports brief if students find it frustrating.
 
 ## Verified
 
-Headless browser: all three reference builds pass every need and rule ($862, $2,686 and $2,041); a deliberately bad build trips six rules; Justify lock; both tiers; copy fallback; no phone overflow. Not checked: inside the sandboxed portal iframe, real WebGL on a school ASUS laptop, Y11 vs Y12 wording split, accuracy of estimated prices and of the cheaper boards' M.2 and SATA counts.
+Headless browser: all three reference builds pass every need and rule ($862, $2,686 and $2,041); a deliberately bad build trips six rules; Justify lock; both tiers; copy fallback; no phone overflow. All eight motherboards were checked against the manufacturer's specification page on 6 Nov 2026 and only the B550M-A Pro needed correcting (6 SATA to 4); sources and snapshot dates are in `claude/hardware-parts-research.md`. A jsdom test (`lib/spec-computer.test.ts`) loads the real page and drives it through `window.__spec`. Not checked: real WebGL on a school ASUS laptop, Y11 vs Y12 wording split, and the page inside a logged-in lesson iframe.
+
+### Done gate (6 Nov 2026)
+
+Opening Review no longer sends `done` on its own. The tool now sends `done` only when all five justification boxes have some text (whitespace only counts as empty); the word-based hints are not marks and are not required. Review shows a "not finished yet" note with a link back to Justify and counts the boxes that have text. The test above covers empty, four of five, whitespace-only and all-written.
 
 ## Not built yet
 
-- Portal wiring (placement script, height and done messages), register row.
+- Register row in `claude/3d-animation-register.md` (interactives are listed in `lib/interactives.ts` instead, so this may not be needed).
 - Flyover tour and Name It quiz (style standard); monitor and peripherals slots; CPU cooler; PSU connectors and length; RAM slot counts.
 - More scenarios (network hardware purchase, a server with backup), and General EST-style wording once the owner supplies it.
 - Owner to confirm: scenario themes, the 110% and 130% PSU thresholds, the speed indices, and whether the example answers match how the course teaches justification.
