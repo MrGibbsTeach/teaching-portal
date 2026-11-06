@@ -9,6 +9,7 @@ import { CourseTierTheme } from "@/components/course/shared/CourseTierTheme";
 import { TopicIcon } from "@/components/course/shared/TopicIcon";
 import { iconForTopic } from "@/lib/logic/topic-icon";
 import { buildCalendar, getAssessments, nextRow } from "@/lib/plans/assessments";
+import { RewardsBadges } from "@/components/course/code-track/RewardsBadges";
 
 export const dynamic = "force-dynamic";
 
@@ -73,6 +74,8 @@ export default async function ClassCodeHome({ params }: { params: Promise<{ code
             </p>
           </div>
         )}
+
+        <RewardsBadges classCode={normalized} />
 
         <div className="mt-10">
           <h2 className="font-heading text-xl font-bold tracking-tight">Need to revise?</h2>
