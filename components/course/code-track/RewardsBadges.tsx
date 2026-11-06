@@ -37,7 +37,7 @@ export function RewardsBadges({ classCode }: { classCode: string }) {
     <section aria-labelledby="badges-heading" className="mt-10">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <h2 id="badges-heading" className="font-heading text-xl font-bold tracking-tight">
-          Your badges
+          Milestones
         </h2>
         <span className="text-sm text-muted-foreground">
           {state.earnedCount} of {state.badges.length} · kept on this device
@@ -48,8 +48,8 @@ export function RewardsBadges({ classCode }: { classCode: string }) {
         {state.next
           ? `Next: ${state.next.hint.charAt(0).toLowerCase()}${state.next.hint.slice(1)}`
           : "All five earned. Nothing else to collect."}
-        {state.currentStreak >= 2
-          ? ` ${state.currentStreak} days in a row so far.`
+        {state.currentSchoolRun >= 2
+          ? ` ${state.currentSchoolRun} school days in a row so far.`
           : ""}
       </p>
     </section>

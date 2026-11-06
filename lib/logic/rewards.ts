@@ -5,9 +5,12 @@
  * this device (lessons finished, dated completion events) and today's date.
  *
  * Rules the owner set:
- * - Five milestones, no more.
+ * - Five milestones, no more, and each has to mean something different:
+ *   lessons finished, then days turned up, then a run of school days.
  * - A repeat on the same day never counts twice: events are collapsed to one
  *   per lesson and day before anything is counted.
+ * - Weekends do not break a run, so Friday then Monday counts as consecutive.
+ *   Saturday and Sunday still count as activity for "five active days".
  * - Device-local only. Nothing here is stored server-side or shown to teachers.
  * - No confetti, no notifications: the words do the work.
  */
@@ -18,15 +21,15 @@ export type RewardEvent = { lessonId: string; day: string };
 export type RewardCounts = {
   /** Distinct lessons finished. */
   lessonsDone: number;
-  /** Distinct days with at least one lesson finished. */
+  /** Distinct days with at least one lesson finished, weekends included. */
   daysActive: number;
-  /** Longest run of consecutive days anywhere in the history. */
-  longestStreak: number;
+  /** Longest run of school days (Mon to Fri) with a finish, weekends skipped. */
+  longestSchoolRun: number;
 };
 
 export type Milestone = {
   id: string;
-  /** Short badge label. */
+  /** Short label on the badge. */
   name: string;
   /** What it takes, shown while it is not earned. */
   hint: string;
@@ -38,16 +41,16 @@ export const MILESTONES: readonly Milestone[] = [
   { id: "five-lessons", name: "Five lessons", hint: "Finish five lessons.", test: (c) => c.lessonsDone >= 5 },
   { id: "ten-lessons", name: "Ten lessons", hint: "Finish ten lessons.", test: (c) => c.lessonsDone >= 10 },
   {
-    id: "three-days",
-    name: "Three days",
-    hint: "Finish a lesson on three different days.",
-    test: (c) => c.daysActive >= 3,
+    id: "five-days",
+    name: "Five active days",
+    hint: "Finish a lesson on five different days.",
+    test: (c) => c.daysActive >= 5,
   },
   {
-    id: "three-in-a-row",
-    name: "Three in a row",
-    hint: "Finish a lesson three days running.",
-    test: (c) => c.longestStreak >= 3,
+    id: "five-school-days",
+    name: "Five school days in a row",
+    hint: "Finish a lesson five school days running. Weekends do not break it.",
+    test: (c) => c.longestSchoolRun >= 5,
   },
 ];
 
@@ -59,9 +62,11 @@ export type RewardState = RewardCounts & {
   earnedCount: number;
   /** The first milestone still to earn, or null once all five are earned. */
   next: Badge | null;
-  /** Days in a row ending today or yesterday. Zero if the run is broken. */
-  currentStreak: number;
+  /** School days in a row ending at the latest school day, or the one before. */
+  currentSchoolRun: number;
 };
+
+const DAY_MS = 86_400_000;
 
 /** Calendar day for a moment in time, in the class's time zone. */
 export function dayInTimeZone(date: Date, timeZone = "Australia/Perth"): string {
@@ -78,8 +83,54 @@ export function dayInTimeZone(date: Date, timeZone = "Australia/Perth"): string 
 /** Move a YYYY-MM-DD string by whole days. UTC maths, so no DST surprises. */
 export function shiftDay(day: string, days: number): string {
   const [y, m, d] = day.split("-").map(Number);
-  const t = Date.UTC(y, (m ?? 1) - 1, d ?? 1) + days * 86_400_000;
+  const t = Date.UTC(y, (m ?? 1) - 1, d ?? 1) + days * DAY_MS;
   return new Date(t).toISOString().slice(0, 10);
+}
+
+/** Whole days since 1970-01-01, which was a Thursday. */
+function serial(day: string): number {
+  const [y, m, d] = day.split("-").map(Number);
+  return Math.round(Date.UTC(y, (m ?? 1) - 1, d ?? 1) / DAY_MS);
+}
+
+/** 0 = Sunday, 6 = Saturday. */
+function weekday(s: number): number {
+  return (((s + 4) % 7) + 7) % 7;
+}
+
+export function isSchoolDay(day: string): boolean {
+  const w = weekday(serial(day));
+  return w !== 0 && w !== 6;
+}
+
+/** How many school days have passed before this serial day. */
+function schoolDaysBefore(s: number): number {
+  const weeks = Math.floor(s / 7);
+  const rem = s % 7;
+  let count = weeks * 5;
+  for (let i = 0; i < rem; i += 1) {
+    const w = (i + 4) % 7;
+    if (w !== 0 && w !== 6) count += 1;
+  }
+  return count;
+}
+
+/**
+ * Position of a date in the sequence of school days, so Friday and the
+ * following Monday differ by one. Null on Saturday and Sunday, which are not
+ * school days and neither extend nor break a run.
+ */
+export function schoolDayIndex(day: string): number | null {
+  return isSchoolDay(day) ? schoolDaysBefore(serial(day)) : null;
+}
+
+/** The most recent school day on or before the given date, as an index. */
+function latestSchoolDayIndex(day: string): number | null {
+  for (let back = 0; back <= 2; back += 1) {
+    const candidate = schoolDayIndex(shiftDay(day, -back));
+    if (candidate !== null) return candidate;
+  }
+  return null;
 }
 
 /** Collapse events to one per lesson and day, so a same-day repeat counts once. */
@@ -102,7 +153,7 @@ export function uniqueEvents(
   return byLesson;
 }
 
-/** Distinct days with at least one completion event. */
+/** Distinct days with at least one completion event, weekends included. */
 export function activeDays(events: readonly RewardEvent[]): string[] {
   const days = new Set<string>();
   for (const e of events) {
@@ -111,32 +162,37 @@ export function activeDays(events: readonly RewardEvent[]): string[] {
   return [...days].sort();
 }
 
-/** Longest run of consecutive days anywhere in the list. */
-export function longestStreak(days: readonly string[]): number {
-  const sorted = [...new Set(days)].sort();
+/** Longest run of school days with a finish, weekends skipped. */
+export function longestSchoolRun(days: readonly string[]): number {
+  const indices = [
+    ...new Set(days.map(schoolDayIndex).filter((x): x is number => x !== null)),
+  ].sort((a, b) => a - b);
   let best = 0;
   let run = 0;
-  let previous: string | null = null;
-  for (const day of sorted) {
-    run = previous !== null && shiftDay(previous, 1) === day ? run + 1 : 1;
+  let previous: number | null = null;
+  for (const index of indices) {
+    run = previous !== null && index === previous + 1 ? run + 1 : 1;
     if (run > best) best = run;
-    previous = day;
+    previous = index;
   }
   return best;
 }
 
 /**
- * Run of consecutive days ending today, or yesterday if today is empty, so a
- * streak is not lost until a whole day has passed with no lesson.
+ * Run of school days ending at the latest school day on or before today, or
+ * the one before it, so a run is not lost until a whole school day is missed.
  */
-export function currentStreak(days: readonly string[], today: string): number {
-  const set = new Set(days);
-  let cursor = today;
-  if (!set.has(cursor)) cursor = shiftDay(today, -1);
+export function currentSchoolRun(days: readonly string[], today: string): number {
+  const set = new Set(
+    days.map(schoolDayIndex).filter((x): x is number => x !== null),
+  );
+  let cursor = latestSchoolDayIndex(today);
+  if (cursor === null) return 0;
+  if (!set.has(cursor)) cursor -= 1;
   let run = 0;
   while (set.has(cursor)) {
     run += 1;
-    cursor = shiftDay(cursor, -1);
+    cursor -= 1;
   }
   return run;
 }
@@ -152,7 +208,7 @@ export function buildRewardState(input: {
   const counts: RewardCounts = {
     lessonsDone: byLesson.size,
     daysActive: days.length,
-    longestStreak: longestStreak(days),
+    longestSchoolRun: longestSchoolRun(days),
   };
   const badges: Badge[] = MILESTONES.map((m) => ({
     id: m.id,
@@ -165,6 +221,6 @@ export function buildRewardState(input: {
     badges,
     earnedCount: badges.filter((b) => b.earned).length,
     next: badges.find((b) => !b.earned) ?? null,
-    currentStreak: currentStreak(days, input.today),
+    currentSchoolRun: currentSchoolRun(days, input.today),
   };
 }

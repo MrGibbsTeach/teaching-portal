@@ -21,9 +21,16 @@ then `project-handover.md`.
 - One branch per agent or per attempt: `deepseek-trial`, `codex-<topic>`. Never work
   directly on `main`, and never force-push a branch someone else may be reading.
 - Rebase your branch on `main` at the start, not mid-session.
-- The owner's current rule (since 31 Oct 2026) is no PR ceremony: merge to `main` yourself
-  once the branch is green, then report it. `main` must never be left broken. If the owner
-  says otherwise for a task, follow that instead.
+- **Student-facing changes stay on the branch until the owner replies "ship it"**
+  (owner, 6 Nov 2026). That means anything that changes what a student sees or does:
+  lesson pages, interactions, wording, navigation, rewards. Report the branch and its
+  preview so the owner can test it on the real site. When they say "ship it": merge the
+  branch to `main` yourself, confirm `npx tsc --noEmit` and `npm test` still pass on
+  `main` after the merge, check the Vercel deploy for that commit succeeded, then report
+  the commit.
+- Tests, docs, scripts and internal tooling may still go straight to `main` without
+  waiting. This replaces the 31 Oct 2026 "merge everything straight to main" rule, which
+  now covers only those.
 
 ## What you may change alone
 
