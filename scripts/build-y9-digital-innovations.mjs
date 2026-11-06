@@ -114,7 +114,7 @@ function ch1Lesson() {
       task(
         "Task 4: Change smoothing settings in the Resources tab",
         "One frame of the Ghost's idle animation looks blurry because of image smoothing.",
-        ["Preview the Ghost's idle animation and spot the blurry second frame.", "Open the Project Manager, go to Resources and select that image. Turn off Smooth the image.", "To fix it for the whole game, open Game properties and change Scale mode from Linear to Nearest."],
+        ["Preview the Ghost's idle animation and spot the blurry second frame.", "Open the Project Manager: click the three-line menu button at the very top left of the window (on older versions it is a separate icon next to the clock and save icons). Go to Resources and select that image. Turn off Smooth the image.", "To fix it for the whole game, open the Project Manager again, choose Properties under Game settings and change Scale mode from Linear to Nearest."],
         "the idle frames look sharp. Linear smoothing suits high-resolution art; Nearest (no smoothing) suits pixel art.",
         {
           imageSrc: "/y9/ch1-task4-answer-1.png",

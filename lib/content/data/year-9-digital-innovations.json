@@ -118,8 +118,8 @@
                   "intro": "One frame of the Ghost's idle animation looks blurry because of image smoothing.",
                   "steps": [
                     "Preview the Ghost's idle animation and spot the blurry second frame.",
-                    "Open the Project Manager, go to Resources and select that image. Turn off Smooth the image.",
-                    "To fix it for the whole game, open Game properties and change Scale mode from Linear to Nearest.",
+                    "Open the Project Manager: click the three-line menu button at the very top left of the window (on older versions it is a separate icon next to the clock and save icons). Go to Resources and select that image. Turn off Smooth the image.",
+                    "To fix it for the whole game, open the Project Manager again, choose Properties under Game settings and change Scale mode from Linear to Nearest.",
                     "Check: the idle frames look sharp. Linear smoothing suits high-resolution art; Nearest (no smoothing) suits pixel art."
                   ],
                   "reveal": {
