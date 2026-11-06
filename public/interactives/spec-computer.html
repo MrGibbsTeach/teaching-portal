@@ -175,7 +175,7 @@ var CPU=[
 {id:'u7265k',n:'Intel Core Ultra 7 265K',sock:'LGA1851',c:20,t:20,ghz:5.5,tdp:125,igpu:true,perf:128,p:499,e:1}];
 var BOARD=[
 {id:'b760mh',n:'Gigabyte B760M H DDR4',chip:'B760',sock:'LGA1700',mem:'DDR4',ff:'mATX',m2:2,sata:4,p:146,e:1},
-{id:'b760mgx',n:'Gigabyte B760M Gaming X WiFi6E',chip:'B760',sock:'LGA1700',mem:'DDR5',ff:'mATX',m2:2,sata:4,p:195},
+{id:'b760mgx',n:'Gigabyte B760M Gaming X WiFi6E GEN5',chip:'B760',sock:'LGA1700',mem:'DDR5',ff:'mATX',m2:2,sata:4,p:195},
 {id:'b760i',n:'Gigabyte B760I Aorus Pro DDR4',chip:'B760',sock:'LGA1700',mem:'DDR4',ff:'ITX',m2:2,sata:4,p:319,e:1},
 {id:'b550a',n:'MSI B550M-A Pro',chip:'B550',sock:'AM4',mem:'DDR4',ff:'mATX',m2:1,sata:4,p:103,e:1},
 {id:'b550m',n:'MSI B550M Pro-VDH WiFi',chip:'B550',sock:'AM4',mem:'DDR4',ff:'mATX',m2:2,sata:4,p:187},
@@ -362,12 +362,12 @@ function rulesFor(B){
       'Est. draw '+draw+' W (CPU '+c.tdp+' + GPU '+(g.id==='none'?0:g.tdp)+' + 75). PSU '+p.w+' W = '+Math.round(ratio*100)+'% of draw'+(stt==='fail'?' (needs at least 110% of draw)':stt==='warn'?' (under 30% headroom)':'')+'.',
       stt==='fail'?'Power supply too small':'Little spare power');
   } else add('power','Power supply is big enough',['psu','cpu','gpu'],'na','Choose a CPU, a graphics option and a power supply to check this.','','');
-  // 8 balance (warn only)
+  // 8 balance (one way, warn only): a fast card let down by a slow CPU
   if(c&&g&&g.id!=='none'){var gap=g.perf-c.perf;
-    add('bal','CPU and graphics card are balanced',['cpu','gpu'],gap>30?'warn':'pass',
-      gap>30?'The '+g.n+' is much faster than the '+c.n+'. The CPU may hold the card back (a bottleneck), so some of the money spent on the card is wasted.':'The CPU and graphics card are reasonably matched.',
-      gap>30?'Possible CPU bottleneck: GPU index '+g.perf+' vs CPU '+c.perf+'.':'GPU index '+g.perf+', CPU '+c.perf+': balanced.','CPU may hold card back');
-  } else add('bal','CPU and graphics card are balanced',['cpu','gpu'],'na','Choose a CPU and a graphics card to check this.','','');
+    add('bal','CPU may hold the card back',['cpu','gpu'],gap>30?'warn':'pass',
+      gap>30?'The '+g.n+' is much faster than the '+c.n+'. The CPU may hold the card back (a bottleneck), so some of the money spent on the card is wasted.':'The CPU and graphics card are reasonably matched, so the processor should not hold the card back.',
+      gap>30?'Possible CPU bottleneck: GPU index '+g.perf+' vs CPU '+c.perf+'.':'GPU index '+g.perf+', CPU '+c.perf+': no bottleneck expected.','CPU may hold card back');
+  } else add('bal','CPU may hold the card back',['cpu','gpu'],'na','Choose a CPU and a graphics card to check this.','','');
   return R;
 }
 function fitHint(k,x){
@@ -449,7 +449,7 @@ function renderBuild(){
     +'<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><button class="btn" data-act="tab" data-tab="justify" '+(canJustify()?'':'disabled')+'>Lock in and justify</button><button class="btn ghost" data-act="clear">Start again</button></div>'
     +(canJustify()?'':'<p class="small mut" style="margin:6px 0 0">'+(ready(B)?fails+' red rule'+(fails>1?'s':'')+' to fix first.':'Fill every slot except optional Storage 2.')+'</p>')
     +'</div><div><div id="stageSlot"></div><div class="selcard" id="selcard">'+selCardHtml()+'</div>'
-    +'<section class="card rules"><div class="mrow"><b>Compatibility checks</b><span class="small mut">'+fails+' to fix · '+warns+' warning'+(warns===1?'':'s')+'</span></div><div aria-live="polite">'+rules+'</div></section></div></div>'
+    +'<section class="card rules"><div class="mrow"><b>Compatibility checks</b><span class="small mut">'+fails+' to fix · '+warns+' warning'+(warns===1?'':'s')+'</span></div><div aria-live="polite">'+rules+'</div><p class="small mut" style="margin:8px 0 0">The power check uses rated watts, so real peaks will be higher than the estimate.</p></section></div></div>'
     +renderCatalogue();
 }
 function renderCatalogue(){
